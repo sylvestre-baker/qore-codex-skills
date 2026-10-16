@@ -141,7 +141,7 @@ def local_adaptations(profile_path):
         return []
     try:
         release = read_json(baseline)
-    except (ValueError, OSError):
+    except (ValueError, OSError, RecursionError):
         return []
     if not isinstance(release, dict) or release.get("schema") != "qore-release/1":
         return []
@@ -172,7 +172,7 @@ def main():
         result["local_adaptations"] = local_adaptations(args.profile)
         print(json.dumps(result, indent=2))
         return 0 if result["coverage"] == "COMPLETE" else 1
-    except (ValueError, OSError, TypeError) as exc:
+    except (ValueError, OSError, TypeError, RecursionError) as exc:
         print(json.dumps({"coverage": "BLOCKED", "problems": [str(exc)]}), file=sys.stderr)
         return 2
 

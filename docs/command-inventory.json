@@ -407,7 +407,7 @@
         },
         {
           "path": "tools/context.py",
-          "sha256": "0d46aae42039a6a8922caebcf5dfa7c39b4872dd53d38f17a70bd7ee9ec93289"
+          "sha256": "d87afa433fe485bdebca3e281d06e0896e4a8980ea7cf7baee739053614ea0ac"
         }
       ],
       "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
@@ -674,7 +674,7 @@
       "implementation": [
         {
           "path": "tools/context.py",
-          "sha256": "0d46aae42039a6a8922caebcf5dfa7c39b4872dd53d38f17a70bd7ee9ec93289"
+          "sha256": "d87afa433fe485bdebca3e281d06e0896e4a8980ea7cf7baee739053614ea0ac"
         }
       ],
       "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
@@ -715,7 +715,7 @@
       "implementation": [
         {
           "path": "tools/context.py",
-          "sha256": "0d46aae42039a6a8922caebcf5dfa7c39b4872dd53d38f17a70bd7ee9ec93289"
+          "sha256": "d87afa433fe485bdebca3e281d06e0896e4a8980ea7cf7baee739053614ea0ac"
         }
       ],
       "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
@@ -758,7 +758,7 @@
         },
         {
           "path": "tools/context.py",
-          "sha256": "0d46aae42039a6a8922caebcf5dfa7c39b4872dd53d38f17a70bd7ee9ec93289"
+          "sha256": "d87afa433fe485bdebca3e281d06e0896e4a8980ea7cf7baee739053614ea0ac"
         }
       ],
       "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
@@ -837,7 +837,7 @@
       "implementation": [
         {
           "path": "tests/test_package.py",
-          "sha256": "3d8f1a385cba9681ba3c0e9b45c05b2861835cb061dbd942d89c0d7cc4b9da00"
+          "sha256": "750e9313080f6764f6fbb6cf6abc60a01c47770b37db36714509e476075ddebc"
         },
         {
           "path": "tests/test_validators.py",
@@ -1303,7 +1303,7 @@
       "implementation": [
         {
           "path": "tools/context.py",
-          "sha256": "0d46aae42039a6a8922caebcf5dfa7c39b4872dd53d38f17a70bd7ee9ec93289"
+          "sha256": "d87afa433fe485bdebca3e281d06e0896e4a8980ea7cf7baee739053614ea0ac"
         }
       ],
       "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",

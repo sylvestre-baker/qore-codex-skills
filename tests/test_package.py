@@ -329,7 +329,7 @@ class PackageTests(unittest.TestCase):
         import subprocess
         profile = self.base / "project.json"
         profile.write_text(json.dumps(self.profile()))
-        for neighbor in ("{", '{"version":"3.1.0","channel":"stable"}',
+        for neighbor in ("{", "[" * 200000 + "]" * 200000, '{"version":"3.1.0","channel":"stable"}',
                          '{"schema":"qore-release/1","resources":[]}',
                          '{"schema":"qore-release/1","resources":null}'):
             with self.subTest(neighbor=neighbor):
@@ -340,6 +340,17 @@ class PackageTests(unittest.TestCase):
                 packet = json.loads(response.stdout)
                 self.assertEqual(packet["coverage"], "COMPLETE")
                 self.assertEqual(packet["local_adaptations"], [])
+
+    def test_profile_exceeding_json_parser_depth_reports_structured_blocked_result(self):
+        import subprocess
+        profile = self.base / "deep-profile.json"
+        profile.write_text("[" * 200000 + "]" * 200000)
+        response = subprocess.run([sys.executable, "-B", str(TOOLS / "context.py"), str(profile),
+                                   "--root", str(self.project), "--method", "review"], capture_output=True, text=True)
+        self.assertEqual(response.returncode, 2)
+        packet = json.loads(response.stderr)
+        self.assertEqual(packet["coverage"], "BLOCKED")
+        self.assertNotIn("Traceback", response.stderr)
 
     def test_installer_warns_about_same_name_user_skill_without_changing_it(self):
         bundle = Path(self.build()["bundle"])

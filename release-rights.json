@@ -109,11 +109,11 @@
     },
     {
       "path": "docs/command-inventory.json",
-      "sha256": "727e97a97f0122484fe8a1ec43926ca31ed7d7db03b85466e8da1e67a565989a",
+      "sha256": "8f0adaa1a971aa125a0e5bf69811bf326b8816df2c2383829d458dac9ef0babd",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "First-party command evidence inventory within the Qore correction file scope whose MIT redistribution Sylvestre Franceschi confirmed on 16 October 2026. Current implementation digests refreshed after the independently identified neighboring-release correction. Historical execution claims and original evidence retain their identities; no third-party or client material added."
+      "basis": "First-party refinement within the same Qore correction file scope whose MIT redistribution Sylvestre Franceschi confirmed on 16 October 2026. The profile compatibility correction, bounded JSON error handling, regression guards and implementation identity updates introduce no third-party or client material. Current content reviewed before updating this digest; no publication authorization is inferred."
     },
     {
       "path": "docs/contracts.md",
@@ -10085,11 +10085,11 @@
     },
     {
       "path": "skills/qore-plan/scripts/project-check.py",
-      "sha256": "0d46aae42039a6a8922caebcf5dfa7c39b4872dd53d38f17a70bd7ee9ec93289",
+      "sha256": "d87afa433fe485bdebca3e281d06e0896e4a8980ea7cf7baee739053614ea0ac",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "First-party refinement within the same Qore correction scope whose MIT redistribution Sylvestre Franceschi confirmed on 16 October 2026. The neighboring-release compatibility fix and regression guards introduce no third-party or client material. Current content reviewed before updating this digest; no publication authorization is inferred."
+      "basis": "First-party refinement within the same Qore correction file scope whose MIT redistribution Sylvestre Franceschi confirmed on 16 October 2026. The profile compatibility correction, bounded JSON error handling, regression guards and implementation identity updates introduce no third-party or client material. Current content reviewed before updating this digest; no publication authorization is inferred."
     },
     {
       "path": "skills/qore-plan/scripts/run-check.py",
@@ -10173,11 +10173,11 @@
     },
     {
       "path": "skills/qore-review/scripts/project-check.py",
-      "sha256": "0d46aae42039a6a8922caebcf5dfa7c39b4872dd53d38f17a70bd7ee9ec93289",
+      "sha256": "d87afa433fe485bdebca3e281d06e0896e4a8980ea7cf7baee739053614ea0ac",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "First-party refinement within the same Qore correction scope whose MIT redistribution Sylvestre Franceschi confirmed on 16 October 2026. The neighboring-release compatibility fix and regression guards introduce no third-party or client material. Current content reviewed before updating this digest; no publication authorization is inferred."
+      "basis": "First-party refinement within the same Qore correction file scope whose MIT redistribution Sylvestre Franceschi confirmed on 16 October 2026. The profile compatibility correction, bounded JSON error handling, regression guards and implementation identity updates introduce no third-party or client material. Current content reviewed before updating this digest; no publication authorization is inferred."
     },
     {
       "path": "skills/qore-review/scripts/redact-for-verifier.mjs",
@@ -10261,11 +10261,11 @@
     },
     {
       "path": "skills/qore-ux-review/scripts/project-check.py",
-      "sha256": "0d46aae42039a6a8922caebcf5dfa7c39b4872dd53d38f17a70bd7ee9ec93289",
+      "sha256": "d87afa433fe485bdebca3e281d06e0896e4a8980ea7cf7baee739053614ea0ac",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "First-party refinement within the same Qore correction scope whose MIT redistribution Sylvestre Franceschi confirmed on 16 October 2026. The neighboring-release compatibility fix and regression guards introduce no third-party or client material. Current content reviewed before updating this digest; no publication authorization is inferred."
+      "basis": "First-party refinement within the same Qore correction file scope whose MIT redistribution Sylvestre Franceschi confirmed on 16 October 2026. The profile compatibility correction, bounded JSON error handling, regression guards and implementation identity updates introduce no third-party or client material. Current content reviewed before updating this digest; no publication authorization is inferred."
     },
     {
       "path": "skills/qore-ux-review/scripts/run-check.py",
@@ -10421,11 +10421,11 @@
     },
     {
       "path": "tests/test_package.py",
-      "sha256": "3d8f1a385cba9681ba3c0e9b45c05b2861835cb061dbd942d89c0d7cc4b9da00",
+      "sha256": "750e9313080f6764f6fbb6cf6abc60a01c47770b37db36714509e476075ddebc",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "First-party refinement within the same Qore correction scope whose MIT redistribution Sylvestre Franceschi confirmed on 16 October 2026. The neighboring-release compatibility fix and regression guards introduce no third-party or client material. Current content reviewed before updating this digest; no publication authorization is inferred."
+      "basis": "First-party refinement within the same Qore correction file scope whose MIT redistribution Sylvestre Franceschi confirmed on 16 October 2026. The profile compatibility correction, bounded JSON error handling, regression guards and implementation identity updates introduce no third-party or client material. Current content reviewed before updating this digest; no publication authorization is inferred."
     },
     {
       "path": "tests/test_run_contract.py",
@@ -10509,11 +10509,11 @@
     },
     {
       "path": "tools/context.py",
-      "sha256": "0d46aae42039a6a8922caebcf5dfa7c39b4872dd53d38f17a70bd7ee9ec93289",
+      "sha256": "d87afa433fe485bdebca3e281d06e0896e4a8980ea7cf7baee739053614ea0ac",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "First-party refinement within the same Qore correction scope whose MIT redistribution Sylvestre Franceschi confirmed on 16 October 2026. The neighboring-release compatibility fix and regression guards introduce no third-party or client material. Current content reviewed before updating this digest; no publication authorization is inferred."
+      "basis": "First-party refinement within the same Qore correction file scope whose MIT redistribution Sylvestre Franceschi confirmed on 16 October 2026. The profile compatibility correction, bounded JSON error handling, regression guards and implementation identity updates introduce no third-party or client material. Current content reviewed before updating this digest; no publication authorization is inferred."
     },
     {
       "path": "tools/coordination.py",
