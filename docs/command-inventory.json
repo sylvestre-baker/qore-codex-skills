@@ -44,7 +44,7 @@
   "documents": [
     {
       "path": "README.md",
-      "sha256": "67213985b335be4c234c031d32b34fd5cba59252d198d2f4aa4fb9231c4d1e0e"
+      "sha256": "3f0e7c367bb15ab8dfb7d9ab78ab7de6fcb2be7707413a8b13beb0cbc0a0c7db"
     },
     {
       "path": "docs/architecture.md",
@@ -216,6 +216,23 @@
       "candidate_sha256": "bafd0da80667a00f9e6bd2f9e726eaa64d61ff42d026b9f58eb857df15bf40f8",
       "evidence": "docs/evidence/executions/review-exact-flags/execution.json",
       "limit": "Source and target identity are those recorded in the run; later fixes are independently verified separately."
+    },
+    {
+      "id": "github-first-use-4643",
+      "category": "Actual fresh clone and README shell exercise from public GitHub source",
+      "status": "EXECUTED",
+      "source_commit": "4643bcd92049eed541d73dd3ceff2905a4a4daf6",
+      "public_execution_artifact": "docs/evidence/publication/first-use.json",
+      "public_summary": {
+        "git_clone_exit_code": 0,
+        "build_and_install_exit_code": 0,
+        "structural_tests": 106,
+        "source_snapshot": "First public source commit; later publication-only metadata is separately identified."
+      },
+      "limits": [
+        "Maintainer-operated shell exercise, not external human first use",
+        "Independent method phases were not rerun by this shell exercise; original same-resource complete executions retain their identities"
+      ]
     }
   ],
   "entries": [
@@ -247,9 +264,11 @@
         "Does not install global skills or execute a method"
       ],
       "execution": {
-        "status": "TEMPLATE_NOT_EXECUTED_AS_WRITTEN",
-        "evidence_ids": [],
-        "limit": "The public repository must exist before this exact clone recipe can be exercised."
+        "status": "EXECUTED_RECORDED",
+        "evidence_ids": [
+          "github-first-use-4643"
+        ],
+        "limit": "Executed against first public commit; no global skill installation or independent method execution in this clone step."
       }
     },
     {
@@ -291,12 +310,11 @@
         "Refuses collisions instead of replacing files"
       ],
       "execution": {
-        "status": "EXECUTED_HISTORICAL_AND_MAINTAINER_REPORTED",
+        "status": "EXECUTED_RECORDED",
         "evidence_ids": [
-          "historical-shell-1",
-          "clean-linux-candidate-d"
+          "github-first-use-4643"
         ],
-        "limit": "Implementation or a related historical run does not prove this exact recipe completed on the current candidate."
+        "limit": "Actual first-public-commit README recipe. Later documentation metadata has a new archive identity; helper and skill bytes are unchanged."
       }
     },
     {

@@ -1,4 +1,5 @@
 [
+  ".gitattributes",
   ".github/workflows/check.yml",
   ".gitignore",
   "CHANGELOG.md",
@@ -838,6 +839,8 @@
   "docs/evidence/implementation-review/original/verifier-write.py",
   "docs/evidence/implementation-review/original/verifier.execution.json",
   "docs/evidence/implementation-review/provenance.json",
+  "docs/evidence/publication/first-use.json",
+  "docs/evidence/publication/resource-carryover.json",
   "docs/evidence/readme-render/README.md",
   "docs/evidence/readme-render/caption-playback.png",
   "docs/evidence/readme-render/narrow-entry.png",
@@ -892,6 +895,7 @@
   "docs/evidence/readme-review/initial-challenge/provenance.json",
   "docs/evidence/validator-case.md",
   "docs/profiles.md",
+  "docs/publication.md",
   "docs/qualification.md",
   "docs/troubleshooting.md",
   "examples/validator-hardening.md",

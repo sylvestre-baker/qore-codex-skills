@@ -1,0 +1,387 @@
+{
+  "schema": "qore-publication-carryover/1",
+  "checked_at": "2026-10-16T03:23:50.814103+00:00",
+  "baseline_archive_sha256": "153e38eebff8cfcf262b09373a89ba1f25b98e348ac92e88ecf84d1df3820efb",
+  "checked_resource_count": 63,
+  "unchanged_resources": [
+    {
+      "path": "examples/validator-hardening.md",
+      "baseline_sha256": "6f25b2edcd6d0826b12fbb47a99fc4162a1089eef71eaf7f16ea2cb7a8239a87",
+      "current_sha256": "6f25b2edcd6d0826b12fbb47a99fc4162a1089eef71eaf7f16ea2cb7a8239a87",
+      "unchanged": true
+    },
+    {
+      "path": "plugin.json",
+      "baseline_sha256": "7935d0290e11e1cf35f6e57f61bf6fc2f5474e1c65cd0e3f26a2ce3368f8e732",
+      "current_sha256": "7935d0290e11e1cf35f6e57f61bf6fc2f5474e1c65cd0e3f26a2ce3368f8e732",
+      "unchanged": true
+    },
+    {
+      "path": "profiles/contrast.json",
+      "baseline_sha256": "f72394c2ebb80cb6da41b33a088d56fbd24b4577f71bc2b022d0ef4bb36bfb88",
+      "current_sha256": "f72394c2ebb80cb6da41b33a088d56fbd24b4577f71bc2b022d0ef4bb36bfb88",
+      "unchanged": true
+    },
+    {
+      "path": "profiles/qore.json",
+      "baseline_sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9",
+      "current_sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9",
+      "unchanged": true
+    },
+    {
+      "path": "qore.json",
+      "baseline_sha256": "948b2784fa7970cf90a25c338a29067b13d8b4476f666d712a5eb95fc6f641c8",
+      "current_sha256": "948b2784fa7970cf90a25c338a29067b13d8b4476f666d712a5eb95fc6f641c8",
+      "unchanged": true
+    },
+    {
+      "path": "schemas/qore-project.schema.json",
+      "baseline_sha256": "fca2a81851fa75e59b22c21b7ed4766e981ec39db2a1bcc01acb8a14b64e3ead",
+      "current_sha256": "fca2a81851fa75e59b22c21b7ed4766e981ec39db2a1bcc01acb8a14b64e3ead",
+      "unchanged": true
+    },
+    {
+      "path": "schemas/qore-release.schema.json",
+      "baseline_sha256": "106eb02e1790a9bbe5b0b5b2c90fc3c7f7b40e1a2df36f9f7c04566d3d7d5ce3",
+      "current_sha256": "106eb02e1790a9bbe5b0b5b2c90fc3c7f7b40e1a2df36f9f7c04566d3d7d5ce3",
+      "unchanged": true
+    },
+    {
+      "path": "schemas/qore-run.schema.json",
+      "baseline_sha256": "540acd397ee09a070eb19b189f7baadd3ce55337fdb50137f11931e7ef246651",
+      "current_sha256": "540acd397ee09a070eb19b189f7baadd3ce55337fdb50137f11931e7ef246651",
+      "unchanged": true
+    },
+    {
+      "path": "skills/qore-plan/SKILL.md",
+      "baseline_sha256": "6a0b7a03d888595e6b9e76bc16644a313a187df91622fd5245d4b2253bdf83da",
+      "current_sha256": "6a0b7a03d888595e6b9e76bc16644a313a187df91622fd5245d4b2253bdf83da",
+      "unchanged": true
+    },
+    {
+      "path": "skills/qore-plan/agents/openai.yaml",
+      "baseline_sha256": "21ffa75d5bc52d68819ff68d4b8c65dc33584464f755487e6a02302f0924c22b",
+      "current_sha256": "21ffa75d5bc52d68819ff68d4b8c65dc33584464f755487e6a02302f0924c22b",
+      "unchanged": true
+    },
+    {
+      "path": "skills/qore-plan/references/project-profile.md",
+      "baseline_sha256": "16c5ff087c83b7503b23d5d94726834462dd4fd73d78a5380cf85135fa85b0b3",
+      "current_sha256": "16c5ff087c83b7503b23d5d94726834462dd4fd73d78a5380cf85135fa85b0b3",
+      "unchanged": true
+    },
+    {
+      "path": "skills/qore-plan/references/protocol.md",
+      "baseline_sha256": "83f92490a5601b83fc6eaa21861344e35cd04a3ac7edb56b98cd2eb0ecfea84b",
+      "current_sha256": "83f92490a5601b83fc6eaa21861344e35cd04a3ac7edb56b98cd2eb0ecfea84b",
+      "unchanged": true
+    },
+    {
+      "path": "skills/qore-plan/references/roles.md",
+      "baseline_sha256": "cc8060c7c852c143b9671af4fc0176b9c5068f338c19b2556b6ff494c0f0d318",
+      "current_sha256": "cc8060c7c852c143b9671af4fc0176b9c5068f338c19b2556b6ff494c0f0d318",
+      "unchanged": true
+    },
+    {
+      "path": "skills/qore-plan/references/run-evidence.md",
+      "baseline_sha256": "35cd6dc6d3e1177bbae96e5b9e829ed1aa55901747c856f4db20e946421f163d",
+      "current_sha256": "35cd6dc6d3e1177bbae96e5b9e829ed1aa55901747c856f4db20e946421f163d",
+      "unchanged": true
+    },
+    {
+      "path": "skills/qore-plan/references/specification.md",
+      "baseline_sha256": "7eb06b91fca66a3ec00bda4b49b035c5e6bfe827c4624768f66a09b6ae7827a1",
+      "current_sha256": "7eb06b91fca66a3ec00bda4b49b035c5e6bfe827c4624768f66a09b6ae7827a1",
+      "unchanged": true
+    },
+    {
+      "path": "skills/qore-plan/scripts/project-check.py",
+      "baseline_sha256": "3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd",
+      "current_sha256": "3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd",
+      "unchanged": true
+    },
+    {
+      "path": "skills/qore-plan/scripts/run-check.py",
+      "baseline_sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+      "current_sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+      "unchanged": true
+    },
+    {
+      "path": "skills/qore-plan/scripts/spec-lint.mjs",
+      "baseline_sha256": "321ac211bfac936c4da3ffe173cdfc0d92cb695351273d289809c05c8b037ada",
+      "current_sha256": "321ac211bfac936c4da3ffe173cdfc0d92cb695351273d289809c05c8b037ada",
+      "unchanged": true
+    },
+    {
+      "path": "skills/qore-plan/scripts/spec-lint.sh",
+      "baseline_sha256": "ee4b0c491833f8f3960037255f7ea601548a353d18b317aae25d8e5f2cd461b6",
+      "current_sha256": "ee4b0c491833f8f3960037255f7ea601548a353d18b317aae25d8e5f2cd461b6",
+      "unchanged": true
+    },
+    {
+      "path": "skills/qore-review/SKILL.md",
+      "baseline_sha256": "aae83b4105dd89387c7eac31df3c789326def9c0b05dccd4a3d2cdab65732a97",
+      "current_sha256": "aae83b4105dd89387c7eac31df3c789326def9c0b05dccd4a3d2cdab65732a97",
+      "unchanged": true
+    },
+    {
+      "path": "skills/qore-review/agents/openai.yaml",
+      "baseline_sha256": "6c689fd93445ab3edcb6b88320e7680ee37c746bca5635e8c406304b081250ed",
+      "current_sha256": "6c689fd93445ab3edcb6b88320e7680ee37c746bca5635e8c406304b081250ed",
+      "unchanged": true
+    },
+    {
+      "path": "skills/qore-review/references/findings.md",
+      "baseline_sha256": "79b2b5f52e88761331c01b92af9b492ef1888c6c20a0af1b94a8bead7aa2d6cb",
+      "current_sha256": "79b2b5f52e88761331c01b92af9b492ef1888c6c20a0af1b94a8bead7aa2d6cb",
+      "unchanged": true
+    },
+    {
+      "path": "skills/qore-review/references/project-profile.md",
+      "baseline_sha256": "5d3b69aac18f83a634f4c57c214cc1f53fa186c03c536adcefd4c905a8767c8d",
+      "current_sha256": "5d3b69aac18f83a634f4c57c214cc1f53fa186c03c536adcefd4c905a8767c8d",
+      "unchanged": true
+    },
+    {
+      "path": "skills/qore-review/references/protocol.md",
+      "baseline_sha256": "e27e0050fdf4d75d2840dd257b9a759f1f48d459ef540990cd3aed5528c5f340",
+      "current_sha256": "e27e0050fdf4d75d2840dd257b9a759f1f48d459ef540990cd3aed5528c5f340",
+      "unchanged": true
+    },
+    {
+      "path": "skills/qore-review/references/run-evidence.md",
+      "baseline_sha256": "fbdf433ef8b3e972f97bed5fdec4990cf3b49535bf63120c729a7daf4af71746",
+      "current_sha256": "fbdf433ef8b3e972f97bed5fdec4990cf3b49535bf63120c729a7daf4af71746",
+      "unchanged": true
+    },
+    {
+      "path": "skills/qore-review/scripts/finding-lint.mjs",
+      "baseline_sha256": "fcaa096759c5100b2e68987f846734c8d72922e7938dd00fe25bb1964a824168",
+      "current_sha256": "fcaa096759c5100b2e68987f846734c8d72922e7938dd00fe25bb1964a824168",
+      "unchanged": true
+    },
+    {
+      "path": "skills/qore-review/scripts/project-check.py",
+      "baseline_sha256": "3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd",
+      "current_sha256": "3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd",
+      "unchanged": true
+    },
+    {
+      "path": "skills/qore-review/scripts/redact-for-verifier.mjs",
+      "baseline_sha256": "dc249524c749ad5b511aef0a2cf08b4cfd5c47c1e0de4fd41c5c70746b471083",
+      "current_sha256": "dc249524c749ad5b511aef0a2cf08b4cfd5c47c1e0de4fd41c5c70746b471083",
+      "unchanged": true
+    },
+    {
+      "path": "skills/qore-review/scripts/run-check.py",
+      "baseline_sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+      "current_sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+      "unchanged": true
+    },
+    {
+      "path": "skills/qore-ux-review/SKILL.md",
+      "baseline_sha256": "33b1367f256f1a6304902d08cdff9b023add92fb750834216268cca8de84b851",
+      "current_sha256": "33b1367f256f1a6304902d08cdff9b023add92fb750834216268cca8de84b851",
+      "unchanged": true
+    },
+    {
+      "path": "skills/qore-ux-review/agents/openai.yaml",
+      "baseline_sha256": "2bafca3b7edce2edac4814b4028fdb814f83c1c2efbea4d461b7469fbe1bd7af",
+      "current_sha256": "2bafca3b7edce2edac4814b4028fdb814f83c1c2efbea4d461b7469fbe1bd7af",
+      "unchanged": true
+    },
+    {
+      "path": "skills/qore-ux-review/references/evidence.md",
+      "baseline_sha256": "659560f88b965371e2c6e886b5f4c648a4879ebb7c69af4b1d307dfae176c8b3",
+      "current_sha256": "659560f88b965371e2c6e886b5f4c648a4879ebb7c69af4b1d307dfae176c8b3",
+      "unchanged": true
+    },
+    {
+      "path": "skills/qore-ux-review/references/gates.md",
+      "baseline_sha256": "667063cd64c576a9c5b4ec69f6ddcd677d4e969bae96184b3136ede9fd12fd87",
+      "current_sha256": "667063cd64c576a9c5b4ec69f6ddcd677d4e969bae96184b3136ede9fd12fd87",
+      "unchanged": true
+    },
+    {
+      "path": "skills/qore-ux-review/references/project-profile.md",
+      "baseline_sha256": "154ed11dab8e8499e74a5f3a6afb512827d5de5c73408523b845684e38f59dfc",
+      "current_sha256": "154ed11dab8e8499e74a5f3a6afb512827d5de5c73408523b845684e38f59dfc",
+      "unchanged": true
+    },
+    {
+      "path": "skills/qore-ux-review/references/protocol.md",
+      "baseline_sha256": "eda7c7c7c9e711e4b9fca59ec6b622d713c3d95b14cd6e3b008a978ebf156004",
+      "current_sha256": "eda7c7c7c9e711e4b9fca59ec6b622d713c3d95b14cd6e3b008a978ebf156004",
+      "unchanged": true
+    },
+    {
+      "path": "skills/qore-ux-review/references/run-evidence.md",
+      "baseline_sha256": "2ede0b19d58fd5535c90023068355679ee7bb27d3070967ada38f9ad156a9e69",
+      "current_sha256": "2ede0b19d58fd5535c90023068355679ee7bb27d3070967ada38f9ad156a9e69",
+      "unchanged": true
+    },
+    {
+      "path": "skills/qore-ux-review/scripts/depth-lint.mjs",
+      "baseline_sha256": "9b9cdcea3e87f4820944ddfc075ef19e75aad0bb08a7f1fd279ea6590267def7",
+      "current_sha256": "9b9cdcea3e87f4820944ddfc075ef19e75aad0bb08a7f1fd279ea6590267def7",
+      "unchanged": true
+    },
+    {
+      "path": "skills/qore-ux-review/scripts/project-check.py",
+      "baseline_sha256": "3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd",
+      "current_sha256": "3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd",
+      "unchanged": true
+    },
+    {
+      "path": "skills/qore-ux-review/scripts/run-check.py",
+      "baseline_sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+      "current_sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+      "unchanged": true
+    },
+    {
+      "path": "skills/qore-ux-review/scripts/stop-rule.mjs",
+      "baseline_sha256": "5c8d898e3accd82ed1932c791ff5ed1285aae659bae6757488158fc7a8120443",
+      "current_sha256": "5c8d898e3accd82ed1932c791ff5ed1285aae659bae6757488158fc7a8120443",
+      "unchanged": true
+    },
+    {
+      "path": "tests/fixtures/project-alternate.json",
+      "baseline_sha256": "830dc3c50369c21f523a1c68b188f3013b40c439ea362a1e97c45a38a89a79c5",
+      "current_sha256": "830dc3c50369c21f523a1c68b188f3013b40c439ea362a1e97c45a38a89a79c5",
+      "unchanged": true
+    },
+    {
+      "path": "tests/fixtures/validators/empty-object.json",
+      "baseline_sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+      "current_sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+      "unchanged": true
+    },
+    {
+      "path": "tests/fixtures/validators/null.json",
+      "baseline_sha256": "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed",
+      "current_sha256": "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed",
+      "unchanged": true
+    },
+    {
+      "path": "tests/fixtures/validators/truncated.json",
+      "baseline_sha256": "5f5c45efee43be1915fcfa9ae978fec3302e2bb70137526cc5f2a7e6573e1f7b",
+      "current_sha256": "5f5c45efee43be1915fcfa9ae978fec3302e2bb70137526cc5f2a7e6573e1f7b",
+      "unchanged": true
+    },
+    {
+      "path": "tests/fixtures/validators/valid-findings.json",
+      "baseline_sha256": "ebbbd1ce91edb669749617a42106c5d0a210a7329c1217feac486fdd77f0c5b8",
+      "current_sha256": "ebbbd1ce91edb669749617a42106c5d0a210a7329c1217feac486fdd77f0c5b8",
+      "unchanged": true
+    },
+    {
+      "path": "tests/fixtures/validators/valid-spec.md",
+      "baseline_sha256": "d273b8da517f326b0f9e3bee7ac09895ffc3c96c86bd926f1449a1b0254e0dc7",
+      "current_sha256": "d273b8da517f326b0f9e3bee7ac09895ffc3c96c86bd926f1449a1b0254e0dc7",
+      "unchanged": true
+    },
+    {
+      "path": "tests/fixtures/validators/valid-ux.json",
+      "baseline_sha256": "56bc9807a45cec509a7d12fbff34381a2d8226cf5b933280220be7bf56261245",
+      "current_sha256": "56bc9807a45cec509a7d12fbff34381a2d8226cf5b933280220be7bf56261245",
+      "unchanged": true
+    },
+    {
+      "path": "tests/fixtures/web/alternate-actions.json",
+      "baseline_sha256": "01d12ee086d239dc8f5fe802d090fba6eb8e862fd281cb6dbf73483b6263a9ab",
+      "current_sha256": "01d12ee086d239dc8f5fe802d090fba6eb8e862fd281cb6dbf73483b6263a9ab",
+      "unchanged": true
+    },
+    {
+      "path": "tests/fixtures/web/alternate.html",
+      "baseline_sha256": "9782b494fdbb156515518d4bb096a5c057385f44d9a6983c352080626e879a22",
+      "current_sha256": "9782b494fdbb156515518d4bb096a5c057385f44d9a6983c352080626e879a22",
+      "unchanged": true
+    },
+    {
+      "path": "tests/fixtures/web/index.html",
+      "baseline_sha256": "c0b51d87d81a36f21608139d7a4fbf07b9fe1d6f94b1fa0bb0599b5f74fe91f5",
+      "current_sha256": "c0b51d87d81a36f21608139d7a4fbf07b9fe1d6f94b1fa0bb0599b5f74fe91f5",
+      "unchanged": true
+    },
+    {
+      "path": "tests/fixtures/web/ping.json",
+      "baseline_sha256": "b637c8fcaf1d33dfbc53887d00214034900ef46e83faca65758f6bc2b56ed43d",
+      "current_sha256": "b637c8fcaf1d33dfbc53887d00214034900ef46e83faca65758f6bc2b56ed43d",
+      "unchanged": true
+    },
+    {
+      "path": "tests/fixtures/web/primary-actions.json",
+      "baseline_sha256": "3342907cd646a04a21ffc9ceb85e9359817b6b8220944030c27df66f5b9b5002",
+      "current_sha256": "3342907cd646a04a21ffc9ceb85e9359817b6b8220944030c27df66f5b9b5002",
+      "unchanged": true
+    },
+    {
+      "path": "tests/test_package.py",
+      "baseline_sha256": "41d0d2169db744899f8bd99367d5e8ddd705f14248b8fe74de4bf4e5326c6a2e",
+      "current_sha256": "41d0d2169db744899f8bd99367d5e8ddd705f14248b8fe74de4bf4e5326c6a2e",
+      "unchanged": true
+    },
+    {
+      "path": "tests/test_run_contract.py",
+      "baseline_sha256": "f671c3ec3ca69ad155c54823ef89eb9475fd847b65b762094ad937030e7f297f",
+      "current_sha256": "f671c3ec3ca69ad155c54823ef89eb9475fd847b65b762094ad937030e7f297f",
+      "unchanged": true
+    },
+    {
+      "path": "tests/test_spec_boundaries.py",
+      "baseline_sha256": "7557f1ea21af5754fa800808a3a310a4564a9b8e03f8783915e8f3844e597139",
+      "current_sha256": "7557f1ea21af5754fa800808a3a310a4564a9b8e03f8783915e8f3844e597139",
+      "unchanged": true
+    },
+    {
+      "path": "tests/test_validators.py",
+      "baseline_sha256": "12dd6b5e416857d7b7c689714f142170204bd81a4cc4c860eb59047bc6133f6d",
+      "current_sha256": "12dd6b5e416857d7b7c689714f142170204bd81a4cc4c860eb59047bc6133f6d",
+      "unchanged": true
+    },
+    {
+      "path": "tools/browser_probe.mjs",
+      "baseline_sha256": "2c02268e7044f0b3a9a0d848db6fb1c0236ee2df67f35394e11b798228711be2",
+      "current_sha256": "2c02268e7044f0b3a9a0d848db6fb1c0236ee2df67f35394e11b798228711be2",
+      "unchanged": true
+    },
+    {
+      "path": "tools/clean_room.sh",
+      "baseline_sha256": "597bb401a1896086223be2f7930b3c6734085319978296b60c23f293efa367e9",
+      "current_sha256": "597bb401a1896086223be2f7930b3c6734085319978296b60c23f293efa367e9",
+      "unchanged": true
+    },
+    {
+      "path": "tools/context.py",
+      "baseline_sha256": "3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd",
+      "current_sha256": "3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd",
+      "unchanged": true
+    },
+    {
+      "path": "tools/docs_preview.mjs",
+      "baseline_sha256": "019891e32519a58b4625bccda352794d41cc93947b6be82cf5a646ae3f8dabd5",
+      "current_sha256": "019891e32519a58b4625bccda352794d41cc93947b6be82cf5a646ae3f8dabd5",
+      "unchanged": true
+    },
+    {
+      "path": "tools/qore.py",
+      "baseline_sha256": "854fd237fbf4014c7b31d057b335186379e55913699ff89d8a876ca09b2c29f2",
+      "current_sha256": "854fd237fbf4014c7b31d057b335186379e55913699ff89d8a876ca09b2c29f2",
+      "unchanged": true
+    },
+    {
+      "path": "tools/refresh_profiles.py",
+      "baseline_sha256": "6895b7adfa855f3742b0910fd165c4be8c0ec73ffd2dcfc3f0ea5162b52c8dfb",
+      "current_sha256": "6895b7adfa855f3742b0910fd165c4be8c0ec73ffd2dcfc3f0ea5162b52c8dfb",
+      "unchanged": true
+    },
+    {
+      "path": "tools/run_contract.py",
+      "baseline_sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+      "current_sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+      "unchanged": true
+    }
+  ],
+  "scope": "Method instructions, helpers, assembler, tests, schemas, tutorial, profile facts and source contract are byte-identical. Publication documentation and hosting metadata have new identities; no earlier run is relabelled."
+}

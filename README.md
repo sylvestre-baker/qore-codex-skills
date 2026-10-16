@@ -121,6 +121,7 @@ If a role or required browser capability is unavailable, retain its name and evi
 
 ## Reference and contribute
 
+- [Releases](https://github.com/sylvestre-baker/qore-codex-skills/releases), [changelog](CHANGELOG.md), and [publication record](docs/publication.md).
 - [Architecture](docs/architecture.md): core, project facts, Codex adaptation, and local trust boundaries.
 - [Contracts and validators](docs/contracts.md): project, release, and execution records; what checks can and cannot establish.
 - [Command and prompt inventory](docs/command-inventory.json): prerequisites, effects, substitutions, and actual execution status for the documentation examples.

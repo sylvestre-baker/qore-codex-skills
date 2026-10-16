@@ -1,5 +1,7 @@
 # Qualification record
 
+The source is now published in [sylvestre-baker/qore-codex-skills](https://github.com/sylvestre-baker/qore-codex-skills). The [publication record](publication.md) identifies the narrow documentation and GitHub packaging changes. Original qualification artifacts below retain their historical candidate identities and publication states.
+
 This record separates actual executions, corrections, portability, agent evaluation and external human use. It describes an unpublished local 0.1.0 candidate. Original run identities and timestamps remain intact; a later archive is not substituted for an earlier source snapshot.
 
 ## Complete methods and profile consumers

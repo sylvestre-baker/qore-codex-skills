@@ -4,6 +4,14 @@
   "review_scope": "Explicit current resource inventory only. This record does not authorize publication or future changed resources.",
   "resources": [
     {
+      "path": ".gitattributes",
+      "sha256": "5d611ecbad86f976cbfe5c640a3b7f2825b82194516bc3a6f110e87200303f48",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "New first-party Qore implementation, documentation or preserved execution of public Qore inputs; authored for this requested public package."
+    },
+    {
       "path": ".github/workflows/check.yml",
       "sha256": "1c31b786c6286b90e0ee0cd0c3f0ae8e02980b5e2b7848175d3ecc587b264f1f",
       "origin": "first-party",
@@ -53,7 +61,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "67213985b335be4c234c031d32b34fd5cba59252d198d2f4aa4fb9231c4d1e0e",
+      "sha256": "3f0e7c367bb15ab8dfb7d9ab78ab7de6fcb2be7707413a8b13beb0cbc0a0c7db",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
@@ -85,7 +93,7 @@
     },
     {
       "path": "docs/command-inventory.json",
-      "sha256": "de8f5a1c603b7dd5bda3985c6888b7bd98176edbe6069907401f665520d6b25b",
+      "sha256": "9ef342e8addb3b597b2cd6dcf7b99c9f2f00d5f16b4dbe316b8008ef9ec43096",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
@@ -6716,6 +6724,22 @@
       "basis": "New first-party Qore implementation, documentation or preserved execution of public Qore inputs; authored for this requested public package."
     },
     {
+      "path": "docs/evidence/publication/first-use.json",
+      "sha256": "62a5fbd234a2cf353d4592d6d3ac3030e1e4526b2526651edbb1836271520b30",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "New first-party Qore implementation, documentation or preserved execution of public Qore inputs; authored for this requested public package."
+    },
+    {
+      "path": "docs/evidence/publication/resource-carryover.json",
+      "sha256": "267ae3d855b141698c5766ba29198a8658dd07380ffcd96bac815556b0d18dde",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "New first-party Qore implementation, documentation or preserved execution of public Qore inputs; authored for this requested public package."
+    },
+    {
       "path": "docs/evidence/readme-render/README.md",
       "sha256": "406482ca75c60b50d8b03084c55dc4538005160d4fd6b999c80cea0085a77914",
       "origin": "first-party",
@@ -7148,8 +7172,16 @@
       "basis": "New first-party Qore implementation, documentation or preserved execution of public Qore inputs; authored for this requested public package."
     },
     {
+      "path": "docs/publication.md",
+      "sha256": "a14990ddb1947116dfb13f9ec53a95b1e458b8974ebdaac1f3a6f71f9f019a41",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "New first-party Qore implementation, documentation or preserved execution of public Qore inputs; authored for this requested public package."
+    },
+    {
       "path": "docs/qualification.md",
-      "sha256": "623b15e474e85f883593a3cb640f8a9033f29f9c7b5bdafbc58bb2bfdb78f3af",
+      "sha256": "5b09afc95ebd98ca2df3519b2a85b20cdd87f82f109a8ce7f3f6cbf77813aa9a",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
