@@ -13,11 +13,11 @@
     },
     {
       "path": ".github/workflows/check.yml",
-      "sha256": "77b64ff5097652aa06a6d2f2383d050e0de673f2fbd237c611f9e632b3d95530",
+      "sha256": "55a855e21b5e024dc96a699101fc30e19fc52740174f19ae005c65dac14baedc",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "New or revised English first-party Qore code, specification, selected method evidence or documentation for the user-authorized QORE-002 candidate. No private website code or raw agent/mail traces."
+      "basis": "First-party Qore code, tests, configuration or documentation in the reviewed 0.2.1 correction inventory. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
     },
     {
       "path": ".github/workflows/pages.yml",
@@ -37,11 +37,11 @@
     },
     {
       "path": "CHANGELOG.md",
-      "sha256": "e8f0d9d85faf51d9dac2dd5c0976a24538bfef4bf2989e5d18fee4390c6c1104",
+      "sha256": "30f5ac723aeb147e7a14c3d33c0bf9f512750b470262f73a20907fe3fa0d8ccf",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "User-authorized public Qore 0.2.0 distribution documentation and attribution. Historical execution identities and limitations remain intact. No private application, credentials or raw trace is included."
+      "basis": "First-party Qore code, tests, configuration or documentation in the reviewed 0.2.1 correction inventory. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
     },
     {
       "path": "CONTRIBUTING.md",
@@ -50,6 +50,14 @@
       "license": "MIT",
       "status": "approved",
       "basis": "New first-party Qore implementation, documentation or preserved execution of public Qore inputs; authored for this requested public package."
+    },
+    {
+      "path": "INSTALL.md",
+      "sha256": "1803f6f40d6539d39dd37f657c67741cf0c137666e31dd446a864f2f0e1f0474",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "First-party Qore code, tests, configuration or documentation in the reviewed 0.2.1 correction inventory. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
     },
     {
       "path": "LICENSE",
@@ -69,11 +77,11 @@
     },
     {
       "path": "README.md",
-      "sha256": "680fef820fe2e9de9d7bb0278ab99426b2c54953976b0dbdd247490ab3a49e43",
+      "sha256": "40704779d97aed4020ac4f13bc98eeefb050e476a949bf721ed881e879da9714",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "User-authorized public Qore 0.2.0 distribution documentation and attribution. Historical execution identities and limitations remain intact. No private application, credentials or raw trace is included."
+      "basis": "First-party Qore code, tests, configuration or documentation in the reviewed 0.2.1 correction inventory. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
     },
     {
       "path": "docs/acceptance-evidence.md",
@@ -101,19 +109,19 @@
     },
     {
       "path": "docs/command-inventory.json",
-      "sha256": "aed8a20c83e0db541c7f5fb902c35b7ecc588a351c4d2b65a54b6acf5f49ca50",
+      "sha256": "8f0adaa1a971aa125a0e5bf69811bf326b8816df2c2383829d458dac9ef0babd",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "First-party publication metadata and documentation for the user-authorized Qore 0.2.0 distribution. The build marker describes staging, not the eventual hosting state."
+      "basis": "First-party refinement within the same Qore correction file scope whose MIT redistribution Sylvestre Franceschi confirmed on 16 October 2026. The profile compatibility correction, bounded JSON error handling, regression guards and implementation identity updates introduce no third-party or client material. Current content reviewed before updating this digest; no publication authorization is inferred."
     },
     {
       "path": "docs/contracts.md",
-      "sha256": "6595c8a1d21ff22607dd7a1804d0aa9d6b191d85f3017a874e9e5b6239e634ac",
+      "sha256": "441846fbc4e4d1699df1fc609eca37b529ac56b665a593b6419812d94298639d",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "New first-party Qore implementation, documentation or preserved execution of public Qore inputs; authored for this requested public package."
+      "basis": "First-party Qore code, tests, configuration or documentation in the reviewed 0.2.1 correction inventory. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
     },
     {
       "path": "docs/coordination-dependencies.md",
@@ -125,11 +133,11 @@
     },
     {
       "path": "docs/coordination.md",
-      "sha256": "eae7ee3a0bcf18be0b0bb4db4d409318a7049e0b35475e6db2562e745b8ebce5",
+      "sha256": "3d703d43df4d82d255c4018624a88b951f8ad38d635c993b1b29f3866603d7e0",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "New or revised English first-party Qore code, specification, selected method evidence or documentation for the user-authorized QORE-002 candidate. No private website code or raw agent/mail traces."
+      "basis": "First-party Qore code, tests, configuration or documentation in the reviewed 0.2.1 correction inventory. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
     },
     {
       "path": "docs/demo/README.md",
@@ -418,6 +426,14 @@
       "license": "MIT",
       "status": "approved",
       "basis": "New first-party Qore implementation, documentation or preserved execution of public Qore inputs; authored for this requested public package."
+    },
+    {
+      "path": "docs/evidence/execution-exceptions.json",
+      "sha256": "ed5e937adb219cd18d094eaef86bd4b8eedd7a0ea7f07b837dc79d4f0a94c87b",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "First-party Qore code, tests, configuration or documentation in the reviewed 0.2.1 correction inventory. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
     },
     {
       "path": "docs/evidence/executions/derived-plan/README.md",
@@ -2612,6 +2628,94 @@
       "basis": "New first-party Qore implementation, documentation or preserved execution of public Qore inputs; authored for this requested public package."
     },
     {
+      "path": "docs/evidence/executions/generic-review/source/.agents/skills/qore-review/SKILL.md.txt",
+      "sha256": "aae83b4105dd89387c7eac31df3c789326def9c0b05dccd4a3d2cdab65732a97",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Exact original Qore source artifact restored with its historical recorded digest. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/source/.agents/skills/qore-review/agents/openai.yaml",
+      "sha256": "6c689fd93445ab3edcb6b88320e7680ee37c746bca5635e8c406304b081250ed",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Exact original Qore source artifact restored with its historical recorded digest. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/source/.agents/skills/qore-review/references/findings.md.txt",
+      "sha256": "79b2b5f52e88761331c01b92af9b492ef1888c6c20a0af1b94a8bead7aa2d6cb",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Exact original Qore source artifact restored with its historical recorded digest. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/source/.agents/skills/qore-review/references/project-profile.md.txt",
+      "sha256": "5d3b69aac18f83a634f4c57c214cc1f53fa186c03c536adcefd4c905a8767c8d",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Exact original Qore source artifact restored with its historical recorded digest. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/source/.agents/skills/qore-review/references/protocol.md.txt",
+      "sha256": "e27e0050fdf4d75d2840dd257b9a759f1f48d459ef540990cd3aed5528c5f340",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Exact original Qore source artifact restored with its historical recorded digest. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/source/.agents/skills/qore-review/references/release.json",
+      "sha256": "0d0a62e137572e9c30dfae9b3a0756e6a6dd54c473f99c5f583379812153ecf6",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Exact original Qore source artifact restored with its historical recorded digest. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/source/.agents/skills/qore-review/references/run-evidence.md.txt",
+      "sha256": "fbdf433ef8b3e972f97bed5fdec4990cf3b49535bf63120c729a7daf4af71746",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Exact original Qore source artifact restored with its historical recorded digest. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/source/.agents/skills/qore-review/scripts/finding-lint.mjs",
+      "sha256": "d0cc6809b750d9e52015b0448f18e3f291b979674b1350156d2444e607791ee7",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Exact original Qore source artifact restored with its historical recorded digest. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/source/.agents/skills/qore-review/scripts/project-check.py",
+      "sha256": "3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Exact original Qore source artifact restored with its historical recorded digest. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/source/.agents/skills/qore-review/scripts/redact-for-verifier.mjs",
+      "sha256": "dc249524c749ad5b511aef0a2cf08b4cfd5c47c1e0de4fd41c5c70746b471083",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Exact original Qore source artifact restored with its historical recorded digest. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/source/.agents/skills/qore-review/scripts/run-check.py",
+      "sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Exact original Qore source artifact restored with its historical recorded digest. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
+    },
+    {
       "path": "docs/evidence/executions/generic-review/source/CONTRIBUTING.md.txt",
       "sha256": "87ef55fe9e213e5bd9b0f3178849b0a9ac88ec1c07634053c9989c0cbbde7638",
       "origin": "first-party",
@@ -3620,6 +3724,14 @@
       "basis": "Selected read-only public Qaizen web observations, or first-party presentation including those observations; original public pixels/text, recorded chronology and transformation remain explicit. No submitted personal answers or private trace is included."
     },
     {
+      "path": "docs/evidence/executions/review-exact-flags/README.md",
+      "sha256": "6c7ce05e1bc0f0415d719dce6e11a4f57d54cf993c74d582d8c52b37a9b2d126",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "First-party Qore code, tests, configuration or documentation in the reviewed 0.2.1 correction inventory. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
+    },
+    {
       "path": "docs/evidence/executions/review-exact-flags/REPORT.md",
       "sha256": "b90b1bd05cd15fdfe10732c60b7d8920b273c57ca44c3ef47d9ea99a9ebf8d20",
       "origin": "first-party",
@@ -3906,6 +4018,286 @@
       "license": "MIT",
       "status": "approved",
       "basis": "New first-party Qore implementation, documentation or preserved execution of public Qore inputs; authored for this requested public package."
+    },
+    {
+      "path": "docs/evidence/executions/review-exact-flags/snapshot/.agents/skills/qore-plan/SKILL.md.txt",
+      "sha256": "6a0b7a03d888595e6b9e76bc16644a313a187df91622fd5245d4b2253bdf83da",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Exact original Qore source artifact restored with its historical recorded digest. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
+    },
+    {
+      "path": "docs/evidence/executions/review-exact-flags/snapshot/.agents/skills/qore-plan/agents/openai.yaml",
+      "sha256": "21ffa75d5bc52d68819ff68d4b8c65dc33584464f755487e6a02302f0924c22b",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Exact original Qore source artifact restored with its historical recorded digest. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
+    },
+    {
+      "path": "docs/evidence/executions/review-exact-flags/snapshot/.agents/skills/qore-plan/references/project-profile.md.txt",
+      "sha256": "16c5ff087c83b7503b23d5d94726834462dd4fd73d78a5380cf85135fa85b0b3",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Exact original Qore source artifact restored with its historical recorded digest. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
+    },
+    {
+      "path": "docs/evidence/executions/review-exact-flags/snapshot/.agents/skills/qore-plan/references/protocol.md.txt",
+      "sha256": "83f92490a5601b83fc6eaa21861344e35cd04a3ac7edb56b98cd2eb0ecfea84b",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Exact original Qore source artifact restored with its historical recorded digest. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
+    },
+    {
+      "path": "docs/evidence/executions/review-exact-flags/snapshot/.agents/skills/qore-plan/references/release.json",
+      "sha256": "3814e8357bbc47938cd5bd40634143d39d84f76a775d38343ed5bdf939c6c2c5",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Exact original Qore source artifact restored with its historical recorded digest. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
+    },
+    {
+      "path": "docs/evidence/executions/review-exact-flags/snapshot/.agents/skills/qore-plan/references/roles.md.txt",
+      "sha256": "cc8060c7c852c143b9671af4fc0176b9c5068f338c19b2556b6ff494c0f0d318",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Exact original Qore source artifact restored with its historical recorded digest. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
+    },
+    {
+      "path": "docs/evidence/executions/review-exact-flags/snapshot/.agents/skills/qore-plan/references/run-evidence.md.txt",
+      "sha256": "35cd6dc6d3e1177bbae96e5b9e829ed1aa55901747c856f4db20e946421f163d",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Exact original Qore source artifact restored with its historical recorded digest. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
+    },
+    {
+      "path": "docs/evidence/executions/review-exact-flags/snapshot/.agents/skills/qore-plan/references/specification.md.txt",
+      "sha256": "7eb06b91fca66a3ec00bda4b49b035c5e6bfe827c4624768f66a09b6ae7827a1",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Exact original Qore source artifact restored with its historical recorded digest. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
+    },
+    {
+      "path": "docs/evidence/executions/review-exact-flags/snapshot/.agents/skills/qore-plan/scripts/project-check.py",
+      "sha256": "3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Exact original Qore source artifact restored with its historical recorded digest. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
+    },
+    {
+      "path": "docs/evidence/executions/review-exact-flags/snapshot/.agents/skills/qore-plan/scripts/run-check.py",
+      "sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Exact original Qore source artifact restored with its historical recorded digest. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
+    },
+    {
+      "path": "docs/evidence/executions/review-exact-flags/snapshot/.agents/skills/qore-plan/scripts/spec-lint.mjs",
+      "sha256": "0015bf0428e30d662d2ddf119e5813e3dc5f01379c45e3229c592853a77683ef",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Exact original Qore source artifact restored with its historical recorded digest. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
+    },
+    {
+      "path": "docs/evidence/executions/review-exact-flags/snapshot/.agents/skills/qore-plan/scripts/spec-lint.sh",
+      "sha256": "ee4b0c491833f8f3960037255f7ea601548a353d18b317aae25d8e5f2cd461b6",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Exact original Qore source artifact restored with its historical recorded digest. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
+    },
+    {
+      "path": "docs/evidence/executions/review-exact-flags/snapshot/.agents/skills/qore-review/SKILL.md.txt",
+      "sha256": "aae83b4105dd89387c7eac31df3c789326def9c0b05dccd4a3d2cdab65732a97",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Exact original Qore source artifact restored with its historical recorded digest. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
+    },
+    {
+      "path": "docs/evidence/executions/review-exact-flags/snapshot/.agents/skills/qore-review/agents/openai.yaml",
+      "sha256": "6c689fd93445ab3edcb6b88320e7680ee37c746bca5635e8c406304b081250ed",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Exact original Qore source artifact restored with its historical recorded digest. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
+    },
+    {
+      "path": "docs/evidence/executions/review-exact-flags/snapshot/.agents/skills/qore-review/references/findings.md.txt",
+      "sha256": "79b2b5f52e88761331c01b92af9b492ef1888c6c20a0af1b94a8bead7aa2d6cb",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Exact original Qore source artifact restored with its historical recorded digest. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
+    },
+    {
+      "path": "docs/evidence/executions/review-exact-flags/snapshot/.agents/skills/qore-review/references/project-profile.md.txt",
+      "sha256": "5d3b69aac18f83a634f4c57c214cc1f53fa186c03c536adcefd4c905a8767c8d",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Exact original Qore source artifact restored with its historical recorded digest. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
+    },
+    {
+      "path": "docs/evidence/executions/review-exact-flags/snapshot/.agents/skills/qore-review/references/protocol.md.txt",
+      "sha256": "e27e0050fdf4d75d2840dd257b9a759f1f48d459ef540990cd3aed5528c5f340",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Exact original Qore source artifact restored with its historical recorded digest. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
+    },
+    {
+      "path": "docs/evidence/executions/review-exact-flags/snapshot/.agents/skills/qore-review/references/release.json",
+      "sha256": "cd65c957ad54614057afbd6874dcfdb5f12106a22b3d8d45a33845138a630804",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Exact original Qore source artifact restored with its historical recorded digest. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
+    },
+    {
+      "path": "docs/evidence/executions/review-exact-flags/snapshot/.agents/skills/qore-review/references/run-evidence.md.txt",
+      "sha256": "fbdf433ef8b3e972f97bed5fdec4990cf3b49535bf63120c729a7daf4af71746",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Exact original Qore source artifact restored with its historical recorded digest. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
+    },
+    {
+      "path": "docs/evidence/executions/review-exact-flags/snapshot/.agents/skills/qore-review/scripts/finding-lint.mjs",
+      "sha256": "89b02ef5912adf3f6ff86ad8652a3f21e7313bb0cc0a280a3dd9810546abdef9",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Exact original Qore source artifact restored with its historical recorded digest. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
+    },
+    {
+      "path": "docs/evidence/executions/review-exact-flags/snapshot/.agents/skills/qore-review/scripts/project-check.py",
+      "sha256": "3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Exact original Qore source artifact restored with its historical recorded digest. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
+    },
+    {
+      "path": "docs/evidence/executions/review-exact-flags/snapshot/.agents/skills/qore-review/scripts/redact-for-verifier.mjs",
+      "sha256": "dc249524c749ad5b511aef0a2cf08b4cfd5c47c1e0de4fd41c5c70746b471083",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Exact original Qore source artifact restored with its historical recorded digest. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
+    },
+    {
+      "path": "docs/evidence/executions/review-exact-flags/snapshot/.agents/skills/qore-review/scripts/run-check.py",
+      "sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Exact original Qore source artifact restored with its historical recorded digest. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
+    },
+    {
+      "path": "docs/evidence/executions/review-exact-flags/snapshot/.agents/skills/qore-ux-review/SKILL.md.txt",
+      "sha256": "33b1367f256f1a6304902d08cdff9b023add92fb750834216268cca8de84b851",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Exact original Qore source artifact restored with its historical recorded digest. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
+    },
+    {
+      "path": "docs/evidence/executions/review-exact-flags/snapshot/.agents/skills/qore-ux-review/agents/openai.yaml",
+      "sha256": "2bafca3b7edce2edac4814b4028fdb814f83c1c2efbea4d461b7469fbe1bd7af",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Exact original Qore source artifact restored with its historical recorded digest. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
+    },
+    {
+      "path": "docs/evidence/executions/review-exact-flags/snapshot/.agents/skills/qore-ux-review/references/evidence.md.txt",
+      "sha256": "659560f88b965371e2c6e886b5f4c648a4879ebb7c69af4b1d307dfae176c8b3",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Exact original Qore source artifact restored with its historical recorded digest. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
+    },
+    {
+      "path": "docs/evidence/executions/review-exact-flags/snapshot/.agents/skills/qore-ux-review/references/gates.md.txt",
+      "sha256": "667063cd64c576a9c5b4ec69f6ddcd677d4e969bae96184b3136ede9fd12fd87",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Exact original Qore source artifact restored with its historical recorded digest. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
+    },
+    {
+      "path": "docs/evidence/executions/review-exact-flags/snapshot/.agents/skills/qore-ux-review/references/project-profile.md.txt",
+      "sha256": "154ed11dab8e8499e74a5f3a6afb512827d5de5c73408523b845684e38f59dfc",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Exact original Qore source artifact restored with its historical recorded digest. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
+    },
+    {
+      "path": "docs/evidence/executions/review-exact-flags/snapshot/.agents/skills/qore-ux-review/references/protocol.md.txt",
+      "sha256": "257ae0902a7fb00f6bfd1ebaa5b688e57a5f2e7163de3e9954ed3c9765105dfd",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Exact original Qore source artifact restored with its historical recorded digest. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
+    },
+    {
+      "path": "docs/evidence/executions/review-exact-flags/snapshot/.agents/skills/qore-ux-review/references/release.json",
+      "sha256": "0960d2d2e4765ec0f684df528b957c67d1916482210e975f01a36e8c366ba3ed",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Exact original Qore source artifact restored with its historical recorded digest. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
+    },
+    {
+      "path": "docs/evidence/executions/review-exact-flags/snapshot/.agents/skills/qore-ux-review/references/run-evidence.md.txt",
+      "sha256": "2ede0b19d58fd5535c90023068355679ee7bb27d3070967ada38f9ad156a9e69",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Exact original Qore source artifact restored with its historical recorded digest. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
+    },
+    {
+      "path": "docs/evidence/executions/review-exact-flags/snapshot/.agents/skills/qore-ux-review/scripts/depth-lint.mjs",
+      "sha256": "9b9cdcea3e87f4820944ddfc075ef19e75aad0bb08a7f1fd279ea6590267def7",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Exact original Qore source artifact restored with its historical recorded digest. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
+    },
+    {
+      "path": "docs/evidence/executions/review-exact-flags/snapshot/.agents/skills/qore-ux-review/scripts/project-check.py",
+      "sha256": "3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Exact original Qore source artifact restored with its historical recorded digest. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
+    },
+    {
+      "path": "docs/evidence/executions/review-exact-flags/snapshot/.agents/skills/qore-ux-review/scripts/run-check.py",
+      "sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Exact original Qore source artifact restored with its historical recorded digest. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
+    },
+    {
+      "path": "docs/evidence/executions/review-exact-flags/snapshot/.agents/skills/qore-ux-review/scripts/stop-rule.mjs",
+      "sha256": "404b5ca63276c413e1f2697b98817f1802de4642cf634303707bd175eddd8085",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Exact original Qore source artifact restored with its historical recorded digest. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
     },
     {
       "path": "docs/evidence/executions/review-exact-flags/snapshot/.gitignore",
@@ -9461,11 +9853,11 @@
     },
     {
       "path": "docs/profiles.md",
-      "sha256": "c20904f6bd4af55aa02e5c3cf75fa1298acfbe1e71e5ddb24920d20299a38408",
+      "sha256": "e86631afc763f9ab96f020c96037102203350e75e3d40ef4956ffb4a666d8578",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "New first-party Qore implementation, documentation or preserved execution of public Qore inputs; authored for this requested public package."
+      "basis": "First-party Qore code, tests, configuration or documentation in the reviewed 0.2.1 correction inventory. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
     },
     {
       "path": "docs/publication.md",
@@ -9477,11 +9869,11 @@
     },
     {
       "path": "docs/qualification.md",
-      "sha256": "32edfc3909d8469f5c64cd25cede185745de50d23dd669f756e3eeaca7910d96",
+      "sha256": "7fcecd44d87ba83e267c5f9ba8b8925d94dfa38f727c820507de7ed7a3342727",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "New or revised English first-party Qore code, specification, selected method evidence or documentation for the user-authorized QORE-002 candidate. No private website code or raw agent/mail traces."
+      "basis": "First-party Qore code, tests, configuration or documentation in the reviewed 0.2.1 correction inventory. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
     },
     {
       "path": "docs/showcase.md",
@@ -9493,11 +9885,11 @@
     },
     {
       "path": "docs/troubleshooting.md",
-      "sha256": "1fd22e4bcc1855cefd95b38802ffc16e8f7de5d20caac76f4beb4d7112d006d5",
+      "sha256": "641cd391f0ca40dedaa80a4a383982e0c72004d6a2886d5019ea94072fb48a2f",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "New first-party Qore implementation, documentation or preserved execution of public Qore inputs; authored for this requested public package."
+      "basis": "First-party Qore code, tests, configuration or documentation in the reviewed 0.2.1 correction inventory. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
     },
     {
       "path": "examples/qaizen-labs/README.md",
@@ -9557,11 +9949,11 @@
     },
     {
       "path": "plugin.json",
-      "sha256": "e9becf0c3f8839add08374379d9156e8a84a13ff7829984f82bc3fea6a04d1de",
+      "sha256": "8bb5b59f6ff9786ac617d5ffb788475e169a4555f9bd67ba442d83d3fce18df6",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "New or revised first-party Qore implementation, public acceptance contract, fixtures or English documentation authored for the approved QORE-002 work; no private website source or raw agent trace."
+      "basis": "First-party Qore code, tests, configuration or documentation in the reviewed 0.2.1 correction inventory. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
     },
     {
       "path": "profiles/contrast.json",
@@ -9581,19 +9973,19 @@
     },
     {
       "path": "profiles/qore.json",
-      "sha256": "e9ef982ff40ad2870cf8c22002972e27e5a652015ee16e532c4270dd151465ed",
+      "sha256": "b5a46bb2736d0c2e08b5a36a7f0bec1c2073fbe22c03a74d5ff40084e309b133",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "New or revised first-party Qore implementation, public acceptance contract, fixtures or English documentation authored for the approved QORE-002 work; no private website source or raw agent trace."
+      "basis": "First-party Qore code, tests, configuration or documentation in the reviewed 0.2.1 correction inventory. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
     },
     {
       "path": "qore.json",
-      "sha256": "27867f99d5fffe6938030e8c57a1726f1b7297f454dea1bbba4ad7d23f193676",
+      "sha256": "6bf21ee6846a63f0ef225030097a4b802dcb08cc24197abc4fac6a806c38c620",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "New or revised first-party Qore implementation, public acceptance contract, fixtures or English documentation authored for the approved QORE-002 work; no private website source or raw agent trace."
+      "basis": "First-party Qore code, tests, configuration or documentation in the reviewed 0.2.1 correction inventory. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
     },
     {
       "path": "schemas/qore-project.schema.json",
@@ -9693,11 +10085,11 @@
     },
     {
       "path": "skills/qore-plan/scripts/project-check.py",
-      "sha256": "3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd",
+      "sha256": "d87afa433fe485bdebca3e281d06e0896e4a8980ea7cf7baee739053614ea0ac",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "New first-party Qore implementation, documentation or preserved execution of public Qore inputs; authored for this requested public package."
+      "basis": "First-party refinement within the same Qore correction file scope whose MIT redistribution Sylvestre Franceschi confirmed on 16 October 2026. The profile compatibility correction, bounded JSON error handling, regression guards and implementation identity updates introduce no third-party or client material. Current content reviewed before updating this digest; no publication authorization is inferred."
     },
     {
       "path": "skills/qore-plan/scripts/run-check.py",
@@ -9725,11 +10117,11 @@
     },
     {
       "path": "skills/qore-review/SKILL.md",
-      "sha256": "aae83b4105dd89387c7eac31df3c789326def9c0b05dccd4a3d2cdab65732a97",
+      "sha256": "ae7a3bc448eda7262fa8163a67b0ce712efc2779eaaf00ce57618dc966dd6367",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "New first-party Qore implementation, documentation or preserved execution of public Qore inputs; authored for this requested public package."
+      "basis": "First-party Qore code, tests, configuration or documentation in the reviewed 0.2.1 correction inventory. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
     },
     {
       "path": "skills/qore-review/agents/openai.yaml",
@@ -9741,11 +10133,11 @@
     },
     {
       "path": "skills/qore-review/references/findings.md",
-      "sha256": "79b2b5f52e88761331c01b92af9b492ef1888c6c20a0af1b94a8bead7aa2d6cb",
+      "sha256": "f9f9035e471c9832c6546e80e4fe857777fefceba781bd5801ee8f97bdeaa409",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "New first-party Qore implementation, documentation or preserved execution of public Qore inputs; authored for this requested public package."
+      "basis": "First-party Qore code, tests, configuration or documentation in the reviewed 0.2.1 correction inventory. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
     },
     {
       "path": "skills/qore-review/references/project-profile.md",
@@ -9773,19 +10165,19 @@
     },
     {
       "path": "skills/qore-review/scripts/finding-lint.mjs",
-      "sha256": "fcaa096759c5100b2e68987f846734c8d72922e7938dd00fe25bb1964a824168",
+      "sha256": "d3d22ae7d0b1b6b53b36006f13a8aaf6e1aa9e89df27b98312e6ac72ea079a26",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "New first-party Qore implementation, documentation or preserved execution of public Qore inputs; authored for this requested public package."
+      "basis": "First-party Qore code, tests, configuration or documentation in the reviewed 0.2.1 correction inventory. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
     },
     {
       "path": "skills/qore-review/scripts/project-check.py",
-      "sha256": "3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd",
+      "sha256": "d87afa433fe485bdebca3e281d06e0896e4a8980ea7cf7baee739053614ea0ac",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "New first-party Qore implementation, documentation or preserved execution of public Qore inputs; authored for this requested public package."
+      "basis": "First-party refinement within the same Qore correction file scope whose MIT redistribution Sylvestre Franceschi confirmed on 16 October 2026. The profile compatibility correction, bounded JSON error handling, regression guards and implementation identity updates introduce no third-party or client material. Current content reviewed before updating this digest; no publication authorization is inferred."
     },
     {
       "path": "skills/qore-review/scripts/redact-for-verifier.mjs",
@@ -9869,11 +10261,11 @@
     },
     {
       "path": "skills/qore-ux-review/scripts/project-check.py",
-      "sha256": "3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd",
+      "sha256": "d87afa433fe485bdebca3e281d06e0896e4a8980ea7cf7baee739053614ea0ac",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "New first-party Qore implementation, documentation or preserved execution of public Qore inputs; authored for this requested public package."
+      "basis": "First-party refinement within the same Qore correction file scope whose MIT redistribution Sylvestre Franceschi confirmed on 16 October 2026. The profile compatibility correction, bounded JSON error handling, regression guards and implementation identity updates introduce no third-party or client material. Current content reviewed before updating this digest; no publication authorization is inferred."
     },
     {
       "path": "skills/qore-ux-review/scripts/run-check.py",
@@ -10013,11 +10405,11 @@
     },
     {
       "path": "tests/test_coordination.py",
-      "sha256": "2eb658dca810b7ede9908127b1fef4038c6982c3963a7356b14a99f9f1c48a60",
+      "sha256": "28a79df7f994d998ccef7bfde321679cf613fc9b576fd03e7a379b3ac9afc6fa",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "New or revised English first-party Qore code, specification, selected method evidence or documentation for the user-authorized QORE-002 candidate. No private website code or raw agent/mail traces."
+      "basis": "First-party Qore code, tests, configuration or documentation in the reviewed 0.2.1 correction inventory. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
     },
     {
       "path": "tests/test_labs_contract.py",
@@ -10029,19 +10421,19 @@
     },
     {
       "path": "tests/test_package.py",
-      "sha256": "41d0d2169db744899f8bd99367d5e8ddd705f14248b8fe74de4bf4e5326c6a2e",
+      "sha256": "750e9313080f6764f6fbb6cf6abc60a01c47770b37db36714509e476075ddebc",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "New first-party Qore implementation, documentation or preserved execution of public Qore inputs; authored for this requested public package."
+      "basis": "First-party refinement within the same Qore correction file scope whose MIT redistribution Sylvestre Franceschi confirmed on 16 October 2026. The profile compatibility correction, bounded JSON error handling, regression guards and implementation identity updates introduce no third-party or client material. Current content reviewed before updating this digest; no publication authorization is inferred."
     },
     {
       "path": "tests/test_run_contract.py",
-      "sha256": "f671c3ec3ca69ad155c54823ef89eb9475fd847b65b762094ad937030e7f297f",
+      "sha256": "83b1a6e5e62fe6532b725d0c13b7f825e0739c68c94c9479048745a84796caaa",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "New first-party Qore implementation, documentation or preserved execution of public Qore inputs; authored for this requested public package."
+      "basis": "First-party Qore code, tests, configuration or documentation in the reviewed 0.2.1 correction inventory. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
     },
     {
       "path": "tests/test_spec_boundaries.py",
@@ -10061,11 +10453,11 @@
     },
     {
       "path": "tests/test_validators.py",
-      "sha256": "12dd6b5e416857d7b7c689714f142170204bd81a4cc4c860eb59047bc6133f6d",
+      "sha256": "29fe7a6b8b4ce3a5d40ec21ebb3bec4cbd3cc9d02c81d5be5a95f185107294b2",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "New first-party Qore implementation, documentation or preserved execution of public Qore inputs; authored for this requested public package."
+      "basis": "First-party Qore code, tests, configuration or documentation in the reviewed 0.2.1 correction inventory. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
     },
     {
       "path": "tools/agent_mail.py",
@@ -10092,6 +10484,14 @@
       "basis": "First-party publication metadata and documentation for the user-authorized Qore 0.2.0 distribution. The build marker describes staging, not the eventual hosting state."
     },
     {
+      "path": "tools/check_execution_records.py",
+      "sha256": "e02e9014bb0ffe4f7df3b6fb03f4c38873122484f62bb875aa35b72b47db8e2d",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "First-party Qore code, tests, configuration or documentation in the reviewed 0.2.1 correction inventory. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
+    },
+    {
       "path": "tools/check_site.py",
       "sha256": "8e681363103d163154b2a50b97b1bf0441774ab3d82eeca81622479696a5daff",
       "origin": "first-party",
@@ -10109,19 +10509,19 @@
     },
     {
       "path": "tools/context.py",
-      "sha256": "3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd",
+      "sha256": "d87afa433fe485bdebca3e281d06e0896e4a8980ea7cf7baee739053614ea0ac",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "New first-party Qore implementation, documentation or preserved execution of public Qore inputs; authored for this requested public package."
+      "basis": "First-party refinement within the same Qore correction file scope whose MIT redistribution Sylvestre Franceschi confirmed on 16 October 2026. The profile compatibility correction, bounded JSON error handling, regression guards and implementation identity updates introduce no third-party or client material. Current content reviewed before updating this digest; no publication authorization is inferred."
     },
     {
       "path": "tools/coordination.py",
-      "sha256": "63d1016d10aa4118e646856b489c2452bd3a48f8c0a59fd5e839192795122908",
+      "sha256": "9d840182af8aeb831ea320a7b2cdca4ee1c40064cb54c1bda90247b3ed343f23",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "New or revised English first-party Qore code, specification, selected method evidence or documentation for the user-authorized QORE-002 candidate. No private website code or raw agent/mail traces."
+      "basis": "First-party Qore code, tests, configuration or documentation in the reviewed 0.2.1 correction inventory. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
     },
     {
       "path": "tools/docs_preview.mjs",
@@ -10133,11 +10533,11 @@
     },
     {
       "path": "tools/qore.py",
-      "sha256": "fa11d262cb2a6a576677344b7cbbf3e7dc0f26a301b152cb1fe0b1ccc64f4f5b",
+      "sha256": "ac501036c702b7ca5eae75d333298b6db22e519e0114a8c05c1f2bded4a9f713",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "New or revised first-party Qore implementation, public acceptance contract, fixtures or English documentation authored for the approved QORE-002 work; no private website source or raw agent trace."
+      "basis": "First-party Qore code, tests, configuration or documentation in the reviewed 0.2.1 correction inventory. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
     },
     {
       "path": "tools/refresh_profiles.py",

@@ -1,0 +1,75 @@
+{
+  "schema": "qore-release/1",
+  "version": "0.1.0",
+  "host": "codex",
+  "profile": null,
+  "redistribution": "MIT-first-party",
+  "resources": [
+    {
+      "path": "SKILL.md",
+      "sha256": "33b1367f256f1a6304902d08cdff9b023add92fb750834216268cca8de84b851",
+      "origin": "first-party",
+      "license": "MIT"
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha256": "2bafca3b7edce2edac4814b4028fdb814f83c1c2efbea4d461b7469fbe1bd7af",
+      "origin": "first-party",
+      "license": "MIT"
+    },
+    {
+      "path": "references/evidence.md",
+      "sha256": "659560f88b965371e2c6e886b5f4c648a4879ebb7c69af4b1d307dfae176c8b3",
+      "origin": "first-party",
+      "license": "MIT"
+    },
+    {
+      "path": "references/gates.md",
+      "sha256": "667063cd64c576a9c5b4ec69f6ddcd677d4e969bae96184b3136ede9fd12fd87",
+      "origin": "first-party",
+      "license": "MIT"
+    },
+    {
+      "path": "references/project-profile.md",
+      "sha256": "154ed11dab8e8499e74a5f3a6afb512827d5de5c73408523b845684e38f59dfc",
+      "origin": "first-party",
+      "license": "MIT"
+    },
+    {
+      "path": "references/protocol.md",
+      "sha256": "257ae0902a7fb00f6bfd1ebaa5b688e57a5f2e7163de3e9954ed3c9765105dfd",
+      "origin": "first-party",
+      "license": "MIT"
+    },
+    {
+      "path": "references/run-evidence.md",
+      "sha256": "2ede0b19d58fd5535c90023068355679ee7bb27d3070967ada38f9ad156a9e69",
+      "origin": "first-party",
+      "license": "MIT"
+    },
+    {
+      "path": "scripts/depth-lint.mjs",
+      "sha256": "9b9cdcea3e87f4820944ddfc075ef19e75aad0bb08a7f1fd279ea6590267def7",
+      "origin": "first-party",
+      "license": "MIT"
+    },
+    {
+      "path": "scripts/project-check.py",
+      "sha256": "3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd",
+      "origin": "first-party",
+      "license": "MIT"
+    },
+    {
+      "path": "scripts/run-check.py",
+      "sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+      "origin": "first-party",
+      "license": "MIT"
+    },
+    {
+      "path": "scripts/stop-rule.mjs",
+      "sha256": "404b5ca63276c413e1f2697b98817f1802de4642cf634303707bd175eddd8085",
+      "origin": "first-party",
+      "license": "MIT"
+    }
+  ]
+}

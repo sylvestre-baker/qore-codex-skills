@@ -24,6 +24,27 @@ class CoordinationTests(unittest.TestCase):
     def test_receive_window_timeout_keeps_task_open_without_resend(self):
         self.assertEqual(consume(self.register, []), self.register)
 
+    def test_newest_first_numeric_window_retains_delivery_and_replay_is_idempotent(self):
+        ack = {**self.ack, "id": "2"}
+        delivery = {**self.delivery, "id": 10}
+        before = deepcopy(self.register)
+        for window in ([delivery, ack], [ack, delivery]):
+            with self.subTest(ids=[message["id"] for message in window]):
+                current = consume(self.register, window)
+                self.assertEqual(current["state"], "REVIEW_REQUIRED")
+                self.assertEqual(current["delivery_message_id"], "10")
+                self.assertEqual([d["action"] for d in current["decisions"]], ["ACCEPT_ACK", "RECEIVE_DELIVERY"])
+                self.assertEqual(consume(current, window), current)
+                self.assertEqual(self.register, before)
+
+    def test_invalid_or_mixed_window_is_refused_before_any_decision(self):
+        for window in ([{**self.ack, "id": 2}, self.delivery], [self.ack, {"body": {}}],
+                       [self.ack, {"id": True}], {"messages": [self.ack]}):
+            before = deepcopy(self.register)
+            with self.assertRaises(Rejected):
+                consume(self.register, window)
+            self.assertEqual(self.register, before)
+
     def test_late_current_delivery_is_consumed_on_manual_resume(self):
         current = consume(self.register, [self.ack])
         self.assertEqual(current["awaiting"], "delivery")

@@ -4,7 +4,19 @@ The source is now published in [sylvestre-baker/qore-codex-skills](https://githu
 
 This record separates actual executions, corrections, portability, agent evaluation and external human use. It describes an unpublished local 0.1.0 candidate. Original run identities and timestamps remain intact; a later archive is not substituted for an earlier source snapshot.
 
-## 0.2.0 candidate extension
+## 0.2.1 corrective preparation
+
+Independent evaluation of the published 0.2.0 source identified missing exported evidence, an unresolved-high findings verdict, a home-directory Python test failure and newest-first manual inbox loss. Each defect was reproduced before correction. The new regressions exercise those cases; they do not constitute fresh complete model executions of the three methods.
+
+The 46 original `.agents/` source artifacts have been selected for export with bytes matching their historical execution descriptors. The historical reports and `execution.json` files remain unchanged. Two unreferenced Python caches are excluded under the contribution policy. Consequently, `review-exact-flags` cannot pass strict `validate-run` from the public export. Its [explicit exception](evidence/executions/review-exact-flags/README.md) retains PARTIAL historical evidence, not a replacement COMPLETE claim.
+
+`python3 -B tools/check_execution_records.py` checks all six published records. Its pinned [exception policy](evidence/execution-exceptions.json) permits only those exact unreferenced source caches; every other resource, digest, required phase and actor constraint remains checked. CI runs this check on source and the full extracted candidate. A successful policy check is distinct from six strict validation passes.
+
+The findings helper now retains PARTIAL/PENDING for any critical/high PLAUSIBLE finding after verification, with DO-NOT-SHIP taking precedence for a separate confirmed blocker. The assembler adds a compact installation export, derivative descriptions identify their project, runtime checks report local profile adaptations and installation reports same-name personal skills.
+
+Version 0.2.1 remains private preparation until the maintainer reviews current redistribution records and the actual archives are rebuilt and qualified. Existing publication receipts identify 0.2.0 only. No archive reproducibility result or hosted deployment is claimed for 0.2.1 by this section.
+
+## 0.2.0 candidate extension (historical)
 
 The [Labs case](evidence/qaizen-labs/README.md) adds complete derived planning, source-review and desktop entry/state UX executions using the same current project profile. A real PM/production/fresh-reviewer exchange accepted the frozen three-method delivery once; repeat completion and inbox replay preserved the register. Independent review found four distinct medium coordination defects; a separate focused pass checked their corrections. A [105-second English technical montage](demo/qaizen-labs/README.md) and [static page preparation](showcase.md) are included.
 

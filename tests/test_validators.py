@@ -111,6 +111,30 @@ class ValidatorTests(unittest.TestCase):
             self.assertEqual(code, 1)
             self.assertFalse(result["valid"])
 
+    def test_ran_verifier_cannot_clear_unresolved_high_or_critical(self):
+        for severity in ("high", "critical"):
+            with self.subTest(severity=severity):
+                code, result, _ = self.review(self.candidate(severity=severity))
+                self.assertEqual((code, result["coverage"], result["verdict"]), (0, "PARTIAL", "PENDING"))
+                self.assertEqual(result["unresolved_findings"], ["F1"])
+                self.assertEqual(result["blocking_findings"], [])
+                self.assertEqual(result["findings"][0]["severity"], severity)
+
+    def test_confirmed_blocker_remains_do_not_ship_with_unresolved_candidate(self):
+        packet = self.candidate()
+        packet["findings"].append({**packet["findings"][0], "id": "F2", "verdict": "CONFIRMED",
+                                   "counterexample": "Input 0 violates the contract at source.js:1."})
+        code, result, _ = self.review(packet)
+        self.assertEqual((code, result["coverage"], result["verdict"]), (0, "PARTIAL", "DO-NOT-SHIP"))
+        self.assertEqual(result["blocking_findings"], ["F2"])
+        self.assertEqual(result["unresolved_findings"], ["F1"])
+
+    def test_refuted_high_and_lower_severity_uncertainty_do_not_create_blockers(self):
+        for changes in ({"verdict": "REFUTED", "refuted_because": "Handled at source.js:1"}, {"severity": "medium"}):
+            code, result, _ = self.review(self.candidate(**changes))
+            self.assertEqual((code, result["coverage"], result["verdict"]), (0, "COMPLETE", "SHIP"))
+            self.assertEqual(result["unresolved_findings"], [])
+
     def test_blocking_findings_need_counterexample_and_checkable_evidence(self):
         self.assertEqual(self.review(self.candidate(verdict="CONFIRMED"))[0], 1)
         self.assertEqual(self.review(self.candidate(evidence="This might be slow"))[0], 1)

@@ -134,6 +134,32 @@ def validate_profile(profile, root, method):
             "consumed_source_ids": sorted(selected_sources), "problems": problems}
 
 
+def local_adaptations(profile_path):
+    """Report a changed bundled profile without disallowing local customization."""
+    baseline = profile_path.parent / "release.json"
+    if profile_path.name != "project.json" or not baseline.is_file():
+        return []
+    try:
+        release = read_json(baseline)
+    except (ValueError, OSError, RecursionError):
+        return []
+    if not isinstance(release, dict) or release.get("schema") != "qore-release/1":
+        return []
+    resources = release.get("resources", [])
+    if not isinstance(resources, list):
+        return []
+    matches = [r for r in resources if isinstance(r, dict) and r.get("path") == "references/project.json"]
+    if len(matches) != 1:
+        return []
+    expected, actual = matches[0].get("sha256"), digest(profile_path)
+    if not isinstance(expected, str) or not re.fullmatch(r"[a-f0-9]{64}", expected):
+        return []
+    if expected == actual:
+        return []
+    return [{"path": "references/project.json", "expected_sha256": expected,
+             "actual_sha256": actual, "kind": "local_adaptation"}]
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("profile", type=Path)
@@ -143,9 +169,10 @@ def main():
     try:
         result = validate_profile(read_json(args.profile), args.root, args.method)
         result["profile"]["sha256"] = digest(args.profile)
+        result["local_adaptations"] = local_adaptations(args.profile)
         print(json.dumps(result, indent=2))
         return 0 if result["coverage"] == "COMPLETE" else 1
-    except (ValueError, OSError, TypeError) as exc:
+    except (ValueError, OSError, TypeError, RecursionError) as exc:
         print(json.dumps({"coverage": "BLOCKED", "problems": [str(exc)]}), file=sys.stderr)
         return 2
 

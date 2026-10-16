@@ -18,7 +18,7 @@ from run_contract import validate_run
 ROOT = Path(__file__).resolve().parent.parent
 SKILLS = ("qore-plan", "qore-review", "qore-ux-review")
 METHODS = dict(zip(SKILLS, ("plan", "review", "ux")))
-VERSION = "0.2.0"
+VERSION = "0.2.1"
 
 
 def write_json(path, value):
@@ -141,7 +141,9 @@ def verify(root):
             "kind": manifest["kind"], "files": len(actual), "manifest_sha256": digest(root / "manifest.json")}
 
 
-def build(output):
+def build(output, scope="full"):
+    if scope not in ("full", "skills"):
+        raise ValueError("Unknown build scope: " + scope)
     allowlist = read_json(ROOT / "release-files.json")
     if not isinstance(allowlist, list) or not allowlist or len(allowlist) != len(set(allowlist)):
         raise ValueError("release-files.json must be an explicit unique list")
@@ -149,8 +151,14 @@ def build(output):
     if any(p.is_symlink() for p in selected):
         raise ValueError("Allowlisted files may not be symlinks")
     check_redistribution(ROOT, allowlist)
+    if scope == "skills":
+        required = {"LICENSE", "INSTALL.md", "plugin.json", "tools/qore.py", "tools/context.py", "tools/run_contract.py"}
+        if not required.issubset(allowlist):
+            raise ValueError("Skills-only export is missing an allowlisted installation resource")
+        allowlist = [name for name in allowlist if name.startswith("skills/") or name in required]
+        selected = [contained(ROOT, name) for name in allowlist]
     output.mkdir(parents=True, exist_ok=True)
-    destination = output / ("qore-skills-" + VERSION)
+    destination = output / ("qore-skills-" + VERSION + ("-skills" if scope == "skills" else ""))
     archive = output / (destination.name + ".zip")
     if destination.exists() or archive.exists():
         raise ValueError("Release destination exists; choose new staging")
@@ -177,7 +185,7 @@ def build(output):
         zip_path.rename(archive)
     finally:
         shutil.rmtree(temporary)
-    return {"bundle": str(destination), "archive": str(archive), "sha256": digest(archive), **verify(destination)}
+    return {"bundle": str(destination), "archive": str(archive), "sha256": digest(archive), "scope": scope, **verify(destination)}
 
 
 def check_redistribution(root, allowlist):
@@ -227,6 +235,7 @@ def derive(profile_path, project_root, output):
                     text = path.read_text(encoding="utf-8").replace("$" + name, "$" + derived)
                     if path.name == "SKILL.md":
                         text = re.sub(r"(?m)^name:.*$", "name: " + derived, text, count=1)
+                        text = re.sub(r"(?m)^(description:.*)$", lambda match: match[1] + " Scoped to project " + profile["id"] + ".", text, count=1)
                         text += ("\n## Generated project binding\n\nThis derivative must load [its project profile](references/project.json) before selecting project facts. "
                                  "Run its bundled project-check.py against the supplied project root with --method " + METHODS[name] +
                                  ". Consume only current returned facts; stale required context is PARTIAL or BLOCKED. "
@@ -249,6 +258,14 @@ def install(source, project_root):
     if len(candidates) != 3:
         raise ValueError("Expected exactly three skill directories")
     target = project_root / ".agents/skills"
+    warnings = []
+    user_skills = Path.home() / ".agents/skills"
+    if user_skills.resolve() != target.resolve():
+        for folder in candidates:
+            existing = user_skills / folder.name
+            if existing.exists() or existing.is_symlink():
+                warnings.append({"code": "same-name-user-skill", "skill": folder.name, "path": str(existing),
+                                 "message": "Another same-name user installation exists. Inspect the selected skill path in a fresh chat; this installer leaves it unchanged."})
     for folder in candidates:
         if (target / folder.name).exists() or (target / folder.name).is_symlink():
             raise ValueError("Installed destination exists; preserve it and compare a new candidate: " + folder.name)
@@ -259,7 +276,7 @@ def install(source, project_root):
     target.mkdir(parents=True, exist_ok=True)
     for folder in candidates:
         shutil.copytree(folder, target / folder.name)
-    return {"installed": [str(target / p.name) for p in candidates], "replaced": False}
+    return {"installed": [str(target / p.name) for p in candidates], "replaced": False, "warnings": warnings}
 
 
 def snapshot(root):
@@ -311,6 +328,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     sub = parser.add_subparsers(dest="command", required=True)
     p = sub.add_parser("build"); p.add_argument("--output", type=Path, required=True)
+    p.add_argument("--scope", choices=("full", "skills"), default="full")
     p = sub.add_parser("verify"); p.add_argument("bundle", type=Path)
     p = sub.add_parser("derive")
     p.add_argument("--profile", type=Path, required=True); p.add_argument("--project-root", type=Path, required=True); p.add_argument("--output", type=Path, required=True)
@@ -322,7 +340,7 @@ def main():
     p = sub.add_parser("validate-run"); p.add_argument("run", type=Path); p.add_argument("--evidence-root", type=Path)
     args = parser.parse_args()
     try:
-        if args.command == "build": result = build(args.output)
+        if args.command == "build": result = build(args.output, args.scope)
         elif args.command == "verify": result = verify(args.bundle)
         elif args.command == "derive": result = derive(args.profile, args.project_root, args.output)
         elif args.command == "install": result = install(args.source, args.project_root)
