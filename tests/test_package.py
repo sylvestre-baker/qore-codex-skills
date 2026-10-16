@@ -116,12 +116,20 @@ class PackageTests(unittest.TestCase):
     def assert_command_not_executed(self):
         for root in (Path.cwd(), self.base, self.project, self.source):
             self.assertFalse((root / self.marker_name).exists(), "Profile command ran in " + str(root))
+        self.assertEqual(list(self.base.rglob(self.marker_name)), [], "Profile command ran in a generated fixture directory")
 
     def test_no_execution_guard_detects_a_relative_marker_in_the_actual_working_directory(self):
         import subprocess
         marker = self.project / self.marker_name
         subprocess.run(self.profile()["commands"][0]["argv"], cwd=self.project, check=True)
         self.assertTrue(marker.is_file())
+        with self.assertRaises(AssertionError):
+            self.assert_command_not_executed()
+
+    def test_no_execution_guard_also_checks_nested_derivative_directories(self):
+        nested = self.base / "derived/qore-plan-fixture"
+        nested.mkdir(parents=True)
+        (nested / self.marker_name).write_text("Unexpected execution in a derivative.\n")
         with self.assertRaises(AssertionError):
             self.assert_command_not_executed()
 
@@ -316,6 +324,22 @@ class PackageTests(unittest.TestCase):
         self.assertEqual(context.local_adaptations(copied), [{"path": "references/project.json", "expected_sha256": baseline,
                                                            "actual_sha256": context.digest(copied), "kind": "local_adaptation"}])
         self.assertEqual(context.local_adaptations(self.write_profile()), [])
+
+    def test_standalone_profile_is_not_blocked_by_an_unrelated_neighboring_release_file(self):
+        import subprocess
+        profile = self.base / "project.json"
+        profile.write_text(json.dumps(self.profile()))
+        for neighbor in ("{", '{"version":"3.1.0","channel":"stable"}',
+                         '{"schema":"qore-release/1","resources":[]}',
+                         '{"schema":"qore-release/1","resources":null}'):
+            with self.subTest(neighbor=neighbor):
+                (self.base / "release.json").write_text(neighbor)
+                response = subprocess.run([sys.executable, "-B", str(TOOLS / "context.py"), str(profile),
+                                           "--root", str(self.project), "--method", "review"], capture_output=True, text=True)
+                self.assertEqual(response.returncode, 0, response.stderr)
+                packet = json.loads(response.stdout)
+                self.assertEqual(packet["coverage"], "COMPLETE")
+                self.assertEqual(packet["local_adaptations"], [])
 
     def test_installer_warns_about_same_name_user_skill_without_changing_it(self):
         bundle = Path(self.build()["bundle"])

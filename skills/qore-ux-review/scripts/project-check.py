@@ -139,14 +139,21 @@ def local_adaptations(profile_path):
     baseline = profile_path.parent / "release.json"
     if profile_path.name != "project.json" or not baseline.is_file():
         return []
-    release = read_json(baseline)
+    try:
+        release = read_json(baseline)
+    except (ValueError, OSError):
+        return []
     if not isinstance(release, dict) or release.get("schema") != "qore-release/1":
-        raise ValueError("Invalid bundled profile baseline")
+        return []
     resources = release.get("resources", [])
+    if not isinstance(resources, list):
+        return []
     matches = [r for r in resources if isinstance(r, dict) and r.get("path") == "references/project.json"]
     if len(matches) != 1:
-        raise ValueError("Bundled profile baseline needs exactly one project resource")
+        return []
     expected, actual = matches[0].get("sha256"), digest(profile_path)
+    if not isinstance(expected, str) or not re.fullmatch(r"[a-f0-9]{64}", expected):
+        return []
     if expected == actual:
         return []
     return [{"path": "references/project.json", "expected_sha256": expected,
