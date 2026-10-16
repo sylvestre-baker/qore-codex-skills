@@ -1,19 +1,36 @@
 {
-    "programs": [
-
-    ],
-    "stream_groups": [
-
-    ],
-    "streams": [
-        {
-            "codec_name": "h264",
-            "width": 1280,
-            "height": 720
-        }
-    ],
-    "format": {
-        "duration": "104.880000",
-        "size": "1381294"
+  "schema": "qore-media-probe/1",
+  "media_sha256": "fd16de1ddd599b3111026e10de7cc86fa556c5aee5192b7d936427e14d05ae1d",
+  "duration_seconds": 104.88,
+  "bytes": 2903161,
+  "streams": [
+    {
+      "codec_type": "video",
+      "codec_name": "h264",
+      "duration": "104.880000",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "codec_type": "audio",
+      "codec_name": "aac",
+      "duration": "104.700000",
+      "sample_rate": "48000",
+      "channels": 1
     }
+  ],
+  "complete_decode": "PASS",
+  "unchanged_visual_stream_sha256": "43d260a34bf10241692ab78ce0fb9c594364bb3eb0e0b8a5dc89c1e26b09640e",
+  "audio_measurements": {
+    "integrated_lufs": -16.9,
+    "true_peak_dbfs": -0.9,
+    "loudness_range_lu": 5.5
+  },
+  "caption_checks": {
+    "cues": 22,
+    "ordered": true,
+    "no_overlaps": true,
+    "text_matches_script": true
+  },
+  "scope": "Technical media checks only. No human listening evaluation is claimed."
 }

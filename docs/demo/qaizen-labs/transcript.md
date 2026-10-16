@@ -1,6 +1,50 @@
 # Three methods, one sourced project profile
 
-Silent English technical demonstration, approximately 105 seconds. This is a montage of separate actual executions and selected result fields, not a continuous agent session. The website recording plays at its original speed.
+English narrated technical demonstration, approximately 105 seconds. This is a montage of separate actual executions and selected result fields, not a continuous agent session. The website recording plays at its original speed. The warm masculine narration uses an AI-generated MiniMax stock voice, with no background music.
+
+## Spoken narration
+
+**00:00:00.000–00:00:08.000**
+
+Meet Qore: three Codex skills, adapted to your project. These are separate, actual runs.
+
+**00:00:08.000–00:00:20.000**
+
+One profile captures the project's real commands and rules. It generates three specialized skills: planning, independent review, and web UX.
+
+**00:00:20.000–00:00:32.000**
+
+Five planning perspectives challenge the approach. The result separates keyboard access, the state we reach, and where focus lands.
+
+**00:00:32.000–00:00:44.000**
+
+Three reviewers and a fresh verifier reproduced four coordination issues. Their fixes were checked separately, while the original findings remain visible.
+
+**00:00:44.000–00:00:56.000**
+
+The project manager, production agent, and reviewer exchanged real messages. The delivery was accepted once. Sessions start manually; work was already in progress.
+
+**00:00:56.000–00:01:05.000**
+
+Now, the real Labs journey. We open the first question without entering any answers.
+
+**00:01:05.000–00:01:20.000**
+
+We reach help with the keyboard, open it with Enter, toggle it with Space, and open it again. Each step has its own check.
+
+**00:01:20.000–00:01:27.000**
+
+Closing help restores focus. Then Tab reaches Back.
+
+**00:01:27.000–00:01:36.880**
+
+Enter returns to the introduction. We check heading focus, the visible Start button, and the unanswered state separately.
+
+**00:01:36.880–00:01:44.880**
+
+This covers one desktop flow. The reports retain the evidence and limits. Publication and application remain separate.
+
+## Visual and evidence context
 
 | Time | On screen and explanation |
 |---|---|

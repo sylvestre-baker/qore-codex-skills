@@ -1,0 +1,245 @@
+{
+  "schema": "qore-narration-alignment/1",
+  "segments": [
+    {
+      "id": "01",
+      "start": 0,
+      "end": 8,
+      "text": "Meet Qore: three Codex skills, adapted to your project. These are separate, actual runs.",
+      "source_sha256": "97cf809960ce02e0736558fb8fa3421cbb6efb284ed90faac9aadd23ba2ea290",
+      "source_duration": 6.606077,
+      "atempo": 1,
+      "audio_start": 0.18,
+      "audio_end": 6.786077
+    },
+    {
+      "id": "02",
+      "start": 8,
+      "end": 20,
+      "text": "One profile captures the project's real commands and rules. It generates three specialized skills: planning, independent review, and web UX.",
+      "source_sha256": "a0ae0f40c04e4fa33ace11e1b7c2ad8cc257601992e35e2e1a2d56e775076c4c",
+      "source_duration": 10.03102,
+      "atempo": 1,
+      "audio_start": 8.18,
+      "audio_end": 18.211019999999998
+    },
+    {
+      "id": "03",
+      "start": 20,
+      "end": 32,
+      "text": "Five planning perspectives challenge the approach. The result separates keyboard access, the state we reach, and where focus lands.",
+      "source_sha256": "84cf68ac8af24582edc8f127512a26bb1dca03468c722849a4db641a4404885f",
+      "source_duration": 9.032562,
+      "atempo": 1,
+      "audio_start": 20.18,
+      "audio_end": 29.212562
+    },
+    {
+      "id": "04",
+      "start": 32,
+      "end": 44,
+      "text": "Three reviewers and a fresh verifier reproduced four coordination issues. Their fixes were checked separately, while the original findings remain visible.",
+      "source_sha256": "c3741e1388ae7384852ca64756f51d4fac4e073a5728cee6550b52c2f17032ec",
+      "source_duration": 10.5,
+      "atempo": 1,
+      "audio_start": 32.18,
+      "audio_end": 42.68
+    },
+    {
+      "id": "05",
+      "start": 44,
+      "end": 56,
+      "text": "The project manager, production agent, and reviewer exchanged real messages. The delivery was accepted once. Sessions start manually; work was already in progress.",
+      "source_sha256": "9be7feef9f34e41bfcdc5eb9ce83058ed91cbeea205873cfd16ccd3d8ad59ad0",
+      "source_duration": 11.958277,
+      "atempo": 1.027343384879725,
+      "audio_start": 44.18,
+      "audio_end": 55.82
+    },
+    {
+      "id": "06",
+      "start": 56,
+      "end": 65,
+      "text": "Now, the real Labs journey. We open the first question without entering any answers.",
+      "source_sha256": "cda0644196f9bf858ec4c3fa591e7d3dbd6027e94a99861918fc77f4c6e8d360",
+      "source_duration": 6.013968,
+      "atempo": 1,
+      "audio_start": 56.18,
+      "audio_end": 62.193968
+    },
+    {
+      "id": "07",
+      "start": 65,
+      "end": 80,
+      "text": "We reach help with the keyboard, open it with Enter, toggle it with Space, and open it again. Each step has its own check.",
+      "source_sha256": "609f8a9faede70bf17a855ca5006ec9a171d0d52c536cf37c3e7c720467a67b1",
+      "source_duration": 9.160272,
+      "atempo": 1,
+      "audio_start": 65.18,
+      "audio_end": 74.34027200000001
+    },
+    {
+      "id": "08",
+      "start": 80,
+      "end": 87,
+      "text": "Closing help restores focus. Then Tab reaches Back.",
+      "source_sha256": "d6d44fd14b28f1be9537adf4ed6785124ed94cc225974343ccb382777dd893b4",
+      "source_duration": 5.7,
+      "atempo": 1,
+      "audio_start": 80.18,
+      "audio_end": 85.88000000000001
+    },
+    {
+      "id": "09",
+      "start": 87,
+      "end": 96.88,
+      "text": "Enter returns to the introduction. We check heading focus, the visible Start button, and the unanswered state separately.",
+      "source_sha256": "c86e5231c77e69d01aad48e435f5a125276fbfb29de1fb415f50c95caeac357b",
+      "source_duration": 7.6,
+      "atempo": 1,
+      "audio_start": 87.18,
+      "audio_end": 94.78
+    },
+    {
+      "id": "10",
+      "start": 96.88,
+      "end": 104.88,
+      "text": "This covers one desktop flow. The reports retain the evidence and limits. Publication and application remain separate.",
+      "source_sha256": "c83635566b8fe5085bc9923c08f58d24cceabb06b08f86bf5b0a08ddca572cec",
+      "source_duration": 6.896327,
+      "atempo": 1,
+      "audio_start": 97.06,
+      "audio_end": 103.956327
+    }
+  ],
+  "captions": [
+    {
+      "start": 0.2218300653594771,
+      "end": 3.9865359477124183,
+      "text": "Meet Qore: three Codex skills, adapted to your project."
+    },
+    {
+      "start": 3.9865359477124183,
+      "end": 6.596339869281046,
+      "text": "These are separate, actual runs."
+    },
+    {
+      "start": 8.221830065359477,
+      "end": 11.526405228758168,
+      "text": "One profile captures the project's real commands and rules."
+    },
+    {
+      "start": 11.526405228758168,
+      "end": 17.942745098039218,
+      "text": "It generates three specialized skills: planning, independent review, and web UX."
+    },
+    {
+      "start": 20.221830065359477,
+      "end": 22.815294117647056,
+      "text": "Five planning perspectives challenge the approach."
+    },
+    {
+      "start": 22.815294117647056,
+      "end": 28.896993464052287,
+      "text": "The result separates keyboard access, the state we reach, and where focus lands."
+    },
+    {
+      "start": 32.22183006535948,
+      "end": 37.07411764705882,
+      "text": "Three reviewers and a fresh verifier reproduced four coordination issues."
+    },
+    {
+      "start": 37.07411764705882,
+      "end": 42.44470588235294,
+      "text": "Their fixes were checked separately, while the original findings remain visible."
+    },
+    {
+      "start": 44.22071673208308,
+      "end": 49.02529111788708,
+      "text": "The project manager, production agent, and reviewer exchanged real messages."
+    },
+    {
+      "start": 49.02529111788708,
+      "end": 51.50901177495524,
+      "text": "The delivery was accepted once."
+    },
+    {
+      "start": 51.50901177495524,
+      "end": 55.517818054931375,
+      "text": "Sessions start manually; work was already in progress."
+    },
+    {
+      "start": 56.22183006535948,
+      "end": 58.22967320261438,
+      "text": "Now, the real Labs journey."
+    },
+    {
+      "start": 58.22967320261438,
+      "end": 61.927058823529414,
+      "text": "We open the first question without entering any answers."
+    },
+    {
+      "start": 65.22183006535948,
+      "end": 71.62183006535949,
+      "text": "We reach help with the keyboard, open it with Enter, toggle it with Space, and open it again."
+    },
+    {
+      "start": 71.62183006535949,
+      "end": 74.02248366013072,
+      "text": "Each step has its own check."
+    },
+    {
+      "start": 80.22183006535948,
+      "end": 82.3969934640523,
+      "text": "Closing help restores focus."
+    },
+    {
+      "start": 82.3969934640523,
+      "end": 85.59241830065359,
+      "text": "Then Tab reaches Back."
+    },
+    {
+      "start": 87.22183006535948,
+      "end": 89.1878431372549,
+      "text": "Enter returns to the introduction."
+    },
+    {
+      "start": 89.1878431372549,
+      "end": 94.55843137254902,
+      "text": "We check heading focus, the visible Start button, and the unanswered state separately."
+    },
+    {
+      "start": 97.10183006535948,
+      "end": 98.81686274509804,
+      "text": "This covers one desktop flow."
+    },
+    {
+      "start": 98.81686274509804,
+      "end": 101.20117647058824,
+      "text": "The reports retain the evidence and limits."
+    },
+    {
+      "start": 101.20117647058824,
+      "end": 103.81098039215686,
+      "text": "Publication and application remain separate."
+    }
+  ],
+  "voice": {
+    "provider": "MiniMax through treg",
+    "model": "speech-2.8-hd",
+    "stock_voice_id": "English_Gentle-voiced_man",
+    "language": "English",
+    "style": "Warm, natural, reassuring adult male; calm conversational delivery, no background music.",
+    "ai_generated": true
+  },
+  "normalization": {
+    "target_lufs": -16,
+    "music": false,
+    "measured_integrated_lufs": -16.9,
+    "measured_true_peak_dbfs": -0.9,
+    "true_peak_db": -1.5,
+    "note": "Target values precede AAC encoding; measured values are from the final encoded audio."
+  },
+  "source_video_sha256": "988e81758ef725addf9c4da2b0b4e28f01189aaa069a28136f96af582c855973",
+  "output_sha256": "fd16de1ddd599b3111026e10de7cc86fa556c5aee5192b7d936427e14d05ae1d"
+}

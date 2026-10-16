@@ -181,35 +181,43 @@
     },
     {
       "path": "docs/demo/qaizen-labs/README.md",
-      "sha256": "92d50b86967acb91d6e9dd94a98e4058b8776b2aa529ce2431cbdf3ca565e0b4",
+      "sha256": "5cdc7c03982c9d2e17ec3d7cb6e2fcea9e0b7c016eb2cb923f9216e9b409995f",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "New or revised English first-party Qore code, specification, selected method evidence or documentation for the user-authorized QORE-002 candidate. No private website code or raw agent/mail traces."
+      "basis": "User-requested narration of the first-party Qore presentation and selected authorized public Labs observations. First-party script; provider-generated stock-voice audio under MiniMax API output terms, identified in provenance.json. No model, cloned voice, private source or raw transcript is redistributed."
     },
     {
       "path": "docs/demo/qaizen-labs/demo.en.vtt",
-      "sha256": "2483382e483d1d455aa8cac831e00ba72d03e6e94056fd5f82d4509201c753b8",
+      "sha256": "7622218f8839b5d0c95d2f28076113994ccd6d3960068bd3da4ba12ef127da44",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "New or revised English first-party Qore code, specification, selected method evidence or documentation for the user-authorized QORE-002 candidate. No private website code or raw agent/mail traces."
+      "basis": "User-requested narration of the first-party Qore presentation and selected authorized public Labs observations. First-party script; provider-generated stock-voice audio under MiniMax API output terms, identified in provenance.json. No model, cloned voice, private source or raw transcript is redistributed."
     },
     {
       "path": "docs/demo/qaizen-labs/demo.mp4",
-      "sha256": "988e81758ef725addf9c4da2b0b4e28f01189aaa069a28136f96af582c855973",
+      "sha256": "fd16de1ddd599b3111026e10de7cc86fa556c5aee5192b7d936427e14d05ae1d",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "New or revised English first-party Qore code, specification, selected method evidence or documentation for the user-authorized QORE-002 candidate. No private website code or raw agent/mail traces."
+      "basis": "User-requested narration of the first-party Qore presentation and selected authorized public Labs observations. First-party script; provider-generated stock-voice audio under MiniMax API output terms, identified in provenance.json. No model, cloned voice, private source or raw transcript is redistributed."
     },
     {
       "path": "docs/demo/qaizen-labs/media-probe.json",
-      "sha256": "ed21be27893d11d40fc4fce59a28e7473d25205305c70ca81ef12c81c978dd79",
+      "sha256": "3132a6917d521d54e99ff636f3d9af68d0d6b675afed00b295dd2e465cb70a74",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "New or revised English first-party Qore code, specification, selected method evidence or documentation for the user-authorized QORE-002 candidate. No private website code or raw agent/mail traces."
+      "basis": "User-requested narration of the first-party Qore presentation and selected authorized public Labs observations. First-party script; provider-generated stock-voice audio under MiniMax API output terms, identified in provenance.json. No model, cloned voice, private source or raw transcript is redistributed."
+    },
+    {
+      "path": "docs/demo/qaizen-labs/narration-alignment.json",
+      "sha256": "4f312da3959096fa7b92a956c9ea38fc360fad6831e2a506e42cf28f7b52bf06",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "User-requested narration of the first-party Qore presentation and selected authorized public Labs observations. First-party script; provider-generated stock-voice audio under MiniMax API output terms, identified in provenance.json. No model, cloned voice, private source or raw transcript is redistributed."
     },
     {
       "path": "docs/demo/qaizen-labs/poster.jpg",
@@ -221,27 +229,27 @@
     },
     {
       "path": "docs/demo/qaizen-labs/provenance.json",
-      "sha256": "3cd60f1a0c2764defc388958c87bb859a6bee6ea37133ece4e11e4e041d7601c",
+      "sha256": "f07603c0978f1c5bfa082bd87e9853ad49e5807527352656473c0031b44f2db2",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "New or revised English first-party Qore code, specification, selected method evidence or documentation for the user-authorized QORE-002 candidate. No private website code or raw agent/mail traces."
+      "basis": "User-requested narration of the first-party Qore presentation and selected authorized public Labs observations. First-party script; provider-generated stock-voice audio under MiniMax API output terms, identified in provenance.json. No model, cloned voice, private source or raw transcript is redistributed."
     },
     {
       "path": "docs/demo/qaizen-labs/transcript.html",
-      "sha256": "bdd431a597ff526aa2b7daf38bae6a9f0326d5b4da8ff94881527140410e3946",
+      "sha256": "3e9de503d9451719d8af044a873fa0249b978c32d3de04b845095c8f0b0580aa",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "New or revised English first-party Qore code, specification, selected method evidence or documentation for the user-authorized QORE-002 candidate. No private website code or raw agent/mail traces."
+      "basis": "User-requested narration of the first-party Qore presentation and selected authorized public Labs observations. First-party script; provider-generated stock-voice audio under MiniMax API output terms, identified in provenance.json. No model, cloned voice, private source or raw transcript is redistributed."
     },
     {
       "path": "docs/demo/qaizen-labs/transcript.md",
-      "sha256": "a9510fc9fc1a3c41329a0ef72e68a00f6ecb6120f3046453550eb8bde704bde4",
+      "sha256": "5aa5e747632a307b5639ccb73d2f9354d3df457e9d1d87dc09cb2439fa7b550a",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "New or revised English first-party Qore code, specification, selected method evidence or documentation for the user-authorized QORE-002 candidate. No private website code or raw agent/mail traces."
+      "basis": "User-requested narration of the first-party Qore presentation and selected authorized public Labs observations. First-party script; provider-generated stock-voice audio under MiniMax API output terms, identified in provenance.json. No model, cloned voice, private source or raw transcript is redistributed."
     },
     {
       "path": "docs/demo/technical-demo-poster.png",
@@ -9613,11 +9621,11 @@
     },
     {
       "path": "showcase/index.html",
-      "sha256": "1154fd0d7b77da6f0a1c3ead0ef45b2e62231f9c46418273c2bf6b6d179c7337",
+      "sha256": "6aa5d1480be2f24a4151e3c89027c7a65d8cca3146766852e54a0f163fc2b842",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "New or revised English first-party Qore code, specification, selected method evidence or documentation for the user-authorized QORE-002 candidate. No private website code or raw agent/mail traces."
+      "basis": "User-requested narration of the first-party Qore presentation and selected authorized public Labs observations. First-party script; provider-generated stock-voice audio under MiniMax API output terms, identified in provenance.json. No model, cloned voice, private source or raw transcript is redistributed."
     },
     {
       "path": "showcase/styles.css",
