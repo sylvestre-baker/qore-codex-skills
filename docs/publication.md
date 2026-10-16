@@ -26,6 +26,14 @@ The local qualified presentation snapshot is commit `689f9f1ca11d1356add6bcc6029
 
 The expanded package workflow discovers 154 tests. Environments without the optional browser driver skip 11 browser controls; a skipped browser check is not a pass. Full real browser observations remain separately scoped. The optional Agent Mail persistent recommendation remains PARTIAL; the public example concerns explicitly started cooperative work turns. No external human first-use outcome or Ambassador application is asserted.
 
+## Version 0.2.1 distribution
+
+The corrective release restores original evidence resources, records the two excluded source caches, preserves unresolved high-impact findings as PARTIAL/PENDING, fixes home-directory test environments and numeric inbox ordering, and adds compact installation archives. Profile adaptation diagnostics, project-specific descriptions, name-collision warnings and excessive JSON nesting checks are included. [The changelog](../CHANGELOG.md) records the changes; [qualification](qualification.md) separates historical method evidence from current package checks.
+
+Sylvestre confirmed MIT redistribution for the first-party correction scope and exclusion of the historical caches on 16 October 2026, then authorized finalization, publication and showcase deployment after PR #2 merged. The explicit resource inventory remains digest-bound. Neither instruction authorizes unrelated client content or a new license for third-party material.
+
+The [v0.2.1 release](https://github.com/sylvestre-baker/qore-codex-skills/releases/tag/v0.2.1) contains a full source/evidence ZIP, a compact skills ZIP, SHA-256 checksums and a separate verification receipt. The receipt pins the final source revision, hosted checks, artifact identities and actual scope. Publication does not relabel an earlier execution or skipped browser check as a fresh success. The showcase retains the dated Labs demonstration and now identifies version 0.2.1.
+
 ## Historical evidence remains historical
 
 Earlier reports correctly describe an unpublished local candidate at their original observation times. Their publication-state fields, test counts and archive digests remain unchanged. A source or documentation change requires its own package identity; identical method resources support only the explicitly justified scope of carryover.
