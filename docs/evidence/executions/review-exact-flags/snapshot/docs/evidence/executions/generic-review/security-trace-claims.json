@@ -1,0 +1,10 @@
+{
+  "findings": [
+    {
+      "id": "S-probe",
+      "title": "Bounded trace",
+      "severity": "high",
+      "evidence": "examples/validator-hardening.md:40"
+    }
+  ]
+}

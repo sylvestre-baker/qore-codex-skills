@@ -1,0 +1,38 @@
+1: # Specification artifact contract
+2: 
+3: Use the user's established destination and naming convention. Otherwise choose a focused file under `docs/specs/` and state its path. Preserve applicable existing content and version the result. Do not silently split a user's change into unrelated replacement specifications.
+4: 
+5: Every new or edited specification produced by this method has:
+6: 
+7: - First line `<!-- qore-spec/1 -->`.
+8: - Outcome, scope, authoritative inputs and their revisions, constraints, and explicit non-applicable surfaces.
+9: - User stories and decisions with stable IDs. Distinguish sourced facts from proposed decisions and unresolved authority.
+10: - Architecture and reuse/impact evidence where applicable; contracts, compatibility, rejection behavior, and configuration/data effects.
+11: - A Mermaid `flowchart` for the relevant components or information flow and a fenced Mermaid `sequenceDiagram` for the actual runtime or execution flow, including its main rejection path. Show real boundaries; do not invent transactions or services.
+12: - For interface changes, entry paths, state transitions, content and accessibility requirements. A planned check is not a native or browser observation.
+13: - Tasks with size and rationale, risk, dependencies, critical order, coupling, acceptance gates, and applicable documentation/test/rollout tasks.
+14: - Real acceptance scenarios inside `gherkin` fences. Each scenario has `Given`, `When`, and `Then` steps; `And`/`But` add conditions. A `Scenario Outline` has populated `Examples`. Empty fences and arrow shorthand do not satisfy acceptance coverage.
+15: - A `Coverage:` mapping from scenario IDs to user stories and locked decisions. Cover meaningful failure and boundary paths, not just nominal behavior. Map every applicable supplied acceptance criterion and QA feedback item; name missing coverage.
+16: - Adjudicated decisions, rejected alternatives, material dissent, dependencies, and open questions.
+17: - Mode, actual role/phase coverage, rounds and stopping reason, artifacts, limits, and structural validation result.
+18: 
+19: Minimal scenario shape:
+20: 
+21: ```gherkin
+22: Feature: Preserve a user's working files
+23:   Scenario: AC01 Existing destination is preserved
+24:     Given the requested output directory already contains a working file
+25:     When generation is attempted for that directory
+26:     Then generation refuses that destination
+27:     And the existing working file is unchanged
+28: ```
+29: 
+30: `Coverage: AC01 → US1 / D1` must use the actual IDs in the specification. Ensure the mapping covers the declared stories and decisions; a linter cannot establish whether a missing requirement should have been declared.
+31: 
+32: From the skill directory run:
+33: 
+34: ```bash
+35: bash scripts/spec-lint.sh /absolute/path/to/spec.md
+36: ```
+37: 
+38: Retain the exit status and output. Repair missing required structure without changing requirements merely to satisfy the checker. If the checker is unavailable or fails for an unresolved reason, report the failure and PARTIAL/BLOCKED validation coverage. A valid document can still contain unresolved decisions; structural validity does not approve implementation or establish overall quality.

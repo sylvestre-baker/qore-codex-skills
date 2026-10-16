@@ -1,0 +1,192 @@
+{
+  "schema": "qore-browser-fixture-observation/1",
+  "label": "Synthetic fixture; not an existing product",
+  "result": {
+    "schema": "qore-browser-probe/1",
+    "label": "Synthetic driver qualification only",
+    "started_at": "2026-10-15T19:26:57.068Z",
+    "target": "http://127.0.0.1:8765/index.html",
+    "status": "COMPLETE",
+    "scope": "Navigation, screenshots, DOM, keyboard, console and network observation. No accessibility or performance certification.",
+    "driver": {
+      "name": "Playwright Chromium",
+      "node": "v24.19.0",
+      "version": "1.62.1",
+      "browser_version": "151.0.7922.34"
+    },
+    "capabilities": {
+      "navigation": {
+        "status": "OBSERVED",
+        "evidence": "fixture-observations.json#/events/navigation",
+        "entry_status": 200
+      },
+      "screenshot": {
+        "status": "OBSERVED",
+        "evidence": "fixture-observations.json#/events/actions"
+      },
+      "dom": {
+        "status": "OBSERVED",
+        "evidence": "fixture-observations.json#/events/actions"
+      },
+      "keyboard": {
+        "status": "OBSERVED",
+        "key": "Tab",
+        "active_element": {
+          "tag": "BUTTON",
+          "id": "resolve",
+          "text": "Resolve synthetic state"
+        },
+        "evidence": "fixture-observations.json#/events/actions/0"
+      },
+      "console": {
+        "status": "OBSERVED",
+        "evidence": "fixture-observations.json#/events/console",
+        "note": "Listener attached before entry navigation; an empty list means no emitted events were observed."
+      },
+      "network": {
+        "status": "OBSERVED",
+        "evidence": "fixture-observations.json#/events/network"
+      }
+    },
+    "snapshots": [
+      {
+        "at": "2026-10-15T19:26:59.206Z",
+        "label": "entry",
+        "url": "http://127.0.0.1:8765/index.html",
+        "dom": "qore-private:browser/fixture-capabilities/00-entry.dom.json",
+        "screenshot": "qore-private:browser/fixture-capabilities/00-entry.png"
+      },
+      {
+        "at": "2026-10-15T19:27:02.010Z",
+        "label": "resolved-primary",
+        "url": "http://127.0.0.1:8765/index.html",
+        "dom": "qore-private:browser/fixture-capabilities/01-resolved-primary.dom.json",
+        "screenshot": "qore-private:browser/fixture-capabilities/01-resolved-primary.png"
+      },
+      {
+        "at": "2026-10-15T19:27:02.035Z",
+        "label": "final",
+        "url": "http://127.0.0.1:8765/index.html",
+        "dom": "qore-private:browser/fixture-capabilities/02-final.dom.json",
+        "screenshot": "qore-private:browser/fixture-capabilities/02-final.png"
+      }
+    ],
+    "limits": [
+      "An isolated browser context is used; no user browser session is accessed.",
+      "Non-GET/HEAD/OPTIONS requests are blocked. No request headers or bodies are retained.",
+      "This is an execution record, not a product-quality or general-performance benchmark."
+    ],
+    "trace": "qore-private:browser/fixture-capabilities/trace.zip",
+    "video": "qore-private:browser/fixture-capabilities/video/page@0d61e27719e3c16ae9ea13e92eb7f65b.webm",
+    "finished_at": "2026-10-15T19:27:02.351Z",
+    "counts": {
+      "console": 3,
+      "page_errors": 0,
+      "network": 2,
+      "requests_failed": 0,
+      "blocked_mutations": 0,
+      "navigation": 1,
+      "actions": 4
+    }
+  },
+  "events": {
+    "console": [
+      {
+        "at": "2026-10-15T19:26:57.636Z",
+        "type": "info",
+        "text": "Synthetic fixture loaded.",
+        "location": {
+          "url": "http://127.0.0.1:8765/index.html",
+          "line": 11,
+          "column": 8,
+          "lineNumber": 11,
+          "columnNumber": 8
+        }
+      },
+      {
+        "at": "2026-10-15T19:26:57.647Z",
+        "type": "info",
+        "text": "Synthetic network response observed.",
+        "location": {
+          "url": "http://127.0.0.1:8765/index.html",
+          "line": 12,
+          "column": 75,
+          "lineNumber": 12,
+          "columnNumber": 75
+        }
+      },
+      {
+        "at": "2026-10-15T19:26:59.256Z",
+        "type": "info",
+        "text": "Synthetic state resolved.",
+        "location": {
+          "url": "http://127.0.0.1:8765/index.html",
+          "line": 15,
+          "column": 10,
+          "lineNumber": 15,
+          "columnNumber": 10
+        }
+      }
+    ],
+    "page_errors": [],
+    "network": [
+      {
+        "at": "2026-10-15T19:26:57.630Z",
+        "url": "http://127.0.0.1:8765/index.html",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "document"
+      },
+      {
+        "at": "2026-10-15T19:26:57.647Z",
+        "url": "http://127.0.0.1:8765/ping.json",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "fetch"
+      }
+    ],
+    "requests_failed": [],
+    "blocked_mutations": [],
+    "navigation": [
+      {
+        "at": "2026-10-15T19:26:57.631Z",
+        "url": "http://127.0.0.1:8765/index.html"
+      }
+    ],
+    "actions": [
+      {
+        "at": "2026-10-15T19:26:59.224Z",
+        "type": "keyboard",
+        "key": "Tab",
+        "active_element": {
+          "tag": "BUTTON",
+          "id": "resolve",
+          "text": "Resolve synthetic state"
+        },
+        "outcome": "completed"
+      },
+      {
+        "at": "2026-10-15T19:26:59.224Z",
+        "type": "click",
+        "role": "button",
+        "name": "Resolve synthetic state",
+        "outcome": "completed",
+        "url": "http://127.0.0.1:8765/index.html"
+      },
+      {
+        "at": "2026-10-15T19:27:00.177Z",
+        "type": "assert-text",
+        "text": "Resolved synthetic state.",
+        "outcome": "completed",
+        "url": "http://127.0.0.1:8765/index.html"
+      },
+      {
+        "at": "2026-10-15T19:27:01.085Z",
+        "type": "snapshot",
+        "label": "resolved-primary",
+        "outcome": "completed",
+        "url": "http://127.0.0.1:8765/index.html"
+      }
+    ]
+  }
+}

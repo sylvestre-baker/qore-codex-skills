@@ -1,0 +1,1268 @@
+{
+  "schema": "qore-public-transformation/1",
+  "id": "public-independent-implementation-review-20261015",
+  "original_candidate_sha256": "17888fa30f1024707fc3ee6efda856ca330bc6365e09737007096f5d7db62da8",
+  "correction_candidate_sha256": "5cffda9eb2fb94678466452ef70e3f0027a5f962ea41fa8d8f1a4975b2abd0ed",
+  "mapping": [
+    {
+      "raw_artifact_id": "original/build-probe.json",
+      "raw_sha256": "534c82dd141da3688aea8136304bb8c5c7964440aebb03954cb23a8edc822688",
+      "public_path": "original/build-probe.json",
+      "public_sha256": "534c82dd141da3688aea8136304bb8c5c7964440aebb03954cb23a8edc822688",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "original/claims.json",
+      "raw_sha256": "d57cf26ed10fc089a538bd3c4c2a3911eda77e4c886bb0cec9c569b8998d16b4",
+      "public_path": "original/claims.json",
+      "public_sha256": "d57cf26ed10fc089a538bd3c4c2a3911eda77e4c886bb0cec9c569b8998d16b4",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "original/context-probe.json",
+      "raw_sha256": "ff424dec0c0712c701110a116ce2160fddb0c31f197da99bed21d40d0c4a808d",
+      "public_path": "original/context-probe.json",
+      "public_sha256": "ff424dec0c0712c701110a116ce2160fddb0c31f197da99bed21d40d0c4a808d",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "original/correctness-candidates.json",
+      "raw_sha256": "b3684612b5b720e26c80b539047c889b4b7de79ef3155333e9d7d4279d450443",
+      "public_path": "original/correctness-candidates.json",
+      "public_sha256": "b3684612b5b720e26c80b539047c889b4b7de79ef3155333e9d7d4279d450443",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "original/correctness-fullreport.md",
+      "raw_sha256": "9d6366d6f292cb7a5f4effb47c6d234c64125bd5af39e01111c0fc16200051bd",
+      "public_path": "original/correctness-fullreport.md",
+      "public_sha256": "9d6366d6f292cb7a5f4effb47c6d234c64125bd5af39e01111c0fc16200051bd",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "original/correctness-inputs/docstring-spec.md",
+      "raw_sha256": "bb83e9ffe52756525384d6f563c7908b7a94bbcbd697684522569fd139aac701",
+      "public_path": "original/correctness-inputs/docstring-spec.md",
+      "public_sha256": "bb83e9ffe52756525384d6f563c7908b7a94bbcbd697684522569fd139aac701",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "original/correctness-inputs/outline-spec.md",
+      "raw_sha256": "44807936638a81d75f3edcb97447f2e6ab21b663ee9452b368d2f5dfcc996e23",
+      "public_path": "original/correctness-inputs/outline-spec.md",
+      "public_sha256": "44807936638a81d75f3edcb97447f2e6ab21b663ee9452b368d2f5dfcc996e23",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "original/correctness-inputs/plateau.json",
+      "raw_sha256": "6d6fab10dc322d2e7d546f81a8d83cb9e0f663c3b4d8bde1302cb147db96001f",
+      "public_path": "original/correctness-inputs/plateau.json",
+      "public_sha256": "6d6fab10dc322d2e7d546f81a8d83cb9e0f663c3b4d8bde1302cb147db96001f",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "original/correctness-probes.txt",
+      "raw_sha256": "881c414981757ae8403224d647d0ef0c16336fbc9378015d0b782346457aa323",
+      "public_path": "original/correctness-probes.txt",
+      "public_sha256": "881c414981757ae8403224d647d0ef0c16336fbc9378015d0b782346457aa323",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "original/feasibility-candidates.json",
+      "raw_sha256": "31d55fe9e73b38f50ebedf95bcf350542ded43833c315b5a59b619ad00c64339",
+      "public_path": "original/feasibility-candidates.json",
+      "public_sha256": "31d55fe9e73b38f50ebedf95bcf350542ded43833c315b5a59b619ad00c64339",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "original/feasibility-compact-profile.json",
+      "raw_sha256": "63c9157e3dd4d6eb2c33c899820422e8ce1d1bee9cc4e22c1df96d814e50a83f",
+      "public_path": "original/feasibility-compact-profile.json",
+      "public_sha256": "63c9157e3dd4d6eb2c33c899820422e8ce1d1bee9cc4e22c1df96d814e50a83f",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "original/feasibility-derive-result.json",
+      "raw_sha256": "e153e9d9f6b7e8b38d2eec4bbf26493ad112227778c9333dd65374b05de18900",
+      "public_path": "original/feasibility-derive-result.json",
+      "public_sha256": "e153e9d9f6b7e8b38d2eec4bbf26493ad112227778c9333dd65374b05de18900",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "original/feasibility-fullreport.md",
+      "raw_sha256": "84b7f6c0de03e27862df216682a915bcdca855bf53ff25936fd8afed09143894",
+      "public_path": "original/feasibility-fullreport.md",
+      "public_sha256": "84b7f6c0de03e27862df216682a915bcdca855bf53ff25936fd8afed09143894",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "original/feasibility-medium-lint-result.txt",
+      "raw_sha256": "c2c60585cf86f4ce8187bec03d77bdc3c646ccbe5b69ca90ddc570d3631e70d0",
+      "public_path": "original/feasibility-medium-lint-result.txt",
+      "public_sha256": "c2c60585cf86f4ce8187bec03d77bdc3c646ccbe5b69ca90ddc570d3631e70d0",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "original/feasibility-medium-without-counterexample.json",
+      "raw_sha256": "1a3aab3236a7894d6883188e4315ae2a8873c841bf27da0c4394c4b30bc574e4",
+      "public_path": "original/feasibility-medium-without-counterexample.json",
+      "public_sha256": "1a3aab3236a7894d6883188e4315ae2a8873c841bf27da0c4394c4b30bc574e4",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "original/feasibility-project-check-result.txt",
+      "raw_sha256": "92612611dc76a9abd45cae839493832941e48b11486eb31f9e0c90861764baab",
+      "public_path": "original/feasibility-project-check-result.txt",
+      "public_sha256": "92612611dc76a9abd45cae839493832941e48b11486eb31f9e0c90861764baab",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "original/finder.correctness.execution.json",
+      "raw_sha256": "814b377a4c1cdb9f3169f00cf70a12256c5a1998828700443b0cdb6a9257a95a",
+      "public_path": "original/finder.correctness.execution.json",
+      "public_sha256": "814b377a4c1cdb9f3169f00cf70a12256c5a1998828700443b0cdb6a9257a95a",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "original/finder.feasibility.execution.json",
+      "raw_sha256": "ebc8d07526e5a84779a6c007d5f71a4ffcb22d0b996b5a325a8c75b086867837",
+      "public_path": "original/finder.feasibility.execution.json",
+      "public_sha256": "ebc8d07526e5a84779a6c007d5f71a4ffcb22d0b996b5a325a8c75b086867837",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "original/finder.security.execution.json",
+      "raw_sha256": "83b747937d512bbf3fc47e59d237e85a88cf587c776cb65f2cae64099d4731ce",
+      "public_path": "original/finder.security.execution.json",
+      "public_sha256": "83b747937d512bbf3fc47e59d237e85a88cf587c776cb65f2cae64099d4731ce",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "original/findings.json",
+      "raw_sha256": "52043ee4f92db83b858480e554b5ee7384a3f4f58f18bc5607b673d0ff865dde",
+      "public_path": "original/findings.json",
+      "public_sha256": "52043ee4f92db83b858480e554b5ee7384a3f4f58f18bc5607b673d0ff865dde",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "original/findings_validation.execution.json",
+      "raw_sha256": "8ec26586657d356e9426d56374562c6423c2d8dde06c0381aa47639da4fc27d2",
+      "public_path": "original/findings_validation.execution.json",
+      "public_sha256": "8ec26586657d356e9426d56374562c6423c2d8dde06c0381aa47639da4fc27d2",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "original/instruction-revisions.json",
+      "raw_sha256": "407d7b33f8adb8f8bf1417dc5db87aab7ba5702817701d51a6f49e2b53d87189",
+      "public_path": "original/instruction-revisions.json",
+      "public_sha256": "407d7b33f8adb8f8bf1417dc5db87aab7ba5702817701d51a6f49e2b53d87189",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "original/lead-commands.json",
+      "raw_sha256": "510fd35691ceb92ff1714dd8e9514fb08232f312bdbfc4b16129257d2959b9eb",
+      "public_path": "original/lead-commands.json",
+      "public_sha256": "510fd35691ceb92ff1714dd8e9514fb08232f312bdbfc4b16129257d2959b9eb",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "original/lint-command.json",
+      "raw_sha256": "324253755a986194aba5528dbefe1b05785dbffa7a911bdf1dac2dfccaf4c4ab",
+      "public_path": "original/lint-command.json",
+      "public_sha256": "324253755a986194aba5528dbefe1b05785dbffa7a911bdf1dac2dfccaf4c4ab",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "original/lint-result.json",
+      "raw_sha256": "300af1adfd153811bf00d101ce47922c7feeabdd3ce9293008e5f0ea5894da99",
+      "public_path": "original/lint-result.json",
+      "public_sha256": "300af1adfd153811bf00d101ce47922c7feeabdd3ce9293008e5f0ea5894da99",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "original/lint-stderr.txt",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_path": "original/lint-stderr.txt",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "original/qore-snapshot-final.json",
+      "raw_sha256": "47f50bb793c9f1cbcf8d8e9397a2f390fccc5858d82d933a719c9c5428dcdb36",
+      "public_path": "original/qore-snapshot-final.json",
+      "public_sha256": "47f50bb793c9f1cbcf8d8e9397a2f390fccc5858d82d933a719c9c5428dcdb36",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "original/qore-snapshot.json",
+      "raw_sha256": "47f50bb793c9f1cbcf8d8e9397a2f390fccc5858d82d933a719c9c5428dcdb36",
+      "public_path": "original/qore-snapshot.json",
+      "public_sha256": "47f50bb793c9f1cbcf8d8e9397a2f390fccc5858d82d933a719c9c5428dcdb36",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "original/redaction-command.json",
+      "raw_sha256": "78ecfdbc6a0eb2b7cccc2e522a786807d585a9ad53049f54775eabef2ab88d5f",
+      "public_path": "original/redaction-command.json",
+      "public_sha256": "78ecfdbc6a0eb2b7cccc2e522a786807d585a9ad53049f54775eabef2ab88d5f",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "original/redaction-stderr.txt",
+      "raw_sha256": "f935b07f5cc2938b3fdbe90d045c75e85507604292cc6fb1a248b0ebeb06c1bb",
+      "public_path": "original/redaction-stderr.txt",
+      "public_sha256": "f935b07f5cc2938b3fdbe90d045c75e85507604292cc6fb1a248b0ebeb06c1bb",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "original/redaction.execution.json",
+      "raw_sha256": "ee84fec81af8a6a8f5e8ecfed72de4d2645cb994e25987054d674d622daff5e9",
+      "public_path": "original/redaction.execution.json",
+      "public_sha256": "ee84fec81af8a6a8f5e8ecfed72de4d2645cb994e25987054d674d622daff5e9",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "original/roster.json",
+      "raw_sha256": "e1323830e6d94b739a545d4d511cb8d2ce58aef08875a4dd5d68f90ecf0604af",
+      "public_path": "original/roster.json",
+      "public_sha256": "e1323830e6d94b739a545d4d511cb8d2ce58aef08875a4dd5d68f90ecf0604af",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "original/runtime-side-effects.json",
+      "raw_sha256": "c6926ac433f87baea0e5be707e3b5a0ea802b9b6843dc46149cbdb921766c334",
+      "public_path": "original/runtime-side-effects.json",
+      "public_sha256": "c6926ac433f87baea0e5be707e3b5a0ea802b9b6843dc46149cbdb921766c334",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "original/security-candidates.json",
+      "raw_sha256": "274572349023a26454ea8dfc4640bc5bf3230d649a1b7b10609ed07284a69766",
+      "public_path": "original/security-candidates.json",
+      "public_sha256": "274572349023a26454ea8dfc4640bc5bf3230d649a1b7b10609ed07284a69766",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "original/security-counterexamples.json",
+      "raw_sha256": "4c937b0bd75c94b6e4bb63e53df20f9814177b2c20adc508b03096ded206e03c",
+      "public_path": "original/security-counterexamples.json",
+      "public_sha256": "4c937b0bd75c94b6e4bb63e53df20f9814177b2c20adc508b03096ded206e03c",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "original/security-fullreport.md",
+      "raw_sha256": "cd2ba01a5467ec306d7a087f7b0a9c38ce8e9dea6f4e4b51073602f08e979828",
+      "public_path": "original/security-fullreport.md",
+      "public_sha256": "cd2ba01a5467ec306d7a087f7b0a9c38ce8e9dea6f4e4b51073602f08e979828",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "original/snapshot-comparison.json",
+      "raw_sha256": "6d41b47d2b5a8e1e048040e7baa0a555edcb1498ef4829272613b054c3493013",
+      "public_path": "original/snapshot-comparison.json",
+      "public_sha256": "6d41b47d2b5a8e1e048040e7baa0a555edcb1498ef4829272613b054c3493013",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "original/snapshot.json",
+      "raw_sha256": "5ed1ebe177f948ce4363dc023a36a8aee86143e6151263624d6884603110958d",
+      "public_path": "original/snapshot.json",
+      "public_sha256": "5ed1ebe177f948ce4363dc023a36a8aee86143e6151263624d6884603110958d",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "original/tests.log",
+      "raw_sha256": "aa256492a8839fd79a4ecf4717db44f1d689f37bf097eeed820a92a264af38f5",
+      "public_path": "original/tests.log",
+      "public_sha256": "aa256492a8839fd79a4ecf4717db44f1d689f37bf097eeed820a92a264af38f5",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "original/verification-coverage.json",
+      "raw_sha256": "7a64af4afffbde0c0bb498a868ad0c8bc5a4092dd4c3e99c1c73ce8f223c932f",
+      "public_path": "original/verification-coverage.json",
+      "public_sha256": "7a64af4afffbde0c0bb498a868ad0c8bc5a4092dd4c3e99c1c73ce8f223c932f",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "original/verified.json",
+      "raw_sha256": "156ce61ba904c49282f74a66095c850aa34f2e2d8f2e16c7689bfbba77f69747",
+      "public_path": "original/verified.json",
+      "public_sha256": "156ce61ba904c49282f74a66095c850aa34f2e2d8f2e16c7689bfbba77f69747",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "original/verifier-final-lint.json",
+      "raw_sha256": "300af1adfd153811bf00d101ce47922c7feeabdd3ce9293008e5f0ea5894da99",
+      "public_path": "original/verifier-final-lint.json",
+      "public_sha256": "300af1adfd153811bf00d101ce47922c7feeabdd3ce9293008e5f0ea5894da99",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "original/verifier-fullreport.md",
+      "raw_sha256": "7740d820af01c38cee306275e6b4b87c15517bc98081d555470b9682628be7f0",
+      "public_path": "original/verifier-fullreport.md",
+      "public_sha256": "7740d820af01c38cee306275e6b4b87c15517bc98081d555470b9682628be7f0",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "original/verifier-inputs/compact.json",
+      "raw_sha256": "63c9157e3dd4d6eb2c33c899820422e8ce1d1bee9cc4e22c1df96d814e50a83f",
+      "public_path": "original/verifier-inputs/compact.json",
+      "public_sha256": "63c9157e3dd4d6eb2c33c899820422e8ce1d1bee9cc4e22c1df96d814e50a83f",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "original/verifier-inputs/docstring.md",
+      "raw_sha256": "2d73396192a7acf6d73f44b5ca0a6980922c6f662972bba987f38fa0cfbf261a",
+      "public_path": "original/verifier-inputs/docstring.md",
+      "public_sha256": "2d73396192a7acf6d73f44b5ca0a6980922c6f662972bba987f38fa0cfbf261a",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "original/verifier-inputs/high.json",
+      "raw_sha256": "c420a30eb2b3f08e7d831aa52ec45554a38f503287db2c3da20f7efa2098f044",
+      "public_path": "original/verifier-inputs/high.json",
+      "public_sha256": "c420a30eb2b3f08e7d831aa52ec45554a38f503287db2c3da20f7efa2098f044",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "original/verifier-inputs/inherited.json",
+      "raw_sha256": "95fe8a642ea5c7ea0e95974bd4de1ba94965d65b22e8c84a05390fbf89010cf9",
+      "public_path": "original/verifier-inputs/inherited.json",
+      "public_sha256": "95fe8a642ea5c7ea0e95974bd4de1ba94965d65b22e8c84a05390fbf89010cf9",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "original/verifier-inputs/medium.json",
+      "raw_sha256": "8f1643cf376abce43d751e4e66aded456d4c4b0449175913a6ca29d902c021d3",
+      "public_path": "original/verifier-inputs/medium.json",
+      "public_sha256": "8f1643cf376abce43d751e4e66aded456d4c4b0449175913a6ca29d902c021d3",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "original/verifier-inputs/missing.json",
+      "raw_sha256": "e0665b06774cdadd292f9bfd24ea15deb68fc2b74d593cc63da821106fd71b29",
+      "public_path": "original/verifier-inputs/missing.json",
+      "public_sha256": "e0665b06774cdadd292f9bfd24ea15deb68fc2b74d593cc63da821106fd71b29",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "original/verifier-inputs/no-steps.md",
+      "raw_sha256": "38bd4041027eae5a67ae24d0dc81e9abd738e04dfafd789a032a615bf7067795",
+      "public_path": "original/verifier-inputs/no-steps.md",
+      "public_sha256": "38bd4041027eae5a67ae24d0dc81e9abd738e04dfafd789a032a615bf7067795",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "original/verifier-inputs/other-plateau.json",
+      "raw_sha256": "36f03928487fe6e0f34212b024d5d3ee76b21afc516b4d5acd4b7854bb4a78f2",
+      "public_path": "original/verifier-inputs/other-plateau.json",
+      "public_sha256": "36f03928487fe6e0f34212b024d5d3ee76b21afc516b4d5acd4b7854bb4a78f2",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "original/verifier-inputs/outline.md",
+      "raw_sha256": "ae0214deffe856da7b36041ffd61f6571052633f640b88699dc1ca073f037008",
+      "public_path": "original/verifier-inputs/outline.md",
+      "public_sha256": "ae0214deffe856da7b36041ffd61f6571052633f640b88699dc1ca073f037008",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "original/verifier-inputs/plateau.json",
+      "raw_sha256": "4c5322ded9dcd2e066e211ea68686ad5b88a0b57703dc3f81e5b282e02d03a6d",
+      "public_path": "original/verifier-inputs/plateau.json",
+      "public_sha256": "4c5322ded9dcd2e066e211ea68686ad5b88a0b57703dc3f81e5b282e02d03a6d",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "original/verifier-probe.py",
+      "raw_sha256": "a7881cd031abed40ef6db8354aa58c67e00dddd44bfbc4b65542c6aba677f598",
+      "public_path": "original/verifier-probe.py",
+      "public_sha256": "a7881cd031abed40ef6db8354aa58c67e00dddd44bfbc4b65542c6aba677f598",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "original/verifier-results.json",
+      "raw_sha256": "d4757b6ff039c6f47196febc090acfb4ff9007c038b20b5994aec8a0666266df",
+      "public_path": "original/verifier-results.json",
+      "public_sha256": "d4757b6ff039c6f47196febc090acfb4ff9007c038b20b5994aec8a0666266df",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "original/verifier-write.py",
+      "raw_sha256": "bba5c9983f8cbc2e8664bdab5f0adc58711380fddf5997082f78764922b678e5",
+      "public_path": "original/verifier-write.py",
+      "public_sha256": "bba5c9983f8cbc2e8664bdab5f0adc58711380fddf5997082f78764922b678e5",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "original/verifier.execution.json",
+      "raw_sha256": "f1e2d35e6055b913cfd4a0a1fe8f5c3ddecde40e6ff384ff422f21f5c28c1212",
+      "public_path": "original/verifier.execution.json",
+      "public_sha256": "f1e2d35e6055b913cfd4a0a1fe8f5c3ddecde40e6ff384ff422f21f5c28c1212",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/finding-critical-blank.json",
+      "raw_sha256": "f80fda6d8362b54e32d0fb06b44248d7db717ff7227ebdc325e7a9f2f31f70f4",
+      "public_path": "correction/cases/finding-critical-blank.json",
+      "public_sha256": "f80fda6d8362b54e32d0fb06b44248d7db717ff7227ebdc325e7a9f2f31f70f4",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/finding-critical-missing.json",
+      "raw_sha256": "78cc85163f8a51a00bce93d0bf14733a91ea1cdcdf9830651f709a76a3b03832",
+      "public_path": "correction/cases/finding-critical-missing.json",
+      "public_sha256": "78cc85163f8a51a00bce93d0bf14733a91ea1cdcdf9830651f709a76a3b03832",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/finding-critical-proof.json",
+      "raw_sha256": "5b1eae8dd963f6835b55f65cf88ec113f7b111d5975d4bb95df7d9a77d182154",
+      "public_path": "correction/cases/finding-critical-proof.json",
+      "public_sha256": "5b1eae8dd963f6835b55f65cf88ec113f7b111d5975d4bb95df7d9a77d182154",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/finding-critical-spaces.json",
+      "raw_sha256": "007ca7387bab17f6b1d97505ecf201afcfac1cdb2d4ff56ab73557a5f5576f61",
+      "public_path": "correction/cases/finding-critical-spaces.json",
+      "public_sha256": "007ca7387bab17f6b1d97505ecf201afcfac1cdb2d4ff56ab73557a5f5576f61",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/finding-high-blank.json",
+      "raw_sha256": "731f54b22163d0165fd438922adb05e5eda0c5d34baeea03f50a10550aa765d1",
+      "public_path": "correction/cases/finding-high-blank.json",
+      "public_sha256": "731f54b22163d0165fd438922adb05e5eda0c5d34baeea03f50a10550aa765d1",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/finding-high-missing.json",
+      "raw_sha256": "a4c45840b28e46cf6b3ab5d2b9d997176071e8aaeba267ecc411e0c0f6a23a0b",
+      "public_path": "correction/cases/finding-high-missing.json",
+      "public_sha256": "a4c45840b28e46cf6b3ab5d2b9d997176071e8aaeba267ecc411e0c0f6a23a0b",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/finding-high-proof.json",
+      "raw_sha256": "4b6ab431e9d5a70904d490e728198f5c474f6fb661fcd430363c88df656900a7",
+      "public_path": "correction/cases/finding-high-proof.json",
+      "public_sha256": "4b6ab431e9d5a70904d490e728198f5c474f6fb661fcd430363c88df656900a7",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/finding-high-spaces.json",
+      "raw_sha256": "b1bc3d1986c2c9538b4d482eef9a42c4e0f7237846450157c7550632b02b6613",
+      "public_path": "correction/cases/finding-high-spaces.json",
+      "public_sha256": "b1bc3d1986c2c9538b4d482eef9a42c4e0f7237846450157c7550632b02b6613",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/finding-info-blank.json",
+      "raw_sha256": "ab83d1ccab3de5f291f326f582f856215d25c14c0711ae88ffab418e948ed6b3",
+      "public_path": "correction/cases/finding-info-blank.json",
+      "public_sha256": "ab83d1ccab3de5f291f326f582f856215d25c14c0711ae88ffab418e948ed6b3",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/finding-info-missing.json",
+      "raw_sha256": "c5927b3caeb96b78e88e20c13a85db356bb824d9cb6b6808d73f6e99e89307ae",
+      "public_path": "correction/cases/finding-info-missing.json",
+      "public_sha256": "c5927b3caeb96b78e88e20c13a85db356bb824d9cb6b6808d73f6e99e89307ae",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/finding-info-proof.json",
+      "raw_sha256": "2c61e648db11c2af11002dee54ccfadedc51e241dfd1335e535f3cbab1fbd80c",
+      "public_path": "correction/cases/finding-info-proof.json",
+      "public_sha256": "2c61e648db11c2af11002dee54ccfadedc51e241dfd1335e535f3cbab1fbd80c",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/finding-info-spaces.json",
+      "raw_sha256": "3be1467a5c8bccb76abf2da1d7ef9a28e1c16cedefdb0694cd30ad9e3eefe2b8",
+      "public_path": "correction/cases/finding-info-spaces.json",
+      "public_sha256": "3be1467a5c8bccb76abf2da1d7ef9a28e1c16cedefdb0694cd30ad9e3eefe2b8",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/finding-low-blank.json",
+      "raw_sha256": "5452304a31209458fa4585ee59fcad2d955a3af981bda3889363018c6608c438",
+      "public_path": "correction/cases/finding-low-blank.json",
+      "public_sha256": "5452304a31209458fa4585ee59fcad2d955a3af981bda3889363018c6608c438",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/finding-low-missing.json",
+      "raw_sha256": "5aa65b84c971e5c5d9b5bb4bb70b9878fe7212912255e932e818dc55a808a9b4",
+      "public_path": "correction/cases/finding-low-missing.json",
+      "public_sha256": "5aa65b84c971e5c5d9b5bb4bb70b9878fe7212912255e932e818dc55a808a9b4",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/finding-low-proof.json",
+      "raw_sha256": "0ff2fd51e45f090197e78dd89197f938100c71dd2d2495cb6c26aad13ee6b99f",
+      "public_path": "correction/cases/finding-low-proof.json",
+      "public_sha256": "0ff2fd51e45f090197e78dd89197f938100c71dd2d2495cb6c26aad13ee6b99f",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/finding-low-spaces.json",
+      "raw_sha256": "78a0dcf357c2b30fab23215ea9473bb57520f734634e151f97819f507489b4c3",
+      "public_path": "correction/cases/finding-low-spaces.json",
+      "public_sha256": "78a0dcf357c2b30fab23215ea9473bb57520f734634e151f97819f507489b4c3",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/finding-medium-blank.json",
+      "raw_sha256": "c7b0b896457d590b60f8945e000c8cad3332fad85be87d0b7743e68fc0cc1755",
+      "public_path": "correction/cases/finding-medium-blank.json",
+      "public_sha256": "c7b0b896457d590b60f8945e000c8cad3332fad85be87d0b7743e68fc0cc1755",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/finding-medium-missing.json",
+      "raw_sha256": "5845fb1671d55677b64ee2354115346a1ac4e54e0bf3dd2a9500c9dc523586a2",
+      "public_path": "correction/cases/finding-medium-missing.json",
+      "public_sha256": "5845fb1671d55677b64ee2354115346a1ac4e54e0bf3dd2a9500c9dc523586a2",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/finding-medium-proof.json",
+      "raw_sha256": "430d0bef9773fb2eb49a321b99e6c1c0642481e3e216247db054e900df5682b9",
+      "public_path": "correction/cases/finding-medium-proof.json",
+      "public_sha256": "430d0bef9773fb2eb49a321b99e6c1c0642481e3e216247db054e900df5682b9",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/finding-medium-spaces.json",
+      "raw_sha256": "4758d141cec00ca7064722cc2e2e8b3628f77ab295f5a2946435dfff8469dc22",
+      "public_path": "correction/cases/finding-medium-spaces.json",
+      "public_sha256": "4758d141cec00ca7064722cc2e2e8b3628f77ab295f5a2946435dfff8469dc22",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/fixed-compact-profile.json",
+      "raw_sha256": "63c9157e3dd4d6eb2c33c899820422e8ce1d1bee9cc4e22c1df96d814e50a83f",
+      "public_path": "correction/cases/fixed-compact-profile.json",
+      "public_sha256": "63c9157e3dd4d6eb2c33c899820422e8ce1d1bee9cc4e22c1df96d814e50a83f",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/fixed-pretty-profile.json",
+      "raw_sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9",
+      "public_path": "correction/cases/fixed-pretty-profile.json",
+      "public_sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/gate-G0-False.json",
+      "raw_sha256": "c9cca0677413db12a81183e8efd82d50687ffc5a9f82cf980187927c5c472f27",
+      "public_path": "correction/cases/gate-G0-False.json",
+      "public_sha256": "c9cca0677413db12a81183e8efd82d50687ffc5a9f82cf980187927c5c472f27",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/gate-G0-True.json",
+      "raw_sha256": "62d15f37d0644c53cffbedee680fed16a7fb0ac53394719aee01aeb6c1093670",
+      "public_path": "correction/cases/gate-G0-True.json",
+      "public_sha256": "62d15f37d0644c53cffbedee680fed16a7fb0ac53394719aee01aeb6c1093670",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/gate-G1-False.json",
+      "raw_sha256": "a08369646e4ea4d5f26e19fdf1c434e647effe608326b9ceb46a88e671612d5f",
+      "public_path": "correction/cases/gate-G1-False.json",
+      "public_sha256": "a08369646e4ea4d5f26e19fdf1c434e647effe608326b9ceb46a88e671612d5f",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/gate-G1-True.json",
+      "raw_sha256": "cb60bb2ba285055d17aa23792c29babd1827110c61439aaf2d559bc297663b88",
+      "public_path": "correction/cases/gate-G1-True.json",
+      "public_sha256": "cb60bb2ba285055d17aa23792c29babd1827110c61439aaf2d559bc297663b88",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/gate-G2-False.json",
+      "raw_sha256": "442b7c78d6b0e48f0b4421e5b8052c620697adf10126a379353295bc5206bae8",
+      "public_path": "correction/cases/gate-G2-False.json",
+      "public_sha256": "442b7c78d6b0e48f0b4421e5b8052c620697adf10126a379353295bc5206bae8",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/gate-G2-True.json",
+      "raw_sha256": "e952cbeb54c9d0ed247ec25b108384ce47c52cb48624cbb2127af1333aff615b",
+      "public_path": "correction/cases/gate-G2-True.json",
+      "public_sha256": "e952cbeb54c9d0ed247ec25b108384ce47c52cb48624cbb2127af1333aff615b",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/gate-G3-False.json",
+      "raw_sha256": "9255fe81c7bb16c426eec8bd116d3d112478168095b48ae8362de3034d2ceb12",
+      "public_path": "correction/cases/gate-G3-False.json",
+      "public_sha256": "9255fe81c7bb16c426eec8bd116d3d112478168095b48ae8362de3034d2ceb12",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/gate-G3-True.json",
+      "raw_sha256": "4fc300ccaba075533a2e4b994dfb2bcbbe6456c658787720553a9f6006aac716",
+      "public_path": "correction/cases/gate-G3-True.json",
+      "public_sha256": "4fc300ccaba075533a2e4b994dfb2bcbbe6456c658787720553a9f6006aac716",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/gate-G4-False.json",
+      "raw_sha256": "7f66126bce74af5e0cca35dfe0d9e3db363aebef95e9d9eadb7b29e1b227c4a3",
+      "public_path": "correction/cases/gate-G4-False.json",
+      "public_sha256": "7f66126bce74af5e0cca35dfe0d9e3db363aebef95e9d9eadb7b29e1b227c4a3",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/gate-G4-True.json",
+      "raw_sha256": "3c763f0063dfbaa3329d47bddb5b22fe0b1e9c97982f30b436e80ae112564c85",
+      "public_path": "correction/cases/gate-G4-True.json",
+      "public_sha256": "3c763f0063dfbaa3329d47bddb5b22fe0b1e9c97982f30b436e80ae112564c85",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/gate-G5-False.json",
+      "raw_sha256": "095cc30be082776a846c3a4934a7073258271eae2ac69d8709338f47726df848",
+      "public_path": "correction/cases/gate-G5-False.json",
+      "public_sha256": "095cc30be082776a846c3a4934a7073258271eae2ac69d8709338f47726df848",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/gate-G5-True.json",
+      "raw_sha256": "1c4ccdac391cd4aa5c746d650d7c14605eb7df6282f884ec6a1d380aba506a59",
+      "public_path": "correction/cases/gate-G5-True.json",
+      "public_sha256": "1c4ccdac391cd4aa5c746d650d7c14605eb7df6282f884ec6a1d380aba506a59",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/gate-G6-False.json",
+      "raw_sha256": "63d7d24f1ae74c8f643ac6258e43b660268c9109b9128b4587e815f02b8215f0",
+      "public_path": "correction/cases/gate-G6-False.json",
+      "public_sha256": "63d7d24f1ae74c8f643ac6258e43b660268c9109b9128b4587e815f02b8215f0",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/gate-G6-True.json",
+      "raw_sha256": "06581d2e1f38f6a2e3bb863acef3bc039dbb6d899613bd33cc85f85563ebb0e3",
+      "public_path": "correction/cases/gate-G6-True.json",
+      "public_sha256": "06581d2e1f38f6a2e3bb863acef3bc039dbb6d899613bd33cc85f85563ebb0e3",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/gate-GP-False.json",
+      "raw_sha256": "84eecbc69b22d89bba47d285273d0b9bbaefc92177a73085a6b9f1be1cf6b48c",
+      "public_path": "correction/cases/gate-GP-False.json",
+      "public_sha256": "84eecbc69b22d89bba47d285273d0b9bbaefc92177a73085a6b9f1be1cf6b48c",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/gate-GP-True.json",
+      "raw_sha256": "187157be52f3853ab095e9328d9a567339481bbf81d361eb9f07bc10c623b745",
+      "public_path": "correction/cases/gate-GP-True.json",
+      "public_sha256": "187157be52f3853ab095e9328d9a567339481bbf81d361eb9f07bc10c623b745",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/old-compact-profile.json",
+      "raw_sha256": "63c9157e3dd4d6eb2c33c899820422e8ce1d1bee9cc4e22c1df96d814e50a83f",
+      "public_path": "correction/cases/old-compact-profile.json",
+      "public_sha256": "63c9157e3dd4d6eb2c33c899820422e8ce1d1bee9cc4e22c1df96d814e50a83f",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/old-pretty-profile.json",
+      "raw_sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9",
+      "public_path": "correction/cases/old-pretty-profile.json",
+      "public_sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/spec-docstring-backtick.md",
+      "raw_sha256": "4465bcbc0624a5fe1f21f80b8c6d9de5f5944b1b438112d958ae2d1b30f40136",
+      "public_path": "correction/cases/spec-docstring-backtick.md",
+      "public_sha256": "4465bcbc0624a5fe1f21f80b8c6d9de5f5944b1b438112d958ae2d1b30f40136",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/spec-docstring-quote.md",
+      "raw_sha256": "27c754f95a99c204e5c54eeb80432d32db21625dd54253a0a2f6dce006699fff",
+      "public_path": "correction/cases/spec-docstring-quote.md",
+      "public_sha256": "27c754f95a99c204e5c54eeb80432d32db21625dd54253a0a2f6dce006699fff",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/spec-docstring-real-backtick.md",
+      "raw_sha256": "730afe79fe7ae2eb93d7f8013f437e050bbedac9c28c190b43d0d5eeba151fa0",
+      "public_path": "correction/cases/spec-docstring-real-backtick.md",
+      "public_sha256": "730afe79fe7ae2eb93d7f8013f437e050bbedac9c28c190b43d0d5eeba151fa0",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/spec-docstring-real-quote.md",
+      "raw_sha256": "b36a06e835e99ed8c77c41217536e5427b4262acbd87c89d0cbeb399e81c9af8",
+      "public_path": "correction/cases/spec-docstring-real-quote.md",
+      "public_sha256": "b36a06e835e99ed8c77c41217536e5427b4262acbd87c89d0cbeb399e81c9af8",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/spec-docstring-unclosed-backtick.md",
+      "raw_sha256": "48095b7fa49fc2a14a8930652ccc28bc771446e12184b2678fac52fa64d50e3d",
+      "public_path": "correction/cases/spec-docstring-unclosed-backtick.md",
+      "public_sha256": "48095b7fa49fc2a14a8930652ccc28bc771446e12184b2678fac52fa64d50e3d",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/spec-docstring-unclosed-quote.md",
+      "raw_sha256": "720e949909b5cdeef98156dc7b7acedda6afba6052e35eaf612622d0d64ac133",
+      "public_path": "correction/cases/spec-docstring-unclosed-quote.md",
+      "public_sha256": "720e949909b5cdeef98156dc7b7acedda6afba6052e35eaf612622d0d64ac133",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/spec-outline-empty-value.md",
+      "raw_sha256": "0213f22ef71b9f26cce20ae2bc5e102003d1a211b56ae3434bb7daa2a5b9ddde",
+      "public_path": "correction/cases/spec-outline-empty-value.md",
+      "public_sha256": "0213f22ef71b9f26cce20ae2bc5e102003d1a211b56ae3434bb7daa2a5b9ddde",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/spec-outline-header.md",
+      "raw_sha256": "8e7061a700ffb9f79289f9c129722937d4ec01a9c77ea08a9d8510f5ca1dfe3a",
+      "public_path": "correction/cases/spec-outline-header.md",
+      "public_sha256": "8e7061a700ffb9f79289f9c129722937d4ec01a9c77ea08a9d8510f5ca1dfe3a",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/spec-outline-mismatched-columns.md",
+      "raw_sha256": "3ae00a448020ea932f052a01ccf46346a9db9772b265d3c70a24d82658c9e775",
+      "public_path": "correction/cases/spec-outline-mismatched-columns.md",
+      "public_sha256": "3ae00a448020ea932f052a01ccf46346a9db9772b265d3c70a24d82658c9e775",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/spec-outline-missing.md",
+      "raw_sha256": "1a9f762e9f926e1bc8d6eb14fa7f834fa626fbb52102b1d39657502bd1cbd2c9",
+      "public_path": "correction/cases/spec-outline-missing.md",
+      "public_sha256": "1a9f762e9f926e1bc8d6eb14fa7f834fa626fbb52102b1d39657502bd1cbd2c9",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/spec-outline-ragged.md",
+      "raw_sha256": "4d625485bb5bb08a28ac4308403f8ddf9e98e5373b93a6335a32bc49fc6d891c",
+      "public_path": "correction/cases/spec-outline-ragged.md",
+      "public_sha256": "4d625485bb5bb08a28ac4308403f8ddf9e98e5373b93a6335a32bc49fc6d891c",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/spec-outline-valid.md",
+      "raw_sha256": "f9d1cbee7897f9954251b4c6a157c0bf1c8990831ba9178f5806c45f4add039e",
+      "public_path": "correction/cases/spec-outline-valid.md",
+      "public_sha256": "f9d1cbee7897f9954251b4c6a157c0bf1c8990831ba9178f5806c45f4add039e",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/spec-real.md",
+      "raw_sha256": "5ee603589d54316d97fce7d8528cc12771ed20d0853bbfbe58abd91cb45070c6",
+      "public_path": "correction/cases/spec-real.md",
+      "public_sha256": "5ee603589d54316d97fce7d8528cc12771ed20d0853bbfbe58abd91cb45070c6",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/stop-constant3-1.json",
+      "raw_sha256": "36d11842cd28d32240d79e626c23f9315d5778ca73e6a88996bd8711e976a12d",
+      "public_path": "correction/cases/stop-constant3-1.json",
+      "public_sha256": "36d11842cd28d32240d79e626c23f9315d5778ca73e6a88996bd8711e976a12d",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/stop-constant3-2.json",
+      "raw_sha256": "084cc6c1c5b26cb931e20a0109870966c111c6dd00e65b50797b65348e4e1ea9",
+      "public_path": "correction/cases/stop-constant3-2.json",
+      "public_sha256": "084cc6c1c5b26cb931e20a0109870966c111c6dd00e65b50797b65348e4e1ea9",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/stop-constant3-3.json",
+      "raw_sha256": "b32d20eac455be15aa3fc0e17ae1a4667bf59224799459fa69932bccd1357010",
+      "public_path": "correction/cases/stop-constant3-3.json",
+      "public_sha256": "b32d20eac455be15aa3fc0e17ae1a4667bf59224799459fa69932bccd1357010",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/stop-constant3-4.json",
+      "raw_sha256": "0ddf4536f39190d7c387bd5e2980c78c71c602256771e6fe65c44fa7013a02ca",
+      "public_path": "correction/cases/stop-constant3-4.json",
+      "public_sha256": "0ddf4536f39190d7c387bd5e2980c78c71c602256771e6fe65c44fa7013a02ca",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/stop-constant3-5.json",
+      "raw_sha256": "7a0086eba6c7b12649692f4a1edbf344bbea541b596c4f42d56b778d383019fb",
+      "public_path": "correction/cases/stop-constant3-5.json",
+      "public_sha256": "7a0086eba6c7b12649692f4a1edbf344bbea541b596c4f42d56b778d383019fb",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/stop-constant3-6.json",
+      "raw_sha256": "db46cfbce40605e5fd9fd3e622028bdb799c4ea09d08ca2763227b3dde3c2f77",
+      "public_path": "correction/cases/stop-constant3-6.json",
+      "public_sha256": "db46cfbce40605e5fd9fd3e622028bdb799c4ea09d08ca2763227b3dde3c2f77",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/stop-constant3-7.json",
+      "raw_sha256": "4b64b3c1325ff498f15e395b82a82c3dd6efeab58366c4aee994fc05f35b54f6",
+      "public_path": "correction/cases/stop-constant3-7.json",
+      "public_sha256": "4b64b3c1325ff498f15e395b82a82c3dd6efeab58366c4aee994fc05f35b54f6",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/stop-improving.json",
+      "raw_sha256": "aeba27453a5c6ecae23b7dbf9739651afb1658b35ea19692d1514367eb44a61b",
+      "public_path": "correction/cases/stop-improving.json",
+      "public_sha256": "aeba27453a5c6ecae23b7dbf9739651afb1658b35ea19692d1514367eb44a61b",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/stop-missing-G1.json",
+      "raw_sha256": "a08369646e4ea4d5f26e19fdf1c434e647effe608326b9ceb46a88e671612d5f",
+      "public_path": "correction/cases/stop-missing-G1.json",
+      "public_sha256": "a08369646e4ea4d5f26e19fdf1c434e647effe608326b9ceb46a88e671612d5f",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/stop-missing-UNKNOWN.json",
+      "raw_sha256": "508fcfe1869a4f1b939480c502aeb76cd07b4774c7c62d4f8dcc85fd41d6cda1",
+      "public_path": "correction/cases/stop-missing-UNKNOWN.json",
+      "public_sha256": "508fcfe1869a4f1b939480c502aeb76cd07b4774c7c62d4f8dcc85fd41d6cda1",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/stop-missing-__proto__.json",
+      "raw_sha256": "203b50ed66b703218c47629e16e1000279831cc2ee3a03b7d25e1fb6bd381286",
+      "public_path": "correction/cases/stop-missing-__proto__.json",
+      "public_sha256": "203b50ed66b703218c47629e16e1000279831cc2ee3a03b7d25e1fb6bd381286",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/stop-missing-constructor.json",
+      "raw_sha256": "80b4f8373c8a5a7d3b9895444b5cbf270771bf4020e76c87627dae7c3eac8b7f",
+      "public_path": "correction/cases/stop-missing-constructor.json",
+      "public_sha256": "80b4f8373c8a5a7d3b9895444b5cbf270771bf4020e76c87627dae7c3eac8b7f",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/stop-missing-hasOwnProperty.json",
+      "raw_sha256": "0f35e54781a7f39ea98e7f271f8e0ab3cd19b91a21b499bde9808c0b39111533",
+      "public_path": "correction/cases/stop-missing-hasOwnProperty.json",
+      "public_sha256": "0f35e54781a7f39ea98e7f271f8e0ab3cd19b91a21b499bde9808c0b39111533",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/stop-missing-toString.json",
+      "raw_sha256": "a2ecd5b22e9f1418269cc03c6521620db6694b976ea4ffa9258528105f17c351",
+      "public_path": "correction/cases/stop-missing-toString.json",
+      "public_sha256": "a2ecd5b22e9f1418269cc03c6521620db6694b976ea4ffa9258528105f17c351",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/stop-pass.json",
+      "raw_sha256": "a45d0cbb0b1f4a65082cfb259fd8d2473b12b270974ec6d0e3dfa4b315425eb9",
+      "public_path": "correction/cases/stop-pass.json",
+      "public_sha256": "a45d0cbb0b1f4a65082cfb259fd8d2473b12b270974ec6d0e3dfa4b315425eb9",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/stop-remeasured.json",
+      "raw_sha256": "f48aa6a75539413b18a878588b6483354910910ad465eda3adea75869d8d1ffb",
+      "public_path": "correction/cases/stop-remeasured.json",
+      "public_sha256": "f48aa6a75539413b18a878588b6483354910910ad465eda3adea75869d8d1ffb",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/stop-seventh-pass.json",
+      "raw_sha256": "11f8ed17e18e0d970d0188168d21584d49bc9f71051fc9cec03773e4797e250b",
+      "public_path": "correction/cases/stop-seventh-pass.json",
+      "public_sha256": "11f8ed17e18e0d970d0188168d21584d49bc9f71051fc9cec03773e4797e250b",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/stop-sixth-pass.json",
+      "raw_sha256": "c55897260c7dc44c6a6b53a971e217ec28ce7ceb5e80d984093d0c71b8d9d4e2",
+      "public_path": "correction/cases/stop-sixth-pass.json",
+      "public_sha256": "c55897260c7dc44c6a6b53a971e217ec28ce7ceb5e80d984093d0c71b8d9d4e2",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/stop-stale.json",
+      "raw_sha256": "889b1337ef626de7edc6095bcc995dac70df76aa2edb2b5d2def81246002b672",
+      "public_path": "correction/cases/stop-stale.json",
+      "public_sha256": "889b1337ef626de7edc6095bcc995dac70df76aa2edb2b5d2def81246002b672",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/stop-unmeasured-score.json",
+      "raw_sha256": "d189cfb02487a825450397d28077e50045d97315be60ed519fa94ea8d6c050ed",
+      "public_path": "correction/cases/stop-unmeasured-score.json",
+      "public_sha256": "d189cfb02487a825450397d28077e50045d97315be60ed519fa94ea8d6c050ed",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/stop-zero-1.json",
+      "raw_sha256": "078284828369e954e03c79cf7e1964112c97e48cd6f98077b75cf1ae07f3b3b9",
+      "public_path": "correction/cases/stop-zero-1.json",
+      "public_sha256": "078284828369e954e03c79cf7e1964112c97e48cd6f98077b75cf1ae07f3b3b9",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/stop-zero-2.json",
+      "raw_sha256": "17c3aa7f524da8cbf7e01f29d117768d65d5e99db475c5afa17f2dcce9f52ff6",
+      "public_path": "correction/cases/stop-zero-2.json",
+      "public_sha256": "17c3aa7f524da8cbf7e01f29d117768d65d5e99db475c5afa17f2dcce9f52ff6",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/stop-zero-3.json",
+      "raw_sha256": "8c418efafbdd62e2078783aa2fb961f16dd6486d8cfa8afd61fe38c4980fae96",
+      "public_path": "correction/cases/stop-zero-3.json",
+      "public_sha256": "8c418efafbdd62e2078783aa2fb961f16dd6486d8cfa8afd61fe38c4980fae96",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/stop-zero-4.json",
+      "raw_sha256": "65613a73d95a6e50a379dfb2588451a20c870f282360aa984c89a74079bc66c2",
+      "public_path": "correction/cases/stop-zero-4.json",
+      "public_sha256": "65613a73d95a6e50a379dfb2588451a20c870f282360aa984c89a74079bc66c2",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/stop-zero-5.json",
+      "raw_sha256": "b2156e172c22f6d271927e2a25fb87aad8e58c8e4218e2c18032811772d5ddeb",
+      "public_path": "correction/cases/stop-zero-5.json",
+      "public_sha256": "b2156e172c22f6d271927e2a25fb87aad8e58c8e4218e2c18032811772d5ddeb",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/stop-zero-6.json",
+      "raw_sha256": "8c7ad7e343500d4c52c7f00fa43ce7ced824455d7e2647237ec3d22add19020f",
+      "public_path": "correction/cases/stop-zero-6.json",
+      "public_sha256": "8c7ad7e343500d4c52c7f00fa43ce7ced824455d7e2647237ec3d22add19020f",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/cases/stop-zero-7.json",
+      "raw_sha256": "c48e9708da28e8a817a7669ce81e91f869e551c1831bd7c19e83843d2d12b909",
+      "public_path": "correction/cases/stop-zero-7.json",
+      "public_sha256": "c48e9708da28e8a817a7669ce81e91f869e551c1831bd7c19e83843d2d12b909",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/changed-paths.json",
+      "raw_sha256": "1ca275ef5214e3d9d059e4f91d70eb0633f36a4105eebf9848e10e1b378dc29c",
+      "public_path": "correction/changed-paths.json",
+      "public_sha256": "1ca275ef5214e3d9d059e4f91d70eb0633f36a4105eebf9848e10e1b378dc29c",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/command-index.md",
+      "raw_sha256": "d192ebdff25d430a8702a1a37fdc7e5db5b430af4b3b91fe208e0a10ad1ceb34",
+      "public_path": "correction/command-index.md",
+      "public_sha256": "d192ebdff25d430a8702a1a37fdc7e5db5b430af4b3b91fe208e0a10ad1ceb34",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/commands.json",
+      "raw_sha256": "42e77cf3fbfe439da4f1202b224259098a1455b36f97a6c64d7ae142a0256dea",
+      "public_path": "correction/commands.json",
+      "public_sha256": "42e77cf3fbfe439da4f1202b224259098a1455b36f97a6c64d7ae142a0256dea",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/current-tests.stderr",
+      "raw_sha256": "076334f98d803117fadfeb9f41eb831bd9fe6340bf9fd71fc0ccc9c94b7feb03",
+      "public_path": "correction/current-tests.stderr",
+      "public_sha256": "076334f98d803117fadfeb9f41eb831bd9fe6340bf9fd71fc0ccc9c94b7feb03",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/current-tests.stdout",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_path": "correction/current-tests.stdout",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/finish.py",
+      "raw_sha256": "719b908fc0685227cfbede6f48d512f6af838ba848287b6094f501a49f84529b",
+      "public_path": "correction/finish.py",
+      "public_sha256": "719b908fc0685227cfbede6f48d512f6af838ba848287b6094f501a49f84529b",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/fixed-source-manifest.json",
+      "raw_sha256": "75fba9632f176ee3289552911acde42926e853f701b9ef43b88f61cf27985e34",
+      "public_path": "correction/fixed-source-manifest.json",
+      "public_sha256": "75fba9632f176ee3289552911acde42926e853f701b9ef43b88f61cf27985e34",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/old-source-manifest.json",
+      "raw_sha256": "76099563245cc61fc8dc65e09965618a38252eeb48c030532967a66a2c625647",
+      "public_path": "correction/old-source-manifest.json",
+      "public_sha256": "76099563245cc61fc8dc65e09965618a38252eeb48c030532967a66a2c625647",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/profile-identities.json",
+      "raw_sha256": "0b7a88cd0b46195c79efa5f86d01b87f21d2489917e76a5f314a79074148216c",
+      "public_path": "correction/profile-identities.json",
+      "public_sha256": "0b7a88cd0b46195c79efa5f86d01b87f21d2489917e76a5f314a79074148216c",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/report.md",
+      "raw_sha256": "09fb17f09400ca6e768ecbec90bffa5e62862009a9faba040aff9b05bc270f25",
+      "public_path": "correction/report.md",
+      "public_sha256": "09fb17f09400ca6e768ecbec90bffa5e62862009a9faba040aff9b05bc270f25",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/reproduce.py",
+      "raw_sha256": "379b587b015900c0a47ab1fab2454e57263d2600ca35336873507bfb6f4c21b4",
+      "public_path": "correction/reproduce.py",
+      "public_sha256": "379b587b015900c0a47ab1fab2454e57263d2600ca35336873507bfb6f4c21b4",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/source-context/fixed/schemas/qore-release.schema.json.txt",
+      "raw_sha256": "7c41ac2bb39b1910d4972646f9a2e798e59248fa63bbfa01e1227da1cde588c9",
+      "public_path": "correction/source-context/fixed/schemas/qore-release.schema.json.txt",
+      "public_sha256": "7c41ac2bb39b1910d4972646f9a2e798e59248fa63bbfa01e1227da1cde588c9",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/source-context/fixed/skills/qore-plan/references/specification.md.txt",
+      "raw_sha256": "3b75cfb13a0bc452ca7695a202c49d7c70239723db36d4da2b859383e3cd8a76",
+      "public_path": "correction/source-context/fixed/skills/qore-plan/references/specification.md.txt",
+      "public_sha256": "3b75cfb13a0bc452ca7695a202c49d7c70239723db36d4da2b859383e3cd8a76",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/source-context/fixed/skills/qore-plan/scripts/spec-lint.mjs.txt",
+      "raw_sha256": "3e90345a54a0eab21bbd87b76cfed54fbff836cafbde86e381203b8bdbe221cb",
+      "public_path": "correction/source-context/fixed/skills/qore-plan/scripts/spec-lint.mjs.txt",
+      "public_sha256": "3e90345a54a0eab21bbd87b76cfed54fbff836cafbde86e381203b8bdbe221cb",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/source-context/fixed/skills/qore-review/references/findings.md.txt",
+      "raw_sha256": "240291b905b89c24ce0df1b4455b24f15962b6386d3614989d0a4a1eca5cd9ec",
+      "public_path": "correction/source-context/fixed/skills/qore-review/references/findings.md.txt",
+      "public_sha256": "240291b905b89c24ce0df1b4455b24f15962b6386d3614989d0a4a1eca5cd9ec",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/source-context/fixed/skills/qore-review/scripts/finding-lint.mjs.txt",
+      "raw_sha256": "f5fdd613f8f00018c3a21c29ce7123ce3dd690205537be7b7e025744cf6e829b",
+      "public_path": "correction/source-context/fixed/skills/qore-review/scripts/finding-lint.mjs.txt",
+      "public_sha256": "f5fdd613f8f00018c3a21c29ce7123ce3dd690205537be7b7e025744cf6e829b",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/source-context/fixed/skills/qore-review/scripts/project-check.py.txt",
+      "raw_sha256": "a5eecde73dd0673e0f64742589c5ac3e807a71266740c76c13110a2061f92cff",
+      "public_path": "correction/source-context/fixed/skills/qore-review/scripts/project-check.py.txt",
+      "public_sha256": "a5eecde73dd0673e0f64742589c5ac3e807a71266740c76c13110a2061f92cff",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/source-context/fixed/skills/qore-ux-review/references/protocol.md.txt",
+      "raw_sha256": "7a782b031aa4a44d2844b3da69f12524903504f99dadb80543456ccf31a1ca6f",
+      "public_path": "correction/source-context/fixed/skills/qore-ux-review/references/protocol.md.txt",
+      "public_sha256": "7a782b031aa4a44d2844b3da69f12524903504f99dadb80543456ccf31a1ca6f",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/source-context/fixed/skills/qore-ux-review/scripts/stop-rule.mjs.txt",
+      "raw_sha256": "72862f9c4458e940b7c0d838a20f6288ef29c82994def7f3ac5264abacddd8ed",
+      "public_path": "correction/source-context/fixed/skills/qore-ux-review/scripts/stop-rule.mjs.txt",
+      "public_sha256": "72862f9c4458e940b7c0d838a20f6288ef29c82994def7f3ac5264abacddd8ed",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/source-context/fixed/tools/context.py.txt",
+      "raw_sha256": "a5eecde73dd0673e0f64742589c5ac3e807a71266740c76c13110a2061f92cff",
+      "public_path": "correction/source-context/fixed/tools/context.py.txt",
+      "public_sha256": "a5eecde73dd0673e0f64742589c5ac3e807a71266740c76c13110a2061f92cff",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/source-context/fixed/tools/qore.py.txt",
+      "raw_sha256": "055c9fe1447bc3d1eee8e749a010f0fa14fc2dc26ac260e3b5cf540ec8b62a00",
+      "public_path": "correction/source-context/fixed/tools/qore.py.txt",
+      "public_sha256": "055c9fe1447bc3d1eee8e749a010f0fa14fc2dc26ac260e3b5cf540ec8b62a00",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/source-context/old/schemas/qore-release.schema.json.txt",
+      "raw_sha256": "7c41ac2bb39b1910d4972646f9a2e798e59248fa63bbfa01e1227da1cde588c9",
+      "public_path": "correction/source-context/old/schemas/qore-release.schema.json.txt",
+      "public_sha256": "7c41ac2bb39b1910d4972646f9a2e798e59248fa63bbfa01e1227da1cde588c9",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/source-context/old/skills/qore-plan/references/specification.md.txt",
+      "raw_sha256": "3b75cfb13a0bc452ca7695a202c49d7c70239723db36d4da2b859383e3cd8a76",
+      "public_path": "correction/source-context/old/skills/qore-plan/references/specification.md.txt",
+      "public_sha256": "3b75cfb13a0bc452ca7695a202c49d7c70239723db36d4da2b859383e3cd8a76",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/source-context/old/skills/qore-plan/scripts/spec-lint.mjs.txt",
+      "raw_sha256": "1f10412f0f7e8b76a03fedbc22926a3fcdd8e56b989845be629da71787e6839a",
+      "public_path": "correction/source-context/old/skills/qore-plan/scripts/spec-lint.mjs.txt",
+      "public_sha256": "1f10412f0f7e8b76a03fedbc22926a3fcdd8e56b989845be629da71787e6839a",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/source-context/old/skills/qore-review/references/findings.md.txt",
+      "raw_sha256": "240291b905b89c24ce0df1b4455b24f15962b6386d3614989d0a4a1eca5cd9ec",
+      "public_path": "correction/source-context/old/skills/qore-review/references/findings.md.txt",
+      "public_sha256": "240291b905b89c24ce0df1b4455b24f15962b6386d3614989d0a4a1eca5cd9ec",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/source-context/old/skills/qore-review/scripts/finding-lint.mjs.txt",
+      "raw_sha256": "a69fdb1a19c7bc2f7c93be639bb7304c328acfcfad4d68c0c79b048a83d7d5c5",
+      "public_path": "correction/source-context/old/skills/qore-review/scripts/finding-lint.mjs.txt",
+      "public_sha256": "a69fdb1a19c7bc2f7c93be639bb7304c328acfcfad4d68c0c79b048a83d7d5c5",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/source-context/old/skills/qore-review/scripts/project-check.py.txt",
+      "raw_sha256": "a5eecde73dd0673e0f64742589c5ac3e807a71266740c76c13110a2061f92cff",
+      "public_path": "correction/source-context/old/skills/qore-review/scripts/project-check.py.txt",
+      "public_sha256": "a5eecde73dd0673e0f64742589c5ac3e807a71266740c76c13110a2061f92cff",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/source-context/old/skills/qore-ux-review/references/protocol.md.txt",
+      "raw_sha256": "7a782b031aa4a44d2844b3da69f12524903504f99dadb80543456ccf31a1ca6f",
+      "public_path": "correction/source-context/old/skills/qore-ux-review/references/protocol.md.txt",
+      "public_sha256": "7a782b031aa4a44d2844b3da69f12524903504f99dadb80543456ccf31a1ca6f",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/source-context/old/skills/qore-ux-review/scripts/stop-rule.mjs.txt",
+      "raw_sha256": "6c3f5f7e764ea8a9c2b777be2bb700bff157c2737dd26216dddbc622c673690f",
+      "public_path": "correction/source-context/old/skills/qore-ux-review/scripts/stop-rule.mjs.txt",
+      "public_sha256": "6c3f5f7e764ea8a9c2b777be2bb700bff157c2737dd26216dddbc622c673690f",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/source-context/old/tools/context.py.txt",
+      "raw_sha256": "a5eecde73dd0673e0f64742589c5ac3e807a71266740c76c13110a2061f92cff",
+      "public_path": "correction/source-context/old/tools/context.py.txt",
+      "public_sha256": "a5eecde73dd0673e0f64742589c5ac3e807a71266740c76c13110a2061f92cff",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/source-context/old/tools/qore.py.txt",
+      "raw_sha256": "4a3c2a70b413185abe3efc5fdcbf1efb30be09e9694e4972582d3dec803fcc23",
+      "public_path": "correction/source-context/old/tools/qore.py.txt",
+      "public_sha256": "4a3c2a70b413185abe3efc5fdcbf1efb30be09e9694e4972582d3dec803fcc23",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/target-manifests/fixed/manifest.json",
+      "raw_sha256": "eff6d2ecd6e49b752479a36911f869122b6737f6c9112b1dc8a85f3267adc2cf",
+      "public_path": "correction/target-manifests/fixed/manifest.json",
+      "public_sha256": "eff6d2ecd6e49b752479a36911f869122b6737f6c9112b1dc8a85f3267adc2cf",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/target-manifests/fixed/skills/qore-plan/references/release.json",
+      "raw_sha256": "e3b8cacbecc6c89f0b460771894346ea97b6d967381477f5701e0c8f46c5c49b",
+      "public_path": "correction/target-manifests/fixed/skills/qore-plan/references/release.json",
+      "public_sha256": "e3b8cacbecc6c89f0b460771894346ea97b6d967381477f5701e0c8f46c5c49b",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/target-manifests/fixed/skills/qore-review/references/release.json",
+      "raw_sha256": "7714f5ae547c66f8d3e933ca174743221f851376c52eff3a28711c3323bdff4e",
+      "public_path": "correction/target-manifests/fixed/skills/qore-review/references/release.json",
+      "public_sha256": "7714f5ae547c66f8d3e933ca174743221f851376c52eff3a28711c3323bdff4e",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/target-manifests/fixed/skills/qore-ux-review/references/release.json",
+      "raw_sha256": "d7bcf9be7e689e38975c2622d2020f265dca7b18919b2aa35f900e7e30fe42e9",
+      "public_path": "correction/target-manifests/fixed/skills/qore-ux-review/references/release.json",
+      "public_sha256": "d7bcf9be7e689e38975c2622d2020f265dca7b18919b2aa35f900e7e30fe42e9",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/target-manifests/old/manifest.json",
+      "raw_sha256": "d8f048f15100c839198ab60f7defb6a0b22e7a5ffe01214462b4c0a9d0c1404e",
+      "public_path": "correction/target-manifests/old/manifest.json",
+      "public_sha256": "d8f048f15100c839198ab60f7defb6a0b22e7a5ffe01214462b4c0a9d0c1404e",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/target-manifests/old/skills/qore-plan/references/release.json",
+      "raw_sha256": "3814e8357bbc47938cd5bd40634143d39d84f76a775d38343ed5bdf939c6c2c5",
+      "public_path": "correction/target-manifests/old/skills/qore-plan/references/release.json",
+      "public_sha256": "3814e8357bbc47938cd5bd40634143d39d84f76a775d38343ed5bdf939c6c2c5",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/target-manifests/old/skills/qore-review/references/release.json",
+      "raw_sha256": "cd65c957ad54614057afbd6874dcfdb5f12106a22b3d8d45a33845138a630804",
+      "public_path": "correction/target-manifests/old/skills/qore-review/references/release.json",
+      "public_sha256": "cd65c957ad54614057afbd6874dcfdb5f12106a22b3d8d45a33845138a630804",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/target-manifests/old/skills/qore-ux-review/references/release.json",
+      "raw_sha256": "0960d2d2e4765ec0f684df528b957c67d1916482210e975f01a36e8c366ba3ed",
+      "public_path": "correction/target-manifests/old/skills/qore-ux-review/references/release.json",
+      "public_sha256": "0960d2d2e4765ec0f684df528b957c67d1916482210e975f01a36e8c366ba3ed",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/target-unchanged.json",
+      "raw_sha256": "c3a06608bf0273f39573bb22091aacac521b45e5e530421ecf0aa15545dfe2d8",
+      "public_path": "correction/target-unchanged.json",
+      "public_sha256": "c3a06608bf0273f39573bb22091aacac521b45e5e530421ecf0aa15545dfe2d8",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/verified.json",
+      "raw_sha256": "f3354ce514d8349750cc5ad65543cab4341ce72fe4831f41fe5a564c18062ab3",
+      "public_path": "correction/verified.json",
+      "public_sha256": "f3354ce514d8349750cc5ad65543cab4341ce72fe4831f41fe5a564c18062ab3",
+      "transformation": "Preserved selected public first-party bytes."
+    },
+    {
+      "raw_artifact_id": "correction/write_report.py",
+      "raw_sha256": "2d588b0c40232baa1b5d8c024d1305fb3a43d5b8217ef623a3a2dfabd0f12adf",
+      "public_path": "correction/write_report.py",
+      "public_sha256": "2d588b0c40232baa1b5d8c024d1305fb3a43d5b8217ef623a3a2dfabd0f12adf",
+      "transformation": "Preserved selected public first-party bytes."
+    }
+  ],
+  "omitted": [
+    "Whole source tarball, rebuild ZIP and redundant generated derivative folders; relevant source contexts, manifests, raw cases and complete command results are retained."
+  ],
+  "limits": [
+    "Correction record precedes the final explicit budget-coverage field; that change has its own acceptance check.",
+    "Historical records are not relabelled as the final archive."
+  ]
+}

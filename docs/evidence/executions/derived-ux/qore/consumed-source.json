@@ -1,0 +1,27 @@
+{
+  "name": "qore-skills",
+  "version": "0.1.0",
+  "check": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-v"
+  ],
+  "invariants": {
+    "preserve-adaptations": "Generate updates in new staging and refuse to overwrite existing adaptations.",
+    "verified-blockers": "Only independently confirmed critical or high findings are verified blockers; missing verification remains partial.",
+    "observed-ux": "A required browser check without fresh evidence prevents global success."
+  },
+  "fixture": {
+    "kind": "fixture",
+    "entry_url": "http://127.0.0.1:8765/index.html",
+    "allowed_origins": [
+      "http://127.0.0.1:8765"
+    ],
+    "required_state": "Resolved synthetic state."
+  }
+}

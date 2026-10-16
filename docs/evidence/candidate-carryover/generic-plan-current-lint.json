@@ -1,0 +1,52 @@
+{
+  "valid": true,
+  "schema": "qore-spec/1",
+  "scenarios": [
+    {
+      "id": "A01",
+      "name": "A01 Refuse a missing findings envelope",
+      "line": 30
+    },
+    {
+      "id": "A02",
+      "name": "A02 Keep an unverified high-severity candidate",
+      "line": 35
+    },
+    {
+      "id": "A03",
+      "name": "A03 Preserve a valid empty review",
+      "line": 43
+    },
+    {
+      "id": "A04",
+      "name": "A04 Refuse malformed complete verifier values",
+      "line": 133
+    },
+    {
+      "id": "A05",
+      "name": "A05 Refuse missing duplicate and unsupported argument declarations",
+      "line": 148
+    },
+    {
+      "id": "A06",
+      "name": "A06 Preserve exact completed verification and a legitimate empty packet",
+      "line": 154
+    },
+    {
+      "id": "A07",
+      "name": "A07 Preserve honest skipped verification and impact severity",
+      "line": 160
+    },
+    {
+      "id": "A08",
+      "name": "A08 Preserve a verified blocker and retained refutation",
+      "line": 167
+    },
+    {
+      "id": "A09",
+      "name": "A09 Preserve source and installed adaptations during qualification",
+      "line": 174
+    }
+  ],
+  "problems": []
+}

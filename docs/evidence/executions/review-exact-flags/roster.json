@@ -1,0 +1,34 @@
+[
+  {
+    "requested_role": "correctness",
+    "requested_actor_task_name": "correctness",
+    "returned_actor_id": "/root/correctness",
+    "report": "correctness.md",
+    "fresh_context": true,
+    "returned_report": true
+  },
+  {
+    "requested_role": "security",
+    "requested_actor_task_name": "security",
+    "returned_actor_id": "/root/security",
+    "report": "security.md",
+    "fresh_context": true,
+    "returned_report": true
+  },
+  {
+    "requested_role": "feasibility",
+    "requested_actor_task_name": "feasibility",
+    "returned_actor_id": "/root/feasibility",
+    "report": "feasibility.md",
+    "fresh_context": true,
+    "returned_report": true
+  },
+  {
+    "requested_role": "verifier",
+    "requested_actor_task_name": "verifier",
+    "returned_actor_id": "/root/verifier",
+    "report": "verifier.md",
+    "fresh_context": true,
+    "returned_report": true
+  }
+]

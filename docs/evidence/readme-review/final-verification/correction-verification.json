@@ -1,0 +1,546 @@
+{
+  "schema": "qore-scoped-correction-verification/1",
+  "verifier": "Same independent final README verifier; narrowly continued wave, no new reader round",
+  "scope": "Only the artifact-path export correction and its execution/provenance propagation",
+  "frozen_archive_sha256": "211ce7479ee8f3cee66503f4949aae67ba67a8a009e476d4afee4e22c6b01b29",
+  "frozen_root": "<PROPOSED_PUBLIC_CANDIDATE>",
+  "working_root": "<WORKING_SOURCE_ROOT>",
+  "changed_files": [
+    {
+      "path": "docs/evidence/executions/generic-ux-final/capability-matrix.json",
+      "frozen_sha256": "8c1dbf1f5be41bbf3c3e68f41569fa332763e5cb4e89f788d17f026e263fb703",
+      "corrected_sha256": "13d8148f04f30123b43becbc2862c628557d605ee28b897522edf19db427f91c"
+    },
+    {
+      "path": "docs/evidence/executions/generic-ux-final/execution.json",
+      "frozen_sha256": "302317bd68ed1dde0b08714feb705acacb314dfedcc9f283432133a6322d626a",
+      "corrected_sha256": "884cdf5af95361e82a7a7c0ed1643829b9170f0b5b98cbc311d4f9c985cfcf7b"
+    },
+    {
+      "path": "docs/evidence/executions/generic-ux-final/provenance.json",
+      "frozen_sha256": "73ccfe82d290c7c0ce654ae5a9b2d1ece271777be9627814a8370678beca338d",
+      "corrected_sha256": "42c3c4cbdaeb812a32a88e0719a8eba16cc0b0bd4be631b54fd1d5fcee7488bf"
+    }
+  ],
+  "all_changed_files_in_ux_export": [
+    "capability-matrix.json",
+    "execution.json",
+    "provenance.json"
+  ],
+  "reference_changes": [
+    {
+      "capability": "navigation",
+      "before": "browser/events.json",
+      "after": "browser-events.json"
+    },
+    {
+      "capability": "screenshots",
+      "before": "browser/viewport-observations.json",
+      "after": "viewport-observations.json"
+    },
+    {
+      "capability": "screenshots",
+      "before": "browser/ssr.json",
+      "after": "ssr.json"
+    },
+    {
+      "capability": "keyboard",
+      "before": "browser/g5-summary-keyboard-focus-i1.dom.json",
+      "after": "dom/g5-summary-keyboard-focus-i1.dom.json"
+    },
+    {
+      "capability": "console",
+      "before": "browser/events.json",
+      "after": "browser-events.json"
+    },
+    {
+      "capability": "network",
+      "before": "browser/events.json",
+      "after": "browser-events.json"
+    }
+  ],
+  "capability_targets": [
+    {
+      "capability": "navigation",
+      "path": "browser-events.json",
+      "exists": true,
+      "sha256": "91512721426394e4f92ad8e6f89a73597ebafe5dcb218e63e4fc981edb506156",
+      "unchanged_from_frozen": true
+    },
+    {
+      "capability": "screenshots",
+      "path": "viewport-observations.json",
+      "exists": true,
+      "sha256": "54bc4f40754a45839000c278b3a64238606c0bae9eb92d38dba1d1381359fb81",
+      "unchanged_from_frozen": true
+    },
+    {
+      "capability": "screenshots",
+      "path": "ssr.json",
+      "exists": true,
+      "sha256": "cf4a73f98e7826c2de7fed4b320ff58ab51c7ef629be2fd5e81c1b5831acd308",
+      "unchanged_from_frozen": true
+    },
+    {
+      "capability": "DOM/semantics",
+      "path": "gate-assertions.json",
+      "exists": true,
+      "sha256": "81779a43a5f356d8548fc2b3495fc579a2d51ec8a407c4ad166d47cb1fc26071",
+      "unchanged_from_frozen": true
+    },
+    {
+      "capability": "keyboard",
+      "path": "dom/g5-summary-keyboard-focus-i1.dom.json",
+      "exists": true,
+      "sha256": "4a23908fd1ee9b33a064c32bd97403b3d96a076f68bac026387bab4f13645e29",
+      "unchanged_from_frozen": true
+    },
+    {
+      "capability": "console",
+      "path": "browser-events.json",
+      "exists": true,
+      "sha256": "91512721426394e4f92ad8e6f89a73597ebafe5dcb218e63e4fc981edb506156",
+      "unchanged_from_frozen": true
+    },
+    {
+      "capability": "network",
+      "path": "browser-events.json",
+      "exists": true,
+      "sha256": "91512721426394e4f92ad8e6f89a73597ebafe5dcb218e63e4fc981edb506156",
+      "unchanged_from_frozen": true
+    }
+  ],
+  "execution_artifacts": [
+    {
+      "path": "phases/scope.json",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "phases/browser.json",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "phases/state_transition.json",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "phases/freshness.json",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "phases/verdict.json",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "loop.json",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "candidate-binding.json",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "gate-assertions.json",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "capability-matrix.json",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "freshness.json",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "initial-scope.json",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "commands.json",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "visual-inspection.json",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "browser-events.json",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "depth.json",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "viewport-observations.json",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "depth-lint.json",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "live-target-snapshot.json",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "browser-result.json",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "stop-result.json",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "ssr.json",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "screenshots/g3-viewport-summary-focused.png",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "screenshots/g3-viewport-restored.png",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "screenshots/g3-viewport-help-expanded.png",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "screenshots/g3-viewport-intro.png",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "screenshots/g3-ssr-without-js-i1.png",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "screenshots/g0-entry-i1.png",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "dom/g0-entry-i1.dom.json",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "dom/g2-route-pending-i1.dom.json",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "dom/g1-direct-reload-i1.dom.json",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "dom/g0-readiness-resolved-i1.dom.json",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "dom/g2-help-closed-keyboard-i1.dom.json",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "dom/g5-summary-keyboard-focus-i1.dom.json",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "dom/g5-radio-keyboard-focus-i1.dom.json",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "dom/g5-intro-restored-focus-i1.dom.json",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "dom/g2-help-expanded-keyboard-i1.dom.json",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "dom/g6-repeated-back-i1.dom.json",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "dom/g2-question-resolved-i1.dom.json",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "dom/g6-repeated-question-i1.dom.json",
+      "exists": true,
+      "digest_matches": true
+    }
+  ],
+  "provenance_artifacts": [
+    {
+      "path": "depth.json",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "depth-lint.json",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "loop.json",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "stop-result.json",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "candidate-binding.json",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "freshness.json",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "capability-matrix.json",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "gate-assertions.json",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "visual-inspection.json",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "initial-scope.json",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "live-target-snapshot.json",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "browser-events.json",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "browser-result.json",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "ssr.json",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "viewport-observations.json",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "dom/g0-entry-i1.dom.json",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "dom/g0-readiness-resolved-i1.dom.json",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "dom/g1-direct-reload-i1.dom.json",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "dom/g2-help-closed-keyboard-i1.dom.json",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "dom/g2-help-expanded-keyboard-i1.dom.json",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "dom/g2-question-resolved-i1.dom.json",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "dom/g2-route-pending-i1.dom.json",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "dom/g5-intro-restored-focus-i1.dom.json",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "dom/g5-radio-keyboard-focus-i1.dom.json",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "dom/g5-summary-keyboard-focus-i1.dom.json",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "dom/g6-repeated-back-i1.dom.json",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "dom/g6-repeated-question-i1.dom.json",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "screenshots/g0-entry-i1.png",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "screenshots/g3-viewport-intro.png",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "screenshots/g3-viewport-summary-focused.png",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "screenshots/g3-viewport-help-expanded.png",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "screenshots/g3-viewport-restored.png",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "screenshots/g3-ssr-without-js-i1.png",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "commands.json",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "phases/scope.json",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "phases/browser.json",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "phases/state_transition.json",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "phases/freshness.json",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "phases/verdict.json",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "execution.json",
+      "exists": true,
+      "digest_matches": true
+    },
+    {
+      "path": "README.md",
+      "exists": true,
+      "digest_matches": true
+    }
+  ],
+  "checks": {
+    "capability_expected_hash": true,
+    "exactly_six_reference_changes": true,
+    "capability_non_path_semantics_unchanged": true,
+    "all_capability_targets_exist": true,
+    "all_capability_targets_unchanged": true,
+    "execution_only_capability_digest_changed": true,
+    "all_39_execution_artifact_digests_match": true,
+    "all_provenance_public_targets_and_digests_match": true,
+    "provenance_raw_sources_unchanged": true,
+    "provenance_origin_time_identity_fields_unchanged": true,
+    "only_three_declared_files_changed_in_ux_export": true,
+    "validate_run_complete_39": true
+  },
+  "command": {
+    "argv": [
+      "python3",
+      "<PROPOSED_PUBLIC_CANDIDATE>/tools/qore.py",
+      "validate-run",
+      "<WORKING_SOURCE_ROOT>/docs/evidence/executions/generic-ux-final/execution.json",
+      "--evidence-root",
+      "<WORKING_SOURCE_ROOT>/docs/evidence/executions/generic-ux-final"
+    ],
+    "returncode": 0,
+    "stdout": "{\n  \"valid\": true,\n  \"coverage\": \"COMPLETE\",\n  \"missing_phases\": [],\n  \"artifact_count\": 39,\n  \"note\": \"Evidence identity and declared phase coverage checked; factual quality is not certified.\"\n}\n",
+    "stderr": ""
+  },
+  "verdict": "CLOSED",
+  "limit": "Closure applies to corrected working files only; original findings and frozen archive identity remain unchanged. No new browser execution, archive build or external human evidence is asserted."
+}

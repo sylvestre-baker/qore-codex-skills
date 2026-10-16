@@ -1,0 +1,267 @@
+{
+  "schema": "qore-technical-demo/1",
+  "public_id": "qore-technical-demo-20261015-01",
+  "created_at": "2026-10-15T20:03:29.149585+00:00",
+  "duration_seconds": 78.16,
+  "format": "Silent H.264,1280x800,25fps; default English mov_text subtitle track plus WebVTT",
+  "presentation_rule": "Scene cards are authored presentation graphics and exact/selected report excerpts, not UI interaction recordings. The only moving browser segment is an actual earlier recording, whose action order/speed and chronology are disclosed.",
+  "scenes": [
+    {
+      "name": "01-intro",
+      "duration": 8,
+      "title": "Three methods. Traceable decisions.",
+      "kind": "Authored scene card using cited actual report excerpts; not a captured UI interaction.",
+      "rendered_card_sha256": "2d4692ad5d21d8768febebb1c0382a5d776bafef09d4d3f227ca0a76c5366317",
+      "encoded_segment_sha256": "95f807d84956b1a6398408843688179bdd9c44ec4cfeafc64402e4bf78641a9a",
+      "source_ids": [],
+      "intermediate_artifact_id": "qore-private:demo/rendered/01-intro.png"
+    },
+    {
+      "name": "02-plan",
+      "duration": 10,
+      "title": "Plan the next bounded change.",
+      "kind": "Authored scene card using cited actual report excerpts; not a captured UI interaction.",
+      "rendered_card_sha256": "7cbeceba66933dbc49b8a02017b8fa1245a53fa6fd5e615d462832c7e8a3546f",
+      "encoded_segment_sha256": "50494308a8053f746d907492b99854b81fe926cd424f4c23af66bfe40bbf6ebd",
+      "source_ids": [
+        "qore-private:qore-implementation-20261015/evaluations/generic-plan/roster.json",
+        "qore-private:qore-implementation-20261015/evaluations/generic-plan/adjudication.json",
+        "qore-private:qore-implementation-20261015/evaluations/generic-plan/proposed-spec.md",
+        "qore-private:qore-implementation-20261015/evaluations/generic-plan/execution.json"
+      ],
+      "intermediate_artifact_id": "qore-private:demo/rendered/02-plan.png"
+    },
+    {
+      "name": "03-probe",
+      "duration": 9,
+      "title": "One malformed token. Two receipts.",
+      "kind": "Authored scene card using cited actual report excerpts; not a captured UI interaction.",
+      "rendered_card_sha256": "c010c7d7c4edd256737da690cab0e759a491cc2a88454a3c97d80803eede9d8e",
+      "encoded_segment_sha256": "d41fc95fd9ea3bb9b407b515f253e5ec08afedfc57164ae4a9c9d64083e559b9",
+      "source_ids": [
+        "qore-public:docs/demo/verifier-flag-probe.json"
+      ],
+      "intermediate_artifact_id": "qore-private:demo/rendered/03-probe.png"
+    },
+    {
+      "name": "04-review",
+      "duration": 11,
+      "title": "A complete review can find zero.",
+      "kind": "Authored scene card using cited actual report excerpts; not a captured UI interaction.",
+      "rendered_card_sha256": "05f72b4495673cdd54c38761f823d1cbd66abb828eb4d641cd2bbed1e33d07e1",
+      "encoded_segment_sha256": "fd69e52cd30e92e5d6093f203975c1f33bc811f70d7d8c8b96673e5c07a047e3",
+      "source_ids": [
+        "qore-public:docs/evidence/executions/generic-review/report.md",
+        "qore-public:docs/evidence/executions/generic-review/identity.json",
+        "qore-public:docs/evidence/executions/generic-review/verifier-coverage.json",
+        "qore-public:docs/evidence/executions/generic-review/findings.json"
+      ],
+      "intermediate_artifact_id": "qore-private:demo/rendered/04-review.png"
+    },
+    {
+      "name": "05-browser",
+      "duration": 21.16,
+      "title": "Actual earlier QAIZEN Labs capture",
+      "kind": "Actual 21.16-second browser video, unchanged speed and action order; uniformly scaled and padded beneath a source-identification banner.",
+      "source_sha256": "a2297a784d55c65141b4dd4c8d1c5197969537a1301112b0f5b7ae135a82ff63",
+      "chronology": "Earlier driver recording at19:28 UTC, before formal generic UX at19:41 UTC; not presented as footage of that later skill invocation.",
+      "rendered_card_sha256": null,
+      "encoded_segment_sha256": "1cee060f19e8a129b290e686d0336a9f8beedbe32d06fa0d058767f2d19d37fc",
+      "source_ids": [
+        "qore-public:docs/evidence/executions/generic-ux/execution.json",
+        "qore-public:docs/evidence/executions/generic-ux/candidate-binding.json",
+        "qore-private:qore-implementation-20261015/browser/qaizen-readiness-observed/video/page@e331140365e6eb392f9186c9587738d9.webm"
+      ],
+      "intermediate_artifact_id": "qore-private:demo/rendered/05-browser.mp4"
+    },
+    {
+      "name": "06-profiles",
+      "duration": 10,
+      "title": "Focused profile contrast",
+      "kind": "Authored card with actual resolved-state screenshots, uniformly scaled without altering their content.",
+      "rendered_card_sha256": "afe2452f0693839c4891c7acf04c7231e6554403adc4a416bd3313eb6ff72fc1",
+      "encoded_segment_sha256": "929f77a7685e87c47735b68ebbb4d014f3f8f4e73aae66da6a6c52a999d196df",
+      "source_ids": [
+        "qore-public:docs/evidence/executions/derived-ux/comparison.json",
+        "qore-public:docs/evidence/executions/derived-ux/qore/resolved.png",
+        "qore-public:docs/evidence/executions/derived-ux/contrast/resolved.png"
+      ],
+      "intermediate_artifact_id": "qore-private:demo/rendered/06-profiles.png"
+    },
+    {
+      "name": "07-limits",
+      "duration": 9,
+      "title": "Keep the decision inside the evidence.",
+      "kind": "Authored scene card using cited actual report excerpts; not a captured UI interaction.",
+      "rendered_card_sha256": "70004d5f8987b70bb0f90bd3e9f22ad11b2ea4aa9e7df9b5e6254135232eb5f4",
+      "encoded_segment_sha256": "0757d417f68e2ae9d7d7f50439fc2a72141ee8b34f1b5d10cb3f051e9da9dfad",
+      "source_ids": [
+        "qore-public:docs/evidence/executions/generic-ux/execution.json",
+        "qore-public:docs/evidence/executions/derived-ux/comparison.json"
+      ],
+      "intermediate_artifact_id": "qore-private:demo/rendered/07-limits.png"
+    }
+  ],
+  "raw_and_public_sources": [
+    {
+      "source_id": "qore-private:qore-implementation-20261015/evaluations/generic-plan/roster.json",
+      "sha256": "15dea994c234df4d08e239513f41081aadd278e1ebe04d3d64445d0b07d66bbc"
+    },
+    {
+      "source_id": "qore-private:qore-implementation-20261015/evaluations/generic-plan/adjudication.json",
+      "sha256": "8c38fdf6fb48bfa34c1305d98939cc5e45aa9d71e7b6834e31a177cc934da27a"
+    },
+    {
+      "source_id": "qore-private:qore-implementation-20261015/evaluations/generic-plan/proposed-spec.md",
+      "sha256": "26701f8c71dcbdf85e3ab787e870360763070b726ce24069b706d10831c834d6"
+    },
+    {
+      "source_id": "qore-private:qore-implementation-20261015/evaluations/generic-plan/execution.json",
+      "sha256": "be1cad3180d186e58c2e604650325983fbd9de7b38c277a8c93ba144cd57c44c"
+    },
+    {
+      "source_id": "qore-public:docs/evidence/executions/generic-review/report.md",
+      "sha256": "80db1c35a4087f44d99f177a3eeb8ac74f37b5b71e543ab4ed6f225537c481a7"
+    },
+    {
+      "source_id": "qore-public:docs/evidence/executions/generic-review/identity.json",
+      "sha256": "1837263f34eee66a07eb137ca69aa3a5a176b69ec4856cbea1585d9ad7b4a94b"
+    },
+    {
+      "source_id": "qore-public:docs/evidence/executions/generic-review/verifier-coverage.json",
+      "sha256": "f700ce6be0743c4106f3ff461c3ec7be573750737cae63bf41d5003ff9a21b14"
+    },
+    {
+      "source_id": "qore-public:docs/evidence/executions/generic-review/findings.json",
+      "sha256": "8aa973100a15bf817985395637131e838cf84e427be4792583def923f020f5fa"
+    },
+    {
+      "source_id": "qore-public:docs/evidence/executions/generic-ux/execution.json",
+      "sha256": "6040a258d0cdb29f3c58c25b1ba4f6b1cd86df9a002349c3a01fc32af2dc767d"
+    },
+    {
+      "source_id": "qore-public:docs/evidence/executions/generic-ux/candidate-binding.json",
+      "sha256": "10e099166e22b0ec3bdcbbab1c7eb397af3ac46d148f9124f9456b3eb67f006f"
+    },
+    {
+      "source_id": "qore-public:docs/evidence/executions/derived-ux/comparison.json",
+      "sha256": "69f858fbd2ad2b837e946d538822f9c09d5fbb01b9d9183f822f2dfab8260b19"
+    },
+    {
+      "source_id": "qore-public:docs/demo/verifier-flag-probe.json",
+      "sha256": "25f79ea4a5fd195159b08278a2e001c41ebbfd51217fb8088eb4e283e6c3ca6b"
+    },
+    {
+      "source_id": "qore-private:qore-implementation-20261015/browser/qaizen-readiness-observed/video/page@e331140365e6eb392f9186c9587738d9.webm",
+      "sha256": "a2297a784d55c65141b4dd4c8d1c5197969537a1301112b0f5b7ae135a82ff63"
+    },
+    {
+      "source_id": "qore-public:docs/evidence/executions/derived-ux/qore/resolved.png",
+      "sha256": "b8d1bc1b9bf35c7c16d775f08bd7ef1ec8bf87d0f4fc776217b469ded29d51a6"
+    },
+    {
+      "source_id": "qore-public:docs/evidence/executions/derived-ux/contrast/resolved.png",
+      "sha256": "13c5ba9979af63a655b02aa2cd737f4f48de5ff17e22c2a69d004b4eead26f23"
+    }
+  ],
+  "parser_receipt": "verifier-flag-probe.json",
+  "video_sha256": "049ff9fea9d3a6d5d66f56e30c3e77bd8e835f597737f77814aba29dd689d49f",
+  "captions_sha256": "70b00169d85420eae7ae46845bb0031a72b0421ace489bd15ebd057576f38fc6",
+  "limits": [
+    "Separate source candidate identities are preserved; no results are reassigned to a later archive.",
+    "Five-role planning belongs to candidate b; historical review belongs to archive 3e0265c6d33f\u2026; formal UX/profile probes belong to candidate b.",
+    "The 19:28 browser footage is earlier driver evidence, not falsely labelled footage of the later formal UX invocation.",
+    "One recorded parser replay proves only its specified input difference.",
+    "No independent evaluator, external human trial, general gain, superiority or admission outcome is claimed."
+  ],
+  "transformations": [
+    "Authored English scene titles and scoped summaries from actual evidence.",
+    "Selected source JSON values preserved; private source prefixes replaced by relative public evidence references in displayed material.",
+    "Report values rendered into PNG cards with local fonts, then encoded as timed H.264 frames.",
+    "Actual browser video uniformly scaled/padded with a provenance banner, with no speed or action-order change.",
+    "Actual profile screenshots uniformly scaled and placed on an explicitly synthetic evidence card.",
+    "Segments concatenated; descriptive English captions supplied as VTT and an embedded default subtitle track."
+  ],
+  "format_validation": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1280,
+        "height": 800,
+        "r_frame_rate": "25/1",
+        "tags": {
+          "language": "und"
+        }
+      },
+      {
+        "index": 1,
+        "codec_name": "mov_text",
+        "codec_type": "subtitle",
+        "r_frame_rate": "0/0",
+        "tags": {
+          "language": "eng"
+        }
+      }
+    ],
+    "format": {
+      "duration": "78.160000"
+    }
+  },
+  "public_artifacts": [
+    {
+      "path": "README.md",
+      "sha256": "4567231096b037538a2a1776ad54123ef9a46335135b85aeef3829119f341b5a"
+    },
+    {
+      "path": "evidence/candidate-b-finding-lint.mjs",
+      "sha256": "d0cc6809b750d9e52015b0448f18e3f291b979674b1350156d2444e607791ee7"
+    },
+    {
+      "path": "evidence/current-helper-finding-lint.mjs",
+      "sha256": "89b02ef5912adf3f6ff86ad8652a3f21e7313bb0cc0a280a3dd9810546abdef9"
+    },
+    {
+      "path": "evidence/empty-findings.json",
+      "sha256": "9ba8071ce819632d6b70ddc2d9e13da3b5d20201af51595badc4aaf1647bd878"
+    },
+    {
+      "path": "evidence/plan-excerpt.json",
+      "sha256": "d0bb111df991f18232126ce18a84327a539e9b7ae7b972517b4b394126cecb6c"
+    },
+    {
+      "path": "technical-demo-poster.png",
+      "sha256": "2d4692ad5d21d8768febebb1c0382a5d776bafef09d4d3f227ca0a76c5366317"
+    },
+    {
+      "path": "technical-demo.en.vtt",
+      "sha256": "70b00169d85420eae7ae46845bb0031a72b0421ace489bd15ebd057576f38fc6"
+    },
+    {
+      "path": "technical-demo.mp4",
+      "sha256": "049ff9fea9d3a6d5d66f56e30c3e77bd8e835f597737f77814aba29dd689d49f"
+    },
+    {
+      "path": "transcript.md",
+      "sha256": "1679fd1a7dc30ffca9b78042b850f132aad2f974920f1929da28420bf032e1b3"
+    },
+    {
+      "path": "verifier-flag-probe.json",
+      "sha256": "25f79ea4a5fd195159b08278a2e001c41ebbfd51217fb8088eb4e283e6c3ca6b"
+    }
+  ],
+  "visual_inspection": "All six authored scene cards were opened and inspected for readable layout. The genuine browser segment is sampled separately; source footage had already been inspected during capture.",
+  "subtitle_validation": {
+    "language": "eng",
+    "default_disposition": 1,
+    "verification": "ffprobe inspected the actual embedded track; no audio stream exists."
+  },
+  "generator": {
+    "private_artifact_id": "qore-private:demo/build_demo.py",
+    "sha256": "96841befd3f1450fafa4d78723c23d243fc63cc6e9952a69de54c75635ceb917",
+    "post_render_qa": "Exact state labels were added below the two authentic profile screenshots for legibility; the affected scene was re-encoded, concatenated and remuxed. Caption spacing was corrected. No source outcome, video speed or UI action changed."
+  }
+}

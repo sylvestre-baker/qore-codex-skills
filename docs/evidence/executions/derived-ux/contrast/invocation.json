@@ -1,0 +1,10 @@
+{
+  "operator_input": "Invoke this derivative against the supplied candidate project root and observe its current declared web entry and required state. Use only current returned facts; do not import a neighboring profile.\n",
+  "facts_in_prompt": false,
+  "read_before_navigation": [
+    "Derivative SKILL.md",
+    "Bundled references/project-profile.md",
+    "Bundled references/project.json"
+  ],
+  "source_check": "profile-check.json"
+}

@@ -1,0 +1,106 @@
+temp=/tmp/qore-correctness-zihl6vcs
+profile={"output": "/tmp/qore-correctness-zihl6vcs/derived", "profile": {"id": "qore", "version": "0.1.0", "sha256": "63c9157e3dd4d6eb2c33c899820422e8ce1d1bee9cc4e22c1df96d814e50a83f"}, "valid": true, "schema": "qore-release/1", "version": "0.1.0", "kind": "derived", "files": 39, "manifest_sha256": "cd3517f9839cd44fb4b5e56e5b373770fb350d8ffa36bd33a61d58d1c12e0725"}
+bundled_digest=da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9
+preflight={
+  "schema": "qore-context-check/1",
+  "profile": {
+    "id": "qore",
+    "version": "0.1.0",
+    "sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9"
+  },
+  "method": "review",
+  "coverage": "COMPLETE",
+  "sources": [
+    {
+      "id": "project",
+      "path": "qore.json",
+      "expected_sha256": "948b2784fa7970cf90a25c338a29067b13d8b4476f666d712a5eb95fc6f641c8",
+      "actual_sha256": "948b2784fa7970cf90a25c338a29067b13d8b4476f666d712a5eb95fc6f641c8",
+      "current": true
+    }
+  ],
+  "commands": [
+    {
+      "id": "check",
+      "argv": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "source": "project",
+      "applies_to": [
+        "plan",
+        "review"
+      ]
+    }
+  ],
+  "invariants": [
+    {
+      "id": "verified-blockers",
+      "statement": "Only independently confirmed critical or high findings are verified blockers; missing verification remains partial.",
+      "source": "project",
+      "applies_to": [
+        "review"
+      ]
+    }
+  ],
+  "surfaces": {},
+  "consumed_source_ids": [
+    "project"
+  ],
+  "problems": []
+}
+
+plateau={
+  "decision": "CHANGE_APPROACH",
+  "verdict": "DO-NOT-SHIP",
+  "coverage": "COMPLETE",
+  "iteration": 4,
+  "ceiling": 6,
+  "surface_score": null,
+  "consecutive_fresh_passes": 0,
+  "passes_required": 1,
+  "lowest_failing_gate": "G1",
+  "failing_gates": [
+    "G1"
+  ],
+  "stale_gates": [],
+  "missing_gates": [],
+  "skipped": [],
+  "infra_blocked": [],
+  "not_applicable": {},
+  "stuck_count": 3,
+  "no_improve_count": 3,
+  "limit": "Coverage describes observations. SHIP is a scoped review result, not deployment authorization. Non-applicability reasons require independent review."
+}
+
+docstring={
+  "valid": true,
+  "schema": "qore-spec/1",
+  "scenarios": [
+    {
+      "id": "A01",
+      "name": "A01 Never runs action/assertion",
+      "line": 4
+    }
+  ],
+  "problems": []
+}
+
+outline={
+  "valid": true,
+  "schema": "qore-spec/1",
+  "scenarios": [
+    {
+      "id": "A01",
+      "name": "A01 Has no Examples",
+      "line": 4
+    }
+  ],
+  "problems": []
+}

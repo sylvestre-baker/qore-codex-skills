@@ -1,0 +1,34 @@
+{
+  "original_candidate_sha256": "2963c43e98803354932e406627d9e239064fbe2899745a7e093b7d4154fa56d1",
+  "original_run_id": "generic-plan-frozen-b-20261015",
+  "requested_roles": [
+    "product",
+    "architecture",
+    "ux",
+    "delivery",
+    "qa"
+  ],
+  "returned_roles": [
+    "product",
+    "architecture",
+    "ux",
+    "delivery",
+    "qa"
+  ],
+  "rounds": {
+    "Analyze": "COMPLETE",
+    "Cross-examine": "COMPLETE",
+    "Adjudicate": "COMPLETE"
+  },
+  "coverage": "COMPLETE",
+  "finished_at": "2026-10-15T19:59:07.941765+00:00",
+  "selected_decisions": [
+    "D4 exact complete verifier token",
+    "D5 preserve output and packet semantics",
+    "D6 defer partial-batch and text changes",
+    "D7 preserve old candidate identities and installed adaptations"
+  ],
+  "scope": "Frozen candidate b only; later current-tree remediation is a different candidate/revision and needs affected checks.",
+  "implementation_authorized_by_this_result": false,
+  "source_note": "Selected actual report fields; personal source paths are not displayed."
+}

@@ -1,0 +1,58 @@
+{
+  "records": [
+    {
+      "argv": [
+        "node",
+        "<CANDIDATE_B>/skills/qore-review/scripts/finding-lint.mjs",
+        "<TEMPORARY_INPUT>",
+        "--verifier=ran=skipped",
+        "--json"
+      ],
+      "cwd": "<CANDIDATE_B>",
+      "input": {
+        "exists": false,
+        "bytes": null
+      },
+      "stdout": "",
+      "stderr": "finding-lint: cannot read JSON: ENOENT: no such file or directory, open '<TEMPORARY_INPUT>'\n",
+      "exit_code": 2,
+      "observed_at": "2026-10-15T20:11:56.930278+00:00"
+    },
+    {
+      "argv": [
+        "node",
+        "<CANDIDATE_B>/skills/qore-review/scripts/finding-lint.mjs",
+        "<TEMPORARY_INPUT>",
+        "--verifier=ran",
+        "--json"
+      ],
+      "cwd": "<CANDIDATE_B>",
+      "input": {
+        "exists": false,
+        "bytes": null
+      },
+      "stdout": "",
+      "stderr": "finding-lint: cannot read JSON: ENOENT: no such file or directory, open '<TEMPORARY_INPUT>'\n",
+      "exit_code": 2,
+      "observed_at": "2026-10-15T20:11:56.955398+00:00"
+    },
+    {
+      "argv": [
+        "node",
+        "<CANDIDATE_B>/skills/qore-review/scripts/finding-lint.mjs",
+        "<TEMPORARY_INPUT>",
+        "--verifier=ran",
+        "--json"
+      ],
+      "cwd": "<CANDIDATE_B>",
+      "input": {
+        "exists": true,
+        "bytes": "{\"findings\": []}"
+      },
+      "stdout": "{\n  \"valid\": true,\n  \"coverage\": \"COMPLETE\",\n  \"verdict\": \"SHIP\",\n  \"verifier\": \"ran\",\n  \"total\": 0,\n  \"counts\": {\n    \"CONFIRMED\": 0,\n    \"PLAUSIBLE\": 0,\n    \"REFUTED\": 0\n  },\n  \"blocking_findings\": [],\n  \"findings\": [],\n  \"problems\": [],\n  \"limit\": \"The verifier flag records an execution declaration; validate actual independent phase evidence separately.\"\n}\n",
+      "stderr": "",
+      "exit_code": 0,
+      "observed_at": "2026-10-15T20:11:56.979354+00:00"
+    }
+  ]
+}

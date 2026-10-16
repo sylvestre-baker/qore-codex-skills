@@ -1,0 +1,11 @@
+{
+  "findings": [
+    {
+      "id": "AC01",
+      "title": "Boundary probe",
+      "severity": "high",
+      "verdict": "CONFIRMED",
+      "evidence": "checker.mjs:40"
+    }
+  ]
+}

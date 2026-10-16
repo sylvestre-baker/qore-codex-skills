@@ -1,0 +1,378 @@
+{
+  "renderer": "Local GFM marked preview with GitHub-like CSS; not an actual GitHub-hosted rendering or accessibility certification",
+  "observed_at": "2026-10-15T20:25:26.708Z",
+  "results": [
+    {
+      "label": "wide",
+      "width": 1440,
+      "height": 1000,
+      "documentWidth": 1440,
+      "viewport": 1440,
+      "images": [
+        {
+          "alt": "Qore technical demonstration: three methods and traceable decisions",
+          "loaded": true
+        },
+        {
+          "alt": "Observed first-question state on the existing QAIZEN Labs readiness page",
+          "loaded": true
+        }
+      ],
+      "codeBlocks": 3,
+      "headings": [
+        "Qore Skills",
+        "Choose your task",
+        "Try one review",
+        "Use a method on your project",
+        "See the evidence",
+        "Adapt all three methods from one profile",
+        "Understand the boundaries",
+        "Troubleshoot and update",
+        "Reference and contribute",
+        "License and provenance"
+      ],
+      "links": [
+        {
+          "text": "See the problem, evidence, decision and limits",
+          "href": "docs/evidence/validator-case.md"
+        },
+        {
+          "text": "Qualification record",
+          "href": "docs/qualification.md"
+        },
+        {
+          "text": "bundled validator-hardening specification",
+          "href": "examples/validator-hardening.md"
+        },
+        {
+          "text": "safe updates",
+          "href": "docs/profiles.md#update-without-overwriting"
+        },
+        {
+          "text": "Troubleshoot discovery or missing capabilities",
+          "href": "docs/troubleshooting.md"
+        },
+        {
+          "text": "Qore technical demonstration: three methods and traceable decisions",
+          "href": "docs/demo/technical-demo.mp4"
+        },
+        {
+          "text": "Watch the 78-second technical demonstration",
+          "href": "docs/demo/technical-demo.mp4"
+        },
+        {
+          "text": "English captions",
+          "href": "docs/demo/technical-demo.en.vtt"
+        },
+        {
+          "text": "Transcript and source chronology",
+          "href": "docs/demo/transcript.md"
+        },
+        {
+          "text": "validator case",
+          "href": "docs/evidence/validator-case.md"
+        },
+        {
+          "text": "review after the exact-token correction",
+          "href": "docs/evidence/executions/review-exact-flags/REPORT.md"
+        },
+        {
+          "text": "Observation record and limits",
+          "href": "docs/evidence/browser/README.md"
+        },
+        {
+          "text": "Observed first-question state on the existing QAIZEN Labs readiness page",
+          "href": "docs/evidence/browser/qaizen-demo-captioned.mp4"
+        },
+        {
+          "text": "Watch the actual captioned recording",
+          "href": "docs/evidence/browser/qaizen-demo-captioned.mp4"
+        },
+        {
+          "text": "Read the transcript",
+          "href": "docs/evidence/browser/qaizen-transcript.md"
+        },
+        {
+          "text": "English captions",
+          "href": "docs/evidence/browser/qaizen-demo.en.vtt"
+        },
+        {
+          "text": "Capability matrix",
+          "href": "docs/evidence/browser/capability-matrix.json"
+        },
+        {
+          "text": "Transformation provenance",
+          "href": "docs/evidence/browser/provenance.json"
+        },
+        {
+          "text": "Qore profile",
+          "href": "profiles/qore.json"
+        },
+        {
+          "text": "contrasting fixture profile",
+          "href": "profiles/contrast.json"
+        },
+        {
+          "text": "Profile fields, runtime checks, and safe updates",
+          "href": "docs/profiles.md"
+        },
+        {
+          "text": "qualification evidence",
+          "href": "docs/qualification.md"
+        },
+        {
+          "text": "independent Linux procedure",
+          "href": "docs/clean-environment.md"
+        },
+        {
+          "text": "Safe updates",
+          "href": "docs/profiles.md#update-without-overwriting"
+        },
+        {
+          "text": "observed failures and recovery",
+          "href": "docs/troubleshooting.md"
+        },
+        {
+          "text": "Architecture",
+          "href": "docs/architecture.md"
+        },
+        {
+          "text": "Contracts and validators",
+          "href": "docs/contracts.md"
+        },
+        {
+          "text": "Command and prompt inventory",
+          "href": "docs/command-inventory.json"
+        },
+        {
+          "text": "Troubleshooting",
+          "href": "docs/troubleshooting.md"
+        },
+        {
+          "text": "planning",
+          "href": "skills/qore-plan/SKILL.md"
+        },
+        {
+          "text": "review",
+          "href": "skills/qore-review/SKILL.md"
+        },
+        {
+          "text": "web UX",
+          "href": "skills/qore-ux-review/SKILL.md"
+        },
+        {
+          "text": "Contributing",
+          "href": "CONTRIBUTING.md"
+        },
+        {
+          "text": "provenance",
+          "href": "PROVENANCE.md"
+        },
+        {
+          "text": "MIT license",
+          "href": "LICENSE"
+        },
+        {
+          "text": "MIT license",
+          "href": "LICENSE"
+        },
+        {
+          "text": "provenance record",
+          "href": "PROVENANCE.md"
+        }
+      ],
+      "keyboard": {
+        "tag": "A",
+        "href": "docs/evidence/validator-case.md",
+        "outline": "solid"
+      },
+      "errors": []
+    },
+    {
+      "label": "narrow",
+      "width": 390,
+      "height": 844,
+      "documentWidth": 390,
+      "viewport": 390,
+      "images": [
+        {
+          "alt": "Qore technical demonstration: three methods and traceable decisions",
+          "loaded": true
+        },
+        {
+          "alt": "Observed first-question state on the existing QAIZEN Labs readiness page",
+          "loaded": true
+        }
+      ],
+      "codeBlocks": 3,
+      "headings": [
+        "Qore Skills",
+        "Choose your task",
+        "Try one review",
+        "Use a method on your project",
+        "See the evidence",
+        "Adapt all three methods from one profile",
+        "Understand the boundaries",
+        "Troubleshoot and update",
+        "Reference and contribute",
+        "License and provenance"
+      ],
+      "links": [
+        {
+          "text": "See the problem, evidence, decision and limits",
+          "href": "docs/evidence/validator-case.md"
+        },
+        {
+          "text": "Qualification record",
+          "href": "docs/qualification.md"
+        },
+        {
+          "text": "bundled validator-hardening specification",
+          "href": "examples/validator-hardening.md"
+        },
+        {
+          "text": "safe updates",
+          "href": "docs/profiles.md#update-without-overwriting"
+        },
+        {
+          "text": "Troubleshoot discovery or missing capabilities",
+          "href": "docs/troubleshooting.md"
+        },
+        {
+          "text": "Qore technical demonstration: three methods and traceable decisions",
+          "href": "docs/demo/technical-demo.mp4"
+        },
+        {
+          "text": "Watch the 78-second technical demonstration",
+          "href": "docs/demo/technical-demo.mp4"
+        },
+        {
+          "text": "English captions",
+          "href": "docs/demo/technical-demo.en.vtt"
+        },
+        {
+          "text": "Transcript and source chronology",
+          "href": "docs/demo/transcript.md"
+        },
+        {
+          "text": "validator case",
+          "href": "docs/evidence/validator-case.md"
+        },
+        {
+          "text": "review after the exact-token correction",
+          "href": "docs/evidence/executions/review-exact-flags/REPORT.md"
+        },
+        {
+          "text": "Observation record and limits",
+          "href": "docs/evidence/browser/README.md"
+        },
+        {
+          "text": "Observed first-question state on the existing QAIZEN Labs readiness page",
+          "href": "docs/evidence/browser/qaizen-demo-captioned.mp4"
+        },
+        {
+          "text": "Watch the actual captioned recording",
+          "href": "docs/evidence/browser/qaizen-demo-captioned.mp4"
+        },
+        {
+          "text": "Read the transcript",
+          "href": "docs/evidence/browser/qaizen-transcript.md"
+        },
+        {
+          "text": "English captions",
+          "href": "docs/evidence/browser/qaizen-demo.en.vtt"
+        },
+        {
+          "text": "Capability matrix",
+          "href": "docs/evidence/browser/capability-matrix.json"
+        },
+        {
+          "text": "Transformation provenance",
+          "href": "docs/evidence/browser/provenance.json"
+        },
+        {
+          "text": "Qore profile",
+          "href": "profiles/qore.json"
+        },
+        {
+          "text": "contrasting fixture profile",
+          "href": "profiles/contrast.json"
+        },
+        {
+          "text": "Profile fields, runtime checks, and safe updates",
+          "href": "docs/profiles.md"
+        },
+        {
+          "text": "qualification evidence",
+          "href": "docs/qualification.md"
+        },
+        {
+          "text": "independent Linux procedure",
+          "href": "docs/clean-environment.md"
+        },
+        {
+          "text": "Safe updates",
+          "href": "docs/profiles.md#update-without-overwriting"
+        },
+        {
+          "text": "observed failures and recovery",
+          "href": "docs/troubleshooting.md"
+        },
+        {
+          "text": "Architecture",
+          "href": "docs/architecture.md"
+        },
+        {
+          "text": "Contracts and validators",
+          "href": "docs/contracts.md"
+        },
+        {
+          "text": "Command and prompt inventory",
+          "href": "docs/command-inventory.json"
+        },
+        {
+          "text": "Troubleshooting",
+          "href": "docs/troubleshooting.md"
+        },
+        {
+          "text": "planning",
+          "href": "skills/qore-plan/SKILL.md"
+        },
+        {
+          "text": "review",
+          "href": "skills/qore-review/SKILL.md"
+        },
+        {
+          "text": "web UX",
+          "href": "skills/qore-ux-review/SKILL.md"
+        },
+        {
+          "text": "Contributing",
+          "href": "CONTRIBUTING.md"
+        },
+        {
+          "text": "provenance",
+          "href": "PROVENANCE.md"
+        },
+        {
+          "text": "MIT license",
+          "href": "LICENSE"
+        },
+        {
+          "text": "MIT license",
+          "href": "LICENSE"
+        },
+        {
+          "text": "provenance record",
+          "href": "PROVENANCE.md"
+        }
+      ],
+      "keyboard": {
+        "tag": "A",
+        "href": "docs/evidence/validator-case.md",
+        "outline": "solid"
+      },
+      "errors": []
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "actor_id": "/root/feasibility",
+  "commands": [
+    {
+      "argv": [
+        "node",
+        "/workspace/qore-skills-0.1.0/skills/qore-review/scripts/finding-lint.mjs",
+        "/tmp/qore-feasibility-uce12_gs/candidate.json",
+        "--verifier=ran",
+        "--json"
+      ],
+      "case": "missing",
+      "exit_code": 1,
+      "stdout": "{\n  \"valid\": false,\n  \"coverage\": \"PARTIAL\",\n  \"verdict\": \"INVALID\",\n  \"verifier\": \"ran\",\n  \"total\": 0,\n  \"counts\": {\n    \"CONFIRMED\": 0,\n    \"PLAUSIBLE\": 0,\n    \"REFUTED\": 0\n  },\n  \"blocking_findings\": [],\n  \"findings\": [],\n  \"problems\": [\n    {\n      \"code\": \"envelope\",\n      \"why\": \"Expected an object containing findings: []; arrays, null and missing findings are refused.\"\n    }\n  ],\n  \"limit\": \"The verifier flag records an execution declaration; validate actual independent phase evidence separately.\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "node",
+        "/workspace/qore-skills-0.1.0/skills/qore-review/scripts/finding-lint.mjs",
+        "/tmp/qore-feasibility-uce12_gs/candidate.json",
+        "--verifier=ran",
+        "--json"
+      ],
+      "case": "empty",
+      "exit_code": 0,
+      "stdout": "{\n  \"valid\": true,\n  \"coverage\": \"COMPLETE\",\n  \"verdict\": \"SHIP\",\n  \"verifier\": \"ran\",\n  \"total\": 0,\n  \"counts\": {\n    \"CONFIRMED\": 0,\n    \"PLAUSIBLE\": 0,\n    \"REFUTED\": 0\n  },\n  \"blocking_findings\": [],\n  \"findings\": [],\n  \"problems\": [],\n  \"limit\": \"The verifier flag records an execution declaration; validate actual independent phase evidence separately.\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "node",
+        "/workspace/qore-skills-0.1.0/skills/qore-review/scripts/finding-lint.mjs",
+        "/tmp/qore-feasibility-uce12_gs/candidate.json",
+        "--verifier=skipped",
+        "--json"
+      ],
+      "case": "skipped",
+      "exit_code": 0,
+      "stdout": "{\n  \"valid\": true,\n  \"coverage\": \"PARTIAL\",\n  \"verdict\": \"PENDING\",\n  \"verifier\": \"skipped\",\n  \"total\": 1,\n  \"counts\": {\n    \"CONFIRMED\": 0,\n    \"PLAUSIBLE\": 1,\n    \"REFUTED\": 0\n  },\n  \"blocking_findings\": [],\n  \"findings\": [\n    {\n      \"id\": \"P-test\",\n      \"title\": \"Candidate\",\n      \"severity\": \"high\",\n      \"verdict\": \"PLAUSIBLE\",\n      \"evidence\": \"src/a.ts:12\"\n    }\n  ],\n  \"problems\": [],\n  \"limit\": \"The verifier flag records an execution declaration; validate actual independent phase evidence separately.\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "node",
+        "/workspace/qore-skills-0.1.0/skills/qore-review/scripts/redact-for-verifier.mjs",
+        "/tmp/qore-feasibility-uce12_gs/candidate.json"
+      ],
+      "case": "trace-redactor",
+      "exit_code": 0,
+      "stdout": "{\n  \"findings\": [\n    {\n      \"id\": \"P-trace\",\n      \"title\": \"Trace candidate\",\n      \"severity\": \"high\",\n      \"evidence\": \"src/a.ts:12\",\n      \"counterexample\": \"1 expected 2\"\n    }\n  ]\n}\n",
+      "stderr": "redact-for-verifier: 1 claims; withheld fields: extra, rationale, verdict.\n"
+    },
+    {
+      "argv": [
+        "node",
+        "/workspace/qore-skills-0.1.0/skills/qore-review/scripts/finding-lint.mjs",
+        "/tmp/qore-feasibility-uce12_gs/candidate.json",
+        "--verifier=skipped",
+        "--json"
+      ],
+      "case": "redactor-output-is-intermediate",
+      "exit_code": 1,
+      "stdout": "{\n  \"valid\": false,\n  \"coverage\": \"PARTIAL\",\n  \"verdict\": \"INVALID\",\n  \"verifier\": \"skipped\",\n  \"total\": 1,\n  \"counts\": {\n    \"CONFIRMED\": 0,\n    \"PLAUSIBLE\": 0,\n    \"REFUTED\": 0\n  },\n  \"blocking_findings\": [],\n  \"findings\": [\n    {\n      \"id\": \"P-trace\",\n      \"title\": \"Trace candidate\",\n      \"severity\": \"high\",\n      \"evidence\": \"src/a.ts:12\",\n      \"counterexample\": \"1 expected 2\"\n    }\n  ],\n  \"problems\": [\n    {\n      \"id\": \"P-trace\",\n      \"code\": \"verdict\",\n      \"why\": \"verdict must be one of CONFIRMED, PLAUSIBLE, REFUTED.\"\n    },\n    {\n      \"id\": \"P-trace\",\n      \"code\": \"verification\",\n      \"why\": \"Missing independent verification permits only PLAUSIBLE findings.\"\n    }\n  ],\n  \"limit\": \"The verifier flag records an execution declaration; validate actual independent phase evidence separately.\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "node",
+        "/workspace/qore-skills-0.1.0/.agents/skills/qore-review/scripts/finding-lint.mjs",
+        "/tmp/qore-feasibility-uce12_gs/candidate.json",
+        "--verifier=ran",
+        "--json"
+      ],
+      "case": "missing",
+      "exit_code": 1,
+      "stdout": "{\n  \"valid\": false,\n  \"coverage\": \"PARTIAL\",\n  \"verdict\": \"INVALID\",\n  \"verifier\": \"ran\",\n  \"total\": 0,\n  \"counts\": {\n    \"CONFIRMED\": 0,\n    \"PLAUSIBLE\": 0,\n    \"REFUTED\": 0\n  },\n  \"blocking_findings\": [],\n  \"findings\": [],\n  \"problems\": [\n    {\n      \"code\": \"envelope\",\n      \"why\": \"Expected an object containing findings: []; arrays, null and missing findings are refused.\"\n    }\n  ],\n  \"limit\": \"The verifier flag records an execution declaration; validate actual independent phase evidence separately.\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "node",
+        "/workspace/qore-skills-0.1.0/.agents/skills/qore-review/scripts/finding-lint.mjs",
+        "/tmp/qore-feasibility-uce12_gs/candidate.json",
+        "--verifier=ran",
+        "--json"
+      ],
+      "case": "empty",
+      "exit_code": 0,
+      "stdout": "{\n  \"valid\": true,\n  \"coverage\": \"COMPLETE\",\n  \"verdict\": \"SHIP\",\n  \"verifier\": \"ran\",\n  \"total\": 0,\n  \"counts\": {\n    \"CONFIRMED\": 0,\n    \"PLAUSIBLE\": 0,\n    \"REFUTED\": 0\n  },\n  \"blocking_findings\": [],\n  \"findings\": [],\n  \"problems\": [],\n  \"limit\": \"The verifier flag records an execution declaration; validate actual independent phase evidence separately.\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "node",
+        "/workspace/qore-skills-0.1.0/.agents/skills/qore-review/scripts/finding-lint.mjs",
+        "/tmp/qore-feasibility-uce12_gs/candidate.json",
+        "--verifier=skipped",
+        "--json"
+      ],
+      "case": "skipped",
+      "exit_code": 0,
+      "stdout": "{\n  \"valid\": true,\n  \"coverage\": \"PARTIAL\",\n  \"verdict\": \"PENDING\",\n  \"verifier\": \"skipped\",\n  \"total\": 1,\n  \"counts\": {\n    \"CONFIRMED\": 0,\n    \"PLAUSIBLE\": 1,\n    \"REFUTED\": 0\n  },\n  \"blocking_findings\": [],\n  \"findings\": [\n    {\n      \"id\": \"P-test\",\n      \"title\": \"Candidate\",\n      \"severity\": \"high\",\n      \"verdict\": \"PLAUSIBLE\",\n      \"evidence\": \"src/a.ts:12\"\n    }\n  ],\n  \"problems\": [],\n  \"limit\": \"The verifier flag records an execution declaration; validate actual independent phase evidence separately.\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "node",
+        "/workspace/qore-skills-0.1.0/.agents/skills/qore-review/scripts/redact-for-verifier.mjs",
+        "/tmp/qore-feasibility-uce12_gs/candidate.json"
+      ],
+      "case": "trace-redactor",
+      "exit_code": 0,
+      "stdout": "{\n  \"findings\": [\n    {\n      \"id\": \"P-trace\",\n      \"title\": \"Trace candidate\",\n      \"severity\": \"high\",\n      \"evidence\": \"src/a.ts:12\",\n      \"counterexample\": \"1 expected 2\"\n    }\n  ]\n}\n",
+      "stderr": "redact-for-verifier: 1 claims; withheld fields: extra, rationale, verdict.\n"
+    },
+    {
+      "argv": [
+        "node",
+        "/workspace/qore-skills-0.1.0/.agents/skills/qore-review/scripts/finding-lint.mjs",
+        "/tmp/qore-feasibility-uce12_gs/candidate.json",
+        "--verifier=skipped",
+        "--json"
+      ],
+      "case": "redactor-output-is-intermediate",
+      "exit_code": 1,
+      "stdout": "{\n  \"valid\": false,\n  \"coverage\": \"PARTIAL\",\n  \"verdict\": \"INVALID\",\n  \"verifier\": \"skipped\",\n  \"total\": 1,\n  \"counts\": {\n    \"CONFIRMED\": 0,\n    \"PLAUSIBLE\": 0,\n    \"REFUTED\": 0\n  },\n  \"blocking_findings\": [],\n  \"findings\": [\n    {\n      \"id\": \"P-trace\",\n      \"title\": \"Trace candidate\",\n      \"severity\": \"high\",\n      \"evidence\": \"src/a.ts:12\",\n      \"counterexample\": \"1 expected 2\"\n    }\n  ],\n  \"problems\": [\n    {\n      \"id\": \"P-trace\",\n      \"code\": \"verdict\",\n      \"why\": \"verdict must be one of CONFIRMED, PLAUSIBLE, REFUTED.\"\n    },\n    {\n      \"id\": \"P-trace\",\n      \"code\": \"verification\",\n      \"why\": \"Missing independent verification permits only PLAUSIBLE findings.\"\n    }\n  ],\n  \"limit\": \"The verifier flag records an execution declaration; validate actual independent phase evidence separately.\"\n}\n",
+      "stderr": ""
+    }
+  ],
+  "snapshot_sha256": {
+    "examples/validator-hardening.md": "6f25b2edcd6d0826b12fbb47a99fc4162a1089eef71eaf7f16ea2cb7a8239a87",
+    "qore.json": "948b2784fa7970cf90a25c338a29067b13d8b4476f666d712a5eb95fc6f641c8",
+    "tests/test_validators.py": "cda93831ca8bce7debc036509d47f07a1b55c0e93b59ba1550cf090cac704703",
+    "skills/qore-review/scripts/finding-lint.mjs": "89b02ef5912adf3f6ff86ad8652a3f21e7313bb0cc0a280a3dd9810546abdef9",
+    "skills/qore-review/scripts/redact-for-verifier.mjs": "dc249524c749ad5b511aef0a2cf08b4cfd5c47c1e0de4fd41c5c70746b471083",
+    ".agents/skills/qore-review/scripts/finding-lint.mjs": "89b02ef5912adf3f6ff86ad8652a3f21e7313bb0cc0a280a3dd9810546abdef9",
+    ".agents/skills/qore-review/scripts/redact-for-verifier.mjs": "dc249524c749ad5b511aef0a2cf08b4cfd5c47c1e0de4fd41c5c70746b471083"
+  },
+  "additional_commands": [
+    {
+      "command": "python3 -B -m unittest discover -s tests -v",
+      "status": "completed separately; see report",
+      "exit_code": 0,
+      "result": "Ran 85 tests in 3.842s; OK"
+    },
+    {
+      "command": "cmp skills/qore-review/scripts/finding-lint.mjs .agents/skills/qore-review/scripts/finding-lint.mjs",
+      "exit_code": 0
+    },
+    {
+      "command": "cmp skills/qore-review/scripts/redact-for-verifier.mjs .agents/skills/qore-review/scripts/redact-for-verifier.mjs",
+      "exit_code": 0
+    },
+    {
+      "command": "git rev-parse HEAD",
+      "exit_code": 128,
+      "stderr": "fatal: not a git repository (or any of the parent directories): .git"
+    }
+  ]
+}

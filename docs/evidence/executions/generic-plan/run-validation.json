@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "python3",
+    "scripts/run-check.py",
+    "<PRIVATE_EVIDENCE_ROOT>/execution.json",
+    "--evidence-root",
+    "<PRIVATE_EVIDENCE_ROOT>"
+  ],
+  "cwd": "<CANDIDATE_B>/skills/qore-plan",
+  "exit_code": 0,
+  "stdout": "{\n  \"valid\": true,\n  \"coverage\": \"COMPLETE\",\n  \"missing_phases\": [],\n  \"artifact_count\": 29,\n  \"note\": \"Evidence identity and declared phase coverage checked; factual quality is not certified.\"\n}\n",
+  "stderr": "",
+  "observed_at": "2026-10-15T19:59:08.000199+00:00"
+}

@@ -1,0 +1,25 @@
+WEBVTT
+
+00:00.000 --> 00:04.600
+An isolated browser opens the existing QAIZEN Labs page.
+This recording observes an existing site; it is not a benchmark.
+
+00:04.600 --> 00:09.300
+The readiness card opens its existing introduction.
+Analytics consent is rejected in this isolated context.
+
+00:09.300 --> 00:12.200
+Start the check resolves to the first question.
+No answer is selected and no result is submitted.
+
+00:12.200 --> 00:14.200
+The question's explanation opens.
+DOM and screenshot artifacts record the expanded state.
+
+00:14.200 --> 00:16.200
+Space closes the focused native disclosure.
+The keyboard action is recorded in the trace.
+
+00:16.200 --> 00:21.160
+Back restores the introduction and focuses its heading.
+Accessibility audits and Core Web Vitals were not measured.

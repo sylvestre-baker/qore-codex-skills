@@ -1,0 +1,92 @@
+[
+  {
+    "case": "missing-envelope",
+    "cwd": "/workspace/implementation-target/qore-skills-0.1.0/.agents/skills/qore-review-qore",
+    "argv": [
+      "node",
+      "scripts/finding-lint.mjs",
+      "/workspace/current-profile-public-review/missing-envelope-input.json",
+      "--verifier=skipped",
+      "--json"
+    ],
+    "exit_status": 1,
+    "stdout": "{\n  \"valid\": false,\n  \"coverage\": \"PARTIAL\",\n  \"verdict\": \"INVALID\",\n  \"verifier\": \"skipped\",\n  \"total\": 0,\n  \"counts\": {\n    \"CONFIRMED\": 0,\n    \"PLAUSIBLE\": 0,\n    \"REFUTED\": 0\n  },\n  \"blocking_findings\": [],\n  \"findings\": [],\n  \"problems\": [\n    {\n      \"code\": \"envelope\",\n      \"why\": \"Expected an object containing findings: []; arrays, null and missing findings are refused.\"\n    }\n  ],\n  \"limit\": \"The verifier flag records an execution declaration; validate actual independent phase evidence separately.\"\n}\n",
+    "stderr": "",
+    "timestamp_utc": "2026-10-15T20:06:08.522186+00:00"
+  },
+  {
+    "case": "high-unverified",
+    "cwd": "/workspace/implementation-target/qore-skills-0.1.0/.agents/skills/qore-review-qore",
+    "argv": [
+      "node",
+      "scripts/finding-lint.mjs",
+      "/workspace/current-profile-public-review/high-unverified-input.json",
+      "--verifier=skipped",
+      "--json"
+    ],
+    "exit_status": 0,
+    "stdout": "{\n  \"valid\": true,\n  \"coverage\": \"PARTIAL\",\n  \"verdict\": \"PENDING\",\n  \"verifier\": \"skipped\",\n  \"total\": 1,\n  \"counts\": {\n    \"CONFIRMED\": 0,\n    \"PLAUSIBLE\": 1,\n    \"REFUTED\": 0\n  },\n  \"blocking_findings\": [],\n  \"findings\": [\n    {\n      \"id\": \"PROBE-HIGH\",\n      \"title\": \"Synthetic high severity validator input\",\n      \"severity\": \"high\",\n      \"verdict\": \"PLAUSIBLE\",\n      \"evidence\": \"examples/validator-hardening.md:A02\"\n    }\n  ],\n  \"problems\": [],\n  \"limit\": \"The verifier flag records an execution declaration; validate actual independent phase evidence separately.\"\n}\n",
+    "stderr": "",
+    "timestamp_utc": "2026-10-15T20:06:08.542838+00:00"
+  },
+  {
+    "case": "critical-unverified",
+    "cwd": "/workspace/implementation-target/qore-skills-0.1.0/.agents/skills/qore-review-qore",
+    "argv": [
+      "node",
+      "scripts/finding-lint.mjs",
+      "/workspace/current-profile-public-review/critical-unverified-input.json",
+      "--verifier=skipped",
+      "--json"
+    ],
+    "exit_status": 0,
+    "stdout": "{\n  \"valid\": true,\n  \"coverage\": \"PARTIAL\",\n  \"verdict\": \"PENDING\",\n  \"verifier\": \"skipped\",\n  \"total\": 1,\n  \"counts\": {\n    \"CONFIRMED\": 0,\n    \"PLAUSIBLE\": 1,\n    \"REFUTED\": 0\n  },\n  \"blocking_findings\": [],\n  \"findings\": [\n    {\n      \"id\": \"PROBE-HIGH\",\n      \"title\": \"Synthetic high severity validator input\",\n      \"severity\": \"critical\",\n      \"verdict\": \"PLAUSIBLE\",\n      \"evidence\": \"examples/validator-hardening.md:A02\"\n    }\n  ],\n  \"problems\": [],\n  \"limit\": \"The verifier flag records an execution declaration; validate actual independent phase evidence separately.\"\n}\n",
+    "stderr": "",
+    "timestamp_utc": "2026-10-15T20:06:08.561088+00:00"
+  },
+  {
+    "case": "confirmed-with-skipped",
+    "cwd": "/workspace/implementation-target/qore-skills-0.1.0/.agents/skills/qore-review-qore",
+    "argv": [
+      "node",
+      "scripts/finding-lint.mjs",
+      "/workspace/current-profile-public-review/confirmed-with-skipped-input.json",
+      "--verifier=skipped",
+      "--json"
+    ],
+    "exit_status": 1,
+    "stdout": "{\n  \"valid\": false,\n  \"coverage\": \"PARTIAL\",\n  \"verdict\": \"INVALID\",\n  \"verifier\": \"skipped\",\n  \"total\": 1,\n  \"counts\": {\n    \"CONFIRMED\": 1,\n    \"PLAUSIBLE\": 0,\n    \"REFUTED\": 0\n  },\n  \"blocking_findings\": [],\n  \"findings\": [\n    {\n      \"id\": \"PROBE-HIGH\",\n      \"title\": \"Synthetic high severity validator input\",\n      \"severity\": \"high\",\n      \"verdict\": \"CONFIRMED\",\n      \"evidence\": \"examples/validator-hardening.md:A02\",\n      \"counterexample\": \"Synthetic input only; not an independently confirmed finding.\"\n    }\n  ],\n  \"problems\": [\n    {\n      \"id\": \"PROBE-HIGH\",\n      \"code\": \"verification\",\n      \"why\": \"Missing independent verification permits only PLAUSIBLE findings.\"\n    }\n  ],\n  \"limit\": \"The verifier flag records an execution declaration; validate actual independent phase evidence separately.\"\n}\n",
+    "stderr": "",
+    "timestamp_utc": "2026-10-15T20:06:08.577858+00:00"
+  },
+  {
+    "case": "confirmed-high-declared",
+    "cwd": "/workspace/implementation-target/qore-skills-0.1.0/.agents/skills/qore-review-qore",
+    "argv": [
+      "node",
+      "scripts/finding-lint.mjs",
+      "/workspace/current-profile-public-review/confirmed-high-declared-input.json",
+      "--verifier=ran",
+      "--json"
+    ],
+    "exit_status": 0,
+    "stdout": "{\n  \"valid\": true,\n  \"coverage\": \"COMPLETE\",\n  \"verdict\": \"DO-NOT-SHIP\",\n  \"verifier\": \"ran\",\n  \"total\": 1,\n  \"counts\": {\n    \"CONFIRMED\": 1,\n    \"PLAUSIBLE\": 0,\n    \"REFUTED\": 0\n  },\n  \"blocking_findings\": [\n    \"PROBE-HIGH\"\n  ],\n  \"findings\": [\n    {\n      \"id\": \"PROBE-HIGH\",\n      \"title\": \"Synthetic high severity validator input\",\n      \"severity\": \"high\",\n      \"verdict\": \"CONFIRMED\",\n      \"evidence\": \"examples/validator-hardening.md:A02\",\n      \"counterexample\": \"Synthetic schema test only, no independent review claim.\"\n    }\n  ],\n  \"problems\": [],\n  \"limit\": \"The verifier flag records an execution declaration; validate actual independent phase evidence separately.\"\n}\n",
+    "stderr": "",
+    "timestamp_utc": "2026-10-15T20:06:08.594769+00:00"
+  },
+  {
+    "case": "empty-declared",
+    "cwd": "/workspace/implementation-target/qore-skills-0.1.0/.agents/skills/qore-review-qore",
+    "argv": [
+      "node",
+      "scripts/finding-lint.mjs",
+      "/workspace/current-profile-public-review/empty-declared-input.json",
+      "--verifier=ran",
+      "--json"
+    ],
+    "exit_status": 0,
+    "stdout": "{\n  \"valid\": true,\n  \"coverage\": \"COMPLETE\",\n  \"verdict\": \"SHIP\",\n  \"verifier\": \"ran\",\n  \"total\": 0,\n  \"counts\": {\n    \"CONFIRMED\": 0,\n    \"PLAUSIBLE\": 0,\n    \"REFUTED\": 0\n  },\n  \"blocking_findings\": [],\n  \"findings\": [],\n  \"problems\": [],\n  \"limit\": \"The verifier flag records an execution declaration; validate actual independent phase evidence separately.\"\n}\n",
+    "stderr": "",
+    "timestamp_utc": "2026-10-15T20:06:08.613665+00:00"
+  }
+]

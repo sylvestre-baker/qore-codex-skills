@@ -1,0 +1,20 @@
+{
+  "qore_evidence": {
+    "candidate_sha256": "3e0265c6d33fc0340fd8df0f0c1c4074a7495a8744365b6d388c747e4daf60da",
+    "target_snapshot_sha256": "e6f131ad712f3282ed1313b5214cfadc578f90defae3741acef1d68f8b1fc7a9",
+    "observed_at": "2026-10-15T19:47:55.063349+00:00",
+    "phase_id": "redaction"
+  },
+  "payload": {
+    "argv": [
+      "node",
+      "scripts/redact-for-verifier.mjs",
+      "/workspace/review-evidence/findings.json"
+    ],
+    "cwd": "/workspace/qore-skills-0.1.0/.agents/skills/qore-review",
+    "exit_code": 0,
+    "stdout": "{\n  \"findings\": []\n}\n",
+    "stderr": "redact-for-verifier: 0 claims; withheld fields: none.\n",
+    "observed_at": "2026-10-15T19:46:23.610105+00:00"
+  }
+}

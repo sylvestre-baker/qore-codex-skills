@@ -1,0 +1,27 @@
+{
+  "qore_evidence": {
+    "candidate_sha256": "550e45ab0a07a641f8ec6d3cba5677e97a8e5fd86053631a1e75c90a8f8c52d0",
+    "target_snapshot_sha256": "a1fc12a483491932d6339202ce023ae3c09a3faec9bf2fff7627b6bbc319c3e3",
+    "observed_at": "2026-10-15T20:18:06.838Z",
+    "phase_id": "browser"
+  },
+  "payload": {
+    "driver": {
+      "node": "v24.19.0",
+      "playwright": "1.62.1",
+      "chromium": "151.0.7922.34"
+    },
+    "window": {
+      "started_at": "2026-10-15T20:17:51.326Z",
+      "finished_at": "2026-10-15T20:18:06.838Z"
+    },
+    "response_records": 175,
+    "page_exceptions": [],
+    "support": [
+      "browser-events.json",
+      "browser-result.json",
+      "dom/",
+      "screenshots/"
+    ]
+  }
+}

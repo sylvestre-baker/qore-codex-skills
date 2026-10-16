@@ -1,0 +1,65 @@
+{
+  "requested_roles": [
+    "correctness",
+    "security",
+    "feasibility",
+    "verifier"
+  ],
+  "spawn_responses_exposed": [
+    {
+      "task_name": "/root/correctness"
+    },
+    {
+      "task_name": "/root/security"
+    },
+    {
+      "task_name": "/root/feasibility"
+    },
+    {
+      "task_name": "/root/verifier"
+    }
+  ],
+  "note": "Exact response objects exposed by collaboration.spawn_agent; no opaque worker IDs exposed. Finder contexts fork_turns=none; verifier will be spawned only after successful mechanical redaction.",
+  "budgets": {
+    "overall_minutes": 12,
+    "finder_minutes": 4,
+    "deadline_utc": "2026-10-15T20:15:50+00:00",
+    "exhaustion": "Return available work and identify unfinished coverage."
+  },
+  "scope": "Complete current public implementation; exclusions per user; no source changes authorized",
+  "profile_preflight": "Generic review skill has no references/project.json; target profiles are review subjects, not consumed context facts.",
+  "capabilities": {
+    "rg": "unavailable (initial probe exit 127)",
+    "python3": "/usr/bin/python3",
+    "node": "/usr/local/bin/node",
+    "independent_contexts": "collaboration.spawn_agent fork_turns=none",
+    "concurrency": 4
+  },
+  "identity": {
+    "user_candidate_label": "17888fa30f1024707fc3ee6efda856ca330bc6365e09737007096f5d7db62da8",
+    "full_tree_snapshot": "3c5ec57e930dd71209936c797e365155272b651ebdb9f1f41f91bc50eab89906",
+    "qore_snapshot": "0bd970e4307363a075117f9e3380284a9e6c3728d6dbc8070eb560dad77b2bb8",
+    "qualification": "Rebuilt archive SHA256 exactly equals supplied candidate digest; build-probe.json records command/result. Full-tree snapshot additionally binds installed review skill."
+  },
+  "returned_roles": [
+    "correctness",
+    "security",
+    "feasibility",
+    "verifier"
+  ],
+  "verifier_dispatch": {
+    "isolation": "fork_turns=none",
+    "inputs": [
+      "claims.json",
+      "raw source and criteria"
+    ],
+    "excluded": "finder reports, unfiltered packets, finder probes and lead conclusions",
+    "after_redaction": "redaction-command.json exit_code 0"
+  },
+  "accounting_followup": {
+    "tool": "collaboration.followup_task",
+    "target": "correctness",
+    "response": "agent with id 01a1412a-4cc0-7150-aa8a-5b1df4e7445e not found",
+    "purpose": "Ask origin of newly observed runtime files; no new review phase requested"
+  }
+}

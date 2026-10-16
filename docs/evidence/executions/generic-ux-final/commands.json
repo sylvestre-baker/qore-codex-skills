@@ -1,0 +1,41 @@
+{
+  "representation": "Redacted display argv; original private argv are not claimed to be these substituted strings.",
+  "commands": [
+    {
+      "argv": [
+        "<NODE>",
+        "scripts/depth-lint.mjs",
+        "<PRIVATE_EVIDENCE_ROOT>/generic-ux-final/depth.json"
+      ],
+      "cwd": "<SOURCE_REPOSITORY>/skills/qore-ux-review",
+      "exit_code": 0,
+      "artifact": "depth-lint.json"
+    },
+    {
+      "argv": [
+        "<NODE>",
+        "scripts/stop-rule.mjs",
+        "<PRIVATE_EVIDENCE_ROOT>/generic-ux-final/loop.json"
+      ],
+      "cwd": "<SOURCE_REPOSITORY>/skills/qore-ux-review",
+      "exit_code": 0,
+      "artifact": "stop-result.json"
+    },
+    {
+      "argv": [
+        "<NODE>",
+        "<PRIVATE_EVIDENCE_ROOT>/generic-ux-final/drive.mjs"
+      ],
+      "exit_code": 0,
+      "artifact": "browser/result.json"
+    },
+    {
+      "argv": [
+        "<NODE>",
+        "<PRIVATE_EVIDENCE_ROOT>/generic-ux-final/viewport.mjs"
+      ],
+      "exit_code": 0,
+      "artifact": "browser/viewport-observations.json"
+    }
+  ]
+}

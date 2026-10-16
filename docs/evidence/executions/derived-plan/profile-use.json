@@ -1,0 +1,52 @@
+{
+  "observed_at": "2026-10-15T20:13:15.203321+00:00",
+  "profile": {
+    "id": "qore",
+    "version": "0.1.0",
+    "sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9"
+  },
+  "preflight": "profile-preflight.json",
+  "source_id": "project",
+  "source_path": "qore.json",
+  "source_sha256": "948b2784fa7970cf90a25c338a29067b13d8b4476f666d712a5eb95fc6f641c8",
+  "facts": [
+    {
+      "id": "check",
+      "kind": "command",
+      "selected": true,
+      "consumed": true,
+      "actual_argv": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "actual_output": "profile-selected-check.json",
+      "effect": "Actual 82-test full check ran; T4 requires this same current selected command rather than a Node-only substitute."
+    },
+    {
+      "id": "preserve-adaptations",
+      "kind": "invariant",
+      "selected": true,
+      "consumed": true,
+      "effect": "D5, A08 and T4 require new staging, existing-destination refusal and unchanged adaptation bytes; A09 requires source freshness before affected use."
+    }
+  ],
+  "not_consumed_as_profile_authority": [
+    "verified-blockers",
+    "observed-ux",
+    "surfaces.web"
+  ],
+  "fact_values_supplied_in_invocation_prompt": false,
+  "role_evidence": [
+    "product-analysis.md",
+    "architecture-analysis.md",
+    "ux-analysis.md",
+    "delivery-analysis.md",
+    "qa-analysis.md"
+  ]
+}

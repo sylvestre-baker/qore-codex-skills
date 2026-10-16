@@ -1,0 +1,136 @@
+{
+  "schema": "qore-browser-capability-matrix/1",
+  "driver": {
+    "name": "Playwright Chromium",
+    "node": "v24.19.0",
+    "version": "1.62.1",
+    "browser_version": "151.0.7922.34"
+  },
+  "required_capabilities": {
+    "navigation": {
+      "status": "OBSERVED",
+      "evidence": "observations.json#/events/navigation",
+      "entry_status": 200
+    },
+    "screenshot": {
+      "status": "OBSERVED",
+      "evidence": "qaizen-returned.png"
+    },
+    "dom": {
+      "status": "OBSERVED",
+      "evidence": "observations.json#/states"
+    },
+    "keyboard": {
+      "status": "OBSERVED",
+      "key": "Tab",
+      "active_element": {
+        "tag": "A",
+        "id": "",
+        "text": "Skip to content"
+      },
+      "evidence": "observations.json#/events/actions/0"
+    },
+    "console": {
+      "status": "OBSERVED",
+      "evidence": "observations.json#/events/console",
+      "note": "Listener attached before entry navigation; an empty list means no emitted events were observed."
+    },
+    "network": {
+      "status": "OBSERVED",
+      "evidence": "observations.json#/events/network"
+    }
+  },
+  "rows": [
+    {
+      "depth": "entry",
+      "required_checks": [
+        "Actual inbound entry click",
+        "Observed route and target heading"
+      ],
+      "status": "OBSERVED",
+      "evidence": [
+        "observations.json#/events/actions",
+        "observations.json#/states/01-readiness-intro"
+      ]
+    },
+    {
+      "depth": "state",
+      "required_checks": [
+        "First-question resolution",
+        "Explanation open and keyboard close",
+        "Back transition and heading focus"
+      ],
+      "status": "OBSERVED_WITHIN_DECLARED_SCOPE",
+      "evidence": [
+        "observations.json#/state_assertions",
+        "observations.json#/states"
+      ]
+    },
+    {
+      "depth": "visual",
+      "required_checks": [
+        "Human inspection of rendered screenshots",
+        "Theme and viewport matrix"
+      ],
+      "status": "PARTIAL",
+      "evidence": [
+        "qaizen-entry.png",
+        "qaizen-question.png",
+        "qaizen-returned.png"
+      ],
+      "missing": [
+        "Alternate viewport and theme matrix"
+      ]
+    },
+    {
+      "depth": "copy",
+      "required_checks": [
+        "Observed content of selected states",
+        "Full affected copy audit"
+      ],
+      "status": "PARTIAL",
+      "evidence": [
+        "observations.json#/states"
+      ],
+      "missing": [
+        "Full affected copy audit"
+      ]
+    },
+    {
+      "depth": "perf",
+      "required_checks": [
+        "Instrumented performance measurement"
+      ],
+      "status": "NOT_TESTED",
+      "evidence": []
+    },
+    {
+      "depth": "full",
+      "required_checks": [
+        "Entry",
+        "State/data matrix",
+        "Visual",
+        "Copy",
+        "Instrumented accessibility",
+        "Performance"
+      ],
+      "status": "PARTIAL",
+      "evidence": [
+        "observations.json"
+      ],
+      "missing": [
+        "Result/answer/error-state matrix",
+        "Instrumented accessibility",
+        "Performance",
+        "Additional viewports"
+      ]
+    }
+  ],
+  "unqualified": [
+    "Native applications",
+    "Other hosts or browser drivers",
+    "General quality gains",
+    "External human first use"
+  ],
+  "scope_rule": "The helper COMPLETE outcome is limited to its supplied actions; it never certifies all depths or grants SHIP."
+}

@@ -1,0 +1,1077 @@
+[
+  {
+    "path": ".agents/skills/qore-plan/SKILL.md",
+    "sha256": "6a0b7a03d888595e6b9e76bc16644a313a187df91622fd5245d4b2253bdf83da",
+    "mtime": 1792094084.915033
+  },
+  {
+    "path": ".agents/skills/qore-plan/agents/openai.yaml",
+    "sha256": "21ffa75d5bc52d68819ff68d4b8c65dc33584464f755487e6a02302f0924c22b",
+    "mtime": 1792094084.915033
+  },
+  {
+    "path": ".agents/skills/qore-plan/references/project-profile.md",
+    "sha256": "16c5ff087c83b7503b23d5d94726834462dd4fd73d78a5380cf85135fa85b0b3",
+    "mtime": 1792094084.915033
+  },
+  {
+    "path": ".agents/skills/qore-plan/references/protocol.md",
+    "sha256": "83f92490a5601b83fc6eaa21861344e35cd04a3ac7edb56b98cd2eb0ecfea84b",
+    "mtime": 1792094084.915033
+  },
+  {
+    "path": ".agents/skills/qore-plan/references/release.json",
+    "sha256": "3814e8357bbc47938cd5bd40634143d39d84f76a775d38343ed5bdf939c6c2c5",
+    "mtime": 1792094084.928033
+  },
+  {
+    "path": ".agents/skills/qore-plan/references/roles.md",
+    "sha256": "cc8060c7c852c143b9671af4fc0176b9c5068f338c19b2556b6ff494c0f0d318",
+    "mtime": 1792094084.915033
+  },
+  {
+    "path": ".agents/skills/qore-plan/references/run-evidence.md",
+    "sha256": "35cd6dc6d3e1177bbae96e5b9e829ed1aa55901747c856f4db20e946421f163d",
+    "mtime": 1792094084.915033
+  },
+  {
+    "path": ".agents/skills/qore-plan/references/specification.md",
+    "sha256": "7eb06b91fca66a3ec00bda4b49b035c5e6bfe827c4624768f66a09b6ae7827a1",
+    "mtime": 1792094084.915033
+  },
+  {
+    "path": ".agents/skills/qore-plan/scripts/project-check.py",
+    "sha256": "3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd",
+    "mtime": 1792094084.915033
+  },
+  {
+    "path": ".agents/skills/qore-plan/scripts/run-check.py",
+    "sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+    "mtime": 1792094084.915033
+  },
+  {
+    "path": ".agents/skills/qore-plan/scripts/spec-lint.mjs",
+    "sha256": "0015bf0428e30d662d2ddf119e5813e3dc5f01379c45e3229c592853a77683ef",
+    "mtime": 1792094084.915033
+  },
+  {
+    "path": ".agents/skills/qore-plan/scripts/spec-lint.sh",
+    "sha256": "ee4b0c491833f8f3960037255f7ea601548a353d18b317aae25d8e5f2cd461b6",
+    "mtime": 1792094084.915033
+  },
+  {
+    "path": ".agents/skills/qore-review/SKILL.md",
+    "sha256": "aae83b4105dd89387c7eac31df3c789326def9c0b05dccd4a3d2cdab65732a97",
+    "mtime": 1792094084.915033
+  },
+  {
+    "path": ".agents/skills/qore-review/agents/openai.yaml",
+    "sha256": "6c689fd93445ab3edcb6b88320e7680ee37c746bca5635e8c406304b081250ed",
+    "mtime": 1792094084.915033
+  },
+  {
+    "path": ".agents/skills/qore-review/references/findings.md",
+    "sha256": "79b2b5f52e88761331c01b92af9b492ef1888c6c20a0af1b94a8bead7aa2d6cb",
+    "mtime": 1792094084.915033
+  },
+  {
+    "path": ".agents/skills/qore-review/references/project-profile.md",
+    "sha256": "5d3b69aac18f83a634f4c57c214cc1f53fa186c03c536adcefd4c905a8767c8d",
+    "mtime": 1792094084.916033
+  },
+  {
+    "path": ".agents/skills/qore-review/references/protocol.md",
+    "sha256": "e27e0050fdf4d75d2840dd257b9a759f1f48d459ef540990cd3aed5528c5f340",
+    "mtime": 1792094084.916033
+  },
+  {
+    "path": ".agents/skills/qore-review/references/release.json",
+    "sha256": "cd65c957ad54614057afbd6874dcfdb5f12106a22b3d8d45a33845138a630804",
+    "mtime": 1792094084.929033
+  },
+  {
+    "path": ".agents/skills/qore-review/references/run-evidence.md",
+    "sha256": "fbdf433ef8b3e972f97bed5fdec4990cf3b49535bf63120c729a7daf4af71746",
+    "mtime": 1792094084.916033
+  },
+  {
+    "path": ".agents/skills/qore-review/scripts/finding-lint.mjs",
+    "sha256": "89b02ef5912adf3f6ff86ad8652a3f21e7313bb0cc0a280a3dd9810546abdef9",
+    "mtime": 1792094084.916033
+  },
+  {
+    "path": ".agents/skills/qore-review/scripts/project-check.py",
+    "sha256": "3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd",
+    "mtime": 1792094084.916033
+  },
+  {
+    "path": ".agents/skills/qore-review/scripts/redact-for-verifier.mjs",
+    "sha256": "dc249524c749ad5b511aef0a2cf08b4cfd5c47c1e0de4fd41c5c70746b471083",
+    "mtime": 1792094084.916033
+  },
+  {
+    "path": ".agents/skills/qore-review/scripts/run-check.py",
+    "sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+    "mtime": 1792094084.916033
+  },
+  {
+    "path": ".agents/skills/qore-ux-review/SKILL.md",
+    "sha256": "33b1367f256f1a6304902d08cdff9b023add92fb750834216268cca8de84b851",
+    "mtime": 1792094084.916033
+  },
+  {
+    "path": ".agents/skills/qore-ux-review/agents/openai.yaml",
+    "sha256": "2bafca3b7edce2edac4814b4028fdb814f83c1c2efbea4d461b7469fbe1bd7af",
+    "mtime": 1792094084.916033
+  },
+  {
+    "path": ".agents/skills/qore-ux-review/references/evidence.md",
+    "sha256": "659560f88b965371e2c6e886b5f4c648a4879ebb7c69af4b1d307dfae176c8b3",
+    "mtime": 1792094084.916033
+  },
+  {
+    "path": ".agents/skills/qore-ux-review/references/gates.md",
+    "sha256": "667063cd64c576a9c5b4ec69f6ddcd677d4e969bae96184b3136ede9fd12fd87",
+    "mtime": 1792094084.916033
+  },
+  {
+    "path": ".agents/skills/qore-ux-review/references/project-profile.md",
+    "sha256": "154ed11dab8e8499e74a5f3a6afb512827d5de5c73408523b845684e38f59dfc",
+    "mtime": 1792094084.916033
+  },
+  {
+    "path": ".agents/skills/qore-ux-review/references/protocol.md",
+    "sha256": "257ae0902a7fb00f6bfd1ebaa5b688e57a5f2e7163de3e9954ed3c9765105dfd",
+    "mtime": 1792094084.916033
+  },
+  {
+    "path": ".agents/skills/qore-ux-review/references/release.json",
+    "sha256": "0960d2d2e4765ec0f684df528b957c67d1916482210e975f01a36e8c366ba3ed",
+    "mtime": 1792094084.930033
+  },
+  {
+    "path": ".agents/skills/qore-ux-review/references/run-evidence.md",
+    "sha256": "2ede0b19d58fd5535c90023068355679ee7bb27d3070967ada38f9ad156a9e69",
+    "mtime": 1792094084.916033
+  },
+  {
+    "path": ".agents/skills/qore-ux-review/scripts/depth-lint.mjs",
+    "sha256": "9b9cdcea3e87f4820944ddfc075ef19e75aad0bb08a7f1fd279ea6590267def7",
+    "mtime": 1792094084.916033
+  },
+  {
+    "path": ".agents/skills/qore-ux-review/scripts/project-check.py",
+    "sha256": "3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd",
+    "mtime": 1792094084.916033
+  },
+  {
+    "path": ".agents/skills/qore-ux-review/scripts/run-check.py",
+    "sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+    "mtime": 1792094084.916033
+  },
+  {
+    "path": ".agents/skills/qore-ux-review/scripts/stop-rule.mjs",
+    "sha256": "404b5ca63276c413e1f2697b98817f1802de4642cf634303707bd175eddd8085",
+    "mtime": 1792094084.916033
+  },
+  {
+    "path": ".gitignore",
+    "sha256": "5d40cb60d30c76b7c86eef3cf12dca84df263727439fa897167a41f79809c1b4",
+    "mtime": 1792094084.671033
+  },
+  {
+    "path": "CONTRIBUTING.md",
+    "sha256": "87ef55fe9e213e5bd9b0f3178849b0a9ac88ec1c07634053c9989c0cbbde7638",
+    "mtime": 1792094084.672033
+  },
+  {
+    "path": "LICENSE",
+    "sha256": "2869451aacba8375c013dee1749f630a9c0d6bef71b6caeea63e5fa15b8f85a6",
+    "mtime": 1792094084.672033
+  },
+  {
+    "path": "PROVENANCE.md",
+    "sha256": "0ba998907e47de19ce9a590e5a2937aa78cf0b91039e6a32bdf085eab252a893",
+    "mtime": 1792094084.672033
+  },
+  {
+    "path": "README.md",
+    "sha256": "06d2533a36fff08e66a1f00f8bdc571fb566cc7b3a35d0ae283c7d0645c3fc5a",
+    "mtime": 1792094084.672033
+  },
+  {
+    "path": "docs/architecture.md",
+    "sha256": "26429d4cbbc5a1c3065a65397bbdfcbbacd5cb5d4a198da979d72146190714f6",
+    "mtime": 1792094084.672033
+  },
+  {
+    "path": "docs/clean-environment.md",
+    "sha256": "e2e088e7d444127c6aa88fe146b66d1993acf0535436a3f45fc1bde46d70807d",
+    "mtime": 1792094084.672033
+  },
+  {
+    "path": "docs/command-inventory.json",
+    "sha256": "323ad38a58d991cddf7e9bb9a80cb8f02a0ed8faaa3df6603b025e964d5edf66",
+    "mtime": 1792094084.672033
+  },
+  {
+    "path": "docs/contracts.md",
+    "sha256": "cd09827fbcff4420c97389363b9299f10d7f9a6eb96c5f8fabffed4ba5a0168e",
+    "mtime": 1792094084.672033
+  },
+  {
+    "path": "docs/evidence/browser/README.md",
+    "sha256": "c7fd4de1d6f8d0234164ce2533b91d8f1d13b5ff1e7794d9207a80390b846db7",
+    "mtime": 1792094084.672033
+  },
+  {
+    "path": "docs/evidence/browser/capability-matrix.json",
+    "sha256": "0698a1be383dc6a7b7a563eb98f49ca7f92d4e073277d7e075b54dce49efb3e5",
+    "mtime": 1792094084.672033
+  },
+  {
+    "path": "docs/evidence/browser/fixture-observations.json",
+    "sha256": "e132d2f50f494d7d5734235d5d631d79d12fb79f99fb23c0128456f47a3ea1b1",
+    "mtime": 1792094084.673033
+  },
+  {
+    "path": "docs/evidence/browser/observations.json",
+    "sha256": "58b44ead3a73efe837c976d29f5d12c0e7c990f9393763c7f4d7eb69daf8cc6c",
+    "mtime": 1792094084.673033
+  },
+  {
+    "path": "docs/evidence/browser/provenance.json",
+    "sha256": "0a24a780f17b591b6f40fa4aa498f7567d3b061ca81dab018547986b24b9caf4",
+    "mtime": 1792094084.673033
+  },
+  {
+    "path": "docs/evidence/browser/qaizen-actions.json",
+    "sha256": "31ea76e8f458a4c329ec2887254b43c1c29e0fa610ac01487b0ed41c848b23d9",
+    "mtime": 1792094084.673033
+  },
+  {
+    "path": "docs/evidence/browser/qaizen-demo-captioned.mp4",
+    "sha256": "09d579e564862e233356e229587239c7c2523cbbd3d1b6f42f036d078dabbdd9",
+    "mtime": 1792094084.675033
+  },
+  {
+    "path": "docs/evidence/browser/qaizen-demo.en.vtt",
+    "sha256": "41b579ffd8a1c9c47c5f1c195d622e19f15360fce86ffd98d39bde586ff3131d",
+    "mtime": 1792094084.675033
+  },
+  {
+    "path": "docs/evidence/browser/qaizen-entry.png",
+    "sha256": "095283e6a92818f6baf91a977793ff14591a91a60cef7b82ea9019642c2251e2",
+    "mtime": 1792094084.677033
+  },
+  {
+    "path": "docs/evidence/browser/qaizen-question.png",
+    "sha256": "a5396e6ebbef542a3b7bea548d49ec7bb98c0883adfae06ef649f622b4ad1756",
+    "mtime": 1792094084.679033
+  },
+  {
+    "path": "docs/evidence/browser/qaizen-returned.png",
+    "sha256": "3cb9aa37df077b61ecdd04e261ffaeaa538560ea618881435761377ce50543f4",
+    "mtime": 1792094084.681033
+  },
+  {
+    "path": "docs/evidence/browser/qaizen-transcript.md",
+    "sha256": "da624cdbbbbd6cc3e7d321a2ffa58a1e1be99d807c950dcf6d473a19f34a60c8",
+    "mtime": 1792094084.681033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/claims.json",
+    "sha256": "8aa973100a15bf817985395637131e838cf84e427be4792583def923f020f5fa",
+    "mtime": 1792094084.681033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/correctness-candidates.json",
+    "sha256": "8aa973100a15bf817985395637131e838cf84e427be4792583def923f020f5fa",
+    "mtime": 1792094084.682033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/correctness-input-empty.json",
+    "sha256": "6e96a492bc9fa40d22212c5be0396a203f3dbd4916cf97ebe2f66b6d54fa4a9a",
+    "mtime": 1792094084.682033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/correctness-input-high-skipped.json",
+    "sha256": "57c8f2f3115ce230968e3cd02a9fa75b3054c84fba6cf32298c754dc5e334306",
+    "mtime": 1792094084.682033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/correctness-input-missing.json",
+    "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "mtime": 1792094084.682033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/correctness-project-check.json",
+    "sha256": "d32ca8f2395f3c6c3552e033fe595ce04737ecde5d2aa8d8b23266693fd8fc45",
+    "mtime": 1792094084.682033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/correctness-redacted.json",
+    "sha256": "6539ed4b29cda4ea1d8191cb7733d48d3157655453d9a0f89ce110fc05bc4345",
+    "mtime": 1792094084.682033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/correctness-report.md",
+    "sha256": "e00de6f8101c7a9196165e0f7dee5169faf337644603dd3186c9fdea8ce7ef36",
+    "mtime": 1792094084.682033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/correctness-snapshot.json",
+    "sha256": "b49f39f68cd7b8d28be67629c6f9659742fb3f2e493f8f0bcd4c0e113c68bc24",
+    "mtime": 1792094084.682033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/correctness-trace.json",
+    "sha256": "5cbf4697f1138f94edc036331722c99cd8fbef9ff6a1c95765da8783316bcf2a",
+    "mtime": 1792094084.682033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/execution.json",
+    "sha256": "06b6961a94fed0d6e1c6dc67cba49356b7cd1fa1bd7754fb000417a4042a632a",
+    "mtime": 1792094084.682033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/feasibility-candidates.json",
+    "sha256": "8aa973100a15bf817985395637131e838cf84e427be4792583def923f020f5fa",
+    "mtime": 1792094084.682033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/feasibility-project-check.json",
+    "sha256": "a209ddd7eb67f1c6d439d2b6ffc2d5f261131e57fd3adfe960f13dddaf6d41c5",
+    "mtime": 1792094084.682033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/feasibility-report.md",
+    "sha256": "1c1a22a143aaaf1720fb413d67abd344b8afaab10f7beba1d3974add18b1b4a0",
+    "mtime": 1792094084.682033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/feasibility-source-digests.json",
+    "sha256": "894f776e77949569689587e6a237c03bbfc5764c1b20047fb06a70fc1c3003ba",
+    "mtime": 1792094084.682033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/feasibility-trace-filtered.json",
+    "sha256": "2053a6092db31ab7a80f42acfe9e0dae7688e7db7b4edd390bb9e76ce8bbc058",
+    "mtime": 1792094084.683033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/feasibility-trace-final.json",
+    "sha256": "d492329a791e21616244e07d2fd85145d3e706d8033a636f3452cdfc6cf8852b",
+    "mtime": 1792094084.683033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/feasibility-trace-results.json",
+    "sha256": "75bff691887f53ebe1e953e66eb81173e74925a249dfc24dcf1283e0e5237500",
+    "mtime": 1792094084.683033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/feasibility-trace-source.json",
+    "sha256": "9b64796216e7b5ae29c60f08e85bc011482d774f8020d4af6154d1f4fe822bfd",
+    "mtime": 1792094084.683033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/finalize.py",
+    "sha256": "6846d99a6c2fdf2200be12e6c1c0e3b64461cf93b574c853157067f185792876",
+    "mtime": 1792094084.683033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/finder.correctness-execution.json",
+    "sha256": "98a04835f2d93846fbdea2529757a5c7df3a09a10946e81108842078d6134a4a",
+    "mtime": 1792094084.683033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/finder.feasibility-execution.json",
+    "sha256": "e502b37147245eb019cd91c6261e607c3c89c658f88a6bc7f24a6bbd7ba1cac8",
+    "mtime": 1792094084.683033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/finder.security-execution.json",
+    "sha256": "512012e502957657221f79b171cc729d7036a11c07924344317405b77a6544af",
+    "mtime": 1792094084.683033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/findings-lint-command.json",
+    "sha256": "b21d0132c1d3f6f88c29b1c813f70f2f8fe2d0ffea0dcd7bfa197ad35c4560a9",
+    "mtime": 1792094084.683033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/findings-lint.stderr",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "mtime": 1792094084.683033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/findings-lint.stdout",
+    "sha256": "2a957e6e163241fbd08a07974bd4d9b295b4436e939f8794edc07c76560227e0",
+    "mtime": 1792094084.683033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/findings.json",
+    "sha256": "8aa973100a15bf817985395637131e838cf84e427be4792583def923f020f5fa",
+    "mtime": 1792094084.683033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/findings_validation-execution.json",
+    "sha256": "6158eae959deffc357c30d4132ae03786994c0c5c639e05bbc585356ecb0f344",
+    "mtime": 1792094084.683033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/identity.json",
+    "sha256": "1837263f34eee66a07eb137ca69aa3a5a176b69ec4856cbea1585d9ad7b4a94b",
+    "mtime": 1792094084.683033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/lead-commands.md",
+    "sha256": "b1b03f95ad6dd5dd510fac997a411d8d96b32a22c2090559daf6637bdc974c4e",
+    "mtime": 1792094084.683033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/project-tests.log",
+    "sha256": "64fe2dc8601e7be38a7e5208669a352f5a0b439248b958f6b1be707913bf79da",
+    "mtime": 1792094084.683033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/provenance.json",
+    "sha256": "403fb5ff9b7d5cb874cc7e5a72f7ab6b839461ccc13df8171aff579a13ed5735",
+    "mtime": 1792094084.684033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/redaction-command.json",
+    "sha256": "a780ae4d1f8e9ed2cb1bc26decf173093d2acd58b6e0a6cb038e259c7d22053e",
+    "mtime": 1792094084.684033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/redaction-execution.json",
+    "sha256": "3295a00221d5219a833e758b5e953c05518fc39b518aed2e7426c56d88431876",
+    "mtime": 1792094084.684033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/redactor.stderr",
+    "sha256": "b9598552a5b4006acea907bb06991f0be45e31f006cbe5d430f01f0f0900ae73",
+    "mtime": 1792094084.684033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/report.md",
+    "sha256": "80db1c35a4087f44d99f177a3eeb8ac74f37b5b71e543ab4ed6f225537c481a7",
+    "mtime": 1792094084.684033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/roster.json",
+    "sha256": "b956d9b269399b481be0c3914e111a9ecfcabb11a1ac3626ddced47b0f001dbf",
+    "mtime": 1792094084.684033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/run-check.stdout",
+    "sha256": "4f4890b19bc0eb00c937ee126fe86a6ea9c7c5eb2a3c1c33b8b3a7aba530f381",
+    "mtime": 1792094084.684033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/security-candidates.json",
+    "sha256": "b8adad3852f196db84ad05c2affa3855c7e15d1c9d24c62c8d32165e34a82c39",
+    "mtime": 1792094084.684033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/security-command-evidence.json",
+    "sha256": "8d4233830e7a6bff9a6e938306aad42e8f891dee751bbf09d54b64de0ae7605c",
+    "mtime": 1792094084.684033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/security-empty.json",
+    "sha256": "6e96a492bc9fa40d22212c5be0396a203f3dbd4916cf97ebe2f66b6d54fa4a9a",
+    "mtime": 1792094084.684033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/security-high.json",
+    "sha256": "f06a80aa846b6d3b8ed2466e5c63c232ee6fa487aead773e8824c843199ce9e6",
+    "mtime": 1792094084.684033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/security-malformed.json",
+    "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "mtime": 1792094084.684033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/security-report.md",
+    "sha256": "73a6a77ebe6586ef06de2ae9dc9f4d577562df1aa23b4798e37d00ab1c769df6",
+    "mtime": 1792094084.684033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/security-source-manifest.json",
+    "sha256": "0efc1667a018b8fbab80d98761257f847217df163465ce437083c19801a1c3dc",
+    "mtime": 1792094084.684033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/security-trace-claims.json",
+    "sha256": "29c3db99efa20f6646f7f347b0ce39e7dd954a34dcd4a9e04ac91f3c1870c122",
+    "mtime": 1792094084.684033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/source/CONTRIBUTING.md.txt",
+    "sha256": "87ef55fe9e213e5bd9b0f3178849b0a9ac88ec1c07634053c9989c0cbbde7638",
+    "mtime": 1792094084.685033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/source/README.md.txt",
+    "sha256": "46205c1947e1e35b1f67d12184dbfb921381c781d9eda3616e8251d187725bac",
+    "mtime": 1792094084.685033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/source/examples/validator-hardening.md.txt",
+    "sha256": "6f25b2edcd6d0826b12fbb47a99fc4162a1089eef71eaf7f16ea2cb7a8239a87",
+    "mtime": 1792094084.685033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/source/qore.json",
+    "sha256": "948b2784fa7970cf90a25c338a29067b13d8b4476f666d712a5eb95fc6f641c8",
+    "mtime": 1792094084.685033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/source/schemas/qore-run.schema.json",
+    "sha256": "540acd397ee09a070eb19b189f7baadd3ce55337fdb50137f11931e7ef246651",
+    "mtime": 1792094084.685033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/source/skills/qore-review/SKILL.md.txt",
+    "sha256": "aae83b4105dd89387c7eac31df3c789326def9c0b05dccd4a3d2cdab65732a97",
+    "mtime": 1792094084.685033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/source/skills/qore-review/agents/openai.yaml",
+    "sha256": "6c689fd93445ab3edcb6b88320e7680ee37c746bca5635e8c406304b081250ed",
+    "mtime": 1792094084.685033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/source/skills/qore-review/references/findings.md.txt",
+    "sha256": "79b2b5f52e88761331c01b92af9b492ef1888c6c20a0af1b94a8bead7aa2d6cb",
+    "mtime": 1792094084.685033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/source/skills/qore-review/references/project-profile.md.txt",
+    "sha256": "5d3b69aac18f83a634f4c57c214cc1f53fa186c03c536adcefd4c905a8767c8d",
+    "mtime": 1792094084.685033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/source/skills/qore-review/references/protocol.md.txt",
+    "sha256": "e27e0050fdf4d75d2840dd257b9a759f1f48d459ef540990cd3aed5528c5f340",
+    "mtime": 1792094084.685033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/source/skills/qore-review/references/release.json",
+    "sha256": "0d0a62e137572e9c30dfae9b3a0756e6a6dd54c473f99c5f583379812153ecf6",
+    "mtime": 1792094084.685033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/source/skills/qore-review/references/run-evidence.md.txt",
+    "sha256": "fbdf433ef8b3e972f97bed5fdec4990cf3b49535bf63120c729a7daf4af71746",
+    "mtime": 1792094084.686033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/source/skills/qore-review/scripts/finding-lint.mjs",
+    "sha256": "d0cc6809b750d9e52015b0448f18e3f291b979674b1350156d2444e607791ee7",
+    "mtime": 1792094084.686033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/source/skills/qore-review/scripts/project-check.py",
+    "sha256": "3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd",
+    "mtime": 1792094084.686033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/source/skills/qore-review/scripts/redact-for-verifier.mjs",
+    "sha256": "dc249524c749ad5b511aef0a2cf08b4cfd5c47c1e0de4fd41c5c70746b471083",
+    "mtime": 1792094084.686033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/source/skills/qore-review/scripts/run-check.py",
+    "sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+    "mtime": 1792094084.686033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/source/tests/fixtures/project-alternate.json",
+    "sha256": "830dc3c50369c21f523a1c68b188f3013b40c439ea362a1e97c45a38a89a79c5",
+    "mtime": 1792094084.686033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/source/tests/fixtures/validators/empty-object.json",
+    "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+    "mtime": 1792094084.686033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/source/tests/fixtures/validators/null.json",
+    "sha256": "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed",
+    "mtime": 1792094084.686033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/source/tests/fixtures/validators/truncated.json",
+    "sha256": "5f5c45efee43be1915fcfa9ae978fec3302e2bb70137526cc5f2a7e6573e1f7b",
+    "mtime": 1792094084.686033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/source/tests/fixtures/validators/valid-findings.json",
+    "sha256": "883889cef1ccb804667246acead1736f16b2472135bd400b27d8ea323ede00a4",
+    "mtime": 1792094084.686033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/source/tests/fixtures/validators/valid-spec.md.txt",
+    "sha256": "d273b8da517f326b0f9e3bee7ac09895ffc3c96c86bd926f1449a1b0254e0dc7",
+    "mtime": 1792094084.686033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/source/tests/fixtures/validators/valid-ux.json",
+    "sha256": "56bc9807a45cec509a7d12fbff34381a2d8226cf5b933280220be7bf56261245",
+    "mtime": 1792094084.686033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/source/tests/fixtures/web/alternate-actions.json",
+    "sha256": "01d12ee086d239dc8f5fe802d090fba6eb8e862fd281cb6dbf73483b6263a9ab",
+    "mtime": 1792094084.686033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/source/tests/fixtures/web/alternate.html",
+    "sha256": "9782b494fdbb156515518d4bb096a5c057385f44d9a6983c352080626e879a22",
+    "mtime": 1792094084.686033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/source/tests/fixtures/web/index.html",
+    "sha256": "c0b51d87d81a36f21608139d7a4fbf07b9fe1d6f94b1fa0bb0599b5f74fe91f5",
+    "mtime": 1792094084.686033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/source/tests/fixtures/web/ping.json",
+    "sha256": "b637c8fcaf1d33dfbc53887d00214034900ef46e83faca65758f6bc2b56ed43d",
+    "mtime": 1792094084.686033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/source/tests/fixtures/web/primary-actions.json",
+    "sha256": "3342907cd646a04a21ffc9ceb85e9359817b6b8220944030c27df66f5b9b5002",
+    "mtime": 1792094084.686033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/source/tests/test_package.py",
+    "sha256": "7e94e9a81f4b6e6b7f14d4f2432cc066b9b9b180afa4b96eb1c58c2d4957ed74",
+    "mtime": 1792094084.687033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/source/tests/test_run_contract.py",
+    "sha256": "f671c3ec3ca69ad155c54823ef89eb9475fd847b65b762094ad937030e7f297f",
+    "mtime": 1792094084.687033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/source/tests/test_validators.py",
+    "sha256": "b91ab5195a1e7380747c618a17f885b56dc1cddf809ff23e065c3062fc477f39",
+    "mtime": 1792094084.687033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/source/tools/run_contract.py",
+    "sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+    "mtime": 1792094084.687033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/source-manifest.json",
+    "sha256": "e6f131ad712f3282ed1313b5214cfadc578f90defae3741acef1d68f8b1fc7a9",
+    "mtime": 1792094084.687033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/source-unchanged.json",
+    "sha256": "fffe8c94ab291385dc4aaaa811ab780a771b2be07443f3b80a61c117d447afc0",
+    "mtime": 1792094084.687033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/verified.json",
+    "sha256": "8aa973100a15bf817985395637131e838cf84e427be4792583def923f020f5fa",
+    "mtime": 1792094084.687033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/verifier-command-evidence.json",
+    "sha256": "9945bbcdba0c622ee0ec02a524e67bbd7b6a44c4391206e01a3253f14d1fb689",
+    "mtime": 1792094084.687033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/verifier-coverage.json",
+    "sha256": "f700ce6be0743c4106f3ff461c3ec7be573750737cae63bf41d5003ff9a21b14",
+    "mtime": 1792094084.687033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/verifier-execution.json",
+    "sha256": "395a1a8aac22ee5c360c95270a2238e6d87635f2dd0ae9d32969b5b3d5bad5f1",
+    "mtime": 1792094084.687033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/verifier-probe-A01.json",
+    "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "mtime": 1792094084.687033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/verifier-probe-A02.json",
+    "sha256": "b1eafe7bd0771519e550ca8299c87d2b5f804b1a6d25460711dbf582badcf878",
+    "mtime": 1792094084.687033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/verifier-probe-A03.json",
+    "sha256": "6e96a492bc9fa40d22212c5be0396a203f3dbd4916cf97ebe2f66b6d54fa4a9a",
+    "mtime": 1792094084.687033
+  },
+  {
+    "path": "docs/evidence/executions/generic-review/verifier-report.md",
+    "sha256": "8dfe016d6e504e644eadca09e5d6f7740d9d2491236b1d87364dd3bace6f883d",
+    "mtime": 1792094084.687033
+  },
+  {
+    "path": "docs/profiles.md",
+    "sha256": "c20904f6bd4af55aa02e5c3cf75fa1298acfbe1e71e5ddb24920d20299a38408",
+    "mtime": 1792094084.687033
+  },
+  {
+    "path": "docs/troubleshooting.md",
+    "sha256": "1fd22e4bcc1855cefd95b38802ffc16e8f7de5d20caac76f4beb4d7112d006d5",
+    "mtime": 1792094084.687033
+  },
+  {
+    "path": "examples/validator-hardening.md",
+    "sha256": "6f25b2edcd6d0826b12fbb47a99fc4162a1089eef71eaf7f16ea2cb7a8239a87",
+    "mtime": 1792094084.688033
+  },
+  {
+    "path": "manifest.json",
+    "sha256": "527835667a6ed4b60addf832d240bacc2453bff453356e7620143a9ada624f3a",
+    "mtime": 1792094084.688033
+  },
+  {
+    "path": "plugin.json",
+    "sha256": "7935d0290e11e1cf35f6e57f61bf6fc2f5474e1c65cd0e3f26a2ce3368f8e732",
+    "mtime": 1792094084.688033
+  },
+  {
+    "path": "profiles/contrast.json",
+    "sha256": "f72394c2ebb80cb6da41b33a088d56fbd24b4577f71bc2b022d0ef4bb36bfb88",
+    "mtime": 1792094084.688033
+  },
+  {
+    "path": "profiles/qore.json",
+    "sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9",
+    "mtime": 1792094084.688033
+  },
+  {
+    "path": "qore.json",
+    "sha256": "948b2784fa7970cf90a25c338a29067b13d8b4476f666d712a5eb95fc6f641c8",
+    "mtime": 1792094084.688033
+  },
+  {
+    "path": "release-files.json",
+    "sha256": "dc3a5546bd0fb8ed64fbbebf85f1a699c611eb31b2aafb06b99fe078aa69e362",
+    "mtime": 1792094084.688033
+  },
+  {
+    "path": "release-rights.json",
+    "sha256": "14cebea957c3e818f1c828c7333a53c5968036f784cda73f1457bfbb46ae8226",
+    "mtime": 1792094084.688033
+  },
+  {
+    "path": "schemas/qore-project.schema.json",
+    "sha256": "fca2a81851fa75e59b22c21b7ed4766e981ec39db2a1bcc01acb8a14b64e3ead",
+    "mtime": 1792094084.688033
+  },
+  {
+    "path": "schemas/qore-release.schema.json",
+    "sha256": "65f96195072f6201c7fc3848522fdf16f45a170df3dd8c5ad9449192cc8c91d9",
+    "mtime": 1792094084.688033
+  },
+  {
+    "path": "schemas/qore-run.schema.json",
+    "sha256": "540acd397ee09a070eb19b189f7baadd3ce55337fdb50137f11931e7ef246651",
+    "mtime": 1792094084.688033
+  },
+  {
+    "path": "skills/qore-plan/SKILL.md",
+    "sha256": "6a0b7a03d888595e6b9e76bc16644a313a187df91622fd5245d4b2253bdf83da",
+    "mtime": 1792094084.688033
+  },
+  {
+    "path": "skills/qore-plan/agents/openai.yaml",
+    "sha256": "21ffa75d5bc52d68819ff68d4b8c65dc33584464f755487e6a02302f0924c22b",
+    "mtime": 1792094084.688033
+  },
+  {
+    "path": "skills/qore-plan/references/project-profile.md",
+    "sha256": "16c5ff087c83b7503b23d5d94726834462dd4fd73d78a5380cf85135fa85b0b3",
+    "mtime": 1792094084.689033
+  },
+  {
+    "path": "skills/qore-plan/references/protocol.md",
+    "sha256": "83f92490a5601b83fc6eaa21861344e35cd04a3ac7edb56b98cd2eb0ecfea84b",
+    "mtime": 1792094084.689033
+  },
+  {
+    "path": "skills/qore-plan/references/release.json",
+    "sha256": "3814e8357bbc47938cd5bd40634143d39d84f76a775d38343ed5bdf939c6c2c5",
+    "mtime": 1792094084.689033
+  },
+  {
+    "path": "skills/qore-plan/references/roles.md",
+    "sha256": "cc8060c7c852c143b9671af4fc0176b9c5068f338c19b2556b6ff494c0f0d318",
+    "mtime": 1792094084.689033
+  },
+  {
+    "path": "skills/qore-plan/references/run-evidence.md",
+    "sha256": "35cd6dc6d3e1177bbae96e5b9e829ed1aa55901747c856f4db20e946421f163d",
+    "mtime": 1792094084.689033
+  },
+  {
+    "path": "skills/qore-plan/references/specification.md",
+    "sha256": "7eb06b91fca66a3ec00bda4b49b035c5e6bfe827c4624768f66a09b6ae7827a1",
+    "mtime": 1792094084.689033
+  },
+  {
+    "path": "skills/qore-plan/scripts/project-check.py",
+    "sha256": "3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd",
+    "mtime": 1792094084.689033
+  },
+  {
+    "path": "skills/qore-plan/scripts/run-check.py",
+    "sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+    "mtime": 1792094084.689033
+  },
+  {
+    "path": "skills/qore-plan/scripts/spec-lint.mjs",
+    "sha256": "0015bf0428e30d662d2ddf119e5813e3dc5f01379c45e3229c592853a77683ef",
+    "mtime": 1792094084.689033
+  },
+  {
+    "path": "skills/qore-plan/scripts/spec-lint.sh",
+    "sha256": "ee4b0c491833f8f3960037255f7ea601548a353d18b317aae25d8e5f2cd461b6",
+    "mtime": 1792094084.689033
+  },
+  {
+    "path": "skills/qore-review/SKILL.md",
+    "sha256": "aae83b4105dd89387c7eac31df3c789326def9c0b05dccd4a3d2cdab65732a97",
+    "mtime": 1792094084.689033
+  },
+  {
+    "path": "skills/qore-review/agents/openai.yaml",
+    "sha256": "6c689fd93445ab3edcb6b88320e7680ee37c746bca5635e8c406304b081250ed",
+    "mtime": 1792094084.689033
+  },
+  {
+    "path": "skills/qore-review/references/findings.md",
+    "sha256": "79b2b5f52e88761331c01b92af9b492ef1888c6c20a0af1b94a8bead7aa2d6cb",
+    "mtime": 1792094084.689033
+  },
+  {
+    "path": "skills/qore-review/references/project-profile.md",
+    "sha256": "5d3b69aac18f83a634f4c57c214cc1f53fa186c03c536adcefd4c905a8767c8d",
+    "mtime": 1792094084.690033
+  },
+  {
+    "path": "skills/qore-review/references/protocol.md",
+    "sha256": "e27e0050fdf4d75d2840dd257b9a759f1f48d459ef540990cd3aed5528c5f340",
+    "mtime": 1792094084.690033
+  },
+  {
+    "path": "skills/qore-review/references/release.json",
+    "sha256": "cd65c957ad54614057afbd6874dcfdb5f12106a22b3d8d45a33845138a630804",
+    "mtime": 1792094084.690033
+  },
+  {
+    "path": "skills/qore-review/references/run-evidence.md",
+    "sha256": "fbdf433ef8b3e972f97bed5fdec4990cf3b49535bf63120c729a7daf4af71746",
+    "mtime": 1792094084.690033
+  },
+  {
+    "path": "skills/qore-review/scripts/finding-lint.mjs",
+    "sha256": "89b02ef5912adf3f6ff86ad8652a3f21e7313bb0cc0a280a3dd9810546abdef9",
+    "mtime": 1792094084.690033
+  },
+  {
+    "path": "skills/qore-review/scripts/project-check.py",
+    "sha256": "3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd",
+    "mtime": 1792094084.690033
+  },
+  {
+    "path": "skills/qore-review/scripts/redact-for-verifier.mjs",
+    "sha256": "dc249524c749ad5b511aef0a2cf08b4cfd5c47c1e0de4fd41c5c70746b471083",
+    "mtime": 1792094084.690033
+  },
+  {
+    "path": "skills/qore-review/scripts/run-check.py",
+    "sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+    "mtime": 1792094084.690033
+  },
+  {
+    "path": "skills/qore-ux-review/SKILL.md",
+    "sha256": "33b1367f256f1a6304902d08cdff9b023add92fb750834216268cca8de84b851",
+    "mtime": 1792094084.690033
+  },
+  {
+    "path": "skills/qore-ux-review/agents/openai.yaml",
+    "sha256": "2bafca3b7edce2edac4814b4028fdb814f83c1c2efbea4d461b7469fbe1bd7af",
+    "mtime": 1792094084.690033
+  },
+  {
+    "path": "skills/qore-ux-review/references/evidence.md",
+    "sha256": "659560f88b965371e2c6e886b5f4c648a4879ebb7c69af4b1d307dfae176c8b3",
+    "mtime": 1792094084.690033
+  },
+  {
+    "path": "skills/qore-ux-review/references/gates.md",
+    "sha256": "667063cd64c576a9c5b4ec69f6ddcd677d4e969bae96184b3136ede9fd12fd87",
+    "mtime": 1792094084.690033
+  },
+  {
+    "path": "skills/qore-ux-review/references/project-profile.md",
+    "sha256": "154ed11dab8e8499e74a5f3a6afb512827d5de5c73408523b845684e38f59dfc",
+    "mtime": 1792094084.690033
+  },
+  {
+    "path": "skills/qore-ux-review/references/protocol.md",
+    "sha256": "257ae0902a7fb00f6bfd1ebaa5b688e57a5f2e7163de3e9954ed3c9765105dfd",
+    "mtime": 1792094084.690033
+  },
+  {
+    "path": "skills/qore-ux-review/references/release.json",
+    "sha256": "0960d2d2e4765ec0f684df528b957c67d1916482210e975f01a36e8c366ba3ed",
+    "mtime": 1792094084.690033
+  },
+  {
+    "path": "skills/qore-ux-review/references/run-evidence.md",
+    "sha256": "2ede0b19d58fd5535c90023068355679ee7bb27d3070967ada38f9ad156a9e69",
+    "mtime": 1792094084.6910331
+  },
+  {
+    "path": "skills/qore-ux-review/scripts/depth-lint.mjs",
+    "sha256": "9b9cdcea3e87f4820944ddfc075ef19e75aad0bb08a7f1fd279ea6590267def7",
+    "mtime": 1792094084.6910331
+  },
+  {
+    "path": "skills/qore-ux-review/scripts/project-check.py",
+    "sha256": "3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd",
+    "mtime": 1792094084.6910331
+  },
+  {
+    "path": "skills/qore-ux-review/scripts/run-check.py",
+    "sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+    "mtime": 1792094084.6910331
+  },
+  {
+    "path": "skills/qore-ux-review/scripts/stop-rule.mjs",
+    "sha256": "404b5ca63276c413e1f2697b98817f1802de4642cf634303707bd175eddd8085",
+    "mtime": 1792094084.6910331
+  },
+  {
+    "path": "tests/__pycache__/test_package.cpython-314.pyc",
+    "sha256": "4978d83608bf26b23521ba8d9bcc4dfc8ee2c115ae204cde1ec879e1be18953e",
+    "mtime": 1792094182.447493
+  },
+  {
+    "path": "tests/fixtures/project-alternate.json",
+    "sha256": "830dc3c50369c21f523a1c68b188f3013b40c439ea362a1e97c45a38a89a79c5",
+    "mtime": 1792094084.6910331
+  },
+  {
+    "path": "tests/fixtures/validators/empty-object.json",
+    "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+    "mtime": 1792094084.6910331
+  },
+  {
+    "path": "tests/fixtures/validators/null.json",
+    "sha256": "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed",
+    "mtime": 1792094084.6910331
+  },
+  {
+    "path": "tests/fixtures/validators/truncated.json",
+    "sha256": "5f5c45efee43be1915fcfa9ae978fec3302e2bb70137526cc5f2a7e6573e1f7b",
+    "mtime": 1792094084.6910331
+  },
+  {
+    "path": "tests/fixtures/validators/valid-findings.json",
+    "sha256": "883889cef1ccb804667246acead1736f16b2472135bd400b27d8ea323ede00a4",
+    "mtime": 1792094084.6910331
+  },
+  {
+    "path": "tests/fixtures/validators/valid-spec.md",
+    "sha256": "d273b8da517f326b0f9e3bee7ac09895ffc3c96c86bd926f1449a1b0254e0dc7",
+    "mtime": 1792094084.692033
+  },
+  {
+    "path": "tests/fixtures/validators/valid-ux.json",
+    "sha256": "56bc9807a45cec509a7d12fbff34381a2d8226cf5b933280220be7bf56261245",
+    "mtime": 1792094084.692033
+  },
+  {
+    "path": "tests/fixtures/web/alternate-actions.json",
+    "sha256": "01d12ee086d239dc8f5fe802d090fba6eb8e862fd281cb6dbf73483b6263a9ab",
+    "mtime": 1792094084.692033
+  },
+  {
+    "path": "tests/fixtures/web/alternate.html",
+    "sha256": "9782b494fdbb156515518d4bb096a5c057385f44d9a6983c352080626e879a22",
+    "mtime": 1792094084.692033
+  },
+  {
+    "path": "tests/fixtures/web/index.html",
+    "sha256": "c0b51d87d81a36f21608139d7a4fbf07b9fe1d6f94b1fa0bb0599b5f74fe91f5",
+    "mtime": 1792094084.692033
+  },
+  {
+    "path": "tests/fixtures/web/ping.json",
+    "sha256": "b637c8fcaf1d33dfbc53887d00214034900ef46e83faca65758f6bc2b56ed43d",
+    "mtime": 1792094084.692033
+  },
+  {
+    "path": "tests/fixtures/web/primary-actions.json",
+    "sha256": "3342907cd646a04a21ffc9ceb85e9359817b6b8220944030c27df66f5b9b5002",
+    "mtime": 1792094084.692033
+  },
+  {
+    "path": "tests/test_package.py",
+    "sha256": "c65c07afcb7898b2515eba0e42f0859e9a36d3b2acf3eded7d31c3836416c926",
+    "mtime": 1792094084.692033
+  },
+  {
+    "path": "tests/test_run_contract.py",
+    "sha256": "f671c3ec3ca69ad155c54823ef89eb9475fd847b65b762094ad937030e7f297f",
+    "mtime": 1792094084.692033
+  },
+  {
+    "path": "tests/test_validators.py",
+    "sha256": "cda93831ca8bce7debc036509d47f07a1b55c0e93b59ba1550cf090cac704703",
+    "mtime": 1792094084.692033
+  },
+  {
+    "path": "tools/__pycache__/qore.cpython-314.pyc",
+    "sha256": "4a5dd2919c65f19b02c41f482e337a674b65919726bf36d8d034a5c422a6e3f8",
+    "mtime": 1792094182.469493
+  },
+  {
+    "path": "tools/browser_probe.mjs",
+    "sha256": "2c02268e7044f0b3a9a0d848db6fb1c0236ee2df67f35394e11b798228711be2",
+    "mtime": 1792094084.692033
+  },
+  {
+    "path": "tools/clean_room.sh",
+    "sha256": "597bb401a1896086223be2f7930b3c6734085319978296b60c23f293efa367e9",
+    "mtime": 1792094084.692033
+  },
+  {
+    "path": "tools/context.py",
+    "sha256": "3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd",
+    "mtime": 1792094084.692033
+  },
+  {
+    "path": "tools/qore.py",
+    "sha256": "75e4e3f4a9c0be8787f13e18081cda9d50bf14325536d56e2f3f596f940f76e9",
+    "mtime": 1792094084.692033
+  },
+  {
+    "path": "tools/refresh_profiles.py",
+    "sha256": "6895b7adfa855f3742b0910fd165c4be8c0ec73ffd2dcfc3f0ea5162b52c8dfb",
+    "mtime": 1792094084.692033
+  },
+  {
+    "path": "tools/run_contract.py",
+    "sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+    "mtime": 1792094084.693033
+  }
+]

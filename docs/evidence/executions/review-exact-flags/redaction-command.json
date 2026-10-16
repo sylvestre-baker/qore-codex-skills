@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "node",
+    "scripts/redact-for-verifier.mjs",
+    "/workspace/review-evidence/findings.json"
+  ],
+  "cwd": "/workspace/qore-skills-0.1.0/.agents/skills/qore-review",
+  "exit_code": 0,
+  "stdout": "{\n  \"findings\": []\n}\n",
+  "stderr": "redact-for-verifier: 0 claims; withheld fields: none.\n",
+  "observed_at": "2026-10-15T19:57:20.001734+00:00"
+}

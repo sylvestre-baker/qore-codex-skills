@@ -1,0 +1,55 @@
+CWD: /tmp/qore-derived-first/qore-ux-review-qore
+COMMAND: ['python3', 'scripts/project-check.py', 'references/project.json', '--root', '/workspace/readme-newcomer/source-review', '--method', 'ux']
+STDOUT:
+{
+  "schema": "qore-context-check/1",
+  "profile": {
+    "id": "qore",
+    "version": "0.1.0",
+    "sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9"
+  },
+  "method": "ux",
+  "coverage": "COMPLETE",
+  "sources": [
+    {
+      "id": "project",
+      "path": "qore.json",
+      "expected_sha256": "948b2784fa7970cf90a25c338a29067b13d8b4476f666d712a5eb95fc6f641c8",
+      "actual_sha256": "948b2784fa7970cf90a25c338a29067b13d8b4476f666d712a5eb95fc6f641c8",
+      "current": true
+    }
+  ],
+  "commands": [],
+  "invariants": [
+    {
+      "id": "observed-ux",
+      "statement": "A required browser check without fresh evidence prevents global success.",
+      "source": "project",
+      "applies_to": [
+        "ux"
+      ]
+    }
+  ],
+  "surfaces": {
+    "web": {
+      "kind": "fixture",
+      "entry_url": "http://127.0.0.1:8765/index.html",
+      "allowed_origins": [
+        "http://127.0.0.1:8765"
+      ],
+      "required_state": "Resolved synthetic state.",
+      "source": "project",
+      "applies_to": [
+        "ux"
+      ]
+    }
+  },
+  "consumed_source_ids": [
+    "project"
+  ],
+  "problems": []
+}
+
+STDERR:
+
+EXIT: 0

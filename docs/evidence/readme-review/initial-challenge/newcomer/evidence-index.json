@@ -1,0 +1,73 @@
+{
+  "created_utc": "2026-10-15T19:59:00.295429+00:00",
+  "files": [
+    {
+      "path": "boundary-trace.json",
+      "sha256": "a98d5a5b0d3d539c6349a2bc13bcba8abf9a982a177f450fb23a86d28f31071b"
+    },
+    {
+      "path": "canonical-derive.log",
+      "sha256": "5b7b5a9307070c32f4c59c8fe92701043759d486c8cc409790eba7ed20e3b922"
+    },
+    {
+      "path": "canonical-setup.log",
+      "sha256": "63cc0cfbc115807f8dc9992e1e4749f7570a9714a9f6ebedccb5f058b069d474"
+    },
+    {
+      "path": "compare-added-file.log",
+      "sha256": "95e01806a9e8c7a17e9b8599cafc46d0892cd061c5ff160abcd66724f9549a22"
+    },
+    {
+      "path": "findings.json",
+      "sha256": "98ae6626b9139ca851f2fb362b3f72d5aea0014825b31ecbbef54890ed8c98c0"
+    },
+    {
+      "path": "identity.json",
+      "sha256": "9f6e002174508bc4c0e2b5f15c48c417c7a75992169b30bc4428cbdadb4e8404"
+    },
+    {
+      "path": "normal-validator-regressions.log",
+      "sha256": "8dee93e2cbe058cc13a26dbfeffdfcde5515667c43c0cfe90db50115dcfc36a0"
+    },
+    {
+      "path": "posix-without-bash.log",
+      "sha256": "34b2b495446268a12433f61a8a0e60145dd1bfee8b2cb84b517fd31666d587bb"
+    },
+    {
+      "path": "preflight-plan.log",
+      "sha256": "6926d510321d99b87a51acf19547504144bf235024ec4cf1bab3bc9444826e11"
+    },
+    {
+      "path": "preflight-review.log",
+      "sha256": "376abe18087450b36af410415e2e5f8b516bce349a5dc3622b422db4feca5ffe"
+    },
+    {
+      "path": "preflight-ux.log",
+      "sha256": "753715a6ee6bf04524e228c07b293797373d8751a102b5c351dadc64a0bdb612"
+    },
+    {
+      "path": "report.md",
+      "sha256": "cb5a881199ca794330b2977c124fbc5f265cc01d76ae8d65ac51e88a93fdb7a6"
+    },
+    {
+      "path": "setup-plan.log",
+      "sha256": "ffa0e6ed8444654992e20cbd95d15bcfbec6575f8e1ce7b811cd7c7726bfe1ac"
+    },
+    {
+      "path": "setup-posix-without-bash.log",
+      "sha256": "c0b67756ab4df9e83e1a542c74acb1436d98e3c9b3f09a1530322c9857585c34"
+    },
+    {
+      "path": "setup-review.log",
+      "sha256": "c02e8967737583cc7102d2836f9a614ba065f38e64d86816faed49d52453af53"
+    },
+    {
+      "path": "setup-ux.log",
+      "sha256": "78222a4cf509a8e4a98212f0e386c979bab1a92ae1eade7d66e8787394632c0b"
+    },
+    {
+      "path": "source-preservation.json",
+      "sha256": "bfb2cd4cf80241e9d1f775cfce2cb787da934595ebc118501176a005f130dca1"
+    }
+  ]
+}

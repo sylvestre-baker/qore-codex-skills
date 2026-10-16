@@ -1,0 +1,46 @@
+name: Package checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: package-checks-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  contracts-and-package:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - name: Check out source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Test contracts, reproducibility and derivation
+        shell: bash
+        run: |
+          docker run --rm \
+            --volume "$GITHUB_WORKSPACE:/workspace:ro" \
+            --workdir /workspace \
+            node:22-alpine@sha256:c610fcdfb1d5b4740dd70c284ed3cb16bb857e0f7166196e36a5501df7a3aa32 \
+            sh -eu -c '
+              apk add --no-cache python3 bash git
+              node --version
+              python3 --version
+              python3 -B -m unittest discover -s tests -v
+              python3 tools/qore.py build --output /tmp/qore-build-a
+              python3 tools/qore.py build --output /tmp/qore-build-b
+              cmp /tmp/qore-build-a/qore-skills-0.1.0.zip /tmp/qore-build-b/qore-skills-0.1.0.zip
+              python3 tools/qore.py verify /tmp/qore-build-a/qore-skills-0.1.0
+              python3 tools/qore.py install --source /tmp/qore-build-a/qore-skills-0.1.0 --project-root /tmp/qore-install
+              python3 tools/qore.py derive --profile profiles/qore.json --project-root . --output /tmp/qore-derived
+              python3 tools/qore.py verify /tmp/qore-derived
+              python3 tools/qore.py derive --profile profiles/contrast.json --project-root . --output /tmp/qore-contrast
+              python3 tools/qore.py verify /tmp/qore-contrast
+            '

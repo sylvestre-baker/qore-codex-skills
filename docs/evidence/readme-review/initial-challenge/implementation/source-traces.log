@@ -1,0 +1,406 @@
+
+FILE README.md
+7: **Candidate 0.1.0 — qualification in progress.** Local assembly and validators are implemented. A real browser entry/state observation is recorded below. Candidate-only first use and complete method executions must still be checked against the frozen package; package preparation is separate from publication.
+68: ## Adapt all three methods from one profile
+69: 
+70: A reusable project adaptation binds the methods to sourced commands, invariants, and a web target. Every fact names a project source and its SHA-256. The included [Qore profile](profiles/qore.json) applies to this repository; the [contrasting fixture profile](profiles/contrast.json) exercises isolation and different facts.
+71: 
+72: From this repository, generate three new project-specific skills:
+73: 
+74: ```sh
+75: python3 tools/qore.py derive --profile profiles/qore.json --project-root . --output /tmp/qore-derived-first
+76: python3 tools/qore.py verify /tmp/qore-derived-first
+77: ```
+78: 
+79: Choose an unused output path. Derivation refuses stale sources or an existing destination. The generated names are `qore-plan-qore`, `qore-review-qore`, and `qore-ux-review-qore`. Each contains its own profile, references, and helper scripts. At invocation, its checker compares the target sources again and exposes only current applicable facts. Stale context makes affected coverage PARTIAL or BLOCKED; it never silently falls back to generic behavior.
+80: 
+81: For your project, maintain one profile from your actual rules and sources, then derive into new staging. Inspect the result and its diff before installing. [Profile fields, runtime checks, and safe updates](docs/profiles.md).
+82: 
+83: ## Understand the boundaries
+84: 
+85: | Boundary | What the result means |
+86: |---|---|
+87: | Codex host | Actual role/tool availability must be observed. Five planning labels or a verifier flag do not prove independent execution. Clean candidate-only qualification is tracked separately. |
+88: | Planning | Five perspectives, challenge, and adjudication; at most three rounds. Structural spec validation does not establish business completeness. |
+89: | Review | Findings need checkable evidence. Only independently CONFIRMED critical/high findings are verified blockers. An unverified high concern keeps its impact severity and remains non-blocking uncertainty in a PARTIAL report. |
+90: | Web UX | Required checks need actual fresh browser evidence. Skipped required gates prevent global SHIP; six iterations is the ceiling, including persistent defects. |
+91: | Native apps and other hosts | Unqualified by this web/Codex candidate. A web observation does not establish native behavior. |
+92: | Validation | Digests and schemas check identity and structure. They do not prove reasoning quality, defect absence, or superiority over simpler workflows. |
+93: | Human first use | No external human first-use outcome is claimed. Agent, maintainer, portability, and human observations remain separate. |
+94: 
+95: The qualification plan calls for four complete method executions and two focused derivative probe suites, plus structural regressions. These are scope-specific execution checks, not a comparative benchmark. See [independent Linux qualification](docs/clean-environment.md) for its isolation and credential boundaries; preparation alone is not a completed run.
+
+FILE PROVENANCE.md
+1: # Provenance and license
+2: 
+3: This repository is a new first-party implementation of the three Qore methods maintained by Sylvestre Franceschi. Its original code and authored documentation are offered under the MIT license in LICENSE.
+4: 
+5: The methods were reconciled against existing Qore planning, review and UX workflows. The public implementation is re-authored around the accepted behavioral contracts. Private client bundles, client notices, personal installations and their Git histories are not redistributed. An internal distribution notice is not used as a public license grant.
+6: 
+7: The private implementation audit retains source digests and reconciliation decisions. Those private source paths and reports are deliberately excluded from this repository's release allowlist.
+8: 
+9: Public browser observations concern the existing Qaizen Labs surface. The selected observations and screenshots retain their source identity, and the video presentation has a documented captioning transformation. See docs/evidence/browser/provenance.json. No private raw trace is published automatically.
+10: 
+11: External documentation links are informational sources, not downloaded runtime instructions. The optional Playwright driver is not vendored and has its own upstream license. The core assembly and contract checks use Python's standard library plus the declared shell and Node runtimes.
+12: 
+13: The explicit `release-rights.json` record binds each reviewed export resource to its digest, origin, license and approval basis. Build refuses missing, stale or unknown redistribution entries. This is a maintainer attestation, not an automated determination of ownership. Changes require reviewing the affected content before renewing its entry. The rights record and export allowlist are first-party metadata and are included in the final manifest.
+
+FILE tools/qore.py
+58: def inventory(root, exclude=()):
+59:     return [{"path": str(path.relative_to(root)), "sha256": digest(path), "origin": "first-party", "license": "MIT"}
+60:             for path in files_under(root) if str(path.relative_to(root)) not in exclude]
+61: 
+62: 
+63: def make_skill_manifest(skill, profile=None):
+64:     check_references(skill)
+65:     write_json(skill / "references/release.json", {"schema": "qore-release/1", "version": VERSION,
+66:                "host": "codex", "profile": profile, "redistribution": "MIT-first-party",
+67:                "resources": inventory(skill, ("references/release.json",))})
+68: 
+69: 
+70: def finalize(root, kind, profile=None):
+71:     skill_root = root / "skills" if kind == "generic" else root
+72:     for folder in sorted(skill_root.iterdir()):
+73:         if folder.is_dir() and folder.name.startswith("qore-"):
+74:             make_skill_manifest(folder, profile)
+75:     manifest = {"schema": "qore-release/1", "version": VERSION, "kind": kind,
+76:                 "host": "codex", "profile": profile, "redistribution": "MIT-first-party",
+77:                 "resources": inventory(root, ("manifest.json",))}
+78:     write_json(root / "manifest.json", manifest)
+79:     return manifest
+122: def build(output):
+123:     allowlist = read_json(ROOT / "release-files.json")
+124:     if not isinstance(allowlist, list) or not allowlist or len(allowlist) != len(set(allowlist)):
+125:         raise ValueError("release-files.json must be an explicit unique list")
+126:     selected = [contained(ROOT, name) for name in allowlist]
+127:     if any(p.is_symlink() for p in selected):
+128:         raise ValueError("Allowlisted files may not be symlinks")
+129:     check_redistribution(ROOT, allowlist)
+130:     output.mkdir(parents=True, exist_ok=True)
+131:     destination = output / ("qore-skills-" + VERSION)
+132:     archive = output / (destination.name + ".zip")
+133:     if destination.exists() or archive.exists():
+134:         raise ValueError("Release destination exists; choose new staging")
+135:     temporary = Path(tempfile.mkdtemp(prefix=".qore-build-", dir=output))
+136:     try:
+137:         tree = temporary / destination.name
+138:         tree.mkdir()
+139:         for relative, source in zip(allowlist, selected):
+140:             target = tree / relative
+141:             target.parent.mkdir(parents=True, exist_ok=True)
+142:             shutil.copyfile(source, target)
+143:         check_references(tree)
+144:         finalize(tree, "generic")
+145:         verify(tree)
+146:         zip_path = temporary / archive.name
+147:         with zipfile.ZipFile(zip_path, "w", compression=zipfile.ZIP_DEFLATED) as z:
+148:             for path in files_under(tree):
+149:                 item = zipfile.ZipInfo(str(Path(tree.name) / path.relative_to(tree)), date_time=(2026, 10, 15, 0, 0, 0))
+150:                 item.create_system = 3
+151:                 item.external_attr = 0o100644 << 16
+152:                 item.compress_type = zipfile.ZIP_DEFLATED
+153:                 z.writestr(item, path.read_bytes())
+154:         tree.rename(destination)
+155:         zip_path.rename(archive)
+156:     finally:
+157:         shutil.rmtree(temporary)
+158:     return {"bundle": str(destination), "archive": str(archive), "sha256": digest(archive), **verify(destination)}
+159: 
+160: 
+161: def check_redistribution(root, allowlist):
+162:     """Check explicit maintainer attestations, not infer rights from file contents."""
+163:     packet = read_json(root / "release-rights.json")
+164:     if not isinstance(packet, dict) or packet.get("schema") != "qore-rights/1":
+165:         raise ValueError("Expected explicit redistribution record qore-rights/1")
+166:     records = packet.get("resources")
+167:     if not isinstance(records, list):
+168:         raise ValueError("Redistribution resources must be a list")
+169:     expected = set(allowlist) - {"release-rights.json", "release-files.json"}
+170:     seen = set()
+171:     for record in records:
+172:         if not isinstance(record, dict) or record.get("path") not in expected or record["path"] in seen:
+173:             raise ValueError("Unexpected or duplicate redistribution resource: " + str(record.get("path") if isinstance(record, dict) else record))
+174:         name = record["path"]
+175:         seen.add(name)
+176:         if record.get("status") != "approved" or record.get("license") != "MIT" or record.get("origin") not in ("first-party", "Qaizen-public-observation") or not record.get("basis"):
+177:             raise ValueError("Unknown or unauthorized redistribution right: " + name)
+178:         if digest(contained(root, name)) != record.get("sha256"):
+179:             raise ValueError("Redistribution review is stale: " + name)
+180:     if expected != seen:
+181:         raise ValueError("Missing redistribution review: " + ", ".join(sorted(expected - seen)))
+182:     return {"valid": True, "resources": len(seen), "limit": "Maintainer attestations require truthful rights review; hashes do not determine ownership."}
+185: def derive(profile_path, project_root, output):
+186:     profile = read_json(profile_path)
+187:     for method in METHODS.values():
+188:         result = validate_profile(profile, project_root, method)
+189:         if result["coverage"] != "COMPLETE":
+190:             raise ValueError("Profile is not current for " + method + ": " + "; ".join(result["problems"]))
+191:     if output.exists():
+192:         raise ValueError("Derived destination exists; choose new staging")
+193:     profile_info = {"id": profile["id"], "version": profile["version"], "sha256": digest(profile_path)}
+194:     output.parent.mkdir(parents=True, exist_ok=True)
+195:     temporary = Path(tempfile.mkdtemp(prefix=".qore-derive-", dir=output.parent))
+196:     tree = temporary / "candidate"
+197:     tree.mkdir()
+198:     try:
+199:         for name in SKILLS:
+200:             derived = name + "-" + profile["id"]
+201:             target = tree / derived
+202:             shutil.copytree(ROOT / "skills" / name, target, symlinks=True)
+203:             for path in files_under(target):
+204:                 if path.suffix in (".md", ".yaml"):
+205:                     text = path.read_text(encoding="utf-8").replace("$" + name, "$" + derived)
+206:                     if path.name == "SKILL.md":
+207:                         text = re.sub(r"(?m)^name:.*$", "name: " + derived, text, count=1)
+208:                         text += ("\n## Generated project binding\n\nThis derivative must load [its project profile](references/project.json) before selecting project facts. "
+209:                                  "Run its bundled project-check.py against the supplied project root with --method " + METHODS[name] +
+210:                                  ". Consume only current returned facts; stale required context is PARTIAL or BLOCKED. "
+211:                                  "The profile grants no action permission. Edit the maintained profile, not this generated copy.\n")
+212:                     path.write_text(text, encoding="utf-8")
+213:             write_json(target / "references/project.json", profile)
+214:         finalize(tree, "derived", profile_info)
+215:         verify(tree)
+216:         tree.rename(output)
+217:     finally:
+218:         shutil.rmtree(temporary)
+219:     return {"output": str(output), "profile": profile_info, **verify(output)}
+
+FILE schemas/qore-release.schema.json
+1: {
+2:   "$schema": "https://json-schema.org/draft/2020-12/schema",
+3:   "type": "object",
+4:   "title": "Qore immutable resource inventory",
+5:   "required": [
+6:     "schema",
+7:     "version",
+8:     "host",
+9:     "redistribution",
+10:     "resources"
+11:   ],
+12:   "properties": {
+13:     "schema": {
+14:       "const": "qore-release/1"
+15:     },
+16:     "version": {
+17:       "type": "string",
+18:       "minLength": 1
+19:     },
+20:     "host": {
+21:       "const": "codex"
+22:     },
+23:     "redistribution": {
+24:       "const": "MIT-first-party"
+25:     },
+26:     "kind": {
+27:       "enum": [
+28:         "generic",
+29:         "derived"
+30:       ]
+31:     },
+32:     "profile": {
+33:       "type": [
+34:         "object",
+35:         "null"
+36:       ]
+37:     },
+38:     "resources": {
+39:       "type": "array",
+40:       "minItems": 1,
+41:       "items": {
+42:         "type": "object",
+43:         "required": [
+44:           "path",
+45:           "sha256",
+46:           "origin",
+47:           "license"
+48:         ],
+49:         "properties": {
+50:           "path": {
+51:             "type": "string",
+52:             "minLength": 1
+53:           },
+54:           "sha256": {
+55:             "type": "string",
+56:             "pattern": "^[a-f0-9]{64}$"
+57:           },
+58:           "origin": {
+59:             "const": "first-party"
+60:           },
+61:           "license": {
+62:             "const": "MIT"
+63:           }
+64:         }
+65:       }
+66:     }
+67:   }
+68: }
+
+FILE docs/contracts.md
+1: # Contracts and validators
+2: 
+3: Qore separates context, package integrity, method artifacts, and execution evidence. A structural check is useful evidence for its stated contract; it does not prove factual quality or grant delivery permission.
+4: 
+5: ## Versioned records
+6: 
+7: | Contract | Purpose | Reference |
+8: |---|---|---|
+9: | `qore-project/1` | Bind project commands, invariants, and surfaces to source IDs and digests. | [Schema](../schemas/qore-project.schema.json), [profile guide](profiles.md) |
+10: | `qore-release/1` | Identify candidate/core/profile/host metadata and the explicit resource inventory with digests and redistribution information. | [Schema](../schemas/qore-release.schema.json), [assembler](../tools/qore.py) |
+11: | `qore-run/1` | Record candidate/target identity, environment, actual phases, artifacts, commands, freshness, coverage, and limitations. | [Schema](../schemas/qore-run.schema.json), [run checker](../tools/run_contract.py) |
+12: 
+13: The implemented validators are the operational checks. Use them alongside the schemas rather than inferring successful execution from a JSON shape.
+14: 
+15: ## Local command reference
+16: 
+17: Run these from the repository root. Paths below identify your actual inputs; generated output destinations must be unused.
+18: 
+19: | Command | Effect |
+20: |---|---|
+21: | `python3 tools/qore.py build --output STAGING` | Copy the release allowlist, create and verify a versioned candidate folder, and write its ZIP. |
+22: | `python3 tools/qore.py verify BUNDLE` | Compare declared resources, contained paths, and current file digests, including standalone skill inventories. |
+23: | `python3 tools/qore.py derive --profile PROFILE --project-root ROOT --output STAGING` | Validate current sourced facts for all three methods and generate project-bound skill folders. It does not execute profile commands. |
+24: | `python3 tools/qore.py install --source BUNDLE --project-root ROOT` | Verify the candidate and copy three skills into the project's `.agents/skills/`; refuse existing destinations. |
+25: | `python3 tools/qore.py compare --source BUNDLE --project-root ROOT` | Report installed/candidate divergence and local adaptations without writes. |
+26: | `python3 tools/qore.py snapshot --root ROOT` | Produce a file inventory and aggregate SHA-256 for the selected snapshot, excluding the tool's declared generated/runtime directories. |
+27: | `python3 tools/qore.py validate-run RUN --evidence-root EVIDENCE` | Validate declared phase coverage and identity-bound evidence files. |
+28: | `python3 tools/context.py PROFILE --root ROOT --method plan` | Return fresh facts applicable to one method; `review` and `ux` are the other method values. |
+29: 
+30: An exit status of zero establishes that the command's structural check passed. Inspect the returned coverage and limitations as well. A nonzero result retains a diagnostic; it never means an empty successful review. `verify` accepts the extracted candidate directory, not the ZIP path.
+31: 
+32: ## Method artifacts
+33: 
+34: These commands run from the corresponding skill directory; installed derivatives contain their own copies. Use absolute artifact paths so the skill directory and target project cannot be confused.
+35: 
+36: | Method | Validator | Contract |
+37: |---|---|---|
+38: | Plan | `bash scripts/spec-lint.sh SPEC.md` | First-line `qore-spec/1`, actual fenced Gherkin scenarios and steps, coverage IDs, and a runtime sequence diagram. [Detailed format](../skills/qore-plan/references/specification.md). |
+39: | Review | `node scripts/redact-for-verifier.mjs FINDINGS.json` then `node scripts/finding-lint.mjs VERIFIED.json --verifier=ran --json` | Strict findings envelope, mechanical claim filtering, evidence and verdict obligations. Use `--verifier=skipped` when the separate verifier did not run. [Detailed format](../skills/qore-review/references/findings.md). |
+40: | Web UX | `node scripts/depth-lint.mjs DEPTH.json` and `node scripts/stop-rule.mjs LOOP.json` | Declared depth, required gates, actual measurements, omissions, correction freshness, and bounded stopping. [Detailed format](../skills/qore-ux-review/references/evidence.md). |
+41: 
+42: The review filter's standard output is the verifier's claims file. Save it as a file before starting the fresh verifier; an intention to redact is not mechanical filtering. A valid unverified high-severity concern stays PLAUSIBLE and non-blocking, with PARTIAL review coverage. Do not downgrade its impact to clear a validator.
+43: 
+44: ## Execution evidence and coverage
+45: 
+46: A run identifies the exact candidate, target snapshot, environment/operator category, optional profile, required phases, actual actors, commands, and limitations. Artifacts have contained relative paths and SHA-256 digests. Executed phase artifacts carry matching `qore_evidence` identity metadata and their actual output payload. Their observation times must be after the last relevant change; rewrapping older proof does not make it fresh.
+47: 
+48: Every PASS phase references matching execution evidence. A source file or presentation alone cannot prove a finder, verifier, browser action, or other phase ran. Actor labels constrain declarations but do not themselves prove context isolation. Compare requested roles with returned complete reports.
+49: 
+50: | Coverage | Meaning |
+51: |---|---|
+52: | COMPLETE | Required phases have current evidence, with only explicitly permitted and justified non-applicability. |
+53: | PARTIAL | Useful work completed, but a required phase/check is missing, skipped, unfinished, or stale. |
+54: | BLOCKED | Required execution could not proceed; the cause and resumption path are recorded. |
+55: 
+56: Coverage differs from the target verdict. A review can complete and find a blocker. A web check can establish DO-NOT-SHIP. A passing findings structure can coexist with missing independent verification. A SHIP label never authorizes publication, merge, or deployment.
+57: 
+58: For method-specific phase IDs and exact run fields, read the bundled execution reference for [plan](../skills/qore-plan/references/run-evidence.md), [review](../skills/qore-review/references/run-evidence.md), or [UX](../skills/qore-ux-review/references/run-evidence.md). Qualification evidence must also match the instruction revision and actual claimed scope.
+
+FILE tools/context.py
+85:         selected_sources.add(fact["source"])
+86:         return by_id[fact["source"]]["current"]
+87: 
+88:     for field in ("commands", "invariants"):
+89:         if not isinstance(profile.get(field), list):
+90:             raise ValueError(field + " must be a list")
+91:         ids = set()
+92:         for fact in profile[field]:
+93:             fact_id = fact.get("id") if isinstance(fact, dict) else None
+94:             if not isinstance(fact_id, str) or not fact_id or fact_id in ids:
+95:                 raise ValueError(field + " identifiers must be unique")
+96:             ids.add(fact_id)
+97:             if field == "commands":
+98:                 argv = fact.get("argv")
+99:                 if not isinstance(argv, list) or not argv or any(not isinstance(v, str) or not v or "\x00" in v for v in argv):
+100:                     raise ValueError("Commands require an explicit nonempty argv list")
+101:             elif not isinstance(fact.get("statement"), str) or not fact["statement"].strip():
+102:                 raise ValueError("Invariants require a statement")
+103:             if applicable(fact):
+104:                 (commands if field == "commands" else invariants).append(fact)
+105:     surfaces = profile.get("surfaces")
+106:     if not isinstance(surfaces, dict):
+107:         raise ValueError("surfaces must be an object")
+108:     selected_surfaces = {}
+109:     if "web" in surfaces:
+110:         web = surfaces["web"]
+111:         if not isinstance(web, dict):
+112:             raise ValueError("web surface must be an object")
+113:         url = urlsplit(web.get("entry_url", ""))
+114:         if url.scheme not in ("http", "https") or not url.hostname or url.username or url.password:
+115:             raise ValueError("Web entry must be an HTTP(S) URL without credentials")
+116:         origin = url.scheme + "://" + url.netloc
+117:         allowed = web.get("allowed_origins")
+118:         if not isinstance(allowed, list) or origin not in allowed:
+119:             raise ValueError("Web entry origin must be explicitly allowed")
+120:         if not isinstance(web.get("required_state"), str) or not web["required_state"]:
+121:             raise ValueError("Web surface needs an observable required_state")
+122:         if web.get("kind") not in ("fixture", "application", "documentation"):
+123:             raise ValueError("Web surface needs an explicit kind")
+124:         if method == "ux" and applicable(web):
+125:             selected_surfaces["web"] = web
+126:     problems = ["Changed or missing source: " + s for s in sorted(selected_sources) if not by_id[s]["current"]]
+127:     if method == "ux" and "web" not in selected_surfaces:
+128:         problems.append("No current web surface is available for this profile")
+129:     has_facts = bool(commands or invariants or selected_surfaces)
+130:     coverage = "COMPLETE" if not problems else ("PARTIAL" if has_facts else "BLOCKED")
+131:     return {"schema": "qore-context-check/1", "profile": {"id": profile["id"], "version": profile["version"]},
+132:             "method": method, "coverage": coverage, "sources": records, "commands": commands,
+133:             "invariants": invariants, "surfaces": selected_surfaces,
+134:             "consumed_source_ids": sorted(selected_sources), "problems": problems}
+135: 
+136: 
+137: def main():
+138:     parser = argparse.ArgumentParser(description=__doc__)
+139:     parser.add_argument("profile", type=Path)
+140:     parser.add_argument("--root", type=Path, required=True)
+141:     parser.add_argument("--method", choices=sorted(METHODS), required=True)
+142:     args = parser.parse_args()
+143:     try:
+144:         result = validate_profile(read_json(args.profile), args.root, args.method)
+145:         result["profile"]["sha256"] = digest(args.profile)
+146:         print(json.dumps(result, indent=2))
+147:         return 0 if result["coverage"] == "COMPLETE" else 1
+148:     except (ValueError, OSError, TypeError) as exc:
+149:         print(json.dumps({"coverage": "BLOCKED", "problems": [str(exc)]}), file=sys.stderr)
+150:         return 2
+151: 
+152: 
+153: if __name__ == "__main__":
+154:     raise SystemExit(main())
+
+FILE tools/run_contract.py
+125:         if verifier is not None and verifier in finders:
+126:             raise ValueError("The verifier must be independent of the finders")
+127:     if method == "plan":
+128:         actors = [by_id[p]["actor_id"] for p in ("product", "architecture", "ux", "delivery", "qa") if p in by_id and by_id[p]["status"] == "PASS"]
+129:         if len(actors) != len(set(actors)):
+130:             raise ValueError("The five planning perspectives require distinct contexts")
+131:     completed = [p for p in required if by_id.get(p, {}).get("status") == "PASS"]
+132:     missing = sorted(p for p in required if by_id.get(p, {}).get("status") not in ("PASS", "NOT_APPLICABLE"))
+133:     coverage = "COMPLETE" if not missing else ("PARTIAL" if completed else "BLOCKED")
+134:     if run.get("coverage") != coverage:
+135:         raise ValueError("Declared coverage differs from observed phase coverage: " + coverage)
+136:     if not isinstance(run.get("limitations"), list) or not isinstance(run.get("commands"), list):
+137:         raise ValueError("limitations and commands must be explicit lists")
+138:     for command in run["commands"]:
+139:         if not isinstance(command, dict) or not isinstance(command.get("argv"), list) or not command["argv"] or any(not isinstance(v, str) for v in command["argv"]) or type(command.get("exit_code")) is not int or command.get("artifact") not in available:
+140:             raise ValueError("Each command needs argv, exit_code and declared artifact")
+141:     return {"valid": True, "coverage": coverage, "missing_phases": missing,
+142:             "artifact_count": len(available), "note": "Evidence identity and declared phase coverage checked; factual quality is not certified."}
+143: 
+144: 
+145: def main():
+146:     parser = argparse.ArgumentParser(description=__doc__)
+147:     parser.add_argument("run", type=Path)
+148:     parser.add_argument("--evidence-root", type=Path)
+149:     args = parser.parse_args()
+150:     try:
+151:         result = validate_run(json.loads(args.run.read_text()), args.evidence_root or args.run.parent)
+152:         print(json.dumps(result, indent=2))
+153:         return 0
+154:     except (ValueError, OSError, TypeError, KeyError) as exc:
+155:         print(json.dumps({"valid": False, "problems": [str(exc)]}), file=sys.stderr)
+156:         return 1
+157: 
+158: 
+159: if __name__ == "__main__":
+160:     raise SystemExit(main())

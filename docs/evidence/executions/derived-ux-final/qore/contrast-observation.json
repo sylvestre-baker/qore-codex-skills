@@ -1,0 +1,12 @@
+{
+  "own_state_visible": true,
+  "other_profile_exact_state_absent": true,
+  "actual_heading": [
+    {
+      "tag": "H1",
+      "text": "Synthetic browser capability fixture"
+    }
+  ],
+  "screenshot_opened": true,
+  "scope": "Focused synthetic current-profile consumer probe only."
+}

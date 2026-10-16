@@ -1,0 +1,30 @@
+{
+  "url": "http://127.0.0.1:8765/index.html",
+  "title": "Qore synthetic browser fixture",
+  "language": "en",
+  "headings": [
+    {
+      "tag": "H1",
+      "text": "Synthetic browser capability fixture"
+    }
+  ],
+  "links": [
+    {
+      "text": "Open alternate synthetic route",
+      "href": "http://127.0.0.1:8765/alternate.html"
+    }
+  ],
+  "buttons": [
+    {
+      "text": "Resolve synthetic state",
+      "type": "button",
+      "disabled": false
+    }
+  ],
+  "active_element": {
+    "tag": "BUTTON",
+    "text": "Resolve synthetic state",
+    "id": "resolve"
+  },
+  "text": "Synthetic browser capability fixture\n\nThis fixture tests the browser harness. It is not an existing product or evidence of product quality.\n\nResolve synthetic state\n\nResolved synthetic state.\n\nOpen alternate synthetic route"
+}

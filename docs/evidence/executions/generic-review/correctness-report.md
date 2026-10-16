@@ -1,0 +1,33 @@
+# Correctness finder report
+
+Actual actor/context ID: `/root/correctness`. Requested role: independent correctness finder. This context inspected no peer reports, no authorization files, and made no source edits.
+
+Target: `/workspace/qore-skills-0.1.0/examples/validator-hardening.md`, against the bundled validators, regression tests, and current review/run-evidence contract. The exact inspected source-byte SHA-256 values and digest procedure (Python hashlib.sha256 over read_bytes) are retained in `correctness-snapshot.json`. The workspace has no Git metadata; `git status --short` and `git rev-parse HEAD` both returned exit 128. `rg` is unavailable (exit 127); discovery used `find` and direct reads. No additional AGENTS.md was found at depth two.
+
+## Result
+
+Zero correctness candidates. This is a scoped finder result, not an independently verified claim that the project is defect-free or ready to deliver. The strict candidate envelope is `correctness-candidates.json` with `{"findings": []}`. No candidate was self-confirmed or self-refuted.
+
+The target's A01/A02/A03 agree with the observed public entry-point behavior. `{}` is refused with exit 1, valid false, INVALID and PARTIAL. An explicit high/PLAUSIBLE finding under `--verifier=skipped` returns exit 0, preserves high and PLAUSIBLE, reports PARTIAL/PENDING, and has no verified blockers. `{findings: []}` under `--verifier=ran` returns exit 0, COMPLETE/SHIP at the packet declaration level, together with an explicit limitation requiring actual phase evidence separately. A03 and the target's Verification section state this limitation rather than asserting the flag proves execution.
+
+## Required producer-to-consumer trace
+
+Central value: candidate severity `high`, with ID `T1` and verdict `PLAUSIBLE`.
+
+1. Producer/storage: the reproduction creates Python dictionary fields `id`, `title`, `severity`, `evidence`, `verdict`, and extra `rationale`, serializes it through `json.dumps` into `correctness-input-high-skipped.json` within an explicit `findings` array.
+2. Actual redaction boundary: `skills/qore-review/scripts/redact-for-verifier.mjs` parses the file and emits JSON via `console.log(JSON.stringify({ findings }, null, 2))`. The saved bytes are `correctness-redacted.json`. The actual emitted finding fields are exactly `id`, `title`, `severity`, `evidence`; `verdict` and `rationale` were withheld, as the saved stderr records. The accepted scalar allowlist additionally includes optional `counterexample`; nonempty IDs/title/evidence and known severity are mandatory. Unknown fields are dropped.
+3. Receiving verifier contract: `.agents/skills/qore-review/references/findings.md` accepts that filtered claim packet and requires preserving IDs and severity while adding a verdict and the applicable supporting field. Thus the redacted packet is intentionally not yet a final findings-lint input: it lacks verdict until the verifier supplies one. There is no inferred direct transport between redactor and linter.
+4. Final packet consumer: finding-lint accepts an object with findings array, mandatory nonempty ID/title/severity, a known verdict, and supporting evidence for non-refuted claims. REFUTED accepts refuted_because; independently CONFIRMED critical/high needs counterexample. It parses arbitrary extra fields and returns original findings without stripping them. The reproduction's final packet already has PLAUSIBLE, and its actual output retains `severity: high`. The JSON result's emitted top-level fields are `valid`, `coverage`, `verdict`, `verifier`, `total`, `counts`, `blocking_findings`, `findings`, `problems`, and `limit`.
+5. Decision boundary: `verifier=skipped` cannot produce a verified blocker, permits only PLAUSIBLE findings, and yields PARTIAL/PENDING for this valid input. No producer/receiver severity mismatch appeared. Linter declaration coverage is not execution proof: run-evidence.md requires a separate qore-run/1 record. The actual run-check.py consumer reads schema/id/method/skill/candidate identity, target identity, last change, environment, profile, required phases, phases, artifacts, commands, limitations and coverage; its returned fields are `valid`, `coverage`, `missing_phases`, `artifact_count`, and `note`. It validates phase-bound execution artifacts and declared distinct finder/verifier actors. The target's sequence explicitly places checking those artifacts after packet validation; it does not claim the linter output is a qore-run/1 input.
+
+Adjacent contracts therefore distinguish claims, verifier-enriched findings, packet declaration results, and actual phase evidence. The target does not claim that these different packets are interchangeable.
+
+## Commands and evidence
+
+`python3 -B -m unittest discover -s tests -v` (the exact qore.json check) exited 0: 82 tests passed. Full captured argv/stdout/stderr/exit code and observation timestamp are in `correctness-project-check.json`. An initial invocation also passed (82 tests); the retained second invocation was used to preserve the complete output outside source.
+
+The direct public Node invocations, complete actual stdout/stderr and exit statuses for missing envelope, skipped-verifier high finding, redaction, and empty packet are retained in `correctness-trace.json`. `cmp` showed installed .agents and bundled skills copies of both Node scripts byte-identical (exit 0). Sources read: target; qore.json; both Node validators; tests/test_validators.py; review protocol.md/findings.md/run-evidence.md; and run-check.py. No browser or external service was needed for this document/CLI scope.
+
+## Limits and coverage
+
+Completed correctness inspection and all three target acceptance-case reproductions within the five-minute finder budget. No independent verification occurred in this finder context; no verdicts are assigned to candidates. No peer review coverage is claimed. Project-wide security, performance, external authorization, and unrelated implementation behavior are outside this finder scope. A full run record was not authored by this finder; the lead owns synthesis and phase evidence assembly. No unexamined candidate IDs exist because this finder produced none.

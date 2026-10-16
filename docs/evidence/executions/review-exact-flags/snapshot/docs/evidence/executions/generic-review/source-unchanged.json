@@ -1,0 +1,5 @@
+{
+  "observed_at": "2026-10-15T19:47:55.032544+00:00",
+  "changed_paths": [],
+  "procedure": "Rehash every source-manifest path and compare against original saved digest."
+}

@@ -1,0 +1,1 @@
+{"findings":[{"id":"F1","title":"Zero input bypasses the guard","severity":"high","verdict":"CONFIRMED","evidence":"src/guard.ts:12 receives zero","counterexample":"quantity=0 produces Infinity"},{"id":"F2","title":"Candidate handled by another guard","severity":"medium","verdict":"REFUTED","refuted_because":"src/guard.ts:8 rejects negative input first"}]}

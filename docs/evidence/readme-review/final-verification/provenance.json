@@ -1,0 +1,78 @@
+{
+  "schema": "qore-public-verifier-transformation/1",
+  "verifier": "Independent final README verifier, separate from execution author and initial readers",
+  "verification_scope": "Original three-claim final wave plus narrowly continued public artifact-path repair closure",
+  "original_archive_sha256": "bafd0da80667a00f9e6bd2f9e726eaa64d61ff42d026b9f58eb857df15bf40f8",
+  "proposed_frozen_archive_sha256": "211ce7479ee8f3cee66503f4949aae67ba67a8a009e476d4afee4e22c6b01b29",
+  "corrected_archive_identity": "Not built or asserted by this verifier",
+  "logical_placeholders": {
+    "<ORIGINAL_PUBLIC_CANDIDATE>": "Read-only extracted original public candidate with the recorded archive identity.",
+    "<PROPOSED_PUBLIC_CANDIDATE>": "Read-only extracted proposed public candidate with the recorded archive identity.",
+    "<WORKING_SOURCE_ROOT>": "Working public source checkout containing the three-file export-index correction.",
+    "<PRIVATE_VERIFICATION_ROOT>": "Private independent verifier output directory; raw commands, scripts and measurements retained there."
+  },
+  "command_notice": "Placeholder argv are sanitized displays of actual commands; placeholders were not passed literally. Exact original commands remain in private commands.json and correction-verification.json.",
+  "artifacts": [
+    {
+      "public_file": "ORIGINAL-REPORT.md",
+      "public_sha256": "93a3b72ca0c7a40953d7f84c44ec46a08bc2c483928f2bf62d8782230bc8899f",
+      "source_id": "qore-private:readme-final-verification/ORIGINAL-REPORT.md",
+      "source_sha256": "8a2dd59470568f1359ad56423f453f03ad85d1acc56f389fb972140be46dc61f",
+      "transformation": "English source retained; machine-local candidate/source/evaluation path prefixes replaced by disclosed logical placeholders. Hashes, outcomes, finding IDs and original severities retained."
+    },
+    {
+      "public_file": "REPORT.md",
+      "public_sha256": "3d9b126fe8e2d829f3dd6e6d5ec0973fd7fcf847a229c34ea01379c5239389df",
+      "source_id": "qore-private:readme-final-verification/REPORT.md",
+      "source_sha256": "74ebb3a3bd4058e8c09675d5e75772aa8be37bba840f228450a82417ce79cd92",
+      "transformation": "English source retained; machine-local candidate/source/evaluation path prefixes replaced by disclosed logical placeholders. Hashes, outcomes, finding IDs and original severities retained."
+    },
+    {
+      "public_file": "verified.json",
+      "public_sha256": "a7a93a495dd354cecd3617cb1175b6ae7c5191fb063adc44b437f1561e00d507",
+      "source_id": "qore-private:readme-final-verification/verified.json",
+      "source_sha256": "a7a93a495dd354cecd3617cb1175b6ae7c5191fb063adc44b437f1561e00d507",
+      "transformation": "English source retained; machine-local candidate/source/evaluation path prefixes replaced by disclosed logical placeholders. Hashes, outcomes, finding IDs and original severities retained."
+    },
+    {
+      "public_file": "verified-lint.json",
+      "public_sha256": "52b07fa10c70582bccaac18db92a4100204aefeee023e2f842a8d5b6cfa1775c",
+      "source_id": "qore-private:readme-final-verification/verified-lint.json",
+      "source_sha256": "52b07fa10c70582bccaac18db92a4100204aefeee023e2f842a8d5b6cfa1775c",
+      "transformation": "English source retained; machine-local candidate/source/evaluation path prefixes replaced by disclosed logical placeholders. Hashes, outcomes, finding IDs and original severities retained."
+    },
+    {
+      "public_file": "CLOSURE.md",
+      "public_sha256": "4b4635a4f2b4bbe2bb765651e8fa4b435473bd16bb48f5959d31792ea0033aa6",
+      "source_id": "qore-private:readme-final-verification/CLOSURE.md",
+      "source_sha256": "4b4635a4f2b4bbe2bb765651e8fa4b435473bd16bb48f5959d31792ea0033aa6",
+      "transformation": "English source retained; machine-local candidate/source/evaluation path prefixes replaced by disclosed logical placeholders. Hashes, outcomes, finding IDs and original severities retained."
+    },
+    {
+      "public_file": "correction-verification.json",
+      "public_sha256": "773abeeac0930090279f6eb23e36e53823bf5dc4ace7429c46500554c849d985",
+      "source_id": "qore-private:readme-final-verification/correction-verification.json",
+      "source_sha256": "1f9229267097404590c58a9cc1daa812c73e3139d6b1c9094382855cbb33521c",
+      "transformation": "English source retained; machine-local candidate/source/evaluation path prefixes replaced by disclosed logical placeholders. Hashes, outcomes, finding IDs and original severities retained."
+    },
+    {
+      "public_file": "correction.diff",
+      "public_sha256": "5817053cc622cf7f9d20097c24aaad835efb772cccf80832ce3e694f170f6b54",
+      "source_id": "qore-private:readme-final-verification/correction.diff",
+      "source_sha256": "5817053cc622cf7f9d20097c24aaad835efb772cccf80832ce3e694f170f6b54",
+      "transformation": "English source retained; machine-local candidate/source/evaluation path prefixes replaced by disclosed logical placeholders. Hashes, outcomes, finding IDs and original severities retained."
+    }
+  ],
+  "withheld": [
+    {
+      "source_id": "qore-private:readme-final-verification/commands.json",
+      "sha256": "5b268c44655196d1a2a67ea8aa1e848c5a5e50cdba1ddf5f219a556562285216",
+      "reason": "Raw machine-specific command log stays private; the report summarizes results and scoped closure includes sanitized exact command/result."
+    }
+  ],
+  "limits": [
+    "No new browser or human execution for closure.",
+    "Original frozen candidate is unchanged; closure applies to corrected working export files.",
+    "Private source identifiers are provenance labels, not runtime dependencies or publicly resolvable links."
+  ]
+}

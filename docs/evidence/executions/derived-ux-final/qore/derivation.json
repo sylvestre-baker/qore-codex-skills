@@ -1,0 +1,14 @@
+{
+  "output": "<PRIVATE_EVIDENCE_ROOT>/derived-ux-final-qore/tree",
+  "profile": {
+    "id": "qore",
+    "version": "0.1.0",
+    "sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9"
+  },
+  "valid": true,
+  "schema": "qore-release/1",
+  "version": "0.1.0",
+  "kind": "derived",
+  "files": 39,
+  "manifest_sha256": "8d97f33527b28f0c9ddac3358a6961f1ccbc693a84fadab4e39dafe7e61032c3"
+}

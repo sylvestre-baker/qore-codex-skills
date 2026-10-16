@@ -1,0 +1,630 @@
+{
+  "candidate_sha256": "bafd0da80667a00f9e6bd2f9e726eaa64d61ff42d026b9f58eb857df15bf40f8",
+  "expected_candidate_sha256": "bafd0da80667a00f9e6bd2f9e726eaa64d61ff42d026b9f58eb857df15bf40f8",
+  "target_snapshot_sha256": "0d87c8304b3bf11ddc2ded27ab3779d09b5907657e4d5165f2bf59003b29689b",
+  "procedure": "SHA256 raw archive; target SHA256 snapshot-manifest.json bytes; per-file SHA256 and copy2 snapshots; matching ZIP member byte comparisons; scoped target SHA256 target-manifest.json bytes supersedes broad snapshot manifest identity",
+  "archive_checks": [
+    {
+      "path": "LICENSE",
+      "match": true
+    },
+    {
+      "path": ".gitignore",
+      "match": true
+    },
+    {
+      "path": "plugin.json",
+      "match": true
+    },
+    {
+      "path": "PROVENANCE.md",
+      "match": true
+    },
+    {
+      "path": "release-rights.json",
+      "match": true
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "match": true
+    },
+    {
+      "path": "release-files.json",
+      "match": true
+    },
+    {
+      "path": "manifest.json",
+      "match": true
+    },
+    {
+      "path": "profiles/qore.json",
+      "match": true
+    },
+    {
+      "path": "profiles/contrast.json",
+      "match": true
+    },
+    {
+      "path": "tools/qore.py",
+      "match": true
+    },
+    {
+      "path": "tools/refresh_profiles.py",
+      "match": true
+    },
+    {
+      "path": "tools/clean_room.sh",
+      "match": true
+    },
+    {
+      "path": "tools/context.py",
+      "match": true
+    },
+    {
+      "path": "tools/browser_probe.mjs",
+      "match": true
+    },
+    {
+      "path": "examples/validator-hardening.md",
+      "match": true
+    },
+    {
+      "path": "schemas/qore-project.schema.json",
+      "match": true
+    },
+    {
+      "path": "schemas/qore-release.schema.json",
+      "match": true
+    },
+    {
+      "path": "docs/clean-environment.md",
+      "match": true
+    },
+    {
+      "path": "docs/architecture.md",
+      "match": true
+    },
+    {
+      "path": "docs/troubleshooting.md",
+      "match": true
+    },
+    {
+      "path": "docs/contracts.md",
+      "match": true
+    },
+    {
+      "path": "docs/command-inventory.json",
+      "match": true
+    },
+    {
+      "path": "docs/profiles.md",
+      "match": true
+    },
+    {
+      "path": "tests/fixtures/validators/valid-spec.md",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/browser/README.md",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/browser/qaizen-actions.json",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/browser/capability-matrix.json",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/browser/qaizen-transcript.md",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/browser/fixture-observations.json",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/browser/qaizen-demo-captioned.mp4",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/browser/observations.json",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/browser/qaizen-demo.en.vtt",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/browser/provenance.json",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/browser/qaizen-question.png",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/browser/qaizen-entry.png",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/browser/qaizen-returned.png",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/verifier-coverage.json",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/feasibility-source-digests.json",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/verifier-probe-A01.json",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/verified.json",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/security-malformed.json",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/verifier-probe-A02.json",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/feasibility-trace-final.json",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/finder.correctness-execution.json",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/security-candidates.json",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/feasibility-report.md",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/lead-commands.md",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/feasibility-trace-filtered.json",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/feasibility-candidates.json",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/feasibility-project-check.json",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/findings-lint-command.json",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/feasibility-trace-results.json",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/redaction-execution.json",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/correctness-trace.json",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/redaction-command.json",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/verifier-command-evidence.json",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/findings_validation-execution.json",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/verifier-report.md",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/security-trace-claims.json",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/run-check.stdout",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/security-empty.json",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/findings.json",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/correctness-input-high-skipped.json",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/findings-lint.stderr",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/feasibility-trace-source.json",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/redactor.stderr",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/correctness-redacted.json",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/finalize.py",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/report.md",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/verifier-execution.json",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/security-high.json",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/correctness-input-missing.json",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/source-unchanged.json",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/roster.json",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/correctness-project-check.json",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/source-manifest.json",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/correctness-snapshot.json",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/security-command-evidence.json",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/claims.json",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/correctness-report.md",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/findings-lint.stdout",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/execution.json",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/identity.json",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/provenance.json",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/security-report.md",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/correctness-input-empty.json",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/verifier-probe-A03.json",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/finder.feasibility-execution.json",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/project-tests.log",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/security-source-manifest.json",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/correctness-candidates.json",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/finder.security-execution.json",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/source/qore.json",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/source/README.md.txt",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/source/CONTRIBUTING.md.txt",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/source/tools/run_contract.py",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/source/examples/validator-hardening.md.txt",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/source/schemas/qore-run.schema.json",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/source/tests/test_package.py",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/source/tests/test_validators.py",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/source/tests/test_run_contract.py",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/source/tests/fixtures/project-alternate.json",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/source/tests/fixtures/validators/valid-ux.json",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/source/tests/fixtures/validators/null.json",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/source/tests/fixtures/validators/valid-spec.md.txt",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/source/tests/fixtures/validators/truncated.json",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/source/tests/fixtures/validators/empty-object.json",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/source/tests/fixtures/validators/valid-findings.json",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/source/tests/fixtures/web/ping.json",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/source/tests/fixtures/web/alternate-actions.json",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/source/tests/fixtures/web/index.html",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/source/tests/fixtures/web/primary-actions.json",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/source/tests/fixtures/web/alternate.html",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/source/skills/qore-review/SKILL.md.txt",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/source/skills/qore-review/references/project-profile.md.txt",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/source/skills/qore-review/references/release.json",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/source/skills/qore-review/references/findings.md.txt",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/source/skills/qore-review/references/run-evidence.md.txt",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/source/skills/qore-review/references/protocol.md.txt",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/source/skills/qore-review/scripts/redact-for-verifier.mjs",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/source/skills/qore-review/scripts/project-check.py",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/source/skills/qore-review/scripts/run-check.py",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/source/skills/qore-review/scripts/finding-lint.mjs",
+      "match": true
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/source/skills/qore-review/agents/openai.yaml",
+      "match": true
+    },
+    {
+      "path": "skills/qore-review/SKILL.md",
+      "match": true
+    },
+    {
+      "path": "skills/qore-ux-review/SKILL.md",
+      "match": true
+    },
+    {
+      "path": "skills/qore-plan/SKILL.md",
+      "match": true
+    },
+    {
+      "path": "skills/qore-plan/references/specification.md",
+      "match": true
+    },
+    {
+      "path": "skills/qore-plan/references/release.json",
+      "match": true
+    },
+    {
+      "path": "skills/qore-plan/references/run-evidence.md",
+      "match": true
+    },
+    {
+      "path": "skills/qore-plan/references/roles.md",
+      "match": true
+    },
+    {
+      "path": "skills/qore-plan/references/project-profile.md",
+      "match": true
+    },
+    {
+      "path": "skills/qore-plan/references/protocol.md",
+      "match": true
+    },
+    {
+      "path": "skills/qore-plan/scripts/spec-lint.mjs",
+      "match": true
+    },
+    {
+      "path": "skills/qore-plan/scripts/project-check.py",
+      "match": true
+    },
+    {
+      "path": "skills/qore-plan/scripts/run-check.py",
+      "match": true
+    },
+    {
+      "path": "skills/qore-plan/scripts/spec-lint.sh",
+      "match": true
+    },
+    {
+      "path": "skills/qore-plan/agents/openai.yaml",
+      "match": true
+    },
+    {
+      "path": "skills/qore-ux-review/references/evidence.md",
+      "match": true
+    },
+    {
+      "path": "skills/qore-ux-review/references/release.json",
+      "match": true
+    },
+    {
+      "path": "skills/qore-ux-review/references/run-evidence.md",
+      "match": true
+    },
+    {
+      "path": "skills/qore-ux-review/references/gates.md",
+      "match": true
+    },
+    {
+      "path": "skills/qore-ux-review/references/project-profile.md",
+      "match": true
+    },
+    {
+      "path": "skills/qore-ux-review/references/protocol.md",
+      "match": true
+    },
+    {
+      "path": "skills/qore-ux-review/scripts/project-check.py",
+      "match": true
+    },
+    {
+      "path": "skills/qore-ux-review/scripts/run-check.py",
+      "match": true
+    },
+    {
+      "path": "skills/qore-ux-review/scripts/depth-lint.mjs",
+      "match": true
+    },
+    {
+      "path": "skills/qore-ux-review/scripts/stop-rule.mjs",
+      "match": true
+    },
+    {
+      "path": "skills/qore-ux-review/agents/openai.yaml",
+      "match": true
+    },
+    {
+      "path": "skills/qore-review/references/run-evidence.md",
+      "match": true
+    },
+    {
+      "path": "skills/qore-review/references/project-profile.md",
+      "match": true
+    },
+    {
+      "path": "skills/qore-review/references/protocol.md",
+      "match": true
+    },
+    {
+      "path": "skills/qore-review/references/findings.md",
+      "match": true
+    }
+  ],
+  "last_relevant_change": "2026-10-15T19:54:44.929033+00:00",
+  "environment": {
+    "id": "independent-linux-container",
+    "operator": "agent",
+    "host": "Linux-6.12.72-linuxkit-aarch64-with-musl1"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "observed_at": "2026-10-15T20:13:15.203447+00:00",
+  "selected_decisions": [
+    "D4 exact raw verifier grammar",
+    "D5 preserve adaptations through fresh staging",
+    "D6 retain packet/result/exit contracts",
+    "D7 freshness and actual execution remain separate",
+    "D8 defer broader recovery/partial-batch redesign"
+  ],
+  "basis": "Fresh independent malformed-token probes plus local parser control flow establish a bounded grammar mismatch; UX and QA independent precedence probes require usage stderr, not exit 2 alone.",
+  "evidence": [
+    "product-analysis.md",
+    "architecture-analysis.md",
+    "ux-analysis.md",
+    "delivery-analysis.md",
+    "qa-analysis.md",
+    "product-cross.md",
+    "architecture-cross.md",
+    "ux-cross.md",
+    "delivery-cross.md",
+    "qa-cross.md",
+    "ux-commands.json",
+    "qa-cross-commands.json",
+    "profile-use.json"
+  ],
+  "retained_dissent": [
+    "UX recovery-first proposal is limited to directly affected documentation/channel acceptance; broad runtime wording is deferred.",
+    "Partial-batch/global-flag semantics remain an unresolved separate change."
+  ],
+  "open": [
+    "External caller compatibility",
+    "Future corrected-candidate regression/build verification",
+    "Partial empty-batch semantics",
+    "Human comprehension"
+  ],
+  "implementation_authorized_by_this_result": false
+}

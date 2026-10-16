@@ -1,0 +1,25 @@
+# Contributing
+
+Use English for first-party code, identifiers, comments, messages, examples, skill instructions, tests and documentation. Preserve the original meaning and provenance of externally quoted evidence.
+
+Start with an observed problem and a concrete reproduction. Change the relevant method or helper, then run:
+
+```bash
+python3 -B -m unittest discover -s tests -v
+```
+
+Keep skill entry points concise. Put conditional protocol details in their own focused references and keep each skill autonomous. Do not add client assumptions, personal paths, forced finding counts or unsupported performance claims.
+
+Project profiles contain sourced facts, not authority. After intentionally changing qore.json or the synthetic fixture source, refresh the maintained example profiles:
+
+```bash
+python3 tools/refresh_profiles.py
+```
+
+Inspect the source and profile diff, test current and stale contexts, and generate derivatives into new staging. Never edit an installed or generated copy as the maintained source.
+
+The release allowlist is explicit. A new distributable file requires an intentional release-files.json change and a public-content review. After inspecting changed content and its rights, update its digest, origin, MIT license, approval status and truthful basis in release-rights.json. Unknown, denied, missing or stale entries prevent a build; changing a hash alone is not a rights review. Do not include private traces, credentials, caches, source histories or dependencies fetched at runtime without declaration.
+
+For reports, state the candidate revision, target, actual command, expected behavior, observed behavior and limits. Redact private information before sharing. A maintained test result proves its named invariant, not general superiority.
+
+Publication, client migration and external outreach are separate actions. Local validation does not authorize them.

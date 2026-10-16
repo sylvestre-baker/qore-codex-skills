@@ -1,0 +1,34 @@
+{
+  "findings": [
+    {
+      "id": "C-001",
+      "title": "Derivation records the input profile digest but rewrites the bundled profile bytes",
+      "severity": "medium",
+      "evidence": "tools/qore.py:215 records profile_info.sha256 = digest(profile_path), but tools/qore.py:235 writes references/project.json through write_json (indent=2, ensure_ascii=False, trailing newline). With compact JSON of profiles/qore.json, derive succeeds and manifest profile.sha256 is 63c9157e3dd4d6eb2c33c899820422e8ce1d1bee9cc4e22c1df96d814e50a83f, while bundled references/project.json and its successful bundled project-check.py report da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9. /workspace/implementation-review/evidence/correctness-probes.txt retains output; /tmp/qore-correctness-zihl6vcs contains inputs/derivative.",
+      "counterexample": "Serialize profiles/qore.json with json.dumps(profile,separators=(comma,colon)); derive using current root into unused external temp; compare returned profile.sha256 and SHA-256 of qore-review-qore/references/project.json. Actual different hashes despite verify success. Expected released profile identity to identify the actual consumed bundled bytes or explicitly distinguish source_profile_sha256 from bundled profile sha256.",
+      "condition": "A valid maintained profile uses different JSON whitespace, Unicode escaping, or trailing newline from write_json.",
+      "consequence": "Release/profile identity and runtime preflight identify different byte snapshots; consumers cannot use release profile.sha256 to attest the exact consumed profile required by run-evidence.md.",
+      "uncertainty": "Independent verification has not yet run; semantic profile facts remain unchanged."
+    },
+    {
+      "id": "C-002",
+      "title": "Unchanged failing gates bypass the promised three-comparison plateau stop",
+      "severity": "low",
+      "evidence": "skills/qore-ux-review/scripts/stop-rule.mjs:84 checks stuck >= 2 before plateau >= 3 at line 85. Four measured iterations n=1..4 with G1=3 return decision CHANGE_APPROACH, stuck_count=3, no_improve_count=3 rather than STOP_PLATEAU. skills/qore-ux-review/references/protocol.md says after three comparisons without improvement the loop stops at plateau. Input /tmp/qore-correctness-zihl6vcs/plateau.json; output correctness-probes.txt.",
+      "counterexample": "node skills/qore-ux-review/scripts/stop-rule.mjs /tmp/qore-correctness-zihl6vcs/plateau.json returns CHANGE_APPROACH at iteration 4, although three unchanged comparisons have completed.",
+      "condition": "A nonzero failing gate stays unchanged through four or five measured iterations.",
+      "consequence": "The consumer is instructed to continue investigation instead of stopping at its declared plateau budget; the six-iteration ceiling still bounds eventual execution.",
+      "uncertainty": "Independent verification has not yet run; severity limited by functioning six-iteration ceiling."
+    },
+    {
+      "id": "C-003",
+      "title": "Spec validation counts literal docstring text as executable acceptance steps",
+      "severity": "medium",
+      "evidence": "skills/qore-plan/scripts/spec-lint.mjs:44-48 scans every Gherkin line for Given/When/Then without tracking docstrings. /tmp/qore-correctness-zihl6vcs/docstring-spec.md has one real Given step and When/Then solely inside its triple-quoted argument. node spec-lint.mjs FILE --json exits 0 with valid:true and no problems. The artifact contract requires real acceptance scenarios with their own Given, When, Then. An additional Scenario Outline using placeholders without Examples also exits 0 (/tmp/qore-correctness-zihl6vcs/outline-spec.md).",
+      "counterexample": "Run node skills/qore-plan/scripts/spec-lint.mjs /tmp/qore-correctness-zihl6vcs/docstring-spec.md --json. Actual valid:true; expected rejection because literal argument text contains the only When and Then.",
+      "condition": "An acceptance scenario contains step-looking multiline input or an outline lacks Examples.",
+      "consequence": "The mandatory structural validation phase can pass a specification with no actual action/assertion acceptance steps, undercutting the documented real-Gherkin boundary.",
+      "uncertainty": "Independent verification has not yet run; no external Gherkin package was installed, grammar distinction follows standard docstring syntax and repository real-step requirement."
+    }
+  ]
+}

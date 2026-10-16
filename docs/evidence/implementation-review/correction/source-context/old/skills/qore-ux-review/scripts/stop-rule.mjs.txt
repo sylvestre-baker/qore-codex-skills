@@ -1,0 +1,95 @@
+1: #!/usr/bin/env node
+2: import { readFileSync } from 'node:fs';
+3: 
+4: const die = message => { console.error(`stop-rule: ${message}`); process.exit(2); };
+5: const object = value => value !== null && typeof value === 'object' && !Array.isArray(value);
+6: const text = value => typeof value === 'string' && value.trim().length > 0;
+7: let run;
+8: try { run = JSON.parse(readFileSync(process.argv[2] || 0, 'utf8')); }
+9: catch (error) { die(`Cannot read JSON: ${error.message}`); }
+10: if (!object(run)) die('Input must be an object.');
+11: if (!Array.isArray(run.in_scope) || !run.in_scope.length || run.in_scope.some(gate => !text(gate)) || new Set(run.in_scope).size !== run.in_scope.length) die('in_scope must contain unique non-empty gate names.');
+12: if (!Array.isArray(run.iterations) || !run.iterations.length) die('iterations must be non-empty.');
+13: const scope = run.in_scope;
+14: const gateList = (value, label) => {
+15:   if (!Array.isArray(value) || value.some(gate => !scope.includes(gate)) || new Set(value).size !== value.length) die(`${label} must contain unique in-scope gates.`);
+16: };
+17: const reasons = (value, label) => {
+18:   if (!object(value) || Object.entries(value).some(([gate, reason]) => !scope.includes(gate) || !text(reason))) die(`${label} must map in-scope gates to non-empty reasons.`);
+19: };
+20: if (run.not_applicable !== undefined) reasons(run.not_applicable, 'not_applicable');
+21: let previousN = 0;
+22: const measuredAt = {}, measuredScores = {};
+23: let lastFix = 0;
+24: const states = [];
+25: for (const [index, iteration] of run.iterations.entries()) {
+26:   if (!object(iteration) || !Number.isInteger(iteration.n) || iteration.n <= previousN) die(`Iteration ${index + 1} needs a strictly increasing positive integer n.`);
+27:   previousN = iteration.n;
+28:   if (!object(iteration.scores)) die(`Iteration ${iteration.n} needs a scores object.`);
+29:   const blockedInput = iteration.infra_blocked === undefined ? [] : iteration.infra_blocked;
+30:   const skippedInput = iteration.skipped === undefined ? {} : iteration.skipped;
+31:   const naInput = iteration.not_applicable === undefined ? {} : iteration.not_applicable;
+32:   gateList(iteration.measured, `Iteration ${iteration.n} measured`);
+33:   gateList(blockedInput, `Iteration ${iteration.n} infra_blocked`);
+34:   reasons(skippedInput, `Iteration ${iteration.n} skipped`);
+35:   reasons(naInput, `Iteration ${iteration.n} not_applicable`);
+36:   if (iteration.fix_applied !== undefined && typeof iteration.fix_applied !== 'boolean') die('fix_applied must be boolean.');
+37:   if (iteration.g6_passed !== undefined && typeof iteration.g6_passed !== 'boolean') die('g6_passed must be boolean.');
+38:   const na = { ...(run.not_applicable || {}), ...naInput };
+39:   for (const [gate, reason] of Object.entries(na)) {
+40:     if (/\b(unavailable|no tools?|missing tools?|not installed|infra(?:structure)? blocked|timeout)\b/i.test(reason)) die(`Non-applicability for ${gate} cannot be justified by tool absence.`);
+41:     if (Object.hasOwn(skippedInput, gate) || blockedInput.includes(gate)) die(`${gate} cannot be both not applicable and skipped/blocked.`);
+42:   }
+43:   for (const [gate, score] of Object.entries(iteration.scores)) {
+44:     if (!scope.includes(gate) || !Number.isInteger(score) || score < 0 || score > 5) die(`Iteration ${iteration.n}: scores must be integers 0..5 for in-scope gates.`);
+45:     if (!iteration.measured.includes(gate) && measuredScores[gate] !== undefined && score !== measuredScores[gate]) die(`Iteration ${iteration.n}: score for ${gate} changed without measurement.`);
+46:   }
+47:   for (const gate of iteration.measured) {
+48:     if (Object.hasOwn(skippedInput, gate) || blockedInput.includes(gate) || Object.hasOwn(na, gate)) die(`Iteration ${iteration.n}: ${gate} cannot be measured and omitted.`);
+49:     if (gate === 'G6' && iteration.g6_passed !== undefined) measuredScores[gate] = iteration.g6_passed ? 5 : 0;
+50:     else if (!Object.hasOwn(iteration.scores, gate)) die(`Iteration ${iteration.n}: measured ${gate} needs a score.`);
+51:     else measuredScores[gate] = iteration.scores[gate];
+52:     measuredAt[gate] = iteration.n;
+53:   }
+54:   // A fix lands after this iteration's observations, invalidating them all.
+55:   if (iteration.fix_applied) lastFix = iteration.n;
+56:   const required = scope.filter(gate => !Object.hasOwn(na, gate));
+57:   const skipped = required.filter(gate => Object.hasOwn(skippedInput, gate));
+58:   const blocked = required.filter(gate => blockedInput.includes(gate));
+59:   const missing = required.filter(gate => measuredAt[gate] === undefined || measuredScores[gate] === undefined);
+60:   const stale = required.filter(gate => measuredAt[gate] !== undefined && measuredAt[gate] <= lastFix);
+61:   const failing = required.filter(gate => measuredScores[gate] !== undefined && measuredScores[gate] < 4);
+62:   const covered = !skipped.length && !blocked.length && !missing.length && !stale.length;
+63:   states.push({ iteration, required, skipped, blocked, missing, stale, failing, na, scores: { ...measuredScores }, covered });
+64: }
+65: const last = states.at(-1);
+66: let stuck = 0, plateau = 0;
+67: for (let index = 1; index < states.length; index++) {
+68:   const now = states[index], before = states[index - 1];
+69:   const shared = now.required.filter(gate => before.scores[gate] !== undefined && now.scores[gate] !== undefined);
+70:   const improved = shared.some(gate => now.scores[gate] > before.scores[gate]) && !shared.some(gate => now.scores[gate] < before.scores[gate]);
+71:   plateau = improved ? 0 : plateau + 1;
+72:   const unchangedFailures = now.failing.length && now.failing.length === before.failing.length && now.failing.every(gate => before.failing.includes(gate) && now.scores[gate] <= before.scores[gate]);
+73:   stuck = unchangedFailures ? stuck + 1 : 0;
+74: }
+75: const zeroed = last.required.filter(gate => last.scores[gate] === 0);
+76: const coverage = last.covered ? 'COMPLETE' : last.required.length && last.blocked.length === last.required.length ? 'BLOCKED' : 'PARTIAL';
+77: let decision = 'CONTINUE', verdict = last.failing.length ? 'DO-NOT-SHIP' : 'PENDING';
+78: if (last.iteration.n > 6) { decision = 'STOP_CEILING'; verdict = zeroed.length || last.failing.length ? 'DO-NOT-SHIP' : 'BEST-EFFORT'; }
+79: else if (last.covered && last.required.length && !last.failing.length && last.iteration.g6_passed !== false) { decision = 'SHIP'; verdict = 'SHIP'; }
+80: else if (!last.required.length) { decision = 'NOT_APPLICABLE'; verdict = 'NOT-APPLICABLE'; }
+81: else if (last.iteration.n >= 6) { decision = 'STOP_CEILING'; verdict = zeroed.length || last.failing.length ? 'DO-NOT-SHIP' : 'BEST-EFFORT'; }
+82: else if (coverage === 'BLOCKED') decision = 'BLOCKED';
+83: else if (zeroed.length) { decision = 'FIX'; verdict = 'DO-NOT-SHIP'; }
+84: else if (stuck >= 2) decision = 'CHANGE_APPROACH';
+85: else if (plateau >= 3) { decision = 'STOP_PLATEAU'; verdict = 'BEST-EFFORT'; }
+86: console.log(JSON.stringify({
+87:   decision, verdict, coverage, iteration: last.iteration.n, ceiling: 6,
+88:   surface_score: zeroed.length ? 0 : null,
+89:   consecutive_fresh_passes: last.covered && !last.failing.length && last.required.length ? 1 : 0,
+90:   passes_required: 1, lowest_failing_gate: [...last.failing].sort((left, right) => last.scores[left] - last.scores[right])[0] || null,
+91:   failing_gates: last.failing, stale_gates: last.stale, missing_gates: last.missing,
+92:   skipped: last.skipped, infra_blocked: last.blocked, not_applicable: last.na,
+93:   stuck_count: stuck, no_improve_count: plateau,
+94:   limit: 'Coverage describes observations. SHIP is a scoped review result, not deployment authorization. Non-applicability reasons require independent review.',
+95: }, null, 2));

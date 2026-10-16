@@ -1,0 +1,154 @@
+1: #!/usr/bin/env python3
+2: """Validate sourced project facts without executing project commands."""
+3: import argparse
+4: import hashlib
+5: import json
+6: from pathlib import Path, PurePosixPath
+7: import re
+8: import sys
+9: from urllib.parse import urlsplit
+10: 
+11: METHODS = {"plan", "review", "ux"}
+12: 
+13: 
+14: def digest(path):
+15:     return hashlib.sha256(Path(path).read_bytes()).hexdigest()
+16: 
+17: 
+18: def unique_object(pairs):
+19:     result = {}
+20:     for key, value in pairs:
+21:         if key in result:
+22:             raise ValueError("Duplicate JSON key: " + key)
+23:         result[key] = value
+24:     return result
+25: 
+26: 
+27: def read_json(path):
+28:     return json.loads(Path(path).read_text(encoding="utf-8"), object_pairs_hook=unique_object)
+29: 
+30: 
+31: def contained(root, relative, *, must_exist=True):
+32:     if not isinstance(relative, str) or not relative or "\\" in relative:
+33:         raise ValueError("Expected a nonempty POSIX relative path")
+34:     pure = PurePosixPath(relative)
+35:     if pure.is_absolute() or ".." in pure.parts or ":" in pure.parts[0]:
+36:         raise ValueError("Path escapes its declared root: " + relative)
+37:     base = Path(root).resolve()
+38:     candidate = base.joinpath(*pure.parts)
+39:     if not candidate.resolve().is_relative_to(base):
+40:         raise ValueError("Resolved path escapes its declared root: " + relative)
+41:     if must_exist and not candidate.is_file():
+42:         raise ValueError("Required file is missing: " + relative)
+43:     return candidate
+44: 
+45: 
+46: def validate_profile(profile, root, method):
+47:     if method not in METHODS:
+48:         raise ValueError("Unknown method: " + method)
+49:     if not isinstance(profile, dict) or profile.get("schema") != "qore-project/1":
+50:         raise ValueError("Expected schema qore-project/1")
+51:     if not re.fullmatch(r"[a-z][a-z0-9-]{0,39}", profile.get("id", "")):
+52:         raise ValueError("Invalid project id")
+53:     if not re.fullmatch(r"\d+\.\d+\.\d+", profile.get("version", "")):
+54:         raise ValueError("Project version must use three numeric components")
+55:     sources = profile.get("sources")
+56:     if not isinstance(sources, list) or not sources:
+57:         raise ValueError("Profile needs an explicit nonempty sources list")
+58:     records, by_id = [], {}
+59:     for source in sources:
+60:         if not isinstance(source, dict):
+61:             raise ValueError("Each source must be an object")
+62:         source_id = source.get("id")
+63:         if not isinstance(source_id, str) or not source_id or source_id in by_id:
+64:             raise ValueError("Source identifiers must be unique nonempty strings")
+65:         expected = source.get("sha256", "")
+66:         if not isinstance(expected, str) or not re.fullmatch(r"[a-f0-9]{64}", expected):
+67:             raise ValueError("Source needs a SHA-256 digest: " + source_id)
+68:         relative = source.get("path")
+69:         path = contained(root, relative, must_exist=False)
+70:         actual = digest(path) if path.is_file() else None
+71:         record = {"id": source_id, "path": relative, "expected_sha256": expected,
+72:                   "actual_sha256": actual, "current": actual == expected}
+73:         by_id[source_id] = record
+74:         records.append(record)
+75:     commands, invariants, selected_sources = [], [], set()
+76: 
+77:     def applicable(fact):
+78:         if not isinstance(fact, dict) or fact.get("source") not in by_id:
+79:             raise ValueError("Every project fact needs a declared source")
+80:         applies = fact.get("applies_to", sorted(METHODS))
+81:         if not isinstance(applies, list) or not applies or set(applies) - METHODS:
+82:             raise ValueError("Invalid applies_to methods")
+83:         if method not in applies:
+84:             return False
+85:         selected_sources.add(fact["source"])
+86:         return by_id[fact["source"]]["current"]
+87: 
+88:     for field in ("commands", "invariants"):
+89:         if not isinstance(profile.get(field), list):
+90:             raise ValueError(field + " must be a list")
+91:         ids = set()
+92:         for fact in profile[field]:
+93:             fact_id = fact.get("id") if isinstance(fact, dict) else None
+94:             if not isinstance(fact_id, str) or not fact_id or fact_id in ids:
+95:                 raise ValueError(field + " identifiers must be unique")
+96:             ids.add(fact_id)
+97:             if field == "commands":
+98:                 argv = fact.get("argv")
+99:                 if not isinstance(argv, list) or not argv or any(not isinstance(v, str) or not v or "\x00" in v for v in argv):
+100:                     raise ValueError("Commands require an explicit nonempty argv list")
+101:             elif not isinstance(fact.get("statement"), str) or not fact["statement"].strip():
+102:                 raise ValueError("Invariants require a statement")
+103:             if applicable(fact):
+104:                 (commands if field == "commands" else invariants).append(fact)
+105:     surfaces = profile.get("surfaces")
+106:     if not isinstance(surfaces, dict):
+107:         raise ValueError("surfaces must be an object")
+108:     selected_surfaces = {}
+109:     if "web" in surfaces:
+110:         web = surfaces["web"]
+111:         if not isinstance(web, dict):
+112:             raise ValueError("web surface must be an object")
+113:         url = urlsplit(web.get("entry_url", ""))
+114:         if url.scheme not in ("http", "https") or not url.hostname or url.username or url.password:
+115:             raise ValueError("Web entry must be an HTTP(S) URL without credentials")
+116:         origin = url.scheme + "://" + url.netloc
+117:         allowed = web.get("allowed_origins")
+118:         if not isinstance(allowed, list) or origin not in allowed:
+119:             raise ValueError("Web entry origin must be explicitly allowed")
+120:         if not isinstance(web.get("required_state"), str) or not web["required_state"]:
+121:             raise ValueError("Web surface needs an observable required_state")
+122:         if web.get("kind") not in ("fixture", "application", "documentation"):
+123:             raise ValueError("Web surface needs an explicit kind")
+124:         if method == "ux" and applicable(web):
+125:             selected_surfaces["web"] = web
+126:     problems = ["Changed or missing source: " + s for s in sorted(selected_sources) if not by_id[s]["current"]]
+127:     if method == "ux" and "web" not in selected_surfaces:
+128:         problems.append("No current web surface is available for this profile")
+129:     has_facts = bool(commands or invariants or selected_surfaces)
+130:     coverage = "COMPLETE" if not problems else ("PARTIAL" if has_facts else "BLOCKED")
+131:     return {"schema": "qore-context-check/1", "profile": {"id": profile["id"], "version": profile["version"]},
+132:             "method": method, "coverage": coverage, "sources": records, "commands": commands,
+133:             "invariants": invariants, "surfaces": selected_surfaces,
+134:             "consumed_source_ids": sorted(selected_sources), "problems": problems}
+135: 
+136: 
+137: def main():
+138:     parser = argparse.ArgumentParser(description=__doc__)
+139:     parser.add_argument("profile", type=Path)
+140:     parser.add_argument("--root", type=Path, required=True)
+141:     parser.add_argument("--method", choices=sorted(METHODS), required=True)
+142:     args = parser.parse_args()
+143:     try:
+144:         result = validate_profile(read_json(args.profile), args.root, args.method)
+145:         result["profile"]["sha256"] = digest(args.profile)
+146:         print(json.dumps(result, indent=2))
+147:         return 0 if result["coverage"] == "COMPLETE" else 1
+148:     except (ValueError, OSError, TypeError) as exc:
+149:         print(json.dumps({"coverage": "BLOCKED", "problems": [str(exc)]}), file=sys.stderr)
+150:         return 2
+151: 
+152: 
+153: if __name__ == "__main__":
+154:     raise SystemExit(main())

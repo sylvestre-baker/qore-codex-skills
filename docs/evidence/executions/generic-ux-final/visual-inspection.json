@@ -1,0 +1,13 @@
+{
+  "operator": "Maintainer-operated agent",
+  "inspected_at": "2026-10-15T20:19:29.599062+00:00",
+  "images_opened": [
+    "g0-entry-i1.png",
+    "g3-viewport-intro.png",
+    "g3-viewport-summary-focused.png",
+    "g3-viewport-help-expanded.png",
+    "g3-viewport-restored.png",
+    "g3-ssr-without-js-i1.png"
+  ],
+  "result": "Actual images opened. Scoped content and focused controls are readable. No measured horizontal overflow; long help uses ordinary vertical scrolling. No broader visual matrix or conformance claim."
+}

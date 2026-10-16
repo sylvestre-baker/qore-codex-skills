@@ -1,0 +1,5 @@
+[
+  {"type":"click","role":"button","name":"Resolve alternate synthetic state"},
+  {"type":"assert-text","text":"Alternate resolved synthetic state."},
+  {"type":"snapshot","label":"resolved-alternate"}
+]

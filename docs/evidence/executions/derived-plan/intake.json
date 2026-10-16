@@ -1,0 +1,36 @@
+{
+  "mode": "Workflow",
+  "deciding_artifact": "examples/validator-hardening.md",
+  "requested_task": "Use the assembled qore-plan-qore derivative to plan the next safe improvement to the actual existing validator-hardening specification and current bundled source/tests. Obtain all project facts from bundled preflight, not the invocation prompt. No implementation writes.",
+  "target_root": "<CANDIDATE_B>",
+  "skill_root": "<DERIVED_CANDIDATE>/qore-plan-qore",
+  "derived_root": "<DERIVED_CANDIDATE>",
+  "base_candidate_archive_sha256": "2963c43e98803354932e406627d9e239064fbe2899745a7e093b7d4154fa56d1",
+  "candidate_sha256": "19f48167f040ca42c60b0df49a324c6d3aeb3de3014486017668f1263ccd6b35",
+  "candidate_digest_procedure": "SHA-256 of fresh derived manifest.json; base archive identity retained separately.",
+  "target_snapshot_sha256": "dec34e19b7b3036c213299a1f98b05fec1709212fb156eabf9928682024ae2cb",
+  "profile": {
+    "id": "qore",
+    "version": "0.1.0",
+    "sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9"
+  },
+  "started_at": "2026-10-15T19:59:38.158334+00:00",
+  "budget_minutes": 18,
+  "worker_budget_seconds": 75,
+  "round_limit": 3,
+  "concurrency": "One active worker at a time.",
+  "generic_reports_supplied_to_workers": false,
+  "instructions": {
+    "SKILL.md": "855dcf88c85bc4bfb536e97f212349afa49ac552062e45667494eb15903f71a6",
+    "references/project-profile.md": "16c5ff087c83b7503b23d5d94726834462dd4fd73d78a5380cf85135fa85b0b3",
+    "references/protocol.md": "83f92490a5601b83fc6eaa21861344e35cd04a3ac7edb56b98cd2eb0ecfea84b",
+    "references/roles.md": "cc8060c7c852c143b9671af4fc0176b9c5068f338c19b2556b6ff494c0f0d318",
+    "references/run-evidence.md": "35cd6dc6d3e1177bbae96e5b9e829ed1aa55901747c856f4db20e946421f163d",
+    "references/specification.md": "7eb06b91fca66a3ec00bda4b49b035c5e6bfe827c4624768f66a09b6ae7827a1"
+  },
+  "limitations": [
+    "Author-host agent execution, not independent clean environment or external human use.",
+    "Generic role reports are not reused; fresh independent contexts execute both phases.",
+    "Only facts selected by actual current preflight may influence profile-specific behavior."
+  ]
+}

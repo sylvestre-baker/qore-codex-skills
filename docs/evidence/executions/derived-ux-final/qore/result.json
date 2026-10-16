@@ -1,0 +1,16 @@
+{
+  "status": "COMPLETE_FOCUSED_PROFILE_PROBE",
+  "method_coverage": "Not a full derivative UX audit; this focused check demonstrates current profile facts affecting actual route and state behavior.",
+  "profile": {
+    "id": "qore",
+    "version": "0.1.0",
+    "sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9"
+  },
+  "actual_url": "http://127.0.0.1:8765/index.html",
+  "required_state_observed": "Resolved synthetic state.",
+  "target_kind": "fixture",
+  "driver_status": "COMPLETE",
+  "live_profile_fact_used": true,
+  "neighboring_profile_facts_used": false,
+  "completed_at": "2026-10-15T20:17:57.047699+00:00"
+}

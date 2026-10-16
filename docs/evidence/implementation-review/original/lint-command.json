@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "node",
+    "scripts/finding-lint.mjs",
+    "/workspace/implementation-review/evidence/verified.json",
+    "--verifier=ran",
+    "--json"
+  ],
+  "cwd": "/workspace/implementation-target/qore-skills-0.1.0/.agents/skills/qore-review",
+  "exit_code": 0,
+  "observed_at": "2026-10-15T20:08:36.089737+00:00"
+}

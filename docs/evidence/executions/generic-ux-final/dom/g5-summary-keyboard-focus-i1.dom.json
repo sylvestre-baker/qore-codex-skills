@@ -1,0 +1,562 @@
+{
+  "at": "2026-10-15T20:17:58.200Z",
+  "url": "https://qaizen.io/labs/readiness-check",
+  "title": "Production Readiness Check: Could Your AI Pilot Go Live? | QAIZEN",
+  "viewport": {
+    "width": 1280,
+    "height": 800
+  },
+  "reduced_motion": true,
+  "geometry": {
+    "document_width": 1280,
+    "viewport_width": 1280,
+    "horizontal_overflow": false
+  },
+  "headings": [
+    {
+      "tag": "H2",
+      "text": "Which data will the AI system read and write in production, and who owns each source?",
+      "rect": {
+        "x": 417,
+        "y": 120,
+        "width": 446,
+        "height": 58.5
+      }
+    }
+  ],
+  "controls": [
+    {
+      "tag": "A",
+      "role": null,
+      "name": "Skip to content",
+      "checked": null,
+      "tabindex": null,
+      "labelledby": null,
+      "describedby": null,
+      "rect": {
+        "x": -1,
+        "y": -234,
+        "width": 1,
+        "height": 1
+      },
+      "style": {
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "outlineOffset": "0px"
+      }
+    },
+    {
+      "tag": "A",
+      "role": null,
+      "name": "QAIZEN, home",
+      "checked": null,
+      "tabindex": null,
+      "labelledby": null,
+      "describedby": null,
+      "rect": {
+        "x": 24,
+        "y": 24,
+        "width": 153.59375,
+        "height": 36
+      },
+      "style": {
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "outlineOffset": "0px"
+      }
+    },
+    {
+      "tag": "A",
+      "role": null,
+      "name": "OUR PRODUCT",
+      "checked": null,
+      "tabindex": null,
+      "labelledby": null,
+      "describedby": null,
+      "rect": {
+        "x": 468.296875,
+        "y": 32,
+        "width": 124.671875,
+        "height": 20
+      },
+      "style": {
+        "color": "oklab(0.999994 0.0000455677 0.0000200868 / 0.7)",
+        "background": "rgba(0, 0, 0, 0)",
+        "outline": "oklab(0.999994 0.0000455677 0.0000200868 / 0.7) none 3px",
+        "outlineOffset": "0px"
+      }
+    },
+    {
+      "tag": "A",
+      "role": null,
+      "name": "CUSTOM AGENTS",
+      "checked": null,
+      "tabindex": null,
+      "labelledby": null,
+      "describedby": null,
+      "rect": {
+        "x": 616.96875,
+        "y": 32,
+        "width": 143.234375,
+        "height": 20
+      },
+      "style": {
+        "color": "oklab(0.999994 0.0000455677 0.0000200868 / 0.7)",
+        "background": "rgba(0, 0, 0, 0)",
+        "outline": "oklab(0.999994 0.0000455677 0.0000200868 / 0.7) none 3px",
+        "outlineOffset": "0px"
+      }
+    },
+    {
+      "tag": "A",
+      "role": null,
+      "name": "READINESS REVIEW",
+      "checked": null,
+      "tabindex": null,
+      "labelledby": null,
+      "describedby": null,
+      "rect": {
+        "x": 784.203125,
+        "y": 32,
+        "width": 168.515625,
+        "height": 20
+      },
+      "style": {
+        "color": "oklab(0.999994 0.0000455677 0.0000200868 / 0.7)",
+        "background": "rgba(0, 0, 0, 0)",
+        "outline": "oklab(0.999994 0.0000455677 0.0000200868 / 0.7) none 3px",
+        "outlineOffset": "0px"
+      }
+    },
+    {
+      "tag": "A",
+      "role": null,
+      "name": "LABS",
+      "checked": null,
+      "tabindex": null,
+      "labelledby": null,
+      "describedby": null,
+      "rect": {
+        "x": 976.71875,
+        "y": 25,
+        "width": 99.953125,
+        "height": 34
+      },
+      "style": {
+        "color": "rgb(197, 160, 89)",
+        "background": "lab(68.1893 7.87282 41.9904 / 0.1)",
+        "outline": "rgb(197, 160, 89) none 3px",
+        "outlineOffset": "0px"
+      }
+    },
+    {
+      "tag": "A",
+      "role": null,
+      "name": "BLOG",
+      "checked": null,
+      "tabindex": null,
+      "labelledby": null,
+      "describedby": null,
+      "rect": {
+        "x": 1100.671875,
+        "y": 32,
+        "width": 46.90625,
+        "height": 20
+      },
+      "style": {
+        "color": "oklab(0.999994 0.0000455677 0.0000200868 / 0.7)",
+        "background": "rgba(0, 0, 0, 0)",
+        "outline": "oklab(0.999994 0.0000455677 0.0000200868 / 0.7) none 3px",
+        "outlineOffset": "0px"
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "role": null,
+      "name": "\ud83c\uddec\ud83c\udde7 EN",
+      "checked": null,
+      "disabled": false,
+      "tabindex": null,
+      "labelledby": null,
+      "describedby": null,
+      "rect": {
+        "x": 1171.578125,
+        "y": 27,
+        "width": 84.421875,
+        "height": 30
+      },
+      "style": {
+        "color": "rgb(197, 160, 89)",
+        "background": "lab(68.1893 7.87282 41.9904 / 0.05)",
+        "outline": "rgb(197, 160, 89) none 3px",
+        "outlineOffset": "0px"
+      }
+    },
+    {
+      "tag": "A",
+      "role": null,
+      "name": "Back to Labs",
+      "checked": null,
+      "tabindex": null,
+      "labelledby": null,
+      "describedby": null,
+      "rect": {
+        "x": 24,
+        "y": -137,
+        "width": 149.90625,
+        "height": 44
+      },
+      "style": {
+        "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.5)",
+        "background": "rgba(0, 0, 0, 0)",
+        "outline": "oklab(0.999994 0.0000455678 0.0000200868 / 0.5) none 3px",
+        "outlineOffset": "0px"
+      }
+    },
+    {
+      "tag": "A",
+      "role": null,
+      "name": "Production readiness check",
+      "checked": null,
+      "tabindex": null,
+      "labelledby": null,
+      "describedby": null,
+      "rect": {
+        "x": 468.59375,
+        "y": -137,
+        "width": 259.453125,
+        "height": 44
+      },
+      "style": {
+        "color": "rgb(197, 160, 89)",
+        "background": "rgba(0, 0, 0, 0)",
+        "outline": "rgb(197, 160, 89) none 3px",
+        "outlineOffset": "0px"
+      }
+    },
+    {
+      "tag": "A",
+      "role": null,
+      "name": "Shadow AI Audit",
+      "checked": null,
+      "tabindex": null,
+      "labelledby": null,
+      "describedby": null,
+      "rect": {
+        "x": 728.046875,
+        "y": -137,
+        "width": 173.375,
+        "height": 44
+      },
+      "style": {
+        "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.5)",
+        "background": "rgba(0, 0, 0, 0)",
+        "outline": "oklab(0.999994 0.0000455678 0.0000200868 / 0.5) none 3px",
+        "outlineOffset": "0px"
+      }
+    },
+    {
+      "tag": "A",
+      "role": null,
+      "name": "ROI & Cost of Delay",
+      "checked": null,
+      "tabindex": null,
+      "labelledby": null,
+      "describedby": null,
+      "rect": {
+        "x": 901.421875,
+        "y": -137,
+        "width": 204.671875,
+        "height": 44
+      },
+      "style": {
+        "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.5)",
+        "background": "rgba(0, 0, 0, 0)",
+        "outline": "oklab(0.999994 0.0000455678 0.0000200868 / 0.5) none 3px",
+        "outlineOffset": "0px"
+      }
+    },
+    {
+      "tag": "A",
+      "role": null,
+      "name": "Agent Replay",
+      "checked": null,
+      "tabindex": null,
+      "labelledby": null,
+      "describedby": null,
+      "rect": {
+        "x": 1106.09375,
+        "y": -137,
+        "width": 149.90625,
+        "height": 44
+      },
+      "style": {
+        "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.5)",
+        "background": "rgba(0, 0, 0, 0)",
+        "outline": "oklab(0.999994 0.0000455678 0.0000200868 / 0.5) none 3px",
+        "outlineOffset": "0px"
+      }
+    },
+    {
+      "tag": "DIV",
+      "role": "progressbar",
+      "name": "Quiz progress",
+      "checked": null,
+      "tabindex": null,
+      "labelledby": null,
+      "describedby": null,
+      "rect": {
+        "x": 384,
+        "y": -28,
+        "width": 512,
+        "height": 32
+      },
+      "style": {
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "outlineOffset": "0px"
+      }
+    },
+    {
+      "tag": "FIELDSET",
+      "role": "radiogroup",
+      "name": "DATA ARCHITECTURE\nWhich data will the AI system read and write in production, and who owns each source?\n\nUse the arrow keys to move between answers, then press Space to select one.\n\nEvery production source and flow is written down, with a named owner\nWe know the sources, but flows or owners are not written down\nOnly the demo or test data is mapped\nNobody has listed the production data sources yet\nNot sure",
+      "checked": null,
+      "disabled": false,
+      "tabindex": null,
+      "labelledby": "question-dataSources",
+      "describedby": "_r_1_",
+      "rect": {
+        "x": 417,
+        "y": 89,
+        "width": 446,
+        "height": 501.5
+      },
+      "style": {
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "outlineOffset": "0px"
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "role": "radio",
+      "name": "Every production source and flow is written down, with a named owner",
+      "checked": "false",
+      "disabled": false,
+      "tabindex": "0",
+      "labelledby": null,
+      "describedby": null,
+      "rect": {
+        "x": 417,
+        "y": 210.5,
+        "width": 446,
+        "height": 76
+      },
+      "style": {
+        "color": "oklab(0.999994 0.0000455677 0.0000200868 / 0.7)",
+        "background": "rgba(0, 0, 0, 0)",
+        "outline": "rgb(197, 160, 89) none 2px",
+        "outlineOffset": "2px"
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "role": "radio",
+      "name": "We know the sources, but flows or owners are not written down",
+      "checked": "false",
+      "disabled": false,
+      "tabindex": "-1",
+      "labelledby": null,
+      "describedby": null,
+      "rect": {
+        "x": 417,
+        "y": 298.5,
+        "width": 446,
+        "height": 76
+      },
+      "style": {
+        "color": "oklab(0.999994 0.0000455677 0.0000200868 / 0.7)",
+        "background": "rgba(0, 0, 0, 0)",
+        "outline": "oklab(0.999994 0.0000455677 0.0000200868 / 0.7) none 3px",
+        "outlineOffset": "0px"
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "role": "radio",
+      "name": "Only the demo or test data is mapped",
+      "checked": "false",
+      "disabled": false,
+      "tabindex": "-1",
+      "labelledby": null,
+      "describedby": null,
+      "rect": {
+        "x": 417,
+        "y": 386.5,
+        "width": 446,
+        "height": 60
+      },
+      "style": {
+        "color": "oklab(0.999994 0.0000455677 0.0000200868 / 0.7)",
+        "background": "oklab(0.724547 0.0132829 0.0989408 / 0.05)",
+        "outline": "oklab(0.999994 0.0000455677 0.0000200868 / 0.7) none 3px",
+        "outlineOffset": "0px"
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "role": "radio",
+      "name": "Nobody has listed the production data sources yet",
+      "checked": "false",
+      "disabled": false,
+      "tabindex": "-1",
+      "labelledby": null,
+      "describedby": null,
+      "rect": {
+        "x": 417,
+        "y": 458.5,
+        "width": 446,
+        "height": 60
+      },
+      "style": {
+        "color": "oklab(0.999994 0.0000455677 0.0000200868 / 0.7)",
+        "background": "rgba(0, 0, 0, 0)",
+        "outline": "oklab(0.999994 0.0000455677 0.0000200868 / 0.7) none 3px",
+        "outlineOffset": "0px"
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "role": "radio",
+      "name": "Not sure",
+      "checked": "false",
+      "disabled": false,
+      "tabindex": "-1",
+      "labelledby": null,
+      "describedby": null,
+      "rect": {
+        "x": 417,
+        "y": 530.5,
+        "width": 446,
+        "height": 60
+      },
+      "style": {
+        "color": "oklab(0.999994 0.0000455677 0.0000200868 / 0.7)",
+        "background": "rgba(0, 0, 0, 0)",
+        "outline": "oklab(0.999994 0.0000455677 0.0000200868 / 0.7) none 3px",
+        "outlineOffset": "0px"
+      }
+    },
+    {
+      "tag": "SUMMARY",
+      "role": null,
+      "name": "What does this mean?",
+      "checked": null,
+      "tabindex": null,
+      "labelledby": null,
+      "describedby": null,
+      "rect": {
+        "x": 418,
+        "y": 611.5,
+        "width": 444,
+        "height": 44
+      },
+      "style": {
+        "color": "rgb(197, 160, 89)",
+        "background": "rgba(0, 0, 0, 0)",
+        "outline": "rgb(197, 160, 89) solid 3px",
+        "outlineOffset": "0px"
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "role": null,
+      "name": "",
+      "checked": null,
+      "disabled": false,
+      "tabindex": null,
+      "labelledby": null,
+      "describedby": null,
+      "rect": {
+        "x": 434,
+        "y": 1230,
+        "width": 68.75,
+        "height": 44
+      },
+      "style": {
+        "color": "rgb(197, 160, 89)",
+        "background": "rgba(0, 0, 0, 0)",
+        "outline": "rgb(197, 160, 89) none 3px",
+        "outlineOffset": "0px"
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "role": null,
+      "name": "Back",
+      "checked": null,
+      "disabled": false,
+      "tabindex": null,
+      "labelledby": null,
+      "describedby": null,
+      "rect": {
+        "x": 384,
+        "y": 721.5,
+        "width": 80.03125,
+        "height": 46
+      },
+      "style": {
+        "color": "oklab(0.999994 0.0000455677 0.0000200868 / 0.7)",
+        "background": "rgba(0, 0, 0, 0)",
+        "outline": "oklab(0.999994 0.0000455677 0.0000200868 / 0.7) none 3px",
+        "outlineOffset": "0px"
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "role": null,
+      "name": "NEXT",
+      "checked": null,
+      "disabled": true,
+      "tabindex": null,
+      "labelledby": null,
+      "describedby": null,
+      "rect": {
+        "x": 792.75,
+        "y": 722.5,
+        "width": 103.25,
+        "height": 44
+      },
+      "style": {
+        "color": "rgb(10, 26, 47)",
+        "background": "rgb(197, 160, 89)",
+        "outline": "rgb(10, 26, 47) none 3px",
+        "outlineOffset": "0px"
+      }
+    }
+  ],
+  "active": {
+    "tag": "SUMMARY",
+    "text": "What does this mean?",
+    "id": "",
+    "style": {
+      "color": "rgb(197, 160, 89)",
+      "background": "rgba(0, 0, 0, 0)",
+      "outline": "rgb(197, 160, 89) solid 3px",
+      "outlineOffset": "0px"
+    }
+  },
+  "details": [
+    {
+      "open": false,
+      "text": "What does this mean?"
+    }
+  ],
+  "duplicate_ids": [],
+  "text": "Skip to content\nOUR PRODUCT\nCUSTOM AGENTS\nREADINESS REVIEW\nLABS\nBLOG\n\ud83c\uddec\ud83c\udde7 EN\nBack to Labs\nPRODUCTION READINESS CHECK\nSHADOW AI AUDIT\nROI & COST OF DELAY\nAGENT REPLAY\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n\nQuestion 1 of 10 \u00b7 Gate 1 of 5: Data architecture\n\nQuestion 1 of 10\n\nDATA ARCHITECTURE\nWhich data will the AI system read and write in production, and who owns each source?\n\nUse the arrow keys to move between answers, then press Space to select one.\n\nEvery production source and flow is written down, with a named owner\nWe know the sources, but flows or owners are not written down\nOnly the demo or test data is mapped\nNobody has listed the production data sources yet\nNot sure\nWhat does this mean?\nBack\nNEXT"
+}

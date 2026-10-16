@@ -1,0 +1,16 @@
+{
+  "name": "qore-contrast",
+  "version": "0.1.0",
+  "check": ["python3", "-B", "-m", "unittest", "discover", "-s", "tests", "-p", "test_validators.py", "-v"],
+  "invariants": {
+    "contrast-plan": "Plan a narrow validator change without expanding the release scope.",
+    "contrast-review": "A high-severity candidate without independent verification stays PLAUSIBLE and does not become a verified blocker.",
+    "contrast-ux": "The alternate synthetic route must reach its alternate resolved state."
+  },
+  "fixture": {
+    "kind": "fixture",
+    "entry_url": "http://127.0.0.1:8765/alternate.html",
+    "allowed_origins": ["http://127.0.0.1:8765"],
+    "required_state": "Alternate resolved synthetic state."
+  }
+}

@@ -1,0 +1,318 @@
+#!/usr/bin/env python3
+"""Build, verify and derive local Qore skill packages without overwriting installations."""
+import argparse
+import hashlib
+import json
+import os
+from pathlib import Path
+import re
+import shutil
+import sys
+import tempfile
+import zipfile
+
+sys.dont_write_bytecode = True
+from context import contained, digest, read_json, validate_profile
+from run_contract import validate_run
+
+ROOT = Path(__file__).resolve().parent.parent
+SKILLS = ("qore-plan", "qore-review", "qore-ux-review")
+METHODS = dict(zip(SKILLS, ("plan", "review", "ux")))
+VERSION = "0.1.0"
+
+
+def write_json(path, value):
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(value, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+
+
+def files_under(root):
+    files = []
+    for path in sorted(root.rglob("*")):
+        if path.is_symlink():
+            raise ValueError("Symlinks are not permitted in a release: " + str(path.relative_to(root)))
+        if path.is_file():
+            files.append(path)
+    return files
+
+
+def check_references(skill):
+    for path in files_under(skill):
+        if path.suffix not in (".md", ".yaml", ".json", ".py", ".mjs", ".sh"):
+            continue
+        text = path.read_text(encoding="utf-8")
+        if re.search(r"/Users/[A-Za-z0-9_.-]+/|/home/(?!node/)[A-Za-z0-9_.-]+/|~/(?:\.claude|\.codex)/", text):
+            raise ValueError("Personal path in skill: " + str(path.relative_to(skill)))
+        if path.suffix != ".md":
+            continue
+        for ref in re.findall(r"\]\(([^)]+)\)", text):
+            if ref.startswith(("https://", "#")):
+                continue
+            if "://" in ref:
+                raise ValueError("Only informational HTTPS links are permitted: " + ref)
+            target = (path.parent / ref.split("#")[0]).resolve()
+            if not target.is_relative_to(skill.resolve()) or not target.is_file():
+                raise ValueError("Unresolved or escaping local skill reference: " + ref)
+
+
+def inventory(root, exclude=()):
+    return [{"path": str(path.relative_to(root)), "sha256": digest(path), "origin": "first-party", "license": "MIT"}
+            for path in files_under(root) if str(path.relative_to(root)) not in exclude]
+
+
+def make_skill_manifest(skill, profile=None):
+    check_references(skill)
+    write_json(skill / "references/release.json", {"schema": "qore-release/1", "version": VERSION,
+               "host": "codex", "profile": profile, "redistribution": "MIT-first-party",
+               "resources": inventory(skill, ("references/release.json",))})
+
+
+def finalize(root, kind, profile=None):
+    skill_root = root / "skills" if kind == "generic" else root
+    for folder in sorted(skill_root.iterdir()):
+        if folder.is_dir() and folder.name.startswith("qore-"):
+            make_skill_manifest(folder, profile)
+    manifest = {"schema": "qore-release/1", "version": VERSION, "kind": kind,
+                "host": "codex", "profile": profile, "redistribution": "MIT-first-party",
+                "resources": inventory(root, ("manifest.json",))}
+    write_json(root / "manifest.json", manifest)
+    return manifest
+
+
+def verify(root):
+    root = root.resolve()
+    manifest = read_json(root / "manifest.json")
+    if manifest.get("schema") != "qore-release/1":
+        raise ValueError("Unknown release schema")
+    records = manifest.get("resources")
+    if not isinstance(records, list) or not records:
+        raise ValueError("Release needs an explicit resource inventory")
+    expected = {"manifest.json"}
+    for item in records:
+        relative = item.get("path")
+        if relative in expected:
+            raise ValueError("Duplicate release resource: " + str(relative))
+        expected.add(relative)
+        path = contained(root, relative)
+        if path.is_symlink() or digest(path) != item.get("sha256"):
+            raise ValueError("Resource changed: " + relative)
+    actual = {str(p.relative_to(root)) for p in files_under(root)}
+    if expected != actual:
+        raise ValueError("Release inventory differs: " + ", ".join(sorted(expected ^ actual)))
+    skill_root = root / "skills" if manifest.get("kind") == "generic" else root
+    for folder in skill_root.iterdir():
+        if folder.is_dir() and folder.name.startswith("qore-"):
+            check_references(folder)
+            local = read_json(folder / "references/release.json")
+            if local.get("schema") != "qore-release/1":
+                raise ValueError("Unknown standalone skill schema")
+            for item in local["resources"]:
+                if digest(contained(folder, item["path"])) != item["sha256"]:
+                    raise ValueError("Standalone resource changed")
+            local_expected = {item["path"] for item in local["resources"]}
+            if len(local_expected) != len(local["resources"]):
+                raise ValueError("Duplicate standalone resource")
+            local_expected.add("references/release.json")
+            if local_expected != {str(p.relative_to(folder)) for p in files_under(folder)}:
+                raise ValueError("Standalone inventory is incomplete")
+    return {"valid": True, "schema": "qore-release/1", "version": manifest["version"],
+            "kind": manifest["kind"], "files": len(actual), "manifest_sha256": digest(root / "manifest.json")}
+
+
+def build(output):
+    allowlist = read_json(ROOT / "release-files.json")
+    if not isinstance(allowlist, list) or not allowlist or len(allowlist) != len(set(allowlist)):
+        raise ValueError("release-files.json must be an explicit unique list")
+    selected = [contained(ROOT, name) for name in allowlist]
+    if any(p.is_symlink() for p in selected):
+        raise ValueError("Allowlisted files may not be symlinks")
+    check_redistribution(ROOT, allowlist)
+    output.mkdir(parents=True, exist_ok=True)
+    destination = output / ("qore-skills-" + VERSION)
+    archive = output / (destination.name + ".zip")
+    if destination.exists() or archive.exists():
+        raise ValueError("Release destination exists; choose new staging")
+    temporary = Path(tempfile.mkdtemp(prefix=".qore-build-", dir=output))
+    try:
+        tree = temporary / destination.name
+        tree.mkdir()
+        for relative, source in zip(allowlist, selected):
+            target = tree / relative
+            target.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copyfile(source, target)
+        check_references(tree)
+        finalize(tree, "generic")
+        verify(tree)
+        zip_path = temporary / archive.name
+        with zipfile.ZipFile(zip_path, "w", compression=zipfile.ZIP_DEFLATED) as z:
+            for path in files_under(tree):
+                item = zipfile.ZipInfo(str(Path(tree.name) / path.relative_to(tree)), date_time=(2026, 10, 15, 0, 0, 0))
+                item.create_system = 3
+                item.external_attr = 0o100644 << 16
+                item.compress_type = zipfile.ZIP_DEFLATED
+                z.writestr(item, path.read_bytes())
+        tree.rename(destination)
+        zip_path.rename(archive)
+    finally:
+        shutil.rmtree(temporary)
+    return {"bundle": str(destination), "archive": str(archive), "sha256": digest(archive), **verify(destination)}
+
+
+def check_redistribution(root, allowlist):
+    """Check explicit maintainer attestations, not infer rights from file contents."""
+    packet = read_json(root / "release-rights.json")
+    if not isinstance(packet, dict) or packet.get("schema") != "qore-rights/1":
+        raise ValueError("Expected explicit redistribution record qore-rights/1")
+    records = packet.get("resources")
+    if not isinstance(records, list):
+        raise ValueError("Redistribution resources must be a list")
+    expected = set(allowlist) - {"release-rights.json", "release-files.json"}
+    seen = set()
+    for record in records:
+        if not isinstance(record, dict) or record.get("path") not in expected or record["path"] in seen:
+            raise ValueError("Unexpected or duplicate redistribution resource: " + str(record.get("path") if isinstance(record, dict) else record))
+        name = record["path"]
+        seen.add(name)
+        if record.get("status") != "approved" or record.get("license") != "MIT" or record.get("origin") not in ("first-party", "Qaizen-public-observation") or not record.get("basis"):
+            raise ValueError("Unknown or unauthorized redistribution right: " + name)
+        if digest(contained(root, name)) != record.get("sha256"):
+            raise ValueError("Redistribution review is stale: " + name)
+    if expected != seen:
+        raise ValueError("Missing redistribution review: " + ", ".join(sorted(expected - seen)))
+    return {"valid": True, "resources": len(seen), "limit": "Maintainer attestations require truthful rights review; hashes do not determine ownership."}
+
+
+def derive(profile_path, project_root, output):
+    profile = read_json(profile_path)
+    for method in METHODS.values():
+        result = validate_profile(profile, project_root, method)
+        if result["coverage"] != "COMPLETE":
+            raise ValueError("Profile is not current for " + method + ": " + "; ".join(result["problems"]))
+    if output.exists():
+        raise ValueError("Derived destination exists; choose new staging")
+    profile_info = {"id": profile["id"], "version": profile["version"], "sha256": digest(profile_path)}
+    output.parent.mkdir(parents=True, exist_ok=True)
+    temporary = Path(tempfile.mkdtemp(prefix=".qore-derive-", dir=output.parent))
+    tree = temporary / "candidate"
+    tree.mkdir()
+    try:
+        for name in SKILLS:
+            derived = name + "-" + profile["id"]
+            target = tree / derived
+            shutil.copytree(ROOT / "skills" / name, target, symlinks=True)
+            for path in files_under(target):
+                if path.suffix in (".md", ".yaml"):
+                    text = path.read_text(encoding="utf-8").replace("$" + name, "$" + derived)
+                    if path.name == "SKILL.md":
+                        text = re.sub(r"(?m)^name:.*$", "name: " + derived, text, count=1)
+                        text += ("\n## Generated project binding\n\nThis derivative must load [its project profile](references/project.json) before selecting project facts. "
+                                 "Run its bundled project-check.py against the supplied project root with --method " + METHODS[name] +
+                                 ". Consume only current returned facts; stale required context is PARTIAL or BLOCKED. "
+                                 "The profile grants no action permission. Edit the maintained profile, not this generated copy.\n")
+                    path.write_text(text, encoding="utf-8")
+            write_json(target / "references/project.json", profile)
+        finalize(tree, "derived", profile_info)
+        verify(tree)
+        tree.rename(output)
+    finally:
+        shutil.rmtree(temporary)
+    return {"output": str(output), "profile": profile_info, **verify(output)}
+
+
+def install(source, project_root):
+    verify(source)
+    manifest = read_json(source / "manifest.json")
+    base = source / "skills" if manifest["kind"] == "generic" else source
+    candidates = [p for p in sorted(base.iterdir()) if p.is_dir() and p.name.startswith("qore-")]
+    if len(candidates) != 3:
+        raise ValueError("Expected exactly three skill directories")
+    target = project_root / ".agents/skills"
+    for folder in candidates:
+        if (target / folder.name).exists() or (target / folder.name).is_symlink():
+            raise ValueError("Installed destination exists; preserve it and compare a new candidate: " + folder.name)
+    # Reject symlinked installation ancestors rather than writing through them.
+    for ancestor in (project_root, project_root / ".agents", target):
+        if ancestor.is_symlink():
+            raise ValueError("Installation ancestors must not be symlinks")
+    target.mkdir(parents=True, exist_ok=True)
+    for folder in candidates:
+        shutil.copytree(folder, target / folder.name)
+    return {"installed": [str(target / p.name) for p in candidates], "replaced": False}
+
+
+def snapshot(root):
+    root = root.resolve()
+    rows = []
+    for path in sorted(root.rglob("*")):
+        if any(p in (".git", "__pycache__", "dist", ".agents", ".venv") for p in path.relative_to(root).parts):
+            continue
+        if path.is_symlink():
+            raise ValueError("Snapshot source is a symlink: " + str(path.relative_to(root)))
+        if path.is_file():
+            rows.append({"path": str(path.relative_to(root)), "sha256": digest(path)})
+    value = hashlib.sha256(json.dumps(rows, sort_keys=True, separators=(",", ":")).encode()).hexdigest()
+    return {"snapshot_sha256": value, "files": rows}
+
+
+def compare(source, project_root):
+    """Show candidate divergence without replacing or merging installed files."""
+    verify(source)
+    for ancestor in (project_root, project_root / ".agents", project_root / ".agents/skills"):
+        if ancestor.is_symlink():
+            raise ValueError("Installation ancestors must not be symlinks")
+    manifest = read_json(source / "manifest.json")
+    base = source / "skills" if manifest["kind"] == "generic" else source
+    changes = []
+    for folder in sorted(base.iterdir()):
+        if not folder.is_dir() or not folder.name.startswith("qore-"):
+            continue
+        current = project_root / ".agents/skills" / folder.name
+        if current.is_symlink():
+            raise ValueError("Installed skill must not be a symlink: " + folder.name)
+        old_files = {str(p.relative_to(current)): p for p in files_under(current)} if current.is_dir() else {}
+        new_files = {str(p.relative_to(folder)): p for p in files_under(folder)}
+        baseline = {}
+        if "references/release.json" in old_files:
+            local = read_json(old_files["references/release.json"])
+            baseline = {r["path"]: r["sha256"] for r in local.get("resources", [])}
+        for name in sorted(old_files.keys() | new_files.keys()):
+            before = digest(old_files[name]) if name in old_files else None
+            after = digest(new_files[name]) if name in new_files else None
+            if before != after:
+                changes.append({"skill": folder.name, "path": name, "installed_sha256": before,
+                                "candidate_sha256": after, "local_adaptation": name in baseline and before != baseline[name]})
+    return {"changes": changes, "changed": bool(changes), "replaced": False,
+            "limit": "This comparison does not merge content or authorize migration."}
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    sub = parser.add_subparsers(dest="command", required=True)
+    p = sub.add_parser("build"); p.add_argument("--output", type=Path, required=True)
+    p = sub.add_parser("verify"); p.add_argument("bundle", type=Path)
+    p = sub.add_parser("derive")
+    p.add_argument("--profile", type=Path, required=True); p.add_argument("--project-root", type=Path, required=True); p.add_argument("--output", type=Path, required=True)
+    p = sub.add_parser("install")
+    p.add_argument("--source", type=Path, required=True); p.add_argument("--project-root", type=Path, required=True)
+    p = sub.add_parser("compare")
+    p.add_argument("--source", type=Path, required=True); p.add_argument("--project-root", type=Path, required=True)
+    p = sub.add_parser("snapshot"); p.add_argument("--root", type=Path, required=True)
+    p = sub.add_parser("validate-run"); p.add_argument("run", type=Path); p.add_argument("--evidence-root", type=Path)
+    args = parser.parse_args()
+    try:
+        if args.command == "build": result = build(args.output)
+        elif args.command == "verify": result = verify(args.bundle)
+        elif args.command == "derive": result = derive(args.profile, args.project_root, args.output)
+        elif args.command == "install": result = install(args.source, args.project_root)
+        elif args.command == "compare": result = compare(args.source, args.project_root)
+        elif args.command == "snapshot": result = snapshot(args.root)
+        else: result = validate_run(read_json(args.run), args.evidence_root or args.run.parent)
+        print(json.dumps(result, indent=2))
+        return 0
+    except (ValueError, OSError, TypeError, KeyError) as exc:
+        print(json.dumps({"valid": False, "error": str(exc)}), file=sys.stderr)
+        return 1
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

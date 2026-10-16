@@ -1,0 +1,45 @@
+{
+  "checked_at": "2026-10-15T20:19:29.599062+00:00",
+  "application_fixes": [],
+  "source_checks": [
+    {
+      "path": "src/app/[locale]/labs/page.tsx",
+      "sha256": "527e403e2924428a0624f89e22c924d99fa5cdd526ba8156201e6ab996856bad",
+      "current_sha256": "527e403e2924428a0624f89e22c924d99fa5cdd526ba8156201e6ab996856bad"
+    },
+    {
+      "path": "src/app/[locale]/labs/readiness-check/page.tsx",
+      "sha256": "0f5db270478551012de5b51942647d51d4d01bcf4acd016022d67a2b83893448",
+      "current_sha256": "0f5db270478551012de5b51942647d51d4d01bcf4acd016022d67a2b83893448"
+    },
+    {
+      "path": "src/components/labs/readiness-check/index.tsx",
+      "sha256": "e328586561237a8a9f75f4d41a7f52eb1b3240157cd60a72d88fbb8d42e34035",
+      "current_sha256": "e328586561237a8a9f75f4d41a7f52eb1b3240157cd60a72d88fbb8d42e34035"
+    },
+    {
+      "path": "src/components/labs/readiness-check/ReadinessIntro.tsx",
+      "sha256": "b64baec1444cf6a6c0e4fd9b5775efd8f0f3be564251a884f8d7f3b5b0fc403a",
+      "current_sha256": "b64baec1444cf6a6c0e4fd9b5775efd8f0f3be564251a884f8d7f3b5b0fc403a"
+    },
+    {
+      "path": "src/components/labs/readiness-check/ReadinessQuestions.tsx",
+      "sha256": "a26c27dc64490b5fa8ded3da57d461c751a3f8771d19d6a4547fd23d1dcbde0d",
+      "current_sha256": "a26c27dc64490b5fa8ded3da57d461c751a3f8771d19d6a4547fd23d1dcbde0d"
+    },
+    {
+      "path": "src/components/labs/readiness-check/QuestionHelp.tsx",
+      "sha256": "dccb3d2071d708a7740a1305df54fef6a4f43c8c6485a08e437b4a17f31cef29",
+      "current_sha256": "dccb3d2071d708a7740a1305df54fef6a4f43c8c6485a08e437b4a17f31cef29"
+    },
+    {
+      "path": "src/components/labs/shared/quiz/QuizCard.tsx",
+      "sha256": "b154bed2cb4235c978c512218b149ce61828b0d5bf7edf794ac80919e545d268",
+      "current_sha256": "b154bed2cb4235c978c512218b149ce61828b0d5bf7edf794ac80919e545d268"
+    }
+  ],
+  "all_source_context_unchanged": true,
+  "instruction_binding": "candidate-binding.json",
+  "observations": "All browser/gate evidence freshly captured after initial scope. No historic b proof reused.",
+  "deployment_revision_limit": "Live deployed revision/change time unknown; local source hashes provide context only."
+}

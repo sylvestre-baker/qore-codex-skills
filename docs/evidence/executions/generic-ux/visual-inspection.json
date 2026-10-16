@@ -1,0 +1,17 @@
+{
+  "operator": "Maintainer-operated agent",
+  "inspected_at": "2026-10-15T19:44:52.807935+00:00",
+  "images_opened": [
+    "g0-entry-i1.png",
+    "g2-question-resolved-i1.png",
+    "g5-summary-keyboard-focus-i1.png",
+    "g2-help-expanded-keyboard-i1.png",
+    "g3-ssr-without-js-i1.png",
+    "g5-intro-restored-focus-i1.png",
+    "g3-viewport-intro.png",
+    "g3-viewport-summary-focused.png",
+    "g3-viewport-help-expanded.png",
+    "g3-viewport-restored.png"
+  ],
+  "result": "Selected desktop content and focused controls are readable, with no observed horizontal overflow. Long help content scrolls vertically. True-viewport screenshots corroborate layout; fullPage/video capture resizing is an instrumentation artifact and is not called a website defect."
+}

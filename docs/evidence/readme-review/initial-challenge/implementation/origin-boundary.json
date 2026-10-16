@@ -1,0 +1,102 @@
+{
+  "procedure": "Compare each release-rights resource origin/license/digest with same-path resource in freshly built manifest",
+  "count": 12,
+  "differences": [
+    {
+      "path": "docs/evidence/browser/README.md",
+      "rights_origin": "Qaizen-public-observation",
+      "manifest_origin": "first-party",
+      "rights_license": "MIT",
+      "manifest_license": "MIT",
+      "same_digest": true
+    },
+    {
+      "path": "docs/evidence/browser/capability-matrix.json",
+      "rights_origin": "Qaizen-public-observation",
+      "manifest_origin": "first-party",
+      "rights_license": "MIT",
+      "manifest_license": "MIT",
+      "same_digest": true
+    },
+    {
+      "path": "docs/evidence/browser/fixture-observations.json",
+      "rights_origin": "Qaizen-public-observation",
+      "manifest_origin": "first-party",
+      "rights_license": "MIT",
+      "manifest_license": "MIT",
+      "same_digest": true
+    },
+    {
+      "path": "docs/evidence/browser/observations.json",
+      "rights_origin": "Qaizen-public-observation",
+      "manifest_origin": "first-party",
+      "rights_license": "MIT",
+      "manifest_license": "MIT",
+      "same_digest": true
+    },
+    {
+      "path": "docs/evidence/browser/provenance.json",
+      "rights_origin": "Qaizen-public-observation",
+      "manifest_origin": "first-party",
+      "rights_license": "MIT",
+      "manifest_license": "MIT",
+      "same_digest": true
+    },
+    {
+      "path": "docs/evidence/browser/qaizen-actions.json",
+      "rights_origin": "Qaizen-public-observation",
+      "manifest_origin": "first-party",
+      "rights_license": "MIT",
+      "manifest_license": "MIT",
+      "same_digest": true
+    },
+    {
+      "path": "docs/evidence/browser/qaizen-demo-captioned.mp4",
+      "rights_origin": "Qaizen-public-observation",
+      "manifest_origin": "first-party",
+      "rights_license": "MIT",
+      "manifest_license": "MIT",
+      "same_digest": true
+    },
+    {
+      "path": "docs/evidence/browser/qaizen-demo.en.vtt",
+      "rights_origin": "Qaizen-public-observation",
+      "manifest_origin": "first-party",
+      "rights_license": "MIT",
+      "manifest_license": "MIT",
+      "same_digest": true
+    },
+    {
+      "path": "docs/evidence/browser/qaizen-entry.png",
+      "rights_origin": "Qaizen-public-observation",
+      "manifest_origin": "first-party",
+      "rights_license": "MIT",
+      "manifest_license": "MIT",
+      "same_digest": true
+    },
+    {
+      "path": "docs/evidence/browser/qaizen-question.png",
+      "rights_origin": "Qaizen-public-observation",
+      "manifest_origin": "first-party",
+      "rights_license": "MIT",
+      "manifest_license": "MIT",
+      "same_digest": true
+    },
+    {
+      "path": "docs/evidence/browser/qaizen-returned.png",
+      "rights_origin": "Qaizen-public-observation",
+      "manifest_origin": "first-party",
+      "rights_license": "MIT",
+      "manifest_license": "MIT",
+      "same_digest": true
+    },
+    {
+      "path": "docs/evidence/browser/qaizen-transcript.md",
+      "rights_origin": "Qaizen-public-observation",
+      "manifest_origin": "first-party",
+      "rights_license": "MIT",
+      "manifest_license": "MIT",
+      "same_digest": true
+    }
+  ]
+}

@@ -1,0 +1,334 @@
+{
+  "schema": "qore-public-transformation/1",
+  "id": "public-derived-review-probes-20261015",
+  "source_candidate_sha256": "17888fa30f1024707fc3ee6efda856ca330bc6365e09737007096f5d7db62da8",
+  "mapping": [
+    {
+      "raw_artifact_id": "public/commands.md",
+      "raw_sha256": "28ee753643e2eb8a6d7cc27087fc3eacebc741635e6afb5e373c91609cc86152",
+      "public_path": "public/commands.md",
+      "public_sha256": "28ee753643e2eb8a6d7cc27087fc3eacebc741635e6afb5e373c91609cc86152",
+      "transformation": "Preserved selected public bytes; source Markdown presented as text when renamed."
+    },
+    {
+      "raw_artifact_id": "public/confirmed-high-declared-input.json",
+      "raw_sha256": "f38448a7439e5d91ebcd65435ef380ff95c254cddef23d4c1ab0f65d23c75388",
+      "public_path": "public/confirmed-high-declared-input.json",
+      "public_sha256": "f38448a7439e5d91ebcd65435ef380ff95c254cddef23d4c1ab0f65d23c75388",
+      "transformation": "Preserved selected public bytes; source Markdown presented as text when renamed."
+    },
+    {
+      "raw_artifact_id": "public/confirmed-with-skipped-input.json",
+      "raw_sha256": "1043ba5397fc36570b0c8adf1fa3cc913f514d5af8843c3c2bd34c0f303256f8",
+      "public_path": "public/confirmed-with-skipped-input.json",
+      "public_sha256": "1043ba5397fc36570b0c8adf1fa3cc913f514d5af8843c3c2bd34c0f303256f8",
+      "transformation": "Preserved selected public bytes; source Markdown presented as text when renamed."
+    },
+    {
+      "raw_artifact_id": "public/consumed-snapshot-manifest.json",
+      "raw_sha256": "2dfb91517fff2128f05aa3be9d2d4520744da03bad17cee36784677d729bb731",
+      "public_path": "public/consumed-snapshot-manifest.json",
+      "public_sha256": "2dfb91517fff2128f05aa3be9d2d4520744da03bad17cee36784677d729bb731",
+      "transformation": "Preserved selected public bytes; source Markdown presented as text when renamed."
+    },
+    {
+      "raw_artifact_id": "public/critical-unverified-input.json",
+      "raw_sha256": "a29f63aecc98b34def850f39f8e61a80511ef2fe191e593a29f0c260bcf94683",
+      "public_path": "public/critical-unverified-input.json",
+      "public_sha256": "a29f63aecc98b34def850f39f8e61a80511ef2fe191e593a29f0c260bcf94683",
+      "transformation": "Preserved selected public bytes; source Markdown presented as text when renamed."
+    },
+    {
+      "raw_artifact_id": "public/empty-declared-input.json",
+      "raw_sha256": "8aa973100a15bf817985395637131e838cf84e427be4792583def923f020f5fa",
+      "public_path": "public/empty-declared-input.json",
+      "public_sha256": "8aa973100a15bf817985395637131e838cf84e427be4792583def923f020f5fa",
+      "transformation": "Preserved selected public bytes; source Markdown presented as text when renamed."
+    },
+    {
+      "raw_artifact_id": "public/high-unverified-input.json",
+      "raw_sha256": "236acc5c10bb9207fbbc52e3593922d1e234a8eb4b7847bb1941b9e8b3f506b2",
+      "public_path": "public/high-unverified-input.json",
+      "public_sha256": "236acc5c10bb9207fbbc52e3593922d1e234a8eb4b7847bb1941b9e8b3f506b2",
+      "transformation": "Preserved selected public bytes; source Markdown presented as text when renamed."
+    },
+    {
+      "raw_artifact_id": "public/identities.json",
+      "raw_sha256": "8bc990609807f674b52a69b4cd0b00b28a9130363c30a4e77b5126b311739988",
+      "public_path": "public/identities.json",
+      "public_sha256": "8bc990609807f674b52a69b4cd0b00b28a9130363c30a4e77b5126b311739988",
+      "transformation": "Preserved selected public bytes; source Markdown presented as text when renamed."
+    },
+    {
+      "raw_artifact_id": "public/invariant-probes.json",
+      "raw_sha256": "e1cf56f8da5966b797159728f3154df0a5afbff84c73f131163087e78fd7bf9a",
+      "public_path": "public/invariant-probes.json",
+      "public_sha256": "e1cf56f8da5966b797159728f3154df0a5afbff84c73f131163087e78fd7bf9a",
+      "transformation": "Preserved selected public bytes; source Markdown presented as text when renamed."
+    },
+    {
+      "raw_artifact_id": "public/missing-envelope-input.json",
+      "raw_sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+      "public_path": "public/missing-envelope-input.json",
+      "public_sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+      "transformation": "Preserved selected public bytes; source Markdown presented as text when renamed."
+    },
+    {
+      "raw_artifact_id": "public/preflight.json",
+      "raw_sha256": "05204de8a1b31cf2204915e9b5584a40376142fbbf46b2cebaa6ee2c296e2e12",
+      "public_path": "public/preflight.json",
+      "public_sha256": "05204de8a1b31cf2204915e9b5584a40376142fbbf46b2cebaa6ee2c296e2e12",
+      "transformation": "Preserved selected public bytes; source Markdown presented as text when renamed."
+    },
+    {
+      "raw_artifact_id": "public/preflight.md",
+      "raw_sha256": "560d59b51b3d1bc9660be85d39e33f97418d5a43c5901b8b18a49c9a3742c043",
+      "public_path": "public/preflight.md",
+      "public_sha256": "560d59b51b3d1bc9660be85d39e33f97418d5a43c5901b8b18a49c9a3742c043",
+      "transformation": "Preserved selected public bytes; source Markdown presented as text when renamed."
+    },
+    {
+      "raw_artifact_id": "public/profile-use.md",
+      "raw_sha256": "54468b5969b50d4ef82a676f8b7283423f9b3a877cf1a96605aeb5141137cba3",
+      "public_path": "public/profile-use.md",
+      "public_sha256": "54468b5969b50d4ef82a676f8b7283423f9b3a877cf1a96605aeb5141137cba3",
+      "transformation": "Preserved selected public bytes; source Markdown presented as text when renamed."
+    },
+    {
+      "raw_artifact_id": "public/project-validation.json",
+      "raw_sha256": "dbe7150f0845f1ad9eb0126ebac70f7c53aadc4176230eb431bc588421dcf71c",
+      "public_path": "public/project-validation.json",
+      "public_sha256": "dbe7150f0845f1ad9eb0126ebac70f7c53aadc4176230eb431bc588421dcf71c",
+      "transformation": "Preserved selected public bytes; source Markdown presented as text when renamed."
+    },
+    {
+      "raw_artifact_id": "public/report.md",
+      "raw_sha256": "9bc6d0747d221945be7f015573a03f695a86d45e25b59301ff21cbcb057f1cae",
+      "public_path": "public/report.md",
+      "public_sha256": "9bc6d0747d221945be7f015573a03f695a86d45e25b59301ff21cbcb057f1cae",
+      "transformation": "Preserved selected public bytes; source Markdown presented as text when renamed."
+    },
+    {
+      "raw_artifact_id": "public/source/.agents/skills/qore-review-qore/references/project.json",
+      "raw_sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9",
+      "public_path": "public/source/.agents/skills/qore-review-qore/references/project.json",
+      "public_sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9",
+      "transformation": "Preserved selected public bytes; source Markdown presented as text when renamed."
+    },
+    {
+      "raw_artifact_id": "public/source/.agents/skills/qore-review-qore/scripts/finding-lint.mjs",
+      "raw_sha256": "89b02ef5912adf3f6ff86ad8652a3f21e7313bb0cc0a280a3dd9810546abdef9",
+      "public_path": "public/source/.agents/skills/qore-review-qore/scripts/finding-lint.mjs",
+      "public_sha256": "89b02ef5912adf3f6ff86ad8652a3f21e7313bb0cc0a280a3dd9810546abdef9",
+      "transformation": "Preserved selected public bytes; source Markdown presented as text when renamed."
+    },
+    {
+      "raw_artifact_id": "public/source/.agents/skills/qore-review-qore/scripts/redact-for-verifier.mjs",
+      "raw_sha256": "dc249524c749ad5b511aef0a2cf08b4cfd5c47c1e0de4fd41c5c70746b471083",
+      "public_path": "public/source/.agents/skills/qore-review-qore/scripts/redact-for-verifier.mjs",
+      "public_sha256": "dc249524c749ad5b511aef0a2cf08b4cfd5c47c1e0de4fd41c5c70746b471083",
+      "transformation": "Preserved selected public bytes; source Markdown presented as text when renamed."
+    },
+    {
+      "raw_artifact_id": "public/source/examples/validator-hardening.md",
+      "raw_sha256": "6f25b2edcd6d0826b12fbb47a99fc4162a1089eef71eaf7f16ea2cb7a8239a87",
+      "public_path": "public/source/examples/validator-hardening.md",
+      "public_sha256": "6f25b2edcd6d0826b12fbb47a99fc4162a1089eef71eaf7f16ea2cb7a8239a87",
+      "transformation": "Preserved selected public bytes; source Markdown presented as text when renamed."
+    },
+    {
+      "raw_artifact_id": "public/source/qore.json",
+      "raw_sha256": "948b2784fa7970cf90a25c338a29067b13d8b4476f666d712a5eb95fc6f641c8",
+      "public_path": "public/source/qore.json",
+      "public_sha256": "948b2784fa7970cf90a25c338a29067b13d8b4476f666d712a5eb95fc6f641c8",
+      "transformation": "Preserved selected public bytes; source Markdown presented as text when renamed."
+    },
+    {
+      "raw_artifact_id": "public/source/tests/test_validators.py",
+      "raw_sha256": "cda93831ca8bce7debc036509d47f07a1b55c0e93b59ba1550cf090cac704703",
+      "public_path": "public/source/tests/test_validators.py",
+      "public_sha256": "cda93831ca8bce7debc036509d47f07a1b55c0e93b59ba1550cf090cac704703",
+      "transformation": "Preserved selected public bytes; source Markdown presented as text when renamed."
+    },
+    {
+      "raw_artifact_id": "public/source-stability.json",
+      "raw_sha256": "87663352b18f49228a06347417b0da76e67ea11af4b392394e79fd4ab71bffad",
+      "public_path": "public/source-stability.json",
+      "public_sha256": "87663352b18f49228a06347417b0da76e67ea11af4b392394e79fd4ab71bffad",
+      "transformation": "Preserved selected public bytes; source Markdown presented as text when renamed."
+    },
+    {
+      "raw_artifact_id": "contrast/identities.json",
+      "raw_sha256": "52a76cb6d9a25b23d4269894e01ada4f12232d5d1e8c145d6e1598b3fdf3fd27",
+      "public_path": "contrast/identities.json",
+      "public_sha256": "52a76cb6d9a25b23d4269894e01ada4f12232d5d1e8c145d6e1598b3fdf3fd27",
+      "transformation": "Preserved selected public bytes; source Markdown presented as text when renamed."
+    },
+    {
+      "raw_artifact_id": "contrast/invariant-probe.json",
+      "raw_sha256": "3e7e284240d572bcb0d58a4bdb831ce98cca71ca2766b2d390dd6d94dfcb7e3c",
+      "public_path": "contrast/invariant-probe.json",
+      "public_sha256": "3e7e284240d572bcb0d58a4bdb831ce98cca71ca2766b2d390dd6d94dfcb7e3c",
+      "transformation": "Preserved selected public bytes; source Markdown presented as text when renamed."
+    },
+    {
+      "raw_artifact_id": "contrast/invariant-probe.md",
+      "raw_sha256": "9d70fafe639757ce7ed7e5f3acf703ac6a725e8b264351fb3febc166332a9585",
+      "public_path": "contrast/invariant-probe.md",
+      "public_sha256": "9d70fafe639757ce7ed7e5f3acf703ac6a725e8b264351fb3febc166332a9585",
+      "transformation": "Preserved selected public bytes; source Markdown presented as text when renamed."
+    },
+    {
+      "raw_artifact_id": "contrast/preflight.json",
+      "raw_sha256": "6719b95feb14d3298e84a20205eefa59d02ad572fc19706c83a5d1d67cbd4462",
+      "public_path": "contrast/preflight.json",
+      "public_sha256": "6719b95feb14d3298e84a20205eefa59d02ad572fc19706c83a5d1d67cbd4462",
+      "transformation": "Preserved selected public bytes; source Markdown presented as text when renamed."
+    },
+    {
+      "raw_artifact_id": "contrast/preflight.md",
+      "raw_sha256": "ed9cf3732a39cd12e59cb69a186b2e95be510dc95705d4775043147e938079f7",
+      "public_path": "contrast/preflight.md",
+      "public_sha256": "ed9cf3732a39cd12e59cb69a186b2e95be510dc95705d4775043147e938079f7",
+      "transformation": "Preserved selected public bytes; source Markdown presented as text when renamed."
+    },
+    {
+      "raw_artifact_id": "contrast/profile-use.md",
+      "raw_sha256": "1facbc858aa56e5387261b1d631f680bdc383846e5d2864991b0b93e9d7edd60",
+      "public_path": "contrast/profile-use.md",
+      "public_sha256": "1facbc858aa56e5387261b1d631f680bdc383846e5d2864991b0b93e9d7edd60",
+      "transformation": "Preserved selected public bytes; source Markdown presented as text when renamed."
+    },
+    {
+      "raw_artifact_id": "contrast/project-validation.json",
+      "raw_sha256": "6cbb856d56f00afdd02ba33185faf6bc2d91d61a8f3b5193e87f85a4f24f1dde",
+      "public_path": "contrast/project-validation.json",
+      "public_sha256": "6cbb856d56f00afdd02ba33185faf6bc2d91d61a8f3b5193e87f85a4f24f1dde",
+      "transformation": "Preserved selected public bytes; source Markdown presented as text when renamed."
+    },
+    {
+      "raw_artifact_id": "contrast/project-validation.md",
+      "raw_sha256": "7158d27fcf9533957c117e513b54041cbe66ece785002f0f976fdc77c9439abc",
+      "public_path": "contrast/project-validation.md",
+      "public_sha256": "7158d27fcf9533957c117e513b54041cbe66ece785002f0f976fdc77c9439abc",
+      "transformation": "Preserved selected public bytes; source Markdown presented as text when renamed."
+    },
+    {
+      "raw_artifact_id": "contrast/review.md",
+      "raw_sha256": "6c647b9e3fba221b4d73ba90bfdb6a1a0d5cc644f8e5998beb6fa8fb59ddc8c2",
+      "public_path": "contrast/review.md",
+      "public_sha256": "6c647b9e3fba221b4d73ba90bfdb6a1a0d5cc644f8e5998beb6fa8fb59ddc8c2",
+      "transformation": "Preserved selected public bytes; source Markdown presented as text when renamed."
+    },
+    {
+      "raw_artifact_id": "contrast/scoped-source-manifest.json",
+      "raw_sha256": "8e53ff1b4b7cfe26c5839ba3744430a9ed4f2787943ed96593ae8df931b5842f",
+      "public_path": "contrast/scoped-source-manifest.json",
+      "public_sha256": "8e53ff1b4b7cfe26c5839ba3744430a9ed4f2787943ed96593ae8df931b5842f",
+      "transformation": "Preserved selected public bytes; source Markdown presented as text when renamed."
+    },
+    {
+      "raw_artifact_id": "contrast/sources/.agents/skills/qore-review-qore-contrast/SKILL.md",
+      "raw_sha256": "78552e051938a0395c08096944eb3dbd9fe36b1650a0eb15cdcfe3e576a064fb",
+      "public_path": "contrast/sources/.agents/skills/qore-review-qore-contrast/SKILL.md.txt",
+      "public_sha256": "78552e051938a0395c08096944eb3dbd9fe36b1650a0eb15cdcfe3e576a064fb",
+      "transformation": "Preserved selected public bytes; source Markdown presented as text when renamed."
+    },
+    {
+      "raw_artifact_id": "contrast/sources/.agents/skills/qore-review-qore-contrast/references/findings.md",
+      "raw_sha256": "79b2b5f52e88761331c01b92af9b492ef1888c6c20a0af1b94a8bead7aa2d6cb",
+      "public_path": "contrast/sources/.agents/skills/qore-review-qore-contrast/references/findings.md.txt",
+      "public_sha256": "79b2b5f52e88761331c01b92af9b492ef1888c6c20a0af1b94a8bead7aa2d6cb",
+      "transformation": "Preserved selected public bytes; source Markdown presented as text when renamed."
+    },
+    {
+      "raw_artifact_id": "contrast/sources/.agents/skills/qore-review-qore-contrast/references/project-profile.md",
+      "raw_sha256": "5d3b69aac18f83a634f4c57c214cc1f53fa186c03c536adcefd4c905a8767c8d",
+      "public_path": "contrast/sources/.agents/skills/qore-review-qore-contrast/references/project-profile.md.txt",
+      "public_sha256": "5d3b69aac18f83a634f4c57c214cc1f53fa186c03c536adcefd4c905a8767c8d",
+      "transformation": "Preserved selected public bytes; source Markdown presented as text when renamed."
+    },
+    {
+      "raw_artifact_id": "contrast/sources/.agents/skills/qore-review-qore-contrast/references/project.json",
+      "raw_sha256": "f72394c2ebb80cb6da41b33a088d56fbd24b4577f71bc2b022d0ef4bb36bfb88",
+      "public_path": "contrast/sources/.agents/skills/qore-review-qore-contrast/references/project.json",
+      "public_sha256": "f72394c2ebb80cb6da41b33a088d56fbd24b4577f71bc2b022d0ef4bb36bfb88",
+      "transformation": "Preserved selected public bytes; source Markdown presented as text when renamed."
+    },
+    {
+      "raw_artifact_id": "contrast/sources/.agents/skills/qore-review-qore-contrast/references/protocol.md",
+      "raw_sha256": "e27e0050fdf4d75d2840dd257b9a759f1f48d459ef540990cd3aed5528c5f340",
+      "public_path": "contrast/sources/.agents/skills/qore-review-qore-contrast/references/protocol.md.txt",
+      "public_sha256": "e27e0050fdf4d75d2840dd257b9a759f1f48d459ef540990cd3aed5528c5f340",
+      "transformation": "Preserved selected public bytes; source Markdown presented as text when renamed."
+    },
+    {
+      "raw_artifact_id": "contrast/sources/.agents/skills/qore-review-qore-contrast/references/run-evidence.md",
+      "raw_sha256": "fbdf433ef8b3e972f97bed5fdec4990cf3b49535bf63120c729a7daf4af71746",
+      "public_path": "contrast/sources/.agents/skills/qore-review-qore-contrast/references/run-evidence.md.txt",
+      "public_sha256": "fbdf433ef8b3e972f97bed5fdec4990cf3b49535bf63120c729a7daf4af71746",
+      "transformation": "Preserved selected public bytes; source Markdown presented as text when renamed."
+    },
+    {
+      "raw_artifact_id": "contrast/sources/.agents/skills/qore-review-qore-contrast/scripts/finding-lint.mjs",
+      "raw_sha256": "89b02ef5912adf3f6ff86ad8652a3f21e7313bb0cc0a280a3dd9810546abdef9",
+      "public_path": "contrast/sources/.agents/skills/qore-review-qore-contrast/scripts/finding-lint.mjs",
+      "public_sha256": "89b02ef5912adf3f6ff86ad8652a3f21e7313bb0cc0a280a3dd9810546abdef9",
+      "transformation": "Preserved selected public bytes; source Markdown presented as text when renamed."
+    },
+    {
+      "raw_artifact_id": "contrast/sources/.agents/skills/qore-review-qore-contrast/scripts/project-check.py",
+      "raw_sha256": "3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd",
+      "public_path": "contrast/sources/.agents/skills/qore-review-qore-contrast/scripts/project-check.py",
+      "public_sha256": "3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd",
+      "transformation": "Preserved selected public bytes; source Markdown presented as text when renamed."
+    },
+    {
+      "raw_artifact_id": "contrast/sources/examples/validator-hardening.md",
+      "raw_sha256": "6f25b2edcd6d0826b12fbb47a99fc4162a1089eef71eaf7f16ea2cb7a8239a87",
+      "public_path": "contrast/sources/examples/validator-hardening.md.txt",
+      "public_sha256": "6f25b2edcd6d0826b12fbb47a99fc4162a1089eef71eaf7f16ea2cb7a8239a87",
+      "transformation": "Preserved selected public bytes; source Markdown presented as text when renamed."
+    },
+    {
+      "raw_artifact_id": "contrast/sources/skills/qore-review/scripts/finding-lint.mjs",
+      "raw_sha256": "89b02ef5912adf3f6ff86ad8652a3f21e7313bb0cc0a280a3dd9810546abdef9",
+      "public_path": "contrast/sources/skills/qore-review/scripts/finding-lint.mjs",
+      "public_sha256": "89b02ef5912adf3f6ff86ad8652a3f21e7313bb0cc0a280a3dd9810546abdef9",
+      "transformation": "Preserved selected public bytes; source Markdown presented as text when renamed."
+    },
+    {
+      "raw_artifact_id": "contrast/sources/skills/qore-review/scripts/redact-for-verifier.mjs",
+      "raw_sha256": "dc249524c749ad5b511aef0a2cf08b4cfd5c47c1e0de4fd41c5c70746b471083",
+      "public_path": "contrast/sources/skills/qore-review/scripts/redact-for-verifier.mjs",
+      "public_sha256": "dc249524c749ad5b511aef0a2cf08b4cfd5c47c1e0de4fd41c5c70746b471083",
+      "transformation": "Preserved selected public bytes; source Markdown presented as text when renamed."
+    },
+    {
+      "raw_artifact_id": "contrast/sources/tests/fixtures/project-alternate.json",
+      "raw_sha256": "830dc3c50369c21f523a1c68b188f3013b40c439ea362a1e97c45a38a89a79c5",
+      "public_path": "contrast/sources/tests/fixtures/project-alternate.json",
+      "public_sha256": "830dc3c50369c21f523a1c68b188f3013b40c439ea362a1e97c45a38a89a79c5",
+      "transformation": "Preserved selected public bytes; source Markdown presented as text when renamed."
+    },
+    {
+      "raw_artifact_id": "contrast/sources/tests/test_validators.py",
+      "raw_sha256": "cda93831ca8bce7debc036509d47f07a1b55c0e93b59ba1550cf090cac704703",
+      "public_path": "contrast/sources/tests/test_validators.py",
+      "public_sha256": "cda93831ca8bce7debc036509d47f07a1b55c0e93b59ba1550cf090cac704703",
+      "transformation": "Preserved selected public bytes; source Markdown presented as text when renamed."
+    },
+    {
+      "raw_artifact_id": "contrast/synthetic-input.json",
+      "raw_sha256": "f428790c74207b3b5e5db2ee5aa48abe2fcfaeab85e59f215933d11e09ef210f",
+      "public_path": "contrast/synthetic-input.json",
+      "public_sha256": "f428790c74207b3b5e5db2ee5aa48abe2fcfaeab85e59f215933d11e09ef210f",
+      "transformation": "Preserved selected public bytes; source Markdown presented as text when renamed."
+    }
+  ],
+  "limits": [
+    "Two independent fresh CLI contexts performed focused profile-consumer checks, not exhaustive finder/verifier campaigns.",
+    "Profiles selected actual commands without discriminating facts in operator prompts.",
+    "Later candidate carryover is justified only for unchanged facts and affected checks re-executed separately."
+  ]
+}

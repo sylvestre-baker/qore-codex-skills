@@ -1,0 +1,14 @@
+{
+  "output": "<PRIVATE_EVIDENCE_ROOT>/derived-ux-contrast/tree",
+  "profile": {
+    "id": "qore-contrast",
+    "version": "0.1.0",
+    "sha256": "f72394c2ebb80cb6da41b33a088d56fbd24b4577f71bc2b022d0ef4bb36bfb88"
+  },
+  "valid": true,
+  "schema": "qore-release/1",
+  "version": "0.1.0",
+  "kind": "derived",
+  "files": 39,
+  "manifest_sha256": "895c0bef3d2d7dc00ec880577c73a480e7ad28e5a848cc77aee7ba7e0185b072"
+}

@@ -1,0 +1,216 @@
+{
+  "schema": "qore-public-transformation/1",
+  "public_id": "public-readme-initial-challenge-20261016",
+  "original_archive_sha256": "bafd0da80667a00f9e6bd2f9e726eaa64d61ff42d026b9f58eb857df15bf40f8",
+  "exported_at": "2026-10-15T20:35:57.632852+00:00",
+  "operator": "Maintainer export of three fresh agent-reader outputs; not external human first use.",
+  "artifacts": [
+    {
+      "public_file": "newcomer/boundary-trace.json",
+      "public_sha256": "a98d5a5b0d3d539c6349a2bc13bcba8abf9a982a177f450fb23a86d28f31071b",
+      "raw_artifact_id": "qore-private:readme-challenge/newcomer-artifacts/boundary-trace.json",
+      "raw_sha256": "a98d5a5b0d3d539c6349a2bc13bcba8abf9a982a177f450fb23a86d28f31071b",
+      "transformation": "Selected text copied; disclosed private scratch prefix replaced if present. Relative mentions of unexported temporary build directories remain historical descriptions, not package runtime references."
+    },
+    {
+      "public_file": "newcomer/canonical-derive.log",
+      "public_sha256": "5b7b5a9307070c32f4c59c8fe92701043759d486c8cc409790eba7ed20e3b922",
+      "raw_artifact_id": "qore-private:readme-challenge/newcomer-artifacts/canonical-derive.log",
+      "raw_sha256": "5b7b5a9307070c32f4c59c8fe92701043759d486c8cc409790eba7ed20e3b922",
+      "transformation": "Selected text copied; disclosed private scratch prefix replaced if present. Relative mentions of unexported temporary build directories remain historical descriptions, not package runtime references."
+    },
+    {
+      "public_file": "newcomer/canonical-setup.log",
+      "public_sha256": "63cc0cfbc115807f8dc9992e1e4749f7570a9714a9f6ebedccb5f058b069d474",
+      "raw_artifact_id": "qore-private:readme-challenge/newcomer-artifacts/canonical-setup.log",
+      "raw_sha256": "63cc0cfbc115807f8dc9992e1e4749f7570a9714a9f6ebedccb5f058b069d474",
+      "transformation": "Selected text copied; disclosed private scratch prefix replaced if present. Relative mentions of unexported temporary build directories remain historical descriptions, not package runtime references."
+    },
+    {
+      "public_file": "newcomer/compare-added-file.log",
+      "public_sha256": "95e01806a9e8c7a17e9b8599cafc46d0892cd061c5ff160abcd66724f9549a22",
+      "raw_artifact_id": "qore-private:readme-challenge/newcomer-artifacts/compare-added-file.log",
+      "raw_sha256": "95e01806a9e8c7a17e9b8599cafc46d0892cd061c5ff160abcd66724f9549a22",
+      "transformation": "Selected text copied; disclosed private scratch prefix replaced if present. Relative mentions of unexported temporary build directories remain historical descriptions, not package runtime references."
+    },
+    {
+      "public_file": "newcomer/evidence-index.json",
+      "public_sha256": "8db6646c4044354cc60700a41e79155d3af83a2cbe7595b0bedb6a34495817ff",
+      "raw_artifact_id": "qore-private:readme-challenge/newcomer-artifacts/evidence-index.json",
+      "raw_sha256": "8db6646c4044354cc60700a41e79155d3af83a2cbe7595b0bedb6a34495817ff",
+      "transformation": "Selected text copied; disclosed private scratch prefix replaced if present. Relative mentions of unexported temporary build directories remain historical descriptions, not package runtime references."
+    },
+    {
+      "public_file": "newcomer/findings.json",
+      "public_sha256": "98ae6626b9139ca851f2fb362b3f72d5aea0014825b31ecbbef54890ed8c98c0",
+      "raw_artifact_id": "qore-private:readme-challenge/newcomer-artifacts/findings.json",
+      "raw_sha256": "98ae6626b9139ca851f2fb362b3f72d5aea0014825b31ecbbef54890ed8c98c0",
+      "transformation": "Selected text copied; disclosed private scratch prefix replaced if present. Relative mentions of unexported temporary build directories remain historical descriptions, not package runtime references."
+    },
+    {
+      "public_file": "newcomer/identity.json",
+      "public_sha256": "9f6e002174508bc4c0e2b5f15c48c417c7a75992169b30bc4428cbdadb4e8404",
+      "raw_artifact_id": "qore-private:readme-challenge/newcomer-artifacts/identity.json",
+      "raw_sha256": "9f6e002174508bc4c0e2b5f15c48c417c7a75992169b30bc4428cbdadb4e8404",
+      "transformation": "Selected text copied; disclosed private scratch prefix replaced if present. Relative mentions of unexported temporary build directories remain historical descriptions, not package runtime references."
+    },
+    {
+      "public_file": "newcomer/normal-validator-regressions.log",
+      "public_sha256": "8dee93e2cbe058cc13a26dbfeffdfcde5515667c43c0cfe90db50115dcfc36a0",
+      "raw_artifact_id": "qore-private:readme-challenge/newcomer-artifacts/normal-validator-regressions.log",
+      "raw_sha256": "8dee93e2cbe058cc13a26dbfeffdfcde5515667c43c0cfe90db50115dcfc36a0",
+      "transformation": "Selected text copied; disclosed private scratch prefix replaced if present. Relative mentions of unexported temporary build directories remain historical descriptions, not package runtime references."
+    },
+    {
+      "public_file": "newcomer/posix-without-bash.log",
+      "public_sha256": "34b2b495446268a12433f61a8a0e60145dd1bfee8b2cb84b517fd31666d587bb",
+      "raw_artifact_id": "qore-private:readme-challenge/newcomer-artifacts/posix-without-bash.log",
+      "raw_sha256": "34b2b495446268a12433f61a8a0e60145dd1bfee8b2cb84b517fd31666d587bb",
+      "transformation": "Selected text copied; disclosed private scratch prefix replaced if present. Relative mentions of unexported temporary build directories remain historical descriptions, not package runtime references."
+    },
+    {
+      "public_file": "newcomer/preflight-plan.log",
+      "public_sha256": "6926d510321d99b87a51acf19547504144bf235024ec4cf1bab3bc9444826e11",
+      "raw_artifact_id": "qore-private:readme-challenge/newcomer-artifacts/preflight-plan.log",
+      "raw_sha256": "6926d510321d99b87a51acf19547504144bf235024ec4cf1bab3bc9444826e11",
+      "transformation": "Selected text copied; disclosed private scratch prefix replaced if present. Relative mentions of unexported temporary build directories remain historical descriptions, not package runtime references."
+    },
+    {
+      "public_file": "newcomer/preflight-review.log",
+      "public_sha256": "376abe18087450b36af410415e2e5f8b516bce349a5dc3622b422db4feca5ffe",
+      "raw_artifact_id": "qore-private:readme-challenge/newcomer-artifacts/preflight-review.log",
+      "raw_sha256": "376abe18087450b36af410415e2e5f8b516bce349a5dc3622b422db4feca5ffe",
+      "transformation": "Selected text copied; disclosed private scratch prefix replaced if present. Relative mentions of unexported temporary build directories remain historical descriptions, not package runtime references."
+    },
+    {
+      "public_file": "newcomer/preflight-ux.log",
+      "public_sha256": "753715a6ee6bf04524e228c07b293797373d8751a102b5c351dadc64a0bdb612",
+      "raw_artifact_id": "qore-private:readme-challenge/newcomer-artifacts/preflight-ux.log",
+      "raw_sha256": "753715a6ee6bf04524e228c07b293797373d8751a102b5c351dadc64a0bdb612",
+      "transformation": "Selected text copied; disclosed private scratch prefix replaced if present. Relative mentions of unexported temporary build directories remain historical descriptions, not package runtime references."
+    },
+    {
+      "public_file": "newcomer/report.md",
+      "public_sha256": "cb5a881199ca794330b2977c124fbc5f265cc01d76ae8d65ac51e88a93fdb7a6",
+      "raw_artifact_id": "qore-private:readme-challenge/newcomer-artifacts/report.md",
+      "raw_sha256": "cb5a881199ca794330b2977c124fbc5f265cc01d76ae8d65ac51e88a93fdb7a6",
+      "transformation": "Selected text copied; disclosed private scratch prefix replaced if present. Relative mentions of unexported temporary build directories remain historical descriptions, not package runtime references."
+    },
+    {
+      "public_file": "newcomer/setup-plan.log",
+      "public_sha256": "ffa0e6ed8444654992e20cbd95d15bcfbec6575f8e1ce7b811cd7c7726bfe1ac",
+      "raw_artifact_id": "qore-private:readme-challenge/newcomer-artifacts/setup-plan.log",
+      "raw_sha256": "ffa0e6ed8444654992e20cbd95d15bcfbec6575f8e1ce7b811cd7c7726bfe1ac",
+      "transformation": "Selected text copied; disclosed private scratch prefix replaced if present. Relative mentions of unexported temporary build directories remain historical descriptions, not package runtime references."
+    },
+    {
+      "public_file": "newcomer/setup-posix-without-bash.log",
+      "public_sha256": "c0b67756ab4df9e83e1a542c74acb1436d98e3c9b3f09a1530322c9857585c34",
+      "raw_artifact_id": "qore-private:readme-challenge/newcomer-artifacts/setup-posix-without-bash.log",
+      "raw_sha256": "c0b67756ab4df9e83e1a542c74acb1436d98e3c9b3f09a1530322c9857585c34",
+      "transformation": "Selected text copied; disclosed private scratch prefix replaced if present. Relative mentions of unexported temporary build directories remain historical descriptions, not package runtime references."
+    },
+    {
+      "public_file": "newcomer/setup-review.log",
+      "public_sha256": "c02e8967737583cc7102d2836f9a614ba065f38e64d86816faed49d52453af53",
+      "raw_artifact_id": "qore-private:readme-challenge/newcomer-artifacts/setup-review.log",
+      "raw_sha256": "c02e8967737583cc7102d2836f9a614ba065f38e64d86816faed49d52453af53",
+      "transformation": "Selected text copied; disclosed private scratch prefix replaced if present. Relative mentions of unexported temporary build directories remain historical descriptions, not package runtime references."
+    },
+    {
+      "public_file": "newcomer/setup-ux.log",
+      "public_sha256": "78222a4cf509a8e4a98212f0e386c979bab1a92ae1eade7d66e8787394632c0b",
+      "raw_artifact_id": "qore-private:readme-challenge/newcomer-artifacts/setup-ux.log",
+      "raw_sha256": "78222a4cf509a8e4a98212f0e386c979bab1a92ae1eade7d66e8787394632c0b",
+      "transformation": "Selected text copied; disclosed private scratch prefix replaced if present. Relative mentions of unexported temporary build directories remain historical descriptions, not package runtime references."
+    },
+    {
+      "public_file": "newcomer/source-preservation.json",
+      "public_sha256": "bfb2cd4cf80241e9d1f775cfce2cb787da934595ebc118501176a005f130dca1",
+      "raw_artifact_id": "qore-private:readme-challenge/newcomer-artifacts/source-preservation.json",
+      "raw_sha256": "bfb2cd4cf80241e9d1f775cfce2cb787da934595ebc118501176a005f130dca1",
+      "transformation": "Selected text copied; disclosed private scratch prefix replaced if present. Relative mentions of unexported temporary build directories remain historical descriptions, not package runtime references."
+    },
+    {
+      "public_file": "implementation/candidate-source-check.json",
+      "public_sha256": "9c4acea9efa032ee5f7bcd4131e50db6a2f71a0a7cd7b1bc9a2a1315cafd22db",
+      "raw_artifact_id": "qore-private:readme-challenge/implementation-artifacts/candidate-source-check.json",
+      "raw_sha256": "9c4acea9efa032ee5f7bcd4131e50db6a2f71a0a7cd7b1bc9a2a1315cafd22db",
+      "transformation": "Selected text copied; disclosed private scratch prefix replaced if present. Relative mentions of unexported temporary build directories remain historical descriptions, not package runtime references."
+    },
+    {
+      "public_file": "implementation/commands.log",
+      "public_sha256": "9830d181e51d27d17aed195059bea7c5a3c5c11e2db3ed04111bd0466f74cf42",
+      "raw_artifact_id": "qore-private:readme-challenge/implementation-artifacts/commands.log",
+      "raw_sha256": "9830d181e51d27d17aed195059bea7c5a3c5c11e2db3ed04111bd0466f74cf42",
+      "transformation": "Selected text copied; disclosed private scratch prefix replaced if present. Relative mentions of unexported temporary build directories remain historical descriptions, not package runtime references."
+    },
+    {
+      "public_file": "implementation/findings.json",
+      "public_sha256": "dcc017bae4fb26e55adc81b720653ff691353d19cd4c9dbafd1498640b9cc050",
+      "raw_artifact_id": "qore-private:readme-challenge/implementation-artifacts/findings.json",
+      "raw_sha256": "dcc017bae4fb26e55adc81b720653ff691353d19cd4c9dbafd1498640b9cc050",
+      "transformation": "Selected text copied; disclosed private scratch prefix replaced if present. Relative mentions of unexported temporary build directories remain historical descriptions, not package runtime references."
+    },
+    {
+      "public_file": "implementation/identity.json",
+      "public_sha256": "cc8dae08af0e371a0beffc6857fa8831ccac67d2fc40798ba507a615c2220bfc",
+      "raw_artifact_id": "qore-private:readme-challenge/implementation-artifacts/identity.json",
+      "raw_sha256": "cc8dae08af0e371a0beffc6857fa8831ccac67d2fc40798ba507a615c2220bfc",
+      "transformation": "Selected text copied; disclosed private scratch prefix replaced if present. Relative mentions of unexported temporary build directories remain historical descriptions, not package runtime references."
+    },
+    {
+      "public_file": "implementation/origin-boundary.json",
+      "public_sha256": "0001da3640eccbdb3f354aaa9c069ac82092be50bc0d0a6018004a780ce5552e",
+      "raw_artifact_id": "qore-private:readme-challenge/implementation-artifacts/origin-boundary.json",
+      "raw_sha256": "0001da3640eccbdb3f354aaa9c069ac82092be50bc0d0a6018004a780ce5552e",
+      "transformation": "Selected text copied; disclosed private scratch prefix replaced if present. Relative mentions of unexported temporary build directories remain historical descriptions, not package runtime references."
+    },
+    {
+      "public_file": "implementation/report.md",
+      "public_sha256": "60b3108f5525902aefb11034197368262525cbf037f3d8301df4ed1754059b78",
+      "raw_artifact_id": "qore-private:readme-challenge/implementation-artifacts/report.md",
+      "raw_sha256": "60b3108f5525902aefb11034197368262525cbf037f3d8301df4ed1754059b78",
+      "transformation": "Selected text copied; disclosed private scratch prefix replaced if present. Relative mentions of unexported temporary build directories remain historical descriptions, not package runtime references."
+    },
+    {
+      "public_file": "implementation/source-traces.log",
+      "public_sha256": "22ffc5e86d9f8f04e75aed60e7111105982b609750c2abe294a42bb32ac8884d",
+      "raw_artifact_id": "qore-private:readme-challenge/implementation-artifacts/source-traces.log",
+      "raw_sha256": "22ffc5e86d9f8f04e75aed60e7111105982b609750c2abe294a42bb32ac8884d",
+      "transformation": "Selected text copied; disclosed private scratch prefix replaced if present. Relative mentions of unexported temporary build directories remain historical descriptions, not package runtime references."
+    },
+    {
+      "public_file": "accessibility/command-evidence.txt",
+      "public_sha256": "8ec9c2c580dcbaa882d4574f2c70923e05c6e71c213a8a42b80ba2076c4bdbd9",
+      "raw_artifact_id": "qore-private:readme-challenge/accessibility-artifacts/command-evidence.txt",
+      "raw_sha256": "8ec9c2c580dcbaa882d4574f2c70923e05c6e71c213a8a42b80ba2076c4bdbd9",
+      "transformation": "Selected text copied; disclosed private scratch prefix replaced if present. Relative mentions of unexported temporary build directories remain historical descriptions, not package runtime references."
+    },
+    {
+      "public_file": "accessibility/findings.json",
+      "public_sha256": "8aa973100a15bf817985395637131e838cf84e427be4792583def923f020f5fa",
+      "raw_artifact_id": "qore-private:readme-challenge/accessibility-artifacts/findings.json",
+      "raw_sha256": "8aa973100a15bf817985395637131e838cf84e427be4792583def923f020f5fa",
+      "transformation": "Selected text copied; disclosed private scratch prefix replaced if present. Relative mentions of unexported temporary build directories remain historical descriptions, not package runtime references."
+    },
+    {
+      "public_file": "accessibility/inspect.py",
+      "public_sha256": "ca0cd6521e7ef1895a4040b03a71473db83a90e44fdf91b5afee01c9adc3e206",
+      "raw_artifact_id": "qore-private:readme-challenge/accessibility-artifacts/inspect.py",
+      "raw_sha256": "ca0cd6521e7ef1895a4040b03a71473db83a90e44fdf91b5afee01c9adc3e206",
+      "transformation": "Selected text copied; disclosed private scratch prefix replaced if present. Relative mentions of unexported temporary build directories remain historical descriptions, not package runtime references."
+    },
+    {
+      "public_file": "accessibility/report.md",
+      "public_sha256": "06787da92d59f59a0832a49698d2a1c53125da065c21548ca483bf58f53a5033",
+      "raw_artifact_id": "qore-private:readme-challenge/accessibility-artifacts/report.md",
+      "raw_sha256": "06787da92d59f59a0832a49698d2a1c53125da065c21548ca483bf58f53a5033",
+      "transformation": "Selected text copied; disclosed private scratch prefix replaced if present. Relative mentions of unexported temporary build directories remain historical descriptions, not package runtime references."
+    }
+  ],
+  "annotations": [
+    "Implementation reader report says 82 tests; its actual commands.log records 85. This report wording is preserved as an original reporting error, not silently changed.",
+    "Temporary source/staging trees and numbered citations are not exported here. Their described historical operations are not executable package dependencies. Separate final verification reproduces the three actual candidates."
+  ]
+}

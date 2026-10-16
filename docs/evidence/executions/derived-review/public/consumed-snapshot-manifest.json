@@ -1,0 +1,82 @@
+{
+  "procedure": "SHA-256 of canonical JSON list (sort_keys=True, separators comma/colon), sorted relative paths with SHA-256 of raw file bytes. Scoped consumed snapshot, not original archive hash.",
+  "snapshot_sha256": "ed0c0dd3286b1eaaa4a3f750ac96c085d185c52c46adf2b970752035c1b397f2",
+  "files": [
+    {
+      "path": ".agents/skills/qore-review-qore/SKILL.md",
+      "sha256": "99207cd01ce19926bd2ae5e362959b11fc57ebd93bb6202d113a4f96aabd6d76"
+    },
+    {
+      "path": ".agents/skills/qore-review-qore/agents/openai.yaml",
+      "sha256": "ed658eeb9489e53c6fc3795ef971906aec1e39a072c2b2c5601149180fe5d499"
+    },
+    {
+      "path": ".agents/skills/qore-review-qore/references/findings.md",
+      "sha256": "79b2b5f52e88761331c01b92af9b492ef1888c6c20a0af1b94a8bead7aa2d6cb"
+    },
+    {
+      "path": ".agents/skills/qore-review-qore/references/project-profile.md",
+      "sha256": "5d3b69aac18f83a634f4c57c214cc1f53fa186c03c536adcefd4c905a8767c8d"
+    },
+    {
+      "path": ".agents/skills/qore-review-qore/references/project.json",
+      "sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9"
+    },
+    {
+      "path": ".agents/skills/qore-review-qore/references/protocol.md",
+      "sha256": "e27e0050fdf4d75d2840dd257b9a759f1f48d459ef540990cd3aed5528c5f340"
+    },
+    {
+      "path": ".agents/skills/qore-review-qore/references/release.json",
+      "sha256": "56758f810dfca4a7ed55981d43e695574caa606dfdff307170e86dbc7032e2e4"
+    },
+    {
+      "path": ".agents/skills/qore-review-qore/references/run-evidence.md",
+      "sha256": "fbdf433ef8b3e972f97bed5fdec4990cf3b49535bf63120c729a7daf4af71746"
+    },
+    {
+      "path": ".agents/skills/qore-review-qore/scripts/finding-lint.mjs",
+      "sha256": "89b02ef5912adf3f6ff86ad8652a3f21e7313bb0cc0a280a3dd9810546abdef9"
+    },
+    {
+      "path": ".agents/skills/qore-review-qore/scripts/project-check.py",
+      "sha256": "3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd"
+    },
+    {
+      "path": ".agents/skills/qore-review-qore/scripts/redact-for-verifier.mjs",
+      "sha256": "dc249524c749ad5b511aef0a2cf08b4cfd5c47c1e0de4fd41c5c70746b471083"
+    },
+    {
+      "path": ".agents/skills/qore-review-qore/scripts/run-check.py",
+      "sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa"
+    },
+    {
+      "path": "examples/validator-hardening.md",
+      "sha256": "6f25b2edcd6d0826b12fbb47a99fc4162a1089eef71eaf7f16ea2cb7a8239a87"
+    },
+    {
+      "path": "qore.json",
+      "sha256": "948b2784fa7970cf90a25c338a29067b13d8b4476f666d712a5eb95fc6f641c8"
+    },
+    {
+      "path": "skills/qore-review/scripts/finding-lint.mjs",
+      "sha256": "89b02ef5912adf3f6ff86ad8652a3f21e7313bb0cc0a280a3dd9810546abdef9"
+    },
+    {
+      "path": "skills/qore-review/scripts/redact-for-verifier.mjs",
+      "sha256": "dc249524c749ad5b511aef0a2cf08b4cfd5c47c1e0de4fd41c5c70746b471083"
+    },
+    {
+      "path": "tests/test_package.py",
+      "sha256": "cd25e0c593b7296cb6dc7e36679260c32dadfb2364c26233bc2bd29e4f492129"
+    },
+    {
+      "path": "tests/test_run_contract.py",
+      "sha256": "f671c3ec3ca69ad155c54823ef89eb9475fd847b65b762094ad937030e7f297f"
+    },
+    {
+      "path": "tests/test_validators.py",
+      "sha256": "cda93831ca8bce7debc036509d47f07a1b55c0e93b59ba1550cf090cac704703"
+    }
+  ]
+}

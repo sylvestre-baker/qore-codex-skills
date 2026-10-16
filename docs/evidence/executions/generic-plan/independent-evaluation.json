@@ -1,0 +1,81 @@
+{
+  "evaluator_actor_id": "/root/impl_validators/plan_value_evaluator",
+  "observed_at": "2026-10-15T20:14:49Z",
+  "run": "generic-plan",
+  "judgment": "Useful bounded planning decision; implementation and release remain unqualified.",
+  "protocol_completion": "Supported by roster, phase declarations and retained reports; historical isolation not independently certified.",
+  "files_inspected": [
+    "<PRIVATE_EVIDENCE_ROOT>/intake.json",
+    "<PRIVATE_EVIDENCE_ROOT>/roster.json",
+    "<PRIVATE_EVIDENCE_ROOT>/adjudication.json",
+    "<PRIVATE_EVIDENCE_ROOT>/proposed-spec.md",
+    "<PRIVATE_EVIDENCE_ROOT>/execution.json",
+    "<PRIVATE_EVIDENCE_ROOT>/run-validation.json",
+    "<PRIVATE_EVIDENCE_ROOT>/delivery-analysis.md",
+    "<PRIVATE_EVIDENCE_ROOT>/qa-analysis.md",
+    "<PRIVATE_EVIDENCE_ROOT>/ux-analysis.md",
+    "<PRIVATE_EVIDENCE_ROOT>/product-analysis.md",
+    "<PRIVATE_EVIDENCE_ROOT>/architecture-analysis.md",
+    "<PRIVATE_EVIDENCE_ROOT>/product-cross.md",
+    "<PRIVATE_EVIDENCE_ROOT>/architecture-cross.md",
+    "<PRIVATE_EVIDENCE_ROOT>/ux-cross.md",
+    "<PRIVATE_EVIDENCE_ROOT>/delivery-cross.md",
+    "<PRIVATE_EVIDENCE_ROOT>/qa-cross.md",
+    "<PRIVATE_EVIDENCE_ROOT>/delivery-commands.json",
+    "<PRIVATE_EVIDENCE_ROOT>/qa-commands.json",
+    "<PRIVATE_EVIDENCE_ROOT>/ux-commands.json",
+    "<PRIVATE_EVIDENCE_ROOT>/spec-validation.json",
+    "<CANDIDATE_B>/qore.json",
+    "<CANDIDATE_B>/skills/qore-review/scripts/finding-lint.mjs",
+    "<CANDIDATE_B>/skills/qore-review/references/findings.md",
+    "<CANDIDATE_B>/tests/test_validators.py",
+    "<CANDIDATE_B>/tests/test_package.py",
+    "<CANDIDATE_B>/tools/qore.py",
+    "<PRIVATE_EVIDENCE_ROOT>/baseline-tests.json"
+  ],
+  "inspection_limits": "Some long multi-file tool outputs were truncated; conclusions rely on separately retrieved relevant source, raw probes, cross reports and specification passages.",
+  "supported_claims": [
+    {
+      "claim": "Malformed complete values are truncated and accepted.",
+      "evidence": [
+        "generic-plan/delivery-commands.json",
+        "generic-plan/qa-commands.json",
+        "<CANDIDATE_B>/skills/qore-review/scripts/finding-lint.mjs:6-10"
+      ]
+    },
+    {
+      "claim": "Exact-token correction is an identifiable justified next increment.",
+      "evidence": [
+        "generic-plan/adjudication.json",
+        "generic-plan/proposed-spec.md"
+      ]
+    }
+  ],
+  "rejected_inferences": [
+    "COMPLETE or lint passage certifies quality.",
+    "Baseline tests qualify an unimplemented correction.",
+    "Observed grammar mismatch establishes production harm.",
+    "Actor labels establish isolation."
+  ],
+  "remaining_uncertainty": [
+    "External caller compatibility",
+    "Partial-batch semantics",
+    "Post-fix regression and fresh-candidate qualification",
+    "Human comprehension",
+    "Clean independent environment"
+  ],
+  "environment_judgment": "Author-host agent execution only.",
+  "human_usability_judgment": "Next action and gates are identifiable; external human usability unmeasured.",
+  "evaluator_reproduction": {
+    "command": "node skills/qore-review/scripts/finding-lint.mjs /dev/stdin TOKEN --json",
+    "cwd": "<CANDIDATE_B>",
+    "stdin": "{\"findings\":[]}",
+    "observed_results": {
+      "--verifier=ran=skipped": "exit 0; COMPLETE; SHIP",
+      "--verifier=ran": "exit 0; COMPLETE; SHIP",
+      "--verifier=skipped=ran": "exit 0; PARTIAL; PENDING"
+    }
+  },
+  "combined_report": "<PRIVATE_EVALUATIONS>/plan-independent-evaluation.md",
+  "precision_limit": "Delivery measured nonempty COMPLETE/DO-NOT-SHIP; QA measured empty COMPLETE/SHIP."
+}

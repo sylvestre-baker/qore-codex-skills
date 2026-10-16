@@ -1,0 +1,28 @@
+[
+  {
+    "argv": [
+      "python3",
+      "-B",
+      "tools/qore.py",
+      "build",
+      "--output",
+      "/workspace/implementation-review/build-probe"
+    ],
+    "exit_code": 0,
+    "artifact": "build-probe.json"
+  },
+  {
+    "argv": [
+      "python3",
+      "-B",
+      "tools/context.py",
+      "profiles/qore.json",
+      "--root",
+      ".",
+      "--method",
+      "review"
+    ],
+    "exit_code": 0,
+    "artifact": "context-probe.json"
+  }
+]

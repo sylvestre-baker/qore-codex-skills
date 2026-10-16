@@ -1,0 +1,57 @@
+{
+  "schema": "qore-render-observation/1",
+  "source_readme_sha256": "7bb52402a7b4533c8a46adc5372f7b42ad0278daa4cc29d1592fc97af9bd2d3a",
+  "renderer": "Local GFM marked preview with GitHub-like CSS; not an actual GitHub-hosted page",
+  "operator": "Maintainer agent",
+  "dependencies": {
+    "marked": "17.0.5",
+    "playwright": "1.62.1"
+  },
+  "script_sha256": "019891e32519a58b4625bccda352794d41cc93947b6be82cf5a646ae3f8dabd5",
+  "argv_display": [
+    "node",
+    "tools/docs_preview.mjs",
+    "<DECLARED_HOST_NODE_MODULES>",
+    "<NEW_OUTPUT>"
+  ],
+  "redaction": "Only machine-local module/output prefixes replaced in display; assets and observed outcomes preserved.",
+  "artifacts": [
+    {
+      "path": "caption-playback.png",
+      "sha256": "4da69f41e4a6119033f69cd6b867a399fd1cf1d459841dbb001e3e45c9c9af24"
+    },
+    {
+      "path": "narrow-entry.png",
+      "sha256": "225b0ca4c73b448bc6a86222050fd19eff96b5c07f63e3781cd5ff79fead276b"
+    },
+    {
+      "path": "narrow-evidence.png",
+      "sha256": "7c31192e2c8970ad3edac4d4a9b5a4dc8cc4a3b960a02fdc0ae66aefaa30d84c"
+    },
+    {
+      "path": "observations.json",
+      "sha256": "899744ac065e18d2f3c213d9c0490d7cf2a72ef99230b325ad6f790e08df3d0f"
+    },
+    {
+      "path": "playback.json",
+      "sha256": "23c38076a4cf4b6b0bd5d4803f7d4f1e9857db699f574e8f88ff841f64bf11d1"
+    },
+    {
+      "path": "source-readme.txt",
+      "sha256": "7bb52402a7b4533c8a46adc5372f7b42ad0278daa4cc29d1592fc97af9bd2d3a"
+    },
+    {
+      "path": "wide-entry.png",
+      "sha256": "4111a7d3156beaf7c49346749f3789179c058f946571d0888bab76fbd51e7d5a"
+    },
+    {
+      "path": "wide-evidence.png",
+      "sha256": "afb94b0822617b9ca1b88a7db8cf957da96e10c0909de0d7ab0a92774eadf344"
+    }
+  ],
+  "limits": [
+    "No screen-reader or accessibility-conformance certification.",
+    "GitHub-compatible Markdown syntax and local narrow/wide behavior observed; not GitHub production CSS.",
+    "MP4 playback with an explicit WebVTT track was observed; other players may handle embedded subtitles differently."
+  ]
+}

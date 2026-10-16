@@ -1,0 +1,15 @@
+# Architecture — Workflow Cross-examine
+
+Read all five returned Analyze reports: Product, Architecture, UX, Delivery, QA. Target remains frozen snapshot `dec34e19b7b3036c213299a1f98b05fec1709212fb156eabf9928682024ae2cb`; source locations below are relative to `<CANDIDATE_B>`.
+
+**Retain AR1/AR2, supporting Product D4, Delivery D-D1 and QA D4.** Independent measurements agree that `--verifier=ran=skipped` incorrectly becomes `ran` and COMPLETE/SHIP because `finding-lint.mjs:6-9` truncates the declaration before result derivation at lines 44-47. Exact accepted-token membership at this existing boundary is sufficient; no general parser framework, packet migration or redactor change is justified. This is malformed-input acceptance, not proof of absent real verification. Search of README/skills/tests found canonical callers; external wrapper compatibility remains unknown.
+
+**Challenge Product A04/A06 precision.** “No successful review JSON” could permit an error JSON envelope, although current usage failures emit empty stdout (`finding-lint.mjs:9-14`). Lock empty stdout, stderr usage and exit 2 explicitly. A06 should distinguish missing, empty, unknown-value, duplicated-identical and conflicting declarations. The smallest useful investigation is a public CLI table; exact-token ran/skipped controls must remain unchanged. Product must retain the distinction between declared `ran` and complete independent execution: partial batches remain PARTIAL in `references/findings.md:22`, while lint currently relies on the global flag (`finding-lint.mjs:45`). Defer that unresolved contract redesign explicitly.
+
+**Challenge UX D-UX1 scope.** Existing usage already provides canonical syntax (`finding-lint.mjs:10`); a broad new runtime recovery vocabulary is not required to fix D4. Prefer documenting one concrete suffix correction and regression-testing existing channels. Retain UX's valuable recovery rerun and terminal observability acceptance. Defer universal recovery changes across missing files, JSON errors and validators; they increase compatibility and wording scope without addressing the measured cause. This is a scope disagreement, not a UX defect.
+
+**Warn QA.** Invalid declaration plus nonexistent/malformed file must fail at argv validation before file access. Existing ordering is already usage-before-read (`finding-lint.mjs:9-14`); only newly rejected suffixes change that precedence outcome. Assert empty stdout, not merely absence of SHIP, and avoid pinning Node's entire parse-error string. Map QA04 to Product's new US3/D4, while retaining original US1 coverage separately.
+
+Profile effects are concrete across reports: consumed `check` selects the final full-suite gate; consumed `preserve-adaptations` requires unused staging and unchanged existing destinations. Both originate in current source `project`, digest `948b2784fa7970cf90a25c338a29067b13d8b4476f666d712a5eb95fc6f641c8`. Staging command discovery and external callers remain unfinished; no new probes or source writes occurred. Cross-examination complete; lead adjudication remains pending.
+
+Observed at: 2026-10-15T20:08:57.457969+00:00

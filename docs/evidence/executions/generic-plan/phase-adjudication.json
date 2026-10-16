@@ -1,0 +1,48 @@
+{
+  "qore_evidence": {
+    "candidate_sha256": "2963c43e98803354932e406627d9e239064fbe2899745a7e093b7d4154fa56d1",
+    "target_snapshot_sha256": "dec34e19b7b3036c213299a1f98b05fec1709212fb156eabf9928682024ae2cb",
+    "observed_at": "2026-10-15T19:59:07.942064+00:00",
+    "phase_id": "adjudication"
+  },
+  "payload": {
+    "observed_at": "2026-10-15T19:59:07.942064+00:00",
+    "selected_decisions": [
+      "D4 exact complete verifier token",
+      "D5 preserve output and packet semantics",
+      "D6 defer partial-batch and text changes",
+      "D7 preserve old candidate identities and installed adaptations"
+    ],
+    "evidence": [
+      "delivery-analysis.md",
+      "delivery-commands.json",
+      "qa-analysis.md",
+      "qa-commands.json",
+      "product-cross.md",
+      "architecture-cross.md",
+      "ux-cross.md",
+      "delivery-cross.md",
+      "qa-cross.md"
+    ],
+    "basis": "Independent reproducible CLI grammar mismatch and explanatory current source outweigh breadth of future feature proposals; role agreement alone is not the basis.",
+    "retained_dissent": [
+      "Partial verifier batches are documented but need empty/all-unexamined and run-status semantics before a later increment.",
+      "Plain text limitations/blocker wording deserves separate caller and comprehension checks."
+    ],
+    "deferred": [
+      "Partial verifier mode",
+      "Text result redesign",
+      "External caller inventory"
+    ],
+    "scope": "Frozen candidate b only; later current-tree remediation is a different candidate/revision and needs affected checks.",
+    "implementation_authorized_by_this_result": false
+  },
+  "public_transformation": {
+    "public_artifact_id": "public-generic-plan-20261015-01:phase-adjudication",
+    "source_artifact_id": "qore-private:executions/generic-plan/phase-adjudication.json",
+    "source_sha256": "953857f4184b37547e8234b1f0e8adcbd1bdc1f802556917abe89fe8c8a77ad2",
+    "exported_at": "2026-10-15T20:17:52.021153+00:00",
+    "original_observation_time_preserved": true,
+    "notice": "Sanitized derivative of actual phase reports; export is not a new execution."
+  }
+}

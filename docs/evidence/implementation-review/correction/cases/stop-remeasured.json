@@ -1,0 +1,26 @@
+{
+  "in_scope": [
+    "G1"
+  ],
+  "iterations": [
+    {
+      "n": 1,
+      "scores": {
+        "G1": 5
+      },
+      "measured": [
+        "G1"
+      ],
+      "fix_applied": true
+    },
+    {
+      "n": 2,
+      "scores": {
+        "G1": 5
+      },
+      "measured": [
+        "G1"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "python3",
+    "scripts/project-check.py",
+    "references/project.json",
+    "--root",
+    "/workspace/implementation-target/qore-skills-0.1.0",
+    "--method",
+    "review"
+  ],
+  "cwd": "/workspace/implementation-target/qore-skills-0.1.0/.agents/skills/qore-review-qore-contrast",
+  "observed_at": "2026-10-15T20:05:41.559235+00:00",
+  "stdout": "{\n  \"schema\": \"qore-context-check/1\",\n  \"profile\": {\n    \"id\": \"qore-contrast\",\n    \"version\": \"0.1.0\",\n    \"sha256\": \"f72394c2ebb80cb6da41b33a088d56fbd24b4577f71bc2b022d0ef4bb36bfb88\"\n  },\n  \"method\": \"review\",\n  \"coverage\": \"COMPLETE\",\n  \"sources\": [\n    {\n      \"id\": \"project\",\n      \"path\": \"tests/fixtures/project-alternate.json\",\n      \"expected_sha256\": \"830dc3c50369c21f523a1c68b188f3013b40c439ea362a1e97c45a38a89a79c5\",\n      \"actual_sha256\": \"830dc3c50369c21f523a1c68b188f3013b40c439ea362a1e97c45a38a89a79c5\",\n      \"current\": true\n    }\n  ],\n  \"commands\": [\n    {\n      \"id\": \"check\",\n      \"argv\": [\n        \"python3\",\n        \"-B\",\n        \"-m\",\n        \"unittest\",\n        \"discover\",\n        \"-s\",\n        \"tests\",\n        \"-p\",\n        \"test_validators.py\",\n        \"-v\"\n      ],\n      \"source\": \"project\",\n      \"applies_to\": [\n        \"plan\",\n        \"review\"\n      ]\n    }\n  ],\n  \"invariants\": [\n    {\n      \"id\": \"contrast-review\",\n      \"statement\": \"A high-severity candidate without independent verification stays PLAUSIBLE and does not become a verified blocker.\",\n      \"source\": \"project\",\n      \"applies_to\": [\n        \"review\"\n      ]\n    }\n  ],\n  \"surfaces\": {},\n  \"consumed_source_ids\": [\n    \"project\"\n  ],\n  \"problems\": []\n}\n",
+  "stderr": "",
+  "exit_status": 0
+}

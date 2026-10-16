@@ -1,0 +1,63 @@
+{
+  "representation": "Redacted display argv; original private argv are not claimed to be these substituted strings.",
+  "commands": [
+    {
+      "argv": [
+        "<NODE>",
+        "scripts/depth-lint.mjs",
+        "<PRIVATE_EVIDENCE_ROOT>/generic-ux/depth.json"
+      ],
+      "cwd": "<SOURCE_REPOSITORY>/skills/qore-ux-review",
+      "exit_code": 2,
+      "artifact": "depth-lint-initial-error.txt",
+      "reason": "Initial scope-generation command used a different working directory; its wrongly located files were moved to the private audit tree and removed from the public skill tree before the successful lint/browser run."
+    },
+    {
+      "argv": [
+        "<NODE>",
+        "scripts/depth-lint.mjs",
+        "<PRIVATE_EVIDENCE_ROOT>/generic-ux/depth.json"
+      ],
+      "cwd": "<SOURCE_REPOSITORY>/skills/qore-ux-review",
+      "exit_code": 0,
+      "artifact": "depth-lint.json"
+    },
+    {
+      "argv": [
+        "<NODE>",
+        "scripts/stop-rule.mjs",
+        "<PRIVATE_EVIDENCE_ROOT>/generic-ux/loop.json"
+      ],
+      "cwd": "<SOURCE_REPOSITORY>/skills/qore-ux-review",
+      "exit_code": 0,
+      "artifact": "stop-result.json"
+    },
+    {
+      "argv": [
+        "<NODE>",
+        "<PRIVATE_EVIDENCE_ROOT>/generic-ux/drive.mjs"
+      ],
+      "exit_code": 1,
+      "artifact": "browser-attempt-1/failure.json",
+      "note": "First private selector expected CSS-uppercase text rather than accessible heading casing. No product defect or app correction."
+    },
+    {
+      "argv": [
+        "<NODE>",
+        "<PRIVATE_EVIDENCE_ROOT>/generic-ux/drive.mjs"
+      ],
+      "exit_code": 0,
+      "artifact": "browser/result.json",
+      "note": "Corrected private heading selector; new isolated context and all fresh observations."
+    },
+    {
+      "argv": [
+        "<NODE>",
+        "<PRIVATE_EVIDENCE_ROOT>/generic-ux/viewport.mjs"
+      ],
+      "exit_code": 0,
+      "artifact": "browser/viewport-observations.json",
+      "note": "Supplemental true-viewport screenshots avoid fullPage capture resizing artifacts."
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "observed_at": "2026-10-15T19:59:07.942064+00:00",
+  "selected_decisions": [
+    "D4 exact complete verifier token",
+    "D5 preserve output and packet semantics",
+    "D6 defer partial-batch and text changes",
+    "D7 preserve old candidate identities and installed adaptations"
+  ],
+  "evidence": [
+    "delivery-analysis.md",
+    "delivery-commands.json",
+    "qa-analysis.md",
+    "qa-commands.json",
+    "product-cross.md",
+    "architecture-cross.md",
+    "ux-cross.md",
+    "delivery-cross.md",
+    "qa-cross.md"
+  ],
+  "basis": "Independent reproducible CLI grammar mismatch and explanatory current source outweigh breadth of future feature proposals; role agreement alone is not the basis.",
+  "retained_dissent": [
+    "Partial verifier batches are documented but need empty/all-unexamined and run-status semantics before a later increment.",
+    "Plain text limitations/blocker wording deserves separate caller and comprehension checks."
+  ],
+  "deferred": [
+    "Partial verifier mode",
+    "Text result redesign",
+    "External caller inventory"
+  ],
+  "scope": "Frozen candidate b only; later current-tree remediation is a different candidate/revision and needs affected checks.",
+  "implementation_authorized_by_this_result": false
+}

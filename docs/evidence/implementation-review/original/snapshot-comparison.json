@@ -1,0 +1,321 @@
+{
+  "observed_at": "2026-10-15T20:08:21.465904+00:00",
+  "original_snapshot_sha256": "3c5ec57e930dd71209936c797e365155272b651ebdb9f1f41f91bc50eab89906",
+  "changed_original_files": [],
+  "added_files": [
+    {
+      "path": "tests/__pycache__/test_package.cpython-314.pyc",
+      "sha256": "4a8f77f898b8e37a76e83b32ba1f4ac7415a957033744c86b6eb6f42e98f5fc9"
+    },
+    {
+      "path": "tools/__pycache__/qore.cpython-314.pyc",
+      "sha256": "967e2fe2812c710b68f0da1267e240e13d6499d8cfbc1d6515d520d04328a2e3"
+    },
+    {
+      "path": ".agents/skills/qore-ux-review-qore/SKILL.md",
+      "sha256": "560684a35f58354b39b68f1736c640410bca8eb5d165f405e2cbfeb83844fd18"
+    },
+    {
+      "path": ".agents/skills/qore-plan-qore/SKILL.md",
+      "sha256": "855dcf88c85bc4bfb536e97f212349afa49ac552062e45667494eb15903f71a6"
+    },
+    {
+      "path": ".agents/skills/qore-review-qore/SKILL.md",
+      "sha256": "99207cd01ce19926bd2ae5e362959b11fc57ebd93bb6202d113a4f96aabd6d76"
+    },
+    {
+      "path": ".agents/skills/qore-review-qore-contrast/SKILL.md",
+      "sha256": "78552e051938a0395c08096944eb3dbd9fe36b1650a0eb15cdcfe3e576a064fb"
+    },
+    {
+      "path": ".agents/skills/qore-plan-qore-contrast/SKILL.md",
+      "sha256": "bd3c7cfefd97db1cb9def5e543164e32638feb94772a817a3fc86548087b64ad"
+    },
+    {
+      "path": ".agents/skills/qore-ux-review-qore-contrast/SKILL.md",
+      "sha256": "56e1303a7c3e7a782eb395f26eb0f71a7ad61583f7639285f2f371d0c410d687"
+    },
+    {
+      "path": ".agents/skills/qore-ux-review-qore-contrast/references/evidence.md",
+      "sha256": "659560f88b965371e2c6e886b5f4c648a4879ebb7c69af4b1d307dfae176c8b3"
+    },
+    {
+      "path": ".agents/skills/qore-ux-review-qore-contrast/references/project.json",
+      "sha256": "f72394c2ebb80cb6da41b33a088d56fbd24b4577f71bc2b022d0ef4bb36bfb88"
+    },
+    {
+      "path": ".agents/skills/qore-ux-review-qore-contrast/references/release.json",
+      "sha256": "c980365fa8f446973f52392ae246cb4081bde62fda5bd15a16df6f6f88176c0c"
+    },
+    {
+      "path": ".agents/skills/qore-ux-review-qore-contrast/references/run-evidence.md",
+      "sha256": "2ede0b19d58fd5535c90023068355679ee7bb27d3070967ada38f9ad156a9e69"
+    },
+    {
+      "path": ".agents/skills/qore-ux-review-qore-contrast/references/gates.md",
+      "sha256": "667063cd64c576a9c5b4ec69f6ddcd677d4e969bae96184b3136ede9fd12fd87"
+    },
+    {
+      "path": ".agents/skills/qore-ux-review-qore-contrast/references/project-profile.md",
+      "sha256": "154ed11dab8e8499e74a5f3a6afb512827d5de5c73408523b845684e38f59dfc"
+    },
+    {
+      "path": ".agents/skills/qore-ux-review-qore-contrast/references/protocol.md",
+      "sha256": "257ae0902a7fb00f6bfd1ebaa5b688e57a5f2e7163de3e9954ed3c9765105dfd"
+    },
+    {
+      "path": ".agents/skills/qore-ux-review-qore-contrast/scripts/project-check.py",
+      "sha256": "3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd"
+    },
+    {
+      "path": ".agents/skills/qore-ux-review-qore-contrast/scripts/run-check.py",
+      "sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa"
+    },
+    {
+      "path": ".agents/skills/qore-ux-review-qore-contrast/scripts/depth-lint.mjs",
+      "sha256": "9b9cdcea3e87f4820944ddfc075ef19e75aad0bb08a7f1fd279ea6590267def7"
+    },
+    {
+      "path": ".agents/skills/qore-ux-review-qore-contrast/scripts/stop-rule.mjs",
+      "sha256": "404b5ca63276c413e1f2697b98817f1802de4642cf634303707bd175eddd8085"
+    },
+    {
+      "path": ".agents/skills/qore-ux-review-qore-contrast/agents/openai.yaml",
+      "sha256": "8e6b8d047cf1f3a6b6ceef636302095dd244b6df98da36c95116a343e39a1635"
+    },
+    {
+      "path": ".agents/skills/qore-plan-qore-contrast/references/specification.md",
+      "sha256": "7eb06b91fca66a3ec00bda4b49b035c5e6bfe827c4624768f66a09b6ae7827a1"
+    },
+    {
+      "path": ".agents/skills/qore-plan-qore-contrast/references/project.json",
+      "sha256": "f72394c2ebb80cb6da41b33a088d56fbd24b4577f71bc2b022d0ef4bb36bfb88"
+    },
+    {
+      "path": ".agents/skills/qore-plan-qore-contrast/references/release.json",
+      "sha256": "8bd3ab8ca30e69995427cf4f5863b78bb9024aa987d1fecf2251b50b55e837ed"
+    },
+    {
+      "path": ".agents/skills/qore-plan-qore-contrast/references/run-evidence.md",
+      "sha256": "35cd6dc6d3e1177bbae96e5b9e829ed1aa55901747c856f4db20e946421f163d"
+    },
+    {
+      "path": ".agents/skills/qore-plan-qore-contrast/references/roles.md",
+      "sha256": "cc8060c7c852c143b9671af4fc0176b9c5068f338c19b2556b6ff494c0f0d318"
+    },
+    {
+      "path": ".agents/skills/qore-plan-qore-contrast/references/project-profile.md",
+      "sha256": "16c5ff087c83b7503b23d5d94726834462dd4fd73d78a5380cf85135fa85b0b3"
+    },
+    {
+      "path": ".agents/skills/qore-plan-qore-contrast/references/protocol.md",
+      "sha256": "83f92490a5601b83fc6eaa21861344e35cd04a3ac7edb56b98cd2eb0ecfea84b"
+    },
+    {
+      "path": ".agents/skills/qore-plan-qore-contrast/scripts/spec-lint.mjs",
+      "sha256": "0015bf0428e30d662d2ddf119e5813e3dc5f01379c45e3229c592853a77683ef"
+    },
+    {
+      "path": ".agents/skills/qore-plan-qore-contrast/scripts/project-check.py",
+      "sha256": "3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd"
+    },
+    {
+      "path": ".agents/skills/qore-plan-qore-contrast/scripts/run-check.py",
+      "sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa"
+    },
+    {
+      "path": ".agents/skills/qore-plan-qore-contrast/scripts/spec-lint.sh",
+      "sha256": "ee4b0c491833f8f3960037255f7ea601548a353d18b317aae25d8e5f2cd461b6"
+    },
+    {
+      "path": ".agents/skills/qore-plan-qore-contrast/agents/openai.yaml",
+      "sha256": "d687b486203ed5a1bc97ad7c0b7bf8d9703803c3e68acf3f62356d99f1a901d2"
+    },
+    {
+      "path": ".agents/skills/qore-review-qore-contrast/references/project.json",
+      "sha256": "f72394c2ebb80cb6da41b33a088d56fbd24b4577f71bc2b022d0ef4bb36bfb88"
+    },
+    {
+      "path": ".agents/skills/qore-review-qore-contrast/references/release.json",
+      "sha256": "ecd49cc2f51220b47d42b6da2d433e7470202a5f390adb424f21d31ece50a480"
+    },
+    {
+      "path": ".agents/skills/qore-review-qore-contrast/references/run-evidence.md",
+      "sha256": "fbdf433ef8b3e972f97bed5fdec4990cf3b49535bf63120c729a7daf4af71746"
+    },
+    {
+      "path": ".agents/skills/qore-review-qore-contrast/references/project-profile.md",
+      "sha256": "5d3b69aac18f83a634f4c57c214cc1f53fa186c03c536adcefd4c905a8767c8d"
+    },
+    {
+      "path": ".agents/skills/qore-review-qore-contrast/references/protocol.md",
+      "sha256": "e27e0050fdf4d75d2840dd257b9a759f1f48d459ef540990cd3aed5528c5f340"
+    },
+    {
+      "path": ".agents/skills/qore-review-qore-contrast/references/findings.md",
+      "sha256": "79b2b5f52e88761331c01b92af9b492ef1888c6c20a0af1b94a8bead7aa2d6cb"
+    },
+    {
+      "path": ".agents/skills/qore-review-qore-contrast/scripts/redact-for-verifier.mjs",
+      "sha256": "dc249524c749ad5b511aef0a2cf08b4cfd5c47c1e0de4fd41c5c70746b471083"
+    },
+    {
+      "path": ".agents/skills/qore-review-qore-contrast/scripts/project-check.py",
+      "sha256": "3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd"
+    },
+    {
+      "path": ".agents/skills/qore-review-qore-contrast/scripts/run-check.py",
+      "sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa"
+    },
+    {
+      "path": ".agents/skills/qore-review-qore-contrast/scripts/finding-lint.mjs",
+      "sha256": "89b02ef5912adf3f6ff86ad8652a3f21e7313bb0cc0a280a3dd9810546abdef9"
+    },
+    {
+      "path": ".agents/skills/qore-review-qore-contrast/agents/openai.yaml",
+      "sha256": "87cb529cc8c314db1a101f0de2a57fb3256e7ef570c19bf035da5c99e271d3fb"
+    },
+    {
+      "path": ".agents/skills/qore-review-qore/references/project.json",
+      "sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9"
+    },
+    {
+      "path": ".agents/skills/qore-review-qore/references/release.json",
+      "sha256": "56758f810dfca4a7ed55981d43e695574caa606dfdff307170e86dbc7032e2e4"
+    },
+    {
+      "path": ".agents/skills/qore-review-qore/references/run-evidence.md",
+      "sha256": "fbdf433ef8b3e972f97bed5fdec4990cf3b49535bf63120c729a7daf4af71746"
+    },
+    {
+      "path": ".agents/skills/qore-review-qore/references/project-profile.md",
+      "sha256": "5d3b69aac18f83a634f4c57c214cc1f53fa186c03c536adcefd4c905a8767c8d"
+    },
+    {
+      "path": ".agents/skills/qore-review-qore/references/protocol.md",
+      "sha256": "e27e0050fdf4d75d2840dd257b9a759f1f48d459ef540990cd3aed5528c5f340"
+    },
+    {
+      "path": ".agents/skills/qore-review-qore/references/findings.md",
+      "sha256": "79b2b5f52e88761331c01b92af9b492ef1888c6c20a0af1b94a8bead7aa2d6cb"
+    },
+    {
+      "path": ".agents/skills/qore-review-qore/scripts/redact-for-verifier.mjs",
+      "sha256": "dc249524c749ad5b511aef0a2cf08b4cfd5c47c1e0de4fd41c5c70746b471083"
+    },
+    {
+      "path": ".agents/skills/qore-review-qore/scripts/project-check.py",
+      "sha256": "3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd"
+    },
+    {
+      "path": ".agents/skills/qore-review-qore/scripts/run-check.py",
+      "sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa"
+    },
+    {
+      "path": ".agents/skills/qore-review-qore/scripts/finding-lint.mjs",
+      "sha256": "89b02ef5912adf3f6ff86ad8652a3f21e7313bb0cc0a280a3dd9810546abdef9"
+    },
+    {
+      "path": ".agents/skills/qore-review-qore/agents/openai.yaml",
+      "sha256": "ed658eeb9489e53c6fc3795ef971906aec1e39a072c2b2c5601149180fe5d499"
+    },
+    {
+      "path": ".agents/skills/qore-plan-qore/references/specification.md",
+      "sha256": "7eb06b91fca66a3ec00bda4b49b035c5e6bfe827c4624768f66a09b6ae7827a1"
+    },
+    {
+      "path": ".agents/skills/qore-plan-qore/references/project.json",
+      "sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9"
+    },
+    {
+      "path": ".agents/skills/qore-plan-qore/references/release.json",
+      "sha256": "7191222796c98dc312bdcee33d1c7b7e5b97cdae99e4cdc1ec7027a64b64adb9"
+    },
+    {
+      "path": ".agents/skills/qore-plan-qore/references/run-evidence.md",
+      "sha256": "35cd6dc6d3e1177bbae96e5b9e829ed1aa55901747c856f4db20e946421f163d"
+    },
+    {
+      "path": ".agents/skills/qore-plan-qore/references/roles.md",
+      "sha256": "cc8060c7c852c143b9671af4fc0176b9c5068f338c19b2556b6ff494c0f0d318"
+    },
+    {
+      "path": ".agents/skills/qore-plan-qore/references/project-profile.md",
+      "sha256": "16c5ff087c83b7503b23d5d94726834462dd4fd73d78a5380cf85135fa85b0b3"
+    },
+    {
+      "path": ".agents/skills/qore-plan-qore/references/protocol.md",
+      "sha256": "83f92490a5601b83fc6eaa21861344e35cd04a3ac7edb56b98cd2eb0ecfea84b"
+    },
+    {
+      "path": ".agents/skills/qore-plan-qore/scripts/spec-lint.mjs",
+      "sha256": "0015bf0428e30d662d2ddf119e5813e3dc5f01379c45e3229c592853a77683ef"
+    },
+    {
+      "path": ".agents/skills/qore-plan-qore/scripts/project-check.py",
+      "sha256": "3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd"
+    },
+    {
+      "path": ".agents/skills/qore-plan-qore/scripts/run-check.py",
+      "sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa"
+    },
+    {
+      "path": ".agents/skills/qore-plan-qore/scripts/spec-lint.sh",
+      "sha256": "ee4b0c491833f8f3960037255f7ea601548a353d18b317aae25d8e5f2cd461b6"
+    },
+    {
+      "path": ".agents/skills/qore-plan-qore/agents/openai.yaml",
+      "sha256": "7bdaf9c276f2b028bdbb31de6454ce2ffcfee49a09a7c80e4a2b8e587a401243"
+    },
+    {
+      "path": ".agents/skills/qore-ux-review-qore/references/evidence.md",
+      "sha256": "659560f88b965371e2c6e886b5f4c648a4879ebb7c69af4b1d307dfae176c8b3"
+    },
+    {
+      "path": ".agents/skills/qore-ux-review-qore/references/project.json",
+      "sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9"
+    },
+    {
+      "path": ".agents/skills/qore-ux-review-qore/references/release.json",
+      "sha256": "0ffd3e7a86e8f4fd3de20b5664e6c244515e4085084e15f89d48ad91da6003c3"
+    },
+    {
+      "path": ".agents/skills/qore-ux-review-qore/references/run-evidence.md",
+      "sha256": "2ede0b19d58fd5535c90023068355679ee7bb27d3070967ada38f9ad156a9e69"
+    },
+    {
+      "path": ".agents/skills/qore-ux-review-qore/references/gates.md",
+      "sha256": "667063cd64c576a9c5b4ec69f6ddcd677d4e969bae96184b3136ede9fd12fd87"
+    },
+    {
+      "path": ".agents/skills/qore-ux-review-qore/references/project-profile.md",
+      "sha256": "154ed11dab8e8499e74a5f3a6afb512827d5de5c73408523b845684e38f59dfc"
+    },
+    {
+      "path": ".agents/skills/qore-ux-review-qore/references/protocol.md",
+      "sha256": "257ae0902a7fb00f6bfd1ebaa5b688e57a5f2e7163de3e9954ed3c9765105dfd"
+    },
+    {
+      "path": ".agents/skills/qore-ux-review-qore/scripts/project-check.py",
+      "sha256": "3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd"
+    },
+    {
+      "path": ".agents/skills/qore-ux-review-qore/scripts/run-check.py",
+      "sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa"
+    },
+    {
+      "path": ".agents/skills/qore-ux-review-qore/scripts/depth-lint.mjs",
+      "sha256": "9b9cdcea3e87f4820944ddfc075ef19e75aad0bb08a7f1fd279ea6590267def7"
+    },
+    {
+      "path": ".agents/skills/qore-ux-review-qore/scripts/stop-rule.mjs",
+      "sha256": "404b5ca63276c413e1f2697b98817f1802de4642cf634303707bd175eddd8085"
+    },
+    {
+      "path": ".agents/skills/qore-ux-review-qore/agents/openai.yaml",
+      "sha256": "50c920dc7bbab97d965fdb0844e467c561f1dff4b15f5401ac603ec7d94fd675"
+    }
+  ],
+  "qore_snapshot_unchanged": true,
+  "limitation": "Additional runtime files preserved; attribution unresolved. Named original-source snapshot remains byte-identical; .agents and __pycache__ are excluded from Qore package snapshot."
+}

@@ -1,0 +1,112 @@
+--- frozen/capability-matrix.json
++++ corrected/capability-matrix.json
+@@ -14,7 +14,7 @@
+         "G1 direct/reload/history"
+       ],
+       "evidence": [
+-        "browser/events.json"
++        "browser-events.json"
+       ]
+     },
+     {
+@@ -24,8 +24,8 @@
+         "G3 opened true-viewport images and SSR"
+       ],
+       "evidence": [
+-        "browser/viewport-observations.json",
+-        "browser/ssr.json"
++        "viewport-observations.json",
++        "ssr.json"
+       ]
+     },
+     {
+@@ -47,7 +47,7 @@
+         "G5 Tab/Space/focus restoration"
+       ],
+       "evidence": [
+-        "browser/g5-summary-keyboard-focus-i1.dom.json"
++        "dom/g5-summary-keyboard-focus-i1.dom.json"
+       ]
+     },
+     {
+@@ -57,7 +57,7 @@
+         "G1 exception attribution"
+       ],
+       "evidence": [
+-        "browser/events.json"
++        "browser-events.json"
+       ]
+     },
+     {
+@@ -68,7 +68,7 @@
+         "G2 delayed route resolution"
+       ],
+       "evidence": [
+-        "browser/events.json"
++        "browser-events.json"
+       ]
+     }
+   ],
+--- frozen/execution.json
++++ corrected/execution.json
+@@ -130,7 +130,7 @@
+     },
+     {
+       "path": "capability-matrix.json",
+-      "sha256": "8c1dbf1f5be41bbf3c3e68f41569fa332763e5cb4e89f788d17f026e263fb703",
++      "sha256": "13d8148f04f30123b43becbc2862c628557d605ee28b897522edf19db427f91c",
+       "kind": "source"
+     },
+     {
+--- frozen/provenance.json
++++ corrected/provenance.json
+@@ -83,14 +83,14 @@
+     },
+     {
+       "public_file": "capability-matrix.json",
+-      "public_sha256": "8c1dbf1f5be41bbf3c3e68f41569fa332763e5cb4e89f788d17f026e263fb703",
++      "public_sha256": "13d8148f04f30123b43becbc2862c628557d605ee28b897522edf19db427f91c",
+       "raw_sources": [
+         {
+           "private_artifact_id": "qore-private:executions/generic-ux-final/capability-matrix.json",
+           "sha256": "8c1dbf1f5be41bbf3c3e68f41569fa332763e5cb4e89f788d17f026e263fb703"
+         }
+       ],
+-      "transformation": "Selected structured evidence; local prefixes replaced with disclosed logical placeholders and URL query/fragment values removed."
++      "transformation": "Selected structured evidence; local prefixes replaced with disclosed logical placeholders and URL query/fragment values removed. Public evidence paths were normalized to the exported layout after independent inspection; original observation times and raw source identities are preserved."
+     },
+     {
+       "public_file": "gate-assertions.json",
+@@ -466,7 +466,7 @@
+     },
+     {
+       "public_file": "execution.json",
+-      "public_sha256": "302317bd68ed1dde0b08714feb705acacb314dfedcc9f283432133a6322d626a",
++      "public_sha256": "884cdf5af95361e82a7a7c0ed1643829b9170f0b5b98cbc311d4f9c985cfcf7b",
+       "raw_sources": [
+         {
+           "private_artifact_id": "qore-private:executions/generic-ux-final/run-input.json",
+@@ -481,7 +481,7 @@
+           "sha256": "7a172338d126ec5d2afb05fb2cbfe58a094918380694b4b4ba5a1cb75eefbb6c"
+         }
+       ],
+-      "transformation": "New public qore-run wrapper of authentic phase outputs; preserves original candidate and observation identities."
++      "transformation": "New public qore-run wrapper of authentic phase outputs; preserves original candidate and observation identities. Public evidence paths were normalized to the exported layout after independent inspection; original observation times and raw source identities are preserved."
+     },
+     {
+       "public_file": "README.md",
+@@ -501,5 +501,13 @@
+       "sha256": "b35204c1459086a868bc05b5fb3b5939c4c48876afc684b5cc559fe9f90ddf45",
+       "reason": "Raw trace/video or failed-attempt diagnostic remains private."
+     }
+-  ]
++  ],
++  "export_index_correction": {
++    "corrected_at": "2026-10-15T20:34:21.219756+00:00",
++    "resource": "capability-matrix.json",
++    "previous_public_sha256": "8c1dbf1f5be41bbf3c3e68f41569fa332763e5cb4e89f788d17f026e263fb703",
++    "corrected_public_sha256": "13d8148f04f30123b43becbc2862c628557d605ee28b897522edf19db427f91c",
++    "changed_references": 6,
++    "purpose": "Correct public export layout references only; no browser observation or outcome was changed."
++  }
+ }

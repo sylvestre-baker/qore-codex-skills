@@ -1,0 +1,22 @@
+{
+  "findings": [
+    {
+      "id": "F-1",
+      "title": "Derived release profile identity hashes the input bytes rather than the bundled profile",
+      "severity": "medium",
+      "evidence": "tools/qore.py:215 records digest(profile_path), but line 235 calls write_json on the parsed profile. With the compact valid profile saved as feasibility-compact-profile.json, derive succeeds and verify returns valid, while manifest profile.sha256 is 63c9157e3dd4d6eb2c33c899820422e8ce1d1bee9cc4e22c1df96d814e50a83f and bundled references/project.json / runtime checker profile.sha256 is da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9. See feasibility-derive-result.json and feasibility-project-check-result.txt.",
+      "condition": "Input profile JSON uses a valid serialization different from write_json(indent=2, ensure_ascii=False) plus newline.",
+      "consequence": "A successfully verified derivative advertises a different profile digest from the exact bundled profile consumed at runtime; consumers cannot reconcile release identity with preflight/run evidence using the claimed exact profile digest.",
+      "uncertainty": "The verifier must decide whether release profile.sha256 is intended as source-input identity only; current runtime/run docs describe the exact consumed bundled profile and no distinct source-vs-bundled identity fields exist."
+    },
+    {
+      "id": "F-2",
+      "title": "Findings gate accepts CONFIRMED lower-severity findings without the required counterexample",
+      "severity": "medium",
+      "evidence": "skills/qore-review/references/findings.md:18 requires counterexample support for CONFIRMED, and :26 says validation checks verdict obligations. scripts/finding-lint.mjs:40 applies that obligation only to critical/high. The saved feasibility-medium-without-counterexample.json has a medium CONFIRMED finding and no counterexample; node finding-lint.mjs INPUT --verifier=ran --json exits 0 and emits valid:true, coverage:COMPLETE, verdict:SHIP. See feasibility-medium-lint-result.txt.",
+      "condition": "A verifier packet labels a medium, low, or info finding CONFIRMED without a counterexample field.",
+      "consequence": "The final structural gate reports a contract-invalid confirmed packet as valid, losing required reproducibility support for nonblocking findings.",
+      "uncertainty": "This is a structural obligation mismatch; it does not claim the checker can prove that reproduction actually occurred, nor that a medium finding should block delivery."
+    }
+  ]
+}

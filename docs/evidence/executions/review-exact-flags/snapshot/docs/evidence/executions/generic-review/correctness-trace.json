@@ -1,0 +1,48 @@
+[
+  {
+    "argv": [
+      "node",
+      "skills/qore-review/scripts/finding-lint.mjs",
+      "/workspace/review-evidence/correctness-input-missing.json",
+      "--verifier=ran",
+      "--json"
+    ],
+    "exit_code": 1,
+    "stdout": "{\n  \"valid\": false,\n  \"coverage\": \"PARTIAL\",\n  \"verdict\": \"INVALID\",\n  \"verifier\": \"ran\",\n  \"total\": 0,\n  \"counts\": {\n    \"CONFIRMED\": 0,\n    \"PLAUSIBLE\": 0,\n    \"REFUTED\": 0\n  },\n  \"blocking_findings\": [],\n  \"findings\": [],\n  \"problems\": [\n    {\n      \"code\": \"envelope\",\n      \"why\": \"Expected an object containing findings: []; arrays, null and missing findings are refused.\"\n    }\n  ],\n  \"limit\": \"The verifier flag records an execution declaration; validate actual independent phase evidence separately.\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "skills/qore-review/scripts/finding-lint.mjs",
+      "/workspace/review-evidence/correctness-input-high-skipped.json",
+      "--verifier=skipped",
+      "--json"
+    ],
+    "exit_code": 0,
+    "stdout": "{\n  \"valid\": true,\n  \"coverage\": \"PARTIAL\",\n  \"verdict\": \"PENDING\",\n  \"verifier\": \"skipped\",\n  \"total\": 1,\n  \"counts\": {\n    \"CONFIRMED\": 0,\n    \"PLAUSIBLE\": 1,\n    \"REFUTED\": 0\n  },\n  \"blocking_findings\": [],\n  \"findings\": [\n    {\n      \"id\": \"T1\",\n      \"title\": \"Candidate\",\n      \"severity\": \"high\",\n      \"evidence\": \"src/input.ts:12\",\n      \"verdict\": \"PLAUSIBLE\",\n      \"rationale\": \"private\"\n    }\n  ],\n  \"problems\": [],\n  \"limit\": \"The verifier flag records an execution declaration; validate actual independent phase evidence separately.\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "skills/qore-review/scripts/redact-for-verifier.mjs",
+      "/workspace/review-evidence/correctness-input-high-skipped.json"
+    ],
+    "exit_code": 0,
+    "stdout": "{\n  \"findings\": [\n    {\n      \"id\": \"T1\",\n      \"title\": \"Candidate\",\n      \"severity\": \"high\",\n      \"evidence\": \"src/input.ts:12\"\n    }\n  ]\n}\n",
+    "stderr": "redact-for-verifier: 1 claims; withheld fields: rationale, verdict.\n"
+  },
+  {
+    "argv": [
+      "node",
+      "skills/qore-review/scripts/finding-lint.mjs",
+      "/workspace/review-evidence/correctness-input-empty.json",
+      "--verifier=ran",
+      "--json"
+    ],
+    "exit_code": 0,
+    "stdout": "{\n  \"valid\": true,\n  \"coverage\": \"COMPLETE\",\n  \"verdict\": \"SHIP\",\n  \"verifier\": \"ran\",\n  \"total\": 0,\n  \"counts\": {\n    \"CONFIRMED\": 0,\n    \"PLAUSIBLE\": 0,\n    \"REFUTED\": 0\n  },\n  \"blocking_findings\": [],\n  \"findings\": [],\n  \"problems\": [],\n  \"limit\": \"The verifier flag records an execution declaration; validate actual independent phase evidence separately.\"\n}\n",
+    "stderr": ""
+  }
+]

@@ -1,0 +1,313 @@
+{
+  "window": {
+    "started_at": "2026-10-15T19:41:14.945Z",
+    "finished_at": "2026-10-15T19:41:31.189Z"
+  },
+  "states": [
+    {
+      "artifact": "g0-entry-i1.dom.json",
+      "url": "https://qaizen.io/labs",
+      "title": "Labs \u2014 Free AI Governance and ROI Self-Assessments | QAIZEN",
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "QAIZEN LABS",
+          "rect": {
+            "x": 362.0625,
+            "y": 112,
+            "width": 555.875,
+            "height": 40
+          }
+        },
+        {
+          "tag": "H2",
+          "text": "PRODUCTION READINESS CHECK",
+          "rect": {
+            "x": 361,
+            "y": 289,
+            "width": 402.15625,
+            "height": 64
+          }
+        },
+        {
+          "tag": "H2",
+          "text": "SHADOW AI AUDIT",
+          "rect": {
+            "x": 281,
+            "y": 628.5,
+            "width": 322,
+            "height": 28
+          }
+        },
+        {
+          "tag": "H2",
+          "text": "WHAT IS A STALLED AI PILOT COSTING YOU?",
+          "rect": {
+            "x": 677,
+            "y": 628.5,
+            "width": 322,
+            "height": 56
+          }
+        },
+        {
+          "tag": "H2",
+          "text": "WATCH AN AI AGENT MEET ITS CONTROLS",
+          "rect": {
+            "x": 281,
+            "y": 942.75,
+            "width": 718,
+            "height": 28
+          }
+        },
+        {
+          "tag": "H2",
+          "text": "MODELS BEHIND EACH TOOL",
+          "rect": {
+            "x": 256,
+            "y": 1258.25,
+            "width": 768,
+            "height": 20
+          }
+        }
+      ]
+    },
+    {
+      "artifact": "g0-readiness-resolved-i1.dom.json",
+      "url": "https://qaizen.io/labs/readiness-check",
+      "title": "Production Readiness Check: Could Your AI Pilot Go Live? | QAIZEN",
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "COULD YOUR AI PILOT GO LIVE? A CHECK IN ABOUT 3 MINUTES",
+          "rect": {
+            "x": 352,
+            "y": 241,
+            "width": 576,
+            "height": 120
+          }
+        }
+      ]
+    },
+    {
+      "artifact": "g1-direct-reload-i1.dom.json",
+      "url": "https://qaizen.io/labs/readiness-check",
+      "title": "Production Readiness Check: Could Your AI Pilot Go Live? | QAIZEN",
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "COULD YOUR AI PILOT GO LIVE? A CHECK IN ABOUT 3 MINUTES",
+          "rect": {
+            "x": 352,
+            "y": 241,
+            "width": 576,
+            "height": 120
+          }
+        }
+      ]
+    },
+    {
+      "artifact": "g2-help-closed-keyboard-i1.dom.json",
+      "url": "https://qaizen.io/labs/readiness-check",
+      "title": "Production Readiness Check: Could Your AI Pilot Go Live? | QAIZEN",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Which data will the AI system read and write in production, and who owns each source?",
+          "rect": {
+            "x": 417,
+            "y": 120,
+            "width": 446,
+            "height": 58.5
+          }
+        }
+      ]
+    },
+    {
+      "artifact": "g2-help-expanded-keyboard-i1.dom.json",
+      "url": "https://qaizen.io/labs/readiness-check",
+      "title": "Production Readiness Check: Could Your AI Pilot Go Live? | QAIZEN",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Which data will the AI system read and write in production, and who owns each source?",
+          "rect": {
+            "x": 417,
+            "y": 120,
+            "width": 446,
+            "height": 58.5
+          }
+        }
+      ]
+    },
+    {
+      "artifact": "g2-question-resolved-i1.dom.json",
+      "url": "https://qaizen.io/labs/readiness-check",
+      "title": "Production Readiness Check: Could Your AI Pilot Go Live? | QAIZEN",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Which data will the AI system read and write in production, and who owns each source?",
+          "rect": {
+            "x": 417,
+            "y": 353,
+            "width": 446,
+            "height": 58.5
+          }
+        }
+      ]
+    },
+    {
+      "artifact": "g2-route-pending-i1.dom.json",
+      "url": "https://qaizen.io/labs",
+      "title": "Labs \u2014 Free AI Governance and ROI Self-Assessments | QAIZEN",
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "QAIZEN LABS",
+          "rect": {
+            "x": 362.0625,
+            "y": 112,
+            "width": 555.875,
+            "height": 40
+          }
+        },
+        {
+          "tag": "H2",
+          "text": "PRODUCTION READINESS CHECK",
+          "rect": {
+            "x": 361,
+            "y": 289,
+            "width": 402.15625,
+            "height": 64
+          }
+        },
+        {
+          "tag": "H2",
+          "text": "SHADOW AI AUDIT",
+          "rect": {
+            "x": 281,
+            "y": 628.5,
+            "width": 322,
+            "height": 28
+          }
+        },
+        {
+          "tag": "H2",
+          "text": "WHAT IS A STALLED AI PILOT COSTING YOU?",
+          "rect": {
+            "x": 677,
+            "y": 628.5,
+            "width": 322,
+            "height": 56
+          }
+        },
+        {
+          "tag": "H2",
+          "text": "WATCH AN AI AGENT MEET ITS CONTROLS",
+          "rect": {
+            "x": 281,
+            "y": 942.75,
+            "width": 718,
+            "height": 28
+          }
+        },
+        {
+          "tag": "H2",
+          "text": "MODELS BEHIND EACH TOOL",
+          "rect": {
+            "x": 256,
+            "y": 1258.25,
+            "width": 768,
+            "height": 20
+          }
+        }
+      ]
+    },
+    {
+      "artifact": "g5-intro-restored-focus-i1.dom.json",
+      "url": "https://qaizen.io/labs/readiness-check",
+      "title": "Production Readiness Check: Could Your AI Pilot Go Live? | QAIZEN",
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "COULD YOUR AI PILOT GO LIVE? A CHECK IN ABOUT 3 MINUTES",
+          "rect": {
+            "x": 352,
+            "y": 233,
+            "width": 576,
+            "height": 120
+          }
+        }
+      ]
+    },
+    {
+      "artifact": "g5-radio-keyboard-focus-i1.dom.json",
+      "url": "https://qaizen.io/labs/readiness-check",
+      "title": "Production Readiness Check: Could Your AI Pilot Go Live? | QAIZEN",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Which data will the AI system read and write in production, and who owns each source?",
+          "rect": {
+            "x": 417,
+            "y": 353,
+            "width": 446,
+            "height": 58.5
+          }
+        }
+      ]
+    },
+    {
+      "artifact": "g5-summary-keyboard-focus-i1.dom.json",
+      "url": "https://qaizen.io/labs/readiness-check",
+      "title": "Production Readiness Check: Could Your AI Pilot Go Live? | QAIZEN",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Which data will the AI system read and write in production, and who owns each source?",
+          "rect": {
+            "x": 417,
+            "y": 120,
+            "width": 446,
+            "height": 58.5
+          }
+        }
+      ]
+    },
+    {
+      "artifact": "g6-repeated-back-i1.dom.json",
+      "url": "https://qaizen.io/labs/readiness-check",
+      "title": "Production Readiness Check: Could Your AI Pilot Go Live? | QAIZEN",
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "COULD YOUR AI PILOT GO LIVE? A CHECK IN ABOUT 3 MINUTES",
+          "rect": {
+            "x": 352,
+            "y": 233,
+            "width": 576,
+            "height": 120
+          }
+        }
+      ]
+    },
+    {
+      "artifact": "g6-repeated-question-i1.dom.json",
+      "url": "https://qaizen.io/labs/readiness-check",
+      "title": "Production Readiness Check: Could Your AI Pilot Go Live? | QAIZEN",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Which data will the AI system read and write in production, and who owns each source?",
+          "rect": {
+            "x": 417,
+            "y": 353,
+            "width": 446,
+            "height": 58.5
+          }
+        }
+      ]
+    }
+  ],
+  "deployment_revision": "Not exposed by this read-only observation; local source snapshot is provenance, not asserted to be the deployed Git commit."
+}

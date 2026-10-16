@@ -1,0 +1,61 @@
+{
+  "in_scope": [
+    "G1"
+  ],
+  "iterations": [
+    {
+      "n": 1,
+      "scores": {
+        "G1": 0
+      },
+      "measured": [
+        "G1"
+      ]
+    },
+    {
+      "n": 2,
+      "scores": {
+        "G1": 1
+      },
+      "measured": [
+        "G1"
+      ]
+    },
+    {
+      "n": 3,
+      "scores": {
+        "G1": 2
+      },
+      "measured": [
+        "G1"
+      ]
+    },
+    {
+      "n": 4,
+      "scores": {
+        "G1": 3
+      },
+      "measured": [
+        "G1"
+      ]
+    },
+    {
+      "n": 5,
+      "scores": {
+        "G1": 3
+      },
+      "measured": [
+        "G1"
+      ]
+    },
+    {
+      "n": 6,
+      "scores": {
+        "G1": 4
+      },
+      "measured": [
+        "G1"
+      ]
+    }
+  ]
+}

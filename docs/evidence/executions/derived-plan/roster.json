@@ -1,0 +1,76 @@
+{
+  "requested_roles": [
+    "product",
+    "architecture",
+    "ux",
+    "delivery",
+    "qa"
+  ],
+  "returned_roles": [
+    "product",
+    "architecture",
+    "ux",
+    "delivery",
+    "qa"
+  ],
+  "missing_roles": [],
+  "analysis_barrier_reached": true,
+  "roles": {
+    "product": {
+      "actor_id": "/root/impl_validators/derived_product",
+      "status": "ANALYZE_RETURNED",
+      "worker_budget_seconds": 80,
+      "analysis_report": "product-analysis.md",
+      "returned_at": "2026-10-15T20:01:27.251625+00:00",
+      "cross_status": "RETURNED",
+      "cross_report": "product-cross.md"
+    },
+    "architecture": {
+      "actor_id": "/root/impl_validators/derived_architecture",
+      "status": "ANALYZE_RETURNED",
+      "worker_budget_seconds": 80,
+      "analysis_report": "architecture-analysis.md",
+      "returned_at": "2026-10-15T20:03:17.823193+00:00",
+      "cross_status": "RETURNED",
+      "cross_report": "architecture-cross.md"
+    },
+    "ux": {
+      "actor_id": "/root/impl_validators/derived_ux",
+      "status": "ANALYZE_RETURNED",
+      "worker_budget_seconds": 75,
+      "analysis_report": "ux-analysis.md",
+      "returned_at": "2026-10-15T20:04:43.885540+00:00",
+      "cross_status": "RETURNED",
+      "cross_report": "ux-cross.md"
+    },
+    "delivery": {
+      "actor_id": "/root/impl_validators/derived_delivery",
+      "status": "ANALYZE_RETURNED",
+      "worker_budget_seconds": 75,
+      "analysis_report": "delivery-analysis.md",
+      "returned_at": "2026-10-15T20:06:08.860650+00:00",
+      "cross_status": "RETURNED",
+      "cross_report": "delivery-cross.md"
+    },
+    "qa": {
+      "actor_id": "/root/impl_validators/derived_qa",
+      "status": "ANALYZE_RETURNED",
+      "worker_budget_seconds": 80,
+      "analysis_report": "qa-analysis.md",
+      "returned_at": "2026-10-15T20:07:38.696446+00:00",
+      "cross_status": "RETURNED",
+      "cross_report": "qa-cross.md"
+    }
+  },
+  "rounds": {
+    "Analyze": "COMPLETE",
+    "Cross-examine": "COMPLETE",
+    "Adjudicate": "COMPLETE"
+  },
+  "analysis_barrier_at": "2026-10-15T20:07:38.696627+00:00",
+  "cross_barrier_at": "2026-10-15T20:12:32.897869+00:00",
+  "actual_planning_passes": 2,
+  "coverage": "COMPLETE",
+  "finished_at": "2026-10-15T20:13:15.202767+00:00",
+  "stopping_reason": "All five fresh analyses and all five single cross-examination passes returned; exact-token scope and observable precedence resolved through lead adjudication; no third round needed."
+}

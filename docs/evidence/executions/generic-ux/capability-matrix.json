@@ -1,0 +1,82 @@
+{
+  "driver": {
+    "node": "v24.19.0",
+    "playwright": "1.62.1",
+    "chromium": "151.0.7922.34"
+  },
+  "depth": "entry",
+  "rows": [
+    {
+      "capability": "navigation",
+      "status": "OBSERVED",
+      "required_checks": [
+        "G0 entry click",
+        "G1 direct/reload/history"
+      ],
+      "evidence": [
+        "browser/events.json"
+      ]
+    },
+    {
+      "capability": "screenshots",
+      "status": "OBSERVED",
+      "required_checks": [
+        "G3 actual image inspection"
+      ],
+      "evidence": [
+        "browser/g3-viewport-intro.png",
+        "browser/g3-viewport-summary-focused.png",
+        "browser/g3-viewport-help-expanded.png",
+        "browser/g3-viewport-restored.png"
+      ]
+    },
+    {
+      "capability": "DOM/semantics",
+      "status": "OBSERVED",
+      "required_checks": [
+        "G2 resolved state",
+        "G4 text/IDs",
+        "G5 role/names/focus"
+      ],
+      "evidence": [
+        "gate-assertions.json"
+      ]
+    },
+    {
+      "capability": "keyboard",
+      "status": "OBSERVED",
+      "required_checks": [
+        "G5 Tab/Space and restoration"
+      ],
+      "evidence": [
+        "browser/g5-summary-keyboard-focus-i1.dom.json",
+        "browser/viewport-observations.json"
+      ]
+    },
+    {
+      "capability": "console",
+      "status": "OBSERVED",
+      "required_checks": [
+        "G1 exception attribution"
+      ],
+      "evidence": [
+        "browser/events.json"
+      ]
+    },
+    {
+      "capability": "network",
+      "status": "OBSERVED",
+      "required_checks": [
+        "G1 documents and G2 route resolution"
+      ],
+      "evidence": [
+        "browser/events.json"
+      ]
+    }
+  ],
+  "not_claimed": [
+    "Automated accessibility conformance",
+    "Core Web Vitals",
+    "Mobile/native app qualification"
+  ]
+}

@@ -1,0 +1,442 @@
+UTC 2026-10-15T19:56:44.549946+00:00
+Session identity: primary agent /root (host-provided conversation role); no opaque chat/session ID exposed. Evidence process PID 5740
+HOST_TOOL rg /usr/local/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-arm64/vendor/aarch64-unknown-linux-musl/codex-path/rg
+HOST_TOOL python3 /usr/bin/python3
+HOST_TOOL node /usr/local/bin/node
+HOST_TOOL ffprobe None
+HOST_TOOL ffmpeg None
+HOST_TOOL pandoc None
+HOST_TOOL cmark None
+HOST_TOOL chromium None
+HOST_TOOL playwright None
+PYTHON_MODULE markdown False
+PYTHON_MODULE markdown_it False
+PYTHON_MODULE mistune False
+PYTHON_MODULE PIL False
+
+DOCUMENT README.md sha256 06d2533a36fff08e66a1f00f8bdc571fb566cc7b3a35d0ae283c7d0645c3fc5a
+README.md:1: # Qore Skills
+README.md:2: 
+README.md:3: Prepare a sourced change plan, challenge a specification with independently checked findings, or inspect what a web interface actually does.
+README.md:4: 
+README.md:5: Qore is for developers and maintainers already using Codex on an existing project. It packages three independent methods as local skills. Choose the one your task needs; they are not a mandatory pipeline. No Qore account, backend, or hosted service is required.
+README.md:6: 
+README.md:7: **Candidate 0.1.0 — qualification in progress.** Local assembly and validators are implemented. A real browser entry/state observation is recorded below. Candidate-only first use and complete method executions must still be checked against the frozen package; package preparation is separate from publication.
+README.md:8: 
+README.md:9: ## Choose your task
+README.md:10: 
+README.md:11: | You want to… | Target | Skill | Result | Prerequisites |
+README.md:12: |---|---|---|---|---|
+README.md:13: | Prepare or strengthen a change | Requirements or an existing specification | `$qore-plan` | Sourced specification, acceptance scenarios, adjudicated decisions, and task dependencies | Current project sources; five independent perspectives, scheduled in waves if needed |
+README.md:14: | Challenge an artifact | Plan, specification, architecture document, or deliverable | `$qore-review` | Evidence-linked findings, retained refutations, and explicit verification gaps | Three independent finders and a fresh verifier; no browser required |
+README.md:15: | Inspect rendered behavior | An authorized web entry, page, or flow | `$qore-ux-review` | Observed gate results, screenshots, defects, freshness, and scope limits | A working browser driver and the capabilities required by the declared scope |
+README.md:16: 
+README.md:17: For an ordinary Git diff, prefer the host's available code-review workflow. Small tasks may need only clear repository instructions or a direct check. Qore adds a bounded protocol and evidence records when those are useful; no general quality, speed, or cost advantage is claimed.
+README.md:18: 
+README.md:19: ## Try one review
+README.md:20: 
+README.md:21: The first useful result is an actual review of the [bundled validator-hardening specification](examples/validator-hardening.md), using its implementation and regression tests. This is a snapshot of Qore's own work, not a seeded defect. A valid zero-finding review is a possible result.
+LOCAL_LINK examples/validator-hardening.md exists True
+README.md:22: 
+README.md:23: You need Codex with a local executor and independent subagent capability, plus `python3`, `node`, and a POSIX shell. The helpers use Python's standard library and Node built-ins. A browser, persistent project profile, and Qore account are unnecessary for this example. Merely loading a skill or passing a preflight does not complete the review.
+README.md:24: 
+README.md:25: From the repository directory containing this README, build a new candidate and install its three skills into this checkout:
+README.md:26: 
+README.md:27: ```sh
+README.md:28: qore_stage="$(mktemp -d "${TMPDIR:-/tmp}/qore-first.XXXXXX")"
+README.md:29: python3 tools/qore.py build --output "$qore_stage"
+README.md:30: python3 tools/qore.py install --source "$qore_stage/qore-skills-0.1.0" --project-root .
+README.md:31: ```
+README.md:32: 
+README.md:33: The installer prints three paths under `.agents/skills/` and `"replaced": false`. It refuses an existing destination and preserves it. If you already have these local skills, use a fresh checkout or compare a newly staged candidate; see [safe updates](docs/profiles.md#update-without-overwriting).
+LOCAL_LINK docs/profiles.md#update-without-overwriting exists True
+ANCHOR_SOURCE_CHECK update-without-overwriting True
+README.md:34: 
+README.md:35: Open a **new Codex chat in this repository directory**, then use:
+README.md:36: 
+README.md:37: ```text
+README.md:38: Use $qore-review to review examples/validator-hardening.md against its bundled
+README.md:39: validators and tests. Keep the target to this specification and implementation.
+README.md:40: Run the three independent finders, mechanical redaction, and a fresh verifier.
+README.md:41: Retain phase evidence and report findings and execution coverage. Do not edit source files.
+README.md:42: ```
+README.md:43: 
+README.md:44: A completed example names the target snapshot, three returned finder reports, the actual redaction, a separate verifier, the final findings gate, and evidence for each phase. The report distinguishes **COMPLETE / PARTIAL / BLOCKED execution coverage** from finding impact and any delivery decision. Missing independence or an unfinished phase means PARTIAL or BLOCKED, even if the JSON is valid. [Troubleshoot discovery or missing capabilities](docs/troubleshooting.md).
+LOCAL_LINK docs/troubleshooting.md exists True
+README.md:45: 
+README.md:46: ## Use a method on your project
+README.md:47: 
+README.md:48: Install the verified candidate into your project's `.agents/skills/` with the same installer and your project root as `--project-root`. Generic use reads the current sources you provide; it does not create a persistent profile.
+README.md:49: 
+README.md:50: | Method | Starting prompt |
+README.md:51: |---|---|
+README.md:52: | Plan | `Use $qore-plan to prepare this change from the current requirements and project sources. Preserve open decisions and show acceptance coverage.` |
+README.md:53: | Review | `Use $qore-review to challenge docs/specs/change.md against its requirements and implementation. Report actual independent phases and uncovered scope.` |
+README.md:54: | Web UX | `Use $qore-ux-review to inspect the authorized web flow from its real entry control. Declare required states and capabilities before execution; retain gaps and fresh evidence.` |
+README.md:55: 
+README.md:56: Supply the actual target, relevant requirements, and authorized web origin when applicable. A method can continue useful work while exposing unavailable sources, tools, data, or roles. It cannot label unobserved checks as passing. Fixes run only within the user's authorized scope; a profile or SHIP result does not grant merge, publication, or deployment permission.
+README.md:57: 
+README.md:58: ## See an observed web path
+README.md:59: 
+README.md:60: On 15 October 2026, an isolated Playwright Chromium session followed the existing QAIZEN Labs entry to its readiness introduction, opened the first question, opened and closed an explanation with keyboard input, and returned to the introduction with heading focus. No answers or forms were submitted. This supports the declared entry/state path, rather than a whole-site readiness claim. [Observation record and limits](docs/evidence/browser/README.md).
+LOCAL_LINK docs/evidence/browser/README.md exists True
+README.md:61: 
+README.md:62: [![Observed first-question state on the existing QAIZEN Labs readiness page](docs/evidence/browser/qaizen-question.png)](docs/evidence/browser/qaizen-demo-captioned.mp4)
+LOCAL_LINK docs/evidence/browser/qaizen-question.png exists True
+LOCAL_LINK docs/evidence/browser/qaizen-demo-captioned.mp4 exists True
+README.md:63: 
+README.md:64: [Watch the actual captioned recording](docs/evidence/browser/qaizen-demo-captioned.mp4) · [Read the transcript](docs/evidence/browser/qaizen-transcript.md) · [English captions](docs/evidence/browser/qaizen-demo.en.vtt) · [Capability matrix](docs/evidence/browser/capability-matrix.json) · [Transformation provenance](docs/evidence/browser/provenance.json)
+LOCAL_LINK docs/evidence/browser/qaizen-demo-captioned.mp4 exists True
+LOCAL_LINK docs/evidence/browser/qaizen-transcript.md exists True
+LOCAL_LINK docs/evidence/browser/qaizen-demo.en.vtt exists True
+LOCAL_LINK docs/evidence/browser/capability-matrix.json exists True
+LOCAL_LINK docs/evidence/browser/provenance.json exists True
+README.md:65: 
+README.md:66: Navigation, screenshots, DOM inspection, keyboard input, console listening, and network observation were exercised in that recorded environment. Full UX coverage remains PARTIAL: instrumented accessibility, performance, alternate viewports, and the complete question/result/error matrix were not tested. One analytics POST was blocked by the observation harness and is retained in the evidence. The recording is a maintainer-operated agent observation, not external human usability evidence.
+README.md:67: 
+README.md:68: ## Adapt all three methods from one profile
+README.md:69: 
+README.md:70: A reusable project adaptation binds the methods to sourced commands, invariants, and a web target. Every fact names a project source and its SHA-256. The included [Qore profile](profiles/qore.json) applies to this repository; the [contrasting fixture profile](profiles/contrast.json) exercises isolation and different facts.
+LOCAL_LINK profiles/qore.json exists True
+LOCAL_LINK profiles/contrast.json exists True
+README.md:71: 
+README.md:72: From this repository, generate three new project-specific skills:
+README.md:73: 
+README.md:74: ```sh
+README.md:75: python3 tools/qore.py derive --profile profiles/qore.json --project-root . --output /tmp/qore-derived-first
+README.md:76: python3 tools/qore.py verify /tmp/qore-derived-first
+README.md:77: ```
+README.md:78: 
+README.md:79: Choose an unused output path. Derivation refuses stale sources or an existing destination. The generated names are `qore-plan-qore`, `qore-review-qore`, and `qore-ux-review-qore`. Each contains its own profile, references, and helper scripts. At invocation, its checker compares the target sources again and exposes only current applicable facts. Stale context makes affected coverage PARTIAL or BLOCKED; it never silently falls back to generic behavior.
+README.md:80: 
+README.md:81: For your project, maintain one profile from your actual rules and sources, then derive into new staging. Inspect the result and its diff before installing. [Profile fields, runtime checks, and safe updates](docs/profiles.md).
+LOCAL_LINK docs/profiles.md exists True
+README.md:82: 
+README.md:83: ## Understand the boundaries
+README.md:84: 
+README.md:85: | Boundary | What the result means |
+README.md:86: |---|---|
+README.md:87: | Codex host | Actual role/tool availability must be observed. Five planning labels or a verifier flag do not prove independent execution. Clean candidate-only qualification is tracked separately. |
+README.md:88: | Planning | Five perspectives, challenge, and adjudication; at most three rounds. Structural spec validation does not establish business completeness. |
+README.md:89: | Review | Findings need checkable evidence. Only independently CONFIRMED critical/high findings are verified blockers. An unverified high concern keeps its impact severity and remains non-blocking uncertainty in a PARTIAL report. |
+README.md:90: | Web UX | Required checks need actual fresh browser evidence. Skipped required gates prevent global SHIP; six iterations is the ceiling, including persistent defects. |
+README.md:91: | Native apps and other hosts | Unqualified by this web/Codex candidate. A web observation does not establish native behavior. |
+README.md:92: | Validation | Digests and schemas check identity and structure. They do not prove reasoning quality, defect absence, or superiority over simpler workflows. |
+README.md:93: | Human first use | No external human first-use outcome is claimed. Agent, maintainer, portability, and human observations remain separate. |
+README.md:94: 
+README.md:95: The qualification plan calls for four complete method executions and two focused derivative probe suites, plus structural regressions. These are scope-specific execution checks, not a comparative benchmark. See [independent Linux qualification](docs/clean-environment.md) for its isolation and credential boundaries; preparation alone is not a completed run.
+LOCAL_LINK docs/clean-environment.md exists True
+README.md:96: 
+README.md:97: ## Reference and contribute
+README.md:98: 
+README.md:99: - [Architecture](docs/architecture.md): core, project facts, Codex adaptation, and local trust boundaries.
+LOCAL_LINK docs/architecture.md exists True
+README.md:100: - [Contracts and validators](docs/contracts.md): project, release, and execution records; what checks can and cannot establish.
+LOCAL_LINK docs/contracts.md exists True
+README.md:101: - [Command and prompt inventory](docs/command-inventory.json): prerequisites, effects, substitutions, and actual execution status for the documentation examples.
+LOCAL_LINK docs/command-inventory.json exists True
+README.md:102: - [Troubleshooting](docs/troubleshooting.md): discovery, stale facts, unavailable tools, and refused updates.
+LOCAL_LINK docs/troubleshooting.md exists True
+README.md:103: - Method protocols: [planning](skills/qore-plan/SKILL.md), [review](skills/qore-review/SKILL.md), and [web UX](skills/qore-ux-review/SKILL.md).
+LOCAL_LINK skills/qore-plan/SKILL.md exists True
+LOCAL_LINK skills/qore-review/SKILL.md exists True
+LOCAL_LINK skills/qore-ux-review/SKILL.md exists True
+README.md:104: - [Contributing](CONTRIBUTING.md), [provenance](PROVENANCE.md), and [MIT license](LICENSE).
+LOCAL_LINK CONTRIBUTING.md exists True
+LOCAL_LINK PROVENANCE.md exists True
+LOCAL_LINK LICENSE exists True
+README.md:105: 
+README.md:106: First-party repository content is maintained in English. External quotations, rendered evidence, and protocol tokens retain their source identity. Publication and any external application remain separate actions.
+
+DOCUMENT docs/architecture.md sha256 26429d4cbbc5a1c3065a65397bbdfcbbacd5cb5d4a198da979d72146190714f6
+docs/architecture.md:1: # Architecture
+docs/architecture.md:2: 
+docs/architecture.md:3: Qore is a local skills package. The three methods can be installed together and invoked independently. There is no Qore application server, account, database, or runtime MCP service.
+docs/architecture.md:4: 
+docs/architecture.md:5: ## From source to an installed skill
+docs/architecture.md:6: 
+docs/architecture.md:7: ```mermaid
+docs/architecture.md:8: flowchart LR
+docs/architecture.md:9:     Core["Three generic skill folders"] --> Build["Build allowlisted candidate"]
+docs/architecture.md:10:     Build --> Package["Versioned folder and ZIP"]
+docs/architecture.md:11:     Package --> Verify["Verify resources and digests"]
+docs/architecture.md:12:     Verify --> Install["Install into project .agents/skills"]
+docs/architecture.md:13:     Core --> Derive["Derive into new staging"]
+docs/architecture.md:14:     Profile["Sourced project profile"] --> Derive
+docs/architecture.md:15:     Derive --> Bound["Three autonomous project skills"]
+docs/architecture.md:16:     Bound --> Verify
+docs/architecture.md:17: ```
+docs/architecture.md:18: 
+docs/architecture.md:19: In text: `build` copies the explicit release allowlist into a new candidate, writes inventories and digests, verifies it, and creates a ZIP with fixed archive metadata. `derive` validates one current profile for all three methods, copies the core, adds the project binding, and creates three autonomous skills. `install` verifies the source and places its three folders in the target repository's `.agents/skills/` after checking for collisions.
+docs/architecture.md:20: 
+docs/architecture.md:21: The installed folders contain their own entrypoint, metadata, references, helper scripts, and local release inventory. Project derivatives also contain a copied profile. Required local skill links stay inside each folder. Informational HTTPS citations are allowed; they cannot conceal an undeclared downloaded runtime dependency.
+docs/architecture.md:22: 
+docs/architecture.md:23: The canonical generic folders are under `skills/`. Codex-facing instructions and `agents/openai.yaml` are maintained there. This candidate qualifies only the actual Codex host/tool behavior exercised during testing; the metadata alone does not establish discovery or independent-agent support.
+docs/architecture.md:24: 
+docs/architecture.md:25: ## Project data at execution time
+docs/architecture.md:26: 
+docs/architecture.md:27: A profile binds facts to project files with source IDs and SHA-256 digests. Assembly checks those bindings without executing commands. At invocation, each derivative must load its copied profile and run its local checker against the supplied target root before choosing profile facts.
+docs/architecture.md:28: 
+docs/architecture.md:29: The checker returns only current facts applicable to the selected method. The method still inspects the cited source and records which facts it actually consumed. Changed or missing applicable sources make affected coverage PARTIAL or BLOCKED. A previous successful build does not establish current context.
+docs/architecture.md:30: 
+docs/architecture.md:31: A profile grants no action permission. Repository instructions and the user's scope still govern commands, browser interaction, shared-data writes, and delivery. An allowed web origin identifies a target boundary, not account access or permission to submit a form.
+docs/architecture.md:32: 
+docs/architecture.md:33: ## Evidence and decisions
+docs/architecture.md:34: 
+docs/architecture.md:35: Each method records actual phase execution under `qore-run/1`, with candidate/target identity, role or actor IDs, artifacts, commands, timestamps, coverage, and limitations. The run checker validates declared evidence identity and coverage. It cannot establish that a counterexample is sound or that conclusions follow from the sources.
+docs/architecture.md:36: 
+docs/architecture.md:37: Method controls remain separate:
+docs/architecture.md:38: 
+docs/architecture.md:39: - Planning: five perspectives, challenge, and evidence-based adjudication; no more than three rounds.
+docs/architecture.md:40: - Review: three isolated finders, actual mechanical redaction, and a fresh verifier; severity and verified blocking status remain separate.
+docs/architecture.md:41: - Web UX: declared required scope, observed capabilities, and fresh browser checks; at most six iterations.
+docs/architecture.md:42: 
+docs/architecture.md:43: COMPLETE describes execution within scope. A completed review can establish a defect and DO-NOT-SHIP. SHIP is a scoped review result, not merge or deployment authorization. See [contracts](contracts.md) for the exact validators.
+LOCAL_LINK contracts.md exists True
+docs/architecture.md:44: 
+docs/architecture.md:45: ## Updates and trust boundaries
+docs/architecture.md:46: 
+docs/architecture.md:47: Build and derive use new staging and refuse existing generated destinations. Installation refuses existing skill destinations. There is no automatic merge of local adaptations and no force-replacement workflow. Keep the current version, generate the candidate elsewhere, inspect the diff, and choose any later migration explicitly.
+docs/architecture.md:48: 
+docs/architecture.md:49: Source/profile paths and artifact paths must remain within their declared roots. Release preparation rejects symlinks and unlisted resources; integrity verification rejects altered or unexpected files. These checks protect the stated local boundaries and do not certify the correctness of the contained instructions.
+docs/architecture.md:50: 
+docs/architecture.md:51: The [independent Linux procedure](clean-environment.md) separates candidate portability from the author's host. An actual clean execution is required to claim that portability result. Agent and maintainer runs remain distinct from external human first use.
+LOCAL_LINK clean-environment.md exists True
+docs/architecture.md:52: 
+docs/architecture.md:53: Documentation keeps the [first tutorial](../README.md#try-one-review), [adaptation guide](profiles.md), contract reference, and architecture explanation separate. This follows the different reader needs described in the [Diátaxis map](https://diataxis.fr/map/) (consulted 15 October 2026), without claiming a measured adoption benefit.
+LOCAL_LINK ../README.md#try-one-review exists True
+ANCHOR_SOURCE_CHECK try-one-review True
+LOCAL_LINK profiles.md exists True
+EXTERNAL_NOT_FETCHED https://diataxis.fr/map/
+
+DOCUMENT docs/profiles.md sha256 c20904f6bd4af55aa02e5c3cf75fa1298acfbe1e71e5ddb24920d20299a38408
+docs/profiles.md:1: # Adapt the methods to a project
+docs/profiles.md:2: 
+docs/profiles.md:3: Use the generic methods first when you need a single task. A persistent profile is useful when the same project commands, invariants, and surfaces should guide future invocations of all three methods.
+docs/profiles.md:4: 
+docs/profiles.md:5: ## Maintain one sourced profile
+docs/profiles.md:6: 
+docs/profiles.md:7: The [Qore profile](../profiles/qore.json) is the maintained public example for this repository. Its source is [qore.json](../qore.json). The [contrasting profile](../profiles/contrast.json) uses a clearly labeled synthetic source and an alternate fixture route to check isolation. The Qore profile's web surface is also a **fixture**; it is separate from the [existing-site browser observation](evidence/browser/README.md).
+LOCAL_LINK ../profiles/qore.json exists True
+LOCAL_LINK ../qore.json exists True
+LOCAL_LINK ../profiles/contrast.json exists True
+LOCAL_LINK evidence/browser/README.md exists True
+docs/profiles.md:8: 
+docs/profiles.md:9: The [project schema](../schemas/qore-project.schema.json) describes `qore-project/1`:
+LOCAL_LINK ../schemas/qore-project.schema.json exists True
+docs/profiles.md:10: 
+docs/profiles.md:11: | Field | Meaning |
+docs/profiles.md:12: |---|---|
+docs/profiles.md:13: | `id`, `version` | Project identity and maintained profile version. |
+docs/profiles.md:14: | `sources` | Unique source IDs, contained project-relative paths, and current SHA-256 digests. |
+docs/profiles.md:15: | `commands` | Named argument vectors, each bound to a declared source. Optional `applies_to` narrows methods. |
+docs/profiles.md:16: | `invariants` | Named statements, their source, and applicable `plan`, `review`, or `ux` methods. |
+docs/profiles.md:17: | `surfaces.web` | Entry URL, allowed origins, observable required state, source ID, and `fixture`, `application`, or `documentation` kind. |
+docs/profiles.md:18: 
+docs/profiles.md:19: Start from actual project instructions and current code/configuration. Record a fact only when the referenced source supports it. Resolve contradictions rather than copying a neighboring project's conventions. Include no credentials, personal paths, permission tokens, or private material intended for public export.
+docs/profiles.md:20: 
+docs/profiles.md:21: The runtime checker checks structure, source identity, and method applicability. It cannot prove that a sentence is a faithful interpretation of its source. A command's presence does not approve executing it; inspect its effect and follow the user's authorization.
+docs/profiles.md:22: 
+docs/profiles.md:23: ## Check before deriving
+docs/profiles.md:24: 
+docs/profiles.md:25: From this repository, preview the plan facts:
+docs/profiles.md:26: 
+docs/profiles.md:27: ```sh
+docs/profiles.md:28: python3 tools/context.py profiles/qore.json --root . --method plan
+docs/profiles.md:29: ```
+docs/profiles.md:30: 
+docs/profiles.md:31: Use `--method review` or `--method ux` to inspect those consumers. A current result is `qore-context-check/1` with matching source digests, selected facts, no problems, and COMPLETE context coverage. That result describes context only; it does not mean the method ran. The checker does not execute profile commands.
+docs/profiles.md:32: 
+docs/profiles.md:33: Generate into a new destination, as in the [README adaptation example](../README.md#adapt-all-three-methods-from-one-profile). Derivation validates all three consumers before writing the new candidate. Install a derived candidate with the same `install --source … --project-root …` interface used for generic skills. The generated names include the profile ID, for example `$qore-review-qore`.
+LOCAL_LINK ../README.md#adapt-all-three-methods-from-one-profile exists True
+ANCHOR_SOURCE_CHECK adapt-all-three-methods-from-one-profile True
+docs/profiles.md:34: 
+docs/profiles.md:35: Each derivative explicitly loads `references/project.json`. Before consuming its facts, it runs its bundled checker from its own skill directory:
+docs/profiles.md:36: 
+docs/profiles.md:37: ```sh
+docs/profiles.md:38: python3 scripts/project-check.py references/project.json --root /absolute/path/to/project --method review
+docs/profiles.md:39: ```
+docs/profiles.md:40: 
+docs/profiles.md:41: Select the actual method value for that derivative. The result identifies the exact profile digest and fresh applicable commands, invariants, and web facts. Record the fact IDs actually consumed and how they affected the work; selected facts alone do not prove behavior.
+docs/profiles.md:42: 
+docs/profiles.md:43: ## Update without overwriting
+docs/profiles.md:44: 
+docs/profiles.md:45: 1. Keep the current installed/generated folders intact.
+docs/profiles.md:46: 2. Read the changed project source and reconcile the maintained profile's facts and digests. A changed digest is a request to recheck meaning, not permission to suppress a warning.
+docs/profiles.md:47: 3. Derive to a different unused staging path. For a later candidate, for example:
+docs/profiles.md:48: 
+docs/profiles.md:49:    ```sh
+docs/profiles.md:50:    python3 tools/qore.py derive --profile profiles/qore.json --project-root . --output /tmp/qore-derived-next
+docs/profiles.md:51:    ```
+docs/profiles.md:52: 
+docs/profiles.md:53: 4. Compare the current folders with the new candidate. The read-only comparison reports each differing path, both digests, and whether the installed file differs from its recorded base:
+docs/profiles.md:54: 
+docs/profiles.md:55:    ```sh
+docs/profiles.md:56:    python3 tools/qore.py compare --source /tmp/qore-derived-next --project-root .
+docs/profiles.md:57:    ```
+docs/profiles.md:58: 
+docs/profiles.md:59:    Preserve local adaptations and expose conflicting changes. There is no automatic merge or rollback command.
+docs/profiles.md:60: 5. Use an explicitly chosen migration/install destination. The installer refuses an existing skill folder; it has no overwrite option.
+docs/profiles.md:61: 
+docs/profiles.md:62: When a source changes or disappears after assembly, affected profile use becomes PARTIAL or BLOCKED. Unaffected current work can continue with visible limits. The derivative cannot silently substitute generic behavior or claim that a stale invariant is current. Refresh and regenerate before claiming the affected work complete.
+docs/profiles.md:63: 
+docs/profiles.md:64: See [troubleshooting](troubleshooting.md) for source mismatches, missing surfaces, and destination collisions.
+LOCAL_LINK troubleshooting.md exists True
+
+DOCUMENT docs/evidence/browser/README.md sha256 c7fd4de1d6f8d0234164ce2533b91d8f1d13b5ff1e7794d9207a80390b846db7
+docs/evidence/browser/README.md:1: # Browser evidence — 15 October 2026
+docs/evidence/browser/README.md:2: 
+docs/evidence/browser/README.md:3: Playwright Chromium successfully observed an isolated synthetic fixture first, then the existing [QAIZEN Labs](https://qaizen.io/labs) entry and readiness UI. The earlier failed launch remains part of the private history; this later success qualifies only the tested driver and environment.
+EXTERNAL_NOT_FETCHED https://qaizen.io/labs
+docs/evidence/browser/README.md:4: 
+docs/evidence/browser/README.md:5: The real question was whether a visitor could reach the existing check from Labs and enter and leave its first-question state without submitting answers. The observed path completed: entry → readiness introduction → first question → explanation open/closed by keyboard → restored introduction with heading focus. This supports using that existing path for a scoped demonstration. It does not establish whole-site readiness.
+docs/evidence/browser/README.md:6: 
+docs/evidence/browser/README.md:7: Inspect [timestamped observations](observations.json), the [capability/depth matrix](capability-matrix.json), [transformation provenance](provenance.json), the [captioned recording](qaizen-demo-captioned.mp4), [English captions](qaizen-demo.en.vtt) and [transcript](qaizen-transcript.md). Selected unchanged screenshots show the [real entry](qaizen-entry.png), [first question](qaizen-question.png) and [restored introduction](qaizen-returned.png).
+LOCAL_LINK observations.json exists True
+LOCAL_LINK capability-matrix.json exists True
+LOCAL_LINK provenance.json exists True
+LOCAL_LINK qaizen-demo-captioned.mp4 exists True
+LOCAL_LINK qaizen-demo.en.vtt exists True
+LOCAL_LINK qaizen-transcript.md exists True
+LOCAL_LINK qaizen-entry.png exists True
+LOCAL_LINK qaizen-question.png exists True
+LOCAL_LINK qaizen-returned.png exists True
+docs/evidence/browser/README.md:8: 
+docs/evidence/browser/README.md:9: ## Observed driver and scope
+docs/evidence/browser/README.md:10: 
+docs/evidence/browser/README.md:11: Node v24.19.0, Playwright 1.62.1 and Chromium 151.0.7922.34 ran at a 1280 × 800 viewport. Navigation, screenshot capture, DOM inspection, keyboard interaction, console listening and network observation worked. The synthetic fixture emitted explicit console and fetch events; its label prevents confusion with existing-product evidence.
+docs/evidence/browser/README.md:12: 
+docs/evidence/browser/README.md:13: The real path produced 73 response records, no page exceptions and one blocked anonymous-event POST. The harness deliberately blocks non-GET/HEAD/OPTIONS traffic. Its resulting console error is retained and attributed to the observation policy. No answer, email, booking or contact form was submitted. No user browser session was accessed.
+docs/evidence/browser/README.md:14: 
+docs/evidence/browser/README.md:15: Entry and the declared local state transitions are **COMPLETE within the observation scope**. Full UX review remains **PARTIAL**: instrumented accessibility, performance, alternate viewports, all quiz questions/results and error-state coverage were not executed. No global SHIP verdict is claimed.
+docs/evidence/browser/README.md:16: 
+docs/evidence/browser/README.md:17: ## Reproduce with a declared optional driver
+docs/evidence/browser/README.md:18: 
+docs/evidence/browser/README.md:19: The browser helper does not install dependencies, stop browser processes or remove locks. Supply a locally installed `playwright` package and its matching browser. Output must be a new directory. The actions file is explicit and must be reviewed against the authorized scope.
+docs/evidence/browser/README.md:20: 
+docs/evidence/browser/README.md:21: ```sh
+docs/evidence/browser/README.md:22: python3 -m http.server 8765 --bind 127.0.0.1 --directory tests/fixtures/web
+docs/evidence/browser/README.md:23: ```
+docs/evidence/browser/README.md:24: 
+docs/evidence/browser/README.md:25: In a second terminal:
+docs/evidence/browser/README.md:26: 
+docs/evidence/browser/README.md:27: ```sh
+docs/evidence/browser/README.md:28: node tools/browser_probe.mjs \
+docs/evidence/browser/README.md:29:   --url http://127.0.0.1:8765/index.html \
+docs/evidence/browser/README.md:30:   --output /tmp/qore-browser-fixture-new \
+docs/evidence/browser/README.md:31:   --actions tests/fixtures/web/primary-actions.json \
+docs/evidence/browser/README.md:32:   --playwright-module "$PLAYWRIGHT_MODULE" \
+docs/evidence/browser/README.md:33:   --label 'Synthetic driver qualification only'
+docs/evidence/browser/README.md:34: ```
+docs/evidence/browser/README.md:35: 
+docs/evidence/browser/README.md:36: `PLAYWRIGHT_MODULE` identifies the already installed optional Playwright package. A missing package or unusable browser produces a diagnostic and BLOCKED/PARTIAL evidence; it never becomes a passing browser check. The action vocabulary is `click` (role/name or selector), `keyboard`, `assert-text`, `assert-url` and `snapshot`, with at most 40 steps. The helper's COMPLETE status describes its stated action scope only.
+docs/evidence/browser/README.md:37: 
+docs/evidence/browser/README.md:38: For the observed existing-site path, the same helper used `--url https://qaizen.io/en/labs` and [the explicit action sequence](qaizen-actions.json). Live-site content and routes can change; inspect the current result and do not inherit this run's outcome.
+LOCAL_LINK qaizen-actions.json exists True
+
+DOCUMENT docs/evidence/browser/qaizen-transcript.md sha256 da624cdbbbbd6cc3e7d321a2ffa58a1e1be99d807c950dcf6d473a19f34a60c8
+docs/evidence/browser/qaizen-transcript.md:1: # Existing QAIZEN Labs observation
+docs/evidence/browser/qaizen-transcript.md:2: 
+docs/evidence/browser/qaizen-transcript.md:3: The silent recording shows an actual isolated Playwright browser session on 15 October 2026. English captions are supplied in [WebVTT](qaizen-demo.en.vtt) and as an English subtitle track in [the MP4](qaizen-demo-captioned.mp4). It contains no narration, synthetic frames, simulated timing comparison or claimed gain.
+LOCAL_LINK qaizen-demo.en.vtt exists True
+LOCAL_LINK qaizen-demo-captioned.mp4 exists True
+docs/evidence/browser/qaizen-transcript.md:4: 
+docs/evidence/browser/qaizen-transcript.md:5: | Approximate time | Observed action |
+docs/evidence/browser/qaizen-transcript.md:6: | --- | --- |
+docs/evidence/browser/qaizen-transcript.md:7: | 00:00–00:05 | Open the existing QAIZEN Labs entry. The `/en/labs` request resolves to `/labs`. Tab focuses the skip link. Reject analytics consent in this new context. |
+docs/evidence/browser/qaizen-transcript.md:8: | 00:05–00:09 | Click the existing readiness card and observe the readiness introduction at `/labs/readiness-check`. |
+docs/evidence/browser/qaizen-transcript.md:9: | 00:09–00:12 | Click “Start the check” and observe the actual first question. No answer is selected. |
+docs/evidence/browser/qaizen-transcript.md:10: | 00:12–00:14 | Expand “What does this mean?” and capture its explanation. |
+docs/evidence/browser/qaizen-transcript.md:11: | 00:14–00:16 | Press Space on the focused disclosure summary. Its explanation closes. |
+docs/evidence/browser/qaizen-transcript.md:12: | 00:16–00:21 | Click Back. The introduction returns and its heading receives focus. |
+docs/evidence/browser/qaizen-transcript.md:13: 
+docs/evidence/browser/qaizen-transcript.md:14: The harness blocks non-GET/HEAD/OPTIONS requests. One `POST /api/labs/readiness/event` was blocked, producing one expected network/console error. That error is an instrumentation consequence; it is not presented as a website defect. No page exception was observed. The request's application behavior was not tested.
+docs/evidence/browser/qaizen-transcript.md:15: 
+docs/evidence/browser/qaizen-transcript.md:16: The browser video starts shortly before entry navigation. Caption times are approximate descriptions of the visible actions; exact UTC timestamps are in [the observations](observations.json). This recording does not establish full-site quality, instrumented accessibility, mobile coverage, native-app support or Core Web Vitals.
+LOCAL_LINK observations.json exists True
+PROVENANCE_HASH qaizen-entry.png True
+PROVENANCE_HASH qaizen-question.png True
+PROVENANCE_HASH qaizen-returned.png True
+PROVENANCE_HASH qaizen-demo-captioned.mp4 True
+PROVENANCE_HASH qaizen-demo.en.vtt True
+PROVENANCE_HASH observations.json True
+PROVENANCE_HASH fixture-observations.json True
+OBSERVATION_TOP_FIELDS ['schema', 'started_at', 'finished_at', 'operator', 'target', 'environment', 'coverage', 'events', 'states', 'state_assertions', 'limits']
+OBSERVATION_STATE_TYPE dict
+JSON_POINTER observations.json#/events/navigation RESOLVES
+JSON_POINTER observations.json#/states RESOLVES
+JSON_POINTER observations.json#/events/actions/0 RESOLVES
+JSON_POINTER observations.json#/events/console RESOLVES
+JSON_POINTER observations.json#/events/network RESOLVES
+JSON_POINTER observations.json#/events/actions RESOLVES
+JSON_POINTER observations.json#/states/01-readiness-intro RESOLVES
+JSON_POINTER observations.json#/state_assertions RESOLVES
+JSON_POINTER observations.json#/states RESOLVES
+JSON_POINTER observations.json#/states RESOLVES
+OBSERVATION_COUNTS network 73 page_errors 0
+PNG_DIMENSIONS qaizen-entry.png (1280, 1672)
+PNG_DIMENSIONS qaizen-question.png (1280, 1033)
+PNG_DIMENSIONS qaizen-returned.png (1280, 808)
+qaizen-demo.en.vtt:1: WEBVTT
+qaizen-demo.en.vtt:2: 
+qaizen-demo.en.vtt:3: 00:00.000 --> 00:04.600
+qaizen-demo.en.vtt:4: An isolated browser opens the existing QAIZEN Labs page.
+qaizen-demo.en.vtt:5: This recording observes an existing site; it is not a benchmark.
+qaizen-demo.en.vtt:6: 
+qaizen-demo.en.vtt:7: 00:04.600 --> 00:09.300
+qaizen-demo.en.vtt:8: The readiness card opens its existing introduction.
+qaizen-demo.en.vtt:9: Analytics consent is rejected in this isolated context.
+qaizen-demo.en.vtt:10: 
+qaizen-demo.en.vtt:11: 00:09.300 --> 00:12.200
+qaizen-demo.en.vtt:12: Start the check resolves to the first question.
+qaizen-demo.en.vtt:13: No answer is selected and no result is submitted.
+qaizen-demo.en.vtt:14: 
+qaizen-demo.en.vtt:15: 00:12.200 --> 00:14.200
+qaizen-demo.en.vtt:16: The question's explanation opens.
+qaizen-demo.en.vtt:17: DOM and screenshot artifacts record the expanded state.
+qaizen-demo.en.vtt:18: 
+qaizen-demo.en.vtt:19: 00:14.200 --> 00:16.200
+qaizen-demo.en.vtt:20: Space closes the focused native disclosure.
+qaizen-demo.en.vtt:21: The keyboard action is recorded in the trace.
+qaizen-demo.en.vtt:22: 
+qaizen-demo.en.vtt:23: 00:16.200 --> 00:21.160
+qaizen-demo.en.vtt:24: Back restores the introduction and focuses its heading.
+qaizen-demo.en.vtt:25: Accessibility audits and Core Web Vitals were not measured.
+qaizen-transcript.md:1: # Existing QAIZEN Labs observation
+qaizen-transcript.md:2: 
+qaizen-transcript.md:3: The silent recording shows an actual isolated Playwright browser session on 15 October 2026. English captions are supplied in [WebVTT](qaizen-demo.en.vtt) and as an English subtitle track in [the MP4](qaizen-demo-captioned.mp4). It contains no narration, synthetic frames, simulated timing comparison or claimed gain.
+qaizen-transcript.md:4: 
+qaizen-transcript.md:5: | Approximate time | Observed action |
+qaizen-transcript.md:6: | --- | --- |
+qaizen-transcript.md:7: | 00:00–00:05 | Open the existing QAIZEN Labs entry. The `/en/labs` request resolves to `/labs`. Tab focuses the skip link. Reject analytics consent in this new context. |
+qaizen-transcript.md:8: | 00:05–00:09 | Click the existing readiness card and observe the readiness introduction at `/labs/readiness-check`. |
+qaizen-transcript.md:9: | 00:09–00:12 | Click “Start the check” and observe the actual first question. No answer is selected. |
+qaizen-transcript.md:10: | 00:12–00:14 | Expand “What does this mean?” and capture its explanation. |
+qaizen-transcript.md:11: | 00:14–00:16 | Press Space on the focused disclosure summary. Its explanation closes. |
+qaizen-transcript.md:12: | 00:16–00:21 | Click Back. The introduction returns and its heading receives focus. |
+qaizen-transcript.md:13: 
+qaizen-transcript.md:14: The harness blocks non-GET/HEAD/OPTIONS requests. One `POST /api/labs/readiness/event` was blocked, producing one expected network/console error. That error is an instrumentation consequence; it is not presented as a website defect. No page exception was observed. The request's application behavior was not tested.
+qaizen-transcript.md:15: 
+qaizen-transcript.md:16: The browser video starts shortly before entry navigation. Caption times are approximate descriptions of the visible actions; exact UTC timestamps are in [the observations](observations.json). This recording does not establish full-site quality, instrumented accessibility, mobile coverage, native-app support or Core Web Vitals.
+INVENTORY_DOCUMENT_HASH README.md True
+INVENTORY_DOCUMENT_HASH docs/architecture.md True
+INVENTORY_DOCUMENT_HASH docs/evidence/browser/README.md True
+INVENTORY_DOCUMENT_HASH docs/evidence/browser/qaizen-transcript.md True
+INVENTORY_DOCUMENT_HASH docs/profiles.md True
+README_INVENTORY doc-command-01 {'status': 'EXECUTED_HISTORICAL_AND_MAINTAINER_REPORTED', 'evidence_ids': ['historical-shell-1', 'clean-linux-candidate-d'], 'limit': 'Implementation or a related historical run does not prove this exact recipe completed on the current candidate.'}
+README_COMMAND_TEXT_PRESENT doc-command-01 True
+README_INVENTORY doc-command-02 {'status': 'IN_PROGRESS', 'evidence_ids': ['clean-linux-candidate-d'], 'limit': 'Implementation or a related historical run does not prove this exact recipe completed on the current candidate.'}
+README_INVENTORY doc-command-03 {'status': 'EXECUTED_RELATED_HISTORICAL_DESTINATION', 'evidence_ids': ['historical-shell-1'], 'limit': 'Implementation or a related historical run does not prove this exact recipe completed on the current candidate.'}
+README_COMMAND_TEXT_PRESENT doc-command-03 True
+README_INVENTORY doc-command-15 {'status': 'TEMPLATE_NOT_EXECUTED_AS_WRITTEN', 'evidence_ids': [], 'limit': 'Implementation or a related historical run does not prove this exact recipe completed on the current candidate.'}
+README_INVENTORY doc-command-16 {'status': 'TEMPLATE_NOT_EXECUTED_AS_WRITTEN', 'evidence_ids': [], 'limit': 'Implementation or a related historical run does not prove this exact recipe completed on the current candidate.'}
+README_INVENTORY doc-command-17 {'status': 'TEMPLATE_NOT_EXECUTED_AS_WRITTEN', 'evidence_ids': [], 'limit': 'Implementation or a related historical run does not prove this exact recipe completed on the current candidate.'}
+
+Command: python3 standard-library ISO BMFF header inspection (no media playback)
+/moov/mvhd timescale=1000 duration=21160 seconds=21.16
+/moov/trak/mdia/mdhd seconds=21.16 language=eng
+/moov/trak/mdia/hdlr handler=b'vide'
+/moov/trak/mdia/minf/stbl/stsd entry_count=1 sample_type=b'avc1'
+/moov/trak/mdia/mdhd seconds=21.16 language=eng
+/moov/trak/mdia/hdlr handler=b'sbtl'
+/moov/trak/mdia/minf/stbl/stsd entry_count=1 sample_type=b'tx3g'

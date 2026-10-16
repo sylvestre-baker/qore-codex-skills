@@ -1,0 +1,23 @@
+{
+  "qore-plan": {
+    "source_skill_sha256": "6a0b7a03d888595e6b9e76bc16644a313a187df91622fd5245d4b2253bdf83da",
+    "installed_skill_sha256": "6a0b7a03d888595e6b9e76bc16644a313a187df91622fd5245d4b2253bdf83da",
+    "generic_profile_present": false,
+    "derived_profile_equal_to_source": true,
+    "derived_name_line": "name: qore-plan-qore"
+  },
+  "qore-review": {
+    "source_skill_sha256": "aae83b4105dd89387c7eac31df3c789326def9c0b05dccd4a3d2cdab65732a97",
+    "installed_skill_sha256": "aae83b4105dd89387c7eac31df3c789326def9c0b05dccd4a3d2cdab65732a97",
+    "generic_profile_present": false,
+    "derived_profile_equal_to_source": true,
+    "derived_name_line": "name: qore-review-qore"
+  },
+  "qore-ux-review": {
+    "source_skill_sha256": "33b1367f256f1a6304902d08cdff9b023add92fb750834216268cca8de84b851",
+    "installed_skill_sha256": "33b1367f256f1a6304902d08cdff9b023add92fb750834216268cca8de84b851",
+    "generic_profile_present": false,
+    "derived_profile_equal_to_source": true,
+    "derived_name_line": "name: qore-ux-review-qore"
+  }
+}

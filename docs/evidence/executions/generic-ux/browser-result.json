@@ -1,0 +1,12 @@
+{
+  "status": "COMPLETE_OBSERVATION_PENDING_GATE_REVIEW",
+  "started_at": "2026-10-15T19:41:14.945Z",
+  "finished_at": "2026-10-15T19:41:31.189Z",
+  "driver": {
+    "node": "v24.19.0",
+    "playwright": "1.62.1",
+    "chromium": "151.0.7922.34"
+  },
+  "policy": "Non-GET/HEAD/OPTIONS blocked; no answers or forms submitted; 700ms delay on readiness GETs to challenge route resolution.",
+  "video": "<PRIVATE_EVIDENCE_ROOT>/generic-ux/browser/video/page@614a7704a8bdf815bd03bbb626f5e26e.webm"
+}

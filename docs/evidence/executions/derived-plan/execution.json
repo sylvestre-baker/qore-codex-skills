@@ -1,0 +1,395 @@
+{
+  "schema": "qore-run/1",
+  "id": "public-derived-plan-20261015-01",
+  "method": "plan",
+  "skill": "qore-plan-qore",
+  "candidate_sha256": "19f48167f040ca42c60b0df49a324c6d3aeb3de3014486017668f1263ccd6b35",
+  "target": {
+    "label": "Frozen b validator-hardening specification and bundled source/tests",
+    "snapshot_sha256": "dec34e19b7b3036c213299a1f98b05fec1709212fb156eabf9928682024ae2cb"
+  },
+  "last_relevant_change": "2026-10-15T19:59:38.214309+00:00",
+  "environment": {
+    "id": "codex-desktop-author-host-20261015",
+    "operator": "agent",
+    "host": "macOS-26.6.2-arm64-arm-64bit-Mach-O"
+  },
+  "profile": {
+    "id": "qore",
+    "version": "0.1.0",
+    "sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9"
+  },
+  "required_phases": [
+    "product",
+    "architecture",
+    "ux",
+    "delivery",
+    "qa",
+    "profile_preflight",
+    "adjudication",
+    "spec_validation"
+  ],
+  "phases": [
+    {
+      "id": "product",
+      "actor_id": "/root/impl_validators/derived_product",
+      "status": "PASS",
+      "artifacts": [
+        "phase-product.json"
+      ]
+    },
+    {
+      "id": "architecture",
+      "actor_id": "/root/impl_validators/derived_architecture",
+      "status": "PASS",
+      "artifacts": [
+        "phase-architecture.json"
+      ]
+    },
+    {
+      "id": "ux",
+      "actor_id": "/root/impl_validators/derived_ux",
+      "status": "PASS",
+      "artifacts": [
+        "phase-ux.json"
+      ]
+    },
+    {
+      "id": "delivery",
+      "actor_id": "/root/impl_validators/derived_delivery",
+      "status": "PASS",
+      "artifacts": [
+        "phase-delivery.json"
+      ]
+    },
+    {
+      "id": "qa",
+      "actor_id": "/root/impl_validators/derived_qa",
+      "status": "PASS",
+      "artifacts": [
+        "phase-qa.json"
+      ]
+    },
+    {
+      "id": "profile_preflight",
+      "actor_id": "/root/impl_validators",
+      "status": "PASS",
+      "artifacts": [
+        "phase-profile_preflight.json"
+      ]
+    },
+    {
+      "id": "adjudication",
+      "actor_id": "/root/impl_validators",
+      "status": "PASS",
+      "artifacts": [
+        "phase-adjudication.json"
+      ]
+    },
+    {
+      "id": "spec_validation",
+      "actor_id": "/root/impl_validators",
+      "status": "PASS",
+      "artifacts": [
+        "phase-spec_validation.json"
+      ]
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "phase-product.json",
+      "sha256": "f03f53e7f46bb6997892fafef240c6e060eaf488fdf13e71b3728e9c0ed39382",
+      "kind": "execution",
+      "candidate_sha256": "19f48167f040ca42c60b0df49a324c6d3aeb3de3014486017668f1263ccd6b35",
+      "target_snapshot_sha256": "dec34e19b7b3036c213299a1f98b05fec1709212fb156eabf9928682024ae2cb",
+      "observed_at": "2026-10-15T20:08:09.198268+00:00"
+    },
+    {
+      "path": "phase-architecture.json",
+      "sha256": "562d1b89c4d7d582060a8d10a14fb658bd8f45740652525c4fbc632364db5f01",
+      "kind": "execution",
+      "candidate_sha256": "19f48167f040ca42c60b0df49a324c6d3aeb3de3014486017668f1263ccd6b35",
+      "target_snapshot_sha256": "dec34e19b7b3036c213299a1f98b05fec1709212fb156eabf9928682024ae2cb",
+      "observed_at": "2026-10-15T20:08:57.458210+00:00"
+    },
+    {
+      "path": "phase-ux.json",
+      "sha256": "8dee605868b5044e3bda281ae4ed7a9ab00a39aa8cf79166be0665ba9b1cd8e9",
+      "kind": "execution",
+      "candidate_sha256": "19f48167f040ca42c60b0df49a324c6d3aeb3de3014486017668f1263ccd6b35",
+      "target_snapshot_sha256": "dec34e19b7b3036c213299a1f98b05fec1709212fb156eabf9928682024ae2cb",
+      "observed_at": "2026-10-15T20:10:13.146886+00:00"
+    },
+    {
+      "path": "phase-delivery.json",
+      "sha256": "ff5800501e2f2070e1372986b45828c2b543360de6ccbb33cafb365b6e307539",
+      "kind": "execution",
+      "candidate_sha256": "19f48167f040ca42c60b0df49a324c6d3aeb3de3014486017668f1263ccd6b35",
+      "target_snapshot_sha256": "dec34e19b7b3036c213299a1f98b05fec1709212fb156eabf9928682024ae2cb",
+      "observed_at": "2026-10-15T20:11:10.879622+00:00"
+    },
+    {
+      "path": "phase-qa.json",
+      "sha256": "e24f0cd16f162e1b572de8b19f58c28df7665f6f910a6bd8f228b92f783aaa26",
+      "kind": "execution",
+      "candidate_sha256": "19f48167f040ca42c60b0df49a324c6d3aeb3de3014486017668f1263ccd6b35",
+      "target_snapshot_sha256": "dec34e19b7b3036c213299a1f98b05fec1709212fb156eabf9928682024ae2cb",
+      "observed_at": "2026-10-15T20:12:18.331382+00:00"
+    },
+    {
+      "path": "phase-profile_preflight.json",
+      "sha256": "f7980f13e3e41d36e62f63a216ab281df7ddf1b66efc324bc158c737b0fc937d",
+      "kind": "execution",
+      "candidate_sha256": "19f48167f040ca42c60b0df49a324c6d3aeb3de3014486017668f1263ccd6b35",
+      "target_snapshot_sha256": "dec34e19b7b3036c213299a1f98b05fec1709212fb156eabf9928682024ae2cb",
+      "observed_at": "2026-10-15T19:59:38.272010+00:00"
+    },
+    {
+      "path": "phase-adjudication.json",
+      "sha256": "4229aeb2ce9255f952663e318eba387150b833f3682bbfc15256fb910c8ba36d",
+      "kind": "execution",
+      "candidate_sha256": "19f48167f040ca42c60b0df49a324c6d3aeb3de3014486017668f1263ccd6b35",
+      "target_snapshot_sha256": "dec34e19b7b3036c213299a1f98b05fec1709212fb156eabf9928682024ae2cb",
+      "observed_at": "2026-10-15T20:13:15.203447+00:00"
+    },
+    {
+      "path": "phase-spec_validation.json",
+      "sha256": "bfdaf0e48d5fe0dfe2a26534cae56053e71daaeafd5bafa3099984db30803089",
+      "kind": "execution",
+      "candidate_sha256": "19f48167f040ca42c60b0df49a324c6d3aeb3de3014486017668f1263ccd6b35",
+      "target_snapshot_sha256": "dec34e19b7b3036c213299a1f98b05fec1709212fb156eabf9928682024ae2cb",
+      "observed_at": "2026-10-15T20:12:33.003982+00:00"
+    },
+    {
+      "path": "adjudication.json",
+      "sha256": "914eaa269cc6a92a20a8898a91a5f2749bbb67a409afa7accc039df80f60c1b5",
+      "kind": "source"
+    },
+    {
+      "path": "architecture-analysis.md",
+      "sha256": "70e723a784a4c8ab728c41b84dc585e60881de810fefe3a99b9aa2c164328c81",
+      "kind": "source"
+    },
+    {
+      "path": "architecture-commands.json",
+      "sha256": "e64e18b3f3f020b35dc34889d68042c91d5b0b72f1030a7670c1c48f52d47665",
+      "kind": "source"
+    },
+    {
+      "path": "architecture-cross.md",
+      "sha256": "1dd3697999e02fcc6b66671d2ada1a26c6dcc8198e8ccdb2be6b22459bbb384d",
+      "kind": "source"
+    },
+    {
+      "path": "assembly.json",
+      "sha256": "238c5c7f07d9a0a7f1519101a46112feafba119e678d52be524f23007bcbc32d",
+      "kind": "source"
+    },
+    {
+      "path": "delivery-analysis.md",
+      "sha256": "20c67f6eb5c5828b4a4d7ed5037c67a7bab72aaafbf322411cad9055b1aef228",
+      "kind": "source"
+    },
+    {
+      "path": "delivery-commands.json",
+      "sha256": "e2b8e6501b0e831fa73a924e821e718df1e306d51b5657d877015f62d062658c",
+      "kind": "source"
+    },
+    {
+      "path": "delivery-cross.md",
+      "sha256": "88894823526c9626422a0fb3f5b22b165cbbbd9c4cccebb7b591df872936d5c7",
+      "kind": "source"
+    },
+    {
+      "path": "intake.json",
+      "sha256": "5a8cf961e135e582669245f801e9c0d77e133ae28e279e1530e859214e476e09",
+      "kind": "source"
+    },
+    {
+      "path": "product-analysis.md",
+      "sha256": "d9dd103bf20c15674521d04b47837831b69e7faab1a206768ca3fc784dbe0236",
+      "kind": "source"
+    },
+    {
+      "path": "product-commands.json",
+      "sha256": "fead3b8820307982cde753fdbd9dc2ebca0b32012538916186704dbfa187c0d4",
+      "kind": "source"
+    },
+    {
+      "path": "product-cross.md",
+      "sha256": "823005e112ad037e91e0d9c1f0cfa5b683e3033122dc4b992ca78f0842ea3ddb",
+      "kind": "source"
+    },
+    {
+      "path": "profile-preflight.json",
+      "sha256": "6479bd02307d015f46c745d5124a30a594e5b49ff12819779228b8cf14bb990e",
+      "kind": "source"
+    },
+    {
+      "path": "profile-selected-check.json",
+      "sha256": "6cc6477ab3ae78be5d000ebf8dba6b73d6a153bfabd67a2e66db03074f0cedc7",
+      "kind": "source"
+    },
+    {
+      "path": "profile-use.json",
+      "sha256": "b29c8a6a8085cf6834c877750a0e74fed51dcc8a078f1b60bfd3ad72b4447e6d",
+      "kind": "source"
+    },
+    {
+      "path": "proposed-spec.md",
+      "sha256": "adb21983bd316eebe43bcd96aa442c3bafe143f5bcdf26bc2c167a285f33e546",
+      "kind": "source"
+    },
+    {
+      "path": "qa-analysis.md",
+      "sha256": "a73818a9ddada8c47f4ee9f35f41f612592df9bf80ee3466aff4d972e0cfe37f",
+      "kind": "source"
+    },
+    {
+      "path": "qa-commands.json",
+      "sha256": "85109b6c7eb02ab75b6a46713263bfdb44a370aefbd73567e8acc1459d2021f8",
+      "kind": "source"
+    },
+    {
+      "path": "qa-cross-commands.json",
+      "sha256": "0f2d82a45d7a4250c786e1ad048a64fd45c60e42cfb6c2401c0c9168836411aa",
+      "kind": "source"
+    },
+    {
+      "path": "qa-cross.md",
+      "sha256": "c1150603dc79b4a886951e3281733a9b260b5dbb3fb98a7b9cf54214542be8d9",
+      "kind": "source"
+    },
+    {
+      "path": "roster.json",
+      "sha256": "7431a52d6ab20e401f9ea944bc60da2b9fa38809e8096929814841927b188f48",
+      "kind": "source"
+    },
+    {
+      "path": "spec-validation.json",
+      "sha256": "ac2fbcf612a83b7bdc2d4f0ee905f7c16fcfb428397f391d144ce0038e358d72",
+      "kind": "source"
+    },
+    {
+      "path": "target-snapshot.json",
+      "sha256": "f4e20f9a9d940d19e0cb48b068fb932d8a250a7f76ccee7ec3fa7851b3b8936a",
+      "kind": "source"
+    },
+    {
+      "path": "ux-analysis.md",
+      "sha256": "641be1e8a7aa12ceb2429eb199b32d29e39a86f630a6002a82bcdc39fd24ff75",
+      "kind": "source"
+    },
+    {
+      "path": "ux-commands.json",
+      "sha256": "1ca6094c35af2190b1dcc8b6387c8aeec3430c4a5ece9e4e906be643c07fc6d0",
+      "kind": "source"
+    },
+    {
+      "path": "ux-cross.md",
+      "sha256": "dcb3bf590f51acf3d648faf49bc1df6154ec84e68ac0fdff42597c4f66b3b147",
+      "kind": "source"
+    },
+    {
+      "path": "README.md",
+      "sha256": "dcbfb199efdc9a4b69cdca9dd0245736fc559111689f31ae2bc18f4bace42579",
+      "kind": "presentation"
+    },
+    {
+      "path": "independent-evaluation.json",
+      "sha256": "75040aa553d3823dcf31b7d7d29923df711deda1ce2151e959df037eef01067c",
+      "kind": "source"
+    },
+    {
+      "path": "independent-evaluation.md",
+      "sha256": "7dc24d78f8cd80655ba368bb17b59a6f61924b1fff39e321a0e2e4391e9e7440",
+      "kind": "source"
+    },
+    {
+      "path": "source-manifest.json",
+      "sha256": "c686121b90ddf311ffeae1573d1783f455e2bcce52f5905498ad874fe7d33623",
+      "kind": "source"
+    },
+    {
+      "path": "public-spec-validation.json",
+      "sha256": "4deb94ac396ad74eb80a3a38c20f51cc10abfcb7b1026cd10439bbf2ce6edcdb",
+      "kind": "source"
+    }
+  ],
+  "commands": [
+    {
+      "argv": [
+        "python3",
+        "tools/qore.py",
+        "derive",
+        "--profile",
+        "<CANDIDATE_B>/profiles/qore.json",
+        "--project-root",
+        "<CANDIDATE_B>",
+        "--output",
+        "<DERIVED_CANDIDATE>"
+      ],
+      "exit_code": 0,
+      "artifact": "assembly.json"
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/project-check.py",
+        "references/project.json",
+        "--root",
+        "<CANDIDATE_B>",
+        "--method",
+        "plan"
+      ],
+      "exit_code": 0,
+      "artifact": "profile-preflight.json"
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "artifact": "profile-selected-check.json"
+    },
+    {
+      "argv": [
+        "python3",
+        "tools/qore.py",
+        "snapshot",
+        "--root",
+        "<CANDIDATE_B>"
+      ],
+      "exit_code": 0,
+      "artifact": "target-snapshot.json"
+    },
+    {
+      "argv": [
+        "bash",
+        "scripts/spec-lint.sh",
+        "<PRIVATE_EVIDENCE_ROOT>/proposed-spec.md"
+      ],
+      "exit_code": 0,
+      "artifact": "spec-validation.json"
+    }
+  ],
+  "limitations": [
+    "Author-host agent execution, not independent clean environment or external human use.",
+    "Generic role reports are not reused; fresh independent contexts execute both phases.",
+    "Only facts selected by actual current preflight may influence profile-specific behavior.",
+    "Manifest SHA identifies this fresh derivative; original base archive b identity is separately retained, not replaced by a later release.",
+    "Actor IDs identify actual distinct tool contexts but structural validation alone cannot certify independence or decision quality.",
+    "No implementation or post-fix candidate tests ran as part of this planning execution.",
+    "Sanitized public derivative: command paths are display substitutions, original observation times are preserved, and public integrity checks do not rerun historical phases."
+  ],
+  "coverage": "COMPLETE",
+  "source_run_id": "derived-plan-qore-frozen-b-20261015",
+  "public_artifact_id": "public-derived-plan-20261015-01"
+}

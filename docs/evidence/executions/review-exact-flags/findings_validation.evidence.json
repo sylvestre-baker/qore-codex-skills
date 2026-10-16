@@ -1,0 +1,13 @@
+{
+  "qore_evidence": {
+    "candidate_sha256": "bafd0da80667a00f9e6bd2f9e726eaa64d61ff42d026b9f58eb857df15bf40f8",
+    "target_snapshot_sha256": "0d87c8304b3bf11ddc2ded27ab3779d09b5907657e4d5165f2bf59003b29689b",
+    "observed_at": "2026-10-15T19:59:13.834247+00:00",
+    "phase_id": "findings_validation"
+  },
+  "payload": {
+    "final-checker-command.json": "{\n  \"argv\": [\n    \"node\",\n    \"scripts/finding-lint.mjs\",\n    \"/workspace/review-evidence/verified.json\",\n    \"--verifier=ran\",\n    \"--json\"\n  ],\n  \"cwd\": \"/workspace/qore-skills-0.1.0/.agents/skills/qore-review\",\n  \"exit_code\": 0,\n  \"stdout\": \"{\\n  \\\"valid\\\": true,\\n  \\\"coverage\\\": \\\"COMPLETE\\\",\\n  \\\"verdict\\\": \\\"SHIP\\\",\\n  \\\"verifier\\\": \\\"ran\\\",\\n  \\\"total\\\": 0,\\n  \\\"counts\\\": {\\n    \\\"CONFIRMED\\\": 0,\\n    \\\"PLAUSIBLE\\\": 0,\\n    \\\"REFUTED\\\": 0\\n  },\\n  \\\"blocking_findings\\\": [],\\n  \\\"findings\\\": [],\\n  \\\"problems\\\": [],\\n  \\\"limit\\\": \\\"The verifier flag records an execution declaration; validate actual independent phase evidence separately.\\\"\\n}\\n\",\n  \"stderr\": \"\",\n  \"observed_at\": \"2026-10-15T19:58:26.328296+00:00\"\n}\n",
+    "final-checker.stdout.json": "{\n  \"valid\": true,\n  \"coverage\": \"COMPLETE\",\n  \"verdict\": \"SHIP\",\n  \"verifier\": \"ran\",\n  \"total\": 0,\n  \"counts\": {\n    \"CONFIRMED\": 0,\n    \"PLAUSIBLE\": 0,\n    \"REFUTED\": 0\n  },\n  \"blocking_findings\": [],\n  \"findings\": [],\n  \"problems\": [],\n  \"limit\": \"The verifier flag records an execution declaration; validate actual independent phase evidence separately.\"\n}\n",
+    "final-checker.stderr": ""
+  }
+}

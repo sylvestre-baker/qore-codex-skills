@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "python3",
+    "<CANDIDATE_B>/skills/qore-plan/scripts/run-check.py",
+    "<REDACTED_LOCAL_PATH>",
+    "--evidence-root",
+    "<REDACTED_LOCAL_PATH>"
+  ],
+  "exit_code": 0,
+  "stdout": "{\n  \"valid\": true,\n  \"coverage\": \"COMPLETE\",\n  \"missing_phases\": [],\n  \"artifact_count\": 34,\n  \"note\": \"Evidence identity and declared phase coverage checked; factual quality is not certified.\"\n}\n",
+  "stderr": "",
+  "observed_at": "2026-10-15T20:17:52.132286+00:00",
+  "notice": "New structural validation of the sanitized record only; original run observations retain their times."
+}

@@ -1,0 +1,71 @@
+1: {
+2:   "$schema": "https://json-schema.org/draft/2020-12/schema",
+3:   "type": "object",
+4:   "title": "Qore immutable resource inventory",
+5:   "required": [
+6:     "schema",
+7:     "version",
+8:     "host",
+9:     "redistribution",
+10:     "resources"
+11:   ],
+12:   "properties": {
+13:     "schema": {
+14:       "const": "qore-release/1"
+15:     },
+16:     "version": {
+17:       "type": "string",
+18:       "minLength": 1
+19:     },
+20:     "host": {
+21:       "const": "codex"
+22:     },
+23:     "redistribution": {
+24:       "const": "MIT-first-party"
+25:     },
+26:     "kind": {
+27:       "enum": [
+28:         "generic",
+29:         "derived"
+30:       ]
+31:     },
+32:     "profile": {
+33:       "type": [
+34:         "object",
+35:         "null"
+36:       ]
+37:     },
+38:     "resources": {
+39:       "type": "array",
+40:       "minItems": 1,
+41:       "items": {
+42:         "type": "object",
+43:         "required": [
+44:           "path",
+45:           "sha256",
+46:           "origin",
+47:           "license"
+48:         ],
+49:         "properties": {
+50:           "path": {
+51:             "type": "string",
+52:             "minLength": 1
+53:           },
+54:           "sha256": {
+55:             "type": "string",
+56:             "pattern": "^[a-f0-9]{64}$"
+57:           },
+58:           "origin": {
+59:             "enum": [
+60:               "first-party",
+61:               "Qaizen-public-observation"
+62:             ]
+63:           },
+64:           "license": {
+65:             "const": "MIT"
+66:           }
+67:         }
+68:       }
+69:     }
+70:   }
+71: }

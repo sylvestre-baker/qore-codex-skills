@@ -1,0 +1,80 @@
+{
+  "driver": {
+    "node": "v24.19.0",
+    "playwright": "1.62.1",
+    "chromium": "151.0.7922.34"
+  },
+  "depth": "entry",
+  "rows": [
+    {
+      "capability": "navigation",
+      "status": "OBSERVED",
+      "required_checks": [
+        "G0 actual entry",
+        "G1 direct/reload/history"
+      ],
+      "evidence": [
+        "browser-events.json"
+      ]
+    },
+    {
+      "capability": "screenshots",
+      "status": "OBSERVED",
+      "required_checks": [
+        "G3 opened true-viewport images and SSR"
+      ],
+      "evidence": [
+        "viewport-observations.json",
+        "ssr.json"
+      ]
+    },
+    {
+      "capability": "DOM/semantics",
+      "status": "OBSERVED",
+      "required_checks": [
+        "G2 resolution",
+        "G4 copy/IDs",
+        "G5 role/name/focus"
+      ],
+      "evidence": [
+        "gate-assertions.json"
+      ]
+    },
+    {
+      "capability": "keyboard",
+      "status": "OBSERVED",
+      "required_checks": [
+        "G5 Tab/Space/focus restoration"
+      ],
+      "evidence": [
+        "dom/g5-summary-keyboard-focus-i1.dom.json"
+      ]
+    },
+    {
+      "capability": "console",
+      "status": "OBSERVED",
+      "required_checks": [
+        "G1 exception attribution"
+      ],
+      "evidence": [
+        "browser-events.json"
+      ]
+    },
+    {
+      "capability": "network",
+      "status": "OBSERVED",
+      "required_checks": [
+        "G1 response outcomes",
+        "G2 delayed route resolution"
+      ],
+      "evidence": [
+        "browser-events.json"
+      ]
+    }
+  ],
+  "not_claimed": [
+    "Accessibility conformance",
+    "CWV",
+    "Mobile/native or full-site quality"
+  ]
+}

@@ -1,0 +1,86 @@
+1: #!/usr/bin/env node
+2: import { readFileSync } from 'node:fs';
+3: 
+4: const args = process.argv.slice(2);
+5: const json = args.includes('--json');
+6: const files = args.filter(arg => !arg.startsWith('--'));
+7: if (files.length !== 1 || args.some(arg => arg.startsWith('--') && arg !== '--json')) {
+8:   console.error('usage: spec-lint.mjs <spec.md> [--json]');
+9:   process.exit(2);
+10: }
+11: let source;
+12: try { source = readFileSync(files[0], 'utf8'); }
+13: catch (error) { console.error(`spec-lint: cannot read input: ${error.message}`); process.exit(2); }
+14: const lines = source.replace(/\r\n/g, '\n').split('\n');
+15: const problems = [];
+16: const fail = (code, message, line) => problems.push({ code, message, ...(line ? { line } : {}) });
+17: const version = lines[0].match(/^<!--\s*qore-spec\/(\d+)\s*-->\s*$/);
+18: if (!version) fail('schema', 'The first line must declare <!-- qore-spec/1 -->.');
+19: else if (version[1] !== '1') fail('schema', `Unsupported qore-spec/${version[1]}; expected qore-spec/1.`);
+20: 
+21: // Parse fences before looking for steps: keywords outside Gherkin prove nothing.
+22: const blocks = [];
+23: let open = null;
+24: for (let index = 0; index < lines.length; index++) {
+25:   const fence = lines[index].match(/^\s{0,3}(`{3,}|~{3,})\s*([^\s]*)\s*$/);
+26:   if (!open && fence) {
+27:     open = { marker: fence[1][0], width: fence[1].length, language: fence[2].toLowerCase(), line: index + 1, lines: [] };
+28:   } else if (open && fence && fence[1][0] === open.marker && fence[1].length >= open.width && !fence[2]) {
+29:     blocks.push(open); open = null;
+30:   } else if (open) open.lines.push({ text: lines[index], line: index + 1 });
+31: }
+32: if (open) fail('fence', 'An opened code fence is not closed.', open.line);
+33: const gherkin = blocks.filter(block => block.language === 'gherkin');
+34: if (!gherkin.length) fail('gherkin', 'At least one fenced Gherkin scenario is required.');
+35: const scenarios = [];
+36: for (const block of gherkin) {
+37:   let current = null;
+38:   for (const row of block.lines) {
+39:     const scenario = row.text.match(/^\s*Scenario(?: Outline)?:\s*(.*)$/i);
+40:     if (scenario) {
+41:       const name = scenario[1].trim();
+42:       const explicit = name.match(/^\[?([A-Za-z]+-?\d+)\]?(?=\s|:|$)/);
+43:       current = { id: explicit ? explicit[1] : `Scenario ${scenarios.length + 1}`, name, line: row.line, steps: new Set() };
+44:       scenarios.push(current);
+45:     } else if (current) {
+46:       const step = row.text.match(/^\s*(Given|When|Then)\s+\S/i);
+47:       if (step) current.steps.add(step[1].toLowerCase());
+48:     }
+49:   }
+50:   if (!block.lines.some(row => /^\s*Scenario(?: Outline)?:/i.test(row.text))) fail('gherkin', 'An empty Gherkin fence is not acceptance criteria.', block.line);
+51: }
+52: const ids = new Set();
+53: for (const scenario of scenarios) {
+54:   if (!scenario.name) fail('scenario', 'A scenario must have a name.', scenario.line);
+55:   if (ids.has(scenario.id)) fail('duplicate-id', `Duplicate scenario ID: ${scenario.id}.`, scenario.line);
+56:   ids.add(scenario.id);
+57:   for (const step of ['given', 'when', 'then']) if (!scenario.steps.has(step)) fail('step', `${scenario.id} lacks its own ${step} step.`, scenario.line);
+58: }
+59: if (!blocks.some(block => block.language === 'mermaid' && block.lines.some(row => /^\s*sequenceDiagram\s*$/.test(row.text)))) {
+60:   fail('sequence', 'A fenced Mermaid sequenceDiagram is required.');
+61: }
+62: 
+63: const coverageRows = lines.filter(line => /^\s*(?:[-*|#]\s*)*(?:\*\*)?Coverage(?:\*\*)?\s*[:|]/i.test(line));
+64: if (!coverageRows.length) fail('coverage', 'A coverage line mapping each scenario to a story or decision is required.');
+65: const coverage = coverageRows.join(' ').replace(/\*\*/g, '');
+66: // Expand compact ranges such as A02-A04 without prescribing story/decision IDs.
+67: const expanded = coverage.replace(/\b([A-Za-z]+-?)(\d+)\s*[-–]\s*(?:\1)?(\d+)\b/g, (all, prefix, begin, end) => {
+68:   const first = Number(begin), last = Number(end);
+69:   if (last < first || last - first > 1000) { fail('coverage-range', `Invalid coverage range: ${all}.`); return all; }
+70:   return Array.from({ length: last - first + 1 }, (_, offset) => `${prefix}${String(first + offset).padStart(begin.length, '0')}`).join(' ');
+71: });
+72: const escape = value => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+73: for (const id of ids) {
+74:   const mentions = expanded.split(';').filter(clause => new RegExp(`\\b${escape(id)}\\b`).test(clause));
+75:   if (!mentions.length) fail('uncovered', `Scenario ${id} is missing from coverage.`);
+76:   else if (!mentions.some(clause => /(?:→|->|=>|\|)\s*[^\s;.|]/.test(clause))) fail('coverage-target', `Scenario ${id} needs a coverage mapping target.`);
+77: }
+78: const prefixes = new Set([...ids].map(id => id.match(/^([A-Za-z]+-?)\d+$/)?.[1]).filter(Boolean));
+79: for (const token of expanded.match(/\b[A-Za-z]+-?\d+\b|\bScenario\s+\d+\b/g) || []) {
+80:   if ((token.startsWith('Scenario ') || prefixes.has(token.match(/^([A-Za-z]+-?)\d+$/)?.[1])) && !ids.has(token)) fail('orphan-coverage', `Coverage references unknown scenario ${token}.`);
+81: }
+82: const result = { valid: !problems.length, schema: 'qore-spec/1', scenarios: scenarios.map(({ id, name, line }) => ({ id, name, line })), problems };
+83: if (json) console.log(JSON.stringify(result, null, 2));
+84: else if (result.valid) console.log(`spec-lint: valid qore-spec/1 (${scenarios.length} scenarios).`);
+85: else for (const problem of problems) console.error(`spec-lint: ${problem.message}${problem.line ? ` (line ${problem.line})` : ''}`);
+86: process.exit(result.valid ? 0 : 1);

@@ -1,0 +1,12 @@
+{
+  "in_scope": [
+    "toString"
+  ],
+  "iterations": [
+    {
+      "n": 1,
+      "scores": {},
+      "measured": []
+    }
+  ]
+}

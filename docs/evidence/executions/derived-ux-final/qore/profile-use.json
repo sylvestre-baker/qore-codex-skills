@@ -1,0 +1,43 @@
+{
+  "schema": "qore-focused-profile-use/1",
+  "observed_at": "2026-10-15T20:17:52.103568+00:00",
+  "label": "Synthetic focused derivative probe; not an existing product or full UX audit",
+  "candidate_identity_kind": "Current generic UX instruction-resource snapshot, not an archive",
+  "candidate_instruction_snapshot_sha256": "550e45ab0a07a641f8ec6d3cba5677e97a8e5fd86053631a1e75c90a8f8c52d0",
+  "derivative_manifest_sha256": "8d97f33527b28f0c9ddac3358a6961f1ccbc693a84fadab4e39dafe7e61032c3",
+  "skill": "qore-ux-review-qore",
+  "profile": {
+    "id": "qore",
+    "version": "0.1.0",
+    "sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9"
+  },
+  "consumed_facts": [
+    {
+      "fact": "surfaces.web.entry_url",
+      "value": "http://127.0.0.1:8765/index.html",
+      "source_id": "project",
+      "current_source_sha256": "948b2784fa7970cf90a25c338a29067b13d8b4476f666d712a5eb95fc6f641c8",
+      "effect": "Selected the actual browser navigation URL"
+    },
+    {
+      "fact": "surfaces.web.required_state",
+      "value": "Resolved synthetic state.",
+      "source_id": "project",
+      "current_source_sha256": "948b2784fa7970cf90a25c338a29067b13d8b4476f666d712a5eb95fc6f641c8",
+      "effect": "Selected the browser visibility assertion after activating the fixture control"
+    }
+  ],
+  "invariants_selected": [
+    {
+      "id": "observed-ux",
+      "statement": "A required browser check without fresh evidence prevents global success.",
+      "source": "project",
+      "applies_to": [
+        "ux"
+      ]
+    }
+  ],
+  "served_fixture_sha256": "c0b51d87d81a36f21608139d7a4fbf07b9fe1d6f94b1fa0bb0599b5f74fe91f5",
+  "operator_input": "invocation.txt",
+  "unused_commands": []
+}

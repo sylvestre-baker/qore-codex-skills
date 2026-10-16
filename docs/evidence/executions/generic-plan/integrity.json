@@ -1,0 +1,13 @@
+{
+  "argv": [
+    "python3",
+    "tools/qore.py",
+    "verify",
+    "<CANDIDATE_B>"
+  ],
+  "cwd": "<CANDIDATE_B>",
+  "exit_code": 0,
+  "stdout": "{\n  \"valid\": true,\n  \"schema\": \"qore-release/1\",\n  \"version\": \"0.1.0\",\n  \"kind\": \"generic\",\n  \"files\": 88,\n  \"manifest_sha256\": \"f614a4fae49aaae5c638fd8a84654261f8698f5cd07d971bb5e2c7f7eb053629\"\n}\n",
+  "stderr": "",
+  "observed_at": "2026-10-15T19:44:08.950642+00:00"
+}

@@ -1,0 +1,11 @@
+{
+  "findings": [
+    {
+      "id": "probe",
+      "title": "Known defect",
+      "severity": "medium",
+      "evidence": "source.js:1",
+      "verdict": "CONFIRMED"
+    }
+  ]
+}

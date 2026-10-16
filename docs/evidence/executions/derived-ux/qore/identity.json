@@ -1,0 +1,11 @@
+{
+  "public_id": "public-focused-derived-ux-qore-20261015-01",
+  "original_candidate_archive_sha256": "2963c43e98803354932e406627d9e239064fbe2899745a7e093b7d4154fa56d1",
+  "profile": {
+    "id": "qore",
+    "version": "0.1.0",
+    "sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9"
+  },
+  "coverage": "COMPLETE for the focused profile-consumption probe only. No full derivative method run or qore-run coverage is fabricated.",
+  "role": "Original author exporting evidence; not independent evaluator."
+}

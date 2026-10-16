@@ -1,0 +1,8 @@
+{
+  "examples/validator-hardening.md": "6f25b2edcd6d0826b12fbb47a99fc4162a1089eef71eaf7f16ea2cb7a8239a87",
+  "skills/qore-review/scripts/finding-lint.mjs": "d0cc6809b750d9e52015b0448f18e3f291b979674b1350156d2444e607791ee7",
+  "skills/qore-review/scripts/redact-for-verifier.mjs": "dc249524c749ad5b511aef0a2cf08b4cfd5c47c1e0de4fd41c5c70746b471083",
+  "tests/test_validators.py": "b91ab5195a1e7380747c618a17f885b56dc1cddf809ff23e065c3062fc477f39",
+  ".agents/skills/qore-review/references/run-evidence.md": "fbdf433ef8b3e972f97bed5fdec4990cf3b49535bf63120c729a7daf4af71746",
+  ".agents/skills/qore-review/scripts/run-check.py": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa"
+}

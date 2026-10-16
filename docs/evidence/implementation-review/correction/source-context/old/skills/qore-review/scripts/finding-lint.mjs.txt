@@ -1,0 +1,58 @@
+1: #!/usr/bin/env node
+2: import { readFileSync } from 'node:fs';
+3: 
+4: const args = process.argv.slice(2);
+5: const paths = args.filter(arg => !arg.startsWith('--'));
+6: const declarations = args.filter(arg => arg.startsWith('--verifier='));
+7: const verifier = declarations[0]?.slice('--verifier='.length);
+8: const json = args.includes('--json');
+9: if (paths.length !== 1 || declarations.length !== 1 || !['ran', 'skipped'].includes(verifier) || args.some(arg => arg.startsWith('--') && arg !== '--json' && !arg.startsWith('--verifier='))) {
+10:   console.error('usage: finding-lint.mjs <packet.json> --verifier=ran|skipped [--json]'); process.exit(2);
+11: }
+12: let packet;
+13: try { packet = JSON.parse(readFileSync(paths[0], 'utf8')); }
+14: catch (error) { console.error(`finding-lint: cannot read JSON: ${error.message}`); process.exit(2); }
+15: const object = value => value !== null && typeof value === 'object' && !Array.isArray(value);
+16: const text = value => typeof value === 'string' && value.trim().length > 0;
+17: const problems = [];
+18: const findings = object(packet) && Array.isArray(packet.findings) ? packet.findings : [];
+19: if (!object(packet) || !Array.isArray(packet.findings)) problems.push({ code: 'envelope', why: 'Expected an object containing findings: []; arrays, null and missing findings are refused.' });
+20: const verdicts = ['CONFIRMED', 'PLAUSIBLE', 'REFUTED'];
+21: const severities = ['critical', 'high', 'medium', 'low', 'info'];
+22: const ids = new Set();
+23: const checkable = /[\w./-]+\.[A-Za-z]{1,8}\b|\b[0-9a-f]{7,40}\b|\b\d+(?:\.\d+)*\b/;
+24: for (const [index, finding] of findings.entries()) {
+25:   const id = object(finding) && text(finding.id) ? finding.id : `#${index + 1}`;
+26:   const fail = (code, why) => problems.push({ id, code, why });
+27:   if (!object(finding)) { fail('shape', 'Each finding must be an object.'); continue; }
+28:   for (const key of ['id', 'title', 'severity']) if (!text(finding[key])) fail('field', `${key} must be a non-empty string.`);
+29:   if (text(finding.id)) {
+30:     if (ids.has(finding.id)) fail('duplicate-id', 'Finding IDs must be unique.');
+31:     ids.add(finding.id);
+32:   }
+33:   if (!severities.includes(finding.severity)) fail('severity', `severity must be one of ${severities.join(', ')}.`);
+34:   if (!verdicts.includes(finding.verdict)) fail('verdict', `verdict must be one of ${verdicts.join(', ')}.`);
+35:   if (verifier === 'skipped' && finding.verdict !== 'PLAUSIBLE') fail('verification', 'Missing independent verification permits only PLAUSIBLE findings.');
+36:   if (finding.verdict === 'REFUTED') {
+37:     if (!text(finding.refuted_because)) fail('refutation', 'REFUTED requires a retained refuted_because reason.');
+38:   } else {
+39:     if (!text(finding.evidence) || !checkable.test(finding.evidence)) fail('evidence', 'Evidence must name a checkable source or measurement.');
+40:     if (finding.verdict === 'CONFIRMED' && ['critical', 'high'].includes(finding.severity) && !text(finding.counterexample)) fail('counterexample', 'A blocking finding requires a concrete counterexample.');
+41:   }
+42: }
+43: const valid = !problems.length;
+44: const blocking = valid && verifier === 'ran' ? findings.filter(finding => finding.verdict === 'CONFIRMED' && ['critical', 'high'].includes(finding.severity)).map(finding => finding.id) : [];
+45: const coverage = valid && verifier === 'ran' ? 'COMPLETE' : 'PARTIAL';
+46: const result = {
+47:   valid, coverage, verdict: !valid ? 'INVALID' : blocking.length ? 'DO-NOT-SHIP' : verifier === 'skipped' ? 'PENDING' : 'SHIP',
+48:   verifier, total: findings.length,
+49:   counts: Object.fromEntries(verdicts.map(verdict => [verdict, findings.filter(finding => object(finding) && finding.verdict === verdict).length])),
+50:   blocking_findings: blocking, findings, problems,
+51:   limit: 'The verifier flag records an execution declaration; validate actual independent phase evidence separately.',
+52: };
+53: if (json) console.log(JSON.stringify(result, null, 2));
+54: else {
+55:   console.log(`finding-lint: ${valid ? 'valid' : 'refused'}; coverage ${coverage}; verdict ${result.verdict}; ${blocking.length} blocking findings.`);
+56:   for (const problem of problems) console.error(`${problem.id || 'packet'}: ${problem.why}`);
+57: }
+58: process.exit(valid ? 0 : 1);

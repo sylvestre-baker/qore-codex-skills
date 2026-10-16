@@ -1,0 +1,1035 @@
+{
+  "schema": "qore-browser-public-observation/1",
+  "started_at": "2026-10-15T19:28:02.970Z",
+  "finished_at": "2026-10-15T19:28:23.832Z",
+  "operator": "Maintainer-operated agent; not an external human trial",
+  "target": "https://qaizen.io/en/labs",
+  "environment": {
+    "name": "Playwright Chromium",
+    "node": "v24.19.0",
+    "version": "1.62.1",
+    "browser_version": "151.0.7922.34",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    }
+  },
+  "coverage": "COMPLETE within declared entry/state observation; PARTIAL for a full UX review",
+  "events": {
+    "console": [
+      {
+        "at": "2026-10-15T19:28:12.053Z",
+        "type": "error",
+        "text": "Failed to load resource: net::ERR_BLOCKED_BY_CLIENT.Inspector",
+        "location": {
+          "url": "https://qaizen.io/api/labs/readiness/event",
+          "line": 0,
+          "column": 0,
+          "lineNumber": 0,
+          "columnNumber": 0
+        }
+      }
+    ],
+    "page_errors": [],
+    "network": [
+      {
+        "at": "2026-10-15T19:28:04.189Z",
+        "url": "https://qaizen.io/en/labs",
+        "method": "GET",
+        "status": 307,
+        "resource_type": "document"
+      },
+      {
+        "at": "2026-10-15T19:28:04.427Z",
+        "url": "https://qaizen.io/labs",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "document"
+      },
+      {
+        "at": "2026-10-15T19:28:04.912Z",
+        "url": "https://qaizen.io/_next/static/immutable/media/e8f2fbee2754df70-s.p.1gavkj72q9u43.woff2",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "font"
+      },
+      {
+        "at": "2026-10-15T19:28:04.975Z",
+        "url": "https://qaizen.io/_next/static/immutable/chunks/0ph51-fz068ee.css",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "stylesheet"
+      },
+      {
+        "at": "2026-10-15T19:28:04.975Z",
+        "url": "https://qaizen.io/_next/static/immutable/media/f30fd2e485acf1bc-s.p.1z38dhxy5o0rp.woff2",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "font"
+      },
+      {
+        "at": "2026-10-15T19:28:05.118Z",
+        "url": "https://qaizen.io/_next/static/immutable/media/8e451580e5e95631-s.p.0ic9f6t6i9npx.woff2",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "font"
+      },
+      {
+        "at": "2026-10-15T19:28:05.233Z",
+        "url": "https://qaizen.io/_next/static/immutable/chunks/0vp6n1uafu_z7.js",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "script"
+      },
+      {
+        "at": "2026-10-15T19:28:05.234Z",
+        "url": "https://qaizen.io/_next/static/immutable/chunks/0bll1gbg9hhty.js",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "script"
+      },
+      {
+        "at": "2026-10-15T19:28:05.311Z",
+        "url": "https://qaizen.io/_next/static/immutable/chunks/3bbde9q_vd_-r.js",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "script"
+      },
+      {
+        "at": "2026-10-15T19:28:05.419Z",
+        "url": "https://qaizen.io/_next/static/immutable/chunks/07fzs162tmcdh.js",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "script"
+      },
+      {
+        "at": "2026-10-15T19:28:05.452Z",
+        "url": "https://qaizen.io/_next/static/immutable/chunks/0gm89vcwhj87c.js",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "script"
+      },
+      {
+        "at": "2026-10-15T19:28:05.461Z",
+        "url": "https://qaizen.io/_next/static/immutable/chunks/0dszv51uy--ty.js",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "script"
+      },
+      {
+        "at": "2026-10-15T19:28:05.472Z",
+        "url": "https://qaizen.io/_next/static/immutable/media/345c85a432359eed-s.p.24jxsbewvqxgy.woff2",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "font"
+      },
+      {
+        "at": "2026-10-15T19:28:05.487Z",
+        "url": "https://qaizen.io/_next/static/immutable/chunks/1vngpkdf822wx.css",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "stylesheet"
+      },
+      {
+        "at": "2026-10-15T19:28:05.522Z",
+        "url": "https://qaizen.io/_next/image",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "image"
+      },
+      {
+        "at": "2026-10-15T19:28:05.523Z",
+        "url": "https://qaizen.io/_next/static/immutable/chunks/1zar1gbm-geib.js",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "script"
+      },
+      {
+        "at": "2026-10-15T19:28:05.523Z",
+        "url": "https://qaizen.io/_next/static/immutable/chunks/1xobemoqfn78h.js",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "script"
+      },
+      {
+        "at": "2026-10-15T19:28:05.524Z",
+        "url": "https://qaizen.io/_next/static/immutable/chunks/turbopack-1ea6fe1p3l00-.js",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "script"
+      },
+      {
+        "at": "2026-10-15T19:28:05.524Z",
+        "url": "https://qaizen.io/_next/static/immutable/chunks/38fixmt9m-84r.js",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "script"
+      },
+      {
+        "at": "2026-10-15T19:28:05.570Z",
+        "url": "https://qaizen.io/_next/static/immutable/chunks/2ol1vi4pk99zo.js",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "script"
+      },
+      {
+        "at": "2026-10-15T19:28:05.830Z",
+        "url": "https://qaizen.io/_vercel/speed-insights/script.js",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "script"
+      },
+      {
+        "at": "2026-10-15T19:28:05.835Z",
+        "url": "https://qaizen.io/_vercel/insights/script.js",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "script"
+      },
+      {
+        "at": "2026-10-15T19:28:05.843Z",
+        "url": "https://qaizen.io/services/readiness-review",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "fetch"
+      },
+      {
+        "at": "2026-10-15T19:28:05.943Z",
+        "url": "https://qaizen.io/",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "fetch"
+      },
+      {
+        "at": "2026-10-15T19:28:05.943Z",
+        "url": "https://qaizen.io/labs",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "fetch"
+      },
+      {
+        "at": "2026-10-15T19:28:05.943Z",
+        "url": "https://qaizen.io/blog",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "fetch"
+      },
+      {
+        "at": "2026-10-15T19:28:06.079Z",
+        "url": "https://qaizen.io/privacy",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "fetch"
+      },
+      {
+        "at": "2026-10-15T19:28:06.179Z",
+        "url": "https://qaizen.io/labs/shadow-ai",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "fetch"
+      },
+      {
+        "at": "2026-10-15T19:28:06.179Z",
+        "url": "https://qaizen.io/labs/roi-calculator/stalled",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "fetch"
+      },
+      {
+        "at": "2026-10-15T19:28:06.274Z",
+        "url": "https://qaizen.io/labs/readiness-check",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "fetch"
+      },
+      {
+        "at": "2026-10-15T19:28:06.330Z",
+        "url": "https://qaizen.io/labs/agent-replay",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "fetch"
+      },
+      {
+        "at": "2026-10-15T19:28:06.500Z",
+        "url": "https://qaizen.io/privacy",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "fetch"
+      },
+      {
+        "at": "2026-10-15T19:28:06.551Z",
+        "url": "https://qaizen.io/",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "fetch"
+      },
+      {
+        "at": "2026-10-15T19:28:06.571Z",
+        "url": "https://qaizen.io/services/readiness-review",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "fetch"
+      },
+      {
+        "at": "2026-10-15T19:28:06.800Z",
+        "url": "https://qaizen.io/_next/static/immutable/chunks/314j-eefaqinq.js",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "script"
+      },
+      {
+        "at": "2026-10-15T19:28:06.801Z",
+        "url": "https://qaizen.io/privacy",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "fetch"
+      },
+      {
+        "at": "2026-10-15T19:28:06.801Z",
+        "url": "https://qaizen.io/services/readiness-review",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "fetch"
+      },
+      {
+        "at": "2026-10-15T19:28:06.802Z",
+        "url": "https://qaizen.io/labs",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "fetch"
+      },
+      {
+        "at": "2026-10-15T19:28:06.802Z",
+        "url": "https://qaizen.io/_next/static/immutable/chunks/1_jftl8n272qz.js",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "script"
+      },
+      {
+        "at": "2026-10-15T19:28:06.804Z",
+        "url": "https://qaizen.io/blog",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "fetch"
+      },
+      {
+        "at": "2026-10-15T19:28:07.031Z",
+        "url": "https://qaizen.io/_next/static/immutable/chunks/3ee8zcrtq5yw0.js",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "script"
+      },
+      {
+        "at": "2026-10-15T19:28:07.032Z",
+        "url": "https://qaizen.io/_next/static/immutable/chunks/0i6a3-ntstsyb.js",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "script"
+      },
+      {
+        "at": "2026-10-15T19:28:07.038Z",
+        "url": "https://qaizen.io/_next/static/immutable/chunks/410pqtmh5wtab.js",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "script"
+      },
+      {
+        "at": "2026-10-15T19:28:07.038Z",
+        "url": "https://qaizen.io/labs/readiness-check",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "fetch"
+      },
+      {
+        "at": "2026-10-15T19:28:07.051Z",
+        "url": "https://qaizen.io/labs/readiness-check",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "fetch"
+      },
+      {
+        "at": "2026-10-15T19:28:07.060Z",
+        "url": "https://qaizen.io/blog",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "fetch"
+      },
+      {
+        "at": "2026-10-15T19:28:07.301Z",
+        "url": "https://qaizen.io/labs/shadow-ai",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "fetch"
+      },
+      {
+        "at": "2026-10-15T19:28:07.325Z",
+        "url": "https://qaizen.io/_next/static/immutable/chunks/3f_ak85hphe5v.js",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "script"
+      },
+      {
+        "at": "2026-10-15T19:28:07.325Z",
+        "url": "https://qaizen.io/_next/static/immutable/chunks/2-hww9c36xb8_.js",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "script"
+      },
+      {
+        "at": "2026-10-15T19:28:07.325Z",
+        "url": "https://qaizen.io/_next/static/immutable/chunks/3iebxlz1p63mq.js",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "script"
+      },
+      {
+        "at": "2026-10-15T19:28:07.515Z",
+        "url": "https://qaizen.io/labs/roi-calculator/stalled",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "fetch"
+      },
+      {
+        "at": "2026-10-15T19:28:07.515Z",
+        "url": "https://qaizen.io/labs/shadow-ai",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "fetch"
+      },
+      {
+        "at": "2026-10-15T19:28:07.519Z",
+        "url": "https://qaizen.io/labs/roi-calculator/stalled",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "fetch"
+      },
+      {
+        "at": "2026-10-15T19:28:07.694Z",
+        "url": "https://qaizen.io/labs/agent-replay",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "fetch"
+      },
+      {
+        "at": "2026-10-15T19:28:07.860Z",
+        "url": "https://qaizen.io/_next/static/immutable/chunks/3w4tcmg4-ew_k.js",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "script"
+      },
+      {
+        "at": "2026-10-15T19:28:07.860Z",
+        "url": "https://qaizen.io/_next/static/immutable/chunks/1dqfwh9uxoatk.js",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "script"
+      },
+      {
+        "at": "2026-10-15T19:28:07.862Z",
+        "url": "https://qaizen.io/_next/static/immutable/chunks/0l29jr4_g948g.js",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "script"
+      },
+      {
+        "at": "2026-10-15T19:28:07.871Z",
+        "url": "https://qaizen.io/_next/static/immutable/chunks/111ym_e2ndcdo.js",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "script"
+      },
+      {
+        "at": "2026-10-15T19:28:07.877Z",
+        "url": "https://qaizen.io/_next/static/immutable/chunks/0pqs7mvm-34vq.js",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "script"
+      },
+      {
+        "at": "2026-10-15T19:28:07.903Z",
+        "url": "https://qaizen.io/_next/static/immutable/chunks/0o10kze9prt3d.js",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "script"
+      },
+      {
+        "at": "2026-10-15T19:28:07.929Z",
+        "url": "https://qaizen.io/_next/static/immutable/chunks/3qlcd3bkvphfv.js",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "script"
+      },
+      {
+        "at": "2026-10-15T19:28:08.095Z",
+        "url": "https://qaizen.io/_next/static/immutable/chunks/1v2ilueb6fo69.js",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "script"
+      },
+      {
+        "at": "2026-10-15T19:28:08.251Z",
+        "url": "https://qaizen.io/_next/static/immutable/chunks/05xw_-sp6ykks.js",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "script"
+      },
+      {
+        "at": "2026-10-15T19:28:08.265Z",
+        "url": "https://qaizen.io/_next/static/immutable/chunks/3b2btjzh_01cm.js",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "script"
+      },
+      {
+        "at": "2026-10-15T19:28:08.275Z",
+        "url": "https://qaizen.io/_next/static/immutable/chunks/0jcv8qc-rj6dl.js",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "script"
+      },
+      {
+        "at": "2026-10-15T19:28:08.276Z",
+        "url": "https://qaizen.io/_next/static/immutable/chunks/1jv8axzc2qe4l.js",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "script"
+      },
+      {
+        "at": "2026-10-15T19:28:08.374Z",
+        "url": "https://qaizen.io/_next/static/immutable/chunks/2v0mkb9ct140a.js",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "script"
+      },
+      {
+        "at": "2026-10-15T19:28:08.378Z",
+        "url": "https://qaizen.io/_next/static/immutable/chunks/2r_hv1-idqkab.js",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "script"
+      },
+      {
+        "at": "2026-10-15T19:28:08.741Z",
+        "url": "https://qaizen.io/labs/roi-calculator",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "fetch"
+      },
+      {
+        "at": "2026-10-15T19:28:09.144Z",
+        "url": "https://qaizen.io/labs/roi-calculator",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "fetch"
+      },
+      {
+        "at": "2026-10-15T19:28:09.318Z",
+        "url": "https://qaizen.io/labs/roi-calculator",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "fetch"
+      },
+      {
+        "at": "2026-10-15T19:28:09.493Z",
+        "url": "https://qaizen.io/_next/static/immutable/chunks/2ma9h8wfz-_gm.js",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "script"
+      },
+      {
+        "at": "2026-10-15T19:28:09.613Z",
+        "url": "https://qaizen.io/_next/static/immutable/chunks/1r8pjsdn-xyx9.js",
+        "method": "GET",
+        "status": 200,
+        "resource_type": "script"
+      }
+    ],
+    "requests_failed": [
+      {
+        "at": "2026-10-15T19:28:12.053Z",
+        "url": "https://qaizen.io/api/labs/readiness/event",
+        "method": "POST",
+        "error": "net::ERR_BLOCKED_BY_CLIENT.Inspector"
+      }
+    ],
+    "blocked_mutations": [
+      {
+        "at": "2026-10-15T19:28:12.051Z",
+        "method": "POST",
+        "url": "https://qaizen.io/api/labs/readiness/event",
+        "reason": "Read-only probe policy"
+      }
+    ],
+    "navigation": [
+      {
+        "at": "2026-10-15T19:28:04.432Z",
+        "url": "https://qaizen.io/labs"
+      },
+      {
+        "at": "2026-10-15T19:28:05.592Z",
+        "url": "https://qaizen.io/labs"
+      },
+      {
+        "at": "2026-10-15T19:28:08.269Z",
+        "url": "https://qaizen.io/labs/readiness-check"
+      }
+    ],
+    "actions": [
+      {
+        "at": "2026-10-15T19:28:07.316Z",
+        "type": "keyboard",
+        "key": "Tab",
+        "active_element": {
+          "tag": "A",
+          "id": "",
+          "text": "Skip to content"
+        },
+        "outcome": "completed"
+      },
+      {
+        "at": "2026-10-15T19:28:07.316Z",
+        "type": "click",
+        "role": "button",
+        "name": "Reject",
+        "outcome": "completed",
+        "url": "https://qaizen.io/labs"
+      },
+      {
+        "at": "2026-10-15T19:28:08.241Z",
+        "type": "click",
+        "selector": "a[href$='/labs/readiness-check']",
+        "outcome": "completed",
+        "url": "https://qaizen.io/labs"
+      },
+      {
+        "at": "2026-10-15T19:28:09.163Z",
+        "type": "assert-url",
+        "url": "https://qaizen.io/labs/readiness-check",
+        "outcome": "completed"
+      },
+      {
+        "at": "2026-10-15T19:28:10.065Z",
+        "type": "assert-text",
+        "text": "Could your AI pilot go live? A check in about 3 minutes",
+        "outcome": "completed",
+        "url": "https://qaizen.io/labs/readiness-check"
+      },
+      {
+        "at": "2026-10-15T19:28:10.970Z",
+        "type": "snapshot",
+        "label": "readiness-intro",
+        "outcome": "completed",
+        "url": "https://qaizen.io/labs/readiness-check"
+      },
+      {
+        "at": "2026-10-15T19:28:12.022Z",
+        "type": "click",
+        "role": "button",
+        "name": "Start the check",
+        "outcome": "completed",
+        "url": "https://qaizen.io/labs/readiness-check"
+      },
+      {
+        "at": "2026-10-15T19:28:12.956Z",
+        "type": "assert-text",
+        "text": "Which data will the AI system read and write in production, and who owns each source?",
+        "outcome": "completed",
+        "url": "https://qaizen.io/labs/readiness-check"
+      },
+      {
+        "at": "2026-10-15T19:28:13.868Z",
+        "type": "snapshot",
+        "label": "question-loaded",
+        "outcome": "completed",
+        "url": "https://qaizen.io/labs/readiness-check"
+      },
+      {
+        "at": "2026-10-15T19:28:14.931Z",
+        "type": "click",
+        "selector": "summary",
+        "outcome": "completed",
+        "url": "https://qaizen.io/labs/readiness-check"
+      },
+      {
+        "at": "2026-10-15T19:28:15.855Z",
+        "type": "snapshot",
+        "label": "question-help-expanded",
+        "outcome": "completed",
+        "url": "https://qaizen.io/labs/readiness-check"
+      },
+      {
+        "at": "2026-10-15T19:28:16.950Z",
+        "type": "keyboard",
+        "key": "Space",
+        "outcome": "completed",
+        "url": "https://qaizen.io/labs/readiness-check"
+      },
+      {
+        "at": "2026-10-15T19:28:17.854Z",
+        "type": "snapshot",
+        "label": "question-help-closed-by-keyboard",
+        "outcome": "completed",
+        "url": "https://qaizen.io/labs/readiness-check"
+      },
+      {
+        "at": "2026-10-15T19:28:18.931Z",
+        "type": "click",
+        "role": "button",
+        "name": "Back",
+        "outcome": "completed",
+        "url": "https://qaizen.io/labs/readiness-check"
+      },
+      {
+        "at": "2026-10-15T19:28:19.851Z",
+        "type": "assert-text",
+        "text": "Could your AI pilot go live? A check in about 3 minutes",
+        "outcome": "completed",
+        "url": "https://qaizen.io/labs/readiness-check"
+      },
+      {
+        "at": "2026-10-15T19:28:20.755Z",
+        "type": "snapshot",
+        "label": "returned-to-intro",
+        "outcome": "completed",
+        "url": "https://qaizen.io/labs/readiness-check"
+      }
+    ]
+  },
+  "states": {
+    "00-entry": {
+      "url": "https://qaizen.io/labs",
+      "title": "Labs \u2014 Free AI Governance and ROI Self-Assessments | QAIZEN",
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "QAIZEN LABS"
+        },
+        {
+          "tag": "H2",
+          "text": "PRODUCTION READINESS CHECK"
+        },
+        {
+          "tag": "H2",
+          "text": "SHADOW AI AUDIT"
+        },
+        {
+          "tag": "H2",
+          "text": "WHAT IS A STALLED AI PILOT COSTING YOU?"
+        },
+        {
+          "tag": "H2",
+          "text": "WATCH AN AI AGENT MEET ITS CONTROLS"
+        },
+        {
+          "tag": "H2",
+          "text": "MODELS BEHIND EACH TOOL"
+        }
+      ],
+      "active_element": {
+        "tag": "BODY",
+        "text": "Skip to contentAnalytics cookies. We would like to measure visits with Google Analytics and Microsoft Clarity to improve this site. Nothing is loaded unless you accept; you can change your mind at any",
+        "id": ""
+      },
+      "buttons": [
+        {
+          "text": "Reject",
+          "type": "button",
+          "disabled": false
+        },
+        {
+          "text": "Accept",
+          "type": "button",
+          "disabled": false
+        },
+        {
+          "text": "\ud83c\uddec\ud83c\udde7 EN",
+          "type": "submit",
+          "disabled": false
+        },
+        {
+          "text": "",
+          "type": "button",
+          "disabled": false
+        }
+      ]
+    },
+    "01-readiness-intro": {
+      "url": "https://qaizen.io/labs/readiness-check",
+      "title": "Production Readiness Check: Could Your AI Pilot Go Live? | QAIZEN",
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "COULD YOUR AI PILOT GO LIVE? A CHECK IN ABOUT 3 MINUTES"
+        }
+      ],
+      "active_element": {
+        "tag": "BODY",
+        "text": "Skip to content(self.__next_f=self.__next_f||[]).push([0])self.__next_f.push([1,\"1:\\\"$Sreact.fragment\\\"\\n2:I[224336,[\\\"/_next/static/immutable/chunks/2ol1vi4pk99zo.js\\\"],\\\"default\\\"]\\n3:I[784254,[\\\"/_",
+        "id": ""
+      },
+      "buttons": [
+        {
+          "text": "\ud83c\uddec\ud83c\udde7 EN",
+          "type": "submit",
+          "disabled": false
+        },
+        {
+          "text": "",
+          "type": "button",
+          "disabled": false
+        },
+        {
+          "text": "START THE CHECK",
+          "type": "button",
+          "disabled": false
+        }
+      ]
+    },
+    "02-question-loaded": {
+      "url": "https://qaizen.io/labs/readiness-check",
+      "title": "Production Readiness Check: Could Your AI Pilot Go Live? | QAIZEN",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Which data will the AI system read and write in production, and who owns each source?"
+        }
+      ],
+      "active_element": {
+        "tag": "H2",
+        "text": "Which data will the AI system read and write in production, and who owns each source?",
+        "id": "question-dataSources"
+      },
+      "buttons": [
+        {
+          "text": "\ud83c\uddec\ud83c\udde7 EN",
+          "type": "submit",
+          "disabled": false
+        },
+        {
+          "text": "",
+          "type": "button",
+          "disabled": false
+        },
+        {
+          "text": "Every production source and flow is written down, with a named owner",
+          "type": "button",
+          "disabled": false
+        },
+        {
+          "text": "We know the sources, but flows or owners are not written down",
+          "type": "button",
+          "disabled": false
+        },
+        {
+          "text": "Only the demo or test data is mapped",
+          "type": "button",
+          "disabled": false
+        },
+        {
+          "text": "Nobody has listed the production data sources yet",
+          "type": "button",
+          "disabled": false
+        },
+        {
+          "text": "Not sure",
+          "type": "button",
+          "disabled": false
+        },
+        {
+          "text": "",
+          "type": "button",
+          "disabled": false
+        },
+        {
+          "text": "Back",
+          "type": "button",
+          "disabled": false
+        },
+        {
+          "text": "NEXT",
+          "type": "button",
+          "disabled": true
+        }
+      ]
+    },
+    "03-question-help-expanded": {
+      "url": "https://qaizen.io/labs/readiness-check",
+      "title": "Production Readiness Check: Could Your AI Pilot Go Live? | QAIZEN",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Which data will the AI system read and write in production, and who owns each source?"
+        }
+      ],
+      "active_element": {
+        "tag": "SUMMARY",
+        "text": "What does this mean?",
+        "id": ""
+      },
+      "buttons": [
+        {
+          "text": "\ud83c\uddec\ud83c\udde7 EN",
+          "type": "submit",
+          "disabled": false
+        },
+        {
+          "text": "",
+          "type": "button",
+          "disabled": false
+        },
+        {
+          "text": "Every production source and flow is written down, with a named owner",
+          "type": "button",
+          "disabled": false
+        },
+        {
+          "text": "We know the sources, but flows or owners are not written down",
+          "type": "button",
+          "disabled": false
+        },
+        {
+          "text": "Only the demo or test data is mapped",
+          "type": "button",
+          "disabled": false
+        },
+        {
+          "text": "Nobody has listed the production data sources yet",
+          "type": "button",
+          "disabled": false
+        },
+        {
+          "text": "Not sure",
+          "type": "button",
+          "disabled": false
+        },
+        {
+          "text": "Close",
+          "type": "button",
+          "disabled": false
+        },
+        {
+          "text": "Back",
+          "type": "button",
+          "disabled": false
+        },
+        {
+          "text": "NEXT",
+          "type": "button",
+          "disabled": true
+        }
+      ]
+    },
+    "04-question-help-closed-by-keyboard": {
+      "url": "https://qaizen.io/labs/readiness-check",
+      "title": "Production Readiness Check: Could Your AI Pilot Go Live? | QAIZEN",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Which data will the AI system read and write in production, and who owns each source?"
+        }
+      ],
+      "active_element": {
+        "tag": "SUMMARY",
+        "text": "What does this mean?",
+        "id": ""
+      },
+      "buttons": [
+        {
+          "text": "\ud83c\uddec\ud83c\udde7 EN",
+          "type": "submit",
+          "disabled": false
+        },
+        {
+          "text": "",
+          "type": "button",
+          "disabled": false
+        },
+        {
+          "text": "Every production source and flow is written down, with a named owner",
+          "type": "button",
+          "disabled": false
+        },
+        {
+          "text": "We know the sources, but flows or owners are not written down",
+          "type": "button",
+          "disabled": false
+        },
+        {
+          "text": "Only the demo or test data is mapped",
+          "type": "button",
+          "disabled": false
+        },
+        {
+          "text": "Nobody has listed the production data sources yet",
+          "type": "button",
+          "disabled": false
+        },
+        {
+          "text": "Not sure",
+          "type": "button",
+          "disabled": false
+        },
+        {
+          "text": "",
+          "type": "button",
+          "disabled": false
+        },
+        {
+          "text": "Back",
+          "type": "button",
+          "disabled": false
+        },
+        {
+          "text": "NEXT",
+          "type": "button",
+          "disabled": true
+        }
+      ]
+    },
+    "05-returned-to-intro": {
+      "url": "https://qaizen.io/labs/readiness-check",
+      "title": "Production Readiness Check: Could Your AI Pilot Go Live? | QAIZEN",
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "COULD YOUR AI PILOT GO LIVE? A CHECK IN ABOUT 3 MINUTES"
+        }
+      ],
+      "active_element": {
+        "tag": "H1",
+        "text": "Could your AI pilot go live? A check in about 3 minutes",
+        "id": ""
+      },
+      "buttons": [
+        {
+          "text": "\ud83c\uddec\ud83c\udde7 EN",
+          "type": "submit",
+          "disabled": false
+        },
+        {
+          "text": "",
+          "type": "button",
+          "disabled": false
+        },
+        {
+          "text": "START THE CHECK",
+          "type": "button",
+          "disabled": false
+        }
+      ]
+    }
+  },
+  "state_assertions": {
+    "question_text_observed": true,
+    "no_answer_selected_by_harness": true,
+    "explanation_present_when_expanded": true,
+    "explanation_absent_after_Space": true,
+    "returned_intro_focus_tag": "H1"
+  },
+  "limits": [
+    "An isolated browser context is used; no user browser session is accessed.",
+    "Non-GET/HEAD/OPTIONS requests are blocked. No request headers or bodies are retained.",
+    "This is an execution record, not a product-quality or general-performance benchmark.",
+    "No instrumented accessibility audit, mobile matrix, result computation, forced error state or Core Web Vitals measurement was executed."
+  ]
+}

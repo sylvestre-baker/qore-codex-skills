@@ -1,0 +1,67 @@
+[
+  {
+    "path": ".agents/skills/qore-review-qore-contrast/SKILL.md",
+    "sha256": "78552e051938a0395c08096944eb3dbd9fe36b1650a0eb15cdcfe3e576a064fb",
+    "mtime_utc": "2026-10-15T20:05:20.915417+00:00"
+  },
+  {
+    "path": ".agents/skills/qore-review-qore-contrast/references/project.json",
+    "sha256": "f72394c2ebb80cb6da41b33a088d56fbd24b4577f71bc2b022d0ef4bb36bfb88",
+    "mtime_utc": "2026-10-15T20:05:20.915417+00:00"
+  },
+  {
+    "path": ".agents/skills/qore-review-qore-contrast/references/project-profile.md",
+    "sha256": "5d3b69aac18f83a634f4c57c214cc1f53fa186c03c536adcefd4c905a8767c8d",
+    "mtime_utc": "2026-10-15T20:05:20.915417+00:00"
+  },
+  {
+    "path": ".agents/skills/qore-review-qore-contrast/references/protocol.md",
+    "sha256": "e27e0050fdf4d75d2840dd257b9a759f1f48d459ef540990cd3aed5528c5f340",
+    "mtime_utc": "2026-10-15T20:05:20.915417+00:00"
+  },
+  {
+    "path": ".agents/skills/qore-review-qore-contrast/references/findings.md",
+    "sha256": "79b2b5f52e88761331c01b92af9b492ef1888c6c20a0af1b94a8bead7aa2d6cb",
+    "mtime_utc": "2026-10-15T20:05:20.915417+00:00"
+  },
+  {
+    "path": ".agents/skills/qore-review-qore-contrast/references/run-evidence.md",
+    "sha256": "fbdf433ef8b3e972f97bed5fdec4990cf3b49535bf63120c729a7daf4af71746",
+    "mtime_utc": "2026-10-15T20:05:20.915417+00:00"
+  },
+  {
+    "path": ".agents/skills/qore-review-qore-contrast/scripts/project-check.py",
+    "sha256": "3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd",
+    "mtime_utc": "2026-10-15T20:03:41.219035+00:00"
+  },
+  {
+    "path": ".agents/skills/qore-review-qore-contrast/scripts/finding-lint.mjs",
+    "sha256": "89b02ef5912adf3f6ff86ad8652a3f21e7313bb0cc0a280a3dd9810546abdef9",
+    "mtime_utc": "2026-10-15T20:03:41.219035+00:00"
+  },
+  {
+    "path": "tests/fixtures/project-alternate.json",
+    "sha256": "830dc3c50369c21f523a1c68b188f3013b40c439ea362a1e97c45a38a89a79c5",
+    "mtime_utc": "2026-10-15T20:03:41.220035+00:00"
+  },
+  {
+    "path": "examples/validator-hardening.md",
+    "sha256": "6f25b2edcd6d0826b12fbb47a99fc4162a1089eef71eaf7f16ea2cb7a8239a87",
+    "mtime_utc": "2026-10-15T20:03:41.217035+00:00"
+  },
+  {
+    "path": "skills/qore-review/scripts/finding-lint.mjs",
+    "sha256": "89b02ef5912adf3f6ff86ad8652a3f21e7313bb0cc0a280a3dd9810546abdef9",
+    "mtime_utc": "2026-10-15T20:03:41.219035+00:00"
+  },
+  {
+    "path": "skills/qore-review/scripts/redact-for-verifier.mjs",
+    "sha256": "dc249524c749ad5b511aef0a2cf08b4cfd5c47c1e0de4fd41c5c70746b471083",
+    "mtime_utc": "2026-10-15T20:03:41.219035+00:00"
+  },
+  {
+    "path": "tests/test_validators.py",
+    "sha256": "cda93831ca8bce7debc036509d47f07a1b55c0e93b59ba1550cf090cac704703",
+    "mtime_utc": "2026-10-15T20:03:41.221035+00:00"
+  }
+]

@@ -1,0 +1,61 @@
+CWD: /tmp/qore-derived-first/qore-review-qore
+COMMAND: ['python3', 'scripts/project-check.py', 'references/project.json', '--root', '/workspace/readme-newcomer/source-review', '--method', 'review']
+STDOUT:
+{
+  "schema": "qore-context-check/1",
+  "profile": {
+    "id": "qore",
+    "version": "0.1.0",
+    "sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9"
+  },
+  "method": "review",
+  "coverage": "COMPLETE",
+  "sources": [
+    {
+      "id": "project",
+      "path": "qore.json",
+      "expected_sha256": "948b2784fa7970cf90a25c338a29067b13d8b4476f666d712a5eb95fc6f641c8",
+      "actual_sha256": "948b2784fa7970cf90a25c338a29067b13d8b4476f666d712a5eb95fc6f641c8",
+      "current": true
+    }
+  ],
+  "commands": [
+    {
+      "id": "check",
+      "argv": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "source": "project",
+      "applies_to": [
+        "plan",
+        "review"
+      ]
+    }
+  ],
+  "invariants": [
+    {
+      "id": "verified-blockers",
+      "statement": "Only independently confirmed critical or high findings are verified blockers; missing verification remains partial.",
+      "source": "project",
+      "applies_to": [
+        "review"
+      ]
+    }
+  ],
+  "surfaces": {},
+  "consumed_source_ids": [
+    "project"
+  ],
+  "problems": []
+}
+
+STDERR:
+
+EXIT: 0

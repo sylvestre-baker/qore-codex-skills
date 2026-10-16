@@ -1,0 +1,98 @@
+{
+  "schema": "qore-browser-transformation/1",
+  "source_records": [
+    {
+      "private_artifact_ref": "qore-private:browser/qaizen-readiness-observed/result.json",
+      "sha256": "86c5eeb94b009496387f199371a1d1cbae388a6e2e38e04b27bb72ee569f59bd"
+    },
+    {
+      "private_artifact_ref": "qore-private:browser/qaizen-readiness-observed/events.json",
+      "sha256": "639658e910a39e415eefe50bf54abb70eaef73f0563eb816fd2ab288ed4dd0b4"
+    },
+    {
+      "private_artifact_ref": "qore-private:browser/qaizen-actions.json",
+      "sha256": "31ea76e8f458a4c329ec2887254b43c1c29e0fa610ac01487b0ed41c848b23d9"
+    },
+    {
+      "private_artifact_ref": "qore-private:browser/fixture-capabilities/result.json",
+      "sha256": "559a040b3942da4bedc8f27d14a05dbebd85966949dd92f9c6dc76d37d6096cd"
+    },
+    {
+      "private_artifact_ref": "qore-private:browser/fixture-capabilities/events.json",
+      "sha256": "3e6fa326739f7ce841537c1da48afe1b5914339ba6278702133001a9635a5137"
+    },
+    {
+      "private_artifact_ref": "qore-private:planning/original-playwright-probe",
+      "sha256": "3470eb93c8fe6d013a78c69cf329ba891c2e7dbed8ac5d7a140919826beab06d"
+    },
+    {
+      "private_artifact_ref": "qore-private:browser/qaizen-readiness-observed/video/page@e331140365e6eb392f9186c9587738d9.webm",
+      "sha256": "a2297a784d55c65141b4dd4c8d1c5197969537a1301112b0f5b7ae135a82ff63"
+    }
+  ],
+  "public_artifacts": [
+    {
+      "public_file": "qaizen-entry.png",
+      "private_artifact_ref": "qore-private:browser/qaizen-readiness-observed/00-entry.png",
+      "sha256": "095283e6a92818f6baf91a977793ff14591a91a60cef7b82ea9019642c2251e2",
+      "transformation": "Byte-for-byte copy; no pixel modification."
+    },
+    {
+      "public_file": "qaizen-question.png",
+      "private_artifact_ref": "qore-private:browser/qaizen-readiness-observed/02-question-loaded.png",
+      "sha256": "a5396e6ebbef542a3b7bea548d49ec7bb98c0883adfae06ef649f622b4ad1756",
+      "transformation": "Byte-for-byte copy; no pixel modification."
+    },
+    {
+      "public_file": "qaizen-returned.png",
+      "private_artifact_ref": "qore-private:browser/qaizen-readiness-observed/05-returned-to-intro.png",
+      "sha256": "3cb9aa37df077b61ecdd04e261ffaeaa538560ea618881435761377ce50543f4",
+      "transformation": "Byte-for-byte copy; no pixel modification."
+    },
+    {
+      "public_file": "qaizen-demo-captioned.mp4",
+      "sha256": "09d579e564862e233356e229587239c7c2523cbbd3d1b6f42f036d078dabbdd9",
+      "transformation": "Actual video re-encoded to H.264 MP4 with unchanged duration and English mov_text subtitle track."
+    },
+    {
+      "public_file": "qaizen-demo.en.vtt",
+      "sha256": "41b579ffd8a1c9c47c5f1c195d622e19f15360fce86ffd98d39bde586ff3131d",
+      "transformation": "New English descriptive captions authored from the actual action timestamps and inspected recording."
+    },
+    {
+      "public_file": "observations.json",
+      "sha256": "58b44ead3a73efe837c976d29f5d12c0e7c990f9393763c7f4d7eb69daf8cc6c",
+      "transformation": "Selected structured evidence; URL queries and fragments removed."
+    },
+    {
+      "public_file": "fixture-observations.json",
+      "sha256": "e132d2f50f494d7d5734235d5d631d79d12fb79f99fb23c0128456f47a3ea1b1",
+      "transformation": "Labelled synthetic driver qualification record copied without personal runtime paths."
+    }
+  ],
+  "source_visibility": "Private originals remain outside the public repository. Logical references are resolved by the maintainer against the private artifact index.",
+  "transformations": [
+    "Selected explicit action, navigation, console, request and DOM fields; omitted request bodies and headers at capture.",
+    "Removed URL query strings and fragments in the public observations. No personal answers were entered.",
+    "The public screenshots are unchanged screenshots of the authorized existing company website.",
+    "The video is an actual Playwright viewport recording, re-encoded to MP4 with an English selectable subtitle track; no synthetic frames, speed change or narration.",
+    "Public English prose describes observed actions. Third-party or existing-site rendered copy is evidence, not an endorsement of its claims."
+  ],
+  "target_provenance": {
+    "site": "https://qaizen.io",
+    "entry": "https://qaizen.io/en/labs",
+    "canonical_entry_observed": "https://qaizen.io/labs",
+    "source": "Existing company landing README Live Site and Labs route; inspected read-only.",
+    "authorization": "Existing user company website; scoped read-only UI observation authorized in the implementation task. No source repository code was modified."
+  },
+  "earlier_probe": "Original planning-time BLOCKED launch retained privately with digest; the successful later run supersedes capability uncertainty only for this tested environment.",
+  "video_validation": {
+    "duration_seconds": 21.16,
+    "resolution": "1280x800",
+    "video_codec": "h264",
+    "subtitle_codec": "mov_text",
+    "subtitle_language": "eng",
+    "subtitle_default": true,
+    "validation": "ffprobe inspected the produced MP4; selected video frame and screenshots visually inspected."
+  }
+}

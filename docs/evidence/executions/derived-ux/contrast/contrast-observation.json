@@ -1,0 +1,13 @@
+{
+  "observed_at": "2026-10-15T19:48:01.139491+00:00",
+  "other_profile_exact_state_absent": true,
+  "own_required_state_visible": true,
+  "actual_heading": [
+    {
+      "tag": "H1",
+      "text": "Alternate synthetic browser fixture"
+    }
+  ],
+  "screenshot_opened": "browser/02-final.png",
+  "scope": "Synthetic focused probe only; no existing-product or full-audit claim."
+}

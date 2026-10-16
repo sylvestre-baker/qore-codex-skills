@@ -1,0 +1,687 @@
+{
+  "schema": "qore-public-transformation/1",
+  "id": "public-review-evidence-20261015",
+  "source_run_id": "independent-linux-validator-hardening-20261015",
+  "source_run_record_sha256": "1c503f548edc515806bfaf0b4ff5be2a0bf47e9d2dc4f754d38e06bb6b0faa92",
+  "public_run_id": "public-independent-linux-review-20261015",
+  "source_candidate_sha256": "3e0265c6d33fc0340fd8df0f0c1c4074a7495a8744365b6d388c747e4daf60da",
+  "mapping": [
+    {
+      "raw_artifact_id": "claims.json",
+      "raw_sha256": "8aa973100a15bf817985395637131e838cf84e427be4792583def923f020f5fa",
+      "public_path": "claims.json",
+      "public_sha256": "8aa973100a15bf817985395637131e838cf84e427be4792583def923f020f5fa",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "correctness-candidates.json",
+      "raw_sha256": "8aa973100a15bf817985395637131e838cf84e427be4792583def923f020f5fa",
+      "public_path": "correctness-candidates.json",
+      "public_sha256": "8aa973100a15bf817985395637131e838cf84e427be4792583def923f020f5fa",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "correctness-input-empty.json",
+      "raw_sha256": "6e96a492bc9fa40d22212c5be0396a203f3dbd4916cf97ebe2f66b6d54fa4a9a",
+      "public_path": "correctness-input-empty.json",
+      "public_sha256": "6e96a492bc9fa40d22212c5be0396a203f3dbd4916cf97ebe2f66b6d54fa4a9a",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "correctness-input-high-skipped.json",
+      "raw_sha256": "57c8f2f3115ce230968e3cd02a9fa75b3054c84fba6cf32298c754dc5e334306",
+      "public_path": "correctness-input-high-skipped.json",
+      "public_sha256": "57c8f2f3115ce230968e3cd02a9fa75b3054c84fba6cf32298c754dc5e334306",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "correctness-input-missing.json",
+      "raw_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "public_path": "correctness-input-missing.json",
+      "public_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "correctness-project-check.json",
+      "raw_sha256": "d32ca8f2395f3c6c3552e033fe595ce04737ecde5d2aa8d8b23266693fd8fc45",
+      "public_path": "correctness-project-check.json",
+      "public_sha256": "d32ca8f2395f3c6c3552e033fe595ce04737ecde5d2aa8d8b23266693fd8fc45",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "correctness-redacted.json",
+      "raw_sha256": "6539ed4b29cda4ea1d8191cb7733d48d3157655453d9a0f89ce110fc05bc4345",
+      "public_path": "correctness-redacted.json",
+      "public_sha256": "6539ed4b29cda4ea1d8191cb7733d48d3157655453d9a0f89ce110fc05bc4345",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "correctness-report.md",
+      "raw_sha256": "e00de6f8101c7a9196165e0f7dee5169faf337644603dd3186c9fdea8ce7ef36",
+      "public_path": "correctness-report.md",
+      "public_sha256": "e00de6f8101c7a9196165e0f7dee5169faf337644603dd3186c9fdea8ce7ef36",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "correctness-snapshot.json",
+      "raw_sha256": "b49f39f68cd7b8d28be67629c6f9659742fb3f2e493f8f0bcd4c0e113c68bc24",
+      "public_path": "correctness-snapshot.json",
+      "public_sha256": "b49f39f68cd7b8d28be67629c6f9659742fb3f2e493f8f0bcd4c0e113c68bc24",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "correctness-trace.json",
+      "raw_sha256": "5cbf4697f1138f94edc036331722c99cd8fbef9ff6a1c95765da8783316bcf2a",
+      "public_path": "correctness-trace.json",
+      "public_sha256": "5cbf4697f1138f94edc036331722c99cd8fbef9ff6a1c95765da8783316bcf2a",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "feasibility-candidates.json",
+      "raw_sha256": "8aa973100a15bf817985395637131e838cf84e427be4792583def923f020f5fa",
+      "public_path": "feasibility-candidates.json",
+      "public_sha256": "8aa973100a15bf817985395637131e838cf84e427be4792583def923f020f5fa",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "feasibility-project-check.json",
+      "raw_sha256": "a209ddd7eb67f1c6d439d2b6ffc2d5f261131e57fd3adfe960f13dddaf6d41c5",
+      "public_path": "feasibility-project-check.json",
+      "public_sha256": "a209ddd7eb67f1c6d439d2b6ffc2d5f261131e57fd3adfe960f13dddaf6d41c5",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "feasibility-report.md",
+      "raw_sha256": "1c1a22a143aaaf1720fb413d67abd344b8afaab10f7beba1d3974add18b1b4a0",
+      "public_path": "feasibility-report.md",
+      "public_sha256": "1c1a22a143aaaf1720fb413d67abd344b8afaab10f7beba1d3974add18b1b4a0",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "feasibility-source-digests.json",
+      "raw_sha256": "894f776e77949569689587e6a237c03bbfc5764c1b20047fb06a70fc1c3003ba",
+      "public_path": "feasibility-source-digests.json",
+      "public_sha256": "894f776e77949569689587e6a237c03bbfc5764c1b20047fb06a70fc1c3003ba",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "feasibility-trace-filtered.json",
+      "raw_sha256": "2053a6092db31ab7a80f42acfe9e0dae7688e7db7b4edd390bb9e76ce8bbc058",
+      "public_path": "feasibility-trace-filtered.json",
+      "public_sha256": "2053a6092db31ab7a80f42acfe9e0dae7688e7db7b4edd390bb9e76ce8bbc058",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "feasibility-trace-final.json",
+      "raw_sha256": "d492329a791e21616244e07d2fd85145d3e706d8033a636f3452cdfc6cf8852b",
+      "public_path": "feasibility-trace-final.json",
+      "public_sha256": "d492329a791e21616244e07d2fd85145d3e706d8033a636f3452cdfc6cf8852b",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "feasibility-trace-results.json",
+      "raw_sha256": "75bff691887f53ebe1e953e66eb81173e74925a249dfc24dcf1283e0e5237500",
+      "public_path": "feasibility-trace-results.json",
+      "public_sha256": "75bff691887f53ebe1e953e66eb81173e74925a249dfc24dcf1283e0e5237500",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "feasibility-trace-source.json",
+      "raw_sha256": "9b64796216e7b5ae29c60f08e85bc011482d774f8020d4af6154d1f4fe822bfd",
+      "public_path": "feasibility-trace-source.json",
+      "public_sha256": "9b64796216e7b5ae29c60f08e85bc011482d774f8020d4af6154d1f4fe822bfd",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "finalize.py",
+      "raw_sha256": "6846d99a6c2fdf2200be12e6c1c0e3b64461cf93b574c853157067f185792876",
+      "public_path": "finalize.py",
+      "public_sha256": "6846d99a6c2fdf2200be12e6c1c0e3b64461cf93b574c853157067f185792876",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "finder.correctness-execution.json",
+      "raw_sha256": "98a04835f2d93846fbdea2529757a5c7df3a09a10946e81108842078d6134a4a",
+      "public_path": "finder.correctness-execution.json",
+      "public_sha256": "98a04835f2d93846fbdea2529757a5c7df3a09a10946e81108842078d6134a4a",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "finder.feasibility-execution.json",
+      "raw_sha256": "e502b37147245eb019cd91c6261e607c3c89c658f88a6bc7f24a6bbd7ba1cac8",
+      "public_path": "finder.feasibility-execution.json",
+      "public_sha256": "e502b37147245eb019cd91c6261e607c3c89c658f88a6bc7f24a6bbd7ba1cac8",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "finder.security-execution.json",
+      "raw_sha256": "512012e502957657221f79b171cc729d7036a11c07924344317405b77a6544af",
+      "public_path": "finder.security-execution.json",
+      "public_sha256": "512012e502957657221f79b171cc729d7036a11c07924344317405b77a6544af",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "findings-lint-command.json",
+      "raw_sha256": "b21d0132c1d3f6f88c29b1c813f70f2f8fe2d0ffea0dcd7bfa197ad35c4560a9",
+      "public_path": "findings-lint-command.json",
+      "public_sha256": "b21d0132c1d3f6f88c29b1c813f70f2f8fe2d0ffea0dcd7bfa197ad35c4560a9",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "findings-lint.stderr",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_path": "findings-lint.stderr",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "findings-lint.stdout",
+      "raw_sha256": "2a957e6e163241fbd08a07974bd4d9b295b4436e939f8794edc07c76560227e0",
+      "public_path": "findings-lint.stdout",
+      "public_sha256": "2a957e6e163241fbd08a07974bd4d9b295b4436e939f8794edc07c76560227e0",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "findings.json",
+      "raw_sha256": "8aa973100a15bf817985395637131e838cf84e427be4792583def923f020f5fa",
+      "public_path": "findings.json",
+      "public_sha256": "8aa973100a15bf817985395637131e838cf84e427be4792583def923f020f5fa",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "findings_validation-execution.json",
+      "raw_sha256": "6158eae959deffc357c30d4132ae03786994c0c5c639e05bbc585356ecb0f344",
+      "public_path": "findings_validation-execution.json",
+      "public_sha256": "6158eae959deffc357c30d4132ae03786994c0c5c639e05bbc585356ecb0f344",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "identity.json",
+      "raw_sha256": "1837263f34eee66a07eb137ca69aa3a5a176b69ec4856cbea1585d9ad7b4a94b",
+      "public_path": "identity.json",
+      "public_sha256": "1837263f34eee66a07eb137ca69aa3a5a176b69ec4856cbea1585d9ad7b4a94b",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "lead-commands.md",
+      "raw_sha256": "b1b03f95ad6dd5dd510fac997a411d8d96b32a22c2090559daf6637bdc974c4e",
+      "public_path": "lead-commands.md",
+      "public_sha256": "b1b03f95ad6dd5dd510fac997a411d8d96b32a22c2090559daf6637bdc974c4e",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "project-tests.log",
+      "raw_sha256": "64fe2dc8601e7be38a7e5208669a352f5a0b439248b958f6b1be707913bf79da",
+      "public_path": "project-tests.log",
+      "public_sha256": "64fe2dc8601e7be38a7e5208669a352f5a0b439248b958f6b1be707913bf79da",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "redaction-command.json",
+      "raw_sha256": "a780ae4d1f8e9ed2cb1bc26decf173093d2acd58b6e0a6cb038e259c7d22053e",
+      "public_path": "redaction-command.json",
+      "public_sha256": "a780ae4d1f8e9ed2cb1bc26decf173093d2acd58b6e0a6cb038e259c7d22053e",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "redaction-execution.json",
+      "raw_sha256": "3295a00221d5219a833e758b5e953c05518fc39b518aed2e7426c56d88431876",
+      "public_path": "redaction-execution.json",
+      "public_sha256": "3295a00221d5219a833e758b5e953c05518fc39b518aed2e7426c56d88431876",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "redactor.stderr",
+      "raw_sha256": "b9598552a5b4006acea907bb06991f0be45e31f006cbe5d430f01f0f0900ae73",
+      "public_path": "redactor.stderr",
+      "public_sha256": "b9598552a5b4006acea907bb06991f0be45e31f006cbe5d430f01f0f0900ae73",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "report.md",
+      "raw_sha256": "80db1c35a4087f44d99f177a3eeb8ac74f37b5b71e543ab4ed6f225537c481a7",
+      "public_path": "report.md",
+      "public_sha256": "80db1c35a4087f44d99f177a3eeb8ac74f37b5b71e543ab4ed6f225537c481a7",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "roster.json",
+      "raw_sha256": "b956d9b269399b481be0c3914e111a9ecfcabb11a1ac3626ddced47b0f001dbf",
+      "public_path": "roster.json",
+      "public_sha256": "b956d9b269399b481be0c3914e111a9ecfcabb11a1ac3626ddced47b0f001dbf",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "security-candidates.json",
+      "raw_sha256": "b8adad3852f196db84ad05c2affa3855c7e15d1c9d24c62c8d32165e34a82c39",
+      "public_path": "security-candidates.json",
+      "public_sha256": "b8adad3852f196db84ad05c2affa3855c7e15d1c9d24c62c8d32165e34a82c39",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "security-command-evidence.json",
+      "raw_sha256": "8d4233830e7a6bff9a6e938306aad42e8f891dee751bbf09d54b64de0ae7605c",
+      "public_path": "security-command-evidence.json",
+      "public_sha256": "8d4233830e7a6bff9a6e938306aad42e8f891dee751bbf09d54b64de0ae7605c",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "security-empty.json",
+      "raw_sha256": "6e96a492bc9fa40d22212c5be0396a203f3dbd4916cf97ebe2f66b6d54fa4a9a",
+      "public_path": "security-empty.json",
+      "public_sha256": "6e96a492bc9fa40d22212c5be0396a203f3dbd4916cf97ebe2f66b6d54fa4a9a",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "security-high.json",
+      "raw_sha256": "f06a80aa846b6d3b8ed2466e5c63c232ee6fa487aead773e8824c843199ce9e6",
+      "public_path": "security-high.json",
+      "public_sha256": "f06a80aa846b6d3b8ed2466e5c63c232ee6fa487aead773e8824c843199ce9e6",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "security-malformed.json",
+      "raw_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "public_path": "security-malformed.json",
+      "public_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "security-report.md",
+      "raw_sha256": "73a6a77ebe6586ef06de2ae9dc9f4d577562df1aa23b4798e37d00ab1c769df6",
+      "public_path": "security-report.md",
+      "public_sha256": "73a6a77ebe6586ef06de2ae9dc9f4d577562df1aa23b4798e37d00ab1c769df6",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "security-source-manifest.json",
+      "raw_sha256": "0efc1667a018b8fbab80d98761257f847217df163465ce437083c19801a1c3dc",
+      "public_path": "security-source-manifest.json",
+      "public_sha256": "0efc1667a018b8fbab80d98761257f847217df163465ce437083c19801a1c3dc",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "security-trace-claims.json",
+      "raw_sha256": "29c3db99efa20f6646f7f347b0ce39e7dd954a34dcd4a9e04ac91f3c1870c122",
+      "public_path": "security-trace-claims.json",
+      "public_sha256": "29c3db99efa20f6646f7f347b0ce39e7dd954a34dcd4a9e04ac91f3c1870c122",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "source/.agents/skills/qore-review/SKILL.md",
+      "raw_sha256": "aae83b4105dd89387c7eac31df3c789326def9c0b05dccd4a3d2cdab65732a97",
+      "public_path": "source/.agents/skills/qore-review/SKILL.md.txt",
+      "public_sha256": "aae83b4105dd89387c7eac31df3c789326def9c0b05dccd4a3d2cdab65732a97",
+      "transformation": "Preserved bytes; Markdown source snapshots are presented as text."
+    },
+    {
+      "raw_artifact_id": "source/.agents/skills/qore-review/agents/openai.yaml",
+      "raw_sha256": "6c689fd93445ab3edcb6b88320e7680ee37c746bca5635e8c406304b081250ed",
+      "public_path": "source/.agents/skills/qore-review/agents/openai.yaml",
+      "public_sha256": "6c689fd93445ab3edcb6b88320e7680ee37c746bca5635e8c406304b081250ed",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "source/.agents/skills/qore-review/references/findings.md",
+      "raw_sha256": "79b2b5f52e88761331c01b92af9b492ef1888c6c20a0af1b94a8bead7aa2d6cb",
+      "public_path": "source/.agents/skills/qore-review/references/findings.md.txt",
+      "public_sha256": "79b2b5f52e88761331c01b92af9b492ef1888c6c20a0af1b94a8bead7aa2d6cb",
+      "transformation": "Preserved bytes; Markdown source snapshots are presented as text."
+    },
+    {
+      "raw_artifact_id": "source/.agents/skills/qore-review/references/project-profile.md",
+      "raw_sha256": "5d3b69aac18f83a634f4c57c214cc1f53fa186c03c536adcefd4c905a8767c8d",
+      "public_path": "source/.agents/skills/qore-review/references/project-profile.md.txt",
+      "public_sha256": "5d3b69aac18f83a634f4c57c214cc1f53fa186c03c536adcefd4c905a8767c8d",
+      "transformation": "Preserved bytes; Markdown source snapshots are presented as text."
+    },
+    {
+      "raw_artifact_id": "source/.agents/skills/qore-review/references/protocol.md",
+      "raw_sha256": "e27e0050fdf4d75d2840dd257b9a759f1f48d459ef540990cd3aed5528c5f340",
+      "public_path": "source/.agents/skills/qore-review/references/protocol.md.txt",
+      "public_sha256": "e27e0050fdf4d75d2840dd257b9a759f1f48d459ef540990cd3aed5528c5f340",
+      "transformation": "Preserved bytes; Markdown source snapshots are presented as text."
+    },
+    {
+      "raw_artifact_id": "source/.agents/skills/qore-review/references/release.json",
+      "raw_sha256": "0d0a62e137572e9c30dfae9b3a0756e6a6dd54c473f99c5f583379812153ecf6",
+      "public_path": "source/.agents/skills/qore-review/references/release.json",
+      "public_sha256": "0d0a62e137572e9c30dfae9b3a0756e6a6dd54c473f99c5f583379812153ecf6",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "source/.agents/skills/qore-review/references/run-evidence.md",
+      "raw_sha256": "fbdf433ef8b3e972f97bed5fdec4990cf3b49535bf63120c729a7daf4af71746",
+      "public_path": "source/.agents/skills/qore-review/references/run-evidence.md.txt",
+      "public_sha256": "fbdf433ef8b3e972f97bed5fdec4990cf3b49535bf63120c729a7daf4af71746",
+      "transformation": "Preserved bytes; Markdown source snapshots are presented as text."
+    },
+    {
+      "raw_artifact_id": "source/.agents/skills/qore-review/scripts/finding-lint.mjs",
+      "raw_sha256": "d0cc6809b750d9e52015b0448f18e3f291b979674b1350156d2444e607791ee7",
+      "public_path": "source/.agents/skills/qore-review/scripts/finding-lint.mjs",
+      "public_sha256": "d0cc6809b750d9e52015b0448f18e3f291b979674b1350156d2444e607791ee7",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "source/.agents/skills/qore-review/scripts/project-check.py",
+      "raw_sha256": "3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd",
+      "public_path": "source/.agents/skills/qore-review/scripts/project-check.py",
+      "public_sha256": "3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "source/.agents/skills/qore-review/scripts/redact-for-verifier.mjs",
+      "raw_sha256": "dc249524c749ad5b511aef0a2cf08b4cfd5c47c1e0de4fd41c5c70746b471083",
+      "public_path": "source/.agents/skills/qore-review/scripts/redact-for-verifier.mjs",
+      "public_sha256": "dc249524c749ad5b511aef0a2cf08b4cfd5c47c1e0de4fd41c5c70746b471083",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "source/.agents/skills/qore-review/scripts/run-check.py",
+      "raw_sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+      "public_path": "source/.agents/skills/qore-review/scripts/run-check.py",
+      "public_sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "source/CONTRIBUTING.md",
+      "raw_sha256": "87ef55fe9e213e5bd9b0f3178849b0a9ac88ec1c07634053c9989c0cbbde7638",
+      "public_path": "source/CONTRIBUTING.md.txt",
+      "public_sha256": "87ef55fe9e213e5bd9b0f3178849b0a9ac88ec1c07634053c9989c0cbbde7638",
+      "transformation": "Preserved bytes; Markdown source snapshots are presented as text."
+    },
+    {
+      "raw_artifact_id": "source/README.md",
+      "raw_sha256": "46205c1947e1e35b1f67d12184dbfb921381c781d9eda3616e8251d187725bac",
+      "public_path": "source/README.md.txt",
+      "public_sha256": "46205c1947e1e35b1f67d12184dbfb921381c781d9eda3616e8251d187725bac",
+      "transformation": "Preserved bytes; Markdown source snapshots are presented as text."
+    },
+    {
+      "raw_artifact_id": "source/examples/validator-hardening.md",
+      "raw_sha256": "6f25b2edcd6d0826b12fbb47a99fc4162a1089eef71eaf7f16ea2cb7a8239a87",
+      "public_path": "source/examples/validator-hardening.md.txt",
+      "public_sha256": "6f25b2edcd6d0826b12fbb47a99fc4162a1089eef71eaf7f16ea2cb7a8239a87",
+      "transformation": "Preserved bytes; Markdown source snapshots are presented as text."
+    },
+    {
+      "raw_artifact_id": "source/qore.json",
+      "raw_sha256": "948b2784fa7970cf90a25c338a29067b13d8b4476f666d712a5eb95fc6f641c8",
+      "public_path": "source/qore.json",
+      "public_sha256": "948b2784fa7970cf90a25c338a29067b13d8b4476f666d712a5eb95fc6f641c8",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "source/schemas/qore-run.schema.json",
+      "raw_sha256": "540acd397ee09a070eb19b189f7baadd3ce55337fdb50137f11931e7ef246651",
+      "public_path": "source/schemas/qore-run.schema.json",
+      "public_sha256": "540acd397ee09a070eb19b189f7baadd3ce55337fdb50137f11931e7ef246651",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "source/skills/qore-review/SKILL.md",
+      "raw_sha256": "aae83b4105dd89387c7eac31df3c789326def9c0b05dccd4a3d2cdab65732a97",
+      "public_path": "source/skills/qore-review/SKILL.md.txt",
+      "public_sha256": "aae83b4105dd89387c7eac31df3c789326def9c0b05dccd4a3d2cdab65732a97",
+      "transformation": "Preserved bytes; Markdown source snapshots are presented as text."
+    },
+    {
+      "raw_artifact_id": "source/skills/qore-review/agents/openai.yaml",
+      "raw_sha256": "6c689fd93445ab3edcb6b88320e7680ee37c746bca5635e8c406304b081250ed",
+      "public_path": "source/skills/qore-review/agents/openai.yaml",
+      "public_sha256": "6c689fd93445ab3edcb6b88320e7680ee37c746bca5635e8c406304b081250ed",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "source/skills/qore-review/references/findings.md",
+      "raw_sha256": "79b2b5f52e88761331c01b92af9b492ef1888c6c20a0af1b94a8bead7aa2d6cb",
+      "public_path": "source/skills/qore-review/references/findings.md.txt",
+      "public_sha256": "79b2b5f52e88761331c01b92af9b492ef1888c6c20a0af1b94a8bead7aa2d6cb",
+      "transformation": "Preserved bytes; Markdown source snapshots are presented as text."
+    },
+    {
+      "raw_artifact_id": "source/skills/qore-review/references/project-profile.md",
+      "raw_sha256": "5d3b69aac18f83a634f4c57c214cc1f53fa186c03c536adcefd4c905a8767c8d",
+      "public_path": "source/skills/qore-review/references/project-profile.md.txt",
+      "public_sha256": "5d3b69aac18f83a634f4c57c214cc1f53fa186c03c536adcefd4c905a8767c8d",
+      "transformation": "Preserved bytes; Markdown source snapshots are presented as text."
+    },
+    {
+      "raw_artifact_id": "source/skills/qore-review/references/protocol.md",
+      "raw_sha256": "e27e0050fdf4d75d2840dd257b9a759f1f48d459ef540990cd3aed5528c5f340",
+      "public_path": "source/skills/qore-review/references/protocol.md.txt",
+      "public_sha256": "e27e0050fdf4d75d2840dd257b9a759f1f48d459ef540990cd3aed5528c5f340",
+      "transformation": "Preserved bytes; Markdown source snapshots are presented as text."
+    },
+    {
+      "raw_artifact_id": "source/skills/qore-review/references/release.json",
+      "raw_sha256": "0d0a62e137572e9c30dfae9b3a0756e6a6dd54c473f99c5f583379812153ecf6",
+      "public_path": "source/skills/qore-review/references/release.json",
+      "public_sha256": "0d0a62e137572e9c30dfae9b3a0756e6a6dd54c473f99c5f583379812153ecf6",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "source/skills/qore-review/references/run-evidence.md",
+      "raw_sha256": "fbdf433ef8b3e972f97bed5fdec4990cf3b49535bf63120c729a7daf4af71746",
+      "public_path": "source/skills/qore-review/references/run-evidence.md.txt",
+      "public_sha256": "fbdf433ef8b3e972f97bed5fdec4990cf3b49535bf63120c729a7daf4af71746",
+      "transformation": "Preserved bytes; Markdown source snapshots are presented as text."
+    },
+    {
+      "raw_artifact_id": "source/skills/qore-review/scripts/finding-lint.mjs",
+      "raw_sha256": "d0cc6809b750d9e52015b0448f18e3f291b979674b1350156d2444e607791ee7",
+      "public_path": "source/skills/qore-review/scripts/finding-lint.mjs",
+      "public_sha256": "d0cc6809b750d9e52015b0448f18e3f291b979674b1350156d2444e607791ee7",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "source/skills/qore-review/scripts/project-check.py",
+      "raw_sha256": "3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd",
+      "public_path": "source/skills/qore-review/scripts/project-check.py",
+      "public_sha256": "3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "source/skills/qore-review/scripts/redact-for-verifier.mjs",
+      "raw_sha256": "dc249524c749ad5b511aef0a2cf08b4cfd5c47c1e0de4fd41c5c70746b471083",
+      "public_path": "source/skills/qore-review/scripts/redact-for-verifier.mjs",
+      "public_sha256": "dc249524c749ad5b511aef0a2cf08b4cfd5c47c1e0de4fd41c5c70746b471083",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "source/skills/qore-review/scripts/run-check.py",
+      "raw_sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+      "public_path": "source/skills/qore-review/scripts/run-check.py",
+      "public_sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "source/tests/fixtures/project-alternate.json",
+      "raw_sha256": "830dc3c50369c21f523a1c68b188f3013b40c439ea362a1e97c45a38a89a79c5",
+      "public_path": "source/tests/fixtures/project-alternate.json",
+      "public_sha256": "830dc3c50369c21f523a1c68b188f3013b40c439ea362a1e97c45a38a89a79c5",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "source/tests/fixtures/validators/empty-object.json",
+      "raw_sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+      "public_path": "source/tests/fixtures/validators/empty-object.json",
+      "public_sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "source/tests/fixtures/validators/null.json",
+      "raw_sha256": "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed",
+      "public_path": "source/tests/fixtures/validators/null.json",
+      "public_sha256": "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "source/tests/fixtures/validators/truncated.json",
+      "raw_sha256": "5f5c45efee43be1915fcfa9ae978fec3302e2bb70137526cc5f2a7e6573e1f7b",
+      "public_path": "source/tests/fixtures/validators/truncated.json",
+      "public_sha256": "5f5c45efee43be1915fcfa9ae978fec3302e2bb70137526cc5f2a7e6573e1f7b",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "source/tests/fixtures/validators/valid-findings.json",
+      "raw_sha256": "883889cef1ccb804667246acead1736f16b2472135bd400b27d8ea323ede00a4",
+      "public_path": "source/tests/fixtures/validators/valid-findings.json",
+      "public_sha256": "883889cef1ccb804667246acead1736f16b2472135bd400b27d8ea323ede00a4",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "source/tests/fixtures/validators/valid-spec.md",
+      "raw_sha256": "d273b8da517f326b0f9e3bee7ac09895ffc3c96c86bd926f1449a1b0254e0dc7",
+      "public_path": "source/tests/fixtures/validators/valid-spec.md.txt",
+      "public_sha256": "d273b8da517f326b0f9e3bee7ac09895ffc3c96c86bd926f1449a1b0254e0dc7",
+      "transformation": "Preserved bytes; Markdown source snapshots are presented as text."
+    },
+    {
+      "raw_artifact_id": "source/tests/fixtures/validators/valid-ux.json",
+      "raw_sha256": "56bc9807a45cec509a7d12fbff34381a2d8226cf5b933280220be7bf56261245",
+      "public_path": "source/tests/fixtures/validators/valid-ux.json",
+      "public_sha256": "56bc9807a45cec509a7d12fbff34381a2d8226cf5b933280220be7bf56261245",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "source/tests/fixtures/web/alternate-actions.json",
+      "raw_sha256": "01d12ee086d239dc8f5fe802d090fba6eb8e862fd281cb6dbf73483b6263a9ab",
+      "public_path": "source/tests/fixtures/web/alternate-actions.json",
+      "public_sha256": "01d12ee086d239dc8f5fe802d090fba6eb8e862fd281cb6dbf73483b6263a9ab",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "source/tests/fixtures/web/alternate.html",
+      "raw_sha256": "9782b494fdbb156515518d4bb096a5c057385f44d9a6983c352080626e879a22",
+      "public_path": "source/tests/fixtures/web/alternate.html",
+      "public_sha256": "9782b494fdbb156515518d4bb096a5c057385f44d9a6983c352080626e879a22",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "source/tests/fixtures/web/index.html",
+      "raw_sha256": "c0b51d87d81a36f21608139d7a4fbf07b9fe1d6f94b1fa0bb0599b5f74fe91f5",
+      "public_path": "source/tests/fixtures/web/index.html",
+      "public_sha256": "c0b51d87d81a36f21608139d7a4fbf07b9fe1d6f94b1fa0bb0599b5f74fe91f5",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "source/tests/fixtures/web/ping.json",
+      "raw_sha256": "b637c8fcaf1d33dfbc53887d00214034900ef46e83faca65758f6bc2b56ed43d",
+      "public_path": "source/tests/fixtures/web/ping.json",
+      "public_sha256": "b637c8fcaf1d33dfbc53887d00214034900ef46e83faca65758f6bc2b56ed43d",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "source/tests/fixtures/web/primary-actions.json",
+      "raw_sha256": "3342907cd646a04a21ffc9ceb85e9359817b6b8220944030c27df66f5b9b5002",
+      "public_path": "source/tests/fixtures/web/primary-actions.json",
+      "public_sha256": "3342907cd646a04a21ffc9ceb85e9359817b6b8220944030c27df66f5b9b5002",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "source/tests/test_package.py",
+      "raw_sha256": "7e94e9a81f4b6e6b7f14d4f2432cc066b9b9b180afa4b96eb1c58c2d4957ed74",
+      "public_path": "source/tests/test_package.py",
+      "public_sha256": "7e94e9a81f4b6e6b7f14d4f2432cc066b9b9b180afa4b96eb1c58c2d4957ed74",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "source/tests/test_run_contract.py",
+      "raw_sha256": "f671c3ec3ca69ad155c54823ef89eb9475fd847b65b762094ad937030e7f297f",
+      "public_path": "source/tests/test_run_contract.py",
+      "public_sha256": "f671c3ec3ca69ad155c54823ef89eb9475fd847b65b762094ad937030e7f297f",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "source/tests/test_validators.py",
+      "raw_sha256": "b91ab5195a1e7380747c618a17f885b56dc1cddf809ff23e065c3062fc477f39",
+      "public_path": "source/tests/test_validators.py",
+      "public_sha256": "b91ab5195a1e7380747c618a17f885b56dc1cddf809ff23e065c3062fc477f39",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "source/tools/run_contract.py",
+      "raw_sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+      "public_path": "source/tools/run_contract.py",
+      "public_sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "source-manifest.json",
+      "raw_sha256": "e6f131ad712f3282ed1313b5214cfadc578f90defae3741acef1d68f8b1fc7a9",
+      "public_path": "source-manifest.json",
+      "public_sha256": "e6f131ad712f3282ed1313b5214cfadc578f90defae3741acef1d68f8b1fc7a9",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "source-unchanged.json",
+      "raw_sha256": "fffe8c94ab291385dc4aaaa811ab780a771b2be07443f3b80a61c117d447afc0",
+      "public_path": "source-unchanged.json",
+      "public_sha256": "fffe8c94ab291385dc4aaaa811ab780a771b2be07443f3b80a61c117d447afc0",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "verified.json",
+      "raw_sha256": "8aa973100a15bf817985395637131e838cf84e427be4792583def923f020f5fa",
+      "public_path": "verified.json",
+      "public_sha256": "8aa973100a15bf817985395637131e838cf84e427be4792583def923f020f5fa",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "verifier-command-evidence.json",
+      "raw_sha256": "9945bbcdba0c622ee0ec02a524e67bbd7b6a44c4391206e01a3253f14d1fb689",
+      "public_path": "verifier-command-evidence.json",
+      "public_sha256": "9945bbcdba0c622ee0ec02a524e67bbd7b6a44c4391206e01a3253f14d1fb689",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "verifier-coverage.json",
+      "raw_sha256": "f700ce6be0743c4106f3ff461c3ec7be573750737cae63bf41d5003ff9a21b14",
+      "public_path": "verifier-coverage.json",
+      "public_sha256": "f700ce6be0743c4106f3ff461c3ec7be573750737cae63bf41d5003ff9a21b14",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "verifier-execution.json",
+      "raw_sha256": "395a1a8aac22ee5c360c95270a2238e6d87635f2dd0ae9d32969b5b3d5bad5f1",
+      "public_path": "verifier-execution.json",
+      "public_sha256": "395a1a8aac22ee5c360c95270a2238e6d87635f2dd0ae9d32969b5b3d5bad5f1",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "verifier-probe-A01.json",
+      "raw_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "public_path": "verifier-probe-A01.json",
+      "public_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "verifier-probe-A02.json",
+      "raw_sha256": "b1eafe7bd0771519e550ca8299c87d2b5f804b1a6d25460711dbf582badcf878",
+      "public_path": "verifier-probe-A02.json",
+      "public_sha256": "b1eafe7bd0771519e550ca8299c87d2b5f804b1a6d25460711dbf582badcf878",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "verifier-probe-A03.json",
+      "raw_sha256": "6e96a492bc9fa40d22212c5be0396a203f3dbd4916cf97ebe2f66b6d54fa4a9a",
+      "public_path": "verifier-probe-A03.json",
+      "public_sha256": "6e96a492bc9fa40d22212c5be0396a203f3dbd4916cf97ebe2f66b6d54fa4a9a",
+      "transformation": "Preserved selected public bytes."
+    },
+    {
+      "raw_artifact_id": "verifier-report.md",
+      "raw_sha256": "8dfe016d6e504e644eadca09e5d6f7740d9d2491236b1d87364dd3bace6f883d",
+      "public_path": "verifier-report.md",
+      "public_sha256": "8dfe016d6e504e644eadca09e5d6f7740d9d2491236b1d87364dd3bace6f883d",
+      "transformation": "Preserved selected public bytes."
+    }
+  ],
+  "limits": [
+    "Source run is an actual independent Linux agent execution, not a human trial.",
+    "No raw authentication, personal files, or client inputs are included.",
+    "Candidate carryover must be justified separately for later revisions."
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "valid": true,
+  "schema": "qore-spec/1",
+  "scenarios": [
+    {
+      "id": "A01",
+      "name": "A01 Refuse a missing findings envelope",
+      "line": 30
+    },
+    {
+      "id": "A02",
+      "name": "A02 Keep an unverified high-severity candidate",
+      "line": 35
+    },
+    {
+      "id": "A03",
+      "name": "A03 Preserve a valid empty review",
+      "line": 43
+    },
+    {
+      "id": "A04",
+      "name": "A04 Reject the entire unsupported verifier value",
+      "line": 148
+    },
+    {
+      "id": "A05",
+      "name": "A05 Preserve both exact supported declarations",
+      "line": 162
+    },
+    {
+      "id": "A06",
+      "name": "A06 Preserve confirmed blockers and refutation support",
+      "line": 168
+    },
+    {
+      "id": "A07",
+      "name": "A07 Reject bad invocation before reading a missing packet",
+      "line": 175
+    },
+    {
+      "id": "A08",
+      "name": "A08 Preserve an existing local adaptation",
+      "line": 182
+    },
+    {
+      "id": "A09",
+      "name": "A09 Refuse stale applicable project facts",
+      "line": 189
+    }
+  ],
+  "problems": []
+}

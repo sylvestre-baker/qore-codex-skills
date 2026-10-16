@@ -1,0 +1,46 @@
+COMMAND: ['python3', '-B', '-m', 'unittest', 'discover', '-s', 'tests', '-p', 'test_validators.py', '-v']
+STDOUT:
+
+STDERR:
+test_all_required_skipped_never_ship (test_validators.ValidatorTests.test_all_required_skipped_never_ship) ... ok
+test_blocking_findings_need_counterexample_and_checkable_evidence (test_validators.ValidatorTests.test_blocking_findings_need_counterexample_and_checkable_evidence) ... ok
+test_depth_missing_files_unknown_depth_and_bad_shape (test_validators.ValidatorTests.test_depth_missing_files_unknown_depth_and_bad_shape) ... ok
+test_depth_positive_source_families (test_validators.ValidatorTests.test_depth_positive_source_families) ... ok
+test_depth_rejects_data_as_visual_and_render_as_none (test_validators.ValidatorTests.test_depth_rejects_data_as_visual_and_render_as_none) ... ok
+test_duplicate_ids_and_non_object_findings_are_refused (test_validators.ValidatorTests.test_duplicate_ids_and_non_object_findings_are_refused) ... ok
+test_each_scenario_requires_its_own_three_step_types (test_validators.ValidatorTests.test_each_scenario_requires_its_own_three_step_types) ... ok
+test_empty_fence_cannot_borrow_steps_outside (test_validators.ValidatorTests.test_empty_fence_cannot_borrow_steps_outside) ... ok
+test_empty_findings_is_a_valid_complete_packet (test_validators.ValidatorTests.test_empty_findings_is_a_valid_complete_packet) ... ok
+test_empty_null_array_and_missing_envelope_are_refused (test_validators.ValidatorTests.test_empty_null_array_and_missing_envelope_are_refused) ... ok
+test_fixes_invalidate_same_iteration_and_carried_scores (test_validators.ValidatorTests.test_fixes_invalidate_same_iteration_and_carried_scores) ... ok
+test_infra_blockage_affects_coverage_without_failing_observed_gates (test_validators.ValidatorTests.test_infra_blockage_affects_coverage_without_failing_observed_gates) ... ok
+test_justified_non_applicability_is_distinct_from_tool_absence (test_validators.ValidatorTests.test_justified_non_applicability_is_distinct_from_tool_absence) ... ok
+test_measurements_and_source_identifiers_remain_accepted (test_validators.ValidatorTests.test_measurements_and_source_identifiers_remain_accepted) ... ok
+test_missing_required_gate_is_not_treated_as_pass (test_validators.ValidatorTests.test_missing_required_gate_is_not_treated_as_pass) ... ok
+test_missing_verifier_never_proves_or_refutes (test_validators.ValidatorTests.test_missing_verifier_never_proves_or_refutes) ... ok
+test_optional_coverage_fields_do_not_silently_coerce_bad_types (test_validators.ValidatorTests.test_optional_coverage_fields_do_not_silently_coerce_bad_types) ... ok
+test_positive_review_retains_refutations_and_blocks_confirmed_high (test_validators.ValidatorTests.test_positive_review_retains_refutations_and_blocks_confirmed_high) ... ok
+test_positive_spec (test_validators.ValidatorTests.test_positive_spec) ... ok
+test_positive_ux (test_validators.ValidatorTests.test_positive_ux) ... ok
+test_redactor_allowlist_drops_unanticipated_rationale (test_validators.ValidatorTests.test_redactor_allowlist_drops_unanticipated_rationale) ... ok
+test_redactor_refuses_bad_envelope_and_nested_allowed_field (test_validators.ValidatorTests.test_redactor_refuses_bad_envelope_and_nested_allowed_field) ... ok
+test_required_skipped_gate_prevents_ship_despite_passing_score (test_validators.ValidatorTests.test_required_skipped_gate_prevents_ship_despite_passing_score) ... ok
+test_route_reachability_applies_to_modern_app_and_root_paths (test_validators.ValidatorTests.test_route_reachability_applies_to_modern_app_and_root_paths) ... ok
+test_sixth_fresh_pass_can_ship_but_seventh_cannot (test_validators.ValidatorTests.test_sixth_fresh_pass_can_ship_but_seventh_cannot) ... ok
+test_skipped_verifier_preserves_high_and_critical_severity (test_validators.ValidatorTests.test_skipped_verifier_preserves_high_and_critical_severity) ... ok
+test_spec_duplicate_ids_and_orphan_coverage_fail (test_validators.ValidatorTests.test_spec_duplicate_ids_and_orphan_coverage_fail) ... ok
+test_spec_requires_coverage_and_fenced_sequence (test_validators.ValidatorTests.test_spec_requires_coverage_and_fenced_sequence) ... ok
+test_spec_supports_named_scenarios_and_bold_coverage (test_validators.ValidatorTests.test_spec_supports_named_scenarios_and_bold_coverage) ... ok
+test_spec_version_must_be_first_and_known (test_validators.ValidatorTests.test_spec_version_must_be_first_and_known) ... ok
+test_truncated_json_is_not_an_empty_review (test_validators.ValidatorTests.test_truncated_json_is_not_an_empty_review) ... ok
+test_unknown_verdict_and_severity_are_refused (test_validators.ValidatorTests.test_unknown_verdict_and_severity_are_refused) ... ok
+test_ux_rejects_invalid_scores_iteration_order_and_unmeasured_change (test_validators.ValidatorTests.test_ux_rejects_invalid_scores_iteration_order_and_unmeasured_change) ... ok
+test_verifier_declaration_requires_the_entire_exact_value (test_validators.ValidatorTests.test_verifier_declaration_requires_the_entire_exact_value) ... ok
+test_zero_gate_cannot_extend_six_iteration_budget (test_validators.ValidatorTests.test_zero_gate_cannot_extend_six_iteration_budget) ... ok
+
+----------------------------------------------------------------------
+Ran 35 tests in 1.659s
+
+OK
+
+EXIT: 0

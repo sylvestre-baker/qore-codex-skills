@@ -1,0 +1,11 @@
+{
+  "findings": [
+    {
+      "id": "PROBE-HIGH",
+      "title": "Synthetic high severity validator input",
+      "severity": "high",
+      "verdict": "PLAUSIBLE",
+      "evidence": "examples/validator-hardening.md:A02"
+    }
+  ]
+}

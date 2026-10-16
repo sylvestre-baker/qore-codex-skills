@@ -1,0 +1,16 @@
+{
+  "valid": true,
+  "coverage": "COMPLETE",
+  "verdict": "SHIP",
+  "verifier": "ran",
+  "total": 0,
+  "counts": {
+    "CONFIRMED": 0,
+    "PLAUSIBLE": 0,
+    "REFUTED": 0
+  },
+  "blocking_findings": [],
+  "findings": [],
+  "problems": [],
+  "limit": "The verifier flag records an execution declaration; validate actual independent phase evidence separately."
+}

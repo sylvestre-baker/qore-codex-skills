@@ -1,0 +1,12 @@
+{
+  "compared_public_files": 178,
+  "added": [],
+  "removed": [],
+  "changed": [],
+  "excluded": [
+    ".agents",
+    ".git",
+    "__pycache__"
+  ],
+  "checked_at": "2026-10-15T19:58:08.090131+00:00"
+}

@@ -1,0 +1,12 @@
+{
+  "in_scope": [
+    "hasOwnProperty"
+  ],
+  "iterations": [
+    {
+      "n": 1,
+      "scores": {},
+      "measured": []
+    }
+  ]
+}

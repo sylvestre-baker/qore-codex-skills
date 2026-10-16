@@ -1,0 +1,119 @@
+{
+  "qore_evidence": {
+    "candidate_sha256": "2963c43e98803354932e406627d9e239064fbe2899745a7e093b7d4154fa56d1",
+    "target_snapshot_sha256": "4406e00f70c0b4d9d03305d3efc71cdb30f9a282e47dfe8ac7ac8ac6a056ce54",
+    "observed_at": "2026-10-15T19:45:52.502077+00:00",
+    "phase_id": "freshness"
+  },
+  "payload": {
+    "source_freshness": {
+      "checked_at": "2026-10-15T19:45:52.502077+00:00",
+      "application_fixes": [],
+      "source_checks": [
+        {
+          "path": "src/app/[locale]/labs/page.tsx",
+          "sha256": "527e403e2924428a0624f89e22c924d99fa5cdd526ba8156201e6ab996856bad",
+          "current_sha256": "527e403e2924428a0624f89e22c924d99fa5cdd526ba8156201e6ab996856bad"
+        },
+        {
+          "path": "src/app/[locale]/labs/readiness-check/page.tsx",
+          "sha256": "0f5db270478551012de5b51942647d51d4d01bcf4acd016022d67a2b83893448",
+          "current_sha256": "0f5db270478551012de5b51942647d51d4d01bcf4acd016022d67a2b83893448"
+        },
+        {
+          "path": "src/components/labs/readiness-check/index.tsx",
+          "sha256": "e328586561237a8a9f75f4d41a7f52eb1b3240157cd60a72d88fbb8d42e34035",
+          "current_sha256": "e328586561237a8a9f75f4d41a7f52eb1b3240157cd60a72d88fbb8d42e34035"
+        },
+        {
+          "path": "src/components/labs/readiness-check/ReadinessIntro.tsx",
+          "sha256": "b64baec1444cf6a6c0e4fd9b5775efd8f0f3be564251a884f8d7f3b5b0fc403a",
+          "current_sha256": "b64baec1444cf6a6c0e4fd9b5775efd8f0f3be564251a884f8d7f3b5b0fc403a"
+        },
+        {
+          "path": "src/components/labs/readiness-check/ReadinessQuestions.tsx",
+          "sha256": "a26c27dc64490b5fa8ded3da57d461c751a3f8771d19d6a4547fd23d1dcbde0d",
+          "current_sha256": "a26c27dc64490b5fa8ded3da57d461c751a3f8771d19d6a4547fd23d1dcbde0d"
+        },
+        {
+          "path": "src/components/labs/readiness-check/QuestionHelp.tsx",
+          "sha256": "dccb3d2071d708a7740a1305df54fef6a4f43c8c6485a08e437b4a17f31cef29",
+          "current_sha256": "dccb3d2071d708a7740a1305df54fef6a4f43c8c6485a08e437b4a17f31cef29"
+        },
+        {
+          "path": "src/components/labs/shared/quiz/QuizCard.tsx",
+          "sha256": "b154bed2cb4235c978c512218b149ce61828b0d5bf7edf794ac80919e545d268",
+          "current_sha256": "b154bed2cb4235c978c512218b149ce61828b0d5bf7edf794ac80919e545d268"
+        }
+      ],
+      "all_source_context_unchanged": true,
+      "instruction_binding": "candidate-binding.json",
+      "observations": "Fresh browser observations after initial scope declaration; no affected evidence reused after an application correction.",
+      "deployment_revision_limit": "Local source hashes are not asserted to be the deployed Git revision."
+    },
+    "candidate_binding": {
+      "candidate_archive_sha256": "2963c43e98803354932e406627d9e239064fbe2899745a7e093b7d4154fa56d1",
+      "observed_skill_snapshot_sha256": "4c4b83e283babcb3f13f9342dad3d05a19d2d71a34f8205d043b81199d0d7359",
+      "comparison": [
+        {
+          "path": "SKILL.md",
+          "initial_sha256": "33b1367f256f1a6304902d08cdff9b023add92fb750834216268cca8de84b851",
+          "frozen_sha256": "33b1367f256f1a6304902d08cdff9b023add92fb750834216268cca8de84b851"
+        },
+        {
+          "path": "agents/openai.yaml",
+          "initial_sha256": "2bafca3b7edce2edac4814b4028fdb814f83c1c2efbea4d461b7469fbe1bd7af",
+          "frozen_sha256": "2bafca3b7edce2edac4814b4028fdb814f83c1c2efbea4d461b7469fbe1bd7af"
+        },
+        {
+          "path": "references/evidence.md",
+          "initial_sha256": "659560f88b965371e2c6e886b5f4c648a4879ebb7c69af4b1d307dfae176c8b3",
+          "frozen_sha256": "659560f88b965371e2c6e886b5f4c648a4879ebb7c69af4b1d307dfae176c8b3"
+        },
+        {
+          "path": "references/gates.md",
+          "initial_sha256": "667063cd64c576a9c5b4ec69f6ddcd677d4e969bae96184b3136ede9fd12fd87",
+          "frozen_sha256": "667063cd64c576a9c5b4ec69f6ddcd677d4e969bae96184b3136ede9fd12fd87"
+        },
+        {
+          "path": "references/project-profile.md",
+          "initial_sha256": "154ed11dab8e8499e74a5f3a6afb512827d5de5c73408523b845684e38f59dfc",
+          "frozen_sha256": "154ed11dab8e8499e74a5f3a6afb512827d5de5c73408523b845684e38f59dfc"
+        },
+        {
+          "path": "references/protocol.md",
+          "initial_sha256": "257ae0902a7fb00f6bfd1ebaa5b688e57a5f2e7163de3e9954ed3c9765105dfd",
+          "frozen_sha256": "257ae0902a7fb00f6bfd1ebaa5b688e57a5f2e7163de3e9954ed3c9765105dfd"
+        },
+        {
+          "path": "references/run-evidence.md",
+          "initial_sha256": "2ede0b19d58fd5535c90023068355679ee7bb27d3070967ada38f9ad156a9e69",
+          "frozen_sha256": "2ede0b19d58fd5535c90023068355679ee7bb27d3070967ada38f9ad156a9e69"
+        },
+        {
+          "path": "scripts/depth-lint.mjs",
+          "initial_sha256": "9b9cdcea3e87f4820944ddfc075ef19e75aad0bb08a7f1fd279ea6590267def7",
+          "frozen_sha256": "9b9cdcea3e87f4820944ddfc075ef19e75aad0bb08a7f1fd279ea6590267def7"
+        },
+        {
+          "path": "scripts/project-check.py",
+          "initial_sha256": "3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd",
+          "frozen_sha256": "3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd"
+        },
+        {
+          "path": "scripts/run-check.py",
+          "initial_sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+          "frozen_sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa"
+        },
+        {
+          "path": "scripts/stop-rule.mjs",
+          "initial_sha256": "404b5ca63276c413e1f2697b98817f1802de4642cf634303707bd175eddd8085",
+          "frozen_sha256": "404b5ca63276c413e1f2697b98817f1802de4642cf634303707bd175eddd8085"
+        }
+      ],
+      "justified_carryover": "Browser observations followed these exact instruction/resource bytes. The later frozen archive changes outer README/support documents only; all 11 consumed skill files are byte-identical. No stale browser evidence is re-timestamped.",
+      "checked_at": "2026-10-15T19:44:52.806941+00:00"
+    },
+    "no_application_fixes": true
+  }
+}

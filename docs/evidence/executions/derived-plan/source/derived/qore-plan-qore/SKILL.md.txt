@@ -1,0 +1,21 @@
+---
+name: qore-plan-qore
+description: Prepare or strengthen a change specification through five planning perspectives, evidence-based challenge, and bounded adjudication. Use for requested planning before implementation; use review for challenging a finished deliverable and UX review for observing rendered web behavior.
+---
+
+# Qore Plan
+
+Produce a sourced specification that makes decisions, acceptance criteria, dependencies, and missing evidence visible. This method does not require a Qore account or a persistent project profile.
+
+1. Resolve the requested change, target root, applicable instructions, and source snapshot. Read an existing applicable specification before starting a replacement. If `references/project.json` exists, follow [project preflight](references/project-profile.md) **before consuming its facts**. Otherwise work directly from the user's sources without creating a profile.
+2. Read [the planning protocol](references/protocol.md) and [the five roles](references/roles.md). An existing applicable specification selects **Workflow** mode; otherwise use **Debate** mode. State the deciding artifact or its absence.
+3. Execute five independent perspectives with actual available subagents, in waves when concurrency is limited. Preserve complete report files and a requested/returned roster. Never describe a sequential self-review as independent agents. Missing roles or phases make coverage PARTIAL or BLOCKED.
+4. Challenge material decisions and adjudicate competing evidence. Workflow uses Analyze → Cross-examine → Adjudicate. Debate has at most **three rounds**, including initial analysis. Retain unresolved conflicts and material dissent; agreement is not proof.
+5. Write the specification using [the artifact contract](references/specification.md). Run `bash scripts/spec-lint.sh /absolute/path/to/spec.md` from this skill's directory. Fix structural failures before calling the artifact structurally valid; passing lint does not establish product completeness.
+6. Report decisions, task order, remaining dependencies, actual phases, limits, and **COMPLETE / PARTIAL / BLOCKED coverage**. Record [execution evidence](references/run-evidence.md). COMPLETE means the declared planning protocol ran, not approval to implement or deploy.
+
+Continue into implementation only when the user's request already authorizes it. Planning does not authorize shared-data changes, messages, publication, merges, or delivery. Native interface work may be planned, but this skill supplies no native execution qualification.
+
+## Generated project binding
+
+This derivative must load [its project profile](references/project.json) before selecting project facts. Run its bundled project-check.py against the supplied project root with --method plan. Consume only current returned facts; stale required context is PARTIAL or BLOCKED. The profile grants no action permission. Edit the maintained profile, not this generated copy.

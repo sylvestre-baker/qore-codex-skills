@@ -1,0 +1,14 @@
+{
+  "source_candidate_label": "archive17888fa30f1024707fc3ee6efda856ca330bc6365e09737007096f5d7db62da8",
+  "identity_provenance": "User-supplied source archive identity; archive bytes unavailable for independent archive digest verification. This is not a Git checkout. Local file hashes bind this execution to the inspected bytes.",
+  "target_root": "/workspace/implementation-target/qore-skills-0.1.0",
+  "target_label": "validator-hardening example and current relevant validator implementation/tests",
+  "scoped_manifest_sha256": "8e53ff1b4b7cfe26c5839ba3744430a9ed4f2787943ed96593ae8df931b5842f",
+  "profile": {
+    "id": "qore-contrast",
+    "version": "0.1.0",
+    "sha256": "f72394c2ebb80cb6da41b33a088d56fbd24b4577f71bc2b022d0ef4bb36bfb88"
+  },
+  "skill": "qore-review-qore-contrast",
+  "observed_at": "2026-10-15T20:06:10.139434+00:00"
+}

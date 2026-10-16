@@ -1,0 +1,18 @@
+{
+  "argv": [
+    "python3",
+    "tools/qore.py",
+    "derive",
+    "--profile",
+    "<CANDIDATE_B>/profiles/qore.json",
+    "--project-root",
+    "<CANDIDATE_B>",
+    "--output",
+    "<DERIVED_CANDIDATE>"
+  ],
+  "cwd": "<CANDIDATE_B>",
+  "exit_code": 0,
+  "stdout": "{\n  \"output\": \"<DERIVED_CANDIDATE>\",\n  \"profile\": {\n    \"id\": \"qore\",\n    \"version\": \"0.1.0\",\n    \"sha256\": \"da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9\"\n  },\n  \"valid\": true,\n  \"schema\": \"qore-release/1\",\n  \"version\": \"0.1.0\",\n  \"kind\": \"derived\",\n  \"files\": 39,\n  \"manifest_sha256\": \"19f48167f040ca42c60b0df49a324c6d3aeb3de3014486017668f1263ccd6b35\"\n}\n",
+  "stderr": "",
+  "observed_at": "2026-10-15T19:59:38.234294+00:00"
+}

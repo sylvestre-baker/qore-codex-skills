@@ -1,0 +1,42 @@
+{
+  "observed_at": "2026-10-15T19:49:59.010950+00:00",
+  "commands": [
+    {
+      "argv": [
+        "node",
+        "skills/qore-review/scripts/finding-lint.mjs",
+        "tests/fixtures/validators/empty-object.json",
+        "--verifier=ran"
+      ],
+      "cwd": "<CANDIDATE_B>",
+      "exit": 1,
+      "stdout": "finding-lint: refused; coverage PARTIAL; verdict INVALID; 0 blocking findings.\n",
+      "stderr": "packet: Expected an object containing findings: []; arrays, null and missing findings are refused.\n"
+    },
+    {
+      "argv": [
+        "node",
+        "skills/qore-review/scripts/finding-lint.mjs",
+        "tests/fixtures/validators/truncated.json",
+        "--verifier=ran",
+        "--json"
+      ],
+      "cwd": "<CANDIDATE_B>",
+      "exit": 2,
+      "stdout": "",
+      "stderr": "finding-lint: cannot read JSON: Unexpected end of JSON input\n"
+    },
+    {
+      "argv": [
+        "node",
+        "skills/qore-review/scripts/finding-lint.mjs",
+        "tests/fixtures/validators/valid-findings.json",
+        "--verifier=ran"
+      ],
+      "cwd": "<CANDIDATE_B>",
+      "exit": 0,
+      "stdout": "finding-lint: valid; coverage COMPLETE; verdict DO-NOT-SHIP; 1 blocking findings.\n",
+      "stderr": ""
+    }
+  ]
+}

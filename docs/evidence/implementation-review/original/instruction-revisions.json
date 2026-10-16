@@ -1,0 +1,33 @@
+{
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "2518c8fb72b45d21fb1c271fd1de8221e32ad125eb89a4face9a0f1184f32a17"
+    },
+    {
+      "path": "docs/contracts.md",
+      "sha256": "cd09827fbcff4420c97389363b9299f10d7f9a6eb96c5f8fabffed4ba5a0168e"
+    },
+    {
+      "path": "docs/profiles.md",
+      "sha256": "c20904f6bd4af55aa02e5c3cf75fa1298acfbe1e71e5ddb24920d20299a38408"
+    },
+    {
+      "path": "docs/architecture.md",
+      "sha256": "26429d4cbbc5a1c3065a65397bbdfcbbacd5cb5d4a198da979d72146190714f6"
+    },
+    {
+      "path": ".agents/skills/qore-review/SKILL.md",
+      "sha256": "aae83b4105dd89387c7eac31df3c789326def9c0b05dccd4a3d2cdab65732a97"
+    },
+    {
+      "path": ".agents/skills/qore-review/references/protocol.md",
+      "sha256": "e27e0050fdf4d75d2840dd257b9a759f1f48d459ef540990cd3aed5528c5f340"
+    },
+    {
+      "path": ".agents/skills/qore-review/references/findings.md",
+      "sha256": "79b2b5f52e88761331c01b92af9b492ef1888c6c20a0af1b94a8bead7aa2d6cb"
+    }
+  ],
+  "instructions": "User requested complete current source review, 3 fresh finders and separate fresh verifier after actual redaction. No source edits. Sources included in source-snapshot.tar.gz. No AGENTS.md found by initial find .. -name AGENTS.md."
+}

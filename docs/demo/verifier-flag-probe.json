@@ -1,0 +1,67 @@
+{
+  "schema": "qore-demo-verifier-flag-probe/1",
+  "public_id": "public-verifier-token-replay-20261015-01",
+  "purpose": "Actual post-planning replay of one malformed raw CLI token. This is not a new planning/review execution or proof that independent phases ran.",
+  "input": "evidence/empty-findings.json",
+  "receipts": [
+    {
+      "label": "candidate-b",
+      "script_sha256": "d0cc6809b750d9e52015b0448f18e3f291b979674b1350156d2444e607791ee7",
+      "packet_sha256": "9ba8071ce819632d6b70ddc2d9e13da3b5d20201af51595badc4aaf1647bd878",
+      "exit_code": 0,
+      "stdout": "{\n  \"valid\": true,\n  \"coverage\": \"COMPLETE\",\n  \"verdict\": \"SHIP\",\n  \"verifier\": \"ran\",\n  \"total\": 0,\n  \"counts\": {\n    \"CONFIRMED\": 0,\n    \"PLAUSIBLE\": 0,\n    \"REFUTED\": 0\n  },\n  \"blocking_findings\": [],\n  \"findings\": [],\n  \"problems\": [],\n  \"limit\": \"The verifier flag records an execution declaration; validate actual independent phase evidence separately.\"\n}\n",
+      "stderr": "",
+      "observed_at": "2026-10-15T20:01:05.658294+00:00",
+      "source_identity": {
+        "archive_sha256": "2963c43e98803354932e406627d9e239064fbe2899745a7e093b7d4154fa56d1"
+      },
+      "actual_argv_display": [
+        "<NODE>",
+        "<SOURCE_SNAPSHOT>",
+        "<EMPTY_PACKET>",
+        "--verifier=ran=skipped",
+        "--json"
+      ],
+      "reproduce_from_demo_directory": [
+        "node",
+        "evidence/candidate-b-finding-lint.mjs",
+        "evidence/empty-findings.json",
+        "--verifier=ran=skipped",
+        "--json"
+      ]
+    },
+    {
+      "label": "current-helper",
+      "script_sha256": "89b02ef5912adf3f6ff86ad8652a3f21e7313bb0cc0a280a3dd9810546abdef9",
+      "packet_sha256": "9ba8071ce819632d6b70ddc2d9e13da3b5d20201af51595badc4aaf1647bd878",
+      "exit_code": 2,
+      "stdout": "",
+      "stderr": "usage: finding-lint.mjs <packet.json> --verifier=ran|skipped [--json]\n",
+      "observed_at": "2026-10-15T20:01:05.682805+00:00",
+      "source_identity": {
+        "kind": "Current working-tree helper snapshot at the recorded time; not a new candidate identity"
+      },
+      "actual_argv_display": [
+        "<NODE>",
+        "<SOURCE_SNAPSHOT>",
+        "<EMPTY_PACKET>",
+        "--verifier=ran=skipped",
+        "--json"
+      ],
+      "reproduce_from_demo_directory": [
+        "node",
+        "evidence/current-helper-finding-lint.mjs",
+        "evidence/empty-findings.json",
+        "--verifier=ran=skipped",
+        "--json"
+      ]
+    }
+  ],
+  "expected_observed_difference": "Frozen b accepted the token as ran and emitted packet COMPLETE/SHIP; the separately identified current helper rejected it with exit2 and usage.",
+  "scope_limit": "One explicit token and packet, not exhaustive grammar, product correctness, delivery permission or a general quality gain.",
+  "transformation": {
+    "raw_artifact_id": "qore-private:demo/verifier-token-comparison.json",
+    "raw_sha256": "90fe3693f10ac9445462bde4f159f0cfc3ad19f7f4fc6a8d2fc72e1a91b71297",
+    "operation": "Original stdout/stderr/exit codes/times and source hashes preserved. Private argv prefixes replaced by disclosed display placeholders; separate relative reproduction argv were not the original literal commands."
+  }
+}

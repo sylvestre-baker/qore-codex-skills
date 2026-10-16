@@ -1,0 +1,183 @@
+[
+  {
+    "argv": [
+      "node",
+      "/workspace/qore-skills-0.1.0/skills/qore-review/scripts/finding-lint.mjs",
+      "/tmp/qore-verifier-iwtw1d0l/missing.json",
+      "--verifier=ran",
+      "--json"
+    ],
+    "cwd": "/workspace/qore-skills-0.1.0",
+    "stdout": "{\n  \"valid\": false,\n  \"coverage\": \"PARTIAL\",\n  \"verdict\": \"INVALID\",\n  \"verifier\": \"ran\",\n  \"total\": 0,\n  \"counts\": {\n    \"CONFIRMED\": 0,\n    \"PLAUSIBLE\": 0,\n    \"REFUTED\": 0\n  },\n  \"blocking_findings\": [],\n  \"findings\": [],\n  \"problems\": [\n    {\n      \"code\": \"envelope\",\n      \"why\": \"Expected an object containing findings: []; arrays, null and missing findings are refused.\"\n    }\n  ],\n  \"limit\": \"The verifier flag records an execution declaration; validate actual independent phase evidence separately.\"\n}\n",
+    "stderr": "",
+    "exit": 1
+  },
+  {
+    "argv": [
+      "node",
+      "/workspace/qore-skills-0.1.0/skills/qore-review/scripts/finding-lint.mjs",
+      "/tmp/qore-verifier-iwtw1d0l/high.json",
+      "--verifier=skipped",
+      "--json"
+    ],
+    "cwd": "/workspace/qore-skills-0.1.0",
+    "stdout": "{\n  \"valid\": true,\n  \"coverage\": \"PARTIAL\",\n  \"verdict\": \"PENDING\",\n  \"verifier\": \"skipped\",\n  \"total\": 1,\n  \"counts\": {\n    \"CONFIRMED\": 0,\n    \"PLAUSIBLE\": 1,\n    \"REFUTED\": 0\n  },\n  \"blocking_findings\": [],\n  \"findings\": [\n    {\n      \"id\": \"BOUNDARY-HIGH\",\n      \"title\": \"Synthetic boundary candidate\",\n      \"severity\": \"high\",\n      \"verdict\": \"PLAUSIBLE\",\n      \"evidence\": \"src/input.ts:12\"\n    }\n  ],\n  \"problems\": [],\n  \"limit\": \"The verifier flag records an execution declaration; validate actual independent phase evidence separately.\"\n}\n",
+    "stderr": "",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "node",
+      "/workspace/qore-skills-0.1.0/skills/qore-review/scripts/finding-lint.mjs",
+      "/tmp/qore-verifier-iwtw1d0l/empty.json",
+      "--verifier=ran",
+      "--json"
+    ],
+    "cwd": "/workspace/qore-skills-0.1.0",
+    "stdout": "{\n  \"valid\": true,\n  \"coverage\": \"COMPLETE\",\n  \"verdict\": \"SHIP\",\n  \"verifier\": \"ran\",\n  \"total\": 0,\n  \"counts\": {\n    \"CONFIRMED\": 0,\n    \"PLAUSIBLE\": 0,\n    \"REFUTED\": 0\n  },\n  \"blocking_findings\": [],\n  \"findings\": [],\n  \"problems\": [],\n  \"limit\": \"The verifier flag records an execution declaration; validate actual independent phase evidence separately.\"\n}\n",
+    "stderr": "",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "node",
+      "/workspace/qore-skills-0.1.0/skills/qore-review/scripts/finding-lint.mjs",
+      "/tmp/qore-verifier-iwtw1d0l/empty.json",
+      "--verifier=skipped",
+      "--json"
+    ],
+    "cwd": "/workspace/qore-skills-0.1.0",
+    "stdout": "{\n  \"valid\": true,\n  \"coverage\": \"PARTIAL\",\n  \"verdict\": \"PENDING\",\n  \"verifier\": \"skipped\",\n  \"total\": 0,\n  \"counts\": {\n    \"CONFIRMED\": 0,\n    \"PLAUSIBLE\": 0,\n    \"REFUTED\": 0\n  },\n  \"blocking_findings\": [],\n  \"findings\": [],\n  \"problems\": [],\n  \"limit\": \"The verifier flag records an execution declaration; validate actual independent phase evidence separately.\"\n}\n",
+    "stderr": "",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "node",
+      "/workspace/qore-skills-0.1.0/skills/qore-review/scripts/finding-lint.mjs",
+      "/tmp/qore-verifier-iwtw1d0l/empty.json",
+      "--verifier=ran=skipped",
+      "--json"
+    ],
+    "cwd": "/workspace/qore-skills-0.1.0",
+    "stdout": "",
+    "stderr": "usage: finding-lint.mjs <packet.json> --verifier=ran|skipped [--json]\n",
+    "exit": 2
+  },
+  {
+    "argv": [
+      "node",
+      "/workspace/qore-skills-0.1.0/skills/qore-review/scripts/redact-for-verifier.mjs",
+      "/workspace/review-evidence/claims.json"
+    ],
+    "cwd": "/workspace/qore-skills-0.1.0",
+    "stdout": "{\n  \"findings\": []\n}\n",
+    "stderr": "redact-for-verifier: 0 claims; withheld fields: none.\n",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "node",
+      "/workspace/qore-skills-0.1.0/.agents/skills/qore-review/scripts/finding-lint.mjs",
+      "/tmp/qore-verifier-iwtw1d0l/missing.json",
+      "--verifier=ran",
+      "--json"
+    ],
+    "cwd": "/workspace/qore-skills-0.1.0",
+    "stdout": "{\n  \"valid\": false,\n  \"coverage\": \"PARTIAL\",\n  \"verdict\": \"INVALID\",\n  \"verifier\": \"ran\",\n  \"total\": 0,\n  \"counts\": {\n    \"CONFIRMED\": 0,\n    \"PLAUSIBLE\": 0,\n    \"REFUTED\": 0\n  },\n  \"blocking_findings\": [],\n  \"findings\": [],\n  \"problems\": [\n    {\n      \"code\": \"envelope\",\n      \"why\": \"Expected an object containing findings: []; arrays, null and missing findings are refused.\"\n    }\n  ],\n  \"limit\": \"The verifier flag records an execution declaration; validate actual independent phase evidence separately.\"\n}\n",
+    "stderr": "",
+    "exit": 1
+  },
+  {
+    "argv": [
+      "node",
+      "/workspace/qore-skills-0.1.0/.agents/skills/qore-review/scripts/finding-lint.mjs",
+      "/tmp/qore-verifier-iwtw1d0l/high.json",
+      "--verifier=skipped",
+      "--json"
+    ],
+    "cwd": "/workspace/qore-skills-0.1.0",
+    "stdout": "{\n  \"valid\": true,\n  \"coverage\": \"PARTIAL\",\n  \"verdict\": \"PENDING\",\n  \"verifier\": \"skipped\",\n  \"total\": 1,\n  \"counts\": {\n    \"CONFIRMED\": 0,\n    \"PLAUSIBLE\": 1,\n    \"REFUTED\": 0\n  },\n  \"blocking_findings\": [],\n  \"findings\": [\n    {\n      \"id\": \"BOUNDARY-HIGH\",\n      \"title\": \"Synthetic boundary candidate\",\n      \"severity\": \"high\",\n      \"verdict\": \"PLAUSIBLE\",\n      \"evidence\": \"src/input.ts:12\"\n    }\n  ],\n  \"problems\": [],\n  \"limit\": \"The verifier flag records an execution declaration; validate actual independent phase evidence separately.\"\n}\n",
+    "stderr": "",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "node",
+      "/workspace/qore-skills-0.1.0/.agents/skills/qore-review/scripts/finding-lint.mjs",
+      "/tmp/qore-verifier-iwtw1d0l/empty.json",
+      "--verifier=ran",
+      "--json"
+    ],
+    "cwd": "/workspace/qore-skills-0.1.0",
+    "stdout": "{\n  \"valid\": true,\n  \"coverage\": \"COMPLETE\",\n  \"verdict\": \"SHIP\",\n  \"verifier\": \"ran\",\n  \"total\": 0,\n  \"counts\": {\n    \"CONFIRMED\": 0,\n    \"PLAUSIBLE\": 0,\n    \"REFUTED\": 0\n  },\n  \"blocking_findings\": [],\n  \"findings\": [],\n  \"problems\": [],\n  \"limit\": \"The verifier flag records an execution declaration; validate actual independent phase evidence separately.\"\n}\n",
+    "stderr": "",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "node",
+      "/workspace/qore-skills-0.1.0/.agents/skills/qore-review/scripts/finding-lint.mjs",
+      "/tmp/qore-verifier-iwtw1d0l/empty.json",
+      "--verifier=skipped",
+      "--json"
+    ],
+    "cwd": "/workspace/qore-skills-0.1.0",
+    "stdout": "{\n  \"valid\": true,\n  \"coverage\": \"PARTIAL\",\n  \"verdict\": \"PENDING\",\n  \"verifier\": \"skipped\",\n  \"total\": 0,\n  \"counts\": {\n    \"CONFIRMED\": 0,\n    \"PLAUSIBLE\": 0,\n    \"REFUTED\": 0\n  },\n  \"blocking_findings\": [],\n  \"findings\": [],\n  \"problems\": [],\n  \"limit\": \"The verifier flag records an execution declaration; validate actual independent phase evidence separately.\"\n}\n",
+    "stderr": "",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "node",
+      "/workspace/qore-skills-0.1.0/.agents/skills/qore-review/scripts/finding-lint.mjs",
+      "/tmp/qore-verifier-iwtw1d0l/empty.json",
+      "--verifier=ran=skipped",
+      "--json"
+    ],
+    "cwd": "/workspace/qore-skills-0.1.0",
+    "stdout": "",
+    "stderr": "usage: finding-lint.mjs <packet.json> --verifier=ran|skipped [--json]\n",
+    "exit": 2
+  },
+  {
+    "argv": [
+      "node",
+      "/workspace/qore-skills-0.1.0/.agents/skills/qore-review/scripts/redact-for-verifier.mjs",
+      "/workspace/review-evidence/claims.json"
+    ],
+    "cwd": "/workspace/qore-skills-0.1.0",
+    "stdout": "{\n  \"findings\": []\n}\n",
+    "stderr": "redact-for-verifier: 0 claims; withheld fields: none.\n",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-v"
+    ],
+    "cwd": "/workspace/qore-skills-0.1.0",
+    "stdout": "",
+    "stderr": "test_builds_are_byte_identical_with_fixed_archive_metadata (test_package.PackageTests.test_builds_are_byte_identical_with_fixed_archive_metadata) ... ok\ntest_changed_or_missing_sources_block_only_affected_facts (test_package.PackageTests.test_changed_or_missing_sources_block_only_affected_facts) ... ok\ntest_current_profile_returns_scoped_facts_without_execution (test_package.PackageTests.test_current_profile_returns_scoped_facts_without_execution) ... ok\ntest_derive_copies_three_profiles_and_does_not_execute_commands (test_package.PackageTests.test_derive_copies_three_profiles_and_does_not_execute_commands) ... ok\ntest_escaping_runtime_reference_is_refused_even_when_target_exists (test_package.PackageTests.test_escaping_runtime_reference_is_refused_even_when_target_exists) ... ok\ntest_escaping_source_symlink_is_refused (test_package.PackageTests.test_escaping_source_symlink_is_refused) ... ok\ntest_existing_build_and_derivative_destinations_are_preserved (test_package.PackageTests.test_existing_build_and_derivative_destinations_are_preserved) ... ok\ntest_fact_references_must_name_a_declared_source (test_package.PackageTests.test_fact_references_must_name_a_declared_source) ... ok\ntest_install_refuses_symlinked_ancestor_without_external_writes (test_package.PackageTests.test_install_refuses_symlinked_ancestor_without_external_writes) ... ok\ntest_install_refuses_to_overwrite_a_modified_existing_skill (test_package.PackageTests.test_install_refuses_to_overwrite_a_modified_existing_skill) ... ok\ntest_manifest_path_prefix_collision_does_not_escape_bundle (test_package.PackageTests.test_manifest_path_prefix_collision_does_not_escape_bundle) ... ok\ntest_missing_and_stale_redistribution_reviews_are_refused (test_package.PackageTests.test_missing_and_stale_redistribution_reviews_are_refused) ... ok\ntest_missing_runtime_reference_prevents_build_without_partial_destination (test_package.PackageTests.test_missing_runtime_reference_prevents_build_without_partial_destination) ... ok\ntest_positive_package_has_exactly_three_closed_skills_and_https_citations (test_package.PackageTests.test_positive_package_has_exactly_three_closed_skills_and_https_citations) ... ok\ntest_release_allowlist_traversal_and_symlink_are_refused (test_package.PackageTests.test_release_allowlist_traversal_and_symlink_are_refused) ... ok\ntest_stale_context_is_partial_when_unrelated_current_facts_remain (test_package.PackageTests.test_stale_context_is_partial_when_unrelated_current_facts_remain) ... ok\ntest_stale_profile_cannot_be_derived_into_a_new_destination (test_package.PackageTests.test_stale_profile_cannot_be_derived_into_a_new_destination) ... ok\ntest_standalone_inventory_cannot_omit_repeat_or_upgrade_resources (test_package.PackageTests.test_standalone_inventory_cannot_omit_repeat_or_upgrade_resources) ... ok\ntest_unknown_or_unauthorized_redistribution_is_refused_with_resource (test_package.PackageTests.test_unknown_or_unauthorized_redistribution_is_refused_with_resource) ... ok\ntest_unknown_profile_major_and_source_path_traversal_are_refused (test_package.PackageTests.test_unknown_profile_major_and_source_path_traversal_are_refused) ... ok\ntest_verify_refuses_release_symlink (test_package.PackageTests.test_verify_refuses_release_symlink) ... ok\ntest_verify_rejects_altered_missing_and_unlisted_files (test_package.PackageTests.test_verify_rejects_altered_missing_and_unlisted_files) ... ok\ntest_verify_rejects_manifest_digest_changes_and_unknown_major (test_package.PackageTests.test_verify_rejects_manifest_digest_changes_and_unknown_major) ... ok\ntest_all_blocked_phases_report_blocked_coverage (test_run_contract.RunContractTests.test_all_blocked_phases_report_blocked_coverage) ... ok\ntest_all_five_planning_perspectives_require_distinct_contexts (test_run_contract.RunContractTests.test_all_five_planning_perspectives_require_distinct_contexts) ... ok\ntest_an_execution_artifact_cannot_prove_a_different_phase (test_run_contract.RunContractTests.test_an_execution_artifact_cannot_prove_a_different_phase) ... ok\ntest_artifact_byte_changes_cannot_keep_a_recorded_digest (test_run_contract.RunContractTests.test_artifact_byte_changes_cannot_keep_a_recorded_digest) ... ok\ntest_artifact_paths_cannot_escape_by_traversal_symlink_or_prefix (test_run_contract.RunContractTests.test_artifact_paths_cannot_escape_by_traversal_symlink_or_prefix) ... ok\ntest_copy_visual_and_perf_allow_explicit_supported_non_applicability (test_run_contract.RunContractTests.test_copy_visual_and_perf_allow_explicit_supported_non_applicability) ... ok\ntest_entry_state_and_full_scopes_require_real_transition_evidence (test_run_contract.RunContractTests.test_entry_state_and_full_scopes_require_real_transition_evidence) ... ok\ntest_execution_descriptor_cannot_name_another_candidate_or_target (test_run_contract.RunContractTests.test_execution_descriptor_cannot_name_another_candidate_or_target) ... ok\ntest_execution_header_must_match_the_recorded_identity (test_run_contract.RunContractTests.test_execution_header_must_match_the_recorded_identity) ... ok\ntest_finder_independence_is_required_even_when_verifier_is_skipped (test_run_contract.RunContractTests.test_finder_independence_is_required_even_when_verifier_is_skipped) ... ok\ntest_missing_or_skipped_required_phases_limit_coverage (test_run_contract.RunContractTests.test_missing_or_skipped_required_phases_limit_coverage) ... ok\ntest_named_finders_require_distinct_contexts (test_run_contract.RunContractTests.test_named_finders_require_distinct_contexts) ... ok\ntest_non_applicability_requires_explicit_scope_reason_and_artifact (test_run_contract.RunContractTests.test_non_applicability_requires_explicit_scope_reason_and_artifact) ... ok\ntest_old_source_or_presentation_artifacts_cannot_alone_prove_a_pass (test_run_contract.RunContractTests.test_old_source_or_presentation_artifacts_cannot_alone_prove_a_pass) ... ok\ntest_other_mandatory_method_phases_cannot_be_declared_non_applicable (test_run_contract.RunContractTests.test_other_mandatory_method_phases_cannot_be_declared_non_applicable) ... ok\ntest_pass_needs_declared_evidence_and_cannot_borrow_another_phase (test_run_contract.RunContractTests.test_pass_needs_declared_evidence_and_cannot_borrow_another_phase) ... ok\ntest_positive_complete_plan_review_and_ux_runs (test_run_contract.RunContractTests.test_positive_complete_plan_review_and_ux_runs) ... ok\ntest_profile_preflight_is_mandatory_for_profiled_runs (test_run_contract.RunContractTests.test_profile_preflight_is_mandatory_for_profiled_runs) ... ok\ntest_profiled_runs_require_a_profile_preflight_phase (test_run_contract.RunContractTests.test_profiled_runs_require_a_profile_preflight_phase) ... ok\ntest_proof_must_be_strictly_after_the_last_relevant_change (test_run_contract.RunContractTests.test_proof_must_be_strictly_after_the_last_relevant_change) ... ok\ntest_recorded_commands_require_typed_arguments_exit_status_and_artifact (test_run_contract.RunContractTests.test_recorded_commands_require_typed_arguments_exit_status_and_artifact) ... ok\ntest_required_phase_lists_cannot_omit_or_repeat_method_phases (test_run_contract.RunContractTests.test_required_phase_lists_cannot_omit_or_repeat_method_phases) ... ok\ntest_self_consistent_proof_from_another_candidate_or_target_is_refused (test_run_contract.RunContractTests.test_self_consistent_proof_from_another_candidate_or_target_is_refused) ... ok\ntest_timestamps_require_timezone_and_actual_parseable_values (test_run_contract.RunContractTests.test_timestamps_require_timezone_and_actual_parseable_values) ... ok\ntest_unknown_schema_major_and_method_are_refused (test_run_contract.RunContractTests.test_unknown_schema_major_and_method_are_refused) ... ok\ntest_verifier_must_be_independent_of_every_finder (test_run_contract.RunContractTests.test_verifier_must_be_independent_of_every_finder) ... ok\ntest_wrong_candidate_or_target_digest_formats_are_refused (test_run_contract.RunContractTests.test_wrong_candidate_or_target_digest_formats_are_refused) ... ok\ntest_all_required_skipped_never_ship (test_validators.ValidatorTests.test_all_required_skipped_never_ship) ... ok\ntest_blocking_findings_need_counterexample_and_checkable_evidence (test_validators.ValidatorTests.test_blocking_findings_need_counterexample_and_checkable_evidence) ... ok\ntest_depth_missing_files_unknown_depth_and_bad_shape (test_validators.ValidatorTests.test_depth_missing_files_unknown_depth_and_bad_shape) ... ok\ntest_depth_positive_source_families (test_validators.ValidatorTests.test_depth_positive_source_families) ... ok\ntest_depth_rejects_data_as_visual_and_render_as_none (test_validators.ValidatorTests.test_depth_rejects_data_as_visual_and_render_as_none) ... ok\ntest_duplicate_ids_and_non_object_findings_are_refused (test_validators.ValidatorTests.test_duplicate_ids_and_non_object_findings_are_refused) ... ok\ntest_each_scenario_requires_its_own_three_step_types (test_validators.ValidatorTests.test_each_scenario_requires_its_own_three_step_types) ... ok\ntest_empty_fence_cannot_borrow_steps_outside (test_validators.ValidatorTests.test_empty_fence_cannot_borrow_steps_outside) ... ok\ntest_empty_findings_is_a_valid_complete_packet (test_validators.ValidatorTests.test_empty_findings_is_a_valid_complete_packet) ... ok\ntest_empty_null_array_and_missing_envelope_are_refused (test_validators.ValidatorTests.test_empty_null_array_and_missing_envelope_are_refused) ... ok\ntest_fixes_invalidate_same_iteration_and_carried_scores (test_validators.ValidatorTests.test_fixes_invalidate_same_iteration_and_carried_scores) ... ok\ntest_infra_blockage_affects_coverage_without_failing_observed_gates (test_validators.ValidatorTests.test_infra_blockage_affects_coverage_without_failing_observed_gates) ... ok\ntest_justified_non_applicability_is_distinct_from_tool_absence (test_validators.ValidatorTests.test_justified_non_applicability_is_distinct_from_tool_absence) ... ok\ntest_measurements_and_source_identifiers_remain_accepted (test_validators.ValidatorTests.test_measurements_and_source_identifiers_remain_accepted) ... ok\ntest_missing_required_gate_is_not_treated_as_pass (test_validators.ValidatorTests.test_missing_required_gate_is_not_treated_as_pass) ... ok\ntest_missing_verifier_never_proves_or_refutes (test_validators.ValidatorTests.test_missing_verifier_never_proves_or_refutes) ... ok\ntest_optional_coverage_fields_do_not_silently_coerce_bad_types (test_validators.ValidatorTests.test_optional_coverage_fields_do_not_silently_coerce_bad_types) ... ok\ntest_positive_review_retains_refutations_and_blocks_confirmed_high (test_validators.ValidatorTests.test_positive_review_retains_refutations_and_blocks_confirmed_high) ... ok\ntest_positive_spec (test_validators.ValidatorTests.test_positive_spec) ... ok\ntest_positive_ux (test_validators.ValidatorTests.test_positive_ux) ... ok\ntest_redactor_allowlist_drops_unanticipated_rationale (test_validators.ValidatorTests.test_redactor_allowlist_drops_unanticipated_rationale) ... ok\ntest_redactor_refuses_bad_envelope_and_nested_allowed_field (test_validators.ValidatorTests.test_redactor_refuses_bad_envelope_and_nested_allowed_field) ... ok\ntest_required_skipped_gate_prevents_ship_despite_passing_score (test_validators.ValidatorTests.test_required_skipped_gate_prevents_ship_despite_passing_score) ... ok\ntest_route_reachability_applies_to_modern_app_and_root_paths (test_validators.ValidatorTests.test_route_reachability_applies_to_modern_app_and_root_paths) ... ok\ntest_sixth_fresh_pass_can_ship_but_seventh_cannot (test_validators.ValidatorTests.test_sixth_fresh_pass_can_ship_but_seventh_cannot) ... ok\ntest_skipped_verifier_preserves_high_and_critical_severity (test_validators.ValidatorTests.test_skipped_verifier_preserves_high_and_critical_severity) ... ok\ntest_spec_duplicate_ids_and_orphan_coverage_fail (test_validators.ValidatorTests.test_spec_duplicate_ids_and_orphan_coverage_fail) ... ok\ntest_spec_requires_coverage_and_fenced_sequence (test_validators.ValidatorTests.test_spec_requires_coverage_and_fenced_sequence) ... ok\ntest_spec_supports_named_scenarios_and_bold_coverage (test_validators.ValidatorTests.test_spec_supports_named_scenarios_and_bold_coverage) ... ok\ntest_spec_version_must_be_first_and_known (test_validators.ValidatorTests.test_spec_version_must_be_first_and_known) ... ok\ntest_truncated_json_is_not_an_empty_review (test_validators.ValidatorTests.test_truncated_json_is_not_an_empty_review) ... ok\ntest_unknown_verdict_and_severity_are_refused (test_validators.ValidatorTests.test_unknown_verdict_and_severity_are_refused) ... ok\ntest_ux_rejects_invalid_scores_iteration_order_and_unmeasured_change (test_validators.ValidatorTests.test_ux_rejects_invalid_scores_iteration_order_and_unmeasured_change) ... ok\ntest_verifier_declaration_requires_the_entire_exact_value (test_validators.ValidatorTests.test_verifier_declaration_requires_the_entire_exact_value) ... ok\ntest_zero_gate_cannot_extend_six_iteration_budget (test_validators.ValidatorTests.test_zero_gate_cannot_extend_six_iteration_budget) ... ok\n\n----------------------------------------------------------------------\nRan 85 tests in 1.938s\n\nOK\n",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "node",
+      "/workspace/qore-skills-0.1.0/skills/qore-review/scripts/finding-lint.mjs",
+      "/workspace/review-evidence/verified.json",
+      "--verifier=ran",
+      "--json"
+    ],
+    "cwd": "/workspace/qore-skills-0.1.0",
+    "stdout": "{\n  \"valid\": true,\n  \"coverage\": \"COMPLETE\",\n  \"verdict\": \"SHIP\",\n  \"verifier\": \"ran\",\n  \"total\": 0,\n  \"counts\": {\n    \"CONFIRMED\": 0,\n    \"PLAUSIBLE\": 0,\n    \"REFUTED\": 0\n  },\n  \"blocking_findings\": [],\n  \"findings\": [],\n  \"problems\": [],\n  \"limit\": \"The verifier flag records an execution declaration; validate actual independent phase evidence separately.\"\n}\n",
+    "stderr": "",
+    "exit": 0
+  }
+]

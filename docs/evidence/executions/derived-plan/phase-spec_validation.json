@@ -1,0 +1,29 @@
+{
+  "qore_evidence": {
+    "candidate_sha256": "19f48167f040ca42c60b0df49a324c6d3aeb3de3014486017668f1263ccd6b35",
+    "target_snapshot_sha256": "dec34e19b7b3036c213299a1f98b05fec1709212fb156eabf9928682024ae2cb",
+    "observed_at": "2026-10-15T20:12:33.003982+00:00",
+    "phase_id": "spec_validation"
+  },
+  "payload": {
+    "argv": [
+      "bash",
+      "scripts/spec-lint.sh",
+      "<PRIVATE_EVIDENCE_ROOT>/proposed-spec.md"
+    ],
+    "cwd": "<DERIVED_CANDIDATE>/qore-plan-qore",
+    "exit_code": 0,
+    "stdout": "spec-lint: valid qore-spec/1 (9 scenarios).\n",
+    "stderr": "",
+    "observed_at": "2026-10-15T20:12:33.003982+00:00",
+    "spec_sha256": "adb21983bd316eebe43bcd96aa442c3bafe143f5bcdf26bc2c167a285f33e546"
+  },
+  "public_transformation": {
+    "public_artifact_id": "public-derived-plan-20261015-01:phase-spec_validation",
+    "source_artifact_id": "qore-private:executions/derived-plan/phase-spec_validation.json",
+    "source_sha256": "9f2aa98ce172234c47995bc940595a338c8fa5a4a96bfab519ac25b31465c071",
+    "exported_at": "2026-10-15T20:17:52.021153+00:00",
+    "original_observation_time_preserved": true,
+    "notice": "Sanitized derivative of actual phase reports; export is not a new execution."
+  }
+}

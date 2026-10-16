@@ -1,0 +1,42 @@
+{
+  "schema": "qore-focused-ux-contrast/1",
+  "instruction_resource_snapshot_sha256": "550e45ab0a07a641f8ec6d3cba5677e97a8e5fd86053631a1e75c90a8f8c52d0",
+  "identity_kind": "Final frozen instruction-resource snapshot, not an archive",
+  "operator_input_excludes_profile_facts": true,
+  "rows": [
+    {
+      "status": "COMPLETE_FOCUSED_PROFILE_PROBE",
+      "method_coverage": "Not a full derivative UX audit; this focused check demonstrates current profile facts affecting actual route and state behavior.",
+      "profile": {
+        "id": "qore",
+        "version": "0.1.0",
+        "sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9"
+      },
+      "actual_url": "http://127.0.0.1:8765/index.html",
+      "required_state_observed": "Resolved synthetic state.",
+      "target_kind": "fixture",
+      "driver_status": "COMPLETE",
+      "live_profile_fact_used": true,
+      "neighboring_profile_facts_used": false,
+      "completed_at": "2026-10-15T20:17:57.047699+00:00"
+    },
+    {
+      "status": "COMPLETE_FOCUSED_PROFILE_PROBE",
+      "method_coverage": "Not a full derivative UX audit; this focused check demonstrates current profile facts affecting actual route and state behavior.",
+      "profile": {
+        "id": "qore-contrast",
+        "version": "0.1.0",
+        "sha256": "f72394c2ebb80cb6da41b33a088d56fbd24b4577f71bc2b022d0ef4bb36bfb88"
+      },
+      "actual_url": "http://127.0.0.1:8765/alternate.html",
+      "required_state_observed": "Alternate resolved synthetic state.",
+      "target_kind": "fixture",
+      "driver_status": "COMPLETE",
+      "live_profile_fact_used": true,
+      "neighboring_profile_facts_used": false,
+      "completed_at": "2026-10-15T20:17:58.129181+00:00"
+    }
+  ],
+  "effect": "Fresh final profiles selected different actual routes and exact resolved-state assertions, without neighboring facts.",
+  "coverage": "COMPLETE focused probes; not full derivative UX audits."
+}

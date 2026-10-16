@@ -1,0 +1,630 @@
+{
+  "schema": "qore-public-transformation/1",
+  "public_id": "public-generic-plan-20261015-01",
+  "original_private_run_id": "generic-plan-frozen-b-20261015",
+  "exported_at": "2026-10-15T20:17:52.021153+00:00",
+  "original_candidate_archive_sha256": "2963c43e98803354932e406627d9e239064fbe2899745a7e093b7d4154fa56d1",
+  "run_candidate_sha256": "2963c43e98803354932e406627d9e239064fbe2899745a7e093b7d4154fa56d1",
+  "target_snapshot_sha256": "dec34e19b7b3036c213299a1f98b05fec1709212fb156eabf9928682024ae2cb",
+  "identity_rule": "New public artifact identity; original candidate, target, profile and observation times preserved. No later candidate qualification or renewed execution is inferred.",
+  "operator": "Original planning lead exported the records; independent evaluator identity and limits are retained separately.",
+  "logical_placeholders": {
+    "<CANDIDATE_B>": "Frozen extracted candidate b root.",
+    "<CANDIDATE_B_ARCHIVE>": "Original b archive.",
+    "<DERIVED_CANDIDATE>": "Freshly assembled derived root identified by its manifest.",
+    "<PRIVATE_EVIDENCE_ROOT>": "Private original run evidence directory.",
+    "<PRIVATE_EVALUATIONS>": "Private combined evaluation root.",
+    "<TEMPORARY_INPUT>": "Temporary probe input path, including nonexistent-path controls.",
+    "<REDACTED_LOCAL_PATH>": "Other local runtime/evidence prefix."
+  },
+  "commands_notice": "Substituted display argv were not literally executed. Raw outputs and digests remain preserved; observations are not renewed by export.",
+  "artifacts": [
+    {
+      "public_file": "adjudication.json",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-private:executions/generic-plan/adjudication.json",
+          "sha256": "8c38fdf6fb48bfa34c1305d98939cc5e45aa9d71e7b6834e31a177cc934da27a"
+        }
+      ],
+      "transformation": "Local filesystem prefixes replaced with disclosed logical placeholders; actual observations and times retained.",
+      "public_sha256": "8c38fdf6fb48bfa34c1305d98939cc5e45aa9d71e7b6834e31a177cc934da27a"
+    },
+    {
+      "public_file": "architecture-analysis.md",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-private:executions/generic-plan/architecture-analysis.md",
+          "sha256": "1b5c6bee1687c46c76fd74363c1e4c0bf39fbef90b46171f5d2576aa663444d0"
+        }
+      ],
+      "transformation": "Local filesystem prefixes replaced with disclosed logical placeholders; actual observations and times retained.",
+      "public_sha256": "ba83fc26af6e083f90991b18c45a7380307ffa899da0287d431702155c79d822"
+    },
+    {
+      "public_file": "architecture-cross.md",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-private:executions/generic-plan/architecture-cross.md",
+          "sha256": "b2e31cd2c265ad358eeb3df45131f904c1aa7c40796702403ca1d70967395872"
+        }
+      ],
+      "transformation": "Local filesystem prefixes replaced with disclosed logical placeholders; actual observations and times retained.",
+      "public_sha256": "b2e31cd2c265ad358eeb3df45131f904c1aa7c40796702403ca1d70967395872"
+    },
+    {
+      "public_file": "baseline-tests.json",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-private:executions/generic-plan/baseline-tests.json",
+          "sha256": "c268beaadf30380ec201bff090d22ac5410473f715a4610ac5c3d4ddc30bbcca"
+        }
+      ],
+      "transformation": "Local filesystem prefixes replaced with disclosed logical placeholders; actual observations and times retained.",
+      "public_sha256": "98d2cff77b53882ab3260267328a2bcd7cca8eac5056db1b73564290a27d1e35"
+    },
+    {
+      "public_file": "candidate-identity.json",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-private:executions/generic-plan/candidate-identity.json",
+          "sha256": "8193583f52f02c24c737916775ff8d92f8bc18435d7bdc335fe9f7c8d28108b6"
+        }
+      ],
+      "transformation": "Local filesystem prefixes replaced with disclosed logical placeholders; actual observations and times retained.",
+      "public_sha256": "e7ff963751757ca3f0d6d78bef39e2f8f23693b172650fac04e6a99671bfab68"
+    },
+    {
+      "public_file": "delivery-analysis.md",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-private:executions/generic-plan/delivery-analysis.md",
+          "sha256": "d1224b77c81af7f77cda392a24f76c324f09906872790c6e025954dabe89354e"
+        }
+      ],
+      "transformation": "Local filesystem prefixes replaced with disclosed logical placeholders; actual observations and times retained.",
+      "public_sha256": "e6b96ea108ded0a049b3d791485428b748e8c6fd843771e350a78808067f3bcc"
+    },
+    {
+      "public_file": "delivery-commands.json",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-private:executions/generic-plan/delivery-commands.json",
+          "sha256": "50c2c7b151d94c62d89d06ecb35a49b9e19c40d7c04d5914028d161a7b29491c"
+        }
+      ],
+      "transformation": "Local filesystem prefixes replaced with disclosed logical placeholders; actual observations and times retained.",
+      "public_sha256": "12fcf04e5256687b1c5137210b9b5b2a94781f46f951deabafc5b780ac13a34f"
+    },
+    {
+      "public_file": "delivery-cross.md",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-private:executions/generic-plan/delivery-cross.md",
+          "sha256": "91bdd0aad44355a59b275329b3d8a3696ac6f09195246661fa43e6b9c3f22055"
+        }
+      ],
+      "transformation": "Local filesystem prefixes replaced with disclosed logical placeholders; actual observations and times retained.",
+      "public_sha256": "91bdd0aad44355a59b275329b3d8a3696ac6f09195246661fa43e6b9c3f22055"
+    },
+    {
+      "public_file": "execution.json",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-private:executions/generic-plan/execution.json",
+          "sha256": "be1cad3180d186e58c2e604650325983fbd9de7b38c277a8c93ba144cd57c44c"
+        }
+      ],
+      "transformation": "Local filesystem prefixes replaced with disclosed logical placeholders; actual observations and times retained.",
+      "public_sha256": "79405c3ec75fb1ce144758859d0b8acb4a9f7fa6753f8cde5a292efd3c90598f"
+    },
+    {
+      "public_file": "independent-evaluation.json",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-private:executions/generic-plan/independent-evaluation.json",
+          "sha256": "e47b10d7a3c596ef66725d8c17784bdf40b895415d728e96ceb4fd6f327f9886"
+        }
+      ],
+      "transformation": "Local filesystem prefixes replaced with disclosed logical placeholders; actual observations and times retained.",
+      "public_sha256": "6f61ad51627b19dceb96636a830533c2738274af70140fdb45a4a617f4a7b625"
+    },
+    {
+      "public_file": "intake.json",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-private:executions/generic-plan/intake.json",
+          "sha256": "cdd9db54d9ba0bb73751142eb827bb1193e1bc4087dcc9c29db5ab01c643a84c"
+        }
+      ],
+      "transformation": "Local filesystem prefixes replaced with disclosed logical placeholders; actual observations and times retained.",
+      "public_sha256": "d3b09d3928cf45a8e38b18c86266cd51e83123d9ca566afbb5b0d0b664356532"
+    },
+    {
+      "public_file": "integrity.json",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-private:executions/generic-plan/integrity.json",
+          "sha256": "0eece88f8d5b4b6ad0c34dea2c3ffd51cccc39e561e53ea1af766c94a71c0175"
+        }
+      ],
+      "transformation": "Local filesystem prefixes replaced with disclosed logical placeholders; actual observations and times retained.",
+      "public_sha256": "5be22d231fc0c6efd574a9def9e98f044f6c44065de898f89491254e1c9b7bdf"
+    },
+    {
+      "public_file": "phase-adjudication.json",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-private:executions/generic-plan/phase-adjudication.json",
+          "sha256": "953857f4184b37547e8234b1f0e8adcbd1bdc1f802556917abe89fe8c8a77ad2"
+        }
+      ],
+      "transformation": "Local filesystem prefixes replaced with disclosed logical placeholders; actual observations and times retained.",
+      "public_sha256": "dce0316dc1947db7bbc88eed43cabf5be65477c4ab449b07f4971003ac37abde"
+    },
+    {
+      "public_file": "phase-architecture.json",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-private:executions/generic-plan/phase-architecture.json",
+          "sha256": "9e200ee802ca945d4cbdd7f5992410c2b9a77addad21ec4322a8cdb99369ae5f"
+        }
+      ],
+      "transformation": "Local filesystem prefixes replaced with disclosed logical placeholders; actual observations and times retained.",
+      "public_sha256": "31f7463dd814fa8d2dc87ec1bcd90fe84f56aa220d1e90926d4907148745d22c"
+    },
+    {
+      "public_file": "phase-delivery.json",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-private:executions/generic-plan/phase-delivery.json",
+          "sha256": "714faf414d054eb9ee3881634a44c6fd18fc55caf78848d7f1c5f06d4cdda8ce"
+        }
+      ],
+      "transformation": "Local filesystem prefixes replaced with disclosed logical placeholders; actual observations and times retained.",
+      "public_sha256": "89a673a5d217b413b9b5e5dd6b1955a3edf68479e230258ad6981c2c479da7f2"
+    },
+    {
+      "public_file": "phase-product.json",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-private:executions/generic-plan/phase-product.json",
+          "sha256": "9e7f8057f3f6e8180a62a94d3344a84118342f4bcd9b518a3caf13dcac802b91"
+        }
+      ],
+      "transformation": "Local filesystem prefixes replaced with disclosed logical placeholders; actual observations and times retained.",
+      "public_sha256": "bd48b1a0ba4de740b38e63899286b7f0cde084385d2632ade0c851883149694d"
+    },
+    {
+      "public_file": "phase-qa.json",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-private:executions/generic-plan/phase-qa.json",
+          "sha256": "bbb15f9ca3d677ea96625414583cf6d62a1f28cc360228f7d37c20cd02d9c510"
+        }
+      ],
+      "transformation": "Local filesystem prefixes replaced with disclosed logical placeholders; actual observations and times retained.",
+      "public_sha256": "ffeba394eff94def562618ebf1ead6bca169dcdeff8ad381131017a408c3cd97"
+    },
+    {
+      "public_file": "phase-spec_validation.json",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-private:executions/generic-plan/phase-spec_validation.json",
+          "sha256": "b966c78cd3afa596fa670dc39e8e610077cfe60ab48ff4c09a4d30877c55be95"
+        }
+      ],
+      "transformation": "Local filesystem prefixes replaced with disclosed logical placeholders; actual observations and times retained.",
+      "public_sha256": "daee437eb3f37b81f7ba9a0d5579b6be8c6687697b1e4b91fb47f6d5c018b1d7"
+    },
+    {
+      "public_file": "phase-ux.json",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-private:executions/generic-plan/phase-ux.json",
+          "sha256": "8f2fd5864421dbf781bfece972a975b934ddc6b548543ef38d4454ea08a7a69e"
+        }
+      ],
+      "transformation": "Local filesystem prefixes replaced with disclosed logical placeholders; actual observations and times retained.",
+      "public_sha256": "f040f088927ab299e7a93b648f7dcb769948713416e3251da027ba7f7a067ce3"
+    },
+    {
+      "public_file": "product-analysis.md",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-private:executions/generic-plan/product-analysis.md",
+          "sha256": "25b054ca14d31ba9981eeeac8849ad2b7fbff6c49612e4c8675dc48581214d78"
+        }
+      ],
+      "transformation": "Local filesystem prefixes replaced with disclosed logical placeholders; actual observations and times retained.",
+      "public_sha256": "aea629e0c211b9b9b5a22bce268368e8947b9736c0d48b8a3607d1c9ece2e507"
+    },
+    {
+      "public_file": "product-cross.md",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-private:executions/generic-plan/product-cross.md",
+          "sha256": "e69e63a5d6f32acfbc330ad0d50583fedfbd27bd4914b3c8242df65c401643de"
+        }
+      ],
+      "transformation": "Local filesystem prefixes replaced with disclosed logical placeholders; actual observations and times retained.",
+      "public_sha256": "e69e63a5d6f32acfbc330ad0d50583fedfbd27bd4914b3c8242df65c401643de"
+    },
+    {
+      "public_file": "proposed-spec.md",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-private:executions/generic-plan/proposed-spec.md",
+          "sha256": "26701f8c71dcbdf85e3ab787e870360763070b726ce24069b706d10831c834d6"
+        }
+      ],
+      "transformation": "Local filesystem prefixes replaced with disclosed logical placeholders; actual observations and times retained.",
+      "public_sha256": "26701f8c71dcbdf85e3ab787e870360763070b726ce24069b706d10831c834d6"
+    },
+    {
+      "public_file": "qa-analysis.md",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-private:executions/generic-plan/qa-analysis.md",
+          "sha256": "e166b73a0a2eb6f20ec3fc34375254c504bd4c112837e1313ded40554181be92"
+        }
+      ],
+      "transformation": "Local filesystem prefixes replaced with disclosed logical placeholders; actual observations and times retained.",
+      "public_sha256": "bba54cd3c8fe5b1701bcee885fab3579bf446536a522e621344c2a113e723de7"
+    },
+    {
+      "public_file": "qa-commands.json",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-private:executions/generic-plan/qa-commands.json",
+          "sha256": "5a7a508bdbfbbdf155380d44238c5868f44f84e66396ac49f5a7b671d65a6c84"
+        }
+      ],
+      "transformation": "Local filesystem prefixes replaced with disclosed logical placeholders; actual observations and times retained.",
+      "public_sha256": "0cd4c55a4d7b9e977df72f468519913751882dc0cc137988a1bb40a68bd6f2af"
+    },
+    {
+      "public_file": "qa-cross.md",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-private:executions/generic-plan/qa-cross.md",
+          "sha256": "5de3c83d4d72315d0cca475d5b229fa824cd49cb112184484cce3615556f9a5d"
+        }
+      ],
+      "transformation": "Local filesystem prefixes replaced with disclosed logical placeholders; actual observations and times retained.",
+      "public_sha256": "5de3c83d4d72315d0cca475d5b229fa824cd49cb112184484cce3615556f9a5d"
+    },
+    {
+      "public_file": "roster.json",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-private:executions/generic-plan/roster.json",
+          "sha256": "15dea994c234df4d08e239513f41081aadd278e1ebe04d3d64445d0b07d66bbc"
+        }
+      ],
+      "transformation": "Local filesystem prefixes replaced with disclosed logical placeholders; actual observations and times retained.",
+      "public_sha256": "15dea994c234df4d08e239513f41081aadd278e1ebe04d3d64445d0b07d66bbc"
+    },
+    {
+      "public_file": "run-validation.json",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-private:executions/generic-plan/run-validation.json",
+          "sha256": "9f1e579a5a5fad136e736bc1c346ddc00ae40669e57c1e19e4ff544249a58662"
+        }
+      ],
+      "transformation": "Local filesystem prefixes replaced with disclosed logical placeholders; actual observations and times retained.",
+      "public_sha256": "0e900ac82ac15c48cc0dacadfbe92a91ab265381c86da32bf4b9ff4924254666"
+    },
+    {
+      "public_file": "spec-validation.json",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-private:executions/generic-plan/spec-validation.json",
+          "sha256": "bd37c2917aa84ed1fab976fb44ff2dc762b357c20532af692080fa127847f0fc"
+        }
+      ],
+      "transformation": "Local filesystem prefixes replaced with disclosed logical placeholders; actual observations and times retained.",
+      "public_sha256": "b94a308c9fd8d3771ff3d6981bd024ed7801034fe4b947ca5614c5ebbc20704b"
+    },
+    {
+      "public_file": "target-snapshot.json",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-private:executions/generic-plan/target-snapshot.json",
+          "sha256": "931304db1f97fead59d86063ac2647af7322a08d11aa0904642748ff67aa1026"
+        }
+      ],
+      "transformation": "Local filesystem prefixes replaced with disclosed logical placeholders; actual observations and times retained.",
+      "public_sha256": "552986802070ec3ce8ebbb1d257b652ac0542dc5610c00a79437d4c91f5f8537"
+    },
+    {
+      "public_file": "ux-analysis.md",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-private:executions/generic-plan/ux-analysis.md",
+          "sha256": "5e65d8e10df0880c40b7c6ac4aef4afa3b6afae67b59854634b8334ad8d2bc49"
+        }
+      ],
+      "transformation": "Local filesystem prefixes replaced with disclosed logical placeholders; actual observations and times retained.",
+      "public_sha256": "ca459018b10da480dd42843bf19bffd932216080bc8afc2fe98f15a0efb28db0"
+    },
+    {
+      "public_file": "ux-commands.json",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-private:executions/generic-plan/ux-commands.json",
+          "sha256": "0a19a2aeff837b1f4707e0e78562e85ccb6000935be0ca2a2f2dca0f16ccc99d"
+        }
+      ],
+      "transformation": "Local filesystem prefixes replaced with disclosed logical placeholders; actual observations and times retained.",
+      "public_sha256": "0a338cd71e42246214789abd752c0e37b50d2cdaa794872ce147a3e814b0cf62"
+    },
+    {
+      "public_file": "ux-cross.md",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-private:executions/generic-plan/ux-cross.md",
+          "sha256": "2d63c5795d9fff4c61aeeded684aac574988285143a0e86fdd8fb567df5c7b94"
+        }
+      ],
+      "transformation": "Local filesystem prefixes replaced with disclosed logical placeholders; actual observations and times retained.",
+      "public_sha256": "2d63c5795d9fff4c61aeeded684aac574988285143a0e86fdd8fb567df5c7b94"
+    },
+    {
+      "public_file": "independent-evaluation.md",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-private:executions/plan-independent-evaluation.md",
+          "sha256": "7dc24d78f8cd80655ba368bb17b59a6f61924b1fff39e321a0e2e4391e9e7440"
+        }
+      ],
+      "transformation": "Local filesystem prefixes replaced with disclosed logical placeholders; actual observations and times retained.",
+      "public_sha256": "7dc24d78f8cd80655ba368bb17b59a6f61924b1fff39e321a0e2e4391e9e7440"
+    },
+    {
+      "public_file": "source/examples/validator-hardening.md.txt",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-candidate-b:examples/validator-hardening.md",
+          "sha256": "6f25b2edcd6d0826b12fbb47a99fc4162a1089eef71eaf7f16ea2cb7a8239a87"
+        }
+      ],
+      "transformation": "Unchanged first-party frozen source bytes; .txt marks source evidence rather than an executable installation.",
+      "public_sha256": "6f25b2edcd6d0826b12fbb47a99fc4162a1089eef71eaf7f16ea2cb7a8239a87"
+    },
+    {
+      "public_file": "source/qore.json.txt",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-candidate-b:qore.json",
+          "sha256": "948b2784fa7970cf90a25c338a29067b13d8b4476f666d712a5eb95fc6f641c8"
+        }
+      ],
+      "transformation": "Unchanged first-party frozen source bytes; .txt marks source evidence rather than an executable installation.",
+      "public_sha256": "948b2784fa7970cf90a25c338a29067b13d8b4476f666d712a5eb95fc6f641c8"
+    },
+    {
+      "public_file": "source/profiles/qore.json.txt",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-candidate-b:profiles/qore.json",
+          "sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9"
+        }
+      ],
+      "transformation": "Unchanged first-party frozen source bytes; .txt marks source evidence rather than an executable installation.",
+      "public_sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9"
+    },
+    {
+      "public_file": "source/skills/qore-review/scripts/finding-lint.mjs.txt",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-candidate-b:skills/qore-review/scripts/finding-lint.mjs",
+          "sha256": "d0cc6809b750d9e52015b0448f18e3f291b979674b1350156d2444e607791ee7"
+        }
+      ],
+      "transformation": "Unchanged first-party frozen source bytes; .txt marks source evidence rather than an executable installation.",
+      "public_sha256": "d0cc6809b750d9e52015b0448f18e3f291b979674b1350156d2444e607791ee7"
+    },
+    {
+      "public_file": "source/skills/qore-review/scripts/redact-for-verifier.mjs.txt",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-candidate-b:skills/qore-review/scripts/redact-for-verifier.mjs",
+          "sha256": "dc249524c749ad5b511aef0a2cf08b4cfd5c47c1e0de4fd41c5c70746b471083"
+        }
+      ],
+      "transformation": "Unchanged first-party frozen source bytes; .txt marks source evidence rather than an executable installation.",
+      "public_sha256": "dc249524c749ad5b511aef0a2cf08b4cfd5c47c1e0de4fd41c5c70746b471083"
+    },
+    {
+      "public_file": "source/tests/test_validators.py.txt",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-candidate-b:tests/test_validators.py",
+          "sha256": "b91ab5195a1e7380747c618a17f885b56dc1cddf809ff23e065c3062fc477f39"
+        }
+      ],
+      "transformation": "Unchanged first-party frozen source bytes; .txt marks source evidence rather than an executable installation.",
+      "public_sha256": "b91ab5195a1e7380747c618a17f885b56dc1cddf809ff23e065c3062fc477f39"
+    },
+    {
+      "public_file": "source/tests/test_package.py.txt",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-candidate-b:tests/test_package.py",
+          "sha256": "7e94e9a81f4b6e6b7f14d4f2432cc066b9b9b180afa4b96eb1c58c2d4957ed74"
+        }
+      ],
+      "transformation": "Unchanged first-party frozen source bytes; .txt marks source evidence rather than an executable installation.",
+      "public_sha256": "7e94e9a81f4b6e6b7f14d4f2432cc066b9b9b180afa4b96eb1c58c2d4957ed74"
+    },
+    {
+      "public_file": "source/tools/qore.py.txt",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-candidate-b:tools/qore.py",
+          "sha256": "931f5303a6594cb6a1eb7fa474fad3ac311ac9bb4cde2506abf6d06bc3ff6ff7"
+        }
+      ],
+      "transformation": "Unchanged first-party frozen source bytes; .txt marks source evidence rather than an executable installation.",
+      "public_sha256": "931f5303a6594cb6a1eb7fa474fad3ac311ac9bb4cde2506abf6d06bc3ff6ff7"
+    },
+    {
+      "public_file": "source/tools/context.py.txt",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-candidate-b:tools/context.py",
+          "sha256": "3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd"
+        }
+      ],
+      "transformation": "Unchanged first-party frozen source bytes; .txt marks source evidence rather than an executable installation.",
+      "public_sha256": "3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd"
+    },
+    {
+      "public_file": "source/tools/run_contract.py.txt",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-candidate-b:tools/run_contract.py",
+          "sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa"
+        }
+      ],
+      "transformation": "Unchanged first-party frozen source bytes; .txt marks source evidence rather than an executable installation.",
+      "public_sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa"
+    },
+    {
+      "public_file": "source/skills/qore-review/SKILL.md.txt",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-candidate-b:skills/qore-review/SKILL.md",
+          "sha256": "aae83b4105dd89387c7eac31df3c789326def9c0b05dccd4a3d2cdab65732a97"
+        }
+      ],
+      "transformation": "Unchanged first-party frozen source bytes; .txt marks source evidence rather than an executable installation.",
+      "public_sha256": "aae83b4105dd89387c7eac31df3c789326def9c0b05dccd4a3d2cdab65732a97"
+    },
+    {
+      "public_file": "source/skills/qore-review/references/findings.md.txt",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-candidate-b:skills/qore-review/references/findings.md",
+          "sha256": "79b2b5f52e88761331c01b92af9b492ef1888c6c20a0af1b94a8bead7aa2d6cb"
+        }
+      ],
+      "transformation": "Unchanged first-party frozen source bytes; .txt marks source evidence rather than an executable installation.",
+      "public_sha256": "79b2b5f52e88761331c01b92af9b492ef1888c6c20a0af1b94a8bead7aa2d6cb"
+    },
+    {
+      "public_file": "source/skills/qore-review/references/protocol.md.txt",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-candidate-b:skills/qore-review/references/protocol.md",
+          "sha256": "e27e0050fdf4d75d2840dd257b9a759f1f48d459ef540990cd3aed5528c5f340"
+        }
+      ],
+      "transformation": "Unchanged first-party frozen source bytes; .txt marks source evidence rather than an executable installation.",
+      "public_sha256": "e27e0050fdf4d75d2840dd257b9a759f1f48d459ef540990cd3aed5528c5f340"
+    },
+    {
+      "public_file": "source/skills/qore-review/references/run-evidence.md.txt",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-candidate-b:skills/qore-review/references/run-evidence.md",
+          "sha256": "fbdf433ef8b3e972f97bed5fdec4990cf3b49535bf63120c729a7daf4af71746"
+        }
+      ],
+      "transformation": "Unchanged first-party frozen source bytes; .txt marks source evidence rather than an executable installation.",
+      "public_sha256": "fbdf433ef8b3e972f97bed5fdec4990cf3b49535bf63120c729a7daf4af71746"
+    },
+    {
+      "public_file": "source/skills/qore-plan/SKILL.md.txt",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-candidate-b:skills/qore-plan/SKILL.md",
+          "sha256": "6a0b7a03d888595e6b9e76bc16644a313a187df91622fd5245d4b2253bdf83da"
+        }
+      ],
+      "transformation": "Unchanged first-party frozen source bytes; .txt marks source evidence rather than an executable installation.",
+      "public_sha256": "6a0b7a03d888595e6b9e76bc16644a313a187df91622fd5245d4b2253bdf83da"
+    },
+    {
+      "public_file": "source/skills/qore-plan/references/project-profile.md.txt",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-candidate-b:skills/qore-plan/references/project-profile.md",
+          "sha256": "16c5ff087c83b7503b23d5d94726834462dd4fd73d78a5380cf85135fa85b0b3"
+        }
+      ],
+      "transformation": "Unchanged first-party frozen source bytes; .txt marks source evidence rather than an executable installation.",
+      "public_sha256": "16c5ff087c83b7503b23d5d94726834462dd4fd73d78a5380cf85135fa85b0b3"
+    },
+    {
+      "public_file": "source/skills/qore-plan/references/protocol.md.txt",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-candidate-b:skills/qore-plan/references/protocol.md",
+          "sha256": "83f92490a5601b83fc6eaa21861344e35cd04a3ac7edb56b98cd2eb0ecfea84b"
+        }
+      ],
+      "transformation": "Unchanged first-party frozen source bytes; .txt marks source evidence rather than an executable installation.",
+      "public_sha256": "83f92490a5601b83fc6eaa21861344e35cd04a3ac7edb56b98cd2eb0ecfea84b"
+    },
+    {
+      "public_file": "source/skills/qore-plan/references/roles.md.txt",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-candidate-b:skills/qore-plan/references/roles.md",
+          "sha256": "cc8060c7c852c143b9671af4fc0176b9c5068f338c19b2556b6ff494c0f0d318"
+        }
+      ],
+      "transformation": "Unchanged first-party frozen source bytes; .txt marks source evidence rather than an executable installation.",
+      "public_sha256": "cc8060c7c852c143b9671af4fc0176b9c5068f338c19b2556b6ff494c0f0d318"
+    },
+    {
+      "public_file": "source/skills/qore-plan/references/run-evidence.md.txt",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-candidate-b:skills/qore-plan/references/run-evidence.md",
+          "sha256": "35cd6dc6d3e1177bbae96e5b9e829ed1aa55901747c856f4db20e946421f163d"
+        }
+      ],
+      "transformation": "Unchanged first-party frozen source bytes; .txt marks source evidence rather than an executable installation.",
+      "public_sha256": "35cd6dc6d3e1177bbae96e5b9e829ed1aa55901747c856f4db20e946421f163d"
+    },
+    {
+      "public_file": "source/skills/qore-plan/references/specification.md.txt",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-candidate-b:skills/qore-plan/references/specification.md",
+          "sha256": "7eb06b91fca66a3ec00bda4b49b035c5e6bfe827c4624768f66a09b6ae7827a1"
+        }
+      ],
+      "transformation": "Unchanged first-party frozen source bytes; .txt marks source evidence rather than an executable installation.",
+      "public_sha256": "7eb06b91fca66a3ec00bda4b49b035c5e6bfe827c4624768f66a09b6ae7827a1"
+    },
+    {
+      "public_file": "source-manifest.json",
+      "raw_sources": [],
+      "transformation": "New index of unchanged selected frozen source bytes.",
+      "public_sha256": "47a1eac8ab923bd94a3e8f025de7673f022658c6a9245ed19091b4122d2edbd5"
+    },
+    {
+      "public_file": "public-spec-validation.json",
+      "raw_sources": [],
+      "transformation": "Actually executed new structural check of the sanitized derivative; original planning observations remain unchanged.",
+      "public_sha256": "f43819496d49805618a2e5bd11ed51180dca32e002334db57d27ae4d542b6a13"
+    },
+    {
+      "public_file": "README.md",
+      "raw_sources": [],
+      "transformation": "New evidence summary from the retained intake, adjudication, raw probes and independent evaluator; no new execution claim.",
+      "public_sha256": "168da34ccac827bce624b7d65b266639e476b9ad941dfd229063adc8391c8773"
+    },
+    {
+      "public_file": "public-run-validation.json",
+      "raw_sources": [],
+      "transformation": "Actually executed structural validation of the sanitized identity-bound wrapper; not a repeated planning protocol.",
+      "public_sha256": "074c56c75173c1f089a55a976d2492c84ae211737e92f1f2016815d1e76cc7ff"
+    }
+  ]
+}

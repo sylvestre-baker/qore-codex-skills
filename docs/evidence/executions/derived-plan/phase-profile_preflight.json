@@ -1,0 +1,140 @@
+{
+  "qore_evidence": {
+    "candidate_sha256": "19f48167f040ca42c60b0df49a324c6d3aeb3de3014486017668f1263ccd6b35",
+    "target_snapshot_sha256": "dec34e19b7b3036c213299a1f98b05fec1709212fb156eabf9928682024ae2cb",
+    "observed_at": "2026-10-15T19:59:38.272010+00:00",
+    "phase_id": "profile_preflight"
+  },
+  "payload": {
+    "checker": {
+      "schema": "qore-context-check/1",
+      "profile": {
+        "id": "qore",
+        "version": "0.1.0",
+        "sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9"
+      },
+      "method": "plan",
+      "coverage": "COMPLETE",
+      "sources": [
+        {
+          "id": "project",
+          "path": "qore.json",
+          "expected_sha256": "948b2784fa7970cf90a25c338a29067b13d8b4476f666d712a5eb95fc6f641c8",
+          "actual_sha256": "948b2784fa7970cf90a25c338a29067b13d8b4476f666d712a5eb95fc6f641c8",
+          "current": true
+        }
+      ],
+      "commands": [
+        {
+          "id": "check",
+          "argv": [
+            "python3",
+            "-B",
+            "-m",
+            "unittest",
+            "discover",
+            "-s",
+            "tests",
+            "-v"
+          ],
+          "source": "project",
+          "applies_to": [
+            "plan",
+            "review"
+          ]
+        }
+      ],
+      "invariants": [
+        {
+          "id": "preserve-adaptations",
+          "statement": "Generate updates in new staging and refuse to overwrite existing adaptations.",
+          "source": "project",
+          "applies_to": [
+            "plan"
+          ]
+        }
+      ],
+      "surfaces": {},
+      "consumed_source_ids": [
+        "project"
+      ],
+      "problems": []
+    },
+    "command_record": {
+      "argv": [
+        "python3",
+        "scripts/project-check.py",
+        "references/project.json",
+        "--root",
+        "<CANDIDATE_B>",
+        "--method",
+        "plan"
+      ],
+      "cwd": "<DERIVED_CANDIDATE>/qore-plan-qore",
+      "exit_code": 0,
+      "stdout": "{\n  \"schema\": \"qore-context-check/1\",\n  \"profile\": {\n    \"id\": \"qore\",\n    \"version\": \"0.1.0\",\n    \"sha256\": \"da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9\"\n  },\n  \"method\": \"plan\",\n  \"coverage\": \"COMPLETE\",\n  \"sources\": [\n    {\n      \"id\": \"project\",\n      \"path\": \"qore.json\",\n      \"expected_sha256\": \"948b2784fa7970cf90a25c338a29067b13d8b4476f666d712a5eb95fc6f641c8\",\n      \"actual_sha256\": \"948b2784fa7970cf90a25c338a29067b13d8b4476f666d712a5eb95fc6f641c8\",\n      \"current\": true\n    }\n  ],\n  \"commands\": [\n    {\n      \"id\": \"check\",\n      \"argv\": [\n        \"python3\",\n        \"-B\",\n        \"-m\",\n        \"unittest\",\n        \"discover\",\n        \"-s\",\n        \"tests\",\n        \"-v\"\n      ],\n      \"source\": \"project\",\n      \"applies_to\": [\n        \"plan\",\n        \"review\"\n      ]\n    }\n  ],\n  \"invariants\": [\n    {\n      \"id\": \"preserve-adaptations\",\n      \"statement\": \"Generate updates in new staging and refuse to overwrite existing adaptations.\",\n      \"source\": \"project\",\n      \"applies_to\": [\n        \"plan\"\n      ]\n    }\n  ],\n  \"surfaces\": {},\n  \"consumed_source_ids\": [\n    \"project\"\n  ],\n  \"problems\": []\n}\n",
+      "stderr": "",
+      "observed_at": "2026-10-15T19:59:38.272010+00:00"
+    },
+    "profile_use": {
+      "observed_at": "2026-10-15T20:13:15.203321+00:00",
+      "profile": {
+        "id": "qore",
+        "version": "0.1.0",
+        "sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9"
+      },
+      "preflight": "profile-preflight.json",
+      "source_id": "project",
+      "source_path": "qore.json",
+      "source_sha256": "948b2784fa7970cf90a25c338a29067b13d8b4476f666d712a5eb95fc6f641c8",
+      "facts": [
+        {
+          "id": "check",
+          "kind": "command",
+          "selected": true,
+          "consumed": true,
+          "actual_argv": [
+            "python3",
+            "-B",
+            "-m",
+            "unittest",
+            "discover",
+            "-s",
+            "tests",
+            "-v"
+          ],
+          "actual_output": "profile-selected-check.json",
+          "effect": "Actual 82-test full check ran; T4 requires this same current selected command rather than a Node-only substitute."
+        },
+        {
+          "id": "preserve-adaptations",
+          "kind": "invariant",
+          "selected": true,
+          "consumed": true,
+          "effect": "D5, A08 and T4 require new staging, existing-destination refusal and unchanged adaptation bytes; A09 requires source freshness before affected use."
+        }
+      ],
+      "not_consumed_as_profile_authority": [
+        "verified-blockers",
+        "observed-ux",
+        "surfaces.web"
+      ],
+      "fact_values_supplied_in_invocation_prompt": false,
+      "role_evidence": [
+        "product-analysis.md",
+        "architecture-analysis.md",
+        "ux-analysis.md",
+        "delivery-analysis.md",
+        "qa-analysis.md"
+      ]
+    }
+  },
+  "public_transformation": {
+    "public_artifact_id": "public-derived-plan-20261015-01:phase-profile_preflight",
+    "source_artifact_id": "qore-private:executions/derived-plan/phase-profile_preflight.json",
+    "source_sha256": "197dda64452643ec88243548392cb35f021819c3b8b0573e3aa9da3a4a859f3c",
+    "exported_at": "2026-10-15T20:17:52.021153+00:00",
+    "original_observation_time_preserved": true,
+    "notice": "Sanitized derivative of actual phase reports; export is not a new execution."
+  }
+}

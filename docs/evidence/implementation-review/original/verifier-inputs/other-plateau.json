@@ -1,0 +1,27 @@
+{
+  "in_scope": [
+    "G1"
+  ],
+  "iterations": [
+    {
+      "n": 1,
+      "scores": {},
+      "measured": []
+    },
+    {
+      "n": 2,
+      "scores": {},
+      "measured": []
+    },
+    {
+      "n": 3,
+      "scores": {},
+      "measured": []
+    },
+    {
+      "n": 4,
+      "scores": {},
+      "measured": []
+    }
+  ]
+}

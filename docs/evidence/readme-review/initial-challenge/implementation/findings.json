@@ -1,0 +1,12 @@
+{
+  "findings": [
+    {
+      "id": "RI-001",
+      "title": "Release manifest replaces recorded browser-observation origins with first-party",
+      "severity": "low",
+      "evidence": "tools/qore.py:58-60 hard-codes origin=first-party for every inventory item; tools/qore.py:75-78 uses that inventory for the release manifest. schemas/qore-release.schema.json:58-60 permits only first-party. Fresh build reproduced archive SHA bafd0da80667a00f9e6bd2f9e726eaa64d61ff42d026b9f58eb857df15bf40f8. origin-boundary.json records 12 same-path, same-digest resources whose release-rights.json origin is Qaizen-public-observation but whose generated manifest origin is first-party. PROVENANCE.md:13 describes digest-bound origin records; docs/contracts.md:10 describes redistribution information in the release contract.",
+      "triggering_reader_failure": "A downstream reader or inventory consumer following the advertised release manifest to classify the bundled browser evidence receives a different origin from the reviewed rights record, losing the distinction between original authored implementation and an observed existing website. A successful build/verify does not expose the mismatch. This is a provenance metadata defect, not evidence that redistribution is unauthorized.",
+      "minimal_remedy": "Preserve each reviewed resource origin when generating the release inventory, permit those explicit origins in the release schema, and retain first-party defaults only for generated first-party metadata. Alternatively explicitly define the manifest field as a different concept and expose the reviewed origin separately so consumers can distinguish them."
+    }
+  ]
+}

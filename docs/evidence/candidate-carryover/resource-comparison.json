@@ -1,0 +1,217 @@
+{
+  "schema": "qore-carryover/1",
+  "checked_at": "2026-10-15T20:38:50.775062+00:00",
+  "original_plan_archive_sha256": "2963c43e98803354932e406627d9e239064fbe2899745a7e093b7d4154fa56d1",
+  "current_identity": "Resource byte identities only. Final archive identity is recorded in the release sidecar.",
+  "planning_resources": [
+    {
+      "path": "skills/qore-plan/SKILL.md",
+      "original_sha256": "6a0b7a03d888595e6b9e76bc16644a313a187df91622fd5245d4b2253bdf83da",
+      "current_sha256": "6a0b7a03d888595e6b9e76bc16644a313a187df91622fd5245d4b2253bdf83da",
+      "unchanged": true
+    },
+    {
+      "path": "skills/qore-plan/agents/openai.yaml",
+      "original_sha256": "21ffa75d5bc52d68819ff68d4b8c65dc33584464f755487e6a02302f0924c22b",
+      "current_sha256": "21ffa75d5bc52d68819ff68d4b8c65dc33584464f755487e6a02302f0924c22b",
+      "unchanged": true
+    },
+    {
+      "path": "skills/qore-plan/references/project-profile.md",
+      "original_sha256": "16c5ff087c83b7503b23d5d94726834462dd4fd73d78a5380cf85135fa85b0b3",
+      "current_sha256": "16c5ff087c83b7503b23d5d94726834462dd4fd73d78a5380cf85135fa85b0b3",
+      "unchanged": true
+    },
+    {
+      "path": "skills/qore-plan/references/protocol.md",
+      "original_sha256": "83f92490a5601b83fc6eaa21861344e35cd04a3ac7edb56b98cd2eb0ecfea84b",
+      "current_sha256": "83f92490a5601b83fc6eaa21861344e35cd04a3ac7edb56b98cd2eb0ecfea84b",
+      "unchanged": true
+    },
+    {
+      "path": "skills/qore-plan/references/roles.md",
+      "original_sha256": "cc8060c7c852c143b9671af4fc0176b9c5068f338c19b2556b6ff494c0f0d318",
+      "current_sha256": "cc8060c7c852c143b9671af4fc0176b9c5068f338c19b2556b6ff494c0f0d318",
+      "unchanged": true
+    },
+    {
+      "path": "skills/qore-plan/references/run-evidence.md",
+      "original_sha256": "35cd6dc6d3e1177bbae96e5b9e829ed1aa55901747c856f4db20e946421f163d",
+      "current_sha256": "35cd6dc6d3e1177bbae96e5b9e829ed1aa55901747c856f4db20e946421f163d",
+      "unchanged": true
+    },
+    {
+      "path": "skills/qore-plan/references/specification.md",
+      "original_sha256": "7eb06b91fca66a3ec00bda4b49b035c5e6bfe827c4624768f66a09b6ae7827a1",
+      "current_sha256": "7eb06b91fca66a3ec00bda4b49b035c5e6bfe827c4624768f66a09b6ae7827a1",
+      "unchanged": true
+    },
+    {
+      "path": "skills/qore-plan/scripts/project-check.py",
+      "original_sha256": "3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd",
+      "current_sha256": "3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd",
+      "unchanged": true
+    },
+    {
+      "path": "skills/qore-plan/scripts/run-check.py",
+      "original_sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+      "current_sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+      "unchanged": true
+    },
+    {
+      "path": "skills/qore-plan/scripts/spec-lint.mjs",
+      "original_sha256": "0015bf0428e30d662d2ddf119e5813e3dc5f01379c45e3229c592853a77683ef",
+      "current_sha256": "321ac211bfac936c4da3ffe173cdfc0d92cb695351273d289809c05c8b037ada",
+      "unchanged": false
+    },
+    {
+      "path": "skills/qore-plan/scripts/spec-lint.sh",
+      "original_sha256": "ee4b0c491833f8f3960037255f7ea601548a353d18b317aae25d8e5f2cd461b6",
+      "current_sha256": "ee4b0c491833f8f3960037255f7ea601548a353d18b317aae25d8e5f2cd461b6",
+      "unchanged": true
+    }
+  ],
+  "current_plan_checks": [
+    {
+      "target": "../executions/generic-plan/proposed-spec.md",
+      "target_sha256": "26701f8c71dcbdf85e3ab787e870360763070b726ce24069b706d10831c834d6",
+      "argv_display": [
+        "node",
+        "skills/qore-plan/scripts/spec-lint.mjs",
+        "docs/evidence/executions/generic-plan/proposed-spec.md",
+        "--json"
+      ],
+      "exit_code": 0,
+      "output": "generic-plan-current-lint.json",
+      "output_sha256": "48586733afe3aa95ba4beb4c29552c4aad3bd89d36b8b6fc7a7276a13be9d243",
+      "executed_at": "2026-10-15T20:38:50.745324+00:00"
+    },
+    {
+      "target": "../executions/derived-plan/proposed-spec.md",
+      "target_sha256": "adb21983bd316eebe43bcd96aa442c3bafe143f5bcdf26bc2c167a285f33e546",
+      "argv_display": [
+        "node",
+        "skills/qore-plan/scripts/spec-lint.mjs",
+        "docs/evidence/executions/derived-plan/proposed-spec.md",
+        "--json"
+      ],
+      "exit_code": 0,
+      "output": "derived-plan-current-lint.json",
+      "output_sha256": "d8eb765311b18f52e004cceb67e2759f19032870e6f9d3d256cb716fb3b4da4e",
+      "executed_at": "2026-10-15T20:38:50.771233+00:00"
+    }
+  ],
+  "final_ux_resource_snapshot_sha256": "550e45ab0a07a641f8ec6d3cba5677e97a8e5fd86053631a1e75c90a8f8c52d0",
+  "ux_resources": [
+    {
+      "path": "skills/qore-ux-review/SKILL.md",
+      "recorded_sha256": "33b1367f256f1a6304902d08cdff9b023add92fb750834216268cca8de84b851",
+      "current_sha256": "33b1367f256f1a6304902d08cdff9b023add92fb750834216268cca8de84b851",
+      "unchanged": true
+    },
+    {
+      "path": "skills/qore-ux-review/agents/openai.yaml",
+      "recorded_sha256": "2bafca3b7edce2edac4814b4028fdb814f83c1c2efbea4d461b7469fbe1bd7af",
+      "current_sha256": "2bafca3b7edce2edac4814b4028fdb814f83c1c2efbea4d461b7469fbe1bd7af",
+      "unchanged": true
+    },
+    {
+      "path": "skills/qore-ux-review/references/evidence.md",
+      "recorded_sha256": "659560f88b965371e2c6e886b5f4c648a4879ebb7c69af4b1d307dfae176c8b3",
+      "current_sha256": "659560f88b965371e2c6e886b5f4c648a4879ebb7c69af4b1d307dfae176c8b3",
+      "unchanged": true
+    },
+    {
+      "path": "skills/qore-ux-review/references/gates.md",
+      "recorded_sha256": "667063cd64c576a9c5b4ec69f6ddcd677d4e969bae96184b3136ede9fd12fd87",
+      "current_sha256": "667063cd64c576a9c5b4ec69f6ddcd677d4e969bae96184b3136ede9fd12fd87",
+      "unchanged": true
+    },
+    {
+      "path": "skills/qore-ux-review/references/project-profile.md",
+      "recorded_sha256": "154ed11dab8e8499e74a5f3a6afb512827d5de5c73408523b845684e38f59dfc",
+      "current_sha256": "154ed11dab8e8499e74a5f3a6afb512827d5de5c73408523b845684e38f59dfc",
+      "unchanged": true
+    },
+    {
+      "path": "skills/qore-ux-review/references/protocol.md",
+      "recorded_sha256": "eda7c7c7c9e711e4b9fca59ec6b622d713c3d95b14cd6e3b008a978ebf156004",
+      "current_sha256": "eda7c7c7c9e711e4b9fca59ec6b622d713c3d95b14cd6e3b008a978ebf156004",
+      "unchanged": true
+    },
+    {
+      "path": "skills/qore-ux-review/references/run-evidence.md",
+      "recorded_sha256": "2ede0b19d58fd5535c90023068355679ee7bb27d3070967ada38f9ad156a9e69",
+      "current_sha256": "2ede0b19d58fd5535c90023068355679ee7bb27d3070967ada38f9ad156a9e69",
+      "unchanged": true
+    },
+    {
+      "path": "skills/qore-ux-review/scripts/depth-lint.mjs",
+      "recorded_sha256": "9b9cdcea3e87f4820944ddfc075ef19e75aad0bb08a7f1fd279ea6590267def7",
+      "current_sha256": "9b9cdcea3e87f4820944ddfc075ef19e75aad0bb08a7f1fd279ea6590267def7",
+      "unchanged": true
+    },
+    {
+      "path": "skills/qore-ux-review/scripts/project-check.py",
+      "recorded_sha256": "3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd",
+      "current_sha256": "3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd",
+      "unchanged": true
+    },
+    {
+      "path": "skills/qore-ux-review/scripts/run-check.py",
+      "recorded_sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+      "current_sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+      "unchanged": true
+    },
+    {
+      "path": "skills/qore-ux-review/scripts/stop-rule.mjs",
+      "recorded_sha256": "5c8d898e3accd82ed1932c791ff5ed1285aae659bae6757488158fc7a8120443",
+      "current_sha256": "5c8d898e3accd82ed1932c791ff5ed1285aae659bae6757488158fc7a8120443",
+      "unchanged": true
+    }
+  ],
+  "profile_sources": [
+    {
+      "path": "profiles/qore.json",
+      "current_sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9",
+      "original_sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9",
+      "unchanged": true
+    },
+    {
+      "path": "profiles/contrast.json",
+      "current_sha256": "f72394c2ebb80cb6da41b33a088d56fbd24b4577f71bc2b022d0ef4bb36bfb88",
+      "original_sha256": "f72394c2ebb80cb6da41b33a088d56fbd24b4577f71bc2b022d0ef4bb36bfb88",
+      "unchanged": true
+    },
+    {
+      "path": "qore.json",
+      "current_sha256": "948b2784fa7970cf90a25c338a29067b13d8b4476f666d712a5eb95fc6f641c8",
+      "original_sha256": "948b2784fa7970cf90a25c338a29067b13d8b4476f666d712a5eb95fc6f641c8",
+      "unchanged": true
+    },
+    {
+      "path": "tests/fixtures/project-alternate.json",
+      "current_sha256": "830dc3c50369c21f523a1c68b188f3013b40c439ea362a1e97c45a38a89a79c5",
+      "original_sha256": "830dc3c50369c21f523a1c68b188f3013b40c439ea362a1e97c45a38a89a79c5",
+      "unchanged": true
+    },
+    {
+      "path": "tests/fixtures/web/index.html",
+      "current_sha256": "c0b51d87d81a36f21608139d7a4fbf07b9fe1d6f94b1fa0bb0599b5f74fe91f5",
+      "original_sha256": "c0b51d87d81a36f21608139d7a4fbf07b9fe1d6f94b1fa0bb0599b5f74fe91f5",
+      "unchanged": true
+    },
+    {
+      "path": "tests/fixtures/web/alternate.html",
+      "current_sha256": "9782b494fdbb156515518d4bb096a5c057385f44d9a6983c352080626e879a22",
+      "original_sha256": "9782b494fdbb156515518d4bb096a5c057385f44d9a6983c352080626e879a22",
+      "unchanged": true
+    }
+  ],
+  "decisions": [
+    "Planning instructions, roles and run contracts are unchanged; the single changed spec helper was actually re-executed on both completed public proposed specifications. Original plans remain b executions, not relabelled final-archive runs.",
+    "Current final UX uses exactly the same 11 instruction/helper bytes as its actual new observation. Only public export index paths were later normalized; observations were not changed.",
+    "Profile facts, source invariants, fixture routes and profile consumer checkers remain unchanged. Focused suites keep their actual historical test counts; added regressions do not rewrite those receipts.",
+    "Review checker changes have independent concrete regression evidence. Final release repeats its useful complete quickstart against the final archive, rather than relying solely on older review results."
+  ]
+}

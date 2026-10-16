@@ -1,0 +1,140 @@
+{
+  "schema": "qore-source-evidence/1",
+  "base_archive_sha256": "2963c43e98803354932e406627d9e239064fbe2899745a7e093b7d4154fa56d1",
+  "target_snapshot_sha256": "dec34e19b7b3036c213299a1f98b05fec1709212fb156eabf9928682024ae2cb",
+  "sources": [
+    {
+      "candidate_path": "examples/validator-hardening.md",
+      "candidate_sha256": "6f25b2edcd6d0826b12fbb47a99fc4162a1089eef71eaf7f16ea2cb7a8239a87",
+      "public_file": "source/examples/validator-hardening.md.txt",
+      "public_sha256": "6f25b2edcd6d0826b12fbb47a99fc4162a1089eef71eaf7f16ea2cb7a8239a87"
+    },
+    {
+      "candidate_path": "qore.json",
+      "candidate_sha256": "948b2784fa7970cf90a25c338a29067b13d8b4476f666d712a5eb95fc6f641c8",
+      "public_file": "source/qore.json.txt",
+      "public_sha256": "948b2784fa7970cf90a25c338a29067b13d8b4476f666d712a5eb95fc6f641c8"
+    },
+    {
+      "candidate_path": "profiles/qore.json",
+      "candidate_sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9",
+      "public_file": "source/profiles/qore.json.txt",
+      "public_sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9"
+    },
+    {
+      "candidate_path": "skills/qore-review/scripts/finding-lint.mjs",
+      "candidate_sha256": "d0cc6809b750d9e52015b0448f18e3f291b979674b1350156d2444e607791ee7",
+      "public_file": "source/skills/qore-review/scripts/finding-lint.mjs.txt",
+      "public_sha256": "d0cc6809b750d9e52015b0448f18e3f291b979674b1350156d2444e607791ee7"
+    },
+    {
+      "candidate_path": "skills/qore-review/scripts/redact-for-verifier.mjs",
+      "candidate_sha256": "dc249524c749ad5b511aef0a2cf08b4cfd5c47c1e0de4fd41c5c70746b471083",
+      "public_file": "source/skills/qore-review/scripts/redact-for-verifier.mjs.txt",
+      "public_sha256": "dc249524c749ad5b511aef0a2cf08b4cfd5c47c1e0de4fd41c5c70746b471083"
+    },
+    {
+      "candidate_path": "tests/test_validators.py",
+      "candidate_sha256": "b91ab5195a1e7380747c618a17f885b56dc1cddf809ff23e065c3062fc477f39",
+      "public_file": "source/tests/test_validators.py.txt",
+      "public_sha256": "b91ab5195a1e7380747c618a17f885b56dc1cddf809ff23e065c3062fc477f39"
+    },
+    {
+      "candidate_path": "tests/test_package.py",
+      "candidate_sha256": "7e94e9a81f4b6e6b7f14d4f2432cc066b9b9b180afa4b96eb1c58c2d4957ed74",
+      "public_file": "source/tests/test_package.py.txt",
+      "public_sha256": "7e94e9a81f4b6e6b7f14d4f2432cc066b9b9b180afa4b96eb1c58c2d4957ed74"
+    },
+    {
+      "candidate_path": "tools/qore.py",
+      "candidate_sha256": "931f5303a6594cb6a1eb7fa474fad3ac311ac9bb4cde2506abf6d06bc3ff6ff7",
+      "public_file": "source/tools/qore.py.txt",
+      "public_sha256": "931f5303a6594cb6a1eb7fa474fad3ac311ac9bb4cde2506abf6d06bc3ff6ff7"
+    },
+    {
+      "candidate_path": "tools/context.py",
+      "candidate_sha256": "3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd",
+      "public_file": "source/tools/context.py.txt",
+      "public_sha256": "3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd"
+    },
+    {
+      "candidate_path": "tools/run_contract.py",
+      "candidate_sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+      "public_file": "source/tools/run_contract.py.txt",
+      "public_sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa"
+    },
+    {
+      "candidate_path": "skills/qore-review/SKILL.md",
+      "candidate_sha256": "aae83b4105dd89387c7eac31df3c789326def9c0b05dccd4a3d2cdab65732a97",
+      "public_file": "source/skills/qore-review/SKILL.md.txt",
+      "public_sha256": "aae83b4105dd89387c7eac31df3c789326def9c0b05dccd4a3d2cdab65732a97"
+    },
+    {
+      "candidate_path": "skills/qore-review/references/findings.md",
+      "candidate_sha256": "79b2b5f52e88761331c01b92af9b492ef1888c6c20a0af1b94a8bead7aa2d6cb",
+      "public_file": "source/skills/qore-review/references/findings.md.txt",
+      "public_sha256": "79b2b5f52e88761331c01b92af9b492ef1888c6c20a0af1b94a8bead7aa2d6cb"
+    },
+    {
+      "candidate_path": "skills/qore-review/references/protocol.md",
+      "candidate_sha256": "e27e0050fdf4d75d2840dd257b9a759f1f48d459ef540990cd3aed5528c5f340",
+      "public_file": "source/skills/qore-review/references/protocol.md.txt",
+      "public_sha256": "e27e0050fdf4d75d2840dd257b9a759f1f48d459ef540990cd3aed5528c5f340"
+    },
+    {
+      "candidate_path": "skills/qore-review/references/run-evidence.md",
+      "candidate_sha256": "fbdf433ef8b3e972f97bed5fdec4990cf3b49535bf63120c729a7daf4af71746",
+      "public_file": "source/skills/qore-review/references/run-evidence.md.txt",
+      "public_sha256": "fbdf433ef8b3e972f97bed5fdec4990cf3b49535bf63120c729a7daf4af71746"
+    },
+    {
+      "candidate_path": "skills/qore-plan/SKILL.md",
+      "candidate_sha256": "6a0b7a03d888595e6b9e76bc16644a313a187df91622fd5245d4b2253bdf83da",
+      "public_file": "source/skills/qore-plan/SKILL.md.txt",
+      "public_sha256": "6a0b7a03d888595e6b9e76bc16644a313a187df91622fd5245d4b2253bdf83da"
+    },
+    {
+      "candidate_path": "skills/qore-plan/references/project-profile.md",
+      "candidate_sha256": "16c5ff087c83b7503b23d5d94726834462dd4fd73d78a5380cf85135fa85b0b3",
+      "public_file": "source/skills/qore-plan/references/project-profile.md.txt",
+      "public_sha256": "16c5ff087c83b7503b23d5d94726834462dd4fd73d78a5380cf85135fa85b0b3"
+    },
+    {
+      "candidate_path": "skills/qore-plan/references/protocol.md",
+      "candidate_sha256": "83f92490a5601b83fc6eaa21861344e35cd04a3ac7edb56b98cd2eb0ecfea84b",
+      "public_file": "source/skills/qore-plan/references/protocol.md.txt",
+      "public_sha256": "83f92490a5601b83fc6eaa21861344e35cd04a3ac7edb56b98cd2eb0ecfea84b"
+    },
+    {
+      "candidate_path": "skills/qore-plan/references/roles.md",
+      "candidate_sha256": "cc8060c7c852c143b9671af4fc0176b9c5068f338c19b2556b6ff494c0f0d318",
+      "public_file": "source/skills/qore-plan/references/roles.md.txt",
+      "public_sha256": "cc8060c7c852c143b9671af4fc0176b9c5068f338c19b2556b6ff494c0f0d318"
+    },
+    {
+      "candidate_path": "skills/qore-plan/references/run-evidence.md",
+      "candidate_sha256": "35cd6dc6d3e1177bbae96e5b9e829ed1aa55901747c856f4db20e946421f163d",
+      "public_file": "source/skills/qore-plan/references/run-evidence.md.txt",
+      "public_sha256": "35cd6dc6d3e1177bbae96e5b9e829ed1aa55901747c856f4db20e946421f163d"
+    },
+    {
+      "candidate_path": "skills/qore-plan/references/specification.md",
+      "candidate_sha256": "7eb06b91fca66a3ec00bda4b49b035c5e6bfe827c4624768f66a09b6ae7827a1",
+      "public_file": "source/skills/qore-plan/references/specification.md.txt",
+      "public_sha256": "7eb06b91fca66a3ec00bda4b49b035c5e6bfe827c4624768f66a09b6ae7827a1"
+    },
+    {
+      "derived_path": "qore-plan-qore/SKILL.md",
+      "candidate_sha256": "855dcf88c85bc4bfb536e97f212349afa49ac552062e45667494eb15903f71a6",
+      "public_file": "source/derived/qore-plan-qore/SKILL.md.txt",
+      "public_sha256": "855dcf88c85bc4bfb536e97f212349afa49ac552062e45667494eb15903f71a6"
+    },
+    {
+      "derived_path": "qore-plan-qore/references/project.json",
+      "candidate_sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9",
+      "public_file": "source/derived/qore-plan-qore/references/project.json.txt",
+      "public_sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9"
+    }
+  ],
+  "notice": "Selected source snapshots retain original bytes; they do not qualify a later corrected candidate."
+}

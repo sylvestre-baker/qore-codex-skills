@@ -1,0 +1,10 @@
+{
+  "findings": [
+    {
+      "id": "TRACE1",
+      "title": "Trace fixture",
+      "severity": "high",
+      "evidence": "src/input.ts:12"
+    }
+  ]
+}

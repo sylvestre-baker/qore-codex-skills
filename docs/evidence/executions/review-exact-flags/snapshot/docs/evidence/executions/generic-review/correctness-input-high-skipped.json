@@ -1,0 +1,1 @@
+{"findings": [{"id": "T1", "title": "Candidate", "severity": "high", "evidence": "src/input.ts:12", "verdict": "PLAUSIBLE", "rationale": "private"}]}

@@ -1,0 +1,71 @@
+{
+  "source_candidate_user_supplied": "archive17888fa30f1024707fc3ee6efda856ca330bc6365e09737007096f5d7db62da8",
+  "source_candidate_digest_user_supplied": "17888fa30f1024707fc3ee6efda856ca330bc6365e09737007096f5d7db62da8",
+  "archive_verification_limit": "Original archive bytes are unavailable here; the user supplied archive identity is retained as provenance, not presented as a recomputed local archive hash. No older execution proof was used.",
+  "candidate_derivative": "qore-review-qore",
+  "candidate_derivative_path": "/workspace/implementation-target/qore-skills-0.1.0/.agents/skills/qore-review-qore",
+  "candidate_derivative_sha256": "1b10815bcce5c6d93c595bb7b7d07089a5e909248bb390cf27e7078c67ddcd63",
+  "candidate_digest_procedure": "SHA-256 of canonical JSON sorted file rows (sort_keys=True; compact comma/colon separators); each row has relative path and raw-byte SHA-256; excludes __pycache__.",
+  "candidate_manifest": [
+    {
+      "path": "SKILL.md",
+      "sha256": "99207cd01ce19926bd2ae5e362959b11fc57ebd93bb6202d113a4f96aabd6d76"
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha256": "ed658eeb9489e53c6fc3795ef971906aec1e39a072c2b2c5601149180fe5d499"
+    },
+    {
+      "path": "references/findings.md",
+      "sha256": "79b2b5f52e88761331c01b92af9b492ef1888c6c20a0af1b94a8bead7aa2d6cb"
+    },
+    {
+      "path": "references/project-profile.md",
+      "sha256": "5d3b69aac18f83a634f4c57c214cc1f53fa186c03c536adcefd4c905a8767c8d"
+    },
+    {
+      "path": "references/project.json",
+      "sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9"
+    },
+    {
+      "path": "references/protocol.md",
+      "sha256": "e27e0050fdf4d75d2840dd257b9a759f1f48d459ef540990cd3aed5528c5f340"
+    },
+    {
+      "path": "references/release.json",
+      "sha256": "56758f810dfca4a7ed55981d43e695574caa606dfdff307170e86dbc7032e2e4"
+    },
+    {
+      "path": "references/run-evidence.md",
+      "sha256": "fbdf433ef8b3e972f97bed5fdec4990cf3b49535bf63120c729a7daf4af71746"
+    },
+    {
+      "path": "scripts/finding-lint.mjs",
+      "sha256": "89b02ef5912adf3f6ff86ad8652a3f21e7313bb0cc0a280a3dd9810546abdef9"
+    },
+    {
+      "path": "scripts/project-check.py",
+      "sha256": "3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd"
+    },
+    {
+      "path": "scripts/redact-for-verifier.mjs",
+      "sha256": "dc249524c749ad5b511aef0a2cf08b4cfd5c47c1e0de4fd41c5c70746b471083"
+    },
+    {
+      "path": "scripts/run-check.py",
+      "sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa"
+    }
+  ],
+  "target_label": "Current validator-hardening example, bundled review validator and current regression suite",
+  "target_root": "/workspace/implementation-target/qore-skills-0.1.0",
+  "target_snapshot_sha256": "ed0c0dd3286b1eaaa4a3f750ac96c085d185c52c46adf2b970752035c1b397f2",
+  "target_manifest": "consumed-snapshot-manifest.json",
+  "profile": {
+    "id": "qore",
+    "version": "0.1.0",
+    "sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9"
+  },
+  "operator": "Codex agent, single context",
+  "observed_at": "2026-10-15T20:06:59.191618+00:00",
+  "git_limit": "Root has no Git repository; no commit identity claimed."
+}

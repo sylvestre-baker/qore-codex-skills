@@ -1,0 +1,16 @@
+{
+  "redaction": {
+    "exit_code": 0,
+    "stderr": "redact-for-verifier: 1 claims; withheld fields: rationale, verdict.\n"
+  },
+  "filtered_without_verdict": {
+    "exit_code": 1,
+    "stdout": "{\n  \"valid\": false,\n  \"coverage\": \"PARTIAL\",\n  \"verdict\": \"INVALID\",\n  \"verifier\": \"skipped\",\n  \"total\": 1,\n  \"counts\": {\n    \"CONFIRMED\": 0,\n    \"PLAUSIBLE\": 0,\n    \"REFUTED\": 0\n  },\n  \"blocking_findings\": [],\n  \"findings\": [\n    {\n      \"id\": \"TRACE1\",\n      \"title\": \"Trace fixture\",\n      \"severity\": \"high\",\n      \"evidence\": \"src/input.ts:12\"\n    }\n  ],\n  \"problems\": [\n    {\n      \"id\": \"TRACE1\",\n      \"code\": \"verdict\",\n      \"why\": \"verdict must be one of CONFIRMED, PLAUSIBLE, REFUTED.\"\n    },\n    {\n      \"id\": \"TRACE1\",\n      \"code\": \"verification\",\n      \"why\": \"Missing independent verification permits only PLAUSIBLE findings.\"\n    }\n  ],\n  \"limit\": \"The verifier flag records an execution declaration; validate actual independent phase evidence separately.\"\n}\n",
+    "stderr": ""
+  },
+  "final_skipped": {
+    "exit_code": 0,
+    "stdout": "{\n  \"valid\": true,\n  \"coverage\": \"PARTIAL\",\n  \"verdict\": \"PENDING\",\n  \"verifier\": \"skipped\",\n  \"total\": 1,\n  \"counts\": {\n    \"CONFIRMED\": 0,\n    \"PLAUSIBLE\": 1,\n    \"REFUTED\": 0\n  },\n  \"blocking_findings\": [],\n  \"findings\": [\n    {\n      \"id\": \"TRACE1\",\n      \"title\": \"Trace fixture\",\n      \"severity\": \"high\",\n      \"evidence\": \"src/input.ts:12\",\n      \"verdict\": \"PLAUSIBLE\"\n    }\n  ],\n  \"problems\": [],\n  \"limit\": \"The verifier flag records an execution declaration; validate actual independent phase evidence separately.\"\n}\n",
+    "stderr": ""
+  }
+}

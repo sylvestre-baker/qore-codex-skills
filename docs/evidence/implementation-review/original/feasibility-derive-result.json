@@ -1,0 +1,14 @@
+{
+  "output": "/tmp/qore-feasibility-wx44k6_1/derived",
+  "profile": {
+    "id": "qore",
+    "version": "0.1.0",
+    "sha256": "63c9157e3dd4d6eb2c33c899820422e8ce1d1bee9cc4e22c1df96d814e50a83f"
+  },
+  "valid": true,
+  "schema": "qore-release/1",
+  "version": "0.1.0",
+  "kind": "derived",
+  "files": 39,
+  "manifest_sha256": "cd3517f9839cd44fb4b5e56e5b373770fb350d8ffa36bd33a61d58d1c12e0725"
+}

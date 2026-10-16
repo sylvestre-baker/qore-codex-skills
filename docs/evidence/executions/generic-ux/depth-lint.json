@@ -1,0 +1,14 @@
+{
+  "valid": true,
+  "depth": "entry",
+  "changed_files": [
+    "src/app/[locale]/labs/page.tsx",
+    "src/app/[locale]/labs/readiness-check/page.tsx",
+    "src/components/labs/readiness-check/index.tsx",
+    "src/components/labs/readiness-check/ReadinessIntro.tsx",
+    "src/components/labs/readiness-check/ReadinessQuestions.tsx",
+    "src/components/labs/readiness-check/QuestionHelp.tsx",
+    "src/components/labs/shared/quiz/QuizCard.tsx"
+  ],
+  "problems": []
+}

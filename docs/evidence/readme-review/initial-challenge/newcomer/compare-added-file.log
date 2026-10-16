@@ -1,0 +1,22 @@
+CWD: /workspace/readme-newcomer/source-plan
+PREPARATION: Added .agents/skills/qore-plan/references/local-policy.md to installed skill only.
+COMMAND: ['python3', 'tools/qore.py', 'compare', '--source', '/workspace/readme-newcomer/staging-plan/qore-first.EBjIla/qore-skills-0.1.0', '--project-root', '.']
+STDOUT:
+{
+  "changes": [
+    {
+      "skill": "qore-plan",
+      "path": "references/local-policy.md",
+      "installed_sha256": "219580cfb998e8558fd4cfb4f6c5e9fe5b999e1a02dcf7c5bb2445186d2d5ab7",
+      "candidate_sha256": null,
+      "local_adaptation": false
+    }
+  ],
+  "changed": true,
+  "replaced": false,
+  "limit": "This comparison does not merge content or authorize migration."
+}
+
+STDERR:
+
+EXIT: 0

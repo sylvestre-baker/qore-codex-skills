@@ -1,0 +1,152 @@
+{
+  "inherited": {
+    "command": [
+      "node",
+      "skills/qore-ux-review/scripts/stop-rule.mjs",
+      "/tmp/qore-independent-verifier-51y5w0tg/inherited.json"
+    ],
+    "exit": 0,
+    "stdout": "{\n  \"decision\": \"SHIP\",\n  \"verdict\": \"SHIP\",\n  \"coverage\": \"COMPLETE\",\n  \"iteration\": 1,\n  \"ceiling\": 6,\n  \"surface_score\": null,\n  \"consecutive_fresh_passes\": 1,\n  \"passes_required\": 1,\n  \"lowest_failing_gate\": null,\n  \"failing_gates\": [],\n  \"stale_gates\": [],\n  \"missing_gates\": [],\n  \"skipped\": [],\n  \"infra_blocked\": [],\n  \"not_applicable\": {},\n  \"stuck_count\": 0,\n  \"no_improve_count\": 0,\n  \"limit\": \"Coverage describes observations. SHIP is a scoped review result, not deployment authorization. Non-applicability reasons require independent review.\"\n}\n",
+    "stderr": ""
+  },
+  "ordinary-missing": {
+    "command": [
+      "node",
+      "skills/qore-ux-review/scripts/stop-rule.mjs",
+      "/tmp/qore-independent-verifier-51y5w0tg/missing.json"
+    ],
+    "exit": 0,
+    "stdout": "{\n  \"decision\": \"CONTINUE\",\n  \"verdict\": \"PENDING\",\n  \"coverage\": \"PARTIAL\",\n  \"iteration\": 1,\n  \"ceiling\": 6,\n  \"surface_score\": null,\n  \"consecutive_fresh_passes\": 0,\n  \"passes_required\": 1,\n  \"lowest_failing_gate\": null,\n  \"failing_gates\": [],\n  \"stale_gates\": [],\n  \"missing_gates\": [\n    \"G1\"\n  ],\n  \"skipped\": [],\n  \"infra_blocked\": [],\n  \"not_applicable\": {},\n  \"stuck_count\": 0,\n  \"no_improve_count\": 0,\n  \"limit\": \"Coverage describes observations. SHIP is a scoped review result, not deployment authorization. Non-applicability reasons require independent review.\"\n}\n",
+    "stderr": ""
+  },
+  "plateau": {
+    "command": [
+      "node",
+      "skills/qore-ux-review/scripts/stop-rule.mjs",
+      "/tmp/qore-independent-verifier-51y5w0tg/plateau.json"
+    ],
+    "exit": 0,
+    "stdout": "{\n  \"decision\": \"CHANGE_APPROACH\",\n  \"verdict\": \"DO-NOT-SHIP\",\n  \"coverage\": \"COMPLETE\",\n  \"iteration\": 4,\n  \"ceiling\": 6,\n  \"surface_score\": null,\n  \"consecutive_fresh_passes\": 0,\n  \"passes_required\": 1,\n  \"lowest_failing_gate\": \"G1\",\n  \"failing_gates\": [\n    \"G1\"\n  ],\n  \"stale_gates\": [],\n  \"missing_gates\": [],\n  \"skipped\": [],\n  \"infra_blocked\": [],\n  \"not_applicable\": {},\n  \"stuck_count\": 3,\n  \"no_improve_count\": 3,\n  \"limit\": \"Coverage describes observations. SHIP is a scoped review result, not deployment authorization. Non-applicability reasons require independent review.\"\n}\n",
+    "stderr": ""
+  },
+  "nonfailure-plateau": {
+    "command": [
+      "node",
+      "skills/qore-ux-review/scripts/stop-rule.mjs",
+      "/tmp/qore-independent-verifier-51y5w0tg/other-plateau.json"
+    ],
+    "exit": 0,
+    "stdout": "{\n  \"decision\": \"STOP_PLATEAU\",\n  \"verdict\": \"BEST-EFFORT\",\n  \"coverage\": \"PARTIAL\",\n  \"iteration\": 4,\n  \"ceiling\": 6,\n  \"surface_score\": null,\n  \"consecutive_fresh_passes\": 0,\n  \"passes_required\": 1,\n  \"lowest_failing_gate\": null,\n  \"failing_gates\": [],\n  \"stale_gates\": [],\n  \"missing_gates\": [\n    \"G1\"\n  ],\n  \"skipped\": [],\n  \"infra_blocked\": [],\n  \"not_applicable\": {},\n  \"stuck_count\": 0,\n  \"no_improve_count\": 3,\n  \"limit\": \"Coverage describes observations. SHIP is a scoped review result, not deployment authorization. Non-applicability reasons require independent review.\"\n}\n",
+    "stderr": ""
+  },
+  "docstring": {
+    "command": [
+      "node",
+      "skills/qore-plan/scripts/spec-lint.mjs",
+      "/tmp/qore-independent-verifier-51y5w0tg/docstring.md",
+      "--json"
+    ],
+    "exit": 0,
+    "stdout": "{\n  \"valid\": true,\n  \"schema\": \"qore-spec/1\",\n  \"scenarios\": [\n    {\n      \"id\": \"AC01\",\n      \"name\": \"AC01 Literal argument\",\n      \"line\": 4\n    }\n  ],\n  \"problems\": []\n}\n",
+    "stderr": ""
+  },
+  "no-steps-control": {
+    "command": [
+      "node",
+      "skills/qore-plan/scripts/spec-lint.mjs",
+      "/tmp/qore-independent-verifier-51y5w0tg/no-steps.md",
+      "--json"
+    ],
+    "exit": 1,
+    "stdout": "{\n  \"valid\": false,\n  \"schema\": \"qore-spec/1\",\n  \"scenarios\": [\n    {\n      \"id\": \"AC01\",\n      \"name\": \"AC01 Literal argument\",\n      \"line\": 4\n    }\n  ],\n  \"problems\": [\n    {\n      \"code\": \"step\",\n      \"message\": \"AC01 lacks its own when step.\",\n      \"line\": 4\n    },\n    {\n      \"code\": \"step\",\n      \"message\": \"AC01 lacks its own then step.\",\n      \"line\": 4\n    }\n  ]\n}\n",
+    "stderr": ""
+  },
+  "outline": {
+    "command": [
+      "node",
+      "skills/qore-plan/scripts/spec-lint.mjs",
+      "/tmp/qore-independent-verifier-51y5w0tg/outline.md",
+      "--json"
+    ],
+    "exit": 0,
+    "stdout": "{\n  \"valid\": true,\n  \"schema\": \"qore-spec/1\",\n  \"scenarios\": [\n    {\n      \"id\": \"AC01\",\n      \"name\": \"AC01 Literal argument\",\n      \"line\": 4\n    }\n  ],\n  \"problems\": []\n}\n",
+    "stderr": ""
+  },
+  "medium-no-counterexample": {
+    "command": [
+      "node",
+      "skills/qore-review/scripts/finding-lint.mjs",
+      "/tmp/qore-independent-verifier-51y5w0tg/medium.json",
+      "--verifier=ran",
+      "--json"
+    ],
+    "exit": 0,
+    "stdout": "{\n  \"valid\": true,\n  \"coverage\": \"COMPLETE\",\n  \"verdict\": \"SHIP\",\n  \"verifier\": \"ran\",\n  \"total\": 1,\n  \"counts\": {\n    \"CONFIRMED\": 1,\n    \"PLAUSIBLE\": 0,\n    \"REFUTED\": 0\n  },\n  \"blocking_findings\": [],\n  \"findings\": [\n    {\n      \"id\": \"probe\",\n      \"title\": \"Known defect\",\n      \"severity\": \"medium\",\n      \"evidence\": \"source.js:1\",\n      \"verdict\": \"CONFIRMED\"\n    }\n  ],\n  \"problems\": [],\n  \"limit\": \"The verifier flag records an execution declaration; validate actual independent phase evidence separately.\"\n}\n",
+    "stderr": ""
+  },
+  "high-control": {
+    "command": [
+      "node",
+      "skills/qore-review/scripts/finding-lint.mjs",
+      "/tmp/qore-independent-verifier-51y5w0tg/high.json",
+      "--verifier=ran",
+      "--json"
+    ],
+    "exit": 1,
+    "stdout": "{\n  \"valid\": false,\n  \"coverage\": \"PARTIAL\",\n  \"verdict\": \"INVALID\",\n  \"verifier\": \"ran\",\n  \"total\": 1,\n  \"counts\": {\n    \"CONFIRMED\": 1,\n    \"PLAUSIBLE\": 0,\n    \"REFUTED\": 0\n  },\n  \"blocking_findings\": [],\n  \"findings\": [\n    {\n      \"id\": \"probe\",\n      \"title\": \"Known defect\",\n      \"severity\": \"high\",\n      \"evidence\": \"source.js:1\",\n      \"verdict\": \"CONFIRMED\"\n    }\n  ],\n  \"problems\": [\n    {\n      \"id\": \"probe\",\n      \"code\": \"counterexample\",\n      \"why\": \"A blocking finding requires a concrete counterexample.\"\n    }\n  ],\n  \"limit\": \"The verifier flag records an execution declaration; validate actual independent phase evidence separately.\"\n}\n",
+    "stderr": ""
+  },
+  "derive": {
+    "command": [
+      "python3",
+      "tools/qore.py",
+      "derive",
+      "--profile",
+      "/tmp/qore-independent-verifier-51y5w0tg/compact.json",
+      "--project-root",
+      "/workspace/implementation-target/qore-skills-0.1.0",
+      "--output",
+      "/tmp/qore-independent-verifier-51y5w0tg/derived"
+    ],
+    "exit": 0,
+    "stdout": "{\n  \"output\": \"/tmp/qore-independent-verifier-51y5w0tg/derived\",\n  \"profile\": {\n    \"id\": \"qore\",\n    \"version\": \"0.1.0\",\n    \"sha256\": \"63c9157e3dd4d6eb2c33c899820422e8ce1d1bee9cc4e22c1df96d814e50a83f\"\n  },\n  \"valid\": true,\n  \"schema\": \"qore-release/1\",\n  \"version\": \"0.1.0\",\n  \"kind\": \"derived\",\n  \"files\": 39,\n  \"manifest_sha256\": \"cd3517f9839cd44fb4b5e56e5b373770fb350d8ffa36bd33a61d58d1c12e0725\"\n}\n",
+    "stderr": ""
+  },
+  "verify": {
+    "command": [
+      "python3",
+      "tools/qore.py",
+      "verify",
+      "/tmp/qore-independent-verifier-51y5w0tg/derived"
+    ],
+    "exit": 0,
+    "stdout": "{\n  \"valid\": true,\n  \"schema\": \"qore-release/1\",\n  \"version\": \"0.1.0\",\n  \"kind\": \"derived\",\n  \"files\": 39,\n  \"manifest_sha256\": \"cd3517f9839cd44fb4b5e56e5b373770fb350d8ffa36bd33a61d58d1c12e0725\"\n}\n",
+    "stderr": ""
+  },
+  "project-check": {
+    "command": [
+      "python3",
+      "/tmp/qore-independent-verifier-51y5w0tg/derived/qore-review-qore/scripts/project-check.py",
+      "/tmp/qore-independent-verifier-51y5w0tg/derived/qore-review-qore/references/project.json",
+      "--root",
+      "/workspace/implementation-target/qore-skills-0.1.0",
+      "--method",
+      "review"
+    ],
+    "exit": 0,
+    "stdout": "{\n  \"schema\": \"qore-context-check/1\",\n  \"profile\": {\n    \"id\": \"qore\",\n    \"version\": \"0.1.0\",\n    \"sha256\": \"da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9\"\n  },\n  \"method\": \"review\",\n  \"coverage\": \"COMPLETE\",\n  \"sources\": [\n    {\n      \"id\": \"project\",\n      \"path\": \"qore.json\",\n      \"expected_sha256\": \"948b2784fa7970cf90a25c338a29067b13d8b4476f666d712a5eb95fc6f641c8\",\n      \"actual_sha256\": \"948b2784fa7970cf90a25c338a29067b13d8b4476f666d712a5eb95fc6f641c8\",\n      \"current\": true\n    }\n  ],\n  \"commands\": [\n    {\n      \"id\": \"check\",\n      \"argv\": [\n        \"python3\",\n        \"-B\",\n        \"-m\",\n        \"unittest\",\n        \"discover\",\n        \"-s\",\n        \"tests\",\n        \"-v\"\n      ],\n      \"source\": \"project\",\n      \"applies_to\": [\n        \"plan\",\n        \"review\"\n      ]\n    }\n  ],\n  \"invariants\": [\n    {\n      \"id\": \"verified-blockers\",\n      \"statement\": \"Only independently confirmed critical or high findings are verified blockers; missing verification remains partial.\",\n      \"source\": \"project\",\n      \"applies_to\": [\n        \"review\"\n      ]\n    }\n  ],\n  \"surfaces\": {},\n  \"consumed_source_ids\": [\n    \"project\"\n  ],\n  \"problems\": []\n}\n",
+    "stderr": ""
+  },
+  "profile-hashes": {
+    "input": "63c9157e3dd4d6eb2c33c899820422e8ce1d1bee9cc4e22c1df96d814e50a83f",
+    "bundled": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9",
+    "manifest": {
+      "id": "qore",
+      "version": "0.1.0",
+      "sha256": "63c9157e3dd4d6eb2c33c899820422e8ce1d1bee9cc4e22c1df96d814e50a83f"
+    },
+    "parsed_equal": true
+  },
+  "temp_root": "/tmp/qore-independent-verifier-51y5w0tg",
+  "time": "2026-10-15T20:07:25.001733+00:00"
+}

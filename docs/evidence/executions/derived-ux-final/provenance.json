@@ -1,0 +1,386 @@
+{
+  "schema": "qore-public-transformation/1",
+  "public_id": "public-focused-derived-ux-final-20261016-02",
+  "original_private_run_id": "focused-current-derived-ux-qore-and-contrast-20261016",
+  "exported_at": "2026-10-15T20:20:29.874963+00:00",
+  "original_instruction_resource_sha256": "550e45ab0a07a641f8ec6d3cba5677e97a8e5fd86053631a1e75c90a8f8c52d0",
+  "identity_rule": "This public export has a new artifact identity. It preserves the exact current instruction-resource snapshot and original new-run observation times; no archive identity is invented.",
+  "operator": "Original UX author prepared this export. No independent evaluation is asserted.",
+  "logical_placeholders": {
+    "<NODE>": "The explicitly installed Node binary used for the recorded invocation.",
+    "<PLAYWRIGHT_MODULE>": "The explicitly installed optional Playwright 1.62.1 package.",
+    "<PRIVATE_EVIDENCE_ROOT>": "Private audit root; raw originals are retained outside the repository.",
+    "<SOURCE_REPOSITORY>": "Working source repository used during the observation.",
+    "<QAIZEN_SOURCE_ROOT>": "Existing company website source tree, inspected read-only."
+  },
+  "commands_notice": "Substituted argv are redacted displays of the original commands, not literal commands claimed to have run. Reproduction requires supplying the declared local runtimes and target inputs.",
+  "artifacts": [
+    {
+      "public_file": "comparison.json",
+      "public_sha256": "ee210c63ee37964bbe61fac52b4780154c255075f6a7953de26c2e66d3664b5c",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-private:executions/derived-ux-final-comparison.json",
+          "sha256": "ee210c63ee37964bbe61fac52b4780154c255075f6a7953de26c2e66d3664b5c"
+        }
+      ],
+      "transformation": "Selected structured evidence; local prefixes replaced with disclosed logical placeholders and URL query/fragment values removed."
+    },
+    {
+      "public_file": "qore/profile-check.json",
+      "public_sha256": "f38b3e61814c10c92ed3eeea7f1b02e8c550494c60f8d05e3c0cbf779744bd9f",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-private:executions/derived-ux-final-qore/probe/profile-check.json",
+          "sha256": "f38b3e61814c10c92ed3eeea7f1b02e8c550494c60f8d05e3c0cbf779744bd9f"
+        }
+      ],
+      "transformation": "Selected structured evidence; local prefixes replaced with disclosed logical placeholders and URL query/fragment values removed."
+    },
+    {
+      "public_file": "qore/profile-use.json",
+      "public_sha256": "ffba8d73a8fbb16072673b756c2af5fdeadabc2646c4afc2cc49db25749e6b11",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-private:executions/derived-ux-final-qore/probe/profile-use.json",
+          "sha256": "ffba8d73a8fbb16072673b756c2af5fdeadabc2646c4afc2cc49db25749e6b11"
+        }
+      ],
+      "transformation": "Selected structured evidence; local prefixes replaced with disclosed logical placeholders and URL query/fragment values removed."
+    },
+    {
+      "public_file": "qore/consumed-source.json",
+      "public_sha256": "5b12ba2bda065c857b1b58cb4c8bfa2c65ae599db4e125ddcda1de24dcd2a3e3",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-private:executions/derived-ux-final-qore/probe/consumed-source.json",
+          "sha256": "948b2784fa7970cf90a25c338a29067b13d8b4476f666d712a5eb95fc6f641c8"
+        }
+      ],
+      "transformation": "Selected structured evidence; local prefixes replaced with disclosed logical placeholders and URL query/fragment values removed."
+    },
+    {
+      "public_file": "qore/result.json",
+      "public_sha256": "4a684d2a619fbf38d0b725760e137b213dbb3966e3179b97b59d9b7e860e7106",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-private:executions/derived-ux-final-qore/probe/result.json",
+          "sha256": "4a684d2a619fbf38d0b725760e137b213dbb3966e3179b97b59d9b7e860e7106"
+        }
+      ],
+      "transformation": "Selected structured evidence; local prefixes replaced with disclosed logical placeholders and URL query/fragment values removed."
+    },
+    {
+      "public_file": "qore/contrast-observation.json",
+      "public_sha256": "cd9e3b21e3d3aa13761a5f961604e3a38e1287be0321db6ed3950017769a4e6b",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-private:executions/derived-ux-final-qore/probe/contrast-observation.json",
+          "sha256": "cd9e3b21e3d3aa13761a5f961604e3a38e1287be0321db6ed3950017769a4e6b"
+        }
+      ],
+      "transformation": "Selected structured evidence; local prefixes replaced with disclosed logical placeholders and URL query/fragment values removed."
+    },
+    {
+      "public_file": "qore/actions.json",
+      "public_sha256": "21b28a9c83588e73ed9c9ecc898298670a3366786f71174856687369e9b82313",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-private:executions/derived-ux-final-qore/probe/actions.json",
+          "sha256": "21b28a9c83588e73ed9c9ecc898298670a3366786f71174856687369e9b82313"
+        }
+      ],
+      "transformation": "Selected structured evidence; local prefixes replaced with disclosed logical placeholders and URL query/fragment values removed."
+    },
+    {
+      "public_file": "qore/commands.json",
+      "public_sha256": "bf2c80e552b88c72885b9d7294663d2c7743402fce163c20ae9951086edc7332",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-private:executions/derived-ux-final-qore/derivation-command.json",
+          "sha256": "c50b7b0814fd45a18b6ec0ff4ad9bae33d60a6a098bb3ec704fcb78c4e0ea3a7"
+        },
+        {
+          "private_artifact_id": "qore-private:executions/derived-ux-final-qore/probe/actual-commands.json",
+          "sha256": "295c2155c035d5def8bf91dc3e387eaca499da9c8065f0266f4be82e426a36d0"
+        }
+      ],
+      "transformation": "Selected structured evidence; local prefixes replaced with disclosed logical placeholders and URL query/fragment values removed."
+    },
+    {
+      "public_file": "qore/invocation.json",
+      "public_sha256": "d36396d1d6555ae84a9c44621f496adb4104497dddc4ab14f179e609a56aa216",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-private:executions/derived-ux-final-qore/probe/invocation.txt",
+          "sha256": "7434beebf530ffc64c58287591b0d0e5839857231da3f7909846e5b6985a06c7"
+        }
+      ],
+      "transformation": "Selected structured evidence; local prefixes replaced with disclosed logical placeholders and URL query/fragment values removed."
+    },
+    {
+      "public_file": "qore/browser/00-entry.dom.json",
+      "public_sha256": "ef0cbc33d6d206c5db8c185a037736dc51f06334106e39a469f56198cf94e504",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-private:executions/derived-ux-final-qore/probe/browser/00-entry.dom.json",
+          "sha256": "ef0cbc33d6d206c5db8c185a037736dc51f06334106e39a469f56198cf94e504"
+        }
+      ],
+      "transformation": "Selected structured evidence; local prefixes replaced with disclosed logical placeholders and URL query/fragment values removed."
+    },
+    {
+      "public_file": "qore/browser/01-profile-required-state.dom.json",
+      "public_sha256": "5d8428f2e4deb45311b298852ee773720fbf31698213cfeabbed28955fcd48f9",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-private:executions/derived-ux-final-qore/probe/browser/01-profile-required-state.dom.json",
+          "sha256": "5d8428f2e4deb45311b298852ee773720fbf31698213cfeabbed28955fcd48f9"
+        }
+      ],
+      "transformation": "Selected structured evidence; local prefixes replaced with disclosed logical placeholders and URL query/fragment values removed."
+    },
+    {
+      "public_file": "qore/browser/02-final.dom.json",
+      "public_sha256": "5d8428f2e4deb45311b298852ee773720fbf31698213cfeabbed28955fcd48f9",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-private:executions/derived-ux-final-qore/probe/browser/02-final.dom.json",
+          "sha256": "5d8428f2e4deb45311b298852ee773720fbf31698213cfeabbed28955fcd48f9"
+        }
+      ],
+      "transformation": "Selected structured evidence; local prefixes replaced with disclosed logical placeholders and URL query/fragment values removed."
+    },
+    {
+      "public_file": "qore/browser/events.json",
+      "public_sha256": "c68f87f28a8fbf62374c1c8cedae30abe22d8d375d277627e7d521c8b0653eb2",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-private:executions/derived-ux-final-qore/probe/browser/events.json",
+          "sha256": "c68f87f28a8fbf62374c1c8cedae30abe22d8d375d277627e7d521c8b0653eb2"
+        }
+      ],
+      "transformation": "Selected structured evidence; local prefixes replaced with disclosed logical placeholders and URL query/fragment values removed."
+    },
+    {
+      "public_file": "qore/resolved.png",
+      "public_sha256": "b8d1bc1b9bf35c7c16d775f08bd7ef1ec8bf87d0f4fc776217b469ded29d51a6",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-private:executions/derived-ux-final-qore/probe/browser/02-final.png",
+          "sha256": "b8d1bc1b9bf35c7c16d775f08bd7ef1ec8bf87d0f4fc776217b469ded29d51a6"
+        }
+      ],
+      "transformation": "Byte-for-byte copy; unchanged evidence."
+    },
+    {
+      "public_file": "qore/derivation.json",
+      "public_sha256": "b8ef4203e95063ff5923c9efcad79f56abb3ea9f6f953c3ee1d8a8e89cb072a4",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-private:executions/derived-ux-final-qore/derive-result.json",
+          "sha256": "dca9e948ed7b48e913182cddf1efd0f2abf58b9fe77e93ff64aaa4034b8ac36e"
+        }
+      ],
+      "transformation": "Selected structured evidence; local prefixes replaced with disclosed logical placeholders and URL query/fragment values removed."
+    },
+    {
+      "public_file": "qore/identity.json",
+      "public_sha256": "3b0db4b3b3d9fcaf8cd069dfcf0327fd96e4758236e7f57b414f811055e7bcdb",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-private:executions/derived-ux-final-qore/probe/result.json",
+          "sha256": "4a684d2a619fbf38d0b725760e137b213dbb3966e3179b97b59d9b7e860e7106"
+        }
+      ],
+      "transformation": "Selected structured evidence; local prefixes replaced with disclosed logical placeholders and URL query/fragment values removed."
+    },
+    {
+      "public_file": "contrast/profile-check.json",
+      "public_sha256": "ba7b33a5d77dd54ed0514d4cf3391238bf451101bcf41b562f7cd27ad5951630",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-private:executions/derived-ux-final-contrast/probe/profile-check.json",
+          "sha256": "ba7b33a5d77dd54ed0514d4cf3391238bf451101bcf41b562f7cd27ad5951630"
+        }
+      ],
+      "transformation": "Selected structured evidence; local prefixes replaced with disclosed logical placeholders and URL query/fragment values removed."
+    },
+    {
+      "public_file": "contrast/profile-use.json",
+      "public_sha256": "28b129cc177fa2c2b7d9dde2c78e3e6184e1516465a9c53dc5a9c59905dc2154",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-private:executions/derived-ux-final-contrast/probe/profile-use.json",
+          "sha256": "28b129cc177fa2c2b7d9dde2c78e3e6184e1516465a9c53dc5a9c59905dc2154"
+        }
+      ],
+      "transformation": "Selected structured evidence; local prefixes replaced with disclosed logical placeholders and URL query/fragment values removed."
+    },
+    {
+      "public_file": "contrast/consumed-source.json",
+      "public_sha256": "7921015a94dbc8411a8f10a0e27aa813d0c7eb4da2fabfd458e96214cd3cefd0",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-private:executions/derived-ux-final-contrast/probe/consumed-source.json",
+          "sha256": "830dc3c50369c21f523a1c68b188f3013b40c439ea362a1e97c45a38a89a79c5"
+        }
+      ],
+      "transformation": "Selected structured evidence; local prefixes replaced with disclosed logical placeholders and URL query/fragment values removed."
+    },
+    {
+      "public_file": "contrast/result.json",
+      "public_sha256": "349a159227ca20e253e8c71e698fb62c219cb21850c2d2acda3dc7a1c1bc16d1",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-private:executions/derived-ux-final-contrast/probe/result.json",
+          "sha256": "349a159227ca20e253e8c71e698fb62c219cb21850c2d2acda3dc7a1c1bc16d1"
+        }
+      ],
+      "transformation": "Selected structured evidence; local prefixes replaced with disclosed logical placeholders and URL query/fragment values removed."
+    },
+    {
+      "public_file": "contrast/contrast-observation.json",
+      "public_sha256": "e0bb9fa7bc1212a22ab78c4d226f57d6515c7c586469ef910dbfdbc1fca4fc47",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-private:executions/derived-ux-final-contrast/probe/contrast-observation.json",
+          "sha256": "e0bb9fa7bc1212a22ab78c4d226f57d6515c7c586469ef910dbfdbc1fca4fc47"
+        }
+      ],
+      "transformation": "Selected structured evidence; local prefixes replaced with disclosed logical placeholders and URL query/fragment values removed."
+    },
+    {
+      "public_file": "contrast/actions.json",
+      "public_sha256": "88a2c0e887093ea2408106389d0b553ec7bd84b112d82ce861c9f72e3b1355b3",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-private:executions/derived-ux-final-contrast/probe/actions.json",
+          "sha256": "88a2c0e887093ea2408106389d0b553ec7bd84b112d82ce861c9f72e3b1355b3"
+        }
+      ],
+      "transformation": "Selected structured evidence; local prefixes replaced with disclosed logical placeholders and URL query/fragment values removed."
+    },
+    {
+      "public_file": "contrast/commands.json",
+      "public_sha256": "42a1b099ca885b6c78c283d47b3eff654c544b03fe857b7510aeefff5942753c",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-private:executions/derived-ux-final-contrast/derivation-command.json",
+          "sha256": "182f94b1fa61a6d3bc2cb518b4c3415fccebbc98a8a40ac866938307a08cc0e5"
+        },
+        {
+          "private_artifact_id": "qore-private:executions/derived-ux-final-contrast/probe/actual-commands.json",
+          "sha256": "76c513312734f51b4a4a6a2fded539e761d8348fe7697457589b17b00d9c91cb"
+        }
+      ],
+      "transformation": "Selected structured evidence; local prefixes replaced with disclosed logical placeholders and URL query/fragment values removed."
+    },
+    {
+      "public_file": "contrast/invocation.json",
+      "public_sha256": "d36396d1d6555ae84a9c44621f496adb4104497dddc4ab14f179e609a56aa216",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-private:executions/derived-ux-final-contrast/probe/invocation.txt",
+          "sha256": "7434beebf530ffc64c58287591b0d0e5839857231da3f7909846e5b6985a06c7"
+        }
+      ],
+      "transformation": "Selected structured evidence; local prefixes replaced with disclosed logical placeholders and URL query/fragment values removed."
+    },
+    {
+      "public_file": "contrast/browser/00-entry.dom.json",
+      "public_sha256": "0b0a6a0a81a3dbdfa0d9d79e17e505ac362ccdbd11be5565dda6e2417fec9f8a",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-private:executions/derived-ux-final-contrast/probe/browser/00-entry.dom.json",
+          "sha256": "0b0a6a0a81a3dbdfa0d9d79e17e505ac362ccdbd11be5565dda6e2417fec9f8a"
+        }
+      ],
+      "transformation": "Selected structured evidence; local prefixes replaced with disclosed logical placeholders and URL query/fragment values removed."
+    },
+    {
+      "public_file": "contrast/browser/01-profile-required-state.dom.json",
+      "public_sha256": "e95ada6a27dc747246861e3b1e71496e7edddaeb093d523716e6d4c27f6c04be",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-private:executions/derived-ux-final-contrast/probe/browser/01-profile-required-state.dom.json",
+          "sha256": "e95ada6a27dc747246861e3b1e71496e7edddaeb093d523716e6d4c27f6c04be"
+        }
+      ],
+      "transformation": "Selected structured evidence; local prefixes replaced with disclosed logical placeholders and URL query/fragment values removed."
+    },
+    {
+      "public_file": "contrast/browser/02-final.dom.json",
+      "public_sha256": "e95ada6a27dc747246861e3b1e71496e7edddaeb093d523716e6d4c27f6c04be",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-private:executions/derived-ux-final-contrast/probe/browser/02-final.dom.json",
+          "sha256": "e95ada6a27dc747246861e3b1e71496e7edddaeb093d523716e6d4c27f6c04be"
+        }
+      ],
+      "transformation": "Selected structured evidence; local prefixes replaced with disclosed logical placeholders and URL query/fragment values removed."
+    },
+    {
+      "public_file": "contrast/browser/events.json",
+      "public_sha256": "748ff127ffb484d4cc00e9bda62aed169f74141f3059e7904f62542f6b99195e",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-private:executions/derived-ux-final-contrast/probe/browser/events.json",
+          "sha256": "748ff127ffb484d4cc00e9bda62aed169f74141f3059e7904f62542f6b99195e"
+        }
+      ],
+      "transformation": "Selected structured evidence; local prefixes replaced with disclosed logical placeholders and URL query/fragment values removed."
+    },
+    {
+      "public_file": "contrast/resolved.png",
+      "public_sha256": "13c5ba9979af63a655b02aa2cd737f4f48de5ff17e22c2a69d004b4eead26f23",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-private:executions/derived-ux-final-contrast/probe/browser/02-final.png",
+          "sha256": "13c5ba9979af63a655b02aa2cd737f4f48de5ff17e22c2a69d004b4eead26f23"
+        }
+      ],
+      "transformation": "Byte-for-byte copy; unchanged evidence."
+    },
+    {
+      "public_file": "contrast/derivation.json",
+      "public_sha256": "fbbd09af9cfce2c7fba726abdeed047a14f407ad8e245066b0815b133751cb2b",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-private:executions/derived-ux-final-contrast/derive-result.json",
+          "sha256": "3b2f1f35a9fefce17104e819dfdd43cf605f9a33e48a5c33569a5495e52748ac"
+        }
+      ],
+      "transformation": "Selected structured evidence; local prefixes replaced with disclosed logical placeholders and URL query/fragment values removed."
+    },
+    {
+      "public_file": "contrast/identity.json",
+      "public_sha256": "889bd55a1a5dab743f55c61f1cf5f15388b2cdbd83e5b2abfd2fa574e8802604",
+      "raw_sources": [
+        {
+          "private_artifact_id": "qore-private:executions/derived-ux-final-contrast/probe/result.json",
+          "sha256": "349a159227ca20e253e8c71e698fb62c219cb21850c2d2acda3dc7a1c1bc16d1"
+        }
+      ],
+      "transformation": "Selected structured evidence; local prefixes replaced with disclosed logical placeholders and URL query/fragment values removed."
+    },
+    {
+      "public_file": "README.md",
+      "public_sha256": "20ff907dd3b4f96dfae9bafbe2e391eb32c2ae1f8ec43900dafd117158187840",
+      "raw_sources": [],
+      "transformation": "New English navigation/limits summary of the linked fresh actual evidence; no independent evaluation."
+    }
+  ],
+  "private_only": [
+    {
+      "private_artifact_id": "qore-private:executions/derived-ux-final-qore/probe/browser/trace.zip",
+      "sha256": "0995c3dd8828a58a1452824c23d87994edee3f4700f29eeb6d7093958ac87a68",
+      "reason": "Raw trace/video or failed-attempt diagnostic remains private."
+    },
+    {
+      "private_artifact_id": "qore-private:executions/derived-ux-final-contrast/probe/browser/trace.zip",
+      "sha256": "2385a67bf02216b1029609940aae310a1ba04cbe293a79e42879aa305e5ac61c",
+      "reason": "Raw trace/video or failed-attempt diagnostic remains private."
+    }
+  ]
+}

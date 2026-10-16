@@ -1,0 +1,335 @@
+{
+  "schema": "qore-run/1",
+  "id": "public-generic-plan-20261015-01",
+  "method": "plan",
+  "skill": "qore-plan",
+  "candidate_sha256": "2963c43e98803354932e406627d9e239064fbe2899745a7e093b7d4154fa56d1",
+  "target": {
+    "label": "Frozen b validator-hardening example and bundled implementation/tests",
+    "snapshot_sha256": "dec34e19b7b3036c213299a1f98b05fec1709212fb156eabf9928682024ae2cb"
+  },
+  "last_relevant_change": "2026-10-15T19:43:12.254892+00:00",
+  "environment": {
+    "id": "codex-desktop-author-host-20261015",
+    "operator": "agent",
+    "host": "macOS-26.6.2-arm64-arm-64bit-Mach-O"
+  },
+  "profile": null,
+  "required_phases": [
+    "product",
+    "architecture",
+    "ux",
+    "delivery",
+    "qa",
+    "adjudication",
+    "spec_validation"
+  ],
+  "phases": [
+    {
+      "id": "product",
+      "actor_id": "/root/impl_validators/generic_product",
+      "status": "PASS",
+      "artifacts": [
+        "phase-product.json"
+      ]
+    },
+    {
+      "id": "architecture",
+      "actor_id": "/root/impl_validators/generic_architecture",
+      "status": "PASS",
+      "artifacts": [
+        "phase-architecture.json"
+      ]
+    },
+    {
+      "id": "ux",
+      "actor_id": "/root/impl_validators/generic_ux",
+      "status": "PASS",
+      "artifacts": [
+        "phase-ux.json"
+      ]
+    },
+    {
+      "id": "delivery",
+      "actor_id": "/root/impl_validators/generic_delivery",
+      "status": "PASS",
+      "artifacts": [
+        "phase-delivery.json"
+      ]
+    },
+    {
+      "id": "qa",
+      "actor_id": "/root/impl_validators/generic_qa",
+      "status": "PASS",
+      "artifacts": [
+        "phase-qa.json"
+      ]
+    },
+    {
+      "id": "adjudication",
+      "actor_id": "/root/impl_validators",
+      "status": "PASS",
+      "artifacts": [
+        "phase-adjudication.json"
+      ]
+    },
+    {
+      "id": "spec_validation",
+      "actor_id": "/root/impl_validators",
+      "status": "PASS",
+      "artifacts": [
+        "phase-spec_validation.json"
+      ]
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "phase-product.json",
+      "sha256": "bd48b1a0ba4de740b38e63899286b7f0cde084385d2632ade0c851883149694d",
+      "kind": "execution",
+      "candidate_sha256": "2963c43e98803354932e406627d9e239064fbe2899745a7e093b7d4154fa56d1",
+      "target_snapshot_sha256": "dec34e19b7b3036c213299a1f98b05fec1709212fb156eabf9928682024ae2cb",
+      "observed_at": "2026-10-15T19:54:28.102765+00:00"
+    },
+    {
+      "path": "phase-architecture.json",
+      "sha256": "31f7463dd814fa8d2dc87ec1bcd90fe84f56aa220d1e90926d4907148745d22c",
+      "kind": "execution",
+      "candidate_sha256": "2963c43e98803354932e406627d9e239064fbe2899745a7e093b7d4154fa56d1",
+      "target_snapshot_sha256": "dec34e19b7b3036c213299a1f98b05fec1709212fb156eabf9928682024ae2cb",
+      "observed_at": "2026-10-15T19:55:21.906573+00:00"
+    },
+    {
+      "path": "phase-ux.json",
+      "sha256": "f040f088927ab299e7a93b648f7dcb769948713416e3251da027ba7f7a067ce3",
+      "kind": "execution",
+      "candidate_sha256": "2963c43e98803354932e406627d9e239064fbe2899745a7e093b7d4154fa56d1",
+      "target_snapshot_sha256": "dec34e19b7b3036c213299a1f98b05fec1709212fb156eabf9928682024ae2cb",
+      "observed_at": "2026-10-15T19:56:08.724352+00:00"
+    },
+    {
+      "path": "phase-delivery.json",
+      "sha256": "89a673a5d217b413b9b5e5dd6b1955a3edf68479e230258ad6981c2c479da7f2",
+      "kind": "execution",
+      "candidate_sha256": "2963c43e98803354932e406627d9e239064fbe2899745a7e093b7d4154fa56d1",
+      "target_snapshot_sha256": "dec34e19b7b3036c213299a1f98b05fec1709212fb156eabf9928682024ae2cb",
+      "observed_at": "2026-10-15T19:56:51.876802+00:00"
+    },
+    {
+      "path": "phase-qa.json",
+      "sha256": "ffeba394eff94def562618ebf1ead6bca169dcdeff8ad381131017a408c3cd97",
+      "kind": "execution",
+      "candidate_sha256": "2963c43e98803354932e406627d9e239064fbe2899745a7e093b7d4154fa56d1",
+      "target_snapshot_sha256": "dec34e19b7b3036c213299a1f98b05fec1709212fb156eabf9928682024ae2cb",
+      "observed_at": "2026-10-15T19:58:06.048662+00:00"
+    },
+    {
+      "path": "phase-adjudication.json",
+      "sha256": "dce0316dc1947db7bbc88eed43cabf5be65477c4ab449b07f4971003ac37abde",
+      "kind": "execution",
+      "candidate_sha256": "2963c43e98803354932e406627d9e239064fbe2899745a7e093b7d4154fa56d1",
+      "target_snapshot_sha256": "dec34e19b7b3036c213299a1f98b05fec1709212fb156eabf9928682024ae2cb",
+      "observed_at": "2026-10-15T19:59:07.942064+00:00"
+    },
+    {
+      "path": "phase-spec_validation.json",
+      "sha256": "daee437eb3f37b81f7ba9a0d5579b6be8c6687697b1e4b91fb47f6d5c018b1d7",
+      "kind": "execution",
+      "candidate_sha256": "2963c43e98803354932e406627d9e239064fbe2899745a7e093b7d4154fa56d1",
+      "target_snapshot_sha256": "dec34e19b7b3036c213299a1f98b05fec1709212fb156eabf9928682024ae2cb",
+      "observed_at": "2026-10-15T19:58:30.564815+00:00"
+    },
+    {
+      "path": "adjudication.json",
+      "sha256": "8c38fdf6fb48bfa34c1305d98939cc5e45aa9d71e7b6834e31a177cc934da27a",
+      "kind": "source"
+    },
+    {
+      "path": "architecture-analysis.md",
+      "sha256": "ba83fc26af6e083f90991b18c45a7380307ffa899da0287d431702155c79d822",
+      "kind": "source"
+    },
+    {
+      "path": "architecture-cross.md",
+      "sha256": "b2e31cd2c265ad358eeb3df45131f904c1aa7c40796702403ca1d70967395872",
+      "kind": "source"
+    },
+    {
+      "path": "baseline-tests.json",
+      "sha256": "98d2cff77b53882ab3260267328a2bcd7cca8eac5056db1b73564290a27d1e35",
+      "kind": "source"
+    },
+    {
+      "path": "candidate-identity.json",
+      "sha256": "e7ff963751757ca3f0d6d78bef39e2f8f23693b172650fac04e6a99671bfab68",
+      "kind": "source"
+    },
+    {
+      "path": "delivery-analysis.md",
+      "sha256": "e6b96ea108ded0a049b3d791485428b748e8c6fd843771e350a78808067f3bcc",
+      "kind": "source"
+    },
+    {
+      "path": "delivery-commands.json",
+      "sha256": "12fcf04e5256687b1c5137210b9b5b2a94781f46f951deabafc5b780ac13a34f",
+      "kind": "source"
+    },
+    {
+      "path": "delivery-cross.md",
+      "sha256": "91bdd0aad44355a59b275329b3d8a3696ac6f09195246661fa43e6b9c3f22055",
+      "kind": "source"
+    },
+    {
+      "path": "intake.json",
+      "sha256": "d3b09d3928cf45a8e38b18c86266cd51e83123d9ca566afbb5b0d0b664356532",
+      "kind": "source"
+    },
+    {
+      "path": "integrity.json",
+      "sha256": "5be22d231fc0c6efd574a9def9e98f044f6c44065de898f89491254e1c9b7bdf",
+      "kind": "source"
+    },
+    {
+      "path": "product-analysis.md",
+      "sha256": "aea629e0c211b9b9b5a22bce268368e8947b9736c0d48b8a3607d1c9ece2e507",
+      "kind": "source"
+    },
+    {
+      "path": "product-cross.md",
+      "sha256": "e69e63a5d6f32acfbc330ad0d50583fedfbd27bd4914b3c8242df65c401643de",
+      "kind": "source"
+    },
+    {
+      "path": "proposed-spec.md",
+      "sha256": "26701f8c71dcbdf85e3ab787e870360763070b726ce24069b706d10831c834d6",
+      "kind": "source"
+    },
+    {
+      "path": "qa-analysis.md",
+      "sha256": "bba54cd3c8fe5b1701bcee885fab3579bf446536a522e621344c2a113e723de7",
+      "kind": "source"
+    },
+    {
+      "path": "qa-commands.json",
+      "sha256": "0cd4c55a4d7b9e977df72f468519913751882dc0cc137988a1bb40a68bd6f2af",
+      "kind": "source"
+    },
+    {
+      "path": "qa-cross.md",
+      "sha256": "5de3c83d4d72315d0cca475d5b229fa824cd49cb112184484cce3615556f9a5d",
+      "kind": "source"
+    },
+    {
+      "path": "roster.json",
+      "sha256": "15dea994c234df4d08e239513f41081aadd278e1ebe04d3d64445d0b07d66bbc",
+      "kind": "source"
+    },
+    {
+      "path": "spec-validation.json",
+      "sha256": "b94a308c9fd8d3771ff3d6981bd024ed7801034fe4b947ca5614c5ebbc20704b",
+      "kind": "source"
+    },
+    {
+      "path": "target-snapshot.json",
+      "sha256": "552986802070ec3ce8ebbb1d257b652ac0542dc5610c00a79437d4c91f5f8537",
+      "kind": "source"
+    },
+    {
+      "path": "ux-analysis.md",
+      "sha256": "ca459018b10da480dd42843bf19bffd932216080bc8afc2fe98f15a0efb28db0",
+      "kind": "source"
+    },
+    {
+      "path": "ux-commands.json",
+      "sha256": "0a338cd71e42246214789abd752c0e37b50d2cdaa794872ce147a3e814b0cf62",
+      "kind": "source"
+    },
+    {
+      "path": "ux-cross.md",
+      "sha256": "2d63c5795d9fff4c61aeeded684aac574988285143a0e86fdd8fb567df5c7b94",
+      "kind": "source"
+    },
+    {
+      "path": "README.md",
+      "sha256": "168da34ccac827bce624b7d65b266639e476b9ad941dfd229063adc8391c8773",
+      "kind": "presentation"
+    },
+    {
+      "path": "independent-evaluation.json",
+      "sha256": "6f61ad51627b19dceb96636a830533c2738274af70140fdb45a4a617f4a7b625",
+      "kind": "source"
+    },
+    {
+      "path": "independent-evaluation.md",
+      "sha256": "7dc24d78f8cd80655ba368bb17b59a6f61924b1fff39e321a0e2e4391e9e7440",
+      "kind": "source"
+    },
+    {
+      "path": "source-manifest.json",
+      "sha256": "47a1eac8ab923bd94a3e8f025de7673f022658c6a9245ed19091b4122d2edbd5",
+      "kind": "source"
+    },
+    {
+      "path": "public-spec-validation.json",
+      "sha256": "f43819496d49805618a2e5bd11ed51180dca32e002334db57d27ae4d542b6a13",
+      "kind": "source"
+    }
+  ],
+  "commands": [
+    {
+      "argv": [
+        "python3",
+        "tools/qore.py",
+        "verify",
+        "<CANDIDATE_B>"
+      ],
+      "exit_code": 0,
+      "artifact": "integrity.json"
+    },
+    {
+      "argv": [
+        "python3",
+        "tools/qore.py",
+        "snapshot",
+        "--root",
+        "<CANDIDATE_B>"
+      ],
+      "exit_code": 0,
+      "artifact": "target-snapshot.json"
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "artifact": "baseline-tests.json"
+    },
+    {
+      "argv": [
+        "bash",
+        "scripts/spec-lint.sh",
+        "<PRIVATE_EVIDENCE_ROOT>/proposed-spec.md"
+      ],
+      "exit_code": 0,
+      "artifact": "spec-validation.json"
+    }
+  ],
+  "limitations": [
+    "Agent execution in the current author host; this is not independent clean-environment or external-human qualification.",
+    "Planning only; no implementation, publication, install, or user-data mutation is authorized by these results.",
+    "Product initial probes are summarized in its full report; independently retained QA/Delivery/UX raw command logs and coordinator baseline output support the measured branches.",
+    "Independent role contexts were actually created with collaboration tools; actor labels alone and this structural checker do not certify independence or report quality.",
+    "Existing 82-test baseline remains frozen-b historical evidence; selected malformed-declaration regressions and any remediation require new-revision qualification.",
+    "Sanitized public derivative: command paths are display substitutions, original observation times are preserved, and public integrity checks do not rerun historical phases."
+  ],
+  "coverage": "COMPLETE",
+  "source_run_id": "generic-plan-frozen-b-20261015",
+  "public_artifact_id": "public-generic-plan-20261015-01"
+}

@@ -1,0 +1,74 @@
+{
+  "schema": "qore-project/1",
+  "id": "qore-contrast",
+  "version": "0.1.0",
+  "sources": [
+    {
+      "id": "project",
+      "path": "tests/fixtures/project-alternate.json",
+      "sha256": "830dc3c50369c21f523a1c68b188f3013b40c439ea362a1e97c45a38a89a79c5"
+    }
+  ],
+  "commands": [
+    {
+      "id": "check",
+      "argv": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_validators.py",
+        "-v"
+      ],
+      "source": "project",
+      "applies_to": [
+        "plan",
+        "review"
+      ]
+    }
+  ],
+  "invariants": [
+    {
+      "id": "contrast-plan",
+      "statement": "Plan a narrow validator change without expanding the release scope.",
+      "source": "project",
+      "applies_to": [
+        "plan"
+      ]
+    },
+    {
+      "id": "contrast-review",
+      "statement": "A high-severity candidate without independent verification stays PLAUSIBLE and does not become a verified blocker.",
+      "source": "project",
+      "applies_to": [
+        "review"
+      ]
+    },
+    {
+      "id": "contrast-ux",
+      "statement": "The alternate synthetic route must reach its alternate resolved state.",
+      "source": "project",
+      "applies_to": [
+        "ux"
+      ]
+    }
+  ],
+  "surfaces": {
+    "web": {
+      "kind": "fixture",
+      "entry_url": "http://127.0.0.1:8765/alternate.html",
+      "allowed_origins": [
+        "http://127.0.0.1:8765"
+      ],
+      "required_state": "Alternate resolved synthetic state.",
+      "source": "project",
+      "applies_to": [
+        "ux"
+      ]
+    }
+  }
+}

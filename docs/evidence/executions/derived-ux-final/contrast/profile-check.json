@@ -1,0 +1,48 @@
+{
+  "schema": "qore-context-check/1",
+  "profile": {
+    "id": "qore-contrast",
+    "version": "0.1.0",
+    "sha256": "f72394c2ebb80cb6da41b33a088d56fbd24b4577f71bc2b022d0ef4bb36bfb88"
+  },
+  "method": "ux",
+  "coverage": "COMPLETE",
+  "sources": [
+    {
+      "id": "project",
+      "path": "tests/fixtures/project-alternate.json",
+      "expected_sha256": "830dc3c50369c21f523a1c68b188f3013b40c439ea362a1e97c45a38a89a79c5",
+      "actual_sha256": "830dc3c50369c21f523a1c68b188f3013b40c439ea362a1e97c45a38a89a79c5",
+      "current": true
+    }
+  ],
+  "commands": [],
+  "invariants": [
+    {
+      "id": "contrast-ux",
+      "statement": "The alternate synthetic route must reach its alternate resolved state.",
+      "source": "project",
+      "applies_to": [
+        "ux"
+      ]
+    }
+  ],
+  "surfaces": {
+    "web": {
+      "kind": "fixture",
+      "entry_url": "http://127.0.0.1:8765/alternate.html",
+      "allowed_origins": [
+        "http://127.0.0.1:8765"
+      ],
+      "required_state": "Alternate resolved synthetic state.",
+      "source": "project",
+      "applies_to": [
+        "ux"
+      ]
+    }
+  },
+  "consumed_source_ids": [
+    "project"
+  ],
+  "problems": []
+}

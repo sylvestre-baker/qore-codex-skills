@@ -1,0 +1,162 @@
+{
+  "schema": "qore-private-method-input/1",
+  "run_id": "generic-ux-final-frozen-20261016-fresh",
+  "skill": "qore-ux-review",
+  "profile": null,
+  "operator": "Maintainer-operated agent; not external human first use",
+  "initial_scope_at": "2026-10-15T20:17:50.852920+00:00",
+  "candidate_skill_manifest": [
+    {
+      "path": "SKILL.md",
+      "sha256": "33b1367f256f1a6304902d08cdff9b023add92fb750834216268cca8de84b851"
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha256": "2bafca3b7edce2edac4814b4028fdb814f83c1c2efbea4d461b7469fbe1bd7af"
+    },
+    {
+      "path": "references/evidence.md",
+      "sha256": "659560f88b965371e2c6e886b5f4c648a4879ebb7c69af4b1d307dfae176c8b3"
+    },
+    {
+      "path": "references/gates.md",
+      "sha256": "667063cd64c576a9c5b4ec69f6ddcd677d4e969bae96184b3136ede9fd12fd87"
+    },
+    {
+      "path": "references/project-profile.md",
+      "sha256": "154ed11dab8e8499e74a5f3a6afb512827d5de5c73408523b845684e38f59dfc"
+    },
+    {
+      "path": "references/protocol.md",
+      "sha256": "eda7c7c7c9e711e4b9fca59ec6b622d713c3d95b14cd6e3b008a978ebf156004"
+    },
+    {
+      "path": "references/run-evidence.md",
+      "sha256": "2ede0b19d58fd5535c90023068355679ee7bb27d3070967ada38f9ad156a9e69"
+    },
+    {
+      "path": "scripts/depth-lint.mjs",
+      "sha256": "9b9cdcea3e87f4820944ddfc075ef19e75aad0bb08a7f1fd279ea6590267def7"
+    },
+    {
+      "path": "scripts/project-check.py",
+      "sha256": "3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd"
+    },
+    {
+      "path": "scripts/run-check.py",
+      "sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa"
+    },
+    {
+      "path": "scripts/stop-rule.mjs",
+      "sha256": "5c8d898e3accd82ed1932c791ff5ed1285aae659bae6757488158fc7a8120443"
+    }
+  ],
+  "candidate_skill_snapshot_sha256": "550e45ab0a07a641f8ec6d3cba5677e97a8e5fd86053631a1e75c90a8f8c52d0",
+  "target_source_manifest": [
+    {
+      "path": "src/app/[locale]/labs/page.tsx",
+      "sha256": "527e403e2924428a0624f89e22c924d99fa5cdd526ba8156201e6ab996856bad"
+    },
+    {
+      "path": "src/app/[locale]/labs/readiness-check/page.tsx",
+      "sha256": "0f5db270478551012de5b51942647d51d4d01bcf4acd016022d67a2b83893448"
+    },
+    {
+      "path": "src/components/labs/readiness-check/index.tsx",
+      "sha256": "e328586561237a8a9f75f4d41a7f52eb1b3240157cd60a72d88fbb8d42e34035"
+    },
+    {
+      "path": "src/components/labs/readiness-check/ReadinessIntro.tsx",
+      "sha256": "b64baec1444cf6a6c0e4fd9b5775efd8f0f3be564251a884f8d7f3b5b0fc403a"
+    },
+    {
+      "path": "src/components/labs/readiness-check/ReadinessQuestions.tsx",
+      "sha256": "a26c27dc64490b5fa8ded3da57d461c751a3f8771d19d6a4547fd23d1dcbde0d"
+    },
+    {
+      "path": "src/components/labs/readiness-check/QuestionHelp.tsx",
+      "sha256": "dccb3d2071d708a7740a1305df54fef6a4f43c8c6485a08e437b4a17f31cef29"
+    },
+    {
+      "path": "src/components/labs/shared/quiz/QuizCard.tsx",
+      "sha256": "b154bed2cb4235c978c512218b149ce61828b0d5bf7edf794ac80919e545d268"
+    }
+  ],
+  "target_source_snapshot_sha256": "820c178b613c91121b7baa7ab386670e0a96a34ef303aec0c36a735b3cf70032",
+  "target": "https://qaizen.io/en/labs",
+  "authorized_origins": [
+    "https://qaizen.io"
+  ],
+  "persona": "Anonymous public visitor in isolated browser context",
+  "entry": "Existing production-readiness card on Labs",
+  "matrix": {
+    "viewports": [
+      {
+        "width": 1280,
+        "height": 800
+      }
+    ],
+    "themes": [
+      "existing dark presentation"
+    ],
+    "motion": [
+      "prefers-reduced-motion: reduce"
+    ],
+    "states": [
+      "Labs entry",
+      "readiness introduction",
+      "first question without answer",
+      "help expanded",
+      "help closed by keyboard",
+      "restored introduction"
+    ],
+    "data": "Actual live public page content. No synthetic answers, contact details or result links."
+  },
+  "required_gates": [
+    "G0",
+    "G1",
+    "G2",
+    "G3",
+    "G4",
+    "G5",
+    "G6"
+  ],
+  "required_checks": {
+    "G0": [
+      "Click real Labs readiness card; assert intended URL and introduction heading; public anonymous persona only; source inbound link inspection"
+    ],
+    "G1": [
+      "Direct navigation and reload of readiness introduction; document outcome and console exceptions; browser Back/Forward between real entry and readiness"
+    ],
+    "G2": [
+      "Observe entry-to-introduction resolution and local intro-to-first-question-to-help-to-return transitions; ensure no selected answer and disabled Next"
+    ],
+    "G3": [
+      "View actual 1280x800 dark-theme screenshots for chosen states; inspect geometry and reduced-motion context; SSR-only intro visibility"
+    ],
+    "G4": [
+      "Inspect affected headings, question, help and Back copy; scan visible text for raw failure tokens and duplicate IDs"
+    ],
+    "G5": [
+      "Live semantics and meaningful names; question heading focus; Tab/Space disclosure behavior and visible focus; Back focus restoration; measure actual risky primary-button text/background contrast"
+    ],
+    "G6": [
+      "Challenge real entry vs deeplink substitution; repeat first-question transition after history/reload; verify that blocked event POST is instrumentation and does not masquerade as clean console; challenge scope exclusions"
+    ]
+  },
+  "instrumentation_scope": "Live semantic/keyboard/focus and measured primary-button contrast. No instrumented accessibility conformance audit is required by this explicit limited interaction review; no accessibility conformance claim will be made.",
+  "excluded_checks": {
+    "GP": "Performance budgets and metrics are outside the requested entry/state acceptance. No performance change or speed claim is under review.",
+    "result and quiz answers": "User expressly limited this review to read-only navigation and initial states; no answers or form results are submitted.",
+    "other viewports/themes/locales": "The requested demonstration is this existing desktop English path, not responsive or localization acceptance.",
+    "other persona/account contexts": "The path has no login or account context; the anonymous visitor is its sole applicable persona."
+  },
+  "budgets": {
+    "maximum_iterations": 6,
+    "planned_iterations": 1,
+    "maximum_minutes": 3,
+    "driver_retry": 1
+  },
+  "policy": "Block all non-GET/HEAD/OPTIONS requests; no application source modifications or publication.",
+  "candidate_identity_kind": "current instruction-resource snapshot, not an archive"
+}

@@ -1,0 +1,53 @@
+{
+  "representation": "Redacted display argv; substituted placeholders were not literally passed.",
+  "derivation": {
+    "argv": [
+      "python3",
+      "<SOURCE_REPOSITORY>/tools/qore.py",
+      "derive",
+      "--profile",
+      "<SOURCE_REPOSITORY>/profiles/qore.json",
+      "--project-root",
+      "<SOURCE_REPOSITORY>",
+      "--output",
+      "<PRIVATE_EVIDENCE_ROOT>/derived-ux-final-qore/tree"
+    ],
+    "exit_code": 0,
+    "artifact": "derive-result.json"
+  },
+  "probe_commands": [
+    {
+      "argv": [
+        "python3",
+        "<PRIVATE_EVIDENCE_ROOT>/derived-ux-final-qore/tree/qore-ux-review-qore/scripts/project-check.py",
+        "<PRIVATE_EVIDENCE_ROOT>/derived-ux-final-qore/tree/qore-ux-review-qore/references/project.json",
+        "--root",
+        "<SOURCE_REPOSITORY>",
+        "--method",
+        "ux"
+      ],
+      "cwd": "<REDACTED_LOCAL_PATH>",
+      "exit_code": 0,
+      "artifact": "profile-check.json"
+    },
+    {
+      "argv": [
+        "<NODE>",
+        "<SOURCE_REPOSITORY>/tools/browser_probe.mjs",
+        "--url",
+        "http://127.0.0.1:8765/index.html",
+        "--output",
+        "<PRIVATE_EVIDENCE_ROOT>/derived-ux-final-qore/probe/browser",
+        "--actions",
+        "<PRIVATE_EVIDENCE_ROOT>/derived-ux-final-qore/probe/actions.json",
+        "--playwright-module",
+        "<PLAYWRIGHT_MODULE>",
+        "--label",
+        "Synthetic profile consumption probe"
+      ],
+      "cwd": "<REDACTED_LOCAL_PATH>",
+      "exit_code": 0,
+      "artifact": "browser-command.json"
+    }
+  ]
+}

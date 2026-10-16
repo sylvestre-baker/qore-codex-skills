@@ -1,0 +1,12 @@
+{
+  "findings": [
+    {
+      "id": "PROBE-HIGH",
+      "title": "Synthetic unverified high candidate for consumer probe",
+      "severity": "high",
+      "verdict": "PLAUSIBLE",
+      "evidence": "examples/validator-hardening.md:41",
+      "unresolved": "Independent verification intentionally outside this focused probe."
+    }
+  ]
+}

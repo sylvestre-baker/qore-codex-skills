@@ -1,0 +1,99 @@
+{
+  "console": [
+    {
+      "at": "2026-10-15T20:17:53.491Z",
+      "type": "info",
+      "text": "Alternate synthetic fixture loaded.",
+      "location": {
+        "url": "http://127.0.0.1:8765/alternate.html",
+        "line": 11,
+        "column": 8,
+        "lineNumber": 11,
+        "columnNumber": 8
+      }
+    },
+    {
+      "at": "2026-10-15T20:17:53.496Z",
+      "type": "info",
+      "text": "Synthetic network response observed.",
+      "location": {
+        "url": "http://127.0.0.1:8765/alternate.html",
+        "line": 12,
+        "column": 75,
+        "lineNumber": 12,
+        "columnNumber": 75
+      }
+    },
+    {
+      "at": "2026-10-15T20:17:55.050Z",
+      "type": "info",
+      "text": "Alternate synthetic state resolved.",
+      "location": {
+        "url": "http://127.0.0.1:8765/alternate.html",
+        "line": 15,
+        "column": 10,
+        "lineNumber": 15,
+        "columnNumber": 10
+      }
+    }
+  ],
+  "page_errors": [],
+  "network": [
+    {
+      "at": "2026-10-15T20:17:53.489Z",
+      "url": "http://127.0.0.1:8765/alternate.html",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "document"
+    },
+    {
+      "at": "2026-10-15T20:17:53.496Z",
+      "url": "http://127.0.0.1:8765/ping.json",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "fetch"
+    }
+  ],
+  "requests_failed": [],
+  "blocked_mutations": [],
+  "navigation": [
+    {
+      "at": "2026-10-15T20:17:53.490Z",
+      "url": "http://127.0.0.1:8765/alternate.html"
+    }
+  ],
+  "actions": [
+    {
+      "at": "2026-10-15T20:17:55.040Z",
+      "type": "keyboard",
+      "key": "Tab",
+      "active_element": {
+        "tag": "BUTTON",
+        "id": "alternate-resolve",
+        "text": "Resolve alternate synthetic state"
+      },
+      "outcome": "completed"
+    },
+    {
+      "at": "2026-10-15T20:17:55.040Z",
+      "type": "click",
+      "selector": "button[type=\"button\"]",
+      "outcome": "completed",
+      "url": "http://127.0.0.1:8765/alternate.html"
+    },
+    {
+      "at": "2026-10-15T20:17:55.954Z",
+      "type": "assert-text",
+      "text": "Alternate resolved synthetic state.",
+      "outcome": "completed",
+      "url": "http://127.0.0.1:8765/alternate.html"
+    },
+    {
+      "at": "2026-10-15T20:17:56.859Z",
+      "type": "snapshot",
+      "label": "profile-required-state",
+      "outcome": "completed",
+      "url": "http://127.0.0.1:8765/alternate.html"
+    }
+  ]
+}

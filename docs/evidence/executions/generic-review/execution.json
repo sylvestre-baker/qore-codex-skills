@@ -1,0 +1,910 @@
+{
+  "schema": "qore-run/1",
+  "id": "public-independent-linux-review-20261015",
+  "method": "review",
+  "skill": "qore-review",
+  "candidate_sha256": "3e0265c6d33fc0340fd8df0f0c1c4074a7495a8744365b6d388c747e4daf60da",
+  "target": {
+    "label": "examples/validator-hardening.md and scoped bundled validators/tests/current review contracts",
+    "snapshot_sha256": "e6f131ad712f3282ed1313b5214cfadc578f90defae3741acef1d68f8b1fc7a9"
+  },
+  "last_relevant_change": "2026-10-15T19:44:15.190783+00:00",
+  "environment": {
+    "id": "8b8ea26648ca",
+    "operator": "agent in user-declared independent Linux container",
+    "host": "Linux-6.12.72-linuxkit-aarch64-with-musl1"
+  },
+  "profile": null,
+  "required_phases": [
+    "finder.correctness",
+    "finder.security",
+    "finder.feasibility",
+    "redaction",
+    "verifier",
+    "findings_validation"
+  ],
+  "phases": [
+    {
+      "id": "finder.correctness",
+      "actor_id": "/root/correctness",
+      "status": "PASS",
+      "artifacts": [
+        "finder.correctness-execution.json"
+      ]
+    },
+    {
+      "id": "finder.security",
+      "actor_id": "/root/security",
+      "status": "PASS",
+      "artifacts": [
+        "finder.security-execution.json"
+      ]
+    },
+    {
+      "id": "finder.feasibility",
+      "actor_id": "/root/feasibility",
+      "status": "PASS",
+      "artifacts": [
+        "finder.feasibility-execution.json"
+      ]
+    },
+    {
+      "id": "redaction",
+      "actor_id": "/root",
+      "status": "PASS",
+      "artifacts": [
+        "redaction-execution.json"
+      ]
+    },
+    {
+      "id": "verifier",
+      "actor_id": "/root/verifier",
+      "status": "PASS",
+      "artifacts": [
+        "verifier-execution.json"
+      ]
+    },
+    {
+      "id": "findings_validation",
+      "actor_id": "/root",
+      "status": "PASS",
+      "artifacts": [
+        "findings_validation-execution.json"
+      ]
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "claims.json",
+      "sha256": "8aa973100a15bf817985395637131e838cf84e427be4792583def923f020f5fa",
+      "kind": "presentation"
+    },
+    {
+      "path": "correctness-candidates.json",
+      "sha256": "8aa973100a15bf817985395637131e838cf84e427be4792583def923f020f5fa",
+      "kind": "presentation"
+    },
+    {
+      "path": "correctness-input-empty.json",
+      "sha256": "6e96a492bc9fa40d22212c5be0396a203f3dbd4916cf97ebe2f66b6d54fa4a9a",
+      "kind": "presentation"
+    },
+    {
+      "path": "correctness-input-high-skipped.json",
+      "sha256": "57c8f2f3115ce230968e3cd02a9fa75b3054c84fba6cf32298c754dc5e334306",
+      "kind": "presentation"
+    },
+    {
+      "path": "correctness-input-missing.json",
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "kind": "presentation"
+    },
+    {
+      "path": "correctness-project-check.json",
+      "sha256": "d32ca8f2395f3c6c3552e033fe595ce04737ecde5d2aa8d8b23266693fd8fc45",
+      "kind": "presentation"
+    },
+    {
+      "path": "correctness-redacted.json",
+      "sha256": "6539ed4b29cda4ea1d8191cb7733d48d3157655453d9a0f89ce110fc05bc4345",
+      "kind": "presentation"
+    },
+    {
+      "path": "correctness-report.md",
+      "sha256": "e00de6f8101c7a9196165e0f7dee5169faf337644603dd3186c9fdea8ce7ef36",
+      "kind": "presentation"
+    },
+    {
+      "path": "correctness-snapshot.json",
+      "sha256": "b49f39f68cd7b8d28be67629c6f9659742fb3f2e493f8f0bcd4c0e113c68bc24",
+      "kind": "presentation"
+    },
+    {
+      "path": "correctness-trace.json",
+      "sha256": "5cbf4697f1138f94edc036331722c99cd8fbef9ff6a1c95765da8783316bcf2a",
+      "kind": "presentation"
+    },
+    {
+      "path": "feasibility-candidates.json",
+      "sha256": "8aa973100a15bf817985395637131e838cf84e427be4792583def923f020f5fa",
+      "kind": "presentation"
+    },
+    {
+      "path": "feasibility-project-check.json",
+      "sha256": "a209ddd7eb67f1c6d439d2b6ffc2d5f261131e57fd3adfe960f13dddaf6d41c5",
+      "kind": "presentation"
+    },
+    {
+      "path": "feasibility-report.md",
+      "sha256": "1c1a22a143aaaf1720fb413d67abd344b8afaab10f7beba1d3974add18b1b4a0",
+      "kind": "presentation"
+    },
+    {
+      "path": "feasibility-source-digests.json",
+      "sha256": "894f776e77949569689587e6a237c03bbfc5764c1b20047fb06a70fc1c3003ba",
+      "kind": "presentation"
+    },
+    {
+      "path": "feasibility-trace-filtered.json",
+      "sha256": "2053a6092db31ab7a80f42acfe9e0dae7688e7db7b4edd390bb9e76ce8bbc058",
+      "kind": "presentation"
+    },
+    {
+      "path": "feasibility-trace-final.json",
+      "sha256": "d492329a791e21616244e07d2fd85145d3e706d8033a636f3452cdfc6cf8852b",
+      "kind": "presentation"
+    },
+    {
+      "path": "feasibility-trace-results.json",
+      "sha256": "75bff691887f53ebe1e953e66eb81173e74925a249dfc24dcf1283e0e5237500",
+      "kind": "presentation"
+    },
+    {
+      "path": "feasibility-trace-source.json",
+      "sha256": "9b64796216e7b5ae29c60f08e85bc011482d774f8020d4af6154d1f4fe822bfd",
+      "kind": "presentation"
+    },
+    {
+      "path": "finalize.py",
+      "sha256": "6846d99a6c2fdf2200be12e6c1c0e3b64461cf93b574c853157067f185792876",
+      "kind": "presentation"
+    },
+    {
+      "path": "finder.correctness-execution.json",
+      "sha256": "98a04835f2d93846fbdea2529757a5c7df3a09a10946e81108842078d6134a4a",
+      "kind": "execution",
+      "candidate_sha256": "3e0265c6d33fc0340fd8df0f0c1c4074a7495a8744365b6d388c747e4daf60da",
+      "target_snapshot_sha256": "e6f131ad712f3282ed1313b5214cfadc578f90defae3741acef1d68f8b1fc7a9",
+      "observed_at": "2026-10-15T19:47:55.063159+00:00"
+    },
+    {
+      "path": "finder.feasibility-execution.json",
+      "sha256": "e502b37147245eb019cd91c6261e607c3c89c658f88a6bc7f24a6bbd7ba1cac8",
+      "kind": "execution",
+      "candidate_sha256": "3e0265c6d33fc0340fd8df0f0c1c4074a7495a8744365b6d388c747e4daf60da",
+      "target_snapshot_sha256": "e6f131ad712f3282ed1313b5214cfadc578f90defae3741acef1d68f8b1fc7a9",
+      "observed_at": "2026-10-15T19:47:55.063303+00:00"
+    },
+    {
+      "path": "finder.security-execution.json",
+      "sha256": "512012e502957657221f79b171cc729d7036a11c07924344317405b77a6544af",
+      "kind": "execution",
+      "candidate_sha256": "3e0265c6d33fc0340fd8df0f0c1c4074a7495a8744365b6d388c747e4daf60da",
+      "target_snapshot_sha256": "e6f131ad712f3282ed1313b5214cfadc578f90defae3741acef1d68f8b1fc7a9",
+      "observed_at": "2026-10-15T19:47:55.063246+00:00"
+    },
+    {
+      "path": "findings-lint-command.json",
+      "sha256": "b21d0132c1d3f6f88c29b1c813f70f2f8fe2d0ffea0dcd7bfa197ad35c4560a9",
+      "kind": "presentation"
+    },
+    {
+      "path": "findings-lint.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "presentation"
+    },
+    {
+      "path": "findings-lint.stdout",
+      "sha256": "2a957e6e163241fbd08a07974bd4d9b295b4436e939f8794edc07c76560227e0",
+      "kind": "presentation"
+    },
+    {
+      "path": "findings.json",
+      "sha256": "8aa973100a15bf817985395637131e838cf84e427be4792583def923f020f5fa",
+      "kind": "presentation"
+    },
+    {
+      "path": "findings_validation-execution.json",
+      "sha256": "6158eae959deffc357c30d4132ae03786994c0c5c639e05bbc585356ecb0f344",
+      "kind": "execution",
+      "candidate_sha256": "3e0265c6d33fc0340fd8df0f0c1c4074a7495a8744365b6d388c747e4daf60da",
+      "target_snapshot_sha256": "e6f131ad712f3282ed1313b5214cfadc578f90defae3741acef1d68f8b1fc7a9",
+      "observed_at": "2026-10-15T19:47:55.063470+00:00"
+    },
+    {
+      "path": "identity.json",
+      "sha256": "1837263f34eee66a07eb137ca69aa3a5a176b69ec4856cbea1585d9ad7b4a94b",
+      "kind": "source"
+    },
+    {
+      "path": "lead-commands.md",
+      "sha256": "b1b03f95ad6dd5dd510fac997a411d8d96b32a22c2090559daf6637bdc974c4e",
+      "kind": "presentation"
+    },
+    {
+      "path": "project-tests.log",
+      "sha256": "64fe2dc8601e7be38a7e5208669a352f5a0b439248b958f6b1be707913bf79da",
+      "kind": "presentation"
+    },
+    {
+      "path": "redaction-command.json",
+      "sha256": "a780ae4d1f8e9ed2cb1bc26decf173093d2acd58b6e0a6cb038e259c7d22053e",
+      "kind": "presentation"
+    },
+    {
+      "path": "redaction-execution.json",
+      "sha256": "3295a00221d5219a833e758b5e953c05518fc39b518aed2e7426c56d88431876",
+      "kind": "execution",
+      "candidate_sha256": "3e0265c6d33fc0340fd8df0f0c1c4074a7495a8744365b6d388c747e4daf60da",
+      "target_snapshot_sha256": "e6f131ad712f3282ed1313b5214cfadc578f90defae3741acef1d68f8b1fc7a9",
+      "observed_at": "2026-10-15T19:47:55.063349+00:00"
+    },
+    {
+      "path": "redactor.stderr",
+      "sha256": "b9598552a5b4006acea907bb06991f0be45e31f006cbe5d430f01f0f0900ae73",
+      "kind": "presentation"
+    },
+    {
+      "path": "report.md",
+      "sha256": "80db1c35a4087f44d99f177a3eeb8ac74f37b5b71e543ab4ed6f225537c481a7",
+      "kind": "presentation"
+    },
+    {
+      "path": "roster.json",
+      "sha256": "b956d9b269399b481be0c3914e111a9ecfcabb11a1ac3626ddced47b0f001dbf",
+      "kind": "presentation"
+    },
+    {
+      "path": "security-candidates.json",
+      "sha256": "b8adad3852f196db84ad05c2affa3855c7e15d1c9d24c62c8d32165e34a82c39",
+      "kind": "presentation"
+    },
+    {
+      "path": "security-command-evidence.json",
+      "sha256": "8d4233830e7a6bff9a6e938306aad42e8f891dee751bbf09d54b64de0ae7605c",
+      "kind": "presentation"
+    },
+    {
+      "path": "security-empty.json",
+      "sha256": "6e96a492bc9fa40d22212c5be0396a203f3dbd4916cf97ebe2f66b6d54fa4a9a",
+      "kind": "presentation"
+    },
+    {
+      "path": "security-high.json",
+      "sha256": "f06a80aa846b6d3b8ed2466e5c63c232ee6fa487aead773e8824c843199ce9e6",
+      "kind": "presentation"
+    },
+    {
+      "path": "security-malformed.json",
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "kind": "presentation"
+    },
+    {
+      "path": "security-report.md",
+      "sha256": "73a6a77ebe6586ef06de2ae9dc9f4d577562df1aa23b4798e37d00ab1c769df6",
+      "kind": "presentation"
+    },
+    {
+      "path": "security-source-manifest.json",
+      "sha256": "0efc1667a018b8fbab80d98761257f847217df163465ce437083c19801a1c3dc",
+      "kind": "presentation"
+    },
+    {
+      "path": "security-trace-claims.json",
+      "sha256": "29c3db99efa20f6646f7f347b0ce39e7dd954a34dcd4a9e04ac91f3c1870c122",
+      "kind": "presentation"
+    },
+    {
+      "path": "source/.agents/skills/qore-review/SKILL.md.txt",
+      "sha256": "aae83b4105dd89387c7eac31df3c789326def9c0b05dccd4a3d2cdab65732a97",
+      "kind": "source"
+    },
+    {
+      "path": "source/.agents/skills/qore-review/agents/openai.yaml",
+      "sha256": "6c689fd93445ab3edcb6b88320e7680ee37c746bca5635e8c406304b081250ed",
+      "kind": "source"
+    },
+    {
+      "path": "source/.agents/skills/qore-review/references/findings.md.txt",
+      "sha256": "79b2b5f52e88761331c01b92af9b492ef1888c6c20a0af1b94a8bead7aa2d6cb",
+      "kind": "source"
+    },
+    {
+      "path": "source/.agents/skills/qore-review/references/project-profile.md.txt",
+      "sha256": "5d3b69aac18f83a634f4c57c214cc1f53fa186c03c536adcefd4c905a8767c8d",
+      "kind": "source"
+    },
+    {
+      "path": "source/.agents/skills/qore-review/references/protocol.md.txt",
+      "sha256": "e27e0050fdf4d75d2840dd257b9a759f1f48d459ef540990cd3aed5528c5f340",
+      "kind": "source"
+    },
+    {
+      "path": "source/.agents/skills/qore-review/references/release.json",
+      "sha256": "0d0a62e137572e9c30dfae9b3a0756e6a6dd54c473f99c5f583379812153ecf6",
+      "kind": "source"
+    },
+    {
+      "path": "source/.agents/skills/qore-review/references/run-evidence.md.txt",
+      "sha256": "fbdf433ef8b3e972f97bed5fdec4990cf3b49535bf63120c729a7daf4af71746",
+      "kind": "source"
+    },
+    {
+      "path": "source/.agents/skills/qore-review/scripts/finding-lint.mjs",
+      "sha256": "d0cc6809b750d9e52015b0448f18e3f291b979674b1350156d2444e607791ee7",
+      "kind": "source"
+    },
+    {
+      "path": "source/.agents/skills/qore-review/scripts/project-check.py",
+      "sha256": "3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd",
+      "kind": "source"
+    },
+    {
+      "path": "source/.agents/skills/qore-review/scripts/redact-for-verifier.mjs",
+      "sha256": "dc249524c749ad5b511aef0a2cf08b4cfd5c47c1e0de4fd41c5c70746b471083",
+      "kind": "source"
+    },
+    {
+      "path": "source/.agents/skills/qore-review/scripts/run-check.py",
+      "sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+      "kind": "source"
+    },
+    {
+      "path": "source/CONTRIBUTING.md.txt",
+      "sha256": "87ef55fe9e213e5bd9b0f3178849b0a9ac88ec1c07634053c9989c0cbbde7638",
+      "kind": "source"
+    },
+    {
+      "path": "source/README.md.txt",
+      "sha256": "46205c1947e1e35b1f67d12184dbfb921381c781d9eda3616e8251d187725bac",
+      "kind": "source"
+    },
+    {
+      "path": "source/examples/validator-hardening.md.txt",
+      "sha256": "6f25b2edcd6d0826b12fbb47a99fc4162a1089eef71eaf7f16ea2cb7a8239a87",
+      "kind": "source"
+    },
+    {
+      "path": "source/qore.json",
+      "sha256": "948b2784fa7970cf90a25c338a29067b13d8b4476f666d712a5eb95fc6f641c8",
+      "kind": "source"
+    },
+    {
+      "path": "source/schemas/qore-run.schema.json",
+      "sha256": "540acd397ee09a070eb19b189f7baadd3ce55337fdb50137f11931e7ef246651",
+      "kind": "source"
+    },
+    {
+      "path": "source/skills/qore-review/SKILL.md.txt",
+      "sha256": "aae83b4105dd89387c7eac31df3c789326def9c0b05dccd4a3d2cdab65732a97",
+      "kind": "source"
+    },
+    {
+      "path": "source/skills/qore-review/agents/openai.yaml",
+      "sha256": "6c689fd93445ab3edcb6b88320e7680ee37c746bca5635e8c406304b081250ed",
+      "kind": "source"
+    },
+    {
+      "path": "source/skills/qore-review/references/findings.md.txt",
+      "sha256": "79b2b5f52e88761331c01b92af9b492ef1888c6c20a0af1b94a8bead7aa2d6cb",
+      "kind": "source"
+    },
+    {
+      "path": "source/skills/qore-review/references/project-profile.md.txt",
+      "sha256": "5d3b69aac18f83a634f4c57c214cc1f53fa186c03c536adcefd4c905a8767c8d",
+      "kind": "source"
+    },
+    {
+      "path": "source/skills/qore-review/references/protocol.md.txt",
+      "sha256": "e27e0050fdf4d75d2840dd257b9a759f1f48d459ef540990cd3aed5528c5f340",
+      "kind": "source"
+    },
+    {
+      "path": "source/skills/qore-review/references/release.json",
+      "sha256": "0d0a62e137572e9c30dfae9b3a0756e6a6dd54c473f99c5f583379812153ecf6",
+      "kind": "source"
+    },
+    {
+      "path": "source/skills/qore-review/references/run-evidence.md.txt",
+      "sha256": "fbdf433ef8b3e972f97bed5fdec4990cf3b49535bf63120c729a7daf4af71746",
+      "kind": "source"
+    },
+    {
+      "path": "source/skills/qore-review/scripts/finding-lint.mjs",
+      "sha256": "d0cc6809b750d9e52015b0448f18e3f291b979674b1350156d2444e607791ee7",
+      "kind": "source"
+    },
+    {
+      "path": "source/skills/qore-review/scripts/project-check.py",
+      "sha256": "3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd",
+      "kind": "source"
+    },
+    {
+      "path": "source/skills/qore-review/scripts/redact-for-verifier.mjs",
+      "sha256": "dc249524c749ad5b511aef0a2cf08b4cfd5c47c1e0de4fd41c5c70746b471083",
+      "kind": "source"
+    },
+    {
+      "path": "source/skills/qore-review/scripts/run-check.py",
+      "sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+      "kind": "source"
+    },
+    {
+      "path": "source/tests/fixtures/project-alternate.json",
+      "sha256": "830dc3c50369c21f523a1c68b188f3013b40c439ea362a1e97c45a38a89a79c5",
+      "kind": "source"
+    },
+    {
+      "path": "source/tests/fixtures/validators/empty-object.json",
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+      "kind": "source"
+    },
+    {
+      "path": "source/tests/fixtures/validators/null.json",
+      "sha256": "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed",
+      "kind": "source"
+    },
+    {
+      "path": "source/tests/fixtures/validators/truncated.json",
+      "sha256": "5f5c45efee43be1915fcfa9ae978fec3302e2bb70137526cc5f2a7e6573e1f7b",
+      "kind": "source"
+    },
+    {
+      "path": "source/tests/fixtures/validators/valid-findings.json",
+      "sha256": "883889cef1ccb804667246acead1736f16b2472135bd400b27d8ea323ede00a4",
+      "kind": "source"
+    },
+    {
+      "path": "source/tests/fixtures/validators/valid-spec.md.txt",
+      "sha256": "d273b8da517f326b0f9e3bee7ac09895ffc3c96c86bd926f1449a1b0254e0dc7",
+      "kind": "source"
+    },
+    {
+      "path": "source/tests/fixtures/validators/valid-ux.json",
+      "sha256": "56bc9807a45cec509a7d12fbff34381a2d8226cf5b933280220be7bf56261245",
+      "kind": "source"
+    },
+    {
+      "path": "source/tests/fixtures/web/alternate-actions.json",
+      "sha256": "01d12ee086d239dc8f5fe802d090fba6eb8e862fd281cb6dbf73483b6263a9ab",
+      "kind": "source"
+    },
+    {
+      "path": "source/tests/fixtures/web/alternate.html",
+      "sha256": "9782b494fdbb156515518d4bb096a5c057385f44d9a6983c352080626e879a22",
+      "kind": "source"
+    },
+    {
+      "path": "source/tests/fixtures/web/index.html",
+      "sha256": "c0b51d87d81a36f21608139d7a4fbf07b9fe1d6f94b1fa0bb0599b5f74fe91f5",
+      "kind": "source"
+    },
+    {
+      "path": "source/tests/fixtures/web/ping.json",
+      "sha256": "b637c8fcaf1d33dfbc53887d00214034900ef46e83faca65758f6bc2b56ed43d",
+      "kind": "source"
+    },
+    {
+      "path": "source/tests/fixtures/web/primary-actions.json",
+      "sha256": "3342907cd646a04a21ffc9ceb85e9359817b6b8220944030c27df66f5b9b5002",
+      "kind": "source"
+    },
+    {
+      "path": "source/tests/test_package.py",
+      "sha256": "7e94e9a81f4b6e6b7f14d4f2432cc066b9b9b180afa4b96eb1c58c2d4957ed74",
+      "kind": "source"
+    },
+    {
+      "path": "source/tests/test_run_contract.py",
+      "sha256": "f671c3ec3ca69ad155c54823ef89eb9475fd847b65b762094ad937030e7f297f",
+      "kind": "source"
+    },
+    {
+      "path": "source/tests/test_validators.py",
+      "sha256": "b91ab5195a1e7380747c618a17f885b56dc1cddf809ff23e065c3062fc477f39",
+      "kind": "source"
+    },
+    {
+      "path": "source/tools/run_contract.py",
+      "sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+      "kind": "source"
+    },
+    {
+      "path": "source-manifest.json",
+      "sha256": "e6f131ad712f3282ed1313b5214cfadc578f90defae3741acef1d68f8b1fc7a9",
+      "kind": "source"
+    },
+    {
+      "path": "source-unchanged.json",
+      "sha256": "fffe8c94ab291385dc4aaaa811ab780a771b2be07443f3b80a61c117d447afc0",
+      "kind": "presentation"
+    },
+    {
+      "path": "verified.json",
+      "sha256": "8aa973100a15bf817985395637131e838cf84e427be4792583def923f020f5fa",
+      "kind": "presentation"
+    },
+    {
+      "path": "verifier-command-evidence.json",
+      "sha256": "9945bbcdba0c622ee0ec02a524e67bbd7b6a44c4391206e01a3253f14d1fb689",
+      "kind": "presentation"
+    },
+    {
+      "path": "verifier-coverage.json",
+      "sha256": "f700ce6be0743c4106f3ff461c3ec7be573750737cae63bf41d5003ff9a21b14",
+      "kind": "presentation"
+    },
+    {
+      "path": "verifier-execution.json",
+      "sha256": "395a1a8aac22ee5c360c95270a2238e6d87635f2dd0ae9d32969b5b3d5bad5f1",
+      "kind": "execution",
+      "candidate_sha256": "3e0265c6d33fc0340fd8df0f0c1c4074a7495a8744365b6d388c747e4daf60da",
+      "target_snapshot_sha256": "e6f131ad712f3282ed1313b5214cfadc578f90defae3741acef1d68f8b1fc7a9",
+      "observed_at": "2026-10-15T19:47:55.063378+00:00"
+    },
+    {
+      "path": "verifier-probe-A01.json",
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "kind": "presentation"
+    },
+    {
+      "path": "verifier-probe-A02.json",
+      "sha256": "b1eafe7bd0771519e550ca8299c87d2b5f804b1a6d25460711dbf582badcf878",
+      "kind": "presentation"
+    },
+    {
+      "path": "verifier-probe-A03.json",
+      "sha256": "6e96a492bc9fa40d22212c5be0396a203f3dbd4916cf97ebe2f66b6d54fa4a9a",
+      "kind": "presentation"
+    },
+    {
+      "path": "verifier-report.md",
+      "sha256": "8dfe016d6e504e644eadca09e5d6f7740d9d2491236b1d87364dd3bace6f883d",
+      "kind": "presentation"
+    }
+  ],
+  "commands": [
+    {
+      "argv": [
+        "node",
+        "scripts/redact-for-verifier.mjs",
+        "/workspace/review-evidence/findings.json"
+      ],
+      "exit_code": 0,
+      "artifact": "redaction-command.json"
+    },
+    {
+      "argv": [
+        "node",
+        "scripts/finding-lint.mjs",
+        "/workspace/review-evidence/verified.json",
+        "--verifier=ran",
+        "--json"
+      ],
+      "exit_code": 0,
+      "artifact": "findings-lint-command.json"
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "artifact": "project-tests.log"
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "artifact": "correctness-project-check.json"
+    },
+    {
+      "argv": [
+        "node",
+        "skills/qore-review/scripts/finding-lint.mjs",
+        "/workspace/review-evidence/correctness-input-missing.json",
+        "--verifier=ran",
+        "--json"
+      ],
+      "exit_code": 1,
+      "artifact": "correctness-trace.json"
+    },
+    {
+      "argv": [
+        "node",
+        "skills/qore-review/scripts/finding-lint.mjs",
+        "/workspace/review-evidence/correctness-input-high-skipped.json",
+        "--verifier=skipped",
+        "--json"
+      ],
+      "exit_code": 0,
+      "artifact": "correctness-trace.json"
+    },
+    {
+      "argv": [
+        "node",
+        "skills/qore-review/scripts/redact-for-verifier.mjs",
+        "/workspace/review-evidence/correctness-input-high-skipped.json"
+      ],
+      "exit_code": 0,
+      "artifact": "correctness-trace.json"
+    },
+    {
+      "argv": [
+        "node",
+        "skills/qore-review/scripts/finding-lint.mjs",
+        "/workspace/review-evidence/correctness-input-empty.json",
+        "--verifier=ran",
+        "--json"
+      ],
+      "exit_code": 0,
+      "artifact": "correctness-trace.json"
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "artifact": "security-command-evidence.json"
+    },
+    {
+      "argv": [
+        "node",
+        "skills/qore-review/scripts/finding-lint.mjs",
+        "/workspace/review-evidence/security-empty.json",
+        "--verifier=ran",
+        "--json"
+      ],
+      "exit_code": 0,
+      "artifact": "security-command-evidence.json"
+    },
+    {
+      "argv": [
+        "node",
+        "skills/qore-review/scripts/finding-lint.mjs",
+        "/workspace/review-evidence/security-empty.json",
+        "--verifier=skipped",
+        "--json"
+      ],
+      "exit_code": 0,
+      "artifact": "security-command-evidence.json"
+    },
+    {
+      "argv": [
+        "node",
+        "skills/qore-review/scripts/redact-for-verifier.mjs",
+        "/workspace/review-evidence/security-empty.json"
+      ],
+      "exit_code": 0,
+      "artifact": "security-command-evidence.json"
+    },
+    {
+      "argv": [
+        "node",
+        "skills/qore-review/scripts/finding-lint.mjs",
+        "/workspace/review-evidence/security-high.json",
+        "--verifier=ran",
+        "--json"
+      ],
+      "exit_code": 0,
+      "artifact": "security-command-evidence.json"
+    },
+    {
+      "argv": [
+        "node",
+        "skills/qore-review/scripts/finding-lint.mjs",
+        "/workspace/review-evidence/security-high.json",
+        "--verifier=skipped",
+        "--json"
+      ],
+      "exit_code": 0,
+      "artifact": "security-command-evidence.json"
+    },
+    {
+      "argv": [
+        "node",
+        "skills/qore-review/scripts/redact-for-verifier.mjs",
+        "/workspace/review-evidence/security-high.json"
+      ],
+      "exit_code": 0,
+      "artifact": "security-command-evidence.json"
+    },
+    {
+      "argv": [
+        "node",
+        "skills/qore-review/scripts/finding-lint.mjs",
+        "/workspace/review-evidence/security-malformed.json",
+        "--verifier=ran",
+        "--json"
+      ],
+      "exit_code": 1,
+      "artifact": "security-command-evidence.json"
+    },
+    {
+      "argv": [
+        "node",
+        "skills/qore-review/scripts/finding-lint.mjs",
+        "/workspace/review-evidence/security-malformed.json",
+        "--verifier=skipped",
+        "--json"
+      ],
+      "exit_code": 1,
+      "artifact": "security-command-evidence.json"
+    },
+    {
+      "argv": [
+        "node",
+        "skills/qore-review/scripts/redact-for-verifier.mjs",
+        "/workspace/review-evidence/security-malformed.json"
+      ],
+      "exit_code": 2,
+      "artifact": "security-command-evidence.json"
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "artifact": "feasibility-project-check.json"
+    },
+    {
+      "argv": [
+        "node",
+        "/workspace/qore-skills-0.1.0/skills/qore-review/scripts/finding-lint.mjs",
+        "/workspace/review-evidence/verifier-probe-A01.json",
+        "--verifier=ran",
+        "--json"
+      ],
+      "exit_code": 1,
+      "artifact": "verifier-command-evidence.json"
+    },
+    {
+      "argv": [
+        "node",
+        "/workspace/qore-skills-0.1.0/skills/qore-review/scripts/finding-lint.mjs",
+        "/workspace/review-evidence/verifier-probe-A02.json",
+        "--verifier=skipped",
+        "--json"
+      ],
+      "exit_code": 0,
+      "artifact": "verifier-command-evidence.json"
+    },
+    {
+      "argv": [
+        "node",
+        "/workspace/qore-skills-0.1.0/skills/qore-review/scripts/finding-lint.mjs",
+        "/workspace/review-evidence/verifier-probe-A03.json",
+        "--verifier=ran",
+        "--json"
+      ],
+      "exit_code": 0,
+      "artifact": "verifier-command-evidence.json"
+    },
+    {
+      "argv": [
+        "node",
+        "/workspace/qore-skills-0.1.0/skills/qore-review/scripts/redact-for-verifier.mjs",
+        "/workspace/review-evidence/claims.json"
+      ],
+      "exit_code": 0,
+      "artifact": "verifier-command-evidence.json"
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "artifact": "verifier-command-evidence.json"
+    },
+    {
+      "argv": [
+        "node",
+        "/workspace/qore-skills-0.1.0/skills/qore-review/scripts/finding-lint.mjs",
+        "/workspace/review-evidence/verified.json",
+        "--verifier=ran",
+        "--json"
+      ],
+      "exit_code": 0,
+      "artifact": "verifier-command-evidence.json"
+    },
+    {
+      "argv": [
+        "rg",
+        "--files",
+        "-g",
+        "AGENTS.md",
+        "-g",
+        "*protocol*",
+        "-g",
+        "*findings*",
+        "-g",
+        "*run-evidence*",
+        "-g",
+        "*validator*",
+        "-g",
+        "SKILL.md",
+        "-g",
+        "project.json",
+        "-g",
+        "README*"
+      ],
+      "exit_code": 127,
+      "artifact": "lead-commands.md"
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--short"
+      ],
+      "exit_code": 128,
+      "artifact": "correctness-report.md"
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_code": 128,
+      "artifact": "correctness-report.md"
+    }
+  ],
+  "limitations": [
+    "Agent execution, not external human first use. Container isolation supplied by user; no host or credential inventory attempted.",
+    "No Git metadata or rg binary; file digests and standard tools used.",
+    "Zero candidates: no claim-specific reproduction or refutation IDs exist; verifier independently checked acceptance cases.",
+    "No production packet-size or load guarantee tested; none specified.",
+    "Scope limited to named specification, implementation, tests and necessary contracts; not publication or whole-product qualification.",
+    "Execution wrapper timestamps record phase capture after actual completion, not reconstructed worker start times.",
+    "Completed contexts were stopped with interrupt_agent; host exposes no separate terminate API.",
+    "Public derivative: selected original artifacts retain bytes, source Markdown snapshots have .txt names; provenance.json maps every exported artifact. Source-run identity is preserved, not relabelled as a newer candidate."
+  ],
+  "coverage": "COMPLETE",
+  "source_run_id": "independent-linux-validator-hardening-20261015"
+}

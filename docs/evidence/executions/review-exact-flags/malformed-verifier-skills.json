@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "node",
+    "/workspace/qore-skills-0.1.0/skills/qore-review/scripts/finding-lint.mjs",
+    "/workspace/review-evidence/empty.json",
+    "--verifier=ran=skipped",
+    "--json"
+  ],
+  "cwd": "/workspace/qore-skills-0.1.0",
+  "exit_code": 2,
+  "stdout": "",
+  "stderr": "usage: finding-lint.mjs <packet.json> --verifier=ran|skipped [--json]\n",
+  "observed_at": "2026-10-15T19:56:28.894779+00:00"
+}

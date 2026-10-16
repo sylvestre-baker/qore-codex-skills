@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "python3",
+    "-B",
+    "tools/qore.py",
+    "build",
+    "--output",
+    "/workspace/implementation-review/build-probe"
+  ],
+  "exit_code": 0,
+  "observed_at": "2026-10-15T20:05:14.464671+00:00",
+  "stdout": "{\n  \"bundle\": \"/workspace/implementation-review/build-probe/qore-skills-0.1.0\",\n  \"archive\": \"/workspace/implementation-review/build-probe/qore-skills-0.1.0.zip\",\n  \"sha256\": \"17888fa30f1024707fc3ee6efda856ca330bc6365e09737007096f5d7db62da8\",\n  \"valid\": true,\n  \"schema\": \"qore-release/1\",\n  \"version\": \"0.1.0\",\n  \"kind\": \"generic\",\n  \"files\": 260,\n  \"manifest_sha256\": \"d8f048f15100c839198ab60f7defb6a0b22e7a5ffe01214462b4c0a9d0c1404e\"\n}\n",
+  "stderr": ""
+}

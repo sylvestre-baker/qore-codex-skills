@@ -1,0 +1,114 @@
+{
+  "all_captured_states_have_no_horizontal_overflow": true,
+  "duplicate_ids_by_state": {
+    "g0-entry-i1.dom": [],
+    "g2-route-pending-i1.dom": [],
+    "g1-direct-reload-i1.dom": [],
+    "g0-readiness-resolved-i1.dom": [],
+    "g2-help-closed-keyboard-i1.dom": [],
+    "g5-summary-keyboard-focus-i1.dom": [],
+    "g5-radio-keyboard-focus-i1.dom": [],
+    "g5-intro-restored-focus-i1.dom": [],
+    "g2-help-expanded-keyboard-i1.dom": [],
+    "g6-repeated-back-i1.dom": [],
+    "g2-question-resolved-i1.dom": [],
+    "g6-repeated-question-i1.dom": []
+  },
+  "failure_tokens_by_state": {
+    "g0-entry-i1.dom": [],
+    "g2-route-pending-i1.dom": [],
+    "g1-direct-reload-i1.dom": [],
+    "g0-readiness-resolved-i1.dom": [],
+    "g2-help-closed-keyboard-i1.dom": [],
+    "g5-summary-keyboard-focus-i1.dom": [],
+    "g5-radio-keyboard-focus-i1.dom": [],
+    "g5-intro-restored-focus-i1.dom": [],
+    "g2-help-expanded-keyboard-i1.dom": [],
+    "g6-repeated-back-i1.dom": [],
+    "g2-question-resolved-i1.dom": [],
+    "g6-repeated-question-i1.dom": []
+  },
+  "question_radio_count": 5,
+  "all_question_radios_unchecked": true,
+  "next_disabled": true,
+  "question_focus": {
+    "tag": "H2",
+    "text": "Which data will the AI system read and write in production, and who owns each source?",
+    "id": "question-dataSources",
+    "style": {
+      "color": "rgb(255, 255, 255)",
+      "background": "rgba(0, 0, 0, 0)",
+      "outline": "rgb(255, 255, 255) none 3px",
+      "outlineOffset": "0px"
+    }
+  },
+  "help_focus": {
+    "tag": "SUMMARY",
+    "text": "What does this mean?",
+    "id": "",
+    "style": {
+      "color": "rgb(230, 201, 141)",
+      "background": "rgba(0, 0, 0, 0)",
+      "outline": "rgb(197, 160, 89) solid 2px",
+      "outlineOffset": "2px"
+    }
+  },
+  "help_open_after_Space": true,
+  "help_closed_after_second_Space": true,
+  "restored_focus": {
+    "tag": "H1",
+    "text": "Could your AI pilot go live? A check in about 3 minutes",
+    "id": "",
+    "style": {
+      "color": "rgb(255, 255, 255)",
+      "background": "rgba(0, 0, 0, 0)",
+      "outline": "rgb(255, 255, 255) none 3px",
+      "outlineOffset": "0px"
+    }
+  },
+  "primary_button_contrast": {
+    "foreground": "rgb(10, 26, 47)",
+    "background": "rgb(197, 160, 89)",
+    "ratio": 7.112059146818033,
+    "procedure": "Relative luminance computed from actual live opaque CSS foreground/background. This is one measured pair, not an accessibility conformance audit."
+  },
+  "page_exceptions": [],
+  "console_errors": [
+    {
+      "at": "2026-10-15T19:41:20.967Z",
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_BLOCKED_BY_CLIENT.Inspector",
+      "location": {
+        "url": "https://qaizen.io/api/labs/readiness/event",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "at": "2026-10-15T19:41:27.988Z",
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_BLOCKED_BY_CLIENT.Inspector",
+      "location": {
+        "url": "https://qaizen.io/api/labs/readiness/event",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    }
+  ],
+  "instrumentation_blocked_requests": [
+    {
+      "at": "2026-10-15T19:41:20.965Z",
+      "method": "POST",
+      "url": "https://qaizen.io/api/labs/readiness/event"
+    },
+    {
+      "at": "2026-10-15T19:41:27.985Z",
+      "method": "POST",
+      "url": "https://qaizen.io/api/labs/readiness/event"
+    }
+  ]
+}

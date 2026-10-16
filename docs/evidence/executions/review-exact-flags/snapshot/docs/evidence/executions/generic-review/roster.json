@@ -1,0 +1,52 @@
+{
+  "observed_at": "2026-10-15T19:45:44.119503+00:00",
+  "isolation": "All spawn_agent calls used fork_turns=none; no finder reasoning shared between contexts. Verifier will receive only actual redactor output and raw criteria.",
+  "requests": [
+    {
+      "requested_role": "correctness",
+      "requested_task_name": "correctness",
+      "returned_actor_id": "/root/correctness",
+      "tool": "collaboration.spawn_agent",
+      "fork_turns": "none",
+      "budget_minutes": 5,
+      "returned_report": "correctness-report.md"
+    },
+    {
+      "requested_role": "security",
+      "requested_task_name": "security",
+      "returned_actor_id": "/root/security",
+      "tool": "collaboration.spawn_agent",
+      "fork_turns": "none",
+      "budget_minutes": 5,
+      "returned_report": "security-report.md"
+    },
+    {
+      "requested_role": "feasibility",
+      "requested_task_name": "feasibility",
+      "returned_actor_id": "/root/feasibility",
+      "tool": "collaboration.spawn_agent",
+      "fork_turns": "none",
+      "budget_minutes": 5,
+      "returned_report": "feasibility-report.md"
+    },
+    {
+      "requested_role": "fresh independent verifier",
+      "requested_task_name": "verifier",
+      "returned_actor_id": "/root/verifier",
+      "tool": "collaboration.spawn_agent",
+      "fork_turns": "none",
+      "budget_minutes": 5,
+      "returned_report": "verifier-report.md",
+      "candidate_input": "claims.json only; finder reasoning withheld"
+    }
+  ],
+  "overall_deadline": "2026-10-15T19:59:00Z",
+  "worker_exhaustion": "Return completed work and explicitly unfinished scope; missing required work yields PARTIAL.",
+  "returned_roles": [
+    "correctness",
+    "security",
+    "feasibility",
+    "verifier"
+  ],
+  "completion": "All reports returned. interrupt_agent called after each completed context; tool reported completed. No separate terminate API is exposed."
+}

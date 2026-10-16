@@ -1,0 +1,9 @@
+{
+  "argv": "bash <CANDIDATE_B>/skills/qore-plan/scripts/spec-lint.sh <REDACTED_LOCAL_PATH>",
+  "exit_code": 0,
+  "stdout": "spec-lint: valid qore-spec/1 (9 scenarios).\n",
+  "stderr": "",
+  "observed_at": "2026-10-15T20:17:52.084384+00:00",
+  "public_spec_sha256": "26701f8c71dcbdf85e3ab787e870360763070b726ce24069b706d10831c834d6",
+  "notice": "New post-transformation structural check only; it does not renew original planning phase times."
+}

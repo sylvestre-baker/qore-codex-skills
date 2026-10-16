@@ -1,0 +1,63 @@
+{
+  "candidate_archive_sha256": "2963c43e98803354932e406627d9e239064fbe2899745a7e093b7d4154fa56d1",
+  "observed_skill_snapshot_sha256": "4c4b83e283babcb3f13f9342dad3d05a19d2d71a34f8205d043b81199d0d7359",
+  "comparison": [
+    {
+      "path": "SKILL.md",
+      "initial_sha256": "33b1367f256f1a6304902d08cdff9b023add92fb750834216268cca8de84b851",
+      "frozen_sha256": "33b1367f256f1a6304902d08cdff9b023add92fb750834216268cca8de84b851"
+    },
+    {
+      "path": "agents/openai.yaml",
+      "initial_sha256": "2bafca3b7edce2edac4814b4028fdb814f83c1c2efbea4d461b7469fbe1bd7af",
+      "frozen_sha256": "2bafca3b7edce2edac4814b4028fdb814f83c1c2efbea4d461b7469fbe1bd7af"
+    },
+    {
+      "path": "references/evidence.md",
+      "initial_sha256": "659560f88b965371e2c6e886b5f4c648a4879ebb7c69af4b1d307dfae176c8b3",
+      "frozen_sha256": "659560f88b965371e2c6e886b5f4c648a4879ebb7c69af4b1d307dfae176c8b3"
+    },
+    {
+      "path": "references/gates.md",
+      "initial_sha256": "667063cd64c576a9c5b4ec69f6ddcd677d4e969bae96184b3136ede9fd12fd87",
+      "frozen_sha256": "667063cd64c576a9c5b4ec69f6ddcd677d4e969bae96184b3136ede9fd12fd87"
+    },
+    {
+      "path": "references/project-profile.md",
+      "initial_sha256": "154ed11dab8e8499e74a5f3a6afb512827d5de5c73408523b845684e38f59dfc",
+      "frozen_sha256": "154ed11dab8e8499e74a5f3a6afb512827d5de5c73408523b845684e38f59dfc"
+    },
+    {
+      "path": "references/protocol.md",
+      "initial_sha256": "257ae0902a7fb00f6bfd1ebaa5b688e57a5f2e7163de3e9954ed3c9765105dfd",
+      "frozen_sha256": "257ae0902a7fb00f6bfd1ebaa5b688e57a5f2e7163de3e9954ed3c9765105dfd"
+    },
+    {
+      "path": "references/run-evidence.md",
+      "initial_sha256": "2ede0b19d58fd5535c90023068355679ee7bb27d3070967ada38f9ad156a9e69",
+      "frozen_sha256": "2ede0b19d58fd5535c90023068355679ee7bb27d3070967ada38f9ad156a9e69"
+    },
+    {
+      "path": "scripts/depth-lint.mjs",
+      "initial_sha256": "9b9cdcea3e87f4820944ddfc075ef19e75aad0bb08a7f1fd279ea6590267def7",
+      "frozen_sha256": "9b9cdcea3e87f4820944ddfc075ef19e75aad0bb08a7f1fd279ea6590267def7"
+    },
+    {
+      "path": "scripts/project-check.py",
+      "initial_sha256": "3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd",
+      "frozen_sha256": "3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd"
+    },
+    {
+      "path": "scripts/run-check.py",
+      "initial_sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+      "frozen_sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa"
+    },
+    {
+      "path": "scripts/stop-rule.mjs",
+      "initial_sha256": "404b5ca63276c413e1f2697b98817f1802de4642cf634303707bd175eddd8085",
+      "frozen_sha256": "404b5ca63276c413e1f2697b98817f1802de4642cf634303707bd175eddd8085"
+    }
+  ],
+  "justified_carryover": "Browser observations followed these exact instruction/resource bytes. The later frozen archive changes outer README/support documents only; all 11 consumed skill files are byte-identical. No stale browser evidence is re-timestamped.",
+  "checked_at": "2026-10-15T19:44:52.806941+00:00"
+}

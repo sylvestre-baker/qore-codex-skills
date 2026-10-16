@@ -1,0 +1,30 @@
+{
+  "url": "http://127.0.0.1:8765/alternate.html",
+  "title": "Qore alternate synthetic fixture",
+  "language": "en",
+  "headings": [
+    {
+      "tag": "H1",
+      "text": "Alternate synthetic browser fixture"
+    }
+  ],
+  "links": [
+    {
+      "text": "Return to primary synthetic route",
+      "href": "http://127.0.0.1:8765/index.html"
+    }
+  ],
+  "buttons": [
+    {
+      "text": "Resolve alternate synthetic state",
+      "type": "button",
+      "disabled": false
+    }
+  ],
+  "active_element": {
+    "tag": "BUTTON",
+    "text": "Resolve alternate synthetic state",
+    "id": "alternate-resolve"
+  },
+  "text": "Alternate synthetic browser fixture\n\nThis contrasting route verifies that a project profile affects the chosen entry and state.\n\nResolve alternate synthetic state\n\nAlternate resolved synthetic state.\n\nReturn to primary synthetic route"
+}

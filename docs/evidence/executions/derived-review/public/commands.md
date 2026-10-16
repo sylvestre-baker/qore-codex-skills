@@ -1,0 +1,423 @@
+# Actual commands and outputs
+
+All executions are fresh. JSON files retain exact strings, argv, cwd, timestamps and exit statuses. Synthetic packets are validator inputs, not review findings.
+
+Actual argv: `["python3", "scripts/project-check.py", "references/project.json", "--root", "/workspace/implementation-target/qore-skills-0.1.0", "--method", "review"]`
+
+Working directory: /workspace/implementation-target/qore-skills-0.1.0/.agents/skills/qore-review-qore
+
+Exit status: 0
+
+Standard output:
+```text
+{
+  "schema": "qore-context-check/1",
+  "profile": {
+    "id": "qore",
+    "version": "0.1.0",
+    "sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9"
+  },
+  "method": "review",
+  "coverage": "COMPLETE",
+  "sources": [
+    {
+      "id": "project",
+      "path": "qore.json",
+      "expected_sha256": "948b2784fa7970cf90a25c338a29067b13d8b4476f666d712a5eb95fc6f641c8",
+      "actual_sha256": "948b2784fa7970cf90a25c338a29067b13d8b4476f666d712a5eb95fc6f641c8",
+      "current": true
+    }
+  ],
+  "commands": [
+    {
+      "id": "check",
+      "argv": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "source": "project",
+      "applies_to": [
+        "plan",
+        "review"
+      ]
+    }
+  ],
+  "invariants": [
+    {
+      "id": "verified-blockers",
+      "statement": "Only independently confirmed critical or high findings are verified blockers; missing verification remains partial.",
+      "source": "project",
+      "applies_to": [
+        "review"
+      ]
+    }
+  ],
+  "surfaces": {},
+  "consumed_source_ids": [
+    "project"
+  ],
+  "problems": []
+}
+
+```
+
+Standard error:
+```text
+
+```
+
+Actual argv: `["python3", "-B", "-m", "unittest", "discover", "-s", "tests", "-v"]`
+
+Working directory: /workspace/implementation-target/qore-skills-0.1.0
+
+Exit status: 0
+
+Standard output:
+```text
+
+```
+
+Standard error:
+```text
+test_builds_are_byte_identical_with_fixed_archive_metadata (test_package.PackageTests.test_builds_are_byte_identical_with_fixed_archive_metadata) ... ok
+test_changed_or_missing_sources_block_only_affected_facts (test_package.PackageTests.test_changed_or_missing_sources_block_only_affected_facts) ... ok
+test_compare_identifies_locally_added_policy_as_an_adaptation (test_package.PackageTests.test_compare_identifies_locally_added_policy_as_an_adaptation) ... ok
+test_current_profile_returns_scoped_facts_without_execution (test_package.PackageTests.test_current_profile_returns_scoped_facts_without_execution) ... ok
+test_derive_copies_three_profiles_and_does_not_execute_commands (test_package.PackageTests.test_derive_copies_three_profiles_and_does_not_execute_commands) ... ok
+test_escaping_runtime_reference_is_refused_even_when_target_exists (test_package.PackageTests.test_escaping_runtime_reference_is_refused_even_when_target_exists) ... ok
+test_escaping_source_symlink_is_refused (test_package.PackageTests.test_escaping_source_symlink_is_refused) ... ok
+test_existing_build_and_derivative_destinations_are_preserved (test_package.PackageTests.test_existing_build_and_derivative_destinations_are_preserved) ... ok
+test_fact_references_must_name_a_declared_source (test_package.PackageTests.test_fact_references_must_name_a_declared_source) ... ok
+test_install_refuses_symlinked_ancestor_without_external_writes (test_package.PackageTests.test_install_refuses_symlinked_ancestor_without_external_writes) ... ok
+test_install_refuses_to_overwrite_a_modified_existing_skill (test_package.PackageTests.test_install_refuses_to_overwrite_a_modified_existing_skill) ... ok
+test_manifest_path_prefix_collision_does_not_escape_bundle (test_package.PackageTests.test_manifest_path_prefix_collision_does_not_escape_bundle) ... ok
+test_missing_and_stale_redistribution_reviews_are_refused (test_package.PackageTests.test_missing_and_stale_redistribution_reviews_are_refused) ... ok
+test_missing_runtime_reference_prevents_build_without_partial_destination (test_package.PackageTests.test_missing_runtime_reference_prevents_build_without_partial_destination) ... ok
+test_positive_package_has_exactly_three_closed_skills_and_https_citations (test_package.PackageTests.test_positive_package_has_exactly_three_closed_skills_and_https_citations) ... ok
+test_release_allowlist_traversal_and_symlink_are_refused (test_package.PackageTests.test_release_allowlist_traversal_and_symlink_are_refused) ... ok
+test_release_preserves_the_reviewed_observation_origin (test_package.PackageTests.test_release_preserves_the_reviewed_observation_origin) ... ok
+test_remote_runtime_import_is_not_an_informational_citation (test_package.PackageTests.test_remote_runtime_import_is_not_an_informational_citation) ... ok
+test_required_personal_path_is_refused_in_repository_content (test_package.PackageTests.test_required_personal_path_is_refused_in_repository_content) ... ok
+test_stale_context_is_partial_when_unrelated_current_facts_remain (test_package.PackageTests.test_stale_context_is_partial_when_unrelated_current_facts_remain) ... ok
+test_stale_profile_cannot_be_derived_into_a_new_destination (test_package.PackageTests.test_stale_profile_cannot_be_derived_into_a_new_destination) ... ok
+test_standalone_inventory_cannot_omit_repeat_or_upgrade_resources (test_package.PackageTests.test_standalone_inventory_cannot_omit_repeat_or_upgrade_resources) ... ok
+test_unknown_or_unauthorized_redistribution_is_refused_with_resource (test_package.PackageTests.test_unknown_or_unauthorized_redistribution_is_refused_with_resource) ... ok
+test_unknown_profile_major_and_source_path_traversal_are_refused (test_package.PackageTests.test_unknown_profile_major_and_source_path_traversal_are_refused) ... ok
+test_verify_refuses_release_symlink (test_package.PackageTests.test_verify_refuses_release_symlink) ... ok
+test_verify_rejects_altered_missing_and_unlisted_files (test_package.PackageTests.test_verify_rejects_altered_missing_and_unlisted_files) ... ok
+test_verify_rejects_manifest_digest_changes_and_unknown_major (test_package.PackageTests.test_verify_rejects_manifest_digest_changes_and_unknown_major) ... ok
+test_verify_rejects_unknown_host_kind_version_and_redistribution (test_package.PackageTests.test_verify_rejects_unknown_host_kind_version_and_redistribution) ... ok
+test_all_blocked_phases_report_blocked_coverage (test_run_contract.RunContractTests.test_all_blocked_phases_report_blocked_coverage) ... ok
+test_all_five_planning_perspectives_require_distinct_contexts (test_run_contract.RunContractTests.test_all_five_planning_perspectives_require_distinct_contexts) ... ok
+test_an_execution_artifact_cannot_prove_a_different_phase (test_run_contract.RunContractTests.test_an_execution_artifact_cannot_prove_a_different_phase) ... ok
+test_artifact_byte_changes_cannot_keep_a_recorded_digest (test_run_contract.RunContractTests.test_artifact_byte_changes_cannot_keep_a_recorded_digest) ... ok
+test_artifact_paths_cannot_escape_by_traversal_symlink_or_prefix (test_run_contract.RunContractTests.test_artifact_paths_cannot_escape_by_traversal_symlink_or_prefix) ... ok
+test_copy_visual_and_perf_allow_explicit_supported_non_applicability (test_run_contract.RunContractTests.test_copy_visual_and_perf_allow_explicit_supported_non_applicability) ... ok
+test_entry_state_and_full_scopes_require_real_transition_evidence (test_run_contract.RunContractTests.test_entry_state_and_full_scopes_require_real_transition_evidence) ... ok
+test_execution_descriptor_cannot_name_another_candidate_or_target (test_run_contract.RunContractTests.test_execution_descriptor_cannot_name_another_candidate_or_target) ... ok
+test_execution_header_must_match_the_recorded_identity (test_run_contract.RunContractTests.test_execution_header_must_match_the_recorded_identity) ... ok
+test_finder_independence_is_required_even_when_verifier_is_skipped (test_run_contract.RunContractTests.test_finder_independence_is_required_even_when_verifier_is_skipped) ... ok
+test_missing_or_skipped_required_phases_limit_coverage (test_run_contract.RunContractTests.test_missing_or_skipped_required_phases_limit_coverage) ... ok
+test_named_finders_require_distinct_contexts (test_run_contract.RunContractTests.test_named_finders_require_distinct_contexts) ... ok
+test_non_applicability_requires_explicit_scope_reason_and_artifact (test_run_contract.RunContractTests.test_non_applicability_requires_explicit_scope_reason_and_artifact) ... ok
+test_old_source_or_presentation_artifacts_cannot_alone_prove_a_pass (test_run_contract.RunContractTests.test_old_source_or_presentation_artifacts_cannot_alone_prove_a_pass) ... ok
+test_other_mandatory_method_phases_cannot_be_declared_non_applicable (test_run_contract.RunContractTests.test_other_mandatory_method_phases_cannot_be_declared_non_applicable) ... ok
+test_pass_needs_declared_evidence_and_cannot_borrow_another_phase (test_run_contract.RunContractTests.test_pass_needs_declared_evidence_and_cannot_borrow_another_phase) ... ok
+test_positive_complete_plan_review_and_ux_runs (test_run_contract.RunContractTests.test_positive_complete_plan_review_and_ux_runs) ... ok
+test_profile_preflight_is_mandatory_for_profiled_runs (test_run_contract.RunContractTests.test_profile_preflight_is_mandatory_for_profiled_runs) ... ok
+test_profiled_runs_require_a_profile_preflight_phase (test_run_contract.RunContractTests.test_profiled_runs_require_a_profile_preflight_phase) ... ok
+test_proof_must_be_strictly_after_the_last_relevant_change (test_run_contract.RunContractTests.test_proof_must_be_strictly_after_the_last_relevant_change) ... ok
+test_recorded_commands_require_typed_arguments_exit_status_and_artifact (test_run_contract.RunContractTests.test_recorded_commands_require_typed_arguments_exit_status_and_artifact) ... ok
+test_required_phase_lists_cannot_omit_or_repeat_method_phases (test_run_contract.RunContractTests.test_required_phase_lists_cannot_omit_or_repeat_method_phases) ... ok
+test_self_consistent_proof_from_another_candidate_or_target_is_refused (test_run_contract.RunContractTests.test_self_consistent_proof_from_another_candidate_or_target_is_refused) ... ok
+test_timestamps_require_timezone_and_actual_parseable_values (test_run_contract.RunContractTests.test_timestamps_require_timezone_and_actual_parseable_values) ... ok
+test_unknown_schema_major_and_method_are_refused (test_run_contract.RunContractTests.test_unknown_schema_major_and_method_are_refused) ... ok
+test_verifier_must_be_independent_of_every_finder (test_run_contract.RunContractTests.test_verifier_must_be_independent_of_every_finder) ... ok
+test_wrong_candidate_or_target_digest_formats_are_refused (test_run_contract.RunContractTests.test_wrong_candidate_or_target_digest_formats_are_refused) ... ok
+test_all_required_skipped_never_ship (test_validators.ValidatorTests.test_all_required_skipped_never_ship) ... ok
+test_blocking_findings_need_counterexample_and_checkable_evidence (test_validators.ValidatorTests.test_blocking_findings_need_counterexample_and_checkable_evidence) ... ok
+test_depth_missing_files_unknown_depth_and_bad_shape (test_validators.ValidatorTests.test_depth_missing_files_unknown_depth_and_bad_shape) ... ok
+test_depth_positive_source_families (test_validators.ValidatorTests.test_depth_positive_source_families) ... ok
+test_depth_rejects_data_as_visual_and_render_as_none (test_validators.ValidatorTests.test_depth_rejects_data_as_visual_and_render_as_none) ... ok
+test_duplicate_ids_and_non_object_findings_are_refused (test_validators.ValidatorTests.test_duplicate_ids_and_non_object_findings_are_refused) ... ok
+test_each_scenario_requires_its_own_three_step_types (test_validators.ValidatorTests.test_each_scenario_requires_its_own_three_step_types) ... ok
+test_empty_fence_cannot_borrow_steps_outside (test_validators.ValidatorTests.test_empty_fence_cannot_borrow_steps_outside) ... ok
+test_empty_findings_is_a_valid_complete_packet (test_validators.ValidatorTests.test_empty_findings_is_a_valid_complete_packet) ... ok
+test_empty_null_array_and_missing_envelope_are_refused (test_validators.ValidatorTests.test_empty_null_array_and_missing_envelope_are_refused) ... ok
+test_fixes_invalidate_same_iteration_and_carried_scores (test_validators.ValidatorTests.test_fixes_invalidate_same_iteration_and_carried_scores) ... ok
+test_infra_blockage_affects_coverage_without_failing_observed_gates (test_validators.ValidatorTests.test_infra_blockage_affects_coverage_without_failing_observed_gates) ... ok
+test_justified_non_applicability_is_distinct_from_tool_absence (test_validators.ValidatorTests.test_justified_non_applicability_is_distinct_from_tool_absence) ... ok
+test_measurements_and_source_identifiers_remain_accepted (test_validators.ValidatorTests.test_measurements_and_source_identifiers_remain_accepted) ... ok
+test_missing_required_gate_is_not_treated_as_pass (test_validators.ValidatorTests.test_missing_required_gate_is_not_treated_as_pass) ... ok
+test_missing_verifier_never_proves_or_refutes (test_validators.ValidatorTests.test_missing_verifier_never_proves_or_refutes) ... ok
+test_optional_coverage_fields_do_not_silently_coerce_bad_types (test_validators.ValidatorTests.test_optional_coverage_fields_do_not_silently_coerce_bad_types) ... ok
+test_positive_review_retains_refutations_and_blocks_confirmed_high (test_validators.ValidatorTests.test_positive_review_retains_refutations_and_blocks_confirmed_high) ... ok
+test_positive_spec (test_validators.ValidatorTests.test_positive_spec) ... ok
+test_positive_ux (test_validators.ValidatorTests.test_positive_ux) ... ok
+test_redactor_allowlist_drops_unanticipated_rationale (test_validators.ValidatorTests.test_redactor_allowlist_drops_unanticipated_rationale) ... ok
+test_redactor_refuses_bad_envelope_and_nested_allowed_field (test_validators.ValidatorTests.test_redactor_refuses_bad_envelope_and_nested_allowed_field) ... ok
+test_required_skipped_gate_prevents_ship_despite_passing_score (test_validators.ValidatorTests.test_required_skipped_gate_prevents_ship_despite_passing_score) ... ok
+test_route_reachability_applies_to_modern_app_and_root_paths (test_validators.ValidatorTests.test_route_reachability_applies_to_modern_app_and_root_paths) ... ok
+test_sixth_fresh_pass_can_ship_but_seventh_cannot (test_validators.ValidatorTests.test_sixth_fresh_pass_can_ship_but_seventh_cannot) ... ok
+test_skipped_verifier_preserves_high_and_critical_severity (test_validators.ValidatorTests.test_skipped_verifier_preserves_high_and_critical_severity) ... ok
+test_spec_duplicate_ids_and_orphan_coverage_fail (test_validators.ValidatorTests.test_spec_duplicate_ids_and_orphan_coverage_fail) ... ok
+test_spec_requires_coverage_and_fenced_sequence (test_validators.ValidatorTests.test_spec_requires_coverage_and_fenced_sequence) ... ok
+test_spec_supports_named_scenarios_and_bold_coverage (test_validators.ValidatorTests.test_spec_supports_named_scenarios_and_bold_coverage) ... ok
+test_spec_version_must_be_first_and_known (test_validators.ValidatorTests.test_spec_version_must_be_first_and_known) ... ok
+test_truncated_json_is_not_an_empty_review (test_validators.ValidatorTests.test_truncated_json_is_not_an_empty_review) ... ok
+test_unknown_verdict_and_severity_are_refused (test_validators.ValidatorTests.test_unknown_verdict_and_severity_are_refused) ... ok
+test_ux_rejects_invalid_scores_iteration_order_and_unmeasured_change (test_validators.ValidatorTests.test_ux_rejects_invalid_scores_iteration_order_and_unmeasured_change) ... ok
+test_verifier_declaration_requires_the_entire_exact_value (test_validators.ValidatorTests.test_verifier_declaration_requires_the_entire_exact_value) ... ok
+test_zero_gate_cannot_extend_six_iteration_budget (test_validators.ValidatorTests.test_zero_gate_cannot_extend_six_iteration_budget) ... ok
+
+----------------------------------------------------------------------
+Ran 90 tests in 1.982s
+
+OK
+
+```
+
+Actual argv: `["node", "scripts/finding-lint.mjs", "/workspace/current-profile-public-review/missing-envelope-input.json", "--verifier=skipped", "--json"]`
+
+Working directory: /workspace/implementation-target/qore-skills-0.1.0/.agents/skills/qore-review-qore
+
+Exit status: 1
+
+Standard output:
+```text
+{
+  "valid": false,
+  "coverage": "PARTIAL",
+  "verdict": "INVALID",
+  "verifier": "skipped",
+  "total": 0,
+  "counts": {
+    "CONFIRMED": 0,
+    "PLAUSIBLE": 0,
+    "REFUTED": 0
+  },
+  "blocking_findings": [],
+  "findings": [],
+  "problems": [
+    {
+      "code": "envelope",
+      "why": "Expected an object containing findings: []; arrays, null and missing findings are refused."
+    }
+  ],
+  "limit": "The verifier flag records an execution declaration; validate actual independent phase evidence separately."
+}
+
+```
+
+Standard error:
+```text
+
+```
+
+Actual argv: `["node", "scripts/finding-lint.mjs", "/workspace/current-profile-public-review/high-unverified-input.json", "--verifier=skipped", "--json"]`
+
+Working directory: /workspace/implementation-target/qore-skills-0.1.0/.agents/skills/qore-review-qore
+
+Exit status: 0
+
+Standard output:
+```text
+{
+  "valid": true,
+  "coverage": "PARTIAL",
+  "verdict": "PENDING",
+  "verifier": "skipped",
+  "total": 1,
+  "counts": {
+    "CONFIRMED": 0,
+    "PLAUSIBLE": 1,
+    "REFUTED": 0
+  },
+  "blocking_findings": [],
+  "findings": [
+    {
+      "id": "PROBE-HIGH",
+      "title": "Synthetic high severity validator input",
+      "severity": "high",
+      "verdict": "PLAUSIBLE",
+      "evidence": "examples/validator-hardening.md:A02"
+    }
+  ],
+  "problems": [],
+  "limit": "The verifier flag records an execution declaration; validate actual independent phase evidence separately."
+}
+
+```
+
+Standard error:
+```text
+
+```
+
+Actual argv: `["node", "scripts/finding-lint.mjs", "/workspace/current-profile-public-review/critical-unverified-input.json", "--verifier=skipped", "--json"]`
+
+Working directory: /workspace/implementation-target/qore-skills-0.1.0/.agents/skills/qore-review-qore
+
+Exit status: 0
+
+Standard output:
+```text
+{
+  "valid": true,
+  "coverage": "PARTIAL",
+  "verdict": "PENDING",
+  "verifier": "skipped",
+  "total": 1,
+  "counts": {
+    "CONFIRMED": 0,
+    "PLAUSIBLE": 1,
+    "REFUTED": 0
+  },
+  "blocking_findings": [],
+  "findings": [
+    {
+      "id": "PROBE-HIGH",
+      "title": "Synthetic high severity validator input",
+      "severity": "critical",
+      "verdict": "PLAUSIBLE",
+      "evidence": "examples/validator-hardening.md:A02"
+    }
+  ],
+  "problems": [],
+  "limit": "The verifier flag records an execution declaration; validate actual independent phase evidence separately."
+}
+
+```
+
+Standard error:
+```text
+
+```
+
+Actual argv: `["node", "scripts/finding-lint.mjs", "/workspace/current-profile-public-review/confirmed-with-skipped-input.json", "--verifier=skipped", "--json"]`
+
+Working directory: /workspace/implementation-target/qore-skills-0.1.0/.agents/skills/qore-review-qore
+
+Exit status: 1
+
+Standard output:
+```text
+{
+  "valid": false,
+  "coverage": "PARTIAL",
+  "verdict": "INVALID",
+  "verifier": "skipped",
+  "total": 1,
+  "counts": {
+    "CONFIRMED": 1,
+    "PLAUSIBLE": 0,
+    "REFUTED": 0
+  },
+  "blocking_findings": [],
+  "findings": [
+    {
+      "id": "PROBE-HIGH",
+      "title": "Synthetic high severity validator input",
+      "severity": "high",
+      "verdict": "CONFIRMED",
+      "evidence": "examples/validator-hardening.md:A02",
+      "counterexample": "Synthetic input only; not an independently confirmed finding."
+    }
+  ],
+  "problems": [
+    {
+      "id": "PROBE-HIGH",
+      "code": "verification",
+      "why": "Missing independent verification permits only PLAUSIBLE findings."
+    }
+  ],
+  "limit": "The verifier flag records an execution declaration; validate actual independent phase evidence separately."
+}
+
+```
+
+Standard error:
+```text
+
+```
+
+Actual argv: `["node", "scripts/finding-lint.mjs", "/workspace/current-profile-public-review/confirmed-high-declared-input.json", "--verifier=ran", "--json"]`
+
+Working directory: /workspace/implementation-target/qore-skills-0.1.0/.agents/skills/qore-review-qore
+
+Exit status: 0
+
+Standard output:
+```text
+{
+  "valid": true,
+  "coverage": "COMPLETE",
+  "verdict": "DO-NOT-SHIP",
+  "verifier": "ran",
+  "total": 1,
+  "counts": {
+    "CONFIRMED": 1,
+    "PLAUSIBLE": 0,
+    "REFUTED": 0
+  },
+  "blocking_findings": [
+    "PROBE-HIGH"
+  ],
+  "findings": [
+    {
+      "id": "PROBE-HIGH",
+      "title": "Synthetic high severity validator input",
+      "severity": "high",
+      "verdict": "CONFIRMED",
+      "evidence": "examples/validator-hardening.md:A02",
+      "counterexample": "Synthetic schema test only, no independent review claim."
+    }
+  ],
+  "problems": [],
+  "limit": "The verifier flag records an execution declaration; validate actual independent phase evidence separately."
+}
+
+```
+
+Standard error:
+```text
+
+```
+
+Actual argv: `["node", "scripts/finding-lint.mjs", "/workspace/current-profile-public-review/empty-declared-input.json", "--verifier=ran", "--json"]`
+
+Working directory: /workspace/implementation-target/qore-skills-0.1.0/.agents/skills/qore-review-qore
+
+Exit status: 0
+
+Standard output:
+```text
+{
+  "valid": true,
+  "coverage": "COMPLETE",
+  "verdict": "SHIP",
+  "verifier": "ran",
+  "total": 0,
+  "counts": {
+    "CONFIRMED": 0,
+    "PLAUSIBLE": 0,
+    "REFUTED": 0
+  },
+  "blocking_findings": [],
+  "findings": [],
+  "problems": [],
+  "limit": "The verifier flag records an execution declaration; validate actual independent phase evidence separately."
+}
+
+```
+
+Standard error:
+```text
+
+```

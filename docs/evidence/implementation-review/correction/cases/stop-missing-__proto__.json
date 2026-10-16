@@ -1,0 +1,12 @@
+{
+  "in_scope": [
+    "__proto__"
+  ],
+  "iterations": [
+    {
+      "n": 1,
+      "scores": {},
+      "measured": []
+    }
+  ]
+}

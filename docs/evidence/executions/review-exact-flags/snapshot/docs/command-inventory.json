@@ -1,0 +1,1423 @@
+{
+  "schema": "qore-command-inventory/1",
+  "scope": {
+    "documents": [
+      "README.md",
+      "docs/architecture.md",
+      "docs/clean-environment.md",
+      "docs/contracts.md",
+      "docs/evidence/browser/README.md",
+      "docs/evidence/browser/qaizen-transcript.md",
+      "docs/evidence/executions/generic-review/correctness-report.md",
+      "docs/evidence/executions/generic-review/feasibility-report.md",
+      "docs/evidence/executions/generic-review/lead-commands.md",
+      "docs/evidence/executions/generic-review/report.md",
+      "docs/evidence/executions/generic-review/security-report.md",
+      "docs/evidence/executions/generic-review/verifier-report.md",
+      "docs/profiles.md",
+      "docs/troubleshooting.md",
+      "CONTRIBUTING.md"
+    ],
+    "includes": [
+      "Every executable shell fence",
+      "First-review prompt and all three starting-prompt templates",
+      "Inline executable reference commands in docs/contracts.md"
+    ],
+    "excludes": [
+      "Mermaid diagrams and descriptive protocol tokens",
+      "Commands inside skill protocol references; their implementation is represented by the method reference entries"
+    ],
+    "generated_content_rule": "Update this inventory when executable documentation changes; compare text hashes and locations rather than relying on line numbers."
+  },
+  "status_definitions": {
+    "EXECUTED_RECORDED": "Actual scoped execution with identified source/profile evidence",
+    "EXECUTED_HISTORICAL_AND_MAINTAINER_REPORTED": "Earlier recorded execution plus a separately reported frozen-candidate shell result; no automatic evidence carryover",
+    "IN_PROGRESS": "Required actual execution is underway and does not establish completion",
+    "TEMPLATE": "Input substitutions or exact invocation have not been executed as written",
+    "MAINTAINER_REPORTED_EXECUTED": "Maintainer reports execution; publication of matching logs/phase artifacts is separate",
+    "EXECUTED_RELATED_HISTORICAL_DESTINATION": "Exact command text has input substitutions or historical/related evidence only; inspect each evidence record scope before claiming execution on the current candidate.",
+    "REFERENCE_TEMPLATE_NOT_EXECUTED_AS_WRITTEN": "Exact command text has input substitutions or historical/related evidence only; inspect each evidence record scope before claiming execution on the current candidate.",
+    "TEMPLATE_NOT_EXECUTED_AS_WRITTEN": "Exact command text has input substitutions or historical/related evidence only; inspect each evidence record scope before claiming execution on the current candidate.",
+    "TEMPLATE_WITH_RELATED_BROWSER_OBSERVATION": "Exact command text has input substitutions or historical/related evidence only; inspect each evidence record scope before claiming execution on the current candidate.",
+    "TEMPLATE_WITH_RELATED_SETUP_EVIDENCE": "Exact command text has input substitutions or historical/related evidence only; inspect each evidence record scope before claiming execution on the current candidate."
+  },
+  "documents": [
+    {
+      "path": "README.md",
+      "sha256": "06d2533a36fff08e66a1f00f8bdc571fb566cc7b3a35d0ae283c7d0645c3fc5a"
+    },
+    {
+      "path": "docs/architecture.md",
+      "sha256": "26429d4cbbc5a1c3065a65397bbdfcbbacd5cb5d4a198da979d72146190714f6"
+    },
+    {
+      "path": "docs/clean-environment.md",
+      "sha256": "e2e088e7d444127c6aa88fe146b66d1993acf0535436a3f45fc1bde46d70807d"
+    },
+    {
+      "path": "docs/contracts.md",
+      "sha256": "cd09827fbcff4420c97389363b9299f10d7f9a6eb96c5f8fabffed4ba5a0168e"
+    },
+    {
+      "path": "docs/evidence/browser/README.md",
+      "sha256": "c7fd4de1d6f8d0234164ce2533b91d8f1d13b5ff1e7794d9207a80390b846db7"
+    },
+    {
+      "path": "docs/evidence/browser/qaizen-transcript.md",
+      "sha256": "da624cdbbbbd6cc3e7d321a2ffa58a1e1be99d807c950dcf6d473a19f34a60c8"
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/correctness-report.md",
+      "sha256": "e00de6f8101c7a9196165e0f7dee5169faf337644603dd3186c9fdea8ce7ef36"
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/feasibility-report.md",
+      "sha256": "1c1a22a143aaaf1720fb413d67abd344b8afaab10f7beba1d3974add18b1b4a0"
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/lead-commands.md",
+      "sha256": "b1b03f95ad6dd5dd510fac997a411d8d96b32a22c2090559daf6637bdc974c4e"
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/report.md",
+      "sha256": "80db1c35a4087f44d99f177a3eeb8ac74f37b5b71e543ab4ed6f225537c481a7"
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/security-report.md",
+      "sha256": "73a6a77ebe6586ef06de2ae9dc9f4d577562df1aa23b4798e37d00ab1c769df6"
+    },
+    {
+      "path": "docs/evidence/executions/generic-review/verifier-report.md",
+      "sha256": "8dfe016d6e504e644eadca09e5d6f7740d9d2491236b1d87364dd3bace6f883d"
+    },
+    {
+      "path": "docs/profiles.md",
+      "sha256": "c20904f6bd4af55aa02e5c3cf75fa1298acfbe1e71e5ddb24920d20299a38408"
+    },
+    {
+      "path": "docs/troubleshooting.md",
+      "sha256": "1fd22e4bcc1855cefd95b38802ffc16e8f7de5d20caac76f4beb4d7112d006d5"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "sha256": "87ef55fe9e213e5bd9b0f3178849b0a9ac88ec1c07634053c9989c0cbbde7638"
+    }
+  ],
+  "evidence_records": [
+    {
+      "id": "historical-shell-1",
+      "category": "maintainer-operated local shell exercise",
+      "status": "EXECUTED",
+      "candidate": {
+        "archive_sha256": "02554bfdc8212dc9983715db1b605b416a9660aebc592bbc6f91f7b05beb826b",
+        "manifest_sha256": "e1e94507163e29e5f75c750c9d5aa13e52eff2139cd5fcdb37905b4386456e1a",
+        "version": "0.1.0"
+      },
+      "source_fingerprint": {
+        "tools/qore.py": "931f5303a6594cb6a1eb7fa474fad3ac311ac9bb4cde2506abf6d06bc3ff6ff7",
+        "README.md": "46205c1947e1e35b1f67d12184dbfb921381c781d9eda3616e8251d187725bac"
+      },
+      "raw_record": {
+        "logical_ref": "qore-private:documentation/shell-exercise-1",
+        "sha256": "174669e158ac02edad37ac4ba2b64f35e9c9751ebf84ab85b99c1569c284c3cc"
+      },
+      "public_summary": {
+        "build_and_install_exit_code": 0,
+        "installed": [
+          ".agents/skills/qore-plan",
+          ".agents/skills/qore-review",
+          ".agents/skills/qore-ux-review"
+        ],
+        "replaced": false,
+        "derive_exit_code": 0,
+        "verify_exit_code": 0,
+        "derived_manifest_sha256": "19f48167f040ca42c60b0df49a324c6d3aeb3de3014486017668f1263ccd6b35"
+      },
+      "substitutions": [
+        "Source was copied into an isolated temporary workspace",
+        "Temporary build and derived destinations replaced fixed example output paths"
+      ],
+      "limits": [
+        "Historical candidate predates compare/redistribution-guard changes",
+        "No Codex method or clean independent qualification occurred in this exercise",
+        "No observation timestamp was retained in the raw record; no timestamp is invented"
+      ]
+    },
+    {
+      "id": "clean-linux-candidate-d",
+      "category": "maintainer-reported independent Linux qualification",
+      "status": "PARTIAL_IN_PROGRESS",
+      "candidate": {
+        "label": "candidate-d",
+        "archive_sha256": "3e0265c6d33fc0340fd8df0f0c1c4074a7495a8744365b6d388c747e4daf60da"
+      },
+      "public_summary": {
+        "reported_passed": [
+          "82 structural/helper tests",
+          "Exact README build/install shell block"
+        ],
+        "review_phase_status": "IN_PROGRESS"
+      },
+      "public_execution_artifact": null,
+      "limits": [
+        "Summary supplied by qualification maintainer; public phase/log artifact remains pending",
+        "Preparation and shell success do not establish completed finder/verifier execution",
+        "The new inventory changes documentation; a later archive has a different identity"
+      ]
+    },
+    {
+      "id": "browser-fixture",
+      "category": "actual browser observation, separate from current candidate execution",
+      "status": "OBSERVED_WITHIN_DECLARED_SCOPE",
+      "public_artifacts": [
+        "docs/evidence/browser/fixture-observations.json",
+        "docs/evidence/browser/capability-matrix.json",
+        "docs/evidence/browser/provenance.json"
+      ],
+      "limits": [
+        "Related optional-driver fixture recipe; output/module paths vary by environment",
+        "Does not establish full UX, native behavior, current-candidate method execution or a whole-site SHIP"
+      ]
+    },
+    {
+      "id": "profile-preflight-local",
+      "category": "actual source-tree context checker execution",
+      "status": "EXECUTED",
+      "implementation_sha256": "3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd",
+      "profile_sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9",
+      "source_sha256": "948b2784fa7970cf90a25c338a29067b13d8b4476f666d712a5eb95fc6f641c8",
+      "public_summary": {
+        "methods": [
+          "plan",
+          "review",
+          "ux"
+        ],
+        "exit_codes": [
+          0,
+          0,
+          0
+        ],
+        "context_coverage": [
+          "COMPLETE",
+          "COMPLETE",
+          "COMPLETE"
+        ],
+        "selected_facts": "Method-specific commands/invariants and fixture web target; no project commands executed"
+      },
+      "limits": [
+        "Source-tree checks recorded during documentation work",
+        "No independent method phases were executed by this context check"
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "id": "doc-command-01",
+      "kind": "shell_recipe",
+      "location": {
+        "path": "README.md",
+        "fence": 1,
+        "line_at_inventory": 27
+      },
+      "text": "qore_stage=\"$(mktemp -d \"${TMPDIR:-/tmp}/qore-first.XXXXXX\")\"\npython3 tools/qore.py build --output \"$qore_stage\"\npython3 tools/qore.py install --source \"$qore_stage/qore-skills-0.1.0\" --project-root .",
+      "text_sha256": "9bcd01ef834fda84fa4fbbc0108168f24863199c6c1e15b23e554e33c1c97b3a",
+      "implementation": [
+        {
+          "path": "tools/qore.py",
+          "sha256": "75e4e3f4a9c0be8787f13e18081cda9d50bf14325536d56e2f3f596f940f76e9"
+        }
+      ],
+      "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
+      "working_directory": "Repository root unless overridden below",
+      "prerequisites": [
+        "Python 3 standard library",
+        "POSIX shell and mktemp",
+        "Complete source checkout with current allowlist and explicit rights record",
+        "No existing local qore skill destinations"
+      ],
+      "inputs_and_substitutions": {
+        "TMPDIR": "Optional existing temporary-directory setting; defaults to /tmp",
+        "qore_stage": "New mktemp directory",
+        "project_root": ". means this checkout; use a fresh target if skills exist"
+      },
+      "expected_output": [
+        "Build identity JSON",
+        "Three installed paths and replaced=false"
+      ],
+      "effects": [
+        "Creates a temporary candidate folder and ZIP",
+        "Writes three skill folders under this checkout .agents/skills",
+        "Refuses collisions instead of replacing files"
+      ],
+      "execution": {
+        "status": "EXECUTED_HISTORICAL_AND_MAINTAINER_REPORTED",
+        "evidence_ids": [
+          "historical-shell-1",
+          "clean-linux-candidate-d"
+        ],
+        "limit": "Implementation or a related historical run does not prove this exact recipe completed on the current candidate."
+      }
+    },
+    {
+      "id": "doc-command-02",
+      "kind": "codex_prompt",
+      "location": {
+        "path": "README.md",
+        "fence": 2,
+        "line_at_inventory": 37
+      },
+      "text": "Use $qore-review to review examples/validator-hardening.md against its bundled\nvalidators and tests. Keep the target to this specification and implementation.\nRun the three independent finders, mechanical redaction, and a fresh verifier.\nRetain phase evidence and report findings and execution coverage. Do not edit source files.",
+      "text_sha256": "15d0ad1051b02fc46423336d605256b1425c4d3ba7f16580925032f35a0e0e80",
+      "implementation": [
+        {
+          "path": "skills/qore-review/SKILL.md",
+          "sha256": "aae83b4105dd89387c7eac31df3c789326def9c0b05dccd4a3d2cdab65732a97"
+        }
+      ],
+      "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
+      "working_directory": "Repository root unless overridden below",
+      "prerequisites": [
+        "Candidate installed/discovered in this project",
+        "Independent finder contexts and a fresh verifier",
+        "Python 3 and Node for bundled controls",
+        "Bundled specification, implementation and tests"
+      ],
+      "inputs_and_substitutions": {
+        "target": "examples/validator-hardening.md",
+        "qualification": "All required phases must actually finish; a preflight is insufficient."
+      },
+      "expected_output": [
+        "Three finder reports, mechanical claims file, fresh verification, final validation and honest coverage"
+      ],
+      "effects": [
+        "Reads target and writes local phase/evidence artifacts; source edits excluded by prompt"
+      ],
+      "execution": {
+        "status": "IN_PROGRESS",
+        "evidence_ids": [
+          "clean-linux-candidate-d"
+        ],
+        "limit": "Implementation or a related historical run does not prove this exact recipe completed on the current candidate."
+      }
+    },
+    {
+      "id": "doc-command-03",
+      "kind": "shell_recipe",
+      "location": {
+        "path": "README.md",
+        "fence": 3,
+        "line_at_inventory": 74
+      },
+      "text": "python3 tools/qore.py derive --profile profiles/qore.json --project-root . --output /tmp/qore-derived-first\npython3 tools/qore.py verify /tmp/qore-derived-first",
+      "text_sha256": "dbcac7f50215c99662cf81d804c7b3422184668b899c8983d6f2337ffedc8e85",
+      "implementation": [
+        {
+          "path": "tools/qore.py",
+          "sha256": "75e4e3f4a9c0be8787f13e18081cda9d50bf14325536d56e2f3f596f940f76e9"
+        },
+        {
+          "path": "tools/context.py",
+          "sha256": "3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd"
+        }
+      ],
+      "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
+      "working_directory": "Repository root unless overridden below",
+      "prerequisites": [
+        "Python 3",
+        "Source-backed current profile for all three methods",
+        "New output destination"
+      ],
+      "inputs_and_substitutions": {
+        "output": "Published /tmp example path was replaced by an isolated new destination in the recorded exercise"
+      },
+      "expected_output": [
+        "Derived candidate identity JSON; verify returns valid=true when unchanged"
+      ],
+      "effects": [
+        "Writes three project-bound skills and their manifests in new staging",
+        "Does not execute profile commands or replace installed skills"
+      ],
+      "execution": {
+        "status": "EXECUTED_RELATED_HISTORICAL_DESTINATION",
+        "evidence_ids": [
+          "historical-shell-1"
+        ],
+        "limit": "Implementation or a related historical run does not prove this exact recipe completed on the current candidate."
+      }
+    },
+    {
+      "id": "doc-command-04",
+      "kind": "shell_recipe",
+      "location": {
+        "path": "docs/clean-environment.md",
+        "fence": 1,
+        "line_at_inventory": 5
+      },
+      "text": "bash tools/clean_room.sh prepare qore-qualification-20261015-example /tmp/qore-clean-audit-new\nbash tools/clean_room.sh inspect qore-qualification-20261015-example\nbash tools/clean_room.sh stage qore-qualification-20261015-example /path/to/qore-skills-0.1.0.zip",
+      "text_sha256": "d68efb339680fa2dd84594bd62145c19c29f2dc636fcee8a7cb4c78b97b7beec",
+      "implementation": [
+        {
+          "path": "tools/clean_room.sh",
+          "sha256": "597bb401a1896086223be2f7930b3c6734085319978296b60c23f293efa367e9"
+        }
+      ],
+      "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
+      "working_directory": "Repository root unless overridden below",
+      "prerequisites": [
+        "Docker and Bash",
+        "New named qualification container/audit destination for prepare",
+        "Existing matching owned container for inspect/stage/run/cleanup",
+        "Candidate ZIP for stage",
+        "Authorized temporary Codex authentication and explicit prompt for run"
+      ],
+      "inputs_and_substitutions": {
+        "container_name": "Replace example name consistently with a new helper-owned name",
+        "audit_dir": "Choose a new directory",
+        "/path/to/qore-skills-0.1.0.zip": "Replace with frozen candidate ZIP",
+        "qualification-prompt.txt": "Create/review the actual authorized prompt; file is not bundled",
+        "execution.jsonl": "Local output log; inspect/redact before sharing"
+      },
+      "expected_output": [
+        "Setup/environment/staging JSON for preparation",
+        "Actual Codex JSONL for run; completion and phase evidence assessed separately",
+        "Named container removed for cleanup"
+      ],
+      "effects": [
+        "Builds declared image and starts bounded named container",
+        "Inspects environment read-only",
+        "Stages supplied ZIP in container; no host source mounts"
+      ],
+      "execution": {
+        "status": "TEMPLATE_WITH_RELATED_SETUP_EVIDENCE",
+        "evidence_ids": [
+          "clean-linux-candidate-d"
+        ],
+        "limit": "Implementation or a related historical run does not prove this exact recipe completed on the current candidate."
+      }
+    },
+    {
+      "id": "doc-command-05",
+      "kind": "shell_recipe",
+      "location": {
+        "path": "docs/clean-environment.md",
+        "fence": 2,
+        "line_at_inventory": 17
+      },
+      "text": "bash tools/clean_room.sh run qore-qualification-20261015-example qualification-prompt.txt > execution.jsonl",
+      "text_sha256": "0755fa2a6c8101852380b7255ccd7f745cc1fa4996d0eb8e5a27dfc96dd3f759",
+      "implementation": [
+        {
+          "path": "tools/clean_room.sh",
+          "sha256": "597bb401a1896086223be2f7930b3c6734085319978296b60c23f293efa367e9"
+        }
+      ],
+      "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
+      "working_directory": "Repository root unless overridden below",
+      "prerequisites": [
+        "Docker and Bash",
+        "New named qualification container/audit destination for prepare",
+        "Existing matching owned container for inspect/stage/run/cleanup",
+        "Candidate ZIP for stage",
+        "Authorized temporary Codex authentication and explicit prompt for run"
+      ],
+      "inputs_and_substitutions": {
+        "container_name": "Replace example name consistently with a new helper-owned name",
+        "audit_dir": "Choose a new directory",
+        "/path/to/qore-skills-0.1.0.zip": "Replace with frozen candidate ZIP",
+        "qualification-prompt.txt": "Create/review the actual authorized prompt; file is not bundled",
+        "execution.jsonl": "Local output log; inspect/redact before sharing"
+      },
+      "expected_output": [
+        "Setup/environment/staging JSON for preparation",
+        "Actual Codex JSONL for run; completion and phase evidence assessed separately",
+        "Named container removed for cleanup"
+      ],
+      "effects": [
+        "Runs explicit authorized Codex prompt inside named container",
+        "Writes execution.jsonl; prompt may perform scope-authorized local actions"
+      ],
+      "execution": {
+        "status": "IN_PROGRESS",
+        "evidence_ids": [
+          "clean-linux-candidate-d"
+        ],
+        "limit": "Implementation or a related historical run does not prove this exact recipe completed on the current candidate."
+      }
+    },
+    {
+      "id": "doc-command-06",
+      "kind": "shell_recipe",
+      "location": {
+        "path": "docs/clean-environment.md",
+        "fence": 3,
+        "line_at_inventory": 25
+      },
+      "text": "bash tools/clean_room.sh cleanup qore-qualification-20261015-example",
+      "text_sha256": "47ef2715a79f716355bda30127711bb2d43c700bcfc48101bbd8583a1d0c8e53",
+      "implementation": [
+        {
+          "path": "tools/clean_room.sh",
+          "sha256": "597bb401a1896086223be2f7930b3c6734085319978296b60c23f293efa367e9"
+        }
+      ],
+      "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
+      "working_directory": "Repository root unless overridden below",
+      "prerequisites": [
+        "Docker and Bash",
+        "New named qualification container/audit destination for prepare",
+        "Existing matching owned container for inspect/stage/run/cleanup",
+        "Candidate ZIP for stage",
+        "Authorized temporary Codex authentication and explicit prompt for run"
+      ],
+      "inputs_and_substitutions": {
+        "container_name": "Replace example name consistently with a new helper-owned name",
+        "audit_dir": "Choose a new directory",
+        "/path/to/qore-skills-0.1.0.zip": "Replace with frozen candidate ZIP",
+        "qualification-prompt.txt": "Create/review the actual authorized prompt; file is not bundled",
+        "execution.jsonl": "Local output log; inspect/redact before sharing"
+      },
+      "expected_output": [
+        "Setup/environment/staging JSON for preparation",
+        "Actual Codex JSONL for run; completion and phase evidence assessed separately",
+        "Named container removed for cleanup"
+      ],
+      "effects": [
+        "Removes only the named helper-owned qualification container",
+        "Retains its image and does not prune unrelated resources"
+      ],
+      "execution": {
+        "status": "TEMPLATE_NOT_EXECUTED_AS_WRITTEN",
+        "evidence_ids": [],
+        "limit": "Implementation or a related historical run does not prove this exact recipe completed on the current candidate."
+      }
+    },
+    {
+      "id": "doc-command-07",
+      "kind": "shell_command",
+      "location": {
+        "path": "docs/evidence/browser/README.md",
+        "fence": 1,
+        "line_at_inventory": 21
+      },
+      "text": "python3 -m http.server 8765 --bind 127.0.0.1 --directory tests/fixtures/web",
+      "text_sha256": "79725c3588315563f9b1a7a06700df4eff9d540523b400b213823e5766502dec",
+      "implementation": [],
+      "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
+      "working_directory": "Repository root unless overridden below",
+      "prerequisites": [
+        "Python 3",
+        "Free loopback port 8765",
+        "tests/fixtures/web available in this environment"
+      ],
+      "inputs_and_substitutions": {
+        "port": "If changed, also update the explicit browser URL/profile for that run"
+      },
+      "expected_output": [
+        "Listening HTTP server; fixture URL reachable from the browser environment"
+      ],
+      "effects": [
+        "Serves fixture files on 127.0.0.1 until the process is stopped"
+      ],
+      "execution": {
+        "status": "TEMPLATE_WITH_RELATED_BROWSER_OBSERVATION",
+        "evidence_ids": [
+          "browser-fixture"
+        ],
+        "limit": "Implementation or a related historical run does not prove this exact recipe completed on the current candidate."
+      }
+    },
+    {
+      "id": "doc-command-08",
+      "kind": "shell_recipe",
+      "location": {
+        "path": "docs/evidence/browser/README.md",
+        "fence": 2,
+        "line_at_inventory": 27
+      },
+      "text": "node tools/browser_probe.mjs \\\n  --url http://127.0.0.1:8765/index.html \\\n  --output /tmp/qore-browser-fixture-new \\\n  --actions tests/fixtures/web/primary-actions.json \\\n  --playwright-module \"$PLAYWRIGHT_MODULE\" \\\n  --label 'Synthetic driver qualification only'",
+      "text_sha256": "0f3cab179dd430ac19ebb219bc2fc50e749dde3931ffe854242bf9a7567ab8c7",
+      "implementation": [
+        {
+          "path": "tools/browser_probe.mjs",
+          "sha256": "2c02268e7044f0b3a9a0d848db6fb1c0236ee2df67f35394e11b798228711be2"
+        }
+      ],
+      "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
+      "working_directory": "Repository root unless overridden below",
+      "prerequisites": [
+        "Node",
+        "Already installed Playwright and matching browser",
+        "Fixture server in the same environment",
+        "Reviewed authorized actions file",
+        "Unused output directory"
+      ],
+      "inputs_and_substitutions": {
+        "PLAYWRIGHT_MODULE": "Path to an already installed package; intentionally not hardcoded to an author machine",
+        "output": "Choose an unused output directory"
+      },
+      "expected_output": [
+        "Driver/state observations and scoped COMPLETE/PARTIAL/BLOCKED outcome; no global full-UX success"
+      ],
+      "effects": [
+        "Navigates isolated browser and performs declared actions",
+        "Writes local observation artifacts; helper blocks non-GET/HEAD/OPTIONS traffic",
+        "Does not install dependencies or alter user browser sessions"
+      ],
+      "execution": {
+        "status": "TEMPLATE_WITH_RELATED_BROWSER_OBSERVATION",
+        "evidence_ids": [
+          "browser-fixture"
+        ],
+        "limit": "Implementation or a related historical run does not prove this exact recipe completed on the current candidate."
+      }
+    },
+    {
+      "id": "doc-command-09",
+      "kind": "shell_command",
+      "location": {
+        "path": "docs/profiles.md",
+        "fence": 1,
+        "line_at_inventory": 27
+      },
+      "text": "python3 tools/context.py profiles/qore.json --root . --method plan",
+      "text_sha256": "04362e954f3a381c4c74ea61fd31b99754e478cca4b143f1e907104c02b14bda",
+      "implementation": [
+        {
+          "path": "tools/context.py",
+          "sha256": "3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd"
+        }
+      ],
+      "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
+      "working_directory": "Repository root unless overridden below",
+      "prerequisites": [
+        "Python 3",
+        "Current profile and declared source files",
+        "Explicit target root"
+      ],
+      "inputs_and_substitutions": {
+        "--method": "plan as shown; review and ux were separately exercised",
+        "--root": ". is this repository"
+      },
+      "expected_output": [
+        "qore-context-check/1 with current selected facts, digests, coverage and problems"
+      ],
+      "effects": [
+        "Reads profile and source files; executes no project commands"
+      ],
+      "execution": {
+        "status": "EXECUTED_RECORDED",
+        "evidence_ids": [
+          "profile-preflight-local"
+        ],
+        "limit": "Implementation or a related historical run does not prove this exact recipe completed on the current candidate."
+      }
+    },
+    {
+      "id": "doc-command-10",
+      "kind": "shell_command_template",
+      "location": {
+        "path": "docs/profiles.md",
+        "fence": 2,
+        "line_at_inventory": 37
+      },
+      "text": "python3 scripts/project-check.py references/project.json --root /absolute/path/to/project --method review",
+      "text_sha256": "3a6ea31fc47e2c1f21fbb9a4025223cb64a58b4ab67a75d25b54054a63d8a34d",
+      "implementation": [
+        {
+          "path": "tools/context.py",
+          "sha256": "3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd"
+        }
+      ],
+      "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
+      "working_directory": "The generated derivative skill directory",
+      "prerequisites": [
+        "Generated project derivative with bundled checker/profile",
+        "Python 3",
+        "Actual project root and source files"
+      ],
+      "inputs_and_substitutions": {
+        "/absolute/path/to/project": "Replace with the target project root",
+        "--method": "Use the method of the derivative"
+      },
+      "expected_output": [
+        "qore-context-check/1; stale applicable context is PARTIAL/BLOCKED"
+      ],
+      "effects": [
+        "Reads and compares profile sources; no project commands executed"
+      ],
+      "execution": {
+        "status": "TEMPLATE_NOT_EXECUTED_AS_WRITTEN",
+        "evidence_ids": [],
+        "limit": "Implementation or a related historical run does not prove this exact recipe completed on the current candidate."
+      }
+    },
+    {
+      "id": "doc-command-11",
+      "kind": "shell_recipe",
+      "location": {
+        "path": "docs/profiles.md",
+        "fence": 3,
+        "line_at_inventory": 49
+      },
+      "text": "python3 tools/qore.py derive --profile profiles/qore.json --project-root . --output /tmp/qore-derived-next",
+      "text_sha256": "075a12277e14a49fdd3922099d90f91ba48ab04fbe4857c6cfe6d3c993756a68",
+      "implementation": [
+        {
+          "path": "tools/qore.py",
+          "sha256": "75e4e3f4a9c0be8787f13e18081cda9d50bf14325536d56e2f3f596f940f76e9"
+        },
+        {
+          "path": "tools/context.py",
+          "sha256": "3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd"
+        }
+      ],
+      "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
+      "working_directory": "Repository root unless overridden below",
+      "prerequisites": [
+        "Python 3",
+        "Source-backed current profile for all three methods",
+        "New output destination"
+      ],
+      "inputs_and_substitutions": {
+        "output": "Published /tmp example path was replaced by an isolated new destination in the recorded exercise"
+      },
+      "expected_output": [
+        "Derived candidate identity JSON; verify returns valid=true when unchanged"
+      ],
+      "effects": [
+        "Writes three project-bound skills and their manifests in new staging",
+        "Does not execute profile commands or replace installed skills"
+      ],
+      "execution": {
+        "status": "EXECUTED_RELATED_HISTORICAL_DESTINATION",
+        "evidence_ids": [
+          "historical-shell-1"
+        ],
+        "limit": "Implementation or a related historical run does not prove this exact recipe completed on the current candidate."
+      }
+    },
+    {
+      "id": "doc-command-12",
+      "kind": "shell_command_template",
+      "location": {
+        "path": "docs/profiles.md",
+        "fence": 4,
+        "line_at_inventory": 55
+      },
+      "text": "python3 tools/qore.py compare --source /tmp/qore-derived-next --project-root .",
+      "text_sha256": "ec6293675ac6eaf92d9ae8c7fe06032d9dd1b0e9b9883bf5aaa0ca266b9a03df",
+      "implementation": [
+        {
+          "path": "tools/qore.py",
+          "sha256": "75e4e3f4a9c0be8787f13e18081cda9d50bf14325536d56e2f3f596f940f76e9"
+        }
+      ],
+      "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
+      "working_directory": "Repository root unless overridden below",
+      "prerequisites": [
+        "Python 3",
+        "Verified candidate generated at the chosen source path",
+        "Explicit project root"
+      ],
+      "inputs_and_substitutions": {
+        "--source": "Use the actual newly derived candidate path"
+      },
+      "expected_output": [
+        "changes, changed, replaced=false; no automatic merge"
+      ],
+      "effects": [
+        "Read-only comparison of candidate/installed paths, digests and local adaptations"
+      ],
+      "execution": {
+        "status": "TEMPLATE_NOT_EXECUTED_AS_WRITTEN",
+        "evidence_ids": [],
+        "limit": "Implementation or a related historical run does not prove this exact recipe completed on the current candidate."
+      }
+    },
+    {
+      "id": "doc-command-13",
+      "kind": "shell_command",
+      "location": {
+        "path": "CONTRIBUTING.md",
+        "fence": 1,
+        "line_at_inventory": 7
+      },
+      "text": "python3 -B -m unittest discover -s tests -v",
+      "text_sha256": "7a2b70d73cb8c134301511add15040ab80e4f01a35ff7b05ef25780bc23192ae",
+      "implementation": [
+        {
+          "path": "tests/test_package.py",
+          "sha256": "c65c07afcb7898b2515eba0e42f0859e9a36d3b2acf3eded7d31c3836416c926"
+        },
+        {
+          "path": "tests/test_validators.py",
+          "sha256": "b91ab5195a1e7380747c618a17f885b56dc1cddf809ff23e065c3062fc477f39"
+        },
+        {
+          "path": "tests/test_run_contract.py",
+          "sha256": "f671c3ec3ca69ad155c54823ef89eb9475fd847b65b762094ad937030e7f297f"
+        }
+      ],
+      "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
+      "working_directory": "Repository root unless overridden below",
+      "prerequisites": [
+        "Python 3",
+        "Node for JavaScript helper tests",
+        "Bash for the specification wrapper"
+      ],
+      "inputs_and_substitutions": {},
+      "expected_output": [
+        "Test results and process exit status; no reasoning-quality certification"
+      ],
+      "effects": [
+        "Runs isolated structural/helper regressions and temporary fixtures"
+      ],
+      "execution": {
+        "status": "MAINTAINER_REPORTED_EXECUTED",
+        "evidence_ids": [
+          "clean-linux-candidate-d"
+        ],
+        "limit": "Implementation or a related historical run does not prove this exact recipe completed on the current candidate."
+      }
+    },
+    {
+      "id": "doc-command-14",
+      "kind": "shell_command",
+      "location": {
+        "path": "CONTRIBUTING.md",
+        "fence": 2,
+        "line_at_inventory": 15
+      },
+      "text": "python3 tools/refresh_profiles.py",
+      "text_sha256": "16e3f5eec3f57cebc0f900c9fd18d5c02bcaf295896a59f213be1f6ba8b427ce",
+      "implementation": [
+        {
+          "path": "tools/refresh_profiles.py",
+          "sha256": "6895b7adfa855f3742b0910fd165c4be8c0ec73ffd2dcfc3f0ea5162b52c8dfb"
+        }
+      ],
+      "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
+      "working_directory": "Repository root unless overridden below",
+      "prerequisites": [
+        "Python 3",
+        "Intentionally reconciled qore.json and contrasting fixture facts",
+        "Review of expected profile diff"
+      ],
+      "inputs_and_substitutions": {},
+      "expected_output": [
+        "Updated profiles, requiring inspection and current/stale regression checks"
+      ],
+      "effects": [
+        "Updates maintained example source digests; does not validate semantic truth or install derivatives"
+      ],
+      "execution": {
+        "status": "TEMPLATE_NOT_EXECUTED_AS_WRITTEN",
+        "evidence_ids": [],
+        "limit": "Implementation or a related historical run does not prove this exact recipe completed on the current candidate."
+      }
+    },
+    {
+      "id": "doc-command-15",
+      "kind": "codex_prompt_template",
+      "location": {
+        "path": "README.md",
+        "section": "Use a method on your project"
+      },
+      "text": "Use $qore-plan to prepare this change from the current requirements and project sources. Preserve open decisions and show acceptance coverage.",
+      "text_sha256": "f78c2bfd499c82f4b0dc6614ee5e7ec50e33c66fa81f64884cdd8cf8c9f35667",
+      "implementation": [
+        {
+          "path": "skills/qore-plan/SKILL.md",
+          "sha256": "6a0b7a03d888595e6b9e76bc16644a313a187df91622fd5245d4b2253bdf83da"
+        }
+      ],
+      "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
+      "working_directory": "Repository root unless overridden below",
+      "prerequisites": [
+        "Installed/discovered skill",
+        "Actual target and applicable project sources",
+        "Independent contexts for plan/review; observed browser capabilities for UX"
+      ],
+      "inputs_and_substitutions": {
+        "target": "Replace this change, docs/specs/change.md, or authorized web flow with your actual target"
+      },
+      "expected_output": [
+        "Method-specific deliverable with actual phase coverage and limitations"
+      ],
+      "effects": [
+        "Reads authorized sources and creates local method artifacts; further actions depend on user scope"
+      ],
+      "execution": {
+        "status": "TEMPLATE_NOT_EXECUTED_AS_WRITTEN",
+        "evidence_ids": [],
+        "limit": "Implementation or a related historical run does not prove this exact recipe completed on the current candidate."
+      }
+    },
+    {
+      "id": "doc-command-16",
+      "kind": "codex_prompt_template",
+      "location": {
+        "path": "README.md",
+        "section": "Use a method on your project"
+      },
+      "text": "Use $qore-review to challenge docs/specs/change.md against its requirements and implementation. Report actual independent phases and uncovered scope.",
+      "text_sha256": "e689c11e20cd4cd75a019f7da886ef239b75b0ebe9165b2177d60b574bb25682",
+      "implementation": [
+        {
+          "path": "skills/qore-review/SKILL.md",
+          "sha256": "aae83b4105dd89387c7eac31df3c789326def9c0b05dccd4a3d2cdab65732a97"
+        }
+      ],
+      "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
+      "working_directory": "Repository root unless overridden below",
+      "prerequisites": [
+        "Installed/discovered skill",
+        "Actual target and applicable project sources",
+        "Independent contexts for plan/review; observed browser capabilities for UX"
+      ],
+      "inputs_and_substitutions": {
+        "target": "Replace this change, docs/specs/change.md, or authorized web flow with your actual target"
+      },
+      "expected_output": [
+        "Method-specific deliverable with actual phase coverage and limitations"
+      ],
+      "effects": [
+        "Reads authorized sources and creates local method artifacts; further actions depend on user scope"
+      ],
+      "execution": {
+        "status": "TEMPLATE_NOT_EXECUTED_AS_WRITTEN",
+        "evidence_ids": [],
+        "limit": "Implementation or a related historical run does not prove this exact recipe completed on the current candidate."
+      }
+    },
+    {
+      "id": "doc-command-17",
+      "kind": "codex_prompt_template",
+      "location": {
+        "path": "README.md",
+        "section": "Use a method on your project"
+      },
+      "text": "Use $qore-ux-review to inspect the authorized web flow from its real entry control. Declare required states and capabilities before execution; retain gaps and fresh evidence.",
+      "text_sha256": "7f3b1758f3954b84cd658fb08c6d9139aca3425d0d4d503283b11c52545584b0",
+      "implementation": [
+        {
+          "path": "skills/qore-ux-review/SKILL.md",
+          "sha256": "33b1367f256f1a6304902d08cdff9b023add92fb750834216268cca8de84b851"
+        }
+      ],
+      "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
+      "working_directory": "Repository root unless overridden below",
+      "prerequisites": [
+        "Installed/discovered skill",
+        "Actual target and applicable project sources",
+        "Independent contexts for plan/review; observed browser capabilities for UX"
+      ],
+      "inputs_and_substitutions": {
+        "target": "Replace this change, docs/specs/change.md, or authorized web flow with your actual target"
+      },
+      "expected_output": [
+        "Method-specific deliverable with actual phase coverage and limitations"
+      ],
+      "effects": [
+        "Reads authorized sources and creates local method artifacts; further actions depend on user scope"
+      ],
+      "execution": {
+        "status": "TEMPLATE_NOT_EXECUTED_AS_WRITTEN",
+        "evidence_ids": [],
+        "limit": "Implementation or a related historical run does not prove this exact recipe completed on the current candidate."
+      }
+    },
+    {
+      "id": "doc-command-18",
+      "kind": "command_reference_template",
+      "location": {
+        "path": "docs/contracts.md",
+        "section": "Local command reference or Method artifacts"
+      },
+      "text": "python3 tools/qore.py build --output STAGING",
+      "text_sha256": "7407d8658aee9983464918824fb2b522e39c1cca246a5b80395793dc359f38a1",
+      "implementation": [
+        {
+          "path": "tools/qore.py",
+          "sha256": "75e4e3f4a9c0be8787f13e18081cda9d50bf14325536d56e2f3f596f940f76e9"
+        }
+      ],
+      "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
+      "working_directory": "Repository root unless overridden below",
+      "prerequisites": [
+        "Python 3",
+        "Current release allowlist and redistribution attestations",
+        "Unused generated destination"
+      ],
+      "inputs_and_substitutions": {
+        "uppercase_tokens": "STAGING, BUNDLE, PROFILE, ROOT, RUN, EVIDENCE, SPEC.md, FINDINGS.json, VERIFIED.json, DEPTH.json and LOOP.json denote actual paths",
+        "--verifier=ran": "Only declare after a genuinely separate verifier ran"
+      },
+      "expected_output": [
+        "Bundle/archive identity JSON and exit status"
+      ],
+      "effects": [
+        "Creates allowlisted versioned candidate folder, inventories and ZIP in new staging"
+      ],
+      "execution": {
+        "status": "REFERENCE_TEMPLATE_NOT_EXECUTED_AS_WRITTEN",
+        "evidence_ids": [],
+        "limit": "Implementation or a related historical run does not prove this exact recipe completed on the current candidate."
+      }
+    },
+    {
+      "id": "doc-command-19",
+      "kind": "command_reference_template",
+      "location": {
+        "path": "docs/contracts.md",
+        "section": "Local command reference or Method artifacts"
+      },
+      "text": "python3 tools/qore.py verify BUNDLE",
+      "text_sha256": "eabaef699ffaeb20557855cd3c4eee5ba12c59d52f4245b67332bf4fe3cb596d",
+      "implementation": [
+        {
+          "path": "tools/qore.py",
+          "sha256": "75e4e3f4a9c0be8787f13e18081cda9d50bf14325536d56e2f3f596f940f76e9"
+        }
+      ],
+      "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
+      "working_directory": "Repository root unless overridden below",
+      "prerequisites": [
+        "Python 3",
+        "Extracted candidate directory with complete manifests"
+      ],
+      "inputs_and_substitutions": {
+        "uppercase_tokens": "STAGING, BUNDLE, PROFILE, ROOT, RUN, EVIDENCE, SPEC.md, FINDINGS.json, VERIFIED.json, DEPTH.json and LOOP.json denote actual paths",
+        "--verifier=ran": "Only declare after a genuinely separate verifier ran"
+      },
+      "expected_output": [
+        "valid, version, kind, file count and manifest digest, or refusal"
+      ],
+      "effects": [
+        "Reads candidate files and inventories; writes no files"
+      ],
+      "execution": {
+        "status": "REFERENCE_TEMPLATE_NOT_EXECUTED_AS_WRITTEN",
+        "evidence_ids": [],
+        "limit": "Implementation or a related historical run does not prove this exact recipe completed on the current candidate."
+      }
+    },
+    {
+      "id": "doc-command-20",
+      "kind": "command_reference_template",
+      "location": {
+        "path": "docs/contracts.md",
+        "section": "Local command reference or Method artifacts"
+      },
+      "text": "python3 tools/qore.py derive --profile PROFILE --project-root ROOT --output STAGING",
+      "text_sha256": "c5bd47a9b3871eb8d93104663665d5f2b56c97eecf8c4004c664bf36c9982d78",
+      "implementation": [
+        {
+          "path": "tools/qore.py",
+          "sha256": "75e4e3f4a9c0be8787f13e18081cda9d50bf14325536d56e2f3f596f940f76e9"
+        }
+      ],
+      "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
+      "working_directory": "Repository root unless overridden below",
+      "prerequisites": [
+        "Python 3",
+        "Current profile sources for all methods",
+        "Unused output destination"
+      ],
+      "inputs_and_substitutions": {
+        "uppercase_tokens": "STAGING, BUNDLE, PROFILE, ROOT, RUN, EVIDENCE, SPEC.md, FINDINGS.json, VERIFIED.json, DEPTH.json and LOOP.json denote actual paths",
+        "--verifier=ran": "Only declare after a genuinely separate verifier ran"
+      },
+      "expected_output": [
+        "Derived output, profile identity/digest and verified manifest metadata"
+      ],
+      "effects": [
+        "Checks source-bound profile facts for all methods and writes three new derivative folders"
+      ],
+      "execution": {
+        "status": "REFERENCE_TEMPLATE_NOT_EXECUTED_AS_WRITTEN",
+        "evidence_ids": [],
+        "limit": "Implementation or a related historical run does not prove this exact recipe completed on the current candidate."
+      }
+    },
+    {
+      "id": "doc-command-21",
+      "kind": "command_reference_template",
+      "location": {
+        "path": "docs/contracts.md",
+        "section": "Local command reference or Method artifacts"
+      },
+      "text": "python3 tools/qore.py install --source BUNDLE --project-root ROOT",
+      "text_sha256": "2bcaa4c6ce974e878d5e1744695cbb193805a4f773e37ea93547508ec469dab1",
+      "implementation": [
+        {
+          "path": "tools/qore.py",
+          "sha256": "75e4e3f4a9c0be8787f13e18081cda9d50bf14325536d56e2f3f596f940f76e9"
+        }
+      ],
+      "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
+      "working_directory": "Repository root unless overridden below",
+      "prerequisites": [
+        "Python 3",
+        "Verified bundle",
+        "Target root without colliding skill destinations"
+      ],
+      "inputs_and_substitutions": {
+        "uppercase_tokens": "STAGING, BUNDLE, PROFILE, ROOT, RUN, EVIDENCE, SPEC.md, FINDINGS.json, VERIFIED.json, DEPTH.json and LOOP.json denote actual paths",
+        "--verifier=ran": "Only declare after a genuinely separate verifier ran"
+      },
+      "expected_output": [
+        "Three installed paths and replaced=false, or collision diagnostic"
+      ],
+      "effects": [
+        "Verifies bundle and writes three project-local skills; refuses existing destinations"
+      ],
+      "execution": {
+        "status": "REFERENCE_TEMPLATE_NOT_EXECUTED_AS_WRITTEN",
+        "evidence_ids": [],
+        "limit": "Implementation or a related historical run does not prove this exact recipe completed on the current candidate."
+      }
+    },
+    {
+      "id": "doc-command-22",
+      "kind": "command_reference_template",
+      "location": {
+        "path": "docs/contracts.md",
+        "section": "Local command reference or Method artifacts"
+      },
+      "text": "python3 tools/qore.py compare --source BUNDLE --project-root ROOT",
+      "text_sha256": "830ec0d5961ed5c2db72f8cd378baa1c92860ffc8f0e43d0945c82f8b011e44e",
+      "implementation": [
+        {
+          "path": "tools/qore.py",
+          "sha256": "75e4e3f4a9c0be8787f13e18081cda9d50bf14325536d56e2f3f596f940f76e9"
+        }
+      ],
+      "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
+      "working_directory": "Repository root unless overridden below",
+      "prerequisites": [
+        "Python 3",
+        "Verified candidate",
+        "Explicit project root"
+      ],
+      "inputs_and_substitutions": {
+        "uppercase_tokens": "STAGING, BUNDLE, PROFILE, ROOT, RUN, EVIDENCE, SPEC.md, FINDINGS.json, VERIFIED.json, DEPTH.json and LOOP.json denote actual paths",
+        "--verifier=ran": "Only declare after a genuinely separate verifier ran"
+      },
+      "expected_output": [
+        "Per-path digests and local-adaptation flags, changed and replaced=false"
+      ],
+      "effects": [
+        "Reads installed/candidate files and base digests; performs no replacement or merge"
+      ],
+      "execution": {
+        "status": "REFERENCE_TEMPLATE_NOT_EXECUTED_AS_WRITTEN",
+        "evidence_ids": [],
+        "limit": "Implementation or a related historical run does not prove this exact recipe completed on the current candidate."
+      }
+    },
+    {
+      "id": "doc-command-23",
+      "kind": "command_reference_template",
+      "location": {
+        "path": "docs/contracts.md",
+        "section": "Local command reference or Method artifacts"
+      },
+      "text": "python3 tools/qore.py snapshot --root ROOT",
+      "text_sha256": "acbe6ee3b5f577b72349cb397bc9635f065e7890b0a858c7b1f2314c516efaa9",
+      "implementation": [
+        {
+          "path": "tools/qore.py",
+          "sha256": "75e4e3f4a9c0be8787f13e18081cda9d50bf14325536d56e2f3f596f940f76e9"
+        }
+      ],
+      "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
+      "working_directory": "Repository root unless overridden below",
+      "prerequisites": [
+        "Python 3",
+        "Explicit readable target root"
+      ],
+      "inputs_and_substitutions": {
+        "uppercase_tokens": "STAGING, BUNDLE, PROFILE, ROOT, RUN, EVIDENCE, SPEC.md, FINDINGS.json, VERIFIED.json, DEPTH.json and LOOP.json denote actual paths",
+        "--verifier=ran": "Only declare after a genuinely separate verifier ran"
+      },
+      "expected_output": [
+        "snapshot_sha256 and per-file digest rows"
+      ],
+      "effects": [
+        "Reads declared snapshot files and prints inventory; writes no files"
+      ],
+      "execution": {
+        "status": "REFERENCE_TEMPLATE_NOT_EXECUTED_AS_WRITTEN",
+        "evidence_ids": [],
+        "limit": "Implementation or a related historical run does not prove this exact recipe completed on the current candidate."
+      }
+    },
+    {
+      "id": "doc-command-24",
+      "kind": "command_reference_template",
+      "location": {
+        "path": "docs/contracts.md",
+        "section": "Local command reference or Method artifacts"
+      },
+      "text": "python3 tools/qore.py validate-run RUN --evidence-root EVIDENCE",
+      "text_sha256": "014f2d3b2412a5ea8e4f7cb826b12d95b4995ac5b0bea0b4d1b52fc0b0e6f4f0",
+      "implementation": [
+        {
+          "path": "tools/qore.py",
+          "sha256": "75e4e3f4a9c0be8787f13e18081cda9d50bf14325536d56e2f3f596f940f76e9"
+        }
+      ],
+      "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
+      "working_directory": "Repository root unless overridden below",
+      "prerequisites": [
+        "Python 3",
+        "qore-run/1 record and matching contained evidence root"
+      ],
+      "inputs_and_substitutions": {
+        "uppercase_tokens": "STAGING, BUNDLE, PROFILE, ROOT, RUN, EVIDENCE, SPEC.md, FINDINGS.json, VERIFIED.json, DEPTH.json and LOOP.json denote actual paths",
+        "--verifier=ran": "Only declare after a genuinely separate verifier ran"
+      },
+      "expected_output": [
+        "valid/coverage/missing phases or explicit refusal; no quality certification"
+      ],
+      "effects": [
+        "Reads run and evidence files, checks identities, digests and declared phase coverage"
+      ],
+      "execution": {
+        "status": "REFERENCE_TEMPLATE_NOT_EXECUTED_AS_WRITTEN",
+        "evidence_ids": [],
+        "limit": "Implementation or a related historical run does not prove this exact recipe completed on the current candidate."
+      }
+    },
+    {
+      "id": "doc-command-25",
+      "kind": "command_reference_template",
+      "location": {
+        "path": "docs/contracts.md",
+        "section": "Local command reference or Method artifacts"
+      },
+      "text": "python3 tools/context.py PROFILE --root ROOT --method plan",
+      "text_sha256": "1df9eae77e969c4e5b86aa83c309d39f45e35f4e023578f3a511f793b385e59e",
+      "implementation": [
+        {
+          "path": "tools/context.py",
+          "sha256": "3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd"
+        }
+      ],
+      "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
+      "working_directory": "Repository root unless overridden below",
+      "prerequisites": [
+        "Python 3",
+        "Profile and actual project root/source files"
+      ],
+      "inputs_and_substitutions": {
+        "uppercase_tokens": "STAGING, BUNDLE, PROFILE, ROOT, RUN, EVIDENCE, SPEC.md, FINDINGS.json, VERIFIED.json, DEPTH.json and LOOP.json denote actual paths",
+        "--verifier=ran": "Only declare after a genuinely separate verifier ran"
+      },
+      "expected_output": [
+        "Current method-specific facts, source comparisons and context coverage"
+      ],
+      "effects": [
+        "Reads source-bound profile and project files; executes no profile commands"
+      ],
+      "execution": {
+        "status": "REFERENCE_TEMPLATE_NOT_EXECUTED_AS_WRITTEN",
+        "evidence_ids": [],
+        "limit": "Implementation or a related historical run does not prove this exact recipe completed on the current candidate."
+      }
+    },
+    {
+      "id": "doc-command-26",
+      "kind": "command_reference_template",
+      "location": {
+        "path": "docs/contracts.md",
+        "section": "Local command reference or Method artifacts"
+      },
+      "text": "bash scripts/spec-lint.sh SPEC.md",
+      "text_sha256": "f8302d77821d00b6cff15daa94da355f684518746028f1dca856fd1155d1936a",
+      "implementation": [
+        {
+          "path": "skills/qore-plan/scripts/spec-lint.sh",
+          "sha256": "ee4b0c491833f8f3960037255f7ea601548a353d18b317aae25d8e5f2cd461b6"
+        }
+      ],
+      "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
+      "working_directory": "Corresponding skill directory",
+      "prerequisites": [
+        "Bash",
+        "Node",
+        "Specification file with qore-spec/1 contract"
+      ],
+      "inputs_and_substitutions": {
+        "uppercase_tokens": "STAGING, BUNDLE, PROFILE, ROOT, RUN, EVIDENCE, SPEC.md, FINDINGS.json, VERIFIED.json, DEPTH.json and LOOP.json denote actual paths",
+        "--verifier=ran": "Only declare after a genuinely separate verifier ran"
+      },
+      "expected_output": [
+        "PASS or structural diagnostics with exit status"
+      ],
+      "effects": [
+        "Reads specification and parses required structural content; writes no source"
+      ],
+      "execution": {
+        "status": "REFERENCE_TEMPLATE_NOT_EXECUTED_AS_WRITTEN",
+        "evidence_ids": [],
+        "limit": "Implementation or a related historical run does not prove this exact recipe completed on the current candidate."
+      }
+    },
+    {
+      "id": "doc-command-27",
+      "kind": "command_reference_template",
+      "location": {
+        "path": "docs/contracts.md",
+        "section": "Local command reference or Method artifacts"
+      },
+      "text": "node scripts/redact-for-verifier.mjs FINDINGS.json",
+      "text_sha256": "45f785af8ecec31754f46f53309cf0eb592ef07574b4d0f7d1070acf6751837a",
+      "implementation": [
+        {
+          "path": "skills/qore-review/scripts/redact-for-verifier.mjs",
+          "sha256": "dc249524c749ad5b511aef0a2cf08b4cfd5c47c1e0de4fd41c5c70746b471083"
+        }
+      ],
+      "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
+      "working_directory": "Corresponding skill directory",
+      "prerequisites": [
+        "Node",
+        "Complete candidate findings JSON; save stdout before verifier phase"
+      ],
+      "inputs_and_substitutions": {
+        "uppercase_tokens": "STAGING, BUNDLE, PROFILE, ROOT, RUN, EVIDENCE, SPEC.md, FINDINGS.json, VERIFIED.json, DEPTH.json and LOOP.json denote actual paths",
+        "--verifier=ran": "Only declare after a genuinely separate verifier ran"
+      },
+      "expected_output": [
+        "Filtered findings envelope; stderr lists withheld fields"
+      ],
+      "effects": [
+        "Reads strict candidate packet and emits mechanically allowlisted claim JSON to stdout"
+      ],
+      "execution": {
+        "status": "REFERENCE_TEMPLATE_NOT_EXECUTED_AS_WRITTEN",
+        "evidence_ids": [],
+        "limit": "Implementation or a related historical run does not prove this exact recipe completed on the current candidate."
+      }
+    },
+    {
+      "id": "doc-command-28",
+      "kind": "command_reference_template",
+      "location": {
+        "path": "docs/contracts.md",
+        "section": "Local command reference or Method artifacts"
+      },
+      "text": "node scripts/finding-lint.mjs VERIFIED.json --verifier=ran --json",
+      "text_sha256": "48944341c2bee19b05c5b38c358ecacbc275c97166bddd873fc4c38fa6f11ee5",
+      "implementation": [
+        {
+          "path": "skills/qore-review/scripts/finding-lint.mjs",
+          "sha256": "d0cc6809b750d9e52015b0448f18e3f291b979674b1350156d2444e607791ee7"
+        }
+      ],
+      "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
+      "working_directory": "Corresponding skill directory",
+      "prerequisites": [
+        "Node",
+        "Final strict findings envelope",
+        "Truthful ran/skipped verifier declaration"
+      ],
+      "inputs_and_substitutions": {
+        "uppercase_tokens": "STAGING, BUNDLE, PROFILE, ROOT, RUN, EVIDENCE, SPEC.md, FINDINGS.json, VERIFIED.json, DEPTH.json and LOOP.json denote actual paths",
+        "--verifier=ran": "Only declare after a genuinely separate verifier ran"
+      },
+      "expected_output": [
+        "Validity, declared verifier, counts and separately derived blockers; actual phase evidence checked separately"
+      ],
+      "effects": [
+        "Reads final packet and validates evidence/verdict obligations; emits JSON"
+      ],
+      "execution": {
+        "status": "REFERENCE_TEMPLATE_NOT_EXECUTED_AS_WRITTEN",
+        "evidence_ids": [],
+        "limit": "Implementation or a related historical run does not prove this exact recipe completed on the current candidate."
+      }
+    },
+    {
+      "id": "doc-command-29",
+      "kind": "command_reference_template",
+      "location": {
+        "path": "docs/contracts.md",
+        "section": "Local command reference or Method artifacts"
+      },
+      "text": "node scripts/depth-lint.mjs DEPTH.json",
+      "text_sha256": "e2f88d0d401ab6cb4188437ffa133be160227bfb4ac5702937b0d1cd29c7fbb4",
+      "implementation": [
+        {
+          "path": "skills/qore-ux-review/scripts/depth-lint.mjs",
+          "sha256": "9b9cdcea3e87f4820944ddfc075ef19e75aad0bb08a7f1fd279ea6590267def7"
+        }
+      ],
+      "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
+      "working_directory": "Corresponding skill directory",
+      "prerequisites": [
+        "Node",
+        "Depth, actual file list and justification"
+      ],
+      "inputs_and_substitutions": {
+        "uppercase_tokens": "STAGING, BUNDLE, PROFILE, ROOT, RUN, EVIDENCE, SPEC.md, FINDINGS.json, VERIFIED.json, DEPTH.json and LOOP.json denote actual paths",
+        "--verifier=ran": "Only declare after a genuinely separate verifier ran"
+      },
+      "expected_output": [
+        "Depth validity, inputs and problems"
+      ],
+      "effects": [
+        "Reads depth packet and checks coarse file/scope contradictions"
+      ],
+      "execution": {
+        "status": "REFERENCE_TEMPLATE_NOT_EXECUTED_AS_WRITTEN",
+        "evidence_ids": [],
+        "limit": "Implementation or a related historical run does not prove this exact recipe completed on the current candidate."
+      }
+    },
+    {
+      "id": "doc-command-30",
+      "kind": "command_reference_template",
+      "location": {
+        "path": "docs/contracts.md",
+        "section": "Local command reference or Method artifacts"
+      },
+      "text": "node scripts/stop-rule.mjs LOOP.json",
+      "text_sha256": "2f19abbb7b525b40ea4b96dbbe0f701b0e551b3fe37c54c9560dd983e66b8f95",
+      "implementation": [
+        {
+          "path": "skills/qore-ux-review/scripts/stop-rule.mjs",
+          "sha256": "404b5ca63276c413e1f2697b98817f1802de4642cf634303707bd175eddd8085"
+        }
+      ],
+      "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
+      "working_directory": "Corresponding skill directory",
+      "prerequisites": [
+        "Node",
+        "Actual initial scope and iteration history"
+      ],
+      "inputs_and_substitutions": {
+        "uppercase_tokens": "STAGING, BUNDLE, PROFILE, ROOT, RUN, EVIDENCE, SPEC.md, FINDINGS.json, VERIFIED.json, DEPTH.json and LOOP.json denote actual paths",
+        "--verifier=ran": "Only declare after a genuinely separate verifier ran"
+      },
+      "expected_output": [
+        "Decision, scoped verdict, coverage, freshness/gap lists and stopping counters"
+      ],
+      "effects": [
+        "Reads loop history and computes bounded control outcome; changes no browser/code"
+      ],
+      "execution": {
+        "status": "REFERENCE_TEMPLATE_NOT_EXECUTED_AS_WRITTEN",
+        "evidence_ids": [],
+        "limit": "Implementation or a related historical run does not prove this exact recipe completed on the current candidate."
+      }
+    }
+  ],
+  "limits": [
+    "This inventory is a documentation index, not a qore-run/1 execution record or readiness certificate",
+    "Logical private evidence references are audit identities, not required runtime dependencies",
+    "Public summaries retain narrow scope; no benchmark, external human usability, or full-method success is inferred"
+  ]
+}

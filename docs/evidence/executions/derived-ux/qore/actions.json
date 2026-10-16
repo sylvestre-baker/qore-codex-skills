@@ -1,0 +1,14 @@
+[
+  {
+    "type": "click",
+    "selector": "button[type=\"button\"]"
+  },
+  {
+    "type": "assert-text",
+    "text": "Resolved synthetic state."
+  },
+  {
+    "type": "snapshot",
+    "label": "profile-required-state"
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "findings": [
+    {
+      "id": "S-1",
+      "title": "Inherited object properties can satisfy missing UX measurements",
+      "severity": "medium",
+      "evidence": "skills/qore-ux-review/scripts/stop-rule.mjs:11 accepts any nonempty gate string; line 22 uses ordinary objects for measuredAt/measuredScores; lines 59-62 read inherited properties as measurements. Running node stop-rule.mjs against {\"in_scope\":[\"toString\"],\"iterations\":[{\"n\":1,\"scores\":{},\"measured\":[]}]} returned exit 0, decision SHIP, coverage COMPLETE, missing_gates []. Exact command/input/stdout: /workspace/implementation-review/evidence/security-counterexamples.json.",
+      "condition": "An erroneous or adversarial loop file names an Object.prototype property as a required gate, with no observations.",
+      "consequence": "The operational stop gate emits a successful coverage/SHIP result without a single measurement instead of rejecting unknown gates or retaining missing coverage.",
+      "uncertainty": "Independent verifier has not run. Trigger uses an invalid domain gate name that current input validation explicitly accepts; normal G0-G6/GP gates are not demonstrated affected."
+    }
+  ]
+}

@@ -1,0 +1,474 @@
+{
+  "at": "2026-10-15T19:41:17.725Z",
+  "url": "https://qaizen.io/labs",
+  "title": "Labs \u2014 Free AI Governance and ROI Self-Assessments | QAIZEN",
+  "viewport": {
+    "width": 1280,
+    "height": 800
+  },
+  "reduced_motion": true,
+  "geometry": {
+    "document_width": 1280,
+    "viewport_width": 1280,
+    "horizontal_overflow": false
+  },
+  "headings": [
+    {
+      "tag": "H1",
+      "text": "QAIZEN LABS",
+      "rect": {
+        "x": 362.0625,
+        "y": 112,
+        "width": 555.875,
+        "height": 40
+      }
+    },
+    {
+      "tag": "H2",
+      "text": "PRODUCTION READINESS CHECK",
+      "rect": {
+        "x": 361,
+        "y": 289,
+        "width": 402.15625,
+        "height": 64
+      }
+    },
+    {
+      "tag": "H2",
+      "text": "SHADOW AI AUDIT",
+      "rect": {
+        "x": 281,
+        "y": 628.5,
+        "width": 322,
+        "height": 28
+      }
+    },
+    {
+      "tag": "H2",
+      "text": "WHAT IS A STALLED AI PILOT COSTING YOU?",
+      "rect": {
+        "x": 677,
+        "y": 628.5,
+        "width": 322,
+        "height": 56
+      }
+    },
+    {
+      "tag": "H2",
+      "text": "WATCH AN AI AGENT MEET ITS CONTROLS",
+      "rect": {
+        "x": 281,
+        "y": 942.75,
+        "width": 718,
+        "height": 28
+      }
+    },
+    {
+      "tag": "H2",
+      "text": "MODELS BEHIND EACH TOOL",
+      "rect": {
+        "x": 256,
+        "y": 1258.25,
+        "width": 768,
+        "height": 20
+      }
+    }
+  ],
+  "controls": [
+    {
+      "tag": "A",
+      "role": null,
+      "name": "Skip to content",
+      "checked": null,
+      "tabindex": null,
+      "labelledby": null,
+      "describedby": null,
+      "rect": {
+        "x": -1,
+        "y": -1,
+        "width": 1,
+        "height": 1
+      },
+      "style": {
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "outlineOffset": "0px"
+      }
+    },
+    {
+      "tag": "DIV",
+      "role": "region",
+      "name": "Analytics cookies. We would like to measure visits with Google Analytics and Microsoft Clarity to improve this site. Nothing is loaded unless you accept; you can change your mind at any time via \"Cookie settings\" at the bottom of every page. Privacy policy\n\nReject\nAccept",
+      "checked": null,
+      "tabindex": null,
+      "labelledby": "consent-title",
+      "describedby": null,
+      "rect": {
+        "x": 0,
+        "y": 721.5,
+        "width": 1280,
+        "height": 78.5
+      },
+      "style": {
+        "color": "rgb(255, 255, 255)",
+        "background": "lab(8.82693 -0.319816 -16.3447 / 0.98)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "outlineOffset": "0px"
+      }
+    },
+    {
+      "tag": "A",
+      "role": null,
+      "name": "Privacy policy",
+      "checked": null,
+      "tabindex": null,
+      "labelledby": null,
+      "describedby": null,
+      "rect": {
+        "x": 773.140625,
+        "y": 763.25,
+        "width": 84.84375,
+        "height": 17
+      },
+      "style": {
+        "color": "rgb(197, 160, 89)",
+        "background": "rgba(0, 0, 0, 0)",
+        "outline": "rgb(197, 160, 89) none 3px",
+        "outlineOffset": "0px"
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "role": null,
+      "name": "Reject",
+      "checked": null,
+      "disabled": false,
+      "tabindex": null,
+      "labelledby": null,
+      "describedby": null,
+      "rect": {
+        "x": 971.875,
+        "y": 742.25,
+        "width": 82,
+        "height": 38
+      },
+      "style": {
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "outlineOffset": "0px"
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "role": null,
+      "name": "Accept",
+      "checked": null,
+      "disabled": false,
+      "tabindex": null,
+      "labelledby": null,
+      "describedby": null,
+      "rect": {
+        "x": 1065.875,
+        "y": 742.25,
+        "width": 86.125,
+        "height": 38
+      },
+      "style": {
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "outlineOffset": "0px"
+      }
+    },
+    {
+      "tag": "A",
+      "role": null,
+      "name": "QAIZEN, home",
+      "checked": null,
+      "tabindex": null,
+      "labelledby": null,
+      "describedby": null,
+      "rect": {
+        "x": 24,
+        "y": 24,
+        "width": 153.59375,
+        "height": 36
+      },
+      "style": {
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "outlineOffset": "0px"
+      }
+    },
+    {
+      "tag": "A",
+      "role": null,
+      "name": "OUR PRODUCT",
+      "checked": null,
+      "tabindex": null,
+      "labelledby": null,
+      "describedby": null,
+      "rect": {
+        "x": 468.296875,
+        "y": 32,
+        "width": 124.671875,
+        "height": 20
+      },
+      "style": {
+        "color": "oklab(0.999994 0.0000455677 0.0000200868 / 0.7)",
+        "background": "rgba(0, 0, 0, 0)",
+        "outline": "oklab(0.999994 0.0000455677 0.0000200868 / 0.7) none 3px",
+        "outlineOffset": "0px"
+      }
+    },
+    {
+      "tag": "A",
+      "role": null,
+      "name": "CUSTOM AGENTS",
+      "checked": null,
+      "tabindex": null,
+      "labelledby": null,
+      "describedby": null,
+      "rect": {
+        "x": 616.96875,
+        "y": 32,
+        "width": 143.234375,
+        "height": 20
+      },
+      "style": {
+        "color": "oklab(0.999994 0.0000455677 0.0000200868 / 0.7)",
+        "background": "rgba(0, 0, 0, 0)",
+        "outline": "oklab(0.999994 0.0000455677 0.0000200868 / 0.7) none 3px",
+        "outlineOffset": "0px"
+      }
+    },
+    {
+      "tag": "A",
+      "role": null,
+      "name": "READINESS REVIEW",
+      "checked": null,
+      "tabindex": null,
+      "labelledby": null,
+      "describedby": null,
+      "rect": {
+        "x": 784.203125,
+        "y": 32,
+        "width": 168.515625,
+        "height": 20
+      },
+      "style": {
+        "color": "oklab(0.999994 0.0000455677 0.0000200868 / 0.7)",
+        "background": "rgba(0, 0, 0, 0)",
+        "outline": "oklab(0.999994 0.0000455677 0.0000200868 / 0.7) none 3px",
+        "outlineOffset": "0px"
+      }
+    },
+    {
+      "tag": "A",
+      "role": null,
+      "name": "LABS",
+      "checked": null,
+      "tabindex": null,
+      "labelledby": null,
+      "describedby": null,
+      "rect": {
+        "x": 976.71875,
+        "y": 25,
+        "width": 99.953125,
+        "height": 34
+      },
+      "style": {
+        "color": "rgb(197, 160, 89)",
+        "background": "lab(68.1893 7.87282 41.9904 / 0.1)",
+        "outline": "rgb(197, 160, 89) none 3px",
+        "outlineOffset": "0px"
+      }
+    },
+    {
+      "tag": "A",
+      "role": null,
+      "name": "BLOG",
+      "checked": null,
+      "tabindex": null,
+      "labelledby": null,
+      "describedby": null,
+      "rect": {
+        "x": 1100.671875,
+        "y": 32,
+        "width": 46.90625,
+        "height": 20
+      },
+      "style": {
+        "color": "oklab(0.999994 0.0000455677 0.0000200868 / 0.7)",
+        "background": "rgba(0, 0, 0, 0)",
+        "outline": "oklab(0.999994 0.0000455677 0.0000200868 / 0.7) none 3px",
+        "outlineOffset": "0px"
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "role": null,
+      "name": "\ud83c\uddec\ud83c\udde7 EN",
+      "checked": null,
+      "disabled": false,
+      "tabindex": null,
+      "labelledby": null,
+      "describedby": null,
+      "rect": {
+        "x": 1171.578125,
+        "y": 27,
+        "width": 84.421875,
+        "height": 30
+      },
+      "style": {
+        "color": "rgb(197, 160, 89)",
+        "background": "lab(68.1893 7.87282 41.9904 / 0.05)",
+        "outline": "rgb(197, 160, 89) none 3px",
+        "outlineOffset": "0px"
+      }
+    },
+    {
+      "tag": "A",
+      "role": null,
+      "name": "START HERE\n\nPRODUCTION READINESS CHECK\n\nCould your AI pilot go live? Ten questions show which of the five production gates is most likely to block it, and why.\n\nAbout 3 minutes \u00b7 10 questions \u00b7 5 gates \u00b7 no e-mail needed\n\nSTART THE CHECK",
+      "checked": null,
+      "tabindex": null,
+      "labelledby": null,
+      "describedby": null,
+      "rect": {
+        "x": 256,
+        "y": 236,
+        "width": 768,
+        "height": 227.5
+      },
+      "style": {
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "outlineOffset": "0px"
+      }
+    },
+    {
+      "tag": "A",
+      "role": null,
+      "name": "SHADOW AI AUDIT\n\nAssess your AI governance readiness in about 5 minutes. Identify risks and get recommendations.\n\nSTART THE AUDIT",
+      "checked": null,
+      "tabindex": null,
+      "labelledby": null,
+      "describedby": null,
+      "rect": {
+        "x": 256,
+        "y": 539.5,
+        "width": 372,
+        "height": 290.25
+      },
+      "style": {
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(20, 38, 66)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "outlineOffset": "0px"
+      }
+    },
+    {
+      "tag": "A",
+      "role": null,
+      "name": "WHAT IS A STALLED AI PILOT COSTING YOU?\n\nPut a number on each further month of delay, from your own figures. Planning a project instead? The same lab estimates its ROI.\n\nPUT A NUMBER ON IT",
+      "checked": null,
+      "tabindex": null,
+      "labelledby": null,
+      "describedby": null,
+      "rect": {
+        "x": 652,
+        "y": 539.5,
+        "width": 372,
+        "height": 290.25
+      },
+      "style": {
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(20, 38, 66)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "outlineOffset": "0px"
+      }
+    },
+    {
+      "tag": "A",
+      "role": null,
+      "name": "WATCH AN AI AGENT MEET ITS CONTROLS\n\nRecorded runs of two AI assistants at a fictional company, one for customers, one for partners: what they tried, what the controls allowed, blocked or held for a person, and what each conversation cost.\n\nWATCH THE RECORDED RUNS",
+      "checked": null,
+      "tabindex": null,
+      "labelledby": null,
+      "describedby": null,
+      "rect": {
+        "x": 256,
+        "y": 853.75,
+        "width": 768,
+        "height": 239.5
+      },
+      "style": {
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(20, 38, 66)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "outlineOffset": "0px"
+      }
+    },
+    {
+      "tag": "A",
+      "role": null,
+      "name": "BOOK A 15-MINUTE PILOT CHECK",
+      "checked": null,
+      "tabindex": null,
+      "labelledby": null,
+      "describedby": null,
+      "rect": {
+        "x": 385.265625,
+        "y": 1133.25,
+        "width": 291.390625,
+        "height": 44
+      },
+      "style": {
+        "color": "rgb(10, 26, 47)",
+        "background": "rgb(197, 160, 89)",
+        "outline": "rgb(10, 26, 47) none 3px",
+        "outlineOffset": "0px"
+      }
+    },
+    {
+      "tag": "A",
+      "role": null,
+      "name": "See the 2-week Readiness Review",
+      "checked": null,
+      "tabindex": null,
+      "labelledby": null,
+      "describedby": null,
+      "rect": {
+        "x": 688.65625,
+        "y": 1145.25,
+        "width": 206.078125,
+        "height": 20
+      },
+      "style": {
+        "color": "rgb(197, 160, 89)",
+        "background": "rgba(0, 0, 0, 0)",
+        "outline": "rgb(197, 160, 89) none 3px",
+        "outlineOffset": "0px"
+      }
+    }
+  ],
+  "active": {
+    "tag": "BODY",
+    "text": "Body focused; script text omitted from this public export.",
+    "id": "",
+    "style": {
+      "color": "rgb(255, 255, 255)",
+      "background": "rgb(10, 26, 47)",
+      "outline": "rgb(255, 255, 255) none 3px",
+      "outlineOffset": "0px"
+    }
+  },
+  "details": [],
+  "duplicate_ids": [],
+  "text": "Skip to content\n\nAnalytics cookies. We would like to measure visits with Google Analytics and Microsoft Clarity to improve this site. Nothing is loaded unless you accept; you can change your mind at any time via \"Cookie settings\" at the bottom of every page. Privacy policy\n\nReject\nAccept\nOUR PRODUCT\nCUSTOM AGENTS\nREADINESS REVIEW\nLABS\nBLOG\n\ud83c\uddec\ud83c\udde7 EN\nQAIZEN LABS\n\nFree tools and recorded examples to help you assess AI agents for your business.\n\nSTART HERE\n\nPRODUCTION READINESS CHECK\n\nCould your AI pilot go live? Ten questions show which of the five production gates is most likely to block it, and why.\n\nAbout 3 minutes \u00b7 10 questions \u00b7 5 gates \u00b7 no e-mail needed\n\nSTART THE CHECK\n\nOther self-assessments\n\nSHADOW AI AUDIT\n\nAssess your AI governance readiness in about 5 minutes. Identify risks and get recommendations.\n\nSTART THE AUDIT\nWHAT IS A STALLED AI PILOT COSTING YOU?\n\nPut a number on each further month of delay, from your own figures. Planning a project instead? The same lab estimates its ROI.\n\nPUT A NUMBER ON IT\nWATCH AN AI AGENT MEET ITS CONTROLS\n\nRecorded runs of two AI assistants at a fictional company, one for customers, one for partners: what they tried, what the controls allowed, blocked or held for a person, and what each conversation cost.\n\nWATCH THE RECORDED RUNS\nBOOK A 15-MINUTE PILOT CHECK\nSee the 2-week Readiness Review\nMODELS BEHIND EACH TOOL\nProduction readiness check\nNo AI model: computed in your browser from your own answers\nShadow AI Audit\nAnalysis: GPT-6 Luna\nRoadmap: GPT-6 Sol\nAdvisor chat: Claude Sonnet 5.5\nFallback: Grok 4.7, Claude Sonnet 5, Claude Haiku 4.5\nROI & Cost of Delay\nAnalysis: GPT-6 Sol\nAdvisor chat: Claude Sonnet 5.5\nFallback: Grok 4.7, Claude Sonnet 5, Claude Sonnet 4.6\nWhat is a stalled AI pilot costing you?\nNo AI model: computed in your browser from your own answers\nAgent Replay\n330 recorded runs on Claude Opus 5.5, Claude Sonnet 5.5; Gemini 3 Flash (preview) is the comparison track. Replayed from files: no model is called while you watch.\n\nEvery model call goes through OpenRouter. We request zero-data-retention routing and refuse use for training."
+}

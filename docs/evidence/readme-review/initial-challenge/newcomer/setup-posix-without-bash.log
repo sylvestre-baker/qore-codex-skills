@@ -1,0 +1,33 @@
+PATH: /workspace/readme-newcomer/posix-runtime-bin
+COMMAND:
+qore_stage="$(mktemp -d "${TMPDIR:-/tmp}/qore-first.XXXXXX")"
+python3 tools/qore.py build --output "$qore_stage"
+python3 tools/qore.py install --source "$qore_stage/qore-skills-0.1.0" --project-root .
+STDOUT:
+{
+  "bundle": "/workspace/readme-newcomer/staging-posix/qore-first.COdklm/qore-skills-0.1.0",
+  "archive": "/workspace/readme-newcomer/staging-posix/qore-first.COdklm/qore-skills-0.1.0.zip",
+  "sha256": "bafd0da80667a00f9e6bd2f9e726eaa64d61ff42d026b9f58eb857df15bf40f8",
+  "valid": true,
+  "schema": "qore-release/1",
+  "version": "0.1.0",
+  "kind": "generic",
+  "files": 178,
+  "manifest_sha256": "527835667a6ed4b60addf832d240bacc2453bff453356e7620143a9ada624f3a"
+}
+{
+  "installed": [
+    ".agents/skills/qore-plan",
+    ".agents/skills/qore-review",
+    ".agents/skills/qore-ux-review"
+  ],
+  "replaced": false
+}
+
+STDERR:
++ mktemp -d /workspace/readme-newcomer/staging-posix/qore-first.XXXXXX
++ qore_stage=/workspace/readme-newcomer/staging-posix/qore-first.COdklm
++ python3 tools/qore.py build --output /workspace/readme-newcomer/staging-posix/qore-first.COdklm
++ python3 tools/qore.py install --source /workspace/readme-newcomer/staging-posix/qore-first.COdklm/qore-skills-0.1.0 --project-root .
+
+EXIT: 0

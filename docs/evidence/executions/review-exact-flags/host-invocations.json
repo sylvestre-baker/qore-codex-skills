@@ -1,0 +1,75 @@
+{
+  "provenance": "Lead-preserved copies of actual host tool responses observed in this session; no native transcript export endpoint or host call UUID was exposed. These are not independently signed receipts.",
+  "spawn_receipts": [
+    {
+      "tool": "collaboration.spawn_agent",
+      "requested_task_name": "correctness",
+      "fork_turns": "none",
+      "requested_role": "correctness",
+      "returned": {
+        "task_name": "/root/correctness"
+      }
+    },
+    {
+      "tool": "collaboration.spawn_agent",
+      "requested_task_name": "security",
+      "fork_turns": "none",
+      "requested_role": "security",
+      "returned": {
+        "task_name": "/root/security"
+      }
+    },
+    {
+      "tool": "collaboration.spawn_agent",
+      "requested_task_name": "feasibility",
+      "fork_turns": "none",
+      "requested_role": "performance/feasibility",
+      "returned": {
+        "task_name": "/root/feasibility"
+      }
+    },
+    {
+      "tool": "collaboration.spawn_agent",
+      "requested_task_name": "verifier",
+      "fork_turns": "none",
+      "requested_role": "fresh verifier",
+      "returned": {
+        "task_name": "/root/verifier"
+      }
+    }
+  ],
+  "redaction_shell_receipt": {
+    "tool": "exec_command",
+    "cmd": "node scripts/redact-for-verifier.mjs /workspace/review-evidence/findings.json > /workspace/review-evidence/claims.json 2> /workspace/review-evidence/redactor.stderr",
+    "workdir": "/workspace/qore-skills-0.1.0/.agents/skills/qore-review",
+    "returned": {
+      "chunk_id": "a2c712",
+      "wall_time_seconds": 2.75e-06,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  },
+  "shutdown": "interrupt_agent called after each of four FINAL_ANSWER reports; all returned previous_status completed. No dedicated terminate/remove operation is exposed; no workers remain running.",
+  "isolation": "Three finder spawns and verifier spawn all used fork_turns none; no peer reports supplied to finders. Verifier supplied only claims.json and raw target/criteria paths, forbidden to read finder evidence.",
+  "budget": {
+    "overall_minutes": 15,
+    "per_worker_minutes": 5,
+    "finder_deadline": "2026-10-15T20:01:00Z",
+    "verifier_deadline": "2026-10-15T20:03:00Z",
+    "overall_deadline": "2026-10-15T20:10:00Z",
+    "exhaustion": "Return available work and unfinished scope; missing phase means PARTIAL"
+  },
+  "final_findings_shell_receipt": {
+    "tool": "exec_command",
+    "cmd": "node scripts/finding-lint.mjs /workspace/review-evidence/verified.json --verifier=ran --json > /workspace/review-evidence/final-checker.stdout.json 2> /workspace/review-evidence/final-checker.stderr",
+    "workdir": "/workspace/qore-skills-0.1.0/.agents/skills/qore-review",
+    "returned": {
+      "chunk_id": "b71d79",
+      "wall_time_seconds": 2.25e-06,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  }
+}

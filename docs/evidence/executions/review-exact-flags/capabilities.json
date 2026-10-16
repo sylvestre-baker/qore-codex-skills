@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "sh",
+    "-c",
+    "command -v python3; command -v node; command -v bash; command -v rg; uname -a"
+  ],
+  "cwd": "/workspace/qore-skills-0.1.0",
+  "exit_code": 0,
+  "stdout": "/usr/bin/python3\n/usr/local/bin/node\n/bin/bash\nLinux 944afbc0b5cd 6.12.72-linuxkit #1 SMP Mon Feb 16 11:19:07 UTC 2026 aarch64 Linux\n",
+  "stderr": "",
+  "observed_at": "2026-10-15T19:56:26.856985+00:00"
+}

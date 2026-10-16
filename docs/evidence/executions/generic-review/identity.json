@@ -1,0 +1,326 @@
+{
+  "candidate_sha256": "3e0265c6d33fc0340fd8df0f0c1c4074a7495a8744365b6d388c747e4daf60da",
+  "target_snapshot_sha256": "e6f131ad712f3282ed1313b5214cfadc578f90defae3741acef1d68f8b1fc7a9",
+  "last_relevant_change": "2026-10-15T19:44:15.190783+00:00",
+  "observed_at": "2026-10-15T19:45:24.907952+00:00",
+  "host": "Linux-6.12.72-linuxkit-aarch64-with-musl1",
+  "hostname": "8b8ea26648ca",
+  "profile": null,
+  "archive_source_comparison": [
+    {
+      "path": ".agents/skills/qore-review/SKILL.md",
+      "archive_paths": [
+        "qore-skills-0.1.0/skills/qore-review/SKILL.md"
+      ],
+      "matches": true
+    },
+    {
+      "path": ".agents/skills/qore-review/agents/openai.yaml",
+      "archive_paths": [
+        "qore-skills-0.1.0/skills/qore-review/agents/openai.yaml"
+      ],
+      "matches": true
+    },
+    {
+      "path": ".agents/skills/qore-review/references/findings.md",
+      "archive_paths": [
+        "qore-skills-0.1.0/skills/qore-review/references/findings.md"
+      ],
+      "matches": true
+    },
+    {
+      "path": ".agents/skills/qore-review/references/project-profile.md",
+      "archive_paths": [
+        "qore-skills-0.1.0/skills/qore-review/references/project-profile.md"
+      ],
+      "matches": true
+    },
+    {
+      "path": ".agents/skills/qore-review/references/protocol.md",
+      "archive_paths": [
+        "qore-skills-0.1.0/skills/qore-review/references/protocol.md"
+      ],
+      "matches": true
+    },
+    {
+      "path": ".agents/skills/qore-review/references/release.json",
+      "archive_paths": [
+        "qore-skills-0.1.0/skills/qore-review/references/release.json"
+      ],
+      "matches": true
+    },
+    {
+      "path": ".agents/skills/qore-review/references/run-evidence.md",
+      "archive_paths": [
+        "qore-skills-0.1.0/skills/qore-review/references/run-evidence.md"
+      ],
+      "matches": true
+    },
+    {
+      "path": ".agents/skills/qore-review/scripts/finding-lint.mjs",
+      "archive_paths": [
+        "qore-skills-0.1.0/skills/qore-review/scripts/finding-lint.mjs"
+      ],
+      "matches": true
+    },
+    {
+      "path": ".agents/skills/qore-review/scripts/project-check.py",
+      "archive_paths": [
+        "qore-skills-0.1.0/skills/qore-review/scripts/project-check.py"
+      ],
+      "matches": true
+    },
+    {
+      "path": ".agents/skills/qore-review/scripts/redact-for-verifier.mjs",
+      "archive_paths": [
+        "qore-skills-0.1.0/skills/qore-review/scripts/redact-for-verifier.mjs"
+      ],
+      "matches": true
+    },
+    {
+      "path": ".agents/skills/qore-review/scripts/run-check.py",
+      "archive_paths": [
+        "qore-skills-0.1.0/skills/qore-review/scripts/run-check.py"
+      ],
+      "matches": true
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "archive_paths": [
+        "qore-skills-0.1.0/CONTRIBUTING.md"
+      ],
+      "matches": true
+    },
+    {
+      "path": "README.md",
+      "archive_paths": [
+        "qore-skills-0.1.0/README.md",
+        "qore-skills-0.1.0/docs/evidence/browser/README.md"
+      ],
+      "matches": true
+    },
+    {
+      "path": "examples/validator-hardening.md",
+      "archive_paths": [
+        "qore-skills-0.1.0/examples/validator-hardening.md"
+      ],
+      "matches": true
+    },
+    {
+      "path": "qore.json",
+      "archive_paths": [
+        "qore-skills-0.1.0/profiles/qore.json",
+        "qore-skills-0.1.0/qore.json"
+      ],
+      "matches": true
+    },
+    {
+      "path": "schemas/qore-run.schema.json",
+      "archive_paths": [
+        "qore-skills-0.1.0/schemas/qore-run.schema.json"
+      ],
+      "matches": true
+    },
+    {
+      "path": "skills/qore-review/SKILL.md",
+      "archive_paths": [
+        "qore-skills-0.1.0/skills/qore-review/SKILL.md"
+      ],
+      "matches": true
+    },
+    {
+      "path": "skills/qore-review/agents/openai.yaml",
+      "archive_paths": [
+        "qore-skills-0.1.0/skills/qore-review/agents/openai.yaml"
+      ],
+      "matches": true
+    },
+    {
+      "path": "skills/qore-review/references/findings.md",
+      "archive_paths": [
+        "qore-skills-0.1.0/skills/qore-review/references/findings.md"
+      ],
+      "matches": true
+    },
+    {
+      "path": "skills/qore-review/references/project-profile.md",
+      "archive_paths": [
+        "qore-skills-0.1.0/skills/qore-review/references/project-profile.md"
+      ],
+      "matches": true
+    },
+    {
+      "path": "skills/qore-review/references/protocol.md",
+      "archive_paths": [
+        "qore-skills-0.1.0/skills/qore-review/references/protocol.md"
+      ],
+      "matches": true
+    },
+    {
+      "path": "skills/qore-review/references/release.json",
+      "archive_paths": [
+        "qore-skills-0.1.0/skills/qore-review/references/release.json"
+      ],
+      "matches": true
+    },
+    {
+      "path": "skills/qore-review/references/run-evidence.md",
+      "archive_paths": [
+        "qore-skills-0.1.0/skills/qore-review/references/run-evidence.md"
+      ],
+      "matches": true
+    },
+    {
+      "path": "skills/qore-review/scripts/finding-lint.mjs",
+      "archive_paths": [
+        "qore-skills-0.1.0/skills/qore-review/scripts/finding-lint.mjs"
+      ],
+      "matches": true
+    },
+    {
+      "path": "skills/qore-review/scripts/project-check.py",
+      "archive_paths": [
+        "qore-skills-0.1.0/skills/qore-review/scripts/project-check.py"
+      ],
+      "matches": true
+    },
+    {
+      "path": "skills/qore-review/scripts/redact-for-verifier.mjs",
+      "archive_paths": [
+        "qore-skills-0.1.0/skills/qore-review/scripts/redact-for-verifier.mjs"
+      ],
+      "matches": true
+    },
+    {
+      "path": "skills/qore-review/scripts/run-check.py",
+      "archive_paths": [
+        "qore-skills-0.1.0/skills/qore-review/scripts/run-check.py"
+      ],
+      "matches": true
+    },
+    {
+      "path": "tests/fixtures/project-alternate.json",
+      "archive_paths": [
+        "qore-skills-0.1.0/tests/fixtures/project-alternate.json"
+      ],
+      "matches": true
+    },
+    {
+      "path": "tests/fixtures/validators/empty-object.json",
+      "archive_paths": [
+        "qore-skills-0.1.0/tests/fixtures/validators/empty-object.json"
+      ],
+      "matches": true
+    },
+    {
+      "path": "tests/fixtures/validators/null.json",
+      "archive_paths": [
+        "qore-skills-0.1.0/tests/fixtures/validators/null.json"
+      ],
+      "matches": true
+    },
+    {
+      "path": "tests/fixtures/validators/truncated.json",
+      "archive_paths": [
+        "qore-skills-0.1.0/tests/fixtures/validators/truncated.json"
+      ],
+      "matches": true
+    },
+    {
+      "path": "tests/fixtures/validators/valid-findings.json",
+      "archive_paths": [
+        "qore-skills-0.1.0/tests/fixtures/validators/valid-findings.json"
+      ],
+      "matches": true
+    },
+    {
+      "path": "tests/fixtures/validators/valid-spec.md",
+      "archive_paths": [
+        "qore-skills-0.1.0/tests/fixtures/validators/valid-spec.md"
+      ],
+      "matches": true
+    },
+    {
+      "path": "tests/fixtures/validators/valid-ux.json",
+      "archive_paths": [
+        "qore-skills-0.1.0/tests/fixtures/validators/valid-ux.json"
+      ],
+      "matches": true
+    },
+    {
+      "path": "tests/fixtures/web/alternate-actions.json",
+      "archive_paths": [
+        "qore-skills-0.1.0/tests/fixtures/web/alternate-actions.json"
+      ],
+      "matches": true
+    },
+    {
+      "path": "tests/fixtures/web/alternate.html",
+      "archive_paths": [
+        "qore-skills-0.1.0/tests/fixtures/web/alternate.html"
+      ],
+      "matches": true
+    },
+    {
+      "path": "tests/fixtures/web/index.html",
+      "archive_paths": [
+        "qore-skills-0.1.0/tests/fixtures/web/index.html"
+      ],
+      "matches": true
+    },
+    {
+      "path": "tests/fixtures/web/ping.json",
+      "archive_paths": [
+        "qore-skills-0.1.0/tests/fixtures/web/ping.json"
+      ],
+      "matches": true
+    },
+    {
+      "path": "tests/fixtures/web/primary-actions.json",
+      "archive_paths": [
+        "qore-skills-0.1.0/tests/fixtures/web/primary-actions.json"
+      ],
+      "matches": true
+    },
+    {
+      "path": "tests/test_package.py",
+      "archive_paths": [
+        "qore-skills-0.1.0/tests/test_package.py"
+      ],
+      "matches": true
+    },
+    {
+      "path": "tests/test_run_contract.py",
+      "archive_paths": [
+        "qore-skills-0.1.0/tests/test_run_contract.py"
+      ],
+      "matches": true
+    },
+    {
+      "path": "tests/test_validators.py",
+      "archive_paths": [
+        "qore-skills-0.1.0/tests/test_validators.py"
+      ],
+      "matches": true
+    },
+    {
+      "path": "tools/run_contract.py",
+      "archive_paths": [
+        "qore-skills-0.1.0/tools/run_contract.py"
+      ],
+      "matches": true
+    }
+  ],
+  "snapshot_procedure": "SHA256 of source-manifest.json bytes; manifest records selected source file SHA256 and actual mtime; copies retained under source/",
+  "capabilities": {
+    "rg": "unavailable (exit 127)",
+    "spawn_agent": "three actual history-free finder contexts returned canonical task IDs",
+    "auth_files": "not read"
+  },
+  "budgets": {
+    "overall_minutes": 15,
+    "worker_minutes": 5,
+    "deadline": "2026-10-15T19:59:00Z"
+  },
+  "installed_skill_mapping": ".agents/skills/ maps to candidate skills/ (byte comparison)"
+}

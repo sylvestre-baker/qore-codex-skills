@@ -1,0 +1,11 @@
+{
+  "public_id": "public-focused-derived-ux-final-contrast-20261016-02",
+  "original_instruction_resource_sha256": "550e45ab0a07a641f8ec6d3cba5677e97a8e5fd86053631a1e75c90a8f8c52d0",
+  "profile": {
+    "id": "qore-contrast",
+    "version": "0.1.0",
+    "sha256": "f72394c2ebb80cb6da41b33a088d56fbd24b4577f71bc2b022d0ef4bb36bfb88"
+  },
+  "coverage": "COMPLETE for the focused profile-consumption probe only. No full derivative method run or qore-run coverage is fabricated.",
+  "role": "Original author exporting evidence; not independent evaluator."
+}

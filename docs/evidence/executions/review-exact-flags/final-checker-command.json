@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "node",
+    "scripts/finding-lint.mjs",
+    "/workspace/review-evidence/verified.json",
+    "--verifier=ran",
+    "--json"
+  ],
+  "cwd": "/workspace/qore-skills-0.1.0/.agents/skills/qore-review",
+  "exit_code": 0,
+  "stdout": "{\n  \"valid\": true,\n  \"coverage\": \"COMPLETE\",\n  \"verdict\": \"SHIP\",\n  \"verifier\": \"ran\",\n  \"total\": 0,\n  \"counts\": {\n    \"CONFIRMED\": 0,\n    \"PLAUSIBLE\": 0,\n    \"REFUTED\": 0\n  },\n  \"blocking_findings\": [],\n  \"findings\": [],\n  \"problems\": [],\n  \"limit\": \"The verifier flag records an execution declaration; validate actual independent phase evidence separately.\"\n}\n",
+  "stderr": "",
+  "observed_at": "2026-10-15T19:58:26.328296+00:00"
+}

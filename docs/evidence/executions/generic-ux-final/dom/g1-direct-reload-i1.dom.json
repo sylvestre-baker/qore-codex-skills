@@ -1,0 +1,360 @@
+{
+  "at": "2026-10-15T20:18:03.518Z",
+  "url": "https://qaizen.io/labs/readiness-check",
+  "title": "Production Readiness Check: Could Your AI Pilot Go Live? | QAIZEN",
+  "viewport": {
+    "width": 1280,
+    "height": 800
+  },
+  "reduced_motion": true,
+  "geometry": {
+    "document_width": 1280,
+    "viewport_width": 1280,
+    "horizontal_overflow": false
+  },
+  "headings": [
+    {
+      "tag": "H1",
+      "text": "COULD YOUR AI PILOT GO LIVE? A CHECK IN ABOUT 3 MINUTES",
+      "rect": {
+        "x": 352,
+        "y": 241,
+        "width": 576,
+        "height": 120
+      }
+    }
+  ],
+  "controls": [
+    {
+      "tag": "A",
+      "role": null,
+      "name": "Skip to content",
+      "checked": null,
+      "tabindex": null,
+      "labelledby": null,
+      "describedby": null,
+      "rect": {
+        "x": -1,
+        "y": -1,
+        "width": 1,
+        "height": 1
+      },
+      "style": {
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "outlineOffset": "0px"
+      }
+    },
+    {
+      "tag": "A",
+      "role": null,
+      "name": "QAIZEN, home",
+      "checked": null,
+      "tabindex": null,
+      "labelledby": null,
+      "describedby": null,
+      "rect": {
+        "x": 24,
+        "y": 24,
+        "width": 153.59375,
+        "height": 36
+      },
+      "style": {
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "outlineOffset": "0px"
+      }
+    },
+    {
+      "tag": "A",
+      "role": null,
+      "name": "OUR PRODUCT",
+      "checked": null,
+      "tabindex": null,
+      "labelledby": null,
+      "describedby": null,
+      "rect": {
+        "x": 468.296875,
+        "y": 32,
+        "width": 124.671875,
+        "height": 20
+      },
+      "style": {
+        "color": "oklab(0.999994 0.0000455677 0.0000200868 / 0.7)",
+        "background": "rgba(0, 0, 0, 0)",
+        "outline": "oklab(0.999994 0.0000455677 0.0000200868 / 0.7) none 3px",
+        "outlineOffset": "0px"
+      }
+    },
+    {
+      "tag": "A",
+      "role": null,
+      "name": "CUSTOM AGENTS",
+      "checked": null,
+      "tabindex": null,
+      "labelledby": null,
+      "describedby": null,
+      "rect": {
+        "x": 616.96875,
+        "y": 32,
+        "width": 143.234375,
+        "height": 20
+      },
+      "style": {
+        "color": "oklab(0.999994 0.0000455677 0.0000200868 / 0.7)",
+        "background": "rgba(0, 0, 0, 0)",
+        "outline": "oklab(0.999994 0.0000455677 0.0000200868 / 0.7) none 3px",
+        "outlineOffset": "0px"
+      }
+    },
+    {
+      "tag": "A",
+      "role": null,
+      "name": "READINESS REVIEW",
+      "checked": null,
+      "tabindex": null,
+      "labelledby": null,
+      "describedby": null,
+      "rect": {
+        "x": 784.203125,
+        "y": 32,
+        "width": 168.515625,
+        "height": 20
+      },
+      "style": {
+        "color": "oklab(0.999994 0.0000455677 0.0000200868 / 0.7)",
+        "background": "rgba(0, 0, 0, 0)",
+        "outline": "oklab(0.999994 0.0000455677 0.0000200868 / 0.7) none 3px",
+        "outlineOffset": "0px"
+      }
+    },
+    {
+      "tag": "A",
+      "role": null,
+      "name": "LABS",
+      "checked": null,
+      "tabindex": null,
+      "labelledby": null,
+      "describedby": null,
+      "rect": {
+        "x": 976.71875,
+        "y": 25,
+        "width": 99.953125,
+        "height": 34
+      },
+      "style": {
+        "color": "rgb(197, 160, 89)",
+        "background": "lab(68.1893 7.87282 41.9904 / 0.1)",
+        "outline": "rgb(197, 160, 89) none 3px",
+        "outlineOffset": "0px"
+      }
+    },
+    {
+      "tag": "A",
+      "role": null,
+      "name": "BLOG",
+      "checked": null,
+      "tabindex": null,
+      "labelledby": null,
+      "describedby": null,
+      "rect": {
+        "x": 1100.671875,
+        "y": 32,
+        "width": 46.90625,
+        "height": 20
+      },
+      "style": {
+        "color": "oklab(0.999994 0.0000455677 0.0000200868 / 0.7)",
+        "background": "rgba(0, 0, 0, 0)",
+        "outline": "oklab(0.999994 0.0000455677 0.0000200868 / 0.7) none 3px",
+        "outlineOffset": "0px"
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "role": null,
+      "name": "\ud83c\uddec\ud83c\udde7 EN",
+      "checked": null,
+      "disabled": false,
+      "tabindex": null,
+      "labelledby": null,
+      "describedby": null,
+      "rect": {
+        "x": 1171.578125,
+        "y": 27,
+        "width": 84.421875,
+        "height": 30
+      },
+      "style": {
+        "color": "rgb(197, 160, 89)",
+        "background": "lab(68.1893 7.87282 41.9904 / 0.05)",
+        "outline": "rgb(197, 160, 89) none 3px",
+        "outlineOffset": "0px"
+      }
+    },
+    {
+      "tag": "A",
+      "role": null,
+      "name": "Back to Labs",
+      "checked": null,
+      "tabindex": null,
+      "labelledby": null,
+      "describedby": null,
+      "rect": {
+        "x": 24,
+        "y": 96,
+        "width": 149.90625,
+        "height": 44
+      },
+      "style": {
+        "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.5)",
+        "background": "rgba(0, 0, 0, 0)",
+        "outline": "oklab(0.999994 0.0000455678 0.0000200868 / 0.5) none 3px",
+        "outlineOffset": "0px"
+      }
+    },
+    {
+      "tag": "A",
+      "role": null,
+      "name": "Production readiness check",
+      "checked": null,
+      "tabindex": null,
+      "labelledby": null,
+      "describedby": null,
+      "rect": {
+        "x": 468.59375,
+        "y": 96,
+        "width": 259.453125,
+        "height": 44
+      },
+      "style": {
+        "color": "rgb(197, 160, 89)",
+        "background": "rgba(0, 0, 0, 0)",
+        "outline": "rgb(197, 160, 89) none 3px",
+        "outlineOffset": "0px"
+      }
+    },
+    {
+      "tag": "A",
+      "role": null,
+      "name": "Shadow AI Audit",
+      "checked": null,
+      "tabindex": null,
+      "labelledby": null,
+      "describedby": null,
+      "rect": {
+        "x": 728.046875,
+        "y": 96,
+        "width": 173.375,
+        "height": 44
+      },
+      "style": {
+        "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.5)",
+        "background": "rgba(0, 0, 0, 0)",
+        "outline": "oklab(0.999994 0.0000455678 0.0000200868 / 0.5) none 3px",
+        "outlineOffset": "0px"
+      }
+    },
+    {
+      "tag": "A",
+      "role": null,
+      "name": "ROI & Cost of Delay",
+      "checked": null,
+      "tabindex": null,
+      "labelledby": null,
+      "describedby": null,
+      "rect": {
+        "x": 901.421875,
+        "y": 96,
+        "width": 204.671875,
+        "height": 44
+      },
+      "style": {
+        "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.5)",
+        "background": "rgba(0, 0, 0, 0)",
+        "outline": "oklab(0.999994 0.0000455678 0.0000200868 / 0.5) none 3px",
+        "outlineOffset": "0px"
+      }
+    },
+    {
+      "tag": "A",
+      "role": null,
+      "name": "Agent Replay",
+      "checked": null,
+      "tabindex": null,
+      "labelledby": null,
+      "describedby": null,
+      "rect": {
+        "x": 1106.09375,
+        "y": 96,
+        "width": 149.90625,
+        "height": 44
+      },
+      "style": {
+        "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.5)",
+        "background": "rgba(0, 0, 0, 0)",
+        "outline": "oklab(0.999994 0.0000455678 0.0000200868 / 0.5) none 3px",
+        "outlineOffset": "0px"
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "role": null,
+      "name": "START THE CHECK",
+      "checked": null,
+      "disabled": false,
+      "tabindex": null,
+      "labelledby": null,
+      "describedby": null,
+      "rect": {
+        "x": 534.078125,
+        "y": 602.75,
+        "width": 211.84375,
+        "height": 52
+      },
+      "style": {
+        "color": "rgb(10, 26, 47)",
+        "background": "rgb(197, 160, 89)",
+        "outline": "rgb(10, 26, 47) none 3px",
+        "outlineOffset": "0px"
+      }
+    },
+    {
+      "tag": "A",
+      "role": null,
+      "name": "Privacy policy",
+      "checked": null,
+      "tabindex": null,
+      "labelledby": null,
+      "describedby": null,
+      "rect": {
+        "x": 603.625,
+        "y": 758.75,
+        "width": 72.734375,
+        "height": 15
+      },
+      "style": {
+        "color": "rgb(197, 160, 89)",
+        "background": "rgba(0, 0, 0, 0)",
+        "outline": "rgb(197, 160, 89) none 3px",
+        "outlineOffset": "0px"
+      }
+    }
+  ],
+  "active": {
+    "tag": "BODY",
+    "text": "Body focused; script text omitted from this public export.",
+    "id": "",
+    "style": {
+      "color": "rgb(255, 255, 255)",
+      "background": "rgb(10, 26, 47)",
+      "outline": "rgb(255, 255, 255) none 3px",
+      "outlineOffset": "0px"
+    }
+  },
+  "details": [],
+  "duplicate_ids": [],
+  "text": "Skip to content\nOUR PRODUCT\nCUSTOM AGENTS\nREADINESS REVIEW\nLABS\nBLOG\n\ud83c\uddec\ud83c\udde7 EN\nBack to Labs\nPRODUCTION READINESS CHECK\nSHADOW AI AUDIT\nROI & COST OF DELAY\nAGENT REPLAY\n\nPRODUCTION READINESS CHECK\n\nCOULD YOUR AI PILOT GO LIVE? A CHECK IN ABOUT 3 MINUTES\n\nTen multiple-choice questions about your pilot. You get a status for each of the five gates a pilot has to clear before production, and the blockers most likely to stall go-live.\n\nThis check covers go-live controls, not the business case.\n\n10 questions \u00b7 5 gates \u00b7 no e-mail needed\n\nSTART THE CHECK\n\nWe do not keep your answers: they are scored in this browser and travel only in your result link. If an e-mail tool rewrites that link, it passes through our server to be restored, and our host\u2019s request log holds it for at most a day. We only keep anonymous daily totals of checks started, completed and calls booked from the result. Privacy policy"
+}

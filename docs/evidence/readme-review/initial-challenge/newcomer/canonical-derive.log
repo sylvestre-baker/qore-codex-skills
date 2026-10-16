@@ -1,0 +1,32 @@
+COMMAND:
+python3 tools/qore.py derive --profile profiles/qore.json --project-root . --output /tmp/qore-derived-first
+python3 tools/qore.py verify /tmp/qore-derived-first
+STDOUT:
+{
+  "output": "/tmp/qore-derived-first",
+  "profile": {
+    "id": "qore",
+    "version": "0.1.0",
+    "sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9"
+  },
+  "valid": true,
+  "schema": "qore-release/1",
+  "version": "0.1.0",
+  "kind": "derived",
+  "files": 39,
+  "manifest_sha256": "050f23866c5b274b0b22d788d3113477da9020f1c59172992857fc131dfed9b4"
+}
+{
+  "valid": true,
+  "schema": "qore-release/1",
+  "version": "0.1.0",
+  "kind": "derived",
+  "files": 39,
+  "manifest_sha256": "050f23866c5b274b0b22d788d3113477da9020f1c59172992857fc131dfed9b4"
+}
+
+STDERR:
++ python3 tools/qore.py derive --profile profiles/qore.json --project-root . --output /tmp/qore-derived-first
++ python3 tools/qore.py verify /tmp/qore-derived-first
+
+EXIT: 0

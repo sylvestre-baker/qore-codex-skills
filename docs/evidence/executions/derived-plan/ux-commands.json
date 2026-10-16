@@ -1,0 +1,210 @@
+{
+  "schema": "role-command-capture/1",
+  "profile_sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9",
+  "commands": [
+    {
+      "argv": [
+        "python3",
+        "scripts/project-check.py",
+        "references/project.json",
+        "--root",
+        "<CANDIDATE_B>",
+        "--method",
+        "plan"
+      ],
+      "cwd": "<DERIVED_CANDIDATE>/qore-plan-qore",
+      "stdout": "{\n  \"schema\": \"qore-context-check/1\",\n  \"profile\": {\n    \"id\": \"qore\",\n    \"version\": \"0.1.0\",\n    \"sha256\": \"da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9\"\n  },\n  \"method\": \"plan\",\n  \"coverage\": \"COMPLETE\",\n  \"sources\": [\n    {\n      \"id\": \"project\",\n      \"path\": \"qore.json\",\n      \"expected_sha256\": \"948b2784fa7970cf90a25c338a29067b13d8b4476f666d712a5eb95fc6f641c8\",\n      \"actual_sha256\": \"948b2784fa7970cf90a25c338a29067b13d8b4476f666d712a5eb95fc6f641c8\",\n      \"current\": true\n    }\n  ],\n  \"commands\": [\n    {\n      \"id\": \"check\",\n      \"argv\": [\n        \"python3\",\n        \"-B\",\n        \"-m\",\n        \"unittest\",\n        \"discover\",\n        \"-s\",\n        \"tests\",\n        \"-v\"\n      ],\n      \"source\": \"project\",\n      \"applies_to\": [\n        \"plan\",\n        \"review\"\n      ]\n    }\n  ],\n  \"invariants\": [\n    {\n      \"id\": \"preserve-adaptations\",\n      \"statement\": \"Generate updates in new staging and refuse to overwrite existing adaptations.\",\n      \"source\": \"project\",\n      \"applies_to\": [\n        \"plan\"\n      ]\n    }\n  ],\n  \"surfaces\": {},\n  \"consumed_source_ids\": [\n    \"project\"\n  ],\n  \"problems\": []\n}\n",
+      "stderr": "",
+      "exit_code": 0,
+      "observed_at": "2026-10-15T20:03:40.339022+00:00"
+    },
+    {
+      "argv": [
+        "python3",
+        "tools/qore.py",
+        "snapshot",
+        "--root",
+        "<CANDIDATE_B>"
+      ],
+      "cwd": "<CANDIDATE_B>",
+      "stdout": "{\n  \"snapshot_sha256\": \"dec34e19b7b3036c213299a1f98b05fec1709212fb156eabf9928682024ae2cb\",\n  \"files\": [\n    {\n      \"path\": \".gitignore\",\n      \"sha256\": \"5d40cb60d30c76b7c86eef3cf12dca84df263727439fa897167a41f79809c1b4\"\n    },\n    {\n      \"path\": \"CONTRIBUTING.md\",\n      \"sha256\": \"87ef55fe9e213e5bd9b0f3178849b0a9ac88ec1c07634053c9989c0cbbde7638\"\n    },\n    {\n      \"path\": \"LICENSE\",\n      \"sha256\": \"2869451aacba8375c013dee1749f630a9c0d6bef71b6caeea63e5fa15b8f85a6\"\n    },\n    {\n      \"path\": \"PROVENANCE.md\",\n      \"sha256\": \"f8bce42df186127447f398b10551fce6be018af900df752cfda748980711846e\"\n    },\n    {\n      \"path\": \"README.md\",\n      \"sha256\": \"46205c1947e1e35b1f67d12184dbfb921381c781d9eda3616e8251d187725bac\"\n    },\n    {\n      \"path\": \"docs/architecture.md\",\n      \"sha256\": \"26429d4cbbc5a1c3065a65397bbdfcbbacd5cb5d4a198da979d72146190714f6\"\n    },\n    {\n      \"path\": \"docs/clean-environment.md\",\n      \"sha256\": \"96196d0c39877be5329a5a329ccbe09bf83eb88ebe5b3f0a101f9290f130a427\"\n    },\n    {\n      \"path\": \"docs/contracts.md\",\n      \"sha256\": \"7982419c71aa210130c262d03531f53c9e0d7a4fdfbf521431233c9595065ecc\"\n    },\n    {\n      \"path\": \"docs/evidence/browser/README.md\",\n      \"sha256\": \"c7fd4de1d6f8d0234164ce2533b91d8f1d13b5ff1e7794d9207a80390b846db7\"\n    },\n    {\n      \"path\": \"docs/evidence/browser/capability-matrix.json\",\n      \"sha256\": \"0698a1be383dc6a7b7a563eb98f49ca7f92d4e073277d7e075b54dce49efb3e5\"\n    },\n    {\n      \"path\": \"docs/evidence/browser/fixture-observations.json\",\n      \"sha256\": \"e132d2f50f494d7d5734235d5d631d79d12fb79f99fb23c0128456f47a3ea1b1\"\n    },\n    {\n      \"path\": \"docs/evidence/browser/observations.json\",\n      \"sha256\": \"58b44ead3a73efe837c976d29f5d12c0e7c990f9393763c7f4d7eb69daf8cc6c\"\n    },\n    {\n      \"path\": \"docs/evidence/browser/provenance.json\",\n      \"sha256\": \"0a24a780f17b591b6f40fa4aa498f7567d3b061ca81dab018547986b24b9caf4\"\n    },\n    {\n      \"path\": \"docs/evidence/browser/qaizen-actions.json\",\n      \"sha256\": \"31ea76e8f458a4c329ec2887254b43c1c29e0fa610ac01487b0ed41c848b23d9\"\n    },\n    {\n      \"path\": \"docs/evidence/browser/qaizen-demo-captioned.mp4\",\n      \"sha256\": \"09d579e564862e233356e229587239c7c2523cbbd3d1b6f42f036d078dabbdd9\"\n    },\n    {\n      \"path\": \"docs/evidence/browser/qaizen-demo.en.vtt\",\n      \"sha256\": \"41b579ffd8a1c9c47c5f1c195d622e19f15360fce86ffd98d39bde586ff3131d\"\n    },\n    {\n      \"path\": \"docs/evidence/browser/qaizen-entry.png\",\n      \"sha256\": \"095283e6a92818f6baf91a977793ff14591a91a60cef7b82ea9019642c2251e2\"\n    },\n    {\n      \"path\": \"docs/evidence/browser/qaizen-question.png\",\n      \"sha256\": \"a5396e6ebbef542a3b7bea548d49ec7bb98c0883adfae06ef649f622b4ad1756\"\n    },\n    {\n      \"path\": \"docs/evidence/browser/qaizen-returned.png\",\n      \"sha256\": \"3cb9aa37df077b61ecdd04e261ffaeaa538560ea618881435761377ce50543f4\"\n    },\n    {\n      \"path\": \"docs/evidence/browser/qaizen-transcript.md\",\n      \"sha256\": \"da624cdbbbbd6cc3e7d321a2ffa58a1e1be99d807c950dcf6d473a19f34a60c8\"\n    },\n    {\n      \"path\": \"docs/profiles.md\",\n      \"sha256\": \"f5d8183157bf16293d887787a8b64636a45317ac0e02b89b573497d77cbc3bf4\"\n    },\n    {\n      \"path\": \"docs/troubleshooting.md\",\n      \"sha256\": \"1fd22e4bcc1855cefd95b38802ffc16e8f7de5d20caac76f4beb4d7112d006d5\"\n    },\n    {\n      \"path\": \"examples/validator-hardening.md\",\n      \"sha256\": \"6f25b2edcd6d0826b12fbb47a99fc4162a1089eef71eaf7f16ea2cb7a8239a87\"\n    },\n    {\n      \"path\": \"manifest.json\",\n      \"sha256\": \"f614a4fae49aaae5c638fd8a84654261f8698f5cd07d971bb5e2c7f7eb053629\"\n    },\n    {\n      \"path\": \"plugin.json\",\n      \"sha256\": \"7935d0290e11e1cf35f6e57f61bf6fc2f5474e1c65cd0e3f26a2ce3368f8e732\"\n    },\n    {\n      \"path\": \"profiles/contrast.json\",\n      \"sha256\": \"f72394c2ebb80cb6da41b33a088d56fbd24b4577f71bc2b022d0ef4bb36bfb88\"\n    },\n    {\n      \"path\": \"profiles/qore.json\",\n      \"sha256\": \"da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9\"\n    },\n    {\n      \"path\": \"qore.json\",\n      \"sha256\": \"948b2784fa7970cf90a25c338a29067b13d8b4476f666d712a5eb95fc6f641c8\"\n    },\n    {\n      \"path\": \"release-files.json\",\n      \"sha256\": \"a88b41cff488c3df3ff05dc1285e3ce50a446451244844a4b1faa380323279ab\"\n    },\n    {\n      \"path\": \"schemas/qore-project.schema.json\",\n      \"sha256\": \"fca2a81851fa75e59b22c21b7ed4766e981ec39db2a1bcc01acb8a14b64e3ead\"\n    },\n    {\n      \"path\": \"schemas/qore-release.schema.json\",\n      \"sha256\": \"65f96195072f6201c7fc3848522fdf16f45a170df3dd8c5ad9449192cc8c91d9\"\n    },\n    {\n      \"path\": \"schemas/qore-run.schema.json\",\n      \"sha256\": \"540acd397ee09a070eb19b189f7baadd3ce55337fdb50137f11931e7ef246651\"\n    },\n    {\n      \"path\": \"skills/qore-plan/SKILL.md\",\n      \"sha256\": \"6a0b7a03d888595e6b9e76bc16644a313a187df91622fd5245d4b2253bdf83da\"\n    },\n    {\n      \"path\": \"skills/qore-plan/agents/openai.yaml\",\n      \"sha256\": \"21ffa75d5bc52d68819ff68d4b8c65dc33584464f755487e6a02302f0924c22b\"\n    },\n    {\n      \"path\": \"skills/qore-plan/references/project-profile.md\",\n      \"sha256\": \"16c5ff087c83b7503b23d5d94726834462dd4fd73d78a5380cf85135fa85b0b3\"\n    },\n    {\n      \"path\": \"skills/qore-plan/references/protocol.md\",\n      \"sha256\": \"83f92490a5601b83fc6eaa21861344e35cd04a3ac7edb56b98cd2eb0ecfea84b\"\n    },\n    {\n      \"path\": \"skills/qore-plan/references/release.json\",\n      \"sha256\": \"3814e8357bbc47938cd5bd40634143d39d84f76a775d38343ed5bdf939c6c2c5\"\n    },\n    {\n      \"path\": \"skills/qore-plan/references/roles.md\",\n      \"sha256\": \"cc8060c7c852c143b9671af4fc0176b9c5068f338c19b2556b6ff494c0f0d318\"\n    },\n    {\n      \"path\": \"skills/qore-plan/references/run-evidence.md\",\n      \"sha256\": \"35cd6dc6d3e1177bbae96e5b9e829ed1aa55901747c856f4db20e946421f163d\"\n    },\n    {\n      \"path\": \"skills/qore-plan/references/specification.md\",\n      \"sha256\": \"7eb06b91fca66a3ec00bda4b49b035c5e6bfe827c4624768f66a09b6ae7827a1\"\n    },\n    {\n      \"path\": \"skills/qore-plan/scripts/project-check.py\",\n      \"sha256\": \"3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd\"\n    },\n    {\n      \"path\": \"skills/qore-plan/scripts/run-check.py\",\n      \"sha256\": \"889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa\"\n    },\n    {\n      \"path\": \"skills/qore-plan/scripts/spec-lint.mjs\",\n      \"sha256\": \"0015bf0428e30d662d2ddf119e5813e3dc5f01379c45e3229c592853a77683ef\"\n    },\n    {\n      \"path\": \"skills/qore-plan/scripts/spec-lint.sh\",\n      \"sha256\": \"ee4b0c491833f8f3960037255f7ea601548a353d18b317aae25d8e5f2cd461b6\"\n    },\n    {\n      \"path\": \"skills/qore-review/SKILL.md\",\n      \"sha256\": \"aae83b4105dd89387c7eac31df3c789326def9c0b05dccd4a3d2cdab65732a97\"\n    },\n    {\n      \"path\": \"skills/qore-review/agents/openai.yaml\",\n      \"sha256\": \"6c689fd93445ab3edcb6b88320e7680ee37c746bca5635e8c406304b081250ed\"\n    },\n    {\n      \"path\": \"skills/qore-review/references/findings.md\",\n      \"sha256\": \"79b2b5f52e88761331c01b92af9b492ef1888c6c20a0af1b94a8bead7aa2d6cb\"\n    },\n    {\n      \"path\": \"skills/qore-review/references/project-profile.md\",\n      \"sha256\": \"5d3b69aac18f83a634f4c57c214cc1f53fa186c03c536adcefd4c905a8767c8d\"\n    },\n    {\n      \"path\": \"skills/qore-review/references/protocol.md\",\n      \"sha256\": \"e27e0050fdf4d75d2840dd257b9a759f1f48d459ef540990cd3aed5528c5f340\"\n    },\n    {\n      \"path\": \"skills/qore-review/references/release.json\",\n      \"sha256\": \"0d0a62e137572e9c30dfae9b3a0756e6a6dd54c473f99c5f583379812153ecf6\"\n    },\n    {\n      \"path\": \"skills/qore-review/references/run-evidence.md\",\n      \"sha256\": \"fbdf433ef8b3e972f97bed5fdec4990cf3b49535bf63120c729a7daf4af71746\"\n    },\n    {\n      \"path\": \"skills/qore-review/scripts/finding-lint.mjs\",\n      \"sha256\": \"d0cc6809b750d9e52015b0448f18e3f291b979674b1350156d2444e607791ee7\"\n    },\n    {\n      \"path\": \"skills/qore-review/scripts/project-check.py\",\n      \"sha256\": \"3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd\"\n    },\n    {\n      \"path\": \"skills/qore-review/scripts/redact-for-verifier.mjs\",\n      \"sha256\": \"dc249524c749ad5b511aef0a2cf08b4cfd5c47c1e0de4fd41c5c70746b471083\"\n    },\n    {\n      \"path\": \"skills/qore-review/scripts/run-check.py\",\n      \"sha256\": \"889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa\"\n    },\n    {\n      \"path\": \"skills/qore-ux-review/SKILL.md\",\n      \"sha256\": \"33b1367f256f1a6304902d08cdff9b023add92fb750834216268cca8de84b851\"\n    },\n    {\n      \"path\": \"skills/qore-ux-review/agents/openai.yaml\",\n      \"sha256\": \"2bafca3b7edce2edac4814b4028fdb814f83c1c2efbea4d461b7469fbe1bd7af\"\n    },\n    {\n      \"path\": \"skills/qore-ux-review/references/evidence.md\",\n      \"sha256\": \"659560f88b965371e2c6e886b5f4c648a4879ebb7c69af4b1d307dfae176c8b3\"\n    },\n    {\n      \"path\": \"skills/qore-ux-review/references/gates.md\",\n      \"sha256\": \"667063cd64c576a9c5b4ec69f6ddcd677d4e969bae96184b3136ede9fd12fd87\"\n    },\n    {\n      \"path\": \"skills/qore-ux-review/references/project-profile.md\",\n      \"sha256\": \"154ed11dab8e8499e74a5f3a6afb512827d5de5c73408523b845684e38f59dfc\"\n    },\n    {\n      \"path\": \"skills/qore-ux-review/references/protocol.md\",\n      \"sha256\": \"257ae0902a7fb00f6bfd1ebaa5b688e57a5f2e7163de3e9954ed3c9765105dfd\"\n    },\n    {\n      \"path\": \"skills/qore-ux-review/references/release.json\",\n      \"sha256\": \"0960d2d2e4765ec0f684df528b957c67d1916482210e975f01a36e8c366ba3ed\"\n    },\n    {\n      \"path\": \"skills/qore-ux-review/references/run-evidence.md\",\n      \"sha256\": \"2ede0b19d58fd5535c90023068355679ee7bb27d3070967ada38f9ad156a9e69\"\n    },\n    {\n      \"path\": \"skills/qore-ux-review/scripts/depth-lint.mjs\",\n      \"sha256\": \"9b9cdcea3e87f4820944ddfc075ef19e75aad0bb08a7f1fd279ea6590267def7\"\n    },\n    {\n      \"path\": \"skills/qore-ux-review/scripts/project-check.py\",\n      \"sha256\": \"3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd\"\n    },\n    {\n      \"path\": \"skills/qore-ux-review/scripts/run-check.py\",\n      \"sha256\": \"889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa\"\n    },\n    {\n      \"path\": \"skills/qore-ux-review/scripts/stop-rule.mjs\",\n      \"sha256\": \"404b5ca63276c413e1f2697b98817f1802de4642cf634303707bd175eddd8085\"\n    },\n    {\n      \"path\": \"tests/fixtures/project-alternate.json\",\n      \"sha256\": \"830dc3c50369c21f523a1c68b188f3013b40c439ea362a1e97c45a38a89a79c5\"\n    },\n    {\n      \"path\": \"tests/fixtures/validators/empty-object.json\",\n      \"sha256\": \"ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356\"\n    },\n    {\n      \"path\": \"tests/fixtures/validators/null.json\",\n      \"sha256\": \"38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed\"\n    },\n    {\n      \"path\": \"tests/fixtures/validators/truncated.json\",\n      \"sha256\": \"5f5c45efee43be1915fcfa9ae978fec3302e2bb70137526cc5f2a7e6573e1f7b\"\n    },\n    {\n      \"path\": \"tests/fixtures/validators/valid-findings.json\",\n      \"sha256\": \"883889cef1ccb804667246acead1736f16b2472135bd400b27d8ea323ede00a4\"\n    },\n    {\n      \"path\": \"tests/fixtures/validators/valid-spec.md\",\n      \"sha256\": \"d273b8da517f326b0f9e3bee7ac09895ffc3c96c86bd926f1449a1b0254e0dc7\"\n    },\n    {\n      \"path\": \"tests/fixtures/validators/valid-ux.json\",\n      \"sha256\": \"56bc9807a45cec509a7d12fbff34381a2d8226cf5b933280220be7bf56261245\"\n    },\n    {\n      \"path\": \"tests/fixtures/web/alternate-actions.json\",\n      \"sha256\": \"01d12ee086d239dc8f5fe802d090fba6eb8e862fd281cb6dbf73483b6263a9ab\"\n    },\n    {\n      \"path\": \"tests/fixtures/web/alternate.html\",\n      \"sha256\": \"9782b494fdbb156515518d4bb096a5c057385f44d9a6983c352080626e879a22\"\n    },\n    {\n      \"path\": \"tests/fixtures/web/index.html\",\n      \"sha256\": \"c0b51d87d81a36f21608139d7a4fbf07b9fe1d6f94b1fa0bb0599b5f74fe91f5\"\n    },\n    {\n      \"path\": \"tests/fixtures/web/ping.json\",\n      \"sha256\": \"b637c8fcaf1d33dfbc53887d00214034900ef46e83faca65758f6bc2b56ed43d\"\n    },\n    {\n      \"path\": \"tests/fixtures/web/primary-actions.json\",\n      \"sha256\": \"3342907cd646a04a21ffc9ceb85e9359817b6b8220944030c27df66f5b9b5002\"\n    },\n    {\n      \"path\": \"tests/test_package.py\",\n      \"sha256\": \"7e94e9a81f4b6e6b7f14d4f2432cc066b9b9b180afa4b96eb1c58c2d4957ed74\"\n    },\n    {\n      \"path\": \"tests/test_run_contract.py\",\n      \"sha256\": \"f671c3ec3ca69ad155c54823ef89eb9475fd847b65b762094ad937030e7f297f\"\n    },\n    {\n      \"path\": \"tests/test_validators.py\",\n      \"sha256\": \"b91ab5195a1e7380747c618a17f885b56dc1cddf809ff23e065c3062fc477f39\"\n    },\n    {\n      \"path\": \"tools/browser_probe.mjs\",\n      \"sha256\": \"2c02268e7044f0b3a9a0d848db6fb1c0236ee2df67f35394e11b798228711be2\"\n    },\n    {\n      \"path\": \"tools/clean_room.sh\",\n      \"sha256\": \"e6d710a377408402ca89afe566e60cf1f1581e2c1e57c4d70481f22852f35528\"\n    },\n    {\n      \"path\": \"tools/context.py\",\n      \"sha256\": \"3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd\"\n    },\n    {\n      \"path\": \"tools/qore.py\",\n      \"sha256\": \"931f5303a6594cb6a1eb7fa474fad3ac311ac9bb4cde2506abf6d06bc3ff6ff7\"\n    },\n    {\n      \"path\": \"tools/refresh_profiles.py\",\n      \"sha256\": \"6895b7adfa855f3742b0910fd165c4be8c0ec73ffd2dcfc3f0ea5162b52c8dfb\"\n    },\n    {\n      \"path\": \"tools/run_contract.py\",\n      \"sha256\": \"889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa\"\n    }\n  ]\n}\n",
+      "stderr": "",
+      "exit_code": 0,
+      "observed_at": "2026-10-15T20:03:40.394641+00:00"
+    },
+    {
+      "argv": [
+        "node",
+        "skills/qore-review/scripts/finding-lint.mjs",
+        "<TEMPORARY_INPUT>",
+        "--verifier=ran",
+        "--json"
+      ],
+      "cwd": "<CANDIDATE_B>",
+      "stdout": "",
+      "stderr": "finding-lint: cannot read JSON: Unexpected end of JSON input\n",
+      "exit_code": 2,
+      "observed_at": "2026-10-15T20:03:40.419228+00:00",
+      "probe_input": {
+        "name": "malformed",
+        "bytes": "{\"findings\":"
+      }
+    },
+    {
+      "argv": [
+        "node",
+        "skills/qore-review/scripts/finding-lint.mjs",
+        "<TEMPORARY_INPUT>",
+        "--verifier=ran",
+        "--json"
+      ],
+      "cwd": "<CANDIDATE_B>",
+      "stdout": "{\n  \"valid\": false,\n  \"coverage\": \"PARTIAL\",\n  \"verdict\": \"INVALID\",\n  \"verifier\": \"ran\",\n  \"total\": 0,\n  \"counts\": {\n    \"CONFIRMED\": 0,\n    \"PLAUSIBLE\": 0,\n    \"REFUTED\": 0\n  },\n  \"blocking_findings\": [],\n  \"findings\": [],\n  \"problems\": [\n    {\n      \"code\": \"envelope\",\n      \"why\": \"Expected an object containing findings: []; arrays, null and missing findings are refused.\"\n    }\n  ],\n  \"limit\": \"The verifier flag records an execution declaration; validate actual independent phase evidence separately.\"\n}\n",
+      "stderr": "",
+      "exit_code": 1,
+      "observed_at": "2026-10-15T20:03:40.442477+00:00",
+      "probe_input": {
+        "name": "missing-envelope",
+        "bytes": "{}"
+      }
+    },
+    {
+      "argv": [
+        "node",
+        "skills/qore-review/scripts/finding-lint.mjs",
+        "<TEMPORARY_INPUT>",
+        "--verifier=ran",
+        "--json"
+      ],
+      "cwd": "<CANDIDATE_B>",
+      "stdout": "{\n  \"valid\": true,\n  \"coverage\": \"COMPLETE\",\n  \"verdict\": \"SHIP\",\n  \"verifier\": \"ran\",\n  \"total\": 0,\n  \"counts\": {\n    \"CONFIRMED\": 0,\n    \"PLAUSIBLE\": 0,\n    \"REFUTED\": 0\n  },\n  \"blocking_findings\": [],\n  \"findings\": [],\n  \"problems\": [],\n  \"limit\": \"The verifier flag records an execution declaration; validate actual independent phase evidence separately.\"\n}\n",
+      "stderr": "",
+      "exit_code": 0,
+      "observed_at": "2026-10-15T20:03:40.465232+00:00",
+      "probe_input": {
+        "name": "empty",
+        "bytes": "{\"findings\":[]}"
+      }
+    },
+    {
+      "argv": [
+        "node",
+        "skills/qore-review/scripts/finding-lint.mjs",
+        "<TEMPORARY_INPUT>",
+        "--verifier=skipped",
+        "--json"
+      ],
+      "cwd": "<CANDIDATE_B>",
+      "stdout": "{\n  \"valid\": true,\n  \"coverage\": \"PARTIAL\",\n  \"verdict\": \"PENDING\",\n  \"verifier\": \"skipped\",\n  \"total\": 1,\n  \"counts\": {\n    \"CONFIRMED\": 0,\n    \"PLAUSIBLE\": 1,\n    \"REFUTED\": 0\n  },\n  \"blocking_findings\": [],\n  \"findings\": [\n    {\n      \"id\": \"F1\",\n      \"title\": \"Candidate\",\n      \"severity\": \"high\",\n      \"verdict\": \"PLAUSIBLE\",\n      \"evidence\": \"src/input.ts:12\"\n    }\n  ],\n  \"problems\": [],\n  \"limit\": \"The verifier flag records an execution declaration; validate actual independent phase evidence separately.\"\n}\n",
+      "stderr": "",
+      "exit_code": 0,
+      "observed_at": "2026-10-15T20:03:40.488315+00:00",
+      "probe_input": {
+        "name": "partial",
+        "bytes": "{\"findings\":[{\"id\":\"F1\",\"title\":\"Candidate\",\"severity\":\"high\",\"verdict\":\"PLAUSIBLE\",\"evidence\":\"src/input.ts:12\"}]}"
+      }
+    },
+    {
+      "argv": [
+        "node",
+        "skills/qore-review/scripts/finding-lint.mjs",
+        "<TEMPORARY_INPUT>",
+        "--verifier=ran",
+        "--json"
+      ],
+      "cwd": "<CANDIDATE_B>",
+      "stdout": "",
+      "stderr": "finding-lint: cannot read JSON: ENOENT: no such file or directory, open '<TEMPORARY_INPUT>'\n",
+      "exit_code": 2,
+      "observed_at": "2026-10-15T20:03:40.511557+00:00"
+    },
+    {
+      "argv": [
+        "node",
+        "skills/qore-review/scripts/finding-lint.mjs"
+      ],
+      "cwd": "<CANDIDATE_B>",
+      "stdout": "",
+      "stderr": "usage: finding-lint.mjs <packet.json> --verifier=ran|skipped [--json]\n",
+      "exit_code": 2,
+      "observed_at": "2026-10-15T20:03:40.534579+00:00"
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "cwd": "<CANDIDATE_B>",
+      "stdout": "",
+      "stderr": "test_builds_are_byte_identical_with_fixed_archive_metadata (test_package.PackageTests.test_builds_are_byte_identical_with_fixed_archive_metadata) ... ok\ntest_changed_or_missing_sources_block_only_affected_facts (test_package.PackageTests.test_changed_or_missing_sources_block_only_affected_facts) ... ok\ntest_current_profile_returns_scoped_facts_without_execution (test_package.PackageTests.test_current_profile_returns_scoped_facts_without_execution) ... ok\ntest_derive_copies_three_profiles_and_does_not_execute_commands (test_package.PackageTests.test_derive_copies_three_profiles_and_does_not_execute_commands) ... ok\ntest_escaping_runtime_reference_is_refused_even_when_target_exists (test_package.PackageTests.test_escaping_runtime_reference_is_refused_even_when_target_exists) ... ok\ntest_escaping_source_symlink_is_refused (test_package.PackageTests.test_escaping_source_symlink_is_refused) ... ok\ntest_existing_build_and_derivative_destinations_are_preserved (test_package.PackageTests.test_existing_build_and_derivative_destinations_are_preserved) ... ok\ntest_fact_references_must_name_a_declared_source (test_package.PackageTests.test_fact_references_must_name_a_declared_source) ... ok\ntest_install_refuses_symlinked_ancestor_without_external_writes (test_package.PackageTests.test_install_refuses_symlinked_ancestor_without_external_writes) ... ok\ntest_install_refuses_to_overwrite_a_modified_existing_skill (test_package.PackageTests.test_install_refuses_to_overwrite_a_modified_existing_skill) ... ok\ntest_manifest_path_prefix_collision_does_not_escape_bundle (test_package.PackageTests.test_manifest_path_prefix_collision_does_not_escape_bundle) ... ok\ntest_missing_runtime_reference_prevents_build_without_partial_destination (test_package.PackageTests.test_missing_runtime_reference_prevents_build_without_partial_destination) ... ok\ntest_positive_package_has_exactly_three_closed_skills_and_https_citations (test_package.PackageTests.test_positive_package_has_exactly_three_closed_skills_and_https_citations) ... ok\ntest_release_allowlist_traversal_and_symlink_are_refused (test_package.PackageTests.test_release_allowlist_traversal_and_symlink_are_refused) ... ok\ntest_stale_context_is_partial_when_unrelated_current_facts_remain (test_package.PackageTests.test_stale_context_is_partial_when_unrelated_current_facts_remain) ... ok\ntest_stale_profile_cannot_be_derived_into_a_new_destination (test_package.PackageTests.test_stale_profile_cannot_be_derived_into_a_new_destination) ... ok\ntest_standalone_inventory_cannot_omit_repeat_or_upgrade_resources (test_package.PackageTests.test_standalone_inventory_cannot_omit_repeat_or_upgrade_resources) ... ok\ntest_unknown_profile_major_and_source_path_traversal_are_refused (test_package.PackageTests.test_unknown_profile_major_and_source_path_traversal_are_refused) ... ok\ntest_verify_refuses_release_symlink (test_package.PackageTests.test_verify_refuses_release_symlink) ... ok\ntest_verify_rejects_altered_missing_and_unlisted_files (test_package.PackageTests.test_verify_rejects_altered_missing_and_unlisted_files) ... ok\ntest_verify_rejects_manifest_digest_changes_and_unknown_major (test_package.PackageTests.test_verify_rejects_manifest_digest_changes_and_unknown_major) ... ok\ntest_all_blocked_phases_report_blocked_coverage (test_run_contract.RunContractTests.test_all_blocked_phases_report_blocked_coverage) ... ok\ntest_all_five_planning_perspectives_require_distinct_contexts (test_run_contract.RunContractTests.test_all_five_planning_perspectives_require_distinct_contexts) ... ok\ntest_an_execution_artifact_cannot_prove_a_different_phase (test_run_contract.RunContractTests.test_an_execution_artifact_cannot_prove_a_different_phase) ... ok\ntest_artifact_byte_changes_cannot_keep_a_recorded_digest (test_run_contract.RunContractTests.test_artifact_byte_changes_cannot_keep_a_recorded_digest) ... ok\ntest_artifact_paths_cannot_escape_by_traversal_symlink_or_prefix (test_run_contract.RunContractTests.test_artifact_paths_cannot_escape_by_traversal_symlink_or_prefix) ... ok\ntest_copy_visual_and_perf_allow_explicit_supported_non_applicability (test_run_contract.RunContractTests.test_copy_visual_and_perf_allow_explicit_supported_non_applicability) ... ok\ntest_entry_state_and_full_scopes_require_real_transition_evidence (test_run_contract.RunContractTests.test_entry_state_and_full_scopes_require_real_transition_evidence) ... ok\ntest_execution_descriptor_cannot_name_another_candidate_or_target (test_run_contract.RunContractTests.test_execution_descriptor_cannot_name_another_candidate_or_target) ... ok\ntest_execution_header_must_match_the_recorded_identity (test_run_contract.RunContractTests.test_execution_header_must_match_the_recorded_identity) ... ok\ntest_finder_independence_is_required_even_when_verifier_is_skipped (test_run_contract.RunContractTests.test_finder_independence_is_required_even_when_verifier_is_skipped) ... ok\ntest_missing_or_skipped_required_phases_limit_coverage (test_run_contract.RunContractTests.test_missing_or_skipped_required_phases_limit_coverage) ... ok\ntest_named_finders_require_distinct_contexts (test_run_contract.RunContractTests.test_named_finders_require_distinct_contexts) ... ok\ntest_non_applicability_requires_explicit_scope_reason_and_artifact (test_run_contract.RunContractTests.test_non_applicability_requires_explicit_scope_reason_and_artifact) ... ok\ntest_old_source_or_presentation_artifacts_cannot_alone_prove_a_pass (test_run_contract.RunContractTests.test_old_source_or_presentation_artifacts_cannot_alone_prove_a_pass) ... ok\ntest_other_mandatory_method_phases_cannot_be_declared_non_applicable (test_run_contract.RunContractTests.test_other_mandatory_method_phases_cannot_be_declared_non_applicable) ... ok\ntest_pass_needs_declared_evidence_and_cannot_borrow_another_phase (test_run_contract.RunContractTests.test_pass_needs_declared_evidence_and_cannot_borrow_another_phase) ... ok\ntest_positive_complete_plan_review_and_ux_runs (test_run_contract.RunContractTests.test_positive_complete_plan_review_and_ux_runs) ... ok\ntest_profile_preflight_is_mandatory_for_profiled_runs (test_run_contract.RunContractTests.test_profile_preflight_is_mandatory_for_profiled_runs) ... ok\ntest_profiled_runs_require_a_profile_preflight_phase (test_run_contract.RunContractTests.test_profiled_runs_require_a_profile_preflight_phase) ... ok\ntest_proof_must_be_strictly_after_the_last_relevant_change (test_run_contract.RunContractTests.test_proof_must_be_strictly_after_the_last_relevant_change) ... ok\ntest_recorded_commands_require_typed_arguments_exit_status_and_artifact (test_run_contract.RunContractTests.test_recorded_commands_require_typed_arguments_exit_status_and_artifact) ... ok\ntest_required_phase_lists_cannot_omit_or_repeat_method_phases (test_run_contract.RunContractTests.test_required_phase_lists_cannot_omit_or_repeat_method_phases) ... ok\ntest_self_consistent_proof_from_another_candidate_or_target_is_refused (test_run_contract.RunContractTests.test_self_consistent_proof_from_another_candidate_or_target_is_refused) ... ok\ntest_timestamps_require_timezone_and_actual_parseable_values (test_run_contract.RunContractTests.test_timestamps_require_timezone_and_actual_parseable_values) ... ok\ntest_unknown_schema_major_and_method_are_refused (test_run_contract.RunContractTests.test_unknown_schema_major_and_method_are_refused) ... ok\ntest_verifier_must_be_independent_of_every_finder (test_run_contract.RunContractTests.test_verifier_must_be_independent_of_every_finder) ... ok\ntest_wrong_candidate_or_target_digest_formats_are_refused (test_run_contract.RunContractTests.test_wrong_candidate_or_target_digest_formats_are_refused) ... ok\ntest_all_required_skipped_never_ship (test_validators.ValidatorTests.test_all_required_skipped_never_ship) ... ok\ntest_blocking_findings_need_counterexample_and_checkable_evidence (test_validators.ValidatorTests.test_blocking_findings_need_counterexample_and_checkable_evidence) ... ok\ntest_depth_missing_files_unknown_depth_and_bad_shape (test_validators.ValidatorTests.test_depth_missing_files_unknown_depth_and_bad_shape) ... ok\ntest_depth_positive_source_families (test_validators.ValidatorTests.test_depth_positive_source_families) ... ok\ntest_depth_rejects_data_as_visual_and_render_as_none (test_validators.ValidatorTests.test_depth_rejects_data_as_visual_and_render_as_none) ... ok\ntest_duplicate_ids_and_non_object_findings_are_refused (test_validators.ValidatorTests.test_duplicate_ids_and_non_object_findings_are_refused) ... ok\ntest_each_scenario_requires_its_own_three_step_types (test_validators.ValidatorTests.test_each_scenario_requires_its_own_three_step_types) ... ok\ntest_empty_fence_cannot_borrow_steps_outside (test_validators.ValidatorTests.test_empty_fence_cannot_borrow_steps_outside) ... ok\ntest_empty_findings_is_a_valid_complete_packet (test_validators.ValidatorTests.test_empty_findings_is_a_valid_complete_packet) ... ok\ntest_empty_null_array_and_missing_envelope_are_refused (test_validators.ValidatorTests.test_empty_null_array_and_missing_envelope_are_refused) ... ok\ntest_fixes_invalidate_same_iteration_and_carried_scores (test_validators.ValidatorTests.test_fixes_invalidate_same_iteration_and_carried_scores) ... ok\ntest_infra_blockage_affects_coverage_without_failing_observed_gates (test_validators.ValidatorTests.test_infra_blockage_affects_coverage_without_failing_observed_gates) ... ok\ntest_justified_non_applicability_is_distinct_from_tool_absence (test_validators.ValidatorTests.test_justified_non_applicability_is_distinct_from_tool_absence) ... ok\ntest_measurements_and_source_identifiers_remain_accepted (test_validators.ValidatorTests.test_measurements_and_source_identifiers_remain_accepted) ... ok\ntest_missing_required_gate_is_not_treated_as_pass (test_validators.ValidatorTests.test_missing_required_gate_is_not_treated_as_pass) ... ok\ntest_missing_verifier_never_proves_or_refutes (test_validators.ValidatorTests.test_missing_verifier_never_proves_or_refutes) ... ok\ntest_optional_coverage_fields_do_not_silently_coerce_bad_types (test_validators.ValidatorTests.test_optional_coverage_fields_do_not_silently_coerce_bad_types) ... ok\ntest_positive_review_retains_refutations_and_blocks_confirmed_high (test_validators.ValidatorTests.test_positive_review_retains_refutations_and_blocks_confirmed_high) ... ok\ntest_positive_spec (test_validators.ValidatorTests.test_positive_spec) ... ok\ntest_positive_ux (test_validators.ValidatorTests.test_positive_ux) ... ok\ntest_redactor_allowlist_drops_unanticipated_rationale (test_validators.ValidatorTests.test_redactor_allowlist_drops_unanticipated_rationale) ... ok\ntest_redactor_refuses_bad_envelope_and_nested_allowed_field (test_validators.ValidatorTests.test_redactor_refuses_bad_envelope_and_nested_allowed_field) ... ok\ntest_required_skipped_gate_prevents_ship_despite_passing_score (test_validators.ValidatorTests.test_required_skipped_gate_prevents_ship_despite_passing_score) ... ok\ntest_route_reachability_applies_to_modern_app_and_root_paths (test_validators.ValidatorTests.test_route_reachability_applies_to_modern_app_and_root_paths) ... ok\ntest_sixth_fresh_pass_can_ship_but_seventh_cannot (test_validators.ValidatorTests.test_sixth_fresh_pass_can_ship_but_seventh_cannot) ... ok\ntest_skipped_verifier_preserves_high_and_critical_severity (test_validators.ValidatorTests.test_skipped_verifier_preserves_high_and_critical_severity) ... ok\ntest_spec_duplicate_ids_and_orphan_coverage_fail (test_validators.ValidatorTests.test_spec_duplicate_ids_and_orphan_coverage_fail) ... ok\ntest_spec_requires_coverage_and_fenced_sequence (test_validators.ValidatorTests.test_spec_requires_coverage_and_fenced_sequence) ... ok\ntest_spec_supports_named_scenarios_and_bold_coverage (test_validators.ValidatorTests.test_spec_supports_named_scenarios_and_bold_coverage) ... ok\ntest_spec_version_must_be_first_and_known (test_validators.ValidatorTests.test_spec_version_must_be_first_and_known) ... ok\ntest_truncated_json_is_not_an_empty_review (test_validators.ValidatorTests.test_truncated_json_is_not_an_empty_review) ... ok\ntest_unknown_verdict_and_severity_are_refused (test_validators.ValidatorTests.test_unknown_verdict_and_severity_are_refused) ... ok\ntest_ux_rejects_invalid_scores_iteration_order_and_unmeasured_change (test_validators.ValidatorTests.test_ux_rejects_invalid_scores_iteration_order_and_unmeasured_change) ... ok\ntest_zero_gate_cannot_extend_six_iteration_budget (test_validators.ValidatorTests.test_zero_gate_cannot_extend_six_iteration_budget) ... ok\n\n----------------------------------------------------------------------\nRan 82 tests in 2.588s\n\nOK\n",
+      "exit_code": 0,
+      "observed_at": "2026-10-15T20:03:43.202799+00:00"
+    },
+    {
+      "phase": "cross_examine",
+      "argv": [
+        "node",
+        "skills/qore-review/scripts/finding-lint.mjs",
+        "<TEMPORARY_INPUT>",
+        "--verifier=ran=skipped",
+        "--json"
+      ],
+      "cwd": "<CANDIDATE_B>",
+      "stdout": "{\n  \"valid\": true,\n  \"coverage\": \"COMPLETE\",\n  \"verdict\": \"SHIP\",\n  \"verifier\": \"ran\",\n  \"total\": 0,\n  \"counts\": {\n    \"CONFIRMED\": 0,\n    \"PLAUSIBLE\": 0,\n    \"REFUTED\": 0\n  },\n  \"blocking_findings\": [],\n  \"findings\": [],\n  \"problems\": [],\n  \"limit\": \"The verifier flag records an execution declaration; validate actual independent phase evidence separately.\"\n}\n",
+      "stderr": "",
+      "exit_code": 0,
+      "observed_at": "2026-10-15T20:09:55.710208+00:00",
+      "probe_input": {
+        "path": "<TEMPORARY_INPUT>",
+        "bytes": "{\"findings\":[]}",
+        "exists": true
+      }
+    },
+    {
+      "phase": "cross_examine",
+      "argv": [
+        "node",
+        "skills/qore-review/scripts/finding-lint.mjs",
+        "<TEMPORARY_INPUT>",
+        "--verifier=ran",
+        "--json"
+      ],
+      "cwd": "<CANDIDATE_B>",
+      "stdout": "{\n  \"valid\": true,\n  \"coverage\": \"COMPLETE\",\n  \"verdict\": \"SHIP\",\n  \"verifier\": \"ran\",\n  \"total\": 0,\n  \"counts\": {\n    \"CONFIRMED\": 0,\n    \"PLAUSIBLE\": 0,\n    \"REFUTED\": 0\n  },\n  \"blocking_findings\": [],\n  \"findings\": [],\n  \"problems\": [],\n  \"limit\": \"The verifier flag records an execution declaration; validate actual independent phase evidence separately.\"\n}\n",
+      "stderr": "",
+      "exit_code": 0,
+      "observed_at": "2026-10-15T20:09:55.733904+00:00",
+      "probe_input": {
+        "path": "<TEMPORARY_INPUT>",
+        "bytes": "{\"findings\":[]}",
+        "exists": true
+      }
+    },
+    {
+      "phase": "cross_examine",
+      "argv": [
+        "node",
+        "skills/qore-review/scripts/finding-lint.mjs",
+        "<TEMPORARY_INPUT>",
+        "--verifier=ran=skipped",
+        "--json"
+      ],
+      "cwd": "<CANDIDATE_B>",
+      "stdout": "",
+      "stderr": "finding-lint: cannot read JSON: ENOENT: no such file or directory, open '<TEMPORARY_INPUT>'\n",
+      "exit_code": 2,
+      "observed_at": "2026-10-15T20:09:55.759439+00:00",
+      "probe_input": {
+        "path": "<TEMPORARY_INPUT>",
+        "bytes": null,
+        "exists": false
+      }
+    }
+  ]
+}

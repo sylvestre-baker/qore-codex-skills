@@ -1,0 +1,5 @@
+{
+  "at": "2026-10-15T19:40:57.468Z",
+  "message": "locator.waitFor: Timeout 12000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('heading', { name: 'QAIZEN LABS', exact: true }) to be visible\u001b[22m\n",
+  "stack": "locator.waitFor: Timeout 12000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('heading', { name: 'QAIZEN LABS', exact: true }) to be visible\u001b[22m\n\n    at <PRIVATE_EVIDENCE_ROOT>/generic-ux/drive.mjs:50:66"
+}

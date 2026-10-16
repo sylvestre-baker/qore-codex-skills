@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "node",
+    "scripts/finding-lint.mjs",
+    "/workspace/current-profile-contrast-review/synthetic-input.json",
+    "--verifier=skipped",
+    "--json"
+  ],
+  "cwd": "/workspace/implementation-target/qore-skills-0.1.0/.agents/skills/qore-review-qore-contrast",
+  "observed_at": "2026-10-15T20:06:10.138496+00:00",
+  "stdout": "{\n  \"valid\": true,\n  \"coverage\": \"PARTIAL\",\n  \"verdict\": \"PENDING\",\n  \"verifier\": \"skipped\",\n  \"total\": 1,\n  \"counts\": {\n    \"CONFIRMED\": 0,\n    \"PLAUSIBLE\": 1,\n    \"REFUTED\": 0\n  },\n  \"blocking_findings\": [],\n  \"findings\": [\n    {\n      \"id\": \"PROBE-HIGH\",\n      \"title\": \"Synthetic unverified high candidate for consumer probe\",\n      \"severity\": \"high\",\n      \"verdict\": \"PLAUSIBLE\",\n      \"evidence\": \"examples/validator-hardening.md:41\",\n      \"unresolved\": \"Independent verification intentionally outside this focused probe.\"\n    }\n  ],\n  \"problems\": [],\n  \"limit\": \"The verifier flag records an execution declaration; validate actual independent phase evidence separately.\"\n}\n",
+  "stderr": "",
+  "exit_status": 0
+}

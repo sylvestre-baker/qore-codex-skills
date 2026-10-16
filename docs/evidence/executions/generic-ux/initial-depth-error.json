@@ -1,0 +1,3 @@
+{
+  "diagnostic": "depth-lint: cannot read JSON: ENOENT: no such file or directory, open '<PRIVATE_EVIDENCE_ROOT>/generic-ux/depth.json'\n"
+}

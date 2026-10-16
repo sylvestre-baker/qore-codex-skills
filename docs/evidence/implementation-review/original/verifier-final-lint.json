@@ -1,0 +1,65 @@
+{
+  "valid": true,
+  "coverage": "COMPLETE",
+  "verdict": "SHIP",
+  "verifier": "ran",
+  "total": 6,
+  "counts": {
+    "CONFIRMED": 6,
+    "PLAUSIBLE": 0,
+    "REFUTED": 0
+  },
+  "blocking_findings": [],
+  "findings": [
+    {
+      "id": "C-001",
+      "title": "Derivation records the input profile digest but rewrites the bundled profile bytes",
+      "severity": "medium",
+      "evidence": "tools/qore.py:215,235; docs/profiles.md (exact profile digest); skills/qore-review/references/run-evidence.md:14; verifier-results.json derive/verify/project-check/profile-hashes.",
+      "verdict": "CONFIRMED",
+      "counterexample": "Compact serialization of profiles/qore.json was derived into /tmp/qore-independent-verifier-51y5w0tg/derived. Derive and verify exit 0. Manifest profile.sha256 is 63c9157e3dd4d6eb2c33c899820422e8ce1d1bee9cc4e22c1df96d814e50a83f; actual bundled profile and runtime checker identity are da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9. Expected one unambiguous consumed-profile identity, or distinct source/bundled identity fields. Parsed content is equal, so this demonstrates byte-identity/provenance inconsistency rather than changed facts."
+    },
+    {
+      "id": "C-002",
+      "title": "Unchanged failing gates bypass the promised three-comparison plateau stop",
+      "severity": "low",
+      "evidence": "skills/qore-ux-review/scripts/stop-rule.mjs:84-85; skills/qore-ux-review/references/protocol.md Stop and report; verifier-results.json plateau and nonfailure-plateau.",
+      "verdict": "CONFIRMED",
+      "counterexample": "Four measured iterations n=1..4 each have G1=3. Actual exit 0 decision CHANGE_APPROACH with stuck_count=3 and no_improve_count=3. Expected STOP_PLATEAU after three comparisons without improvement per protocol. Control with four missing-measurement iterations reaches STOP_PLATEAU, demonstrating that unchanged failures mask the plateau branch. Six-iteration ceiling still applies."
+    },
+    {
+      "id": "C-003",
+      "title": "Spec validation counts literal docstring text as executable acceptance steps",
+      "severity": "medium",
+      "evidence": "skills/qore-plan/scripts/spec-lint.mjs:44-48; skills/qore-plan/references/specification.md acceptance scenario contract; verifier-results.json docstring/no-steps-control/outline.",
+      "verdict": "CONFIRMED",
+      "counterexample": "Generated /tmp/qore-independent-verifier-51y5w0tg/docstring.md has one actual Given step; the only When and Then occur inside its triple-quoted literal argument. Actual spec-lint exits 0 valid:true with no problems. Expected rejection for missing executable When and Then. Replacing those literal words with LiteralWhen/LiteralThen makes it reject both missing steps. Separately an Outline with <message> and no Examples also passes despite the explicit populated-Examples requirement."
+    },
+    {
+      "id": "S-1",
+      "title": "Inherited object properties can satisfy missing UX measurements",
+      "severity": "medium",
+      "evidence": "skills/qore-ux-review/scripts/stop-rule.mjs:11,22,59-62; skills/qore-ux-review/references/evidence.md missing checks prevent SHIP; verifier-results.json inherited and ordinary-missing.",
+      "verdict": "CONFIRMED",
+      "counterexample": "Input {\"in_scope\":[\"toString\"],\"iterations\":[{\"n\":1,\"scores\":{},\"measured\":[]}]} returns exit 0 SHIP and COMPLETE with no missing gates. Expected rejection of an unsupported gate or PARTIAL/PENDING for an unmeasured accepted gate. Same input with G1 returns PARTIAL/PENDING and missing_gates:[\"G1\"]. Inherited Object.prototype values satisfy the measurement-presence checks. Scope requires this accepted nonstandard gate name; normal G1 control is unaffected."
+    },
+    {
+      "id": "F-1",
+      "title": "Derived release profile identity hashes the input bytes rather than the bundled profile",
+      "severity": "medium",
+      "evidence": "tools/qore.py:215,235; verifier-results.json derive/verify/project-check/profile-hashes; same underlying defect as C-001.",
+      "verdict": "CONFIRMED",
+      "counterexample": "Independent compact-profile derivation and verification both exit 0, but manifest/input digest 63c9157e3dd4d6eb2c33c899820422e8ce1d1bee9cc4e22c1df96d814e50a83f differs from bundled/checker profile digest da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9. Expected copied profile identity to align or be explicitly distinguished from source-profile identity. Duplicate of C-001; retain ID without counting as another unique defect."
+    },
+    {
+      "id": "F-2",
+      "title": "Findings gate accepts CONFIRMED lower-severity findings without the required counterexample",
+      "severity": "medium",
+      "evidence": "skills/qore-review/scripts/finding-lint.mjs:40; skills/qore-review/references/findings.md CONFIRMED obligations; verifier-results.json medium-no-counterexample and high-control.",
+      "verdict": "CONFIRMED",
+      "counterexample": "Packet {\"findings\":[{\"id\":\"probe\",\"title\":\"Known defect\",\"severity\":\"medium\",\"evidence\":\"source.js:1\",\"verdict\":\"CONFIRMED\"}]} has no counterexample. Actual finding-lint --verifier=ran --json exits 0 valid:true COMPLETE SHIP. Expected rejection because every CONFIRMED finding requires concrete counterexample. Changing severity alone to high exits 1 with counterexample problem, confirming the obligation is restricted to blocking severities."
+    }
+  ],
+  "problems": [],
+  "limit": "The verifier flag records an execution declaration; validate actual independent phase evidence separately."
+}

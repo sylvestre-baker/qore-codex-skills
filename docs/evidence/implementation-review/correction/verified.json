@@ -1,0 +1,92 @@
+{
+  "findings": [
+    {
+      "id": "C-001",
+      "title": "Derivation records the input profile digest but rewrites the bundled profile bytes",
+      "severity": "medium",
+      "verdict": "CONFIRMED",
+      "disposition": "FIXED",
+      "evidence": "tools/qore.py:215,235; profile-identities.json; commands.json old-compact-derive and old-compact-check-review",
+      "counterexample": "Using cases/old-compact-profile.json, original derive and verify exit 0, but release profile SHA-256 is 63c9157e3dd4d6eb2c33c899820422e8ce1d1bee9cc4e22c1df96d814e50a83f while all three bundled profiles and checker identities are da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9. Expected released identity to match consumed bytes. Fixed compact derivation preserves the input bytes and all identities agree. Pretty-profile control agrees on both targets.",
+      "correction_scope": "The original defect remains confirmed; FIXED describes only the proposed revision on exercised boundaries.",
+      "duplicate_of": null
+    },
+    {
+      "id": "C-002",
+      "title": "Unchanged failing gates bypass the promised three-comparison plateau stop",
+      "severity": "low",
+      "verdict": "CONFIRMED",
+      "disposition": "FIXED",
+      "evidence": "skills/qore-ux-review/scripts/stop-rule.mjs:84-87; commands.json old-stop-constant3-4 and fixed-stop-constant3-4",
+      "counterexample": "cases/stop-constant3-4.json measures G1=3 at n=1..4. Original exits 0 with CHANGE_APPROACH and no_improve_count=3; expected STOP_PLATEAU after three non-improving comparisons under protocol.md. Fixed returns STOP_PLATEAU / DO-NOT-SHIP. At n=3 CHANGE_APPROACH remains correct; zeros stop at plateau and n=6/7 stop at ceiling.",
+      "correction_scope": "The original defect remains confirmed; FIXED describes only the proposed revision on exercised boundaries.",
+      "duplicate_of": null
+    },
+    {
+      "id": "C-003",
+      "title": "Spec validation counts literal docstring text as executable acceptance steps",
+      "severity": "medium",
+      "verdict": "CONFIRMED",
+      "disposition": "FIXED",
+      "evidence": "skills/qore-plan/scripts/spec-lint.mjs:35-89; commands.json *-spec-docstring-* and *-spec-outline-*",
+      "counterexample": "cases/spec-docstring-quote.md has one executable Given; its only When/Then are docstring payload. Original public shell entry exits 0 valid:true; expected rejection under specification.md. Fixed exits 1 with missing when/then. Backtick docstrings reproduce too. Original accepts outline-missing and outline-header; fixed rejects both. Executable scenarios and populated/empty-value Examples controls pass.",
+      "correction_scope": "The original defect remains confirmed; FIXED describes only the proposed revision on exercised boundaries.",
+      "duplicate_of": null
+    },
+    {
+      "id": "S-1",
+      "title": "Inherited object properties can satisfy missing UX measurements",
+      "severity": "medium",
+      "verdict": "CONFIRMED",
+      "disposition": "FIXED",
+      "evidence": "skills/qore-ux-review/scripts/stop-rule.mjs:11-24,61-64; commands.json *-stop-missing-toString",
+      "counterexample": "cases/stop-missing-toString.json declares toString and no scores or measurements. Original exits 0 SHIP / COMPLETE with missing_gates:[]; expected rejection or missing observation, never SHIP. Fixed exits 2 for unsupported gate. constructor, __proto__, and hasOwnProperty are also rejected. All eight supported gates are PARTIAL when missing and SHIP with measured score 5.",
+      "correction_scope": "The original defect remains confirmed; FIXED describes only the proposed revision on exercised boundaries.",
+      "duplicate_of": null
+    },
+    {
+      "id": "F-1",
+      "title": "Derived release profile identity hashes the input bytes rather than the bundled profile",
+      "severity": "medium",
+      "verdict": "CONFIRMED",
+      "disposition": "FIXED",
+      "evidence": "tools/qore.py:215,235; profile-identities.json; commands.json *-compact-*",
+      "counterexample": "Same independently reproduced defect as C-001: compact input digest 63c9157e3dd4d6eb2c33c899820422e8ce1d1bee9cc4e22c1df96d814e50a83f differs from original bundled/checker digest da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9 despite successful derive and verify. Expected identical released/consumed identity; fixed input, top manifest, three local manifests, three bundles, and checkers agree.",
+      "correction_scope": "The original defect remains confirmed; FIXED describes only the proposed revision on exercised boundaries.",
+      "duplicate_of": "C-001"
+    },
+    {
+      "id": "F-2",
+      "title": "Findings gate accepts CONFIRMED lower-severity findings without the required counterexample",
+      "severity": "medium",
+      "verdict": "CONFIRMED",
+      "disposition": "FIXED",
+      "evidence": "skills/qore-review/scripts/finding-lint.mjs:40; references/findings.md:18; commands.json *-finding-*",
+      "counterexample": "cases/finding-medium-missing.json declares medium CONFIRMED without counterexample. Original exits 0 valid:true / COMPLETE / SHIP; expected invalid because every CONFIRMED finding needs concrete counterexample support. Fixed exits 1 INVALID. Original also accepts low/info missing, blank, and whitespace proof; fixed rejects all five severities without nonblank proof. Nonblank concrete proof passes at all severities; critical/high remain DO-NOT-SHIP and medium/low/info SHIP.",
+      "correction_scope": "The original defect remains confirmed; FIXED describes only the proposed revision on exercised boundaries.",
+      "duplicate_of": null
+    }
+  ],
+  "verification_coverage": "COMPLETE",
+  "unexamined_ids": [],
+  "scope": "One independent correction verification wave of six supplied claims; not a full finder campaign.",
+  "tests": {
+    "argv": [
+      "python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-v"
+    ],
+    "exit_code": 0,
+    "tests_run": 105
+  },
+  "limitations": [
+    "Spec linter still accepts ragged Examples tables and missing placeholder header bindings on both targets; full Gherkin grammar/execution is not certified.",
+    "Original raw release verification fails due to extra installed/cache files already present in its supplied tree; proposed raw release verification passes.",
+    "No live browser/app, installation, network publication, external contact, credentials, or independent finder campaign."
+  ]
+}

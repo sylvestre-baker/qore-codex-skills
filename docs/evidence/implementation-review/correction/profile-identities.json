@@ -1,0 +1,258 @@
+[
+  {
+    "label": "old-compact",
+    "input_sha256": "63c9157e3dd4d6eb2c33c899820422e8ce1d1bee9cc4e22c1df96d814e50a83f",
+    "derive_profile": {
+      "id": "qore",
+      "version": "0.1.0",
+      "sha256": "63c9157e3dd4d6eb2c33c899820422e8ce1d1bee9cc4e22c1df96d814e50a83f"
+    },
+    "manifest_profile": {
+      "id": "qore",
+      "version": "0.1.0",
+      "sha256": "63c9157e3dd4d6eb2c33c899820422e8ce1d1bee9cc4e22c1df96d814e50a83f"
+    },
+    "skills": [
+      {
+        "method": "plan",
+        "bundled_sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9",
+        "same_bytes": false,
+        "release_profile": {
+          "id": "qore",
+          "version": "0.1.0",
+          "sha256": "63c9157e3dd4d6eb2c33c899820422e8ce1d1bee9cc4e22c1df96d814e50a83f"
+        },
+        "checker_profile": {
+          "id": "qore",
+          "version": "0.1.0",
+          "sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9"
+        },
+        "checker_coverage": "COMPLETE"
+      },
+      {
+        "method": "review",
+        "bundled_sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9",
+        "same_bytes": false,
+        "release_profile": {
+          "id": "qore",
+          "version": "0.1.0",
+          "sha256": "63c9157e3dd4d6eb2c33c899820422e8ce1d1bee9cc4e22c1df96d814e50a83f"
+        },
+        "checker_profile": {
+          "id": "qore",
+          "version": "0.1.0",
+          "sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9"
+        },
+        "checker_coverage": "COMPLETE"
+      },
+      {
+        "method": "ux-review",
+        "bundled_sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9",
+        "same_bytes": false,
+        "release_profile": {
+          "id": "qore",
+          "version": "0.1.0",
+          "sha256": "63c9157e3dd4d6eb2c33c899820422e8ce1d1bee9cc4e22c1df96d814e50a83f"
+        },
+        "checker_profile": {
+          "id": "qore",
+          "version": "0.1.0",
+          "sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9"
+        },
+        "checker_coverage": "COMPLETE"
+      }
+    ]
+  },
+  {
+    "label": "old-pretty",
+    "input_sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9",
+    "derive_profile": {
+      "id": "qore",
+      "version": "0.1.0",
+      "sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9"
+    },
+    "manifest_profile": {
+      "id": "qore",
+      "version": "0.1.0",
+      "sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9"
+    },
+    "skills": [
+      {
+        "method": "plan",
+        "bundled_sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9",
+        "same_bytes": true,
+        "release_profile": {
+          "id": "qore",
+          "version": "0.1.0",
+          "sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9"
+        },
+        "checker_profile": {
+          "id": "qore",
+          "version": "0.1.0",
+          "sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9"
+        },
+        "checker_coverage": "COMPLETE"
+      },
+      {
+        "method": "review",
+        "bundled_sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9",
+        "same_bytes": true,
+        "release_profile": {
+          "id": "qore",
+          "version": "0.1.0",
+          "sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9"
+        },
+        "checker_profile": {
+          "id": "qore",
+          "version": "0.1.0",
+          "sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9"
+        },
+        "checker_coverage": "COMPLETE"
+      },
+      {
+        "method": "ux-review",
+        "bundled_sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9",
+        "same_bytes": true,
+        "release_profile": {
+          "id": "qore",
+          "version": "0.1.0",
+          "sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9"
+        },
+        "checker_profile": {
+          "id": "qore",
+          "version": "0.1.0",
+          "sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9"
+        },
+        "checker_coverage": "COMPLETE"
+      }
+    ]
+  },
+  {
+    "label": "fixed-compact",
+    "input_sha256": "63c9157e3dd4d6eb2c33c899820422e8ce1d1bee9cc4e22c1df96d814e50a83f",
+    "derive_profile": {
+      "id": "qore",
+      "version": "0.1.0",
+      "sha256": "63c9157e3dd4d6eb2c33c899820422e8ce1d1bee9cc4e22c1df96d814e50a83f"
+    },
+    "manifest_profile": {
+      "id": "qore",
+      "version": "0.1.0",
+      "sha256": "63c9157e3dd4d6eb2c33c899820422e8ce1d1bee9cc4e22c1df96d814e50a83f"
+    },
+    "skills": [
+      {
+        "method": "plan",
+        "bundled_sha256": "63c9157e3dd4d6eb2c33c899820422e8ce1d1bee9cc4e22c1df96d814e50a83f",
+        "same_bytes": true,
+        "release_profile": {
+          "id": "qore",
+          "version": "0.1.0",
+          "sha256": "63c9157e3dd4d6eb2c33c899820422e8ce1d1bee9cc4e22c1df96d814e50a83f"
+        },
+        "checker_profile": {
+          "id": "qore",
+          "version": "0.1.0",
+          "sha256": "63c9157e3dd4d6eb2c33c899820422e8ce1d1bee9cc4e22c1df96d814e50a83f"
+        },
+        "checker_coverage": "COMPLETE"
+      },
+      {
+        "method": "review",
+        "bundled_sha256": "63c9157e3dd4d6eb2c33c899820422e8ce1d1bee9cc4e22c1df96d814e50a83f",
+        "same_bytes": true,
+        "release_profile": {
+          "id": "qore",
+          "version": "0.1.0",
+          "sha256": "63c9157e3dd4d6eb2c33c899820422e8ce1d1bee9cc4e22c1df96d814e50a83f"
+        },
+        "checker_profile": {
+          "id": "qore",
+          "version": "0.1.0",
+          "sha256": "63c9157e3dd4d6eb2c33c899820422e8ce1d1bee9cc4e22c1df96d814e50a83f"
+        },
+        "checker_coverage": "COMPLETE"
+      },
+      {
+        "method": "ux-review",
+        "bundled_sha256": "63c9157e3dd4d6eb2c33c899820422e8ce1d1bee9cc4e22c1df96d814e50a83f",
+        "same_bytes": true,
+        "release_profile": {
+          "id": "qore",
+          "version": "0.1.0",
+          "sha256": "63c9157e3dd4d6eb2c33c899820422e8ce1d1bee9cc4e22c1df96d814e50a83f"
+        },
+        "checker_profile": {
+          "id": "qore",
+          "version": "0.1.0",
+          "sha256": "63c9157e3dd4d6eb2c33c899820422e8ce1d1bee9cc4e22c1df96d814e50a83f"
+        },
+        "checker_coverage": "COMPLETE"
+      }
+    ]
+  },
+  {
+    "label": "fixed-pretty",
+    "input_sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9",
+    "derive_profile": {
+      "id": "qore",
+      "version": "0.1.0",
+      "sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9"
+    },
+    "manifest_profile": {
+      "id": "qore",
+      "version": "0.1.0",
+      "sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9"
+    },
+    "skills": [
+      {
+        "method": "plan",
+        "bundled_sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9",
+        "same_bytes": true,
+        "release_profile": {
+          "id": "qore",
+          "version": "0.1.0",
+          "sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9"
+        },
+        "checker_profile": {
+          "id": "qore",
+          "version": "0.1.0",
+          "sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9"
+        },
+        "checker_coverage": "COMPLETE"
+      },
+      {
+        "method": "review",
+        "bundled_sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9",
+        "same_bytes": true,
+        "release_profile": {
+          "id": "qore",
+          "version": "0.1.0",
+          "sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9"
+        },
+        "checker_profile": {
+          "id": "qore",
+          "version": "0.1.0",
+          "sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9"
+        },
+        "checker_coverage": "COMPLETE"
+      },
+      {
+        "method": "ux-review",
+        "bundled_sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9",
+        "same_bytes": true,
+        "release_profile": {
+          "id": "qore",
+          "version": "0.1.0",
+          "sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9"
+        },
+        "checker_profile": {
+          "id": "qore",
+          "version": "0.1.0",
+          "sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9"
+        },
+        "checker_coverage": "COMPLETE"
+      }
+    ]
+  }
+]

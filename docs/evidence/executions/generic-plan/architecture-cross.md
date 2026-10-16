@@ -1,0 +1,15 @@
+# Architecture cross-examination
+
+Timestamp: 2026-10-15T19:55:21.905975+00:00. Frozen candidate b, snapshot `dec34e19b7b3036c213299a1f98b05fec1709212fb156eabf9928682024ae2cb`. Read all five initial Analyze reports. One Cross-examine pass; no probes or source changes.
+
+**Revised priority:** adopt Delivery D4 / QA-D1 exact-token parsing as the next increment; defer my AR1 partial-verifier extension. Their recorded probes expose a smaller concrete mismatch: `--verifier=ran=skipped` is accepted as `ran`, because `skills/qore-review/scripts/finding-lint.mjs:6-10` truncates at the second equals sign. Exact equality against supported complete tokens fixes the boundary without another component or packet schema. Preserve existing exit 2 usage refusal and normal ran/skipped behavior. This conclusion uses their attributed measurements plus independently inspected control flow, not a new reproduction.
+
+**Product challenge:** PD4–PD7 address a documented future increment (`skills/qore-review/references/findings.md:22`), but “complete review” must distinguish declaration completeness from actual phase completion. Counterexample: a valid empty packet with exact `ran` still cannot establish that finder/verifier phases ran (`examples/validator-hardening.md:43-48`). Strict grammar repairs malformed declarations; it cannot turn declarations into proof. State explicit CLI-input scope for US1 instead of claiming the existing A01–A03 are broken. Product's outcome-based argument for partial batches remains material dissent against choosing the smallest parser fix first.
+
+**Correction to my AR1:** requiring nonempty unexamined IDs is premature. Product correctly raises truthful empty packets with missing execution. Before a later partial-mode increment, resolve whether the mode describes a verifier subset or broader review incompleteness, and preserve examined-but-unresolved PLAUSIBLE separately from unexamined. Neither should be inferred from severity or count (`findings.md:18-24`).
+
+**UX complexity challenge:** use the existing result object for any later plain-text clarification; avoid a second verdict calculation (`finding-lint.mjs:46-56`). UX-D1 is useful but independent of exact parsing. Changing invalid-packet blocker wording or adding counts is not required to reject malformed tokens. For this increment preserve stderr usage and absent success JSON on exit 2; document recovery without telling callers to change skipped to ran.
+
+**QA warning:** test full-token suffixes, empty values, duplicates, unknown flags, whitespace and valid exact tokens; compare exit/stdout/stderr separately. Retain valid empty reviews, skipped severity preservation, refutations and redaction regressions (`tests/test_validators.py:64-124`). A successful process with DO-NOT-SHIP is intentional, not a test failure.
+
+Open: lead priority adjudication; actual external text consumers; later partial-state schema/status semantics. No new implementation blocker beyond locking the exact-token contract. Full source/package checks remain implementation gates. No additional investigation or test execution occurred.

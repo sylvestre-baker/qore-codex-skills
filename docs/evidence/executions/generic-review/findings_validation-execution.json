@@ -1,0 +1,22 @@
+{
+  "qore_evidence": {
+    "candidate_sha256": "3e0265c6d33fc0340fd8df0f0c1c4074a7495a8744365b6d388c747e4daf60da",
+    "target_snapshot_sha256": "e6f131ad712f3282ed1313b5214cfadc578f90defae3741acef1d68f8b1fc7a9",
+    "observed_at": "2026-10-15T19:47:55.063470+00:00",
+    "phase_id": "findings_validation"
+  },
+  "payload": {
+    "argv": [
+      "node",
+      "scripts/finding-lint.mjs",
+      "/workspace/review-evidence/verified.json",
+      "--verifier=ran",
+      "--json"
+    ],
+    "cwd": "/workspace/qore-skills-0.1.0/.agents/skills/qore-review",
+    "exit_code": 0,
+    "stdout": "{\n  \"valid\": true,\n  \"coverage\": \"COMPLETE\",\n  \"verdict\": \"SHIP\",\n  \"verifier\": \"ran\",\n  \"total\": 0,\n  \"counts\": {\n    \"CONFIRMED\": 0,\n    \"PLAUSIBLE\": 0,\n    \"REFUTED\": 0\n  },\n  \"blocking_findings\": [],\n  \"findings\": [],\n  \"problems\": [],\n  \"limit\": \"The verifier flag records an execution declaration; validate actual independent phase evidence separately.\"\n}\n",
+    "stderr": "",
+    "observed_at": "2026-10-15T19:47:55.061087+00:00"
+  }
+}

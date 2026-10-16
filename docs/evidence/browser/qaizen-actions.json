@@ -1,0 +1,17 @@
+[
+  {"type":"click","role":"button","name":"Reject"},
+  {"type":"click","selector":"a[href$='/labs/readiness-check']"},
+  {"type":"assert-url","url":"https://qaizen.io/labs/readiness-check"},
+  {"type":"assert-text","text":"Could your AI pilot go live? A check in about 3 minutes"},
+  {"type":"snapshot","label":"readiness-intro"},
+  {"type":"click","role":"button","name":"Start the check"},
+  {"type":"assert-text","text":"Which data will the AI system read and write in production, and who owns each source?"},
+  {"type":"snapshot","label":"question-loaded"},
+  {"type":"click","selector":"summary"},
+  {"type":"snapshot","label":"question-help-expanded"},
+  {"type":"keyboard","key":"Space"},
+  {"type":"snapshot","label":"question-help-closed-by-keyboard"},
+  {"type":"click","role":"button","name":"Back"},
+  {"type":"assert-text","text":"Could your AI pilot go live? A check in about 3 minutes"},
+  {"type":"snapshot","label":"returned-to-intro"}
+]

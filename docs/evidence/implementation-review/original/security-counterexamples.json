@@ -1,0 +1,22 @@
+{
+  "command": [
+    "node",
+    "skills/qore-ux-review/scripts/stop-rule.mjs",
+    "/tmp/qore-security-0x_j_qxe/inherited-gate.json"
+  ],
+  "input": {
+    "in_scope": [
+      "toString"
+    ],
+    "iterations": [
+      {
+        "n": 1,
+        "scores": {},
+        "measured": []
+      }
+    ]
+  },
+  "exit_code": 0,
+  "stdout": "{\n  \"decision\": \"SHIP\",\n  \"verdict\": \"SHIP\",\n  \"coverage\": \"COMPLETE\",\n  \"iteration\": 1,\n  \"ceiling\": 6,\n  \"surface_score\": null,\n  \"consecutive_fresh_passes\": 1,\n  \"passes_required\": 1,\n  \"lowest_failing_gate\": null,\n  \"failing_gates\": [],\n  \"stale_gates\": [],\n  \"missing_gates\": [],\n  \"skipped\": [],\n  \"infra_blocked\": [],\n  \"not_applicable\": {},\n  \"stuck_count\": 0,\n  \"no_improve_count\": 0,\n  \"limit\": \"Coverage describes observations. SHIP is a scoped review result, not deployment authorization. Non-applicability reasons require independent review.\"\n}\n",
+  "stderr": ""
+}

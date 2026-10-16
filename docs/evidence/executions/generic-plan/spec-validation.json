@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "bash",
+    "scripts/spec-lint.sh",
+    "<PRIVATE_EVIDENCE_ROOT>/proposed-spec.md"
+  ],
+  "cwd": "<CANDIDATE_B>/skills/qore-plan",
+  "exit_code": 0,
+  "stdout": "spec-lint: valid qore-spec/1 (9 scenarios).\n",
+  "stderr": "",
+  "observed_at": "2026-10-15T19:58:30.564815+00:00",
+  "spec_sha256": "26701f8c71dcbdf85e3ab787e870360763070b726ce24069b706d10831c834d6",
+  "source_spec_sha256": "26701f8c71dcbdf85e3ab787e870360763070b726ce24069b706d10831c834d6",
+  "public_spec_sha256": "26701f8c71dcbdf85e3ab787e870360763070b726ce24069b706d10831c834d6",
+  "hash_scope": "spec_sha256 is the original raw phase observation; public_spec_sha256 identifies the path-sanitized derivative, rechecked separately."
+}

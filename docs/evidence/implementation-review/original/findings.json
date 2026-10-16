@@ -1,0 +1,61 @@
+{
+  "findings": [
+    {
+      "id": "C-001",
+      "title": "Derivation records the input profile digest but rewrites the bundled profile bytes",
+      "severity": "medium",
+      "evidence": "tools/qore.py:215 records profile_info.sha256 = digest(profile_path), but tools/qore.py:235 writes references/project.json through write_json (indent=2, ensure_ascii=False, trailing newline). With compact JSON of profiles/qore.json, derive succeeds and manifest profile.sha256 is 63c9157e3dd4d6eb2c33c899820422e8ce1d1bee9cc4e22c1df96d814e50a83f, while bundled references/project.json and its successful bundled project-check.py report da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9. /workspace/implementation-review/evidence/correctness-probes.txt retains output; /tmp/qore-correctness-zihl6vcs contains inputs/derivative.",
+      "counterexample": "Serialize profiles/qore.json with json.dumps(profile,separators=(comma,colon)); derive using current root into unused external temp; compare returned profile.sha256 and SHA-256 of qore-review-qore/references/project.json. Actual different hashes despite verify success. Expected released profile identity to identify the actual consumed bundled bytes or explicitly distinguish source_profile_sha256 from bundled profile sha256.",
+      "condition": "A valid maintained profile uses different JSON whitespace, Unicode escaping, or trailing newline from write_json.",
+      "consequence": "Release/profile identity and runtime preflight identify different byte snapshots; consumers cannot use release profile.sha256 to attest the exact consumed profile required by run-evidence.md.",
+      "uncertainty": "Independent verification has not yet run; semantic profile facts remain unchanged."
+    },
+    {
+      "id": "C-002",
+      "title": "Unchanged failing gates bypass the promised three-comparison plateau stop",
+      "severity": "low",
+      "evidence": "skills/qore-ux-review/scripts/stop-rule.mjs:84 checks stuck >= 2 before plateau >= 3 at line 85. Four measured iterations n=1..4 with G1=3 return decision CHANGE_APPROACH, stuck_count=3, no_improve_count=3 rather than STOP_PLATEAU. skills/qore-ux-review/references/protocol.md says after three comparisons without improvement the loop stops at plateau. Input /tmp/qore-correctness-zihl6vcs/plateau.json; output correctness-probes.txt.",
+      "counterexample": "node skills/qore-ux-review/scripts/stop-rule.mjs /tmp/qore-correctness-zihl6vcs/plateau.json returns CHANGE_APPROACH at iteration 4, although three unchanged comparisons have completed.",
+      "condition": "A nonzero failing gate stays unchanged through four or five measured iterations.",
+      "consequence": "The consumer is instructed to continue investigation instead of stopping at its declared plateau budget; the six-iteration ceiling still bounds eventual execution.",
+      "uncertainty": "Independent verification has not yet run; severity limited by functioning six-iteration ceiling."
+    },
+    {
+      "id": "C-003",
+      "title": "Spec validation counts literal docstring text as executable acceptance steps",
+      "severity": "medium",
+      "evidence": "skills/qore-plan/scripts/spec-lint.mjs:44-48 scans every Gherkin line for Given/When/Then without tracking docstrings. /tmp/qore-correctness-zihl6vcs/docstring-spec.md has one real Given step and When/Then solely inside its triple-quoted argument. node spec-lint.mjs FILE --json exits 0 with valid:true and no problems. The artifact contract requires real acceptance scenarios with their own Given, When, Then. An additional Scenario Outline using placeholders without Examples also exits 0 (/tmp/qore-correctness-zihl6vcs/outline-spec.md).",
+      "counterexample": "Run node skills/qore-plan/scripts/spec-lint.mjs /tmp/qore-correctness-zihl6vcs/docstring-spec.md --json. Actual valid:true; expected rejection because literal argument text contains the only When and Then.",
+      "condition": "An acceptance scenario contains step-looking multiline input or an outline lacks Examples.",
+      "consequence": "The mandatory structural validation phase can pass a specification with no actual action/assertion acceptance steps, undercutting the documented real-Gherkin boundary.",
+      "uncertainty": "Independent verification has not yet run; no external Gherkin package was installed, grammar distinction follows standard docstring syntax and repository real-step requirement."
+    },
+    {
+      "id": "S-1",
+      "title": "Inherited object properties can satisfy missing UX measurements",
+      "severity": "medium",
+      "evidence": "skills/qore-ux-review/scripts/stop-rule.mjs:11 accepts any nonempty gate string; line 22 uses ordinary objects for measuredAt/measuredScores; lines 59-62 read inherited properties as measurements. Running node stop-rule.mjs against {\"in_scope\":[\"toString\"],\"iterations\":[{\"n\":1,\"scores\":{},\"measured\":[]}]} returned exit 0, decision SHIP, coverage COMPLETE, missing_gates []. Exact command/input/stdout: /workspace/implementation-review/evidence/security-counterexamples.json.",
+      "condition": "An erroneous or adversarial loop file names an Object.prototype property as a required gate, with no observations.",
+      "consequence": "The operational stop gate emits a successful coverage/SHIP result without a single measurement instead of rejecting unknown gates or retaining missing coverage.",
+      "uncertainty": "Independent verifier has not run. Trigger uses an invalid domain gate name that current input validation explicitly accepts; normal G0-G6/GP gates are not demonstrated affected."
+    },
+    {
+      "id": "F-1",
+      "title": "Derived release profile identity hashes the input bytes rather than the bundled profile",
+      "severity": "medium",
+      "evidence": "tools/qore.py:215 records digest(profile_path), but line 235 calls write_json on the parsed profile. With the compact valid profile saved as feasibility-compact-profile.json, derive succeeds and verify returns valid, while manifest profile.sha256 is 63c9157e3dd4d6eb2c33c899820422e8ce1d1bee9cc4e22c1df96d814e50a83f and bundled references/project.json / runtime checker profile.sha256 is da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9. See feasibility-derive-result.json and feasibility-project-check-result.txt.",
+      "condition": "Input profile JSON uses a valid serialization different from write_json(indent=2, ensure_ascii=False) plus newline.",
+      "consequence": "A successfully verified derivative advertises a different profile digest from the exact bundled profile consumed at runtime; consumers cannot reconcile release identity with preflight/run evidence using the claimed exact profile digest.",
+      "uncertainty": "The verifier must decide whether release profile.sha256 is intended as source-input identity only; current runtime/run docs describe the exact consumed bundled profile and no distinct source-vs-bundled identity fields exist."
+    },
+    {
+      "id": "F-2",
+      "title": "Findings gate accepts CONFIRMED lower-severity findings without the required counterexample",
+      "severity": "medium",
+      "evidence": "skills/qore-review/references/findings.md:18 requires counterexample support for CONFIRMED, and :26 says validation checks verdict obligations. scripts/finding-lint.mjs:40 applies that obligation only to critical/high. The saved feasibility-medium-without-counterexample.json has a medium CONFIRMED finding and no counterexample; node finding-lint.mjs INPUT --verifier=ran --json exits 0 and emits valid:true, coverage:COMPLETE, verdict:SHIP. See feasibility-medium-lint-result.txt.",
+      "condition": "A verifier packet labels a medium, low, or info finding CONFIRMED without a counterexample field.",
+      "consequence": "The final structural gate reports a contract-invalid confirmed packet as valid, losing required reproducibility support for nonblocking findings.",
+      "uncertainty": "This is a structural obligation mismatch; it does not claim the checker can prove that reproduction actually occurred, nor that a medium finding should block delivery."
+    }
+  ]
+}

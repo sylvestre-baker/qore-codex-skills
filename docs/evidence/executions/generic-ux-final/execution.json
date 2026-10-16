@@ -1,0 +1,338 @@
+{
+  "schema": "qore-run/1",
+  "id": "public-generic-ux-final-20261016-02",
+  "original_private_run_id": "generic-ux-final-frozen-20261016-fresh",
+  "candidate_identity_kind": "Current instruction-resource SHA256, not an archive",
+  "method": "ux",
+  "skill": "qore-ux-review",
+  "candidate_sha256": "550e45ab0a07a641f8ec6d3cba5677e97a8e5fd86053631a1e75c90a8f8c52d0",
+  "target": {
+    "label": "Actual anonymous QAIZEN Labs entry/readiness first-question path, retained live observation window",
+    "snapshot_sha256": "a1fc12a483491932d6339202ce023ae3c09a3faec9bf2fff7627b6bbc319c3e3"
+  },
+  "last_relevant_change": "2026-10-15T20:17:50.852920+00:00",
+  "last_relevant_change_basis": "Conservative actual initial-scope snapshot adoption boundary. No application fixes were made. This is not an inferred production deployment-change timestamp; the deployed Git revision is unknown.",
+  "environment": {
+    "id": "maintainer-macos-arm64-playwright-20261015",
+    "operator": "Maintainer-operated agent; original author; not independent or external human",
+    "host": "Codex agent on macOS arm64; Playwright 1.62.1 Chromium151.0.7922.34 Node24.19.0"
+  },
+  "profile": null,
+  "scope": {
+    "depth": "entry",
+    "state_transition_applicable": true,
+    "limits": "Anonymous English 1280x800 existing dark presentation and reduced motion; introduction/first-question/help/Back only."
+  },
+  "required_phases": [
+    "scope",
+    "browser",
+    "state_transition",
+    "freshness",
+    "verdict"
+  ],
+  "phases": [
+    {
+      "id": "scope",
+      "actor_id": "maintainer-operated-ux-agent",
+      "status": "PASS",
+      "artifacts": [
+        "phases/scope.json"
+      ]
+    },
+    {
+      "id": "browser",
+      "actor_id": "maintainer-operated-ux-agent",
+      "status": "PASS",
+      "artifacts": [
+        "phases/browser.json"
+      ]
+    },
+    {
+      "id": "state_transition",
+      "actor_id": "maintainer-operated-ux-agent",
+      "status": "PASS",
+      "artifacts": [
+        "phases/state_transition.json"
+      ]
+    },
+    {
+      "id": "freshness",
+      "actor_id": "maintainer-operated-ux-agent",
+      "status": "PASS",
+      "artifacts": [
+        "phases/freshness.json"
+      ]
+    },
+    {
+      "id": "verdict",
+      "actor_id": "maintainer-operated-ux-agent",
+      "status": "PASS",
+      "artifacts": [
+        "phases/verdict.json"
+      ]
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "phases/scope.json",
+      "sha256": "89967114a01756bb425480b03f90c0567a3ee02bfb4d3561ddb427d696b6038a",
+      "kind": "execution",
+      "candidate_sha256": "550e45ab0a07a641f8ec6d3cba5677e97a8e5fd86053631a1e75c90a8f8c52d0",
+      "target_snapshot_sha256": "a1fc12a483491932d6339202ce023ae3c09a3faec9bf2fff7627b6bbc319c3e3",
+      "observed_at": "2026-10-15T20:17:50.885595+00:00"
+    },
+    {
+      "path": "phases/browser.json",
+      "sha256": "9b17833ce1abbe2e7130a485fe3a66d11e1ef01f6f23fb1fc8443d70eb0d55a4",
+      "kind": "execution",
+      "candidate_sha256": "550e45ab0a07a641f8ec6d3cba5677e97a8e5fd86053631a1e75c90a8f8c52d0",
+      "target_snapshot_sha256": "a1fc12a483491932d6339202ce023ae3c09a3faec9bf2fff7627b6bbc319c3e3",
+      "observed_at": "2026-10-15T20:18:06.838Z"
+    },
+    {
+      "path": "phases/state_transition.json",
+      "sha256": "58e288f19aff123319c26afe4cc79b654d5212c67a86589039df70dfa15d6d34",
+      "kind": "execution",
+      "candidate_sha256": "550e45ab0a07a641f8ec6d3cba5677e97a8e5fd86053631a1e75c90a8f8c52d0",
+      "target_snapshot_sha256": "a1fc12a483491932d6339202ce023ae3c09a3faec9bf2fff7627b6bbc319c3e3",
+      "observed_at": "2026-10-15T20:18:05.117Z"
+    },
+    {
+      "path": "phases/freshness.json",
+      "sha256": "994eced80c8a4b9aaf7a2f160c17df901acef63ca7243e6277be52debd505e92",
+      "kind": "execution",
+      "candidate_sha256": "550e45ab0a07a641f8ec6d3cba5677e97a8e5fd86053631a1e75c90a8f8c52d0",
+      "target_snapshot_sha256": "a1fc12a483491932d6339202ce023ae3c09a3faec9bf2fff7627b6bbc319c3e3",
+      "observed_at": "2026-10-15T20:19:29.599062+00:00"
+    },
+    {
+      "path": "phases/verdict.json",
+      "sha256": "5e55c05d66191ac0ffdd8c606250bd99e790784b67c87669ae73dede6fe5dc83",
+      "kind": "execution",
+      "candidate_sha256": "550e45ab0a07a641f8ec6d3cba5677e97a8e5fd86053631a1e75c90a8f8c52d0",
+      "target_snapshot_sha256": "a1fc12a483491932d6339202ce023ae3c09a3faec9bf2fff7627b6bbc319c3e3",
+      "observed_at": "2026-10-15T20:19:29.626204+00:00"
+    },
+    {
+      "path": "loop.json",
+      "sha256": "a120a732c73cabe2d53bb0db07276476f9e70f6df1637802eeb5093a213bacec",
+      "kind": "source"
+    },
+    {
+      "path": "candidate-binding.json",
+      "sha256": "65c404ea31ae16408d186079dae80cfd0a26316368d356ab6bdaae1e2e9dc5b2",
+      "kind": "source"
+    },
+    {
+      "path": "gate-assertions.json",
+      "sha256": "81779a43a5f356d8548fc2b3495fc579a2d51ec8a407c4ad166d47cb1fc26071",
+      "kind": "source"
+    },
+    {
+      "path": "capability-matrix.json",
+      "sha256": "13d8148f04f30123b43becbc2862c628557d605ee28b897522edf19db427f91c",
+      "kind": "source"
+    },
+    {
+      "path": "freshness.json",
+      "sha256": "79e9a828d81adc61080f26e0ab74ce2a64d97dd50d0cd29832c00751c84c52ff",
+      "kind": "source"
+    },
+    {
+      "path": "initial-scope.json",
+      "sha256": "f8c12fbac62af7e507557d6a4195a01dc6ecf029089e0c2ec40c97456eb30569",
+      "kind": "source"
+    },
+    {
+      "path": "commands.json",
+      "sha256": "9c3f2a60c0620e215a87ecd0053d4eafe2026330ad8bcd96dea32349127cbe1a",
+      "kind": "source"
+    },
+    {
+      "path": "visual-inspection.json",
+      "sha256": "d470a3ae3c6db6139df73b3d5df9a04079558226a5ac02272bf8a3fa83bdf877",
+      "kind": "source"
+    },
+    {
+      "path": "browser-events.json",
+      "sha256": "91512721426394e4f92ad8e6f89a73597ebafe5dcb218e63e4fc981edb506156",
+      "kind": "source"
+    },
+    {
+      "path": "depth.json",
+      "sha256": "2db2c9f3cc705993ccec934b02764df4c0c0e7ec4b133f37d607ed96aff21f83",
+      "kind": "source"
+    },
+    {
+      "path": "viewport-observations.json",
+      "sha256": "54bc4f40754a45839000c278b3a64238606c0bae9eb92d38dba1d1381359fb81",
+      "kind": "source"
+    },
+    {
+      "path": "depth-lint.json",
+      "sha256": "726c050f045fe420d6bbb1e8bf220ba595b6b46d80c98de8f7bb80be1f92e143",
+      "kind": "source"
+    },
+    {
+      "path": "live-target-snapshot.json",
+      "sha256": "a1fc12a483491932d6339202ce023ae3c09a3faec9bf2fff7627b6bbc319c3e3",
+      "kind": "source"
+    },
+    {
+      "path": "browser-result.json",
+      "sha256": "a62097892998a440eb1aced906ccb66b6958af7c975e23cecc610bd09c43ce59",
+      "kind": "source"
+    },
+    {
+      "path": "stop-result.json",
+      "sha256": "7a172338d126ec5d2afb05fb2cbfe58a094918380694b4b4ba5a1cb75eefbb6c",
+      "kind": "source"
+    },
+    {
+      "path": "ssr.json",
+      "sha256": "cf4a73f98e7826c2de7fed4b320ff58ab51c7ef629be2fd5e81c1b5831acd308",
+      "kind": "source"
+    },
+    {
+      "path": "screenshots/g3-viewport-summary-focused.png",
+      "sha256": "71793c2396406bf0825ef52839db53ac6dffc4b25abb73db3de0054e206ffa5d",
+      "kind": "presentation"
+    },
+    {
+      "path": "screenshots/g3-viewport-restored.png",
+      "sha256": "48f552f87a00e7da4a627c814da46dfefd68f28f52d461000bb3cc2faaec5300",
+      "kind": "presentation"
+    },
+    {
+      "path": "screenshots/g3-viewport-help-expanded.png",
+      "sha256": "db7c4652540466eafee9ed9334f57b8bfadb553315998aafbd5bb455586b871f",
+      "kind": "presentation"
+    },
+    {
+      "path": "screenshots/g3-viewport-intro.png",
+      "sha256": "7194bffcd2abefcc12a8c57d578477838c9c9064a202e1be7037b5aa15b2c11d",
+      "kind": "presentation"
+    },
+    {
+      "path": "screenshots/g3-ssr-without-js-i1.png",
+      "sha256": "e7222d5fc5d2d5c33dc03cbcd8ce2b95ff9e637d52573acdfe1a773db307b8a4",
+      "kind": "presentation"
+    },
+    {
+      "path": "screenshots/g0-entry-i1.png",
+      "sha256": "fb8680b7756f9825c717076dc5cb91199d53126a3855beb1f1b618978102fc6b",
+      "kind": "presentation"
+    },
+    {
+      "path": "dom/g0-entry-i1.dom.json",
+      "sha256": "aadd4562f5ed526b47c587556e2d9a0df0d7706c18bb6686b88cfff304b8bdd1",
+      "kind": "source"
+    },
+    {
+      "path": "dom/g2-route-pending-i1.dom.json",
+      "sha256": "5534d8bf33369be62e918fa1cac34f66eaba4dd19be5db881b3f22b6bb1f33a9",
+      "kind": "source"
+    },
+    {
+      "path": "dom/g1-direct-reload-i1.dom.json",
+      "sha256": "0827473bf0dce573c8fa1c398d33543c969365028d0885d505c73da34607ba9f",
+      "kind": "source"
+    },
+    {
+      "path": "dom/g0-readiness-resolved-i1.dom.json",
+      "sha256": "6783c18bb1b2ac29642b3446efdbb8e395ddae6a93fc736ea8b78038fd244907",
+      "kind": "source"
+    },
+    {
+      "path": "dom/g2-help-closed-keyboard-i1.dom.json",
+      "sha256": "546167ef40eff0254885cc9622529691e7c8d78a079d017e5ed12cc6e773fa86",
+      "kind": "source"
+    },
+    {
+      "path": "dom/g5-summary-keyboard-focus-i1.dom.json",
+      "sha256": "4a23908fd1ee9b33a064c32bd97403b3d96a076f68bac026387bab4f13645e29",
+      "kind": "source"
+    },
+    {
+      "path": "dom/g5-radio-keyboard-focus-i1.dom.json",
+      "sha256": "b5661616185e206c0e37de527ff3db7c2dcceaf09b81078ffab6a13d08308c87",
+      "kind": "source"
+    },
+    {
+      "path": "dom/g5-intro-restored-focus-i1.dom.json",
+      "sha256": "8dbdf8861798d5e2c941428ad69699c8a9528b69c23ddfc12044cf989d8db744",
+      "kind": "source"
+    },
+    {
+      "path": "dom/g2-help-expanded-keyboard-i1.dom.json",
+      "sha256": "cb0a568ef524e0575c6e45987de485409c5ee7a768201e2239239abb020e45f7",
+      "kind": "source"
+    },
+    {
+      "path": "dom/g6-repeated-back-i1.dom.json",
+      "sha256": "311208b98331800154cd6b322dd81f132036333886e5c988d4475720a7724b93",
+      "kind": "source"
+    },
+    {
+      "path": "dom/g2-question-resolved-i1.dom.json",
+      "sha256": "6cc8f1f664abfc12751ade25ede0a8a0d524e0a70ea5f95f0f2eb5bd9c02a26a",
+      "kind": "source"
+    },
+    {
+      "path": "dom/g6-repeated-question-i1.dom.json",
+      "sha256": "a17116b5bf1dc2db02d5b9f5e59b07e10a56f8faa216f704609061f7bf7c1eeb",
+      "kind": "source"
+    }
+  ],
+  "commands": [
+    {
+      "argv": [
+        "<NODE>",
+        "scripts/depth-lint.mjs",
+        "<PRIVATE_EVIDENCE_ROOT>/generic-ux-final/depth.json"
+      ],
+      "exit_code": 0,
+      "artifact": "depth-lint.json",
+      "argv_representation": "Redacted display; logical placeholders were not literally passed."
+    },
+    {
+      "argv": [
+        "<NODE>",
+        "scripts/stop-rule.mjs",
+        "<PRIVATE_EVIDENCE_ROOT>/generic-ux-final/loop.json"
+      ],
+      "exit_code": 0,
+      "artifact": "stop-result.json",
+      "argv_representation": "Redacted display; logical placeholders were not literally passed."
+    },
+    {
+      "argv": [
+        "<NODE>",
+        "<PRIVATE_EVIDENCE_ROOT>/generic-ux-final/drive.mjs"
+      ],
+      "exit_code": 0,
+      "artifact": "browser-result.json",
+      "argv_representation": "Redacted display; logical placeholders were not literally passed."
+    },
+    {
+      "argv": [
+        "<NODE>",
+        "<PRIVATE_EVIDENCE_ROOT>/generic-ux-final/viewport.mjs"
+      ],
+      "exit_code": 0,
+      "artifact": "viewport-observations.json",
+      "argv_representation": "Redacted display; logical placeholders were not literally passed."
+    }
+  ],
+  "limitations": [
+    "Identity is the exact current 11-resource instruction snapshot, not an archive. A later archive requires explicit byte comparisons; no historical proof is reused.",
+    "No independent evaluation is claimed.",
+    "Deployed Git/change time is unknown. Local source context is not asserted to be the deployed revision.",
+    "Two anonymous-event POSTs were deliberately blocked and emitted console errors; these are not hidden or called application exceptions.",
+    "No answers/results, contact/email/booking submission, other viewports/locales, instrumented accessibility conformance or Core Web Vitals were tested.",
+    "Command argv use disclosed placeholders for private prefixes and are redacted displays, not literal invocation strings.",
+    "FullPage/video capture resizing artifacts were investigated with separately inspected true viewport screenshots."
+  ],
+  "coverage": "COMPLETE",
+  "review_result": "SHIP within the declared scope only"
+}

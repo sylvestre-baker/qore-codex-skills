@@ -1,0 +1,12 @@
+{
+  "in_scope": [
+    "constructor"
+  ],
+  "iterations": [
+    {
+      "n": 1,
+      "scores": {},
+      "measured": []
+    }
+  ]
+}

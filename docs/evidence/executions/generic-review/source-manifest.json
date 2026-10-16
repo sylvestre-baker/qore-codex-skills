@@ -1,0 +1,217 @@
+[
+  {
+    "mtime": "2026-10-15T19:44:15.186783+00:00",
+    "path": ".agents/skills/qore-review/SKILL.md",
+    "sha256": "aae83b4105dd89387c7eac31df3c789326def9c0b05dccd4a3d2cdab65732a97"
+  },
+  {
+    "mtime": "2026-10-15T19:44:15.186783+00:00",
+    "path": ".agents/skills/qore-review/agents/openai.yaml",
+    "sha256": "6c689fd93445ab3edcb6b88320e7680ee37c746bca5635e8c406304b081250ed"
+  },
+  {
+    "mtime": "2026-10-15T19:44:15.186783+00:00",
+    "path": ".agents/skills/qore-review/references/findings.md",
+    "sha256": "79b2b5f52e88761331c01b92af9b492ef1888c6c20a0af1b94a8bead7aa2d6cb"
+  },
+  {
+    "mtime": "2026-10-15T19:44:15.186783+00:00",
+    "path": ".agents/skills/qore-review/references/project-profile.md",
+    "sha256": "5d3b69aac18f83a634f4c57c214cc1f53fa186c03c536adcefd4c905a8767c8d"
+  },
+  {
+    "mtime": "2026-10-15T19:44:15.186783+00:00",
+    "path": ".agents/skills/qore-review/references/protocol.md",
+    "sha256": "e27e0050fdf4d75d2840dd257b9a759f1f48d459ef540990cd3aed5528c5f340"
+  },
+  {
+    "mtime": "2026-10-15T19:44:15.190783+00:00",
+    "path": ".agents/skills/qore-review/references/release.json",
+    "sha256": "0d0a62e137572e9c30dfae9b3a0756e6a6dd54c473f99c5f583379812153ecf6"
+  },
+  {
+    "mtime": "2026-10-15T19:44:15.186783+00:00",
+    "path": ".agents/skills/qore-review/references/run-evidence.md",
+    "sha256": "fbdf433ef8b3e972f97bed5fdec4990cf3b49535bf63120c729a7daf4af71746"
+  },
+  {
+    "mtime": "2026-10-15T19:44:15.186783+00:00",
+    "path": ".agents/skills/qore-review/scripts/finding-lint.mjs",
+    "sha256": "d0cc6809b750d9e52015b0448f18e3f291b979674b1350156d2444e607791ee7"
+  },
+  {
+    "mtime": "2026-10-15T19:44:15.186783+00:00",
+    "path": ".agents/skills/qore-review/scripts/project-check.py",
+    "sha256": "3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd"
+  },
+  {
+    "mtime": "2026-10-15T19:44:15.186783+00:00",
+    "path": ".agents/skills/qore-review/scripts/redact-for-verifier.mjs",
+    "sha256": "dc249524c749ad5b511aef0a2cf08b4cfd5c47c1e0de4fd41c5c70746b471083"
+  },
+  {
+    "mtime": "2026-10-15T19:44:15.186783+00:00",
+    "path": ".agents/skills/qore-review/scripts/run-check.py",
+    "sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa"
+  },
+  {
+    "mtime": "2026-10-15T19:44:00.189783+00:00",
+    "path": "CONTRIBUTING.md",
+    "sha256": "87ef55fe9e213e5bd9b0f3178849b0a9ac88ec1c07634053c9989c0cbbde7638"
+  },
+  {
+    "mtime": "2026-10-15T19:44:00.189783+00:00",
+    "path": "README.md",
+    "sha256": "46205c1947e1e35b1f67d12184dbfb921381c781d9eda3616e8251d187725bac"
+  },
+  {
+    "mtime": "2026-10-15T19:44:00.197783+00:00",
+    "path": "examples/validator-hardening.md",
+    "sha256": "6f25b2edcd6d0826b12fbb47a99fc4162a1089eef71eaf7f16ea2cb7a8239a87"
+  },
+  {
+    "mtime": "2026-10-15T19:44:00.198783+00:00",
+    "path": "qore.json",
+    "sha256": "948b2784fa7970cf90a25c338a29067b13d8b4476f666d712a5eb95fc6f641c8"
+  },
+  {
+    "mtime": "2026-10-15T19:44:00.198783+00:00",
+    "path": "schemas/qore-run.schema.json",
+    "sha256": "540acd397ee09a070eb19b189f7baadd3ce55337fdb50137f11931e7ef246651"
+  },
+  {
+    "mtime": "2026-10-15T19:44:00.199783+00:00",
+    "path": "skills/qore-review/SKILL.md",
+    "sha256": "aae83b4105dd89387c7eac31df3c789326def9c0b05dccd4a3d2cdab65732a97"
+  },
+  {
+    "mtime": "2026-10-15T19:44:00.199783+00:00",
+    "path": "skills/qore-review/agents/openai.yaml",
+    "sha256": "6c689fd93445ab3edcb6b88320e7680ee37c746bca5635e8c406304b081250ed"
+  },
+  {
+    "mtime": "2026-10-15T19:44:00.199783+00:00",
+    "path": "skills/qore-review/references/findings.md",
+    "sha256": "79b2b5f52e88761331c01b92af9b492ef1888c6c20a0af1b94a8bead7aa2d6cb"
+  },
+  {
+    "mtime": "2026-10-15T19:44:00.199783+00:00",
+    "path": "skills/qore-review/references/project-profile.md",
+    "sha256": "5d3b69aac18f83a634f4c57c214cc1f53fa186c03c536adcefd4c905a8767c8d"
+  },
+  {
+    "mtime": "2026-10-15T19:44:00.199783+00:00",
+    "path": "skills/qore-review/references/protocol.md",
+    "sha256": "e27e0050fdf4d75d2840dd257b9a759f1f48d459ef540990cd3aed5528c5f340"
+  },
+  {
+    "mtime": "2026-10-15T19:44:00.199783+00:00",
+    "path": "skills/qore-review/references/release.json",
+    "sha256": "0d0a62e137572e9c30dfae9b3a0756e6a6dd54c473f99c5f583379812153ecf6"
+  },
+  {
+    "mtime": "2026-10-15T19:44:00.199783+00:00",
+    "path": "skills/qore-review/references/run-evidence.md",
+    "sha256": "fbdf433ef8b3e972f97bed5fdec4990cf3b49535bf63120c729a7daf4af71746"
+  },
+  {
+    "mtime": "2026-10-15T19:44:00.199783+00:00",
+    "path": "skills/qore-review/scripts/finding-lint.mjs",
+    "sha256": "d0cc6809b750d9e52015b0448f18e3f291b979674b1350156d2444e607791ee7"
+  },
+  {
+    "mtime": "2026-10-15T19:44:00.199783+00:00",
+    "path": "skills/qore-review/scripts/project-check.py",
+    "sha256": "3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd"
+  },
+  {
+    "mtime": "2026-10-15T19:44:00.199783+00:00",
+    "path": "skills/qore-review/scripts/redact-for-verifier.mjs",
+    "sha256": "dc249524c749ad5b511aef0a2cf08b4cfd5c47c1e0de4fd41c5c70746b471083"
+  },
+  {
+    "mtime": "2026-10-15T19:44:00.199783+00:00",
+    "path": "skills/qore-review/scripts/run-check.py",
+    "sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa"
+  },
+  {
+    "mtime": "2026-10-15T19:44:00.200783+00:00",
+    "path": "tests/fixtures/project-alternate.json",
+    "sha256": "830dc3c50369c21f523a1c68b188f3013b40c439ea362a1e97c45a38a89a79c5"
+  },
+  {
+    "mtime": "2026-10-15T19:44:00.200783+00:00",
+    "path": "tests/fixtures/validators/empty-object.json",
+    "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+  },
+  {
+    "mtime": "2026-10-15T19:44:00.200783+00:00",
+    "path": "tests/fixtures/validators/null.json",
+    "sha256": "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed"
+  },
+  {
+    "mtime": "2026-10-15T19:44:00.200783+00:00",
+    "path": "tests/fixtures/validators/truncated.json",
+    "sha256": "5f5c45efee43be1915fcfa9ae978fec3302e2bb70137526cc5f2a7e6573e1f7b"
+  },
+  {
+    "mtime": "2026-10-15T19:44:00.200783+00:00",
+    "path": "tests/fixtures/validators/valid-findings.json",
+    "sha256": "883889cef1ccb804667246acead1736f16b2472135bd400b27d8ea323ede00a4"
+  },
+  {
+    "mtime": "2026-10-15T19:44:00.200783+00:00",
+    "path": "tests/fixtures/validators/valid-spec.md",
+    "sha256": "d273b8da517f326b0f9e3bee7ac09895ffc3c96c86bd926f1449a1b0254e0dc7"
+  },
+  {
+    "mtime": "2026-10-15T19:44:00.200783+00:00",
+    "path": "tests/fixtures/validators/valid-ux.json",
+    "sha256": "56bc9807a45cec509a7d12fbff34381a2d8226cf5b933280220be7bf56261245"
+  },
+  {
+    "mtime": "2026-10-15T19:44:00.200783+00:00",
+    "path": "tests/fixtures/web/alternate-actions.json",
+    "sha256": "01d12ee086d239dc8f5fe802d090fba6eb8e862fd281cb6dbf73483b6263a9ab"
+  },
+  {
+    "mtime": "2026-10-15T19:44:00.200783+00:00",
+    "path": "tests/fixtures/web/alternate.html",
+    "sha256": "9782b494fdbb156515518d4bb096a5c057385f44d9a6983c352080626e879a22"
+  },
+  {
+    "mtime": "2026-10-15T19:44:00.201783+00:00",
+    "path": "tests/fixtures/web/index.html",
+    "sha256": "c0b51d87d81a36f21608139d7a4fbf07b9fe1d6f94b1fa0bb0599b5f74fe91f5"
+  },
+  {
+    "mtime": "2026-10-15T19:44:00.201783+00:00",
+    "path": "tests/fixtures/web/ping.json",
+    "sha256": "b637c8fcaf1d33dfbc53887d00214034900ef46e83faca65758f6bc2b56ed43d"
+  },
+  {
+    "mtime": "2026-10-15T19:44:00.201783+00:00",
+    "path": "tests/fixtures/web/primary-actions.json",
+    "sha256": "3342907cd646a04a21ffc9ceb85e9359817b6b8220944030c27df66f5b9b5002"
+  },
+  {
+    "mtime": "2026-10-15T19:44:00.201783+00:00",
+    "path": "tests/test_package.py",
+    "sha256": "7e94e9a81f4b6e6b7f14d4f2432cc066b9b9b180afa4b96eb1c58c2d4957ed74"
+  },
+  {
+    "mtime": "2026-10-15T19:44:00.201783+00:00",
+    "path": "tests/test_run_contract.py",
+    "sha256": "f671c3ec3ca69ad155c54823ef89eb9475fd847b65b762094ad937030e7f297f"
+  },
+  {
+    "mtime": "2026-10-15T19:44:00.201783+00:00",
+    "path": "tests/test_validators.py",
+    "sha256": "b91ab5195a1e7380747c618a17f885b56dc1cddf809ff23e065c3062fc477f39"
+  },
+  {
+    "mtime": "2026-10-15T19:44:00.201783+00:00",
+    "path": "tools/run_contract.py",
+    "sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa"
+  }
+]

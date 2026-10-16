@@ -1,0 +1,43 @@
+{
+  "schema": "qore-focused-profile-use/1",
+  "observed_at": "2026-10-15T20:17:53.242892+00:00",
+  "label": "Synthetic focused derivative probe; not an existing product or full UX audit",
+  "candidate_identity_kind": "Current generic UX instruction-resource snapshot, not an archive",
+  "candidate_instruction_snapshot_sha256": "550e45ab0a07a641f8ec6d3cba5677e97a8e5fd86053631a1e75c90a8f8c52d0",
+  "derivative_manifest_sha256": "be59fcc358cd0da3e2174a4f80abb83a904c55c518216e8e7d0824e1bab7db61",
+  "skill": "qore-ux-review-qore-contrast",
+  "profile": {
+    "id": "qore-contrast",
+    "version": "0.1.0",
+    "sha256": "f72394c2ebb80cb6da41b33a088d56fbd24b4577f71bc2b022d0ef4bb36bfb88"
+  },
+  "consumed_facts": [
+    {
+      "fact": "surfaces.web.entry_url",
+      "value": "http://127.0.0.1:8765/alternate.html",
+      "source_id": "project",
+      "current_source_sha256": "830dc3c50369c21f523a1c68b188f3013b40c439ea362a1e97c45a38a89a79c5",
+      "effect": "Selected the actual browser navigation URL"
+    },
+    {
+      "fact": "surfaces.web.required_state",
+      "value": "Alternate resolved synthetic state.",
+      "source_id": "project",
+      "current_source_sha256": "830dc3c50369c21f523a1c68b188f3013b40c439ea362a1e97c45a38a89a79c5",
+      "effect": "Selected the browser visibility assertion after activating the fixture control"
+    }
+  ],
+  "invariants_selected": [
+    {
+      "id": "contrast-ux",
+      "statement": "The alternate synthetic route must reach its alternate resolved state.",
+      "source": "project",
+      "applies_to": [
+        "ux"
+      ]
+    }
+  ],
+  "served_fixture_sha256": "9782b494fdbb156515518d4bb096a5c057385f44d9a6983c352080626e879a22",
+  "operator_input": "invocation.txt",
+  "unused_commands": []
+}

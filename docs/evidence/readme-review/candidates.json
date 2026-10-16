@@ -1,0 +1,28 @@
+{
+  "findings": [
+    {
+      "id": "RN-001",
+      "title": "First-review prerequisites omit the Bash required by bundled tests",
+      "severity": "low",
+      "evidence": "README.md:23 lists python3, node and a POSIX shell. tests/test_validators.py:20-21 explicitly launches bash for spec-lint.sh; skills/qore-plan/SKILL.md:14 likewise prescribes Bash. setup-posix-without-bash.log records exact README setup exit 0 with only python3, node, sh and mktemp exposed on PATH. posix-without-bash.log records 35 tests, 7 errors, FileNotFoundError for bash; normal-validator-regressions.log records the same 35 tests passing with Bash available.",
+      "triggering_reader_failure": "A reader with the stated runtimes and a POSIX shell but no Bash completes setup, then cannot run the bundled validator regressions used by the suggested first review or the planning shell validator.",
+      "minimal_remedy": "State Bash as a prerequisite for the bundled first-review tests and planning validator, or use the Node entry point directly and remove the Bash dependency from those tests."
+    },
+    {
+      "id": "RN-002",
+      "title": "Update comparison labels a locally added file as not a local adaptation",
+      "severity": "low",
+      "evidence": "docs/profiles.md:53-60 directs readers to compare local adaptations before migration. tools/qore.py:278-283 derives local_adaptation only when the path is in the old manifest baseline. compare-added-file.log records an installed-only references/local-policy.md with installed_sha256=219580cfb998e8558fd4cfb4f6c5e9fe5b999e1a02dcf7c5bb2445186d2d5ab7, candidate_sha256=null and local_adaptation=false.",
+      "triggering_reader_failure": "A reader adds a local policy file to an installed skill and uses the documented comparison to choose what to preserve in a manual update. The output identifies the changed path but its adaptation flag excludes that local addition, inviting an incorrect preservation decision if the flag is used to select adaptations. No automatic overwrite or data loss was observed.",
+      "minimal_remedy": "Mark installed-only files absent from the baseline as local additions/adaptations, or emit a separate explicit local_addition field and document that it must also be preserved."
+    },
+    {
+      "id": "RI-001",
+      "title": "Release manifest replaces recorded browser-observation origins with first-party",
+      "severity": "low",
+      "evidence": "tools/qore.py:58-60 hard-codes origin=first-party for every inventory item; tools/qore.py:75-78 uses that inventory for the release manifest. schemas/qore-release.schema.json:58-60 permits only first-party. Fresh build reproduced archive SHA bafd0da80667a00f9e6bd2f9e726eaa64d61ff42d026b9f58eb857df15bf40f8. origin-boundary.json records 12 same-path, same-digest resources whose release-rights.json origin is Qaizen-public-observation but whose generated manifest origin is first-party. PROVENANCE.md:13 describes digest-bound origin records; docs/contracts.md:10 describes redistribution information in the release contract.",
+      "triggering_reader_failure": "A downstream reader or inventory consumer following the advertised release manifest to classify the bundled browser evidence receives a different origin from the reviewed rights record, losing the distinction between original authored implementation and an observed existing website. A successful build/verify does not expose the mismatch. This is a provenance metadata defect, not evidence that redistribution is unauthorized.",
+      "minimal_remedy": "Preserve each reviewed resource origin when generating the release inventory, permit those explicit origins in the release schema, and retain first-party defaults only for generated first-party metadata. Alternatively explicitly define the manifest field as a different concept and expose the reviewed origin separately so consumers can distinguish them."
+    }
+  ]
+}

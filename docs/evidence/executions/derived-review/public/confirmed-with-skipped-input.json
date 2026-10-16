@@ -1,0 +1,12 @@
+{
+  "findings": [
+    {
+      "id": "PROBE-HIGH",
+      "title": "Synthetic high severity validator input",
+      "severity": "high",
+      "verdict": "CONFIRMED",
+      "evidence": "examples/validator-hardening.md:A02",
+      "counterexample": "Synthetic input only; not an independently confirmed finding."
+    }
+  ]
+}

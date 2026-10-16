@@ -1,0 +1,1 @@
+{"findings": [{"id": "probe-medium", "title": "Candidate", "severity": "medium", "verdict": "CONFIRMED", "evidence": "src/example.py:12"}]}

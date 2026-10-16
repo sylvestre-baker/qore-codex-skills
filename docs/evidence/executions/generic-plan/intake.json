@@ -1,0 +1,32 @@
+{
+  "mode": "Workflow",
+  "deciding_artifact": "examples/validator-hardening.md",
+  "requested_task": "Plan the next safe improvement to public Qore validator hardening from its existing tutorial specification and current bundled implementation/tests; do not implement.",
+  "target_root": "<CANDIDATE_B>",
+  "candidate_archive_sha256": "2963c43e98803354932e406627d9e239064fbe2899745a7e093b7d4154fa56d1",
+  "target_snapshot_sha256": "dec34e19b7b3036c213299a1f98b05fec1709212fb156eabf9928682024ae2cb",
+  "started_at": "2026-10-15T19:44:08.880507+00:00",
+  "budget_minutes": 18,
+  "worker_budget_seconds": 120,
+  "round_limit": 3,
+  "workflow_rounds": [
+    "Analyze",
+    "Cross-examine",
+    "Adjudicate"
+  ],
+  "concurrency": "One worker at a time; parent and browser evidence agent occupy other active contexts.",
+  "role_initial_reports_shared_before_barrier": false,
+  "instructions": {
+    "skills/qore-plan/SKILL.md": "6a0b7a03d888595e6b9e76bc16644a313a187df91622fd5245d4b2253bdf83da",
+    "skills/qore-plan/references/project-profile.md": "16c5ff087c83b7503b23d5d94726834462dd4fd73d78a5380cf85135fa85b0b3",
+    "skills/qore-plan/references/protocol.md": "83f92490a5601b83fc6eaa21861344e35cd04a3ac7edb56b98cd2eb0ecfea84b",
+    "skills/qore-plan/references/roles.md": "cc8060c7c852c143b9671af4fc0176b9c5068f338c19b2556b6ff494c0f0d318",
+    "skills/qore-plan/references/run-evidence.md": "35cd6dc6d3e1177bbae96e5b9e829ed1aa55901747c856f4db20e946421f163d",
+    "skills/qore-plan/references/specification.md": "7eb06b91fca66a3ec00bda4b49b035c5e6bfe827c4624768f66a09b6ae7827a1"
+  },
+  "profile": null,
+  "limitations": [
+    "Agent execution in the current author host; this is not independent clean-environment or external-human qualification.",
+    "Planning only; no implementation, publication, install, or user-data mutation is authorized by these results."
+  ]
+}

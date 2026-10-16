@@ -1,0 +1,6 @@
+{
+  "unchanged": true,
+  "changed": [],
+  "observed_at": "2026-10-15T19:59:13.840250+00:00",
+  "procedure": "Rehash every file in initial snapshot manifest after verifier and final validation"
+}

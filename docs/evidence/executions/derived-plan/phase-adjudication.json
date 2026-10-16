@@ -1,0 +1,53 @@
+{
+  "qore_evidence": {
+    "candidate_sha256": "19f48167f040ca42c60b0df49a324c6d3aeb3de3014486017668f1263ccd6b35",
+    "target_snapshot_sha256": "dec34e19b7b3036c213299a1f98b05fec1709212fb156eabf9928682024ae2cb",
+    "observed_at": "2026-10-15T20:13:15.203447+00:00",
+    "phase_id": "adjudication"
+  },
+  "payload": {
+    "observed_at": "2026-10-15T20:13:15.203447+00:00",
+    "selected_decisions": [
+      "D4 exact raw verifier grammar",
+      "D5 preserve adaptations through fresh staging",
+      "D6 retain packet/result/exit contracts",
+      "D7 freshness and actual execution remain separate",
+      "D8 defer broader recovery/partial-batch redesign"
+    ],
+    "basis": "Fresh independent malformed-token probes plus local parser control flow establish a bounded grammar mismatch; UX and QA independent precedence probes require usage stderr, not exit 2 alone.",
+    "evidence": [
+      "product-analysis.md",
+      "architecture-analysis.md",
+      "ux-analysis.md",
+      "delivery-analysis.md",
+      "qa-analysis.md",
+      "product-cross.md",
+      "architecture-cross.md",
+      "ux-cross.md",
+      "delivery-cross.md",
+      "qa-cross.md",
+      "ux-commands.json",
+      "qa-cross-commands.json",
+      "profile-use.json"
+    ],
+    "retained_dissent": [
+      "UX recovery-first proposal is limited to directly affected documentation/channel acceptance; broad runtime wording is deferred.",
+      "Partial-batch/global-flag semantics remain an unresolved separate change."
+    ],
+    "open": [
+      "External caller compatibility",
+      "Future corrected-candidate regression/build verification",
+      "Partial empty-batch semantics",
+      "Human comprehension"
+    ],
+    "implementation_authorized_by_this_result": false
+  },
+  "public_transformation": {
+    "public_artifact_id": "public-derived-plan-20261015-01:phase-adjudication",
+    "source_artifact_id": "qore-private:executions/derived-plan/phase-adjudication.json",
+    "source_sha256": "45ea370c532a4a0d7b4910da032eab20ca97816164ecadbff900bf4373ea901a",
+    "exported_at": "2026-10-15T20:17:52.021153+00:00",
+    "original_observation_time_preserved": true,
+    "notice": "Sanitized derivative of actual phase reports; export is not a new execution."
+  }
+}

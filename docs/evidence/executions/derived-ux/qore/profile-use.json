@@ -1,0 +1,41 @@
+{
+  "schema": "qore-focused-profile-use/1",
+  "observed_at": "2026-10-15T19:46:40.689617+00:00",
+  "label": "Synthetic focused derivative probe; not an existing product or full UX audit",
+  "candidate_archive_sha256": "2963c43e98803354932e406627d9e239064fbe2899745a7e093b7d4154fa56d1",
+  "skill": "qore-ux-review-qore",
+  "profile": {
+    "id": "qore",
+    "version": "0.1.0",
+    "sha256": "da03026c9f73a7771cc35aaaff898a3b970fed75362ebfd0c670068d6b23b3d9"
+  },
+  "consumed_facts": [
+    {
+      "fact": "surfaces.web.entry_url",
+      "value": "http://127.0.0.1:8765/index.html",
+      "source_id": "project",
+      "current_source_sha256": "948b2784fa7970cf90a25c338a29067b13d8b4476f666d712a5eb95fc6f641c8",
+      "effect": "Selected the actual browser navigation URL"
+    },
+    {
+      "fact": "surfaces.web.required_state",
+      "value": "Resolved synthetic state.",
+      "source_id": "project",
+      "current_source_sha256": "948b2784fa7970cf90a25c338a29067b13d8b4476f666d712a5eb95fc6f641c8",
+      "effect": "Selected the browser visibility assertion after activating the fixture control"
+    }
+  ],
+  "invariants_selected": [
+    {
+      "id": "observed-ux",
+      "statement": "A required browser check without fresh evidence prevents global success.",
+      "source": "project",
+      "applies_to": [
+        "ux"
+      ]
+    }
+  ],
+  "served_fixture_sha256": "c0b51d87d81a36f21608139d7a4fbf07b9fe1d6f94b1fa0bb0599b5f74fe91f5",
+  "operator_input": "invocation.txt",
+  "unused_commands": []
+}

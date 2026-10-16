@@ -1,0 +1,49 @@
+{
+  "coverage": "COMPLETE",
+  "examined_ids": [
+    "C-001",
+    "C-002",
+    "C-003",
+    "S-1",
+    "F-1",
+    "F-2"
+  ],
+  "unexamined_ids": [],
+  "reproduction_completed_at": "2026-10-15T20:07:25.001733+00:00",
+  "report_completed_at": "2026-10-15T20:08:15.666362+00:00",
+  "batches": [
+    {
+      "ids": [
+        "C-001",
+        "F-1",
+        "C-003",
+        "S-1",
+        "F-2"
+      ],
+      "priority": "medium"
+    },
+    {
+      "ids": [
+        "C-002"
+      ],
+      "priority": "low"
+    }
+  ],
+  "gaps": [
+    "Bounded verification of six filtered claims; no independent whole-target defect search.",
+    "No browser/native/external service execution.",
+    "C-001/F-1 duplicate one defect; profile JSON semantics unchanged.",
+    "S-1 requires an accepted nonstandard gate name; standard G1 missing-measurement control remains PARTIAL."
+  ],
+  "inputs": [
+    "claims.json",
+    "raw target and contract sources"
+  ],
+  "artifacts": [
+    "verifier-probe.py",
+    "verifier-results.json",
+    "verified.json",
+    "verifier-fullreport.md"
+  ],
+  "temp_root": "/tmp/qore-independent-verifier-51y5w0tg"
+}
