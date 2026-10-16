@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.2.1 - Unreleased
+## 0.2.1 - 2026-10-16
 
 - Restore 46 exact historical source artifacts to the export selection and check every execution in CI, retaining an explicit PARTIAL exception for two excluded source caches.
 - Keep unresolved critical/high findings PARTIAL/PENDING after a verifier runs; preserve confirmed blockers and original severity.
@@ -9,7 +9,7 @@
 - Report local bundled-profile adaptations and same-name personal installations, and identify the project in derivative descriptions.
 - Add a compact `build --scope skills` archive alongside the full evidence export.
 
-Historical evidence is unchanged. Current archives and redistribution attestations require maintainer review before release; this entry does not claim publication or a new complete model/browser qualification.
+Historical evidence is unchanged. The selected first-party redistribution scope is MIT, with the two historical source caches explicitly excluded. Release assets carry their own checksums and verification receipt. This corrective release does not claim new complete model/browser qualification.
 
 ## 0.2.0 — 16 October 2026
 

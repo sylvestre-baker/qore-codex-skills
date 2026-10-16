@@ -8,7 +8,7 @@ Created by [Sylvestre Franceschi](https://github.com/sylvestre-baker) at [Qaizen
 
 In one actual self-application, planning exposed a malformed verifier option that produced a structural success token. The selected correction rejects it and keeps the earlier zero-finding review visible. [See the problem, evidence, decision and limits](docs/evidence/validator-case.md).
 
-**Version 0.2.1 preparation.** Three methods, a deterministic assembler, sourced profiles and recorded executions are included. The [qualification record](docs/qualification.md) distinguishes original snapshots, corrective checks and coverage limits, including one explicit historical cache exclusion. Historical artifacts retain their original release state and identities.
+**Version 0.2.1.** Three methods, a deterministic assembler, sourced profiles and recorded executions are included. The [qualification record](docs/qualification.md) distinguishes original snapshots, corrective checks and coverage limits, including one explicit historical cache exclusion. Historical artifacts retain their original release state and identities.
 
 ## Choose your task
 
@@ -45,7 +45,7 @@ python3 tools/qore.py install --source "$qore_stage/qore-skills-0.2.1" --project
 
 The installer prints three paths under `.agents/skills/` and `"replaced": false`. It refuses an existing destination and preserves it. If you already have these local skills, use a fresh checkout or compare a newly staged candidate; see [safe updates](docs/profiles.md#update-without-overwriting).
 
-For installation without the tutorial and evidence archive, the assembler also supports `build --scope skills`; see the [compact archive guide](INSTALL.md). Both exports require a current maintainer rights review. The 0.2.1 preparation is not a published release.
+For installation without the tutorial and evidence archive, the assembler also supports `build --scope skills`; see the [compact archive guide](INSTALL.md). Download the [compact skills ZIP](https://github.com/sylvestre-baker/qore-codex-skills/releases/download/v0.2.1/qore-skills-0.2.1-skills.zip) for installation or the [full ZIP](https://github.com/sylvestre-baker/qore-codex-skills/releases/download/v0.2.1/qore-skills-0.2.1.zip) for the tutorial, sources and evidence. Check their SHA-256 digests against the release assets. The explicit rights inventory covers the selected resource bytes; changed resources require a new review.
 
 Open a **new Codex chat in this repository directory**, then use:
 

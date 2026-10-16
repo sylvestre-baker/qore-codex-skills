@@ -37,11 +37,11 @@
     },
     {
       "path": "CHANGELOG.md",
-      "sha256": "30f5ac723aeb147e7a14c3d33c0bf9f512750b470262f73a20907fe3fa0d8ccf",
+      "sha256": "3db8f8e82ef024203cc06b69ce99c778a1b846a6a96fd3ec262edb3d793319f8",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "First-party Qore code, tests, configuration or documentation in the reviewed 0.2.1 correction inventory. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
+      "basis": "First-party factual distribution documentation within the MIT correction scope confirmed by Sylvestre Franceschi on 16 October 2026. Current changes reviewed for that scope under the subsequent explicit instruction to finalize and publish v0.2.1; no third-party or client content added. Historical execution artifacts and cache exclusions are unchanged."
     },
     {
       "path": "CONTRIBUTING.md",
@@ -77,11 +77,11 @@
     },
     {
       "path": "README.md",
-      "sha256": "40704779d97aed4020ac4f13bc98eeefb050e476a949bf721ed881e879da9714",
+      "sha256": "763a68439ea924286d2eb44e09852df01f7afe755c25a99c36fd6916b52d08d6",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "First-party Qore code, tests, configuration or documentation in the reviewed 0.2.1 correction inventory. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
+      "basis": "First-party factual distribution documentation within the MIT correction scope confirmed by Sylvestre Franceschi on 16 October 2026. Current changes reviewed for that scope under the subsequent explicit instruction to finalize and publish v0.2.1; no third-party or client content added. Historical execution artifacts and cache exclusions are unchanged."
     },
     {
       "path": "docs/acceptance-evidence.md",
@@ -109,11 +109,11 @@
     },
     {
       "path": "docs/command-inventory.json",
-      "sha256": "8f0adaa1a971aa125a0e5bf69811bf326b8816df2c2383829d458dac9ef0babd",
+      "sha256": "d7b00114fd8060c3144ecda15333c4437657d7f27251cbf3f3db85612f1dc9aa",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "First-party refinement within the same Qore correction file scope whose MIT redistribution Sylvestre Franceschi confirmed on 16 October 2026. The profile compatibility correction, bounded JSON error handling, regression guards and implementation identity updates introduce no third-party or client material. Current content reviewed before updating this digest; no publication authorization is inferred."
+      "basis": "First-party factual distribution documentation within the MIT correction scope confirmed by Sylvestre Franceschi on 16 October 2026. Current changes reviewed for that scope under the subsequent explicit instruction to finalize and publish v0.2.1; no third-party or client content added. Historical execution artifacts and cache exclusions are unchanged."
     },
     {
       "path": "docs/contracts.md",
@@ -9861,19 +9861,19 @@
     },
     {
       "path": "docs/publication.md",
-      "sha256": "1a274ddcd885914c9b08f45070ffa6b14584c5ba692096f78f88c24dbfe13168",
+      "sha256": "675b9bf67a9ec1e0a8e66d37831ffef3fe2c8e2a06d8b6797c49911bb6920381",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "User-authorized public Qore 0.2.0 distribution documentation and attribution. Historical execution identities and limitations remain intact. No private application, credentials or raw trace is included."
+      "basis": "First-party factual distribution documentation within the MIT correction scope confirmed by Sylvestre Franceschi on 16 October 2026. Current changes reviewed for that scope under the subsequent explicit instruction to finalize and publish v0.2.1; no third-party or client content added. Historical execution artifacts and cache exclusions are unchanged."
     },
     {
       "path": "docs/qualification.md",
-      "sha256": "7fcecd44d87ba83e267c5f9ba8b8925d94dfa38f727c820507de7ed7a3342727",
+      "sha256": "c32df390ebb32a4e6b0414bebf04e24e5784905c3719cffce5464f2f02238f63",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "First-party Qore code, tests, configuration or documentation in the reviewed 0.2.1 correction inventory. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
+      "basis": "First-party factual distribution documentation within the MIT correction scope confirmed by Sylvestre Franceschi on 16 October 2026. Current changes reviewed for that scope under the subsequent explicit instruction to finalize and publish v0.2.1; no third-party or client content added. Historical execution artifacts and cache exclusions are unchanged."
     },
     {
       "path": "docs/showcase.md",
@@ -10013,11 +10013,11 @@
     },
     {
       "path": "showcase/index.html",
-      "sha256": "3abe24feab4e9fb5eb105c90308f6ec4287b54a4ef3d452bb1b805e9d9cbaa5c",
+      "sha256": "e4ced00b2a86e11e80399bf905c9cc67ba40908439a643b529ea9ce494be6306",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "User-authorized public Qore 0.2.0 distribution documentation and attribution. Historical execution identities and limitations remain intact. No private application, credentials or raw trace is included."
+      "basis": "First-party factual distribution documentation within the MIT correction scope confirmed by Sylvestre Franceschi on 16 October 2026. Current changes reviewed for that scope under the subsequent explicit instruction to finalize and publish v0.2.1; no third-party or client content added. Historical execution artifacts and cache exclusions are unchanged."
     },
     {
       "path": "showcase/styles.css",

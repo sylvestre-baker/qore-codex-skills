@@ -4,7 +4,7 @@ The source is now published in [sylvestre-baker/qore-codex-skills](https://githu
 
 This record separates actual executions, corrections, portability, agent evaluation and external human use. It describes an unpublished local 0.1.0 candidate. Original run identities and timestamps remain intact; a later archive is not substituted for an earlier source snapshot.
 
-## 0.2.1 corrective preparation
+## 0.2.1 corrective qualification
 
 Independent evaluation of the published 0.2.0 source identified missing exported evidence, an unresolved-high findings verdict, a home-directory Python test failure and newest-first manual inbox loss. Each defect was reproduced before correction. The new regressions exercise those cases; they do not constitute fresh complete model executions of the three methods.
 
@@ -14,7 +14,7 @@ The 46 original `.agents/` source artifacts have been selected for export with b
 
 The findings helper now retains PARTIAL/PENDING for any critical/high PLAUSIBLE finding after verification, with DO-NOT-SHIP taking precedence for a separate confirmed blocker. The assembler adds a compact installation export, derivative descriptions identify their project, runtime checks report local profile adaptations and installation reports same-name personal skills.
 
-Version 0.2.1 remains private preparation until the maintainer reviews current redistribution records and the actual archives are rebuilt and qualified. Existing publication receipts identify 0.2.0 only. No archive reproducibility result or hosted deployment is claimed for 0.2.1 by this section.
+The corrected implementation was merged in PR #2 at `4dd1638ed6a57c9ef936cb453378a132e3926622`. Its [hosted checks](https://github.com/sylvestre-baker/qore-codex-skills/actions/runs/38952641819) passed: 158 tests passed and 11 optional browser controls were skipped. Both full and compact archives reproduced the previously qualified source digests. The release documentation update leaves implementation, skills and historical execution artifacts unchanged. Final distribution archives have their own identities, checksums and verification receipt in [v0.2.1](https://github.com/sylvestre-baker/qore-codex-skills/releases/tag/v0.2.1). This is corrective package qualification, not a new complete model or browser campaign.
 
 ## 0.2.0 candidate extension (historical)
 
