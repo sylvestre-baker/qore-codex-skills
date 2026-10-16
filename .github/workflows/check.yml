@@ -36,11 +36,16 @@ jobs:
               python3 -B -m unittest discover -s tests -v
               python3 tools/qore.py build --output /tmp/qore-build-a
               python3 tools/qore.py build --output /tmp/qore-build-b
-              cmp /tmp/qore-build-a/qore-skills-0.1.0.zip /tmp/qore-build-b/qore-skills-0.1.0.zip
-              python3 tools/qore.py verify /tmp/qore-build-a/qore-skills-0.1.0
-              python3 tools/qore.py install --source /tmp/qore-build-a/qore-skills-0.1.0 --project-root /tmp/qore-install
+              cmp /tmp/qore-build-a/qore-skills-0.2.0.zip /tmp/qore-build-b/qore-skills-0.2.0.zip
+              python3 tools/qore.py verify /tmp/qore-build-a/qore-skills-0.2.0
+              python3 tools/qore.py install --source /tmp/qore-build-a/qore-skills-0.2.0 --project-root /tmp/qore-install
               python3 tools/qore.py derive --profile profiles/qore.json --project-root . --output /tmp/qore-derived
               python3 tools/qore.py verify /tmp/qore-derived
               python3 tools/qore.py derive --profile profiles/contrast.json --project-root . --output /tmp/qore-contrast
               python3 tools/qore.py verify /tmp/qore-contrast
+              python3 examples/qaizen-labs/checks/check_contract.py examples/qaizen-labs/surface-contract.json
+              python3 tools/qore.py derive --profile profiles/qaizen-labs.json --project-root examples/qaizen-labs --output /tmp/qore-labs
+              python3 tools/qore.py verify /tmp/qore-labs
+              python3 -B tools/build_site.py --output /tmp/qore-showcase
+              python3 -B tools/check_site.py /tmp/qore-showcase
             '

@@ -1,0 +1,19 @@
+{
+  "argv": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_labs_contract.py",
+    "-v"
+  ],
+  "cwd": "/workspace/project",
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "test_all_three_methods_consume_current_facts_and_detect_staleness (test_labs_contract.LabsContractTests.test_all_three_methods_consume_current_facts_and_detect_staleness) ... ok\ntest_declared_contract_is_consistent_without_network (test_labs_contract.LabsContractTests.test_declared_contract_is_consistent_without_network) ... ok\ntest_wrong_states_focus_origin_answer_and_keyboard_fail (test_labs_contract.LabsContractTests.test_wrong_states_focus_origin_answer_and_keyboard_fail) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.002s\n\nOK\n",
+  "observed_at": "2026-10-16T07:15:41.834539+00:00"
+}

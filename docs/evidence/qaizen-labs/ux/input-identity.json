@@ -1,0 +1,43 @@
+{
+  "schema": "qore-ux-input/1",
+  "snapshot_sha256": "79274c87faf55cfe33aa597545b37fa0f7525e51bfe558025763d11b172bd98b",
+  "last_relevant_change": "2026-10-16T07:02:14.579970+00:00",
+  "files": [
+    {
+      "path": "examples/qaizen-labs/surface-contract.json",
+      "sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3"
+    },
+    {
+      "path": "examples/qaizen-labs/checks/check_contract.py",
+      "sha256": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b"
+    },
+    {
+      "path": "examples/qaizen-labs/browser-actions.json",
+      "sha256": "96090071f293c8b75f17dee7d84555b952ac01b4e2514c8db9d1f8c1b1d52346"
+    },
+    {
+      "path": "examples/qaizen-labs/observation-policy.json",
+      "sha256": "15f4e5b4960b5011684be265f027e42b8637a3b8aae96b24bba1ba3a4d0f0202"
+    },
+    {
+      "path": "tools/browser_probe.mjs",
+      "sha256": "f55111928e7eebdbbffcb8e49d57fa3366e4ddf84ecb175e00fc9191904a7b7f"
+    },
+    {
+      "path": "tests/fixtures/keyboard-journey.html",
+      "sha256": "8ca1fbe308835093a18a9adb0817dae4842268bed726bd6ea089f19492f58a24"
+    },
+    {
+      "path": "tests/test_browser_probe.py",
+      "sha256": "028cd7367461c6ac03825d7ffd4a16daf44e883b161365c5b78eb30cf48a1644"
+    }
+  ],
+  "profile": {
+    "id": "qaizen-labs",
+    "version": "0.1.0",
+    "sha256": "f76afdd45cb6352e5044a06affc4182ea6cd40aa9c012fb216636a61faa428f0"
+  },
+  "entry_selected_from_current_profile": "https://qaizen.io/labs",
+  "candidate_manifest_sha256": "0540496cea29da71f72046f36a12c3a23b4d71900c97f7193f4dba699836b036",
+  "deployment_identity": "Dated public URLs and observed DOM/screenshots; no private commit-to-deployment equivalence claimed"
+}

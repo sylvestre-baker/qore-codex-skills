@@ -1,0 +1,7 @@
+{
+  "status": "WAITING",
+  "state": "DONE",
+  "awaiting": null,
+  "reads": 1,
+  "resume": "Operator resumes another bounded receive turn; no assignment is resent."
+}

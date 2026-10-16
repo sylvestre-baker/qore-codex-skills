@@ -1,0 +1,58 @@
+{
+  "source_hash_recheck": [
+    {
+      "path": "tools/coordination.py",
+      "unchanged": true
+    },
+    {
+      "path": "tools/agent_mail.py",
+      "unchanged": true
+    },
+    {
+      "path": "tools/task_gate.py",
+      "unchanged": true
+    },
+    {
+      "path": "docs/coordination.md",
+      "unchanged": true
+    },
+    {
+      "path": "docs/coordination-dependencies.md",
+      "unchanged": true
+    },
+    {
+      "path": "tests/test_coordination.py",
+      "unchanged": true
+    },
+    {
+      "path": "tests/test_agent_mail.py",
+      "unchanged": true
+    },
+    {
+      "path": "tests/test_task_gate.py",
+      "unchanged": true
+    },
+    {
+      "path": "examples/qaizen-labs/verification-spec.md",
+      "unchanged": true
+    },
+    {
+      "path": "examples/qaizen-labs/surface-contract.json",
+      "unchanged": true
+    },
+    {
+      "path": "examples/qaizen-labs/checks/check_contract.py",
+      "unchanged": true
+    }
+  ],
+  "run_check_command": [
+    "python3",
+    ".agents/skills/qore-review-qaizen-labs/scripts/run-check.py",
+    "/workspace/qualification/verifier/execution.json",
+    "--evidence-root",
+    "/workspace/qualification/verifier"
+  ],
+  "run_check_exit_code": 0,
+  "run_check_artifact": "run-check.json",
+  "unfinished_claim_ids": []
+}

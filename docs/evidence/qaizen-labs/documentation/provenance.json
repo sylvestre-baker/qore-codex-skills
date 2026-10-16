@@ -1,0 +1,290 @@
+{
+  "schema": "qore-public-transformation/1",
+  "artifacts": [
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/doc-readers/newcomer/REPORT.md",
+      "raw_sha256": "9a8ac63a1f30c637cd2240e634e26649ef92d95ea54d3664bf5ab2755c2793f1",
+      "path": "newcomer/REPORT.md",
+      "public_sha256": "9a8ac63a1f30c637cd2240e634e26649ef92d95ea54d3664bf5ab2755c2793f1",
+      "transformation": "Selected first-party English report/receipt; private workspace and optional driver roots normalized. No raw context transcript."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/doc-readers/newcomer/commands.json",
+      "raw_sha256": "07720010187476239dbb75c2c7aa07528af85814d10d180afc0b9fd58a8913f9",
+      "path": "newcomer/commands.json",
+      "public_sha256": "79db55fd7dab56edaf262ebda76e726f0a0beb727342e6a4c8e4d68c1c335e4b",
+      "transformation": "Selected first-party English report/receipt; private workspace and optional driver roots normalized. No raw context transcript."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/doc-readers/newcomer/findings.json",
+      "raw_sha256": "b8adad3852f196db84ad05c2affa3855c7e15d1c9d24c62c8d32165e34a82c39",
+      "path": "newcomer/findings.json",
+      "public_sha256": "b8adad3852f196db84ad05c2affa3855c7e15d1c9d24c62c8d32165e34a82c39",
+      "transformation": "Selected first-party English report/receipt; private workspace and optional driver roots normalized. No raw context transcript."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/doc-readers/newcomer/showcase-source-hashes.json",
+      "raw_sha256": "a787a069d22362c75dd9801a36f89ea40ee1cb460e46445df712dcd571f9988d",
+      "path": "newcomer/showcase-source-hashes.json",
+      "public_sha256": "a787a069d22362c75dd9801a36f89ea40ee1cb460e46445df712dcd571f9988d",
+      "transformation": "Selected first-party English report/receipt; private workspace and optional driver roots normalized. No raw context transcript."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/doc-readers/newcomer/source-hashes.json",
+      "raw_sha256": "91079721f630b9ebbb748172ae9477c1cd0abb6c025495627f1f3a7ff3fc725f",
+      "path": "newcomer/source-hashes.json",
+      "public_sha256": "91079721f630b9ebbb748172ae9477c1cd0abb6c025495627f1f3a7ff3fc725f",
+      "transformation": "Selected first-party English report/receipt; private workspace and optional driver roots normalized. No raw context transcript."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/doc-readers/newcomer/source-unchanged-check.json",
+      "raw_sha256": "3b0188d44746c9521cf2fc9a35e88a08c9be160dfe760b199a25de6beb1da951",
+      "path": "newcomer/source-unchanged-check.json",
+      "public_sha256": "3b0188d44746c9521cf2fc9a35e88a08c9be160dfe760b199a25de6beb1da951",
+      "transformation": "Selected first-party English report/receipt; private workspace and optional driver roots normalized. No raw context transcript."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/doc-readers/claims/REPORT.md",
+      "raw_sha256": "369d1f62093641438118a0c66b117ed62876ce87af93a5458762e3a0b48aebfa",
+      "path": "claims/REPORT.md",
+      "public_sha256": "369d1f62093641438118a0c66b117ed62876ce87af93a5458762e3a0b48aebfa",
+      "transformation": "Selected first-party English report/receipt; private workspace and optional driver roots normalized. No raw context transcript."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/doc-readers/claims/findings.json",
+      "raw_sha256": "1d550dfd6e5089646c9abd4665c7dc5c5862417ddc99e0d1fcd68640ae791a3d",
+      "path": "claims/findings.json",
+      "public_sha256": "1d550dfd6e5089646c9abd4665c7dc5c5862417ddc99e0d1fcd68640ae791a3d",
+      "transformation": "Selected first-party English report/receipt; private workspace and optional driver roots normalized. No raw context transcript."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/doc-readers/claims/source-snapshot.json",
+      "raw_sha256": "129cd6e6708db91b1cd23034eeaccafe17e61cc3f6a6e1d9ebaff31386f1cb25",
+      "path": "claims/source-snapshot.json",
+      "public_sha256": "129cd6e6708db91b1cd23034eeaccafe17e61cc3f6a6e1d9ebaff31386f1cb25",
+      "transformation": "Selected first-party English report/receipt; private workspace and optional driver roots normalized. No raw context transcript."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/doc-readers/claims/staged-link-measurement.json",
+      "raw_sha256": "8b48dac2c98f6740c68197c43d7167ff6653a51bd73362f5a8d49dc04a334dc5",
+      "path": "claims/staged-link-measurement.json",
+      "public_sha256": "8b48dac2c98f6740c68197c43d7167ff6653a51bd73362f5a8d49dc04a334dc5",
+      "transformation": "Selected first-party English report/receipt; private workspace and optional driver roots normalized. No raw context transcript."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/doc-readers/accessibility/REPORT.md",
+      "raw_sha256": "6c47875c0a07fe62d07f7fd5b905bed397e070fd25838624042c10c5bb6608cd",
+      "path": "accessibility/REPORT.md",
+      "public_sha256": "6c47875c0a07fe62d07f7fd5b905bed397e070fd25838624042c10c5bb6608cd",
+      "transformation": "Selected first-party English report/receipt; private workspace and optional driver roots normalized. No raw context transcript."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/doc-readers/accessibility/css-zoom-200-approximation.png",
+      "raw_sha256": "7f29fb02530fcf39c382841eadb8a446cbb06c549711876864da1c1f2c0e25d4",
+      "path": "accessibility/css-zoom-200-approximation.png",
+      "public_sha256": "7f29fb02530fcf39c382841eadb8a446cbb06c549711876864da1c1f2c0e25d4",
+      "transformation": "Exact selected public documentation screenshot bytes."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/doc-readers/accessibility/desktop-1280.png",
+      "raw_sha256": "46bb73e21d32ba3ba98357e05e91fd879fb0adba331d955e7f66c714f09d3673",
+      "path": "accessibility/desktop-1280.png",
+      "public_sha256": "46bb73e21d32ba3ba98357e05e91fd879fb0adba331d955e7f66c714f09d3673",
+      "transformation": "Exact selected public documentation screenshot bytes."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/doc-readers/accessibility/failed-video.png",
+      "raw_sha256": "cf6affb209dd08ee9b428534923307cde679eb2e0ac7fc94c8b0faa4ac83484f",
+      "path": "accessibility/failed-video.png",
+      "public_sha256": "cf6affb209dd08ee9b428534923307cde679eb2e0ac7fc94c8b0faa4ac83484f",
+      "transformation": "Exact selected public documentation screenshot bytes."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/doc-readers/accessibility/findings.json",
+      "raw_sha256": "a5c14541a7cb60c7b12b8c8b38aed2428f94d74c87ee178dbb43e0a5a48b8144",
+      "path": "accessibility/findings.json",
+      "public_sha256": "a5c14541a7cb60c7b12b8c8b38aed2428f94d74c87ee178dbb43e0a5a48b8144",
+      "transformation": "Selected first-party English report/receipt; private workspace and optional driver roots normalized. No raw context transcript."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/doc-readers/accessibility/followup-observations.json",
+      "raw_sha256": "22b6399588f38b97c742dc6c38128a504434ab28a3c38b909d5da0d217de72f3",
+      "path": "accessibility/followup-observations.json",
+      "public_sha256": "22b6399588f38b97c742dc6c38128a504434ab28a3c38b909d5da0d217de72f3",
+      "transformation": "Selected first-party English report/receipt; private workspace and optional driver roots normalized. No raw context transcript."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/doc-readers/accessibility/keyboard-first-focus.png",
+      "raw_sha256": "387fdd71f3740dfa823ef6b9cf605feed16e802922886798956a3f330ccf31cb",
+      "path": "accessibility/keyboard-first-focus.png",
+      "public_sha256": "387fdd71f3740dfa823ef6b9cf605feed16e802922886798956a3f330ccf31cb",
+      "transformation": "Exact selected public documentation screenshot bytes."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/doc-readers/accessibility/narrow-320.png",
+      "raw_sha256": "4bcd07d1a2b91e37381490bf2314f0c9f69d8ebed89fe79c6c155fa7e7093027",
+      "path": "accessibility/narrow-320.png",
+      "public_sha256": "4bcd07d1a2b91e37381490bf2314f0c9f69d8ebed89fe79c6c155fa7e7093027",
+      "transformation": "Exact selected public documentation screenshot bytes."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/doc-readers/accessibility/narrow-pre-keyboard.png",
+      "raw_sha256": "d03a19a2182ee788bc6b3f3efdac2af6c17324fabe0b3b8944f3cb4801d9aa23",
+      "path": "accessibility/narrow-pre-keyboard.png",
+      "public_sha256": "d03a19a2182ee788bc6b3f3efdac2af6c17324fabe0b3b8944f3cb4801d9aa23",
+      "transformation": "Exact selected public documentation screenshot bytes."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/doc-readers/accessibility/no-javascript.png",
+      "raw_sha256": "87086f1f2f34cb1de4aaada80ef49f74a355b1b20faf746b2827c9e6945538e5",
+      "path": "accessibility/no-javascript.png",
+      "public_sha256": "87086f1f2f34cb1de4aaada80ef49f74a355b1b20faf746b2827c9e6945538e5",
+      "transformation": "Exact selected public documentation screenshot bytes."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/doc-readers/accessibility/observations.json",
+      "raw_sha256": "bf067c85312886a32047a49d036f85078869dca19e0b88d361f1e1e36e8fac3f",
+      "path": "accessibility/observations.json",
+      "public_sha256": "b0a4ff0f166ae52676440eafad80e2629b77f57757f492c75d5c58ae507b9871",
+      "transformation": "Selected first-party English report/receipt; private workspace and optional driver roots normalized. No raw context transcript."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/doc-readers/accessibility/source-hashes.json",
+      "raw_sha256": "a9a1fd12899841ac6ad564f020346367bbe2b9a537399da4b03e1e9c6ea2652a",
+      "path": "accessibility/source-hashes.json",
+      "public_sha256": "d368cd9ddf65dc2ce40412b043be108c42743884283da3cfdc2ccc588ca5762a",
+      "transformation": "Selected first-party English report/receipt; private workspace and optional driver roots normalized. No raw context transcript."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/doc-readers/accessibility/transcript.png",
+      "raw_sha256": "5f941c56f7eaee5350e4e0d9cb62c98e8095630c40d8edc65fafb413c57389ba",
+      "path": "accessibility/transcript.png",
+      "public_sha256": "5f941c56f7eaee5350e4e0d9cb62c98e8095630c40d8edc65fafb413c57389ba",
+      "transformation": "Exact selected public documentation screenshot bytes."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/doc-readers/accessibility/video-playing-captions.png",
+      "raw_sha256": "8a074c2505dcca7570b6bfbb5e945fe7d0284d8a0898017433929bfcae0bcdc4",
+      "path": "accessibility/video-playing-captions.png",
+      "public_sha256": "8a074c2505dcca7570b6bfbb5e945fe7d0284d8a0898017433929bfcae0bcdc4",
+      "transformation": "Exact selected public documentation screenshot bytes."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/doc-readers/verifier/REPORT.md",
+      "raw_sha256": "631074ed26ed39aebcd04dbd498d40350677971db2d5f2a049d341d5015b8459",
+      "path": "verifier/REPORT.md",
+      "public_sha256": "631074ed26ed39aebcd04dbd498d40350677971db2d5f2a049d341d5015b8459",
+      "transformation": "Selected first-party English report/receipt; private workspace and optional driver roots normalized. No raw context transcript."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/doc-readers/verifier/SUPPLEMENT.json",
+      "raw_sha256": "627edea9997b52c6c0097a21aa6d46274735e122e06f70409c8aed901be05975",
+      "path": "verifier/SUPPLEMENT.json",
+      "public_sha256": "b603c89cb2f1f29c26b2889fcafc3f22f0281075eda6660a2754074383169657",
+      "transformation": "Selected first-party English report/receipt; private workspace and optional driver roots normalized. No raw context transcript."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/doc-readers/verifier/SUPPLEMENT.md",
+      "raw_sha256": "5293806e595c882c59a1807d3e9530d70721b465cf94aaa50000f2605c32511b",
+      "path": "verifier/SUPPLEMENT.md",
+      "public_sha256": "5293806e595c882c59a1807d3e9530d70721b465cf94aaa50000f2605c32511b",
+      "transformation": "Selected first-party English report/receipt; private workspace and optional driver roots normalized. No raw context transcript."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/doc-readers/verifier/audit.json",
+      "raw_sha256": "ab5d271669196431b3798703dc553c83daf8f810d59014a17e2d28454d86d4a2",
+      "path": "verifier/audit.json",
+      "public_sha256": "c0652cda2f30bfc329fc358054761bbe731fd4df4ae9c550f6d033415813122a",
+      "transformation": "Selected first-party English report/receipt; private workspace and optional driver roots normalized. No raw context transcript."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/doc-readers/verifier/browser-command.json",
+      "raw_sha256": "260f689cc9d4459f74dc76c0a8005f7ef9b47b353a6e2ab33cf24573d6ca5525",
+      "path": "verifier/browser-command.json",
+      "public_sha256": "260f689cc9d4459f74dc76c0a8005f7ef9b47b353a6e2ab33cf24573d6ca5525",
+      "transformation": "Selected first-party English report/receipt; private workspace and optional driver roots normalized. No raw context transcript."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/doc-readers/verifier/browser.json",
+      "raw_sha256": "abde73b80d7b997ad02dba71210a51788216a49c8026914cebd6a3b76f251a27",
+      "path": "verifier/browser.json",
+      "public_sha256": "abde73b80d7b997ad02dba71210a51788216a49c8026914cebd6a3b76f251a27",
+      "transformation": "Selected first-party English report/receipt; private workspace and optional driver roots normalized. No raw context transcript."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/doc-readers/verifier/finding-lint-command.json",
+      "raw_sha256": "7ba9639bce7981f28e041456254418cdceb98f852d3bc5970c86c627d7cbc13b",
+      "path": "verifier/finding-lint-command.json",
+      "public_sha256": "e17142c4456535eb8d2d659a84903f40ad856bd5dba3a915537b8278eb186f9e",
+      "transformation": "Selected first-party English report/receipt; private workspace and optional driver roots normalized. No raw context transcript."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/doc-readers/verifier/finding-lint.json",
+      "raw_sha256": "dbb7be8d679f99e4fa774f2dc03b160a7188865ede3d9a22dec25fb1fac7c58e",
+      "path": "verifier/finding-lint.json",
+      "public_sha256": "dbb7be8d679f99e4fa774f2dc03b160a7188865ede3d9a22dec25fb1fac7c58e",
+      "transformation": "Selected first-party English report/receipt; private workspace and optional driver roots normalized. No raw context transcript."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/doc-readers/verifier/resolution.json",
+      "raw_sha256": "2b1c955f5ed6127ee36f1a850afc041505b29ccef715f024da98859c4dcd3f23",
+      "path": "verifier/resolution.json",
+      "public_sha256": "2b1c955f5ed6127ee36f1a850afc041505b29ccef715f024da98859c4dcd3f23",
+      "transformation": "Selected first-party English report/receipt; private workspace and optional driver roots normalized. No raw context transcript."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/doc-readers/verifier/supplement-actual-zoom-200.png",
+      "raw_sha256": "81d4f003b761fdab578772f808e1fe8c61f2f08c81cf22a0e55ae3a5d5c23fdb",
+      "path": "verifier/supplement-actual-zoom-200.png",
+      "public_sha256": "81d4f003b761fdab578772f808e1fe8c61f2f08c81cf22a0e55ae3a5d5c23fdb",
+      "transformation": "Exact selected public documentation screenshot bytes."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/doc-readers/verifier/supplement-actual-zoom-viewport.png",
+      "raw_sha256": "71dd796827d339753552262fa798838e17d2164952f39e24135dc5e3d15f9751",
+      "path": "verifier/supplement-actual-zoom-viewport.png",
+      "public_sha256": "71dd796827d339753552262fa798838e17d2164952f39e24135dc5e3d15f9751",
+      "transformation": "Exact selected public documentation screenshot bytes."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/doc-readers/verifier/supplement-browser.json",
+      "raw_sha256": "96993ade0865b36be0d463d1cf9ae3dd2734dee75d8c8690b23127b75cc5de1d",
+      "path": "verifier/supplement-browser.json",
+      "public_sha256": "96993ade0865b36be0d463d1cf9ae3dd2734dee75d8c8690b23127b75cc5de1d",
+      "transformation": "Selected first-party English report/receipt; private workspace and optional driver roots normalized. No raw context transcript."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/doc-readers/verifier/supplement-confirmed-video-404.png",
+      "raw_sha256": "61373766ee58cfd31210102d66181a021987f12463a1b5d88e3741e982eaa5ac",
+      "path": "verifier/supplement-confirmed-video-404.png",
+      "public_sha256": "61373766ee58cfd31210102d66181a021987f12463a1b5d88e3741e982eaa5ac",
+      "transformation": "Exact selected public documentation screenshot bytes."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/doc-readers/verifier/verified.json",
+      "raw_sha256": "9b70113b19fa14ce42b0e03f17fa05371d1dae631b329a31ea4bd94ae371f21c",
+      "path": "verifier/verified.json",
+      "public_sha256": "9b70113b19fa14ce42b0e03f17fa05371d1dae631b329a31ea4bd94ae371f21c",
+      "transformation": "Selected first-party English report/receipt; private workspace and optional driver roots normalized. No raw context transcript."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/doc-readers/verifier/width-1280.png",
+      "raw_sha256": "abbc43afd4a43a65d05dcc4a03c77a153dc9d05bbfc3c6eedb9ec96f00d27b45",
+      "path": "verifier/width-1280.png",
+      "public_sha256": "abbc43afd4a43a65d05dcc4a03c77a153dc9d05bbfc3c6eedb9ec96f00d27b45",
+      "transformation": "Exact selected public documentation screenshot bytes."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/doc-readers/verifier/width-320.png",
+      "raw_sha256": "4226551e268afbd0385e453789e1762cacee0474df1fadf8609dc75d9ee5707c",
+      "path": "verifier/width-320.png",
+      "public_sha256": "4226551e268afbd0385e453789e1762cacee0474df1fadf8609dc75d9ee5707c",
+      "transformation": "Exact selected public documentation screenshot bytes."
+    }
+  ],
+  "limits": [
+    "Original challenge and corrected candidate snapshots remain distinct.",
+    "The focused supplement belongs to the same verification wave and preserves original verdicts.",
+    "Actual browser zoom is independently observed; historical root null manifest field is not rewritten."
+  ]
+}

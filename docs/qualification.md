@@ -4,6 +4,18 @@ The source is now published in [sylvestre-baker/qore-codex-skills](https://githu
 
 This record separates actual executions, corrections, portability, agent evaluation and external human use. It describes an unpublished local 0.1.0 candidate. Original run identities and timestamps remain intact; a later archive is not substituted for an earlier source snapshot.
 
+## 0.2.0 candidate extension
+
+The [Labs case](evidence/qaizen-labs/README.md) adds complete derived planning, source-review and desktop entry/state UX executions using the same current project profile. A real PM/production/fresh-reviewer exchange accepted the frozen three-method delivery once; repeat completion and inbox replay preserved the register. Independent review found four distinct medium coordination defects; a separate focused pass checked their corrections. A [105-second English technical montage](demo/qaizen-labs/README.md) and [static page preparation](showcase.md) are included.
+
+These new runs preserve original candidate, target and profile identities. They do not relabel the historical generic runs below as fresh 0.2.0 executions. Generic skill protocols, tutorial target and its validators are unchanged; build/install version paths and the new case have their own checks. The exact original tutorial prompt has not been rerun on every archive revision. Candidate-level integrity and affected command/render checks are recorded separately.
+
+The new Linux environment has no host mounts or author skills/private source. It discovered all six installed generic and Labs-derived entries and completed the actual three-finder/filter/verifier review. Its initial suite collected 149 tests, with 138 passes and 11 driver-dependent skips. Real browser execution and driver controls were observed separately on macOS. No Linux browser qualification or external human observation is implied.
+
+The final local suite passed all **154 tests**, including 11 actual optional-driver browser controls. Three fresh documentation readers and a separate verifier retained the original link failure and its correction; a focused supplement completed real 200% zoom, confirmed failed-video alternatives, full decoding and caption checks. [Documentation verification](evidence/qaizen-labs/documentation/README.md) preserves original findings and source identities.
+
+## Historical 0.1.0 qualification
+
 ## Complete methods and profile consumers
 
 | Requirement | Observed execution | Supported decision and limit |
@@ -25,7 +37,7 @@ A [wider independent implementation review](evidence/implementation-review/READM
 
 Current controls preserve profile bytes exactly; require real executable steps and populated Outline examples; reject unsupported gates and track measurements without inherited properties; honor plateau/ceiling budgets; require counterexamples for every CONFIRMED severity; and retain original checkable evidence for refutations. At exhausted budgets, method coverage is PARTIAL while observation coverage remains visible. An observed defect is never downgraded to clear a gate.
 
-The maintained suite currently contains 106 tests, including the original structural positives/negatives and added concrete regressions. Counts identify a source revision and do not certify reasoning quality. The initial public positive refutation fixture lacked its original evidence field; that historical vector remains in the frozen evidence, and the maintained positive was corrected to meet the stated findings contract. A new negative protects the missing-evidence case.
+The historical maintained suite contained 106 tests, including the original structural positives/negatives and added concrete regressions. Counts identify a source revision and do not certify reasoning quality. The initial public positive refutation fixture lacked its original evidence field; that historical vector remains in the frozen evidence, and the maintained positive was corrected to meet the stated findings contract. A new negative protects the missing-evidence case.
 
 The [acceptance map](acceptance-evidence.md) links A01–A33 to concrete tests, observations and limits. The [resource comparison](evidence/candidate-carryover/README.md) records scoped carryover with exact digests and current helper replays. Carryover is limited to unchanged instructions, facts, source behavior and observations. Changed helpers are re-executed against actual retained inputs and adversarial controls; source digests and the final archive inventory identify the resulting candidate. Earlier 82-, 85- and 90-test receipts remain historical under their original identities.
 

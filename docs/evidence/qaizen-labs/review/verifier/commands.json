@@ -1,0 +1,14 @@
+{
+  "commands": [
+    {"argv":["python3",".agents/skills/qore-review-qaizen-labs/scripts/project-check.py",".agents/skills/qore-review-qaizen-labs/references/project.json","--root","/workspace/project/examples/qaizen-labs","--method","review"],"cwd":"/workspace/project/examples/qaizen-labs","exit_code":0,"artifact":"preflight.json"},
+    {"argv":["python3","-B","checks/check_contract.py","surface-contract.json"],"cwd":"/workspace/project/examples/qaizen-labs","exit_code":0,"artifact":"contract-result.json"},
+    {"argv":["python3","-B","/workspace/qualification/verifier/reproduce.py"],"exit_code":0,"artifact":"reproduction-results.json"},
+    {"argv":["python3","-B","-m","unittest","discover","-s","/workspace/project/tests","-p","test_coordination.py"],"exit_code":0,"artifact":"tests-coordination.txt"},
+    {"argv":["python3","-B","-m","unittest","discover","-s","/workspace/project/tests","-p","test_agent_mail.py"],"exit_code":0,"artifact":"tests-agent-mail.txt"},
+    {"argv":["python3","-B","-m","unittest","discover","-s","/workspace/project/tests","-p","test_task_gate.py"],"exit_code":0,"artifact":"tests-task-gate.txt"},
+    {"argv":["python3","-B","/workspace/qualification/verifier/save_packet.py"],"exit_code":0,"artifact":"verified.json"},
+    {"argv":["node",".agents/skills/qore-review-qaizen-labs/scripts/finding-lint.mjs","/workspace/qualification/verifier/verified.json","--verifier=ran","--json"],"cwd":"/workspace/project/examples/qaizen-labs","exit_code":0,"artifact":"finding-lint.json"},
+    {"argv":["git","-C","/workspace/project","rev-parse","HEAD"],"exit_code":128,"result":"No resolvable HEAD; exact file manifests used."}
+  ],
+  "inspection":"Read installed skill/profile/protocol/findings/run-evidence, declared checker and contract, public verification-spec.md, three scoped tools, related three tests, docs/coordination*.md; read only claims.json from upstream qualification. Initial batched rg listing failed with exit 127 (rg unavailable); used find. No source modification commands executed. Evidence files created with shell heredocs and saved scripts."
+}

@@ -1,0 +1,29 @@
+{
+  "deliveries": [
+    {
+      "project": "<workspace>/research/qore002-implementation-20261016/labs-coordination-project",
+      "payload": {
+        "id": 10,
+        "project_id": 2,
+        "sender_id": 5,
+        "thread_id": "QORE002-LABS-001",
+        "topic": null,
+        "subject": "QORE002-LABS-001 current assignment",
+        "body_md": "{\n  \"kind\": \"assignment\",\n  \"task_id\": \"QORE002-LABS-001\",\n  \"task_revision\": 1,\n  \"criteria_sha256\": \"e4e9acdb6b472bc140ef31cb47e75a762b5eb0c2e4ee55423430916151f598df\",\n  \"criteria_snapshot\": {\n    \"task_id\": \"QORE002-LABS-001\",\n    \"task_revision\": 1,\n    \"objective\": \"Qualify all three project-specific methods on the current public Labs protocol case\",\n    \"authorized_scope\": \"Public Qore source and selected method artifacts. Read-only current Labs entry/state observation under supplied project profile. No publication, application, website source edits or questionnaire answers.\",\n    \"criteria\": [\n      \"Complete the derived planning protocol and retain its actual phases and profile consumption.\",\n      \"Complete the derived UX scope with fresh actual observations and honest required coverage.\",\n      \"Complete independent derived review of the public specification and implementation, with actual finders, mechanical filtering and fresh verification.\"\n    ],\n    \"required_check_ids\": [\n      \"plan\",\n      \"ux\",\n      \"review\"\n    ],\n    \"expected_results\": {\n      \"plan\": \"PASS\",\n      \"ux\": \"PASS\",\n      \"review\": \"PASS\"\n    }\n  },\n  \"profile_path\": \"<workspace>/qore-skills/profiles/qaizen-labs.json\",\n  \"project_root\": \"<workspace>/qore-skills/examples/qaizen-labs\",\n  \"candidate_path\": \"<workspace>/research/qore002-implementation-20261016/derived-initial\",\n  \"instructions\": \"Continue this already user-authorized case in progress as the current independent production root using GreenCastle. This assignment does not establish the origin of earlier work. Preserve actual current session identity and reports separately. Reply with production_ack carrying task identity and assignment_message_id. Follow the current criteria within the authorized local scope.\"\n}",
+        "importance": "normal",
+        "ack_required": true,
+        "created_ts": "2026-10-16T06:42:17.099278Z",
+        "attachments": [],
+        "from": "BlueLake",
+        "to": [
+          "GreenCastle"
+        ],
+        "cc": [],
+        "bcc": []
+      }
+    }
+  ],
+  "count": 1,
+  "attachments": [],
+  "verified_sender": false
+}

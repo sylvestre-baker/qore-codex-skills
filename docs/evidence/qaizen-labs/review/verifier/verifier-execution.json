@@ -1,0 +1,1281 @@
+{
+  "qore_evidence": {
+    "candidate_sha256": "2b4d8c75c24c9377aa41c27c7a317901043ea76216ec6d595ed198059d1502c1",
+    "target_snapshot_sha256": "3282ea44daa3be81eeadd6185274bd53d29cb43a07e14fd801ee14b33c79baac",
+    "observed_at": "2026-10-16T07:20:42.754440+00:00",
+    "phase_id": "verifier"
+  },
+  "payload": {
+    "verified.json": {
+      "findings": [
+        {
+          "id": "C01",
+          "title": "Failed or incomplete review has no supported recovery transition",
+          "severity": "medium",
+          "evidence": "tools/coordination.py:79 only receives deliveries in IN_PROGRESS/awaiting=delivery; :92-95 moves FAIL to CHANGES_REQUIRED and PARTIAL/BLOCKED to BLOCKED with awaiting=None; :107 only permits review requests in REVIEW_REQUIRED/awaiting=None. docs/coordination.md:71 promises corrected artifacts as a new delivery/request after failed review. Measured reproduction: python3 -B /workspace/qualification/finders/correctness/reproduce.py; saved reproduction.json C01.",
+          "verdict": "CONFIRMED",
+          "counterexample": "Synthetic task synthetic-73 accepts assignment assign-73, delivery 3/v1, and request request-73/fresh-73/run-73. FAIL message 4 yields CHANGES_REQUIRED with awaiting=null. Corrected v2 delivery message 5 is rejected: not awaiting delivery; request_review also rejects: not ready for a fresh review request. PARTIAL and BLOCKED likewise cannot accept correction. Expected: documented corrected delivery/request can resume without discarding unchanged criteria history. Actual: no supported consume/request-review transition. See reproduction-results.json recovery_FAIL/recovery_PARTIAL/recovery_BLOCKED and reproduce.py.",
+          "independent_evidence": "reproduce.py; reproduction-results.json; public tools/coordination.py, tools/agent_mail.py, tools/task_gate.py and docs/coordination.md. Original evidence retained verbatim; referenced finder files were not read."
+        },
+        {
+          "id": "C02",
+          "title": "Wrong review session or run can apply a terminal failure verdict",
+          "severity": "medium",
+          "evidence": "tools/coordination.py:88 compares only REVIEW_KEYS, which omit session/run (tools/task_gate.py:12); :89-95 stores verdict and applies FAIL/PARTIAL/BLOCKED before checking those fields. tools/task_gate.py:102-104 checks session/run only in the later completion gate. docs/coordination.md:21 requires verdict/proofs to carry the same identity and :73 says stale verdicts cannot change current acceptance. Measured reproduction: saved reproduction.json C02.",
+          "verdict": "CONFIRMED",
+          "counterexample": "Starting REVIEW_REQUIRED/awaiting=review_verdict for request-73/fresh-73/run-73, send otherwise current FAIL with review_session_id=old-identity: consume accepts it and changes state to CHANGES_REQUIRED. Changing only review_run_id has the same result. PARTIAL/BLOCKED with either wrong field changes state to BLOCKED. Expected: reject mismatched session/run and retain current waiting state. See reproduction-results.json mismatch_* (six cases). This demonstrates incorrect failure handling, not a bypass to DONE: task_gate.evaluate independently checks these fields for completion.",
+          "independent_evidence": "reproduce.py; reproduction-results.json; public tools/coordination.py, tools/agent_mail.py, tools/task_gate.py and docs/coordination.md. Original evidence retained verbatim; referenced finder files were not read."
+        },
+        {
+          "id": "S1",
+          "title": "Loopback Agent Mail bearer can be sent through an environment HTTP proxy",
+          "severity": "medium",
+          "evidence": "tools/agent_mail.py:25 validates only the URL hostname; tools/agent_mail.py:34 adds Authorization; tools/agent_mail.py:35 uses build_opener(NoRedirect) with its default environment ProxyHandler. docs/coordination.md promises loopback endpoint containment. Running python3 -B /workspace/qualification/finders/security/repro_proxy.py exits 0 and captures host=proxy.invalid:8080, selector=http://127.0.0.1:8765/mcp/, Authorization=Bearer SYNTHETIC-NOT-A-SECRET at HTTP dispatch, without opening a socket. See repro_proxy.json.",
+          "verdict": "CONFIRMED",
+          "counterexample": "With an isolated synthetic environment http_proxy=http://synthetic-proxy.invalid:8123 and no_proxy empty, invoke real Client.call against http://127.0.0.1:8765/mcp/ using token SYNTHETIC-73. A replacement HTTPHandler halts before any socket: dispatch request.host=synthetic-proxy.invalid:8123, selector=http://127.0.0.1:8765/mcp/, Authorization=Bearer SYNTHETIC-73. Expected under endpoint containment: direct loopback dispatch without environment proxy. Actual proxy-directed HTTP dispatch retains bearer. This is a socket-free dispatch simulation, NOT an actual wire exchange or observed token disclosure. See reproduce.py and reproduction-results.json proxy_dispatch.",
+          "independent_evidence": "reproduce.py; reproduction-results.json; public tools/coordination.py, tools/agent_mail.py, tools/task_gate.py and docs/coordination.md. Original evidence retained verbatim; referenced finder files were not read."
+        },
+        {
+          "id": "F-FEAS-01",
+          "title": "Failed review has no supported corrected-delivery transition",
+          "severity": "medium",
+          "evidence": "tools/coordination.py:79 accepts delivery only from IN_PROGRESS/awaiting=delivery; :92-93 changes a FAIL to CHANGES_REQUIRED/awaiting=None; :106-107 accepts requests only from REVIEW_REQUIRED. docs/coordination.md:71 instructs a corrected artifact/new delivery/request after failed review. Running python3 -B /workspace/qualification/finders/feasibility/reproduce.py yields CHANGES_REQUIRED after FAIL and after corrected delivery, with REJECT: not awaiting delivery.",
+          "verdict": "CONFIRMED",
+          "counterexample": "Synthetic task synthetic-73 accepts assignment assign-73, delivery 3/v1, and request request-73/fresh-73/run-73. FAIL message 4 yields CHANGES_REQUIRED with awaiting=null. Corrected v2 delivery message 5 is rejected: not awaiting delivery; request_review also rejects: not ready for a fresh review request. PARTIAL and BLOCKED likewise cannot accept correction. Expected: documented corrected delivery/request can resume without discarding unchanged criteria history. Actual: no supported consume/request-review transition. See reproduction-results.json recovery_FAIL/recovery_PARTIAL/recovery_BLOCKED and reproduce.py.",
+          "independent_evidence": "reproduce.py; reproduction-results.json; public tools/coordination.py, tools/agent_mail.py, tools/task_gate.py and docs/coordination.md. Original evidence retained verbatim; referenced finder files were not read."
+        },
+        {
+          "id": "F-FEAS-02",
+          "title": "Acknowledgement batch can overrun the declared receive deadline",
+          "severity": "medium",
+          "evidence": "docs/coordination.md:13 promises a receive window of at most 120 seconds. tools/agent_mail.py:58-59 sets timeout only before fetch; :84-89 acknowledges every matching processed message and returns RECEIVED before the deadline check at :103. Saved reproduce.py uses the actual receive function and Client subclass with a virtual monotonic clock: 1-second fetch plus six 25-second successful ACKs returns RECEIVED after 151 simulated seconds for seconds=120; every call retains timeout=30, including one started at t=126.",
+          "verdict": "CONFIRMED",
+          "counterexample": "Actual receive(Client subclass, seconds=120) processes seven synthetic thread messages with IDs 10..16. Virtual monotonic clock advances 2 seconds for fetch and 20 seconds per successful ACK. It returns RECEIVED at simulated t=142; final ACK starts at t=122 with timeout=30. Expected: receive returns within declared at-most-120-second window. Actual: ACK loop neither recomputes remaining timeout nor checks deadline before returning. Real durable temporary-register writes execute; no network or wall-clock latency measurement. See reproduction-results.json deadline and reproduce.py.",
+          "independent_evidence": "reproduce.py; reproduction-results.json; public tools/coordination.py, tools/agent_mail.py, tools/task_gate.py and docs/coordination.md. Original evidence retained verbatim; referenced finder files were not read."
+        }
+      ]
+    },
+    "reproduction-results.json": {
+      "recovery_FAIL": {
+        "after_verdict": {
+          "schema": "qore-task/1",
+          "task_id": "synthetic-73",
+          "task_revision": 1,
+          "criteria_sha256": "9ee5de2e457a897dae602e7dc9e365827e465967abf965138c380ecaef6660f7",
+          "objective": "check local bytes",
+          "state": "CHANGES_REQUIRED",
+          "awaiting": null,
+          "next_action_owner": "production",
+          "assignment_message_id": "assign-73",
+          "dependencies_satisfied": true,
+          "authorization_satisfied": true,
+          "processed_message_ids": [
+            "2",
+            "3",
+            "4"
+          ],
+          "decisions": [
+            {
+              "message_id": "2",
+              "action": "ACCEPT_ACK",
+              "reason": "explicit production task acceptance"
+            },
+            {
+              "message_id": "3",
+              "action": "RECEIVE_DELIVERY",
+              "reason": "delivery recorded; independent review still required"
+            },
+            {
+              "message_id": "4",
+              "action": "RECEIVE_VERDICT",
+              "reason": "completion gate still required"
+            }
+          ],
+          "accepted_identity": null,
+          "cursor": null,
+          "artifact_revision": "v1",
+          "artifact_sha256": "cba06b5736faf67e54b07b561eae94395e774c517a7d910a54369e1263ccfbd4",
+          "delivery_message_id": "3",
+          "artifact_path": "artifact.txt",
+          "artifact_kind": "file",
+          "delivery": {
+            "task_id": "synthetic-73",
+            "task_revision": 1,
+            "criteria_sha256": "9ee5de2e457a897dae602e7dc9e365827e465967abf965138c380ecaef6660f7",
+            "kind": "delivery",
+            "artifact_revision": "v1",
+            "artifact_sha256": "cba06b5736faf67e54b07b561eae94395e774c517a7d910a54369e1263ccfbd4",
+            "artifact_path": "artifact.txt",
+            "delivery_message_id": "3"
+          },
+          "review_request_id": "request-73",
+          "review_session_id": "fresh-73",
+          "review_run_id": "run-73",
+          "review_session_fresh": true,
+          "request": {
+            "task_id": "synthetic-73",
+            "task_revision": 1,
+            "criteria_sha256": "9ee5de2e457a897dae602e7dc9e365827e465967abf965138c380ecaef6660f7",
+            "artifact_revision": "v1",
+            "artifact_sha256": "cba06b5736faf67e54b07b561eae94395e774c517a7d910a54369e1263ccfbd4",
+            "delivery_message_id": "3",
+            "review_request_id": "request-73",
+            "review_session_id": "fresh-73",
+            "review_run_id": "run-73",
+            "review_session_fresh": true
+          },
+          "pending_verdict": {
+            "task_id": "synthetic-73",
+            "task_revision": 1,
+            "criteria_sha256": "9ee5de2e457a897dae602e7dc9e365827e465967abf965138c380ecaef6660f7",
+            "artifact_revision": "v1",
+            "artifact_sha256": "cba06b5736faf67e54b07b561eae94395e774c517a7d910a54369e1263ccfbd4",
+            "delivery_message_id": "3",
+            "review_request_id": "request-73",
+            "review_session_id": "fresh-73",
+            "review_run_id": "run-73",
+            "review_session_fresh": true,
+            "kind": "review_verdict",
+            "verdict": "FAIL",
+            "message_id": "4"
+          }
+        },
+        "after_corrected_delivery": {
+          "schema": "qore-task/1",
+          "task_id": "synthetic-73",
+          "task_revision": 1,
+          "criteria_sha256": "9ee5de2e457a897dae602e7dc9e365827e465967abf965138c380ecaef6660f7",
+          "objective": "check local bytes",
+          "state": "CHANGES_REQUIRED",
+          "awaiting": null,
+          "next_action_owner": "production",
+          "assignment_message_id": "assign-73",
+          "dependencies_satisfied": true,
+          "authorization_satisfied": true,
+          "processed_message_ids": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "decisions": [
+            {
+              "message_id": "2",
+              "action": "ACCEPT_ACK",
+              "reason": "explicit production task acceptance"
+            },
+            {
+              "message_id": "3",
+              "action": "RECEIVE_DELIVERY",
+              "reason": "delivery recorded; independent review still required"
+            },
+            {
+              "message_id": "4",
+              "action": "RECEIVE_VERDICT",
+              "reason": "completion gate still required"
+            },
+            {
+              "message_id": "5",
+              "action": "REJECT",
+              "reason": "not awaiting delivery"
+            }
+          ],
+          "accepted_identity": null,
+          "cursor": null,
+          "artifact_revision": "v1",
+          "artifact_sha256": "cba06b5736faf67e54b07b561eae94395e774c517a7d910a54369e1263ccfbd4",
+          "delivery_message_id": "3",
+          "artifact_path": "artifact.txt",
+          "artifact_kind": "file",
+          "delivery": {
+            "task_id": "synthetic-73",
+            "task_revision": 1,
+            "criteria_sha256": "9ee5de2e457a897dae602e7dc9e365827e465967abf965138c380ecaef6660f7",
+            "kind": "delivery",
+            "artifact_revision": "v1",
+            "artifact_sha256": "cba06b5736faf67e54b07b561eae94395e774c517a7d910a54369e1263ccfbd4",
+            "artifact_path": "artifact.txt",
+            "delivery_message_id": "3"
+          },
+          "review_request_id": "request-73",
+          "review_session_id": "fresh-73",
+          "review_run_id": "run-73",
+          "review_session_fresh": true,
+          "request": {
+            "task_id": "synthetic-73",
+            "task_revision": 1,
+            "criteria_sha256": "9ee5de2e457a897dae602e7dc9e365827e465967abf965138c380ecaef6660f7",
+            "artifact_revision": "v1",
+            "artifact_sha256": "cba06b5736faf67e54b07b561eae94395e774c517a7d910a54369e1263ccfbd4",
+            "delivery_message_id": "3",
+            "review_request_id": "request-73",
+            "review_session_id": "fresh-73",
+            "review_run_id": "run-73",
+            "review_session_fresh": true
+          },
+          "pending_verdict": {
+            "task_id": "synthetic-73",
+            "task_revision": 1,
+            "criteria_sha256": "9ee5de2e457a897dae602e7dc9e365827e465967abf965138c380ecaef6660f7",
+            "artifact_revision": "v1",
+            "artifact_sha256": "cba06b5736faf67e54b07b561eae94395e774c517a7d910a54369e1263ccfbd4",
+            "delivery_message_id": "3",
+            "review_request_id": "request-73",
+            "review_session_id": "fresh-73",
+            "review_run_id": "run-73",
+            "review_session_fresh": true,
+            "kind": "review_verdict",
+            "verdict": "FAIL",
+            "message_id": "4"
+          }
+        },
+        "request_error": "not ready for a fresh review request"
+      },
+      "recovery_PARTIAL": {
+        "after_verdict": {
+          "schema": "qore-task/1",
+          "task_id": "synthetic-73",
+          "task_revision": 1,
+          "criteria_sha256": "9ee5de2e457a897dae602e7dc9e365827e465967abf965138c380ecaef6660f7",
+          "objective": "check local bytes",
+          "state": "BLOCKED",
+          "awaiting": null,
+          "next_action_owner": "pm",
+          "assignment_message_id": "assign-73",
+          "dependencies_satisfied": true,
+          "authorization_satisfied": true,
+          "processed_message_ids": [
+            "2",
+            "3",
+            "4"
+          ],
+          "decisions": [
+            {
+              "message_id": "2",
+              "action": "ACCEPT_ACK",
+              "reason": "explicit production task acceptance"
+            },
+            {
+              "message_id": "3",
+              "action": "RECEIVE_DELIVERY",
+              "reason": "delivery recorded; independent review still required"
+            },
+            {
+              "message_id": "4",
+              "action": "RECEIVE_VERDICT",
+              "reason": "completion gate still required"
+            }
+          ],
+          "accepted_identity": null,
+          "cursor": null,
+          "artifact_revision": "v1",
+          "artifact_sha256": "cba06b5736faf67e54b07b561eae94395e774c517a7d910a54369e1263ccfbd4",
+          "delivery_message_id": "3",
+          "artifact_path": "artifact.txt",
+          "artifact_kind": "file",
+          "delivery": {
+            "task_id": "synthetic-73",
+            "task_revision": 1,
+            "criteria_sha256": "9ee5de2e457a897dae602e7dc9e365827e465967abf965138c380ecaef6660f7",
+            "kind": "delivery",
+            "artifact_revision": "v1",
+            "artifact_sha256": "cba06b5736faf67e54b07b561eae94395e774c517a7d910a54369e1263ccfbd4",
+            "artifact_path": "artifact.txt",
+            "delivery_message_id": "3"
+          },
+          "review_request_id": "request-73",
+          "review_session_id": "fresh-73",
+          "review_run_id": "run-73",
+          "review_session_fresh": true,
+          "request": {
+            "task_id": "synthetic-73",
+            "task_revision": 1,
+            "criteria_sha256": "9ee5de2e457a897dae602e7dc9e365827e465967abf965138c380ecaef6660f7",
+            "artifact_revision": "v1",
+            "artifact_sha256": "cba06b5736faf67e54b07b561eae94395e774c517a7d910a54369e1263ccfbd4",
+            "delivery_message_id": "3",
+            "review_request_id": "request-73",
+            "review_session_id": "fresh-73",
+            "review_run_id": "run-73",
+            "review_session_fresh": true
+          },
+          "pending_verdict": {
+            "task_id": "synthetic-73",
+            "task_revision": 1,
+            "criteria_sha256": "9ee5de2e457a897dae602e7dc9e365827e465967abf965138c380ecaef6660f7",
+            "artifact_revision": "v1",
+            "artifact_sha256": "cba06b5736faf67e54b07b561eae94395e774c517a7d910a54369e1263ccfbd4",
+            "delivery_message_id": "3",
+            "review_request_id": "request-73",
+            "review_session_id": "fresh-73",
+            "review_run_id": "run-73",
+            "review_session_fresh": true,
+            "kind": "review_verdict",
+            "verdict": "PARTIAL",
+            "message_id": "4"
+          }
+        },
+        "after_corrected_delivery": {
+          "schema": "qore-task/1",
+          "task_id": "synthetic-73",
+          "task_revision": 1,
+          "criteria_sha256": "9ee5de2e457a897dae602e7dc9e365827e465967abf965138c380ecaef6660f7",
+          "objective": "check local bytes",
+          "state": "BLOCKED",
+          "awaiting": null,
+          "next_action_owner": "pm",
+          "assignment_message_id": "assign-73",
+          "dependencies_satisfied": true,
+          "authorization_satisfied": true,
+          "processed_message_ids": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "decisions": [
+            {
+              "message_id": "2",
+              "action": "ACCEPT_ACK",
+              "reason": "explicit production task acceptance"
+            },
+            {
+              "message_id": "3",
+              "action": "RECEIVE_DELIVERY",
+              "reason": "delivery recorded; independent review still required"
+            },
+            {
+              "message_id": "4",
+              "action": "RECEIVE_VERDICT",
+              "reason": "completion gate still required"
+            },
+            {
+              "message_id": "5",
+              "action": "REJECT",
+              "reason": "not awaiting delivery"
+            }
+          ],
+          "accepted_identity": null,
+          "cursor": null,
+          "artifact_revision": "v1",
+          "artifact_sha256": "cba06b5736faf67e54b07b561eae94395e774c517a7d910a54369e1263ccfbd4",
+          "delivery_message_id": "3",
+          "artifact_path": "artifact.txt",
+          "artifact_kind": "file",
+          "delivery": {
+            "task_id": "synthetic-73",
+            "task_revision": 1,
+            "criteria_sha256": "9ee5de2e457a897dae602e7dc9e365827e465967abf965138c380ecaef6660f7",
+            "kind": "delivery",
+            "artifact_revision": "v1",
+            "artifact_sha256": "cba06b5736faf67e54b07b561eae94395e774c517a7d910a54369e1263ccfbd4",
+            "artifact_path": "artifact.txt",
+            "delivery_message_id": "3"
+          },
+          "review_request_id": "request-73",
+          "review_session_id": "fresh-73",
+          "review_run_id": "run-73",
+          "review_session_fresh": true,
+          "request": {
+            "task_id": "synthetic-73",
+            "task_revision": 1,
+            "criteria_sha256": "9ee5de2e457a897dae602e7dc9e365827e465967abf965138c380ecaef6660f7",
+            "artifact_revision": "v1",
+            "artifact_sha256": "cba06b5736faf67e54b07b561eae94395e774c517a7d910a54369e1263ccfbd4",
+            "delivery_message_id": "3",
+            "review_request_id": "request-73",
+            "review_session_id": "fresh-73",
+            "review_run_id": "run-73",
+            "review_session_fresh": true
+          },
+          "pending_verdict": {
+            "task_id": "synthetic-73",
+            "task_revision": 1,
+            "criteria_sha256": "9ee5de2e457a897dae602e7dc9e365827e465967abf965138c380ecaef6660f7",
+            "artifact_revision": "v1",
+            "artifact_sha256": "cba06b5736faf67e54b07b561eae94395e774c517a7d910a54369e1263ccfbd4",
+            "delivery_message_id": "3",
+            "review_request_id": "request-73",
+            "review_session_id": "fresh-73",
+            "review_run_id": "run-73",
+            "review_session_fresh": true,
+            "kind": "review_verdict",
+            "verdict": "PARTIAL",
+            "message_id": "4"
+          }
+        },
+        "request_error": "not ready for a fresh review request"
+      },
+      "recovery_BLOCKED": {
+        "after_verdict": {
+          "schema": "qore-task/1",
+          "task_id": "synthetic-73",
+          "task_revision": 1,
+          "criteria_sha256": "9ee5de2e457a897dae602e7dc9e365827e465967abf965138c380ecaef6660f7",
+          "objective": "check local bytes",
+          "state": "BLOCKED",
+          "awaiting": null,
+          "next_action_owner": "pm",
+          "assignment_message_id": "assign-73",
+          "dependencies_satisfied": true,
+          "authorization_satisfied": true,
+          "processed_message_ids": [
+            "2",
+            "3",
+            "4"
+          ],
+          "decisions": [
+            {
+              "message_id": "2",
+              "action": "ACCEPT_ACK",
+              "reason": "explicit production task acceptance"
+            },
+            {
+              "message_id": "3",
+              "action": "RECEIVE_DELIVERY",
+              "reason": "delivery recorded; independent review still required"
+            },
+            {
+              "message_id": "4",
+              "action": "RECEIVE_VERDICT",
+              "reason": "completion gate still required"
+            }
+          ],
+          "accepted_identity": null,
+          "cursor": null,
+          "artifact_revision": "v1",
+          "artifact_sha256": "cba06b5736faf67e54b07b561eae94395e774c517a7d910a54369e1263ccfbd4",
+          "delivery_message_id": "3",
+          "artifact_path": "artifact.txt",
+          "artifact_kind": "file",
+          "delivery": {
+            "task_id": "synthetic-73",
+            "task_revision": 1,
+            "criteria_sha256": "9ee5de2e457a897dae602e7dc9e365827e465967abf965138c380ecaef6660f7",
+            "kind": "delivery",
+            "artifact_revision": "v1",
+            "artifact_sha256": "cba06b5736faf67e54b07b561eae94395e774c517a7d910a54369e1263ccfbd4",
+            "artifact_path": "artifact.txt",
+            "delivery_message_id": "3"
+          },
+          "review_request_id": "request-73",
+          "review_session_id": "fresh-73",
+          "review_run_id": "run-73",
+          "review_session_fresh": true,
+          "request": {
+            "task_id": "synthetic-73",
+            "task_revision": 1,
+            "criteria_sha256": "9ee5de2e457a897dae602e7dc9e365827e465967abf965138c380ecaef6660f7",
+            "artifact_revision": "v1",
+            "artifact_sha256": "cba06b5736faf67e54b07b561eae94395e774c517a7d910a54369e1263ccfbd4",
+            "delivery_message_id": "3",
+            "review_request_id": "request-73",
+            "review_session_id": "fresh-73",
+            "review_run_id": "run-73",
+            "review_session_fresh": true
+          },
+          "pending_verdict": {
+            "task_id": "synthetic-73",
+            "task_revision": 1,
+            "criteria_sha256": "9ee5de2e457a897dae602e7dc9e365827e465967abf965138c380ecaef6660f7",
+            "artifact_revision": "v1",
+            "artifact_sha256": "cba06b5736faf67e54b07b561eae94395e774c517a7d910a54369e1263ccfbd4",
+            "delivery_message_id": "3",
+            "review_request_id": "request-73",
+            "review_session_id": "fresh-73",
+            "review_run_id": "run-73",
+            "review_session_fresh": true,
+            "kind": "review_verdict",
+            "verdict": "BLOCKED",
+            "message_id": "4"
+          }
+        },
+        "after_corrected_delivery": {
+          "schema": "qore-task/1",
+          "task_id": "synthetic-73",
+          "task_revision": 1,
+          "criteria_sha256": "9ee5de2e457a897dae602e7dc9e365827e465967abf965138c380ecaef6660f7",
+          "objective": "check local bytes",
+          "state": "BLOCKED",
+          "awaiting": null,
+          "next_action_owner": "pm",
+          "assignment_message_id": "assign-73",
+          "dependencies_satisfied": true,
+          "authorization_satisfied": true,
+          "processed_message_ids": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "decisions": [
+            {
+              "message_id": "2",
+              "action": "ACCEPT_ACK",
+              "reason": "explicit production task acceptance"
+            },
+            {
+              "message_id": "3",
+              "action": "RECEIVE_DELIVERY",
+              "reason": "delivery recorded; independent review still required"
+            },
+            {
+              "message_id": "4",
+              "action": "RECEIVE_VERDICT",
+              "reason": "completion gate still required"
+            },
+            {
+              "message_id": "5",
+              "action": "REJECT",
+              "reason": "not awaiting delivery"
+            }
+          ],
+          "accepted_identity": null,
+          "cursor": null,
+          "artifact_revision": "v1",
+          "artifact_sha256": "cba06b5736faf67e54b07b561eae94395e774c517a7d910a54369e1263ccfbd4",
+          "delivery_message_id": "3",
+          "artifact_path": "artifact.txt",
+          "artifact_kind": "file",
+          "delivery": {
+            "task_id": "synthetic-73",
+            "task_revision": 1,
+            "criteria_sha256": "9ee5de2e457a897dae602e7dc9e365827e465967abf965138c380ecaef6660f7",
+            "kind": "delivery",
+            "artifact_revision": "v1",
+            "artifact_sha256": "cba06b5736faf67e54b07b561eae94395e774c517a7d910a54369e1263ccfbd4",
+            "artifact_path": "artifact.txt",
+            "delivery_message_id": "3"
+          },
+          "review_request_id": "request-73",
+          "review_session_id": "fresh-73",
+          "review_run_id": "run-73",
+          "review_session_fresh": true,
+          "request": {
+            "task_id": "synthetic-73",
+            "task_revision": 1,
+            "criteria_sha256": "9ee5de2e457a897dae602e7dc9e365827e465967abf965138c380ecaef6660f7",
+            "artifact_revision": "v1",
+            "artifact_sha256": "cba06b5736faf67e54b07b561eae94395e774c517a7d910a54369e1263ccfbd4",
+            "delivery_message_id": "3",
+            "review_request_id": "request-73",
+            "review_session_id": "fresh-73",
+            "review_run_id": "run-73",
+            "review_session_fresh": true
+          },
+          "pending_verdict": {
+            "task_id": "synthetic-73",
+            "task_revision": 1,
+            "criteria_sha256": "9ee5de2e457a897dae602e7dc9e365827e465967abf965138c380ecaef6660f7",
+            "artifact_revision": "v1",
+            "artifact_sha256": "cba06b5736faf67e54b07b561eae94395e774c517a7d910a54369e1263ccfbd4",
+            "delivery_message_id": "3",
+            "review_request_id": "request-73",
+            "review_session_id": "fresh-73",
+            "review_run_id": "run-73",
+            "review_session_fresh": true,
+            "kind": "review_verdict",
+            "verdict": "BLOCKED",
+            "message_id": "4"
+          }
+        },
+        "request_error": "not ready for a fresh review request"
+      },
+      "mismatch_review_session_id_FAIL": {
+        "input": {
+          "task_id": "synthetic-73",
+          "task_revision": 1,
+          "criteria_sha256": "9ee5de2e457a897dae602e7dc9e365827e465967abf965138c380ecaef6660f7",
+          "artifact_revision": "v1",
+          "artifact_sha256": "cba06b5736faf67e54b07b561eae94395e774c517a7d910a54369e1263ccfbd4",
+          "delivery_message_id": "3",
+          "review_request_id": "request-73",
+          "review_session_id": "old-identity",
+          "review_run_id": "run-73",
+          "review_session_fresh": true,
+          "kind": "review_verdict",
+          "verdict": "FAIL"
+        },
+        "before_state": "REVIEW_REQUIRED",
+        "after": {
+          "schema": "qore-task/1",
+          "task_id": "synthetic-73",
+          "task_revision": 1,
+          "criteria_sha256": "9ee5de2e457a897dae602e7dc9e365827e465967abf965138c380ecaef6660f7",
+          "objective": "check local bytes",
+          "state": "CHANGES_REQUIRED",
+          "awaiting": null,
+          "next_action_owner": "production",
+          "assignment_message_id": "assign-73",
+          "dependencies_satisfied": true,
+          "authorization_satisfied": true,
+          "processed_message_ids": [
+            "2",
+            "3",
+            "wrong-review_session_idFAIL"
+          ],
+          "decisions": [
+            {
+              "message_id": "2",
+              "action": "ACCEPT_ACK",
+              "reason": "explicit production task acceptance"
+            },
+            {
+              "message_id": "3",
+              "action": "RECEIVE_DELIVERY",
+              "reason": "delivery recorded; independent review still required"
+            },
+            {
+              "message_id": "wrong-review_session_idFAIL",
+              "action": "RECEIVE_VERDICT",
+              "reason": "completion gate still required"
+            }
+          ],
+          "accepted_identity": null,
+          "cursor": null,
+          "artifact_revision": "v1",
+          "artifact_sha256": "cba06b5736faf67e54b07b561eae94395e774c517a7d910a54369e1263ccfbd4",
+          "delivery_message_id": "3",
+          "artifact_path": "artifact.txt",
+          "artifact_kind": "file",
+          "delivery": {
+            "task_id": "synthetic-73",
+            "task_revision": 1,
+            "criteria_sha256": "9ee5de2e457a897dae602e7dc9e365827e465967abf965138c380ecaef6660f7",
+            "kind": "delivery",
+            "artifact_revision": "v1",
+            "artifact_sha256": "cba06b5736faf67e54b07b561eae94395e774c517a7d910a54369e1263ccfbd4",
+            "artifact_path": "artifact.txt",
+            "delivery_message_id": "3"
+          },
+          "review_request_id": "request-73",
+          "review_session_id": "fresh-73",
+          "review_run_id": "run-73",
+          "review_session_fresh": true,
+          "request": {
+            "task_id": "synthetic-73",
+            "task_revision": 1,
+            "criteria_sha256": "9ee5de2e457a897dae602e7dc9e365827e465967abf965138c380ecaef6660f7",
+            "artifact_revision": "v1",
+            "artifact_sha256": "cba06b5736faf67e54b07b561eae94395e774c517a7d910a54369e1263ccfbd4",
+            "delivery_message_id": "3",
+            "review_request_id": "request-73",
+            "review_session_id": "fresh-73",
+            "review_run_id": "run-73",
+            "review_session_fresh": true
+          },
+          "pending_verdict": {
+            "task_id": "synthetic-73",
+            "task_revision": 1,
+            "criteria_sha256": "9ee5de2e457a897dae602e7dc9e365827e465967abf965138c380ecaef6660f7",
+            "artifact_revision": "v1",
+            "artifact_sha256": "cba06b5736faf67e54b07b561eae94395e774c517a7d910a54369e1263ccfbd4",
+            "delivery_message_id": "3",
+            "review_request_id": "request-73",
+            "review_session_id": "old-identity",
+            "review_run_id": "run-73",
+            "review_session_fresh": true,
+            "kind": "review_verdict",
+            "verdict": "FAIL",
+            "message_id": "wrong-review_session_idFAIL"
+          }
+        }
+      },
+      "mismatch_review_session_id_PARTIAL": {
+        "input": {
+          "task_id": "synthetic-73",
+          "task_revision": 1,
+          "criteria_sha256": "9ee5de2e457a897dae602e7dc9e365827e465967abf965138c380ecaef6660f7",
+          "artifact_revision": "v1",
+          "artifact_sha256": "cba06b5736faf67e54b07b561eae94395e774c517a7d910a54369e1263ccfbd4",
+          "delivery_message_id": "3",
+          "review_request_id": "request-73",
+          "review_session_id": "old-identity",
+          "review_run_id": "run-73",
+          "review_session_fresh": true,
+          "kind": "review_verdict",
+          "verdict": "PARTIAL"
+        },
+        "before_state": "REVIEW_REQUIRED",
+        "after": {
+          "schema": "qore-task/1",
+          "task_id": "synthetic-73",
+          "task_revision": 1,
+          "criteria_sha256": "9ee5de2e457a897dae602e7dc9e365827e465967abf965138c380ecaef6660f7",
+          "objective": "check local bytes",
+          "state": "BLOCKED",
+          "awaiting": null,
+          "next_action_owner": "pm",
+          "assignment_message_id": "assign-73",
+          "dependencies_satisfied": true,
+          "authorization_satisfied": true,
+          "processed_message_ids": [
+            "2",
+            "3",
+            "wrong-review_session_idPARTIAL"
+          ],
+          "decisions": [
+            {
+              "message_id": "2",
+              "action": "ACCEPT_ACK",
+              "reason": "explicit production task acceptance"
+            },
+            {
+              "message_id": "3",
+              "action": "RECEIVE_DELIVERY",
+              "reason": "delivery recorded; independent review still required"
+            },
+            {
+              "message_id": "wrong-review_session_idPARTIAL",
+              "action": "RECEIVE_VERDICT",
+              "reason": "completion gate still required"
+            }
+          ],
+          "accepted_identity": null,
+          "cursor": null,
+          "artifact_revision": "v1",
+          "artifact_sha256": "cba06b5736faf67e54b07b561eae94395e774c517a7d910a54369e1263ccfbd4",
+          "delivery_message_id": "3",
+          "artifact_path": "artifact.txt",
+          "artifact_kind": "file",
+          "delivery": {
+            "task_id": "synthetic-73",
+            "task_revision": 1,
+            "criteria_sha256": "9ee5de2e457a897dae602e7dc9e365827e465967abf965138c380ecaef6660f7",
+            "kind": "delivery",
+            "artifact_revision": "v1",
+            "artifact_sha256": "cba06b5736faf67e54b07b561eae94395e774c517a7d910a54369e1263ccfbd4",
+            "artifact_path": "artifact.txt",
+            "delivery_message_id": "3"
+          },
+          "review_request_id": "request-73",
+          "review_session_id": "fresh-73",
+          "review_run_id": "run-73",
+          "review_session_fresh": true,
+          "request": {
+            "task_id": "synthetic-73",
+            "task_revision": 1,
+            "criteria_sha256": "9ee5de2e457a897dae602e7dc9e365827e465967abf965138c380ecaef6660f7",
+            "artifact_revision": "v1",
+            "artifact_sha256": "cba06b5736faf67e54b07b561eae94395e774c517a7d910a54369e1263ccfbd4",
+            "delivery_message_id": "3",
+            "review_request_id": "request-73",
+            "review_session_id": "fresh-73",
+            "review_run_id": "run-73",
+            "review_session_fresh": true
+          },
+          "pending_verdict": {
+            "task_id": "synthetic-73",
+            "task_revision": 1,
+            "criteria_sha256": "9ee5de2e457a897dae602e7dc9e365827e465967abf965138c380ecaef6660f7",
+            "artifact_revision": "v1",
+            "artifact_sha256": "cba06b5736faf67e54b07b561eae94395e774c517a7d910a54369e1263ccfbd4",
+            "delivery_message_id": "3",
+            "review_request_id": "request-73",
+            "review_session_id": "old-identity",
+            "review_run_id": "run-73",
+            "review_session_fresh": true,
+            "kind": "review_verdict",
+            "verdict": "PARTIAL",
+            "message_id": "wrong-review_session_idPARTIAL"
+          }
+        }
+      },
+      "mismatch_review_session_id_BLOCKED": {
+        "input": {
+          "task_id": "synthetic-73",
+          "task_revision": 1,
+          "criteria_sha256": "9ee5de2e457a897dae602e7dc9e365827e465967abf965138c380ecaef6660f7",
+          "artifact_revision": "v1",
+          "artifact_sha256": "cba06b5736faf67e54b07b561eae94395e774c517a7d910a54369e1263ccfbd4",
+          "delivery_message_id": "3",
+          "review_request_id": "request-73",
+          "review_session_id": "old-identity",
+          "review_run_id": "run-73",
+          "review_session_fresh": true,
+          "kind": "review_verdict",
+          "verdict": "BLOCKED"
+        },
+        "before_state": "REVIEW_REQUIRED",
+        "after": {
+          "schema": "qore-task/1",
+          "task_id": "synthetic-73",
+          "task_revision": 1,
+          "criteria_sha256": "9ee5de2e457a897dae602e7dc9e365827e465967abf965138c380ecaef6660f7",
+          "objective": "check local bytes",
+          "state": "BLOCKED",
+          "awaiting": null,
+          "next_action_owner": "pm",
+          "assignment_message_id": "assign-73",
+          "dependencies_satisfied": true,
+          "authorization_satisfied": true,
+          "processed_message_ids": [
+            "2",
+            "3",
+            "wrong-review_session_idBLOCKED"
+          ],
+          "decisions": [
+            {
+              "message_id": "2",
+              "action": "ACCEPT_ACK",
+              "reason": "explicit production task acceptance"
+            },
+            {
+              "message_id": "3",
+              "action": "RECEIVE_DELIVERY",
+              "reason": "delivery recorded; independent review still required"
+            },
+            {
+              "message_id": "wrong-review_session_idBLOCKED",
+              "action": "RECEIVE_VERDICT",
+              "reason": "completion gate still required"
+            }
+          ],
+          "accepted_identity": null,
+          "cursor": null,
+          "artifact_revision": "v1",
+          "artifact_sha256": "cba06b5736faf67e54b07b561eae94395e774c517a7d910a54369e1263ccfbd4",
+          "delivery_message_id": "3",
+          "artifact_path": "artifact.txt",
+          "artifact_kind": "file",
+          "delivery": {
+            "task_id": "synthetic-73",
+            "task_revision": 1,
+            "criteria_sha256": "9ee5de2e457a897dae602e7dc9e365827e465967abf965138c380ecaef6660f7",
+            "kind": "delivery",
+            "artifact_revision": "v1",
+            "artifact_sha256": "cba06b5736faf67e54b07b561eae94395e774c517a7d910a54369e1263ccfbd4",
+            "artifact_path": "artifact.txt",
+            "delivery_message_id": "3"
+          },
+          "review_request_id": "request-73",
+          "review_session_id": "fresh-73",
+          "review_run_id": "run-73",
+          "review_session_fresh": true,
+          "request": {
+            "task_id": "synthetic-73",
+            "task_revision": 1,
+            "criteria_sha256": "9ee5de2e457a897dae602e7dc9e365827e465967abf965138c380ecaef6660f7",
+            "artifact_revision": "v1",
+            "artifact_sha256": "cba06b5736faf67e54b07b561eae94395e774c517a7d910a54369e1263ccfbd4",
+            "delivery_message_id": "3",
+            "review_request_id": "request-73",
+            "review_session_id": "fresh-73",
+            "review_run_id": "run-73",
+            "review_session_fresh": true
+          },
+          "pending_verdict": {
+            "task_id": "synthetic-73",
+            "task_revision": 1,
+            "criteria_sha256": "9ee5de2e457a897dae602e7dc9e365827e465967abf965138c380ecaef6660f7",
+            "artifact_revision": "v1",
+            "artifact_sha256": "cba06b5736faf67e54b07b561eae94395e774c517a7d910a54369e1263ccfbd4",
+            "delivery_message_id": "3",
+            "review_request_id": "request-73",
+            "review_session_id": "old-identity",
+            "review_run_id": "run-73",
+            "review_session_fresh": true,
+            "kind": "review_verdict",
+            "verdict": "BLOCKED",
+            "message_id": "wrong-review_session_idBLOCKED"
+          }
+        }
+      },
+      "mismatch_review_run_id_FAIL": {
+        "input": {
+          "task_id": "synthetic-73",
+          "task_revision": 1,
+          "criteria_sha256": "9ee5de2e457a897dae602e7dc9e365827e465967abf965138c380ecaef6660f7",
+          "artifact_revision": "v1",
+          "artifact_sha256": "cba06b5736faf67e54b07b561eae94395e774c517a7d910a54369e1263ccfbd4",
+          "delivery_message_id": "3",
+          "review_request_id": "request-73",
+          "review_session_id": "fresh-73",
+          "review_run_id": "old-identity",
+          "review_session_fresh": true,
+          "kind": "review_verdict",
+          "verdict": "FAIL"
+        },
+        "before_state": "REVIEW_REQUIRED",
+        "after": {
+          "schema": "qore-task/1",
+          "task_id": "synthetic-73",
+          "task_revision": 1,
+          "criteria_sha256": "9ee5de2e457a897dae602e7dc9e365827e465967abf965138c380ecaef6660f7",
+          "objective": "check local bytes",
+          "state": "CHANGES_REQUIRED",
+          "awaiting": null,
+          "next_action_owner": "production",
+          "assignment_message_id": "assign-73",
+          "dependencies_satisfied": true,
+          "authorization_satisfied": true,
+          "processed_message_ids": [
+            "2",
+            "3",
+            "wrong-review_run_idFAIL"
+          ],
+          "decisions": [
+            {
+              "message_id": "2",
+              "action": "ACCEPT_ACK",
+              "reason": "explicit production task acceptance"
+            },
+            {
+              "message_id": "3",
+              "action": "RECEIVE_DELIVERY",
+              "reason": "delivery recorded; independent review still required"
+            },
+            {
+              "message_id": "wrong-review_run_idFAIL",
+              "action": "RECEIVE_VERDICT",
+              "reason": "completion gate still required"
+            }
+          ],
+          "accepted_identity": null,
+          "cursor": null,
+          "artifact_revision": "v1",
+          "artifact_sha256": "cba06b5736faf67e54b07b561eae94395e774c517a7d910a54369e1263ccfbd4",
+          "delivery_message_id": "3",
+          "artifact_path": "artifact.txt",
+          "artifact_kind": "file",
+          "delivery": {
+            "task_id": "synthetic-73",
+            "task_revision": 1,
+            "criteria_sha256": "9ee5de2e457a897dae602e7dc9e365827e465967abf965138c380ecaef6660f7",
+            "kind": "delivery",
+            "artifact_revision": "v1",
+            "artifact_sha256": "cba06b5736faf67e54b07b561eae94395e774c517a7d910a54369e1263ccfbd4",
+            "artifact_path": "artifact.txt",
+            "delivery_message_id": "3"
+          },
+          "review_request_id": "request-73",
+          "review_session_id": "fresh-73",
+          "review_run_id": "run-73",
+          "review_session_fresh": true,
+          "request": {
+            "task_id": "synthetic-73",
+            "task_revision": 1,
+            "criteria_sha256": "9ee5de2e457a897dae602e7dc9e365827e465967abf965138c380ecaef6660f7",
+            "artifact_revision": "v1",
+            "artifact_sha256": "cba06b5736faf67e54b07b561eae94395e774c517a7d910a54369e1263ccfbd4",
+            "delivery_message_id": "3",
+            "review_request_id": "request-73",
+            "review_session_id": "fresh-73",
+            "review_run_id": "run-73",
+            "review_session_fresh": true
+          },
+          "pending_verdict": {
+            "task_id": "synthetic-73",
+            "task_revision": 1,
+            "criteria_sha256": "9ee5de2e457a897dae602e7dc9e365827e465967abf965138c380ecaef6660f7",
+            "artifact_revision": "v1",
+            "artifact_sha256": "cba06b5736faf67e54b07b561eae94395e774c517a7d910a54369e1263ccfbd4",
+            "delivery_message_id": "3",
+            "review_request_id": "request-73",
+            "review_session_id": "fresh-73",
+            "review_run_id": "old-identity",
+            "review_session_fresh": true,
+            "kind": "review_verdict",
+            "verdict": "FAIL",
+            "message_id": "wrong-review_run_idFAIL"
+          }
+        }
+      },
+      "mismatch_review_run_id_PARTIAL": {
+        "input": {
+          "task_id": "synthetic-73",
+          "task_revision": 1,
+          "criteria_sha256": "9ee5de2e457a897dae602e7dc9e365827e465967abf965138c380ecaef6660f7",
+          "artifact_revision": "v1",
+          "artifact_sha256": "cba06b5736faf67e54b07b561eae94395e774c517a7d910a54369e1263ccfbd4",
+          "delivery_message_id": "3",
+          "review_request_id": "request-73",
+          "review_session_id": "fresh-73",
+          "review_run_id": "old-identity",
+          "review_session_fresh": true,
+          "kind": "review_verdict",
+          "verdict": "PARTIAL"
+        },
+        "before_state": "REVIEW_REQUIRED",
+        "after": {
+          "schema": "qore-task/1",
+          "task_id": "synthetic-73",
+          "task_revision": 1,
+          "criteria_sha256": "9ee5de2e457a897dae602e7dc9e365827e465967abf965138c380ecaef6660f7",
+          "objective": "check local bytes",
+          "state": "BLOCKED",
+          "awaiting": null,
+          "next_action_owner": "pm",
+          "assignment_message_id": "assign-73",
+          "dependencies_satisfied": true,
+          "authorization_satisfied": true,
+          "processed_message_ids": [
+            "2",
+            "3",
+            "wrong-review_run_idPARTIAL"
+          ],
+          "decisions": [
+            {
+              "message_id": "2",
+              "action": "ACCEPT_ACK",
+              "reason": "explicit production task acceptance"
+            },
+            {
+              "message_id": "3",
+              "action": "RECEIVE_DELIVERY",
+              "reason": "delivery recorded; independent review still required"
+            },
+            {
+              "message_id": "wrong-review_run_idPARTIAL",
+              "action": "RECEIVE_VERDICT",
+              "reason": "completion gate still required"
+            }
+          ],
+          "accepted_identity": null,
+          "cursor": null,
+          "artifact_revision": "v1",
+          "artifact_sha256": "cba06b5736faf67e54b07b561eae94395e774c517a7d910a54369e1263ccfbd4",
+          "delivery_message_id": "3",
+          "artifact_path": "artifact.txt",
+          "artifact_kind": "file",
+          "delivery": {
+            "task_id": "synthetic-73",
+            "task_revision": 1,
+            "criteria_sha256": "9ee5de2e457a897dae602e7dc9e365827e465967abf965138c380ecaef6660f7",
+            "kind": "delivery",
+            "artifact_revision": "v1",
+            "artifact_sha256": "cba06b5736faf67e54b07b561eae94395e774c517a7d910a54369e1263ccfbd4",
+            "artifact_path": "artifact.txt",
+            "delivery_message_id": "3"
+          },
+          "review_request_id": "request-73",
+          "review_session_id": "fresh-73",
+          "review_run_id": "run-73",
+          "review_session_fresh": true,
+          "request": {
+            "task_id": "synthetic-73",
+            "task_revision": 1,
+            "criteria_sha256": "9ee5de2e457a897dae602e7dc9e365827e465967abf965138c380ecaef6660f7",
+            "artifact_revision": "v1",
+            "artifact_sha256": "cba06b5736faf67e54b07b561eae94395e774c517a7d910a54369e1263ccfbd4",
+            "delivery_message_id": "3",
+            "review_request_id": "request-73",
+            "review_session_id": "fresh-73",
+            "review_run_id": "run-73",
+            "review_session_fresh": true
+          },
+          "pending_verdict": {
+            "task_id": "synthetic-73",
+            "task_revision": 1,
+            "criteria_sha256": "9ee5de2e457a897dae602e7dc9e365827e465967abf965138c380ecaef6660f7",
+            "artifact_revision": "v1",
+            "artifact_sha256": "cba06b5736faf67e54b07b561eae94395e774c517a7d910a54369e1263ccfbd4",
+            "delivery_message_id": "3",
+            "review_request_id": "request-73",
+            "review_session_id": "fresh-73",
+            "review_run_id": "old-identity",
+            "review_session_fresh": true,
+            "kind": "review_verdict",
+            "verdict": "PARTIAL",
+            "message_id": "wrong-review_run_idPARTIAL"
+          }
+        }
+      },
+      "mismatch_review_run_id_BLOCKED": {
+        "input": {
+          "task_id": "synthetic-73",
+          "task_revision": 1,
+          "criteria_sha256": "9ee5de2e457a897dae602e7dc9e365827e465967abf965138c380ecaef6660f7",
+          "artifact_revision": "v1",
+          "artifact_sha256": "cba06b5736faf67e54b07b561eae94395e774c517a7d910a54369e1263ccfbd4",
+          "delivery_message_id": "3",
+          "review_request_id": "request-73",
+          "review_session_id": "fresh-73",
+          "review_run_id": "old-identity",
+          "review_session_fresh": true,
+          "kind": "review_verdict",
+          "verdict": "BLOCKED"
+        },
+        "before_state": "REVIEW_REQUIRED",
+        "after": {
+          "schema": "qore-task/1",
+          "task_id": "synthetic-73",
+          "task_revision": 1,
+          "criteria_sha256": "9ee5de2e457a897dae602e7dc9e365827e465967abf965138c380ecaef6660f7",
+          "objective": "check local bytes",
+          "state": "BLOCKED",
+          "awaiting": null,
+          "next_action_owner": "pm",
+          "assignment_message_id": "assign-73",
+          "dependencies_satisfied": true,
+          "authorization_satisfied": true,
+          "processed_message_ids": [
+            "2",
+            "3",
+            "wrong-review_run_idBLOCKED"
+          ],
+          "decisions": [
+            {
+              "message_id": "2",
+              "action": "ACCEPT_ACK",
+              "reason": "explicit production task acceptance"
+            },
+            {
+              "message_id": "3",
+              "action": "RECEIVE_DELIVERY",
+              "reason": "delivery recorded; independent review still required"
+            },
+            {
+              "message_id": "wrong-review_run_idBLOCKED",
+              "action": "RECEIVE_VERDICT",
+              "reason": "completion gate still required"
+            }
+          ],
+          "accepted_identity": null,
+          "cursor": null,
+          "artifact_revision": "v1",
+          "artifact_sha256": "cba06b5736faf67e54b07b561eae94395e774c517a7d910a54369e1263ccfbd4",
+          "delivery_message_id": "3",
+          "artifact_path": "artifact.txt",
+          "artifact_kind": "file",
+          "delivery": {
+            "task_id": "synthetic-73",
+            "task_revision": 1,
+            "criteria_sha256": "9ee5de2e457a897dae602e7dc9e365827e465967abf965138c380ecaef6660f7",
+            "kind": "delivery",
+            "artifact_revision": "v1",
+            "artifact_sha256": "cba06b5736faf67e54b07b561eae94395e774c517a7d910a54369e1263ccfbd4",
+            "artifact_path": "artifact.txt",
+            "delivery_message_id": "3"
+          },
+          "review_request_id": "request-73",
+          "review_session_id": "fresh-73",
+          "review_run_id": "run-73",
+          "review_session_fresh": true,
+          "request": {
+            "task_id": "synthetic-73",
+            "task_revision": 1,
+            "criteria_sha256": "9ee5de2e457a897dae602e7dc9e365827e465967abf965138c380ecaef6660f7",
+            "artifact_revision": "v1",
+            "artifact_sha256": "cba06b5736faf67e54b07b561eae94395e774c517a7d910a54369e1263ccfbd4",
+            "delivery_message_id": "3",
+            "review_request_id": "request-73",
+            "review_session_id": "fresh-73",
+            "review_run_id": "run-73",
+            "review_session_fresh": true
+          },
+          "pending_verdict": {
+            "task_id": "synthetic-73",
+            "task_revision": 1,
+            "criteria_sha256": "9ee5de2e457a897dae602e7dc9e365827e465967abf965138c380ecaef6660f7",
+            "artifact_revision": "v1",
+            "artifact_sha256": "cba06b5736faf67e54b07b561eae94395e774c517a7d910a54369e1263ccfbd4",
+            "delivery_message_id": "3",
+            "review_request_id": "request-73",
+            "review_session_id": "fresh-73",
+            "review_run_id": "old-identity",
+            "review_session_fresh": true,
+            "kind": "review_verdict",
+            "verdict": "BLOCKED",
+            "message_id": "wrong-review_run_idBLOCKED"
+          }
+        }
+      },
+      "proxy_dispatch": {
+        "host": "synthetic-proxy.invalid:8123",
+        "selector": "http://127.0.0.1:8765/mcp/",
+        "authorization": "Bearer SYNTHETIC-73",
+        "type": "http",
+        "socket_opened": false
+      },
+      "deadline": {
+        "elapsed_simulated_seconds": 142.0,
+        "calls": [
+          {
+            "name": "fetch_inbox",
+            "start": 0.0,
+            "timeout": 30
+          },
+          {
+            "name": "acknowledge_message",
+            "start": 2.0,
+            "timeout": 30
+          },
+          {
+            "name": "acknowledge_message",
+            "start": 22.0,
+            "timeout": 30
+          },
+          {
+            "name": "acknowledge_message",
+            "start": 42.0,
+            "timeout": 30
+          },
+          {
+            "name": "acknowledge_message",
+            "start": 62.0,
+            "timeout": 30
+          },
+          {
+            "name": "acknowledge_message",
+            "start": 82.0,
+            "timeout": 30
+          },
+          {
+            "name": "acknowledge_message",
+            "start": 102.0,
+            "timeout": 30
+          },
+          {
+            "name": "acknowledge_message",
+            "start": 122.0,
+            "timeout": 30
+          }
+        ],
+        "result": {
+          "status": "RECEIVED",
+          "reads": 1,
+          "state": "ASSIGNED",
+          "awaiting": "production_ack",
+          "acknowledged": [
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ]
+        },
+        "socket_opened": false
+      }
+    },
+    "identity.json": {
+      "actor": "fresh-independent-verifier /root",
+      "operator": "agent",
+      "host": "0da4f65011ce",
+      "observed_at": "2026-10-16T07:19:40.487747+00:00",
+      "target_snapshot_sha256": "3282ea44daa3be81eeadd6185274bd53d29cb43a07e14fd801ee14b33c79baac",
+      "candidate_sha256": "2b4d8c75c24c9377aa41c27c7a317901043ea76216ec6d595ed198059d1502c1",
+      "claims_sha256": "13b0f07e2e722e9b6c9a80ae02340ca4f84d11e6910bbb90c79cf81c4ad1fc8b",
+      "profile": {
+        "id": "qaizen-labs",
+        "version": "0.1.0",
+        "sha256": "f76afdd45cb6352e5044a06affc4182ea6cd40aa9c012fb216636a61faa428f0"
+      },
+      "isolation": "Only filtered claims and raw public target/skill read. No finders spawned or finder reports/reproductions read. No private source, home/auth files or live services accessed.",
+      "requested_role": "fresh verifier only",
+      "returned_role": "fresh verifier only",
+      "examined_ids": [
+        "C01",
+        "C02",
+        "S1",
+        "F-FEAS-01",
+        "F-FEAS-02"
+      ],
+      "unexamined_ids": [],
+      "git_identity": "git rev-parse HEAD failed: public checkout has no resolvable HEAD; exact file hashes retained instead",
+      "budget_seconds": 180
+    }
+  }
+}

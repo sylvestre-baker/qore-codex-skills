@@ -1,0 +1,55 @@
+{
+  "findings": [
+    {
+      "id": "C01",
+      "title": "Failed or incomplete review has no supported recovery transition",
+      "severity": "medium",
+      "evidence": "tools/coordination.py:79 only receives deliveries in IN_PROGRESS/awaiting=delivery; :92-95 moves FAIL to CHANGES_REQUIRED and PARTIAL/BLOCKED to BLOCKED with awaiting=None; :107 only permits review requests in REVIEW_REQUIRED/awaiting=None. docs/coordination.md:71 promises corrected artifacts as a new delivery/request after failed review. Measured reproduction: python3 -B /workspace/qualification/finders/correctness/reproduce.py; saved reproduction.json C01.",
+      "trigger": "A valid current review returns FAIL, PARTIAL or BLOCKED, followed by a corrected delivery or fresh review request under unchanged task criteria.",
+      "consequence": "The corrected delivery is permanently recorded as REJECT/not awaiting delivery; requesting another review raises not ready for a fresh review request. The documented correction loop cannot progress using the exposed commands. Manual register editing or a newly assigned task revision is required although criteria did not change.",
+      "reproduction": "Run the saved reproduce.py. Each of FAIL/PARTIAL/BLOCKED produces CHANGES_REQUIRED or BLOCKED, rejects delivery a2, and rejects fresh request q2. Replaying the rejected delivery ID is skipped because it is already processed.",
+      "unresolved_condition": "Finder-local reproduction only; a fresh verifier has not examined this candidate. No finding about whether the website itself fails."
+    },
+    {
+      "id": "C02",
+      "title": "Wrong review session or run can apply a terminal failure verdict",
+      "severity": "medium",
+      "evidence": "tools/coordination.py:88 compares only REVIEW_KEYS, which omit session/run (tools/task_gate.py:12); :89-95 stores verdict and applies FAIL/PARTIAL/BLOCKED before checking those fields. tools/task_gate.py:102-104 checks session/run only in the later completion gate. docs/coordination.md:21 requires verdict/proofs to carry the same identity and :73 says stale verdicts cannot change current acceptance. Measured reproduction: saved reproduction.json C02.",
+      "trigger": "A verdict has the current task/artifact/request identity but missing or different review_session_id/review_run_id, and declares FAIL (likewise PARTIAL/BLOCKED). This can be a malformed or mismatched cooperative message; no hostile actor assumption is required.",
+      "consequence": "The coordinator accepts the wrong-session FAIL and moves to CHANGES_REQUIRED. A subsequent verdict from the actual current session/run is rejected as not awaiting review. The completion gate cannot protect this earlier terminal transition; the correct reviewer loses its active recovery path.",
+      "reproduction": "Run saved reproduce.py: request q1 targets s1/run1; verdict 6 targets old-session/old-run with FAIL and is recorded RECEIVE_VERDICT, state CHANGES_REQUIRED; verdict 7 from s1/run1 is REJECT/not awaiting review.",
+      "unresolved_condition": "Finder-local reproduction only; no fresh verifier ran. A correctly identified PASS still must pass task_gate checks, so this does not claim false DONE."
+    },
+    {
+      "id": "S1",
+      "title": "Loopback Agent Mail bearer can be sent through an environment HTTP proxy",
+      "severity": "medium",
+      "evidence": "tools/agent_mail.py:25 validates only the URL hostname; tools/agent_mail.py:34 adds Authorization; tools/agent_mail.py:35 uses build_opener(NoRedirect) with its default environment ProxyHandler. docs/coordination.md promises loopback endpoint containment. Running python3 -B /workspace/qualification/finders/security/repro_proxy.py exits 0 and captures host=proxy.invalid:8080, selector=http://127.0.0.1:8765/mcp/, Authorization=Bearer SYNTHETIC-NOT-A-SECRET at HTTP dispatch, without opening a socket. See repro_proxy.json.",
+      "trigger": "An otherwise cooperative executor has http_proxy configured and no matching no_proxy exclusion for the supplied loopback hostname. No hostile actor or second PM is required.",
+      "consequence": "The proxy receives the bearer and task RPC payload over HTTP, despite the adapter accepting only a loopback endpoint. The proxy also mediates returned inbox bodies. Actual exposure depends on the executor proxy configuration; none is asserted for this environment.",
+      "reproduction": "Run the saved repro_proxy.py. It clears environment only inside a mock context, supplies synthetic http_proxy/no_proxy and token values, and patches HTTPHandler.http_open to capture the final dispatch instead of using network. Expected containment: direct 127.0.0.1 dispatch. Actual: proxy.invalid:8080 receives Authorization and private-project arguments.",
+      "unresolved_condition": "Fresh verifier has not examined this candidate; reproduction observes urllib dispatch rather than a real proxy exchange.",
+      "recommendation": "Build this loopback-only opener with urllib.request.ProxyHandler({}) alongside NoRedirect and add a socket-free regression with environment proxy variables set."
+    },
+    {
+      "id": "F-FEAS-01",
+      "title": "Failed review has no supported corrected-delivery transition",
+      "severity": "medium",
+      "evidence": "tools/coordination.py:79 accepts delivery only from IN_PROGRESS/awaiting=delivery; :92-93 changes a FAIL to CHANGES_REQUIRED/awaiting=None; :106-107 accepts requests only from REVIEW_REQUIRED. docs/coordination.md:71 instructs a corrected artifact/new delivery/request after failed review. Running python3 -B /workspace/qualification/finders/feasibility/reproduce.py yields CHANGES_REQUIRED after FAIL and after corrected delivery, with REJECT: not awaiting delivery.",
+      "trigger": "A current fresh review returns FAIL and production submits a new artifact under unchanged criteria.",
+      "consequence": "The documented correction loop cannot progress to a new review or DONE through supplied commands. Manual register surgery or an otherwise unnecessary new task revision/assignment is needed.",
+      "reproduction": "Run saved reproduce.py, first case. It initializes criteria, consumes ACK and first delivery, records request and FAIL, then consumes corrected artifact revision a2. Expected correction can be recorded for a new request; actual state stays CHANGES_REQUIRED.",
+      "unresolved_condition": "Candidate only; independent verifier has not run. Add a guarded correction/resubmission transition preserving stale-review rejection, or document an explicit supported revision restart."
+    },
+    {
+      "id": "F-FEAS-02",
+      "title": "Acknowledgement batch can overrun the declared receive deadline",
+      "severity": "medium",
+      "evidence": "docs/coordination.md:13 promises a receive window of at most 120 seconds. tools/agent_mail.py:58-59 sets timeout only before fetch; :84-89 acknowledges every matching processed message and returns RECEIVED before the deadline check at :103. Saved reproduce.py uses the actual receive function and Client subclass with a virtual monotonic clock: 1-second fetch plus six 25-second successful ACKs returns RECEIVED after 151 simulated seconds for seconds=120; every call retains timeout=30, including one started at t=126.",
+      "trigger": "Several ACK-required messages exist and each successful ACK is slow but below its per-call timeout. Historical processed entries with ack_required still set are included too.",
+      "consequence": "Operator control is delayed beyond the documented finite window; a permitted 999-entry batch can schedule 29,970 seconds of 30-second per-call waits before loop deadline handling (conditional bound, not a real transport measurement).",
+      "reproduction": "Run saved reproduce.py, second case. No real network or waiting is used; the deterministic scheduler shows the receive loop issuing work after its deadline.",
+      "unresolved_condition": "Independent verification and real transport latency testing remain pending. Recompute remaining time before each ACK, stop the batch at deadline, and preserve remaining ACKs for safe replay."
+    }
+  ]
+}

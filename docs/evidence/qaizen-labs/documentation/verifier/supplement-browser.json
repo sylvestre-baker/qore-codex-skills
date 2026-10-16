@@ -1,0 +1,80 @@
+{
+  "method": "Fresh isolated MV3 extension; chrome.tabs.setZoom 2.0; viewport:null; no CSS zoom.",
+  "before": {
+    "innerWidth": 1280,
+    "outerWidth": 1280,
+    "innerHeight": 813,
+    "outerHeight": 900,
+    "dpr": 1,
+    "scroll": 1280,
+    "cssZoom": "1",
+    "h1": {
+      "x": 90,
+      "y": 235.875,
+      "width": 1000,
+      "height": 161.90625,
+      "top": 235.875,
+      "right": 1090,
+      "bottom": 397.78125,
+      "left": 90
+    }
+  },
+  "zoom": {
+    "tab_id": 478895674,
+    "actual_factor": 2
+  },
+  "after": {
+    "innerWidth": 640,
+    "outerWidth": 1280,
+    "innerHeight": 406,
+    "outerHeight": 900,
+    "dpr": 2,
+    "scroll": 640,
+    "cssZoom": "1",
+    "h1": {
+      "x": 17.59375,
+      "y": 235.609375,
+      "width": 604.8125,
+      "height": 92,
+      "top": 235.609375,
+      "right": 622.40625,
+      "bottom": 327.609375,
+      "left": 17.59375
+    }
+  },
+  "zoomViewportScreenshot": "CDP current surface capture; full-page screenshot at non-default zoom may clip.",
+  "failedMedia": {
+    "events": [
+      {
+        "tag": "SOURCE",
+        "event": "error",
+        "src": "http://127.0.0.1:64357/qore-codex-skills/media/demo.mp4"
+      },
+      {
+        "tag": "SOURCE",
+        "event": "error",
+        "src": "http://127.0.0.1:64357/qore-codex-skills/media/demo.mp4"
+      }
+    ],
+    "networkState": 3,
+    "readyState": 0,
+    "caseText": "Can the Labs journey really be checked with a keyboard?",
+    "transcriptText": "Read the complete transcript",
+    "transcriptHref": "http://127.0.0.1:64357/qore-codex-skills/media/transcript.html",
+    "responses": [
+      {
+        "url": "http://127.0.0.1:64357/qore-codex-skills/media/demo.mp4",
+        "status": 404
+      },
+      {
+        "url": "http://127.0.0.1:64357/qore-codex-skills/media/demo.mp4",
+        "status": 404
+      }
+    ]
+  },
+  "transcript": {
+    "statusText": "Three methods, one sourced project profile\n\nSilent English technical montage, approximately 105 seconds. Separate actual executions and selected result fields; the browser recordin",
+    "characters": 2153,
+    "title": "Qore Labs demonstration transcript"
+  }
+}

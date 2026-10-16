@@ -1,0 +1,75 @@
+{
+  "schema": "qore-clean-qualification/1",
+  "status": "ACTUAL_COMPLETE_SOURCE_REVIEW",
+  "preparation_environment": {
+    "schema": "qore-clean-room-environment/1",
+    "status": "PREPARED_NOT_ACTIVATED",
+    "os": "Linux-6.12.72-linuxkit-aarch64-with-musl1",
+    "architecture": "aarch64",
+    "uid": 1000,
+    "gid": 1000,
+    "working_directory": "/workspace",
+    "runtimes": {
+      "node": "v22.23.2",
+      "npm": "10.9.8",
+      "python": "Python 3.14.8",
+      "codex": "codex-cli 0.162.0",
+      "git": "git version 2.54.0"
+    },
+    "codex_flags": {
+      "--ignore-user-config": true,
+      "--ignore-rules": true,
+      "--ephemeral": true,
+      "--json": true
+    },
+    "isolation": {
+      "mounts": [],
+      "privileged": false,
+      "cap_drop": [
+        "ALL"
+      ],
+      "no_new_privileges": true,
+      "author_home_present": false,
+      "candidate_staged": false
+    },
+    "limits": [
+      "No authenticated Codex invocation has been performed by this inspection.",
+      "This environment is an independent Linux container; it is not an external human first-use trial."
+    ]
+  },
+  "qualification": {
+    "initial_archive_sha256": "a9e54d890ec4202ad113ac2e559499418e59fe14ba320e730a15a27515534ac6",
+    "derivative_manifest_sha256": "0540496cea29da71f72046f36a12c3a23b4d71900c97f7193f4dba699836b036",
+    "actual_discovery": [
+      "qore-plan",
+      "qore-review",
+      "qore-ux-review",
+      "qore-plan-qaizen-labs",
+      "qore-review-qaizen-labs",
+      "qore-ux-review-qaizen-labs"
+    ],
+    "actors": {
+      "correctness": "01a1438f-413c-79a0-ab42-5a7cca6c463c",
+      "security": "01a1438f-413c-7190-b53b-ebc14b95387c",
+      "feasibility": "01a1438f-413c-7182-834c-a9ed984ffb06",
+      "verifier": "01a14393-5328-76c2-9338-ee103ba2f993",
+      "fix-verifier": "01a14396-9fb8-7182-b5e8-a8ed7b35426e"
+    },
+    "structural_tests": {
+      "collected": 149,
+      "passed": 138,
+      "skipped_browser": 11
+    },
+    "fresh_profile_before_consumption": true,
+    "complete_review": "review/run.json",
+    "separate_corrections": "review/fix-verifier/REPORT.md"
+  },
+  "limits": [
+    "Preparation metadata is preserved from before authentication/staging; actual execution occurred later and has separate context/run identities.",
+    "Only extracted public candidate, documented host facilities and approved target inputs; no host mounts, author personal skill directories, private source or global config.",
+    "Temporary standard Codex authentication was streamed separately and excluded from every artifact/image.",
+    "Actual new browser execution took place on macOS, not this Linux worker.",
+    "Original generic tutorial remains historical unchanged-resource evidence; this new clean complete invocation uses the Labs derivative.",
+    "Agent execution is not external human first-use."
+  ]
+}

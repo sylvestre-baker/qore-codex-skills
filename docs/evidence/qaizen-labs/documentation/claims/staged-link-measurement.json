@@ -1,0 +1,33 @@
+{
+  "checked": "all staged Markdown local link targets",
+  "failures": [
+    {
+      "path": "evidence/README.md",
+      "line": 3,
+      "link": "../../../profiles/qaizen-labs.json",
+      "escapes_staging": true,
+      "target_exists": false
+    },
+    {
+      "path": "evidence/README.md",
+      "line": 20,
+      "link": "../../demo/qaizen-labs/README.md",
+      "escapes_staging": true,
+      "target_exists": false
+    },
+    {
+      "path": "evidence/README.md",
+      "line": 20,
+      "link": "../../showcase.md",
+      "escapes_staging": true,
+      "target_exists": false
+    },
+    {
+      "path": "evidence/README.md",
+      "line": 20,
+      "link": "../../coordination-dependencies.md",
+      "escapes_staging": true,
+      "target_exists": false
+    }
+  ]
+}

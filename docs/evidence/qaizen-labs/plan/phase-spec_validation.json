@@ -1,0 +1,63 @@
+{
+  "qore_evidence": {
+    "candidate_sha256": "0540496cea29da71f72046f36a12c3a23b4d71900c97f7193f4dba699836b036",
+    "target_snapshot_sha256": "1461fc149209fa29adc067a2b8f3c644055228aa0a2f45485779e3a418f47fd6",
+    "observed_at": "2026-10-16T06:57:52.245873+00:00",
+    "phase_id": "spec_validation"
+  },
+  "payload": {
+    "result": {
+      "valid": true,
+      "schema": "qore-spec/1",
+      "scenarios": [
+        {
+          "id": "L01",
+          "name": "L01 Consume current project facts",
+          "line": 76
+        },
+        {
+          "id": "L02",
+          "name": "L02 Check the contract offline",
+          "line": 82
+        },
+        {
+          "id": "L03",
+          "name": "L03 Require keyboard reachability",
+          "line": 88
+        },
+        {
+          "id": "L04",
+          "name": "L04 Preserve distinct focus transitions",
+          "line": 94
+        },
+        {
+          "id": "L05",
+          "name": "L05 Enforce observation boundaries",
+          "line": 100
+        },
+        {
+          "id": "L06",
+          "name": "L06 Wait for actual navigation",
+          "line": 106
+        },
+        {
+          "id": "L07",
+          "name": "L07 Keep scope and evidence honest",
+          "line": 112
+        },
+        {
+          "id": "L08",
+          "name": "L08 A focused heading cannot conceal an incorrect returned state",
+          "line": 118
+        },
+        {
+          "id": "L09",
+          "name": "L09 Observe delayed focus without repeated activation",
+          "line": 124
+        }
+      ],
+      "problems": []
+    },
+    "output_spec_sha256": "cea72a50acaeecf8666327aa740a39b7abcb09d0bd5d989c72217f066fc2105f"
+  }
+}

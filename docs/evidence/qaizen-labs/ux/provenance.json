@@ -1,0 +1,382 @@
+{
+  "schema": "qore-public-transformation/1",
+  "scope": "Selected public unauthenticated Qaizen observations and first-party method receipts, reviewed by the root agent",
+  "artifacts": [
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/ux/phase-scope.json",
+      "raw_sha256": "ff2a6fd5b70ed9183c9beb105d179648d2fcdebdb53c7ed6f155a0415b428a3c",
+      "path": "phase-scope.json",
+      "public_sha256": "ff2a6fd5b70ed9183c9beb105d179648d2fcdebdb53c7ed6f155a0415b428a3c",
+      "transformation": "Exact bytes for PNG; private workspace and driver-module roots normalized in text. No trace or unreviewed raw recording exported."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/ux/phase-profile_preflight.json",
+      "raw_sha256": "d650efcce1885f361152d8c6db205dac8b72178d69659287585e290967299478",
+      "path": "phase-profile_preflight.json",
+      "public_sha256": "d650efcce1885f361152d8c6db205dac8b72178d69659287585e290967299478",
+      "transformation": "Exact bytes for PNG; private workspace and driver-module roots normalized in text. No trace or unreviewed raw recording exported."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/ux/phase-browser.json",
+      "raw_sha256": "8cff95eb3331a3064a009e25139ae664114303bb099d461fd31fa81d38f59fb8",
+      "path": "phase-browser.json",
+      "public_sha256": "09d7d55e5c36a9c77bc08090893777585ad72f2eb8a6d81be3fa01faa484f8d7",
+      "transformation": "Exact bytes for PNG; private workspace and driver-module roots normalized in text. No trace or unreviewed raw recording exported."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/ux/phase-state_transition.json",
+      "raw_sha256": "291fa2e3a4a17c8f96d4b296482ff065b003addf9ad565e8213c37815e138969",
+      "path": "phase-state_transition.json",
+      "public_sha256": "291fa2e3a4a17c8f96d4b296482ff065b003addf9ad565e8213c37815e138969",
+      "transformation": "Exact bytes for PNG; private workspace and driver-module roots normalized in text. No trace or unreviewed raw recording exported."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/ux/phase-freshness.json",
+      "raw_sha256": "2efc87557d217d3b5ad8602e74a474ce1f210a177e693acb54d85787df180fea",
+      "path": "phase-freshness.json",
+      "public_sha256": "2efc87557d217d3b5ad8602e74a474ce1f210a177e693acb54d85787df180fea",
+      "transformation": "Exact bytes for PNG; private workspace and driver-module roots normalized in text. No trace or unreviewed raw recording exported."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/ux/iteration-1-journey/00-entry.dom.json",
+      "raw_sha256": "09a05d31c16faaf8980d863723e3f901798ef49b4cac43ea54aec912de99112d",
+      "path": "iteration-1-journey/00-entry.dom.json",
+      "public_sha256": "09a05d31c16faaf8980d863723e3f901798ef49b4cac43ea54aec912de99112d",
+      "transformation": "Exact bytes for PNG; private workspace and driver-module roots normalized in text. No trace or unreviewed raw recording exported."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/ux/iteration-1-journey/01-introduction.dom.json",
+      "raw_sha256": "a2432ef473f94ac624222f4c7c21f4bea18abcf45cacbeccd3b6c6ab8718959b",
+      "path": "iteration-1-journey/01-introduction.dom.json",
+      "public_sha256": "a2432ef473f94ac624222f4c7c21f4bea18abcf45cacbeccd3b6c6ab8718959b",
+      "transformation": "Exact bytes for PNG; private workspace and driver-module roots normalized in text. No trace or unreviewed raw recording exported."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/ux/iteration-1-journey/02-first-question.dom.json",
+      "raw_sha256": "1e613383296987ecedb9eb1dce4e5dec76311ea779ea66628a6566da36de94ec",
+      "path": "iteration-1-journey/02-first-question.dom.json",
+      "public_sha256": "1e613383296987ecedb9eb1dce4e5dec76311ea779ea66628a6566da36de94ec",
+      "transformation": "Exact bytes for PNG; private workspace and driver-module roots normalized in text. No trace or unreviewed raw recording exported."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/ux/iteration-1-journey/03-help-reopened.dom.json",
+      "raw_sha256": "4f14201d544411bfd37201d7945aa7fcde78951ee5de96bfb5457e5fafaad762",
+      "path": "iteration-1-journey/03-help-reopened.dom.json",
+      "public_sha256": "4f14201d544411bfd37201d7945aa7fcde78951ee5de96bfb5457e5fafaad762",
+      "transformation": "Exact bytes for PNG; private workspace and driver-module roots normalized in text. No trace or unreviewed raw recording exported."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/ux/iteration-1-journey/04-close-keyboard-focus.dom.json",
+      "raw_sha256": "7b9686332b98a0cc52d5d3396bd1280645d4ad5f5afe4a910ac098f4b9ae276d",
+      "path": "iteration-1-journey/04-close-keyboard-focus.dom.json",
+      "public_sha256": "7b9686332b98a0cc52d5d3396bd1280645d4ad5f5afe4a910ac098f4b9ae276d",
+      "transformation": "Exact bytes for PNG; private workspace and driver-module roots normalized in text. No trace or unreviewed raw recording exported."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/ux/iteration-1-journey/05-help-closed.dom.json",
+      "raw_sha256": "938e30c3da9a29922c2cd4e820bc1703e0f628db799a9ff472a05c608384ba91",
+      "path": "iteration-1-journey/05-help-closed.dom.json",
+      "public_sha256": "938e30c3da9a29922c2cd4e820bc1703e0f628db799a9ff472a05c608384ba91",
+      "transformation": "Exact bytes for PNG; private workspace and driver-module roots normalized in text. No trace or unreviewed raw recording exported."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/ux/iteration-1-journey/06-back-keyboard-focus.dom.json",
+      "raw_sha256": "02a5705585b076c2ce0abfd3a3f0fd97aef363de279eafb092fecea0a03ba0f7",
+      "path": "iteration-1-journey/06-back-keyboard-focus.dom.json",
+      "public_sha256": "02a5705585b076c2ce0abfd3a3f0fd97aef363de279eafb092fecea0a03ba0f7",
+      "transformation": "Exact bytes for PNG; private workspace and driver-module roots normalized in text. No trace or unreviewed raw recording exported."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/ux/iteration-1-journey/07-returned-introduction.dom.json",
+      "raw_sha256": "e443f0cc395ba443781a14f4896440d37c266724d7fd32f90c88c82f6e4082ba",
+      "path": "iteration-1-journey/07-returned-introduction.dom.json",
+      "public_sha256": "e443f0cc395ba443781a14f4896440d37c266724d7fd32f90c88c82f6e4082ba",
+      "transformation": "Exact bytes for PNG; private workspace and driver-module roots normalized in text. No trace or unreviewed raw recording exported."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/ux/iteration-1-journey/08-final.dom.json",
+      "raw_sha256": "e443f0cc395ba443781a14f4896440d37c266724d7fd32f90c88c82f6e4082ba",
+      "path": "iteration-1-journey/08-final.dom.json",
+      "public_sha256": "e443f0cc395ba443781a14f4896440d37c266724d7fd32f90c88c82f6e4082ba",
+      "transformation": "Exact bytes for PNG; private workspace and driver-module roots normalized in text. No trace or unreviewed raw recording exported."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/ux/iteration-1-journey/events.json",
+      "raw_sha256": "cd3bf847fe8ed3c194b413ccf68b1f495006febb160347908581ee98b1f8eaa9",
+      "path": "iteration-1-journey/events.json",
+      "public_sha256": "cd3bf847fe8ed3c194b413ccf68b1f495006febb160347908581ee98b1f8eaa9",
+      "transformation": "Exact bytes for PNG; private workspace and driver-module roots normalized in text. No trace or unreviewed raw recording exported."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/ux/iteration-1-journey/result.json",
+      "raw_sha256": "3ed48dacb76be26b9cba9e3be790fd6e87fe33e973d260a32fc3fea512a22fbf",
+      "path": "iteration-1-journey/result.json",
+      "public_sha256": "3ed48dacb76be26b9cba9e3be790fd6e87fe33e973d260a32fc3fea512a22fbf",
+      "transformation": "Exact bytes for PNG; private workspace and driver-module roots normalized in text. No trace or unreviewed raw recording exported."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/ux/iteration-1-direct-history/00-entry.dom.json",
+      "raw_sha256": "524b0152744d052e6bb253eaeda4ff35b7bc69b132546fc509c7edd1958c13a1",
+      "path": "iteration-1-direct-history/00-entry.dom.json",
+      "public_sha256": "524b0152744d052e6bb253eaeda4ff35b7bc69b132546fc509c7edd1958c13a1",
+      "transformation": "Exact bytes for PNG; private workspace and driver-module roots normalized in text. No trace or unreviewed raw recording exported."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/ux/iteration-1-direct-history/01-direct-introduction.dom.json",
+      "raw_sha256": "c00e0e1a0c28b0d2f984b0264f3aa3ae89439a7023cb28a87cae1d02d83fa374",
+      "path": "iteration-1-direct-history/01-direct-introduction.dom.json",
+      "public_sha256": "c00e0e1a0c28b0d2f984b0264f3aa3ae89439a7023cb28a87cae1d02d83fa374",
+      "transformation": "Exact bytes for PNG; private workspace and driver-module roots normalized in text. No trace or unreviewed raw recording exported."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/ux/iteration-1-direct-history/02-reloaded-introduction.dom.json",
+      "raw_sha256": "524b0152744d052e6bb253eaeda4ff35b7bc69b132546fc509c7edd1958c13a1",
+      "path": "iteration-1-direct-history/02-reloaded-introduction.dom.json",
+      "public_sha256": "524b0152744d052e6bb253eaeda4ff35b7bc69b132546fc509c7edd1958c13a1",
+      "transformation": "Exact bytes for PNG; private workspace and driver-module roots normalized in text. No trace or unreviewed raw recording exported."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/ux/iteration-1-direct-history/03-labs-neighbor.dom.json",
+      "raw_sha256": "09a05d31c16faaf8980d863723e3f901798ef49b4cac43ea54aec912de99112d",
+      "path": "iteration-1-direct-history/03-labs-neighbor.dom.json",
+      "public_sha256": "09a05d31c16faaf8980d863723e3f901798ef49b4cac43ea54aec912de99112d",
+      "transformation": "Exact bytes for PNG; private workspace and driver-module roots normalized in text. No trace or unreviewed raw recording exported."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/ux/iteration-1-direct-history/04-history-back-introduction.dom.json",
+      "raw_sha256": "524b0152744d052e6bb253eaeda4ff35b7bc69b132546fc509c7edd1958c13a1",
+      "path": "iteration-1-direct-history/04-history-back-introduction.dom.json",
+      "public_sha256": "524b0152744d052e6bb253eaeda4ff35b7bc69b132546fc509c7edd1958c13a1",
+      "transformation": "Exact bytes for PNG; private workspace and driver-module roots normalized in text. No trace or unreviewed raw recording exported."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/ux/iteration-1-direct-history/05-history-forward-labs.dom.json",
+      "raw_sha256": "09a05d31c16faaf8980d863723e3f901798ef49b4cac43ea54aec912de99112d",
+      "path": "iteration-1-direct-history/05-history-forward-labs.dom.json",
+      "public_sha256": "09a05d31c16faaf8980d863723e3f901798ef49b4cac43ea54aec912de99112d",
+      "transformation": "Exact bytes for PNG; private workspace and driver-module roots normalized in text. No trace or unreviewed raw recording exported."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/ux/iteration-1-direct-history/06-final.dom.json",
+      "raw_sha256": "09a05d31c16faaf8980d863723e3f901798ef49b4cac43ea54aec912de99112d",
+      "path": "iteration-1-direct-history/06-final.dom.json",
+      "public_sha256": "09a05d31c16faaf8980d863723e3f901798ef49b4cac43ea54aec912de99112d",
+      "transformation": "Exact bytes for PNG; private workspace and driver-module roots normalized in text. No trace or unreviewed raw recording exported."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/ux/iteration-1-direct-history/events.json",
+      "raw_sha256": "faaa4172e2b2ad48fc7bcce47d8c5887957176166e87ed7d7e6b09be68913cf4",
+      "path": "iteration-1-direct-history/events.json",
+      "public_sha256": "faaa4172e2b2ad48fc7bcce47d8c5887957176166e87ed7d7e6b09be68913cf4",
+      "transformation": "Exact bytes for PNG; private workspace and driver-module roots normalized in text. No trace or unreviewed raw recording exported."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/ux/iteration-1-direct-history/result.json",
+      "raw_sha256": "8c319c1a88e2ba52687fd84fe55e0192ef29958b7a57945892fc3d97c6ee6d9c",
+      "path": "iteration-1-direct-history/result.json",
+      "public_sha256": "8c319c1a88e2ba52687fd84fe55e0192ef29958b7a57945892fc3d97c6ee6d9c",
+      "transformation": "Exact bytes for PNG; private workspace and driver-module roots normalized in text. No trace or unreviewed raw recording exported."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/ux/iteration-1-journey/00-entry.png",
+      "raw_sha256": "f9f7b4b0c63899f21010387d05bf159108e2b858d7053c4905be19cca81d5789",
+      "path": "iteration-1-journey/00-entry.png",
+      "public_sha256": "f9f7b4b0c63899f21010387d05bf159108e2b858d7053c4905be19cca81d5789",
+      "transformation": "Exact bytes for PNG; private workspace and driver-module roots normalized in text. No trace or unreviewed raw recording exported."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/ux/iteration-1-journey/01-introduction.png",
+      "raw_sha256": "8deee316cd4dc446dff0fc6b2d955c5e89c672c44b0fe0edd27e157b88a1816d",
+      "path": "iteration-1-journey/01-introduction.png",
+      "public_sha256": "8deee316cd4dc446dff0fc6b2d955c5e89c672c44b0fe0edd27e157b88a1816d",
+      "transformation": "Exact bytes for PNG; private workspace and driver-module roots normalized in text. No trace or unreviewed raw recording exported."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/ux/iteration-1-journey/02-first-question.png",
+      "raw_sha256": "a5396e6ebbef542a3b7bea548d49ec7bb98c0883adfae06ef649f622b4ad1756",
+      "path": "iteration-1-journey/02-first-question.png",
+      "public_sha256": "a5396e6ebbef542a3b7bea548d49ec7bb98c0883adfae06ef649f622b4ad1756",
+      "transformation": "Exact bytes for PNG; private workspace and driver-module roots normalized in text. No trace or unreviewed raw recording exported."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/ux/iteration-1-journey/03-help-reopened.png",
+      "raw_sha256": "f11dfb7913db35cde4e2ea25415f0f21db303fdc1798f7f8e6385d6bb246fbd1",
+      "path": "iteration-1-journey/03-help-reopened.png",
+      "public_sha256": "f11dfb7913db35cde4e2ea25415f0f21db303fdc1798f7f8e6385d6bb246fbd1",
+      "transformation": "Exact bytes for PNG; private workspace and driver-module roots normalized in text. No trace or unreviewed raw recording exported."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/ux/iteration-1-journey/04-close-keyboard-focus.png",
+      "raw_sha256": "d93b0151525f43d0fa60b42d293560a07d6f6c3a3a8d9036b091faaec3546f0d",
+      "path": "iteration-1-journey/04-close-keyboard-focus.png",
+      "public_sha256": "d93b0151525f43d0fa60b42d293560a07d6f6c3a3a8d9036b091faaec3546f0d",
+      "transformation": "Exact bytes for PNG; private workspace and driver-module roots normalized in text. No trace or unreviewed raw recording exported."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/ux/iteration-1-journey/05-help-closed.png",
+      "raw_sha256": "0ce713b314b23b1c32a792ff9b76630efa7954a22ab244bddccdffefa396cbb1",
+      "path": "iteration-1-journey/05-help-closed.png",
+      "public_sha256": "0ce713b314b23b1c32a792ff9b76630efa7954a22ab244bddccdffefa396cbb1",
+      "transformation": "Exact bytes for PNG; private workspace and driver-module roots normalized in text. No trace or unreviewed raw recording exported."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/ux/iteration-1-journey/06-back-keyboard-focus.png",
+      "raw_sha256": "8151143b22fc274123db218e6fe78173179df634848e654d064a1d1f7d8c28d9",
+      "path": "iteration-1-journey/06-back-keyboard-focus.png",
+      "public_sha256": "8151143b22fc274123db218e6fe78173179df634848e654d064a1d1f7d8c28d9",
+      "transformation": "Exact bytes for PNG; private workspace and driver-module roots normalized in text. No trace or unreviewed raw recording exported."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/ux/iteration-1-journey/07-returned-introduction.png",
+      "raw_sha256": "177030aa940a2458e1a3e749febe5846e4c0d467604c2fdd2b51ade30a245b90",
+      "path": "iteration-1-journey/07-returned-introduction.png",
+      "public_sha256": "177030aa940a2458e1a3e749febe5846e4c0d467604c2fdd2b51ade30a245b90",
+      "transformation": "Exact bytes for PNG; private workspace and driver-module roots normalized in text. No trace or unreviewed raw recording exported."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/ux/iteration-1-direct-history/02-reloaded-introduction.png",
+      "raw_sha256": "8c12568cc767e1d111812033ddd4823fc5ffcaf12d6561cb61b74ffa210a4bc8",
+      "path": "iteration-1-direct-history/02-reloaded-introduction.png",
+      "public_sha256": "8c12568cc767e1d111812033ddd4823fc5ffcaf12d6561cb61b74ffa210a4bc8",
+      "transformation": "Exact bytes for PNG; private workspace and driver-module roots normalized in text. No trace or unreviewed raw recording exported."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/ux/iteration-1-direct-history/04-history-back-introduction.png",
+      "raw_sha256": "a8756bff2abdfe5a6016910666b98cef3dca4e4b975a0dc273a7f11af2f0e6a6",
+      "path": "iteration-1-direct-history/04-history-back-introduction.png",
+      "public_sha256": "a8756bff2abdfe5a6016910666b98cef3dca4e4b975a0dc273a7f11af2f0e6a6",
+      "transformation": "Exact bytes for PNG; private workspace and driver-module roots normalized in text. No trace or unreviewed raw recording exported."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/ux/iteration-1-direct-history/05-history-forward-labs.png",
+      "raw_sha256": "484c55e66c4e31ca320607543e4ad4b28e877409b4f861352c1ef9af0f013137",
+      "path": "iteration-1-direct-history/05-history-forward-labs.png",
+      "public_sha256": "484c55e66c4e31ca320607543e4ad4b28e877409b4f861352c1ef9af0f013137",
+      "transformation": "Exact bytes for PNG; private workspace and driver-module roots normalized in text. No trace or unreviewed raw recording exported."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/ux/initial-scope.json",
+      "raw_sha256": "2ad66db56b11b84b8a731fb520eaf43b6c7c365b5089df11afb8a700261f292d",
+      "path": "initial-scope.json",
+      "public_sha256": "2ad66db56b11b84b8a731fb520eaf43b6c7c365b5089df11afb8a700261f292d",
+      "transformation": "Exact bytes for PNG; private workspace and driver-module roots normalized in text. No trace or unreviewed raw recording exported."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/ux/depth.json",
+      "raw_sha256": "2634b09f36695180df9e9d53b09d5d38c2194d895b67f7489949cd36fb77b061",
+      "path": "depth.json",
+      "public_sha256": "2634b09f36695180df9e9d53b09d5d38c2194d895b67f7489949cd36fb77b061",
+      "transformation": "Exact bytes for PNG; private workspace and driver-module roots normalized in text. No trace or unreviewed raw recording exported."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/ux/depth-validation.json",
+      "raw_sha256": "298867b82de7b68116cc6cd51c5123e544b58c0d03a368f0bf902f8264da29f9",
+      "path": "depth-validation.json",
+      "public_sha256": "298867b82de7b68116cc6cd51c5123e544b58c0d03a368f0bf902f8264da29f9",
+      "transformation": "Exact bytes for PNG; private workspace and driver-module roots normalized in text. No trace or unreviewed raw recording exported."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/ux/profile-preflight.json",
+      "raw_sha256": "48c142b6065894d55a41c5fcde9bb317471a74e946ad9c1f82854729d9f4cc52",
+      "path": "profile-preflight.json",
+      "public_sha256": "48c142b6065894d55a41c5fcde9bb317471a74e946ad9c1f82854729d9f4cc52",
+      "transformation": "Exact bytes for PNG; private workspace and driver-module roots normalized in text. No trace or unreviewed raw recording exported."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/ux/input-identity.json",
+      "raw_sha256": "aacca3cceee64ca29f551cfc006142d2d5c71b984a55c909f86239797c2dc780",
+      "path": "input-identity.json",
+      "public_sha256": "aacca3cceee64ca29f551cfc006142d2d5c71b984a55c909f86239797c2dc780",
+      "transformation": "Exact bytes for PNG; private workspace and driver-module roots normalized in text. No trace or unreviewed raw recording exported."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/ux/identity-time-correction.json",
+      "raw_sha256": "a87e548d54a2a0c0b600451f3067053a579c622f3307a79e5f7fb3531e5ae023",
+      "path": "identity-time-correction.json",
+      "public_sha256": "a87e548d54a2a0c0b600451f3067053a579c622f3307a79e5f7fb3531e5ae023",
+      "transformation": "Exact bytes for PNG; private workspace and driver-module roots normalized in text. No trace or unreviewed raw recording exported."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/ux/commands.json",
+      "raw_sha256": "6a3906037809583786bcc2f5cbc84a96923380366366ff7b55fea4a1a7379dd8",
+      "path": "commands.json",
+      "public_sha256": "fa7c469047dd7660825d4c5927bbf39a53a22d6dc1c495f5b4d3007ba765f3f4",
+      "transformation": "Exact bytes for PNG; private workspace and driver-module roots normalized in text. No trace or unreviewed raw recording exported."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/ux/direct-history-actions.json",
+      "raw_sha256": "de8553482e6977f9b25c48c262921047e6f3b7aaf2118f1527e2362ea874bded",
+      "path": "direct-history-actions.json",
+      "public_sha256": "de8553482e6977f9b25c48c262921047e6f3b7aaf2118f1527e2362ea874bded",
+      "transformation": "Exact bytes for PNG; private workspace and driver-module roots normalized in text. No trace or unreviewed raw recording exported."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/ux/loop.json",
+      "raw_sha256": "a120a732c73cabe2d53bb0db07276476f9e70f6df1637802eeb5093a213bacec",
+      "path": "loop.json",
+      "public_sha256": "a120a732c73cabe2d53bb0db07276476f9e70f6df1637802eeb5093a213bacec",
+      "transformation": "Exact bytes for PNG; private workspace and driver-module roots normalized in text. No trace or unreviewed raw recording exported."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/ux/gate-evidence.json",
+      "raw_sha256": "8f3ce760c87634a763fa08d0341a7b1b60a17ae95d43a0bcb96374af83b830bd",
+      "path": "gate-evidence.json",
+      "public_sha256": "8f3ce760c87634a763fa08d0341a7b1b60a17ae95d43a0bcb96374af83b830bd",
+      "transformation": "Exact bytes for PNG; private workspace and driver-module roots normalized in text. No trace or unreviewed raw recording exported."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/ux/control-tests.log",
+      "raw_sha256": "6e740f57edc42e4eda987fbea19f1eaefdea124c8829705040d0255bd29a8f75",
+      "path": "control-tests.log",
+      "public_sha256": "6e740f57edc42e4eda987fbea19f1eaefdea124c8829705040d0255bd29a8f75",
+      "transformation": "Exact bytes for PNG; private workspace and driver-module roots normalized in text. No trace or unreviewed raw recording exported."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/ux/stop-result.json",
+      "raw_sha256": "7a172338d126ec5d2afb05fb2cbfe58a094918380694b4b4ba5a1cb75eefbb6c",
+      "path": "stop-result.json",
+      "public_sha256": "7a172338d126ec5d2afb05fb2cbfe58a094918380694b4b4ba5a1cb75eefbb6c",
+      "transformation": "Exact bytes for PNG; private workspace and driver-module roots normalized in text. No trace or unreviewed raw recording exported."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/ux/stop-initial-error.json",
+      "raw_sha256": "4d2561a234adf5956251d96199aac4e50c74cfcbac8e343a81238616f1d0d55f",
+      "path": "stop-initial-error.json",
+      "public_sha256": "4d2561a234adf5956251d96199aac4e50c74cfcbac8e343a81238616f1d0d55f",
+      "transformation": "Exact bytes for PNG; private workspace and driver-module roots normalized in text. No trace or unreviewed raw recording exported."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/ux/phase-verdict.json",
+      "raw_sha256": "d24a8dc8096c5fea8585a3c1fcffd617c74e603c00d4158ca10356dfa159dca0",
+      "path": "phase-verdict.json",
+      "public_sha256": "d24a8dc8096c5fea8585a3c1fcffd617c74e603c00d4158ca10356dfa159dca0",
+      "transformation": "Exact bytes for PNG; private workspace and driver-module roots normalized in text. No trace or unreviewed raw recording exported."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/ux/run.json",
+      "raw_sha256": "b70a5df91eb5e9e5ca52e92819f7b4c5e5cd130beab57f9c3cdc29c3e93d9c2b",
+      "path": "run.json",
+      "public_sha256": "900947b3cd64220c98ac8126c499184e9dd2fd38712be153982479511360f40d",
+      "transformation": "Exact bytes for PNG; private workspace and driver-module roots normalized in text. No trace or unreviewed raw recording exported. Public run identity/artifact digests and explicit normalization limit updated."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/ux/run-validation.json",
+      "raw_sha256": "da9f042203083afb9cf5be011f730b0dbcb17f17f9a53090b40360260c84df6a",
+      "path": "run-validation.json",
+      "public_sha256": "da9f042203083afb9cf5be011f730b0dbcb17f17f9a53090b40360260c84df6a",
+      "transformation": "Exact bytes for PNG; private workspace and driver-module roots normalized in text. No trace or unreviewed raw recording exported."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/ux/REPORT.md",
+      "raw_sha256": "ac48c77836b539bd4a4b5fd853572714b3202c4f72f1f05eac446ffba986663b",
+      "path": "REPORT.md",
+      "public_sha256": "ac48c77836b539bd4a4b5fd853572714b3202c4f72f1f05eac446ffba986663b",
+      "transformation": "Exact bytes for PNG; private workspace and driver-module roots normalized in text. No trace or unreviewed raw recording exported."
+    }
+  ],
+  "limits": [
+    "Raw Playwright traces may retain network/page data and remain private.",
+    "Public evidence supports only the declared desktop entry/state scope.",
+    "First-party English report prose and original observed-site spelling are retained."
+  ]
+}

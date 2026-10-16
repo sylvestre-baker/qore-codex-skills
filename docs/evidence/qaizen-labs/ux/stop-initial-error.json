@@ -1,0 +1,6 @@
+{
+  "status": "REJECTED",
+  "diagnostic": "stop-rule: not_applicable must map in-scope gates to non-empty reasons.",
+  "correction": "Removed the out-of-scope GP entry from the loop mapping; the initial required G0-G6 scope and measurements did not change. Performance exclusion remains in initial-scope.json.",
+  "scope_changed": false
+}

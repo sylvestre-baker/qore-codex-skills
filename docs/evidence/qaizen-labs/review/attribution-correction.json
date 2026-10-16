@@ -1,0 +1,23 @@
+{
+  "schema": "qore-evidence-correction/1",
+  "reason": "Mechanical redaction was executed by the root lead, not the later fresh verifier. The initial lead-created public wrapper used the verifier context ID and completion time by mistake.",
+  "prior_public_run_id": "qaizen-labs-review-20261016-public",
+  "prior_public_run_sha256": "1d1e217829e47209cd7c90e424c56b8b6815630fb97ce504d73b90eaea2db2f8",
+  "current_public_run_id": "qaizen-labs-review-20261016-public-attribution-corrected",
+  "current_public_run_sha256": "0b487b3cdc2a59a1ac256b76c5665bbaa5dafbbe47f37e90cddd880b7d3a0968",
+  "redaction": {
+    "actor_id": "/root",
+    "actual_log_completed_at": "2026-10-16T07:18:10.779836+00:00",
+    "private_actual_receipt": "qore-private:qore002-implementation-20261016/linux/redaction.json",
+    "actual_receipt_sha256": "db2ba65e18b73154eba5134d0c60af1c2128894696a712744d764439193a2e7b",
+    "prior_phase_sha256": "11815e8d56f96c0df8fccdec00b7abf7ade8a4b675942833820b501587d469e4",
+    "current_phase_sha256": "587395a1f19bf44bd4b06d49ecc903e1981ac9424ffa4edbe8be8b2d5e9672f4"
+  },
+  "unchanged": [
+    "Original archive and target snapshot",
+    "All finder and verifier contexts, reports, findings and separate fixes",
+    "Mechanical input/filter/output bytes and chronology",
+    "Frozen PM accepted delivery/proofs; those retain their original identity"
+  ],
+  "limit": "This corrects provenance metadata, not a new model execution or review conclusion."
+}

@@ -1,0 +1,426 @@
+{
+  "renderer": "Local GFM marked preview with GitHub-like CSS; not an actual GitHub-hosted rendering or accessibility certification",
+  "observed_at": "2026-10-16T07:39:33.176Z",
+  "results": [
+    {
+      "label": "wide",
+      "width": 1440,
+      "height": 1000,
+      "documentWidth": 1440,
+      "viewport": 1440,
+      "images": [
+        {
+          "alt": "Qore Labs demonstration: three methods and one sourced project profile",
+          "loaded": true
+        }
+      ],
+      "codeBlocks": 4,
+      "headings": [
+        "Qore Skills",
+        "Choose your task",
+        "Try one review",
+        "Use a method on your project",
+        "See the evidence",
+        "Adapt all three methods from one profile",
+        "Understand the boundaries",
+        "Troubleshoot and update",
+        "Reference and contribute",
+        "License and provenance"
+      ],
+      "links": [
+        {
+          "text": "Sylvestre Franceschi",
+          "href": "https://github.com/sylvestre-baker"
+        },
+        {
+          "text": "Qaizen",
+          "href": "https://qaizen.io"
+        },
+        {
+          "text": "See the problem, evidence, decision and limits",
+          "href": "docs/evidence/validator-case.md"
+        },
+        {
+          "text": "qualification record",
+          "href": "docs/qualification.md"
+        },
+        {
+          "text": "bundled validator-hardening specification",
+          "href": "examples/validator-hardening.md"
+        },
+        {
+          "text": "safe updates",
+          "href": "docs/profiles.md#update-without-overwriting"
+        },
+        {
+          "text": "Troubleshoot discovery or missing capabilities",
+          "href": "docs/troubleshooting.md"
+        },
+        {
+          "text": "Qaizen Labs case",
+          "href": "docs/evidence/qaizen-labs/README.md"
+        },
+        {
+          "text": "Qore Labs demonstration: three methods and one sourced project profile",
+          "href": "docs/demo/qaizen-labs/demo.mp4"
+        },
+        {
+          "text": "Watch the 105-second technical demonstration",
+          "href": "docs/demo/qaizen-labs/demo.mp4"
+        },
+        {
+          "text": "Accessible English transcript",
+          "href": "docs/demo/qaizen-labs/transcript.html"
+        },
+        {
+          "text": "English captions",
+          "href": "docs/demo/qaizen-labs/demo.en.vtt"
+        },
+        {
+          "text": "Static showcase preparation",
+          "href": "docs/showcase.md"
+        },
+        {
+          "text": "planning report",
+          "href": "docs/evidence/qaizen-labs/plan/REPORT.md"
+        },
+        {
+          "text": "review and corrections",
+          "href": "docs/evidence/qaizen-labs/review/REPORT.md"
+        },
+        {
+          "text": "dated UX observations",
+          "href": "docs/evidence/qaizen-labs/ux/REPORT.md"
+        },
+        {
+          "text": "actual PM acceptance",
+          "href": "docs/evidence/qaizen-labs/coordination/README.md"
+        },
+        {
+          "text": "earlier validator case",
+          "href": "docs/evidence/validator-case.md"
+        },
+        {
+          "text": "0.1.0 execution record",
+          "href": "docs/qualification.md"
+        },
+        {
+          "text": "the Qaizen Labs project case",
+          "href": "examples/qaizen-labs/README.md"
+        },
+        {
+          "text": "PM/production workflow",
+          "href": "docs/coordination.md"
+        },
+        {
+          "text": "transport limitations",
+          "href": "docs/coordination-dependencies.md"
+        },
+        {
+          "text": "Qore profile",
+          "href": "profiles/qore.json"
+        },
+        {
+          "text": "contrasting fixture profile",
+          "href": "profiles/contrast.json"
+        },
+        {
+          "text": "Profile fields, runtime checks, and safe updates",
+          "href": "docs/profiles.md"
+        },
+        {
+          "text": "qualification evidence",
+          "href": "docs/qualification.md"
+        },
+        {
+          "text": "independent Linux procedure",
+          "href": "docs/clean-environment.md"
+        },
+        {
+          "text": "Safe updates",
+          "href": "docs/profiles.md#update-without-overwriting"
+        },
+        {
+          "text": "observed failures and recovery",
+          "href": "docs/troubleshooting.md"
+        },
+        {
+          "text": "Releases",
+          "href": "https://github.com/sylvestre-baker/qore-codex-skills/releases"
+        },
+        {
+          "text": "changelog",
+          "href": "CHANGELOG.md"
+        },
+        {
+          "text": "publication record",
+          "href": "docs/publication.md"
+        },
+        {
+          "text": "Architecture",
+          "href": "docs/architecture.md"
+        },
+        {
+          "text": "Contracts and validators",
+          "href": "docs/contracts.md"
+        },
+        {
+          "text": "Command and prompt inventory",
+          "href": "docs/command-inventory.json"
+        },
+        {
+          "text": "Troubleshooting",
+          "href": "docs/troubleshooting.md"
+        },
+        {
+          "text": "planning",
+          "href": "skills/qore-plan/SKILL.md"
+        },
+        {
+          "text": "review",
+          "href": "skills/qore-review/SKILL.md"
+        },
+        {
+          "text": "web UX",
+          "href": "skills/qore-ux-review/SKILL.md"
+        },
+        {
+          "text": "Contributing",
+          "href": "CONTRIBUTING.md"
+        },
+        {
+          "text": "provenance",
+          "href": "PROVENANCE.md"
+        },
+        {
+          "text": "MIT license",
+          "href": "LICENSE"
+        },
+        {
+          "text": "MIT license",
+          "href": "LICENSE"
+        },
+        {
+          "text": "provenance record",
+          "href": "PROVENANCE.md"
+        }
+      ],
+      "keyboard": {
+        "tag": "A",
+        "href": "https://github.com/sylvestre-baker",
+        "outline": "solid"
+      },
+      "errors": []
+    },
+    {
+      "label": "narrow",
+      "width": 390,
+      "height": 844,
+      "documentWidth": 390,
+      "viewport": 390,
+      "images": [
+        {
+          "alt": "Qore Labs demonstration: three methods and one sourced project profile",
+          "loaded": true
+        }
+      ],
+      "codeBlocks": 4,
+      "headings": [
+        "Qore Skills",
+        "Choose your task",
+        "Try one review",
+        "Use a method on your project",
+        "See the evidence",
+        "Adapt all three methods from one profile",
+        "Understand the boundaries",
+        "Troubleshoot and update",
+        "Reference and contribute",
+        "License and provenance"
+      ],
+      "links": [
+        {
+          "text": "Sylvestre Franceschi",
+          "href": "https://github.com/sylvestre-baker"
+        },
+        {
+          "text": "Qaizen",
+          "href": "https://qaizen.io"
+        },
+        {
+          "text": "See the problem, evidence, decision and limits",
+          "href": "docs/evidence/validator-case.md"
+        },
+        {
+          "text": "qualification record",
+          "href": "docs/qualification.md"
+        },
+        {
+          "text": "bundled validator-hardening specification",
+          "href": "examples/validator-hardening.md"
+        },
+        {
+          "text": "safe updates",
+          "href": "docs/profiles.md#update-without-overwriting"
+        },
+        {
+          "text": "Troubleshoot discovery or missing capabilities",
+          "href": "docs/troubleshooting.md"
+        },
+        {
+          "text": "Qaizen Labs case",
+          "href": "docs/evidence/qaizen-labs/README.md"
+        },
+        {
+          "text": "Qore Labs demonstration: three methods and one sourced project profile",
+          "href": "docs/demo/qaizen-labs/demo.mp4"
+        },
+        {
+          "text": "Watch the 105-second technical demonstration",
+          "href": "docs/demo/qaizen-labs/demo.mp4"
+        },
+        {
+          "text": "Accessible English transcript",
+          "href": "docs/demo/qaizen-labs/transcript.html"
+        },
+        {
+          "text": "English captions",
+          "href": "docs/demo/qaizen-labs/demo.en.vtt"
+        },
+        {
+          "text": "Static showcase preparation",
+          "href": "docs/showcase.md"
+        },
+        {
+          "text": "planning report",
+          "href": "docs/evidence/qaizen-labs/plan/REPORT.md"
+        },
+        {
+          "text": "review and corrections",
+          "href": "docs/evidence/qaizen-labs/review/REPORT.md"
+        },
+        {
+          "text": "dated UX observations",
+          "href": "docs/evidence/qaizen-labs/ux/REPORT.md"
+        },
+        {
+          "text": "actual PM acceptance",
+          "href": "docs/evidence/qaizen-labs/coordination/README.md"
+        },
+        {
+          "text": "earlier validator case",
+          "href": "docs/evidence/validator-case.md"
+        },
+        {
+          "text": "0.1.0 execution record",
+          "href": "docs/qualification.md"
+        },
+        {
+          "text": "the Qaizen Labs project case",
+          "href": "examples/qaizen-labs/README.md"
+        },
+        {
+          "text": "PM/production workflow",
+          "href": "docs/coordination.md"
+        },
+        {
+          "text": "transport limitations",
+          "href": "docs/coordination-dependencies.md"
+        },
+        {
+          "text": "Qore profile",
+          "href": "profiles/qore.json"
+        },
+        {
+          "text": "contrasting fixture profile",
+          "href": "profiles/contrast.json"
+        },
+        {
+          "text": "Profile fields, runtime checks, and safe updates",
+          "href": "docs/profiles.md"
+        },
+        {
+          "text": "qualification evidence",
+          "href": "docs/qualification.md"
+        },
+        {
+          "text": "independent Linux procedure",
+          "href": "docs/clean-environment.md"
+        },
+        {
+          "text": "Safe updates",
+          "href": "docs/profiles.md#update-without-overwriting"
+        },
+        {
+          "text": "observed failures and recovery",
+          "href": "docs/troubleshooting.md"
+        },
+        {
+          "text": "Releases",
+          "href": "https://github.com/sylvestre-baker/qore-codex-skills/releases"
+        },
+        {
+          "text": "changelog",
+          "href": "CHANGELOG.md"
+        },
+        {
+          "text": "publication record",
+          "href": "docs/publication.md"
+        },
+        {
+          "text": "Architecture",
+          "href": "docs/architecture.md"
+        },
+        {
+          "text": "Contracts and validators",
+          "href": "docs/contracts.md"
+        },
+        {
+          "text": "Command and prompt inventory",
+          "href": "docs/command-inventory.json"
+        },
+        {
+          "text": "Troubleshooting",
+          "href": "docs/troubleshooting.md"
+        },
+        {
+          "text": "planning",
+          "href": "skills/qore-plan/SKILL.md"
+        },
+        {
+          "text": "review",
+          "href": "skills/qore-review/SKILL.md"
+        },
+        {
+          "text": "web UX",
+          "href": "skills/qore-ux-review/SKILL.md"
+        },
+        {
+          "text": "Contributing",
+          "href": "CONTRIBUTING.md"
+        },
+        {
+          "text": "provenance",
+          "href": "PROVENANCE.md"
+        },
+        {
+          "text": "MIT license",
+          "href": "LICENSE"
+        },
+        {
+          "text": "MIT license",
+          "href": "LICENSE"
+        },
+        {
+          "text": "provenance record",
+          "href": "PROVENANCE.md"
+        }
+      ],
+      "keyboard": {
+        "tag": "A",
+        "href": "https://github.com/sylvestre-baker",
+        "outline": "solid"
+      },
+      "errors": []
+    }
+  ]
+}

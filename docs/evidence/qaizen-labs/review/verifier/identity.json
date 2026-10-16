@@ -1,0 +1,27 @@
+{
+  "actor": "fresh-independent-verifier /root",
+  "operator": "agent",
+  "host": "0da4f65011ce",
+  "observed_at": "2026-10-16T07:19:40.487747+00:00",
+  "target_snapshot_sha256": "3282ea44daa3be81eeadd6185274bd53d29cb43a07e14fd801ee14b33c79baac",
+  "candidate_sha256": "2b4d8c75c24c9377aa41c27c7a317901043ea76216ec6d595ed198059d1502c1",
+  "claims_sha256": "13b0f07e2e722e9b6c9a80ae02340ca4f84d11e6910bbb90c79cf81c4ad1fc8b",
+  "profile": {
+    "id": "qaizen-labs",
+    "version": "0.1.0",
+    "sha256": "f76afdd45cb6352e5044a06affc4182ea6cd40aa9c012fb216636a61faa428f0"
+  },
+  "isolation": "Only filtered claims and raw public target/skill read. No finders spawned or finder reports/reproductions read. No private source, home/auth files or live services accessed.",
+  "requested_role": "fresh verifier only",
+  "returned_role": "fresh verifier only",
+  "examined_ids": [
+    "C01",
+    "C02",
+    "S1",
+    "F-FEAS-01",
+    "F-FEAS-02"
+  ],
+  "unexamined_ids": [],
+  "git_identity": "git rev-parse HEAD failed: public checkout has no resolvable HEAD; exact file hashes retained instead",
+  "budget_seconds": 180
+}

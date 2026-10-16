@@ -1,0 +1,84 @@
+{
+  "schema": "qore-task/1",
+  "task_id": "QORE002-LABS-001",
+  "task_revision": 1,
+  "criteria_sha256": "e4e9acdb6b472bc140ef31cb47e75a762b5eb0c2e4ee55423430916151f598df",
+  "state": "DONE",
+  "awaiting": null,
+  "next_action_owner": null,
+  "assignment_message_id": "10",
+  "artifact_revision": "qaizen-labs-three-methods-20261016",
+  "artifact_sha256": "c938fbdba4c39f38845a53e9a1089f6a729994d2d7b8af151d64a09035e81df6",
+  "delivery_message_id": "12",
+  "review_request_id": "68781f7a-bde7-4e01-893a-5d561dbb9817",
+  "review_session_id": "01a1439a-96c5-7722-873f-0211b766ce3f",
+  "review_run_id": "labs-evidence-review-1",
+  "processed_message_ids": [
+    "11",
+    "12",
+    "68781f7a-bde7-4e01-893a-5d561dbb9817",
+    "15"
+  ],
+  "decisions": [
+    {
+      "message_id": "11",
+      "action": "ACCEPT_ACK",
+      "reason": "explicit production task acceptance"
+    },
+    {
+      "message_id": "12",
+      "action": "RECEIVE_DELIVERY",
+      "reason": "delivery recorded; independent review still required"
+    },
+    {
+      "message_id": "15",
+      "action": "RECEIVE_VERDICT",
+      "reason": "completion gate still required"
+    },
+    {
+      "action": "DONE",
+      "reason": "current identity and required proof bytes verified",
+      "acceptance": {
+        "task_id": "QORE002-LABS-001",
+        "task_revision": 1,
+        "criteria_sha256": "e4e9acdb6b472bc140ef31cb47e75a762b5eb0c2e4ee55423430916151f598df",
+        "artifact_revision": "qaizen-labs-three-methods-20261016",
+        "artifact_sha256": "c938fbdba4c39f38845a53e9a1089f6a729994d2d7b8af151d64a09035e81df6",
+        "delivery_message_id": "12",
+        "review_request_id": "68781f7a-bde7-4e01-893a-5d561dbb9817",
+        "review_session_id": "01a1439a-96c5-7722-873f-0211b766ce3f",
+        "review_run_id": "labs-evidence-review-1",
+        "verdict_message_id": "15"
+      }
+    }
+  ],
+  "accepted_identity": {
+    "task_id": "QORE002-LABS-001",
+    "task_revision": 1,
+    "criteria_sha256": "e4e9acdb6b472bc140ef31cb47e75a762b5eb0c2e4ee55423430916151f598df",
+    "artifact_revision": "qaizen-labs-three-methods-20261016",
+    "artifact_sha256": "c938fbdba4c39f38845a53e9a1089f6a729994d2d7b8af151d64a09035e81df6",
+    "delivery_message_id": "12",
+    "review_request_id": "68781f7a-bde7-4e01-893a-5d561dbb9817",
+    "review_session_id": "01a1439a-96c5-7722-873f-0211b766ce3f",
+    "review_run_id": "labs-evidence-review-1",
+    "verdict_message_id": "15"
+  },
+  "accepted_proofs": [
+    {
+      "check_id": "plan",
+      "path": "reviewer/RedStone/plan-proof.json",
+      "sha256": "417dbaae22f98d87b18c90389b955b9a69a03f5201e15ea85bc130307450197a"
+    },
+    {
+      "check_id": "ux",
+      "path": "reviewer/RedStone/ux-proof.json",
+      "sha256": "85a20b4eba419112eb8161a1f1ea1d6ca4d854eee5648f11de6fccdcfd851614"
+    },
+    {
+      "check_id": "review",
+      "path": "reviewer/RedStone/review-proof.json",
+      "sha256": "563ccda576681b0203c8336bf2a319c11d720bc97346b27c7cbc75ab0345d00c"
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+[
+  {
+    "cwd": "/workspace/project/examples/qaizen-labs/.agents/skills/qore-review-qaizen-labs",
+    "argv": [
+      "python3",
+      "scripts/project-check.py",
+      "references/project.json",
+      "--root",
+      "/workspace/project/examples/qaizen-labs",
+      "--method",
+      "review"
+    ],
+    "exit_code": 0,
+    "stdout": "{\n  \"schema\": \"qore-context-check/1\",\n  \"profile\": {\n    \"id\": \"qaizen-labs\",\n    \"version\": \"0.1.0\",\n    \"sha256\": \"f76afdd45cb6352e5044a06affc4182ea6cd40aa9c012fb216636a61faa428f0\"\n  },\n  \"method\": \"review\",\n  \"coverage\": \"COMPLETE\",\n  \"sources\": [\n    {\n      \"id\": \"surface\",\n      \"path\": \"surface-contract.json\",\n      \"expected_sha256\": \"3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3\",\n      \"actual_sha256\": \"3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3\",\n      \"current\": true\n    },\n    {\n      \"id\": \"checker\",\n      \"path\": \"checks/check_contract.py\",\n      \"expected_sha256\": \"9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b\",\n      \"actual_sha256\": \"9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b\",\n      \"current\": true\n    }\n  ],\n  \"commands\": [\n    {\n      \"id\": \"surface-contract\",\n      \"argv\": [\n        \"python3\",\n        \"-B\",\n        \"checks/check_contract.py\",\n        \"surface-contract.json\"\n      ],\n      \"source\": \"checker\",\n      \"applies_to\": [\n        \"plan\",\n        \"review\"\n      ]\n    }\n  ],\n  \"invariants\": [\n    {\n      \"id\": \"close-focus\",\n      \"statement\": \"Closing question help restores focus to its summary; verify this separately from the application Back transition.\",\n      \"source\": \"surface\",\n      \"applies_to\": [\n        \"plan\",\n        \"review\",\n        \"ux\"\n      ]\n    },\n    {\n      \"id\": \"back-focus\",\n      \"statement\": \"Reach the application Back control using sequential Tab or Shift+Tab; activate with Enter and verify introduction heading focus. A click or programmatic focus does not prove keyboard reachability.\",\n      \"source\": \"surface\",\n      \"applies_to\": [\n        \"plan\",\n        \"review\",\n        \"ux\"\n      ]\n    },\n    {\n      \"id\": \"unanswered-scope\",\n      \"statement\": \"Leave the first question unanswered, block all non-GET/HEAD/OPTIONS requests and main-frame/popup navigation outside the allowed origins. Record blocked analytics; do not relax policy for a successful recording.\",\n      \"source\": \"surface\",\n      \"applies_to\": [\n        \"plan\",\n        \"review\",\n        \"ux\"\n      ]\n    }\n  ],\n  \"surfaces\": {},\n  \"consumed_source_ids\": [\n    \"checker\",\n    \"surface\"\n  ],\n  \"problems\": []\n}\n",
+    "stderr": "",
+    "observed_at": "2026-10-16T07:15:16.780754+00:00"
+  },
+  {
+    "cwd": "/workspace/project/examples/qaizen-labs",
+    "argv": [
+      "python3",
+      "-B",
+      "checks/check_contract.py",
+      "surface-contract.json"
+    ],
+    "exit_code": 0,
+    "stdout": "{\n  \"valid\": true,\n  \"schema\": \"qaizen-labs-surface/1\",\n  \"checks\": [\n    \"entry\",\n    \"unanswered\",\n    \"help-toggle\",\n    \"close-focus\",\n    \"keyboard-back\",\n    \"introduction-focus\",\n    \"read-only-policy\",\n    \"origin-policy\"\n  ],\n  \"limit\": \"Contract consistency only; browser observations establish current behavior.\"\n}\n",
+    "stderr": "",
+    "observed_at": "2026-10-16T07:15:16.798214+00:00"
+  },
+  {
+    "cwd": "/workspace/project",
+    "argv": [
+      "python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_task_gate.py",
+      "-v"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "test_actual_artifact_tamper_rejected (test_task_gate.GateTests.test_actual_artifact_tamper_rejected) ... ok\ntest_actual_proof_tamper_rejected (test_task_gate.GateTests.test_actual_proof_tamper_rejected) ... ok\ntest_blocked_partial_failed_proof_rejected (test_task_gate.GateTests.test_blocked_partial_failed_proof_rejected) ... ok\ntest_criteria_modified_without_rehash_rejected (test_task_gate.GateTests.test_criteria_modified_without_rehash_rejected) ... ok\ntest_current_identity_accepts_and_atomically_records (test_task_gate.GateTests.test_current_identity_accepts_and_atomically_records) ... ok\ntest_dependencies_authorization_and_wait_are_required (test_task_gate.GateTests.test_dependencies_authorization_and_wait_are_required) ... ok\ntest_exact_canonical_rule_unicode_order_lf_and_no_nan (test_task_gate.GateTests.test_exact_canonical_rule_unicode_order_lf_and_no_nan) ... ok\ntest_missing_check_rejected (test_task_gate.GateTests.test_missing_check_rejected) ... ok\ntest_new_artifact_rejects_old_review (test_task_gate.GateTests.test_new_artifact_rejects_old_review) ... ok\ntest_new_criteria_current_delivery_still_rejects_old_review (test_task_gate.GateTests.test_new_criteria_current_delivery_still_rejects_old_review) ... ok\ntest_proof_cannot_escape_root (test_task_gate.GateTests.test_proof_cannot_escape_root) ... ok\ntest_proof_current_hash_but_old_identity_rejected (test_task_gate.GateTests.test_proof_current_hash_but_old_identity_rejected) ... ok\ntest_replayed_done_is_traceable_noop_without_state_change (test_task_gate.GateTests.test_replayed_done_is_traceable_noop_without_state_change) ... ok\ntest_same_artifact_new_criteria_rejects_late_old_pass (test_task_gate.GateTests.test_same_artifact_new_criteria_rejects_late_old_pass) ... ok\ntest_wrong_artifact_identity_rejected (test_task_gate.GateTests.test_wrong_artifact_identity_rejected) ... ok\ntest_wrong_check_rejected (test_task_gate.GateTests.test_wrong_check_rejected) ... ok\ntest_wrong_request_rejected (test_task_gate.GateTests.test_wrong_request_rejected) ... ok\ntest_wrong_review_session_and_run_rejected (test_task_gate.GateTests.test_wrong_review_session_and_run_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 18 tests in 0.007s\n\nOK\n",
+    "observed_at": "2026-10-16T07:15:16.842579+00:00"
+  },
+  {
+    "cwd": "/workspace/project",
+    "argv": [
+      "python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_coordination.py",
+      "-v"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "test_fresh_request_required_no_second_reviewer_on_timeout (test_coordination.CoordinationTests.test_fresh_request_required_no_second_reviewer_on_timeout) ... ok\ntest_late_current_delivery_is_consumed_on_manual_resume (test_coordination.CoordinationTests.test_late_current_delivery_is_consumed_on_manual_resume) ... ok\ntest_manifest_hash_does_not_hide_changed_missing_or_escaping_files (test_coordination.CoordinationTests.test_manifest_hash_does_not_hide_changed_missing_or_escaping_files) ... ok\ntest_multiple_editable_task_blocks_are_refused (test_coordination.CoordinationTests.test_multiple_editable_task_blocks_are_refused) ... ok\ntest_old_criteria_and_premature_delivery_do_not_advance (test_coordination.CoordinationTests.test_old_criteria_and_premature_delivery_do_not_advance) ... ok\ntest_read_message_replay_after_saved_decision_before_transport_ack (test_coordination.CoordinationTests.test_read_message_replay_after_saved_decision_before_transport_ack) ... ok\ntest_receive_window_timeout_keeps_task_open_without_resend (test_coordination.CoordinationTests.test_receive_window_timeout_keeps_task_open_without_resend) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.003s\n\nOK\n",
+    "observed_at": "2026-10-16T07:15:16.883270+00:00"
+  },
+  {
+    "cwd": "/workspace/project",
+    "argv": [
+      "python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_agent_mail.py",
+      "-v"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "test_no_messages_timeout_retains_open_assignment (test_agent_mail.ReceiveTests.test_no_messages_timeout_retains_open_assignment) ... ok\ntest_remote_endpoint_and_missing_token_are_refused (test_agent_mail.ReceiveTests.test_remote_endpoint_and_missing_token_are_refused) ... ok\ntest_saved_decision_precedes_transport_ack_and_replay_is_safe (test_agent_mail.ReceiveTests.test_saved_decision_precedes_transport_ack_and_replay_is_safe) ... ok\ntest_two_receive_failures_block_then_recovery_uses_same_assignment (test_agent_mail.ReceiveTests.test_two_receive_failures_block_then_recovery_uses_same_assignment) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.009s\n\nOK\n",
+    "observed_at": "2026-10-16T07:15:16.955431+00:00"
+  },
+  {
+    "cwd": "/workspace/project",
+    "argv": [
+      "python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_labs_contract.py",
+      "-v"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "test_all_three_methods_consume_current_facts_and_detect_staleness (test_labs_contract.LabsContractTests.test_all_three_methods_consume_current_facts_and_detect_staleness) ... ok\ntest_declared_contract_is_consistent_without_network (test_labs_contract.LabsContractTests.test_declared_contract_is_consistent_without_network) ... ok\ntest_wrong_states_focus_origin_answer_and_keyboard_fail (test_labs_contract.LabsContractTests.test_wrong_states_focus_origin_answer_and_keyboard_fail) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.002s\n\nOK\n",
+    "observed_at": "2026-10-16T07:15:16.996717+00:00"
+  },
+  {
+    "cwd": "/workspace/project",
+    "argv": [
+      "python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_browser_probe.py",
+      "-v"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "test_close_focus_is_independent_of_correct_back (test_browser_probe.BrowserProbeTests.test_close_focus_is_independent_of_correct_back) ... skipped 'Set QORE_PLAYWRIGHT_MODULE to an existing optional Playwright installation'\ntest_correct_heading_focus_cannot_hide_retained_question (test_browser_probe.BrowserProbeTests.test_correct_heading_focus_cannot_hide_retained_question) ... skipped 'Set QORE_PLAYWRIGHT_MODULE to an existing optional Playwright installation'\ntest_delayed_url_succeeds_and_missing_url_fails (test_browser_probe.BrowserProbeTests.test_delayed_url_succeeds_and_missing_url_fails) ... skipped 'Set QORE_PLAYWRIGHT_MODULE to an existing optional Playwright installation'\ntest_false_focus_assertion_fails (test_browser_probe.BrowserProbeTests.test_false_focus_assertion_fails) ... skipped 'Set QORE_PLAYWRIGHT_MODULE to an existing optional Playwright installation'\ntest_focus_can_settle_after_the_old_fixed_pause (test_browser_probe.BrowserProbeTests.test_focus_can_settle_after_the_old_fixed_pause) ... skipped 'Set QORE_PLAYWRIGHT_MODULE to an existing optional Playwright installation'\ntest_keyboard_reachable_back_and_legacy_actions_complete (test_browser_probe.BrowserProbeTests.test_keyboard_reachable_back_and_legacy_actions_complete) ... skipped 'Set QORE_PLAYWRIGHT_MODULE to an existing optional Playwright installation'\ntest_mouse_success_cannot_hide_back_outside_tab_order (test_browser_probe.BrowserProbeTests.test_mouse_success_cannot_hide_back_outside_tab_order) ... skipped 'Set QORE_PLAYWRIGHT_MODULE to an existing optional Playwright installation'\ntest_outside_origin_navigation_is_blocked_and_reported (test_browser_probe.BrowserProbeTests.test_outside_origin_navigation_is_blocked_and_reported) ... skipped 'Set QORE_PLAYWRIGHT_MODULE to an existing optional Playwright installation'\ntest_popup_and_redirect_to_outside_origin_are_blocked (test_browser_probe.BrowserProbeTests.test_popup_and_redirect_to_outside_origin_are_blocked) ... skipped 'Set QORE_PLAYWRIGHT_MODULE to an existing optional Playwright installation'\ntest_pre_back_unanswered_check_catches_selection_before_unmount (test_browser_probe.BrowserProbeTests.test_pre_back_unanswered_check_catches_selection_before_unmount) ... skipped 'Set QORE_PLAYWRIGHT_MODULE to an existing optional Playwright installation'\ntest_read_only_policy_blocks_post_without_hiding_observation (test_browser_probe.BrowserProbeTests.test_read_only_policy_blocks_post_without_hiding_observation) ... skipped 'Set QORE_PLAYWRIGHT_MODULE to an existing optional Playwright installation'\n\n----------------------------------------------------------------------\nRan 11 tests in 0.000s\n\nOK (skipped=11)\n",
+    "observed_at": "2026-10-16T07:15:17.046374+00:00"
+  },
+  {
+    "cwd": "/workspace/project",
+    "argv": [
+      "node",
+      "--check",
+      "tools/browser_probe.mjs"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "",
+    "observed_at": "2026-10-16T07:15:17.064005+00:00"
+  }
+]

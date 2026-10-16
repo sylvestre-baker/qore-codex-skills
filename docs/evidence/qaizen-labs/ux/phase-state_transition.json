@@ -1,0 +1,75 @@
+{
+  "qore_evidence": {
+    "candidate_sha256": "0540496cea29da71f72046f36a12c3a23b4d71900c97f7193f4dba699836b036",
+    "target_snapshot_sha256": "79274c87faf55cfe33aa597545b37fa0f7525e51bfe558025763d11b172bd98b",
+    "observed_at": "2026-10-16T07:08:04.534061+00:00",
+    "phase_id": "state_transition"
+  },
+  "payload": {
+    "observed_focus_steps": [
+      {
+        "at": "2026-10-16T07:02:27.929Z",
+        "type": "focus-step",
+        "key": "Tab",
+        "step": 1,
+        "active_element": {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Every production source and flow is written down, with a named owner"
+        },
+        "reached": false,
+        "outcome": "observed"
+      },
+      {
+        "at": "2026-10-16T07:02:27.940Z",
+        "type": "focus-step",
+        "key": "Tab",
+        "step": 2,
+        "active_element": {
+          "tag": "SUMMARY",
+          "id": "",
+          "text": "What does this mean?"
+        },
+        "reached": true,
+        "outcome": "observed"
+      },
+      {
+        "at": "2026-10-16T07:02:35.463Z",
+        "type": "focus-step",
+        "key": "Tab",
+        "step": 1,
+        "active_element": {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Close"
+        },
+        "reached": true,
+        "outcome": "observed"
+      },
+      {
+        "at": "2026-10-16T07:02:42.183Z",
+        "type": "focus-step",
+        "key": "Tab",
+        "step": 1,
+        "active_element": {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Back"
+        },
+        "reached": true,
+        "outcome": "observed"
+      }
+    ],
+    "actions_sha256": "cd3bf847fe8ed3c194b413ccf68b1f495006febb160347908581ee98b1f8eaa9",
+    "unanswered_assertion_count": 3,
+    "evidence": [
+      "iteration-1-journey/events.json",
+      "iteration-1-journey/03-help-reopened.png",
+      "iteration-1-journey/04-close-keyboard-focus.png",
+      "iteration-1-journey/05-help-closed.png",
+      "iteration-1-journey/06-back-keyboard-focus.png",
+      "iteration-1-journey/07-returned-introduction.png"
+    ],
+    "result": "Actual Back was reached by one Tab from closed-help summary, followed by Enter, intro Start visibility, question-help absence and heading focus. Close independently restored summary focus."
+  }
+}

@@ -1,0 +1,195 @@
+{
+  "scope": [
+    "tools/coordination.py",
+    "tools/agent_mail.py",
+    "tests/test_coordination.py",
+    "tests/test_agent_mail.py",
+    "docs/coordination.md"
+  ],
+  "sha256": {
+    "tools/coordination.py": "63d1016d10aa4118e646856b489c2452bd3a48f8c0a59fd5e839192795122908",
+    "tools/agent_mail.py": "e9c44155cd43c93672ffff145d45969d7cc0af06d653b34dea689e56f8bf97bf",
+    "tests/test_coordination.py": "2eb658dca810b7ede9908127b1fef4038c6982c3963a7356b14a99f9f1c48a60",
+    "tests/test_agent_mail.py": "16447bf323317aa72a214231173a6fce04680037e1ec511342f2a9db83b1f556",
+    "docs/coordination.md": "eae7ee3a0bcf18be0b0bb4db4d409318a7049e0b35475e6db2562e745b8ebce5"
+  },
+  "checks": [
+    {
+      "name": "correction_FAIL",
+      "status": "PASS",
+      "details": "Explicit correction preserves criteria, decisions, processed IDs and complete prior review; refuses same revision/stale criteria; new delivery/request rejects old verdict then receives current PASS."
+    },
+    {
+      "name": "correction_PARTIAL",
+      "status": "PASS",
+      "details": "Explicit correction preserves criteria, decisions, processed IDs and complete prior review; refuses same revision/stale criteria; new delivery/request rejects old verdict then receives current PASS."
+    },
+    {
+      "name": "correction_BLOCKED",
+      "status": "PASS",
+      "details": "Explicit correction preserves criteria, decisions, processed IDs and complete prior review; refuses same revision/stale criteria; new delivery/request rejects old verdict then receives current PASS."
+    },
+    {
+      "name": "resume_refusals",
+      "status": "PASS",
+      "details": "Assigned, active review, DONE and BLOCKED without negative review refused."
+    },
+    {
+      "name": "identity_matrix",
+      "status": "PASS",
+      "details": "8 mismatches rejected without poisoning wait; all four matching verdicts subsequently accepted."
+    },
+    {
+      "name": "proxy_and_refusals",
+      "status": "PASS",
+      "details": {
+        "dispatch": [
+          {
+            "host": "127.0.0.1:8765",
+            "selector": "/mcp/",
+            "bearer_present": true
+          }
+        ],
+        "socket_opened": false,
+        "refused": "remote, userinfo, HTTPS, missing token, redirect"
+      }
+    },
+    {
+      "name": "ack_deadline_and_durable_replay",
+      "status": "PASS",
+      "details": {
+        "first": {
+          "status": "RECEIVED",
+          "reads": 1,
+          "state": "ASSIGNED",
+          "awaiting": "production_ack",
+          "acknowledged": [
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "resume": "Receive again to acknowledge remaining durable decisions."
+        },
+        "calls": [
+          {
+            "name": "fetch_inbox",
+            "start": 0.0,
+            "timeout": 30,
+            "id": null
+          },
+          {
+            "name": "acknowledge_message",
+            "start": 2.0,
+            "timeout": 30,
+            "id": 10
+          },
+          {
+            "name": "acknowledge_message",
+            "start": 22.0,
+            "timeout": 30,
+            "id": 11
+          },
+          {
+            "name": "acknowledge_message",
+            "start": 42.0,
+            "timeout": 30,
+            "id": 12
+          },
+          {
+            "name": "acknowledge_message",
+            "start": 62.0,
+            "timeout": 30,
+            "id": 13
+          },
+          {
+            "name": "acknowledge_message",
+            "start": 82.0,
+            "timeout": 30,
+            "id": 14
+          },
+          {
+            "name": "acknowledge_message",
+            "start": 102.0,
+            "timeout": 18.0,
+            "id": 15
+          }
+        ],
+        "replayed_ids": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ],
+        "durable_register_unchanged_on_replay": true,
+        "virtual_time_only": true
+      }
+    }
+  ],
+  "suites": [
+    {
+      "pattern": "test_coordination.py",
+      "exit_code": 0,
+      "log": "test_coordination.py.log"
+    },
+    {
+      "pattern": "test_agent_mail.py",
+      "exit_code": 0,
+      "log": "test_agent_mail.py.log"
+    },
+    {
+      "pattern": "test_task_gate.py",
+      "exit_code": 0,
+      "log": "test_task_gate.py.log"
+    }
+  ],
+  "findings": [
+    {
+      "id": "C01",
+      "title": "Failed or incomplete review has no supported recovery transition",
+      "severity": "medium",
+      "original_verdict": "CONFIRMED",
+      "current_status": "RESOLVED"
+    },
+    {
+      "id": "C02",
+      "title": "Wrong review session or run can apply a terminal failure verdict",
+      "severity": "medium",
+      "original_verdict": "CONFIRMED",
+      "current_status": "RESOLVED"
+    },
+    {
+      "id": "S1",
+      "title": "Loopback Agent Mail bearer can be sent through an environment HTTP proxy",
+      "severity": "medium",
+      "original_verdict": "CONFIRMED",
+      "current_status": "RESOLVED"
+    },
+    {
+      "id": "F-FEAS-01",
+      "title": "Failed review has no supported corrected-delivery transition",
+      "severity": "medium",
+      "original_verdict": "CONFIRMED",
+      "current_status": "RESOLVED"
+    },
+    {
+      "id": "F-FEAS-02",
+      "title": "Acknowledgement batch can overrun the declared receive deadline",
+      "severity": "medium",
+      "original_verdict": "CONFIRMED",
+      "current_status": "RESOLVED"
+    }
+  ],
+  "qualification": "Scheduling window only: synchronous HTTP socket timeout is not an absolute OS deadline against slow-drip bytes. No live network, services or credentials.",
+  "unfinished": [],
+  "original_inputs_sha256": {
+    "/workspace/qualification/verifier/verified.json": "e9cb1a1fffe0622542bf81656c6c63263e64721bd56f0b47373f8d8e817dad26",
+    "/workspace/qualification/verifier/reproduce.py": "997e0894c68a10ffb1b5691a07cbeef3a7773039b4151cf3de068ce15c63bd60"
+  },
+  "comparison": "Read original confirmed claims and independent reproduction. Its old-behavior assertions are intentionally obsolete after corrections; independently authored check.py tests current behavior rather than treating failure of old assertions as sufficient proof."
+}

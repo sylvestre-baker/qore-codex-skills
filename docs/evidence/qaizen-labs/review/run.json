@@ -1,0 +1,158 @@
+{
+  "schema": "qore-run/1",
+  "id": "qaizen-labs-review-20261016-public-attribution-corrected",
+  "method": "review",
+  "skill": "qore-review-qaizen-labs",
+  "candidate_sha256": "0540496cea29da71f72046f36a12c3a23b4d71900c97f7193f4dba699836b036",
+  "target": {
+    "label": "Initial 0.2.0 public Labs specification and scoped implementation; original findings before correction",
+    "snapshot_sha256": "59995ed5b982ed1b716f12539c7f22374867926c477811639506f0ac2d4b4003"
+  },
+  "last_relevant_change": "2026-10-16T07:09:42.885385+00:00",
+  "environment": {
+    "id": "qore002-independent-linux-20261016",
+    "operator": "agent",
+    "host": "Unprivileged Linux aarch64 container, no host mounts, Codex CLI 0.162.0; separate authenticated CLI contexts"
+  },
+  "profile": {
+    "id": "qaizen-labs",
+    "version": "0.1.0",
+    "sha256": "f76afdd45cb6352e5044a06affc4182ea6cd40aa9c012fb216636a61faa428f0"
+  },
+  "required_phases": [
+    "finder.correctness",
+    "finder.security",
+    "finder.feasibility",
+    "redaction",
+    "verifier",
+    "findings_validation",
+    "profile_preflight"
+  ],
+  "phases": [
+    {
+      "id": "finder.correctness",
+      "actor_id": "01a1438f-413c-79a0-ab42-5a7cca6c463c",
+      "status": "PASS",
+      "artifacts": [
+        "phase-finder.correctness.json"
+      ]
+    },
+    {
+      "id": "finder.security",
+      "actor_id": "01a1438f-413c-7190-b53b-ebc14b95387c",
+      "status": "PASS",
+      "artifacts": [
+        "phase-finder.security.json"
+      ]
+    },
+    {
+      "id": "finder.feasibility",
+      "actor_id": "01a1438f-413c-7182-834c-a9ed984ffb06",
+      "status": "PASS",
+      "artifacts": [
+        "phase-finder.feasibility.json"
+      ]
+    },
+    {
+      "id": "redaction",
+      "actor_id": "/root",
+      "status": "PASS",
+      "artifacts": [
+        "phase-redaction.json"
+      ]
+    },
+    {
+      "id": "verifier",
+      "actor_id": "01a14393-5328-76c2-9338-ee103ba2f993",
+      "status": "PASS",
+      "artifacts": [
+        "phase-verifier.json"
+      ]
+    },
+    {
+      "id": "findings_validation",
+      "actor_id": "01a14393-5328-76c2-9338-ee103ba2f993",
+      "status": "PASS",
+      "artifacts": [
+        "phase-findings_validation.json"
+      ]
+    },
+    {
+      "id": "profile_preflight",
+      "actor_id": "01a14393-5328-76c2-9338-ee103ba2f993",
+      "status": "PASS",
+      "artifacts": [
+        "phase-profile_preflight.json"
+      ]
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "phase-finder.correctness.json",
+      "sha256": "e4e70bf7597ab55046cedc956cf87dafe243a3a52cd1e2168c86fbd6e76cb30c",
+      "kind": "execution",
+      "observed_at": "2026-10-16T07:17:12.894788+00:00",
+      "candidate_sha256": "0540496cea29da71f72046f36a12c3a23b4d71900c97f7193f4dba699836b036",
+      "target_snapshot_sha256": "59995ed5b982ed1b716f12539c7f22374867926c477811639506f0ac2d4b4003"
+    },
+    {
+      "path": "phase-finder.security.json",
+      "sha256": "d5af3c7ac47034606f5cfd73a754163eacea5afd759bed179c51e6cad5d31872",
+      "kind": "execution",
+      "observed_at": "2026-10-16T07:16:30.021496+00:00",
+      "candidate_sha256": "0540496cea29da71f72046f36a12c3a23b4d71900c97f7193f4dba699836b036",
+      "target_snapshot_sha256": "59995ed5b982ed1b716f12539c7f22374867926c477811639506f0ac2d4b4003"
+    },
+    {
+      "path": "phase-finder.feasibility.json",
+      "sha256": "153c97fd51c6fbe0c508b556255a79298f5a227155bf54cdad151b876c3a3a29",
+      "kind": "execution",
+      "observed_at": "2026-10-16T07:16:24.392312+00:00",
+      "candidate_sha256": "0540496cea29da71f72046f36a12c3a23b4d71900c97f7193f4dba699836b036",
+      "target_snapshot_sha256": "59995ed5b982ed1b716f12539c7f22374867926c477811639506f0ac2d4b4003"
+    },
+    {
+      "path": "phase-redaction.json",
+      "sha256": "587395a1f19bf44bd4b06d49ecc903e1981ac9424ffa4edbe8be8b2d5e9672f4",
+      "kind": "execution",
+      "observed_at": "2026-10-16T07:18:10.779836+00:00",
+      "candidate_sha256": "0540496cea29da71f72046f36a12c3a23b4d71900c97f7193f4dba699836b036",
+      "target_snapshot_sha256": "59995ed5b982ed1b716f12539c7f22374867926c477811639506f0ac2d4b4003"
+    },
+    {
+      "path": "phase-verifier.json",
+      "sha256": "f04b4a4846897f6cf81d2b05e80f4763bf4a78a4bd24c1ba8b285b34bedf2f42",
+      "kind": "execution",
+      "observed_at": "2026-10-16T07:21:01.644017+00:00",
+      "candidate_sha256": "0540496cea29da71f72046f36a12c3a23b4d71900c97f7193f4dba699836b036",
+      "target_snapshot_sha256": "59995ed5b982ed1b716f12539c7f22374867926c477811639506f0ac2d4b4003"
+    },
+    {
+      "path": "phase-findings_validation.json",
+      "sha256": "3d4de73d816d8a37b6871814ba6ef1243fed311d7d96b63b72baff6f31ccfd0d",
+      "kind": "execution",
+      "observed_at": "2026-10-16T07:21:01.644017+00:00",
+      "candidate_sha256": "0540496cea29da71f72046f36a12c3a23b4d71900c97f7193f4dba699836b036",
+      "target_snapshot_sha256": "59995ed5b982ed1b716f12539c7f22374867926c477811639506f0ac2d4b4003"
+    },
+    {
+      "path": "phase-profile_preflight.json",
+      "sha256": "2476c01129e67fd0a854ed03472b8850b9801f4f8908dc6511b3757bdfaa3882",
+      "kind": "execution",
+      "observed_at": "2026-10-16T07:21:01.644017+00:00",
+      "candidate_sha256": "0540496cea29da71f72046f36a12c3a23b4d71900c97f7193f4dba699836b036",
+      "target_snapshot_sha256": "59995ed5b982ed1b716f12539c7f22374867926c477811639506f0ac2d4b4003"
+    }
+  ],
+  "commands": [],
+  "coverage": "COMPLETE",
+  "limitations": [
+    "COMPLETE describes the actual three finders, mechanical filtering and fresh verification, not defect absence or deployment readiness.",
+    "Five original medium IDs represent four distinct defects; post-fix verification has separate files, current source hashes and identity. Original findings are not relabeled.",
+    "Original candidate archive SHA-256 a9e54d890ec4202ad113ac2e559499418e59fe14ba320e730a15a27515534ac6; derivative manifest is unchanged from the macOS execution.",
+    "149 clean structural tests ran: 138 passed and 11 optional browser tests skipped. No Linux browser support is claimed.",
+    "Standard host authentication was supplied separately, not bundled or mounted with author sources; no external human trial.",
+    "Phase envelopes are selected lead-created provenance wrappers around actual full saved reports and CLI context identities, not fresh independent assertions.",
+    "A lead-authored metadata correction attributes mechanical redaction to /root and its actual log completion timestamp. Original phase outputs, model roles and target/candidate bytes are unchanged; the earlier frozen PM delivery keeps its original digest and is not relabeled."
+  ]
+}

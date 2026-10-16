@@ -16,7 +16,10 @@
       "docs/evidence/executions/generic-review/verifier-report.md",
       "docs/profiles.md",
       "docs/troubleshooting.md",
-      "CONTRIBUTING.md"
+      "CONTRIBUTING.md",
+      "docs/showcase.md",
+      "docs/coordination.md",
+      "examples/qaizen-labs/README.md"
     ],
     "includes": [
       "Every executable shell fence",
@@ -44,7 +47,7 @@
   "documents": [
     {
       "path": "README.md",
-      "sha256": "3f0e7c367bb15ab8dfb7d9ab78ab7de6fcb2be7707413a8b13beb0cbc0a0c7db"
+      "sha256": "680fef820fe2e9de9d7bb0278ab99426b2c54953976b0dbdd247490ab3a49e43"
     },
     {
       "path": "docs/architecture.md",
@@ -52,7 +55,7 @@
     },
     {
       "path": "docs/clean-environment.md",
-      "sha256": "e2e088e7d444127c6aa88fe146b66d1993acf0535436a3f45fc1bde46d70807d"
+      "sha256": "4133c8a821ce8bf9aa955c4bb714949e5df16c9f0fa692381d1b24dfd1282c04"
     },
     {
       "path": "docs/contracts.md",
@@ -101,6 +104,18 @@
     {
       "path": "CONTRIBUTING.md",
       "sha256": "20bf4aa5250c08731027496a237de44be9e3a864a8633aa4e588a1e2079f1e18"
+    },
+    {
+      "path": "docs/showcase.md",
+      "sha256": "09ae8f840ef09ec0a828e82a4b6adadbd1f4e9e6e941eaa36095e0abfe287b8b"
+    },
+    {
+      "path": "docs/coordination.md",
+      "sha256": "eae7ee3a0bcf18be0b0bb4db4d409318a7049e0b35475e6db2562e745b8ebce5"
+    },
+    {
+      "path": "examples/qaizen-labs/README.md",
+      "sha256": "8c5c5d95df81d3d07413f3e067d400b465921acd166d4519fcb3ab2da3e7ca37"
     }
   ],
   "evidence_records": [
@@ -233,6 +248,17 @@
         "Maintainer-operated shell exercise, not external human first use",
         "Independent method phases were not rerun by this shell exercise; original same-resource complete executions retain their identities"
       ]
+    },
+    {
+      "id": "qore002-three-method-case",
+      "category": "Actual specialized method phases, clean Linux source review, separate corrections and manual Agent Mail case coordination",
+      "status": "EXECUTED",
+      "public_execution_artifact": "docs/evidence/qaizen-labs/README.md",
+      "limits": [
+        "Original archive and source/profile identities remain distinct from later presentation builds.",
+        "Linux browser skips are not passes; no external human or general compatibility claim.",
+        "The original generic tutorial has not been repeated for every archive revision."
+      ]
     }
   ],
   "entries": [
@@ -279,12 +305,12 @@
         "fence": 2,
         "line_at_inventory": 40
       },
-      "text": "qore_stage=\"$(mktemp -d \"${TMPDIR:-/tmp}/qore-first.XXXXXX\")\"\npython3 tools/qore.py build --output \"$qore_stage\"\npython3 tools/qore.py install --source \"$qore_stage/qore-skills-0.1.0\" --project-root .",
-      "text_sha256": "9bcd01ef834fda84fa4fbbc0108168f24863199c6c1e15b23e554e33c1c97b3a",
+      "text": "qore_stage=\"$(mktemp -d \"${TMPDIR:-/tmp}/qore-first.XXXXXX\")\"\npython3 tools/qore.py build --output \"$qore_stage\"\npython3 tools/qore.py install --source \"$qore_stage/qore-skills-0.2.0\" --project-root .",
+      "text_sha256": "95310304e81b57d596efbf720fd05f93b636ba1e519bd51d8463f482724126c3",
       "implementation": [
         {
           "path": "tools/qore.py",
-          "sha256": "854fd237fbf4014c7b31d057b335186379e55913699ff89d8a876ca09b2c29f2"
+          "sha256": "fa11d262cb2a6a576677344b7cbbf3e7dc0f26a301b152cb1fe0b1ccc64f4f5b"
         }
       ],
       "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
@@ -314,7 +340,7 @@
         "evidence_ids": [
           "github-first-use-4643"
         ],
-        "limit": "Actual first-public-commit README recipe. Later documentation metadata has a new archive identity; helper and skill bytes are unchanged."
+        "limit": "Actual first-public-commit README recipe. Later documentation metadata has a new archive identity; helper and skill bytes are unchanged. Version paths updated for the unpublished 0.2.0 candidate; original execution identities remain historical. Current shell checks and derived review are separate evidence."
       }
     },
     {
@@ -372,7 +398,7 @@
       "implementation": [
         {
           "path": "tools/qore.py",
-          "sha256": "854fd237fbf4014c7b31d057b335186379e55913699ff89d8a876ca09b2c29f2"
+          "sha256": "fa11d262cb2a6a576677344b7cbbf3e7dc0f26a301b152cb1fe0b1ccc64f4f5b"
         },
         {
           "path": "tools/context.py",
@@ -412,12 +438,12 @@
         "fence": 1,
         "line_at_inventory": 6
       },
-      "text": "bash tools/clean_room.sh prepare qore-qualification-20261015-example /tmp/qore-clean-audit-new\nbash tools/clean_room.sh inspect qore-qualification-20261015-example\nbash tools/clean_room.sh stage qore-qualification-20261015-example /path/to/qore-skills-0.1.0.zip",
-      "text_sha256": "d68efb339680fa2dd84594bd62145c19c29f2dc636fcee8a7cb4c78b97b7beec",
+      "text": "bash tools/clean_room.sh prepare qore-qualification-20261015-example /tmp/qore-clean-audit-new\nbash tools/clean_room.sh inspect qore-qualification-20261015-example\nbash tools/clean_room.sh stage qore-qualification-20261015-example /path/to/qore-skills-0.2.0.zip",
+      "text_sha256": "60bbe7aeb5f74006116c3f8771bdf3545671d5be5d30a92bb8762a5ab15e8f21",
       "implementation": [
         {
           "path": "tools/clean_room.sh",
-          "sha256": "597bb401a1896086223be2f7930b3c6734085319978296b60c23f293efa367e9"
+          "sha256": "2157838f9f7c7fdd337298f2eee402bfb19665f102f96cf8585c179414f5608e"
         }
       ],
       "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
@@ -451,7 +477,7 @@
         "evidence_ids": [
           "clean-linux-candidate-d"
         ],
-        "limit": "Implementation or a related historical run does not prove this exact recipe completed on the current candidate."
+        "limit": "Implementation or a related historical run does not prove this exact recipe completed on the current candidate. Version paths updated for the unpublished 0.2.0 candidate; original execution identities remain historical. Current shell checks and derived review are separate evidence."
       }
     },
     {
@@ -467,7 +493,7 @@
       "implementation": [
         {
           "path": "tools/clean_room.sh",
-          "sha256": "597bb401a1896086223be2f7930b3c6734085319978296b60c23f293efa367e9"
+          "sha256": "2157838f9f7c7fdd337298f2eee402bfb19665f102f96cf8585c179414f5608e"
         }
       ],
       "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
@@ -516,7 +542,7 @@
       "implementation": [
         {
           "path": "tools/clean_room.sh",
-          "sha256": "597bb401a1896086223be2f7930b3c6734085319978296b60c23f293efa367e9"
+          "sha256": "2157838f9f7c7fdd337298f2eee402bfb19665f102f96cf8585c179414f5608e"
         }
       ],
       "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
@@ -598,7 +624,7 @@
       "implementation": [
         {
           "path": "tools/browser_probe.mjs",
-          "sha256": "2c02268e7044f0b3a9a0d848db6fb1c0236ee2df67f35394e11b798228711be2"
+          "sha256": "f55111928e7eebdbbffcb8e49d57fa3366e4ddf84ecb175e00fc9191904a7b7f"
         }
       ],
       "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
@@ -723,7 +749,7 @@
       "implementation": [
         {
           "path": "tools/qore.py",
-          "sha256": "854fd237fbf4014c7b31d057b335186379e55913699ff89d8a876ca09b2c29f2"
+          "sha256": "fa11d262cb2a6a576677344b7cbbf3e7dc0f26a301b152cb1fe0b1ccc64f4f5b"
         },
         {
           "path": "tools/context.py",
@@ -768,7 +794,7 @@
       "implementation": [
         {
           "path": "tools/qore.py",
-          "sha256": "854fd237fbf4014c7b31d057b335186379e55913699ff89d8a876ca09b2c29f2"
+          "sha256": "fa11d262cb2a6a576677344b7cbbf3e7dc0f26a301b152cb1fe0b1ccc64f4f5b"
         }
       ],
       "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
@@ -1002,7 +1028,7 @@
       "implementation": [
         {
           "path": "tools/qore.py",
-          "sha256": "854fd237fbf4014c7b31d057b335186379e55913699ff89d8a876ca09b2c29f2"
+          "sha256": "fa11d262cb2a6a576677344b7cbbf3e7dc0f26a301b152cb1fe0b1ccc64f4f5b"
         }
       ],
       "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
@@ -1041,7 +1067,7 @@
       "implementation": [
         {
           "path": "tools/qore.py",
-          "sha256": "854fd237fbf4014c7b31d057b335186379e55913699ff89d8a876ca09b2c29f2"
+          "sha256": "fa11d262cb2a6a576677344b7cbbf3e7dc0f26a301b152cb1fe0b1ccc64f4f5b"
         }
       ],
       "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
@@ -1079,7 +1105,7 @@
       "implementation": [
         {
           "path": "tools/qore.py",
-          "sha256": "854fd237fbf4014c7b31d057b335186379e55913699ff89d8a876ca09b2c29f2"
+          "sha256": "fa11d262cb2a6a576677344b7cbbf3e7dc0f26a301b152cb1fe0b1ccc64f4f5b"
         }
       ],
       "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
@@ -1118,7 +1144,7 @@
       "implementation": [
         {
           "path": "tools/qore.py",
-          "sha256": "854fd237fbf4014c7b31d057b335186379e55913699ff89d8a876ca09b2c29f2"
+          "sha256": "fa11d262cb2a6a576677344b7cbbf3e7dc0f26a301b152cb1fe0b1ccc64f4f5b"
         }
       ],
       "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
@@ -1157,7 +1183,7 @@
       "implementation": [
         {
           "path": "tools/qore.py",
-          "sha256": "854fd237fbf4014c7b31d057b335186379e55913699ff89d8a876ca09b2c29f2"
+          "sha256": "fa11d262cb2a6a576677344b7cbbf3e7dc0f26a301b152cb1fe0b1ccc64f4f5b"
         }
       ],
       "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
@@ -1196,7 +1222,7 @@
       "implementation": [
         {
           "path": "tools/qore.py",
-          "sha256": "854fd237fbf4014c7b31d057b335186379e55913699ff89d8a876ca09b2c29f2"
+          "sha256": "fa11d262cb2a6a576677344b7cbbf3e7dc0f26a301b152cb1fe0b1ccc64f4f5b"
         }
       ],
       "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
@@ -1234,7 +1260,7 @@
       "implementation": [
         {
           "path": "tools/qore.py",
-          "sha256": "854fd237fbf4014c7b31d057b335186379e55913699ff89d8a876ca09b2c29f2"
+          "sha256": "fa11d262cb2a6a576677344b7cbbf3e7dc0f26a301b152cb1fe0b1ccc64f4f5b"
         }
       ],
       "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
@@ -1487,6 +1513,378 @@
         "status": "REFERENCE_TEMPLATE_NOT_EXECUTED_AS_WRITTEN",
         "evidence_ids": [],
         "limit": "Implementation or a related historical run does not prove this exact recipe completed on the current candidate."
+      }
+    },
+    {
+      "id": "qore002-docs-showcase-md-1",
+      "kind": "shell_recipe",
+      "location": {
+        "path": "docs/showcase.md",
+        "fence": 1,
+        "line_at_inventory": 5
+      },
+      "text": "python3 -B tools/build_site.py --output /tmp/qore-showcase-new\npython3 -B tools/check_site.py /tmp/qore-showcase-new",
+      "text_sha256": "6bd005d6f58c11e57f3af07c95b79ba40f823f28af0baa8f39d4b767715ed4cd",
+      "implementation": [
+        {
+          "path": "tools/build_site.py",
+          "sha256": "35dee480f041feb5f11dd9f640be18f77e7825d64c76fd7ada721a1dd50bf0bf"
+        },
+        {
+          "path": "tools/check_site.py",
+          "sha256": "8e681363103d163154b2a50b97b1bf0441774ab3d82eeca81622479696a5daff"
+        }
+      ],
+      "supported_host": "Python 3 local executor; optional verified loopback Agent Mail endpoint for transport",
+      "working_directory": "Candidate repository root, except the Labs checker runs from examples/qaizen-labs",
+      "prerequisites": [
+        "Current candidate checkout",
+        "Unused staging or private state paths",
+        "Existing authorized scope and actual identities for coordination examples"
+      ],
+      "inputs_and_substitutions": {
+        "paths": "PRIVATE, ARTIFACT_ROOT, PORT, PM_NAME, ABSOLUTE_PROJECT, TASK_ID and ACTUAL_ID require actual current values; never literal execution or token in argv."
+      },
+      "expected_output": [
+        "Staged or verified local output, or explicit refusal/coverage state"
+      ],
+      "effects": [
+        "Local files only; transport commands contact the explicitly configured loopback endpoint; no deployment"
+      ],
+      "execution": {
+        "status": "EXECUTED_RELATED_HISTORICAL_DESTINATION",
+        "evidence_ids": [
+          "qore002-three-method-case"
+        ],
+        "limit": "Placeholders require substitution. Current actual related commands are recorded in the case or staging evidence; function-level correction tests do not prove exact CLI execution."
+      }
+    },
+    {
+      "id": "qore002-docs-coordination-md-1",
+      "kind": "shell_recipe_template",
+      "location": {
+        "path": "docs/coordination.md",
+        "fence": 1,
+        "line_at_inventory": 31
+      },
+      "text": "python3 -B tools/coordination.py init --criteria PRIVATE/criteria.json --register PRIVATE/task.md --assignment-id ACTUAL_ID --dependencies-satisfied --authorization-satisfied",
+      "text_sha256": "bb749ed5c05382e71e03185a0a7f2f32c75bf13c243531fa2cf04e806c98d01e",
+      "implementation": [
+        {
+          "path": "tools/coordination.py",
+          "sha256": "63d1016d10aa4118e646856b489c2452bd3a48f8c0a59fd5e839192795122908"
+        },
+        {
+          "path": "tools/agent_mail.py",
+          "sha256": "e9c44155cd43c93672ffff145d45969d7cc0af06d653b34dea689e56f8bf97bf"
+        },
+        {
+          "path": "tools/task_gate.py",
+          "sha256": "46ea39a6d970528bee407d472af3b3edb077cf5ed372afd1dfc3b11e9f1f7920"
+        }
+      ],
+      "supported_host": "Python 3 local executor; optional verified loopback Agent Mail endpoint for transport",
+      "working_directory": "Candidate repository root, except the Labs checker runs from examples/qaizen-labs",
+      "prerequisites": [
+        "Current candidate checkout",
+        "Unused staging or private state paths",
+        "Existing authorized scope and actual identities for coordination examples"
+      ],
+      "inputs_and_substitutions": {
+        "paths": "PRIVATE, ARTIFACT_ROOT, PORT, PM_NAME, ABSOLUTE_PROJECT, TASK_ID and ACTUAL_ID require actual current values; never literal execution or token in argv."
+      },
+      "expected_output": [
+        "Staged or verified local output, or explicit refusal/coverage state"
+      ],
+      "effects": [
+        "Local files only; transport commands contact the explicitly configured loopback endpoint; no deployment"
+      ],
+      "execution": {
+        "status": "EXECUTED_RELATED_HISTORICAL_DESTINATION",
+        "evidence_ids": [
+          "qore002-three-method-case"
+        ],
+        "limit": "Placeholders require substitution. Current actual related commands are recorded in the case or staging evidence; function-level correction tests do not prove exact CLI execution."
+      }
+    },
+    {
+      "id": "qore002-docs-coordination-md-2",
+      "kind": "shell_recipe_template",
+      "location": {
+        "path": "docs/coordination.md",
+        "fence": 2,
+        "line_at_inventory": 39
+      },
+      "text": "python3 -B tools/coordination.py show --register PRIVATE/task.md",
+      "text_sha256": "389ffc3f0bc9de19502295a8ac6b5ce56c06df1efd28681cf2fe4ff9a110a007",
+      "implementation": [
+        {
+          "path": "tools/coordination.py",
+          "sha256": "63d1016d10aa4118e646856b489c2452bd3a48f8c0a59fd5e839192795122908"
+        },
+        {
+          "path": "tools/agent_mail.py",
+          "sha256": "e9c44155cd43c93672ffff145d45969d7cc0af06d653b34dea689e56f8bf97bf"
+        },
+        {
+          "path": "tools/task_gate.py",
+          "sha256": "46ea39a6d970528bee407d472af3b3edb077cf5ed372afd1dfc3b11e9f1f7920"
+        }
+      ],
+      "supported_host": "Python 3 local executor; optional verified loopback Agent Mail endpoint for transport",
+      "working_directory": "Candidate repository root, except the Labs checker runs from examples/qaizen-labs",
+      "prerequisites": [
+        "Current candidate checkout",
+        "Unused staging or private state paths",
+        "Existing authorized scope and actual identities for coordination examples"
+      ],
+      "inputs_and_substitutions": {
+        "paths": "PRIVATE, ARTIFACT_ROOT, PORT, PM_NAME, ABSOLUTE_PROJECT, TASK_ID and ACTUAL_ID require actual current values; never literal execution or token in argv."
+      },
+      "expected_output": [
+        "Staged or verified local output, or explicit refusal/coverage state"
+      ],
+      "effects": [
+        "Local files only; transport commands contact the explicitly configured loopback endpoint; no deployment"
+      ],
+      "execution": {
+        "status": "EXECUTED_RELATED_HISTORICAL_DESTINATION",
+        "evidence_ids": [
+          "qore002-three-method-case"
+        ],
+        "limit": "Placeholders require substitution. Current actual related commands are recorded in the case or staging evidence; function-level correction tests do not prove exact CLI execution."
+      }
+    },
+    {
+      "id": "qore002-docs-coordination-md-3",
+      "kind": "shell_recipe_template",
+      "location": {
+        "path": "docs/coordination.md",
+        "fence": 3,
+        "line_at_inventory": 45
+      },
+      "text": "python3 -B tools/agent_mail.py --url http://127.0.0.1:PORT/mcp/ --project ABSOLUTE_PROJECT --agent PM_NAME --thread TASK_ID --register PRIVATE/task.md --seconds 120",
+      "text_sha256": "701132e65afda40f325ac34b73673cf1f8310ddf60014ac0bd6cb8edb8b3d385",
+      "implementation": [
+        {
+          "path": "tools/coordination.py",
+          "sha256": "63d1016d10aa4118e646856b489c2452bd3a48f8c0a59fd5e839192795122908"
+        },
+        {
+          "path": "tools/agent_mail.py",
+          "sha256": "e9c44155cd43c93672ffff145d45969d7cc0af06d653b34dea689e56f8bf97bf"
+        },
+        {
+          "path": "tools/task_gate.py",
+          "sha256": "46ea39a6d970528bee407d472af3b3edb077cf5ed372afd1dfc3b11e9f1f7920"
+        }
+      ],
+      "supported_host": "Python 3 local executor; optional verified loopback Agent Mail endpoint for transport",
+      "working_directory": "Candidate repository root, except the Labs checker runs from examples/qaizen-labs",
+      "prerequisites": [
+        "Current candidate checkout",
+        "Unused staging or private state paths",
+        "Existing authorized scope and actual identities for coordination examples"
+      ],
+      "inputs_and_substitutions": {
+        "paths": "PRIVATE, ARTIFACT_ROOT, PORT, PM_NAME, ABSOLUTE_PROJECT, TASK_ID and ACTUAL_ID require actual current values; never literal execution or token in argv."
+      },
+      "expected_output": [
+        "Staged or verified local output, or explicit refusal/coverage state"
+      ],
+      "effects": [
+        "Local files only; transport commands contact the explicitly configured loopback endpoint; no deployment"
+      ],
+      "execution": {
+        "status": "EXECUTED_RELATED_HISTORICAL_DESTINATION",
+        "evidence_ids": [
+          "qore002-three-method-case"
+        ],
+        "limit": "Placeholders require substitution. Current actual related commands are recorded in the case or staging evidence; function-level correction tests do not prove exact CLI execution."
+      }
+    },
+    {
+      "id": "qore002-docs-coordination-md-4",
+      "kind": "shell_recipe_template",
+      "location": {
+        "path": "docs/coordination.md",
+        "fence": 4,
+        "line_at_inventory": 55
+      },
+      "text": "python3 -B tools/coordination.py request-review --register PRIVATE/task.md --input PRIVATE/request.json",
+      "text_sha256": "064354bf9c5abe6bfd1d041ee80f927893abe191130073cfe3b587e8419fb83c",
+      "implementation": [
+        {
+          "path": "tools/coordination.py",
+          "sha256": "63d1016d10aa4118e646856b489c2452bd3a48f8c0a59fd5e839192795122908"
+        },
+        {
+          "path": "tools/agent_mail.py",
+          "sha256": "e9c44155cd43c93672ffff145d45969d7cc0af06d653b34dea689e56f8bf97bf"
+        },
+        {
+          "path": "tools/task_gate.py",
+          "sha256": "46ea39a6d970528bee407d472af3b3edb077cf5ed372afd1dfc3b11e9f1f7920"
+        }
+      ],
+      "supported_host": "Python 3 local executor; optional verified loopback Agent Mail endpoint for transport",
+      "working_directory": "Candidate repository root, except the Labs checker runs from examples/qaizen-labs",
+      "prerequisites": [
+        "Current candidate checkout",
+        "Unused staging or private state paths",
+        "Existing authorized scope and actual identities for coordination examples"
+      ],
+      "inputs_and_substitutions": {
+        "paths": "PRIVATE, ARTIFACT_ROOT, PORT, PM_NAME, ABSOLUTE_PROJECT, TASK_ID and ACTUAL_ID require actual current values; never literal execution or token in argv."
+      },
+      "expected_output": [
+        "Staged or verified local output, or explicit refusal/coverage state"
+      ],
+      "effects": [
+        "Local files only; transport commands contact the explicitly configured loopback endpoint; no deployment"
+      ],
+      "execution": {
+        "status": "EXECUTED_RELATED_HISTORICAL_DESTINATION",
+        "evidence_ids": [
+          "qore002-three-method-case"
+        ],
+        "limit": "Placeholders require substitution. Current actual related commands are recorded in the case or staging evidence; function-level correction tests do not prove exact CLI execution."
+      }
+    },
+    {
+      "id": "qore002-docs-coordination-md-5",
+      "kind": "shell_recipe_template",
+      "location": {
+        "path": "docs/coordination.md",
+        "fence": 5,
+        "line_at_inventory": 61
+      },
+      "text": "python3 -B tools/coordination.py complete --register PRIVATE/task.md --criteria PRIVATE/criteria.json --root ARTIFACT_ROOT",
+      "text_sha256": "7897c6608ba21e640cda93e912ed2a74d491d5e82e93fcf147d16476e085820f",
+      "implementation": [
+        {
+          "path": "tools/coordination.py",
+          "sha256": "63d1016d10aa4118e646856b489c2452bd3a48f8c0a59fd5e839192795122908"
+        },
+        {
+          "path": "tools/agent_mail.py",
+          "sha256": "e9c44155cd43c93672ffff145d45969d7cc0af06d653b34dea689e56f8bf97bf"
+        },
+        {
+          "path": "tools/task_gate.py",
+          "sha256": "46ea39a6d970528bee407d472af3b3edb077cf5ed372afd1dfc3b11e9f1f7920"
+        }
+      ],
+      "supported_host": "Python 3 local executor; optional verified loopback Agent Mail endpoint for transport",
+      "working_directory": "Candidate repository root, except the Labs checker runs from examples/qaizen-labs",
+      "prerequisites": [
+        "Current candidate checkout",
+        "Unused staging or private state paths",
+        "Existing authorized scope and actual identities for coordination examples"
+      ],
+      "inputs_and_substitutions": {
+        "paths": "PRIVATE, ARTIFACT_ROOT, PORT, PM_NAME, ABSOLUTE_PROJECT, TASK_ID and ACTUAL_ID require actual current values; never literal execution or token in argv."
+      },
+      "expected_output": [
+        "Staged or verified local output, or explicit refusal/coverage state"
+      ],
+      "effects": [
+        "Local files only; transport commands contact the explicitly configured loopback endpoint; no deployment"
+      ],
+      "execution": {
+        "status": "EXECUTED_RELATED_HISTORICAL_DESTINATION",
+        "evidence_ids": [
+          "qore002-three-method-case"
+        ],
+        "limit": "Placeholders require substitution. Current actual related commands are recorded in the case or staging evidence; function-level correction tests do not prove exact CLI execution."
+      }
+    },
+    {
+      "id": "qore002-docs-coordination-md-6",
+      "kind": "shell_recipe_template",
+      "location": {
+        "path": "docs/coordination.md",
+        "fence": 6,
+        "line_at_inventory": 73
+      },
+      "text": "python3 -B tools/coordination.py resume-production --register PRIVATE/task.md",
+      "text_sha256": "9eff191711017444c4928807576f04f2cbe2b283ed1e612ae12f7c35c4e6743b",
+      "implementation": [
+        {
+          "path": "tools/coordination.py",
+          "sha256": "63d1016d10aa4118e646856b489c2452bd3a48f8c0a59fd5e839192795122908"
+        },
+        {
+          "path": "tools/agent_mail.py",
+          "sha256": "e9c44155cd43c93672ffff145d45969d7cc0af06d653b34dea689e56f8bf97bf"
+        },
+        {
+          "path": "tools/task_gate.py",
+          "sha256": "46ea39a6d970528bee407d472af3b3edb077cf5ed372afd1dfc3b11e9f1f7920"
+        }
+      ],
+      "supported_host": "Python 3 local executor; optional verified loopback Agent Mail endpoint for transport",
+      "working_directory": "Candidate repository root, except the Labs checker runs from examples/qaizen-labs",
+      "prerequisites": [
+        "Current candidate checkout",
+        "Unused staging or private state paths",
+        "Existing authorized scope and actual identities for coordination examples"
+      ],
+      "inputs_and_substitutions": {
+        "paths": "PRIVATE, ARTIFACT_ROOT, PORT, PM_NAME, ABSOLUTE_PROJECT, TASK_ID and ACTUAL_ID require actual current values; never literal execution or token in argv."
+      },
+      "expected_output": [
+        "Staged or verified local output, or explicit refusal/coverage state"
+      ],
+      "effects": [
+        "Local files only; transport commands contact the explicitly configured loopback endpoint; no deployment"
+      ],
+      "execution": {
+        "status": "REFERENCE_TEMPLATE_NOT_EXECUTED_AS_WRITTEN",
+        "evidence_ids": [
+          "qore002-three-method-case"
+        ],
+        "limit": "Placeholders require substitution. Current actual related commands are recorded in the case or staging evidence; function-level correction tests do not prove exact CLI execution."
+      }
+    },
+    {
+      "id": "qore002-examples-qaizen-labs-README-md-1",
+      "kind": "shell_recipe",
+      "location": {
+        "path": "examples/qaizen-labs/README.md",
+        "fence": 1,
+        "line_at_inventory": 11
+      },
+      "text": "python3 -B checks/check_contract.py surface-contract.json",
+      "text_sha256": "3e9e1e317a0ef6edfdb978ebfac4c00b57869adb0cf346812274f52172dc5298",
+      "implementation": [
+        {
+          "path": "examples/qaizen-labs/checks/check_contract.py",
+          "sha256": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b"
+        }
+      ],
+      "supported_host": "Python 3 local executor; optional verified loopback Agent Mail endpoint for transport",
+      "working_directory": "Candidate repository root, except the Labs checker runs from examples/qaizen-labs",
+      "prerequisites": [
+        "Current candidate checkout",
+        "Unused staging or private state paths",
+        "Existing authorized scope and actual identities for coordination examples"
+      ],
+      "inputs_and_substitutions": {
+        "paths": "PRIVATE, ARTIFACT_ROOT, PORT, PM_NAME, ABSOLUTE_PROJECT, TASK_ID and ACTUAL_ID require actual current values; never literal execution or token in argv."
+      },
+      "expected_output": [
+        "Staged or verified local output, or explicit refusal/coverage state"
+      ],
+      "effects": [
+        "Local files only; transport commands contact the explicitly configured loopback endpoint; no deployment"
+      ],
+      "execution": {
+        "status": "EXECUTED_RELATED_HISTORICAL_DESTINATION",
+        "evidence_ids": [
+          "qore002-three-method-case"
+        ],
+        "limit": "Placeholders require substitution. Current actual related commands are recorded in the case or staging evidence; function-level correction tests do not prove exact CLI execution."
       }
     }
   ],

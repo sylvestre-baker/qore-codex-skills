@@ -1,0 +1,48 @@
+{
+  "C01": [
+    {
+      "verdict": "FAIL",
+      "state": "CHANGES_REQUIRED",
+      "corrected_delivery": {
+        "message_id": "5",
+        "action": "REJECT",
+        "reason": "not awaiting delivery"
+      },
+      "fresh_request": "not ready for a fresh review request"
+    },
+    {
+      "verdict": "PARTIAL",
+      "state": "BLOCKED",
+      "corrected_delivery": {
+        "message_id": "5",
+        "action": "REJECT",
+        "reason": "not awaiting delivery"
+      },
+      "fresh_request": "not ready for a fresh review request"
+    },
+    {
+      "verdict": "BLOCKED",
+      "state": "BLOCKED",
+      "corrected_delivery": {
+        "message_id": "5",
+        "action": "REJECT",
+        "reason": "not awaiting delivery"
+      },
+      "fresh_request": "not ready for a fresh review request"
+    }
+  ],
+  "C02": {
+    "wrong_session_state": "CHANGES_REQUIRED",
+    "wrong_session_decision": {
+      "message_id": "6",
+      "action": "RECEIVE_VERDICT",
+      "reason": "completion gate still required"
+    },
+    "current_pass_state": "CHANGES_REQUIRED",
+    "current_pass_decision": {
+      "message_id": "7",
+      "action": "REJECT",
+      "reason": "not awaiting review"
+    }
+  }
+}

@@ -1,0 +1,85 @@
+# PM, production and independent review
+
+Use this optional workflow when you want one Codex session to track a task while another produces its deliverable. The three Qore methods also work without Agent Mail.
+
+The operator starts or resumes bounded work turns. The PM's register and Agent Mail history persist; an interactive agent does not automatically wake when mail arrives. No scheduler, tmux integration or server restart has been qualified by this implementation.
+
+## The three sessions
+
+1. **PM:** the only active writer of a private Markdown task register. It assigns current criteria, records dependencies and waits for production. It never treats a transport ACK as task acceptance or a delivery as approval.
+2. **Production:** reads its assignment from Agent Mail, explicitly accepts it, then delivers actual files and hashes. It does not write the PM register.
+3. **Fresh reviewer:** a separate temporary session receiving only current criteria and the frozen target. It independently checks the deliverable. For a complete Qore review, retain three finder contexts, mechanical redaction and a separate verifier; a single transport-test reviewer does not replace them.
+
+The human starts these turns and the fresh reviewer, without copying message bodies between them. Receive schedules calls within a window of at most 120 seconds, recalculating the remaining timeout before each acknowledgement. Zero seconds requests one snapshot with a 30-second scheduling budget. Expiry leaves remaining ACKs replayable; it does not resend an assignment, restart production or create another reviewer. Socket timeouts and scheduling are bounded controls, not a hard operating-system process deadline against a peer that continuously drips response bytes.
+
+## Private state and message identity
+
+Keep one `qore-task` JSON fence in each private Markdown register file. The PM is the only active writer. `tools/coordination.py` atomically replaces that document while retaining surrounding notes. There is no multi-writer lock or hostile-process security boundary.
+
+An immutable criteria snapshot contains `task_id`, positive integer `task_revision`, `objective`, `authorized_scope`, `criteria`, exhaustive `required_check_ids` and `expected_results`. Its canonical bytes are sorted-key JSON, UTF-8, `ensure_ascii=False`, compact separators, `allow_nan=False`, and one final LF. Their SHA-256 is `criteria_sha256`.
+
+Assignment and explicit acceptance carry that task identity. A delivery adds `artifact_revision`, `artifact_sha256` and its actual transport message ID. The receive adapter records this `delivery_message_id` from the server envelope, because a sender cannot know the assigned ID before sending. A review request adds a unique `review_request_id`, designated fresh reviewer session and run. The request ID is an application UUID; keep the actual transport ID separately. Verdict and every required proof carry the same identity.
+
+A meaning change creates a new criteria revision, even if artifact bytes are unchanged. A new artifact needs a new delivery and request. Reopening DONE creates a new task revision. Do not edit old snapshots or relabel old reviews.
+
+For a multi-file deliverable use `artifact_kind: "manifest"`: its actual bytes are hashed, its schema is `qore-task-files/1`, and `files` is a nonempty sorted unique list of `{path, sha256}`. Paths resolve under the explicitly supplied artifact root; escaping paths are refused and each file is recomputed. For a single file use `artifact_kind: "file"`.
+
+## Local helpers
+
+These helpers use Python's standard library. Run from the repository root; choose a private state directory outside the public export. Initialize only after the PM actually sent an assignment and has its server ID:
+
+```sh
+python3 -B tools/coordination.py init --criteria PRIVATE/criteria.json --register PRIVATE/task.md --assignment-id ACTUAL_ID --dependencies-satisfied --authorization-satisfied
+```
+
+The two flags record already established scope/dependencies. Received message text cannot grant them. Do not set them to bypass an unresolved dependency or missing user authorization.
+
+The PM can inspect its state without changing it:
+
+```sh
+python3 -B tools/coordination.py show --register PRIVATE/task.md
+```
+
+With a separately installed, pinned and verified Agent Mail Rust server on loopback, provide its bearer through `QORE_AGENT_MAIL_TOKEN`, never a command-line token. Connect individual Codex sessions using their MCP configuration overrides; do not rewrite global config or run an installer as part of receive. Register the three identities in that isolated project first. The bounded tested release is 0.3.39; [dependency and trust limits](coordination-dependencies.md) apply.
+
+```sh
+python3 -B tools/agent_mail.py --url http://127.0.0.1:PORT/mcp/ --project ABSOLUTE_PROJECT --agent PM_NAME --thread TASK_ID --register PRIVATE/task.md --seconds 120
+```
+
+The adapter fetches read and unread messages, keeps the complete bounded inbox window, sorts IDs and deduplicates them. A full 1,000-entry page is refused rather than silently truncating history. It writes decisions and processed IDs before transport ACK. Repeating receive after an interruption reconciles the same assignment. Two receive failures leave BLOCKED with an explicit resumption action. This is a small-project adapter, not an unbounded inbox pagination service.
+
+The local executor must permit loopback HTTP. A workspace sandbox denied this adapter's Python connection during qualification although the direct MCP tools connected. Keep that failed receipt; choose an explicitly authorized isolated executor with the required capability, or fetch through the existing MCP tools and pass the normalized message array to `tools/coordination.py consume --register PRIVATE/task.md --input PRIVATE/inbox.json`. Do not change global sandbox settings or claim a denied connection passed.
+
+After delivery, the operator starts a genuinely fresh reviewer. The PM stores its current request and sends the same identity/criteria/target through Agent Mail:
+
+```sh
+python3 -B tools/coordination.py request-review --register PRIVATE/task.md --input PRIVATE/request.json
+```
+
+After receiving the verdict, run the deterministic completion check:
+
+```sh
+python3 -B tools/coordination.py complete --register PRIVATE/task.md --criteria PRIVATE/criteria.json --root ARTIFACT_ROOT
+```
+
+Only matching current identities, actual artifact/proof bytes, all required expected results, a designated fresh reviewer, satisfied dependencies and authorization permit DONE. Missing proof, stale criteria, a wrong request or PARTIAL/BLOCKED check prevents it. A repeated already accepted verdict is a no-op; the register is unchanged. The helper checks consistency and completeness, not whether a reviewer statement is true. Keep the actual independent checks.
+
+## Resume and correct
+
+Resume by reading the register and reconciling inbox history, including already-read messages. The states are ASSIGNED → IN_PROGRESS → REVIEW_REQUIRED → DONE; FAIL returns CHANGES_REQUIRED, incomplete review returns BLOCKED. Readiness before assignment is a PM decision. Keep `awaiting` and `next_action_owner` visible.
+
+After FAIL, PARTIAL or BLOCKED review, the PM explicitly opens a correction turn under unchanged criteria:
+
+```sh
+python3 -B tools/coordination.py resume-production --register PRIVATE/task.md
+```
+
+This retains the prior delivery, request and verdict in review history and clears the active review identity. Production sends a corrected delivery with a new artifact revision; the PM then requests a fresh review. Old verdicts cannot apply to that new delivery. For changed criteria or reopening DONE, retain the previous register as history and initialize a new revision with the existing task ID and a new actual assignment. In-place migration, automatic merging and parallel PM writers are unsupported.
+
+A late current delivery is consumed next turn. Stale deliveries/verdicts are retained with rejection reasons and cannot change current acceptance. Timeout alone does not close or fail the task. An explicit retry references the existing assignment; it does not silently duplicate work.
+
+## Trust and evidence
+
+Agent Mail reservations are advisory. Cooperative identities sharing one bearer are not cryptographically isolated from one another. Restrict the endpoint to loopback, keep tokens/storage/traces private, and use separate worktrees or disjoint production paths. The helper refuses endpoint redirects and remote endpoint URLs.
+
+Source inspection, unit controls, actual wire exchanges, client recovery and full specialized method execution are separate evidence categories. None certifies unattended operation, server restart, general security, productivity or deployment permission.

@@ -1,0 +1,130 @@
+{
+  "schema": "qore-browser-probe/1",
+  "label": "Derived qaizen-labs UX iteration 1: direct-history",
+  "started_at": "2026-10-16T07:02:55.116Z",
+  "target": "https://qaizen.io/labs/readiness-check",
+  "status": "COMPLETE",
+  "scope": "Navigation, screenshots, DOM, keyboard, console and network observation. No accessibility or performance certification.",
+  "driver": {
+    "name": "Playwright Chromium",
+    "node": "v22.23.3",
+    "version": "1.62.1",
+    "browser_version": "151.0.7922.34"
+  },
+  "capabilities": {
+    "navigation": {
+      "status": "OBSERVED",
+      "evidence": "events.json#/navigation",
+      "entry_status": 200
+    },
+    "screenshot": {
+      "status": "OBSERVED",
+      "evidence": "06-final.png"
+    },
+    "dom": {
+      "status": "OBSERVED",
+      "evidence": "06-final.dom.json"
+    },
+    "keyboard": {
+      "status": "OBSERVED",
+      "key": "Tab",
+      "active_element": {
+        "tag": "A",
+        "id": "",
+        "text": "Skip to content"
+      },
+      "evidence": "events.json#/actions/0"
+    },
+    "console": {
+      "status": "OBSERVED",
+      "evidence": "events.json#/console",
+      "note": "Listener attached before entry navigation; an empty list means no emitted events were observed."
+    },
+    "network": {
+      "status": "OBSERVED",
+      "evidence": "events.json#/network"
+    }
+  },
+  "snapshots": [
+    {
+      "at": "2026-10-16T07:02:58.126Z",
+      "label": "entry",
+      "url": "https://qaizen.io/labs/readiness-check",
+      "dom": "00-entry.dom.json",
+      "screenshot": "00-entry.png"
+    },
+    {
+      "at": "2026-10-16T07:03:00.157Z",
+      "label": "direct-introduction",
+      "url": "https://qaizen.io/labs/readiness-check",
+      "dom": "01-direct-introduction.dom.json",
+      "screenshot": "01-direct-introduction.png"
+    },
+    {
+      "at": "2026-10-16T07:03:03.214Z",
+      "label": "reloaded-introduction",
+      "url": "https://qaizen.io/labs/readiness-check",
+      "dom": "02-reloaded-introduction.dom.json",
+      "screenshot": "02-reloaded-introduction.png"
+    },
+    {
+      "at": "2026-10-16T07:03:06.174Z",
+      "label": "labs-neighbor",
+      "url": "https://qaizen.io/labs",
+      "dom": "03-labs-neighbor.dom.json",
+      "screenshot": "03-labs-neighbor.png"
+    },
+    {
+      "at": "2026-10-16T07:03:09.941Z",
+      "label": "history-back-introduction",
+      "url": "https://qaizen.io/labs/readiness-check",
+      "dom": "04-history-back-introduction.dom.json",
+      "screenshot": "04-history-back-introduction.png"
+    },
+    {
+      "at": "2026-10-16T07:03:12.877Z",
+      "label": "history-forward-labs",
+      "url": "https://qaizen.io/labs",
+      "dom": "05-history-forward-labs.dom.json",
+      "screenshot": "05-history-forward-labs.png"
+    },
+    {
+      "at": "2026-10-16T07:03:13.132Z",
+      "label": "final",
+      "url": "https://qaizen.io/labs",
+      "dom": "06-final.dom.json",
+      "screenshot": "06-final.png"
+    }
+  ],
+  "limits": [
+    "An isolated browser context is used; no user browser session is accessed.",
+    "Non-GET/HEAD/OPTIONS requests are blocked. Structured events omit request headers and bodies; raw traces, DOM, video and screenshots may retain network/page data and require separate review before sharing.",
+    "HTTP document redirects are blocked before following, including same-origin redirects; that support is unqualified. Top-level documents use one guarded fetch without redirect following, then the actual response is fulfilled into the browser.",
+    "This is an execution record, not a product-quality or general-performance benchmark."
+  ],
+  "policy": {
+    "allowed_origins": [
+      "https://qaizen.io"
+    ],
+    "service_workers": "block",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
+  "trace": "trace.zip",
+  "video": "video/page@e8d239c8f8d222b0e5d2b0aad8b67ecc.webm",
+  "finished_at": "2026-10-16T07:03:15.381Z",
+  "counts": {
+    "console": 0,
+    "page_errors": 0,
+    "network": 140,
+    "requests_failed": 0,
+    "blocked_mutations": 0,
+    "blocked_navigation": 0,
+    "route_errors": 0,
+    "navigation": 9,
+    "actions": 16
+  }
+}

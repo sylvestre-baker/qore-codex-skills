@@ -1,0 +1,10 @@
+{
+  "status": "RECEIVED",
+  "reads": 1,
+  "state": "REVIEW_REQUIRED",
+  "awaiting": "review_verdict",
+  "acknowledged": [
+    15,
+    12
+  ]
+}

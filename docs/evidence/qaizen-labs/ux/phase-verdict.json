@@ -1,0 +1,113 @@
+{
+  "qore_evidence": {
+    "candidate_sha256": "0540496cea29da71f72046f36a12c3a23b4d71900c97f7193f4dba699836b036",
+    "target_snapshot_sha256": "79274c87faf55cfe33aa597545b37fa0f7525e51bfe558025763d11b172bd98b",
+    "observed_at": "2026-10-16T07:08:04.544867+00:00",
+    "phase_id": "verdict"
+  },
+  "payload": {
+    "report": "# Actual derived UX execution\n\n**COMPLETE within the declared desktop English entry/state scope; scoped SHIP.** One iteration executed all required G0\u2013G6 observations. This is decision support, not deployment permission or whole-site certification.\n\nThe derivative preflight supplied the actual public entry and current project facts. The run observed the Labs entry, unanswered first question, help Enter/Space/reopen/Close, separate summary focus, sequential Tab to Back, Enter, visible introduction and heading focus. Three no-answer checks passed. A separate fresh guest context observed direct readiness access, reload, header neighbor and browser Back/Forward. Its consent banner remained visible; the main journey rejected optional analytics consent.\n\nThe agent opened the listed state captures and inspected DOM, console, requests and focus events. One analytics POST was blocked and produced the corresponding browser console/resource error. There were no page exceptions, guard errors or outside-origin attempts in the live paths. Full-page captures show the fixed header at each scroll position; no duplicate-header defect is inferred.\n\n149 local tests passed, including synthetic controls for excluded Back, wrong Close focus, retained question, pre-Back selected answer, delayed/never-correct focus and URL, blocked mutations, popup and redirected document nonarrival. These qualify the harness and remain distinct from site behavior. An earlier control found two real harness defects; they were corrected before this method iteration and all affected controls reran.\n\nEvery required check maps to identity-bound events/captures in gate-evidence.json. The profile binds contract/checker sources; the enclosing input/run identities additionally bind actions, policy, harness and fixtures. Raw traces/video remain private pending selected reviewed transformations. No general performance, accessibility, transient-state absence, external human usability or Ambassador result follows. HTTP document redirects are conservatively blocked before following, including same-origin redirects; no such redirect was required by these observed live paths.\n",
+    "gates": {
+      "G0": {
+        "evidence": [
+          "iteration-1-journey/events.json",
+          "iteration-1-journey/01-introduction.png"
+        ],
+        "observation": "Real Labs control opened the intended introduction; Start visible."
+      },
+      "G1": {
+        "evidence": [
+          "iteration-1-direct-history/events.json",
+          "iteration-1-direct-history/02-reloaded-introduction.png",
+          "iteration-1-direct-history/04-history-back-introduction.png"
+        ],
+        "observation": "Direct readiness document, reload and relevant header/browser history transitions completed with zero page errors."
+      },
+      "G2": {
+        "evidence": [
+          "iteration-1-journey/events.json",
+          "iteration-1-journey/03-help-reopened.png",
+          "iteration-1-journey/07-returned-introduction.png"
+        ],
+        "observation": "First question/help/Back terminal states and three unanswered checkpoints completed."
+      },
+      "G3": {
+        "evidence": [
+          "iteration-1-journey/00-entry.png",
+          "iteration-1-journey/01-introduction.png",
+          "iteration-1-journey/02-first-question.png",
+          "iteration-1-journey/03-help-reopened.png",
+          "iteration-1-journey/04-close-keyboard-focus.png",
+          "iteration-1-journey/05-help-closed.png",
+          "iteration-1-journey/06-back-keyboard-focus.png",
+          "iteration-1-journey/07-returned-introduction.png",
+          "iteration-1-direct-history/02-reloaded-introduction.png",
+          "iteration-1-direct-history/04-history-back-introduction.png",
+          "iteration-1-direct-history/05-history-forward-labs.png"
+        ],
+        "observation": "Agent actually opened listed screenshots. Declared desktop text and controls remained readable; focus-state full-page captures include the fixed header at their scroll position, not a whole-site visual certification."
+      },
+      "G4": {
+        "evidence": [
+          "iteration-1-journey/02-first-question.dom.json",
+          "iteration-1-journey/03-help-reopened.dom.json"
+        ],
+        "observation": "Observed question/help labels, controls and instructions are readable English with no exposed null/undefined/error token in relevant copy. Unrelated catalog/provider claims were not validated."
+      },
+      "G5": {
+        "evidence": [
+          "iteration-1-journey/events.json",
+          "iteration-1-journey/04-close-keyboard-focus.png",
+          "iteration-1-journey/06-back-keyboard-focus.png",
+          "iteration-1-journey/05-help-closed.png"
+        ],
+        "observation": "Actual sequential keyboard traversal, visible focus rings and separate restoration destinations. No contrast, screen-reader or instrumented certification is claimed."
+      },
+      "G6": {
+        "evidence": [
+          "control-tests.log",
+          "iteration-1-journey/events.json"
+        ],
+        "observation": "149 local tests passed including state/answer/focus timing, keyboard exclusion, popup/redirect and server-side nonarrival. Actual live action chain and policy events checked against the required claims; synthetic controls are not site evidence."
+      }
+    },
+    "scoped_verdict": "SHIP",
+    "coverage": "COMPLETE",
+    "iteration": 1,
+    "screenshots_actually_viewed": [
+      "iteration-1-journey/00-entry.png",
+      "iteration-1-journey/01-introduction.png",
+      "iteration-1-journey/02-first-question.png",
+      "iteration-1-journey/03-help-reopened.png",
+      "iteration-1-journey/04-close-keyboard-focus.png",
+      "iteration-1-journey/05-help-closed.png",
+      "iteration-1-journey/06-back-keyboard-focus.png",
+      "iteration-1-journey/07-returned-introduction.png",
+      "iteration-1-direct-history/02-reloaded-introduction.png",
+      "iteration-1-direct-history/04-history-back-introduction.png",
+      "iteration-1-direct-history/05-history-forward-labs.png"
+    ],
+    "operator_category": "agent",
+    "stop_rule": {
+      "decision": "SHIP",
+      "verdict": "SHIP",
+      "coverage": "COMPLETE",
+      "observation_coverage": "COMPLETE",
+      "iteration": 1,
+      "ceiling": 6,
+      "surface_score": null,
+      "consecutive_fresh_passes": 1,
+      "passes_required": 1,
+      "lowest_failing_gate": null,
+      "failing_gates": [],
+      "stale_gates": [],
+      "missing_gates": [],
+      "skipped": [],
+      "infra_blocked": [],
+      "not_applicable": {},
+      "stuck_count": 0,
+      "no_improve_count": 0,
+      "limit": "Coverage describes observations. SHIP is a scoped review result, not deployment authorization. Non-applicability reasons require independent review."
+    }
+  }
+}

@@ -1,0 +1,26 @@
+# Fresh independent verifier
+
+Five filtered IDs examined: **5 CONFIRMED, 0 PLAUSIBLE, 0 REFUTED**; all retain original **medium** severity. C01 and F-FEAS-01 overlap, so these represent four distinct behaviors. No source modifications. No generic defect-absence or release-readiness conclusion.
+
+## Results
+
+- **C01 / F-FEAS-01 — corrected-delivery recovery is unavailable.** `tools/coordination.py:79,92–95,107` cannot receive a new delivery or request after FAIL. Synthetic task `synthetic-73` moves to CHANGES_REQUIRED, then rejects corrected delivery `5` with `not awaiting delivery` and a fresh request with `not ready for a fresh review request`. PARTIAL/BLOCKED likewise leave no correction transition. `docs/coordination.md` promises corrected artifacts as new delivery/request; it reserves new criteria initialization for changed criteria or reopening DONE. Manually editing the register is not a declared helper transition. Impact: cooperative correction stalls despite unchanged criteria. Independent results: `reproduction-results.json` keys `recovery_*`.
+- **C02 — wrong session/run can apply failure.** With the current task, artifact, delivery and request IDs, changing only review_session_id or review_run_id still accepts FAIL and moves REVIEW_REQUIRED to CHANGES_REQUIRED; PARTIAL/BLOCKED move it to BLOCKED. All six combinations ran. `REVIEW_KEYS` omits these fields and `consume` changes state before the completion gate. The gate does reject mismatched identities for DONE, which limits the impact: this is a wrong negative state transition, not false acceptance or hostile-actor authentication bypass. Expected under the documented same-identity contract: reject stale review session/run and retain current wait. Results: `mismatch_*`.
+- **S1 — environment proxy receives bearer-bearing dispatch.** With synthetic http_proxy set and no_proxy empty, real Client.call prepares HTTP dispatch to `synthetic-proxy.invalid:8123`, full loopback URL selector, and `Authorization: Bearer SYNTHETIC-73`. The custom HTTPHandler stops before a socket. This independently confirms the proxy-routing mechanism, **not an actual wire exchange or observed disclosure**. An ordinary environment configured with loopback exclusions avoids this trigger; the helper itself does not guarantee that exclusion. Scope is cooperative local operation; no adversarial co-tenant assumption is needed. Result: `proxy_dispatch`.
+- **F-FEAS-02 — ACK work overruns the declared receive bound.** Actual receive function, Client subclass, temporary durable register, and virtual monotonic clock: fetch takes 2 simulated seconds, seven successful ACKs each take 20, and receive returns RECEIVED at 142 simulated seconds for seconds=120. Last ACK starts at 122 with timeout 30. The loop neither adjusts ACK timeout nor checks deadline before success return. Expected: the documented at-most-120-second receive window bounds the work. This is deterministic socket-free timing simulation, not elapsed wire measurement. Result: `deadline`.
+
+Every concrete input, actual result, and expected behavior is retained in `verified.json`; original filtered evidence is preserved verbatim. Finder paths mentioned in original evidence were never opened. `reproduce.py` was independently authored in this context and executed successfully.
+
+## Checks and identity
+
+Profile preflight returned current digests, COMPLETE context coverage and no problems. Inspected `checks/check_contract.py` before running exactly `python3 -B checks/check_contract.py surface-contract.json`; offline consistency passed. See `preflight.json`, `contract-result.json`, and `profile-use.json`.
+
+Relevant public suites passed: coordination 7, agent-mail 4, task-gate 18 (29 total). These existing tests do not cover the reproduced gaps. Bundled finding-lint ran with `--verifier=ran` and passed. Its emitted SHIP/COMPLETE labels are structural checker output only; they do not establish release readiness or full-method execution coverage.
+
+Snapshot identity uses exact SHA-256 manifests because `git rev-parse HEAD` failed in this exported checkout. `identity.json`, `target-manifest.json`, and `skill-manifest.json` identify this context, filtered input, profile and target. No live server, socket, browser, author reasoning, private source, finder directory, home or auth files were used. `rg` was unavailable, so bounded find/cat/sed reads were used.
+
+## Coverage and unfinished work
+
+**Verifier coverage: COMPLETE for these five claims. Full-method execution coverage: PARTIAL.** This invocation was explicitly only the fresh verifier. Three finder contexts and mechanical redaction were upstream and not independently audited here; their artifacts were forbidden inputs. No agents were spawned. No unexamined claim IDs remain.
+
+Unfinished/outside executed scope: actual proxy wire capture; real-network receive latency; browser keyboard reachability, Close/Back focus, unanswered and navigation/mutation policy observations; current website qualification; and full finder/redaction phase audit. No browser driver was used or probed, and no browser capability or behavior is claimed. The public verification specification separates synthetic controls, offline contract consistency and live observations; these results preserve those boundaries. Scope contains no fixes or post-fix checks.

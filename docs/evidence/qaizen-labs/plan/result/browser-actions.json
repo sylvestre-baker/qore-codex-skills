@@ -1,0 +1,110 @@
+[
+  {
+    "type": "click-if-visible",
+    "role": "button",
+    "name": "Reject"
+  },
+  {
+    "type": "click",
+    "selector": "a[href$='/labs/readiness-check']"
+  },
+  {
+    "type": "assert-url",
+    "url": "https://qaizen.io/labs/readiness-check"
+  },
+  {
+    "type": "snapshot",
+    "label": "introduction"
+  },
+  {
+    "type": "click",
+    "role": "button",
+    "name": "Start the check"
+  },
+  {
+    "type": "assert-none-checked"
+  },
+  {
+    "type": "snapshot",
+    "label": "first-question"
+  },
+  {
+    "type": "traverse-focus",
+    "selector": "summary",
+    "max_steps": 24
+  },
+  {
+    "type": "keyboard",
+    "key": "Enter"
+  },
+  {
+    "type": "assert-attribute",
+    "selector": "details",
+    "attribute": "open",
+    "value": ""
+  },
+  {
+    "type": "keyboard",
+    "key": "Space"
+  },
+  {
+    "type": "assert-attribute",
+    "selector": "details",
+    "attribute": "open",
+    "value": null
+  },
+  {
+    "type": "keyboard",
+    "key": "Enter"
+  },
+  {
+    "type": "traverse-focus",
+    "role": "button",
+    "name": "Close",
+    "max_steps": 12
+  },
+  {
+    "type": "keyboard",
+    "key": "Enter"
+  },
+  {
+    "type": "assert-focused",
+    "selector": "summary"
+  },
+  {
+    "type": "assert-attribute",
+    "selector": "details",
+    "attribute": "open",
+    "value": null
+  },
+  {
+    "type": "snapshot",
+    "label": "help-closed"
+  },
+  {
+    "type": "traverse-focus",
+    "role": "button",
+    "name": "Back",
+    "max_steps": 24
+  },
+  {
+    "type": "assert-focused",
+    "role": "button",
+    "name": "Back"
+  },
+  {
+    "type": "keyboard",
+    "key": "Enter"
+  },
+  {
+    "type": "assert-focused",
+    "selector": "h1"
+  },
+  {
+    "type": "assert-none-checked"
+  },
+  {
+    "type": "snapshot",
+    "label": "returned-introduction"
+  }
+]

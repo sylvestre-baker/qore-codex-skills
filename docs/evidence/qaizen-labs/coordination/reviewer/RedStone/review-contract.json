@@ -1,0 +1,10 @@
+{
+  "argv": [
+    "python3",
+    "delivery/tools/run_contract.py",
+    "delivery/evidence/review/run.json"
+  ],
+  "exit_code": 0,
+  "stdout": "{\n  \"valid\": true,\n  \"coverage\": \"COMPLETE\",\n  \"missing_phases\": [],\n  \"artifact_count\": 7,\n  \"note\": \"Evidence identity and declared phase coverage checked; factual quality is not certified.\"\n}\n",
+  "stderr": ""
+}

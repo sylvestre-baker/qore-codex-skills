@@ -1,0 +1,54 @@
+{
+  "scope": "Actual pinned loopback transport with controlled local fault injection and synthetic stale-criteria counterfactual; not hostile authentication or a second independent review",
+  "accepted_register_sha256": "9877dbf0913450a01f20f3b33a5294ae817fd14fc829e2b567b1f12c50c4ed42",
+  "binary_sha256": "4383269644b72cd02f4f07e70f0b43c0e49c624e533a78e66bbf568684befb15",
+  "reviewer_tests": {
+    "tests": 9,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "commands": [
+    {
+      "argv": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "-B",
+        "<workspace>/qore-skills/tools/agent_mail.py",
+        "--url",
+        "http://127.0.0.1:52848/mcp/",
+        "--project",
+        "<workspace>/research/qore002-implementation-20261016/coordination-project",
+        "--agent",
+        "BlueLake",
+        "--thread",
+        "QORE002-PROTOCOL-001",
+        "--register",
+        "<workspace>/research/qore002-implementation-20261016/coordination-project/fault-replay-register.md",
+        "--seconds",
+        "0"
+      ],
+      "exit_code": 0,
+      "result": {
+        "status": "WAITING",
+        "state": "REVIEW_REQUIRED",
+        "awaiting": null,
+        "reads": 1,
+        "resume": "Operator resumes another bounded receive turn; no assignment is resent."
+      },
+      "separate_python_client": true
+    }
+  ],
+  "accepted_replay": "NOOP",
+  "same_artifact_changed_criteria": {
+    "outcome": "REJECTED",
+    "reason": "delivery identity differs",
+    "actual_artifact_sha256": "e1b1f97e17bd449ba04c556268a01b04409fbf6e414c6d831cb1a4cd4e856c36"
+  },
+  "injected_message_id": 8,
+  "durable_before_ack": true,
+  "controlled_interruption": "after durable decision, before transport ACK",
+  "replay_register_unchanged": true,
+  "injected_message_transport_acknowledged": true,
+  "original_accepted_register_unchanged": true,
+  "status": "PASS"
+}

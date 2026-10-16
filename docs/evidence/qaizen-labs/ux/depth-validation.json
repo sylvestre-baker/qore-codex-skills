@@ -1,0 +1,9 @@
+{
+  "valid": true,
+  "depth": "entry",
+  "changed_files": [
+    "tools/browser_probe.mjs",
+    "examples/qaizen-labs/browser-actions.json"
+  ],
+  "problems": []
+}

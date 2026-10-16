@@ -1,0 +1,110 @@
+{
+  "width_320": {
+    "innerWidth": 320,
+    "scroll": 320,
+    "title": "Qore — From project rules to checkable decisions",
+    "heading": "Use your project’s rules.\nShow what was checked.",
+    "transcript": true
+  },
+  "width_1280": {
+    "innerWidth": 1280,
+    "scroll": 1280,
+    "title": "Qore — From project rules to checkable decisions",
+    "heading": "Use your project’s rules.\nShow what was checked.",
+    "transcript": true
+  },
+  "focus": {
+    "text": "Skip to content",
+    "outline": "rgb(177, 68, 16) solid 3px",
+    "rect": {
+      "x": 16,
+      "y": 16,
+      "width": 134.359375,
+      "height": 47.234375,
+      "top": 16,
+      "right": 150.359375,
+      "bottom": 63.234375,
+      "left": 16
+    }
+  },
+  "keyboard": [
+    {
+      "tag": "A",
+      "text": "Skip to content"
+    },
+    {
+      "tag": "A",
+      "text": "Qore / Codex skills"
+    },
+    {
+      "tag": "A",
+      "text": "The case"
+    },
+    {
+      "tag": "A",
+      "text": "Specialize"
+    },
+    {
+      "tag": "A",
+      "text": "Evidence"
+    },
+    {
+      "tag": "A",
+      "text": "GitHub"
+    },
+    {
+      "tag": "A",
+      "text": "See the real example"
+    },
+    {
+      "tag": "A",
+      "text": "Try the published review example"
+    },
+    {
+      "tag": "A",
+      "text": "Read the planning report (Markdown)"
+    },
+    {
+      "tag": "A",
+      "text": "Read the review report (Markdown)"
+    },
+    {
+      "tag": "A",
+      "text": "Read the UX report (Markdown)"
+    },
+    {
+      "tag": "VIDEO",
+      "text": "Your browser cannot play this video. Use the transcript and evidence links below"
+    }
+  ],
+  "play": {
+    "paused": false,
+    "time": 0.494664,
+    "tracks": [
+      {
+        "language": "en",
+        "mode": "showing",
+        "cues": 10
+      }
+    ]
+  },
+  "pause": {
+    "paused": true,
+    "time": 0.496033
+  },
+  "reduced": {
+    "matches": true,
+    "animations": 0
+  },
+  "failedVideo": {
+    "transcript": "Read the complete transcript",
+    "case": "Can the Labs journey really be checked with a keyboard?"
+  },
+  "transcript": {
+    "title": "Qore Labs demonstration transcript",
+    "text": 2153,
+    "headings": [
+      "Three methods, one sourced project profile"
+    ]
+  }
+}

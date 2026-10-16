@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "docker",
+    "exec",
+    "qore-qualification-qore002-20261016",
+    "node",
+    "/workspace/project/examples/qaizen-labs/.agents/skills/qore-review-qaizen-labs/scripts/redact-for-verifier.mjs",
+    "/workspace/qualification/findings.json"
+  ],
+  "exit": 0,
+  "stderr": "redact-for-verifier: 5 claims; withheld fields: consequence, recommendation, reproduction, trigger, unresolved_condition.\n"
+}

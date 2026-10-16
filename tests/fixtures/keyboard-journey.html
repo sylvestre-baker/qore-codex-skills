@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><title>Synthetic keyboard control</title>
+<main>
+  <section id="intro"><h1 tabindex="-1">Introduction</h1><button id="start">Start</button></section>
+  <section id="question" hidden><h2>First question (unanswered)</h2>
+    <details><summary>Help</summary><p>Explanation</p><button id="close">Close</button></details>
+    <button id="back">Back</button>
+    <label><input type="radio" name="answer" id="answer">Synthetic unanswered option</label>
+    <button id="post">Analytics</button>
+    <a id="escape" href="http://localhost:9/denied">Outside origin</a>
+    <button id="popup">Outside popup</button>
+    <a id="redirect" href="/redirect-outside">Redirect outside</a>
+    <button id="delayed-url">Delayed URL</button>
+  </section>
+</main>
+<script>
+const intro = document.querySelector('#intro');
+const question = document.querySelector('#question');
+const summary = document.querySelector('summary');
+if (new URL(location.href).searchParams.has('excluded')) document.querySelector('#back').tabIndex = -1;
+document.querySelector('#start').onclick = () => { intro.hidden = true; question.hidden = false; summary.focus(); };
+const parameters = new URL(location.href).searchParams;
+document.querySelector('#close').onclick = () => {
+  document.querySelector('details').open = false;
+  (parameters.has('wrong-close') ? document.querySelector('#back') : summary).focus();
+  if (parameters.has('select-on-close')) document.querySelector('#answer').checked = true;
+};
+document.querySelector('#back').onclick = () => {
+  const finish = () => {
+    question.hidden = !parameters.has('retained-question'); intro.hidden = false;
+    document.querySelector('#answer').checked = false; document.querySelector('h1').focus();
+  };
+  setTimeout(finish, Number(parameters.get('delay') || 0));
+};
+document.querySelector('#post').onclick = () => { fetch('/analytics', { method: 'POST', body: 'synthetic' }).catch(() => {}); };
+document.querySelector('#popup').onclick = () => { window.open(location.origin.replace('127.0.0.1', 'localhost') + '/keyboard-journey.html'); };
+document.querySelector('#delayed-url').onclick = () => { setTimeout(() => history.pushState({}, '', '#resolved'), 2000); };
+</script></html>

@@ -1,0 +1,42 @@
+[
+  {
+    "name": "preflight",
+    "exit_code": 0,
+    "artifact": "preflight.json"
+  },
+  {
+    "name": "contract",
+    "exit_code": 0,
+    "artifact": "contract.json"
+  },
+  {
+    "name": "coordination",
+    "exit_code": 0,
+    "artifact": "coordination.json"
+  },
+  {
+    "name": "agent_mail",
+    "exit_code": 0,
+    "artifact": "agent_mail.json"
+  },
+  {
+    "name": "task_gate",
+    "exit_code": 0,
+    "artifact": "task_gate.json"
+  },
+  {
+    "name": "labs_contract",
+    "exit_code": 0,
+    "artifact": "labs_contract.json"
+  },
+  {
+    "name": "browser_probe",
+    "exit_code": 0,
+    "artifact": "browser_probe.json"
+  },
+  {
+    "name": "node-syntax",
+    "exit_code": 0,
+    "artifact": "node-syntax.json"
+  }
+]
