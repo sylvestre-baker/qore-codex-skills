@@ -1,0 +1,165 @@
+{
+  "schema": "qore-public-transformation/1",
+  "raw_register_sha256": "45a804ff51bab36d603d21a75bd3b9f08f1d1f128bcc28b5ce15afe84a902373",
+  "artifacts": [
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/labs-coordination-project/criteria.json",
+      "raw_sha256": "6debace6ff84d888d53ab120b0899ddd25934417d6b91211f9241a9b84724020",
+      "path": "criteria.json",
+      "public_sha256": "6debace6ff84d888d53ab120b0899ddd25934417d6b91211f9241a9b84724020",
+      "transformation": "Selected English evidence; private workspace normalized. Accepted raw proof identities remain raw and are not relabeled as sanitized bytes."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/labs-coordination-project/request.json",
+      "raw_sha256": "272ca5c696e48b8c01e773a44b60ae6f157e5a382130d8e4ba276827bf4bc4cc",
+      "path": "request.json",
+      "public_sha256": "272ca5c696e48b8c01e773a44b60ae6f157e5a382130d8e4ba276827bf4bc4cc",
+      "transformation": "Selected English evidence; private workspace normalized. Accepted raw proof identities remain raw and are not relabeled as sanitized bytes."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/labs-coordination-project/delivery-body.json",
+      "raw_sha256": "60913708cdd1e4c5c23ed4d680c7d5f8843ae95c5e5c08c659dc89fa1f32ae1e",
+      "path": "delivery-body.json",
+      "public_sha256": "60913708cdd1e4c5c23ed4d680c7d5f8843ae95c5e5c08c659dc89fa1f32ae1e",
+      "transformation": "Selected English evidence; private workspace normalized. Accepted raw proof identities remain raw and are not relabeled as sanitized bytes."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/labs-coordination-project/delivery-receipt.json",
+      "raw_sha256": "69c89a1808afe17787dbdece5ba489fefec6badbda1df7582200e514eb76adbf",
+      "path": "delivery-receipt.json",
+      "public_sha256": "7b8936c46796041b60d474c293840d586789046d9cc6ea5e316fbc1b39e43378",
+      "transformation": "Selected English evidence; private workspace normalized. Accepted raw proof identities remain raw and are not relabeled as sanitized bytes."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/labs-coordination-project/assignment-receipt.json",
+      "raw_sha256": "342d96c20e696783f8b29021afba35b6c54d5ba76c74c1e8d91ebaad6f2e7edd",
+      "path": "assignment-receipt.json",
+      "public_sha256": "035b7857d260e5bd118235998246f8ec4c2747a1f3484f876b22255e8579fac8",
+      "transformation": "Selected English evidence; private workspace normalized. Accepted raw proof identities remain raw and are not relabeled as sanitized bytes."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/labs-coordination-project/pm-completion.json",
+      "raw_sha256": "b83e9eccf49e57ba41172aa12da794fb3a40cc8edb012a8d27b200fccc63ff00",
+      "path": "pm-completion.json",
+      "public_sha256": "e9020a7a59ebc091eaba0a128d75cb2a990b69d122a9a1677cfe6da6aadf6c75",
+      "transformation": "Selected English evidence; private workspace normalized. Accepted raw proof identities remain raw and are not relabeled as sanitized bytes."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/labs-coordination-project/pm-completion-receipt.md",
+      "raw_sha256": "4e64fe30b7202945198343895bca8cb3af495967064070baaa065369267c7fd7",
+      "path": "pm-completion-receipt.md",
+      "public_sha256": "883d895cf006ddf2b4c93d79625d7b5fbe3e3ac0af1e180e4dc32c99e253c681",
+      "transformation": "Selected English evidence; private workspace normalized. Accepted raw proof identities remain raw and are not relabeled as sanitized bytes."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/labs-coordination-project/final-receive.json",
+      "raw_sha256": "8e813d23b7d42d18a9d608d64dc4500036c5c7ffbca9b6cc40353feb34742063",
+      "path": "final-receive.json",
+      "public_sha256": "8e813d23b7d42d18a9d608d64dc4500036c5c7ffbca9b6cc40353feb34742063",
+      "transformation": "Selected English evidence; private workspace normalized. Accepted raw proof identities remain raw and are not relabeled as sanitized bytes."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/labs-coordination-project/final-receive-replay.json",
+      "raw_sha256": "40e2244347df44e13a877086d0e96a3f968a2336333f67ef9ba3c36f292babdb",
+      "path": "final-receive-replay.json",
+      "public_sha256": "40e2244347df44e13a877086d0e96a3f968a2336333f67ef9ba3c36f292babdb",
+      "transformation": "Selected English evidence; private workspace normalized. Accepted raw proof identities remain raw and are not relabeled as sanitized bytes."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/labs-coordination-project/reviewer/RedStone/request.json",
+      "raw_sha256": "090484ed345f6b3e3dccbb1e873a4d7f6315c5d01bd81843e938d4009541c3bd",
+      "path": "reviewer/RedStone/request.json",
+      "public_sha256": "090484ed345f6b3e3dccbb1e873a4d7f6315c5d01bd81843e938d4009541c3bd",
+      "transformation": "Selected English evidence; private workspace normalized. Accepted raw proof identities remain raw and are not relabeled as sanitized bytes."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/labs-coordination-project/reviewer/RedStone/sent-receipt.json",
+      "raw_sha256": "eaf07724e981f50eb3d3d02c4cc6b0559440dd790ca153fc3b232b3c0da07210",
+      "path": "reviewer/RedStone/sent-receipt.json",
+      "public_sha256": "96d0e937234e0e5d6686b5fd6f0d436de531325ea7a4c944709e4163b4696f7b",
+      "transformation": "Selected English evidence; private workspace normalized. Accepted raw proof identities remain raw and are not relabeled as sanitized bytes."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/labs-coordination-project/reviewer/RedStone/RECEIPT.md",
+      "raw_sha256": "f5bbd15cc4d5b1762ef06785120794fc945e1adaeef0e1b46fc92eeea4e40de2",
+      "path": "reviewer/RedStone/RECEIPT.md",
+      "public_sha256": "f5bbd15cc4d5b1762ef06785120794fc945e1adaeef0e1b46fc92eeea4e40de2",
+      "transformation": "Selected English evidence; private workspace normalized. Accepted raw proof identities remain raw and are not relabeled as sanitized bytes."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/labs-coordination-project/reviewer/RedStone/transport-ack.json",
+      "raw_sha256": "d33f8fd623f0f1a631cf49e5f2192bb3e5a6f2e4ad8e08e2c1577125adea0004",
+      "path": "reviewer/RedStone/transport-ack.json",
+      "public_sha256": "d33f8fd623f0f1a631cf49e5f2192bb3e5a6f2e4ad8e08e2c1577125adea0004",
+      "transformation": "Selected English evidence; private workspace normalized. Accepted raw proof identities remain raw and are not relabeled as sanitized bytes."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/labs-coordination-project/reviewer/RedStone/plan-contract.json",
+      "raw_sha256": "86de4f9eb39c93172f18d5d7fe2cb37ee2ebde0f1eca28a3696cbd36a3a96016",
+      "path": "reviewer/RedStone/plan-contract.json",
+      "public_sha256": "86de4f9eb39c93172f18d5d7fe2cb37ee2ebde0f1eca28a3696cbd36a3a96016",
+      "transformation": "Selected English evidence; private workspace normalized. Accepted raw proof identities remain raw and are not relabeled as sanitized bytes."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/labs-coordination-project/reviewer/RedStone/evidence_checks.py",
+      "raw_sha256": "53c27b5c4a2bf0df1ab1cd297a0e23fbc394e07ca62a6ef0c7586641f0787358",
+      "path": "reviewer/RedStone/evidence_checks.py",
+      "public_sha256": "53c27b5c4a2bf0df1ab1cd297a0e23fbc394e07ca62a6ef0c7586641f0787358",
+      "transformation": "Selected English evidence; private workspace normalized. Accepted raw proof identities remain raw and are not relabeled as sanitized bytes."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/labs-coordination-project/reviewer/RedStone/results.json",
+      "raw_sha256": "67c561d9cdce875d1e03325596aa3fcd185944694f3751f80684b7eeba0140fb",
+      "path": "reviewer/RedStone/results.json",
+      "public_sha256": "67c561d9cdce875d1e03325596aa3fcd185944694f3751f80684b7eeba0140fb",
+      "transformation": "Selected English evidence; private workspace normalized. Accepted raw proof identities remain raw and are not relabeled as sanitized bytes."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/labs-coordination-project/reviewer/RedStone/verdict.json",
+      "raw_sha256": "ae221794a7a709fa02e3b3c9c49a2eea610f145cd0aa16181a3183450f61912b",
+      "path": "reviewer/RedStone/verdict.json",
+      "public_sha256": "ae221794a7a709fa02e3b3c9c49a2eea610f145cd0aa16181a3183450f61912b",
+      "transformation": "Selected English evidence; private workspace normalized. Accepted raw proof identities remain raw and are not relabeled as sanitized bytes."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/labs-coordination-project/reviewer/RedStone/ux-proof.json",
+      "raw_sha256": "85a20b4eba419112eb8161a1f1ea1d6ca4d854eee5648f11de6fccdcfd851614",
+      "path": "reviewer/RedStone/ux-proof.json",
+      "public_sha256": "85a20b4eba419112eb8161a1f1ea1d6ca4d854eee5648f11de6fccdcfd851614",
+      "transformation": "Selected English evidence; private workspace normalized. Accepted raw proof identities remain raw and are not relabeled as sanitized bytes."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/labs-coordination-project/reviewer/RedStone/plan-proof.json",
+      "raw_sha256": "417dbaae22f98d87b18c90389b955b9a69a03f5201e15ea85bc130307450197a",
+      "path": "reviewer/RedStone/plan-proof.json",
+      "public_sha256": "417dbaae22f98d87b18c90389b955b9a69a03f5201e15ea85bc130307450197a",
+      "transformation": "Selected English evidence; private workspace normalized. Accepted raw proof identities remain raw and are not relabeled as sanitized bytes."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/labs-coordination-project/reviewer/RedStone/review-contract.json",
+      "raw_sha256": "3ec3deeab999d6404bb6f1b12adf130e24050b7e377165e6d694349242576b4c",
+      "path": "reviewer/RedStone/review-contract.json",
+      "public_sha256": "3ec3deeab999d6404bb6f1b12adf130e24050b7e377165e6d694349242576b4c",
+      "transformation": "Selected English evidence; private workspace normalized. Accepted raw proof identities remain raw and are not relabeled as sanitized bytes."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/labs-coordination-project/reviewer/RedStone/review-proof.json",
+      "raw_sha256": "563ccda576681b0203c8336bf2a319c11d720bc97346b27c7cbc75ab0345d00c",
+      "path": "reviewer/RedStone/review-proof.json",
+      "public_sha256": "563ccda576681b0203c8336bf2a319c11d720bc97346b27c7cbc75ab0345d00c",
+      "transformation": "Selected English evidence; private workspace normalized. Accepted raw proof identities remain raw and are not relabeled as sanitized bytes."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/labs-coordination-project/reviewer/RedStone/ux-contract.json",
+      "raw_sha256": "203a7a57e0017722505b803853fc896d211c1ff553b68bb80cfa52f1b5e5fd9d",
+      "path": "reviewer/RedStone/ux-contract.json",
+      "public_sha256": "203a7a57e0017722505b803853fc896d211c1ff553b68bb80cfa52f1b5e5fd9d",
+      "transformation": "Selected English evidence; private workspace normalized. Accepted raw proof identities remain raw and are not relabeled as sanitized bytes."
+    }
+  ],
+  "limits": [
+    "These are selected sanitized receipts, not the complete private mailbox or a newly executed gate on sanitized proof bytes.",
+    "Frozen delivery manifest SHA c938fbdba4c39f38845a53e9a1089f6a729994d2d7b8af151d64a09035e81df6 and accepted proofs refer to raw delivered bytes.",
+    "Current case was already in progress before PM tracking assignment; no causal productivity claim."
+  ]
+}

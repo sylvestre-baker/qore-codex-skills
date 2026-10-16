@@ -1,0 +1,19 @@
+{
+  "argv": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_agent_mail.py",
+    "-v"
+  ],
+  "cwd": "/workspace/project",
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "test_no_messages_timeout_retains_open_assignment (test_agent_mail.ReceiveTests.test_no_messages_timeout_retains_open_assignment) ... ok\ntest_remote_endpoint_and_missing_token_are_refused (test_agent_mail.ReceiveTests.test_remote_endpoint_and_missing_token_are_refused) ... ok\ntest_saved_decision_precedes_transport_ack_and_replay_is_safe (test_agent_mail.ReceiveTests.test_saved_decision_precedes_transport_ack_and_replay_is_safe) ... ok\ntest_two_receive_failures_block_then_recovery_uses_same_assignment (test_agent_mail.ReceiveTests.test_two_receive_failures_block_then_recovery_uses_same_assignment) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.010s\n\nOK\n",
+  "observed_at": "2026-10-16T07:15:41.747156+00:00"
+}

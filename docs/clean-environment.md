@@ -5,7 +5,7 @@ The clean-room helper prepares a separate Linux container using only a pinned pu
 ```sh
 bash tools/clean_room.sh prepare qore-qualification-20261015-example /tmp/qore-clean-audit-new
 bash tools/clean_room.sh inspect qore-qualification-20261015-example
-bash tools/clean_room.sh stage qore-qualification-20261015-example /path/to/qore-skills-0.1.0.zip
+bash tools/clean_room.sh stage qore-qualification-20261015-example /path/to/qore-skills-0.2.0.zip
 ```
 
 Preparation prints image/container identities and records build and version logs. The audit directory must be new. Staging streams the ZIP into an owner-only file created by the container user, rejects traversal, absolute paths, symlinks, duplicates and unexpected archive structure, then runs the candidate's integrity verification. No author source directory is mounted.

@@ -1,0 +1,89 @@
+{
+  "scope": "Selected read-only public documentation render observations; local URL ports are ephemeral. No browser profile, tokens or raw trace included.",
+  "files": [
+    {
+      "path": "readme-observations.json",
+      "sha256": "628ac57bb6e203094bb16930ceef18c733b1b607ccd97349a89d4a0d2327b230"
+    },
+    {
+      "path": "readme-playback.json",
+      "sha256": "62fe2176e29966d6ff439d905f360120b77281819e915f5d2cd5052148828042"
+    },
+    {
+      "path": "readme-narrow-evidence.png",
+      "sha256": "b04ff17dea5b8f37fb79b82a4431e4e6848a0526f1cece328b50f199bb1b0fd7"
+    },
+    {
+      "path": "readme-caption-playback.png",
+      "sha256": "bc083dab2b675a75e183e0df2c0c3602558f557b96833fd6c9d7296a446b6354"
+    },
+    {
+      "path": "current-actual-browser-zoom-200.png",
+      "sha256": "4c60921e0ac2ed27d081cb36a364e95ea7d294ba3136a9ecd477a717bc0cd675"
+    },
+    {
+      "path": "readme-narrow-entry.png",
+      "sha256": "aa1d39eb805d6eaa50db0260da3a1396c98de9d990423146ad516935a5c2c3e1"
+    },
+    {
+      "path": "readme-wide-evidence.png",
+      "sha256": "d95423bf5648395714d9c5ebfac10a1136b3a667c3b66b14e858e051aee185b2"
+    },
+    {
+      "path": "README.md",
+      "sha256": "9e4fdeb39b7fc2c4590dad3ae3f1be1aad2b7f3862d69c257d9fde652ff5cae4"
+    },
+    {
+      "path": "reader-no-javascript.png",
+      "sha256": "87086f1f2f34cb1de4aaada80ef49f74a355b1b20faf746b2827c9e6945538e5"
+    },
+    {
+      "path": "reader-observations.json",
+      "sha256": "b0a4ff0f166ae52676440eafad80e2629b77f57757f492c75d5c58ae507b9871"
+    },
+    {
+      "path": "readme-wide.png",
+      "sha256": "416e1f9225ae212c42a6021c019c74d167445a1d0537e248d5ea740fb96401c9"
+    },
+    {
+      "path": "readme-narrow.png",
+      "sha256": "d44b9234317562e6c91229a68693d78190dd4a3c69bc318dc9d799faa511068c"
+    },
+    {
+      "path": "current-keyboard-video.png",
+      "sha256": "8eda37ac81c8494de03bc0d80e21ca65e6ec551068c409d9e6bd97979dfcf1f7"
+    },
+    {
+      "path": "reader-followup-observations.json",
+      "sha256": "22b6399588f38b97c742dc6c38128a504434ab28a3c38b909d5da0d217de72f3"
+    },
+    {
+      "path": "reader-video-playing-captions.png",
+      "sha256": "8a074c2505dcca7570b6bfbb5e945fe7d0284d8a0898017433929bfcae0bcdc4"
+    },
+    {
+      "path": "reader-transcript.png",
+      "sha256": "5f941c56f7eaee5350e4e0d9cb62c98e8095630c40d8edc65fafb413c57389ba"
+    },
+    {
+      "path": "reader-narrow-320.png",
+      "sha256": "4bcd07d1a2b91e37381490bf2314f0c9f69d8ebed89fe79c6c155fa7e7093027"
+    },
+    {
+      "path": "current-video-unavailable.png",
+      "sha256": "1c83e2e0ebdffc970c5bf5fb1741400f8265d5389251a10a744d57807e30c218"
+    },
+    {
+      "path": "readme-wide-entry.png",
+      "sha256": "e04c1c01c0a30a6b6288c5f5bc9f7df7ef44e7eb773f44e0227524a443ab9bb9"
+    },
+    {
+      "path": "current-observations.json",
+      "sha256": "45815eeeb2fd8e392460405a9b0f6fde8dcb7c606569e3b8b3ba72b4caa79125"
+    },
+    {
+      "path": "reader-desktop-1280.png",
+      "sha256": "46bb73e21d32ba3ba98357e05e91fd879fb0adba331d955e7f66c714f09d3673"
+    }
+  ]
+}

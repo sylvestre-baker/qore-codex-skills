@@ -1,0 +1,21 @@
+{
+  "observed_dispatch": {
+    "host": "proxy.invalid:8080",
+    "selector": "http://127.0.0.1:8765/mcp/",
+    "authorization": "Bearer SYNTHETIC-NOT-A-SECRET",
+    "payload": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "tools/call",
+      "params": {
+        "name": "fetch_inbox",
+        "arguments": {
+          "project_key": "private-project",
+          "include_bodies": true
+        }
+      }
+    }
+  },
+  "result": [],
+  "network_used": false
+}

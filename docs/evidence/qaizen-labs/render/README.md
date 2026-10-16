@@ -1,0 +1,7 @@
+# Rendered documentation observations
+
+The fresh accessibility reader inspected the original staged page at 320 and 1280 pixels, sequential keyboard targets, selectable and keyboard-scrollable commands, captions/playback, reduced motion and JavaScript-disabled reading. Its CSS zoom approximation remains explicitly historical and is not browser-zoom proof. Four broken evidence-index links were found and corrected separately.
+
+The later current observation used an isolated Chromium persistent context and a temporary local extension invoking [tabs.setZoom](https://developer.chrome.com/docs/extensions/reference/api/tabs#method-setZoom). Actual zoom factor was 2; CSS zoom remained 1, outer width 1280, inner width 640 and scroll width 640. Sequential Tab reached the video; Space played and a second Space paused. ArrowRight did not change time in that focus state, so seek-key support is not claimed. Blocking the MP4 retained readable case text and the transcript link. The private script closed its browser/server; no author browser profile was used. [Playwright extension procedure](https://playwright.dev/docs/chrome-extensions).
+
+[Current raw measurements](current-observations.json) and [reader measurements](reader-observations.json) distinguish their sources and scope. These observations are automated agent/browser evidence with visual inspection, not screen-reader testing or instrumented accessibility certification. The README also has a separate local GFM preview; hosted GitHub rendering remains a publication check.

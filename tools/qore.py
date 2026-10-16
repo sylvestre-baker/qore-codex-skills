@@ -18,7 +18,7 @@ from run_contract import validate_run
 ROOT = Path(__file__).resolve().parent.parent
 SKILLS = ("qore-plan", "qore-review", "qore-ux-review")
 METHODS = dict(zip(SKILLS, ("plan", "review", "ux")))
-VERSION = "0.1.0"
+VERSION = "0.2.0"
 
 
 def write_json(path, value):

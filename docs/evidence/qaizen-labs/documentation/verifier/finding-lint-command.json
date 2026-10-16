@@ -1,0 +1,11 @@
+{
+  "command": [
+    "<author-home>/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+    "<workspace>/research/qore002-implementation-20261016/doc-verification-build/qore-skills-0.2.0/skills/qore-review/scripts/finding-lint.mjs",
+    "<workspace>/research/qore002-implementation-20261016/doc-readers/verifier/verified.json",
+    "--verifier=ran",
+    "--json"
+  ],
+  "exit_code": 0,
+  "stderr": ""
+}

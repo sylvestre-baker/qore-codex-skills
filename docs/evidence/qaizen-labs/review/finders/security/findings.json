@@ -1,0 +1,15 @@
+{
+  "findings": [
+    {
+      "id": "S1",
+      "title": "Loopback Agent Mail bearer can be sent through an environment HTTP proxy",
+      "severity": "medium",
+      "evidence": "tools/agent_mail.py:25 validates only the URL hostname; tools/agent_mail.py:34 adds Authorization; tools/agent_mail.py:35 uses build_opener(NoRedirect) with its default environment ProxyHandler. docs/coordination.md promises loopback endpoint containment. Running python3 -B /workspace/qualification/finders/security/repro_proxy.py exits 0 and captures host=proxy.invalid:8080, selector=http://127.0.0.1:8765/mcp/, Authorization=Bearer SYNTHETIC-NOT-A-SECRET at HTTP dispatch, without opening a socket. See repro_proxy.json.",
+      "trigger": "An otherwise cooperative executor has http_proxy configured and no matching no_proxy exclusion for the supplied loopback hostname. No hostile actor or second PM is required.",
+      "consequence": "The proxy receives the bearer and task RPC payload over HTTP, despite the adapter accepting only a loopback endpoint. The proxy also mediates returned inbox bodies. Actual exposure depends on the executor proxy configuration; none is asserted for this environment.",
+      "reproduction": "Run the saved repro_proxy.py. It clears environment only inside a mock context, supplies synthetic http_proxy/no_proxy and token values, and patches HTTPHandler.http_open to capture the final dispatch instead of using network. Expected containment: direct 127.0.0.1 dispatch. Actual: proxy.invalid:8080 receives Authorization and private-project arguments.",
+      "unresolved_condition": "Fresh verifier has not examined this candidate; reproduction observes urllib dispatch rather than a real proxy exchange.",
+      "recommendation": "Build this loopback-only opener with urllib.request.ProxyHandler({}) alongside NoRedirect and add a socket-free regression with environment proxy variables set."
+    }
+  ]
+}

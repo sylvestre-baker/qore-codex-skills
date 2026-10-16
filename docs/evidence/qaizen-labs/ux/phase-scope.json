@@ -1,0 +1,55 @@
+{
+  "qore_evidence": {
+    "candidate_sha256": "0540496cea29da71f72046f36a12c3a23b4d71900c97f7193f4dba699836b036",
+    "target_snapshot_sha256": "79274c87faf55cfe33aa597545b37fa0f7525e51bfe558025763d11b172bd98b",
+    "observed_at": "2026-10-16T07:01:46.112790+00:00",
+    "phase_id": "scope"
+  },
+  "payload": {
+    "schema": "qore-ux-scope/1",
+    "depth": "entry",
+    "required_gates": [
+      "G0",
+      "G1",
+      "G2",
+      "G3",
+      "G4",
+      "G5",
+      "G6"
+    ],
+    "checks": {
+      "G0": "Actual Labs entry control to introduction",
+      "G1": "Direct readiness route, reload, header neighbor and browser Back/Forward",
+      "G2": "Unanswered first question and help/open/closed/Back resolved transitions",
+      "G3": "Actually inspect desktop English state captures and actual CSS viewport",
+      "G4": "Inspect visible labels/instructions and relevant state copy",
+      "G5": "Manual names, sequential keyboard use, visible focus and focus restoration in this journey; no screen-reader or instrumented certification",
+      "G6": "Discriminating synthetic Back/Close/state/answer/timing and origin controls, then challenge live claims against events"
+    },
+    "not_applicable": {
+      "GP": "No performance change or performance acceptance is in this explicitly scoped protocol case."
+    },
+    "operator": "agent",
+    "context": "New isolated public guest context; no stored progress or results",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "locale": "en-US",
+    "maximum_iterations": 2,
+    "absolute_method_ceiling": 6,
+    "budget_seconds_per_probe": 180,
+    "out_of_scope": [
+      "Mobile",
+      "Questionnaire completion/results",
+      "Forms or website source edits",
+      "Performance",
+      "Whole-site or instrumented accessibility certification"
+    ],
+    "evidence_rules": [
+      "All required gates must have fresh matching evidence; a missing gate prevents SHIP.",
+      "Raw traces remain private; public transformations retain provenance.",
+      "Controls qualify the harness, never substitute for current site behavior."
+    ]
+  }
+}

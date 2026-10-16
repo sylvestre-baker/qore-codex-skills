@@ -1,0 +1,35 @@
+{
+  "profile": {
+    "id": "qaizen-labs",
+    "version": "0.1.0",
+    "sha256": "f76afdd45cb6352e5044a06affc4182ea6cd40aa9c012fb216636a61faa428f0"
+  },
+  "method": "review",
+  "facts": [
+    {
+      "id": "surface-contract",
+      "source": "checker",
+      "current_source_sha256": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b",
+      "effect": "Inspected checker, executed its exact argv from current example root; passed consistency only."
+    },
+    {
+      "id": "close-focus",
+      "source": "surface",
+      "current_source_sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+      "effect": "Compared Close keyboard actions and distinct summary focus assertion to contract and harness; no rendered observation."
+    },
+    {
+      "id": "back-focus",
+      "source": "surface",
+      "current_source_sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+      "effect": "Compared sequential Tab traversal and Enter with independent heading and returned-state assertions; browser controls skipped."
+    },
+    {
+      "id": "unanswered-scope",
+      "source": "surface",
+      "current_source_sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+      "effect": "Reviewed unanswered assertions and HTTP method/main-frame/popup guard placement; no live browser execution."
+    }
+  ],
+  "surfaces_consumed": []
+}

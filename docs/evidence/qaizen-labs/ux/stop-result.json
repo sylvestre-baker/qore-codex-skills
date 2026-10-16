@@ -1,0 +1,21 @@
+{
+  "decision": "SHIP",
+  "verdict": "SHIP",
+  "coverage": "COMPLETE",
+  "observation_coverage": "COMPLETE",
+  "iteration": 1,
+  "ceiling": 6,
+  "surface_score": null,
+  "consecutive_fresh_passes": 1,
+  "passes_required": 1,
+  "lowest_failing_gate": null,
+  "failing_gates": [],
+  "stale_gates": [],
+  "missing_gates": [],
+  "skipped": [],
+  "infra_blocked": [],
+  "not_applicable": {},
+  "stuck_count": 0,
+  "no_improve_count": 0,
+  "limit": "Coverage describes observations. SHIP is a scoped review result, not deployment authorization. Non-applicability reasons require independent review."
+}

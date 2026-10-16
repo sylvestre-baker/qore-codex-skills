@@ -1,0 +1,19 @@
+{
+  "argv": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_task_gate.py",
+    "-v"
+  ],
+  "cwd": "/workspace/project",
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "test_actual_artifact_tamper_rejected (test_task_gate.GateTests.test_actual_artifact_tamper_rejected) ... ok\ntest_actual_proof_tamper_rejected (test_task_gate.GateTests.test_actual_proof_tamper_rejected) ... ok\ntest_blocked_partial_failed_proof_rejected (test_task_gate.GateTests.test_blocked_partial_failed_proof_rejected) ... ok\ntest_criteria_modified_without_rehash_rejected (test_task_gate.GateTests.test_criteria_modified_without_rehash_rejected) ... ok\ntest_current_identity_accepts_and_atomically_records (test_task_gate.GateTests.test_current_identity_accepts_and_atomically_records) ... ok\ntest_dependencies_authorization_and_wait_are_required (test_task_gate.GateTests.test_dependencies_authorization_and_wait_are_required) ... ok\ntest_exact_canonical_rule_unicode_order_lf_and_no_nan (test_task_gate.GateTests.test_exact_canonical_rule_unicode_order_lf_and_no_nan) ... ok\ntest_missing_check_rejected (test_task_gate.GateTests.test_missing_check_rejected) ... ok\ntest_new_artifact_rejects_old_review (test_task_gate.GateTests.test_new_artifact_rejects_old_review) ... ok\ntest_new_criteria_current_delivery_still_rejects_old_review (test_task_gate.GateTests.test_new_criteria_current_delivery_still_rejects_old_review) ... ok\ntest_proof_cannot_escape_root (test_task_gate.GateTests.test_proof_cannot_escape_root) ... ok\ntest_proof_current_hash_but_old_identity_rejected (test_task_gate.GateTests.test_proof_current_hash_but_old_identity_rejected) ... ok\ntest_replayed_done_is_traceable_noop_without_state_change (test_task_gate.GateTests.test_replayed_done_is_traceable_noop_without_state_change) ... ok\ntest_same_artifact_new_criteria_rejects_late_old_pass (test_task_gate.GateTests.test_same_artifact_new_criteria_rejects_late_old_pass) ... ok\ntest_wrong_artifact_identity_rejected (test_task_gate.GateTests.test_wrong_artifact_identity_rejected) ... ok\ntest_wrong_check_rejected (test_task_gate.GateTests.test_wrong_check_rejected) ... ok\ntest_wrong_request_rejected (test_task_gate.GateTests.test_wrong_request_rejected) ... ok\ntest_wrong_review_session_and_run_rejected (test_task_gate.GateTests.test_wrong_review_session_and_run_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 18 tests in 0.006s\n\nOK\n",
+  "observed_at": "2026-10-16T07:15:41.791604+00:00"
+}

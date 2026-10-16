@@ -1,0 +1,64 @@
+{
+  "schema": "qore-dependency-disposition/1",
+  "checked_at": "2026-10-16T06:17:56.003849+00:00",
+  "scope": "Focused source applicability review, not a general dependency or binary security audit",
+  "advisory": "RUSTSEC-2026-0253",
+  "advisory_url": "https://rustsec.org/advisories/RUSTSEC-2026-0253.html",
+  "upstream_version": "v0.3.39",
+  "upstream_commit": "a4ec56bc43236693170588dc4fff29654a2f7119",
+  "source_disposition": "NOT_APPLICABLE_TO_REVIEWED_SOURCE_PATHS",
+  "used_binary_disposition": "SOURCE_ASSOCIATION_ONLY_NO_SBOM_OR_REPRODUCIBLE_BUILD",
+  "persistent_recommendation": "PARTIAL",
+  "bounded_local_test_recommendation": "May proceed as a bounded local cooperative functional test while preserving binary provenance and these limits; no user risk acceptance is asserted",
+  "reason": [
+    "The only locked reverse consumer of lru0.16.4 is tantivy0.26.2, reached through frankensearch-lexical",
+    "The checksum-verified Tantivy source has one private LruCache<usize, Block> consumer",
+    "Its code does not call pop, pop_entry, or pop_lru; it uses get, put, len and peek_lru",
+    "usize has no potentially-panicking key Drop, independently removing an advisory prerequisite",
+    "The tagged distribution workflow intends portable no-default-features builds and disables hybrid/frankensearch; this is additional source evidence, not a proof of the used binary feature set"
+  ],
+  "reverse_dependency": [
+    {
+      "name": "tantivy",
+      "version": "0.26.2",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "dependency": "lru 0.16.4"
+    }
+  ],
+  "all_tantivy_lru_references": [
+    {
+      "file": "sources/tantivy-0.26.2/src/store/reader.rs",
+      "line": 10,
+      "text": "use lru::LruCache;"
+    },
+    {
+      "file": "sources/tantivy-0.26.2/src/store/reader.rs",
+      "line": 74,
+      "text": "cache: Option<Mutex<LruCache<usize, Block>>>,"
+    },
+    {
+      "file": "sources/tantivy-0.26.2/src/store/reader.rs",
+      "line": 171,
+      "text": ".map(|cache_num_blocks| Mutex::new(LruCache::new(cache_num_blocks))),"
+    }
+  ],
+  "frozen_source_match": true,
+  "binary": {
+    "path": "/private/tmp/qore-agent-mail-20261016-trial/bin/mcp-agent-mail",
+    "sha256": "4383269644b72cd02f4f07e70f0b43c0e49c624e533a78e66bbf568684befb15",
+    "historical_archive_sha256": "97f5fe0093011af1e71f8822646279cf43de4862ac673dbf50ab19aacf6a7df2",
+    "signed_archive_verification": "Historical trial evidence, not independently rerun here"
+  },
+  "limits": [
+    "No compile, runtime server, exploit attempt, global installation or source modification",
+    "No exact binary SBOM/build attestation or reproducible comparison obtained",
+    "No claim of broad non-vulnerability, hostile sender authentication, unattended reliability or persistent deployment readiness",
+    "The lock still contains an affected crate; source path disposition must not be represented as a clean dependency audit",
+    "Loopback deployment and shared bearer do not establish advisory nonapplicability"
+  ],
+  "next_actions": [
+    "Keep test pinned to the verified historical artifact; stop and re-evaluate on version/artifact change",
+    "Carry this narrow disposition into the local cooperative test receipt; separately qualify gate, replay and recovery behavior",
+    "For a persistent recommendation obtain exact binary SBOM/provenance demonstrating portable feature resolution or a fixed upstream package and rerun affected tests; retain PARTIAL until then"
+  ]
+}

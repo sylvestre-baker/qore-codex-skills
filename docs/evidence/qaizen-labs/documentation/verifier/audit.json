@@ -1,0 +1,227 @@
+{
+  "temp_root": "/var/folders/4r/1cnctlhj0457b5kgw29hzr4h0000gn/T/qore-doc-fresh-kabpnytk",
+  "build": {
+    "command": [
+      "python3",
+      "-B",
+      "tools/build_site.py",
+      "--output",
+      "/var/folders/4r/1cnctlhj0457b5kgw29hzr4h0000gn/T/qore-doc-fresh-kabpnytk/qore-codex-skills"
+    ],
+    "exit_code": 0,
+    "stdout": "{\n  \"output\": \"/var/folders/4r/1cnctlhj0457b5kgw29hzr4h0000gn/T/qore-doc-fresh-kabpnytk/qore-codex-skills\",\n  \"files\": 240,\n  \"bytes\": 15695781,\n  \"deployed\": false\n}\n",
+    "stderr": ""
+  },
+  "original_check": {
+    "command": [
+      "python3",
+      "-B",
+      "<workspace>/research/qore002-implementation-20261016/docs-build/qore-skills-0.2.0/tools/check_site.py",
+      "<workspace>/research/qore002-implementation-20261016/site-draft"
+    ],
+    "exit_code": 0,
+    "stdout": "{\n  \"valid\": true,\n  \"references\": 25,\n  \"bytes\": 9364987,\n  \"limits\": \"Static closure and byte budgets only; rendering, captions and playback require separate observations.\"\n}\n",
+    "stderr": ""
+  },
+  "current_check": {
+    "command": [
+      "python3",
+      "-B",
+      "tools/check_site.py",
+      "/var/folders/4r/1cnctlhj0457b5kgw29hzr4h0000gn/T/qore-doc-fresh-kabpnytk/qore-codex-skills"
+    ],
+    "exit_code": 0,
+    "stdout": "{\n  \"valid\": true,\n  \"references\": 88,\n  \"bytes\": 15783582,\n  \"limits\": \"All staged HTML/Markdown local references and byte budgets only; rendering, captions and playback require separate observations.\"\n}\n",
+    "stderr": ""
+  },
+  "original_recursive": {
+    "local_references": 74,
+    "broken": [
+      {
+        "document": "evidence/README.md",
+        "ref": "../../../profiles/qaizen-labs.json",
+        "resolved": "<workspace>/research/profiles/qaizen-labs.json"
+      },
+      {
+        "document": "evidence/README.md",
+        "ref": "../../demo/qaizen-labs/README.md",
+        "resolved": "<workspace>/research/qore002-implementation-20261016/demo/qaizen-labs/README.md"
+      },
+      {
+        "document": "evidence/README.md",
+        "ref": "../../showcase.md",
+        "resolved": "<workspace>/research/qore002-implementation-20261016/showcase.md"
+      },
+      {
+        "document": "evidence/README.md",
+        "ref": "../../coordination-dependencies.md",
+        "resolved": "<workspace>/research/qore002-implementation-20261016/coordination-dependencies.md"
+      }
+    ]
+  },
+  "fresh_recursive": {
+    "local_references": 76,
+    "broken": []
+  },
+  "negative_missing_profile": {
+    "command": [
+      "python3",
+      "-B",
+      "tools/check_site.py",
+      "/var/folders/4r/1cnctlhj0457b5kgw29hzr4h0000gn/T/qore-doc-fresh-kabpnytk/qore-codex-skills"
+    ],
+    "exit_code": 1,
+    "stdout": "",
+    "stderr": "Missing or escaping reference: evidence/README.md: ../profiles/qaizen-labs.json\n"
+  },
+  "inventory": {
+    "entries": 39,
+    "hash_failures": [],
+    "fence_text_failures": [],
+    "status_definitions": {
+      "EXECUTED_RECORDED": "Actual scoped execution with identified source/profile evidence",
+      "EXECUTED_HISTORICAL_AND_MAINTAINER_REPORTED": "Earlier recorded execution plus a separately reported frozen-candidate shell result; no automatic evidence carryover",
+      "IN_PROGRESS": "Required actual execution is underway and does not establish completion",
+      "TEMPLATE": "Input substitutions or exact invocation have not been executed as written",
+      "MAINTAINER_REPORTED_EXECUTED": "Maintainer reports execution; publication of matching logs/phase artifacts is separate",
+      "EXECUTED_RELATED_HISTORICAL_DESTINATION": "Exact command text has input substitutions or historical/related evidence only; inspect each evidence record scope before claiming execution on the current candidate.",
+      "REFERENCE_TEMPLATE_NOT_EXECUTED_AS_WRITTEN": "Exact command text has input substitutions or historical/related evidence only; inspect each evidence record scope before claiming execution on the current candidate.",
+      "TEMPLATE_NOT_EXECUTED_AS_WRITTEN": "Exact command text has input substitutions or historical/related evidence only; inspect each evidence record scope before claiming execution on the current candidate.",
+      "TEMPLATE_WITH_RELATED_BROWSER_OBSERVATION": "Exact command text has input substitutions or historical/related evidence only; inspect each evidence record scope before claiming execution on the current candidate.",
+      "TEMPLATE_WITH_RELATED_SETUP_EVIDENCE": "Exact command text has input substitutions or historical/related evidence only; inspect each evidence record scope before claiming execution on the current candidate."
+    },
+    "fence_text_failures_interpretation": "Common Markdown block indentation is removed, preserving intentional continuation indentation; indexed fenced texts match.",
+    "exact_text_absent_from_document": []
+  },
+  "media": {
+    "output_hash_matches": true,
+    "provenance": {
+      "schema": "qore-media-transformation/1",
+      "source_video_private_ref": "qore-private:qore002-implementation-20261016/methods/ux/iteration-1-journey/video/page@d35d42ba4b5262f481add5602729bc3f.webm",
+      "source_video_sha256": "d6f9d552c199e4783b48524ba5fb96b8089735288a08a60d8daacd3046cc1cea",
+      "output_sha256": "988e81758ef725addf9c4da2b0b4e28f01189aaa069a28136f96af582c855973",
+      "transform": "Selected English evidence summaries rendered from actual profile/method/transport receipts. Main browser video retained at original speed, scaled with side padding, silent H.264 MP4. Separate runs assembled, no continuous-session claim. Raw trace/video not automatically exported.",
+      "timeline_seconds": {
+        "intro": [
+          0,
+          8
+        ],
+        "profile": [
+          8,
+          20
+        ],
+        "plan": [
+          20,
+          32
+        ],
+        "review": [
+          32,
+          44
+        ],
+        "case_coordination": [
+          44,
+          56
+        ],
+        "actual_ux": [
+          56,
+          96.88
+        ],
+        "limits": [
+          96.88,
+          104.88
+        ]
+      },
+      "displayed_material": "More than half is actual profile/output summaries and the recorded interaction. Explanatory intro/limits are 16 seconds.",
+      "source_note": "Coordination segment concerns QORE002-LABS-001. The case was already in progress when PM tracking began; no productivity causation is asserted."
+    },
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 1280,
+          "height": 720
+        }
+      ],
+      "format": {
+        "duration": "104.880000",
+        "size": "1381294"
+      }
+    },
+    "captions_start": "WEBVTT\n\n00:00.000 --> 00:08.000\nQore: three Codex methods and one sourced project profile.\nSeparate actual runs are assembled in this demonstration.\n\n00:08.000 --> 00:20.000\nOne maintained Labs profile supplies sourced commands and invariants.\nIt generates three autonomous project-specific skills.\n\n00:20.000 --> 00:32.000\nPlanning used five perspectives and cross-examination.\nBack reachability, resolved state and focus became separate checks.\n\n00:32.000 --> 00:44.000\nThree finders and a fresh verifier reproduced four distinct coordination defects.\nOriginal medium-severity findings and separate post-fix verification are retained.\n\n00:44.000 --> 00:56.000\nThe Labs case exchanged assignment, ACK, delivery and review messages.\nThe PM accepted the three-method delivery once. Work was already in progress; turns are manual.\n\n00:56.000 --> 01:05.000\nActual public Labs browser recording at its original speed.\nFollow the real entry into the first question; no answers are entered.\n\n01:05.000 --> 01:20.000\nHelp is operated with sequential keyboard focus, Enter and Space.\nReopening and closing are checked separately.\n\n01:20.000 --> 01:27.000\nClose restores focus to the summary.\nSequential Tab t"
+  },
+  "source_hashes": {
+    "doc-readers/claims.json": "dce3853efabb85b08349e8fd96db4cb4a987fca3e0f5e14cd97eab4530f90397",
+    "docs-build/qore-skills-0.2.0/tools/build_site.py": "6ec74fc2b5c5a384ff1a668d1c323d38a0d95de98e16afc576aaf9f77448e14e",
+    "docs-build/qore-skills-0.2.0/tools/check_site.py": "eb11f85ae9c410a0615f2991389c4e7120ec6090147845ba1bd8be9a4af9d3a2",
+    "site-draft/evidence/README.md": "3f70dcf9ab7c0ff071b19bb0e129e9553ada15ef266b483912f0e27a4fe28b42",
+    "doc-verification-build/qore-skills-0.2.0/README.md": "5fdd44f7b53eab42ab62a72d26530bcc7935df7ce138992e4f778dd7183b0ef2",
+    "doc-verification-build/qore-skills-0.2.0/tools/build_site.py": "26d56e56b24d8b17c03d9a565e64a052e9ae3ca39d785a1813a99504ff2a85ea",
+    "doc-verification-build/qore-skills-0.2.0/tools/check_site.py": "8e681363103d163154b2a50b97b1bf0441774ab3d82eeca81622479696a5daff",
+    "doc-verification-build/qore-skills-0.2.0/docs/command-inventory.json": "d8ccdbf5a6f47000a55fdc32690e4610c78efad941010c20c33f5cd4f95b2ec9",
+    "doc-verification-build/qore-skills-0.2.0/showcase/index.html": "1154fd0d7b77da6f0a1c3ead0ef45b2e62231f9c46418273c2bf6b6d179c7337",
+    "doc-verification-build/qore-skills-0.2.0/showcase/styles.css": "1bdc47446d2b60e8d5544ea2eb3e4b666b0728263b18d6ab9bf1d2ace4d616a6",
+    "doc-verification-build/qore-skills-0.2.0/docs/demo/qaizen-labs/provenance.json": "3cd60f1a0c2764defc388958c87bb859a6bee6ea37133ece4e11e4e041d7601c",
+    "doc-verification-build/qore-skills-0.2.0/docs/evidence/qaizen-labs/render/current-observations.json": "45815eeeb2fd8e392460405a9b0f6fde8dcb7c606569e3b8b3ba72b4caa79125",
+    "fresh-staging/site-manifest.json": "17d71bdc1b8479ff8490218c087bedc90f53ed4edcaf09276d55b4711bee3544",
+    "fresh-staging/evidence/README.md": "1854eea3166b89540d8621e2822a82a8bef724a23ff75a6b9f00b1dab40a2401",
+    "fresh-staging/profiles/qaizen-labs.json": "f76afdd45cb6352e5044a06affc4182ea6cd40aa9c012fb216636a61faa428f0",
+    "fresh-staging/reference/showcase.md": "b2d702c38c1a8f408c8516be5819aadc21cad0fa00053e95bbf2f3278f14035e",
+    "fresh-staging/reference/coordination-dependencies.md": "8914f0047061092ba617d39aa50afff8b24848cf637839764c81fa18bbea4f0d",
+    "fresh-staging/media/README.md": "92d50b86967acb91d6e9dd94a98e4058b8776b2aa529ce2431cbdf3ca565e0b4"
+  },
+  "fresh_manifest_sha256": "17d71bdc1b8479ff8490218c087bedc90f53ed4edcaf09276d55b4711bee3544",
+  "http": {
+    "original": [
+      {
+        "ref": "../../../profiles/qaizen-labs.json",
+        "url": "http://127.0.0.1:64091/profiles/qaizen-labs.json",
+        "status": 404
+      },
+      {
+        "ref": "../../demo/qaizen-labs/README.md",
+        "url": "http://127.0.0.1:64091/demo/qaizen-labs/README.md",
+        "status": 404
+      },
+      {
+        "ref": "../../showcase.md",
+        "url": "http://127.0.0.1:64091/showcase.md",
+        "status": 404
+      },
+      {
+        "ref": "../../coordination-dependencies.md",
+        "url": "http://127.0.0.1:64091/coordination-dependencies.md",
+        "status": 404
+      }
+    ],
+    "current": [
+      {
+        "ref": "../profiles/qaizen-labs.json",
+        "url": "http://127.0.0.1:64091/qore-codex-skills/profiles/qaizen-labs.json",
+        "status": 200
+      },
+      {
+        "ref": "../media/README.md",
+        "url": "http://127.0.0.1:64091/qore-codex-skills/media/README.md",
+        "status": 200
+      },
+      {
+        "ref": "../reference/showcase.md",
+        "url": "http://127.0.0.1:64091/qore-codex-skills/reference/showcase.md",
+        "status": 200
+      },
+      {
+        "ref": "../reference/coordination-dependencies.md",
+        "url": "http://127.0.0.1:64091/qore-codex-skills/reference/coordination-dependencies.md",
+        "status": 200
+      }
+    ]
+  },
+  "recursive_normalization": "Fresh staging /var path and resolved /private/var path normalized before containment comparison; initial scanner false positives corrected.",
+  "corrected_supplied_site_comparison": {
+    "manifest_selected_files": 240,
+    "matching_selected_file_bytes": 218,
+    "limit": "Corrected supplied site and fresh rebuild are distinct snapshots; fresh rebuild is the tested current candidate. Remaining byte differences were not investigated under time cap."
+  }
+}

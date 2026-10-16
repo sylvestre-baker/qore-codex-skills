@@ -1,0 +1,34 @@
+{
+  "schema": "qore-candidate-qualification/1",
+  "version": "0.2.0",
+  "states": {
+    "prepared": true,
+    "ready_for_publication_review": true,
+    "new_release_published": false,
+    "showcase_deployed": false,
+    "application_sent": false
+  },
+  "checks": {
+    "derived_plan": "COMPLETE",
+    "derived_review": "COMPLETE",
+    "derived_ux": "COMPLETE within declared desktop English entry/state scope",
+    "final_pm_acceptance": "DONE exactly once for frozen delivery",
+    "local_tests": {
+      "collected": 154,
+      "passed": 154,
+      "skipped": 0
+    },
+    "documentation": "Three fresh readers, one focused correction, fresh verifier and bounded focused supplement complete",
+    "profile_derivative_manifest_unchanged": "0540496cea29da71f72046f36a12c3a23b4d71900c97f7193f4dba699836b036",
+    "redistribution": "Explicit first-party/source-observation inventory and MIT; no private website source",
+    "language": "English newly authored content; original observed names/protocol literals retained"
+  },
+  "limits": [
+    "No external human first use: NOT_OBSERVED.",
+    "Persistent Agent Mail binary recommendation remains PARTIAL; bounded local trial has a focused source applicability disposition.",
+    "Original generic methods/tutorial have unchanged source and historical qualified execution; not relabeled as fresh 0.2.0 runs.",
+    "No whole-site, performance, conformance, benchmark or admission guarantee.",
+    "Final archive digests, reproducibility and cleanup receipts are recorded outside the self-hashed archive.",
+    "Later evidence/documentation-only additions preserve unchanged executable and presentation source comparisons."
+  ]
+}

@@ -1,0 +1,57 @@
+[
+  {
+    "path": "tools/coordination.py",
+    "sha256": "5bc556ae6d225a36c3e11cc5f4176c1a6736bcf62b205136ec37898e2dfc5681",
+    "mtime_utc": "2026-10-16T07:10:43.354355+00:00"
+  },
+  {
+    "path": "tools/agent_mail.py",
+    "sha256": "5fe09352cd514ec727e7dae053a42b39d0632d0bc725470efb47c360fbd2eef5",
+    "mtime_utc": "2026-10-16T07:10:43.354355+00:00"
+  },
+  {
+    "path": "tools/task_gate.py",
+    "sha256": "46ea39a6d970528bee407d472af3b3edb077cf5ed372afd1dfc3b11e9f1f7920",
+    "mtime_utc": "2026-10-16T07:10:43.354355+00:00"
+  },
+  {
+    "path": "docs/coordination.md",
+    "sha256": "35b2a8c51d4dbce1b1054111d25576d4e239464755fba8939be3387a6a6724d2",
+    "mtime_utc": "2026-10-16T07:10:43.198355+00:00"
+  },
+  {
+    "path": "docs/coordination-dependencies.md",
+    "sha256": "8914f0047061092ba617d39aa50afff8b24848cf637839764c81fa18bbea4f0d",
+    "mtime_utc": "2026-10-16T07:10:43.197355+00:00"
+  },
+  {
+    "path": "tests/test_coordination.py",
+    "sha256": "96953e76d0610e8552e25bdfdf4a383349d2c965466c3b8583e36c6b710f72f6",
+    "mtime_utc": "2026-10-16T07:10:43.353355+00:00"
+  },
+  {
+    "path": "tests/test_agent_mail.py",
+    "sha256": "9778d7e3352db54c335b2a8dfb8e4fcdede490e145752396e5d60c5d14d7578e",
+    "mtime_utc": "2026-10-16T07:10:43.353355+00:00"
+  },
+  {
+    "path": "tests/test_task_gate.py",
+    "sha256": "e3e0b8f846e663a2bc9d385e8d1b9f649ae87f80e180e528440fb93d572b5d51",
+    "mtime_utc": "2026-10-16T07:10:43.354355+00:00"
+  },
+  {
+    "path": "examples/qaizen-labs/verification-spec.md",
+    "sha256": "cea72a50acaeecf8666327aa740a39b7abcb09d0bd5d989c72217f066fc2105f",
+    "mtime_utc": "2026-10-16T07:10:43.344355+00:00"
+  },
+  {
+    "path": "examples/qaizen-labs/surface-contract.json",
+    "sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+    "mtime_utc": "2026-10-16T07:10:43.344355+00:00"
+  },
+  {
+    "path": "examples/qaizen-labs/checks/check_contract.py",
+    "sha256": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b",
+    "mtime_utc": "2026-10-16T07:10:43.344355+00:00"
+  }
+]

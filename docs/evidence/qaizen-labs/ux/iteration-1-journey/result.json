@@ -1,0 +1,144 @@
+{
+  "schema": "qore-browser-probe/1",
+  "label": "Derived qaizen-labs UX iteration 1: journey",
+  "started_at": "2026-10-16T07:02:14.605Z",
+  "target": "https://qaizen.io/labs",
+  "status": "COMPLETE",
+  "scope": "Navigation, screenshots, DOM, keyboard, console and network observation. No accessibility or performance certification.",
+  "driver": {
+    "name": "Playwright Chromium",
+    "node": "v22.23.3",
+    "version": "1.62.1",
+    "browser_version": "151.0.7922.34"
+  },
+  "capabilities": {
+    "navigation": {
+      "status": "OBSERVED",
+      "evidence": "events.json#/navigation",
+      "entry_status": 200
+    },
+    "screenshot": {
+      "status": "OBSERVED",
+      "evidence": "08-final.png"
+    },
+    "dom": {
+      "status": "OBSERVED",
+      "evidence": "08-final.dom.json"
+    },
+    "keyboard": {
+      "status": "OBSERVED",
+      "key": "Tab",
+      "active_element": {
+        "tag": "A",
+        "id": "",
+        "text": "Skip to content"
+      },
+      "evidence": "events.json#/actions/0"
+    },
+    "console": {
+      "status": "OBSERVED",
+      "evidence": "events.json#/console",
+      "note": "Listener attached before entry navigation; an empty list means no emitted events were observed."
+    },
+    "network": {
+      "status": "OBSERVED",
+      "evidence": "events.json#/network"
+    }
+  },
+  "snapshots": [
+    {
+      "at": "2026-10-16T07:02:19.190Z",
+      "label": "entry",
+      "url": "https://qaizen.io/labs",
+      "dom": "00-entry.dom.json",
+      "screenshot": "00-entry.png"
+    },
+    {
+      "at": "2026-10-16T07:02:23.174Z",
+      "label": "introduction",
+      "url": "https://qaizen.io/labs/readiness-check",
+      "dom": "01-introduction.dom.json",
+      "screenshot": "01-introduction.png"
+    },
+    {
+      "at": "2026-10-16T07:02:27.911Z",
+      "label": "first-question",
+      "url": "https://qaizen.io/labs/readiness-check",
+      "dom": "02-first-question.dom.json",
+      "screenshot": "02-first-question.png"
+    },
+    {
+      "at": "2026-10-16T07:02:35.453Z",
+      "label": "help-reopened",
+      "url": "https://qaizen.io/labs/readiness-check",
+      "dom": "03-help-reopened.dom.json",
+      "screenshot": "03-help-reopened.png"
+    },
+    {
+      "at": "2026-10-16T07:02:37.464Z",
+      "label": "close-keyboard-focus",
+      "url": "https://qaizen.io/labs/readiness-check",
+      "dom": "04-close-keyboard-focus.dom.json",
+      "screenshot": "04-close-keyboard-focus.png"
+    },
+    {
+      "at": "2026-10-16T07:02:41.267Z",
+      "label": "help-closed",
+      "url": "https://qaizen.io/labs/readiness-check",
+      "dom": "05-help-closed.dom.json",
+      "screenshot": "05-help-closed.png"
+    },
+    {
+      "at": "2026-10-16T07:02:45.136Z",
+      "label": "back-keyboard-focus",
+      "url": "https://qaizen.io/labs/readiness-check",
+      "dom": "06-back-keyboard-focus.dom.json",
+      "screenshot": "06-back-keyboard-focus.png"
+    },
+    {
+      "at": "2026-10-16T07:02:50.732Z",
+      "label": "returned-introduction",
+      "url": "https://qaizen.io/labs/readiness-check",
+      "dom": "07-returned-introduction.dom.json",
+      "screenshot": "07-returned-introduction.png"
+    },
+    {
+      "at": "2026-10-16T07:02:50.884Z",
+      "label": "final",
+      "url": "https://qaizen.io/labs/readiness-check",
+      "dom": "08-final.dom.json",
+      "screenshot": "08-final.png"
+    }
+  ],
+  "limits": [
+    "An isolated browser context is used; no user browser session is accessed.",
+    "Non-GET/HEAD/OPTIONS requests are blocked. Structured events omit request headers and bodies; raw traces, DOM, video and screenshots may retain network/page data and require separate review before sharing.",
+    "HTTP document redirects are blocked before following, including same-origin redirects; that support is unqualified. Top-level documents use one guarded fetch without redirect following, then the actual response is fulfilled into the browser.",
+    "This is an execution record, not a product-quality or general-performance benchmark."
+  ],
+  "policy": {
+    "allowed_origins": [
+      "https://qaizen.io"
+    ],
+    "service_workers": "block",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
+  "trace": "trace.zip",
+  "video": "video/page@d35d42ba4b5262f481add5602729bc3f.webm",
+  "finished_at": "2026-10-16T07:02:55.054Z",
+  "counts": {
+    "console": 1,
+    "page_errors": 0,
+    "network": 73,
+    "requests_failed": 1,
+    "blocked_mutations": 1,
+    "blocked_navigation": 0,
+    "route_errors": 0,
+    "navigation": 3,
+    "actions": 38
+  }
+}

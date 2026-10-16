@@ -1,0 +1,403 @@
+{
+  "schema": "qore-run/1",
+  "id": "qaizen-labs-ux-20261016-public",
+  "method": "ux",
+  "skill": "qore-ux-review-qaizen-labs",
+  "candidate_sha256": "0540496cea29da71f72046f36a12c3a23b4d71900c97f7193f4dba699836b036",
+  "target": {
+    "label": "Dated public Labs journey under corrected protocol input snapshot",
+    "snapshot_sha256": "79274c87faf55cfe33aa597545b37fa0f7525e51bfe558025763d11b172bd98b"
+  },
+  "last_relevant_change": "2026-10-16T07:01:46.112220+00:00",
+  "environment": {
+    "id": "codex-app-playwright-20261016",
+    "operator": "agent",
+    "host": "macOS; isolated Playwright Chromium 151.0.7922.34"
+  },
+  "profile": {
+    "id": "qaizen-labs",
+    "version": "0.1.0",
+    "sha256": "f76afdd45cb6352e5044a06affc4182ea6cd40aa9c012fb216636a61faa428f0"
+  },
+  "required_phases": [
+    "scope",
+    "profile_preflight",
+    "browser",
+    "state_transition",
+    "freshness",
+    "verdict"
+  ],
+  "phases": [
+    {
+      "id": "scope",
+      "actor_id": "/root",
+      "status": "PASS",
+      "artifacts": [
+        "phase-scope.json"
+      ]
+    },
+    {
+      "id": "profile_preflight",
+      "actor_id": "/root",
+      "status": "PASS",
+      "artifacts": [
+        "phase-profile_preflight.json"
+      ]
+    },
+    {
+      "id": "browser",
+      "actor_id": "/root",
+      "status": "PASS",
+      "artifacts": [
+        "phase-browser.json"
+      ]
+    },
+    {
+      "id": "state_transition",
+      "actor_id": "/root",
+      "status": "PASS",
+      "artifacts": [
+        "phase-state_transition.json"
+      ]
+    },
+    {
+      "id": "freshness",
+      "actor_id": "/root",
+      "status": "PASS",
+      "artifacts": [
+        "phase-freshness.json"
+      ]
+    },
+    {
+      "id": "verdict",
+      "actor_id": "/root",
+      "status": "PASS",
+      "artifacts": [
+        "phase-verdict.json"
+      ]
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "phase-scope.json",
+      "sha256": "ff2a6fd5b70ed9183c9beb105d179648d2fcdebdb53c7ed6f155a0415b428a3c",
+      "kind": "execution",
+      "candidate_sha256": "0540496cea29da71f72046f36a12c3a23b4d71900c97f7193f4dba699836b036",
+      "target_snapshot_sha256": "79274c87faf55cfe33aa597545b37fa0f7525e51bfe558025763d11b172bd98b",
+      "observed_at": "2026-10-16T07:01:46.112790+00:00"
+    },
+    {
+      "path": "phase-profile_preflight.json",
+      "sha256": "d650efcce1885f361152d8c6db205dac8b72178d69659287585e290967299478",
+      "kind": "execution",
+      "candidate_sha256": "0540496cea29da71f72046f36a12c3a23b4d71900c97f7193f4dba699836b036",
+      "target_snapshot_sha256": "79274c87faf55cfe33aa597545b37fa0f7525e51bfe558025763d11b172bd98b",
+      "observed_at": "2026-10-16T07:01:46.159442+00:00"
+    },
+    {
+      "path": "phase-browser.json",
+      "sha256": "09d7d55e5c36a9c77bc08090893777585ad72f2eb8a6d81be3fa01faa484f8d7",
+      "kind": "execution",
+      "candidate_sha256": "0540496cea29da71f72046f36a12c3a23b4d71900c97f7193f4dba699836b036",
+      "target_snapshot_sha256": "79274c87faf55cfe33aa597545b37fa0f7525e51bfe558025763d11b172bd98b",
+      "observed_at": "2026-10-16T07:08:04.533722+00:00"
+    },
+    {
+      "path": "phase-state_transition.json",
+      "sha256": "291fa2e3a4a17c8f96d4b296482ff065b003addf9ad565e8213c37815e138969",
+      "kind": "execution",
+      "candidate_sha256": "0540496cea29da71f72046f36a12c3a23b4d71900c97f7193f4dba699836b036",
+      "target_snapshot_sha256": "79274c87faf55cfe33aa597545b37fa0f7525e51bfe558025763d11b172bd98b",
+      "observed_at": "2026-10-16T07:08:04.534061+00:00"
+    },
+    {
+      "path": "phase-freshness.json",
+      "sha256": "2efc87557d217d3b5ad8602e74a474ce1f210a177e693acb54d85787df180fea",
+      "kind": "execution",
+      "candidate_sha256": "0540496cea29da71f72046f36a12c3a23b4d71900c97f7193f4dba699836b036",
+      "target_snapshot_sha256": "79274c87faf55cfe33aa597545b37fa0f7525e51bfe558025763d11b172bd98b",
+      "observed_at": "2026-10-16T07:08:04.534202+00:00"
+    },
+    {
+      "path": "iteration-1-journey/00-entry.dom.json",
+      "sha256": "09a05d31c16faaf8980d863723e3f901798ef49b4cac43ea54aec912de99112d",
+      "kind": "source"
+    },
+    {
+      "path": "iteration-1-journey/01-introduction.dom.json",
+      "sha256": "a2432ef473f94ac624222f4c7c21f4bea18abcf45cacbeccd3b6c6ab8718959b",
+      "kind": "source"
+    },
+    {
+      "path": "iteration-1-journey/02-first-question.dom.json",
+      "sha256": "1e613383296987ecedb9eb1dce4e5dec76311ea779ea66628a6566da36de94ec",
+      "kind": "source"
+    },
+    {
+      "path": "iteration-1-journey/03-help-reopened.dom.json",
+      "sha256": "4f14201d544411bfd37201d7945aa7fcde78951ee5de96bfb5457e5fafaad762",
+      "kind": "source"
+    },
+    {
+      "path": "iteration-1-journey/04-close-keyboard-focus.dom.json",
+      "sha256": "7b9686332b98a0cc52d5d3396bd1280645d4ad5f5afe4a910ac098f4b9ae276d",
+      "kind": "source"
+    },
+    {
+      "path": "iteration-1-journey/05-help-closed.dom.json",
+      "sha256": "938e30c3da9a29922c2cd4e820bc1703e0f628db799a9ff472a05c608384ba91",
+      "kind": "source"
+    },
+    {
+      "path": "iteration-1-journey/06-back-keyboard-focus.dom.json",
+      "sha256": "02a5705585b076c2ce0abfd3a3f0fd97aef363de279eafb092fecea0a03ba0f7",
+      "kind": "source"
+    },
+    {
+      "path": "iteration-1-journey/07-returned-introduction.dom.json",
+      "sha256": "e443f0cc395ba443781a14f4896440d37c266724d7fd32f90c88c82f6e4082ba",
+      "kind": "source"
+    },
+    {
+      "path": "iteration-1-journey/08-final.dom.json",
+      "sha256": "e443f0cc395ba443781a14f4896440d37c266724d7fd32f90c88c82f6e4082ba",
+      "kind": "source"
+    },
+    {
+      "path": "iteration-1-journey/events.json",
+      "sha256": "cd3bf847fe8ed3c194b413ccf68b1f495006febb160347908581ee98b1f8eaa9",
+      "kind": "source"
+    },
+    {
+      "path": "iteration-1-journey/result.json",
+      "sha256": "3ed48dacb76be26b9cba9e3be790fd6e87fe33e973d260a32fc3fea512a22fbf",
+      "kind": "source"
+    },
+    {
+      "path": "iteration-1-direct-history/00-entry.dom.json",
+      "sha256": "524b0152744d052e6bb253eaeda4ff35b7bc69b132546fc509c7edd1958c13a1",
+      "kind": "source"
+    },
+    {
+      "path": "iteration-1-direct-history/01-direct-introduction.dom.json",
+      "sha256": "c00e0e1a0c28b0d2f984b0264f3aa3ae89439a7023cb28a87cae1d02d83fa374",
+      "kind": "source"
+    },
+    {
+      "path": "iteration-1-direct-history/02-reloaded-introduction.dom.json",
+      "sha256": "524b0152744d052e6bb253eaeda4ff35b7bc69b132546fc509c7edd1958c13a1",
+      "kind": "source"
+    },
+    {
+      "path": "iteration-1-direct-history/03-labs-neighbor.dom.json",
+      "sha256": "09a05d31c16faaf8980d863723e3f901798ef49b4cac43ea54aec912de99112d",
+      "kind": "source"
+    },
+    {
+      "path": "iteration-1-direct-history/04-history-back-introduction.dom.json",
+      "sha256": "524b0152744d052e6bb253eaeda4ff35b7bc69b132546fc509c7edd1958c13a1",
+      "kind": "source"
+    },
+    {
+      "path": "iteration-1-direct-history/05-history-forward-labs.dom.json",
+      "sha256": "09a05d31c16faaf8980d863723e3f901798ef49b4cac43ea54aec912de99112d",
+      "kind": "source"
+    },
+    {
+      "path": "iteration-1-direct-history/06-final.dom.json",
+      "sha256": "09a05d31c16faaf8980d863723e3f901798ef49b4cac43ea54aec912de99112d",
+      "kind": "source"
+    },
+    {
+      "path": "iteration-1-direct-history/events.json",
+      "sha256": "faaa4172e2b2ad48fc7bcce47d8c5887957176166e87ed7d7e6b09be68913cf4",
+      "kind": "source"
+    },
+    {
+      "path": "iteration-1-direct-history/result.json",
+      "sha256": "8c319c1a88e2ba52687fd84fe55e0192ef29958b7a57945892fc3d97c6ee6d9c",
+      "kind": "source"
+    },
+    {
+      "path": "iteration-1-journey/00-entry.png",
+      "sha256": "f9f7b4b0c63899f21010387d05bf159108e2b858d7053c4905be19cca81d5789",
+      "kind": "presentation"
+    },
+    {
+      "path": "iteration-1-journey/01-introduction.png",
+      "sha256": "8deee316cd4dc446dff0fc6b2d955c5e89c672c44b0fe0edd27e157b88a1816d",
+      "kind": "presentation"
+    },
+    {
+      "path": "iteration-1-journey/02-first-question.png",
+      "sha256": "a5396e6ebbef542a3b7bea548d49ec7bb98c0883adfae06ef649f622b4ad1756",
+      "kind": "presentation"
+    },
+    {
+      "path": "iteration-1-journey/03-help-reopened.png",
+      "sha256": "f11dfb7913db35cde4e2ea25415f0f21db303fdc1798f7f8e6385d6bb246fbd1",
+      "kind": "presentation"
+    },
+    {
+      "path": "iteration-1-journey/04-close-keyboard-focus.png",
+      "sha256": "d93b0151525f43d0fa60b42d293560a07d6f6c3a3a8d9036b091faaec3546f0d",
+      "kind": "presentation"
+    },
+    {
+      "path": "iteration-1-journey/05-help-closed.png",
+      "sha256": "0ce713b314b23b1c32a792ff9b76630efa7954a22ab244bddccdffefa396cbb1",
+      "kind": "presentation"
+    },
+    {
+      "path": "iteration-1-journey/06-back-keyboard-focus.png",
+      "sha256": "8151143b22fc274123db218e6fe78173179df634848e654d064a1d1f7d8c28d9",
+      "kind": "presentation"
+    },
+    {
+      "path": "iteration-1-journey/07-returned-introduction.png",
+      "sha256": "177030aa940a2458e1a3e749febe5846e4c0d467604c2fdd2b51ade30a245b90",
+      "kind": "presentation"
+    },
+    {
+      "path": "iteration-1-direct-history/02-reloaded-introduction.png",
+      "sha256": "8c12568cc767e1d111812033ddd4823fc5ffcaf12d6561cb61b74ffa210a4bc8",
+      "kind": "presentation"
+    },
+    {
+      "path": "iteration-1-direct-history/04-history-back-introduction.png",
+      "sha256": "a8756bff2abdfe5a6016910666b98cef3dca4e4b975a0dc273a7f11af2f0e6a6",
+      "kind": "presentation"
+    },
+    {
+      "path": "iteration-1-direct-history/05-history-forward-labs.png",
+      "sha256": "484c55e66c4e31ca320607543e4ad4b28e877409b4f861352c1ef9af0f013137",
+      "kind": "presentation"
+    },
+    {
+      "path": "initial-scope.json",
+      "sha256": "2ad66db56b11b84b8a731fb520eaf43b6c7c365b5089df11afb8a700261f292d",
+      "kind": "source"
+    },
+    {
+      "path": "depth.json",
+      "sha256": "2634b09f36695180df9e9d53b09d5d38c2194d895b67f7489949cd36fb77b061",
+      "kind": "source"
+    },
+    {
+      "path": "depth-validation.json",
+      "sha256": "298867b82de7b68116cc6cd51c5123e544b58c0d03a368f0bf902f8264da29f9",
+      "kind": "source"
+    },
+    {
+      "path": "profile-preflight.json",
+      "sha256": "48c142b6065894d55a41c5fcde9bb317471a74e946ad9c1f82854729d9f4cc52",
+      "kind": "source"
+    },
+    {
+      "path": "input-identity.json",
+      "sha256": "aacca3cceee64ca29f551cfc006142d2d5c71b984a55c909f86239797c2dc780",
+      "kind": "source"
+    },
+    {
+      "path": "identity-time-correction.json",
+      "sha256": "a87e548d54a2a0c0b600451f3067053a579c622f3307a79e5f7fb3531e5ae023",
+      "kind": "source"
+    },
+    {
+      "path": "commands.json",
+      "sha256": "fa7c469047dd7660825d4c5927bbf39a53a22d6dc1c495f5b4d3007ba765f3f4",
+      "kind": "source"
+    },
+    {
+      "path": "direct-history-actions.json",
+      "sha256": "de8553482e6977f9b25c48c262921047e6f3b7aaf2118f1527e2362ea874bded",
+      "kind": "source"
+    },
+    {
+      "path": "loop.json",
+      "sha256": "a120a732c73cabe2d53bb0db07276476f9e70f6df1637802eeb5093a213bacec",
+      "kind": "source"
+    },
+    {
+      "path": "gate-evidence.json",
+      "sha256": "8f3ce760c87634a763fa08d0341a7b1b60a17ae95d43a0bcb96374af83b830bd",
+      "kind": "source"
+    },
+    {
+      "path": "control-tests.log",
+      "sha256": "6e740f57edc42e4eda987fbea19f1eaefdea124c8829705040d0255bd29a8f75",
+      "kind": "source"
+    },
+    {
+      "path": "stop-result.json",
+      "sha256": "7a172338d126ec5d2afb05fb2cbfe58a094918380694b4b4ba5a1cb75eefbb6c",
+      "kind": "source"
+    },
+    {
+      "path": "stop-initial-error.json",
+      "sha256": "4d2561a234adf5956251d96199aac4e50c74cfcbac8e343a81238616f1d0d55f",
+      "kind": "source"
+    },
+    {
+      "path": "phase-verdict.json",
+      "sha256": "d24a8dc8096c5fea8585a3c1fcffd617c74e603c00d4158ca10356dfa159dca0",
+      "kind": "execution",
+      "candidate_sha256": "0540496cea29da71f72046f36a12c3a23b4d71900c97f7193f4dba699836b036",
+      "target_snapshot_sha256": "79274c87faf55cfe33aa597545b37fa0f7525e51bfe558025763d11b172bd98b",
+      "observed_at": "2026-10-16T07:08:04.544867+00:00"
+    }
+  ],
+  "commands": [
+    {
+      "argv": [
+        "node",
+        "<workspace>/qore-skills/tools/browser_probe.mjs",
+        "--url",
+        "https://qaizen.io/labs",
+        "--output",
+        "<workspace>/research/qore002-implementation-20261016/methods/ux/iteration-1-journey",
+        "--actions",
+        "<workspace>/qore-skills/examples/qaizen-labs/browser-actions.json",
+        "--policy",
+        "<workspace>/qore-skills/examples/qaizen-labs/observation-policy.json",
+        "--playwright-module",
+        "<PLAYWRIGHT_MODULE>",
+        "--label",
+        "Derived qaizen-labs UX iteration 1: journey"
+      ],
+      "exit_code": 0,
+      "artifact": "phase-browser.json"
+    },
+    {
+      "argv": [
+        "node",
+        "<workspace>/qore-skills/tools/browser_probe.mjs",
+        "--url",
+        "https://qaizen.io/labs/readiness-check",
+        "--output",
+        "<workspace>/research/qore002-implementation-20261016/methods/ux/iteration-1-direct-history",
+        "--actions",
+        "<workspace>/research/qore002-implementation-20261016/methods/ux/direct-history-actions.json",
+        "--policy",
+        "<workspace>/qore-skills/examples/qaizen-labs/observation-policy.json",
+        "--playwright-module",
+        "<PLAYWRIGHT_MODULE>",
+        "--label",
+        "Derived qaizen-labs UX iteration 1: direct-history"
+      ],
+      "exit_code": 0,
+      "artifact": "phase-browser.json"
+    }
+  ],
+  "limitations": [
+    "Explicit desktop English public guest entry/state review; no website source or deployment commit inspected.",
+    "GP, mobile, later questions/results, forms, full accessibility, screen readers and continuous transient answer monitoring are outside initial scope.",
+    "One expected analytics POST blocked; this is not an unexplained site error.",
+    "Two isolated live contexts used; auxiliary context retains consent banner and main journey rejects it.",
+    "HTTP document redirects refused before following, including same-origin redirects.",
+    "Raw artifacts are private until a selected transformation is reviewed.",
+    "External human first use NOT_OBSERVED.",
+    "Public commands normalize private roots and the optional driver path; provenance.json relates raw and public evidence identities. This is not a fresh execution."
+  ],
+  "coverage": "COMPLETE"
+}

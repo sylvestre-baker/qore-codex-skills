@@ -1,0 +1,34 @@
+{
+  "findings": [
+    {
+      "id": "C01",
+      "title": "Failed or incomplete review has no supported recovery transition",
+      "severity": "medium",
+      "evidence": "tools/coordination.py:79 only receives deliveries in IN_PROGRESS/awaiting=delivery; :92-95 moves FAIL to CHANGES_REQUIRED and PARTIAL/BLOCKED to BLOCKED with awaiting=None; :107 only permits review requests in REVIEW_REQUIRED/awaiting=None. docs/coordination.md:71 promises corrected artifacts as a new delivery/request after failed review. Measured reproduction: python3 -B /workspace/qualification/finders/correctness/reproduce.py; saved reproduction.json C01."
+    },
+    {
+      "id": "C02",
+      "title": "Wrong review session or run can apply a terminal failure verdict",
+      "severity": "medium",
+      "evidence": "tools/coordination.py:88 compares only REVIEW_KEYS, which omit session/run (tools/task_gate.py:12); :89-95 stores verdict and applies FAIL/PARTIAL/BLOCKED before checking those fields. tools/task_gate.py:102-104 checks session/run only in the later completion gate. docs/coordination.md:21 requires verdict/proofs to carry the same identity and :73 says stale verdicts cannot change current acceptance. Measured reproduction: saved reproduction.json C02."
+    },
+    {
+      "id": "S1",
+      "title": "Loopback Agent Mail bearer can be sent through an environment HTTP proxy",
+      "severity": "medium",
+      "evidence": "tools/agent_mail.py:25 validates only the URL hostname; tools/agent_mail.py:34 adds Authorization; tools/agent_mail.py:35 uses build_opener(NoRedirect) with its default environment ProxyHandler. docs/coordination.md promises loopback endpoint containment. Running python3 -B /workspace/qualification/finders/security/repro_proxy.py exits 0 and captures host=proxy.invalid:8080, selector=http://127.0.0.1:8765/mcp/, Authorization=Bearer SYNTHETIC-NOT-A-SECRET at HTTP dispatch, without opening a socket. See repro_proxy.json."
+    },
+    {
+      "id": "F-FEAS-01",
+      "title": "Failed review has no supported corrected-delivery transition",
+      "severity": "medium",
+      "evidence": "tools/coordination.py:79 accepts delivery only from IN_PROGRESS/awaiting=delivery; :92-93 changes a FAIL to CHANGES_REQUIRED/awaiting=None; :106-107 accepts requests only from REVIEW_REQUIRED. docs/coordination.md:71 instructs a corrected artifact/new delivery/request after failed review. Running python3 -B /workspace/qualification/finders/feasibility/reproduce.py yields CHANGES_REQUIRED after FAIL and after corrected delivery, with REJECT: not awaiting delivery."
+    },
+    {
+      "id": "F-FEAS-02",
+      "title": "Acknowledgement batch can overrun the declared receive deadline",
+      "severity": "medium",
+      "evidence": "docs/coordination.md:13 promises a receive window of at most 120 seconds. tools/agent_mail.py:58-59 sets timeout only before fetch; :84-89 acknowledges every matching processed message and returns RECEIVED before the deadline check at :103. Saved reproduce.py uses the actual receive function and Client subclass with a virtual monotonic clock: 1-second fetch plus six 25-second successful ACKs returns RECEIVED after 151 simulated seconds for seconds=120; every call retains timeout=30, including one started at t=126."
+    }
+  ]
+}

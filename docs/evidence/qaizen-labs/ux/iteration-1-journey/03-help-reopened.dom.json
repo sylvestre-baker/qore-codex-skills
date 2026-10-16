@@ -1,0 +1,120 @@
+{
+  "url": "https://qaizen.io/labs/readiness-check",
+  "title": "Production Readiness Check: Could Your AI Pilot Go Live? | QAIZEN",
+  "language": "en",
+  "viewport": {
+    "width": 1280,
+    "height": 800,
+    "device_pixel_ratio": 1
+  },
+  "headings": [
+    {
+      "tag": "H2",
+      "text": "Which data will the AI system read and write in production, and who owns each source?"
+    }
+  ],
+  "links": [
+    {
+      "text": "Skip to content",
+      "href": "https://qaizen.io/labs/readiness-check#main-content"
+    },
+    {
+      "text": "OUR PRODUCT",
+      "href": "https://qaizen.io/#meeting-agent"
+    },
+    {
+      "text": "CUSTOM AGENTS",
+      "href": "https://qaizen.io/#agents"
+    },
+    {
+      "text": "READINESS REVIEW",
+      "href": "https://qaizen.io/services/readiness-review"
+    },
+    {
+      "text": "LABS",
+      "href": "https://qaizen.io/labs"
+    },
+    {
+      "text": "BLOG",
+      "href": "https://qaizen.io/blog"
+    },
+    {
+      "text": "Back to Labs",
+      "href": "https://qaizen.io/labs"
+    },
+    {
+      "text": "PRODUCTION READINESS CHECK",
+      "href": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "text": "SHADOW AI AUDIT",
+      "href": "https://qaizen.io/labs/shadow-ai"
+    },
+    {
+      "text": "ROI & COST OF DELAY",
+      "href": "https://qaizen.io/labs/roi-calculator"
+    },
+    {
+      "text": "AGENT REPLAY",
+      "href": "https://qaizen.io/labs/agent-replay"
+    }
+  ],
+  "buttons": [
+    {
+      "text": "🇬🇧 EN",
+      "type": "submit",
+      "disabled": false
+    },
+    {
+      "text": "",
+      "type": "button",
+      "disabled": false
+    },
+    {
+      "text": "Every production source and flow is written down, with a named owner",
+      "type": "button",
+      "disabled": false
+    },
+    {
+      "text": "We know the sources, but flows or owners are not written down",
+      "type": "button",
+      "disabled": false
+    },
+    {
+      "text": "Only the demo or test data is mapped",
+      "type": "button",
+      "disabled": false
+    },
+    {
+      "text": "Nobody has listed the production data sources yet",
+      "type": "button",
+      "disabled": false
+    },
+    {
+      "text": "Not sure",
+      "type": "button",
+      "disabled": false
+    },
+    {
+      "text": "Close",
+      "type": "button",
+      "disabled": false
+    },
+    {
+      "text": "Back",
+      "type": "button",
+      "disabled": false
+    },
+    {
+      "text": "NEXT",
+      "type": "button",
+      "disabled": true
+    }
+  ],
+  "active_element": {
+    "tag": "SUMMARY",
+    "text": "What does this mean?",
+    "id": ""
+  },
+  "text": "Skip to content\nOUR PRODUCT\nCUSTOM AGENTS\nREADINESS REVIEW\nLABS\nBLOG\n🇬🇧 EN\nBack to Labs\nPRODUCTION READINESS CHECK\nSHADOW AI AUDIT\nROI & COST OF DELAY\nAGENT REPLAY\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n\nQuestion 1 of 10 · Gate 1 of 5: Data architecture\n\nQuestion 1 of 10\n\nDATA ARCHITECTURE\nWhich data will the AI system read and write in production, and who owns each source?\n\nUse the arrow keys to move between answers, then press Space to select one.\n\nEvery production source and flow is written down, with a named owner\nWe know the sources, but flows or owners are not written down\nOnly the demo or test data is mapped\nNobody has listed the production data sources yet\nNot sure\nWhat does this mean?\n\nA written list, often a diagram, of every system the AI will read from or write to once live (customer records, document stores, databases), and the person who can approve its use.\n\nWHAT EACH ANSWER LOOKS LIKE\n\nStrong\nA diagram shows the claims database, the CRM and the document store, each approved by its owner.\nPartial\nThe team can name the three live sources, but nothing is written and the owners have not been asked.\nWeak\nThe pilot ran on an anonymised export; the live sources were never mapped.\nMissing\nWe will work out which systems to connect when we go live.\n\nWHO TO ASK\n\nThe data/ML lead or the solution architect; for owners, your data governance team or DPO.\n\nWHY IT MATTERS\n\nSecurity and data owners approve source by source, and a source nobody has listed is one they cannot approve.\n\nClose\nBack\nNEXT"
+}

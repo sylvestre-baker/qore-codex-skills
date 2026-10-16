@@ -1,0 +1,483 @@
+{
+  "schema": "qore-public-transformation/1",
+  "artifacts": [
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/linux/finders/correctness/coordination.json",
+      "raw_sha256": "ea892863ec6bcf7ba1b6ad39cf9507664fe4f3a887f0d2d12dcbef899d7a47b5",
+      "path": "finders/correctness/coordination.json",
+      "public_sha256": "ea892863ec6bcf7ba1b6ad39cf9507664fe4f3a887f0d2d12dcbef899d7a47b5",
+      "transformation": "Selected first-party English report/receipt. Private workspace root normalized; synthetic tokens retained as labeled test literals. No raw CLI, authentication or mail log."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/linux/finders/correctness/reproduction.json",
+      "raw_sha256": "e5843459fd751efe0ddf7395a2eb28efdba199c462137dc495d641aeefd01b31",
+      "path": "finders/correctness/reproduction.json",
+      "public_sha256": "e5843459fd751efe0ddf7395a2eb28efdba199c462137dc495d641aeefd01b31",
+      "transformation": "Selected first-party English report/receipt. Private workspace root normalized; synthetic tokens retained as labeled test literals. No raw CLI, authentication or mail log."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/linux/finders/correctness/task_gate.json",
+      "raw_sha256": "7b61721b9cd095a34913b73aa49c6127a4a2fdb520955bc22a8dc384f2709ad9",
+      "path": "finders/correctness/task_gate.json",
+      "public_sha256": "7b61721b9cd095a34913b73aa49c6127a4a2fdb520955bc22a8dc384f2709ad9",
+      "transformation": "Selected first-party English report/receipt. Private workspace root normalized; synthetic tokens retained as labeled test literals. No raw CLI, authentication or mail log."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/linux/finders/correctness/reproduce.py",
+      "raw_sha256": "214082bbc280079e379f20b6fd15488ea8a7df6b74dd34d3b2514847d5597e4e",
+      "path": "finders/correctness/reproduce.py",
+      "public_sha256": "214082bbc280079e379f20b6fd15488ea8a7df6b74dd34d3b2514847d5597e4e",
+      "transformation": "Selected first-party English report/receipt. Private workspace root normalized; synthetic tokens retained as labeled test literals. No raw CLI, authentication or mail log."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/linux/finders/correctness/report.md",
+      "raw_sha256": "c5a4c498c01fa5fe04f7f31abfaf84ce56d1ce973a924dbe893aa13037ae7be0",
+      "path": "finders/correctness/report.md",
+      "public_sha256": "c5a4c498c01fa5fe04f7f31abfaf84ce56d1ce973a924dbe893aa13037ae7be0",
+      "transformation": "Selected first-party English report/receipt. Private workspace root normalized; synthetic tokens retained as labeled test literals. No raw CLI, authentication or mail log."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/linux/finders/correctness/commands.json",
+      "raw_sha256": "05e8975500d4a3411cbd76b3728d0cf3f623231aca245109a693f331f0098c69",
+      "path": "finders/correctness/commands.json",
+      "public_sha256": "05e8975500d4a3411cbd76b3728d0cf3f623231aca245109a693f331f0098c69",
+      "transformation": "Selected first-party English report/receipt. Private workspace root normalized; synthetic tokens retained as labeled test literals. No raw CLI, authentication or mail log."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/linux/finders/correctness/node-syntax.json",
+      "raw_sha256": "ebe858442d661c92f4743baebf142f2c5da55a40b26cc06c19ee2098341d6669",
+      "path": "finders/correctness/node-syntax.json",
+      "public_sha256": "ebe858442d661c92f4743baebf142f2c5da55a40b26cc06c19ee2098341d6669",
+      "transformation": "Selected first-party English report/receipt. Private workspace root normalized; synthetic tokens retained as labeled test literals. No raw CLI, authentication or mail log."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/linux/finders/correctness/identity.json",
+      "raw_sha256": "efc33fca92883717a6620b3396e15f2dee836b151045e84a4b632c3214f8c100",
+      "path": "finders/correctness/identity.json",
+      "public_sha256": "efc33fca92883717a6620b3396e15f2dee836b151045e84a4b632c3214f8c100",
+      "transformation": "Selected first-party English report/receipt. Private workspace root normalized; synthetic tokens retained as labeled test literals. No raw CLI, authentication or mail log."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/linux/finders/correctness/capture.py",
+      "raw_sha256": "cc9871d0395c707d5a21943d4b6fd9f4f1f313bed5306434f58e0998f3ae609b",
+      "path": "finders/correctness/capture.py",
+      "public_sha256": "cc9871d0395c707d5a21943d4b6fd9f4f1f313bed5306434f58e0998f3ae609b",
+      "transformation": "Selected first-party English report/receipt. Private workspace root normalized; synthetic tokens retained as labeled test literals. No raw CLI, authentication or mail log."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/linux/finders/correctness/findings.json",
+      "raw_sha256": "b24bdd409a152db1ae6f4612762b57383d6e4e2b43a213e83464c910a519e371",
+      "path": "finders/correctness/findings.json",
+      "public_sha256": "b24bdd409a152db1ae6f4612762b57383d6e4e2b43a213e83464c910a519e371",
+      "transformation": "Selected first-party English report/receipt. Private workspace root normalized; synthetic tokens retained as labeled test literals. No raw CLI, authentication or mail log."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/linux/finders/correctness/candidate-manifest.json",
+      "raw_sha256": "bbe9e705eaf09beb556b0d5298d74778db2a2ba01e205c1e24389f707ac2ae0a",
+      "path": "finders/correctness/candidate-manifest.json",
+      "public_sha256": "bbe9e705eaf09beb556b0d5298d74778db2a2ba01e205c1e24389f707ac2ae0a",
+      "transformation": "Selected first-party English report/receipt. Private workspace root normalized; synthetic tokens retained as labeled test literals. No raw CLI, authentication or mail log."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/linux/finders/correctness/browser_probe.json",
+      "raw_sha256": "0d75842851349f10f59ed9a2eaddeb76faa79e070e8ed94b1064a3ec7de1a773",
+      "path": "finders/correctness/browser_probe.json",
+      "public_sha256": "0d75842851349f10f59ed9a2eaddeb76faa79e070e8ed94b1064a3ec7de1a773",
+      "transformation": "Selected first-party English report/receipt. Private workspace root normalized; synthetic tokens retained as labeled test literals. No raw CLI, authentication or mail log."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/linux/finders/correctness/profile-use.json",
+      "raw_sha256": "ccc0a4b332e520a620f026e6b51fce1d9afa3d713f3e18ac38ac08c837557b1b",
+      "path": "finders/correctness/profile-use.json",
+      "public_sha256": "ccc0a4b332e520a620f026e6b51fce1d9afa3d713f3e18ac38ac08c837557b1b",
+      "transformation": "Selected first-party English report/receipt. Private workspace root normalized; synthetic tokens retained as labeled test literals. No raw CLI, authentication or mail log."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/linux/finders/correctness/agent_mail.json",
+      "raw_sha256": "694905e175d59b029c8fef9dbf4dedd9a84b860e786169a30a7849dd8250a5e3",
+      "path": "finders/correctness/agent_mail.json",
+      "public_sha256": "694905e175d59b029c8fef9dbf4dedd9a84b860e786169a30a7849dd8250a5e3",
+      "transformation": "Selected first-party English report/receipt. Private workspace root normalized; synthetic tokens retained as labeled test literals. No raw CLI, authentication or mail log."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/linux/finders/correctness/preflight.json",
+      "raw_sha256": "f3cf5abd4d1bc3478fa966018c46725d9024f6ba635a050a1703315f664ccc99",
+      "path": "finders/correctness/preflight.json",
+      "public_sha256": "f3cf5abd4d1bc3478fa966018c46725d9024f6ba635a050a1703315f664ccc99",
+      "transformation": "Selected first-party English report/receipt. Private workspace root normalized; synthetic tokens retained as labeled test literals. No raw CLI, authentication or mail log."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/linux/finders/correctness/labs_contract.json",
+      "raw_sha256": "67292f2a03f7ebccd4e740d9b1df2ef1b57c5a3305ef2b8d76ac2b0888c39426",
+      "path": "finders/correctness/labs_contract.json",
+      "public_sha256": "67292f2a03f7ebccd4e740d9b1df2ef1b57c5a3305ef2b8d76ac2b0888c39426",
+      "transformation": "Selected first-party English report/receipt. Private workspace root normalized; synthetic tokens retained as labeled test literals. No raw CLI, authentication or mail log."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/linux/finders/correctness/snapshot-manifest.json",
+      "raw_sha256": "b2a8222378dcceccf3a3e7422fd12919d870b44b80f5a386d0b49b60147cd688",
+      "path": "finders/correctness/snapshot-manifest.json",
+      "public_sha256": "b2a8222378dcceccf3a3e7422fd12919d870b44b80f5a386d0b49b60147cd688",
+      "transformation": "Selected first-party English report/receipt. Private workspace root normalized; synthetic tokens retained as labeled test literals. No raw CLI, authentication or mail log."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/linux/finders/correctness/contract.json",
+      "raw_sha256": "1ec027ede27e08f3e6f6316698addd400b353eb695b015a972811be55ded31ba",
+      "path": "finders/correctness/contract.json",
+      "public_sha256": "1ec027ede27e08f3e6f6316698addd400b353eb695b015a972811be55ded31ba",
+      "transformation": "Selected first-party English report/receipt. Private workspace root normalized; synthetic tokens retained as labeled test literals. No raw CLI, authentication or mail log."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/linux/finders/correctness/write_report.py",
+      "raw_sha256": "ef8d93837a6bd621480d01134555c6915a878ecc400adef8d69da3c989b8896a",
+      "path": "finders/correctness/write_report.py",
+      "public_sha256": "ef8d93837a6bd621480d01134555c6915a878ecc400adef8d69da3c989b8896a",
+      "transformation": "Selected first-party English report/receipt. Private workspace root normalized; synthetic tokens retained as labeled test literals. No raw CLI, authentication or mail log."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/linux/finders/security/repro_proxy.json",
+      "raw_sha256": "35c9ed17891509184b2b9ad8b8cb30d81f60b61d0f0152104736ca2f7706e693",
+      "path": "finders/security/repro_proxy.json",
+      "public_sha256": "35c9ed17891509184b2b9ad8b8cb30d81f60b61d0f0152104736ca2f7706e693",
+      "transformation": "Selected first-party English report/receipt. Private workspace root normalized; synthetic tokens retained as labeled test literals. No raw CLI, authentication or mail log."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/linux/finders/security/collect.py",
+      "raw_sha256": "f9a3d842f4f21a03cc5045679e646c54027730b8036bd0c164fe7ce5703905f7",
+      "path": "finders/security/collect.py",
+      "public_sha256": "f9a3d842f4f21a03cc5045679e646c54027730b8036bd0c164fe7ce5703905f7",
+      "transformation": "Selected first-party English report/receipt. Private workspace root normalized; synthetic tokens retained as labeled test literals. No raw CLI, authentication or mail log."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/linux/finders/security/skill-manifest.json",
+      "raw_sha256": "9860886ee24c30b03a928c81489fc79875dedd35e4fc0242ae698b25f7123b9d",
+      "path": "finders/security/skill-manifest.json",
+      "public_sha256": "9860886ee24c30b03a928c81489fc79875dedd35e4fc0242ae698b25f7123b9d",
+      "transformation": "Selected first-party English report/receipt. Private workspace root normalized; synthetic tokens retained as labeled test literals. No raw CLI, authentication or mail log."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/linux/finders/security/report.md",
+      "raw_sha256": "d86bc5f2a4a7b46655c865adb5b6e7ad2dee8c164cb93161f4fcb7d9f66985f9",
+      "path": "finders/security/report.md",
+      "public_sha256": "d86bc5f2a4a7b46655c865adb5b6e7ad2dee8c164cb93161f4fcb7d9f66985f9",
+      "transformation": "Selected first-party English report/receipt. Private workspace root normalized; synthetic tokens retained as labeled test literals. No raw CLI, authentication or mail log."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/linux/finders/security/commands.json",
+      "raw_sha256": "2103c8b187a6b3d4035f1d2c358be86fdca851995bba7e5bbde7cc1cafde351e",
+      "path": "finders/security/commands.json",
+      "public_sha256": "2103c8b187a6b3d4035f1d2c358be86fdca851995bba7e5bbde7cc1cafde351e",
+      "transformation": "Selected first-party English report/receipt. Private workspace root normalized; synthetic tokens retained as labeled test literals. No raw CLI, authentication or mail log."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/linux/finders/security/findings.json",
+      "raw_sha256": "e57b146cc36c6bc71801134d93143558e54baa09f800ca3213134d7dd9c3042b",
+      "path": "finders/security/findings.json",
+      "public_sha256": "e57b146cc36c6bc71801134d93143558e54baa09f800ca3213134d7dd9c3042b",
+      "transformation": "Selected first-party English report/receipt. Private workspace root normalized; synthetic tokens retained as labeled test literals. No raw CLI, authentication or mail log."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/linux/finders/security/profile-use.json",
+      "raw_sha256": "dc967b596a95a173f5e4f58d53f1333e801082942319cc4d5397498f1a1c663d",
+      "path": "finders/security/profile-use.json",
+      "public_sha256": "dc967b596a95a173f5e4f58d53f1333e801082942319cc4d5397498f1a1c663d",
+      "transformation": "Selected first-party English report/receipt. Private workspace root normalized; synthetic tokens retained as labeled test literals. No raw CLI, authentication or mail log."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/linux/finders/security/preflight.json",
+      "raw_sha256": "cc7c5c9ff4ed6dddfc86cdcfc44b5930a36f6f95e867dda4cad79007945ee645",
+      "path": "finders/security/preflight.json",
+      "public_sha256": "cc7c5c9ff4ed6dddfc86cdcfc44b5930a36f6f95e867dda4cad79007945ee645",
+      "transformation": "Selected first-party English report/receipt. Private workspace root normalized; synthetic tokens retained as labeled test literals. No raw CLI, authentication or mail log."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/linux/finders/security/target-manifest.json",
+      "raw_sha256": "1f777e6490ab72f20dd247ea8ea2e9470be024d9d021c728aa8e49c9aa8d1d32",
+      "path": "finders/security/target-manifest.json",
+      "public_sha256": "1f777e6490ab72f20dd247ea8ea2e9470be024d9d021c728aa8e49c9aa8d1d32",
+      "transformation": "Selected first-party English report/receipt. Private workspace root normalized; synthetic tokens retained as labeled test literals. No raw CLI, authentication or mail log."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/linux/finders/security/write_report.py",
+      "raw_sha256": "e6848675b17b99526cb2d0ce6e561b20ca8aa5acea5ca4eaf52353d48a707374",
+      "path": "finders/security/write_report.py",
+      "public_sha256": "e6848675b17b99526cb2d0ce6e561b20ca8aa5acea5ca4eaf52353d48a707374",
+      "transformation": "Selected first-party English report/receipt. Private workspace root normalized; synthetic tokens retained as labeled test literals. No raw CLI, authentication or mail log."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/linux/finders/security/repro_proxy.py",
+      "raw_sha256": "928be87c65860aebffc46bd9dc0799c9397241914580c1ff7035a983dd4a49fd",
+      "path": "finders/security/repro_proxy.py",
+      "public_sha256": "928be87c65860aebffc46bd9dc0799c9397241914580c1ff7035a983dd4a49fd",
+      "transformation": "Selected first-party English report/receipt. Private workspace root normalized; synthetic tokens retained as labeled test literals. No raw CLI, authentication or mail log."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/linux/finders/feasibility/reproduce.py",
+      "raw_sha256": "0e646e7d72fa3d8593d6d7dc1d07aa72be641a8135f276ebb799241f80570fd3",
+      "path": "finders/feasibility/reproduce.py",
+      "public_sha256": "0e646e7d72fa3d8593d6d7dc1d07aa72be641a8135f276ebb799241f80570fd3",
+      "transformation": "Selected first-party English report/receipt. Private workspace root normalized; synthetic tokens retained as labeled test literals. No raw CLI, authentication or mail log."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/linux/finders/feasibility/report.md",
+      "raw_sha256": "bd4cff32c11c052c3ab40456c4383bc27242eb93270942b5a0012f0d0a299463",
+      "path": "finders/feasibility/report.md",
+      "public_sha256": "bd4cff32c11c052c3ab40456c4383bc27242eb93270942b5a0012f0d0a299463",
+      "transformation": "Selected first-party English report/receipt. Private workspace root normalized; synthetic tokens retained as labeled test literals. No raw CLI, authentication or mail log."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/linux/finders/feasibility/final-check.json",
+      "raw_sha256": "40f0b46095e45809b84794b6fef6050f21e4e57248d26a229b269970620ffbe1",
+      "path": "finders/feasibility/final-check.json",
+      "public_sha256": "40f0b46095e45809b84794b6fef6050f21e4e57248d26a229b269970620ffbe1",
+      "transformation": "Selected first-party English report/receipt. Private workspace root normalized; synthetic tokens retained as labeled test literals. No raw CLI, authentication or mail log."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/linux/finders/feasibility/snapshot.json",
+      "raw_sha256": "5ceb645436a510909424e7e7adbe0608d43c6c9dab15fad91556957ad65b85e2",
+      "path": "finders/feasibility/snapshot.json",
+      "public_sha256": "5ceb645436a510909424e7e7adbe0608d43c6c9dab15fad91556957ad65b85e2",
+      "transformation": "Selected first-party English report/receipt. Private workspace root normalized; synthetic tokens retained as labeled test literals. No raw CLI, authentication or mail log."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/linux/finders/feasibility/commands.json",
+      "raw_sha256": "cc290480be331447b61d1cd4cf3d605dfd88ced7f9116747d4ed551d9fa22a83",
+      "path": "finders/feasibility/commands.json",
+      "public_sha256": "cc290480be331447b61d1cd4cf3d605dfd88ced7f9116747d4ed551d9fa22a83",
+      "transformation": "Selected first-party English report/receipt. Private workspace root normalized; synthetic tokens retained as labeled test literals. No raw CLI, authentication or mail log."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/linux/finders/feasibility/findings.json",
+      "raw_sha256": "86ec000635e57beca27dc80cb325418614eae38e5e095cc24a60c77af6c0ab0d",
+      "path": "finders/feasibility/findings.json",
+      "public_sha256": "86ec000635e57beca27dc80cb325418614eae38e5e095cc24a60c77af6c0ab0d",
+      "transformation": "Selected first-party English report/receipt. Private workspace root normalized; synthetic tokens retained as labeled test literals. No raw CLI, authentication or mail log."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/linux/finders/feasibility/profile-use.json",
+      "raw_sha256": "c1d8533db6b3bde64ad593aa78aa30c892a3ca0c7533b66b12d504f22cc933b9",
+      "path": "finders/feasibility/profile-use.json",
+      "public_sha256": "c1d8533db6b3bde64ad593aa78aa30c892a3ca0c7533b66b12d504f22cc933b9",
+      "transformation": "Selected first-party English report/receipt. Private workspace root normalized; synthetic tokens retained as labeled test literals. No raw CLI, authentication or mail log."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/linux/finders/feasibility/skill-snapshot.json",
+      "raw_sha256": "bbe9e705eaf09beb556b0d5298d74778db2a2ba01e205c1e24389f707ac2ae0a",
+      "path": "finders/feasibility/skill-snapshot.json",
+      "public_sha256": "bbe9e705eaf09beb556b0d5298d74778db2a2ba01e205c1e24389f707ac2ae0a",
+      "transformation": "Selected first-party English report/receipt. Private workspace root normalized; synthetic tokens retained as labeled test literals. No raw CLI, authentication or mail log."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/linux/verifier/tests-agent-mail.txt",
+      "raw_sha256": "4a160235c0add54f7a5997815d0e01a072210439de4899c702c94dd3cd814662",
+      "path": "verifier/tests-agent-mail.txt",
+      "public_sha256": "4a160235c0add54f7a5997815d0e01a072210439de4899c702c94dd3cd814662",
+      "transformation": "Selected first-party English report/receipt. Private workspace root normalized; synthetic tokens retained as labeled test literals. No raw CLI, authentication or mail log."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/linux/verifier/skill-manifest.json",
+      "raw_sha256": "2b4d8c75c24c9377aa41c27c7a317901043ea76216ec6d595ed198059d1502c1",
+      "path": "verifier/skill-manifest.json",
+      "public_sha256": "2b4d8c75c24c9377aa41c27c7a317901043ea76216ec6d595ed198059d1502c1",
+      "transformation": "Selected first-party English report/receipt. Private workspace root normalized; synthetic tokens retained as labeled test literals. No raw CLI, authentication or mail log."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/linux/verifier/verified.json",
+      "raw_sha256": "e9cb1a1fffe0622542bf81656c6c63263e64721bd56f0b47373f8d8e817dad26",
+      "path": "verifier/verified.json",
+      "public_sha256": "e9cb1a1fffe0622542bf81656c6c63263e64721bd56f0b47373f8d8e817dad26",
+      "transformation": "Selected first-party English report/receipt. Private workspace root normalized; synthetic tokens retained as labeled test literals. No raw CLI, authentication or mail log."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/linux/verifier/reproduction-results.json",
+      "raw_sha256": "0ec59f8111b08102203716f1eae5de28e6a3c3f21fccb6cd16e332eb98b93f1b",
+      "path": "verifier/reproduction-results.json",
+      "public_sha256": "0ec59f8111b08102203716f1eae5de28e6a3c3f21fccb6cd16e332eb98b93f1b",
+      "transformation": "Selected first-party English report/receipt. Private workspace root normalized; synthetic tokens retained as labeled test literals. No raw CLI, authentication or mail log."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/linux/verifier/reproduce.py",
+      "raw_sha256": "997e0894c68a10ffb1b5691a07cbeef3a7773039b4151cf3de068ce15c63bd60",
+      "path": "verifier/reproduce.py",
+      "public_sha256": "997e0894c68a10ffb1b5691a07cbeef3a7773039b4151cf3de068ce15c63bd60",
+      "transformation": "Selected first-party English report/receipt. Private workspace root normalized; synthetic tokens retained as labeled test literals. No raw CLI, authentication or mail log."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/linux/verifier/REPORT.md",
+      "raw_sha256": "aaea07b93ead4df30cbc0e48bcba406664076de98d46e5eca971053ed9a66e34",
+      "path": "verifier/REPORT.md",
+      "public_sha256": "aaea07b93ead4df30cbc0e48bcba406664076de98d46e5eca971053ed9a66e34",
+      "transformation": "Selected first-party English report/receipt. Private workspace root normalized; synthetic tokens retained as labeled test literals. No raw CLI, authentication or mail log."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/linux/verifier/contract-result.json",
+      "raw_sha256": "7f557ba27626c65e7eb10c7b17773f82e9feae273715b633b694723f87b3c1ee",
+      "path": "verifier/contract-result.json",
+      "public_sha256": "7f557ba27626c65e7eb10c7b17773f82e9feae273715b633b694723f87b3c1ee",
+      "transformation": "Selected first-party English report/receipt. Private workspace root normalized; synthetic tokens retained as labeled test literals. No raw CLI, authentication or mail log."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/linux/verifier/findings_validation-execution.json",
+      "raw_sha256": "ed08aa63b73b5f7f7999241be41e2672feec0da837061bad23bfd1babfbc257f",
+      "path": "verifier/findings_validation-execution.json",
+      "public_sha256": "ed08aa63b73b5f7f7999241be41e2672feec0da837061bad23bfd1babfbc257f",
+      "transformation": "Selected first-party English report/receipt. Private workspace root normalized; synthetic tokens retained as labeled test literals. No raw CLI, authentication or mail log."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/linux/verifier/commands.json",
+      "raw_sha256": "39438b4ab722e972e51309be8ad4a080885c6a0320f4da4125c24e4646a78c48",
+      "path": "verifier/commands.json",
+      "public_sha256": "39438b4ab722e972e51309be8ad4a080885c6a0320f4da4125c24e4646a78c48",
+      "transformation": "Selected first-party English report/receipt. Private workspace root normalized; synthetic tokens retained as labeled test literals. No raw CLI, authentication or mail log."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/linux/verifier/tests-task-gate.txt",
+      "raw_sha256": "98ea402db7b97462d0214b82d1b2df836ec5990adfeb73bb24606244b7c7ad77",
+      "path": "verifier/tests-task-gate.txt",
+      "public_sha256": "98ea402db7b97462d0214b82d1b2df836ec5990adfeb73bb24606244b7c7ad77",
+      "transformation": "Selected first-party English report/receipt. Private workspace root normalized; synthetic tokens retained as labeled test literals. No raw CLI, authentication or mail log."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/linux/verifier/run-check.json",
+      "raw_sha256": "bb29ce5f620f6d13bc0cfa2c9c0f1bcbf4f7b17f872f836df788c20a1c2e2246",
+      "path": "verifier/run-check.json",
+      "public_sha256": "bb29ce5f620f6d13bc0cfa2c9c0f1bcbf4f7b17f872f836df788c20a1c2e2246",
+      "transformation": "Selected first-party English report/receipt. Private workspace root normalized; synthetic tokens retained as labeled test literals. No raw CLI, authentication or mail log."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/linux/verifier/identity.json",
+      "raw_sha256": "548ac2a0fd8b77ba84ea0ebfc1a1796184169db1ef125e1cac64369e7e6bf628",
+      "path": "verifier/identity.json",
+      "public_sha256": "548ac2a0fd8b77ba84ea0ebfc1a1796184169db1ef125e1cac64369e7e6bf628",
+      "transformation": "Selected first-party English report/receipt. Private workspace root normalized; synthetic tokens retained as labeled test literals. No raw CLI, authentication or mail log."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/linux/verifier/FILES.json",
+      "raw_sha256": "0fecc0379bd42a9adb965cd68cb1364abb902a3bcfc88c211e286ef27c62f9b7",
+      "path": "verifier/FILES.json",
+      "public_sha256": "0fecc0379bd42a9adb965cd68cb1364abb902a3bcfc88c211e286ef27c62f9b7",
+      "transformation": "Selected first-party English report/receipt. Private workspace root normalized; synthetic tokens retained as labeled test literals. No raw CLI, authentication or mail log."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/linux/verifier/verifier-execution.json",
+      "raw_sha256": "8e8113c1e37b9cb06b7fcbdde90f620768755624b0633d8b3de5142ad3124f0b",
+      "path": "verifier/verifier-execution.json",
+      "public_sha256": "8e8113c1e37b9cb06b7fcbdde90f620768755624b0633d8b3de5142ad3124f0b",
+      "transformation": "Selected first-party English report/receipt. Private workspace root normalized; synthetic tokens retained as labeled test literals. No raw CLI, authentication or mail log."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/linux/verifier/tests-coordination.txt",
+      "raw_sha256": "670a39115e7523a8984e4842e16547cb2094b03fad392b037b4b9dc8b2656e62",
+      "path": "verifier/tests-coordination.txt",
+      "public_sha256": "670a39115e7523a8984e4842e16547cb2094b03fad392b037b4b9dc8b2656e62",
+      "transformation": "Selected first-party English report/receipt. Private workspace root normalized; synthetic tokens retained as labeled test literals. No raw CLI, authentication or mail log."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/linux/verifier/profile_preflight-execution.json",
+      "raw_sha256": "7e51f0f0e2abee6cf822690df3a327344b85936b6882968c3850da70fa775428",
+      "path": "verifier/profile_preflight-execution.json",
+      "public_sha256": "7e51f0f0e2abee6cf822690df3a327344b85936b6882968c3850da70fa775428",
+      "transformation": "Selected first-party English report/receipt. Private workspace root normalized; synthetic tokens retained as labeled test literals. No raw CLI, authentication or mail log."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/linux/verifier/profile-use.json",
+      "raw_sha256": "3aab4adf4fa67cf239c87ad4904c3da89f553b065a6fe2ee5e7d79152d57e95a",
+      "path": "verifier/profile-use.json",
+      "public_sha256": "3aab4adf4fa67cf239c87ad4904c3da89f553b065a6fe2ee5e7d79152d57e95a",
+      "transformation": "Selected first-party English report/receipt. Private workspace root normalized; synthetic tokens retained as labeled test literals. No raw CLI, authentication or mail log."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/linux/verifier/preflight.json",
+      "raw_sha256": "cc7c5c9ff4ed6dddfc86cdcfc44b5930a36f6f95e867dda4cad79007945ee645",
+      "path": "verifier/preflight.json",
+      "public_sha256": "cc7c5c9ff4ed6dddfc86cdcfc44b5930a36f6f95e867dda4cad79007945ee645",
+      "transformation": "Selected first-party English report/receipt. Private workspace root normalized; synthetic tokens retained as labeled test literals. No raw CLI, authentication or mail log."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/linux/verifier/final-checks.json",
+      "raw_sha256": "74e2c7db1fc6db2f6d50f0d9318de700513a008089e6c03672ed6e9a2ad40a78",
+      "path": "verifier/final-checks.json",
+      "public_sha256": "74e2c7db1fc6db2f6d50f0d9318de700513a008089e6c03672ed6e9a2ad40a78",
+      "transformation": "Selected first-party English report/receipt. Private workspace root normalized; synthetic tokens retained as labeled test literals. No raw CLI, authentication or mail log."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/linux/verifier/execution.json",
+      "raw_sha256": "b105d3998e6039c11f1ca907a732426f969fb02396670a84052a9e1055e047a6",
+      "path": "verifier/execution.json",
+      "public_sha256": "b105d3998e6039c11f1ca907a732426f969fb02396670a84052a9e1055e047a6",
+      "transformation": "Selected first-party English report/receipt. Private workspace root normalized; synthetic tokens retained as labeled test literals. No raw CLI, authentication or mail log."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/linux/verifier/target-manifest.json",
+      "raw_sha256": "3282ea44daa3be81eeadd6185274bd53d29cb43a07e14fd801ee14b33c79baac",
+      "path": "verifier/target-manifest.json",
+      "public_sha256": "3282ea44daa3be81eeadd6185274bd53d29cb43a07e14fd801ee14b33c79baac",
+      "transformation": "Selected first-party English report/receipt. Private workspace root normalized; synthetic tokens retained as labeled test literals. No raw CLI, authentication or mail log."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/linux/verifier/finding-lint.json",
+      "raw_sha256": "4c07cdce9516448914a19bc797ac3e46e2e25953ce87c207163e0283358647a3",
+      "path": "verifier/finding-lint.json",
+      "public_sha256": "4c07cdce9516448914a19bc797ac3e46e2e25953ce87c207163e0283358647a3",
+      "transformation": "Selected first-party English report/receipt. Private workspace root normalized; synthetic tokens retained as labeled test literals. No raw CLI, authentication or mail log."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/linux/fix-verifier/check.py",
+      "raw_sha256": "f13186a8ad86c5062a5a1947dabce7360f4f6f1be2ed7a860a5a26c5cb754073",
+      "path": "fix-verifier/check.py",
+      "public_sha256": "f13186a8ad86c5062a5a1947dabce7360f4f6f1be2ed7a860a5a26c5cb754073",
+      "transformation": "Selected first-party English report/receipt. Private workspace root normalized; synthetic tokens retained as labeled test literals. No raw CLI, authentication or mail log."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/linux/fix-verifier/REPORT.md",
+      "raw_sha256": "f98a736442ceb83846ee754b258f47a85d499796173333816aa1670c8a617ff8",
+      "path": "fix-verifier/REPORT.md",
+      "public_sha256": "f98a736442ceb83846ee754b258f47a85d499796173333816aa1670c8a617ff8",
+      "transformation": "Selected first-party English report/receipt. Private workspace root normalized; synthetic tokens retained as labeled test literals. No raw CLI, authentication or mail log."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/linux/fix-verifier/results.json",
+      "raw_sha256": "3edb7352d6145550746a43a292a6675f5cdc6376ce8843d8a53d3c7364f2d572",
+      "path": "fix-verifier/results.json",
+      "public_sha256": "3edb7352d6145550746a43a292a6675f5cdc6376ce8843d8a53d3c7364f2d572",
+      "transformation": "Selected first-party English report/receipt. Private workspace root normalized; synthetic tokens retained as labeled test literals. No raw CLI, authentication or mail log."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/linux/claims.json",
+      "raw_sha256": "13b0f07e2e722e9b6c9a80ae02340ca4f84d11e6910bbb90c79cf81c4ad1fc8b",
+      "path": "claims.json",
+      "public_sha256": "13b0f07e2e722e9b6c9a80ae02340ca4f84d11e6910bbb90c79cf81c4ad1fc8b",
+      "transformation": "Selected first-party English report/receipt. Private workspace root normalized; synthetic tokens retained as labeled test literals. No raw CLI, authentication or mail log."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/linux/findings.json",
+      "raw_sha256": "3cf6db22ca6ad3827d6a4cecf1ad1945804b40cb04932f892a7fe980c4a60d87",
+      "path": "findings.json",
+      "public_sha256": "3cf6db22ca6ad3827d6a4cecf1ad1945804b40cb04932f892a7fe980c4a60d87",
+      "transformation": "Selected first-party English report/receipt. Private workspace root normalized; synthetic tokens retained as labeled test literals. No raw CLI, authentication or mail log."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/linux/redaction.json",
+      "raw_sha256": "db2ba65e18b73154eba5134d0c60af1c2128894696a712744d764439193a2e7b",
+      "path": "redaction.json",
+      "public_sha256": "db2ba65e18b73154eba5134d0c60af1c2128894696a712744d764439193a2e7b",
+      "transformation": "Selected first-party English report/receipt. Private workspace root normalized; synthetic tokens retained as labeled test literals. No raw CLI, authentication or mail log."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/linux/prepare-tests.log",
+      "raw_sha256": "f597230df1c13b9ca36fbd5e0c6a4bf3fc96dfdd6634d77369a567b3c0612657",
+      "path": "prepare-tests.log",
+      "public_sha256": "f597230df1c13b9ca36fbd5e0c6a4bf3fc96dfdd6634d77369a567b3c0612657",
+      "transformation": "Selected first-party English report/receipt. Private workspace root normalized; synthetic tokens retained as labeled test literals. No raw CLI, authentication or mail log."
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/linux/verifier/verified.json",
+      "raw_sha256": "e9cb1a1fffe0622542bf81656c6c63263e64721bd56f0b47373f8d8e817dad26",
+      "path": "verified.json",
+      "public_sha256": "e9cb1a1fffe0622542bf81656c6c63263e64721bd56f0b47373f8d8e817dad26",
+      "transformation": "Selected first-party English report/receipt. Private workspace root normalized; synthetic tokens retained as labeled test literals. No raw CLI, authentication or mail log."
+    }
+  ],
+  "candidate_archive_sha256": "a9e54d890ec4202ad113ac2e559499418e59fe14ba320e730a15a27515534ac6",
+  "source_snapshot": "Exact scoped files copied from immutable extracted initial archive; no private source."
+}

@@ -1,0 +1,1297 @@
+{
+  "checks": {
+    "canonical_criteria": true,
+    "manifest_identity": true,
+    "unique_sorted_manifest": true,
+    "all_actual_hashes": true,
+    "plan_contract": true,
+    "ux_contract": true,
+    "review_contract": true,
+    "plan_roles": true,
+    "ux_gates": true,
+    "ux_actual_transitions": true,
+    "review_independent_roles": true,
+    "review_profile": true,
+    "mechanical_filter": true,
+    "original_severity_preserved": true,
+    "fix_identity": true,
+    "separate_fix_checks": true
+  },
+  "file_hashes": [
+    {
+      "path": "delivery/evidence/plan/REPORT.md",
+      "expected": "91a83c696306f2db987d22ee9dbe44186b4fa954aa73779b68071467b04a71b4",
+      "actual": "91a83c696306f2db987d22ee9dbe44186b4fa954aa73779b68071467b04a71b4",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/plan/adjudication.md",
+      "expected": "595bd57845b5516fb5e0d3308bb579f4f8afeb555c0b6c8317309c983569403e",
+      "actual": "595bd57845b5516fb5e0d3308bb579f4f8afeb555c0b6c8317309c983569403e",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/plan/analyze/architecture.md",
+      "expected": "98af917773ec308e53431766f5a59c799f2fb7a80deeac33d23be47c89d3bf7f",
+      "actual": "98af917773ec308e53431766f5a59c799f2fb7a80deeac33d23be47c89d3bf7f",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/plan/analyze/delivery.md",
+      "expected": "5efd015047c0b7421a237e78f8c5317cd2524b5350d23c65c49651e4457ebc5d",
+      "actual": "5efd015047c0b7421a237e78f8c5317cd2524b5350d23c65c49651e4457ebc5d",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/plan/analyze/product.md",
+      "expected": "3e4d7061c7a0db0213853696ac93f72901018f70731c7d7b864e3de147176081",
+      "actual": "3e4d7061c7a0db0213853696ac93f72901018f70731c7d7b864e3de147176081",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/plan/analyze/qa.md",
+      "expected": "e9e14d9160d6b3aa74cef997712298cea40452610c45b4ee9ce6658e12ddbad7",
+      "actual": "e9e14d9160d6b3aa74cef997712298cea40452610c45b4ee9ce6658e12ddbad7",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/plan/analyze/ux.md",
+      "expected": "f8844dd28108cb4680d3dbdffac531b538c71bae32941ca529c1aaf824f12b8d",
+      "actual": "f8844dd28108cb4680d3dbdffac531b538c71bae32941ca529c1aaf824f12b8d",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/plan/challenge/architecture.md",
+      "expected": "e729a07c34c7bf47274cefb1254981f52c1b1c71851b1785115e0501fda5df7f",
+      "actual": "e729a07c34c7bf47274cefb1254981f52c1b1c71851b1785115e0501fda5df7f",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/plan/challenge/delivery.md",
+      "expected": "154f83afb103897d8189a123f6cc589d1bd40b74f74353f49c0d3b2cfbfecfa3",
+      "actual": "154f83afb103897d8189a123f6cc589d1bd40b74f74353f49c0d3b2cfbfecfa3",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/plan/challenge/product.md",
+      "expected": "b2a5f45df8d4061bc7de470849f1d6e60f97405874181c03a66f0843524aac13",
+      "actual": "b2a5f45df8d4061bc7de470849f1d6e60f97405874181c03a66f0843524aac13",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/plan/challenge/qa.md",
+      "expected": "57372c084a8d658e628811258a0dcfc0d897e1a766455d386f3d5c6a8edc697f",
+      "actual": "57372c084a8d658e628811258a0dcfc0d897e1a766455d386f3d5c6a8edc697f",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/plan/challenge/ux.md",
+      "expected": "2615aae21535508708f081db9adfa6620d083d2347e58671eff9193719769baa",
+      "actual": "2615aae21535508708f081db9adfa6620d083d2347e58671eff9193719769baa",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/plan/phase-adjudication.json",
+      "expected": "73af5496a511bc02a1c745b10238414b022240cf2a3547592236a0a879579546",
+      "actual": "73af5496a511bc02a1c745b10238414b022240cf2a3547592236a0a879579546",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/plan/phase-architecture.json",
+      "expected": "ea5187ba79a352674a2dc70926d066c4478e8bd6db23e7e1bbe88b37526a941a",
+      "actual": "ea5187ba79a352674a2dc70926d066c4478e8bd6db23e7e1bbe88b37526a941a",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/plan/phase-delivery.json",
+      "expected": "c83f313cc42a247ea1797ce2fd2a70aeaa073dae973f354cf9b521a433f77256",
+      "actual": "c83f313cc42a247ea1797ce2fd2a70aeaa073dae973f354cf9b521a433f77256",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/plan/phase-product.json",
+      "expected": "9637a01bfe3198ab27b2e7e3d44f555db0df6891183bf9c9cb34fa5a6c90b5af",
+      "actual": "9637a01bfe3198ab27b2e7e3d44f555db0df6891183bf9c9cb34fa5a6c90b5af",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/plan/phase-profile_preflight.json",
+      "expected": "35c268adcf635196e7bb6b2942c9dbb4620d1eadf9a4f9b65a32b8568f7c112a",
+      "actual": "35c268adcf635196e7bb6b2942c9dbb4620d1eadf9a4f9b65a32b8568f7c112a",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/plan/phase-qa.json",
+      "expected": "dd5f97c2dfffd09bceee102cce3798a3e614983b1ff72fb820bbb0b061739c38",
+      "actual": "dd5f97c2dfffd09bceee102cce3798a3e614983b1ff72fb820bbb0b061739c38",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/plan/phase-spec_validation.json",
+      "expected": "28db5a2f7fc4c0412eeae4a78a3e323e2a30786dab0e4e1745a22cd89bf0c828",
+      "actual": "28db5a2f7fc4c0412eeae4a78a3e323e2a30786dab0e4e1745a22cd89bf0c828",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/plan/phase-ux.json",
+      "expected": "7dca3b1c840cb7662c2ca1f1e35e505a2369e32233c18235fbc01330b5f49fb0",
+      "actual": "7dca3b1c840cb7662c2ca1f1e35e505a2369e32233c18235fbc01330b5f49fb0",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/plan/profile-preflight.json",
+      "expected": "ce277866cb52287b7b63ef4d17e7a06bd47ea24daa86d195bc7470f2f07bf0e8",
+      "actual": "ce277866cb52287b7b63ef4d17e7a06bd47ea24daa86d195bc7470f2f07bf0e8",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/plan/provenance.json",
+      "expected": "df5902d94cde6688546758d63dabd4abd9b271bbed54469e6160e1f56cac5691",
+      "actual": "df5902d94cde6688546758d63dabd4abd9b271bbed54469e6160e1f56cac5691",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/plan/result/browser-actions.json",
+      "expected": "20873d7dad49904b4f24c8440761bf640a8b557723bb0143ce6b335d963f4a3d",
+      "actual": "20873d7dad49904b4f24c8440761bf640a8b557723bb0143ce6b335d963f4a3d",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/plan/result/checks/check_contract.py",
+      "expected": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b",
+      "actual": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/plan/result/observation-policy.json",
+      "expected": "15f4e5b4960b5011684be265f027e42b8637a3b8aae96b24bba1ba3a4d0f0202",
+      "actual": "15f4e5b4960b5011684be265f027e42b8637a3b8aae96b24bba1ba3a4d0f0202",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/plan/result/surface-contract.json",
+      "expected": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+      "actual": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/plan/result/verification-spec.md",
+      "expected": "cea72a50acaeecf8666327aa740a39b7abcb09d0bd5d989c72217f066fc2105f",
+      "actual": "cea72a50acaeecf8666327aa740a39b7abcb09d0bd5d989c72217f066fc2105f",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/plan/run-validation.json",
+      "expected": "f578dd884673f6cd5f5a9eeb1f6865f3c7cba588b748d4ae88497d9326a0d603",
+      "actual": "f578dd884673f6cd5f5a9eeb1f6865f3c7cba588b748d4ae88497d9326a0d603",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/plan/run.json",
+      "expected": "31b66b936e7360830c83f67b90066ea0a64bfd1bc172770c9ee01088fba03e30",
+      "actual": "31b66b936e7360830c83f67b90066ea0a64bfd1bc172770c9ee01088fba03e30",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/plan/spec-validation.json",
+      "expected": "111584fade3e6c869dbdb602f119afaac4da54c9dfc64a12f6ffbc292896195f",
+      "actual": "111584fade3e6c869dbdb602f119afaac4da54c9dfc64a12f6ffbc292896195f",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/REPORT.md",
+      "expected": "ff2e0ed97c0dcca049a01f84819deadccc558d9cbd63c9a4f15567d773cb6bdd",
+      "actual": "ff2e0ed97c0dcca049a01f84819deadccc558d9cbd63c9a4f15567d773cb6bdd",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/claims.json",
+      "expected": "13b0f07e2e722e9b6c9a80ae02340ca4f84d11e6910bbb90c79cf81c4ad1fc8b",
+      "actual": "13b0f07e2e722e9b6c9a80ae02340ca4f84d11e6910bbb90c79cf81c4ad1fc8b",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/finders/correctness/agent_mail.json",
+      "expected": "694905e175d59b029c8fef9dbf4dedd9a84b860e786169a30a7849dd8250a5e3",
+      "actual": "694905e175d59b029c8fef9dbf4dedd9a84b860e786169a30a7849dd8250a5e3",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/finders/correctness/browser_probe.json",
+      "expected": "0d75842851349f10f59ed9a2eaddeb76faa79e070e8ed94b1064a3ec7de1a773",
+      "actual": "0d75842851349f10f59ed9a2eaddeb76faa79e070e8ed94b1064a3ec7de1a773",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/finders/correctness/candidate-manifest.json",
+      "expected": "bbe9e705eaf09beb556b0d5298d74778db2a2ba01e205c1e24389f707ac2ae0a",
+      "actual": "bbe9e705eaf09beb556b0d5298d74778db2a2ba01e205c1e24389f707ac2ae0a",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/finders/correctness/capture.py",
+      "expected": "cc9871d0395c707d5a21943d4b6fd9f4f1f313bed5306434f58e0998f3ae609b",
+      "actual": "cc9871d0395c707d5a21943d4b6fd9f4f1f313bed5306434f58e0998f3ae609b",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/finders/correctness/commands.json",
+      "expected": "05e8975500d4a3411cbd76b3728d0cf3f623231aca245109a693f331f0098c69",
+      "actual": "05e8975500d4a3411cbd76b3728d0cf3f623231aca245109a693f331f0098c69",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/finders/correctness/contract.json",
+      "expected": "1ec027ede27e08f3e6f6316698addd400b353eb695b015a972811be55ded31ba",
+      "actual": "1ec027ede27e08f3e6f6316698addd400b353eb695b015a972811be55ded31ba",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/finders/correctness/coordination.json",
+      "expected": "ea892863ec6bcf7ba1b6ad39cf9507664fe4f3a887f0d2d12dcbef899d7a47b5",
+      "actual": "ea892863ec6bcf7ba1b6ad39cf9507664fe4f3a887f0d2d12dcbef899d7a47b5",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/finders/correctness/findings.json",
+      "expected": "b24bdd409a152db1ae6f4612762b57383d6e4e2b43a213e83464c910a519e371",
+      "actual": "b24bdd409a152db1ae6f4612762b57383d6e4e2b43a213e83464c910a519e371",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/finders/correctness/identity.json",
+      "expected": "efc33fca92883717a6620b3396e15f2dee836b151045e84a4b632c3214f8c100",
+      "actual": "efc33fca92883717a6620b3396e15f2dee836b151045e84a4b632c3214f8c100",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/finders/correctness/labs_contract.json",
+      "expected": "67292f2a03f7ebccd4e740d9b1df2ef1b57c5a3305ef2b8d76ac2b0888c39426",
+      "actual": "67292f2a03f7ebccd4e740d9b1df2ef1b57c5a3305ef2b8d76ac2b0888c39426",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/finders/correctness/node-syntax.json",
+      "expected": "ebe858442d661c92f4743baebf142f2c5da55a40b26cc06c19ee2098341d6669",
+      "actual": "ebe858442d661c92f4743baebf142f2c5da55a40b26cc06c19ee2098341d6669",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/finders/correctness/preflight.json",
+      "expected": "f3cf5abd4d1bc3478fa966018c46725d9024f6ba635a050a1703315f664ccc99",
+      "actual": "f3cf5abd4d1bc3478fa966018c46725d9024f6ba635a050a1703315f664ccc99",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/finders/correctness/profile-use.json",
+      "expected": "ccc0a4b332e520a620f026e6b51fce1d9afa3d713f3e18ac38ac08c837557b1b",
+      "actual": "ccc0a4b332e520a620f026e6b51fce1d9afa3d713f3e18ac38ac08c837557b1b",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/finders/correctness/report.md",
+      "expected": "c5a4c498c01fa5fe04f7f31abfaf84ce56d1ce973a924dbe893aa13037ae7be0",
+      "actual": "c5a4c498c01fa5fe04f7f31abfaf84ce56d1ce973a924dbe893aa13037ae7be0",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/finders/correctness/reproduce.py",
+      "expected": "214082bbc280079e379f20b6fd15488ea8a7df6b74dd34d3b2514847d5597e4e",
+      "actual": "214082bbc280079e379f20b6fd15488ea8a7df6b74dd34d3b2514847d5597e4e",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/finders/correctness/reproduction.json",
+      "expected": "e5843459fd751efe0ddf7395a2eb28efdba199c462137dc495d641aeefd01b31",
+      "actual": "e5843459fd751efe0ddf7395a2eb28efdba199c462137dc495d641aeefd01b31",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/finders/correctness/snapshot-manifest.json",
+      "expected": "b2a8222378dcceccf3a3e7422fd12919d870b44b80f5a386d0b49b60147cd688",
+      "actual": "b2a8222378dcceccf3a3e7422fd12919d870b44b80f5a386d0b49b60147cd688",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/finders/correctness/task_gate.json",
+      "expected": "7b61721b9cd095a34913b73aa49c6127a4a2fdb520955bc22a8dc384f2709ad9",
+      "actual": "7b61721b9cd095a34913b73aa49c6127a4a2fdb520955bc22a8dc384f2709ad9",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/finders/correctness/write_report.py",
+      "expected": "ef8d93837a6bd621480d01134555c6915a878ecc400adef8d69da3c989b8896a",
+      "actual": "ef8d93837a6bd621480d01134555c6915a878ecc400adef8d69da3c989b8896a",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/finders/feasibility/commands.json",
+      "expected": "cc290480be331447b61d1cd4cf3d605dfd88ced7f9116747d4ed551d9fa22a83",
+      "actual": "cc290480be331447b61d1cd4cf3d605dfd88ced7f9116747d4ed551d9fa22a83",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/finders/feasibility/final-check.json",
+      "expected": "40f0b46095e45809b84794b6fef6050f21e4e57248d26a229b269970620ffbe1",
+      "actual": "40f0b46095e45809b84794b6fef6050f21e4e57248d26a229b269970620ffbe1",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/finders/feasibility/findings.json",
+      "expected": "86ec000635e57beca27dc80cb325418614eae38e5e095cc24a60c77af6c0ab0d",
+      "actual": "86ec000635e57beca27dc80cb325418614eae38e5e095cc24a60c77af6c0ab0d",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/finders/feasibility/profile-use.json",
+      "expected": "c1d8533db6b3bde64ad593aa78aa30c892a3ca0c7533b66b12d504f22cc933b9",
+      "actual": "c1d8533db6b3bde64ad593aa78aa30c892a3ca0c7533b66b12d504f22cc933b9",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/finders/feasibility/report.md",
+      "expected": "bd4cff32c11c052c3ab40456c4383bc27242eb93270942b5a0012f0d0a299463",
+      "actual": "bd4cff32c11c052c3ab40456c4383bc27242eb93270942b5a0012f0d0a299463",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/finders/feasibility/reproduce.py",
+      "expected": "0e646e7d72fa3d8593d6d7dc1d07aa72be641a8135f276ebb799241f80570fd3",
+      "actual": "0e646e7d72fa3d8593d6d7dc1d07aa72be641a8135f276ebb799241f80570fd3",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/finders/feasibility/skill-snapshot.json",
+      "expected": "bbe9e705eaf09beb556b0d5298d74778db2a2ba01e205c1e24389f707ac2ae0a",
+      "actual": "bbe9e705eaf09beb556b0d5298d74778db2a2ba01e205c1e24389f707ac2ae0a",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/finders/feasibility/snapshot.json",
+      "expected": "5ceb645436a510909424e7e7adbe0608d43c6c9dab15fad91556957ad65b85e2",
+      "actual": "5ceb645436a510909424e7e7adbe0608d43c6c9dab15fad91556957ad65b85e2",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/finders/security/collect.py",
+      "expected": "f9a3d842f4f21a03cc5045679e646c54027730b8036bd0c164fe7ce5703905f7",
+      "actual": "f9a3d842f4f21a03cc5045679e646c54027730b8036bd0c164fe7ce5703905f7",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/finders/security/commands.json",
+      "expected": "2103c8b187a6b3d4035f1d2c358be86fdca851995bba7e5bbde7cc1cafde351e",
+      "actual": "2103c8b187a6b3d4035f1d2c358be86fdca851995bba7e5bbde7cc1cafde351e",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/finders/security/findings.json",
+      "expected": "e57b146cc36c6bc71801134d93143558e54baa09f800ca3213134d7dd9c3042b",
+      "actual": "e57b146cc36c6bc71801134d93143558e54baa09f800ca3213134d7dd9c3042b",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/finders/security/preflight.json",
+      "expected": "cc7c5c9ff4ed6dddfc86cdcfc44b5930a36f6f95e867dda4cad79007945ee645",
+      "actual": "cc7c5c9ff4ed6dddfc86cdcfc44b5930a36f6f95e867dda4cad79007945ee645",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/finders/security/profile-use.json",
+      "expected": "dc967b596a95a173f5e4f58d53f1333e801082942319cc4d5397498f1a1c663d",
+      "actual": "dc967b596a95a173f5e4f58d53f1333e801082942319cc4d5397498f1a1c663d",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/finders/security/report.md",
+      "expected": "d86bc5f2a4a7b46655c865adb5b6e7ad2dee8c164cb93161f4fcb7d9f66985f9",
+      "actual": "d86bc5f2a4a7b46655c865adb5b6e7ad2dee8c164cb93161f4fcb7d9f66985f9",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/finders/security/repro_proxy.json",
+      "expected": "35c9ed17891509184b2b9ad8b8cb30d81f60b61d0f0152104736ca2f7706e693",
+      "actual": "35c9ed17891509184b2b9ad8b8cb30d81f60b61d0f0152104736ca2f7706e693",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/finders/security/repro_proxy.py",
+      "expected": "928be87c65860aebffc46bd9dc0799c9397241914580c1ff7035a983dd4a49fd",
+      "actual": "928be87c65860aebffc46bd9dc0799c9397241914580c1ff7035a983dd4a49fd",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/finders/security/skill-manifest.json",
+      "expected": "9860886ee24c30b03a928c81489fc79875dedd35e4fc0242ae698b25f7123b9d",
+      "actual": "9860886ee24c30b03a928c81489fc79875dedd35e4fc0242ae698b25f7123b9d",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/finders/security/target-manifest.json",
+      "expected": "1f777e6490ab72f20dd247ea8ea2e9470be024d9d021c728aa8e49c9aa8d1d32",
+      "actual": "1f777e6490ab72f20dd247ea8ea2e9470be024d9d021c728aa8e49c9aa8d1d32",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/finders/security/write_report.py",
+      "expected": "e6848675b17b99526cb2d0ce6e561b20ca8aa5acea5ca4eaf52353d48a707374",
+      "actual": "e6848675b17b99526cb2d0ce6e561b20ca8aa5acea5ca4eaf52353d48a707374",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/findings.json",
+      "expected": "3cf6db22ca6ad3827d6a4cecf1ad1945804b40cb04932f892a7fe980c4a60d87",
+      "actual": "3cf6db22ca6ad3827d6a4cecf1ad1945804b40cb04932f892a7fe980c4a60d87",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/fix-verifier/REPORT.md",
+      "expected": "f98a736442ceb83846ee754b258f47a85d499796173333816aa1670c8a617ff8",
+      "actual": "f98a736442ceb83846ee754b258f47a85d499796173333816aa1670c8a617ff8",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/fix-verifier/check.py",
+      "expected": "f13186a8ad86c5062a5a1947dabce7360f4f6f1be2ed7a860a5a26c5cb754073",
+      "actual": "f13186a8ad86c5062a5a1947dabce7360f4f6f1be2ed7a860a5a26c5cb754073",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/fix-verifier/results.json",
+      "expected": "3edb7352d6145550746a43a292a6675f5cdc6376ce8843d8a53d3c7364f2d572",
+      "actual": "3edb7352d6145550746a43a292a6675f5cdc6376ce8843d8a53d3c7364f2d572",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/phase-finder.correctness.json",
+      "expected": "e4e70bf7597ab55046cedc956cf87dafe243a3a52cd1e2168c86fbd6e76cb30c",
+      "actual": "e4e70bf7597ab55046cedc956cf87dafe243a3a52cd1e2168c86fbd6e76cb30c",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/phase-finder.feasibility.json",
+      "expected": "153c97fd51c6fbe0c508b556255a79298f5a227155bf54cdad151b876c3a3a29",
+      "actual": "153c97fd51c6fbe0c508b556255a79298f5a227155bf54cdad151b876c3a3a29",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/phase-finder.security.json",
+      "expected": "d5af3c7ac47034606f5cfd73a754163eacea5afd759bed179c51e6cad5d31872",
+      "actual": "d5af3c7ac47034606f5cfd73a754163eacea5afd759bed179c51e6cad5d31872",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/phase-findings_validation.json",
+      "expected": "3d4de73d816d8a37b6871814ba6ef1243fed311d7d96b63b72baff6f31ccfd0d",
+      "actual": "3d4de73d816d8a37b6871814ba6ef1243fed311d7d96b63b72baff6f31ccfd0d",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/phase-profile_preflight.json",
+      "expected": "2476c01129e67fd0a854ed03472b8850b9801f4f8908dc6511b3757bdfaa3882",
+      "actual": "2476c01129e67fd0a854ed03472b8850b9801f4f8908dc6511b3757bdfaa3882",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/phase-redaction.json",
+      "expected": "11815e8d56f96c0df8fccdec00b7abf7ade8a4b675942833820b501587d469e4",
+      "actual": "11815e8d56f96c0df8fccdec00b7abf7ade8a4b675942833820b501587d469e4",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/phase-verifier.json",
+      "expected": "f04b4a4846897f6cf81d2b05e80f4763bf4a78a4bd24c1ba8b285b34bedf2f42",
+      "actual": "f04b4a4846897f6cf81d2b05e80f4763bf4a78a4bd24c1ba8b285b34bedf2f42",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/prepare-tests.log",
+      "expected": "f597230df1c13b9ca36fbd5e0c6a4bf3fc96dfdd6634d77369a567b3c0612657",
+      "actual": "f597230df1c13b9ca36fbd5e0c6a4bf3fc96dfdd6634d77369a567b3c0612657",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/provenance.json",
+      "expected": "68d7379898a64497d1c0c6e7de46ecde1390c30b9a0698732252d24e872df9db",
+      "actual": "68d7379898a64497d1c0c6e7de46ecde1390c30b9a0698732252d24e872df9db",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/redaction.json",
+      "expected": "db2ba65e18b73154eba5134d0c60af1c2128894696a712744d764439193a2e7b",
+      "actual": "db2ba65e18b73154eba5134d0c60af1c2128894696a712744d764439193a2e7b",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/run-validation.json",
+      "expected": "afb3af1d6c357924696d1d8db5836cb1f34a42838fe41f7b7ebc369cc9d539c6",
+      "actual": "afb3af1d6c357924696d1d8db5836cb1f34a42838fe41f7b7ebc369cc9d539c6",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/run.json",
+      "expected": "1d1e217829e47209cd7c90e424c56b8b6815630fb97ce504d73b90eaea2db2f8",
+      "actual": "1d1e217829e47209cd7c90e424c56b8b6815630fb97ce504d73b90eaea2db2f8",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/source/README.md",
+      "expected": "4b3201b1d7d9b56d93b5dd47dae75a3d065de9d8bf6e49d17279f7a2a9adf33c",
+      "actual": "4b3201b1d7d9b56d93b5dd47dae75a3d065de9d8bf6e49d17279f7a2a9adf33c",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/source/docs/coordination-dependencies.md",
+      "expected": "8914f0047061092ba617d39aa50afff8b24848cf637839764c81fa18bbea4f0d",
+      "actual": "8914f0047061092ba617d39aa50afff8b24848cf637839764c81fa18bbea4f0d",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/source/docs/coordination.md",
+      "expected": "35b2a8c51d4dbce1b1054111d25576d4e239464755fba8939be3387a6a6724d2",
+      "actual": "35b2a8c51d4dbce1b1054111d25576d4e239464755fba8939be3387a6a6724d2",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/source/examples/qaizen-labs/browser-actions.json",
+      "expected": "96090071f293c8b75f17dee7d84555b952ac01b4e2514c8db9d1f8c1b1d52346",
+      "actual": "96090071f293c8b75f17dee7d84555b952ac01b4e2514c8db9d1f8c1b1d52346",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/source/examples/qaizen-labs/checks/check_contract.py",
+      "expected": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b",
+      "actual": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/source/examples/qaizen-labs/observation-policy.json",
+      "expected": "15f4e5b4960b5011684be265f027e42b8637a3b8aae96b24bba1ba3a4d0f0202",
+      "actual": "15f4e5b4960b5011684be265f027e42b8637a3b8aae96b24bba1ba3a4d0f0202",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/source/examples/qaizen-labs/surface-contract.json",
+      "expected": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+      "actual": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/source/examples/qaizen-labs/verification-spec.md",
+      "expected": "cea72a50acaeecf8666327aa740a39b7abcb09d0bd5d989c72217f066fc2105f",
+      "actual": "cea72a50acaeecf8666327aa740a39b7abcb09d0bd5d989c72217f066fc2105f",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/source/profiles/qaizen-labs.json",
+      "expected": "f76afdd45cb6352e5044a06affc4182ea6cd40aa9c012fb216636a61faa428f0",
+      "actual": "f76afdd45cb6352e5044a06affc4182ea6cd40aa9c012fb216636a61faa428f0",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/source/tools/agent_mail.py",
+      "expected": "5fe09352cd514ec727e7dae053a42b39d0632d0bc725470efb47c360fbd2eef5",
+      "actual": "5fe09352cd514ec727e7dae053a42b39d0632d0bc725470efb47c360fbd2eef5",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/source/tools/browser_probe.mjs",
+      "expected": "f55111928e7eebdbbffcb8e49d57fa3366e4ddf84ecb175e00fc9191904a7b7f",
+      "actual": "f55111928e7eebdbbffcb8e49d57fa3366e4ddf84ecb175e00fc9191904a7b7f",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/source/tools/coordination.py",
+      "expected": "5bc556ae6d225a36c3e11cc5f4176c1a6736bcf62b205136ec37898e2dfc5681",
+      "actual": "5bc556ae6d225a36c3e11cc5f4176c1a6736bcf62b205136ec37898e2dfc5681",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/source/tools/task_gate.py",
+      "expected": "46ea39a6d970528bee407d472af3b3edb077cf5ed372afd1dfc3b11e9f1f7920",
+      "actual": "46ea39a6d970528bee407d472af3b3edb077cf5ed372afd1dfc3b11e9f1f7920",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/target-snapshot.json",
+      "expected": "59995ed5b982ed1b716f12539c7f22374867926c477811639506f0ac2d4b4003",
+      "actual": "59995ed5b982ed1b716f12539c7f22374867926c477811639506f0ac2d4b4003",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/verified.json",
+      "expected": "e9cb1a1fffe0622542bf81656c6c63263e64721bd56f0b47373f8d8e817dad26",
+      "actual": "e9cb1a1fffe0622542bf81656c6c63263e64721bd56f0b47373f8d8e817dad26",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/verifier/FILES.json",
+      "expected": "0fecc0379bd42a9adb965cd68cb1364abb902a3bcfc88c211e286ef27c62f9b7",
+      "actual": "0fecc0379bd42a9adb965cd68cb1364abb902a3bcfc88c211e286ef27c62f9b7",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/verifier/REPORT.md",
+      "expected": "aaea07b93ead4df30cbc0e48bcba406664076de98d46e5eca971053ed9a66e34",
+      "actual": "aaea07b93ead4df30cbc0e48bcba406664076de98d46e5eca971053ed9a66e34",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/verifier/commands.json",
+      "expected": "39438b4ab722e972e51309be8ad4a080885c6a0320f4da4125c24e4646a78c48",
+      "actual": "39438b4ab722e972e51309be8ad4a080885c6a0320f4da4125c24e4646a78c48",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/verifier/contract-result.json",
+      "expected": "7f557ba27626c65e7eb10c7b17773f82e9feae273715b633b694723f87b3c1ee",
+      "actual": "7f557ba27626c65e7eb10c7b17773f82e9feae273715b633b694723f87b3c1ee",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/verifier/execution.json",
+      "expected": "b105d3998e6039c11f1ca907a732426f969fb02396670a84052a9e1055e047a6",
+      "actual": "b105d3998e6039c11f1ca907a732426f969fb02396670a84052a9e1055e047a6",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/verifier/final-checks.json",
+      "expected": "74e2c7db1fc6db2f6d50f0d9318de700513a008089e6c03672ed6e9a2ad40a78",
+      "actual": "74e2c7db1fc6db2f6d50f0d9318de700513a008089e6c03672ed6e9a2ad40a78",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/verifier/finding-lint.json",
+      "expected": "4c07cdce9516448914a19bc797ac3e46e2e25953ce87c207163e0283358647a3",
+      "actual": "4c07cdce9516448914a19bc797ac3e46e2e25953ce87c207163e0283358647a3",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/verifier/findings_validation-execution.json",
+      "expected": "ed08aa63b73b5f7f7999241be41e2672feec0da837061bad23bfd1babfbc257f",
+      "actual": "ed08aa63b73b5f7f7999241be41e2672feec0da837061bad23bfd1babfbc257f",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/verifier/identity.json",
+      "expected": "548ac2a0fd8b77ba84ea0ebfc1a1796184169db1ef125e1cac64369e7e6bf628",
+      "actual": "548ac2a0fd8b77ba84ea0ebfc1a1796184169db1ef125e1cac64369e7e6bf628",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/verifier/preflight.json",
+      "expected": "cc7c5c9ff4ed6dddfc86cdcfc44b5930a36f6f95e867dda4cad79007945ee645",
+      "actual": "cc7c5c9ff4ed6dddfc86cdcfc44b5930a36f6f95e867dda4cad79007945ee645",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/verifier/profile-use.json",
+      "expected": "3aab4adf4fa67cf239c87ad4904c3da89f553b065a6fe2ee5e7d79152d57e95a",
+      "actual": "3aab4adf4fa67cf239c87ad4904c3da89f553b065a6fe2ee5e7d79152d57e95a",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/verifier/profile_preflight-execution.json",
+      "expected": "7e51f0f0e2abee6cf822690df3a327344b85936b6882968c3850da70fa775428",
+      "actual": "7e51f0f0e2abee6cf822690df3a327344b85936b6882968c3850da70fa775428",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/verifier/reproduce.py",
+      "expected": "997e0894c68a10ffb1b5691a07cbeef3a7773039b4151cf3de068ce15c63bd60",
+      "actual": "997e0894c68a10ffb1b5691a07cbeef3a7773039b4151cf3de068ce15c63bd60",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/verifier/reproduction-results.json",
+      "expected": "0ec59f8111b08102203716f1eae5de28e6a3c3f21fccb6cd16e332eb98b93f1b",
+      "actual": "0ec59f8111b08102203716f1eae5de28e6a3c3f21fccb6cd16e332eb98b93f1b",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/verifier/run-check.json",
+      "expected": "bb29ce5f620f6d13bc0cfa2c9c0f1bcbf4f7b17f872f836df788c20a1c2e2246",
+      "actual": "bb29ce5f620f6d13bc0cfa2c9c0f1bcbf4f7b17f872f836df788c20a1c2e2246",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/verifier/skill-manifest.json",
+      "expected": "2b4d8c75c24c9377aa41c27c7a317901043ea76216ec6d595ed198059d1502c1",
+      "actual": "2b4d8c75c24c9377aa41c27c7a317901043ea76216ec6d595ed198059d1502c1",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/verifier/target-manifest.json",
+      "expected": "3282ea44daa3be81eeadd6185274bd53d29cb43a07e14fd801ee14b33c79baac",
+      "actual": "3282ea44daa3be81eeadd6185274bd53d29cb43a07e14fd801ee14b33c79baac",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/verifier/tests-agent-mail.txt",
+      "expected": "4a160235c0add54f7a5997815d0e01a072210439de4899c702c94dd3cd814662",
+      "actual": "4a160235c0add54f7a5997815d0e01a072210439de4899c702c94dd3cd814662",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/verifier/tests-coordination.txt",
+      "expected": "670a39115e7523a8984e4842e16547cb2094b03fad392b037b4b9dc8b2656e62",
+      "actual": "670a39115e7523a8984e4842e16547cb2094b03fad392b037b4b9dc8b2656e62",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/verifier/tests-task-gate.txt",
+      "expected": "98ea402db7b97462d0214b82d1b2df836ec5990adfeb73bb24606244b7c7ad77",
+      "actual": "98ea402db7b97462d0214b82d1b2df836ec5990adfeb73bb24606244b7c7ad77",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/verifier/verified.json",
+      "expected": "e9cb1a1fffe0622542bf81656c6c63263e64721bd56f0b47373f8d8e817dad26",
+      "actual": "e9cb1a1fffe0622542bf81656c6c63263e64721bd56f0b47373f8d8e817dad26",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/review/verifier/verifier-execution.json",
+      "expected": "8e8113c1e37b9cb06b7fcbdde90f620768755624b0633d8b3de5142ad3124f0b",
+      "actual": "8e8113c1e37b9cb06b7fcbdde90f620768755624b0633d8b3de5142ad3124f0b",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/ux/REPORT.md",
+      "expected": "ac48c77836b539bd4a4b5fd853572714b3202c4f72f1f05eac446ffba986663b",
+      "actual": "ac48c77836b539bd4a4b5fd853572714b3202c4f72f1f05eac446ffba986663b",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/ux/commands.json",
+      "expected": "fa7c469047dd7660825d4c5927bbf39a53a22d6dc1c495f5b4d3007ba765f3f4",
+      "actual": "fa7c469047dd7660825d4c5927bbf39a53a22d6dc1c495f5b4d3007ba765f3f4",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/ux/control-tests.log",
+      "expected": "6e740f57edc42e4eda987fbea19f1eaefdea124c8829705040d0255bd29a8f75",
+      "actual": "6e740f57edc42e4eda987fbea19f1eaefdea124c8829705040d0255bd29a8f75",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/ux/depth-validation.json",
+      "expected": "298867b82de7b68116cc6cd51c5123e544b58c0d03a368f0bf902f8264da29f9",
+      "actual": "298867b82de7b68116cc6cd51c5123e544b58c0d03a368f0bf902f8264da29f9",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/ux/depth.json",
+      "expected": "2634b09f36695180df9e9d53b09d5d38c2194d895b67f7489949cd36fb77b061",
+      "actual": "2634b09f36695180df9e9d53b09d5d38c2194d895b67f7489949cd36fb77b061",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/ux/direct-history-actions.json",
+      "expected": "de8553482e6977f9b25c48c262921047e6f3b7aaf2118f1527e2362ea874bded",
+      "actual": "de8553482e6977f9b25c48c262921047e6f3b7aaf2118f1527e2362ea874bded",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/ux/gate-evidence.json",
+      "expected": "8f3ce760c87634a763fa08d0341a7b1b60a17ae95d43a0bcb96374af83b830bd",
+      "actual": "8f3ce760c87634a763fa08d0341a7b1b60a17ae95d43a0bcb96374af83b830bd",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/ux/identity-time-correction.json",
+      "expected": "a87e548d54a2a0c0b600451f3067053a579c622f3307a79e5f7fb3531e5ae023",
+      "actual": "a87e548d54a2a0c0b600451f3067053a579c622f3307a79e5f7fb3531e5ae023",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/ux/initial-scope.json",
+      "expected": "2ad66db56b11b84b8a731fb520eaf43b6c7c365b5089df11afb8a700261f292d",
+      "actual": "2ad66db56b11b84b8a731fb520eaf43b6c7c365b5089df11afb8a700261f292d",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/ux/input-identity.json",
+      "expected": "aacca3cceee64ca29f551cfc006142d2d5c71b984a55c909f86239797c2dc780",
+      "actual": "aacca3cceee64ca29f551cfc006142d2d5c71b984a55c909f86239797c2dc780",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/ux/iteration-1-direct-history/00-entry.dom.json",
+      "expected": "524b0152744d052e6bb253eaeda4ff35b7bc69b132546fc509c7edd1958c13a1",
+      "actual": "524b0152744d052e6bb253eaeda4ff35b7bc69b132546fc509c7edd1958c13a1",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/ux/iteration-1-direct-history/01-direct-introduction.dom.json",
+      "expected": "c00e0e1a0c28b0d2f984b0264f3aa3ae89439a7023cb28a87cae1d02d83fa374",
+      "actual": "c00e0e1a0c28b0d2f984b0264f3aa3ae89439a7023cb28a87cae1d02d83fa374",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/ux/iteration-1-direct-history/02-reloaded-introduction.dom.json",
+      "expected": "524b0152744d052e6bb253eaeda4ff35b7bc69b132546fc509c7edd1958c13a1",
+      "actual": "524b0152744d052e6bb253eaeda4ff35b7bc69b132546fc509c7edd1958c13a1",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/ux/iteration-1-direct-history/02-reloaded-introduction.png",
+      "expected": "8c12568cc767e1d111812033ddd4823fc5ffcaf12d6561cb61b74ffa210a4bc8",
+      "actual": "8c12568cc767e1d111812033ddd4823fc5ffcaf12d6561cb61b74ffa210a4bc8",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/ux/iteration-1-direct-history/03-labs-neighbor.dom.json",
+      "expected": "09a05d31c16faaf8980d863723e3f901798ef49b4cac43ea54aec912de99112d",
+      "actual": "09a05d31c16faaf8980d863723e3f901798ef49b4cac43ea54aec912de99112d",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/ux/iteration-1-direct-history/04-history-back-introduction.dom.json",
+      "expected": "524b0152744d052e6bb253eaeda4ff35b7bc69b132546fc509c7edd1958c13a1",
+      "actual": "524b0152744d052e6bb253eaeda4ff35b7bc69b132546fc509c7edd1958c13a1",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/ux/iteration-1-direct-history/04-history-back-introduction.png",
+      "expected": "a8756bff2abdfe5a6016910666b98cef3dca4e4b975a0dc273a7f11af2f0e6a6",
+      "actual": "a8756bff2abdfe5a6016910666b98cef3dca4e4b975a0dc273a7f11af2f0e6a6",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/ux/iteration-1-direct-history/05-history-forward-labs.dom.json",
+      "expected": "09a05d31c16faaf8980d863723e3f901798ef49b4cac43ea54aec912de99112d",
+      "actual": "09a05d31c16faaf8980d863723e3f901798ef49b4cac43ea54aec912de99112d",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/ux/iteration-1-direct-history/05-history-forward-labs.png",
+      "expected": "484c55e66c4e31ca320607543e4ad4b28e877409b4f861352c1ef9af0f013137",
+      "actual": "484c55e66c4e31ca320607543e4ad4b28e877409b4f861352c1ef9af0f013137",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/ux/iteration-1-direct-history/06-final.dom.json",
+      "expected": "09a05d31c16faaf8980d863723e3f901798ef49b4cac43ea54aec912de99112d",
+      "actual": "09a05d31c16faaf8980d863723e3f901798ef49b4cac43ea54aec912de99112d",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/ux/iteration-1-direct-history/events.json",
+      "expected": "faaa4172e2b2ad48fc7bcce47d8c5887957176166e87ed7d7e6b09be68913cf4",
+      "actual": "faaa4172e2b2ad48fc7bcce47d8c5887957176166e87ed7d7e6b09be68913cf4",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/ux/iteration-1-direct-history/result.json",
+      "expected": "8c319c1a88e2ba52687fd84fe55e0192ef29958b7a57945892fc3d97c6ee6d9c",
+      "actual": "8c319c1a88e2ba52687fd84fe55e0192ef29958b7a57945892fc3d97c6ee6d9c",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/ux/iteration-1-journey/00-entry.dom.json",
+      "expected": "09a05d31c16faaf8980d863723e3f901798ef49b4cac43ea54aec912de99112d",
+      "actual": "09a05d31c16faaf8980d863723e3f901798ef49b4cac43ea54aec912de99112d",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/ux/iteration-1-journey/00-entry.png",
+      "expected": "f9f7b4b0c63899f21010387d05bf159108e2b858d7053c4905be19cca81d5789",
+      "actual": "f9f7b4b0c63899f21010387d05bf159108e2b858d7053c4905be19cca81d5789",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/ux/iteration-1-journey/01-introduction.dom.json",
+      "expected": "a2432ef473f94ac624222f4c7c21f4bea18abcf45cacbeccd3b6c6ab8718959b",
+      "actual": "a2432ef473f94ac624222f4c7c21f4bea18abcf45cacbeccd3b6c6ab8718959b",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/ux/iteration-1-journey/01-introduction.png",
+      "expected": "8deee316cd4dc446dff0fc6b2d955c5e89c672c44b0fe0edd27e157b88a1816d",
+      "actual": "8deee316cd4dc446dff0fc6b2d955c5e89c672c44b0fe0edd27e157b88a1816d",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/ux/iteration-1-journey/02-first-question.dom.json",
+      "expected": "1e613383296987ecedb9eb1dce4e5dec76311ea779ea66628a6566da36de94ec",
+      "actual": "1e613383296987ecedb9eb1dce4e5dec76311ea779ea66628a6566da36de94ec",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/ux/iteration-1-journey/02-first-question.png",
+      "expected": "a5396e6ebbef542a3b7bea548d49ec7bb98c0883adfae06ef649f622b4ad1756",
+      "actual": "a5396e6ebbef542a3b7bea548d49ec7bb98c0883adfae06ef649f622b4ad1756",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/ux/iteration-1-journey/03-help-reopened.dom.json",
+      "expected": "4f14201d544411bfd37201d7945aa7fcde78951ee5de96bfb5457e5fafaad762",
+      "actual": "4f14201d544411bfd37201d7945aa7fcde78951ee5de96bfb5457e5fafaad762",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/ux/iteration-1-journey/03-help-reopened.png",
+      "expected": "f11dfb7913db35cde4e2ea25415f0f21db303fdc1798f7f8e6385d6bb246fbd1",
+      "actual": "f11dfb7913db35cde4e2ea25415f0f21db303fdc1798f7f8e6385d6bb246fbd1",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/ux/iteration-1-journey/04-close-keyboard-focus.dom.json",
+      "expected": "7b9686332b98a0cc52d5d3396bd1280645d4ad5f5afe4a910ac098f4b9ae276d",
+      "actual": "7b9686332b98a0cc52d5d3396bd1280645d4ad5f5afe4a910ac098f4b9ae276d",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/ux/iteration-1-journey/04-close-keyboard-focus.png",
+      "expected": "d93b0151525f43d0fa60b42d293560a07d6f6c3a3a8d9036b091faaec3546f0d",
+      "actual": "d93b0151525f43d0fa60b42d293560a07d6f6c3a3a8d9036b091faaec3546f0d",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/ux/iteration-1-journey/05-help-closed.dom.json",
+      "expected": "938e30c3da9a29922c2cd4e820bc1703e0f628db799a9ff472a05c608384ba91",
+      "actual": "938e30c3da9a29922c2cd4e820bc1703e0f628db799a9ff472a05c608384ba91",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/ux/iteration-1-journey/05-help-closed.png",
+      "expected": "0ce713b314b23b1c32a792ff9b76630efa7954a22ab244bddccdffefa396cbb1",
+      "actual": "0ce713b314b23b1c32a792ff9b76630efa7954a22ab244bddccdffefa396cbb1",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/ux/iteration-1-journey/06-back-keyboard-focus.dom.json",
+      "expected": "02a5705585b076c2ce0abfd3a3f0fd97aef363de279eafb092fecea0a03ba0f7",
+      "actual": "02a5705585b076c2ce0abfd3a3f0fd97aef363de279eafb092fecea0a03ba0f7",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/ux/iteration-1-journey/06-back-keyboard-focus.png",
+      "expected": "8151143b22fc274123db218e6fe78173179df634848e654d064a1d1f7d8c28d9",
+      "actual": "8151143b22fc274123db218e6fe78173179df634848e654d064a1d1f7d8c28d9",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/ux/iteration-1-journey/07-returned-introduction.dom.json",
+      "expected": "e443f0cc395ba443781a14f4896440d37c266724d7fd32f90c88c82f6e4082ba",
+      "actual": "e443f0cc395ba443781a14f4896440d37c266724d7fd32f90c88c82f6e4082ba",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/ux/iteration-1-journey/07-returned-introduction.png",
+      "expected": "177030aa940a2458e1a3e749febe5846e4c0d467604c2fdd2b51ade30a245b90",
+      "actual": "177030aa940a2458e1a3e749febe5846e4c0d467604c2fdd2b51ade30a245b90",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/ux/iteration-1-journey/08-final.dom.json",
+      "expected": "e443f0cc395ba443781a14f4896440d37c266724d7fd32f90c88c82f6e4082ba",
+      "actual": "e443f0cc395ba443781a14f4896440d37c266724d7fd32f90c88c82f6e4082ba",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/ux/iteration-1-journey/events.json",
+      "expected": "cd3bf847fe8ed3c194b413ccf68b1f495006febb160347908581ee98b1f8eaa9",
+      "actual": "cd3bf847fe8ed3c194b413ccf68b1f495006febb160347908581ee98b1f8eaa9",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/ux/iteration-1-journey/result.json",
+      "expected": "3ed48dacb76be26b9cba9e3be790fd6e87fe33e973d260a32fc3fea512a22fbf",
+      "actual": "3ed48dacb76be26b9cba9e3be790fd6e87fe33e973d260a32fc3fea512a22fbf",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/ux/loop.json",
+      "expected": "a120a732c73cabe2d53bb0db07276476f9e70f6df1637802eeb5093a213bacec",
+      "actual": "a120a732c73cabe2d53bb0db07276476f9e70f6df1637802eeb5093a213bacec",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/ux/phase-browser.json",
+      "expected": "09d7d55e5c36a9c77bc08090893777585ad72f2eb8a6d81be3fa01faa484f8d7",
+      "actual": "09d7d55e5c36a9c77bc08090893777585ad72f2eb8a6d81be3fa01faa484f8d7",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/ux/phase-freshness.json",
+      "expected": "2efc87557d217d3b5ad8602e74a474ce1f210a177e693acb54d85787df180fea",
+      "actual": "2efc87557d217d3b5ad8602e74a474ce1f210a177e693acb54d85787df180fea",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/ux/phase-profile_preflight.json",
+      "expected": "d650efcce1885f361152d8c6db205dac8b72178d69659287585e290967299478",
+      "actual": "d650efcce1885f361152d8c6db205dac8b72178d69659287585e290967299478",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/ux/phase-scope.json",
+      "expected": "ff2a6fd5b70ed9183c9beb105d179648d2fcdebdb53c7ed6f155a0415b428a3c",
+      "actual": "ff2a6fd5b70ed9183c9beb105d179648d2fcdebdb53c7ed6f155a0415b428a3c",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/ux/phase-state_transition.json",
+      "expected": "291fa2e3a4a17c8f96d4b296482ff065b003addf9ad565e8213c37815e138969",
+      "actual": "291fa2e3a4a17c8f96d4b296482ff065b003addf9ad565e8213c37815e138969",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/ux/phase-verdict.json",
+      "expected": "d24a8dc8096c5fea8585a3c1fcffd617c74e603c00d4158ca10356dfa159dca0",
+      "actual": "d24a8dc8096c5fea8585a3c1fcffd617c74e603c00d4158ca10356dfa159dca0",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/ux/profile-preflight.json",
+      "expected": "48c142b6065894d55a41c5fcde9bb317471a74e946ad9c1f82854729d9f4cc52",
+      "actual": "48c142b6065894d55a41c5fcde9bb317471a74e946ad9c1f82854729d9f4cc52",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/ux/provenance.json",
+      "expected": "9ed71800136dbf8c4bd02698ce7aa6f9292df17bdd0b6b7cd377a5715a0c44f2",
+      "actual": "9ed71800136dbf8c4bd02698ce7aa6f9292df17bdd0b6b7cd377a5715a0c44f2",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/ux/run-validation.json",
+      "expected": "da9f042203083afb9cf5be011f730b0dbcb17f17f9a53090b40360260c84df6a",
+      "actual": "da9f042203083afb9cf5be011f730b0dbcb17f17f9a53090b40360260c84df6a",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/ux/run.json",
+      "expected": "900947b3cd64220c98ac8126c499184e9dd2fd38712be153982479511360f40d",
+      "actual": "900947b3cd64220c98ac8126c499184e9dd2fd38712be153982479511360f40d",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/ux/stop-initial-error.json",
+      "expected": "4d2561a234adf5956251d96199aac4e50c74cfcbac8e343a81238616f1d0d55f",
+      "actual": "4d2561a234adf5956251d96199aac4e50c74cfcbac8e343a81238616f1d0d55f",
+      "match": true
+    },
+    {
+      "path": "delivery/evidence/ux/stop-result.json",
+      "expected": "7a172338d126ec5d2afb05fb2cbfe58a094918380694b4b4ba5a1cb75eefbb6c",
+      "actual": "7a172338d126ec5d2afb05fb2cbfe58a094918380694b4b4ba5a1cb75eefbb6c",
+      "match": true
+    },
+    {
+      "path": "delivery/tools/agent_mail.py",
+      "expected": "e9c44155cd43c93672ffff145d45969d7cc0af06d653b34dea689e56f8bf97bf",
+      "actual": "e9c44155cd43c93672ffff145d45969d7cc0af06d653b34dea689e56f8bf97bf",
+      "match": true
+    },
+    {
+      "path": "delivery/tools/context.py",
+      "expected": "3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd",
+      "actual": "3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd",
+      "match": true
+    },
+    {
+      "path": "delivery/tools/coordination.py",
+      "expected": "63d1016d10aa4118e646856b489c2452bd3a48f8c0a59fd5e839192795122908",
+      "actual": "63d1016d10aa4118e646856b489c2452bd3a48f8c0a59fd5e839192795122908",
+      "match": true
+    },
+    {
+      "path": "delivery/tools/run_contract.py",
+      "expected": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+      "actual": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+      "match": true
+    },
+    {
+      "path": "delivery/tools/task_gate.py",
+      "expected": "46ea39a6d970528bee407d472af3b3edb077cf5ed372afd1dfc3b11e9f1f7920",
+      "actual": "46ea39a6d970528bee407d472af3b3edb077cf5ed372afd1dfc3b11e9f1f7920",
+      "match": true
+    }
+  ],
+  "roles": [
+    {
+      "role": "product",
+      "analysis_bytes": 13268,
+      "challenge_bytes": 6860,
+      "payload_keys": [
+        "analyze",
+        "cross_examine",
+        "report_sha256",
+        "challenge_sha256",
+        "boundary"
+      ],
+      "profile_mentioned": true,
+      "challenge_has_peer_references": true
+    },
+    {
+      "role": "architecture",
+      "analysis_bytes": 15857,
+      "challenge_bytes": 7543,
+      "payload_keys": [
+        "analyze",
+        "cross_examine",
+        "report_sha256",
+        "challenge_sha256",
+        "boundary"
+      ],
+      "profile_mentioned": true,
+      "challenge_has_peer_references": true
+    },
+    {
+      "role": "ux",
+      "analysis_bytes": 13850,
+      "challenge_bytes": 7051,
+      "payload_keys": [
+        "analyze",
+        "cross_examine",
+        "report_sha256",
+        "challenge_sha256",
+        "boundary"
+      ],
+      "profile_mentioned": true,
+      "challenge_has_peer_references": true
+    },
+    {
+      "role": "delivery",
+      "analysis_bytes": 15727,
+      "challenge_bytes": 7647,
+      "payload_keys": [
+        "analyze",
+        "cross_examine",
+        "report_sha256",
+        "challenge_sha256",
+        "boundary"
+      ],
+      "profile_mentioned": true,
+      "challenge_has_peer_references": true
+    },
+    {
+      "role": "qa",
+      "analysis_bytes": 14606,
+      "challenge_bytes": 7754,
+      "payload_keys": [
+        "analyze",
+        "cross_examine",
+        "report_sha256",
+        "challenge_sha256",
+        "boundary"
+      ],
+      "profile_mentioned": true,
+      "challenge_has_peer_references": true
+    }
+  ],
+  "gates": {
+    "G0": {
+      "observation": "Real Labs control opened the intended introduction; Start visible.",
+      "evidence": [
+        "iteration-1-journey/events.json",
+        "iteration-1-journey/01-introduction.png"
+      ],
+      "contained_available": true
+    },
+    "G1": {
+      "observation": "Direct readiness document, reload and relevant header/browser history transitions completed with zero page errors.",
+      "evidence": [
+        "iteration-1-direct-history/events.json",
+        "iteration-1-direct-history/02-reloaded-introduction.png",
+        "iteration-1-direct-history/04-history-back-introduction.png"
+      ],
+      "contained_available": true
+    },
+    "G2": {
+      "observation": "First question/help/Back terminal states and three unanswered checkpoints completed.",
+      "evidence": [
+        "iteration-1-journey/events.json",
+        "iteration-1-journey/03-help-reopened.png",
+        "iteration-1-journey/07-returned-introduction.png"
+      ],
+      "contained_available": true
+    },
+    "G3": {
+      "observation": "Agent actually opened listed screenshots. Declared desktop text and controls remained readable; focus-state full-page captures include the fixed header at their scroll position, not a whole-site visual certification.",
+      "evidence": [
+        "iteration-1-journey/00-entry.png",
+        "iteration-1-journey/01-introduction.png",
+        "iteration-1-journey/02-first-question.png",
+        "iteration-1-journey/03-help-reopened.png",
+        "iteration-1-journey/04-close-keyboard-focus.png",
+        "iteration-1-journey/05-help-closed.png",
+        "iteration-1-journey/06-back-keyboard-focus.png",
+        "iteration-1-journey/07-returned-introduction.png",
+        "iteration-1-direct-history/02-reloaded-introduction.png",
+        "iteration-1-direct-history/04-history-back-introduction.png",
+        "iteration-1-direct-history/05-history-forward-labs.png"
+      ],
+      "contained_available": true
+    },
+    "G4": {
+      "observation": "Observed question/help labels, controls and instructions are readable English with no exposed null/undefined/error token in relevant copy. Unrelated catalog/provider claims were not validated.",
+      "evidence": [
+        "iteration-1-journey/02-first-question.dom.json",
+        "iteration-1-journey/03-help-reopened.dom.json"
+      ],
+      "contained_available": true
+    },
+    "G5": {
+      "observation": "Actual sequential keyboard traversal, visible focus rings and separate restoration destinations. No contrast, screen-reader or instrumented certification is claimed.",
+      "evidence": [
+        "iteration-1-journey/events.json",
+        "iteration-1-journey/04-close-keyboard-focus.png",
+        "iteration-1-journey/06-back-keyboard-focus.png",
+        "iteration-1-journey/05-help-closed.png"
+      ],
+      "contained_available": true
+    },
+    "G6": {
+      "observation": "149 local tests passed including state/answer/focus timing, keyboard exclusion, popup/redirect and server-side nonarrival. Actual live action chain and policy events checked against the required claims; synthetic controls are not site evidence.",
+      "evidence": [
+        "control-tests.log",
+        "iteration-1-journey/events.json"
+      ],
+      "contained_available": true
+    }
+  },
+  "contracts": {
+    "plan": {
+      "argv": [
+        "python3",
+        "delivery/tools/run_contract.py",
+        "delivery/evidence/plan/run.json"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"valid\": true,\n  \"coverage\": \"COMPLETE\",\n  \"missing_phases\": [],\n  \"artifact_count\": 9,\n  \"note\": \"Evidence identity and declared phase coverage checked; factual quality is not certified.\"\n}\n",
+      "stderr": ""
+    },
+    "ux": {
+      "argv": [
+        "python3",
+        "delivery/tools/run_contract.py",
+        "delivery/evidence/ux/run.json"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"valid\": true,\n  \"coverage\": \"COMPLETE\",\n  \"missing_phases\": [],\n  \"artifact_count\": 50,\n  \"note\": \"Evidence identity and declared phase coverage checked; factual quality is not certified.\"\n}\n",
+      "stderr": ""
+    },
+    "review": {
+      "argv": [
+        "python3",
+        "delivery/tools/run_contract.py",
+        "delivery/evidence/review/run.json"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"valid\": true,\n  \"coverage\": \"COMPLETE\",\n  \"missing_phases\": [],\n  \"artifact_count\": 7,\n  \"note\": \"Evidence identity and declared phase coverage checked; factual quality is not certified.\"\n}\n",
+      "stderr": ""
+    }
+  },
+  "limitations": [
+    "This reviews delivered execution evidence; no browser rerun, original agent reasoning certification, defect-absence assertion or release approval.",
+    "Raw private traces/video, unselected screenshots and original CLI transcripts are unavailable here; selected transformations and provenance are the available evidence.",
+    "Planning and phase independence are supported by saved reports/context identities, not independently reconstructed internal reasoning.",
+    "Linux collected 149 tests: 138 passed, 11 optional browser tests skipped; dated macOS observations are separate.",
+    "Post-fix test/doc hashes are recorded but those current test/doc bytes and adjacent suite logs are not included in this manifest; current delivered helper hashes match. Fix checks were inspected, not rerun.",
+    "ACK fix establishes scheduling-budget behavior only; no absolute OS deadline or real-network timing certification."
+  ]
+}

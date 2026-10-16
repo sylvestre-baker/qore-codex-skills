@@ -1,0 +1,26 @@
+[
+  {
+    "path": "SKILL.md",
+    "sha256": "fe9ce79d964d74df3f68b0a575980ca72976ad93d28d36c3af422cb6876af574"
+  },
+  {
+    "path": "references/project.json",
+    "sha256": "f76afdd45cb6352e5044a06affc4182ea6cd40aa9c012fb216636a61faa428f0"
+  },
+  {
+    "path": "references/findings.md",
+    "sha256": "79b2b5f52e88761331c01b92af9b492ef1888c6c20a0af1b94a8bead7aa2d6cb"
+  },
+  {
+    "path": "references/protocol.md",
+    "sha256": "e27e0050fdf4d75d2840dd257b9a759f1f48d459ef540990cd3aed5528c5f340"
+  },
+  {
+    "path": "references/run-evidence.md",
+    "sha256": "fbdf433ef8b3e972f97bed5fdec4990cf3b49535bf63120c729a7daf4af71746"
+  },
+  {
+    "path": "scripts/finding-lint.mjs",
+    "sha256": "fcaa096759c5100b2e68987f846734c8d72922e7938dd00fe25bb1964a824168"
+  }
+]

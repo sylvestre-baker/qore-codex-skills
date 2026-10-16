@@ -1,0 +1,47 @@
+{
+  "profile": {
+    "id": "qaizen-labs",
+    "version": "0.1.0",
+    "sha256": "f76afdd45cb6352e5044a06affc4182ea6cd40aa9c012fb216636a61faa428f0"
+  },
+  "sources": [
+    {
+      "id": "surface",
+      "path": "surface-contract.json",
+      "expected_sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+      "actual_sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+      "current": true
+    },
+    {
+      "id": "checker",
+      "path": "checks/check_contract.py",
+      "expected_sha256": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b",
+      "actual_sha256": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b",
+      "current": true
+    }
+  ],
+  "facts": [
+    {
+      "id": "surface-contract",
+      "source": "checker",
+      "effect": "Inspected checker then executed declared argv; valid true, offline consistency only."
+    },
+    {
+      "id": "close-focus",
+      "source": "surface",
+      "effect": "Compared summary-focus assertion separately with Back heading-focus assertion; no rendered observation possible."
+    },
+    {
+      "id": "back-focus",
+      "source": "surface",
+      "effect": "Inspected sequential Tab/Enter action and max_steps bound; browser tests skipped, no live reachability claim."
+    },
+    {
+      "id": "unanswered-scope",
+      "source": "surface",
+      "effect": "Inspected pre-Back unanswered assertion and read-only/origin/service-worker guard; no browser execution."
+    }
+  ],
+  "selected_but_unused": [],
+  "surfaces_returned": {}
+}

@@ -1,0 +1,190 @@
+{
+  "schema": "qore-run/1",
+  "id": "qaizen-labs-plan-20261016-public",
+  "method": "plan",
+  "skill": "qore-plan-qaizen-labs",
+  "candidate_sha256": "0540496cea29da71f72046f36a12c3a23b4d71900c97f7193f4dba699836b036",
+  "target": {
+    "label": "Labs protocol correction planning input",
+    "snapshot_sha256": "1461fc149209fa29adc067a2b8f3c644055228aa0a2f45485779e3a418f47fd6"
+  },
+  "last_relevant_change": "2026-10-16T06:37:50.981528+00:00",
+  "environment": {
+    "id": "codex-app-20261016",
+    "operator": "agent",
+    "host": "macOS native Codex collaboration; five distinct worker contexts"
+  },
+  "profile": {
+    "id": "qaizen-labs",
+    "version": "0.1.0",
+    "sha256": "f76afdd45cb6352e5044a06affc4182ea6cd40aa9c012fb216636a61faa428f0"
+  },
+  "required_phases": [
+    "product",
+    "architecture",
+    "ux",
+    "delivery",
+    "qa",
+    "profile_preflight",
+    "adjudication",
+    "spec_validation"
+  ],
+  "phases": [
+    {
+      "id": "product",
+      "actor_id": "/root/labs_plan_product",
+      "status": "PASS",
+      "artifacts": [
+        "phase-product.json"
+      ]
+    },
+    {
+      "id": "architecture",
+      "actor_id": "/root/labs_plan_architecture",
+      "status": "PASS",
+      "artifacts": [
+        "phase-architecture.json"
+      ]
+    },
+    {
+      "id": "ux",
+      "actor_id": "/root/labs_plan_ux",
+      "status": "PASS",
+      "artifacts": [
+        "phase-ux.json"
+      ]
+    },
+    {
+      "id": "delivery",
+      "actor_id": "/root/labs_plan_delivery",
+      "status": "PASS",
+      "artifacts": [
+        "phase-delivery.json"
+      ]
+    },
+    {
+      "id": "qa",
+      "actor_id": "/root/labs_plan_qa",
+      "status": "PASS",
+      "artifacts": [
+        "phase-qa.json"
+      ]
+    },
+    {
+      "id": "profile_preflight",
+      "actor_id": "/root",
+      "status": "PASS",
+      "artifacts": [
+        "phase-profile_preflight.json"
+      ]
+    },
+    {
+      "id": "adjudication",
+      "actor_id": "/root",
+      "status": "PASS",
+      "artifacts": [
+        "phase-adjudication.json"
+      ]
+    },
+    {
+      "id": "spec_validation",
+      "actor_id": "/root",
+      "status": "PASS",
+      "artifacts": [
+        "phase-spec_validation.json"
+      ]
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "phase-product.json",
+      "sha256": "9637a01bfe3198ab27b2e7e3d44f555db0df6891183bf9c9cb34fa5a6c90b5af",
+      "kind": "execution",
+      "candidate_sha256": "0540496cea29da71f72046f36a12c3a23b4d71900c97f7193f4dba699836b036",
+      "target_snapshot_sha256": "1461fc149209fa29adc067a2b8f3c644055228aa0a2f45485779e3a418f47fd6",
+      "observed_at": "2026-10-16T06:51:19.047282+00:00"
+    },
+    {
+      "path": "phase-architecture.json",
+      "sha256": "ea5187ba79a352674a2dc70926d066c4478e8bd6db23e7e1bbe88b37526a941a",
+      "kind": "execution",
+      "candidate_sha256": "0540496cea29da71f72046f36a12c3a23b4d71900c97f7193f4dba699836b036",
+      "target_snapshot_sha256": "1461fc149209fa29adc067a2b8f3c644055228aa0a2f45485779e3a418f47fd6",
+      "observed_at": "2026-10-16T06:51:08.364119+00:00"
+    },
+    {
+      "path": "phase-ux.json",
+      "sha256": "7dca3b1c840cb7662c2ca1f1e35e505a2369e32233c18235fbc01330b5f49fb0",
+      "kind": "execution",
+      "candidate_sha256": "0540496cea29da71f72046f36a12c3a23b4d71900c97f7193f4dba699836b036",
+      "target_snapshot_sha256": "1461fc149209fa29adc067a2b8f3c644055228aa0a2f45485779e3a418f47fd6",
+      "observed_at": "2026-10-16T06:51:22.737731+00:00"
+    },
+    {
+      "path": "phase-delivery.json",
+      "sha256": "c83f313cc42a247ea1797ce2fd2a70aeaa073dae973f354cf9b521a433f77256",
+      "kind": "execution",
+      "candidate_sha256": "0540496cea29da71f72046f36a12c3a23b4d71900c97f7193f4dba699836b036",
+      "target_snapshot_sha256": "1461fc149209fa29adc067a2b8f3c644055228aa0a2f45485779e3a418f47fd6",
+      "observed_at": "2026-10-16T06:52:31.622839+00:00"
+    },
+    {
+      "path": "phase-qa.json",
+      "sha256": "dd5f97c2dfffd09bceee102cce3798a3e614983b1ff72fb820bbb0b061739c38",
+      "kind": "execution",
+      "candidate_sha256": "0540496cea29da71f72046f36a12c3a23b4d71900c97f7193f4dba699836b036",
+      "target_snapshot_sha256": "1461fc149209fa29adc067a2b8f3c644055228aa0a2f45485779e3a418f47fd6",
+      "observed_at": "2026-10-16T06:52:46.958667+00:00"
+    },
+    {
+      "path": "phase-profile_preflight.json",
+      "sha256": "35c268adcf635196e7bb6b2942c9dbb4620d1eadf9a4f9b65a32b8568f7c112a",
+      "kind": "execution",
+      "candidate_sha256": "0540496cea29da71f72046f36a12c3a23b4d71900c97f7193f4dba699836b036",
+      "target_snapshot_sha256": "1461fc149209fa29adc067a2b8f3c644055228aa0a2f45485779e3a418f47fd6",
+      "observed_at": "2026-10-16T06:37:51.029646+00:00"
+    },
+    {
+      "path": "phase-adjudication.json",
+      "sha256": "73af5496a511bc02a1c745b10238414b022240cf2a3547592236a0a879579546",
+      "kind": "execution",
+      "candidate_sha256": "0540496cea29da71f72046f36a12c3a23b4d71900c97f7193f4dba699836b036",
+      "target_snapshot_sha256": "1461fc149209fa29adc067a2b8f3c644055228aa0a2f45485779e3a418f47fd6",
+      "observed_at": "2026-10-16T06:57:52.241721+00:00"
+    },
+    {
+      "path": "phase-spec_validation.json",
+      "sha256": "28db5a2f7fc4c0412eeae4a78a3e323e2a30786dab0e4e1745a22cd89bf0c828",
+      "kind": "execution",
+      "candidate_sha256": "0540496cea29da71f72046f36a12c3a23b4d71900c97f7193f4dba699836b036",
+      "target_snapshot_sha256": "1461fc149209fa29adc067a2b8f3c644055228aa0a2f45485779e3a418f47fd6",
+      "observed_at": "2026-10-16T06:57:52.245873+00:00"
+    },
+    {
+      "path": "result/verification-spec.md",
+      "sha256": "cea72a50acaeecf8666327aa740a39b7abcb09d0bd5d989c72217f066fc2105f",
+      "kind": "source"
+    }
+  ],
+  "commands": [
+    {
+      "argv": [
+        "bash",
+        "research/qore002-implementation-20261016/derived-initial/qore-plan-qaizen-labs/scripts/spec-lint.sh",
+        "<workspace>/qore-skills/examples/qaizen-labs/verification-spec.md",
+        "--json"
+      ],
+      "exit_code": 0,
+      "artifact": "phase-spec_validation.json"
+    }
+  ],
+  "limitations": [
+    "Planning input is an immutable source snapshot; result specification has a separate output digest.",
+    "No current-site behavior is established by planning; implementation and live observations are separate.",
+    "Actual profile commands and results are retained inside full role reports; generic runtime dependencies omitted from the initial planning subset were explicitly identified.",
+    "One lead command used the workspace root instead of the example root for the checker and failed; the actual declared command was then rerun successfully in the correct example root.",
+    "Agent evaluation is not external human evidence.",
+    "Public transformation normalizes private command roots; raw and public identities are related in provenance.json. Output-plan neighbor sources are the frozen planning context, not claimed current implementation."
+  ],
+  "coverage": "COMPLETE"
+}

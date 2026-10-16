@@ -1,0 +1,7 @@
+{
+  "initial_field": "2026-10-16T07:02:14.579970+00:00",
+  "meaning": "That field was snapshot recording time, not an actual source modification.",
+  "last_actual_source_change": "2026-10-16T07:01:46.112220+00:00",
+  "source_sha256_unchanged": true,
+  "procedure": "Maximum current mtime of the listed unchanged source bytes; raw input identity remains preserved."
+}

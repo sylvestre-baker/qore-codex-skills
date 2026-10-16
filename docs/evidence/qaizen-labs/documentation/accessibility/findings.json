@@ -1,0 +1,20 @@
+{
+  "findings": [
+    {
+      "id": "A11Y-DOC-001",
+      "severity": "medium",
+      "file": "site-draft/evidence/README.md",
+      "line": 3,
+      "related_locations": [
+        {
+          "file": "site-draft/evidence/README.md",
+          "line": 20
+        }
+      ],
+      "title": "Staged evidence index retains repository-relative links outside the project prefix",
+      "measurement": "At /qore-codex-skills/evidence/README.md, ../../../profiles/qaizen-labs.json and the three ../../ references on line 20 resolve outside /qore-codex-skills/; all four returned HTTP 404. Raw URLs/statuses are in followup-observations.json.",
+      "reader_failure": "A reader following this index cannot reach the maintained profile, demonstration explanation, preparation guide or dependency limits through the supplied relative references.",
+      "minimal_remedy": "Rewrite staged Markdown links to valid in-prefix copied public targets or exact candidate repository URLs, and recursively validate links from staged Markdown."
+    }
+  ]
+}

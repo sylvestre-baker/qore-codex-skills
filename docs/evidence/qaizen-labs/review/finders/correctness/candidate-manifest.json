@@ -1,0 +1,50 @@
+[
+  {
+    "path": "SKILL.md",
+    "sha256": "fe9ce79d964d74df3f68b0a575980ca72976ad93d28d36c3af422cb6876af574"
+  },
+  {
+    "path": "agents/openai.yaml",
+    "sha256": "322a16d228ce0020f05d273ff5b50a85aaa771ba4421d623e655afca0ac31a5c"
+  },
+  {
+    "path": "references/findings.md",
+    "sha256": "79b2b5f52e88761331c01b92af9b492ef1888c6c20a0af1b94a8bead7aa2d6cb"
+  },
+  {
+    "path": "references/project-profile.md",
+    "sha256": "5d3b69aac18f83a634f4c57c214cc1f53fa186c03c536adcefd4c905a8767c8d"
+  },
+  {
+    "path": "references/project.json",
+    "sha256": "f76afdd45cb6352e5044a06affc4182ea6cd40aa9c012fb216636a61faa428f0"
+  },
+  {
+    "path": "references/protocol.md",
+    "sha256": "e27e0050fdf4d75d2840dd257b9a759f1f48d459ef540990cd3aed5528c5f340"
+  },
+  {
+    "path": "references/release.json",
+    "sha256": "a937a43084660c7702a27f5adda20223877d4c0b14279b5bf32daec67eaa765a"
+  },
+  {
+    "path": "references/run-evidence.md",
+    "sha256": "fbdf433ef8b3e972f97bed5fdec4990cf3b49535bf63120c729a7daf4af71746"
+  },
+  {
+    "path": "scripts/finding-lint.mjs",
+    "sha256": "fcaa096759c5100b2e68987f846734c8d72922e7938dd00fe25bb1964a824168"
+  },
+  {
+    "path": "scripts/project-check.py",
+    "sha256": "3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd"
+  },
+  {
+    "path": "scripts/redact-for-verifier.mjs",
+    "sha256": "dc249524c749ad5b511aef0a2cf08b4cfd5c47c1e0de4fd41c5c70746b471083"
+  },
+  {
+    "path": "scripts/run-check.py",
+    "sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa"
+  }
+]

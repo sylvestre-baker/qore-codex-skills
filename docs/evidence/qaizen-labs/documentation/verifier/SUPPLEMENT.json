@@ -1,0 +1,397 @@
+{
+  "scope": "Focused independent local supplement; original REPORT.md and verified.json preserved.",
+  "temporary_root": "/private/var/folders/4r/1cnctlhj0457b5kgw29hzr4h0000gn/T/qore-doc-supplement-eivt1y_e",
+  "build": {
+    "command": [
+      "python3",
+      "-B",
+      "tools/build_site.py",
+      "--output",
+      "/private/var/folders/4r/1cnctlhj0457b5kgw29hzr4h0000gn/T/qore-doc-supplement-eivt1y_e/qore-codex-skills"
+    ],
+    "exit_code": 0,
+    "stdout": "{\n  \"output\": \"/private/var/folders/4r/1cnctlhj0457b5kgw29hzr4h0000gn/T/qore-doc-supplement-eivt1y_e/qore-codex-skills\",\n  \"files\": 240,\n  \"bytes\": 15695781,\n  \"deployed\": false\n}\n",
+    "stderr": ""
+  },
+  "official_procedure": "https://playwright.dev/docs/chrome-extensions",
+  "source_hashes": {
+    "site-manifest.json": "17d71bdc1b8479ff8490218c087bedc90f53ed4edcaf09276d55b4711bee3544",
+    "index.html": "1154fd0d7b77da6f0a1c3ead0ef45b2e62231f9c46418273c2bf6b6d179c7337",
+    "styles.css": "1bdc47446d2b60e8d5544ea2eb3e4b666b0728263b18d6ab9bf1d2ace4d616a6",
+    "media/demo.mp4": "988e81758ef725addf9c4da2b0b4e28f01189aaa069a28136f96af582c855973",
+    "media/demo.en.vtt": "2483382e483d1d455aa8cac831e00ba72d03e6e94056fd5f82d4509201c753b8",
+    "media/poster.jpg": "f961fd834dff3425a328c33c57fb68491d5a8e3c38bbb9bc77690cc924fee9fc",
+    "media/transcript.html": "4433ad0b3a4fb9c65970ad3089f2b9e783936ece83eaf0dd62a025f0ce1f7a3f",
+    "media/transcript.md": "c3b42901855bb2a04760a215a007946ead768a5f13d5924c04686db130e748e4",
+    "media/provenance.json": "3cd60f1a0c2764defc388958c87bb859a6bee6ea37133ece4e11e4e041d7601c",
+    "evidence/README.md": "1854eea3166b89540d8621e2822a82a8bef724a23ff75a6b9f00b1dab40a2401"
+  },
+  "check": {
+    "command": [
+      "python3",
+      "-B",
+      "tools/check_site.py",
+      "/private/var/folders/4r/1cnctlhj0457b5kgw29hzr4h0000gn/T/qore-doc-supplement-eivt1y_e/qore-codex-skills"
+    ],
+    "exit_code": 0,
+    "stdout": "{\n  \"valid\": true,\n  \"references\": 88,\n  \"bytes\": 15783582,\n  \"limits\": \"All staged HTML/Markdown local references and byte budgets only; rendering, captions and playback require separate observations.\"\n}\n",
+    "stderr": ""
+  },
+  "ffprobe": {
+    "command": [
+      "/opt/homebrew/bin/ffprobe",
+      "-v",
+      "error",
+      "-show_format",
+      "-show_streams",
+      "-of",
+      "json",
+      "/private/var/folders/4r/1cnctlhj0457b5kgw29hzr4h0000gn/T/qore-doc-supplement-eivt1y_e/qore-codex-skills/media/demo.mp4"
+    ],
+    "exit_code": 0,
+    "stdout": "{\n    \"streams\": [\n        {\n            \"index\": 0,\n            \"codec_name\": \"h264\",\n            \"codec_long_name\": \"H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10\",\n            \"profile\": \"High\",\n            \"codec_type\": \"video\",\n            \"codec_tag_string\": \"avc1\",\n            \"codec_tag\": \"0x31637661\",\n            \"width\": 1280,\n            \"height\": 720,\n            \"coded_width\": 1280,\n            \"coded_height\": 720,\n            \"has_b_frames\": 2,\n            \"pix_fmt\": \"yuv420p\",\n            \"level\": 31,\n            \"chroma_location\": \"left\",\n            \"field_order\": \"progressive\",\n            \"refs\": 1,\n            \"is_avc\": \"true\",\n            \"nal_length_size\": \"4\",\n            \"id\": \"0x1\",\n            \"r_frame_rate\": \"25/1\",\n            \"avg_frame_rate\": \"25/1\",\n            \"time_base\": \"1/12800\",\n            \"start_pts\": 0,\n            \"start_time\": \"0.000000\",\n            \"duration_ts\": 1342464,\n            \"duration\": \"104.880000\",\n            \"bit_rate\": \"102913\",\n            \"bits_per_raw_sample\": \"8\",\n            \"nb_frames\": \"2622\",\n            \"extradata_size\": 45,\n            \"disposition\": {\n                \"default\": 1,\n                \"dub\": 0,\n                \"original\": 0,\n                \"comment\": 0,\n                \"lyrics\": 0,\n                \"karaoke\": 0,\n                \"forced\": 0,\n                \"hearing_impaired\": 0,\n                \"visual_impaired\": 0,\n                \"clean_effects\": 0,\n                \"attached_pic\": 0,\n                \"timed_thumbnails\": 0,\n                \"non_diegetic\": 0,\n                \"captions\": 0,\n                \"descriptions\": 0,\n                \"metadata\": 0,\n                \"dependent\": 0,\n                \"still_image\": 0,\n                \"multilayer\": 0\n            },\n            \"tags\": {\n                \"language\": \"und\",\n                \"handler_name\": \"VideoHandler\",\n                \"vendor_id\": \"[0][0][0][0]\",\n                \"encoder\": \"Lavc62.11.100 libx264\"\n            }\n        }\n    ],\n    \"format\": {\n        \"filename\": \"/private/var/folders/4r/1cnctlhj0457b5kgw29hzr4h0000gn/T/qore-doc-supplement-eivt1y_e/qore-codex-skills/media/demo.mp4\",\n        \"nb_streams\": 1,\n        \"nb_programs\": 0,\n        \"nb_stream_groups\": 0,\n        \"format_name\": \"mov,mp4,m4a,3gp,3g2,mj2\",\n        \"format_long_name\": \"QuickTime / MOV\",\n        \"start_time\": \"0.000000\",\n        \"duration\": \"104.880000\",\n        \"size\": \"1381294\",\n        \"bit_rate\": \"105361\",\n        \"probe_score\": 100,\n        \"tags\": {\n            \"major_brand\": \"isom\",\n            \"minor_version\": \"512\",\n            \"compatible_brands\": \"isomiso2avc1mp41\",\n            \"encoder\": \"Lavf62.3.100\"\n        }\n    }\n}\n",
+    "stderr": ""
+  },
+  "ffmpeg_decode": {
+    "command": [
+      "/opt/homebrew/bin/ffmpeg",
+      "-nostdin",
+      "-v",
+      "error",
+      "-i",
+      "/private/var/folders/4r/1cnctlhj0457b5kgw29hzr4h0000gn/T/qore-doc-supplement-eivt1y_e/qore-codex-skills/media/demo.mp4",
+      "-f",
+      "null",
+      "-"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "captions": {
+    "cue_count": 10,
+    "cues": [
+      {
+        "start": 0.0,
+        "end": 8.0,
+        "text": "Qore: three Codex methods and one sourced project profile. Separate actual runs are assembled in this demonstration."
+      },
+      {
+        "start": 8.0,
+        "end": 20.0,
+        "text": "One maintained Labs profile supplies sourced commands and invariants. It generates three autonomous project-specific skills."
+      },
+      {
+        "start": 20.0,
+        "end": 32.0,
+        "text": "Planning used five perspectives and cross-examination. Back reachability, resolved state and focus became separate checks."
+      },
+      {
+        "start": 32.0,
+        "end": 44.0,
+        "text": "Three finders and a fresh verifier reproduced four distinct coordination defects. Original medium-severity findings and separate post-fix verification are retained."
+      },
+      {
+        "start": 44.0,
+        "end": 56.0,
+        "text": "The Labs case exchanged assignment, ACK, delivery and review messages. The PM accepted the three-method delivery once. Work was already in progress; turns are manual."
+      },
+      {
+        "start": 56.0,
+        "end": 65.0,
+        "text": "Actual public Labs browser recording at its original speed. Follow the real entry into the first question; no answers are entered."
+      },
+      {
+        "start": 65.0,
+        "end": 80.0,
+        "text": "Help is operated with sequential keyboard focus, Enter and Space. Reopening and closing are checked separately."
+      },
+      {
+        "start": 80.0,
+        "end": 87.0,
+        "text": "Close restores focus to the summary. Sequential Tab then reaches Back."
+      },
+      {
+        "start": 87.0,
+        "end": 96.88,
+        "text": "Enter returns to the introduction. Heading focus, visible Start and the unanswered state have separate evidence."
+      },
+      {
+        "start": 96.88,
+        "end": 104.88,
+        "text": "Desktop English entry/state scope only. No general performance or accessibility claim. Read the reports, provenance and limits. Publication and application remain separate."
+      }
+    ],
+    "media_duration": 104.88,
+    "range_valid": true,
+    "contiguous": true,
+    "last_end_matches_duration": true,
+    "provenance_timeline": {
+      "intro": [
+        0,
+        8
+      ],
+      "profile": [
+        8,
+        20
+      ],
+      "plan": [
+        20,
+        32
+      ],
+      "review": [
+        32,
+        44
+      ],
+      "case_coordination": [
+        44,
+        56
+      ],
+      "actual_ux": [
+        56,
+        96.88
+      ],
+      "limits": [
+        96.88,
+        104.88
+      ]
+    },
+    "content_review": "All ten cues compared directly with public transcript.md and provenance.json. Cues 1\u20135 and 10 align exactly with corresponding transcript/provenance segments; cues 6\u20139 subdivide the declared 56\u201396.88 actual_ux segment consistently. Text retains montage/separate runs, three derivatives, five planning perspectives, three finders/fresh verifier/four defects, manual coordination turns/already-in-progress caveat, keyboard help/Close/Back/unanswered state and final limited desktop scope. No contradictory factual claim found in those public sources. Private raw-video correspondence and independent human caption comprehension were not tested."
+  },
+  "comparison": {
+    "added": [
+      {
+        "path": "evidence/render/README.md",
+        "sha256": "9e4fdeb39b7fc2c4590dad3ae3f1be1aad2b7f3862d69c257d9fde652ff5cae4",
+        "bytes": 1537
+      },
+      {
+        "path": "evidence/render/current-actual-browser-zoom-200.png",
+        "sha256": "4c60921e0ac2ed27d081cb36a364e95ea7d294ba3136a9ecd477a717bc0cd675",
+        "bytes": 436783
+      },
+      {
+        "path": "evidence/render/current-keyboard-video.png",
+        "sha256": "8eda37ac81c8494de03bc0d80e21ca65e6ec551068c409d9e6bd97979dfcf1f7",
+        "bytes": 156267
+      },
+      {
+        "path": "evidence/render/current-observations.json",
+        "sha256": "45815eeeb2fd8e392460405a9b0f6fde8dcb7c606569e3b8b3ba72b4caa79125",
+        "bytes": 2335
+      },
+      {
+        "path": "evidence/render/current-video-unavailable.png",
+        "sha256": "1c83e2e0ebdffc970c5bf5fb1741400f8265d5389251a10a744d57807e30c218",
+        "bytes": 639853
+      },
+      {
+        "path": "evidence/render/inventory.json",
+        "sha256": "40ccfdfef2f964985acc49764ad71710aa8f85bfa625cf4a3fdedca6f07717f4",
+        "bytes": 3070
+      },
+      {
+        "path": "evidence/render/reader-desktop-1280.png",
+        "sha256": "46bb73e21d32ba3ba98357e05e91fd879fb0adba331d955e7f66c714f09d3673",
+        "bytes": 653761
+      },
+      {
+        "path": "evidence/render/reader-followup-observations.json",
+        "sha256": "22b6399588f38b97c742dc6c38128a504434ab28a3c38b909d5da0d217de72f3",
+        "bytes": 5231
+      },
+      {
+        "path": "evidence/render/reader-narrow-320.png",
+        "sha256": "4bcd07d1a2b91e37381490bf2314f0c9f69d8ebed89fe79c6c155fa7e7093027",
+        "bytes": 512810
+      },
+      {
+        "path": "evidence/render/reader-no-javascript.png",
+        "sha256": "87086f1f2f34cb1de4aaada80ef49f74a355b1b20faf746b2827c9e6945538e5",
+        "bytes": 654148
+      },
+      {
+        "path": "evidence/render/reader-observations.json",
+        "sha256": "b0a4ff0f166ae52676440eafad80e2629b77f57757f492c75d5c58ae507b9871",
+        "bytes": 10589
+      },
+      {
+        "path": "evidence/render/reader-transcript.png",
+        "sha256": "5f941c56f7eaee5350e4e0d9cb62c98e8095630c40d8edc65fafb413c57389ba",
+        "bytes": 238413
+      },
+      {
+        "path": "evidence/render/reader-video-playing-captions.png",
+        "sha256": "8a074c2505dcca7570b6bfbb5e945fe7d0284d8a0898017433929bfcae0bcdc4",
+        "bytes": 124312
+      },
+      {
+        "path": "evidence/render/readme-caption-playback.png",
+        "sha256": "bc083dab2b675a75e183e0df2c0c3602558f557b96833fd6c9d7296a446b6354",
+        "bytes": 113040
+      },
+      {
+        "path": "evidence/render/readme-narrow-entry.png",
+        "sha256": "aa1d39eb805d6eaa50db0260da3a1396c98de9d990423146ad516935a5c2c3e1",
+        "bytes": 90879
+      },
+      {
+        "path": "evidence/render/readme-narrow-evidence.png",
+        "sha256": "b04ff17dea5b8f37fb79b82a4431e4e6848a0526f1cece328b50f199bb1b0fd7",
+        "bytes": 89676
+      },
+      {
+        "path": "evidence/render/readme-narrow.png",
+        "sha256": "d44b9234317562e6c91229a68693d78190dd4a3c69bc318dc9d799faa511068c",
+        "bytes": 1018475
+      },
+      {
+        "path": "evidence/render/readme-observations.json",
+        "sha256": "628ac57bb6e203094bb16930ceef18c733b1b607ccd97349a89d4a0d2327b230",
+        "bytes": 11802
+      },
+      {
+        "path": "evidence/render/readme-playback.json",
+        "sha256": "62fe2176e29966d6ff439d905f360120b77281819e915f5d2cd5052148828042",
+        "bytes": 248
+      },
+      {
+        "path": "evidence/render/readme-wide-entry.png",
+        "sha256": "e04c1c01c0a30a6b6288c5f5bc9f7df7ef44e7eb773f44e0227524a443ab9bb9",
+        "bytes": 216305
+      },
+      {
+        "path": "evidence/render/readme-wide-evidence.png",
+        "sha256": "d95423bf5648395714d9c5ebfac10a1136b3a667c3b66b14e858e051aee185b2",
+        "bytes": 220750
+      },
+      {
+        "path": "evidence/render/readme-wide.png",
+        "sha256": "416e1f9225ae212c42a6021c019c74d167445a1d0537e248d5ea740fb96401c9",
+        "bytes": 1202957
+      }
+    ],
+    "changed_existing": [],
+    "missing_in_fresh": [],
+    "same_count": 219,
+    "conclusion": "All 22 prior differences are newly added evidence/render/ files; no existing source/render/media bytes changed. Generated manifest changes to inventory added evidence."
+  },
+  "browser_command": {
+    "command": [
+      "<author-home>/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "<workspace>/research/qore002-implementation-20261016/doc-readers/verifier/supplement-browser.mjs",
+      "http://127.0.0.1:64357",
+      "<workspace>/research/qore002-implementation-20261016/doc-readers/verifier",
+      "/private/var/folders/4r/1cnctlhj0457b5kgw29hzr4h0000gn/T/qore-doc-supplement-eivt1y_e",
+      "/private/var/folders/4r/1cnctlhj0457b5kgw29hzr4h0000gn/T/qore-doc-supplement-eivt1y_e/zoom-extension"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "browser": {
+    "method": "Fresh isolated MV3 extension; chrome.tabs.setZoom 2.0; viewport:null; no CSS zoom.",
+    "before": {
+      "innerWidth": 1280,
+      "outerWidth": 1280,
+      "innerHeight": 813,
+      "outerHeight": 900,
+      "dpr": 1,
+      "scroll": 1280,
+      "cssZoom": "1",
+      "h1": {
+        "x": 90,
+        "y": 235.875,
+        "width": 1000,
+        "height": 161.90625,
+        "top": 235.875,
+        "right": 1090,
+        "bottom": 397.78125,
+        "left": 90
+      }
+    },
+    "zoom": {
+      "tab_id": 478895674,
+      "actual_factor": 2
+    },
+    "after": {
+      "innerWidth": 640,
+      "outerWidth": 1280,
+      "innerHeight": 406,
+      "outerHeight": 900,
+      "dpr": 2,
+      "scroll": 640,
+      "cssZoom": "1",
+      "h1": {
+        "x": 17.59375,
+        "y": 235.609375,
+        "width": 604.8125,
+        "height": 92,
+        "top": 235.609375,
+        "right": 622.40625,
+        "bottom": 327.609375,
+        "left": 17.59375
+      }
+    },
+    "zoomViewportScreenshot": "CDP current surface capture; full-page screenshot at non-default zoom may clip.",
+    "failedMedia": {
+      "events": [
+        {
+          "tag": "SOURCE",
+          "event": "error",
+          "src": "http://127.0.0.1:64357/qore-codex-skills/media/demo.mp4"
+        },
+        {
+          "tag": "SOURCE",
+          "event": "error",
+          "src": "http://127.0.0.1:64357/qore-codex-skills/media/demo.mp4"
+        }
+      ],
+      "networkState": 3,
+      "readyState": 0,
+      "caseText": "Can the Labs journey really be checked with a keyboard?",
+      "transcriptText": "Read the complete transcript",
+      "transcriptHref": "http://127.0.0.1:64357/qore-codex-skills/media/transcript.html",
+      "responses": [
+        {
+          "url": "http://127.0.0.1:64357/qore-codex-skills/media/demo.mp4",
+          "status": 404
+        },
+        {
+          "url": "http://127.0.0.1:64357/qore-codex-skills/media/demo.mp4",
+          "status": 404
+        }
+      ]
+    },
+    "transcript": {
+      "statusText": "Three methods, one sourced project profile\n\nSilent English technical montage, approximately 105 seconds. Separate actual executions and selected result fields; the browser recordin",
+      "characters": 2153,
+      "title": "Qore Labs demonstration transcript"
+    }
+  },
+  "cleanup": "Isolated persistent browser context and owned HTTP server closed; no author browser profile used. Temporary evidence staging retained.",
+  "focused_required_checks": {
+    "real_browser_zoom": "OBSERVED",
+    "confirmed_media_failure_and_text_alternatives": "OBSERVED",
+    "actual_mp4_probe_and_full_decode": "OBSERVED",
+    "caption_range_and_public_content_consistency": "CHECKED",
+    "22_file_difference_explanation": "CHECKED"
+  },
+  "unfinished_required_work": [],
+  "retained_limits": [
+    "No accessibility-conformance, external human-first-use or general readiness conclusion.",
+    "Private raw source recording and per-frame transformation correspondence were not inspected.",
+    "Sequential keyboard reachability and play/pause were measured in the original verifier pass; unsupported seeking and complete native media control coverage remain unclaimed.",
+    "Hosted publication and live default-branch checks remain outside this local pass."
+  ],
+  "preserved_original_artifacts": {
+    "REPORT.md": "631074ed26ed39aebcd04dbd498d40350677971db2d5f2a049d341d5015b8459",
+    "verified.json": "9b70113b19fa14ce42b0e03f17fa05371d1dae631b329a31ea4bd94ae371f21c",
+    "resolution.json": "2b1c955f5ed6127ee36f1a850afc041505b29ccef715f024da98859c4dcd3f23"
+  },
+  "screenshots": {
+    "supplement-actual-zoom-viewport.png": "71dd796827d339753552262fa798838e17d2164952f39e24135dc5e3d15f9751",
+    "supplement-actual-zoom-200.png": "81d4f003b761fdab578772f808e1fe8c61f2f08c81cf22a0e55ae3a5d5c23fdb",
+    "supplement-confirmed-video-404.png": "61373766ee58cfd31210102d66181a021987f12463a1b5d88e3741e982eaa5ac"
+  }
+}

@@ -1,0 +1,64 @@
+[
+  {
+    "type": "assert-visible",
+    "role": "button",
+    "name": "Start the check"
+  },
+  {
+    "type": "snapshot",
+    "label": "direct-introduction"
+  },
+  {
+    "type": "reload"
+  },
+  {
+    "type": "assert-visible",
+    "role": "button",
+    "name": "Start the check"
+  },
+  {
+    "type": "snapshot",
+    "label": "reloaded-introduction"
+  },
+  {
+    "type": "click",
+    "role": "link",
+    "name": "Back to Labs",
+    "exact": false
+  },
+  {
+    "type": "assert-url",
+    "url": "https://qaizen.io/labs"
+  },
+  {
+    "type": "snapshot",
+    "label": "labs-neighbor"
+  },
+  {
+    "type": "history-back"
+  },
+  {
+    "type": "assert-url",
+    "url": "https://qaizen.io/labs/readiness-check"
+  },
+  {
+    "type": "assert-visible",
+    "role": "button",
+    "name": "Start the check"
+  },
+  {
+    "type": "snapshot",
+    "label": "history-back-introduction"
+  },
+  {
+    "type": "history-forward"
+  },
+  {
+    "type": "assert-url",
+    "url": "https://qaizen.io/labs"
+  },
+  {
+    "type": "snapshot",
+    "label": "history-forward-labs"
+  }
+]

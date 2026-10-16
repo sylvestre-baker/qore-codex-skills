@@ -1,0 +1,44 @@
+[
+  {
+    "argv": [
+      "node",
+      "<workspace>/qore-skills/tools/browser_probe.mjs",
+      "--url",
+      "https://qaizen.io/labs",
+      "--output",
+      "<workspace>/research/qore002-implementation-20261016/methods/ux/iteration-1-journey",
+      "--actions",
+      "<workspace>/qore-skills/examples/qaizen-labs/browser-actions.json",
+      "--policy",
+      "<workspace>/qore-skills/examples/qaizen-labs/observation-policy.json",
+      "--playwright-module",
+      "<PLAYWRIGHT_MODULE>",
+      "--label",
+      "Derived qaizen-labs UX iteration 1: journey"
+    ],
+    "cwd": "<workspace>/qore-skills",
+    "exit_code": 0,
+    "result": "iteration-1-journey/result.json"
+  },
+  {
+    "argv": [
+      "node",
+      "<workspace>/qore-skills/tools/browser_probe.mjs",
+      "--url",
+      "https://qaizen.io/labs/readiness-check",
+      "--output",
+      "<workspace>/research/qore002-implementation-20261016/methods/ux/iteration-1-direct-history",
+      "--actions",
+      "<workspace>/research/qore002-implementation-20261016/methods/ux/direct-history-actions.json",
+      "--policy",
+      "<workspace>/qore-skills/examples/qaizen-labs/observation-policy.json",
+      "--playwright-module",
+      "<PLAYWRIGHT_MODULE>",
+      "--label",
+      "Derived qaizen-labs UX iteration 1: direct-history"
+    ],
+    "cwd": "<workspace>/qore-skills",
+    "exit_code": 0,
+    "result": "iteration-1-direct-history/result.json"
+  }
+]

@@ -1,0 +1,57 @@
+[
+  {
+    "path": "<workspace>/research/qore002-implementation-20261016/site-draft/index.html",
+    "sha256": "1154fd0d7b77da6f0a1c3ead0ef45b2e62231f9c46418273c2bf6b6d179c7337",
+    "bytes": 7334
+  },
+  {
+    "path": "<workspace>/research/qore002-implementation-20261016/site-draft/styles.css",
+    "sha256": "1bdc47446d2b60e8d5544ea2eb3e4b666b0728263b18d6ab9bf1d2ace4d616a6",
+    "bytes": 2997
+  },
+  {
+    "path": "<workspace>/research/qore002-implementation-20261016/site-draft/media/transcript.html",
+    "sha256": "4433ad0b3a4fb9c65970ad3089f2b9e783936ece83eaf0dd62a025f0ce1f7a3f",
+    "bytes": 2798
+  },
+  {
+    "path": "<workspace>/research/qore002-implementation-20261016/site-draft/media/demo.en.vtt",
+    "sha256": "2483382e483d1d455aa8cac831e00ba72d03e6e94056fd5f82d4509201c753b8",
+    "bytes": 1554
+  },
+  {
+    "path": "<workspace>/research/qore002-implementation-20261016/site-draft/media/demo.mp4",
+    "sha256": "988e81758ef725addf9c4da2b0b4e28f01189aaa069a28136f96af582c855973",
+    "bytes": 1381294
+  },
+  {
+    "path": "<workspace>/research/qore002-implementation-20261016/docs-build/qore-skills-0.2.0/README.md",
+    "sha256": "9bf7f7d805d655ee38657f831b0435f09d218f7acd9f4988e20b0d76499ea538",
+    "bytes": 13702
+  },
+  {
+    "path": "<workspace>/research/qore002-implementation-20261016/docs-build/qore-skills-0.2.0/showcase/index.html",
+    "sha256": "1154fd0d7b77da6f0a1c3ead0ef45b2e62231f9c46418273c2bf6b6d179c7337",
+    "bytes": 7334
+  },
+  {
+    "path": "<workspace>/research/qore002-implementation-20261016/docs-build/qore-skills-0.2.0/docs/showcase.md",
+    "sha256": "b2d702c38c1a8f408c8516be5819aadc21cad0fa00053e95bbf2f3278f14035e",
+    "bytes": 1947
+  },
+  {
+    "path": "<workspace>/research/qore002-implementation-20261016/site-draft/evidence/README.md",
+    "sha256": "3f70dcf9ab7c0ff071b19bb0e129e9553ada15ef266b483912f0e27a4fe28b42",
+    "bytes": 3670
+  },
+  {
+    "path": "<workspace>/research/qore002-implementation-20261016/site-draft/media/transcript.md",
+    "sha256": "c3b42901855bb2a04760a215a007946ead768a5f13d5924c04686db130e748e4",
+    "bytes": 2524
+  },
+  {
+    "path": "<workspace>/research/qore002-implementation-20261016/docs-build/qore-skills-0.2.0/showcase/styles.css",
+    "sha256": "1bdc47446d2b60e8d5544ea2eb3e4b666b0728263b18d6ab9bf1d2ace4d616a6",
+    "bytes": 2997
+  }
+]

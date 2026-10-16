@@ -1,0 +1,16 @@
+{
+  "schema": "qore-owned-runtime-cleanup/1",
+  "observed_at": "2026-10-16T07:46:29.849503+00:00",
+  "owned_server_pid": 63523,
+  "owned_loopback_port": 52848,
+  "identity_verified_before_stop": true,
+  "signal": "SIGTERM",
+  "listener_absent_after_stop": true,
+  "private_state_retained": "private-mail-state",
+  "token_deleted": true,
+  "runtime_removed": true,
+  "limits": [
+    "No global configuration, unrelated process or browser was changed.",
+    "State remains private and is not allowlisted for public export."
+  ]
+}

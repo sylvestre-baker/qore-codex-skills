@@ -1,0 +1,21 @@
+{
+  "original_verdicts": {
+    "CLAIMS-001": "CONFIRMED",
+    "A11Y-DOC-001": "CONFIRMED"
+  },
+  "current_resolution": {
+    "CLAIMS-001": {
+      "status": "RESOLVED",
+      "evidence": "Fresh current-candidate build; 88 checker references; independent 76 local references without missing/escaping targets; four required targets HTTP 200; removed profile produces exit 1."
+    },
+    "A11Y-DOC-001": {
+      "status": "RESOLVED",
+      "evidence": "Fresh current-candidate build; 88 checker references; independent 76 local references without missing/escaping targets; four required targets HTTP 200; removed profile produces exit 1."
+    }
+  },
+  "limits": [
+    "Two IDs represent the same original four-link behavior; do not count them as two distinct defects.",
+    "Current resolution does not refute original findings.",
+    "Browser observations are automated scoped observations; no accessibility conformance, human first-use, hosted publication or full video content equivalence claim."
+  ]
+}

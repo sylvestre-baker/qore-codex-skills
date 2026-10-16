@@ -1,0 +1,85 @@
+{
+  "qore_evidence": {
+    "phase_id": "verifier",
+    "observed_at": "2026-10-16T07:21:01.644017+00:00",
+    "candidate_sha256": "0540496cea29da71f72046f36a12c3a23b4d71900c97f7193f4dba699836b036",
+    "target_snapshot_sha256": "59995ed5b982ed1b716f12539c7f22374867926c477811639506f0ac2d4b4003"
+  },
+  "payload": {
+    "report": "# Fresh independent verifier\n\nFive filtered IDs examined: **5 CONFIRMED, 0 PLAUSIBLE, 0 REFUTED**; all retain original **medium** severity. C01 and F-FEAS-01 overlap, so these represent four distinct behaviors. No source modifications. No generic defect-absence or release-readiness conclusion.\n\n## Results\n\n- **C01 / F-FEAS-01 \u2014 corrected-delivery recovery is unavailable.** `tools/coordination.py:79,92\u201395,107` cannot receive a new delivery or request after FAIL. Synthetic task `synthetic-73` moves to CHANGES_REQUIRED, then rejects corrected delivery `5` with `not awaiting delivery` and a fresh request with `not ready for a fresh review request`. PARTIAL/BLOCKED likewise leave no correction transition. `docs/coordination.md` promises corrected artifacts as new delivery/request; it reserves new criteria initialization for changed criteria or reopening DONE. Manually editing the register is not a declared helper transition. Impact: cooperative correction stalls despite unchanged criteria. Independent results: `reproduction-results.json` keys `recovery_*`.\n- **C02 \u2014 wrong session/run can apply failure.** With the current task, artifact, delivery and request IDs, changing only review_session_id or review_run_id still accepts FAIL and moves REVIEW_REQUIRED to CHANGES_REQUIRED; PARTIAL/BLOCKED move it to BLOCKED. All six combinations ran. `REVIEW_KEYS` omits these fields and `consume` changes state before the completion gate. The gate does reject mismatched identities for DONE, which limits the impact: this is a wrong negative state transition, not false acceptance or hostile-actor authentication bypass. Expected under the documented same-identity contract: reject stale review session/run and retain current wait. Results: `mismatch_*`.\n- **S1 \u2014 environment proxy receives bearer-bearing dispatch.** With synthetic http_proxy set and no_proxy empty, real Client.call prepares HTTP dispatch to `synthetic-proxy.invalid:8123`, full loopback URL selector, and `Authorization: Bearer SYNTHETIC-73`. The custom HTTPHandler stops before a socket. This independently confirms the proxy-routing mechanism, **not an actual wire exchange or observed disclosure**. An ordinary environment configured with loopback exclusions avoids this trigger; the helper itself does not guarantee that exclusion. Scope is cooperative local operation; no adversarial co-tenant assumption is needed. Result: `proxy_dispatch`.\n- **F-FEAS-02 \u2014 ACK work overruns the declared receive bound.** Actual receive function, Client subclass, temporary durable register, and virtual monotonic clock: fetch takes 2 simulated seconds, seven successful ACKs each take 20, and receive returns RECEIVED at 142 simulated seconds for seconds=120. Last ACK starts at 122 with timeout 30. The loop neither adjusts ACK timeout nor checks deadline before success return. Expected: the documented at-most-120-second receive window bounds the work. This is deterministic socket-free timing simulation, not elapsed wire measurement. Result: `deadline`.\n\nEvery concrete input, actual result, and expected behavior is retained in `verified.json`; original filtered evidence is preserved verbatim. Finder paths mentioned in original evidence were never opened. `reproduce.py` was independently authored in this context and executed successfully.\n\n## Checks and identity\n\nProfile preflight returned current digests, COMPLETE context coverage and no problems. Inspected `checks/check_contract.py` before running exactly `python3 -B checks/check_contract.py surface-contract.json`; offline consistency passed. See `preflight.json`, `contract-result.json`, and `profile-use.json`.\n\nRelevant public suites passed: coordination 7, agent-mail 4, task-gate 18 (29 total). These existing tests do not cover the reproduced gaps. Bundled finding-lint ran with `--verifier=ran` and passed. Its emitted SHIP/COMPLETE labels are structural checker output only; they do not establish release readiness or full-method execution coverage.\n\nSnapshot identity uses exact SHA-256 manifests because `git rev-parse HEAD` failed in this exported checkout. `identity.json`, `target-manifest.json`, and `skill-manifest.json` identify this context, filtered input, profile and target. No live server, socket, browser, author reasoning, private source, finder directory, home or auth files were used. `rg` was unavailable, so bounded find/cat/sed reads were used.\n\n## Coverage and unfinished work\n\n**Verifier coverage: COMPLETE for these five claims. Full-method execution coverage: PARTIAL.** This invocation was explicitly only the fresh verifier. Three finder contexts and mechanical redaction were upstream and not independently audited here; their artifacts were forbidden inputs. No agents were spawned. No unexamined claim IDs remain.\n\nUnfinished/outside executed scope: actual proxy wire capture; real-network receive latency; browser keyboard reachability, Close/Back focus, unanswered and navigation/mutation policy observations; current website qualification; and full finder/redaction phase audit. No browser driver was used or probed, and no browser capability or behavior is claimed. The public verification specification separates synthetic controls, offline contract consistency and live observations; these results preserve those boundaries. Scope contains no fixes or post-fix checks.\n",
+    "verified": {
+      "findings": [
+        {
+          "id": "C01",
+          "title": "Failed or incomplete review has no supported recovery transition",
+          "severity": "medium",
+          "evidence": "tools/coordination.py:79 only receives deliveries in IN_PROGRESS/awaiting=delivery; :92-95 moves FAIL to CHANGES_REQUIRED and PARTIAL/BLOCKED to BLOCKED with awaiting=None; :107 only permits review requests in REVIEW_REQUIRED/awaiting=None. docs/coordination.md:71 promises corrected artifacts as a new delivery/request after failed review. Measured reproduction: python3 -B /workspace/qualification/finders/correctness/reproduce.py; saved reproduction.json C01.",
+          "verdict": "CONFIRMED",
+          "counterexample": "Synthetic task synthetic-73 accepts assignment assign-73, delivery 3/v1, and request request-73/fresh-73/run-73. FAIL message 4 yields CHANGES_REQUIRED with awaiting=null. Corrected v2 delivery message 5 is rejected: not awaiting delivery; request_review also rejects: not ready for a fresh review request. PARTIAL and BLOCKED likewise cannot accept correction. Expected: documented corrected delivery/request can resume without discarding unchanged criteria history. Actual: no supported consume/request-review transition. See reproduction-results.json recovery_FAIL/recovery_PARTIAL/recovery_BLOCKED and reproduce.py.",
+          "independent_evidence": "reproduce.py; reproduction-results.json; public tools/coordination.py, tools/agent_mail.py, tools/task_gate.py and docs/coordination.md. Original evidence retained verbatim; referenced finder files were not read."
+        },
+        {
+          "id": "C02",
+          "title": "Wrong review session or run can apply a terminal failure verdict",
+          "severity": "medium",
+          "evidence": "tools/coordination.py:88 compares only REVIEW_KEYS, which omit session/run (tools/task_gate.py:12); :89-95 stores verdict and applies FAIL/PARTIAL/BLOCKED before checking those fields. tools/task_gate.py:102-104 checks session/run only in the later completion gate. docs/coordination.md:21 requires verdict/proofs to carry the same identity and :73 says stale verdicts cannot change current acceptance. Measured reproduction: saved reproduction.json C02.",
+          "verdict": "CONFIRMED",
+          "counterexample": "Starting REVIEW_REQUIRED/awaiting=review_verdict for request-73/fresh-73/run-73, send otherwise current FAIL with review_session_id=old-identity: consume accepts it and changes state to CHANGES_REQUIRED. Changing only review_run_id has the same result. PARTIAL/BLOCKED with either wrong field changes state to BLOCKED. Expected: reject mismatched session/run and retain current waiting state. See reproduction-results.json mismatch_* (six cases). This demonstrates incorrect failure handling, not a bypass to DONE: task_gate.evaluate independently checks these fields for completion.",
+          "independent_evidence": "reproduce.py; reproduction-results.json; public tools/coordination.py, tools/agent_mail.py, tools/task_gate.py and docs/coordination.md. Original evidence retained verbatim; referenced finder files were not read."
+        },
+        {
+          "id": "S1",
+          "title": "Loopback Agent Mail bearer can be sent through an environment HTTP proxy",
+          "severity": "medium",
+          "evidence": "tools/agent_mail.py:25 validates only the URL hostname; tools/agent_mail.py:34 adds Authorization; tools/agent_mail.py:35 uses build_opener(NoRedirect) with its default environment ProxyHandler. docs/coordination.md promises loopback endpoint containment. Running python3 -B /workspace/qualification/finders/security/repro_proxy.py exits 0 and captures host=proxy.invalid:8080, selector=http://127.0.0.1:8765/mcp/, Authorization=Bearer SYNTHETIC-NOT-A-SECRET at HTTP dispatch, without opening a socket. See repro_proxy.json.",
+          "verdict": "CONFIRMED",
+          "counterexample": "With an isolated synthetic environment http_proxy=http://synthetic-proxy.invalid:8123 and no_proxy empty, invoke real Client.call against http://127.0.0.1:8765/mcp/ using token SYNTHETIC-73. A replacement HTTPHandler halts before any socket: dispatch request.host=synthetic-proxy.invalid:8123, selector=http://127.0.0.1:8765/mcp/, Authorization=Bearer SYNTHETIC-73. Expected under endpoint containment: direct loopback dispatch without environment proxy. Actual proxy-directed HTTP dispatch retains bearer. This is a socket-free dispatch simulation, NOT an actual wire exchange or observed token disclosure. See reproduce.py and reproduction-results.json proxy_dispatch.",
+          "independent_evidence": "reproduce.py; reproduction-results.json; public tools/coordination.py, tools/agent_mail.py, tools/task_gate.py and docs/coordination.md. Original evidence retained verbatim; referenced finder files were not read."
+        },
+        {
+          "id": "F-FEAS-01",
+          "title": "Failed review has no supported corrected-delivery transition",
+          "severity": "medium",
+          "evidence": "tools/coordination.py:79 accepts delivery only from IN_PROGRESS/awaiting=delivery; :92-93 changes a FAIL to CHANGES_REQUIRED/awaiting=None; :106-107 accepts requests only from REVIEW_REQUIRED. docs/coordination.md:71 instructs a corrected artifact/new delivery/request after failed review. Running python3 -B /workspace/qualification/finders/feasibility/reproduce.py yields CHANGES_REQUIRED after FAIL and after corrected delivery, with REJECT: not awaiting delivery.",
+          "verdict": "CONFIRMED",
+          "counterexample": "Synthetic task synthetic-73 accepts assignment assign-73, delivery 3/v1, and request request-73/fresh-73/run-73. FAIL message 4 yields CHANGES_REQUIRED with awaiting=null. Corrected v2 delivery message 5 is rejected: not awaiting delivery; request_review also rejects: not ready for a fresh review request. PARTIAL and BLOCKED likewise cannot accept correction. Expected: documented corrected delivery/request can resume without discarding unchanged criteria history. Actual: no supported consume/request-review transition. See reproduction-results.json recovery_FAIL/recovery_PARTIAL/recovery_BLOCKED and reproduce.py.",
+          "independent_evidence": "reproduce.py; reproduction-results.json; public tools/coordination.py, tools/agent_mail.py, tools/task_gate.py and docs/coordination.md. Original evidence retained verbatim; referenced finder files were not read."
+        },
+        {
+          "id": "F-FEAS-02",
+          "title": "Acknowledgement batch can overrun the declared receive deadline",
+          "severity": "medium",
+          "evidence": "docs/coordination.md:13 promises a receive window of at most 120 seconds. tools/agent_mail.py:58-59 sets timeout only before fetch; :84-89 acknowledges every matching processed message and returns RECEIVED before the deadline check at :103. Saved reproduce.py uses the actual receive function and Client subclass with a virtual monotonic clock: 1-second fetch plus six 25-second successful ACKs returns RECEIVED after 151 simulated seconds for seconds=120; every call retains timeout=30, including one started at t=126.",
+          "verdict": "CONFIRMED",
+          "counterexample": "Actual receive(Client subclass, seconds=120) processes seven synthetic thread messages with IDs 10..16. Virtual monotonic clock advances 2 seconds for fetch and 20 seconds per successful ACK. It returns RECEIVED at simulated t=142; final ACK starts at t=122 with timeout=30. Expected: receive returns within declared at-most-120-second window. Actual: ACK loop neither recomputes remaining timeout nor checks deadline before returning. Real durable temporary-register writes execute; no network or wall-clock latency measurement. See reproduction-results.json deadline and reproduce.py.",
+          "independent_evidence": "reproduce.py; reproduction-results.json; public tools/coordination.py, tools/agent_mail.py, tools/task_gate.py and docs/coordination.md. Original evidence retained verbatim; referenced finder files were not read."
+        }
+      ]
+    },
+    "files": {
+      "verifier/tests-agent-mail.txt": "4a160235c0add54f7a5997815d0e01a072210439de4899c702c94dd3cd814662",
+      "verifier/skill-manifest.json": "2b4d8c75c24c9377aa41c27c7a317901043ea76216ec6d595ed198059d1502c1",
+      "verifier/verified.json": "e9cb1a1fffe0622542bf81656c6c63263e64721bd56f0b47373f8d8e817dad26",
+      "verifier/reproduction-results.json": "0ec59f8111b08102203716f1eae5de28e6a3c3f21fccb6cd16e332eb98b93f1b",
+      "verifier/reproduce.py": "997e0894c68a10ffb1b5691a07cbeef3a7773039b4151cf3de068ce15c63bd60",
+      "verifier/REPORT.md": "aaea07b93ead4df30cbc0e48bcba406664076de98d46e5eca971053ed9a66e34",
+      "verifier/contract-result.json": "7f557ba27626c65e7eb10c7b17773f82e9feae273715b633b694723f87b3c1ee",
+      "verifier/findings_validation-execution.json": "ed08aa63b73b5f7f7999241be41e2672feec0da837061bad23bfd1babfbc257f",
+      "verifier/commands.json": "39438b4ab722e972e51309be8ad4a080885c6a0320f4da4125c24e4646a78c48",
+      "verifier/tests-task-gate.txt": "98ea402db7b97462d0214b82d1b2df836ec5990adfeb73bb24606244b7c7ad77",
+      "verifier/run-check.json": "bb29ce5f620f6d13bc0cfa2c9c0f1bcbf4f7b17f872f836df788c20a1c2e2246",
+      "verifier/identity.json": "548ac2a0fd8b77ba84ea0ebfc1a1796184169db1ef125e1cac64369e7e6bf628",
+      "verifier/FILES.json": "0fecc0379bd42a9adb965cd68cb1364abb902a3bcfc88c211e286ef27c62f9b7",
+      "verifier/verifier-execution.json": "8e8113c1e37b9cb06b7fcbdde90f620768755624b0633d8b3de5142ad3124f0b",
+      "verifier/tests-coordination.txt": "670a39115e7523a8984e4842e16547cb2094b03fad392b037b4b9dc8b2656e62",
+      "verifier/profile_preflight-execution.json": "7e51f0f0e2abee6cf822690df3a327344b85936b6882968c3850da70fa775428",
+      "verifier/profile-use.json": "3aab4adf4fa67cf239c87ad4904c3da89f553b065a6fe2ee5e7d79152d57e95a",
+      "verifier/preflight.json": "cc7c5c9ff4ed6dddfc86cdcfc44b5930a36f6f95e867dda4cad79007945ee645",
+      "verifier/final-checks.json": "74e2c7db1fc6db2f6d50f0d9318de700513a008089e6c03672ed6e9a2ad40a78",
+      "verifier/execution.json": "b105d3998e6039c11f1ca907a732426f969fb02396670a84052a9e1055e047a6",
+      "verifier/target-manifest.json": "3282ea44daa3be81eeadd6185274bd53d29cb43a07e14fd801ee14b33c79baac",
+      "verifier/finding-lint.json": "4c07cdce9516448914a19bc797ac3e46e2e25953ce87c207163e0283358647a3"
+    },
+    "fresh_context": "01a14393-5328-76c2-9338-ee103ba2f993"
+  }
+}

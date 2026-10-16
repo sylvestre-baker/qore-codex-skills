@@ -1,0 +1,25 @@
+{
+  "qore_evidence": {
+    "phase_id": "redaction",
+    "observed_at": "2026-10-16T07:18:10.779836+00:00",
+    "candidate_sha256": "0540496cea29da71f72046f36a12c3a23b4d71900c97f7193f4dba699836b036",
+    "target_snapshot_sha256": "59995ed5b982ed1b716f12539c7f22374867926c477811639506f0ac2d4b4003"
+  },
+  "payload": {
+    "actual_command": {
+      "argv": [
+        "docker",
+        "exec",
+        "qore-qualification-qore002-20261016",
+        "node",
+        "/workspace/project/examples/qaizen-labs/.agents/skills/qore-review-qaizen-labs/scripts/redact-for-verifier.mjs",
+        "/workspace/qualification/findings.json"
+      ],
+      "exit": 0,
+      "stderr": "redact-for-verifier: 5 claims; withheld fields: consequence, recommendation, reproduction, trigger, unresolved_condition.\n"
+    },
+    "claims_sha256": "13b0f07e2e722e9b6c9a80ae02340ca4f84d11e6910bbb90c79cf81c4ad1fc8b",
+    "chronology": "Mechanical redaction completed before verifier process launch; no finder reasoning supplied.",
+    "operator": "Root lead executed the mechanical redactor before launching the fresh verifier; context attribution corrected, no new execution."
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "findings": [
+    {
+      "id": "F-FEAS-01",
+      "title": "Failed review has no supported corrected-delivery transition",
+      "severity": "medium",
+      "evidence": "tools/coordination.py:79 accepts delivery only from IN_PROGRESS/awaiting=delivery; :92-93 changes a FAIL to CHANGES_REQUIRED/awaiting=None; :106-107 accepts requests only from REVIEW_REQUIRED. docs/coordination.md:71 instructs a corrected artifact/new delivery/request after failed review. Running python3 -B /workspace/qualification/finders/feasibility/reproduce.py yields CHANGES_REQUIRED after FAIL and after corrected delivery, with REJECT: not awaiting delivery.",
+      "trigger": "A current fresh review returns FAIL and production submits a new artifact under unchanged criteria.",
+      "consequence": "The documented correction loop cannot progress to a new review or DONE through supplied commands. Manual register surgery or an otherwise unnecessary new task revision/assignment is needed.",
+      "reproduction": "Run saved reproduce.py, first case. It initializes criteria, consumes ACK and first delivery, records request and FAIL, then consumes corrected artifact revision a2. Expected correction can be recorded for a new request; actual state stays CHANGES_REQUIRED.",
+      "unresolved_condition": "Candidate only; independent verifier has not run. Add a guarded correction/resubmission transition preserving stale-review rejection, or document an explicit supported revision restart."
+    },
+    {
+      "id": "F-FEAS-02",
+      "title": "Acknowledgement batch can overrun the declared receive deadline",
+      "severity": "medium",
+      "evidence": "docs/coordination.md:13 promises a receive window of at most 120 seconds. tools/agent_mail.py:58-59 sets timeout only before fetch; :84-89 acknowledges every matching processed message and returns RECEIVED before the deadline check at :103. Saved reproduce.py uses the actual receive function and Client subclass with a virtual monotonic clock: 1-second fetch plus six 25-second successful ACKs returns RECEIVED after 151 simulated seconds for seconds=120; every call retains timeout=30, including one started at t=126.",
+      "trigger": "Several ACK-required messages exist and each successful ACK is slow but below its per-call timeout. Historical processed entries with ack_required still set are included too.",
+      "consequence": "Operator control is delayed beyond the documented finite window; a permitted 999-entry batch can schedule 29,970 seconds of 30-second per-call waits before loop deadline handling (conditional bound, not a real transport measurement).",
+      "reproduction": "Run saved reproduce.py, second case. No real network or waiting is used; the deterministic scheduler shows the receive loop issuing work after its deadline.",
+      "unresolved_condition": "Independent verification and real transport latency testing remain pending. Recompute remaining time before each ACK, stop the batch at deadline, and preserve remaining ACKs for safe replay."
+    }
+  ]
+}

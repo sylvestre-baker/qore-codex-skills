@@ -1,0 +1,107 @@
+{
+  "observed_at": "2026-10-16T07:38:33.868Z",
+  "site_manifest_sha256": null,
+  "method": "Actual Chromium tabs.setZoom 2.0 in isolated extension/persistent context; no author browser profile or CSS zoom.",
+  "sources": [
+    "https://playwright.dev/docs/chrome-extensions",
+    "https://developer.chrome.com/docs/extensions/reference/api/tabs#method-setZoom"
+  ],
+  "before": {
+    "innerWidth": 1280,
+    "outerWidth": 1280,
+    "dpr": 1,
+    "scroll": 1280,
+    "cssZoom": "1"
+  },
+  "zoom": {
+    "tab_id": 78741111,
+    "actual_factor": 2
+  },
+  "after": {
+    "innerWidth": 640,
+    "outerWidth": 1280,
+    "dpr": 2,
+    "scroll": 640,
+    "cssZoom": "1",
+    "h1": {
+      "x": 17.59375,
+      "y": 235.609375,
+      "width": 604.8125,
+      "height": 92,
+      "top": 235.609375,
+      "right": 622.40625,
+      "bottom": 327.609375,
+      "left": 17.59375
+    }
+  },
+  "keyboard": {
+    "sequential_targets": [
+      {
+        "tag": "A",
+        "text": "Skip to content"
+      },
+      {
+        "tag": "A",
+        "text": "Qore / Codex skills"
+      },
+      {
+        "tag": "A",
+        "text": "The case"
+      },
+      {
+        "tag": "A",
+        "text": "Specialize"
+      },
+      {
+        "tag": "A",
+        "text": "Evidence"
+      },
+      {
+        "tag": "A",
+        "text": "GitHub"
+      },
+      {
+        "tag": "A",
+        "text": "See the real example"
+      },
+      {
+        "tag": "A",
+        "text": "Try the published review example"
+      },
+      {
+        "tag": "A",
+        "text": "Read the planning report (Markdown)"
+      },
+      {
+        "tag": "A",
+        "text": "Read the review report (Markdown)"
+      },
+      {
+        "tag": "A",
+        "text": "Read the UX report (Markdown)"
+      },
+      {
+        "tag": "VIDEO",
+        "text": "Your browser cannot play this video. Use the transcript and evidence links below"
+      }
+    ],
+    "reached_video": true,
+    "after_space": {
+      "paused": false,
+      "time": 0.610222
+    },
+    "after_second_space": {
+      "paused": true,
+      "time": 0.611527
+    },
+    "after_arrow": {
+      "paused": true,
+      "time": 0.611527
+    }
+  },
+  "video_failure": {
+    "transcript": "Read the complete transcript",
+    "bodyReadable": "Can the Labs journey really be checked with a keyboard?"
+  },
+  "status": "COMPLETE"
+}

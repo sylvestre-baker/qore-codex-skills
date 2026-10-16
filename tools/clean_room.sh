@@ -79,7 +79,7 @@ with zipfile.ZipFile(archive) as bundle:
     if len(roots)!=1:
         raise ValueError('Candidate must contain one versioned top-level directory')
     root=next(iter(roots))
-    if root!='qore-skills-0.1.0' or not {root+'/tools/qore.py',root+'/manifest.json',root+'/skills/qore-review/SKILL.md'}.issubset(seen):
+    if root!='qore-skills-0.2.0' or not {root+'/tools/qore.py',root+'/manifest.json',root+'/skills/qore-review/SKILL.md'}.issubset(seen):
         raise ValueError('Unexpected candidate archive structure')
     target=Path('/workspace')/root
     if target.exists():raise ValueError('Candidate destination exists; create a fresh container')
@@ -96,8 +96,8 @@ PY
     model_args=()
     if [[ -n "$model_name" ]]; then model_args=(--model "$model_name"); fi
     docker exec "$container_name" test -f /home/node/.codex/auth.json
-    docker exec "$container_name" test -f /workspace/qore-skills-0.1.0/manifest.json
-    docker exec -i --workdir /workspace/qore-skills-0.1.0 "$container_name" codex --ask-for-approval never exec --ignore-user-config --ignore-rules --ephemeral --json --skip-git-repo-check --sandbox danger-full-access "${model_args[@]}" - < "$prompt_file"
+    docker exec "$container_name" test -f /workspace/qore-skills-0.2.0/manifest.json
+    docker exec -i --workdir /workspace/qore-skills-0.2.0 "$container_name" codex --ask-for-approval never exec --ignore-user-config --ignore-rules --ephemeral --json --skip-git-repo-check --sandbox danger-full-access "${model_args[@]}" - < "$prompt_file"
     ;;
   cleanup)
     [[ "$(docker inspect "$container_name" --format '{{index .Config.Labels "io.qaizen.qore.qualification"}}')" == '20261015' ]] || { printf '%s\n' 'Container is not owned by this qualification helper.' >&2; exit 2; }

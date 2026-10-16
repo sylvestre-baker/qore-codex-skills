@@ -1,0 +1,12 @@
+{
+  "task_id": "QORE002-LABS-001",
+  "task_revision": 1,
+  "criteria_sha256": "e4e9acdb6b472bc140ef31cb47e75a762b5eb0c2e4ee55423430916151f598df",
+  "kind": "delivery",
+  "artifact_revision": "qaizen-labs-three-methods-20261016",
+  "artifact_sha256": "c938fbdba4c39f38845a53e9a1089f6a729994d2d7b8af151d64a09035e81df6",
+  "artifact_path": "delivery/manifest.json",
+  "artifact_kind": "manifest",
+  "production_session_id": "01a13a3b-0d97-7cd1-8c5e-9af725573b6d",
+  "scope_note": "Current authorized case was already in progress when PM assigned tracking; these are actual selected phase artifacts and separate post-fix verification, not claimed causal agent independence or full-site certification."
+}

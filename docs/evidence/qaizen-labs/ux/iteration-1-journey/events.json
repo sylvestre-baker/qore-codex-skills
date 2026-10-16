@@ -1,0 +1,872 @@
+{
+  "console": [
+    {
+      "at": "2026-10-16T07:02:24.110Z",
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_BLOCKED_BY_CLIENT.Inspector",
+      "location": {
+        "url": "https://qaizen.io/api/labs/readiness/event",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    }
+  ],
+  "page_errors": [],
+  "network": [
+    {
+      "at": "2026-10-16T07:02:16.582Z",
+      "url": "https://qaizen.io/labs",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "document"
+    },
+    {
+      "at": "2026-10-16T07:02:17.275Z",
+      "url": "https://qaizen.io/_next/static/immutable/media/e8f2fbee2754df70-s.p.1gavkj72q9u43.woff2",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "font"
+    },
+    {
+      "at": "2026-10-16T07:02:17.303Z",
+      "url": "https://qaizen.io/_next/static/immutable/media/345c85a432359eed-s.p.24jxsbewvqxgy.woff2",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "font"
+    },
+    {
+      "at": "2026-10-16T07:02:17.308Z",
+      "url": "https://qaizen.io/_next/static/immutable/media/f30fd2e485acf1bc-s.p.1z38dhxy5o0rp.woff2",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "font"
+    },
+    {
+      "at": "2026-10-16T07:02:17.324Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/1vngpkdf822wx.css",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "stylesheet"
+    },
+    {
+      "at": "2026-10-16T07:02:17.369Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/44dfxk5-k-sj7.css",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "stylesheet"
+    },
+    {
+      "at": "2026-10-16T07:02:17.370Z",
+      "url": "https://qaizen.io/_next/static/immutable/media/8e451580e5e95631-s.p.0ic9f6t6i9npx.woff2",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "font"
+    },
+    {
+      "at": "2026-10-16T07:02:17.524Z",
+      "url": "https://qaizen.io/_next/image?url=%2Fbrand%2Fqaizen-lockup.png&w=256&q=75&dpl=dpl_Eqn1ecy2TEwnM8P47zxeiFLAjnH1",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "image"
+    },
+    {
+      "at": "2026-10-16T07:02:17.548Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/38fixmt9m-84r.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-16T07:02:17.554Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/0bll1gbg9hhty.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-16T07:02:17.576Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/2ol1vi4pk99zo.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-16T07:02:17.590Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/07fzs162tmcdh.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-16T07:02:17.591Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/0dszv51uy--ty.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-16T07:02:17.635Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/1xobemoqfn78h.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-16T07:02:17.636Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/0vp6n1uafu_z7.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-16T07:02:17.638Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/0gm89vcwhj87c.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-16T07:02:17.670Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/3bbde9q_vd_-r.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-16T07:02:17.685Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/turbopack-1ea6fe1p3l00-.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-16T07:02:17.710Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/3o7vs3849gm0b.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-16T07:02:17.818Z",
+      "url": "https://qaizen.io/_vercel/speed-insights/script.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-16T07:02:17.823Z",
+      "url": "https://qaizen.io/_vercel/insights/script.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-16T07:02:18.096Z",
+      "url": "https://qaizen.io/?_rsc=rVBpcoZQhzeotty-",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "fetch"
+    },
+    {
+      "at": "2026-10-16T07:02:18.389Z",
+      "url": "https://qaizen.io/blog?_rsc=rVBpcoZQhzeotty-",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "fetch"
+    },
+    {
+      "at": "2026-10-16T07:02:18.573Z",
+      "url": "https://qaizen.io/labs?_rsc=rVBpcoZQhzeotty-",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "fetch"
+    },
+    {
+      "at": "2026-10-16T07:02:18.761Z",
+      "url": "https://qaizen.io/services/readiness-review?_rsc=rVBpcoZQhzeotty-",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "fetch"
+    },
+    {
+      "at": "2026-10-16T07:02:18.953Z",
+      "url": "https://qaizen.io/privacy?_rsc=rVBpcoZQhzeotty-",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "fetch"
+    },
+    {
+      "at": "2026-10-16T07:02:19.188Z",
+      "url": "https://qaizen.io/labs/shadow-ai?_rsc=rVBpcoZQhzeotty-",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "fetch"
+    },
+    {
+      "at": "2026-10-16T07:02:19.261Z",
+      "url": "https://qaizen.io/labs/readiness-check?_rsc=rVBpcoZQhzeotty-",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "fetch"
+    },
+    {
+      "at": "2026-10-16T07:02:19.326Z",
+      "url": "https://qaizen.io/labs/roi-calculator/stalled?_rsc=rVBpcoZQhzeotty-",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "fetch"
+    },
+    {
+      "at": "2026-10-16T07:02:19.639Z",
+      "url": "https://qaizen.io/?_rsc=JbqVujoDykHUAtAR",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "fetch"
+    },
+    {
+      "at": "2026-10-16T07:02:19.731Z",
+      "url": "https://qaizen.io/privacy?_rsc=yXYWzvE8FRN41Wzd",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "fetch"
+    },
+    {
+      "at": "2026-10-16T07:02:19.837Z",
+      "url": "https://qaizen.io/labs/roi-calculator/stalled?_rsc=2GX-AXP0b8qPrNCA",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "fetch"
+    },
+    {
+      "at": "2026-10-16T07:02:19.884Z",
+      "url": "https://qaizen.io/labs/agent-replay?_rsc=rVBpcoZQhzeotty-",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "fetch"
+    },
+    {
+      "at": "2026-10-16T07:02:19.942Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/28zrqzxh1jzrh.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-16T07:02:20.030Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/314j-eefaqinq.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-16T07:02:20.144Z",
+      "url": "https://qaizen.io/labs/roi-calculator/stalled?_rsc=gbuLNDSoRqHoJFER",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "fetch"
+    },
+    {
+      "at": "2026-10-16T07:02:20.389Z",
+      "url": "https://qaizen.io/labs?_rsc=kskTdj7lfVo_68au",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "fetch"
+    },
+    {
+      "at": "2026-10-16T07:02:20.437Z",
+      "url": "https://qaizen.io/services/readiness-review?_rsc=9S0Z5yD8pd55ECxw",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "fetch"
+    },
+    {
+      "at": "2026-10-16T07:02:20.454Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/0jcv8qc-rj6dl.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-16T07:02:20.668Z",
+      "url": "https://qaizen.io/services/readiness-review?_rsc=L8JU800eWfqkdGBw",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "fetch"
+    },
+    {
+      "at": "2026-10-16T07:02:20.697Z",
+      "url": "https://qaizen.io/labs/readiness-check?_rsc=wy5KDGVwL-F7iSrH",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "fetch"
+    },
+    {
+      "at": "2026-10-16T07:02:20.711Z",
+      "url": "https://qaizen.io/blog?_rsc=rRcTuS6gB0vD-zfY",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "fetch"
+    },
+    {
+      "at": "2026-10-16T07:02:20.737Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/0i6a3-ntstsyb.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-16T07:02:20.813Z",
+      "url": "https://qaizen.io/labs/readiness-check?_rsc=tnqnkIyyHYWOwPpu",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "fetch"
+    },
+    {
+      "at": "2026-10-16T07:02:20.936Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/4067f4x1emmf3.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-16T07:02:21.034Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/3f_ak85hphe5v.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-16T07:02:21.047Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/3ee8zcrtq5yw0.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-16T07:02:21.196Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/3putazjk-vrlq.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-16T07:02:21.245Z",
+      "url": "https://qaizen.io/blog?_rsc=BeGmM8bWlIB8tyoQ",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "fetch"
+    },
+    {
+      "at": "2026-10-16T07:02:21.328Z",
+      "url": "https://qaizen.io/labs/readiness-check?_rsc=qkx9s4u9WorkgHrU",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "fetch"
+    },
+    {
+      "at": "2026-10-16T07:02:21.328Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/3iebxlz1p63mq.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-16T07:02:21.329Z",
+      "url": "https://qaizen.io/labs/shadow-ai?_rsc=ChPQrJEkjq_3pGw8",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "fetch"
+    },
+    {
+      "at": "2026-10-16T07:02:21.391Z",
+      "url": "https://qaizen.io/labs/shadow-ai?_rsc=PTGeFHNpmoiMvQ5w",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "fetch"
+    },
+    {
+      "at": "2026-10-16T07:02:21.718Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/1dqfwh9uxoatk.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-16T07:02:21.718Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/0pqs7mvm-34vq.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-16T07:02:21.744Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/111ym_e2ndcdo.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-16T07:02:21.765Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/0o10kze9prt3d.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-16T07:02:21.827Z",
+      "url": "https://qaizen.io/labs/agent-replay?_rsc=w7i_NZLAPqkJR--H",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "fetch"
+    },
+    {
+      "at": "2026-10-16T07:02:21.848Z",
+      "url": "https://qaizen.io/privacy?_rsc=5MaTX99OYo45KQDM",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "fetch"
+    },
+    {
+      "at": "2026-10-16T07:02:21.902Z",
+      "url": "https://qaizen.io/labs/roi-calculator?_rsc=Y4WG4hxhTS_QDffi",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "fetch"
+    },
+    {
+      "at": "2026-10-16T07:02:22.008Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/3w4tcmg4-ew_k.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-16T07:02:22.101Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/2bnhwce2hoyqt.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-16T07:02:22.101Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/3qlcd3bkvphfv.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-16T07:02:22.107Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/1jv8axzc2qe4l.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-16T07:02:22.242Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/0l29jr4_g948g.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-16T07:02:22.245Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/05xw_-sp6ykks.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-16T07:02:22.245Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/3b2btjzh_01cm.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-16T07:02:22.267Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/2r_hv1-idqkab.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-16T07:02:22.305Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/2v0mkb9ct140a.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-16T07:02:22.602Z",
+      "url": "https://qaizen.io/labs/roi-calculator?_rsc=TuuLpNkYWkAPPaKQ",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "fetch"
+    },
+    {
+      "at": "2026-10-16T07:02:22.675Z",
+      "url": "https://qaizen.io/labs/roi-calculator?_rsc=DeKTMmewbI_9wTB1",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "fetch"
+    },
+    {
+      "at": "2026-10-16T07:02:22.889Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/2ma9h8wfz-_gm.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-16T07:02:22.960Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/2mzqgpd6k--rq.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    }
+  ],
+  "requests_failed": [
+    {
+      "at": "2026-10-16T07:02:24.110Z",
+      "url": "https://qaizen.io/api/labs/readiness/event",
+      "method": "POST",
+      "error": "net::ERR_BLOCKED_BY_CLIENT.Inspector"
+    }
+  ],
+  "blocked_mutations": [
+    {
+      "at": "2026-10-16T07:02:24.107Z",
+      "method": "POST",
+      "url": "https://qaizen.io/api/labs/readiness/event",
+      "reason": "Read-only probe policy"
+    }
+  ],
+  "blocked_navigation": [],
+  "route_errors": [],
+  "navigation": [
+    {
+      "at": "2026-10-16T07:02:16.583Z",
+      "url": "https://qaizen.io/labs"
+    },
+    {
+      "at": "2026-10-16T07:02:17.732Z",
+      "url": "https://qaizen.io/labs"
+    },
+    {
+      "at": "2026-10-16T07:02:21.201Z",
+      "url": "https://qaizen.io/labs/readiness-check"
+    }
+  ],
+  "actions": [
+    {
+      "at": "2026-10-16T07:02:19.201Z",
+      "type": "keyboard",
+      "key": "Tab",
+      "active_element": {
+        "tag": "A",
+        "id": "",
+        "text": "Skip to content"
+      },
+      "outcome": "completed"
+    },
+    {
+      "at": "2026-10-16T07:02:19.201Z",
+      "type": "click-if-visible",
+      "role": "button",
+      "name": "Reject",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs"
+    },
+    {
+      "at": "2026-10-16T07:02:20.158Z",
+      "type": "click",
+      "selector": "a[href$='/labs/readiness-check']",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs"
+    },
+    {
+      "at": "2026-10-16T07:02:21.093Z",
+      "type": "assert-url",
+      "url": "https://qaizen.io/labs/readiness-check",
+      "outcome": "completed"
+    },
+    {
+      "at": "2026-10-16T07:02:22.112Z",
+      "type": "snapshot",
+      "label": "introduction",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-16T07:02:23.174Z",
+      "type": "assert-visible",
+      "role": "button",
+      "name": "Start the check",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-16T07:02:24.078Z",
+      "type": "click",
+      "role": "button",
+      "name": "Start the check",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-16T07:02:25.014Z",
+      "type": "assert-visible",
+      "selector": "summary",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-16T07:02:25.919Z",
+      "type": "assert-none-checked",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-16T07:02:26.825Z",
+      "type": "snapshot",
+      "label": "first-question",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-16T07:02:27.929Z",
+      "type": "focus-step",
+      "key": "Tab",
+      "step": 1,
+      "active_element": {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "Every production source and flow is written down, with a named owner"
+      },
+      "reached": false,
+      "outcome": "observed"
+    },
+    {
+      "at": "2026-10-16T07:02:27.940Z",
+      "type": "focus-step",
+      "key": "Tab",
+      "step": 2,
+      "active_element": {
+        "tag": "SUMMARY",
+        "id": "",
+        "text": "What does this mean?"
+      },
+      "reached": true,
+      "outcome": "observed"
+    },
+    {
+      "at": "2026-10-16T07:02:27.911Z",
+      "type": "traverse-focus",
+      "selector": "summary",
+      "max_steps": 24,
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-16T07:02:28.842Z",
+      "type": "keyboard",
+      "key": "Enter",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-16T07:02:29.747Z",
+      "type": "assert-attribute",
+      "selector": "details",
+      "attribute": "open",
+      "value": "",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-16T07:02:30.654Z",
+      "type": "keyboard",
+      "key": "Space",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-16T07:02:31.559Z",
+      "type": "assert-attribute",
+      "selector": "details",
+      "attribute": "open",
+      "value": null,
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-16T07:02:32.524Z",
+      "type": "keyboard",
+      "key": "Enter",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-16T07:02:33.437Z",
+      "type": "assert-attribute",
+      "selector": "details",
+      "attribute": "open",
+      "value": "",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-16T07:02:34.342Z",
+      "type": "snapshot",
+      "label": "help-reopened",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-16T07:02:35.463Z",
+      "type": "focus-step",
+      "key": "Tab",
+      "step": 1,
+      "active_element": {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "Close"
+      },
+      "reached": true,
+      "outcome": "observed"
+    },
+    {
+      "at": "2026-10-16T07:02:35.453Z",
+      "type": "traverse-focus",
+      "role": "button",
+      "name": "Close",
+      "max_steps": 12,
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-16T07:02:36.365Z",
+      "type": "snapshot",
+      "label": "close-keyboard-focus",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-16T07:02:37.464Z",
+      "type": "keyboard",
+      "key": "Enter",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-16T07:02:38.371Z",
+      "type": "assert-focused",
+      "selector": "summary",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-16T07:02:39.275Z",
+      "type": "assert-attribute",
+      "selector": "details",
+      "attribute": "open",
+      "value": null,
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-16T07:02:40.179Z",
+      "type": "snapshot",
+      "label": "help-closed",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-16T07:02:41.267Z",
+      "type": "assert-none-checked",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-16T07:02:42.183Z",
+      "type": "focus-step",
+      "key": "Tab",
+      "step": 1,
+      "active_element": {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "Back"
+      },
+      "reached": true,
+      "outcome": "observed"
+    },
+    {
+      "at": "2026-10-16T07:02:42.174Z",
+      "type": "traverse-focus",
+      "role": "button",
+      "name": "Back",
+      "max_steps": 24,
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-16T07:02:43.091Z",
+      "type": "assert-focused",
+      "role": "button",
+      "name": "Back",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-16T07:02:44.032Z",
+      "type": "snapshot",
+      "label": "back-keyboard-focus",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-16T07:02:45.136Z",
+      "type": "keyboard",
+      "key": "Enter",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-16T07:02:46.053Z",
+      "type": "assert-focused",
+      "selector": "h1",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-16T07:02:46.959Z",
+      "type": "assert-none-checked",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-16T07:02:47.863Z",
+      "type": "assert-visible",
+      "role": "button",
+      "name": "Start the check",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-16T07:02:48.769Z",
+      "type": "assert-hidden",
+      "selector": "summary",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-16T07:02:49.671Z",
+      "type": "snapshot",
+      "label": "returned-introduction",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    }
+  ]
+}

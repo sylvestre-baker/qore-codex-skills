@@ -1,0 +1,8 @@
+{
+  "depth": "entry",
+  "changed_files": [
+    "tools/browser_probe.mjs",
+    "examples/qaizen-labs/browser-actions.json"
+  ],
+  "justification": "Explicit authorized desktop English entry/state review of the sourced Labs journey, not a website source diff. Includes relevant direct/reload/history neighbors; excludes performance and full accessibility certification."
+}

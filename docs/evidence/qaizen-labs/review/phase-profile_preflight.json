@@ -1,0 +1,88 @@
+{
+  "qore_evidence": {
+    "phase_id": "profile_preflight",
+    "observed_at": "2026-10-16T07:21:01.644017+00:00",
+    "candidate_sha256": "0540496cea29da71f72046f36a12c3a23b4d71900c97f7193f4dba699836b036",
+    "target_snapshot_sha256": "59995ed5b982ed1b716f12539c7f22374867926c477811639506f0ac2d4b4003"
+  },
+  "payload": {
+    "schema": "qore-context-check/1",
+    "profile": {
+      "id": "qaizen-labs",
+      "version": "0.1.0",
+      "sha256": "f76afdd45cb6352e5044a06affc4182ea6cd40aa9c012fb216636a61faa428f0"
+    },
+    "method": "review",
+    "coverage": "COMPLETE",
+    "sources": [
+      {
+        "id": "surface",
+        "path": "surface-contract.json",
+        "expected_sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+        "actual_sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+        "current": true
+      },
+      {
+        "id": "checker",
+        "path": "checks/check_contract.py",
+        "expected_sha256": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b",
+        "actual_sha256": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b",
+        "current": true
+      }
+    ],
+    "commands": [
+      {
+        "id": "surface-contract",
+        "argv": [
+          "python3",
+          "-B",
+          "checks/check_contract.py",
+          "surface-contract.json"
+        ],
+        "source": "checker",
+        "applies_to": [
+          "plan",
+          "review"
+        ]
+      }
+    ],
+    "invariants": [
+      {
+        "id": "close-focus",
+        "statement": "Closing question help restores focus to its summary; verify this separately from the application Back transition.",
+        "source": "surface",
+        "applies_to": [
+          "plan",
+          "review",
+          "ux"
+        ]
+      },
+      {
+        "id": "back-focus",
+        "statement": "Reach the application Back control using sequential Tab or Shift+Tab; activate with Enter and verify introduction heading focus. A click or programmatic focus does not prove keyboard reachability.",
+        "source": "surface",
+        "applies_to": [
+          "plan",
+          "review",
+          "ux"
+        ]
+      },
+      {
+        "id": "unanswered-scope",
+        "statement": "Leave the first question unanswered, block all non-GET/HEAD/OPTIONS requests and main-frame/popup navigation outside the allowed origins. Record blocked analytics; do not relax policy for a successful recording.",
+        "source": "surface",
+        "applies_to": [
+          "plan",
+          "review",
+          "ux"
+        ]
+      }
+    ],
+    "surfaces": {},
+    "consumed_source_ids": [
+      "checker",
+      "surface"
+    ],
+    "problems": []
+  }
+}

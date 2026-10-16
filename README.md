@@ -8,7 +8,7 @@ Created by [Sylvestre Franceschi](https://github.com/sylvestre-baker) at [Qaizen
 
 In one actual self-application, planning exposed a malformed verifier option that produced a structural success token. The selected correction rejects it and keeps the earlier zero-finding review visible. [See the problem, evidence, decision and limits](docs/evidence/validator-case.md).
 
-**Version 0.1.0.** Three methods, a deterministic assembler, sourced profiles and recorded executions are included. The [qualification record](docs/qualification.md) distinguishes original snapshots, later corrections and coverage limits. Historical artifacts retain their original release state and identities.
+**Version 0.2.0 candidate — prepared; publication pending.** Three methods, a deterministic assembler, sourced profiles and recorded executions are included. The [qualification record](docs/qualification.md) distinguishes original snapshots, later corrections and coverage limits. Historical artifacts retain their original release state and identities.
 
 ## Choose your task
 
@@ -28,7 +28,7 @@ The first useful result is an actual review of the [bundled validator-hardening 
 
 You need Codex with a local executor and independent subagent capability, plus `python3`, `node`, and Bash. The helpers use Python's standard library and Node built-ins. A browser, persistent project profile, and Qore account are unnecessary for this example. Merely loading a skill or passing a preflight does not complete the review.
 
-Clone the public repository first. Git is needed for this step; an existing checkout can skip it.
+Use this candidate checkout to qualify 0.2.0. The public default branch retains the previously published release until publication. The clone recipe below obtains that published branch; it will obtain this candidate only after the separate publication step. Git is needed for cloning; an existing candidate checkout can skip it.
 
 ```sh
 git clone https://github.com/sylvestre-baker/qore-codex-skills.git
@@ -40,7 +40,7 @@ From the repository directory containing this README, build a new candidate and 
 ```sh
 qore_stage="$(mktemp -d "${TMPDIR:-/tmp}/qore-first.XXXXXX")"
 python3 tools/qore.py build --output "$qore_stage"
-python3 tools/qore.py install --source "$qore_stage/qore-skills-0.1.0" --project-root .
+python3 tools/qore.py install --source "$qore_stage/qore-skills-0.2.0" --project-root .
 ```
 
 The installer prints three paths under `.agents/skills/` and `"replaced": false`. It refuses an existing destination and preserves it. If you already have these local skills, use a fresh checkout or compare a newly staged candidate; see [safe updates](docs/profiles.md#update-without-overwriting).
@@ -70,21 +70,19 @@ Supply the actual target, relevant requirements, and authorized web origin when 
 
 ## See the evidence
 
-[![Qore technical demonstration: three methods and traceable decisions](docs/demo/technical-demo-poster.png)](docs/demo/technical-demo.mp4)
+The [Qaizen Labs case](docs/evidence/qaizen-labs/README.md) shows all three specialized methods acting on one sourced profile. Planning separated Back keyboard reachability, resolved state and focus. Independent review reproduced four distinct coordination helper defects and retained separate post-fix verification. The actual desktop UX run followed the real entry, operated help and returned to the introduction without answering a question.
 
-[Watch the 78-second technical demonstration](docs/demo/technical-demo.mp4) · [English captions](docs/demo/technical-demo.en.vtt) · [Transcript and source chronology](docs/demo/transcript.md). The presentation combines separate actual runs; it is not a simulated continuous session.
+[![Qore Labs demonstration: three methods and one sourced project profile](docs/demo/qaizen-labs/poster.jpg)](docs/demo/qaizen-labs/demo.mp4)
 
-The [validator case](docs/evidence/validator-case.md) connects an observed problem to a selected change and a recorded before/after boundary. The [review after the exact-token correction](docs/evidence/executions/review-exact-flags/REPORT.md) retains its actual independent phases, source revision and limits. The scoped web observations below exercise a different consumer.
+[Watch the 105-second technical demonstration](docs/demo/qaizen-labs/demo.mp4) · [Accessible English transcript](docs/demo/qaizen-labs/transcript.html) · [English captions](docs/demo/qaizen-labs/demo.en.vtt) · [Static showcase preparation](docs/showcase.md). The montage combines separate actual executions. The technical demonstration is separate from a personal application video.
 
-On 15 October 2026, an isolated Playwright Chromium session followed the existing QAIZEN Labs entry to its readiness introduction, opened the first question, opened and closed an explanation with keyboard input, and returned to the introduction with heading focus. No answers or forms were submitted. This supports the declared entry/state path, rather than a whole-site readiness claim. [Observation record and limits](docs/evidence/browser/README.md).
+The [planning report](docs/evidence/qaizen-labs/plan/REPORT.md), [review and corrections](docs/evidence/qaizen-labs/review/REPORT.md), [dated UX observations](docs/evidence/qaizen-labs/ux/REPORT.md) and [actual PM acceptance](docs/evidence/qaizen-labs/coordination/README.md) connect the problem to a supported decision and explicit limits. The keyboard coverage gap was already known and concerned the protocol; it was not a newly discovered website bug.
 
-[![Observed first-question state on the existing QAIZEN Labs readiness page](docs/evidence/browser/qaizen-question.png)](docs/evidence/browser/qaizen-demo-captioned.mp4)
-
-[Watch the actual captioned recording](docs/evidence/browser/qaizen-demo-captioned.mp4) · [Read the transcript](docs/evidence/browser/qaizen-transcript.md) · [English captions](docs/evidence/browser/qaizen-demo.en.vtt) · [Capability matrix](docs/evidence/browser/capability-matrix.json) · [Transformation provenance](docs/evidence/browser/provenance.json)
-
-Navigation, screenshots, DOM inspection, keyboard input, console listening, and network observation were exercised in that recorded environment. Full UX coverage remains PARTIAL: instrumented accessibility, performance, alternate viewports, and the complete question/result/error matrix were not tested. One analytics POST was blocked by the observation harness and is retained in the evidence. The recording is a maintainer-operated agent observation, not external human usability evidence.
+Browser evidence covers one desktop English entry/state flow. It does not establish whole-site readiness, instrumented accessibility conformance, performance or external human usability. One analytics POST was blocked and recorded. Linux source review ran without a browser driver; its skipped browser checks are not passes. The [earlier validator case](docs/evidence/validator-case.md) and [0.1.0 execution record](docs/qualification.md) retain their original identities.
 
 ## Adapt all three methods from one profile
+
+The 0.2.0 candidate adds [the Qaizen Labs project case](examples/qaizen-labs/README.md): a public journey contract, one maintained profile and a keyboard verification correction. All three specialized methods have actual phase evidence; the final candidate documentation and release checks remain separately recorded. The optional [PM/production workflow](docs/coordination.md) uses a private register and criteria-bound completion; its [transport limitations](docs/coordination-dependencies.md) remain explicit.
 
 A reusable project adaptation binds the methods to sourced commands, invariants, and a web target. Every fact names a project source and its SHA-256. The included [Qore profile](profiles/qore.json) applies to this repository; the [contrasting fixture profile](profiles/contrast.json) exercises isolation and different facts.
 
@@ -132,5 +130,7 @@ If a role or required browser capability is unavailable, retain its name and evi
 ## License and provenance
 
 The newly authored implementation and documentation use the [MIT license](LICENSE), maintained by Sylvestre Franceschi. The [provenance record](PROVENANCE.md) and explicit release rights inventory identify the scope of selected public observations and first-party resources. Private client distributions and their Git histories are excluded.
+
+The optional static page is prepared locally; its workflow requires an explicit publication dispatch from main. No new release or page is deployed by preparation.
 
 First-party repository content is maintained in English. External quotations, rendered evidence and protocol tokens retain their source identity. Publication and any external application remain separate actions.

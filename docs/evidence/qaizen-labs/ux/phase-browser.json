@@ -1,0 +1,99 @@
+{
+  "qore_evidence": {
+    "candidate_sha256": "0540496cea29da71f72046f36a12c3a23b4d71900c97f7193f4dba699836b036",
+    "target_snapshot_sha256": "79274c87faf55cfe33aa597545b37fa0f7525e51bfe558025763d11b172bd98b",
+    "observed_at": "2026-10-16T07:08:04.533722+00:00",
+    "phase_id": "browser"
+  },
+  "payload": {
+    "commands": [
+      {
+        "argv": [
+          "node",
+          "<workspace>/qore-skills/tools/browser_probe.mjs",
+          "--url",
+          "https://qaizen.io/labs",
+          "--output",
+          "<workspace>/research/qore002-implementation-20261016/methods/ux/iteration-1-journey",
+          "--actions",
+          "<workspace>/qore-skills/examples/qaizen-labs/browser-actions.json",
+          "--policy",
+          "<workspace>/qore-skills/examples/qaizen-labs/observation-policy.json",
+          "--playwright-module",
+          "<PLAYWRIGHT_MODULE>",
+          "--label",
+          "Derived qaizen-labs UX iteration 1: journey"
+        ],
+        "cwd": "<workspace>/qore-skills",
+        "exit_code": 0,
+        "result": "iteration-1-journey/result.json"
+      },
+      {
+        "argv": [
+          "node",
+          "<workspace>/qore-skills/tools/browser_probe.mjs",
+          "--url",
+          "https://qaizen.io/labs/readiness-check",
+          "--output",
+          "<workspace>/research/qore002-implementation-20261016/methods/ux/iteration-1-direct-history",
+          "--actions",
+          "<workspace>/research/qore002-implementation-20261016/methods/ux/direct-history-actions.json",
+          "--policy",
+          "<workspace>/qore-skills/examples/qaizen-labs/observation-policy.json",
+          "--playwright-module",
+          "<PLAYWRIGHT_MODULE>",
+          "--label",
+          "Derived qaizen-labs UX iteration 1: direct-history"
+        ],
+        "cwd": "<workspace>/qore-skills",
+        "exit_code": 0,
+        "result": "iteration-1-direct-history/result.json"
+      }
+    ],
+    "capabilities": {
+      "navigation": {
+        "status": "OBSERVED",
+        "evidence": "events.json#/navigation",
+        "entry_status": 200
+      },
+      "screenshot": {
+        "status": "OBSERVED",
+        "evidence": "08-final.png"
+      },
+      "dom": {
+        "status": "OBSERVED",
+        "evidence": "08-final.dom.json"
+      },
+      "keyboard": {
+        "status": "OBSERVED",
+        "key": "Tab",
+        "active_element": {
+          "tag": "A",
+          "id": "",
+          "text": "Skip to content"
+        },
+        "evidence": "events.json#/actions/0"
+      },
+      "console": {
+        "status": "OBSERVED",
+        "evidence": "events.json#/console",
+        "note": "Listener attached before entry navigation; an empty list means no emitted events were observed."
+      },
+      "network": {
+        "status": "OBSERVED",
+        "evidence": "events.json#/network"
+      }
+    },
+    "driver": {
+      "name": "Playwright Chromium",
+      "node": "v22.23.3",
+      "version": "1.62.1",
+      "browser_version": "151.0.7922.34"
+    },
+    "result_files": [
+      "iteration-1-journey/result.json",
+      "iteration-1-direct-history/result.json"
+    ],
+    "guard_limit": "HTTP document redirects are refused before following, including same-origin redirects; no such redirect was required by these live runs."
+  }
+}

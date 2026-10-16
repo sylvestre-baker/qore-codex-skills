@@ -1,0 +1,221 @@
+{
+  "skip": {
+    "active": "BODY",
+    "id": ""
+  },
+  "tabSequence": [
+    {
+      "tag": "A",
+      "text": "See the real example"
+    },
+    {
+      "tag": "A",
+      "text": "Try the published review example"
+    },
+    {
+      "tag": "A",
+      "text": "Read the planning report (Markdown)"
+    },
+    {
+      "tag": "A",
+      "text": "Read the review report (Markdown)"
+    },
+    {
+      "tag": "A",
+      "text": "Read the UX report (Markdown)"
+    },
+    {
+      "tag": "VIDEO",
+      "text": "Your browser cannot play this video. Use the transcript and "
+    },
+    {
+      "tag": "VIDEO",
+      "text": "Your browser cannot play this video. Use the transcript and "
+    },
+    {
+      "tag": "VIDEO",
+      "text": "Your browser cannot play this video. Use the transcript and "
+    },
+    {
+      "tag": "VIDEO",
+      "text": "Your browser cannot play this video. Use the transcript and "
+    },
+    {
+      "tag": "VIDEO",
+      "text": "Your browser cannot play this video. Use the transcript and "
+    },
+    {
+      "tag": "A",
+      "text": "Read the complete transcript"
+    },
+    {
+      "tag": "A",
+      "text": "Download MP4"
+    },
+    {
+      "tag": "PRE",
+      "text": "python3 tools/qore.py derive \\\n  --profile profiles/qaizen-l"
+    },
+    {
+      "tag": "A",
+      "text": "The resulting specification and acceptance criteria (Markdow"
+    },
+    {
+      "tag": "A",
+      "text": "Required UX checks mapped to fresh observations (JSON)"
+    },
+    {
+      "tag": "A",
+      "text": "Original independently verified findings (JSON)"
+    },
+    {
+      "tag": "A",
+      "text": "Separate post-fix verification (Markdown)"
+    },
+    {
+      "tag": "A",
+      "text": "Actual PM / production / reviewer exchanges and limits (Mark"
+    },
+    {
+      "tag": "A",
+      "text": "Candidate identities, provenance and remaining limits (Markd"
+    },
+    {
+      "tag": "A",
+      "text": "Read the repository"
+    },
+    {
+      "tag": "A",
+      "text": "Visit the observed public Labs entry"
+    },
+    {
+      "tag": "BODY",
+      "text": "Skip to content\nQore / Codex skillsThe caseSpecializeEvidenc"
+    },
+    {
+      "tag": "A",
+      "text": "Skip to content"
+    },
+    {
+      "tag": "A",
+      "text": "Qore / Codex skills"
+    },
+    {
+      "tag": "A",
+      "text": "The case"
+    },
+    {
+      "tag": "A",
+      "text": "Specialize"
+    },
+    {
+      "tag": "A",
+      "text": "Evidence"
+    },
+    {
+      "tag": "A",
+      "text": "GitHub"
+    },
+    {
+      "tag": "A",
+      "text": "See the real example"
+    },
+    {
+      "tag": "A",
+      "text": "Try the published review example"
+    },
+    {
+      "tag": "A",
+      "text": "Read the planning report (Markdown)"
+    },
+    {
+      "tag": "A",
+      "text": "Read the review report (Markdown)"
+    },
+    {
+      "tag": "A",
+      "text": "Read the UX report (Markdown)"
+    },
+    {
+      "tag": "VIDEO",
+      "text": "Your browser cannot play this video. Use the transcript and "
+    },
+    {
+      "tag": "VIDEO",
+      "text": "Your browser cannot play this video. Use the transcript and "
+    },
+    {
+      "tag": "VIDEO",
+      "text": "Your browser cannot play this video. Use the transcript and "
+    },
+    {
+      "tag": "VIDEO",
+      "text": "Your browser cannot play this video. Use the transcript and "
+    },
+    {
+      "tag": "VIDEO",
+      "text": "Your browser cannot play this video. Use the transcript and "
+    },
+    {
+      "tag": "A",
+      "text": "Read the complete transcript"
+    },
+    {
+      "tag": "A",
+      "text": "Download MP4"
+    }
+  ],
+  "preBefore": {
+    "left": 0,
+    "scroll": 393,
+    "width": 285,
+    "outline": "rgb(0, 95, 204) auto 1px"
+  },
+  "preAfter": 40,
+  "evidenceIndexLinks": [
+    {
+      "href": "../../../profiles/qaizen-labs.json",
+      "url": "http://127.0.0.1:63781/profiles/qaizen-labs.json",
+      "status": 404
+    },
+    {
+      "href": "plan/REPORT.md",
+      "url": "http://127.0.0.1:63781/qore-codex-skills/evidence/plan/REPORT.md",
+      "status": 200
+    },
+    {
+      "href": "review/REPORT.md",
+      "url": "http://127.0.0.1:63781/qore-codex-skills/evidence/review/REPORT.md",
+      "status": 200
+    },
+    {
+      "href": "ux/REPORT.md",
+      "url": "http://127.0.0.1:63781/qore-codex-skills/evidence/ux/REPORT.md",
+      "status": 200
+    },
+    {
+      "href": "coordination/README.md",
+      "url": "http://127.0.0.1:63781/qore-codex-skills/evidence/coordination/README.md",
+      "status": 200
+    },
+    {
+      "href": "../../demo/qaizen-labs/README.md",
+      "url": "http://127.0.0.1:63781/demo/qaizen-labs/README.md",
+      "status": 404
+    },
+    {
+      "href": "../../showcase.md",
+      "url": "http://127.0.0.1:63781/showcase.md",
+      "status": 404
+    },
+    {
+      "href": "../../coordination-dependencies.md",
+      "url": "http://127.0.0.1:63781/coordination-dependencies.md",
+      "status": 404
+    }
+  ],
+  "failedVideo": {
+    "figcaption": "Technical demonstration: separate actual executions assembled into one presentation. Silent video with English captions. Read the complete transcript · Download MP4. If playback is unavailable, the complete case remains readable on this page.",
+    "bodyText": 4676
+  }
+}

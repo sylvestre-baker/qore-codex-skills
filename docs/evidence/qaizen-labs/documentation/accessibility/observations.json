@@ -1,0 +1,416 @@
+{
+  "url": "http://127.0.0.1:63723/qore-codex-skills/",
+  "checks": {
+    "desktop": {
+      "width": 1280,
+      "scroll": 1280,
+      "text": "Skip to content\nQore / Codex skills\nThe case\nSpecialize\nEvidence\nGitHub\n\nCREATED BY SYLVESTRE FRANCESCHI AT QAIZEN\n\nUse your project’s rules.\nShow what was checked.\n\nThree independent Codex skills for planning a change, challenging a specification and observing a web flow. One sourced project profile produces three specialized skills.\n\n0.2.0 candidate · Local preparation · Publication is a separate step\n\nSee the real example Try the published review example\n\nONE EXISTING PROJECT\n\nCan the Labs journey really be checked with a keyboard?\n\nQaizen Labs already has a public readiness flow. An earlier protocol could accept a mouse click on Back as evidence of a keyboard check. That was a gap in our",
+      "title": "Qore — From project rules to checkable decisions",
+      "language": "en",
+      "video": {
+        "duration": 104.88,
+        "ready": 4,
+        "tracks": [
+          {
+            "kind": "captions",
+            "mode": "showing",
+            "cues": 10
+          }
+        ]
+      }
+    },
+    "focus": [
+      {
+        "tag": "A",
+        "text": "Skip to content",
+        "outline": "rgb(177, 68, 16) solid 3px",
+        "width": 134.359375,
+        "x": 16,
+        "y": 16
+      },
+      {
+        "tag": "A",
+        "text": "Qore / Codex skills",
+        "outline": "rgb(177, 68, 16) solid 3px",
+        "width": 139.5,
+        "x": 90,
+        "y": 24
+      },
+      {
+        "tag": "A",
+        "text": "The case",
+        "outline": "rgb(177, 68, 16) solid 3px",
+        "width": 60.1875,
+        "x": 889.09375,
+        "y": 30.59375
+      },
+      {
+        "tag": "A",
+        "text": "Specialize",
+        "outline": "rgb(177, 68, 16) solid 3px",
+        "width": 66.90625,
+        "x": 971.671875,
+        "y": 30.59375
+      },
+      {
+        "tag": "A",
+        "text": "Evidence",
+        "outline": "rgb(177, 68, 16) solid 3px",
+        "width": 60.25,
+        "x": 1060.96875,
+        "y": 30.59375
+      },
+      {
+        "tag": "A",
+        "text": "GitHub",
+        "outline": "rgb(177, 68, 16) solid 3px",
+        "width": 46.390625,
+        "x": 1143.609375,
+        "y": 30.59375
+      },
+      {
+        "tag": "A",
+        "text": "See the real example",
+        "outline": "rgb(177, 68, 16) solid 3px",
+        "width": 200.3125,
+        "x": 90,
+        "y": 553.375
+      },
+      {
+        "tag": "A",
+        "text": "Try the published review example",
+        "outline": "rgb(177, 68, 16) solid 3px",
+        "width": 253.734375,
+        "x": 307.46875,
+        "y": 564.5625
+      },
+      {
+        "tag": "A",
+        "text": "Read the planning report (Markdown)",
+        "outline": "rgb(177, 68, 16) solid 3px",
+        "width": 246.625,
+        "x": 90,
+        "y": 1241.78125
+      }
+    ],
+    "playback": {
+      "time": 0.352434,
+      "paused": true,
+      "duration": 104.88,
+      "tracks": [
+        {
+          "mode": "showing",
+          "cues": 10,
+          "active": 1
+        }
+      ]
+    },
+    "narrow": {
+      "width": 320,
+      "scroll": 320,
+      "overflow": [
+        {
+          "tag": "CODE",
+          "cls": "",
+          "w": 362.203125,
+          "x": 33.59375
+        }
+      ]
+    },
+    "selectable": "python3 tools/qore.py derive \\\n  --profile profiles/qaizen-labs.json \\\n  --project-root examples/qaizen-labs \\\n  --output /tmp/qore-labs-new\npython3 tools/qore.py verify /tmp/qore-labs-new",
+    "zoomApprox": {
+      "method": "CSS zoom:2, not actual browser zoom",
+      "viewport": 1280,
+      "scroll": 1280,
+      "bodyWidth": 1280
+    },
+    "reducedMotion": {
+      "matches": true,
+      "scrollBehavior": "auto"
+    },
+    "nojs": {
+      "h1": "Use your project’s rules.\nShow what was checked.",
+      "bodyCharacters": 4676,
+      "transcriptHref": "media/transcript.html"
+    },
+    "localLinks": [
+      {
+        "href": "evidence/plan/REPORT.md",
+        "status": 200
+      },
+      {
+        "href": "evidence/review/REPORT.md",
+        "status": 200
+      },
+      {
+        "href": "evidence/ux/REPORT.md",
+        "status": 200
+      },
+      {
+        "href": "media/transcript.html",
+        "status": 200
+      },
+      {
+        "href": "media/demo.mp4",
+        "status": 200
+      },
+      {
+        "href": "evidence/plan/result/verification-spec.md",
+        "status": 200
+      },
+      {
+        "href": "evidence/ux/gate-evidence.json",
+        "status": 200
+      },
+      {
+        "href": "evidence/review/verified.json",
+        "status": 200
+      },
+      {
+        "href": "evidence/review/fix-verifier/REPORT.md",
+        "status": 200
+      },
+      {
+        "href": "evidence/coordination/README.md",
+        "status": 200
+      },
+      {
+        "href": "evidence/README.md",
+        "status": 200
+      }
+    ],
+    "transcript": {
+      "title": "Qore Labs demonstration transcript",
+      "h1": "Three methods, one sourced project profile",
+      "rows": 7
+    }
+  },
+  "sources": [
+    {
+      "path": "<workspace>/research/qore002-implementation-20261016/site-draft/index.html",
+      "sha256": "1154fd0d7b77da6f0a1c3ead0ef45b2e62231f9c46418273c2bf6b6d179c7337",
+      "bytes": 7334,
+      "newlines": 24,
+      "literalNewlines": 0
+    },
+    {
+      "path": "<workspace>/research/qore002-implementation-20261016/site-draft/styles.css",
+      "sha256": "1bdc47446d2b60e8d5544ea2eb3e4b666b0728263b18d6ab9bf1d2ace4d616a6",
+      "bytes": 2997,
+      "newlines": 1,
+      "literalNewlines": 0
+    },
+    {
+      "path": "<workspace>/research/qore002-implementation-20261016/site-draft/media/transcript.html",
+      "sha256": "4433ad0b3a4fb9c65970ad3089f2b9e783936ece83eaf0dd62a025f0ce1f7a3f",
+      "bytes": 2798,
+      "newlines": 0,
+      "literalNewlines": 0
+    },
+    {
+      "path": "<workspace>/research/qore002-implementation-20261016/site-draft/media/demo.en.vtt",
+      "sha256": "2483382e483d1d455aa8cac831e00ba72d03e6e94056fd5f82d4509201c753b8",
+      "bytes": 1554,
+      "newlines": 41,
+      "literalNewlines": 0
+    },
+    {
+      "path": "<workspace>/research/qore002-implementation-20261016/site-draft/media/demo.mp4",
+      "sha256": "988e81758ef725addf9c4da2b0b4e28f01189aaa069a28136f96af582c855973",
+      "bytes": 1381294,
+      "newlines": 5498,
+      "literalNewlines": 25
+    },
+    {
+      "path": "<workspace>/research/qore002-implementation-20261016/docs-build/qore-skills-0.2.0/README.md",
+      "sha256": "9bf7f7d805d655ee38657f831b0435f09d218f7acd9f4988e20b0d76499ea538",
+      "bytes": 13702,
+      "newlines": 136,
+      "literalNewlines": 0
+    },
+    {
+      "path": "<workspace>/research/qore002-implementation-20261016/docs-build/qore-skills-0.2.0/showcase/index.html",
+      "sha256": "1154fd0d7b77da6f0a1c3ead0ef45b2e62231f9c46418273c2bf6b6d179c7337",
+      "bytes": 7334,
+      "newlines": 24,
+      "literalNewlines": 0
+    },
+    {
+      "path": "<workspace>/research/qore002-implementation-20261016/docs-build/qore-skills-0.2.0/docs/showcase.md",
+      "sha256": "b2d702c38c1a8f408c8516be5819aadc21cad0fa00053e95bbf2f3278f14035e",
+      "bytes": 1947,
+      "newlines": 18,
+      "literalNewlines": 0
+    }
+  ],
+  "readmeLocalLinks": [
+    {
+      "href": "docs/evidence/validator-case.md",
+      "exists": true
+    },
+    {
+      "href": "docs/qualification.md",
+      "exists": true
+    },
+    {
+      "href": "examples/validator-hardening.md",
+      "exists": true
+    },
+    {
+      "href": "docs/profiles.md#update-without-overwriting",
+      "exists": true
+    },
+    {
+      "href": "docs/troubleshooting.md",
+      "exists": true
+    },
+    {
+      "href": "docs/evidence/qaizen-labs/README.md",
+      "exists": true
+    },
+    {
+      "href": "docs/demo/qaizen-labs/poster.jpg",
+      "exists": true
+    },
+    {
+      "href": "docs/demo/qaizen-labs/demo.mp4",
+      "exists": true
+    },
+    {
+      "href": "docs/demo/qaizen-labs/demo.mp4",
+      "exists": true
+    },
+    {
+      "href": "docs/demo/qaizen-labs/transcript.html",
+      "exists": true
+    },
+    {
+      "href": "docs/demo/qaizen-labs/demo.en.vtt",
+      "exists": true
+    },
+    {
+      "href": "docs/showcase.md",
+      "exists": true
+    },
+    {
+      "href": "docs/evidence/qaizen-labs/plan/REPORT.md",
+      "exists": true
+    },
+    {
+      "href": "docs/evidence/qaizen-labs/review/REPORT.md",
+      "exists": true
+    },
+    {
+      "href": "docs/evidence/qaizen-labs/ux/REPORT.md",
+      "exists": true
+    },
+    {
+      "href": "docs/evidence/qaizen-labs/coordination/README.md",
+      "exists": true
+    },
+    {
+      "href": "docs/evidence/validator-case.md",
+      "exists": true
+    },
+    {
+      "href": "docs/qualification.md",
+      "exists": true
+    },
+    {
+      "href": "examples/qaizen-labs/README.md",
+      "exists": true
+    },
+    {
+      "href": "docs/coordination.md",
+      "exists": true
+    },
+    {
+      "href": "docs/coordination-dependencies.md",
+      "exists": true
+    },
+    {
+      "href": "profiles/qore.json",
+      "exists": true
+    },
+    {
+      "href": "profiles/contrast.json",
+      "exists": true
+    },
+    {
+      "href": "docs/profiles.md",
+      "exists": true
+    },
+    {
+      "href": "docs/qualification.md",
+      "exists": true
+    },
+    {
+      "href": "docs/clean-environment.md",
+      "exists": true
+    },
+    {
+      "href": "docs/profiles.md#update-without-overwriting",
+      "exists": true
+    },
+    {
+      "href": "docs/troubleshooting.md",
+      "exists": true
+    },
+    {
+      "href": "CHANGELOG.md",
+      "exists": true
+    },
+    {
+      "href": "docs/publication.md",
+      "exists": true
+    },
+    {
+      "href": "docs/architecture.md",
+      "exists": true
+    },
+    {
+      "href": "docs/contracts.md",
+      "exists": true
+    },
+    {
+      "href": "docs/command-inventory.json",
+      "exists": true
+    },
+    {
+      "href": "docs/troubleshooting.md",
+      "exists": true
+    },
+    {
+      "href": "skills/qore-plan/SKILL.md",
+      "exists": true
+    },
+    {
+      "href": "skills/qore-review/SKILL.md",
+      "exists": true
+    },
+    {
+      "href": "skills/qore-ux-review/SKILL.md",
+      "exists": true
+    },
+    {
+      "href": "CONTRIBUTING.md",
+      "exists": true
+    },
+    {
+      "href": "PROVENANCE.md",
+      "exists": true
+    },
+    {
+      "href": "LICENSE",
+      "exists": true
+    },
+    {
+      "href": "LICENSE",
+      "exists": true
+    },
+    {
+      "href": "PROVENANCE.md",
+      "exists": true
+    }
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "schema": "qore-public-transformation/1",
+  "artifacts": [
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/plan/adjudication.md",
+      "raw_sha256": "595bd57845b5516fb5e0d3308bb579f4f8afeb555c0b6c8317309c983569403e",
+      "path": "adjudication.md",
+      "public_sha256": "595bd57845b5516fb5e0d3308bb579f4f8afeb555c0b6c8317309c983569403e",
+      "transformation": "Normalize private workspace prefix to <workspace>; no other content changes"
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/plan/run.json",
+      "raw_sha256": "9d329e3347ab77c08cbb5376470813d6076b8c60dbdd7661a2ffc41fa1a4336b",
+      "path": "run.json",
+      "public_sha256": "31b66b936e7360830c83f67b90066ea0a64bfd1bc172770c9ee01088fba03e30",
+      "transformation": "Normalize private workspace prefix to <workspace>; no other content changes; public run ID, artifact digests and explicit normalization limit"
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/plan/run-validation.json",
+      "raw_sha256": "f578dd884673f6cd5f5a9eeb1f6865f3c7cba588b748d4ae88497d9326a0d603",
+      "path": "run-validation.json",
+      "public_sha256": "f578dd884673f6cd5f5a9eeb1f6865f3c7cba588b748d4ae88497d9326a0d603",
+      "transformation": "Normalize private workspace prefix to <workspace>; no other content changes"
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/plan/spec-validation.json",
+      "raw_sha256": "111584fade3e6c869dbdb602f119afaac4da54c9dfc64a12f6ffbc292896195f",
+      "path": "spec-validation.json",
+      "public_sha256": "111584fade3e6c869dbdb602f119afaac4da54c9dfc64a12f6ffbc292896195f",
+      "transformation": "Normalize private workspace prefix to <workspace>; no other content changes"
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/plan/profile-preflight.json",
+      "raw_sha256": "ce277866cb52287b7b63ef4d17e7a06bd47ea24daa86d195bc7470f2f07bf0e8",
+      "path": "profile-preflight.json",
+      "public_sha256": "ce277866cb52287b7b63ef4d17e7a06bd47ea24daa86d195bc7470f2f07bf0e8",
+      "transformation": "Normalize private workspace prefix to <workspace>; no other content changes"
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/plan/analyze/product.md",
+      "raw_sha256": "3e4d7061c7a0db0213853696ac93f72901018f70731c7d7b864e3de147176081",
+      "path": "analyze/product.md",
+      "public_sha256": "3e4d7061c7a0db0213853696ac93f72901018f70731c7d7b864e3de147176081",
+      "transformation": "Normalize private workspace prefix to <workspace>; no other content changes"
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/plan/analyze/architecture.md",
+      "raw_sha256": "98af917773ec308e53431766f5a59c799f2fb7a80deeac33d23be47c89d3bf7f",
+      "path": "analyze/architecture.md",
+      "public_sha256": "98af917773ec308e53431766f5a59c799f2fb7a80deeac33d23be47c89d3bf7f",
+      "transformation": "Normalize private workspace prefix to <workspace>; no other content changes"
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/plan/analyze/ux.md",
+      "raw_sha256": "f8844dd28108cb4680d3dbdffac531b538c71bae32941ca529c1aaf824f12b8d",
+      "path": "analyze/ux.md",
+      "public_sha256": "f8844dd28108cb4680d3dbdffac531b538c71bae32941ca529c1aaf824f12b8d",
+      "transformation": "Normalize private workspace prefix to <workspace>; no other content changes"
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/plan/analyze/delivery.md",
+      "raw_sha256": "5efd015047c0b7421a237e78f8c5317cd2524b5350d23c65c49651e4457ebc5d",
+      "path": "analyze/delivery.md",
+      "public_sha256": "5efd015047c0b7421a237e78f8c5317cd2524b5350d23c65c49651e4457ebc5d",
+      "transformation": "Normalize private workspace prefix to <workspace>; no other content changes"
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/plan/analyze/qa.md",
+      "raw_sha256": "e9e14d9160d6b3aa74cef997712298cea40452610c45b4ee9ce6658e12ddbad7",
+      "path": "analyze/qa.md",
+      "public_sha256": "e9e14d9160d6b3aa74cef997712298cea40452610c45b4ee9ce6658e12ddbad7",
+      "transformation": "Normalize private workspace prefix to <workspace>; no other content changes"
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/plan/challenge/product.md",
+      "raw_sha256": "b2a5f45df8d4061bc7de470849f1d6e60f97405874181c03a66f0843524aac13",
+      "path": "challenge/product.md",
+      "public_sha256": "b2a5f45df8d4061bc7de470849f1d6e60f97405874181c03a66f0843524aac13",
+      "transformation": "Normalize private workspace prefix to <workspace>; no other content changes"
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/plan/challenge/architecture.md",
+      "raw_sha256": "e729a07c34c7bf47274cefb1254981f52c1b1c71851b1785115e0501fda5df7f",
+      "path": "challenge/architecture.md",
+      "public_sha256": "e729a07c34c7bf47274cefb1254981f52c1b1c71851b1785115e0501fda5df7f",
+      "transformation": "Normalize private workspace prefix to <workspace>; no other content changes"
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/plan/challenge/ux.md",
+      "raw_sha256": "2615aae21535508708f081db9adfa6620d083d2347e58671eff9193719769baa",
+      "path": "challenge/ux.md",
+      "public_sha256": "2615aae21535508708f081db9adfa6620d083d2347e58671eff9193719769baa",
+      "transformation": "Normalize private workspace prefix to <workspace>; no other content changes"
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/plan/challenge/delivery.md",
+      "raw_sha256": "154f83afb103897d8189a123f6cc589d1bd40b74f74353f49c0d3b2cfbfecfa3",
+      "path": "challenge/delivery.md",
+      "public_sha256": "154f83afb103897d8189a123f6cc589d1bd40b74f74353f49c0d3b2cfbfecfa3",
+      "transformation": "Normalize private workspace prefix to <workspace>; no other content changes"
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/plan/challenge/qa.md",
+      "raw_sha256": "57372c084a8d658e628811258a0dcfc0d897e1a766455d386f3d5c6a8edc697f",
+      "path": "challenge/qa.md",
+      "public_sha256": "57372c084a8d658e628811258a0dcfc0d897e1a766455d386f3d5c6a8edc697f",
+      "transformation": "Normalize private workspace prefix to <workspace>; no other content changes"
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/plan/phase-adjudication.json",
+      "raw_sha256": "73af5496a511bc02a1c745b10238414b022240cf2a3547592236a0a879579546",
+      "path": "phase-adjudication.json",
+      "public_sha256": "73af5496a511bc02a1c745b10238414b022240cf2a3547592236a0a879579546",
+      "transformation": "Normalize private workspace prefix to <workspace>; no other content changes"
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/plan/phase-architecture.json",
+      "raw_sha256": "ea5187ba79a352674a2dc70926d066c4478e8bd6db23e7e1bbe88b37526a941a",
+      "path": "phase-architecture.json",
+      "public_sha256": "ea5187ba79a352674a2dc70926d066c4478e8bd6db23e7e1bbe88b37526a941a",
+      "transformation": "Normalize private workspace prefix to <workspace>; no other content changes"
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/plan/phase-delivery.json",
+      "raw_sha256": "c83f313cc42a247ea1797ce2fd2a70aeaa073dae973f354cf9b521a433f77256",
+      "path": "phase-delivery.json",
+      "public_sha256": "c83f313cc42a247ea1797ce2fd2a70aeaa073dae973f354cf9b521a433f77256",
+      "transformation": "Normalize private workspace prefix to <workspace>; no other content changes"
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/plan/phase-product.json",
+      "raw_sha256": "9637a01bfe3198ab27b2e7e3d44f555db0df6891183bf9c9cb34fa5a6c90b5af",
+      "path": "phase-product.json",
+      "public_sha256": "9637a01bfe3198ab27b2e7e3d44f555db0df6891183bf9c9cb34fa5a6c90b5af",
+      "transformation": "Normalize private workspace prefix to <workspace>; no other content changes"
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/plan/phase-profile_preflight.json",
+      "raw_sha256": "35c268adcf635196e7bb6b2942c9dbb4620d1eadf9a4f9b65a32b8568f7c112a",
+      "path": "phase-profile_preflight.json",
+      "public_sha256": "35c268adcf635196e7bb6b2942c9dbb4620d1eadf9a4f9b65a32b8568f7c112a",
+      "transformation": "Normalize private workspace prefix to <workspace>; no other content changes"
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/plan/phase-qa.json",
+      "raw_sha256": "dd5f97c2dfffd09bceee102cce3798a3e614983b1ff72fb820bbb0b061739c38",
+      "path": "phase-qa.json",
+      "public_sha256": "dd5f97c2dfffd09bceee102cce3798a3e614983b1ff72fb820bbb0b061739c38",
+      "transformation": "Normalize private workspace prefix to <workspace>; no other content changes"
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/plan/phase-spec_validation.json",
+      "raw_sha256": "28db5a2f7fc4c0412eeae4a78a3e323e2a30786dab0e4e1745a22cd89bf0c828",
+      "path": "phase-spec_validation.json",
+      "public_sha256": "28db5a2f7fc4c0412eeae4a78a3e323e2a30786dab0e4e1745a22cd89bf0c828",
+      "transformation": "Normalize private workspace prefix to <workspace>; no other content changes"
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/plan/phase-ux.json",
+      "raw_sha256": "7dca3b1c840cb7662c2ca1f1e35e505a2369e32233c18235fbc01330b5f49fb0",
+      "path": "phase-ux.json",
+      "public_sha256": "7dca3b1c840cb7662c2ca1f1e35e505a2369e32233c18235fbc01330b5f49fb0",
+      "transformation": "Normalize private workspace prefix to <workspace>; no other content changes"
+    },
+    {
+      "private_ref": "qore-private:qore002-implementation-20261016/methods/plan/result/verification-spec.md",
+      "raw_sha256": "cea72a50acaeecf8666327aa740a39b7abcb09d0bd5d989c72217f066fc2105f",
+      "path": "result/verification-spec.md",
+      "public_sha256": "cea72a50acaeecf8666327aa740a39b7abcb09d0bd5d989c72217f066fc2105f",
+      "transformation": "Normalize private workspace prefix to <workspace>; no other content changes"
+    }
+  ],
+  "selection": "Only newly authored English reports and phase receipts based on the public planning input. No agent/mail raw traces or private website source.",
+  "note": "This is a presentation transformation of the same executed phases; it is not a new execution."
+}

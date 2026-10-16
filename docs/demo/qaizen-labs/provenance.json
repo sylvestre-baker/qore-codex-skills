@@ -1,0 +1,39 @@
+{
+  "schema": "qore-media-transformation/1",
+  "source_video_private_ref": "qore-private:qore002-implementation-20261016/methods/ux/iteration-1-journey/video/page@d35d42ba4b5262f481add5602729bc3f.webm",
+  "source_video_sha256": "d6f9d552c199e4783b48524ba5fb96b8089735288a08a60d8daacd3046cc1cea",
+  "output_sha256": "988e81758ef725addf9c4da2b0b4e28f01189aaa069a28136f96af582c855973",
+  "transform": "Selected English evidence summaries rendered from actual profile/method/transport receipts. Main browser video retained at original speed, scaled with side padding, silent H.264 MP4. Separate runs assembled, no continuous-session claim. Raw trace/video not automatically exported.",
+  "timeline_seconds": {
+    "intro": [
+      0,
+      8
+    ],
+    "profile": [
+      8,
+      20
+    ],
+    "plan": [
+      20,
+      32
+    ],
+    "review": [
+      32,
+      44
+    ],
+    "case_coordination": [
+      44,
+      56
+    ],
+    "actual_ux": [
+      56,
+      96.88
+    ],
+    "limits": [
+      96.88,
+      104.88
+    ]
+  },
+  "displayed_material": "More than half is actual profile/output summaries and the recorded interaction. Explanatory intro/limits are 16 seconds.",
+  "source_note": "Coordination segment concerns QORE002-LABS-001. The case was already in progress when PM tracking began; no productivity causation is asserted."
+}

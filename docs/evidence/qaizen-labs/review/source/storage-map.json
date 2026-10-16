@@ -1,0 +1,22 @@
+[
+  {
+    "original_path": "README.md",
+    "stored_as": "README.md.txt",
+    "transformation": "Exact bytes; filename extension changed to retain historical relative links as source text."
+  },
+  {
+    "original_path": "docs/coordination.md",
+    "stored_as": "docs/coordination.md.txt",
+    "transformation": "Exact bytes; filename extension changed to retain historical relative links as source text."
+  },
+  {
+    "original_path": "docs/coordination-dependencies.md",
+    "stored_as": "docs/coordination-dependencies.md.txt",
+    "transformation": "Exact bytes; filename extension changed to retain historical relative links as source text."
+  },
+  {
+    "original_path": "examples/qaizen-labs/verification-spec.md",
+    "stored_as": "examples/qaizen-labs/verification-spec.md.txt",
+    "transformation": "Exact bytes; filename extension changed to retain historical relative links as source text."
+  }
+]

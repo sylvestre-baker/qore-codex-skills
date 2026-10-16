@@ -1,0 +1,19 @@
+{
+  "argv": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_coordination.py",
+    "-v"
+  ],
+  "cwd": "/workspace/project",
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "test_fresh_request_required_no_second_reviewer_on_timeout (test_coordination.CoordinationTests.test_fresh_request_required_no_second_reviewer_on_timeout) ... ok\ntest_late_current_delivery_is_consumed_on_manual_resume (test_coordination.CoordinationTests.test_late_current_delivery_is_consumed_on_manual_resume) ... ok\ntest_manifest_hash_does_not_hide_changed_missing_or_escaping_files (test_coordination.CoordinationTests.test_manifest_hash_does_not_hide_changed_missing_or_escaping_files) ... ok\ntest_multiple_editable_task_blocks_are_refused (test_coordination.CoordinationTests.test_multiple_editable_task_blocks_are_refused) ... ok\ntest_old_criteria_and_premature_delivery_do_not_advance (test_coordination.CoordinationTests.test_old_criteria_and_premature_delivery_do_not_advance) ... ok\ntest_read_message_replay_after_saved_decision_before_transport_ack (test_coordination.CoordinationTests.test_read_message_replay_after_saved_decision_before_transport_ack) ... ok\ntest_receive_window_timeout_keeps_task_open_without_resend (test_coordination.CoordinationTests.test_receive_window_timeout_keeps_task_open_without_resend) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.003s\n\nOK\n",
+  "observed_at": "2026-10-16T07:15:41.673346+00:00"
+}

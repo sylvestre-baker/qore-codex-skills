@@ -1,0 +1,6 @@
+{
+  "target_snapshot_sha256": "b2a8222378dcceccf3a3e7422fd12919d870b44b80f5a386d0b49b60147cd688",
+  "candidate_sha256": "bbe9e705eaf09beb556b0d5298d74778db2a2ba01e205c1e24389f707ac2ae0a",
+  "procedure": "SHA-256 of saved sorted-key JSON manifest bytes (indent 2 plus LF); each manifest entry hashes actual file bytes. Target source copies retained. Git HEAD unavailable: unborn repository with untracked source.",
+  "last_relevant_change": "2026-10-16T07:10:43.354355+00:00"
+}

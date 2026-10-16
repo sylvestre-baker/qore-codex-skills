@@ -1,0 +1,21 @@
+{
+  "task_id": "QORE002-LABS-001",
+  "task_revision": 1,
+  "objective": "Qualify all three project-specific methods on the current public Labs protocol case",
+  "authorized_scope": "Public Qore source and selected method artifacts. Read-only current Labs entry/state observation under supplied project profile. No publication, application, website source edits or questionnaire answers.",
+  "criteria": [
+    "Complete the derived planning protocol and retain its actual phases and profile consumption.",
+    "Complete the derived UX scope with fresh actual observations and honest required coverage.",
+    "Complete independent derived review of the public specification and implementation, with actual finders, mechanical filtering and fresh verification."
+  ],
+  "required_check_ids": [
+    "plan",
+    "ux",
+    "review"
+  ],
+  "expected_results": {
+    "plan": "PASS",
+    "ux": "PASS",
+    "review": "PASS"
+  }
+}

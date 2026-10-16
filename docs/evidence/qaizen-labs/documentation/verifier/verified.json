@@ -1,0 +1,20 @@
+{
+  "findings": [
+    {
+      "id": "CLAIMS-001",
+      "title": "The staged case evidence loses its profile and dependency links",
+      "severity": "medium",
+      "verdict": "CONFIRMED",
+      "evidence": "Original site-draft/evidence/README.md:3,20 retains four repository-relative references. Independent audit.json records four missing/escaping targets and HTTP 404 for all four at /qore-codex-skills/. Original tools/check_site.py exits 0 with valid=true and 25 references despite them.",
+      "counterexample": "Follow the showcase Candidate identities, provenance and remaining limits link to evidence/README.md, then follow its project-profile or coordination-dependency link. On the intended /qore-codex-skills/ deployment these relative URLs escape the project prefix, and neither destination is staged. The source checkout links work; the built public presentation links do not."
+    },
+    {
+      "id": "A11Y-DOC-001",
+      "title": "Staged evidence index retains repository-relative links outside the project prefix",
+      "severity": "medium",
+      "verdict": "CONFIRMED",
+      "evidence": "Original site-draft/evidence/README.md:3,20 retains four repository-relative references. Independent audit.json records four missing/escaping targets and HTTP 404 for all four at /qore-codex-skills/. Original tools/check_site.py exits 0 with valid=true and 25 references despite them.",
+      "counterexample": "Serve original site-draft beneath /qore-codex-skills/ and follow evidence/README.md project profile or dependency links: each escapes the prefix and all four return HTTP 404."
+    }
+  ]
+}
