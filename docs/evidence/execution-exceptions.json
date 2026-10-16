@@ -1,0 +1,19 @@
+{
+  "schema": "qore-execution-exceptions/1",
+  "records": {
+    "review-exact-flags": {
+      "execution_sha256": "c95435146db9a0ee7937f3ff4a103ea423a6eaacc6238a7a2ef4a552e7558ea9",
+      "reason": "Two original unreferenced source caches are intentionally excluded from the public export under CONTRIBUTING.md. The unchanged historical record cannot pass strict validation without them. No phase evidence is excluded.",
+      "excluded_source_artifacts": [
+        {
+          "path": "snapshot/tests/__pycache__/test_package.cpython-314.pyc",
+          "sha256": "4978d83608bf26b23521ba8d9bcc4dfc8ee2c115ae204cde1ec879e1be18953e"
+        },
+        {
+          "path": "snapshot/tools/__pycache__/qore.cpython-314.pyc",
+          "sha256": "4a5dd2919c65f19b02c41f482e337a674b65919726bf36d8d034a5c422a6e3f8"
+        }
+      ]
+    }
+  }
+}

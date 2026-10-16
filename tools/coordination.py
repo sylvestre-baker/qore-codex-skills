@@ -60,6 +60,17 @@ def consume(register, messages):
     A fetch timeout supplies no messages and leaves state/awaiting unchanged.
     This function never sends assignments, creates a reviewer, or reruns production.
     """
+    require(isinstance(messages, list), "message window must be a list")
+    ids = []
+    for message in messages:
+        require(isinstance(message, dict) and type(message.get("id")) in (str, int)
+                and bool(str(message["id"])), "message needs a nonempty string or integer id")
+        ids.append(str(message["id"]))
+    numeric = [bool(re.fullmatch(r"[0-9]+", value)) for value in ids]
+    require(not any(numeric) or all(numeric), "cannot mix numeric and opaque message ids")
+    if messages and all(numeric):
+        messages = sorted(messages, key=lambda message: int(message["id"]))
+    # Opaque IDs support existing ordered offline windows, not server chronology.
     result = deepcopy(register)
     for message in messages:
         message_id = str(message["id"])

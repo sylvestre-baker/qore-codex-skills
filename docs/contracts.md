@@ -18,7 +18,7 @@ Run these from the repository root. Paths below identify your actual inputs; gen
 
 | Command | Effect |
 |---|---|
-| `python3 tools/qore.py build --output STAGING` | Copy the release allowlist, create and verify a versioned candidate folder, and write its ZIP. |
+| `python3 tools/qore.py build --output STAGING` | Copy the release allowlist, create and verify a versioned candidate folder, and write its ZIP. Add `--scope skills` for the compact installation archive; both require the current rights review. |
 | `python3 tools/qore.py verify BUNDLE` | Compare declared resources, contained paths, and current file digests, including standalone skill inventories. |
 | `python3 tools/qore.py derive --profile PROFILE --project-root ROOT --output STAGING` | Validate current sourced facts for all three methods and generate project-bound skill folders. It does not execute profile commands. |
 | `python3 tools/qore.py install --source BUNDLE --project-root ROOT` | Verify the candidate and copy three skills into the project's `.agents/skills/`; refuse existing destinations. |
@@ -39,7 +39,7 @@ These commands run from the corresponding skill directory; installed derivatives
 | Review | `node scripts/redact-for-verifier.mjs FINDINGS.json` then `node scripts/finding-lint.mjs VERIFIED.json --verifier=ran --json` | Strict findings envelope, mechanical claim filtering, evidence and verdict obligations. Use `--verifier=skipped` when the separate verifier did not run. [Detailed format](../skills/qore-review/references/findings.md). |
 | Web UX | `node scripts/depth-lint.mjs DEPTH.json` and `node scripts/stop-rule.mjs LOOP.json` | Declared depth, required gates, actual measurements, omissions, correction freshness, and bounded stopping. [Detailed format](../skills/qore-ux-review/references/evidence.md). |
 
-The review filter's standard output is the verifier's claims file. Save it as a file before starting the fresh verifier; an intention to redact is not mechanical filtering. A valid unverified high-severity concern stays PLAUSIBLE and non-blocking, with PARTIAL review coverage. Do not downgrade its impact to clear a validator.
+The review filter's standard output is the verifier's claims file. Save it as a file before starting the fresh verifier; an intention to redact is not mechanical filtering. Any critical/high PLAUSIBLE concern requires PARTIAL review coverage and PENDING, even when the verifier ran. It is not a verified blocker. A separate confirmed critical/high finding still requires DO-NOT-SHIP. Do not downgrade impact to clear a validator. The verifier flag alone does not prove full batch coverage or independent execution.
 
 ## Execution evidence and coverage
 

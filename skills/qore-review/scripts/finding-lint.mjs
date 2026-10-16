@@ -42,12 +42,13 @@ for (const [index, finding] of findings.entries()) {
 }
 const valid = !problems.length;
 const blocking = valid && verifier === 'ran' ? findings.filter(finding => finding.verdict === 'CONFIRMED' && ['critical', 'high'].includes(finding.severity)).map(finding => finding.id) : [];
-const coverage = valid && verifier === 'ran' ? 'COMPLETE' : 'PARTIAL';
+const unresolved = valid ? findings.filter(finding => finding.verdict === 'PLAUSIBLE' && ['critical', 'high'].includes(finding.severity)).map(finding => finding.id) : [];
+const coverage = valid && verifier === 'ran' && !unresolved.length ? 'COMPLETE' : 'PARTIAL';
 const result = {
-  valid, coverage, verdict: !valid ? 'INVALID' : blocking.length ? 'DO-NOT-SHIP' : verifier === 'skipped' ? 'PENDING' : 'SHIP',
+  valid, coverage, verdict: !valid ? 'INVALID' : blocking.length ? 'DO-NOT-SHIP' : coverage === 'PARTIAL' ? 'PENDING' : 'SHIP',
   verifier, total: findings.length,
   counts: Object.fromEntries(verdicts.map(verdict => [verdict, findings.filter(finding => object(finding) && finding.verdict === verdict).length])),
-  blocking_findings: blocking, findings, problems,
+  blocking_findings: blocking, unresolved_findings: unresolved, findings, problems,
   limit: 'The verifier flag records an execution declaration; validate actual independent phase evidence separately.',
 };
 if (json) console.log(JSON.stringify(result, null, 2));

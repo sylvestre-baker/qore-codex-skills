@@ -12,6 +12,7 @@ TOOLS = Path(__file__).resolve().parents[1] / "tools"
 if str(TOOLS) not in sys.path:
     sys.path.insert(0, str(TOOLS))
 contracts = importlib.import_module("run_contract")
+published = importlib.import_module("check_execution_records")
 
 
 class RunContractTests(unittest.TestCase):
@@ -68,6 +69,44 @@ class RunContractTests(unittest.TestCase):
             with self.subTest(method=method):
                 result = self.validate(self.packet(method))
                 self.assertEqual((result["valid"], result["coverage"], result["missing_phases"]), (True, "COMPLETE", []))
+
+    def cache_record(self):
+        packet = self.packet()
+        item = {"path": "snapshot/__pycache__/source.pyc", "sha256": "c" * 64}
+        packet["artifacts"].append({**item, "kind": "source"})
+        path = self.root / "execution.json"
+        path.write_text(json.dumps(packet))
+        exception = {"execution_sha256": self.artifact_bytes(path), "reason": "Keep source caches out of redistribution.",
+                     "excluded_source_artifacts": [item]}
+        return path, exception
+
+    def test_exact_missing_source_cache_is_an_explicit_partial_exception(self):
+        path, exception = self.cache_record()
+        before = path.read_bytes()
+        result = published.check_record(path, exception)
+        self.assertEqual((result["status"], result["coverage"], result["strict_validation"]), ("KNOWN_EXCEPTION", "PARTIAL", "BLOCKED"))
+        self.assertEqual(path.read_bytes(), before)
+        with self.assertRaisesRegex(ValueError, "Artifact is missing"):
+            published.check_record(path)
+
+    def test_cache_exception_cannot_hide_missing_execution_or_changed_identity(self):
+        path, exception = self.cache_record()
+        (self.root / "review-verifier.json").unlink()
+        with self.assertRaisesRegex(ValueError, "review-verifier.json"):
+            published.check_record(path, exception)
+        path.write_text(path.read_text() + "\n")
+        with self.assertRaisesRegex(ValueError, "unchanged execution"):
+            published.check_record(path, exception)
+
+    def test_noncache_source_cannot_be_excluded(self):
+        path, exception = self.cache_record()
+        packet = json.loads(path.read_text())
+        packet["artifacts"][-1]["path"] = "source.py"
+        path.write_text(json.dumps(packet))
+        exception["execution_sha256"] = self.artifact_bytes(path)
+        exception["excluded_source_artifacts"][0]["path"] = "source.py"
+        with self.assertRaisesRegex(ValueError, "Only exact unreferenced source caches"):
+            published.check_record(path, exception)
 
     def test_unknown_schema_major_and_method_are_refused(self):
         packet = self.packet()

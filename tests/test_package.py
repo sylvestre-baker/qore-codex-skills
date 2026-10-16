@@ -43,6 +43,7 @@ class PackageTests(unittest.TestCase):
         self.addCleanup(self.root_patch.stop)
         self.project = self.base / "project"
         self.project.mkdir()
+        self.marker_name = "qore-command-must-not-run-" + self.base.name
         (self.project / "rules.md").write_text("Use the scoped source contract.\n", encoding="utf-8")
 
     def write_allowlist(self, paths):
@@ -102,7 +103,7 @@ class PackageTests(unittest.TestCase):
         return {
             "schema": "qore-project/1", "id": "fixture", "version": "1.0.0",
             "sources": [{"id": "rules", "path": "rules.md", "sha256": context.digest(self.project / "rules.md")}],
-            "commands": [{"id": "check", "source": "rules", "argv": [sys.executable, "-c", f"open({str(self.base / 'executed')!r}, 'w').write('unexpected')"], "applies_to": ["plan", "review", "ux"]}],
+            "commands": [{"id": "check", "source": "rules", "argv": ["python3", "-c", f"open({self.marker_name!r}, 'w').write('unexpected')"], "applies_to": ["plan", "review", "ux"]}],
             "invariants": [{"id": "scoped", "source": "rules", "statement": "Only consume current sourced facts."}],
             "surfaces": {"web": {"source": "rules", "entry_url": "https://example.com/start", "allowed_origins": ["https://example.com"], "required_state": "The detail view is visible", "kind": "fixture"}},
         }
@@ -111,6 +112,18 @@ class PackageTests(unittest.TestCase):
         path = self.base / "profile.json"
         path.write_text(json.dumps(profile or self.profile()), encoding="utf-8")
         return path
+
+    def assert_command_not_executed(self):
+        for root in (Path.cwd(), self.base, self.project, self.source):
+            self.assertFalse((root / self.marker_name).exists(), "Profile command ran in " + str(root))
+
+    def test_no_execution_guard_detects_a_relative_marker_in_the_actual_working_directory(self):
+        import subprocess
+        marker = self.project / self.marker_name
+        subprocess.run(self.profile()["commands"][0]["argv"], cwd=self.project, check=True)
+        self.assertTrue(marker.is_file())
+        with self.assertRaises(AssertionError):
+            self.assert_command_not_executed()
 
     def build(self, name="output"):
         return qore.build(self.base / name)
@@ -134,6 +147,26 @@ class PackageTests(unittest.TestCase):
             standalone = json.loads((bundle / "skills" / name / "references/release.json").read_text())
             self.assertEqual(standalone["schema"], "qore-release/1")
             self.assertEqual({row["path"] for row in standalone["resources"]}, {"SKILL.md", "references/guide.md"})
+
+    def test_skills_only_archive_is_closed_installable_and_reproducible(self):
+        import shutil
+        import subprocess
+        (self.source / "tools").mkdir()
+        for name in ("qore.py", "context.py", "run_contract.py"):
+            shutil.copyfile(TOOLS / name, self.source / "tools" / name)
+        (self.source / "INSTALL.md").write_text("# Install\nUse the bundled installer.\n")
+        self.write_allowlist(self.allowlist + ["INSTALL.md"] + ["tools/" + name for name in ("qore.py", "context.py", "run_contract.py")])
+        first = qore.build(self.base / "slim-first", "skills")
+        second = qore.build(self.base / "slim-second", "skills")
+        self.assertEqual(first["sha256"], second["sha256"])
+        bundle = Path(first["bundle"])
+        self.assertTrue(qore.verify(bundle)["valid"])
+        self.assertFalse((bundle / "README.md").exists())
+        self.assertFalse((bundle / "docs").exists())
+        response = subprocess.run([sys.executable, "-B", str(bundle / "tools/qore.py"), "install", "--source", str(bundle), "--project-root", str(self.project)], capture_output=True, text=True, check=True)
+        self.assertEqual(len(json.loads(response.stdout)["installed"]), 3)
+        with self.assertRaisesRegex(ValueError, "destination exists"):
+            qore.build(self.base / "slim-first", "skills")
 
     def test_missing_runtime_reference_prevents_build_without_partial_destination(self):
         skill = self.source / "skills/qore-plan/SKILL.md"
@@ -262,11 +295,41 @@ class PackageTests(unittest.TestCase):
         destination = self.base / "derived"
         result = qore.derive(self.write_profile(), self.project, destination)
         self.assertTrue(result["valid"])
-        self.assertFalse((self.base / "executed").exists())
+        self.assert_command_not_executed()
         for skill in qore.SKILLS:
             path = destination / (skill + "-fixture")
             self.assertEqual(json.loads((path / "references/project.json").read_text()), self.profile())
             self.assertIn("name: " + skill + "-fixture", (path / "SKILL.md").read_text())
+            self.assertIn("Scoped to project fixture.", (path / "SKILL.md").read_text().splitlines()[2])
+
+    def test_local_profile_adaptation_is_named_without_blocking_current_facts(self):
+        destination = self.base / "derived"
+        qore.derive(self.write_profile(), self.project, destination)
+        copied = destination / "qore-review-fixture/references/project.json"
+        self.assertEqual(context.local_adaptations(copied), [])
+        baseline = context.digest(copied)
+        adapted = json.loads(copied.read_text())
+        adapted["invariants"][0]["statement"] = "Authorized local rule."
+        copied.write_text(json.dumps(adapted))
+        result = context.validate_profile(adapted, self.project, "review")
+        self.assertEqual(result["coverage"], "COMPLETE")
+        self.assertEqual(context.local_adaptations(copied), [{"path": "references/project.json", "expected_sha256": baseline,
+                                                           "actual_sha256": context.digest(copied), "kind": "local_adaptation"}])
+        self.assertEqual(context.local_adaptations(self.write_profile()), [])
+
+    def test_installer_warns_about_same_name_user_skill_without_changing_it(self):
+        bundle = Path(self.build()["bundle"])
+        home = self.base / "home"
+        existing = home / ".agents/skills/qore-review"
+        existing.mkdir(parents=True)
+        policy = existing / "SKILL.md"
+        policy.write_text("Existing personal skill.\n")
+        with patch.object(Path, "home", return_value=home):
+            result = qore.install(bundle, self.project)
+        self.assertEqual(len(result["installed"]), 3)
+        self.assertEqual([row["skill"] for row in result["warnings"]], ["qore-review"])
+        self.assertEqual(result["warnings"][0]["code"], "same-name-user-skill")
+        self.assertEqual(policy.read_text(), "Existing personal skill.\n")
 
     def test_compact_profile_identity_matches_copied_bytes_and_runtime_checker(self):
         import subprocess
@@ -323,7 +386,7 @@ class PackageTests(unittest.TestCase):
             result = context.validate_profile(self.profile(), self.project, method)
             self.assertEqual(result["coverage"], "COMPLETE")
             self.assertEqual(result["commands"][0]["id"], "check")
-        self.assertFalse((self.base / "executed").exists())
+        self.assert_command_not_executed()
 
     def test_changed_or_missing_sources_block_only_affected_facts(self):
         for state in ("changed", "missing"):
@@ -339,7 +402,7 @@ class PackageTests(unittest.TestCase):
                 self.assertEqual(result["coverage"], "BLOCKED")
                 self.assertEqual(result["commands"], [])
                 self.assertEqual(result["invariants"], [])
-                self.assertFalse((self.base / "executed").exists())
+                self.assert_command_not_executed()
 
     def test_stale_context_is_partial_when_unrelated_current_facts_remain(self):
         stable = self.project / "stable.md"

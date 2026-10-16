@@ -50,6 +50,8 @@ The adapter fetches read and unread messages, keeps the complete bounded inbox w
 
 The local executor must permit loopback HTTP. A workspace sandbox denied this adapter's Python connection during qualification although the direct MCP tools connected. Keep that failed receipt; choose an explicitly authorized isolated executor with the required capability, or fetch through the existing MCP tools and pass the normalized message array to `tools/coordination.py consume --register PRIVATE/task.md --input PRIVATE/inbox.json`. Do not change global sandbox settings or claim a denied connection passed.
 
+`consume` sorts numeric message IDs chronologically before making any decision, including manually supplied newest-first windows. Replaying the same window preserves the recorded delivery without duplicate decisions. Ordered offline fixtures may use opaque string IDs; those keep their supplied order. Mixed numeric/opaque IDs or malformed windows are refused before the register is saved. Use numeric server IDs for real Agent Mail windows.
+
 After delivery, the operator starts a genuinely fresh reviewer. The PM stores its current request and sends the same identity/criteria/target through Agent Mail:
 
 ```sh

@@ -34,11 +34,17 @@ jobs:
               node --version
               python3 --version
               python3 -B -m unittest discover -s tests -v
+              python3 -B tools/check_execution_records.py
               python3 tools/qore.py build --output /tmp/qore-build-a
               python3 tools/qore.py build --output /tmp/qore-build-b
-              cmp /tmp/qore-build-a/qore-skills-0.2.0.zip /tmp/qore-build-b/qore-skills-0.2.0.zip
-              python3 tools/qore.py verify /tmp/qore-build-a/qore-skills-0.2.0
-              python3 tools/qore.py install --source /tmp/qore-build-a/qore-skills-0.2.0 --project-root /tmp/qore-install
+              cmp /tmp/qore-build-a/qore-skills-0.2.1.zip /tmp/qore-build-b/qore-skills-0.2.1.zip
+              python3 tools/qore.py verify /tmp/qore-build-a/qore-skills-0.2.1
+              python3 tools/qore.py install --source /tmp/qore-build-a/qore-skills-0.2.1 --project-root /tmp/qore-install
+              python3 -B /tmp/qore-build-a/qore-skills-0.2.1/tools/check_execution_records.py
+              python3 tools/qore.py build --scope skills --output /tmp/qore-skills-a
+              python3 tools/qore.py build --scope skills --output /tmp/qore-skills-b
+              cmp /tmp/qore-skills-a/qore-skills-0.2.1-skills.zip /tmp/qore-skills-b/qore-skills-0.2.1-skills.zip
+              python3 tools/qore.py install --source /tmp/qore-skills-a/qore-skills-0.2.1-skills --project-root /tmp/qore-skills-install
               python3 tools/qore.py derive --profile profiles/qore.json --project-root . --output /tmp/qore-derived
               python3 tools/qore.py verify /tmp/qore-derived
               python3 tools/qore.py derive --profile profiles/contrast.json --project-root . --output /tmp/qore-contrast
@@ -49,3 +55,19 @@ jobs:
               python3 -B tools/build_site.py --output /tmp/qore-showcase
               python3 -B tools/check_site.py /tmp/qore-showcase
             '
+  home-venv-tests:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Check out source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Test with an interpreter and temporary files under the home directory
+        shell: bash
+        run: |
+          qore_test_root="$(mktemp -d "$HOME/qore-venv-test.XXXXXX")"
+          trap 'rm -rf "$qore_test_root"' EXIT
+          python3 -m venv --without-pip "$qore_test_root/venv"
+          mkdir "$qore_test_root/tmp"
+          TMPDIR="$qore_test_root/tmp" "$qore_test_root/venv/bin/python3" -B -m unittest discover -s tests -v

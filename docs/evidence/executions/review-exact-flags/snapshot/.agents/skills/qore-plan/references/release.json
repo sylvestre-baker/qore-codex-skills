@@ -1,0 +1,75 @@
+{
+  "schema": "qore-release/1",
+  "version": "0.1.0",
+  "host": "codex",
+  "profile": null,
+  "redistribution": "MIT-first-party",
+  "resources": [
+    {
+      "path": "SKILL.md",
+      "sha256": "6a0b7a03d888595e6b9e76bc16644a313a187df91622fd5245d4b2253bdf83da",
+      "origin": "first-party",
+      "license": "MIT"
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha256": "21ffa75d5bc52d68819ff68d4b8c65dc33584464f755487e6a02302f0924c22b",
+      "origin": "first-party",
+      "license": "MIT"
+    },
+    {
+      "path": "references/project-profile.md",
+      "sha256": "16c5ff087c83b7503b23d5d94726834462dd4fd73d78a5380cf85135fa85b0b3",
+      "origin": "first-party",
+      "license": "MIT"
+    },
+    {
+      "path": "references/protocol.md",
+      "sha256": "83f92490a5601b83fc6eaa21861344e35cd04a3ac7edb56b98cd2eb0ecfea84b",
+      "origin": "first-party",
+      "license": "MIT"
+    },
+    {
+      "path": "references/roles.md",
+      "sha256": "cc8060c7c852c143b9671af4fc0176b9c5068f338c19b2556b6ff494c0f0d318",
+      "origin": "first-party",
+      "license": "MIT"
+    },
+    {
+      "path": "references/run-evidence.md",
+      "sha256": "35cd6dc6d3e1177bbae96e5b9e829ed1aa55901747c856f4db20e946421f163d",
+      "origin": "first-party",
+      "license": "MIT"
+    },
+    {
+      "path": "references/specification.md",
+      "sha256": "7eb06b91fca66a3ec00bda4b49b035c5e6bfe827c4624768f66a09b6ae7827a1",
+      "origin": "first-party",
+      "license": "MIT"
+    },
+    {
+      "path": "scripts/project-check.py",
+      "sha256": "3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd",
+      "origin": "first-party",
+      "license": "MIT"
+    },
+    {
+      "path": "scripts/run-check.py",
+      "sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+      "origin": "first-party",
+      "license": "MIT"
+    },
+    {
+      "path": "scripts/spec-lint.mjs",
+      "sha256": "0015bf0428e30d662d2ddf119e5813e3dc5f01379c45e3229c592853a77683ef",
+      "origin": "first-party",
+      "license": "MIT"
+    },
+    {
+      "path": "scripts/spec-lint.sh",
+      "sha256": "ee4b0c491833f8f3960037255f7ea601548a353d18b317aae25d8e5f2cd461b6",
+      "origin": "first-party",
+      "license": "MIT"
+    }
+  ]
+}

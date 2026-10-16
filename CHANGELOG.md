@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.2.1 - Unreleased
+
+- Restore 46 exact historical source artifacts to the export selection and check every execution in CI, retaining an explicit PARTIAL exception for two excluded source caches.
+- Keep unresolved critical/high findings PARTIAL/PENDING after a verifier runs; preserve confirmed blockers and original severity.
+- Make test profiles independent of personal interpreter and temporary-directory paths, and add home-venv CI coverage.
+- Reconcile newest-first numeric inbox windows before state transitions and preserve replay idempotence.
+- Report local bundled-profile adaptations and same-name personal installations, and identify the project in derivative descriptions.
+- Add a compact `build --scope skills` archive alongside the full evidence export.
+
+Historical evidence is unchanged. Current archives and redistribution attestations require maintainer review before release; this entry does not claim publication or a new complete model/browser qualification.
+
 ## 0.2.0 — 16 October 2026
 
 - Add a public Qaizen Labs surface contract, offline checker and one sourced profile for all three derivatives.

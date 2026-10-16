@@ -8,7 +8,7 @@ Created by [Sylvestre Franceschi](https://github.com/sylvestre-baker) at [Qaizen
 
 In one actual self-application, planning exposed a malformed verifier option that produced a structural success token. The selected correction rejects it and keeps the earlier zero-finding review visible. [See the problem, evidence, decision and limits](docs/evidence/validator-case.md).
 
-**Version 0.2.0.** Three methods, a deterministic assembler, sourced profiles and recorded executions are included. The [qualification record](docs/qualification.md) distinguishes original snapshots, later corrections and coverage limits. Historical artifacts retain their original release state and identities.
+**Version 0.2.1 preparation.** Three methods, a deterministic assembler, sourced profiles and recorded executions are included. The [qualification record](docs/qualification.md) distinguishes original snapshots, corrective checks and coverage limits, including one explicit historical cache exclusion. Historical artifacts retain their original release state and identities.
 
 ## Choose your task
 
@@ -40,10 +40,12 @@ From the repository directory containing this README, build a new candidate and 
 ```sh
 qore_stage="$(mktemp -d "${TMPDIR:-/tmp}/qore-first.XXXXXX")"
 python3 tools/qore.py build --output "$qore_stage"
-python3 tools/qore.py install --source "$qore_stage/qore-skills-0.2.0" --project-root .
+python3 tools/qore.py install --source "$qore_stage/qore-skills-0.2.1" --project-root .
 ```
 
 The installer prints three paths under `.agents/skills/` and `"replaced": false`. It refuses an existing destination and preserves it. If you already have these local skills, use a fresh checkout or compare a newly staged candidate; see [safe updates](docs/profiles.md#update-without-overwriting).
+
+For installation without the tutorial and evidence archive, the assembler also supports `build --scope skills`; see the [compact archive guide](INSTALL.md). Both exports require a current maintainer rights review. The 0.2.1 preparation is not a published release.
 
 Open a **new Codex chat in this repository directory**, then use:
 
@@ -141,7 +143,7 @@ sequenceDiagram
 |---|---|
 | Codex host | Actual role/tool availability must be observed. Five planning labels or a verifier flag do not prove independent execution. Clean candidate-only qualification is tracked separately. |
 | Planning | Five perspectives, challenge, and adjudication; at most three rounds. Structural spec validation does not establish business completeness. |
-| Review | Findings need checkable evidence. Only independently CONFIRMED critical/high findings are verified blockers. An unverified high concern keeps its impact severity and remains non-blocking uncertainty in a PARTIAL report. |
+| Review | Findings need checkable evidence. Only independently CONFIRMED critical/high findings are verified blockers. A critical/high PLAUSIBLE concern keeps its severity and requires PARTIAL/PENDING, even when the verifier ran. A separate confirmed blocker still requires DO-NOT-SHIP. |
 | Web UX | Required checks need actual fresh browser evidence. Skipped required gates prevent global SHIP; six iterations is the ceiling, including persistent defects. |
 | Native apps and other hosts | Unqualified by this web/Codex candidate. A web observation does not establish native behavior. |
 | Validation | Digests and schemas check identity and structure. They do not prove reasoning quality, defect absence, or superiority over simpler workflows. |

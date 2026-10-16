@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "qore-skills",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Project-aware planning, adversarial review, and observed web UX verification for Codex.",
   "extensions": {
     "com.openai": {

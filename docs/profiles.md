@@ -20,6 +20,8 @@ Start from actual project instructions and current code/configuration. Record a 
 
 The runtime checker checks structure, source identity, and method applicability. It cannot prove that a sentence is a faithful interpretation of its source. A command's presence does not approve executing it; inspect its effect and follow the user's authorization.
 
+For a bundled `references/project.json`, runtime output also reports `local_adaptations` by comparing its bytes with `references/release.json`. A valid local customization is named without blocking current sourced facts. This is a comparison with the bundled baseline, not an authenticity guarantee; `compare` still checks the wider installed file set against a supplied candidate.
+
 ## Check before deriving
 
 From this repository, preview the plan facts:
