@@ -69,11 +69,11 @@
     },
     {
       "path": "README.md",
-      "sha256": "0c538b48a818523dc3cc2e3c8315231d2ff18a59a45eef438420ecb86dbda32e",
+      "sha256": "a0cd6748728318272811f03550cb348fd33164f02f3d9687e230070c73d9ecfb",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "New or revised English first-party Qore code, specification, selected method evidence or documentation for the user-authorized QORE-002 candidate. No private website code or raw agent/mail traces."
+      "basis": "English first-party explanation of implemented skill derivation and recorded PM/production/reviewer coordination; source-linked examples and selectable diagrams. No new capability or external human comprehension result is asserted."
     },
     {
       "path": "docs/acceptance-evidence.md",
@@ -101,11 +101,11 @@
     },
     {
       "path": "docs/command-inventory.json",
-      "sha256": "a50affd18a5f10a9a1a1b9a67e20c12011ebe8a8fe5ee9e9e58a345f1d577165",
+      "sha256": "068bacffd99076f9f646f8b391f1fd433eb94699bc079459d2dc7c77cb13c3c0",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "New or revised English first-party Qore code, specification, selected method evidence or documentation for the user-authorized QORE-002 candidate. No private website code or raw agent/mail traces."
+      "basis": "English first-party explanation of implemented skill derivation and recorded PM/production/reviewer coordination; source-linked examples and selectable diagrams. No new capability or external human comprehension result is asserted."
     },
     {
       "path": "docs/contracts.md",
@@ -9485,11 +9485,11 @@
     },
     {
       "path": "docs/showcase.md",
-      "sha256": "b2d702c38c1a8f408c8516be5819aadc21cad0fa00053e95bbf2f3278f14035e",
+      "sha256": "d95d784fc403c512da0ccefa49c4098eea42fe7ad5f55da62153bae1f8939ec0",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "New or revised English first-party Qore code, specification, selected method evidence or documentation for the user-authorized QORE-002 candidate. No private website code or raw agent/mail traces."
+      "basis": "English first-party explanation of implemented skill derivation and recorded PM/production/reviewer coordination; source-linked examples and selectable diagrams. No new capability or external human comprehension result is asserted."
     },
     {
       "path": "docs/troubleshooting.md",
@@ -9621,19 +9621,19 @@
     },
     {
       "path": "showcase/index.html",
-      "sha256": "6aa5d1480be2f24a4151e3c89027c7a65d8cca3146766852e54a0f163fc2b842",
+      "sha256": "0909951a7e7ad96a0e2783cd887010a3919f926a439281bfcdadf37e137486aa",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "User-requested narration of the first-party Qore presentation and selected authorized public Labs observations. First-party script; provider-generated stock-voice audio under MiniMax API output terms, identified in provenance.json. No model, cloned voice, private source or raw transcript is redistributed."
+      "basis": "English first-party explanation of implemented skill derivation and recorded PM/production/reviewer coordination; source-linked examples and selectable diagrams. No new capability or external human comprehension result is asserted."
     },
     {
       "path": "showcase/styles.css",
-      "sha256": "1bdc47446d2b60e8d5544ea2eb3e4b666b0728263b18d6ab9bf1d2ace4d616a6",
+      "sha256": "dc7ae0fa922f8e7f93d5f0690207c9ee4637f71825dfeba7dfb6d71b0933792e",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "New or revised English first-party Qore code, specification, selected method evidence or documentation for the user-authorized QORE-002 candidate. No private website code or raw agent/mail traces."
+      "basis": "English first-party explanation of implemented skill derivation and recorded PM/production/reviewer coordination; source-linked examples and selectable diagrams. No new capability or external human comprehension result is asserted."
     },
     {
       "path": "skills/qore-plan/SKILL.md",

@@ -82,6 +82,19 @@ Browser evidence covers one desktop English entry/state flow. It does not establ
 
 ## Adapt all three methods from one profile
 
+The methods stay reusable; a profile supplies the rules for one project. In the Labs example, a keyboard requirement changes the plan's acceptance checks, the review's evidence requirements and the browser actions.
+
+```mermaid
+flowchart LR
+    Core["Three base skills: plan, review, UX review"] --> Assemble["Local assembler"]
+    Profile["One sourced Labs profile: commands, rules, web entry"] --> Assemble
+    Assemble --> Plan["qore-plan-qaizen-labs"]
+    Assemble --> Review["qore-review-qaizen-labs"]
+    Assemble --> UX["qore-ux-review-qaizen-labs"]
+```
+
+**Diagram in words:** three base methods plus one sourced project profile produce three specialized skills. Each contains its method, resources and copied profile. Codex loads the selected skill when you use it; the three methods can run independently.
+
 The 0.2.0 candidate adds [the Qaizen Labs project case](examples/qaizen-labs/README.md): a public journey contract, one maintained profile and a keyboard verification correction. All three specialized methods have actual phase evidence; the final candidate documentation and release checks remain separately recorded. The optional [PM/production workflow](docs/coordination.md) uses a private register and criteria-bound completion; its [transport limitations](docs/coordination-dependencies.md) remain explicit.
 
 A reusable project adaptation binds the methods to sourced commands, invariants, and a web target. Every fact names a project source and its SHA-256. The included [Qore profile](profiles/qore.json) applies to this repository; the [contrasting fixture profile](profiles/contrast.json) exercises isolation and different facts.
@@ -96,6 +109,31 @@ python3 tools/qore.py verify /tmp/qore-derived-first
 Choose an unused output path. Derivation refuses stale sources or an existing destination. The generated names are `qore-plan-qore`, `qore-review-qore`, and `qore-ux-review-qore`. Each contains its own profile, references, and helper scripts. At invocation, its checker compares the target sources again and exposes only current applicable facts. Stale context makes affected coverage PARTIAL or BLOCKED; it never silently falls back to generic behavior.
 
 For your project, maintain one profile from your actual rules and sources, then derive into new staging. Inspect the result and its diff before installing. [Profile fields, runtime checks, and safe updates](docs/profiles.md).
+
+### Optional: coordinate two terminals and a fresh reviewer
+
+Terminal 1 tracks the task as PM. Terminal 2 produces the deliverable. The operator starts a separate reviewer session for the frozen delivery; Agent Mail carries their messages.
+
+```mermaid
+sequenceDiagram
+    participant PM as Terminal 1: PM
+    participant Prod as Terminal 2: Production
+    participant Rev as Separate reviewer session
+    Note over PM,Rev: The operator starts or resumes each work turn
+    PM->>Prod: Assignment and acceptance criteria
+    Prod->>PM: Explicit task acceptance
+    Prod->>PM: Delivery, files and evidence
+    PM->>Rev: Fresh review request, frozen delivery and criteria
+    Rev->>PM: Verdict and proof
+    PM->>PM: Check current identities, files and required proof
+    alt Acceptance checks pass
+        PM->>PM: Record DONE once
+    else Corrections required
+        PM->>Prod: Request correction, then a new delivery and review
+    end
+```
+
+**Diagram in words:** PM assigns → production accepts and delivers → a separate session reviews → PM checks acceptance. Missing evidence keeps the task open. A rejected delivery needs correction and a new review. The local gate checks matching identities and proof files; substantive review remains a separate responsibility. The [actual exchange](docs/evidence/qaizen-labs/coordination/README.md) records one accepted Labs delivery and the workflow's limits. All three skills also work without Agent Mail.
 
 ## Understand the boundaries
 

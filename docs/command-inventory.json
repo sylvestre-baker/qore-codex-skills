@@ -47,7 +47,7 @@
   "documents": [
     {
       "path": "README.md",
-      "sha256": "0c538b48a818523dc3cc2e3c8315231d2ff18a59a45eef438420ecb86dbda32e"
+      "sha256": "a0cd6748728318272811f03550cb348fd33164f02f3d9687e230070c73d9ecfb"
     },
     {
       "path": "docs/architecture.md",
@@ -107,7 +107,7 @@
     },
     {
       "path": "docs/showcase.md",
-      "sha256": "b2d702c38c1a8f408c8516be5819aadc21cad0fa00053e95bbf2f3278f14035e"
+      "sha256": "d95d784fc403c512da0ccefa49c4098eea42fe7ad5f55da62153bae1f8939ec0"
     },
     {
       "path": "docs/coordination.md",
