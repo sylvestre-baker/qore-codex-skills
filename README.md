@@ -4,11 +4,11 @@ Prepare a sourced change plan, challenge a specification with independently chec
 
 Qore is for developers and maintainers already using Codex on an existing project. It packages three independent methods as local skills. Choose the one your task needs; they are not a mandatory pipeline. No Qore account, backend, or hosted service is required.
 
-Created by [Sylvestre Franceschi](https://github.com/sylvestre-baker) at [Qaizen](https://qaizen.io).
+Created by [Sylvestre Franceschi](https://github.com/sylvestre-baker) at [Qaizen](https://qaizen.io). [View the demonstration and diagrams](https://sylvestre-baker.github.io/qore-codex-skills/).
 
 In one actual self-application, planning exposed a malformed verifier option that produced a structural success token. The selected correction rejects it and keeps the earlier zero-finding review visible. [See the problem, evidence, decision and limits](docs/evidence/validator-case.md).
 
-**Version 0.2.0 candidate — prepared; publication pending.** Three methods, a deterministic assembler, sourced profiles and recorded executions are included. The [qualification record](docs/qualification.md) distinguishes original snapshots, later corrections and coverage limits. Historical artifacts retain their original release state and identities.
+**Version 0.2.0.** Three methods, a deterministic assembler, sourced profiles and recorded executions are included. The [qualification record](docs/qualification.md) distinguishes original snapshots, later corrections and coverage limits. Historical artifacts retain their original release state and identities.
 
 ## Choose your task
 
@@ -28,7 +28,7 @@ The first useful result is an actual review of the [bundled validator-hardening 
 
 You need Codex with a local executor and independent subagent capability, plus `python3`, `node`, and Bash. The helpers use Python's standard library and Node built-ins. A browser, persistent project profile, and Qore account are unnecessary for this example. Merely loading a skill or passing a preflight does not complete the review.
 
-Use this candidate checkout to qualify 0.2.0. The public default branch retains the previously published release until publication. The clone recipe below obtains that published branch; it will obtain this candidate only after the separate publication step. Git is needed for cloning; an existing candidate checkout can skip it.
+Clone the public repository to use the current source. Git is needed for cloning; an existing checkout can skip it. Versioned archives are available from the releases page.
 
 ```sh
 git clone https://github.com/sylvestre-baker/qore-codex-skills.git
@@ -95,7 +95,7 @@ flowchart LR
 
 **Diagram in words:** three base methods plus one sourced project profile produce three specialized skills. Each contains its method, resources and copied profile. Codex loads the selected skill when you use it; the three methods can run independently.
 
-The 0.2.0 candidate adds [the Qaizen Labs project case](examples/qaizen-labs/README.md): a public journey contract, one maintained profile and a keyboard verification correction. All three specialized methods have actual phase evidence; the final candidate documentation and release checks remain separately recorded. The optional [PM/production workflow](docs/coordination.md) uses a private register and criteria-bound completion; its [transport limitations](docs/coordination-dependencies.md) remain explicit.
+Version 0.2.0 adds [the Qaizen Labs project case](examples/qaizen-labs/README.md): a public journey contract, one maintained profile and a keyboard verification correction. All three specialized methods have actual phase evidence; the final candidate documentation and release checks remain separately recorded. The optional [PM/production workflow](docs/coordination.md) uses a private register and criteria-bound completion; its [transport limitations](docs/coordination-dependencies.md) remain explicit.
 
 A reusable project adaptation binds the methods to sourced commands, invariants, and a web target. Every fact names a project source and its SHA-256. The included [Qore profile](profiles/qore.json) applies to this repository; the [contrasting fixture profile](profiles/contrast.json) exercises isolation and different facts.
 
@@ -169,6 +169,6 @@ If a role or required browser capability is unavailable, retain its name and evi
 
 The newly authored implementation and documentation use the [MIT license](LICENSE), maintained by Sylvestre Franceschi. The [provenance record](PROVENANCE.md) and explicit release rights inventory identify the scope of selected public observations and first-party resources. Private client distributions and their Git histories are excluded.
 
-The optional static page is prepared locally; its workflow requires an explicit publication dispatch from main. No new release or page is deployed by preparation.
+The [public demonstration page](https://sylvestre-baker.github.io/qore-codex-skills/) presents the project-specific skills, agent coordination diagrams, narrated video and selected execution evidence. Its deployment uses an explicit workflow dispatch from main. [Publication provenance](docs/publication.md) separates hosted checks from historical method executions.
 
 First-party repository content is maintained in English. External quotations, rendered evidence and protocol tokens retain their source identity. Publication and any external application remain separate actions.

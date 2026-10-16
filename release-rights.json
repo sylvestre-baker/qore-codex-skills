@@ -37,11 +37,11 @@
     },
     {
       "path": "CHANGELOG.md",
-      "sha256": "ed9ea7ad657a55fdc7c23e67f77e8d18e8702f4cafa194df54f095b09f4dd619",
+      "sha256": "e8f0d9d85faf51d9dac2dd5c0976a24538bfef4bf2989e5d18fee4390c6c1104",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "New or revised first-party Qore implementation, public acceptance contract, fixtures or English documentation authored for the approved QORE-002 work; no private website source or raw agent trace."
+      "basis": "User-authorized public Qore 0.2.0 distribution documentation and attribution. Historical execution identities and limitations remain intact. No private application, credentials or raw trace is included."
     },
     {
       "path": "CONTRIBUTING.md",
@@ -69,11 +69,11 @@
     },
     {
       "path": "README.md",
-      "sha256": "a0cd6748728318272811f03550cb348fd33164f02f3d9687e230070c73d9ecfb",
+      "sha256": "680fef820fe2e9de9d7bb0278ab99426b2c54953976b0dbdd247490ab3a49e43",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "English first-party explanation of implemented skill derivation and recorded PM/production/reviewer coordination; source-linked examples and selectable diagrams. No new capability or external human comprehension result is asserted."
+      "basis": "User-authorized public Qore 0.2.0 distribution documentation and attribution. Historical execution identities and limitations remain intact. No private application, credentials or raw trace is included."
     },
     {
       "path": "docs/acceptance-evidence.md",
@@ -101,11 +101,11 @@
     },
     {
       "path": "docs/command-inventory.json",
-      "sha256": "068bacffd99076f9f646f8b391f1fd433eb94699bc079459d2dc7c77cb13c3c0",
+      "sha256": "aed8a20c83e0db541c7f5fb902c35b7ecc588a351c4d2b65a54b6acf5f49ca50",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "English first-party explanation of implemented skill derivation and recorded PM/production/reviewer coordination; source-linked examples and selectable diagrams. No new capability or external human comprehension result is asserted."
+      "basis": "First-party publication metadata and documentation for the user-authorized Qore 0.2.0 distribution. The build marker describes staging, not the eventual hosting state."
     },
     {
       "path": "docs/contracts.md",
@@ -9469,11 +9469,11 @@
     },
     {
       "path": "docs/publication.md",
-      "sha256": "a14990ddb1947116dfb13f9ec53a95b1e458b8974ebdaac1f3a6f71f9f019a41",
+      "sha256": "1a274ddcd885914c9b08f45070ffa6b14584c5ba692096f78f88c24dbfe13168",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "New first-party Qore implementation, documentation or preserved execution of public Qore inputs; authored for this requested public package."
+      "basis": "User-authorized public Qore 0.2.0 distribution documentation and attribution. Historical execution identities and limitations remain intact. No private application, credentials or raw trace is included."
     },
     {
       "path": "docs/qualification.md",
@@ -9485,11 +9485,11 @@
     },
     {
       "path": "docs/showcase.md",
-      "sha256": "d95d784fc403c512da0ccefa49c4098eea42fe7ad5f55da62153bae1f8939ec0",
+      "sha256": "09ae8f840ef09ec0a828e82a4b6adadbd1f4e9e6e941eaa36095e0abfe287b8b",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "English first-party explanation of implemented skill derivation and recorded PM/production/reviewer coordination; source-linked examples and selectable diagrams. No new capability or external human comprehension result is asserted."
+      "basis": "First-party publication metadata and documentation for the user-authorized Qore 0.2.0 distribution. The build marker describes staging, not the eventual hosting state."
     },
     {
       "path": "docs/troubleshooting.md",
@@ -9621,11 +9621,11 @@
     },
     {
       "path": "showcase/index.html",
-      "sha256": "0909951a7e7ad96a0e2783cd887010a3919f926a439281bfcdadf37e137486aa",
+      "sha256": "3abe24feab4e9fb5eb105c90308f6ec4287b54a4ef3d452bb1b805e9d9cbaa5c",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "English first-party explanation of implemented skill derivation and recorded PM/production/reviewer coordination; source-linked examples and selectable diagrams. No new capability or external human comprehension result is asserted."
+      "basis": "User-authorized public Qore 0.2.0 distribution documentation and attribution. Historical execution identities and limitations remain intact. No private application, credentials or raw trace is included."
     },
     {
       "path": "showcase/styles.css",
@@ -10085,11 +10085,11 @@
     },
     {
       "path": "tools/build_site.py",
-      "sha256": "26d56e56b24d8b17c03d9a565e64a052e9ae3ca39d785a1813a99504ff2a85ea",
+      "sha256": "35dee480f041feb5f11dd9f640be18f77e7825d64c76fd7ada721a1dd50bf0bf",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "New or revised English first-party Qore code, specification, selected method evidence or documentation for the user-authorized QORE-002 candidate. No private website code or raw agent/mail traces."
+      "basis": "First-party publication metadata and documentation for the user-authorized Qore 0.2.0 distribution. The build marker describes staging, not the eventual hosting state."
     },
     {
       "path": "tools/check_site.py",

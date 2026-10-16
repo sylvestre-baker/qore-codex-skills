@@ -34,7 +34,7 @@ def build(output):
                         "source_sha256": hashlib.sha256(source.read_bytes()).hexdigest(),
                         "transformation": "Evidence links rebased for static staging" if rel.startswith("media/transcript.") or rel == "evidence/README.md" else "Exact bytes"})
     (output / ".nojekyll").write_text("")
-    (output / "site-manifest.json").write_text(json.dumps({"schema":"qore-static-site/1","files":records,"publication":"NOT_DEPLOYED"},indent=2)+"\n")
+    (output / "site-manifest.json").write_text(json.dumps({"schema":"qore-static-site/1","files":records,"publication":"NOT_DEPLOYED_BY_BUILD"},indent=2)+"\n")
     return {"output":str(output),"files":len(records),"bytes":sum(p.stat().st_size for p, _ in selected),"deployed":False}
 
 if __name__ == "__main__":

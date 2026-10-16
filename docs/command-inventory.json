@@ -47,7 +47,7 @@
   "documents": [
     {
       "path": "README.md",
-      "sha256": "a0cd6748728318272811f03550cb348fd33164f02f3d9687e230070c73d9ecfb"
+      "sha256": "680fef820fe2e9de9d7bb0278ab99426b2c54953976b0dbdd247490ab3a49e43"
     },
     {
       "path": "docs/architecture.md",
@@ -107,7 +107,7 @@
     },
     {
       "path": "docs/showcase.md",
-      "sha256": "d95d784fc403c512da0ccefa49c4098eea42fe7ad5f55da62153bae1f8939ec0"
+      "sha256": "09ae8f840ef09ec0a828e82a4b6adadbd1f4e9e6e941eaa36095e0abfe287b8b"
     },
     {
       "path": "docs/coordination.md",
@@ -1528,7 +1528,7 @@
       "implementation": [
         {
           "path": "tools/build_site.py",
-          "sha256": "26d56e56b24d8b17c03d9a565e64a052e9ae3ca39d785a1813a99504ff2a85ea"
+          "sha256": "35dee480f041feb5f11dd9f640be18f77e7825d64c76fd7ada721a1dd50bf0bf"
         },
         {
           "path": "tools/check_site.py",

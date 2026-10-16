@@ -1,13 +1,16 @@
 # Changelog
 
-## 0.2.0 — candidate, qualification in progress
+## 0.2.0 — 16 October 2026
 
 - Add a public Qaizen Labs surface contract, offline checker and one sourced profile for all three derivatives.
 - Add explicit sequential keyboard traversal and focus assertions to the optional browser harness; block service workers and unauthorized navigation.
 - Add criteria-bound completion, actual multi-file digest checks, a private Markdown task register and optional bounded Agent Mail receive adapter.
 - Preserve manual resumption, late-message decisions and idempotent completion. Persistent transport recommendation remains partial.
 
-Recorded 0.1.0 evidence retains its original identity. Candidate preparation is separate from release, Pages deployment and any external application.
+- Add a 105-second English narrated demonstration, synchronized captions, transcript and explicit AI stock-voice provenance.
+- Explain skill specialization and optional agent coordination with diagrams in the README and static showcase.
+
+Recorded 0.1.0 evidence retains its original identity. Source checks, historical model/browser execution and current publication checks remain distinct. No external human first-use or program admission is claimed.
 
 ## 0.1.0 — 16 October 2026
 
