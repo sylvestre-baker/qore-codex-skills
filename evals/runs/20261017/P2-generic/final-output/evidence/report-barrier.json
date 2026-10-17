@@ -1,0 +1,39 @@
+{
+  "observed_at": "2026-10-17T11:45:32.692272+00:00",
+  "requested_roles": [
+    "product",
+    "architecture",
+    "ux",
+    "delivery",
+    "qa"
+  ],
+  "complete_returned_reports": [
+    {
+      "role": "product",
+      "path": "reports/product-analysis.md",
+      "bytes": 13973
+    },
+    {
+      "role": "architecture",
+      "path": "reports/architecture-analysis.md",
+      "bytes": 19498
+    },
+    {
+      "role": "ux",
+      "path": "reports/ux-analysis.md",
+      "bytes": 12308
+    },
+    {
+      "role": "delivery",
+      "path": "reports/delivery-analysis.md",
+      "bytes": 16993
+    },
+    {
+      "role": "qa",
+      "path": "reports/qa-analysis.md",
+      "bytes": 17876
+    }
+  ],
+  "missing": [],
+  "finding": "Five complete saved reports and final returns received before any cross-examination dispatch. Initial contexts received raw inputs only, no peer report conclusions."
+}

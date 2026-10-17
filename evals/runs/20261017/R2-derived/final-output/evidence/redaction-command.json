@@ -1,0 +1,13 @@
+{
+  "argv": [
+    "node",
+    "scripts/redact-for-verifier.mjs",
+    "/workspace/output/evidence/findings.json"
+  ],
+  "cwd": "/workspace/worker/.agents/skills/qore-review-qaizen-labs",
+  "exit_code": 0,
+  "started_at": "2026-10-17T11:15:32.844834+00:00",
+  "finished_at": "2026-10-17T11:15:33.082261+00:00",
+  "stdout_artifact": "claims.json",
+  "stderr": "redact-for-verifier: 5 claims; withheld fields: finder_report.\n"
+}

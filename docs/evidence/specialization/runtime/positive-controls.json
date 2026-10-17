@@ -1,0 +1,22 @@
+{
+  "at": "2026-10-17T10:04:07.732977+00:00",
+  "argv": [
+    "docker",
+    "run",
+    "--rm",
+    "--cap-drop",
+    "ALL",
+    "--security-opt",
+    "no-new-privileges",
+    "--security-opt",
+    "seccomp=<private-campaign-root>/namespace-seccomp-v1.json",
+    "qore-qualification-qore002-20261016:codex-0.162.0",
+    "python3",
+    "-c",
+    "from pathlib import Path\nimport socket,json,os\nr={\"uid\":os.getuid(),\"reads\":{}}\nfor name in [\"/workspace/outside-canary\",\"/home/node/.codex/auth-canary\"]:\n f=Path(name);f.write_text(\"qore-harmless-positive-control\");r[\"reads\"][name]=f.read_text()==\"qore-harmless-positive-control\"\ns=socket.create_connection((\"1.1.1.1\",443),3);r[\"outer_network\"]=\"CONNECTED\";s.close();print(json.dumps(r))"
+  ],
+  "exit_code": 0,
+  "stdout": "{\"uid\": 1000, \"reads\": {\"/workspace/outside-canary\": true, \"/home/node/.codex/auth-canary\": true}, \"outer_network\": \"CONNECTED\"}\n",
+  "stderr": "",
+  "model_invocation": false
+}

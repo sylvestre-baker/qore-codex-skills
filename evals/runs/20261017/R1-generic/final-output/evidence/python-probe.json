@@ -1,0 +1,11 @@
+{
+  "argv": [
+    "python3",
+    "--version"
+  ],
+  "cwd": "/workspace/worker",
+  "exit_code": 0,
+  "stdout": "Python 3.14.8\n",
+  "stderr": "",
+  "observed_at": "2026-10-17T10:10:12.663890+00:00"
+}

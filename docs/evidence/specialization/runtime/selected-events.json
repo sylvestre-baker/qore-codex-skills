@@ -1,0 +1,57 @@
+{
+  "schema": "qore-selected-events/1",
+  "raw_trace_sha256": "6ed255fed30b1802409abe56ee3f77c5078986a8006f9ffadac26ac40d891c30",
+  "selection": "Completed parent MCP resource/template listing events only; original event objects preserved. No child lifecycle trace is claimed.",
+  "events": [
+    {
+      "raw_line": 6,
+      "raw_line_sha256": "c6df91718d9cb878140470ff45f25ecb12fd3e2a021a84f4280debf4ac371a7a",
+      "event": {
+        "type": "item.completed",
+        "item": {
+          "id": "item_1",
+          "type": "mcp_tool_call",
+          "server": "codex",
+          "tool": "list_mcp_resources",
+          "arguments": {},
+          "result": {
+            "content": [
+              {
+                "type": "text",
+                "text": "{\"resources\":[]}"
+              }
+            ],
+            "structured_content": null
+          },
+          "error": null,
+          "status": "completed"
+        }
+      }
+    },
+    {
+      "raw_line": 7,
+      "raw_line_sha256": "830c0cacba545939dcb116d42eea8743d7369bb7edb8d840f54925d7c5d5ee6e",
+      "event": {
+        "type": "item.completed",
+        "item": {
+          "id": "item_2",
+          "type": "mcp_tool_call",
+          "server": "codex",
+          "tool": "list_mcp_resource_templates",
+          "arguments": {},
+          "result": {
+            "content": [
+              {
+                "type": "text",
+                "text": "{\"resourceTemplates\":[]}"
+              }
+            ],
+            "structured_content": null
+          },
+          "error": null,
+          "status": "completed"
+        }
+      }
+    }
+  ]
+}

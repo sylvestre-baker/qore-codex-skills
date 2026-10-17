@@ -1,0 +1,50 @@
+{
+  "observed_at": "2026-10-17T11:37:29.091601+00:00",
+  "method": "JSON field whitelist only; preserve every claim, source location, proposed change, severity and refutation unchanged; drop all other fields; no semantic ranking, summary or selection.",
+  "whitelist": [
+    "id",
+    "claim",
+    "source_locations",
+    "proposed_change",
+    "severity",
+    "refutation"
+  ],
+  "inputs": [
+    {
+      "path": "reports/product-claims.json",
+      "sha256": "1cd90a4d3d7657a13a788b993909ef8b540af1872988d94f79f7a6a85851f7d2",
+      "count": 6
+    },
+    {
+      "path": "reports/architecture-claims.json",
+      "sha256": "71d58f98688a127a6a559c20fdf1f4d32773fdc8cdbda527ce091a33431f32c7",
+      "count": 11
+    },
+    {
+      "path": "reports/ux-claims.json",
+      "sha256": "bafc006b5b9d63f075aadeb63a1d04c6cec6463cf3be1c0a451f5c051187bd67",
+      "count": 7
+    },
+    {
+      "path": "reports/delivery-claims.json",
+      "sha256": "a10978484984646c621f59cf8aa8f220e55348e1478317a17c15bf99d4c6ca41",
+      "count": 7
+    },
+    {
+      "path": "reports/qa-claims.json",
+      "sha256": "e2e50cc95c0fb97c5256374f9d09a06d488851f2148f1a687eb5f922c453cf92",
+      "count": 4
+    }
+  ],
+  "output": {
+    "path": "evidence/filtered-claims.json",
+    "sha256": "e8870951e62d64e9d378a91f674b3d828ea1a43e44a3987e0da8215a93e235ea",
+    "claim_count": 35
+  },
+  "verifier_exclusions": [
+    "full role reports",
+    "peer discussion",
+    "lead draft/specification",
+    "role identity wrappers"
+  ]
+}

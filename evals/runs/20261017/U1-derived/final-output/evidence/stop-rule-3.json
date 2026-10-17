@@ -1,0 +1,11 @@
+{
+  "argv": [
+    "node",
+    "scripts/stop-rule.mjs",
+    "/workspace/output/loop.json"
+  ],
+  "exit_code": 0,
+  "stdout": "{\n  \"decision\": \"CHANGE_APPROACH\",\n  \"verdict\": \"DO-NOT-SHIP\",\n  \"coverage\": \"PARTIAL\",\n  \"observation_coverage\": \"PARTIAL\",\n  \"iteration\": 3,\n  \"ceiling\": 6,\n  \"surface_score\": null,\n  \"consecutive_fresh_passes\": 0,\n  \"passes_required\": 1,\n  \"lowest_failing_gate\": \"G3\",\n  \"failing_gates\": [\n    \"G3\",\n    \"G5\"\n  ],\n  \"stale_gates\": [],\n  \"missing_gates\": [\n    \"G1\"\n  ],\n  \"skipped\": [\n    \"G1\"\n  ],\n  \"infra_blocked\": [],\n  \"not_applicable\": {},\n  \"stuck_count\": 2,\n  \"no_improve_count\": 2,\n  \"limit\": \"Coverage describes observations. SHIP is a scoped review result, not deployment authorization. Non-applicability reasons require independent review.\"\n}\n",
+  "stderr": "",
+  "observed_at": "2026-10-17T10:59:00.228345+00:00"
+}

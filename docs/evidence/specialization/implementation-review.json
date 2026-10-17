@@ -1,0 +1,478 @@
+{
+  "schema": "qore-review-selection/1",
+  "selected_at": "2026-10-17T08:13:20.856822+00:00",
+  "category": "agent independent implementation review, not a comparative trial",
+  "original_tally": {
+    "confirmed_ids": 6,
+    "plausible_ids": 1,
+    "refuted_ids": 0,
+    "duplicate_ids": [
+      "COR-03",
+      "FEAS-01"
+    ]
+  },
+  "findings": [
+    {
+      "id": "COR-01",
+      "severity": "high",
+      "original_verdict": "CONFIRMED",
+      "title": "Frozen task instructions are not bound to the candidate"
+    },
+    {
+      "id": "COR-02",
+      "severity": "high",
+      "original_verdict": "CONFIRMED",
+      "title": "A trial can reuse complete Qore phases from another execution window"
+    },
+    {
+      "id": "COR-03",
+      "severity": "medium",
+      "original_verdict": "CONFIRMED",
+      "title": "Excluded pilot records are neither validated nor preserved in summaries"
+    },
+    {
+      "id": "S01",
+      "severity": "high",
+      "original_verdict": "CONFIRMED",
+      "title": "Validate worker resources against the frozen allowlist, not only their editable manifest"
+    },
+    {
+      "id": "S02",
+      "severity": "medium",
+      "original_verdict": "PLAUSIBLE",
+      "title": "Reject symlinked worker roots and evidence ancestor directories"
+    },
+    {
+      "id": "FEAS-01",
+      "severity": "medium",
+      "original_verdict": "CONFIRMED",
+      "title": "Excluded pilot entries are neither verified nor preserved in generated summaries"
+    },
+    {
+      "id": "FEAS-02",
+      "severity": "medium",
+      "original_verdict": "CONFIRMED",
+      "title": "Resource validation accepts child durations outside the cell and contradictory aggregate totals"
+    }
+  ],
+  "closure": {
+    "schema": "qore-review-closure/1",
+    "source": {
+      "git_head": "e9d74cfeadd299a52f66919598b8330d6225e947",
+      "candidate_sha256": "54c70ca9713077c1c230b38b471e9c7189d3cc847fb73e889cf34d2c1793261b",
+      "files": {
+        "tools/evaluate.py": "3c53e167b98fd787943066c53a17bf0505bcab445a5f690b7514dcfcd33f33d8",
+        "tests/test_evaluate.py": "5f4f31816ec33bf60d1ddbd23714d7dbdbacd0b04f0842d2353c52be0b125d33",
+        "tools/context.py": "d87afa433fe485bdebca3e281d06e0896e4a8980ea7cf7baee739053614ea0ac",
+        "tools/run_contract.py": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+        "tools/qore.py": "ac501036c702b7ca5eae75d333298b6db22e519e0114a8c05c1f2bded4a9f713",
+        "schemas/qore-eval-run.schema.json": "5b8f7b9b327d9158448a0579782859277dffd11023c246fd6f8b25abb8334306",
+        "evals/scenarios.json": "f5ed866c0cf0cb26f901bb64fc3146fe3b40edd6f6ed51418df5e1b3fb140157",
+        "docs/specs/QORE-003-feature-spec.md": "d34db2fe6483af1186fc328857156939508eed99956802a698acd1ff9eb06ff4"
+      }
+    },
+    "historical_packet": {
+      "path": "verified.json",
+      "sha256": "9495bfccf90ae8e6a07f50b9ca20d7a0dbf90d5ddfdf949f30a6f67cf2735715",
+      "modified": false
+    },
+    "targeted_tests": {
+      "command": "python3 -B -m unittest discover -s tests -p test_evaluate.py -v",
+      "tests_run": 23,
+      "failures": 0,
+      "errors": 0,
+      "result": "PASS"
+    },
+    "findings": [
+      {
+        "id": "COR-01",
+        "title": "Frozen task instructions are not bound to the candidate",
+        "severity": "high",
+        "historical_verdict": "CONFIRMED",
+        "closure": "CLOSED",
+        "evidence": "tools/evaluate.py:107-151,270-281",
+        "actual_outcomes": {
+          "COR-01": {
+            "accepted": false,
+            "exception": "ValueError",
+            "reason": "Frozen worker resource closure or task instructions mismatch"
+          }
+        },
+        "positive_controls": {
+          "baseline": {
+            "valid": true,
+            "id": "synthetic-unit-R2-baseline",
+            "scenario_id": "R2",
+            "condition": "baseline",
+            "coverage": "COMPLETE",
+            "comparability": "COMPARABLE",
+            "changed_inputs": [],
+            "limit": "Identity and declared evidence checked; reasoning, isolation and causal benefit are not certified."
+          },
+          "generic": {
+            "valid": true,
+            "id": "synthetic-unit-R2-generic",
+            "scenario_id": "R2",
+            "condition": "generic",
+            "coverage": "COMPLETE",
+            "comparability": "COMPARABLE",
+            "changed_inputs": [],
+            "limit": "Identity and declared evidence checked; reasoning, isolation and causal benefit are not certified."
+          },
+          "derived": {
+            "valid": true,
+            "id": "synthetic-unit-R2-derived",
+            "scenario_id": "R2",
+            "condition": "derived",
+            "coverage": "COMPLETE",
+            "comparability": "COMPARABLE",
+            "changed_inputs": [],
+            "limit": "Identity and declared evidence checked; reasoning, isolation and causal benefit are not certified."
+          }
+        },
+        "assessment": "The original TASK.md replacement plus updated manifest and observation digest is rejected: Frozen worker resource closure or task instructions mismatch. Full worker bytes are regenerated from the checked source snapshot, including the common prompt."
+      },
+      {
+        "id": "COR-02",
+        "title": "A trial can reuse complete Qore phases from another execution window",
+        "severity": "high",
+        "historical_verdict": "CONFIRMED",
+        "closure": "CLOSED",
+        "evidence": "tools/evaluate.py:397-407",
+        "actual_outcomes": {
+          "COR-02-original": {
+            "accepted": false,
+            "exception": "ValueError",
+            "reason": "Qore method execution belongs to another trial or environment"
+          },
+          "COR-02-old_time": {
+            "accepted": false,
+            "exception": "ValueError",
+            "reason": "Qore phase evidence is outside the current trial"
+          },
+          "COR-02-wrong_identity": {
+            "accepted": false,
+            "exception": "ValueError",
+            "reason": "Qore method execution belongs to another trial or environment"
+          },
+          "COR-02-missing_actor": {
+            "accepted": false,
+            "exception": "ValueError",
+            "reason": "Qore phase actor is absent from trial resource accounting"
+          }
+        },
+        "positive_controls": {
+          "generic": {
+            "valid": true,
+            "id": "synthetic-unit-R2-generic",
+            "scenario_id": "R2",
+            "condition": "generic",
+            "coverage": "COMPLETE",
+            "comparability": "COMPARABLE",
+            "changed_inputs": [],
+            "limit": "Identity and declared evidence checked; reasoning, isolation and causal benefit are not certified."
+          },
+          "derived": {
+            "valid": true,
+            "id": "synthetic-unit-R2-derived",
+            "scenario_id": "R2",
+            "condition": "derived",
+            "coverage": "COMPLETE",
+            "comparability": "COMPARABLE",
+            "changed_inputs": [],
+            "limit": "Identity and declared evidence checked; reasoning, isolation and causal benefit are not certified."
+          }
+        },
+        "assessment": "The original old trial/environment linkage is rejected. Separate controls independently reject prior-day phase evidence, wrong run/environment identity and a Qore phase actor removed from resource accounting."
+      },
+      {
+        "id": "COR-03",
+        "title": "Excluded pilot records are neither validated nor preserved in summaries",
+        "severity": "medium",
+        "historical_verdict": "CONFIRMED",
+        "closure": "CLOSED",
+        "evidence": "tools/evaluate.py:470-504,545-560",
+        "actual_outcomes": {
+          "COR-03/FEAS-01-original": {
+            "accepted": false,
+            "reason": "Pilot exclusion requires a setup or protocol change, never outcome selection"
+          },
+          "COR-03/FEAS-01-allowed_basis_missing_records": {
+            "accepted": false,
+            "reason": "Required file is missing: missing-baseline.json"
+          }
+        },
+        "positive_controls": {
+          "archived_old_protocol_baseline": {
+            "valid": true,
+            "id": "synthetic-unit-R1-baseline",
+            "scenario_id": "R1",
+            "condition": "baseline",
+            "coverage": "COMPLETE",
+            "comparability": "COMPARABLE",
+            "changed_inputs": [],
+            "limit": "Identity and declared evidence checked; reasoning, isolation and causal benefit are not certified."
+          },
+          "archived_old_protocol_generic": {
+            "valid": true,
+            "id": "synthetic-unit-R1-generic",
+            "scenario_id": "R1",
+            "condition": "generic",
+            "coverage": "COMPLETE",
+            "comparability": "COMPARABLE",
+            "changed_inputs": [],
+            "limit": "Identity and declared evidence checked; reasoning, isolation and causal benefit are not certified."
+          },
+          "archived_old_protocol_derived": {
+            "valid": true,
+            "id": "synthetic-unit-R1-derived",
+            "scenario_id": "R1",
+            "condition": "derived",
+            "coverage": "COMPLETE",
+            "comparability": "COMPARABLE",
+            "changed_inputs": [],
+            "limit": "Identity and declared evidence checked; reasoning, isolation and causal benefit are not certified."
+          },
+          "archived_protocol_summary": {
+            "accepted": true,
+            "excluded_count": 3,
+            "coverage": "BLOCKED",
+            "final_cells": 18,
+            "all_ids_in_markdown": true,
+            "all_paths_in_markdown": true,
+            "all_reasons_in_markdown": true
+          }
+        },
+        "assessment": "The original quality-based exclusion is rejected. Adding an allowed PROTOCOL_CHANGED basis still rejects nonexistent linked records. A valid balanced pilot with a genuinely different archived protocol is checked and retained, with all three IDs, record paths and reasons present in JSON and Markdown."
+      },
+      {
+        "id": "S01",
+        "title": "Validate worker resources against the frozen allowlist, not only their editable manifest",
+        "severity": "high",
+        "historical_verdict": "CONFIRMED",
+        "closure": "CLOSED",
+        "evidence": "tools/evaluate.py:270-281",
+        "actual_outcomes": {
+          "S01": {
+            "accepted": false,
+            "exception": "ValueError",
+            "reason": "Frozen worker resource closure or task instructions mismatch"
+          }
+        },
+        "positive_controls": {
+          "baseline": {
+            "valid": true,
+            "id": "synthetic-unit-R2-baseline",
+            "scenario_id": "R2",
+            "condition": "baseline",
+            "coverage": "COMPLETE",
+            "comparability": "COMPARABLE",
+            "changed_inputs": [],
+            "limit": "Identity and declared evidence checked; reasoning, isolation and causal benefit are not certified."
+          },
+          "generic": {
+            "valid": true,
+            "id": "synthetic-unit-R2-generic",
+            "scenario_id": "R2",
+            "condition": "generic",
+            "coverage": "COMPLETE",
+            "comparability": "COMPARABLE",
+            "changed_inputs": [],
+            "limit": "Identity and declared evidence checked; reasoning, isolation and causal benefit are not certified."
+          },
+          "derived": {
+            "valid": true,
+            "id": "synthetic-unit-R2-derived",
+            "scenario_id": "R2",
+            "condition": "derived",
+            "coverage": "COMPLETE",
+            "comparability": "COMPARABLE",
+            "changed_inputs": [],
+            "limit": "Identity and declared evidence checked; reasoning, isolation and causal benefit are not certified."
+          }
+        },
+        "assessment": "The original previous-answer.md addition plus manifest/observation rebinding is rejected: Frozen worker resource closure or task instructions mismatch. The checked snapshot reconstructs the entire allowed resource inventory."
+      },
+      {
+        "id": "S02",
+        "title": "Reject symlinked worker roots and evidence ancestor directories",
+        "severity": "medium",
+        "historical_verdict": "PLAUSIBLE",
+        "closure": "CLOSED",
+        "evidence": "tools/evaluate.py:25-36,73-76,217-221",
+        "actual_outcomes": {
+          "S02-root": {
+            "accepted": false,
+            "exception": "ValueError",
+            "reason": "Symlinked boundary root"
+          },
+          "S02-ancestor": {
+            "accepted": false,
+            "exception": "ValueError",
+            "reason": "Symlinked resource or ancestor: alias/observation.json"
+          }
+        },
+        "positive_controls": {
+          "baseline": {
+            "valid": true,
+            "id": "synthetic-unit-R2-baseline",
+            "scenario_id": "R2",
+            "condition": "baseline",
+            "coverage": "COMPLETE",
+            "comparability": "COMPARABLE",
+            "changed_inputs": [],
+            "limit": "Identity and declared evidence checked; reasoning, isolation and causal benefit are not certified."
+          },
+          "generic": {
+            "valid": true,
+            "id": "synthetic-unit-R2-generic",
+            "scenario_id": "R2",
+            "condition": "generic",
+            "coverage": "COMPLETE",
+            "comparability": "COMPARABLE",
+            "changed_inputs": [],
+            "limit": "Identity and declared evidence checked; reasoning, isolation and causal benefit are not certified."
+          },
+          "derived": {
+            "valid": true,
+            "id": "synthetic-unit-R2-derived",
+            "scenario_id": "R2",
+            "condition": "derived",
+            "coverage": "COMPLETE",
+            "comparability": "COMPARABLE",
+            "changed_inputs": [],
+            "limit": "Identity and declared evidence checked; reasoning, isolation and causal benefit are not certified."
+          }
+        },
+        "assessment": "Both original aliases are now rejected: Symlinked boundary root and Symlinked resource or ancestor: alias/observation.json. This closes the clarified no-alias requirement for these cases. The original PLAUSIBLE verdict remains historical; no retroactive confirmation is asserted."
+      },
+      {
+        "id": "FEAS-01",
+        "title": "Excluded pilot entries are neither verified nor preserved in generated summaries",
+        "severity": "medium",
+        "historical_verdict": "CONFIRMED",
+        "closure": "CLOSED",
+        "evidence": "tools/evaluate.py:470-504,545-560",
+        "actual_outcomes": {
+          "COR-03/FEAS-01-original": {
+            "accepted": false,
+            "reason": "Pilot exclusion requires a setup or protocol change, never outcome selection"
+          },
+          "COR-03/FEAS-01-allowed_basis_missing_records": {
+            "accepted": false,
+            "reason": "Required file is missing: missing-baseline.json"
+          }
+        },
+        "positive_controls": {
+          "archived_protocol_summary": {
+            "accepted": true,
+            "excluded_count": 3,
+            "coverage": "BLOCKED",
+            "final_cells": 18,
+            "all_ids_in_markdown": true,
+            "all_paths_in_markdown": true,
+            "all_reasons_in_markdown": true
+          }
+        },
+        "assessment": "Duplicate of COR-03, preserved under the original ID. The original exclusion is rejected, nonexistent pilot records remain rejected even with an allowed basis, and a valid old-protocol pilot triad remains visible in both outputs."
+      },
+      {
+        "id": "FEAS-02",
+        "title": "Resource validation accepts child durations outside the cell and contradictory aggregate totals",
+        "severity": "medium",
+        "historical_verdict": "CONFIRMED",
+        "closure": "CLOSED",
+        "evidence": "tools/evaluate.py:318-337",
+        "actual_outcomes": {
+          "FEAS-02": {
+            "accepted": false,
+            "exception": "ValueError",
+            "reason": "Child context times lie outside the trial"
+          },
+          "FEAS-02-inside-zero": {
+            "accepted": false,
+            "exception": "ValueError",
+            "reason": "Aggregate agent time omits measured child durations"
+          }
+        },
+        "positive_controls": {
+          "measured_child": {
+            "valid": true,
+            "id": "synthetic-unit-R2-baseline",
+            "scenario_id": "R2",
+            "condition": "baseline",
+            "coverage": "COMPLETE",
+            "comparability": "COMPARABLE",
+            "changed_inputs": [],
+            "limit": "Identity and declared evidence checked; reasoning, isolation and causal benefit are not certified."
+          }
+        },
+        "assessment": "The original two-hour child outside a one-minute cell is rejected. A separate in-window thirty-second child paired with aggregate_agent_seconds=0 is also rejected. The same in-window child with aggregate_agent_seconds=30 is accepted."
+      }
+    ],
+    "new_findings": [],
+    "counts": {
+      "CLOSED": 7,
+      "OPEN": 0,
+      "UNRESOLVED": 0
+    },
+    "implementation_blocker_remaining": false,
+    "scope_limit": "No implementation blocker remains among the seven original claims. This closure does not qualify isolation/runtime feasibility, complete the campaign, validate empirical conclusions or re-review unrelated code."
+  },
+  "original_verified_sha256": "9495bfccf90ae8e6a07f50b9ca20d7a0dbf90d5ddfdf949f30a6f67cf2735715",
+  "raw_closure_sha256": "2a68993ef04a7a8c30d5ac9577ccb6f54ee7f0ebb50e0ac23850982a3056617f",
+  "transformation": "Selected fields from original verdicts plus closure packet. Original findings remain unchanged; no old confirmed defect is relabelled refuted. Private locations in closure are replaced with logical references below.",
+  "limits": [
+    "These development reviews did not execute any of the eighteen comparative cells.",
+    "Closure concerns the recorded counterexamples; it does not certify absence of other defects.",
+    "Runtime isolation remains BLOCKED."
+  ],
+  "documentation_carryover": {
+    "path": "docs/specs/QORE-003-feature-spec.md",
+    "current_sha256": "3151fc9fb4507315c539ea2b2fe379a5fa0157e6a5104cbcb6b0bd3f6a937465",
+    "reason": "After closure, the source-only specification wording was clarified to permit the corrected comparator as the actual P2/R2 target. The final whitespace-only normalization below has its own identities; original closure source hashes remain preserved."
+  },
+  "depth_lint_supplement": {
+    "raw_sha256": "c5f2aaa132eeab3e2fe4e92d817b08ac1f34ad54a4c4e43dfdc9c345bb8cf67a",
+    "scope": "Plain Markdown copy-depth refusal discovered by actual rendered review",
+    "result": "PASS",
+    "validator_tests": 44,
+    "independent_cli_controls": 9,
+    "limits": [
+      "Original implementation closure retains its original candidate identity.",
+      "This supplement does not clear runtime isolation or execute comparative trials."
+    ]
+  },
+  "final_input_normalization": {
+    "observed_at": "2026-10-17T08:23:07.647608+00:00",
+    "resources": [
+      {
+        "path": "docs/specs/QORE-003-feature-spec.md",
+        "before_sha256": "ba7af699c5ef725f372767fad77405c856cbde3d8e02b61e62e3990dd2b41a10",
+        "after_sha256": "3151fc9fb4507315c539ea2b2fe379a5fa0157e6a5104cbcb6b0bd3f6a937465",
+        "change": "Remove one blank line at EOF; no content or behavior edit."
+      },
+      {
+        "path": "evals/fixtures/protocol-corrected.md",
+        "before_sha256": "bac490de6be5bc06d2c1e3fde0e9b75d31f34deea02ec578dee3ef33e3e1892a",
+        "after_sha256": "0a3452f02e358d8800fb26d591083deb972c5531165473990dc27007a9a9e0d4",
+        "change": "Remove one blank line at EOF; no content or behavior edit."
+      },
+      {
+        "path": "evals/fixtures/protocol-incomplete.md",
+        "before_sha256": "e111cc9618e004e126d99f246b3342e91bd52f7acf8f0252eb2d256f7ca1045c",
+        "after_sha256": "b8d1f4ad7bd691dbf8f019cd3b87a7644a21899e6317edebac545fd3b245136e",
+        "change": "Remove one blank line at EOF; no content or behavior edit."
+      },
+      {
+        "path": "evals/scenarios.json",
+        "before_sha256": "f5ed866c0cf0cb26f901bb64fc3146fe3b40edd6f6ed51418df5e1b3fb140157",
+        "after_sha256": "46534adc957971607cb4af8ae555727b933746b61081822be77acf9d79d2ea49",
+        "change": "Remove one blank line at EOF; no content or behavior edit."
+      }
+    ],
+    "limits": [
+      "Original review evidence is not rebound to the normalized bytes. No comparative cell has run. Scenario and series digests were refreshed; affected local validation and reproducible builds were repeated."
+    ]
+  }
+}

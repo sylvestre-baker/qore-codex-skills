@@ -1,0 +1,82 @@
+{
+  "qore_evidence": {
+    "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+    "target_snapshot_sha256": "ca02b75180a201ba8f9abb4e095a3d72cd0066f939e66c2e34bc7a781ad0c34d",
+    "observed_at": "2026-10-17T11:11:48.805252+00:00",
+    "phase_id": "browser"
+  },
+  "payload": {
+    "actor_id": "/root",
+    "status": "PASS",
+    "start_utc": "2026-10-17T11:07:09.603835+00:00",
+    "end_utc": "2026-10-17T11:11:48.805162+00:00",
+    "driver": {
+      "name": "Playwright Chromium",
+      "node": "v22.23.3",
+      "version": "1.62.1",
+      "browser_version": "151.0.7922.34"
+    },
+    "capabilities": "capability-matrix.json",
+    "receipts": [
+      "relay-1/relay.json",
+      "relay-2/relay.json",
+      "relay-3/relay.json"
+    ],
+    "request_log": [
+      {
+        "request": 1,
+        "dispatch_utc": "2026-10-17T11:07:09.603835+00:00",
+        "path": "browser-request-1.json",
+        "deadline_seconds": 180,
+        "purpose": "Actual driver preflight and public entry -> introduction -> first question",
+        "return_utc": "2026-10-17T11:07:26.427753+00:00",
+        "consumed_utc": "2026-10-17T11:07:57.253980+00:00",
+        "receipt": "relay-1/relay.json",
+        "digest_verification": "all returned files match receipt"
+      },
+      {
+        "request": 2,
+        "dispatch_utc": "2026-10-17T11:07:57.254096+00:00",
+        "path": "browser-request-2.json",
+        "deadline_seconds": 180,
+        "purpose": "Full keyboard help Enter/Space/Enter, Close via Tab/Enter, Back via Tab/Enter and distinct focus destinations; request1+2 form iteration1",
+        "return_utc": "2026-10-17T11:08:36.240227+00:00",
+        "consumed_utc": "2026-10-17T11:09:31.636542+00:00",
+        "receipt": "relay-2/relay.json",
+        "digest_verification": "all returned files match receipt"
+      },
+      {
+        "request": 3,
+        "dispatch_utc": "2026-10-17T11:09:31.825250+00:00",
+        "path": "browser-request-3.json",
+        "deadline_seconds": 180,
+        "purpose": "Iteration2: valid deep route reload/history, fresh Back-focus overlap challenge with reverse/forward Tab, actual Enter return",
+        "return_utc": "2026-10-17T11:10:11.883489+00:00",
+        "consumed_utc": "2026-10-17T11:11:48.473685+00:00",
+        "receipt": "relay-3/relay.json",
+        "digest_verification": "all returned files match receipt"
+      }
+    ],
+    "inspections": [
+      "inspection-1.json",
+      "inspection-2.json",
+      "inspection-3.json"
+    ],
+    "policy": "policy-evidence.json",
+    "coverage": "COMPLETE within declared desktop journey; limitations retained",
+    "actual_outputs": "Raw events/DOM/PNG/result files in relay-1, relay-2, relay-3 copied byte-for-byte, receipt hashes verified.",
+    "assistance": "Neutral external relay ran declared arrays verbatim, each fresh context; no operator interpretation.",
+    "limitations": [
+      "Only anonymous public en-US desktop default theme at CSS1280x800/DPR1; no mobile, other themes, accounts, full questionnaire, answer selection, results or submission.",
+      "No performance, screen-reader, automated accessibility audit or measured contrast certification. No risky contrast failure established from inspected colors.",
+      "Relay screenshots are full-page captures with fixed/sticky overlays at capture scroll; no separately supplied viewport-only screenshots, geometry evaluation or contrast sampler. Overlap finding is limited to reproducible captured rendering.",
+      "Relay blocks non-GET/HEAD/OPTIONS, service workers and document redirects. Analytics POST expected blocked; behavior with analytics allowed and redirect behavior unqualified.",
+      "No arbitrary navigate action; deep-route server document behavior established by HTTP200 reload after real entry. Invalid URL permutations and arbitrary address-bar entry not separately tested.",
+      "Public deployment observed in UTC windows recorded in relay receipts. Frozen target digest names entire prepared-input manifest, not a deployed source revision; private commits do not establish deployed identity. Enclosing candidate/target digests accepted as supplied; per-file SHA256 retained, enclosing digest serialization not supplied for independent recomputation.",
+      "No application source available for implementation/root-cause inspection; suggested padding/scroll change is a proposal, not an applied or verified fix.",
+      "Trace/video paths are mentioned by driver but files were not returned in relay receipt; available raw DOM/PNG/events/results/receipts retained unmodified.",
+      "Only root actor /root used; UX method requires no independent agents. No independent human first-use or independent verifier claim. Agent-second/token usage telemetry unavailable through supplied tools; elapsed wall time recorded rather than fabricated zero usage.",
+      "Stop-rule suggests CONTINUE because defect remains; review-only protocol explicitly permits stopping with retained finding when fixes unauthorized. No seventh iteration, budget exhaustion, plateau, hidden-rubric comparison or quality retry."
+    ]
+  }
+}

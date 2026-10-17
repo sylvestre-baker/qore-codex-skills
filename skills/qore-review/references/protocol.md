@@ -32,7 +32,9 @@ Combine candidates into a [strict envelope](findings.md), retaining stable uniqu
 
 ## Fresh verifier
 
-Create a context that did not author the change, discover candidates, or read finder reasoning. Use a history-free task context when the host supports it. Supply only the mechanically filtered claims, raw target and necessary criteria/sources, relevant instructions, and bounded verification work. If genuine isolation cannot be obtained, name the missing independent phase; a lead's self-check remains useful evidence but is not this verifier.
+Create a context that did not author the change, discover candidates, or read complete finder reports, separate rationale fields, prior verdicts, or author conclusions. Use a history-free task context when the host supports it. Supply only the mechanically filtered claims, raw target and necessary criteria/sources, relevant instructions, and bounded verification work. If genuine isolation cannot be obtained, name the missing independent phase; a lead's self-check remains useful evidence but is not this verifier.
+
+The actual redactor selects `id`, `title`, `severity`, `evidence`, and optional `counterexample`. Supporting evidence may include a finder-supplied trigger or explanation. Field selection drops undeclared fields. Withholding complete reports and separate rationale is a procedural obligation: this program cannot recognize report text or inferences embedded inside allowed strings, and does not make the verifier blind to the hypothesis. Treat those claims as untrusted input and reproduce or refute them from raw sources. Describe this observed boundary rather than claiming semantic sanitation or absence of anchoring.
 
 For each claim, the verifier attempts a concrete reproduction and an evidence-backed refutation. It returns one verdict:
 

@@ -1,0 +1,41 @@
+{
+  "schema": "qore-public-reference-companions/1",
+  "scope": "Export-only closure of partial source copies archived by the original worker. Every added file is byte-identical to that trial prepared input. No original worker file or native qore-run record changed; these additions are not proof the worker read them. Original model output inventory remains authoritative for execution evidence.",
+  "resources": [
+    {
+      "path": "final-output/evidence/source/.agents/skills/qore-ux-review/agents/openai.yaml",
+      "sha256": "2bafca3b7edce2edac4814b4028fdb814f83c1c2efbea4d461b7469fbe1bd7af",
+      "frozen_source": "prepared/worker/.agents/skills/qore-ux-review/agents/openai.yaml"
+    },
+    {
+      "path": "final-output/evidence/source/.agents/skills/qore-ux-review/references/project-profile.md",
+      "sha256": "154ed11dab8e8499e74a5f3a6afb512827d5de5c73408523b845684e38f59dfc",
+      "frozen_source": "prepared/worker/.agents/skills/qore-ux-review/references/project-profile.md"
+    },
+    {
+      "path": "final-output/evidence/source/.agents/skills/qore-ux-review/references/release.json",
+      "sha256": "61a9f43551f486340fbb2807c3b38c82fe6872b67907c0e6a19d4903cc85ea3e",
+      "frozen_source": "prepared/worker/.agents/skills/qore-ux-review/references/release.json"
+    },
+    {
+      "path": "final-output/evidence/source/.agents/skills/qore-ux-review/scripts/depth-lint.mjs",
+      "sha256": "fd7be484c8e4bf3ba376bdddb88663b31ae9da4c2c7678232ea7a6cc7782bd0f",
+      "frozen_source": "prepared/worker/.agents/skills/qore-ux-review/scripts/depth-lint.mjs"
+    },
+    {
+      "path": "final-output/evidence/source/.agents/skills/qore-ux-review/scripts/project-check.py",
+      "sha256": "d87afa433fe485bdebca3e281d06e0896e4a8980ea7cf7baee739053614ea0ac",
+      "frozen_source": "prepared/worker/.agents/skills/qore-ux-review/scripts/project-check.py"
+    },
+    {
+      "path": "final-output/evidence/source/.agents/skills/qore-ux-review/scripts/run-check.py",
+      "sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+      "frozen_source": "prepared/worker/.agents/skills/qore-ux-review/scripts/run-check.py"
+    },
+    {
+      "path": "final-output/evidence/source/.agents/skills/qore-ux-review/scripts/stop-rule.mjs",
+      "sha256": "5c8d898e3accd82ed1932c791ff5ed1285aae659bae6757488158fc7a8120443",
+      "frozen_source": "prepared/worker/.agents/skills/qore-ux-review/scripts/stop-rule.mjs"
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "qore_evidence": {
+    "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+    "target_snapshot_sha256": "e5f7338342cd59473e3270db3f6632505b9da5b21c93220ca745734c0edd3f45",
+    "observed_at": "2026-10-17T10:21:11.496454+00:00",
+    "phase_id": "finder.correctness"
+  },
+  "payload": {
+    "actor_id": "/root/finder_correctness",
+    "artifact_content": {
+      "finder-correctness.md": "# Correctness finder report\n\nContext: /root/finder_correctness.\nFirst execution observed UTC: 2026-10-17 10:16:15 UTC; first source-read call preceded this clock measurement in the same exec.\nCompletion UTC: 2026-10-17 10:17:42 UTC.\nObserved duration from first clock measurement: 87.087 seconds.\nParent dispatch timestamp unavailable; parent reports dispatch in 10:16:00–10:16:45 UTC.\nToken/CPU usage: null (not exposed by host).\n\nReviewed only target/verification-protocol.md against surface-contract.json, checks/check_contract.py and observation-policy.json, plus permitted method references. No network, peer reports, shared-data mutations or child agents. The source snapshots and actual source byte hashes are retained in finder-correctness-source-audit.json. Parent supplied profile preflight: qaizen-labs 0.1.0, f76afdd45cb6352e5044a06affc4182ea6cd40aa9c012fb216636a61faa428f0.\n\n## Findings\n\n### C-1: Clicking Back does not exercise the required keyboard transition (medium)\n\nTarget target/verification-protocol.md:10 directs “Click Back” followed by content and heading-focus assertions. Source surface-contract.json:15 requires Back traversal with Tab and activation with Enter; :18 requires keyboard-back. checks/check_contract.py:35-36 explicitly requires sequential keyboard traversal and Enter. Trigger: Back works on click and places focus correctly but cannot be reached with Tab or activated with Enter. The target can pass all its assertions without encountering either keyboard failure, leaving keyboard-back unverified.\n\n### C-2: The procedure omits the required help toggle and reopen sequence (medium)\n\nTarget target/verification-protocol.md:7-8 opens help once with summary and immediately closes it through Close. Source surface-contract.json:11-14 separately specifies summary Enter to open, summary Space to toggle closed, summary Enter to reopen, and Close Enter to close; :18 requires help-toggle. No target instruction exercises Space on summary or the help-closed to help-open transition. Trigger: initial opening and Close work but Space toggling or reopening fails. The prescribed run still completes, leaving required help-toggle behavior unverified.\n\n### C-3: The browser procedure starts without establishing required request restrictions (medium)\n\nTarget target/verification-protocol.md:5 starts by opening the public page; the entire procedure (:5-10) contains no request interception, method allowlist, origin validation, or blocked-request observation. Source surface-contract.json:6 allows only GET/HEAD/OPTIONS; :18 requires read-only-policy and origin-policy; :20 says an analytics POST is expected to be blocked and its effects retained. observation-policy.json:2-4 allows only https://qaizen.io. checks/check_contract.py:2,42-43 says it never contacts the site and proves only consistency. Trigger: the page emits the anticipated analytics POST in a browser without a preinstalled restriction. The target supplies no step to block it or retain its observed effects, so the run cannot establish required policy compliance.\n\nThese are finder candidates without independent verification verdicts. They identify what the procedure cannot establish, not live website defects.\n\n## Mandatory boundary trace\n\nCentral value: the Back transition's keyboard activation requirement.\n\nSource → storage: surface-contract.json:15 actually stores id=back, from=help-closed, to=returned-introduction, control=Back, activation=Enter, traversal=Tab, focus_after=introduction-heading. The focus target resolves through :17 to h1. Required_checks at :18 separately stores keyboard-back and introduction-focus; focus does not subsume keyboard reachability or activation.\n\nStorage → actual serializer: checks/check_contract.py:23-31 reads transition id/from/to/control/activation/focus_after. Lines 32-36 read Back traversal/activation and Close/Back focus destinations. Lines 42-43 return exactly valid, schema, checks, limit; line 51 serializes them with json.dumps. The actually observed successful CLI stdout retained in finder-correctness-source-audit.json contains precisely those four fields. It emits no executed browser events, focus measurements or request restrictions. Its limit explicitly says browser observations establish current behavior.\n\nSource → transformation → claim → decision: target line 10 transforms the Back requirement into click plus visibility, absence and heading-focus assertions. It retains the final state/focus assertions, replaces Enter with click, and drops traversal. A user can decide those assertions pass without obtaining evidence of keyboard-back. The target is a manual procedure, not a programmatic receiver of the checker JSON; no transmission from checker output into the document is inferred.\n\nAdjacent help boundary: the source emits separate initial Enter/open, Space/close, Enter/reopen, and Close/Enter events. Target lines 7-8 prescribe an unspecified summary open followed by Close/Enter. The middle events have no prescribed action; C-2 identifies the resulting coverage gap.\n\nPolicy boundary: the source stores allowed_methods=[GET, HEAD, OPTIONS], allowed_origins=[https://qaizen.io], plus expected analytics POST blocking with effects retained. The target specifies navigation without a restriction setup or policy observation. C-3 is conditional on the anticipated request being emitted; no network behavior was measured.\n\nThe whole target and supplied sources were searched for contrary evidence. The target does require Close keyboard traversal/Enter and returned heading focus for Back, but neither addresses Back keyboard activation. The target does retain unanswered-state checks and accurately identifies itself as a reconstructed fixture; neither was reported as defective. No supplied source states that the browser already has a blocker installed. Exact fallback search and its matches are retained in finder-correctness-contrary-search.json.\n\n## Commands and outcomes\n\nInitial cat of target and three raw sources: exit 0. Cat of permitted protocol/findings references plus nl -ba of raw sources: exit 0. Raw source contents are preserved as numbered text in finder-correctness-source-audit.json.\n\nPython source-audit creation: exit 0. Its actual subprocess command was `python3 -B /workspace/worker/checks/check_contract.py /workspace/worker/surface-contract.json`; subprocess exit 0, complete stdout/stderr saved in finder-correctness-source-audit.json. This establishes consistency only.\n\nAttempted rg search/report generation: exit 1, FileNotFoundError for rg; no candidate/report files were written by that failed command. The failure and requested pattern are recorded in finder-correctness-contrary-search.json. Current recovery uses Python re.search over every line of all four files; successful search result is saved there. Report and envelope writing occurs in this recovery command.\n\nReproduction limits: local exact-source comparison only; no live browser or synthetic website was run. Trigger scenarios show observations that the prescribed procedure cannot distinguish, and are not attributed to the deployment.\n\n## Coverage\n\nAll six target steps and all supplied source files were examined for requirements, ordering, preconditions, failure paths, focus destinations and observation restrictions. Incomplete target coverage: none. Live deployment behavior, browser traces, mobile, complete questionnaire and accessibility certification are outside scope. No independent verifier ran in this worker.\n\nSaved complete report: /workspace/output/evidence/finder-correctness.md. Strict candidate envelope: /workspace/output/evidence/finder-correctness.json. Evidence: finder-correctness-source-audit.json and finder-correctness-contrary-search.json in the same directory.\n",
+      "finder-correctness.json": {
+        "findings": [
+          {
+            "id": "C-1",
+            "title": "Clicking Back does not exercise the required keyboard transition",
+            "severity": "medium",
+            "evidence": "Target target/verification-protocol.md:10 directs “Click Back” followed by content and heading-focus assertions. Source surface-contract.json:15 requires Back traversal with Tab and activation with Enter; :18 requires keyboard-back. checks/check_contract.py:35-36 explicitly requires sequential keyboard traversal and Enter. Trigger: Back works on click and places focus correctly but cannot be reached with Tab or activated with Enter. The target can pass all its assertions without encountering either keyboard failure, leaving keyboard-back unverified."
+          },
+          {
+            "id": "C-2",
+            "title": "The procedure omits the required help toggle and reopen sequence",
+            "severity": "medium",
+            "evidence": "Target target/verification-protocol.md:7-8 opens help once with summary and immediately closes it through Close. Source surface-contract.json:11-14 separately specifies summary Enter to open, summary Space to toggle closed, summary Enter to reopen, and Close Enter to close; :18 requires help-toggle. No target instruction exercises Space on summary or the help-closed to help-open transition. Trigger: initial opening and Close work but Space toggling or reopening fails. The prescribed run still completes, leaving required help-toggle behavior unverified."
+          },
+          {
+            "id": "C-3",
+            "title": "The browser procedure starts without establishing required request restrictions",
+            "severity": "medium",
+            "evidence": "Target target/verification-protocol.md:5 starts by opening the public page; the entire procedure (:5-10) contains no request interception, method allowlist, origin validation, or blocked-request observation. Source surface-contract.json:6 allows only GET/HEAD/OPTIONS; :18 requires read-only-policy and origin-policy; :20 says an analytics POST is expected to be blocked and its effects retained. observation-policy.json:2-4 allows only https://qaizen.io. checks/check_contract.py:2,42-43 says it never contacts the site and proves only consistency. Trigger: the page emits the anticipated analytics POST in a browser without a preinstalled restriction. The target supplies no step to block it or retain its observed effects, so the run cannot establish required policy compliance."
+          }
+        ]
+      },
+      "finder-correctness-source-audit.json": {
+        "utc": "2026-10-17T10:16:32.580564+00:00",
+        "sources": {
+          "target/verification-protocol.md": {
+            "sha256": "b8d1f4ad7bd691dbf8f019cd3b87a7644a21899e6317edebac545fd3b245136e",
+            "numbered_text": "1: # Journey verification procedure\n2: \n3: Reconstructed tutorial fixture. Newly authored for QORE-003; not an authentic historical protocol or evidence of a website defect.\n4: \n5: 1. Open the public Labs entry and follow its journey link.\n6: 2. Start the check without selecting an answer.\n7: 3. Open help using its summary control.\n8: 4. Reach Close with Tab or Shift+Tab, activate with Enter, and assert that help is closed and the summary is focused.\n9: 5. Assert that the first question remains unanswered.\n10: 6. Click Back, then assert that the introduction is visible, the question and help are absent, and the introduction heading is focused."
+          },
+          "surface-contract.json": {
+            "sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+            "numbered_text": "1: {\n2:   \"schema\": \"qaizen-labs-surface/1\",\n3:   \"version\": \"0.1.0\",\n4:   \"entry_url\": \"https://qaizen.io/labs\",\n5:   \"allowed_origins\": [\"https://qaizen.io\"],\n6:   \"scope\": {\"locale\": \"en-US\", \"viewport\": {\"width\": 1280, \"height\": 800}, \"depth\": [\"entry\", \"state\"], \"answer_policy\": \"unanswered\", \"allowed_methods\": [\"GET\", \"HEAD\", \"OPTIONS\"]},\n7:   \"states\": [\"labs\", \"introduction\", \"first-question\", \"help-open\", \"help-closed\", \"returned-introduction\"],\n8:   \"transitions\": [\n9:     {\"id\": \"entry\", \"from\": \"labs\", \"to\": \"introduction\", \"control\": \"a[href$='/labs/readiness-check']\", \"activation\": \"click\"},\n10:     {\"id\": \"start\", \"from\": \"introduction\", \"to\": \"first-question\", \"control\": \"Start the check\", \"activation\": \"click\"},\n11:     {\"id\": \"open-help\", \"from\": \"first-question\", \"to\": \"help-open\", \"control\": \"summary\", \"activation\": \"Enter\"},\n12:     {\"id\": \"toggle-help\", \"from\": \"help-open\", \"to\": \"help-closed\", \"control\": \"summary\", \"activation\": \"Space\"},\n13:     {\"id\": \"reopen-help\", \"from\": \"help-closed\", \"to\": \"help-open\", \"control\": \"summary\", \"activation\": \"Enter\"},\n14:     {\"id\": \"close-help\", \"from\": \"help-open\", \"to\": \"help-closed\", \"control\": \"Close\", \"activation\": \"Enter\", \"traversal\": \"Tab\", \"focus_after\": \"summary\"},\n15:     {\"id\": \"back\", \"from\": \"help-closed\", \"to\": \"returned-introduction\", \"control\": \"Back\", \"activation\": \"Enter\", \"traversal\": \"Tab\", \"focus_after\": \"introduction-heading\"}\n16:   ],\n17:   \"focus_targets\": {\"summary\": \"summary\", \"introduction-heading\": \"h1\"},\n18:   \"required_checks\": [\"entry\", \"unanswered\", \"help-toggle\", \"close-focus\", \"keyboard-back\", \"introduction-focus\", \"read-only-policy\", \"origin-policy\"],\n19:   \"provenance\": {\"kind\": \"public-observation-and-declared-acceptance\", \"urls\": [\"https://qaizen.io/labs\", \"https://qaizen.io/labs/readiness-check\"], \"baseline_observed_on\": \"2026-10-15\", \"note\": \"Expected transitions and focus are acceptance obligations, not a claim that the current deployment has passed them. The keyboard proof gap was found in the verification protocol on 2026-10-16, not on the website.\"},\n20:   \"limits\": [\"No answers, result generation, form submission or website source redistribution.\", \"No mobile, complete questionnaire, performance or accessibility certification.\", \"An analytics POST is expected to be blocked; retain its observed effects.\", \"Private source commits do not identify the current deployment.\"]\n21: }"
+          },
+          "checks/check_contract.py": {
+            "sha256": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b",
+            "numbered_text": "1: #!/usr/bin/env python3\n2: \"\"\"Check the public journey contract; never contact the website.\"\"\"\n3: import json\n4: from pathlib import Path\n5: import sys\n6: from urllib.parse import urlsplit\n7: \n8: \n9: def validate(data):\n10:     if not isinstance(data, dict) or data.get(\"schema\") != \"qaizen-labs-surface/1\":\n11:         raise ValueError(\"Expected qaizen-labs-surface/1\")\n12:     entry = urlsplit(data[\"entry_url\"])\n13:     origin = entry.scheme + \"://\" + entry.netloc\n14:     if entry.scheme != \"https\" or entry.username or entry.password or origin not in data[\"allowed_origins\"]:\n15:         raise ValueError(\"Entry must have an explicitly authorized HTTPS origin\")\n16:     scope = data[\"scope\"]\n17:     if scope[\"answer_policy\"] != \"unanswered\" or set(scope[\"allowed_methods\"]) != {\"GET\", \"HEAD\", \"OPTIONS\"}:\n18:         raise ValueError(\"The observation must remain read-only and unanswered\")\n19:     states = data[\"states\"]\n20:     if not isinstance(states, list) or len(states) != len(set(states)) or not states:\n21:         raise ValueError(\"State IDs must be nonempty and unique\")\n22:     by_id = {}\n23:     for transition in data[\"transitions\"]:\n24:         key = transition[\"id\"]\n25:         if key in by_id or transition[\"from\"] not in states or transition[\"to\"] not in states:\n26:             raise ValueError(\"Duplicate transition or unknown state: \" + key)\n27:         if not transition[\"control\"] or not transition[\"activation\"]:\n28:             raise ValueError(\"Every transition needs a control and activation\")\n29:         if transition.get(\"focus_after\") and transition[\"focus_after\"] not in data[\"focus_targets\"]:\n30:             raise ValueError(\"Unknown focus target: \" + key)\n31:         by_id[key] = transition\n32:     close, back = by_id[\"close-help\"], by_id[\"back\"]\n33:     if close.get(\"focus_after\") != \"summary\" or back.get(\"focus_after\") != \"introduction-heading\":\n34:         raise ValueError(\"Close and Back require different focus destinations\")\n35:     if back.get(\"traversal\") not in (\"Tab\", \"Shift+Tab\") or back[\"activation\"] != \"Enter\":\n36:         raise ValueError(\"Back requires sequential keyboard traversal and observed activation\")\n37:     required = data[\"required_checks\"]\n38:     if not isinstance(required, list) or len(required) != len(set(required)) or not {\"keyboard-back\", \"unanswered\", \"close-focus\", \"introduction-focus\", \"read-only-policy\", \"origin-policy\"}.issubset(required):\n39:         raise ValueError(\"Missing or duplicate required checks\")\n40:     if data[\"provenance\"][\"kind\"] != \"public-observation-and-declared-acceptance\" or not data[\"provenance\"][\"urls\"]:\n41:         raise ValueError(\"Public provenance and observation/expectation distinction are required\")\n42:     return {\"valid\": True, \"schema\": data[\"schema\"], \"checks\": required,\n43:             \"limit\": \"Contract consistency only; browser observations establish current behavior.\"}\n44: \n45: \n46: if __name__ == \"__main__\":\n47:     try:\n48:         if len(sys.argv) != 2:\n49:             raise ValueError(\"Usage: python3 -B checks/check_contract.py surface-contract.json\")\n50:         result = validate(json.loads(Path(sys.argv[1]).read_text(encoding=\"utf-8\")))\n51:         print(json.dumps(result, indent=2))\n52:     except (ValueError, KeyError, TypeError, OSError) as error:\n53:         print(json.dumps({\"valid\": False, \"error\": str(error)}), file=sys.stderr)\n54:         sys.exit(1)"
+          },
+          "observation-policy.json": {
+            "sha256": "15f4e5b4960b5011684be265f027e42b8637a3b8aae96b24bba1ba3a4d0f0202",
+            "numbered_text": "1: {\n2:   \"allowed_origins\": [\n3:     \"https://qaizen.io\"\n4:   ]\n5: }"
+          }
+        },
+        "checker": {
+          "command": [
+            "python3",
+            "-B",
+            "/workspace/worker/checks/check_contract.py",
+            "/workspace/worker/surface-contract.json"
+          ],
+          "exit_status": 0,
+          "stdout": "{\n  \"valid\": true,\n  \"schema\": \"qaizen-labs-surface/1\",\n  \"checks\": [\n    \"entry\",\n    \"unanswered\",\n    \"help-toggle\",\n    \"close-focus\",\n    \"keyboard-back\",\n    \"introduction-focus\",\n    \"read-only-policy\",\n    \"origin-policy\"\n  ],\n  \"limit\": \"Contract consistency only; browser observations establish current behavior.\"\n}\n",
+          "stderr": ""
+        },
+        "trace": {
+          "back_source": {
+            "id": "back",
+            "from": "help-closed",
+            "to": "returned-introduction",
+            "control": "Back",
+            "activation": "Enter",
+            "traversal": "Tab",
+            "focus_after": "introduction-heading"
+          },
+          "target_consumer": "6. Click Back, then assert that the introduction is visible, the question and help are absent, and the introduction heading is focused.",
+          "help_source": [
+            {
+              "id": "open-help",
+              "from": "first-question",
+              "to": "help-open",
+              "control": "summary",
+              "activation": "Enter"
+            },
+            {
+              "id": "toggle-help",
+              "from": "help-open",
+              "to": "help-closed",
+              "control": "summary",
+              "activation": "Space"
+            },
+            {
+              "id": "reopen-help",
+              "from": "help-closed",
+              "to": "help-open",
+              "control": "summary",
+              "activation": "Enter"
+            },
+            {
+              "id": "close-help",
+              "from": "help-open",
+              "to": "help-closed",
+              "control": "Close",
+              "activation": "Enter",
+              "traversal": "Tab",
+              "focus_after": "summary"
+            }
+          ],
+          "required_checks": [
+            "entry",
+            "unanswered",
+            "help-toggle",
+            "close-focus",
+            "keyboard-back",
+            "introduction-focus",
+            "read-only-policy",
+            "origin-policy"
+          ]
+        }
+      },
+      "finder-correctness-contrary-search.json": {
+        "attempted_command": "rg -n Space|Enter|Tab|Click|POST|GET|HEAD|OPTIONS|origin|toggle|keyboard|read-only|Contract consistency target/verification-protocol.md surface-contract.json checks/check_contract.py observation-policy.json",
+        "exit_status": 1,
+        "error": "FileNotFoundError: rg unavailable; Python re search used instead",
+        "fallback": "Python re.search(pattern,line), all lines of four supplied source files",
+        "fallback_exit_status": 0,
+        "stdout": "target/verification-protocol.md:8:4. Reach Close with Tab or Shift+Tab, activate with Enter, and assert that help is closed and the summary is focused.\ntarget/verification-protocol.md:10:6. Click Back, then assert that the introduction is visible, the question and help are absent, and the introduction heading is focused.\nsurface-contract.json:5:  \"allowed_origins\": [\"https://qaizen.io\"],\nsurface-contract.json:6:  \"scope\": {\"locale\": \"en-US\", \"viewport\": {\"width\": 1280, \"height\": 800}, \"depth\": [\"entry\", \"state\"], \"answer_policy\": \"unanswered\", \"allowed_methods\": [\"GET\", \"HEAD\", \"OPTIONS\"]},\nsurface-contract.json:11:    {\"id\": \"open-help\", \"from\": \"first-question\", \"to\": \"help-open\", \"control\": \"summary\", \"activation\": \"Enter\"},\nsurface-contract.json:12:    {\"id\": \"toggle-help\", \"from\": \"help-open\", \"to\": \"help-closed\", \"control\": \"summary\", \"activation\": \"Space\"},\nsurface-contract.json:13:    {\"id\": \"reopen-help\", \"from\": \"help-closed\", \"to\": \"help-open\", \"control\": \"summary\", \"activation\": \"Enter\"},\nsurface-contract.json:14:    {\"id\": \"close-help\", \"from\": \"help-open\", \"to\": \"help-closed\", \"control\": \"Close\", \"activation\": \"Enter\", \"traversal\": \"Tab\", \"focus_after\": \"summary\"},\nsurface-contract.json:15:    {\"id\": \"back\", \"from\": \"help-closed\", \"to\": \"returned-introduction\", \"control\": \"Back\", \"activation\": \"Enter\", \"traversal\": \"Tab\", \"focus_after\": \"introduction-heading\"}\nsurface-contract.json:18:  \"required_checks\": [\"entry\", \"unanswered\", \"help-toggle\", \"close-focus\", \"keyboard-back\", \"introduction-focus\", \"read-only-policy\", \"origin-policy\"],\nsurface-contract.json:19:  \"provenance\": {\"kind\": \"public-observation-and-declared-acceptance\", \"urls\": [\"https://qaizen.io/labs\", \"https://qaizen.io/labs/readiness-check\"], \"baseline_observed_on\": \"2026-10-15\", \"note\": \"Expected transitions and focus are acceptance obligations, not a claim that the current deployment has passed them. The keyboard proof gap was found in the verification protocol on 2026-10-16, not on the website.\"},\nsurface-contract.json:20:  \"limits\": [\"No answers, result generation, form submission or website source redistribution.\", \"No mobile, complete questionnaire, performance or accessibility certification.\", \"An analytics POST is expected to be blocked; retain its observed effects.\", \"Private source commits do not identify the current deployment.\"]\nchecks/check_contract.py:13:    origin = entry.scheme + \"://\" + entry.netloc\nchecks/check_contract.py:14:    if entry.scheme != \"https\" or entry.username or entry.password or origin not in data[\"allowed_origins\"]:\nchecks/check_contract.py:15:        raise ValueError(\"Entry must have an explicitly authorized HTTPS origin\")\nchecks/check_contract.py:17:    if scope[\"answer_policy\"] != \"unanswered\" or set(scope[\"allowed_methods\"]) != {\"GET\", \"HEAD\", \"OPTIONS\"}:\nchecks/check_contract.py:18:        raise ValueError(\"The observation must remain read-only and unanswered\")\nchecks/check_contract.py:35:    if back.get(\"traversal\") not in (\"Tab\", \"Shift+Tab\") or back[\"activation\"] != \"Enter\":\nchecks/check_contract.py:36:        raise ValueError(\"Back requires sequential keyboard traversal and observed activation\")\nchecks/check_contract.py:38:    if not isinstance(required, list) or len(required) != len(set(required)) or not {\"keyboard-back\", \"unanswered\", \"close-focus\", \"introduction-focus\", \"read-only-policy\", \"origin-policy\"}.issubset(required):\nchecks/check_contract.py:43:            \"limit\": \"Contract consistency only; browser observations establish current behavior.\"}\nobservation-policy.json:2:  \"allowed_origins\": ["
+      }
+    },
+    "actual_role": {
+      "role": "finder.correctness",
+      "actor_id": "/root/finder_correctness",
+      "requested": true,
+      "fork_turns": "none",
+      "dispatch_utc": null,
+      "dispatch_utc_bounds": [
+        "2026-10-17T10:16:00+00:00",
+        "2026-10-17T10:16:15+00:00"
+      ],
+      "dispatch_timestamp_limitation": "Clock observations bracket actual spawn calls; spawn API exposes context name but no timestamp. Exact dispatch instant unavailable.",
+      "deadline_utc": "2026-10-17T10:19:01+00:00",
+      "role_budget_seconds": 180,
+      "status": "returned",
+      "returned_utc": "2026-10-17T10:17:50+00:00",
+      "usage": null,
+      "usage_unavailable_reason": "Host exposes no per-agent CPU/token or aggregate usage counters.",
+      "returned_utc_basis": "Parent clock observation after receipt; exact callback instant unavailable.",
+      "report": "evidence/finder-correctness.md",
+      "first_action_observed_utc": "2026-10-17T10:16:15+00:00",
+      "worker_completion_utc": "2026-10-17T10:17:42+00:00"
+    },
+    "captured_at": "2026-10-17T10:21:11.496450+00:00",
+    "note": "Wrapper created after actual phase; full raw report/output content retained. This is same-run evidence, not a renewed previous-run proof."
+  }
+}

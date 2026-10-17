@@ -1,0 +1,13 @@
+{
+  "argv": [
+    "bash",
+    "scripts/spec-lint.sh",
+    "/workspace/output/REPORT.md"
+  ],
+  "cwd": "/workspace/worker/.agents/skills/qore-plan",
+  "exit_code": 0,
+  "stdout": "spec-lint: valid qore-spec/1 (14 scenarios).\n",
+  "stderr": "",
+  "observed_at": "2026-10-17T10:34:55.158007+00:00",
+  "reason": "Revalidated final report after adding actual validation status and accounting."
+}

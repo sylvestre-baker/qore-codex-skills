@@ -1,0 +1,74 @@
+{
+  "actor_id": "/root/campaign_ux_last_assessor",
+  "neutral_id": "N15",
+  "scenario_id": "U2",
+  "started_at_utc": "2026-10-17T12:13:43Z",
+  "ended_at_utc": "2026-10-17T12:15:47.230988+00:00",
+  "text_inspected": [
+    "assessment-inputs/criteria.json",
+    "assessment-inputs/N15/input/TASK.md",
+    "assessment-inputs/N15/input/surface-contract.json",
+    "assessment-inputs/N15/input/checks/check_contract.py",
+    "assessment-inputs/N15/input/observation-policy.json",
+    "assessment-inputs/N15/observed-metadata.json",
+    "assessment-inputs/N15/output/REPORT.md",
+    "assessment-inputs/N15/output/browser-request-1.json",
+    "assessment-inputs/N15/output/browser-request-2.json",
+    "assessment-inputs/N15/output/contract-check.json",
+    "assessment-inputs/N15/observation-1/actions.json",
+    "assessment-inputs/N15/observation-2/actions.json",
+    "assessment-inputs/N15/observation-1/relay.json",
+    "assessment-inputs/N15/observation-2/relay.json",
+    "assessment-inputs/N15/observation-2/command.json",
+    "assessment-inputs/N15/observation-1/raw/result.json",
+    "assessment-inputs/N15/observation-2/raw/result.json",
+    "assessment-inputs/N15/observation-1/raw/events.json",
+    "assessment-inputs/N15/observation-2/raw/events.json",
+    "assessment-inputs/N15/operator/live-policy.json",
+    "assessment-inputs/N15/operator/browser_probe.mjs (selected relevant sections)",
+    "assessment-inputs/N15/boundary.json",
+    "assessment-inputs/N15/completion.json"
+  ],
+  "dom_inspected": [
+    "assessment-inputs/N15/observation-2/raw/01-help-open-enter.dom.json",
+    "assessment-inputs/N15/observation-2/raw/02-help-closed-space.dom.json",
+    "assessment-inputs/N15/observation-2/raw/03-help-reopened-enter.dom.json",
+    "assessment-inputs/N15/observation-2/raw/04-after-keyboard-close.dom.json",
+    "assessment-inputs/N15/observation-2/raw/05-returned-introduction.dom.json"
+  ],
+  "images_actually_viewed": [
+    {
+      "path": "assessment-inputs/N15/observation-2/raw/01-help-open-enter.png",
+      "capture_type": "full-page screenshot, browser viewport 1280x800"
+    },
+    {
+      "path": "assessment-inputs/N15/observation-2/raw/02-help-closed-space.png",
+      "capture_type": "full-page screenshot, browser viewport 1280x800"
+    },
+    {
+      "path": "assessment-inputs/N15/observation-2/raw/03-help-reopened-enter.png",
+      "capture_type": "full-page screenshot, browser viewport 1280x800"
+    },
+    {
+      "path": "assessment-inputs/N15/observation-2/raw/04-after-keyboard-close.png",
+      "capture_type": "full-page screenshot, browser viewport 1280x800"
+    },
+    {
+      "path": "assessment-inputs/N15/observation-2/raw/05-returned-introduction.png",
+      "capture_type": "full-page screenshot, browser viewport 1280x800"
+    }
+  ],
+  "not_inspected": [
+    "Other cases and comparative conclusions",
+    "Other evaluators/verifiers",
+    "Private website source and author corrections",
+    "Request-1 PNGs",
+    "Raw videos/traces",
+    "Unlisted DOM/PNG files"
+  ],
+  "notes": [
+    "Some initial combined output was truncated; core events were subsequently re-extracted concisely for both sessions, and relevant harness slices separately read.",
+    "Raw files and author report assessed independently of the author conclusions."
+  ],
+  "overrun": false
+}

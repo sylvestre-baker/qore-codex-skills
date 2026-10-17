@@ -1,0 +1,25 @@
+{
+  "findings": [
+    {
+      "id": "UX-C01",
+      "title": "The undismissed cookie banner conceals the focused Back control in the captured public journey",
+      "severity": "medium",
+      "evidence": "assessment-inputs/N12/output/REPORT.md:24-26 (original P2/moderate); assessment-inputs/N12/observation-2/raw/06-back-keyboard-focus.png and matching .dom.json; assessment-inputs/N12/observation-4/raw/03-back-focus-obscuration-challenge.png and matching .dom.json; assessment-inputs/N12/operator/browser_probe.mjs:231-246; verification-wave2/targeted-live-raw/06-back-keyboard-focus.viewport-measurements.json; verification-wave2/targeted-live-raw/06-back-keyboard-focus.viewport.png; verification-wave2/targeted-command.json; verification-wave2/verification-identity.json",
+      "verdict": "CONFIRMED",
+      "original_label": "P2 / moderate",
+      "counterexample": "In one separate targeted verification on 2026-10-17 at 11:11:41.075 UTC, the original action prefix 0..25 reached the focused Back button in a fresh anonymous unanswered 1280x800 context with scrollY=233. Before any full-page capture of that focused state, Back was at x384,y721.5,width80.03125,height46; the undismissed fixed cookie banner was at x0,y721.5,width1280,height78.5,z-index60. Back's rectangle lay wholly inside the banner bounds. All 25 sampled interior elementFromPoint points hit banner descendants and zero hit Back. The actually inspected viewport-only PNG conceals the Back label while a small upper focus-ring segment remains visible. Measurements are unchanged after viewport and full-page captures.",
+      "minimum_correction": "Reserve sufficient unobscured scroll space while the consent banner remains present and ensure sequentially focused controls are brought into the unobscured viewport; verify the same unanswered keyboard journey with consent still undismissed. Do not infer a failed Back action.",
+      "limits": "Confirmed scoped current reproduction, preserving medium/P2 impact. Original historical snapshots were full-page only, with no scroll offsets or rectangles; their exact historical viewport overlap remains unrecorded. Current full-page PNG is byte-identical to both cited historical PNGs, which corroborates but does not reconstruct missing historical viewport measurements. No accessibility certification; 25 sampled points are not exhaustive conformance testing; other viewports and current Back activation were not tested."
+    },
+    {
+      "id": "UX-C02",
+      "title": "The neutral relay advertises text locators that its actual browser harness does not implement",
+      "severity": "medium",
+      "evidence": "run_ux.py INTERFACE supported action fields; assessment-inputs/N05/observation-1/actions.json and raw/result.json; assessment-inputs/N05/operator/browser_probe.mjs:297-324; run_ux.py:42-44; verification-wave2/relay-interface-extract.txt; verification-wave2/text-locator-offline.mjs; verification-wave2/text-locator-offline-result.json",
+      "verdict": "CONFIRMED",
+      "counterexample": "The advertised click object {\"type\":\"click\",\"text\":\"Start the check\",\"exact\":true} was submitted in N05 observation-1 actions.json at index3. The actual result is PARTIAL, with entry/introduction snapshots only and error \"Activation guard blocked click: The activation locator did not resolve exactly one visible control.\" N05 browser_probe.mjs:297 chooses role/name or page.locator(action.selector) and never reads action.text. An offline real-Playwright fixture executing that exact extracted expression yields \"locator.waitFor: selector: expected string, got undefined\" for the same action, while role/name and selector:text variants resolve the same existing button and direct getByText returns one match.",
+      "minimum_correction": "Align the advertised relay fields and actual locator resolver. Either implement explicit text dispatch using page.getByText(action.text,{exact:action.exact!==false}) through the same activation guard and qualify it for every promised locator action, or remove text-only alternatives from the interface and require role/name or selector. Preserve guard refusal receipts and reject malformed locator fields explicitly.",
+      "limits": "This is an operator interface/implementation mismatch, not a website defect. assert-text already uses getByText, and Playwright text syntax inside selector works; the unsupported feature is the advertised text field in the shared locator actions. The offline fixture does not replace the historical failed request. No other campaign cells or unrelated action behavior assessed."
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+[
+  {
+    "request": 1,
+    "window": [
+      "2026-10-17T11:07:11.207Z",
+      "2026-10-17T11:07:26.415Z"
+    ],
+    "origins": [
+      "https://qaizen.io"
+    ],
+    "completed_methods": [
+      "GET"
+    ],
+    "network_count": 72,
+    "page_errors": [],
+    "blocked_mutations": [
+      {
+        "at": "2026-10-17T11:07:17.273Z",
+        "method": "POST",
+        "url": "https://qaizen.io/api/labs/readiness/event",
+        "reason": "Read-only probe policy"
+      }
+    ],
+    "console": [
+      {
+        "at": "2026-10-17T11:07:17.277Z",
+        "type": "error",
+        "text": "Failed to load resource: net::ERR_BLOCKED_BY_CLIENT.Inspector",
+        "location": {
+          "url": "https://qaizen.io/api/labs/readiness/event",
+          "line": 0,
+          "column": 0,
+          "lineNumber": 0,
+          "columnNumber": 0
+        }
+      }
+    ],
+    "blocked_navigation": [],
+    "route_errors": [],
+    "blocked_activations": []
+  },
+  {
+    "request": 2,
+    "window": [
+      "2026-10-17T11:07:58.154Z",
+      "2026-10-17T11:08:36.226Z"
+    ],
+    "origins": [
+      "https://qaizen.io"
+    ],
+    "completed_methods": [
+      "GET"
+    ],
+    "network_count": 72,
+    "page_errors": [],
+    "blocked_mutations": [
+      {
+        "at": "2026-10-17T11:08:03.969Z",
+        "method": "POST",
+        "url": "https://qaizen.io/api/labs/readiness/event",
+        "reason": "Read-only probe policy"
+      }
+    ],
+    "console": [
+      {
+        "at": "2026-10-17T11:08:03.973Z",
+        "type": "error",
+        "text": "Failed to load resource: net::ERR_BLOCKED_BY_CLIENT.Inspector",
+        "location": {
+          "url": "https://qaizen.io/api/labs/readiness/event",
+          "line": 0,
+          "column": 0,
+          "lineNumber": 0,
+          "columnNumber": 0
+        }
+      }
+    ],
+    "blocked_navigation": [],
+    "route_errors": [],
+    "blocked_activations": []
+  },
+  {
+    "request": 3,
+    "window": [
+      "2026-10-17T11:09:33.159Z",
+      "2026-10-17T11:10:11.864Z"
+    ],
+    "origins": [
+      "https://qaizen.io"
+    ],
+    "completed_methods": [
+      "GET"
+    ],
+    "network_count": 144,
+    "page_errors": [],
+    "blocked_mutations": [
+      {
+        "at": "2026-10-17T11:09:47.192Z",
+        "method": "POST",
+        "url": "https://qaizen.io/api/labs/readiness/event",
+        "reason": "Read-only probe policy"
+      }
+    ],
+    "console": [
+      {
+        "at": "2026-10-17T11:09:47.195Z",
+        "type": "error",
+        "text": "Failed to load resource: net::ERR_BLOCKED_BY_CLIENT.Inspector",
+        "location": {
+          "url": "https://qaizen.io/api/labs/readiness/event",
+          "line": 0,
+          "column": 0,
+          "lineNumber": 0,
+          "columnNumber": 0
+        }
+      }
+    ],
+    "blocked_navigation": [],
+    "route_errors": [],
+    "blocked_activations": []
+  }
+]

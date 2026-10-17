@@ -1,0 +1,64 @@
+{
+  "actor_id": "/root",
+  "reported_at": "2026-10-17T11:01:10.932896+00:00",
+  "gates": {
+    "G0": {
+      "score": 4,
+      "evidence": "response-2/01-introduction.dom.json",
+      "conclusion": "Actual entry card reaches distinct intended introduction."
+    },
+    "G1": {
+      "status": "PARTIAL / SKIPPED cold-deep check",
+      "evidence": [
+        "response-4/01-deep-document-reload.dom.json",
+        "response-5/result.json"
+      ],
+      "conclusion": "Introduction reload, unanswered-question reload and history Back/Forward observed; cold deep entry unavailable in API. No numeric aggregate score conceals that gap."
+    },
+    "G2": {
+      "score": 4,
+      "evidence": [
+        "response-2/events.json",
+        "response-4/events.json",
+        "response-5/events.json"
+      ],
+      "conclusion": "All scoped states resolve; no answers selected; analytics blocked; questionnaire data/results forbidden."
+    },
+    "G3": {
+      "score": 3,
+      "evidence": "response-4/03-back-focus-obscuration-challenge.png",
+      "conclusion": "UX-1 captured overlap; otherwise hierarchy and layout readable in inspected states."
+    },
+    "G4": {
+      "score": 4,
+      "evidence": [
+        "response-2/03-help-open-enter.dom.json",
+        "response-2/07-returned-introduction.dom.json"
+      ],
+      "conclusion": "Scoped introduction, first question and help copy readable, coherent and appropriate; no exposed null/undefined/error text observed."
+    },
+    "G5": {
+      "score": 3,
+      "evidence": [
+        "response-2/events.json",
+        "response-4/03-back-focus-obscuration-challenge.png"
+      ],
+      "conclusion": "Names, sequential keyboard navigation and focus restoration pass; focused Back visual identification affected by UX-1. Not accessibility certification."
+    },
+    "G6": {
+      "score": 4,
+      "evidence": [
+        "response-4/events.json",
+        "response-5/events.json",
+        "findings.json"
+      ],
+      "conclusion": "Challenged state isolation, focus conflation, restart/reset assumptions and analytics-error impact. Retained overlap and direct-navigation gap."
+    },
+    "GP": {
+      "status": "NOT_APPLICABLE",
+      "reason": "Supplied contract expressly excludes performance; no performance change or acceptance budget supplied."
+    }
+  },
+  "no_fixes": true,
+  "observation_times": "Raw snapshot/event timestamps retained per request. No measurements predate the supplied last relevant change."
+}

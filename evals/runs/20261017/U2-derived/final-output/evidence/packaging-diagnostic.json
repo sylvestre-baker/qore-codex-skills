@@ -1,0 +1,12 @@
+{
+  "command": [
+    "python3",
+    "/workspace/output/finalize.py"
+  ],
+  "first_exit_code": 1,
+  "diagnostic": "shutil.Error: Permission denied overwriting previously copied read-only response-1 files under /workspace/output/evidence/response-1.",
+  "correction": "Skip copying existing response directories; verify all raw file bytes against actual relay receipt. Inbox and input files untouched.",
+  "second_exit_code": 0,
+  "stdout_summary": "stop_rule_exit 0; 6 phase reports; inputs unchanged.",
+  "usage": "No unobserved resource usage inferred from command exits."
+}

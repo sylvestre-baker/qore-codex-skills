@@ -1,0 +1,18 @@
+{
+  "observed_at": "2026-10-17T11:18:39.366772+00:00",
+  "wall_start_utc": "2026-10-17T11:13:27+00:00",
+  "wall_elapsed_seconds_at_capture": 312.366772,
+  "wall_budget_seconds": 900,
+  "aggregate_agent_seconds_budget": 2400,
+  "measured_aggregate_agent_seconds": null,
+  "measured_tokens": null,
+  "usage_unavailable_reason": "No host tool exposes metered per-context usage. Never substituted zero.",
+  "conservative_context_wall_bound_at_capture_seconds": 723.3667720000001,
+  "bound_procedure": "Root elapsed plus each child receipt minus its earliest documented dispatch bound (including scheduler and tool time). This is a conservative context-wall bound, not metered model time. Final root elapsed continues until return.",
+  "max_live_children_observed": 3,
+  "roles_expired": [],
+  "partial_result_requests_at_expiry": [],
+  "expiry_reason": "Every role returned before its declared deadline; no role-expiry partial request was necessary.",
+  "budget_exhausted": false,
+  "new_dispatches_after_exhaustion": false
+}

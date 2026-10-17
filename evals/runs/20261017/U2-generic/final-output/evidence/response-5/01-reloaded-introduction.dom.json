@@ -1,0 +1,103 @@
+{
+  "url": "https://qaizen.io/labs/readiness-check",
+  "title": "Production Readiness Check: Could Your AI Pilot Go Live? | QAIZEN",
+  "language": "en",
+  "viewport": {
+    "width": 1280,
+    "height": 800,
+    "device_pixel_ratio": 1
+  },
+  "headings": [
+    {
+      "tag": "H1",
+      "text": "COULD YOUR AI PILOT GO LIVE? A CHECK IN ABOUT 3 MINUTES"
+    }
+  ],
+  "links": [
+    {
+      "text": "Skip to content",
+      "href": "https://qaizen.io/labs/readiness-check#main-content"
+    },
+    {
+      "text": "Privacy policy",
+      "href": "https://qaizen.io/privacy"
+    },
+    {
+      "text": "OUR PRODUCT",
+      "href": "https://qaizen.io/#meeting-agent"
+    },
+    {
+      "text": "CUSTOM AGENTS",
+      "href": "https://qaizen.io/#agents"
+    },
+    {
+      "text": "READINESS REVIEW",
+      "href": "https://qaizen.io/services/readiness-review"
+    },
+    {
+      "text": "LABS",
+      "href": "https://qaizen.io/labs"
+    },
+    {
+      "text": "BLOG",
+      "href": "https://qaizen.io/blog"
+    },
+    {
+      "text": "Back to Labs",
+      "href": "https://qaizen.io/labs"
+    },
+    {
+      "text": "PRODUCTION READINESS CHECK",
+      "href": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "text": "SHADOW AI AUDIT",
+      "href": "https://qaizen.io/labs/shadow-ai"
+    },
+    {
+      "text": "ROI & COST OF DELAY",
+      "href": "https://qaizen.io/labs/roi-calculator"
+    },
+    {
+      "text": "AGENT REPLAY",
+      "href": "https://qaizen.io/labs/agent-replay"
+    },
+    {
+      "text": "Privacy policy",
+      "href": "https://qaizen.io/privacy"
+    }
+  ],
+  "buttons": [
+    {
+      "text": "Reject",
+      "type": "button",
+      "disabled": false
+    },
+    {
+      "text": "Accept",
+      "type": "button",
+      "disabled": false
+    },
+    {
+      "text": "🇬🇧 EN",
+      "type": "submit",
+      "disabled": false
+    },
+    {
+      "text": "",
+      "type": "button",
+      "disabled": false
+    },
+    {
+      "text": "START THE CHECK",
+      "type": "button",
+      "disabled": false
+    }
+  ],
+  "active_element": {
+    "tag": "BODY",
+    "text": "Skip to contentAnalytics cookies. We would like to measure visits with Google Analytics and Microsoft Clarity to improve this site. Nothing is loaded unless you accept; you can change your mind at any",
+    "id": ""
+  },
+  "text": "Skip to content\n\nAnalytics cookies. We would like to measure visits with Google Analytics and Microsoft Clarity to improve this site. Nothing is loaded unless you accept; you can change your mind at any time via \"Cookie settings\" at the bottom of every page. Privacy policy\n\nReject\nAccept\nOUR PRODUCT\nCUSTOM AGENTS\nREADINESS REVIEW\nLABS\nBLOG\n🇬🇧 EN\nBack to Labs\nPRODUCTION READINESS CHECK\nSHADOW AI AUDIT\nROI & COST OF DELAY\nAGENT REPLAY\n\nPRODUCTION READINESS CHECK\n\nCOULD YOUR AI PILOT GO LIVE? A CHECK IN ABOUT 3 MINUTES\n\nTen multiple-choice questions about your pilot. You get a status for each of the five gates a pilot has to clear before production, and the blockers most likely to stall go-live.\n\nThis check covers go-live controls, not the business case.\n\n10 questions · 5 gates · no e-mail needed\n\nSTART THE CHECK\n\nWe do not keep your answers: they are scored in this browser and travel only in your result link. If an e-mail tool rewrites that link, it passes through our server to be restored, and our host’s request log holds it for at most a day. We only keep anonymous daily totals of checks started, completed and calls booked from the result. Privacy policy"
+}

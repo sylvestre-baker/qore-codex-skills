@@ -1,0 +1,16 @@
+{
+  "findings": [
+    {
+      "id": "F-1",
+      "title": "Back procedure cannot establish the required sequential keyboard transition",
+      "severity": "medium",
+      "evidence": "/workspace/worker/target/verification-protocol.md:10 directs \"Click Back\". /workspace/worker/surface-contract.json:15 requires Back traversal=\"Tab\", activation=\"Enter\", and focus_after=\"introduction-heading\"; :18 lists keyboard-back as required. /workspace/worker/checks/check_contract.py:35-36 expressly requires sequential keyboard traversal and observed activation. When a reviewer follows the written procedure, a successful click and heading-focus assertion provide no observation that Back can be reached sequentially and activated with Enter. A deployment with a working mouse Back path but a broken keyboard path can therefore satisfy all written Back assertions without supplying required keyboard-back evidence."
+    },
+    {
+      "id": "F-2",
+      "title": "Help toggle acceptance has no corresponding operation in the procedure",
+      "severity": "medium",
+      "evidence": "/workspace/worker/surface-contract.json:11-13 defines summary Enter to open, Space to close, and Enter to reopen; :18 requires help-toggle. /workspace/worker/target/verification-protocol.md:7-8 opens help using the summary and immediately uses Close; no step activates the open summary with Space or reopens via Enter. When Close works but summary Space toggling or Enter reopening fails, the written procedure can still complete without observing those declared transitions. This leaves the required help-toggle acceptance unsupported."
+    }
+  ]
+}

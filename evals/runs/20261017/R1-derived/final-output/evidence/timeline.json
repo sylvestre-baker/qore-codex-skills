@@ -1,0 +1,24 @@
+{
+  "root_actor": "/root",
+  "first_clock_observed_utc": "2026-10-17T10:15:46+00:00",
+  "record_finalization_observed_utc": "2026-10-17T10:21:35.651765+00:00",
+  "root_phase_completion_utc_bounds": {
+    "profile_preflight": [
+      "2026-10-17T10:15:46+00:00",
+      "2026-10-17T10:16:00+00:00"
+    ],
+    "redaction": [
+      "2026-10-17T10:17:50+00:00",
+      "2026-10-17T10:18:03+00:00"
+    ],
+    "findings_validation": [
+      "2026-10-17T10:20:18+00:00",
+      "2026-10-17T10:21:15+00:00"
+    ]
+  },
+  "child_phase_times": "roster.json contains actual observed worker times and dispatch/receipt bounds.",
+  "timestamp_limit": "Tool APIs provide no exact dispatch callback or root command execution timestamp. UTC bounds use recorded clock observations. Wrapper captured_at/observed_at is when actual same-run phase outputs were preserved, not a claimed exact command completion instant.",
+  "usage": null,
+  "usage_reason": "Host exposes no accounting counters. Declared finite context budgets fit inside aggregate bound; elapsed clock observations retained.",
+  "changes": "No candidate or target corrections occurred. Only output reports/check harness were written. No input hashes changed."
+}

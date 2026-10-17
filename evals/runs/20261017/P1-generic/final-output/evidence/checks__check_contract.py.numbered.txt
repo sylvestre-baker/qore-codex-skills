@@ -1,0 +1,54 @@
+1: #!/usr/bin/env python3
+2: """Check the public journey contract; never contact the website."""
+3: import json
+4: from pathlib import Path
+5: import sys
+6: from urllib.parse import urlsplit
+7: 
+8: 
+9: def validate(data):
+10:     if not isinstance(data, dict) or data.get("schema") != "qaizen-labs-surface/1":
+11:         raise ValueError("Expected qaizen-labs-surface/1")
+12:     entry = urlsplit(data["entry_url"])
+13:     origin = entry.scheme + "://" + entry.netloc
+14:     if entry.scheme != "https" or entry.username or entry.password or origin not in data["allowed_origins"]:
+15:         raise ValueError("Entry must have an explicitly authorized HTTPS origin")
+16:     scope = data["scope"]
+17:     if scope["answer_policy"] != "unanswered" or set(scope["allowed_methods"]) != {"GET", "HEAD", "OPTIONS"}:
+18:         raise ValueError("The observation must remain read-only and unanswered")
+19:     states = data["states"]
+20:     if not isinstance(states, list) or len(states) != len(set(states)) or not states:
+21:         raise ValueError("State IDs must be nonempty and unique")
+22:     by_id = {}
+23:     for transition in data["transitions"]:
+24:         key = transition["id"]
+25:         if key in by_id or transition["from"] not in states or transition["to"] not in states:
+26:             raise ValueError("Duplicate transition or unknown state: " + key)
+27:         if not transition["control"] or not transition["activation"]:
+28:             raise ValueError("Every transition needs a control and activation")
+29:         if transition.get("focus_after") and transition["focus_after"] not in data["focus_targets"]:
+30:             raise ValueError("Unknown focus target: " + key)
+31:         by_id[key] = transition
+32:     close, back = by_id["close-help"], by_id["back"]
+33:     if close.get("focus_after") != "summary" or back.get("focus_after") != "introduction-heading":
+34:         raise ValueError("Close and Back require different focus destinations")
+35:     if back.get("traversal") not in ("Tab", "Shift+Tab") or back["activation"] != "Enter":
+36:         raise ValueError("Back requires sequential keyboard traversal and observed activation")
+37:     required = data["required_checks"]
+38:     if not isinstance(required, list) or len(required) != len(set(required)) or not {"keyboard-back", "unanswered", "close-focus", "introduction-focus", "read-only-policy", "origin-policy"}.issubset(required):
+39:         raise ValueError("Missing or duplicate required checks")
+40:     if data["provenance"]["kind"] != "public-observation-and-declared-acceptance" or not data["provenance"]["urls"]:
+41:         raise ValueError("Public provenance and observation/expectation distinction are required")
+42:     return {"valid": True, "schema": data["schema"], "checks": required,
+43:             "limit": "Contract consistency only; browser observations establish current behavior."}
+44: 
+45: 
+46: if __name__ == "__main__":
+47:     try:
+48:         if len(sys.argv) != 2:
+49:             raise ValueError("Usage: python3 -B checks/check_contract.py surface-contract.json")
+50:         result = validate(json.loads(Path(sys.argv[1]).read_text(encoding="utf-8")))
+51:         print(json.dumps(result, indent=2))
+52:     except (ValueError, KeyError, TypeError, OSError) as error:
+53:         print(json.dumps({"valid": False, "error": str(error)}), file=sys.stderr)
+54:         sys.exit(1)

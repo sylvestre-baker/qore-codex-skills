@@ -1,0 +1,91 @@
+[
+  {
+    "id": "D-01",
+    "claim": "The existing target already requires bounded sequential keyboard Back traversal, Enter activation and returned-introduction heading focus; Close separately restores summary focus.",
+    "source_locations": [
+      "target/verification-protocol.md:8",
+      "target/verification-protocol.md:10",
+      "surface-contract.json:14",
+      "surface-contract.json:15",
+      "checks/check_contract.py:32-36"
+    ],
+    "proposed_change": "Preserve all existing valid assertions, including the 24-step guard; clarify evidence and avoid presenting already-present obligations as omissions.",
+    "severity": "high",
+    "refutation": "A change may alter an existing assertion only if a specific conflict or authorized requirement supplies a documented rationale; no source supplies a replacement bound. Cross-examination qualification: preserving target Shift+Tab for Close does not prove the canonical Close Tab path in surface-contract.json:14; checker:35-36 explicitly permits either only for Back. Keep the alternative, annotate its evidence scope, and preserve both target:9 and :10 unanswered checkpoints."
+  },
+  {
+    "id": "D-02",
+    "claim": "The contract declares Enter opening, Space toggle and Enter reopen, but the target omits explicit toggle/reopen instructions and leaves opening activation unspecified.",
+    "source_locations": [
+      "surface-contract.json:11-13",
+      "surface-contract.json:18",
+      "target/verification-protocol.md:7-8"
+    ],
+    "proposed_change": "Plan the exact help interaction sequence before the retained Close step, with state observations.",
+    "severity": "medium",
+    "refutation": "Showing an applicable supplied procedure that already specifies these actions could narrow this gap; the current target has no such steps."
+  },
+  {
+    "id": "D-03",
+    "claim": "The planned document must carry read-only/origin guard requirements before any future observation; blocked analytics effects are part of the declared limits.",
+    "source_locations": [
+      "surface-contract.json:5-6",
+      "surface-contract.json:18",
+      "surface-contract.json:20",
+      "observation-policy.json:2-4",
+      "target/verification-protocol.md:5",
+      ".agents/skills/qore-plan-qaizen-labs/references/project.json:55-56"
+    ],
+    "proposed_change": "Add pre-navigation guard requirements and blocked-request evidence without introducing a new browser harness dependency.",
+    "severity": "high",
+    "refutation": "Specific enforcement APIs remain unselected because no runtime harness is supplied; this claim establishes required boundaries, not proof that an implementation enforces them. Attribution correction: main-frame/popup scope is explicitly in the original method profile project.json:55-56, not literally in raw surface or observation-policy. Do not ban all cross-origin subresources. Guard availability blocks only future observation execution, not this plan."
+  },
+  {
+    "id": "D-04",
+    "claim": "Contract-checker success cannot establish document coverage or deployed behavior.",
+    "source_locations": [
+      "checks/check_contract.py:42-43",
+      "surface-contract.json:19",
+      "target/verification-protocol.md:3"
+    ],
+    "proposed_change": "Use source-to-procedure review for documentation acceptance; record the existing offline checker result separately and exclude live verification from the planning critical path.",
+    "severity": "high",
+    "refutation": "An additional actual browser observation could establish behavior within its measured scope, but none was authorized or performed here. Outcome refinement: bound exhaustion is a bounded-run failure with downstream checks unobserved; observed wrong heading focus fails that assertion; missing capture is unobserved. None alone establishes a website defect."
+  },
+  {
+    "id": "D-05",
+    "claim": "A documentation-only clarification has no application deployment or data rollback dependency.",
+    "source_locations": [
+      "TASK.md:3-5",
+      "target/verification-protocol.md:1-10"
+    ],
+    "proposed_change": "Plan a single-document review/rollout and document revert, with 50\u201385 minutes estimated later author/reviewer effort; defer harness, live run and application changes.",
+    "severity": "medium",
+    "refutation": "The effort range is an explicit hypothesis for this fixture, not measured capacity; an authorized expansion of scope would require revising tasks, dependencies and estimate. Cross-examination: retain one candidate passage and rationale map; reuse already successful unchanged-input checker evidence rather than requiring redundant execution. Runtime guard-tool selection stays deferred."
+  },
+  {
+    "id": "D-06",
+    "claim": "Canonical Close traversal is Tab in the contract, while the target permits Tab or Shift+Tab; alternate evidence must not be mislabeled as observed canonical Tab.",
+    "source_locations": [
+      "surface-contract.json:14",
+      "target/verification-protocol.md:8",
+      "checks/check_contract.py:35-36"
+    ],
+    "proposed_change": "Preserve both target directions, identify canonical Close Tab, and keep any Shift+Tab result as alternate evidence without claiming it proves Tab.",
+    "severity": "medium",
+    "refutation": "The contract does not declare Shift+Tab invalid; this recommendation concerns attribution of evidence and does not remove the valid target alternative or require a current browser run."
+  },
+  {
+    "id": "D-07",
+    "claim": "Unavailable observation guards are a future execution blocker, not a prerequisite to completion of this documentation plan.",
+    "source_locations": [
+      "TASK.md:3-5",
+      "checks/check_contract.py:46-51",
+      "observation-policy.json:1-5",
+      ".agents/skills/qore-plan-qaizen-labs/references/project.json:55-56"
+    ],
+    "proposed_change": "State tool-agnostic guard requirements before navigation in the candidate; defer observer implementation and stop only future execution if it cannot enforce them.",
+    "severity": "medium",
+    "refutation": "A future run must still verify enforcement before entry. Deferral does not permit relaxed methods/origin policy or claim the JSON files implement browser interception."
+  }
+]

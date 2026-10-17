@@ -1,0 +1,32 @@
+{
+  "recorded_at": "2026-10-17T11:23:17.366432+00:00",
+  "lead_actor": "/root",
+  "source_author": "not a participating context; frozen reconstructed tutorial supplied as input",
+  "finder_contexts": [
+    "/root/correctness",
+    "/root/security",
+    "/root/feasibility"
+  ],
+  "finder_initial_history": "fork_turns=none for all",
+  "finder_material": "Same raw target, original project sources, method criteria, role lens, bounded deadline. No peer findings or lead suspected defects supplied. Timing-only followups.",
+  "finder_barrier": "All three returned before collection/redaction and verifier dispatch.",
+  "verifier_context": "/root/verifier",
+  "verifier_initial_history": "fork_turns=none",
+  "verifier_allowed_material": [
+    "claims.json",
+    "original target/verification-protocol.md",
+    "original surface-contract.json",
+    "original checks/check_contract.py",
+    "original observation-policy.json",
+    "method protocol.md",
+    "method findings.md"
+  ],
+  "mechanical_wall": "Actual bundled redactor invoked from installed skill directory; exit0; rationale,uncertainty,proposed_correction withheld. Full finder files excluded from verifier brief.",
+  "assistance": "Root orchestrated, merged candidates without deduplication or severity edits, saved evidence wrappers, validates structural packets, and writes final report. Root checking is not represented as independent verification.",
+  "profile_consumption": null,
+  "limits": [
+    "No network, deployment observation, shared-data mutation, or input edit authorized or performed.",
+    "Host returns context identity and status but not internal dispatch timestamp or per-context CPU/token usage; UTC dispatch intervals and observed returns recorded instead.",
+    "Security report inferred a start from its deadline; that inferred timestamp is not treated as measured dispatch proof."
+  ]
+}

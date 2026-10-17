@@ -1,0 +1,65 @@
+{
+  "declared_at": "2026-10-17T10:54:42.984799+00:00",
+  "depth": "entry (includes state scope)",
+  "gates": [
+    "G0",
+    "G1",
+    "G2",
+    "G3",
+    "G4",
+    "G5",
+    "G6"
+  ],
+  "checks": {
+    "entry": [
+      "G0",
+      "navigation, DOM, screenshot"
+    ],
+    "unanswered": [
+      "G2",
+      "assert-none-checked, DOM"
+    ],
+    "help-toggle": [
+      "G2",
+      "keyboard, details open attribute, DOM"
+    ],
+    "close-focus": [
+      "G5",
+      "Tab, Enter, active element"
+    ],
+    "keyboard-back": [
+      "G5",
+      "Tab traversal, Enter, transition"
+    ],
+    "introduction-focus": [
+      "G5",
+      "active h1"
+    ],
+    "read-only-policy": [
+      "G2",
+      "network route enforcement and request events"
+    ],
+    "origin-policy": [
+      "G1",
+      "navigation guard, frame URL events"
+    ],
+    "visual": [
+      "G3",
+      "actual viewport and inspected screenshots"
+    ],
+    "content": [
+      "G4",
+      "DOM and rendered labels"
+    ],
+    "direct/reload/history": [
+      "G1",
+      "reload, history-back/forward, DOM"
+    ],
+    "challenge": [
+      "G6",
+      "replay highest-impact focus and help-state risks"
+    ]
+  },
+  "instrumentation_scope": "Keyboard and live semantics required; contrast measurement required only if rendered risky pairs identified. Full automated accessibility certification, mobile, performance, completed questionnaire and results excluded by explicit surface contract.",
+  "non_applicable_data": "No answer submission, result data, overflow questionnaire, authenticated personas or backend mutations within authorized unanswered first-question scope."
+}

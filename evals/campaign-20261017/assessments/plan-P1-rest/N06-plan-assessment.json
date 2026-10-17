@@ -1,0 +1,303 @@
+{
+  "schema": "qore003-independent-planning-assessment/1",
+  "scenario_id": "P1",
+  "actor_id": "/root/campaign_plan_assessor",
+  "started_at_utc": "2026-10-17T10:55:18+00:00",
+  "ended_at_utc": "2026-10-17T11:00:41.578641+00:00",
+  "timing_note": "Shared bounded assessment window for N06 and N17, counted once; wall window is not billed/model compute time.",
+  "evidence_path_base": "assessment-inputs",
+  "frozen_applicable_criteria": [
+    "K1",
+    "K2",
+    "K3",
+    "K4",
+    "K5",
+    "K8"
+  ],
+  "not_applicable": [
+    {
+      "criterion": "K6",
+      "reason": "Not in frozen P1 list; corrected-comparator review criterion."
+    },
+    {
+      "criterion": "K7",
+      "reason": "Not in frozen P1 list; P2 documentation-only criterion."
+    }
+  ],
+  "constraints": {
+    "other_campaign_cases_read": false,
+    "previous_assessment_files_read_or_changed": false,
+    "current_repo_sources_used": false,
+    "network_used": false,
+    "trial_reruns": false,
+    "new_agents": false,
+    "outreach": false,
+    "source_or_repository_changes": false
+  },
+  "blinding": "NOT_BLINDED: neutral filenames only; actual report/task/method metadata reveal baseline or derivative. No method comparison/winner inferred.",
+  "neutral_id": "N06",
+  "criteria": [
+    {
+      "criterion": "K1",
+      "status": "MET",
+      "scope": "Source-based P1 planning obligations, not an executed website journey",
+      "rationale": "The plan accurately distinguishes the original project sources from the reconstructed target, covers all seven transitions and all eight checks, and separates Close-to-summary from Back-to-introduction-h1 focus. Exact forward Tab is selected against the concrete source rather than the broader checker tolerance.",
+      "evidence": [
+        {
+          "path": "N06/output/REPORT.md",
+          "lines": "7-18",
+          "claim": "Authority and source obligations"
+        },
+        {
+          "path": "N06/output/REPORT.md",
+          "lines": "26-31",
+          "claim": "D1-D6 source-derived corrections"
+        },
+        {
+          "path": "N06/output/REPORT.md",
+          "lines": "41-48",
+          "claim": "Eight-check mapping and distinct focus destinations"
+        },
+        {
+          "path": "N06/output/verification-protocol.proposed.md",
+          "lines": "17-24",
+          "claim": "Concrete proposed ordered procedure"
+        }
+      ],
+      "missing_proof_or_limit": "No missing planning obligation identified. Actual control identity and focus results are unobserved. N06 retains source hashes rather than original source copies; see source-byte binding below."
+    },
+    {
+      "criterion": "K2",
+      "status": "MET",
+      "scope": "Source-based P1 planning obligations, not an executed website journey",
+      "rationale": "Both the plan and proposed replacement require sequential Tab starting at actual post-Close summary focus, focused Back before Enter, actual Enter and returned h1 focus. Mouse, assigned-focus and direct-handler substitutes are expressly rejected.",
+      "evidence": [
+        {
+          "path": "N06/output/REPORT.md",
+          "lines": "26",
+          "claim": "D1 precise Back proof and invalid substitutes"
+        },
+        {
+          "path": "N06/output/REPORT.md",
+          "lines": "44-46,50",
+          "claim": "Separate Close, Back traversal, destination focus and ambiguity/bounds"
+        },
+        {
+          "path": "N06/output/verification-protocol.proposed.md",
+          "lines": "22-26",
+          "claim": "Actual-focus checkpoints, Tab/Enter path and no forced-state recovery"
+        }
+      ],
+      "missing_proof_or_limit": "The actual key trace and focus observations have not been executed; their absence is explicitly disclosed and does not fail a planning requirement."
+    },
+    {
+      "criterion": "K3",
+      "status": "MET",
+      "scope": "Source-based P1 planning obligations, not an executed website journey",
+      "rationale": "The proposed procedure establishes unanswered state by inspecting selection, keeps excluded actions prohibited, installs method and exact-origin guards before navigation, includes redirects/subordinate requests, and stops if any uninspectable path can bypass enforcement. It retains conditional blocked-analytics effects and does not send prohibited probes.",
+      "evidence": [
+        {
+          "path": "N06/output/REPORT.md",
+          "lines": "28-29,42,47-48",
+          "claim": "Boundary decisions, unanswered evidence and all-request origin checks"
+        },
+        {
+          "path": "N06/output/verification-protocol.proposed.md",
+          "lines": "7-13",
+          "claim": "Before-navigation guards, offline guard checks, analytics and evidence"
+        },
+        {
+          "path": "N06/output/verification-protocol.proposed.md",
+          "lines": "18-26",
+          "claim": "Unanswered and dependent-stop rules"
+        }
+      ],
+      "missing_proof_or_limit": "No actual browser guard, request or unanswered website state was observed. Offline allowlist agreement is not presented as enforcement proof."
+    },
+    {
+      "criterion": "K4",
+      "status": "MET",
+      "scope": "Source-based P1 planning obligations, not an executed website journey",
+      "rationale": "The report and proposed replacement preserve fixture provenance and distinguish expectations, checker validity, documentation coverage and future browser results. Missing behavior is expressly untested, and the proof gap is not called a website defect.",
+      "evidence": [
+        {
+          "path": "N06/output/REPORT.md",
+          "lines": "3,7,22",
+          "claim": "Planning-only status and fixture/defect discipline"
+        },
+        {
+          "path": "N06/output/REPORT.md",
+          "lines": "37,59,67-76",
+          "claim": "Future checks not run, checker limits and current-deployment uncertainty"
+        },
+        {
+          "path": "N06/output/verification-protocol.proposed.md",
+          "lines": "3,32-36",
+          "claim": "Fixture, static/browser and historical-provenance limits"
+        }
+      ],
+      "missing_proof_or_limit": "Historical source provenance is supplied metadata; current website behavior, guards, focus and deployment identity remain unknown."
+    },
+    {
+      "criterion": "K5",
+      "status": "MET",
+      "scope": "Source-based P1 planning obligations, not an executed website journey",
+      "rationale": "The correct existing local checker command has retained argv-equivalent text, stdout/stderr and exit 0. Planned acceptance covers every required check with observable oracles, explicit manual source review and relevant negative-evidence rejection. No Qore structural linter is required for this baseline.",
+      "evidence": [
+        {
+          "path": "N06/output/checks.json",
+          "lines": "4-17",
+          "claim": "Actual python3 -B checks/check_contract.py surface-contract.json, execution window and result"
+        },
+        {
+          "path": "N06/output/REPORT.md",
+          "lines": "39-50",
+          "claim": "Acceptance matrix and meaningful failure/incomplete handling"
+        },
+        {
+          "path": "N06/output/REPORT.md",
+          "lines": "54-59",
+          "claim": "Actual local checks and validator limitation"
+        },
+        {
+          "path": "N06/output/verification-protocol.proposed.md",
+          "lines": "26-32",
+          "claim": "Dependent failures, completeness mapping and proposed local recheck"
+        }
+      ],
+      "missing_proof_or_limit": "Actual guard and browser checks are listed not run in checks.json:37-42. Exact command start/end are unavailable; a clock-bounded window is supplied."
+    },
+    {
+      "criterion": "K8",
+      "status": "MET",
+      "scope": "Source-based P1 planning obligations, not an executed website journey",
+      "rationale": "The scoped outcome is a source-based plan plus a proposed document replacement outside the immutable input. The observed target/source differences justify full help-cycle and keyboard-proof correction; they do not justify application repair or a deployment verdict.",
+      "evidence": [
+        {
+          "path": "N06/output/REPORT.md",
+          "lines": "24-33",
+          "claim": "Concrete scope, decisions and one-document change target"
+        },
+        {
+          "path": "N06/output/REPORT.md",
+          "lines": "61-74",
+          "claim": "Rejected interpretations and actual limited outcome"
+        },
+        {
+          "path": "N06/output/input-integrity.json",
+          "lines": "7-22",
+          "claim": "Source/target identities and reported unchanged inputs"
+        },
+        {
+          "path": "N06/output/verification-protocol.proposed.md",
+          "lines": "17-36",
+          "claim": "Reviewable proposal and evidence limits"
+        }
+      ],
+      "missing_proof_or_limit": "The original target has not been changed and the proposed journey has not run. No execution benefit, comparative winner or measured improvement is established."
+    }
+  ],
+  "method_coverage": {
+    "declared_method": "baseline source-based planning; no Qore skill invoked",
+    "claimed_coverage": "COMPLETE baseline task",
+    "assessment": "SUBSTANTIATED_AT_BASELINE_SCOPE",
+    "qore_phase_requirement": "NOT_APPLICABLE",
+    "basis": "Report plus concrete proposed replacement, relevant local check evidence and explicit source/behavior limits satisfy the requested planning scope. No role, barrier, cross-examination, profile or Qore linter obligation is imposed.",
+    "evidence": [
+      {
+        "path": "N06/output/REPORT.md",
+        "lines": "33,74-78",
+        "claim": "Reviewable replacement, bounded completion and explicit baseline method"
+      },
+      {
+        "path": "N06/output/run-record.json",
+        "lines": "12-14,28-34,46-53",
+        "claim": "Null profile, empty child roster and Qore contract not applicable"
+      },
+      {
+        "path": "N06/output/checks.json",
+        "lines": "4-17,37-42",
+        "claim": "Actual local check and unexecuted checks"
+      }
+    ],
+    "actual_children": 0,
+    "independent_roles_claimed": false,
+    "source_retention_limit": "N06 contains four original source/target hashes but no raw source copies. The four corresponding original files copied in the separately authorized N17 packet independently hash to those exact N06 initial/final digests. Those raw bytes, not N17 conclusions, corroborate the shared source facts. Baseline TASK bytes are not retained and their digest was not independently reconstructed.",
+    "source_byte_binding": {
+      "checks/check_contract.py": true,
+      "observation-policy.json": true,
+      "surface-contract.json": true,
+      "target/verification-protocol.md": true
+    },
+    "source_binding_evidence": [
+      {
+        "path": "N06/output/input-integrity.json",
+        "lines": "7-22",
+        "claim": "N06 per-file initial/final hashes"
+      },
+      {
+        "path": "N17/output/sources/surface-contract.json",
+        "lines": "1-21",
+        "claim": "Hash-matching original raw contract"
+      },
+      {
+        "path": "N17/output/sources/checks/check_contract.py",
+        "lines": "1-54",
+        "claim": "Hash-matching original raw checker"
+      },
+      {
+        "path": "N17/output/sources/observation-policy.json",
+        "lines": "1-5",
+        "claim": "Hash-matching original raw policy"
+      },
+      {
+        "path": "N17/output/sources/target/verification-protocol.md",
+        "lines": "1-10",
+        "claim": "Hash-matching raw target"
+      }
+    ],
+    "timing_limit": "Root exact dispatch/return and command instants are unavailable. run-record distinguishes elapsed wall from model/aggregate compute. observed-metadata:30 qualifies the single-context launcher-to-return measure; no efficiency conclusion is drawn."
+  },
+  "observations_and_correction_candidates": [
+    {
+      "id": "P1R-B01",
+      "classification": "suggestion",
+      "required_for_frozen_criteria": false,
+      "observation": "Baseline packet retains per-file hashes without raw original source copies. Four shared source/target bytes can be corroborated from hash-matching raw files in the other authorized packet, but baseline TASK bytes cannot.",
+      "evidence": [
+        {
+          "path": "N06/output/input-integrity.json",
+          "lines": "7-22",
+          "claim": "Hashes rather than raw bytes"
+        },
+        {
+          "path": "N06/output/run-record.json",
+          "lines": "55-60",
+          "claim": "Retained artifact inventory"
+        }
+      ],
+      "minimal_remedy": "For self-contained archival auditability, copy baseline original inputs into its output packet alongside hashes. No Qore method or trial rerun is required."
+    },
+    {
+      "id": "P1R-B02",
+      "classification": "expected fixture defect",
+      "required_for_frozen_criteria": false,
+      "observation": "Clicked Back and omitted help keys are the frozen task target, not defects introduced by the baseline output.",
+      "evidence": [
+        {
+          "path": "N06/output/REPORT.md",
+          "lines": "26-27",
+          "claim": "Identified and addressed target/source differences"
+        },
+        {
+          "path": "N17/output/sources/target/verification-protocol.md",
+          "lines": "3,7-10",
+          "claim": "Hash-matching reconstructed original target"
+        }
+      ],
+      "minimal_remedy": "Apply the proposed source-aligned documentation change only in a later authorized edit; no website defect is established."
+    }
+  ],
+  "required_worker_content_corrections": [],
+  "conclusion": "All six applicable frozen criteria are MET at source-based planning scope. Baseline completion is substantiated without imposing Qore phases. Original-source retention has a qualified archival limitation. No browser success, defect or comparative benefit is established."
+}

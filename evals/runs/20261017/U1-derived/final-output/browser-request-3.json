@@ -1,0 +1,161 @@
+[
+  {
+    "type": "click",
+    "selector": "a[href$='/labs/readiness-check']"
+  },
+  {
+    "type": "assert-text",
+    "text": "COULD YOUR AI PILOT GO LIVE? A CHECK IN ABOUT 3 MINUTES"
+  },
+  {
+    "type": "reload"
+  },
+  {
+    "type": "assert-url",
+    "url": "https://qaizen.io/labs/readiness-check"
+  },
+  {
+    "type": "assert-visible",
+    "selector": "h1"
+  },
+  {
+    "type": "snapshot",
+    "label": "deep-document-reload"
+  },
+  {
+    "type": "click",
+    "role": "button",
+    "name": "Start the check"
+  },
+  {
+    "type": "assert-none-checked"
+  },
+  {
+    "type": "traverse-focus",
+    "selector": "main details summary",
+    "max_steps": 24
+  },
+  {
+    "type": "keyboard",
+    "key": "Enter"
+  },
+  {
+    "type": "traverse-focus",
+    "role": "button",
+    "name": "Close",
+    "max_steps": 24
+  },
+  {
+    "type": "snapshot",
+    "label": "close-keyboard-focus-challenge"
+  },
+  {
+    "type": "keyboard",
+    "key": "Enter"
+  },
+  {
+    "type": "assert-focused",
+    "selector": "main details summary"
+  },
+  {
+    "type": "assert-attribute",
+    "selector": "main details",
+    "attribute": "open",
+    "value": null
+  },
+  {
+    "type": "traverse-focus",
+    "role": "button",
+    "name": "Back",
+    "max_steps": 24
+  },
+  {
+    "type": "assert-focused",
+    "role": "button",
+    "name": "Back"
+  },
+  {
+    "type": "snapshot",
+    "label": "back-focus-obscuration-challenge"
+  },
+  {
+    "type": "keyboard",
+    "key": "Enter"
+  },
+  {
+    "type": "assert-focused",
+    "selector": "h1"
+  },
+  {
+    "type": "assert-text",
+    "text": "COULD YOUR AI PILOT GO LIVE? A CHECK IN ABOUT 3 MINUTES"
+  },
+  {
+    "type": "snapshot",
+    "label": "back-result-challenge"
+  },
+  {
+    "type": "click",
+    "role": "button",
+    "name": "Start the check"
+  },
+  {
+    "type": "assert-none-checked"
+  },
+  {
+    "type": "assert-attribute",
+    "selector": "main details",
+    "attribute": "open",
+    "value": null
+  },
+  {
+    "type": "snapshot",
+    "label": "restart-unanswered-help-reset"
+  },
+  {
+    "type": "reload"
+  },
+  {
+    "type": "assert-visible",
+    "selector": "h1"
+  },
+  {
+    "type": "assert-hidden",
+    "selector": "main [role=\"radiogroup\"]"
+  },
+  {
+    "type": "snapshot",
+    "label": "question-reload-result"
+  },
+  {
+    "type": "history-back"
+  },
+  {
+    "type": "assert-url",
+    "url": "https://qaizen.io/labs"
+  },
+  {
+    "type": "assert-text",
+    "text": "QAIZEN LABS",
+    "exact": true
+  },
+  {
+    "type": "snapshot",
+    "label": "browser-history-back"
+  },
+  {
+    "type": "history-forward"
+  },
+  {
+    "type": "assert-url",
+    "url": "https://qaizen.io/labs/readiness-check"
+  },
+  {
+    "type": "assert-visible",
+    "selector": "h1"
+  },
+  {
+    "type": "snapshot",
+    "label": "browser-history-forward"
+  }
+]

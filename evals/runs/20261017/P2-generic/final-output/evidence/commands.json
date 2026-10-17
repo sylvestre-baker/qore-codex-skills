@@ -1,0 +1,41 @@
+[
+  {
+    "argv": [
+      "sh",
+      "-c",
+      "pwd && rg --files -g 'TASK.md' -g 'AGENTS.md' -g '*SKILL*' -g '*manifest*'"
+    ],
+    "exit_code": 127,
+    "artifact": "evidence/capability-probe.txt"
+  },
+  {
+    "argv": [
+      "python3",
+      "-B",
+      "checks/check_contract.py",
+      "surface-contract.json"
+    ],
+    "exit_code": 0,
+    "artifact": "evidence/contract-check.txt"
+  },
+  {
+    "argv": [
+      "bash",
+      "scripts/spec-lint.sh",
+      "/workspace/output/specification.md"
+    ],
+    "exit_code": 0,
+    "artifact": "evidence/spec-lint.txt"
+  },
+  {
+    "argv": [
+      "python3",
+      "scripts/run-check.py",
+      "/workspace/output/execution.json",
+      "--evidence-root",
+      "/workspace/output"
+    ],
+    "exit_code": 0,
+    "artifact": "evidence/run-check-record.txt"
+  }
+]

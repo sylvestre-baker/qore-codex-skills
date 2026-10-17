@@ -1,0 +1,1 @@
+spec-lint: valid qore-spec/1 (9 scenarios).

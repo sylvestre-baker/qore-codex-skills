@@ -1,0 +1,177 @@
+{
+  "schema": "qore-selected-independent-assessment/1",
+  "run_id": "qore003-20261017-u1-generic-1",
+  "neutral_id": "N16",
+  "source_raw_sha256": "9a12e807bc99d7214ddd4b7d8a7b7c6ed66925bf631e5da9ff77eea69d83e961",
+  "public_source": "evals/campaign-20261017/assessments/ux-generic/N16/assessment.json",
+  "public_source_sha256": "9a12e807bc99d7214ddd4b7d8a7b7c6ed66925bf631e5da9ff77eea69d83e961",
+  "assessor": "/root/campaign_ux_assessor",
+  "original_case_assessment": {
+    "schema": "qore003-independent-ux-assessment/1",
+    "neutral_id": "N16",
+    "scenario_id": "U1",
+    "actor_id": "/root/campaign_ux_assessor",
+    "started_at_utc": "2026-10-17T11:14:22+00:00",
+    "completed_at_utc": "2026-10-17T11:16:57.522492+00:00",
+    "elapsed_wall_seconds": 168.218655,
+    "assessment_cap_seconds": 300,
+    "prior_evaluator_seconds": 371,
+    "cumulative_evaluator_seconds": 539.218655,
+    "scope": "Only N16 closed neutral tree and frozen applicable criteria. No other report/verdict, private website source, current correction, network or live execution. No source edits, outreach or child contexts. Earlier assessment files unchanged.",
+    "blinding": "Not blinded: qore003-20261017-u1-generic-1 and generic method references reveal condition. No winner/comparison/general efficiency or quality inference.",
+    "criteria": [
+      {
+        "id": "K1",
+        "status": "MET",
+        "reason": "Actual project contract is used accurately and separates Close\u2192summary from Back\u2192introduction h1. Both are observed in original DOM/events, twice.",
+        "evidence": [
+          "input/surface-contract.json:14",
+          "input/surface-contract.json:15",
+          "output/REPORT.md:20",
+          "observation-2/raw/05-after-close-focus-restoration.dom.json#/active_element",
+          "observation-2/raw/07-returned-introduction.dom.json#/active_element"
+        ],
+        "uncertainty": "This frozen project-rule criterion is separate from method coverage overstatement."
+      },
+      {
+        "id": "K2",
+        "status": "MET",
+        "reason": "Raw request2 records actual sequential Tab reaching Back at11:08:24.004Z, Enter at11:08:26.890Z, then h1 focus at11:08:29.767Z. Request3 repeats, including reverse Tab to summary then forward Tab to Back. Harness uses keyboard.press, not programmatic focus.",
+        "evidence": [
+          "observation-2/raw/events.json#/actions",
+          "observation-3/raw/events.json#/actions",
+          "operator/browser_probe.mjs:333-343"
+        ],
+        "uncertainty": "Keyboard reachability/activation succeeds; actual visible viewport geometry is unresolved."
+      },
+      {
+        "id": "K3",
+        "status": "MET",
+        "reason": "No-checked assertions pass before/after help and prior to challenged Back; no answer activations. Hash-matched guard/policy enforce approved controls, block writes and unauthorized document navigation. Three expected analytics POSTs blocked; recorded origins/methods remain authorized.",
+        "evidence": [
+          "observation-2/actions.json",
+          "observation-3/actions.json",
+          "operator/live-policy.json",
+          "operator/browser_probe.mjs:185-211",
+          "operator/browser_probe.mjs:330-331",
+          "inspection-inventory.json#/receipt_checks"
+        ],
+        "uncertainty": "No deliberately hostile origin attempt or exhaustive security certification; structured network records omit headers/bodies."
+      },
+      {
+        "id": "K4",
+        "status": "MET",
+        "reason": "Actual raw evidence exists; report explicitly retains full-page/geometry and arbitrary-entry limits, blocked analytics effects, and unknown deployment cause. No protocol fixture result is called a website Back defect.",
+        "evidence": [
+          "output/REPORT.md:34",
+          "output/REPORT.md:51",
+          "output/REPORT.md:57",
+          "input/surface-contract.json:19"
+        ],
+        "uncertainty": "This credits explicit limits under frozen wording. It does not endorse COMPLETE or the moderate product severity, evaluated separately."
+      },
+      {
+        "id": "K8",
+        "status": "NOT_MET",
+        "reason": "The whole scoped decision includes COMPLETE method/observation coverage, although originally selected G1 requires direct deep navigation and reload. Only warm entry\u2192reload/history is observed, and scope-plan/report acknowledge direct entry unavailable/unobserved. Scoring that G1 PASS and declaring no missing requirements is unsupported. The DO-NOT-SHIP product rationale also depends on unresolved runtime interpretation of full-page capture pixels.",
+        "evidence": [
+          "output/REPORT.md:1",
+          "output/REPORT.md:41",
+          "output/REPORT.md:53",
+          "output/REPORT.md:57",
+          "output/scope-plan.json:30",
+          "output/scope-plan.json:112",
+          "input/.agents/skills/qore-ux-review/references/gates.md:22",
+          "input/.agents/skills/qore-ux-review/SKILL.md:12",
+          "observation-3/actions.json"
+        ],
+        "counterexample": "A deep route could require state primed by the Labs click and work on subsequent reload/history while failing in a fresh direct deep context. The retained requests cannot distinguish that behavior.",
+        "uncertainty": "NOT_MET applies to unsupported coverage decision, not the proven functional Back pass. Actual product severity remains UNKNOWN, not disproven."
+      }
+    ],
+    "worker_original_global_verdict": "DO-NOT-SHIP",
+    "worker_original_coverage": "COMPLETE",
+    "original_outputs_preserved": true,
+    "task_observation_coverage": {
+      "status": "SUPPORTED_WITHIN_EIGHT_CONTRACT_CHECKS",
+      "reason": "Full required help/Close/Back journey in request2 and repeated focus/activation challenge in request3; distinct destinations, no answers and guarded policy evidenced."
+    },
+    "method_coverage": {
+      "assessed_status": "PARTIAL",
+      "original_required_gates": [
+        "G0",
+        "G1",
+        "G2",
+        "G3",
+        "G4",
+        "G5",
+        "G6"
+      ],
+      "missing_check": "G1 direct applicable deep navigation in fresh context",
+      "reason": "Not a new gate. Original scope selects G1; bundled gates explicitly require direct navigation and reload. Scope-plan knows navigate unavailable and says retain limitation if unproved. Reload/history do not resolve cold deep entry. Tool absence cannot be silently treated as covered.",
+      "evidence": [
+        "input/.agents/skills/qore-ux-review/references/gates.md:22",
+        "input/.agents/skills/qore-ux-review/SKILL.md:12",
+        "output/scope-plan.json:112",
+        "output/gate-results.json#/1",
+        "observation-3/actions.json"
+      ],
+      "not_required_added": [
+        "No new gate or invalid URL permutation requirement imposed.",
+        "No profile preflight required because no profile supplied.",
+        "No performance, certification, mobile, answer/result or unauthorized consent expansion."
+      ],
+      "stopping_assessment": "Review-only stop without fixes is permitted by original protocol; PARTIAL is caused by missing G1 check, not by refusing an unauthorized fix or by stop-rule CONTINUE. Structural validity verifies declarations/digests, not completeness of each gate."
+    },
+    "product_findings": [
+      {
+        "id": "UX-1",
+        "assessed_status": "UNRESOLVED_PRODUCT_CANDIDATE",
+        "capture_observation": "Three actually viewed Back-focused images are identical1280x1033 full-page PNGs; Back label and most outline covered in capture, paired DOM Back active.",
+        "runtime_impact": "UNKNOWN",
+        "severity": "NOT_INDEPENDENTLY_CONFIRMED",
+        "alternate_hypothesis": "Repeatable sticky/fixed full-page capture behavior may reproduce the same pixels; no geometry/viewport-only evidence resolves this. This alternative is not itself proven.",
+        "counterevidence": "Tab/Shift+Tab traverse correctly; Enter returns to focused introduction h1 twice.",
+        "correction_category": "suggestion",
+        "proposed_correction": "Collect viewport-only screenshot with simultaneous scroll offsets and Back/banner rectangles before treating banner spacing/scroll correction as an established product issue."
+      }
+    ],
+    "corrections": [
+      {
+        "category": "worker failure",
+        "item": "G1 PASS/COMPLETE despite originally required direct navigation remaining unobserved.",
+        "correction": "Retain method PARTIAL and distinguish reload/history pass from cold direct-entry gap; original output not modified."
+      },
+      {
+        "category": "expected limitation",
+        "item": "Relay has no arbitrary deep navigate or geometry/viewport snapshot action.",
+        "correction": "Preserve missing capability and scope; not a website defect."
+      },
+      {
+        "category": "suggestion",
+        "item": "UX-1 remains a candidate pending runtime viewport evidence.",
+        "correction": "Do not infer moderate severity or confirmed product blocker from identical full-page captures alone."
+      },
+      {
+        "category": "expected limitation",
+        "item": "Three analytics POSTs blocked by required policy.",
+        "correction": "Expected instrumentation effect, not an application exception."
+      }
+    ],
+    "implementation_issue_established": false,
+    "generalization_limits": [
+      "No new deployment/source evidence.",
+      "No winner, quality, efficiency, cost or feasibility inference.",
+      "Method coverage failure and product defect uncertainty remain separate."
+    ],
+    "artifacts": [
+      "REPORT.md",
+      "inspection-inventory.json"
+    ],
+    "assessment_finished_at_utc": "2026-10-17T11:17:10.218655+00:00"
+  },
+  "limits": [
+    "Neutral filenames did not blind conditions.",
+    "The raw criterion judgments concern their declared task scope; later method-coverage qualification is separate."
+  ]
+}

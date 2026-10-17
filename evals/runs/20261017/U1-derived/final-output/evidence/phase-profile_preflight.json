@@ -1,0 +1,58 @@
+{
+  "qore_evidence": {
+    "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+    "target_snapshot_sha256": "b269181f3e44e5b4d84fe94ae1d683f85d2b8bde69f389d32d030b1e0909ef36",
+    "observed_at": "2026-10-17T11:01:10.933497+00:00",
+    "phase_id": "profile_preflight"
+  },
+  "payload": {
+    "checker": {
+      "argv": [
+        "python3",
+        "scripts/project-check.py",
+        "references/project.json",
+        "--root",
+        "/workspace/worker",
+        "--method",
+        "ux"
+      ],
+      "cwd": "/workspace/worker/.agents/skills/qore-ux-review-qaizen-labs",
+      "exit_code": 0,
+      "stdout": "{\n  \"schema\": \"qore-context-check/1\",\n  \"profile\": {\n    \"id\": \"qaizen-labs\",\n    \"version\": \"0.1.0\",\n    \"sha256\": \"f76afdd45cb6352e5044a06affc4182ea6cd40aa9c012fb216636a61faa428f0\"\n  },\n  \"method\": \"ux\",\n  \"coverage\": \"COMPLETE\",\n  \"sources\": [\n    {\n      \"id\": \"surface\",\n      \"path\": \"surface-contract.json\",\n      \"expected_sha256\": \"3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3\",\n      \"actual_sha256\": \"3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3\",\n      \"current\": true\n    },\n    {\n      \"id\": \"checker\",\n      \"path\": \"checks/check_contract.py\",\n      \"expected_sha256\": \"9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b\",\n      \"actual_sha256\": \"9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b\",\n      \"current\": true\n    }\n  ],\n  \"commands\": [],\n  \"invariants\": [\n    {\n      \"id\": \"close-focus\",\n      \"statement\": \"Closing question help restores focus to its summary; verify this separately from the application Back transition.\",\n      \"source\": \"surface\",\n      \"applies_to\": [\n        \"plan\",\n        \"review\",\n        \"ux\"\n      ]\n    },\n    {\n      \"id\": \"back-focus\",\n      \"statement\": \"Reach the application Back control using sequential Tab or Shift+Tab; activate with Enter and verify introduction heading focus. A click or programmatic focus does not prove keyboard reachability.\",\n      \"source\": \"surface\",\n      \"applies_to\": [\n        \"plan\",\n        \"review\",\n        \"ux\"\n      ]\n    },\n    {\n      \"id\": \"unanswered-scope\",\n      \"statement\": \"Leave the first question unanswered, block all non-GET/HEAD/OPTIONS requests and main-frame/popup navigation outside the allowed origins. Record blocked analytics; do not relax policy for a successful recording.\",\n      \"source\": \"surface\",\n      \"applies_to\": [\n        \"plan\",\n        \"review\",\n        \"ux\"\n      ]\n    }\n  ],\n  \"surfaces\": {\n    \"web\": {\n      \"kind\": \"application\",\n      \"entry_url\": \"https://qaizen.io/labs\",\n      \"allowed_origins\": [\n        \"https://qaizen.io\"\n      ],\n      \"required_state\": \"Question help closes with summary focus; keyboard Back returns to the introduction with heading focus and no selected answers.\",\n      \"source\": \"surface\",\n      \"applies_to\": [\n        \"ux\"\n      ]\n    }\n  },\n  \"consumed_source_ids\": [\n    \"surface\"\n  ],\n  \"problems\": [],\n  \"local_adaptations\": []\n}\n",
+      "stderr": "",
+      "observed_at": "2026-10-17T10:54:24.820419+00:00"
+    },
+    "consumption": {
+      "observed_at": "2026-10-17T10:54:42.984851+00:00",
+      "profile_sha256": "f76afdd45cb6352e5044a06affc4182ea6cd40aa9c012fb216636a61faa428f0",
+      "facts": [
+        {
+          "id": "close-focus",
+          "source_id": "surface",
+          "source_sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+          "effect": "Separate summary restoration from Back heading restoration assertions."
+        },
+        {
+          "id": "back-focus",
+          "source_id": "surface",
+          "source_sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+          "effect": "Use sequential traversal and Enter, never click, for Back proof."
+        },
+        {
+          "id": "unanswered-scope",
+          "source_id": "surface",
+          "source_sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+          "effect": "Assert no checked answers; retain policy and blocked analytics diagnostics."
+        },
+        {
+          "id": "surfaces.web",
+          "source_id": "surface",
+          "source_sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+          "effect": "Select public /labs entry, anonymous application, authorized qaizen.io origin and required help/Back states."
+        }
+      ],
+      "selected_commands": [],
+      "additional_source_command": "Contract checker independently selected from TASK.md requirement to read original sources; UX profile returns no applicable command."
+    }
+  }
+}

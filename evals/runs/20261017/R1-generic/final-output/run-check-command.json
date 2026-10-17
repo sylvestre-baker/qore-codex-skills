@@ -1,0 +1,17 @@
+{
+  "argv": [
+    "python3",
+    "scripts/run-check.py",
+    "/workspace/output/execution.json",
+    "--evidence-root",
+    "/workspace/output/evidence"
+  ],
+  "cwd": "/workspace/worker/.agents/skills/qore-review",
+  "started_at": "2026-10-17T10:14:51.763056+00:00",
+  "finished_at": "2026-10-17T10:14:52.137341+00:00",
+  "exit_code": 0,
+  "stdout": "{\n  \"valid\": true,\n  \"coverage\": \"COMPLETE\",\n  \"missing_phases\": [],\n  \"artifact_count\": 54,\n  \"note\": \"Evidence identity and declared phase coverage checked; factual quality is not certified.\"\n}\n",
+  "stderr": "",
+  "output_file": "run-check-output.json",
+  "limit": "Structure and declared phase/identity checks only; not a factual-quality or independence certification."
+}

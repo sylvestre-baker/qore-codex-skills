@@ -1,0 +1,18 @@
+{
+  "observed_at": "2026-10-17T11:08:46.207136+00:00",
+  "actor_id": "/root",
+  "screenshots_opened": [
+    "relay-1/01-labs-entry.png",
+    "relay-1/02-introduction.png",
+    "relay-1/03-first-question-unanswered.png"
+  ],
+  "observations": [
+    "Entry card and Start control visible, readable; public entry reached introduction with distinguishing ten-question/five-gate copy.",
+    "Introduction heading, descriptive copy and Start control render in centered column.",
+    "Question1 shows readable heading, five answer choices in DOM, Next disabled; assert-none-checked passed. First-question active element is H2 question-dataSources.",
+    "Persistent cookie banner crosses lower part of full-page captures at initial viewport bottom, obscuring some introductory privacy text and lower answer choices at initial scroll. Keyboard scroll/reachability of help and Back still needs observation; do not infer a trap from full-page pixels.",
+    "No observed major alignment/clipping problem in principal content; no responsive/mobile claim."
+  ],
+  "console_correlation": "One ERR_BLOCKED_BY_CLIENT.Inspector for POST https://qaizen.io/api/labs/readiness/event at 11:07:17.277Z; corresponding policy block 11:07:17.273Z. No page errors and question resolved. Not classified as application exception.",
+  "focus_claim_status": "Pending full request2: automatic Tab does not prove Back activation."
+}

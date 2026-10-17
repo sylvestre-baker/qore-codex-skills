@@ -1,0 +1,4 @@
+interface:
+  display_name: "Qore Plan"
+  short_description: "Plan changes with sourced, challenged decisions"
+  default_prompt: "Use $qore-plan-qaizen-labs to prepare a sourced specification for this change."

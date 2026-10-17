@@ -1,0 +1,705 @@
+{
+  "at": "2026-10-17T11:38:33.705Z",
+  "url": "http://localhost:64771/labs/readiness-check",
+  "scrollX": 0,
+  "scrollY": 534,
+  "viewport": {
+    "width": 320,
+    "height": 800,
+    "dpr": 1
+  },
+  "document": {
+    "width": 320,
+    "height": 1334
+  },
+  "active": {
+    "tag": "BUTTON",
+    "id": "",
+    "text": "Back",
+    "rect": {
+      "x": 16,
+      "y": 485.75,
+      "width": 80.03125,
+      "height": 46,
+      "top": 485.75,
+      "right": 96.03125,
+      "bottom": 531.75,
+      "left": 16
+    },
+    "position": "static",
+    "zIndex": "auto"
+  },
+  "back": {
+    "tag": "BUTTON",
+    "id": "",
+    "text": "Back",
+    "rect": {
+      "x": 16,
+      "y": 485.75,
+      "width": 80.03125,
+      "height": 46,
+      "top": 485.75,
+      "right": 96.03125,
+      "bottom": 531.75,
+      "left": 16
+    },
+    "position": "static",
+    "zIndex": "auto"
+  },
+  "banner": {
+    "tag": "DIV",
+    "id": "",
+    "text": "Analytics cookies. We would like to measure visits with Google Analytics and Microsoft Clarity to improve this site. Nothing is loaded unless you accept; you can change your mind at any time via \"Cookie settings\" at the ",
+    "rect": {
+      "x": 0,
+      "y": 580.5,
+      "width": 320,
+      "height": 219.5,
+      "top": 580.5,
+      "right": 320,
+      "bottom": 800,
+      "left": 0
+    },
+    "position": "fixed",
+    "zIndex": "60"
+  },
+  "fixed": [
+    {
+      "tag": "DIV",
+      "id": "",
+      "text": "Analytics cookies. We would like to measure visits with Google Analytics and Microsoft Clarity to improve this site. Nothing is loaded unless you accept; you can change your mind at any time via \"Cookie settings\" at the ",
+      "rect": {
+        "x": 0,
+        "y": 580.5,
+        "width": 320,
+        "height": 219.5,
+        "top": 580.5,
+        "right": 320,
+        "bottom": 800,
+        "left": 0
+      },
+      "position": "fixed",
+      "zIndex": "60"
+    },
+    {
+      "tag": "NAV",
+      "id": "",
+      "text": "Our productCustom agentsReadiness ReviewLabsBlog🇬🇧 EN",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 72,
+        "top": 0,
+        "right": 320,
+        "bottom": 72,
+        "left": 0
+      },
+      "position": "fixed",
+      "zIndex": "50"
+    }
+  ],
+  "sampledBackPoints": [
+    {
+      "x": 24.003125,
+      "y": 490.35,
+      "inViewport": true,
+      "hit": {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "Back",
+        "rect": {
+          "x": 16,
+          "y": 485.75,
+          "width": 80.03125,
+          "height": 46,
+          "top": 485.75,
+          "right": 96.03125,
+          "bottom": 531.75,
+          "left": 16
+        },
+        "position": "static",
+        "zIndex": "auto"
+      },
+      "backOrDescendant": true,
+      "bannerOrDescendant": false
+    },
+    {
+      "x": 24.003125,
+      "y": 499.55,
+      "inViewport": true,
+      "hit": {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "Back",
+        "rect": {
+          "x": 16,
+          "y": 485.75,
+          "width": 80.03125,
+          "height": 46,
+          "top": 485.75,
+          "right": 96.03125,
+          "bottom": 531.75,
+          "left": 16
+        },
+        "position": "static",
+        "zIndex": "auto"
+      },
+      "backOrDescendant": true,
+      "bannerOrDescendant": false
+    },
+    {
+      "x": 24.003125,
+      "y": 508.75,
+      "inViewport": true,
+      "hit": {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "Back",
+        "rect": {
+          "x": 16,
+          "y": 485.75,
+          "width": 80.03125,
+          "height": 46,
+          "top": 485.75,
+          "right": 96.03125,
+          "bottom": 531.75,
+          "left": 16
+        },
+        "position": "static",
+        "zIndex": "auto"
+      },
+      "backOrDescendant": true,
+      "bannerOrDescendant": false
+    },
+    {
+      "x": 24.003125,
+      "y": 517.95,
+      "inViewport": true,
+      "hit": {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "Back",
+        "rect": {
+          "x": 16,
+          "y": 485.75,
+          "width": 80.03125,
+          "height": 46,
+          "top": 485.75,
+          "right": 96.03125,
+          "bottom": 531.75,
+          "left": 16
+        },
+        "position": "static",
+        "zIndex": "auto"
+      },
+      "backOrDescendant": true,
+      "bannerOrDescendant": false
+    },
+    {
+      "x": 24.003125,
+      "y": 527.15,
+      "inViewport": true,
+      "hit": {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "Back",
+        "rect": {
+          "x": 16,
+          "y": 485.75,
+          "width": 80.03125,
+          "height": 46,
+          "top": 485.75,
+          "right": 96.03125,
+          "bottom": 531.75,
+          "left": 16
+        },
+        "position": "static",
+        "zIndex": "auto"
+      },
+      "backOrDescendant": true,
+      "bannerOrDescendant": false
+    },
+    {
+      "x": 40.009375,
+      "y": 490.35,
+      "inViewport": true,
+      "hit": {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "Back",
+        "rect": {
+          "x": 16,
+          "y": 485.75,
+          "width": 80.03125,
+          "height": 46,
+          "top": 485.75,
+          "right": 96.03125,
+          "bottom": 531.75,
+          "left": 16
+        },
+        "position": "static",
+        "zIndex": "auto"
+      },
+      "backOrDescendant": true,
+      "bannerOrDescendant": false
+    },
+    {
+      "x": 40.009375,
+      "y": 499.55,
+      "inViewport": true,
+      "hit": {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "Back",
+        "rect": {
+          "x": 16,
+          "y": 485.75,
+          "width": 80.03125,
+          "height": 46,
+          "top": 485.75,
+          "right": 96.03125,
+          "bottom": 531.75,
+          "left": 16
+        },
+        "position": "static",
+        "zIndex": "auto"
+      },
+      "backOrDescendant": true,
+      "bannerOrDescendant": false
+    },
+    {
+      "x": 40.009375,
+      "y": 508.75,
+      "inViewport": true,
+      "hit": {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "Back",
+        "rect": {
+          "x": 16,
+          "y": 485.75,
+          "width": 80.03125,
+          "height": 46,
+          "top": 485.75,
+          "right": 96.03125,
+          "bottom": 531.75,
+          "left": 16
+        },
+        "position": "static",
+        "zIndex": "auto"
+      },
+      "backOrDescendant": true,
+      "bannerOrDescendant": false
+    },
+    {
+      "x": 40.009375,
+      "y": 517.95,
+      "inViewport": true,
+      "hit": {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "Back",
+        "rect": {
+          "x": 16,
+          "y": 485.75,
+          "width": 80.03125,
+          "height": 46,
+          "top": 485.75,
+          "right": 96.03125,
+          "bottom": 531.75,
+          "left": 16
+        },
+        "position": "static",
+        "zIndex": "auto"
+      },
+      "backOrDescendant": true,
+      "bannerOrDescendant": false
+    },
+    {
+      "x": 40.009375,
+      "y": 527.15,
+      "inViewport": true,
+      "hit": {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "Back",
+        "rect": {
+          "x": 16,
+          "y": 485.75,
+          "width": 80.03125,
+          "height": 46,
+          "top": 485.75,
+          "right": 96.03125,
+          "bottom": 531.75,
+          "left": 16
+        },
+        "position": "static",
+        "zIndex": "auto"
+      },
+      "backOrDescendant": true,
+      "bannerOrDescendant": false
+    },
+    {
+      "x": 56.015625,
+      "y": 490.35,
+      "inViewport": true,
+      "hit": {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "Back",
+        "rect": {
+          "x": 16,
+          "y": 485.75,
+          "width": 80.03125,
+          "height": 46,
+          "top": 485.75,
+          "right": 96.03125,
+          "bottom": 531.75,
+          "left": 16
+        },
+        "position": "static",
+        "zIndex": "auto"
+      },
+      "backOrDescendant": true,
+      "bannerOrDescendant": false
+    },
+    {
+      "x": 56.015625,
+      "y": 499.55,
+      "inViewport": true,
+      "hit": {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "Back",
+        "rect": {
+          "x": 16,
+          "y": 485.75,
+          "width": 80.03125,
+          "height": 46,
+          "top": 485.75,
+          "right": 96.03125,
+          "bottom": 531.75,
+          "left": 16
+        },
+        "position": "static",
+        "zIndex": "auto"
+      },
+      "backOrDescendant": true,
+      "bannerOrDescendant": false
+    },
+    {
+      "x": 56.015625,
+      "y": 508.75,
+      "inViewport": true,
+      "hit": {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "Back",
+        "rect": {
+          "x": 16,
+          "y": 485.75,
+          "width": 80.03125,
+          "height": 46,
+          "top": 485.75,
+          "right": 96.03125,
+          "bottom": 531.75,
+          "left": 16
+        },
+        "position": "static",
+        "zIndex": "auto"
+      },
+      "backOrDescendant": true,
+      "bannerOrDescendant": false
+    },
+    {
+      "x": 56.015625,
+      "y": 517.95,
+      "inViewport": true,
+      "hit": {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "Back",
+        "rect": {
+          "x": 16,
+          "y": 485.75,
+          "width": 80.03125,
+          "height": 46,
+          "top": 485.75,
+          "right": 96.03125,
+          "bottom": 531.75,
+          "left": 16
+        },
+        "position": "static",
+        "zIndex": "auto"
+      },
+      "backOrDescendant": true,
+      "bannerOrDescendant": false
+    },
+    {
+      "x": 56.015625,
+      "y": 527.15,
+      "inViewport": true,
+      "hit": {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "Back",
+        "rect": {
+          "x": 16,
+          "y": 485.75,
+          "width": 80.03125,
+          "height": 46,
+          "top": 485.75,
+          "right": 96.03125,
+          "bottom": 531.75,
+          "left": 16
+        },
+        "position": "static",
+        "zIndex": "auto"
+      },
+      "backOrDescendant": true,
+      "bannerOrDescendant": false
+    },
+    {
+      "x": 72.021875,
+      "y": 490.35,
+      "inViewport": true,
+      "hit": {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "Back",
+        "rect": {
+          "x": 16,
+          "y": 485.75,
+          "width": 80.03125,
+          "height": 46,
+          "top": 485.75,
+          "right": 96.03125,
+          "bottom": 531.75,
+          "left": 16
+        },
+        "position": "static",
+        "zIndex": "auto"
+      },
+      "backOrDescendant": true,
+      "bannerOrDescendant": false
+    },
+    {
+      "x": 72.021875,
+      "y": 499.55,
+      "inViewport": true,
+      "hit": {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "Back",
+        "rect": {
+          "x": 16,
+          "y": 485.75,
+          "width": 80.03125,
+          "height": 46,
+          "top": 485.75,
+          "right": 96.03125,
+          "bottom": 531.75,
+          "left": 16
+        },
+        "position": "static",
+        "zIndex": "auto"
+      },
+      "backOrDescendant": true,
+      "bannerOrDescendant": false
+    },
+    {
+      "x": 72.021875,
+      "y": 508.75,
+      "inViewport": true,
+      "hit": {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "Back",
+        "rect": {
+          "x": 16,
+          "y": 485.75,
+          "width": 80.03125,
+          "height": 46,
+          "top": 485.75,
+          "right": 96.03125,
+          "bottom": 531.75,
+          "left": 16
+        },
+        "position": "static",
+        "zIndex": "auto"
+      },
+      "backOrDescendant": true,
+      "bannerOrDescendant": false
+    },
+    {
+      "x": 72.021875,
+      "y": 517.95,
+      "inViewport": true,
+      "hit": {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "Back",
+        "rect": {
+          "x": 16,
+          "y": 485.75,
+          "width": 80.03125,
+          "height": 46,
+          "top": 485.75,
+          "right": 96.03125,
+          "bottom": 531.75,
+          "left": 16
+        },
+        "position": "static",
+        "zIndex": "auto"
+      },
+      "backOrDescendant": true,
+      "bannerOrDescendant": false
+    },
+    {
+      "x": 72.021875,
+      "y": 527.15,
+      "inViewport": true,
+      "hit": {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "Back",
+        "rect": {
+          "x": 16,
+          "y": 485.75,
+          "width": 80.03125,
+          "height": 46,
+          "top": 485.75,
+          "right": 96.03125,
+          "bottom": 531.75,
+          "left": 16
+        },
+        "position": "static",
+        "zIndex": "auto"
+      },
+      "backOrDescendant": true,
+      "bannerOrDescendant": false
+    },
+    {
+      "x": 88.028125,
+      "y": 490.35,
+      "inViewport": true,
+      "hit": {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "Back",
+        "rect": {
+          "x": 16,
+          "y": 485.75,
+          "width": 80.03125,
+          "height": 46,
+          "top": 485.75,
+          "right": 96.03125,
+          "bottom": 531.75,
+          "left": 16
+        },
+        "position": "static",
+        "zIndex": "auto"
+      },
+      "backOrDescendant": true,
+      "bannerOrDescendant": false
+    },
+    {
+      "x": 88.028125,
+      "y": 499.55,
+      "inViewport": true,
+      "hit": {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "Back",
+        "rect": {
+          "x": 16,
+          "y": 485.75,
+          "width": 80.03125,
+          "height": 46,
+          "top": 485.75,
+          "right": 96.03125,
+          "bottom": 531.75,
+          "left": 16
+        },
+        "position": "static",
+        "zIndex": "auto"
+      },
+      "backOrDescendant": true,
+      "bannerOrDescendant": false
+    },
+    {
+      "x": 88.028125,
+      "y": 508.75,
+      "inViewport": true,
+      "hit": {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "Back",
+        "rect": {
+          "x": 16,
+          "y": 485.75,
+          "width": 80.03125,
+          "height": 46,
+          "top": 485.75,
+          "right": 96.03125,
+          "bottom": 531.75,
+          "left": 16
+        },
+        "position": "static",
+        "zIndex": "auto"
+      },
+      "backOrDescendant": true,
+      "bannerOrDescendant": false
+    },
+    {
+      "x": 88.028125,
+      "y": 517.95,
+      "inViewport": true,
+      "hit": {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "Back",
+        "rect": {
+          "x": 16,
+          "y": 485.75,
+          "width": 80.03125,
+          "height": 46,
+          "top": 485.75,
+          "right": 96.03125,
+          "bottom": 531.75,
+          "left": 16
+        },
+        "position": "static",
+        "zIndex": "auto"
+      },
+      "backOrDescendant": true,
+      "bannerOrDescendant": false
+    },
+    {
+      "x": 88.028125,
+      "y": 527.15,
+      "inViewport": true,
+      "hit": {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "Back",
+        "rect": {
+          "x": 16,
+          "y": 485.75,
+          "width": 80.03125,
+          "height": 46,
+          "top": 485.75,
+          "right": 96.03125,
+          "bottom": 531.75,
+          "left": 16
+        },
+        "position": "static",
+        "zIndex": "auto"
+      },
+      "backOrDescendant": true,
+      "bannerOrDescendant": false
+    }
+  ],
+  "checked": 0
+}

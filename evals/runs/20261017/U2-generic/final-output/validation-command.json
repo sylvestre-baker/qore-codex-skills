@@ -1,0 +1,15 @@
+{
+  "argv": [
+    "python3",
+    "-B",
+    "/workspace/worker/.agents/skills/qore-ux-review/scripts/run-check.py",
+    "/workspace/output/execution.json",
+    "--evidence-root",
+    "/workspace/output"
+  ],
+  "exit_code": 0,
+  "observed_at": "2026-10-17T12:03:54.711243+00:00",
+  "stdout_file": "validation.json",
+  "stderr": "",
+  "note": "External final check receipt; excluded from execution artifact hashes to avoid self-reference. Rechecked after correcting a report timestamp to exact relay bounds."
+}

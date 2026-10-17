@@ -1,0 +1,16 @@
+{
+  "findings": [
+    {
+      "id": "S-1",
+      "title": "Procedure never enforces or observes the read-only HTTP policy",
+      "severity": "medium",
+      "evidence": "verification-protocol.md:5-10 gives the full browser procedure without HTTP-method interception, request-method checks, or retention of blocked-request effects. surface-contract.json:6 allows only GET, HEAD, OPTIONS; :18 requires read-only-policy; :20 expects an analytics POST to be blocked and its observed effects retained. checks/check_contract.py:16-18,42-43 validates declared policy only and explicitly limits its output to contract consistency. If the procedure is executed without a separate interceptor and a page action emits the expected analytics POST, every written UI assertion can pass while a prohibited request is sent; blocked-request effects are also unrecorded. No current website request was observed; the missing enforcement/evidence is in the procedure."
+    },
+    {
+      "id": "S-2",
+      "title": "Procedure follows navigation without checking the authorized origin",
+      "severity": "medium",
+      "evidence": "verification-protocol.md:5 instructs opening the public Labs entry and following its journey link; :6-10 contains no actual-origin assertion, redirect check, or request-origin guard. surface-contract.json:4-5 fixes https://qaizen.io/labs and permits only https://qaizen.io; :18 requires origin-policy; observation-policy.json:2-4 repeats that restriction. surface-contract.json:9 uses only an href suffix, which does not establish origin. checks/check_contract.py:12-15 checks the declared initial URL, not real navigation. If a link, redirect, or secondary request is off-origin and no separate guard exists, the written UI assertions can still pass while observation crosses the authorized boundary. Actual off-origin traffic is not established by the supplied material."
+    }
+  ]
+}

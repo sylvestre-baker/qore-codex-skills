@@ -1,0 +1,152 @@
+[
+  {
+    "id": "A1",
+    "claim": "The authorized change is documentation-only; contract, policy, checker, application and skill resources remain unchanged.",
+    "source_locations": [
+      "TASK.md:3",
+      "TASK.md:5"
+    ],
+    "proposed_change": "Clarify the existing target Markdown and retain the reconstructed-fixture disclaimer; do not add a runner, schema, service or database.",
+    "severity": "high",
+    "refutation": null
+  },
+  {
+    "id": "A2",
+    "claim": "The target's unspecified help opening omits contract-defined Enter open, Space close, and Enter reopen transitions.",
+    "source_locations": [
+      "target/verification-protocol.md:7",
+      "surface-contract.json:11",
+      "surface-contract.json:12",
+      "surface-contract.json:13",
+      "surface-contract.json:18"
+    ],
+    "proposed_change": "Explicitly sequence Enter, Space, Enter on the summary and assert each corresponding help state before existing Close verification.",
+    "severity": "medium",
+    "refutation": null
+  },
+  {
+    "id": "A3",
+    "claim": "Close and application Back have different focus destinations and require separate evidence; Back requires sequential keyboard reachability and Enter activation.",
+    "source_locations": [
+      "surface-contract.json:14",
+      "surface-contract.json:15",
+      "surface-contract.json:17",
+      "checks/check_contract.py:32",
+      "checks/check_contract.py:35",
+      "target/verification-protocol.md:8",
+      "target/verification-protocol.md:10"
+    ],
+    "proposed_change": "Preserve Close-to-summary and Back-to-introduction-heading assertions, existing visible-state checks, and unanswered checks; prohibit click or programmatic focus from substituting for the required Back keyboard proof.",
+    "severity": "high",
+    "refutation": null
+  },
+  {
+    "id": "A4",
+    "claim": "The 24-step Back bound appears in the target procedure but not the supplied surface contract or checker, so exhaustion establishes an incomplete bounded verification rather than universal website inaccessibility.",
+    "source_locations": [
+      "target/verification-protocol.md:10",
+      "surface-contract.json:15",
+      "checks/check_contract.py:35"
+    ],
+    "proposed_change": "Preserve the existing bound as an operational guard and record exhaustion and the traversal trace without silently extending or rescuing the attempt.",
+    "severity": "medium",
+    "refutation": null
+  },
+  {
+    "id": "A5",
+    "claim": "The source scope requires unanswered operation, allowed methods GET/HEAD/OPTIONS, allowed origin https://qaizen.io and retention of expected blocked analytics POST effects; the target currently omits these operating preconditions.",
+    "source_locations": [
+      "surface-contract.json:4",
+      "surface-contract.json:5",
+      "surface-contract.json:6",
+      "surface-contract.json:18",
+      "surface-contract.json:20",
+      "observation-policy.json:2",
+      "observation-policy.json:3",
+      "target/verification-protocol.md:5"
+    ],
+    "proposed_change": "Place scope and guard requirements before navigation, include declared locale and viewport, and stop verification if the chosen observer cannot enforce policy. Retain blocked-request effects rather than relaxing policy.",
+    "severity": "high",
+    "refutation": "Partial attribution correction after cross-examination: raw contract/policy supply method/origin values, but main-frame/popup boundary semantics in the full initial report are supported by the original current skill profile references/project.json:55-56, not the raw policy file alone. Apply methods to all requests and origin restrictions to main-frame/popup navigations; do not prohibit every cross-origin subresource."
+  },
+  {
+    "id": "A6",
+    "claim": "The existing checker consumes only the supplied JSON path and reports consistency; its output checks list does not prove those checks ran and it does not validate target Markdown or compare observation-policy.json.",
+    "source_locations": [
+      "checks/check_contract.py:9",
+      "checks/check_contract.py:42",
+      "checks/check_contract.py:43",
+      "checks/check_contract.py:46",
+      "checks/check_contract.py:50"
+    ],
+    "proposed_change": "Keep the checker unchanged as static preflight, add a prose-to-contract coverage review, and explicitly separate both from future browser observation evidence.",
+    "severity": "high",
+    "refutation": null
+  },
+  {
+    "id": "A7",
+    "claim": "The target allows Tab or Shift+Tab for Close while the canonical surface Close transition names Tab; the checker explicitly permits both only for Back.",
+    "source_locations": [
+      "target/verification-protocol.md:8",
+      "surface-contract.json:14",
+      "checks/check_contract.py:35"
+    ],
+    "proposed_change": "Use sequential Tab for canonical Close contract coverage; preserve existing Shift+Tab as separately labelled alternative evidence without requiring an optional second run. Shift+Tab-only Close evidence does not establish observation of the named Tab path. Keep Back Tab/Shift+Tab alternatives supported by checker. Do not modify contract or checker.",
+    "severity": "medium",
+    "refutation": "Cross-examination resolves the initially open recommendation; UX preference for retaining the alternative without annotation is rejected when it permits canonical coverage to be claimed from alternate-only evidence. Underlying factual claim is not refuted."
+  },
+  {
+    "id": "A8",
+    "claim": "The fixture and acceptance contract do not constitute evidence of a current website defect or a passed deployment.",
+    "source_locations": [
+      "target/verification-protocol.md:3",
+      "surface-contract.json:19",
+      "surface-contract.json:20"
+    ],
+    "proposed_change": "Retain the fixture notice and distinguish declared expectations, document omissions, future observed outcomes and unresolved browser behavior throughout the clarification.",
+    "severity": "high",
+    "refutation": null
+  },
+  {
+    "id": "A9",
+    "claim": "The original current profile specifies blocking all non-GET/HEAD/OPTIONS requests and main-frame/popup navigation outside allowed origins; it does not specify banning all cross-origin subresources.",
+    "source_locations": [
+      ".agents/skills/qore-plan-qaizen-labs/references/project.json:55",
+      ".agents/skills/qore-plan-qaizen-labs/references/project.json:56",
+      "surface-contract.json:5",
+      "surface-contract.json:6",
+      "observation-policy.json:2",
+      "observation-policy.json:3"
+    ],
+    "proposed_change": "Attribute boundary semantics to the original profile and policy values to raw contract/policy; establish guards before future entry without choosing a new interception implementation.",
+    "severity": "high",
+    "refutation": null
+  },
+  {
+    "id": "A10",
+    "claim": "Observed wrong focus, bounded Back traversal exhaustion, and an observation prevented or unavailable are different outcomes; checker output cannot supply missing runtime evidence.",
+    "source_locations": [
+      "target/verification-protocol.md:8",
+      "target/verification-protocol.md:9",
+      "target/verification-protocol.md:10",
+      "checks/check_contract.py:42",
+      "checks/check_contract.py:43",
+      "surface-contract.json:19"
+    ],
+    "proposed_change": "Record unmet observed focus assertions separately from bounded traversal failure and downstream unobserved checks; retain both unanswered checkpoints, the 24-step bound and trace; use tool-independent notes or existing trace evidence without a new storage schema.",
+    "severity": "high",
+    "refutation": null
+  },
+  {
+    "id": "A11",
+    "claim": "Help transitions specify Enter, Space and Enter activation but do not specify how the summary is reached or a summary traversal budget.",
+    "source_locations": [
+      "surface-contract.json:11",
+      "surface-contract.json:12",
+      "surface-contract.json:13"
+    ],
+    "proposed_change": "Require the activation sequence and observed open/closed/open states; do not impose a new mandatory sequential-reachability criterion or numeric traversal bound for summary setup.",
+    "severity": "medium",
+    "refutation": "Corrects the full initial Architecture A2 suggestion that ordinary keyboard navigation to the summary should be a required addition; it may remain guidance, not a sourced invariant."
+  }
+]

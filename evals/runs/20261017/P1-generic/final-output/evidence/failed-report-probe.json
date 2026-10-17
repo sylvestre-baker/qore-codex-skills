@@ -1,0 +1,13 @@
+{
+  "argv": [
+    "ls",
+    "-l",
+    "/workspace/output/reports/product-cross.md",
+    "/workspace/output/reports/architecture-cross.md"
+  ],
+  "exit_code": 1,
+  "stdout": "",
+  "stderr": "ls: /workspace/output/reports/product-cross.md: No such file or directory\nls: /workspace/output/reports/architecture-cross.md: No such file or directory\n",
+  "observed_at": "2026-10-17T10:31:18+00:00",
+  "meaning": "Reports not yet written during active cross passes; both later completed. Failed probe retained."
+}

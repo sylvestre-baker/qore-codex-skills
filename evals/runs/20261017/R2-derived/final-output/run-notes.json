@@ -1,0 +1,13 @@
+{
+  "started_at": "2026-10-17T11:13:27+00:00",
+  "wall_deadline": "2026-10-17T11:28:27+00:00",
+  "aggregate_agent_seconds_budget": 2400,
+  "role_budget_seconds": 240,
+  "finder_absolute_deadline": "2026-10-17T11:18:40+00:00",
+  "finder_dispatch_window_utc": [
+    "2026-10-17T11:13:27+00:00",
+    "2026-10-17T11:13:59+00:00"
+  ],
+  "dispatch_timestamp_limit": "Per-dispatch UTC clock sampling was not performed. Actual tool dispatches occurred in recorded window; agent own entry timestamps supplement it. No precise dispatch instant is fabricated.",
+  "scope": "Review target/verification-protocol.md against supplied sources; no target edits, web execution, or shared-data mutations."
+}

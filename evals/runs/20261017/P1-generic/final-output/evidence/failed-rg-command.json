@@ -1,0 +1,13 @@
+{
+  "argv": [
+    "sh",
+    "-c",
+    "pwd && rg --files -g 'TASK.md' -g 'AGENTS.md' -g '*SKILL*' -g '*'"
+  ],
+  "cwd": "/workspace/worker",
+  "exit_code": 127,
+  "stdout": "/workspace/worker\n",
+  "stderr": "/bin/sh: rg: not found\n",
+  "observation_utc": "2026-10-17T10:23:33+00:00",
+  "fallback": "Used ls/find and Python; no missing source coverage from unavailable rg."
+}

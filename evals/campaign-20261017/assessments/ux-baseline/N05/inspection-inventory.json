@@ -1,0 +1,263 @@
+{
+  "schema": "qore003-independent-ux-inventory/1",
+  "neutral_id": "N05",
+  "actor_id": "/root/campaign_ux_assessor",
+  "started_at_utc": "2026-10-17T11:08:08+00:00",
+  "recorded_at_utc": "2026-10-17T11:10:13.069274+00:00",
+  "images": [
+    {
+      "path": "observation-1/raw/00-entry.png",
+      "dimensions_px": [
+        1280,
+        1672
+      ],
+      "sha256": "095283e6a92818f6baf91a977793ff14591a91a60cef7b82ea9019642c2251e2",
+      "actually_viewed": false,
+      "view_tool": null,
+      "view_call_clock_utc": null
+    },
+    {
+      "path": "observation-1/raw/01-public-entry.png",
+      "dimensions_px": [
+        1280,
+        1672
+      ],
+      "sha256": "041319a5d5542b9a5ddae0bd2c782d018a031320b7ef69be076a71a99c470b8a",
+      "actually_viewed": true,
+      "view_tool": "functions tools.view_image",
+      "view_call_clock_utc": "2026-10-17T11:08:19Z"
+    },
+    {
+      "path": "observation-1/raw/02-introduction.png",
+      "dimensions_px": [
+        1280,
+        808
+      ],
+      "sha256": "8c12568cc767e1d111812033ddd4823fc5ffcaf12d6561cb61b74ffa210a4bc8",
+      "actually_viewed": true,
+      "view_tool": "functions tools.view_image",
+      "view_call_clock_utc": "2026-10-17T11:08:19Z"
+    },
+    {
+      "path": "observation-2/raw/00-entry.png",
+      "dimensions_px": [
+        1280,
+        1672
+      ],
+      "sha256": "095283e6a92818f6baf91a977793ff14591a91a60cef7b82ea9019642c2251e2",
+      "actually_viewed": false,
+      "view_tool": null,
+      "view_call_clock_utc": null
+    },
+    {
+      "path": "observation-2/raw/01-first-question-unanswered.png",
+      "dimensions_px": [
+        1280,
+        1033
+      ],
+      "sha256": "4e9a3b37fca4b08a7cd5123cae0c30d5a65225ec092b00091699bad327691393",
+      "actually_viewed": true,
+      "view_tool": "functions tools.view_image",
+      "view_call_clock_utc": "2026-10-17T11:08:19Z"
+    },
+    {
+      "path": "observation-2/raw/02-help-open-enter.png",
+      "dimensions_px": [
+        1280,
+        1667
+      ],
+      "sha256": "46f967ac12fcf923160726b0003edafa7b461aa20501c22fa83283f7e8bdde4d",
+      "actually_viewed": true,
+      "view_tool": "functions tools.view_image",
+      "view_call_clock_utc": "2026-10-17T11:08:19Z"
+    },
+    {
+      "path": "observation-2/raw/03-help-closed-space.png",
+      "dimensions_px": [
+        1280,
+        1033
+      ],
+      "sha256": "154537c2923ff969a06afd9a5d39ba885d067ce6190af63b29e9daef57fc1977",
+      "actually_viewed": true,
+      "view_tool": "functions tools.view_image",
+      "view_call_clock_utc": "2026-10-17T11:08:19Z"
+    },
+    {
+      "path": "observation-2/raw/04-help-reopened-enter.png",
+      "dimensions_px": [
+        1280,
+        1667
+      ],
+      "sha256": "46f967ac12fcf923160726b0003edafa7b461aa20501c22fa83283f7e8bdde4d",
+      "actually_viewed": false,
+      "view_tool": null,
+      "view_call_clock_utc": null
+    },
+    {
+      "path": "observation-2/raw/05-close-result.png",
+      "dimensions_px": [
+        1280,
+        1033
+      ],
+      "sha256": "90a40fe641a1eff7651756586a3b073b55da7cef825ba998125ef3aea3dfd89e",
+      "actually_viewed": true,
+      "view_tool": "functions tools.view_image",
+      "view_call_clock_utc": "2026-10-17T11:08:19Z"
+    },
+    {
+      "path": "observation-2/raw/06-back-keyboard-focused.png",
+      "dimensions_px": [
+        1280,
+        1033
+      ],
+      "sha256": "1c19e3dc23f6dcb33d0d930aa391f28cfce6205cdee1e3af133222737d219ce6",
+      "actually_viewed": true,
+      "view_tool": "functions tools.view_image",
+      "view_call_clock_utc": "2026-10-17T11:08:19Z"
+    },
+    {
+      "path": "observation-2/raw/07-back-result.png",
+      "dimensions_px": [
+        1280,
+        808
+      ],
+      "sha256": "87473a933533895cf780dd9d517969cda71d5a8afdb74b99a57e97434cd8a824",
+      "actually_viewed": true,
+      "view_tool": "functions tools.view_image",
+      "view_call_clock_utc": "2026-10-17T11:08:19Z"
+    },
+    {
+      "path": "observation-2/raw/08-final.png",
+      "dimensions_px": [
+        1280,
+        808
+      ],
+      "sha256": "87473a933533895cf780dd9d517969cda71d5a8afdb74b99a57e97434cd8a824",
+      "actually_viewed": false,
+      "view_tool": null,
+      "view_call_clock_utc": null
+    }
+  ],
+  "source_hash_checks": [
+    {
+      "path": "TASK.md",
+      "expected": "3708d4c233f7b6adae155f379a962ee7ebf18fe781add69a69157d1a8b8605a9",
+      "actual": "3708d4c233f7b6adae155f379a962ee7ebf18fe781add69a69157d1a8b8605a9",
+      "matches": true
+    },
+    {
+      "path": "checks/check_contract.py",
+      "expected": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b",
+      "actual": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b",
+      "matches": true
+    },
+    {
+      "path": "observation-policy.json",
+      "expected": "15f4e5b4960b5011684be265f027e42b8637a3b8aae96b24bba1ba3a4d0f0202",
+      "actual": "15f4e5b4960b5011684be265f027e42b8637a3b8aae96b24bba1ba3a4d0f0202",
+      "matches": true
+    },
+    {
+      "path": "surface-contract.json",
+      "expected": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+      "actual": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+      "matches": true
+    }
+  ],
+  "receipt_checks": [
+    {
+      "request": 1,
+      "started_at": "2026-10-17T11:03:04.949818+00:00",
+      "ended_at": "2026-10-17T11:03:11.950787+00:00",
+      "fresh_context": true,
+      "input_actions_modified": false,
+      "exit_code": 1,
+      "authored_action_count": 5,
+      "raw_files_checked": 8,
+      "raw_hash_mismatches": [],
+      "actions_hash_matches_receipt": true,
+      "harness_hash_matches_receipt": true,
+      "policy_hash_matches_receipt": true,
+      "network_response_count": 72,
+      "network_methods": [
+        "GET"
+      ],
+      "network_origins": [
+        "https://qaizen.io"
+      ],
+      "blocked_mutations": [],
+      "blocked_navigation": [],
+      "route_errors": [],
+      "page_errors": [],
+      "blocked_activations": [
+        {
+          "at": "2026-10-17T11:03:11.138Z",
+          "source": "preflight",
+          "trigger": "click",
+          "url": "https://qaizen.io/labs/readiness-check",
+          "target": null,
+          "allowed": false,
+          "control": null,
+          "states": [],
+          "reason": "The activation locator did not resolve exactly one visible control."
+        }
+      ],
+      "completed_assertions": 0
+    },
+    {
+      "request": 2,
+      "started_at": "2026-10-17T11:03:37.187579+00:00",
+      "ended_at": "2026-10-17T11:04:16.326700+00:00",
+      "fresh_context": true,
+      "input_actions_modified": false,
+      "exit_code": 0,
+      "authored_action_count": 34,
+      "raw_files_checked": 20,
+      "raw_hash_mismatches": [],
+      "actions_hash_matches_receipt": true,
+      "harness_hash_matches_receipt": true,
+      "policy_hash_matches_receipt": true,
+      "network_response_count": 72,
+      "network_methods": [
+        "GET"
+      ],
+      "network_origins": [
+        "https://qaizen.io"
+      ],
+      "blocked_mutations": [
+        {
+          "at": "2026-10-17T11:03:41.969Z",
+          "method": "POST",
+          "url": "https://qaizen.io/api/labs/readiness/event",
+          "reason": "Read-only probe policy"
+        }
+      ],
+      "blocked_navigation": [],
+      "route_errors": [],
+      "page_errors": [],
+      "blocked_activations": [],
+      "completed_assertions": 17
+    }
+  ],
+  "actual_measurements": [
+    "All four supplied input hashes checked independently.",
+    "Both action arrays, all relay-listed raw files, operator harness and live policy hashes independently matched.",
+    "All 12 raw PNG dimensions and SHA-256 values measured; eight original PNGs actually viewed.",
+    "Actual DOM CSS viewport1280x800 DPR1; focused Back PNG1280x1033, not a viewport-only image.",
+    "Request2 completed17 assertions and real sequential Tab/Enter Back activation.",
+    "Request1 and2 each record72 GET responses, all qaizen.io. One analytics POST blocked in request2; one matching console error, no page exceptions/route errors."
+  ],
+  "geometry_unavailable": [
+    "scrollX/scrollY",
+    "Back and cookie-banner bounding rectangles",
+    "visual viewport geometry",
+    "overlap area/hit testing",
+    "viewport-only screenshot"
+  ],
+  "notes": [
+    "Only one completed Back replay and one Back-focused capture exist; no repeat reliability inference.",
+    "Full-page capture pixels show Back concealment; runtime impact is unresolved.",
+    "No live observations, generated images or source edits were made."
+  ],
+  "assessment_finished_at_utc": "2026-10-17T11:10:22.690167+00:00"
+}

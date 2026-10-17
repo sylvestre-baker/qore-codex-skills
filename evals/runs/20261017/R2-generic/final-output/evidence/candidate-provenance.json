@@ -1,0 +1,18 @@
+{
+  "claims": [
+    {
+      "id": "C-1",
+      "original_file": "roles/correctness/findings.json"
+    },
+    {
+      "id": "C-2",
+      "original_file": "roles/correctness/findings.json"
+    },
+    {
+      "id": "S-1",
+      "original_file": "roles/security/findings.json"
+    }
+  ],
+  "deduplication": "None; preserve C-2/S-1 overlap for audit and independent verdicts.",
+  "barrier": "All three requested finders returned complete reports before packet collection and redaction."
+}

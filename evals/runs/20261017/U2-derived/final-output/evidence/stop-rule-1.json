@@ -1,0 +1,28 @@
+{
+  "decision": "CONTINUE",
+  "verdict": "DO-NOT-SHIP",
+  "coverage": "PARTIAL",
+  "observation_coverage": "PARTIAL",
+  "iteration": 1,
+  "ceiling": 6,
+  "surface_score": null,
+  "consecutive_fresh_passes": 0,
+  "passes_required": 1,
+  "lowest_failing_gate": "G3",
+  "failing_gates": [
+    "G3",
+    "G5"
+  ],
+  "stale_gates": [],
+  "missing_gates": [
+    "G1"
+  ],
+  "skipped": [
+    "G1"
+  ],
+  "infra_blocked": [],
+  "not_applicable": {},
+  "stuck_count": 0,
+  "no_improve_count": 0,
+  "limit": "Coverage describes observations. SHIP is a scoped review result, not deployment authorization. Non-applicability reasons require independent review."
+}

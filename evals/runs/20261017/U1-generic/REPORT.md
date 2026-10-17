@@ -1,0 +1,63 @@
+# Navigable copy of the original trial report
+
+The [original report](final-output/REPORT.md) is preserved byte-for-byte with the original method record. This copy adjusts only links for this public layout. It does not revise findings, coverage or observations. Later independent qualification is recorded separately in `evaluation.json`.
+
+The recorded Back journey completed successfully by keyboard, including the two distinct focus destinations. **Scoped result: DO-NOT-SHIP; observation and method coverage: COMPLETE for the declared desktop journey.** A moderate visibility defect remains: with the cookie banner present, the focused Back button’s label and nearly all its focus outline are covered. This does not establish a broken Back activation or a keyboard trap.
+
+This review used the supplied `qore-ux-review` 0.2.1 method and read the original `surface-contract.json`, `checks/check_contract.py`, and `observation-policy.json`. Those sources establish acceptance obligations; their expectations were not treated as observations. There was no application source diff, persistent project profile, tutorial protocol, or account context supplied. Depth was declared as `entry` with neighboring `state` coverage, requiring G0–G6. GP was excluded because this task has no performance acceptance or performance change.
+
+The target was the anonymous, unanswered English public journey from `https://qaizen.io/labs` to `/labs/readiness-check`, at observed CSS viewport 1280×800, DPR 1, in the default dark presentation with no cookie choice made. Answers, submissions, results, mobile, alternate themes, and authenticated contexts were outside authorization. Inputs and skill resources remained unchanged; [immutability-check.json](final-output/immutability-check.json) confirms all 16 supplied regular files still match their initial hashes.
+
+The enclosing identities are run `qore003-20261017-u1-generic-1`, candidate SHA-256 `8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d`, and entire prepared-input snapshot SHA-256 `ca02b75180a201ba8f9abb4e095a3d72cd0066f939e66c2e34bc7a781ad0c34d`. The supplied last relevant change is `2026-10-17T09:53:58.681100+00:00`. [input-manifest.json](final-output/input-manifest.json) retains individual file hashes and the identity procedure. The enclosing digests were supplied by the operator; their aggregate serialization was not supplied for independent recomputation. They do not identify a deployed application source commit.
+
+Browser execution used the neutral relay with Playwright 1.62.1, Chromium 151.0.7922.34, and Node v22.23.3. Navigation, PNG capture, live DOM, keyboard events, console listeners, and network observation were actually exercised. The automatic Tab probe focused “Skip to content”; the subsequent required keyboard journey supplied separate activation evidence. [capability-matrix.json](final-output/capability-matrix.json) links the capabilities to required checks.
+
+| Relay request | Actual operator UTC window, 2026-10-17 | Submitted actions | Observation |
+|---|---|---:|---|
+| 1 | 11:07:11.179–11:07:26.428 | 6 | Public entry click, introduction, Start, unanswered first question |
+| 2 | 11:07:58.127–11:08:36.240 | 33 | Full help/Close/Back keyboard sequence, restored focus, inspected pixels |
+| 3 | 11:09:33.128–11:10:11.883 | 32 | Deep-route reload/history and fresh forward/reverse Tab challenge |
+
+Every request began in a fresh isolated context. Arrays were executed without modification or operator interpretation. Request digests, dispatch/return/consumption times, and full receipts are retained in [request-log.json](final-output/request-log.json), [relay-1](final-output/relay-1/relay.json), [relay-2](final-output/relay-2/relay.json), and [relay-3](final-output/relay-3/relay.json). All returned files were copied byte-for-byte and checked against receipt SHA-256 values. The raw action events retain automatic probes and individual traversal steps in addition to submitted actions.
+
+The observed sequence was: public entry card → introduction → Start → unanswered first question → Tab through the first answer to the help summary → Enter opens help → Space closes help → Enter reopens help → Tab to Close → Enter closes help and restores summary focus → Tab to Back → Enter returns to the introduction and focuses its H1. No answer activation occurred. Request 2 asserted help’s `open` attribute, Close visibility changes, focus before activation, summary focus after Close, H1 focus after Back, and removal of the question group. The URL correctly remained `/labs/readiness-check` during these local state changes.
+
+| Required contract check | Result | Evidence |
+|---|---|---|
+| Entry | PASS | [public card](final-output/relay-1/01-labs-entry.png), [introduction DOM](final-output/relay-1/02-introduction.dom.json), actual click in events |
+| Unanswered | PASS | `assert-none-checked` before/after help in [request 2 events](final-output/relay-2/events.json), repeated in request 3; Next disabled |
+| Help toggle | PASS | Enter/Space/Enter and attribute/visibility assertions in request 2; [open help DOM](final-output/relay-2/02-help-open-enter.dom.json) |
+| Close focus | PASS | One Tab reaches Close, Enter closes, [summary becomes active](final-output/relay-2/05-after-close-focus-restoration.dom.json) |
+| Keyboard Back | PASS, with visibility defect below | One Tab reaches Back and Enter produces introduction in [request 2 events](final-output/relay-2/events.json) and [request 3 events](final-output/relay-3/events.json) |
+| Introduction focus | PASS | [returned H1 active](final-output/relay-2/07-returned-introduction.dom.json), [fresh replay H1 active](final-output/relay-3/07-challenge-returned-introduction.dom.json) |
+| Read-only policy | PASS in recorded window | Completed network entries used GET; one analytics POST per context was blocked |
+| Origin policy | PASS in recorded window | All recorded network/navigation origins were `https://qaizen.io`; no origin escape |
+
+**UX-1 — Moderate: cookie banner obscures the focused Back control.** After Close restores summary focus, pressing Tab focuses Back in the DOM. The inspected [initial Back screenshot](final-output/relay-2/06-back-focus-before-activation.png) shows the cookie banner covering Back’s text and most of the gold focus outline; only its upper sliver remains visible. This makes the next keyboard action difficult to identify visually, even though Enter works. It affects the declared first-visit context without requiring an answer or consent action.
+
+The fresh-context challenge reproduced this in [Back focus](final-output/relay-3/04-back-focus-challenge.png). Shift+Tab restored a clearly outlined summary, then Tab reproduced the same overlap in [repeat Back focus](final-output/relay-3/06-back-focus-repeat-tab.png). All three Back PNGs have the same SHA-256. The active-element snapshots identify Back, and Enter again produces the introduction with H1 focus. This preserves both findings: activation works, and focus visibility is poor. The screenshots are full-page captures with sticky/fixed elements at the capture scroll position; no separate viewport-only capture or independent geometry measurement was supplied. The finding is limited to this reproducible rendering, without a formal WCAG conformance claim.
+
+Proposed correction: reserve sufficient space for the persistent banner and scroll focused controls into the unobscured viewport. Keep the observed summary restoration after Close and H1 restoration after Back. This is a proposal; no application files or deployment were changed, and no fix was verified.
+
+| Gate | Score/result | Evidence and conclusion |
+|---|---|---|
+| G0 | 4 / PASS | Real entry click and distinctive introduction content in each context |
+| G1 | 4 / PASS | Readiness route document GET returned 200 on reload; browser history Back showed Labs and Forward showed introduction, with no stale question |
+| G2 | 4 / PASS | Unanswered question and all authorized help/return terminal states exercised; analytics blocking did not strand the interface |
+| G3 | 3 / FAIL | Inspected desktop screenshots show UX-1; principal text/layout otherwise readable within reviewed states |
+| G4 | 4 / PASS | Inspected introduction, question, help definitions/examples/instructions, and returned content; no inappropriate internal values observed |
+| G5 | 3 / FAIL | Sequential traversal, Close restoration, and Back/H1 restoration pass; Back visibility fails under the banner |
+| G6 | 4 / PASS | Fresh-context challenge tested focus visibility, reverse/forward traversal, destination confusion, and reload/history; affected gates retain the defect |
+| GP | Excluded | No performance acceptance in this explicit journey; no performance claim |
+
+[gate-results.json](final-output/gate-results.json), [required-check-results.json](final-output/required-check-results.json), and the three inspection reports preserve scores, evidence, freshness, and refutations. All 17 cited state/transition screenshots were opened and inspected. DOM reading supported semantics and text; it did not substitute for pixel inspection.
+
+The challenge refuted three stronger claims: Back is not proven unreachable, Close and Back should not share a focus destination, and the analytics console error does not prove an application exception. Each context recorded one `ERR_BLOCKED_BY_CLIENT.Inspector` associated with the policy-blocked POST to `/api/labs/readiness/event`. No page errors, route errors, blocked activations, or unexpected HTTP failure were recorded. [policy-evidence.json](final-output/policy-evidence.json) retains the exact observed windows and events. This describes relay-enforced read-only behavior, not how the site behaves with analytics enabled.
+
+Two iterations were completed using three of six permitted relay requests. [stop-rule-1.json](final-output/stop-rule-1.json) retained partial coverage while reload/history was still pending. [stop-rule-2.json](final-output/stop-rule-2.json) reports COMPLETE observation coverage, DO-NOT-SHIP, G3/G5 failing, and no missing or stale gates. Its control suggestion remains CONTINUE because the defect remains. The method’s explicit review-only stopping provision applies: corrections are unauthorized, so the established defect is retained and the review stops. No ceiling, plateau, zero gate, budget exhaustion, or extra quality retry was used to justify the result.
+
+All work was performed in actual root context `/root`; the UX method requires no independent finder/planning/verifier roles. No children were requested, returned, or missing. [roster.json](final-output/roster.json) records this without claiming independence. Full phase reports are [scope](final-output/scope-phase.json), [browser](final-output/browser-phase.json), [state_transition](final-output/state_transition-phase.json), [freshness](final-output/freshness-phase.json), and [verdict](final-output/verdict-phase.json). The execution identity record is [execution.json](final-output/execution.json). Local contract consistency and depth lint passed, both stop-rule outputs were retained, and the run structural validator output is saved separately. Structural validation checks evidence identity and declared coverage, not reasoning correctness.
+
+Missing broader coverage includes mobile/other themes, alternate accounts/locales, answered/results states, screen-reader use, automated accessibility audits, contrast measurement, performance, document redirects, and behavior with analytics allowed. Arbitrary address-bar entry and invalid URL permutations were not separately exercised; valid deep-route document handling was observed by reload after entering from Labs. Trace/video names appear in driver results, but their files were not returned; received DOM/PNG/events/results are retained. No deployed source revision or implementation root cause is established. Agent-second/token telemetry was unavailable through the supplied facilities, so usage is marked unavailable with reasons; [budget-record.json](final-output/budget-record.json) records actual elapsed wall time and limits rather than fabricated zero usage.
+
+After an authorized correction, resume in a new run with the new change timestamp and fresh evidence for every required gate. Repeat this exact unanswered path with cookie choice unset, verify the complete focused Back label/indicator is unobscured, activate Enter, and confirm introduction H1 focus. The current outcome is a completed scoped review with one unresolved moderate visibility defect.

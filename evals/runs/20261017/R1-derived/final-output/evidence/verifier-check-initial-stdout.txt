@@ -1,0 +1,117 @@
+SNAPSHOT target/verification-protocol.md sha256=b8d1f4ad7bd691dbf8f019cd3b87a7644a21899e6317edebac545fd3b245136e
+target/verification-protocol.md:1: # Journey verification procedure
+target/verification-protocol.md:2: 
+target/verification-protocol.md:3: Reconstructed tutorial fixture. Newly authored for QORE-003; not an authentic historical protocol or evidence of a website defect.
+target/verification-protocol.md:4: 
+target/verification-protocol.md:5: 1. Open the public Labs entry and follow its journey link.
+target/verification-protocol.md:6: 2. Start the check without selecting an answer.
+target/verification-protocol.md:7: 3. Open help using its summary control.
+target/verification-protocol.md:8: 4. Reach Close with Tab or Shift+Tab, activate with Enter, and assert that help is closed and the summary is focused.
+target/verification-protocol.md:9: 5. Assert that the first question remains unanswered.
+target/verification-protocol.md:10: 6. Click Back, then assert that the introduction is visible, the question and help are absent, and the introduction heading is focused.
+SNAPSHOT surface-contract.json sha256=3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3
+surface-contract.json:1: {
+surface-contract.json:2:   "schema": "qaizen-labs-surface/1",
+surface-contract.json:3:   "version": "0.1.0",
+surface-contract.json:4:   "entry_url": "https://qaizen.io/labs",
+surface-contract.json:5:   "allowed_origins": ["https://qaizen.io"],
+surface-contract.json:6:   "scope": {"locale": "en-US", "viewport": {"width": 1280, "height": 800}, "depth": ["entry", "state"], "answer_policy": "unanswered", "allowed_methods": ["GET", "HEAD", "OPTIONS"]},
+surface-contract.json:7:   "states": ["labs", "introduction", "first-question", "help-open", "help-closed", "returned-introduction"],
+surface-contract.json:8:   "transitions": [
+surface-contract.json:9:     {"id": "entry", "from": "labs", "to": "introduction", "control": "a[href$='/labs/readiness-check']", "activation": "click"},
+surface-contract.json:10:     {"id": "start", "from": "introduction", "to": "first-question", "control": "Start the check", "activation": "click"},
+surface-contract.json:11:     {"id": "open-help", "from": "first-question", "to": "help-open", "control": "summary", "activation": "Enter"},
+surface-contract.json:12:     {"id": "toggle-help", "from": "help-open", "to": "help-closed", "control": "summary", "activation": "Space"},
+surface-contract.json:13:     {"id": "reopen-help", "from": "help-closed", "to": "help-open", "control": "summary", "activation": "Enter"},
+surface-contract.json:14:     {"id": "close-help", "from": "help-open", "to": "help-closed", "control": "Close", "activation": "Enter", "traversal": "Tab", "focus_after": "summary"},
+surface-contract.json:15:     {"id": "back", "from": "help-closed", "to": "returned-introduction", "control": "Back", "activation": "Enter", "traversal": "Tab", "focus_after": "introduction-heading"}
+surface-contract.json:16:   ],
+surface-contract.json:17:   "focus_targets": {"summary": "summary", "introduction-heading": "h1"},
+surface-contract.json:18:   "required_checks": ["entry", "unanswered", "help-toggle", "close-focus", "keyboard-back", "introduction-focus", "read-only-policy", "origin-policy"],
+surface-contract.json:19:   "provenance": {"kind": "public-observation-and-declared-acceptance", "urls": ["https://qaizen.io/labs", "https://qaizen.io/labs/readiness-check"], "baseline_observed_on": "2026-10-15", "note": "Expected transitions and focus are acceptance obligations, not a claim that the current deployment has passed them. The keyboard proof gap was found in the verification protocol on 2026-10-16, not on the website."},
+surface-contract.json:20:   "limits": ["No answers, result generation, form submission or website source redistribution.", "No mobile, complete questionnaire, performance or accessibility certification.", "An analytics POST is expected to be blocked; retain its observed effects.", "Private source commits do not identify the current deployment."]
+surface-contract.json:21: }
+SNAPSHOT checks/check_contract.py sha256=9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b
+checks/check_contract.py:1: #!/usr/bin/env python3
+checks/check_contract.py:2: """Check the public journey contract; never contact the website."""
+checks/check_contract.py:3: import json
+checks/check_contract.py:4: from pathlib import Path
+checks/check_contract.py:5: import sys
+checks/check_contract.py:6: from urllib.parse import urlsplit
+checks/check_contract.py:7: 
+checks/check_contract.py:8: 
+checks/check_contract.py:9: def validate(data):
+checks/check_contract.py:10:     if not isinstance(data, dict) or data.get("schema") != "qaizen-labs-surface/1":
+checks/check_contract.py:11:         raise ValueError("Expected qaizen-labs-surface/1")
+checks/check_contract.py:12:     entry = urlsplit(data["entry_url"])
+checks/check_contract.py:13:     origin = entry.scheme + "://" + entry.netloc
+checks/check_contract.py:14:     if entry.scheme != "https" or entry.username or entry.password or origin not in data["allowed_origins"]:
+checks/check_contract.py:15:         raise ValueError("Entry must have an explicitly authorized HTTPS origin")
+checks/check_contract.py:16:     scope = data["scope"]
+checks/check_contract.py:17:     if scope["answer_policy"] != "unanswered" or set(scope["allowed_methods"]) != {"GET", "HEAD", "OPTIONS"}:
+checks/check_contract.py:18:         raise ValueError("The observation must remain read-only and unanswered")
+checks/check_contract.py:19:     states = data["states"]
+checks/check_contract.py:20:     if not isinstance(states, list) or len(states) != len(set(states)) or not states:
+checks/check_contract.py:21:         raise ValueError("State IDs must be nonempty and unique")
+checks/check_contract.py:22:     by_id = {}
+checks/check_contract.py:23:     for transition in data["transitions"]:
+checks/check_contract.py:24:         key = transition["id"]
+checks/check_contract.py:25:         if key in by_id or transition["from"] not in states or transition["to"] not in states:
+checks/check_contract.py:26:             raise ValueError("Duplicate transition or unknown state: " + key)
+checks/check_contract.py:27:         if not transition["control"] or not transition["activation"]:
+checks/check_contract.py:28:             raise ValueError("Every transition needs a control and activation")
+checks/check_contract.py:29:         if transition.get("focus_after") and transition["focus_after"] not in data["focus_targets"]:
+checks/check_contract.py:30:             raise ValueError("Unknown focus target: " + key)
+checks/check_contract.py:31:         by_id[key] = transition
+checks/check_contract.py:32:     close, back = by_id["close-help"], by_id["back"]
+checks/check_contract.py:33:     if close.get("focus_after") != "summary" or back.get("focus_after") != "introduction-heading":
+checks/check_contract.py:34:         raise ValueError("Close and Back require different focus destinations")
+checks/check_contract.py:35:     if back.get("traversal") not in ("Tab", "Shift+Tab") or back["activation"] != "Enter":
+checks/check_contract.py:36:         raise ValueError("Back requires sequential keyboard traversal and observed activation")
+checks/check_contract.py:37:     required = data["required_checks"]
+checks/check_contract.py:38:     if not isinstance(required, list) or len(required) != len(set(required)) or not {"keyboard-back", "unanswered", "close-focus", "introduction-focus", "read-only-policy", "origin-policy"}.issubset(required):
+checks/check_contract.py:39:         raise ValueError("Missing or duplicate required checks")
+checks/check_contract.py:40:     if data["provenance"]["kind"] != "public-observation-and-declared-acceptance" or not data["provenance"]["urls"]:
+checks/check_contract.py:41:         raise ValueError("Public provenance and observation/expectation distinction are required")
+checks/check_contract.py:42:     return {"valid": True, "schema": data["schema"], "checks": required,
+checks/check_contract.py:43:             "limit": "Contract consistency only; browser observations establish current behavior."}
+checks/check_contract.py:44: 
+checks/check_contract.py:45: 
+checks/check_contract.py:46: if __name__ == "__main__":
+checks/check_contract.py:47:     try:
+checks/check_contract.py:48:         if len(sys.argv) != 2:
+checks/check_contract.py:49:             raise ValueError("Usage: python3 -B checks/check_contract.py surface-contract.json")
+checks/check_contract.py:50:         result = validate(json.loads(Path(sys.argv[1]).read_text(encoding="utf-8")))
+checks/check_contract.py:51:         print(json.dumps(result, indent=2))
+checks/check_contract.py:52:     except (ValueError, KeyError, TypeError, OSError) as error:
+checks/check_contract.py:53:         print(json.dumps({"valid": False, "error": str(error)}), file=sys.stderr)
+checks/check_contract.py:54:         sys.exit(1)
+SNAPSHOT observation-policy.json sha256=15f4e5b4960b5011684be265f027e42b8637a3b8aae96b24bba1ba3a4d0f0202
+observation-policy.json:1: {
+observation-policy.json:2:   "allowed_origins": [
+observation-policy.json:3:     "https://qaizen.io"
+observation-policy.json:4:   ]
+observation-policy.json:5: }
+
+BATCH 1: C-1 actual document action versus required action
+INPUT actual Back instructions: [[6, "Click Back, then assert that the introduction is visible, the question and help are absent, and the introduction heading is focused."]]
+EXPECTED transition: {"activation": "Enter", "control": "Back", "focus_after": "introduction-heading", "from": "help-closed", "id": "back", "to": "returned-introduction", "traversal": "Tab"}
+ACTUAL MISMATCH: sole Back instruction prescribes Click; required Back instruction prescribes sequential Tab and Enter.
+REFUTATION SEARCH: all keyboard/focus instructions: [[4, "Reach Close with Tab or Shift+Tab, activate with Enter, and assert that help is closed and the summary is focused."], [6, "Click Back, then assert that the introduction is visible, the question and help are absent, and the introduction heading is focused."]]
+CONTRARY EVIDENCE: step 4 explicitly uses Tab/Shift+Tab and Enter for Close; step 6 explicitly asserts final heading focus. These satisfy different controls/properties and do not prescribe traversal or activation for Back.
+
+BATCH 2: C-2 actual ordered help route versus required ordered help route
+INPUT actual help instructions: [[3, "Open help using its summary control."], [4, "Reach Close with Tab or Shift+Tab, activate with Enter, and assert that help is closed and the summary is focused."], [6, "Click Back, then assert that the introduction is visible, the question and help are absent, and the introduction heading is focused."]]
+EXPECTED help route: [{"activation": "Enter", "control": "summary", "from": "first-question", "id": "open-help", "to": "help-open"}, {"activation": "Space", "control": "summary", "from": "help-open", "id": "toggle-help", "to": "help-closed"}, {"activation": "Enter", "control": "summary", "from": "help-closed", "id": "reopen-help", "to": "help-open"}, {"activation": "Enter", "control": "Close", "focus_after": "summary", "from": "help-open", "id": "close-help", "to": "help-closed", "traversal": "Tab"}]
+ACTUAL Space instructions: []
+ACTUAL reopen instructions: []
+ACTUAL MISMATCH: help is opened once, then closed by Close; no instruction toggles the summary with Space or reopens help after closure.
+REFUTATION SEARCH: entire six-step procedure printed above; no loops or cross-references extend the route.
+CONTRARY EVIDENCE: opening via summary and asserting closure via Close do exercise opening and closure, but not the separately required toggle-help and reopen-help transitions.
+
+BATCH 3: C-3 policy preconditions and observations
+EXPECTED method restriction: ["GET", "HEAD", "OPTIONS"]
+EXPECTED origin restriction: ["https://qaizen.io"]
+EXPECTED required checks: ["entry", "unanswered", "help-toggle", "close-focus", "keyboard-back", "introduction-focus", "read-only-policy", "origin-policy"]
+EXPECTED analytics condition: "An analytics POST is expected to be blocked; retain its observed effects."
+ACTUAL policy-related lines anywhere in target: [[10, "6. Click Back, then assert that the introduction is visible, the question and help are absent, and the introduction heading is focused."]]

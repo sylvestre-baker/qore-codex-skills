@@ -1,0 +1,131 @@
+{
+  "actor_id": "/root/campaign_ux_last_assessor",
+  "neutral_id": "N15",
+  "scenario_id": "U2",
+  "started_at_utc": "2026-10-17T12:13:43Z",
+  "ended_at_utc": "2026-10-17T12:15:47.230988+00:00",
+  "criteria": [
+    {
+      "id": "K1",
+      "status": "MET",
+      "reason": "The report accurately selects original contract obligations and distinguishes Close focus to summary from Back focus to introduction H1; the recorded keyboard journey and DOM corroborate both destinations.",
+      "evidence": [
+        "assessment-inputs/N15/input/surface-contract.json#/transitions",
+        "assessment-inputs/N15/output/REPORT.md: Acceptance results",
+        "assessment-inputs/N15/observation-2/raw/events.json#/actions/21",
+        "assessment-inputs/N15/observation-2/raw/events.json#/actions/24",
+        "assessment-inputs/N15/observation-2/raw/events.json#/actions/27",
+        "assessment-inputs/N15/observation-2/raw/04-after-keyboard-close.dom.json#/active_element",
+        "assessment-inputs/N15/observation-2/raw/05-returned-introduction.dom.json#/active_element"
+      ]
+    },
+    {
+      "id": "K3",
+      "status": "MET",
+      "reason": "No answers were activated; none-checked assertions passed before help and after Close, with empty answer circles and disabled Next in captures. Enforced activation descriptors cover only entry/start/help/Close/Back; actual guarded Enter/Space targets match. The relay rejects mutation methods and unauthorized main-frame/popup navigation and link destinations. Both observed sessions contain only successful same-origin GETs and one rejected analytics POST each. This is the observation boundary, not arbitrary-script or universal subresource-origin isolation.",
+      "evidence": [
+        "assessment-inputs/N15/observation-2/raw/events.json#/actions/4",
+        "assessment-inputs/N15/observation-2/raw/events.json#/actions/28",
+        "assessment-inputs/N15/observation-2/raw/events.json#/activation_checks/8",
+        "assessment-inputs/N15/observation-2/raw/events.json#/activation_checks/17",
+        "assessment-inputs/N15/observation-2/raw/events.json#/blocked_mutations/0",
+        "assessment-inputs/N15/observation-1/raw/events.json#/network",
+        "assessment-inputs/N15/observation-2/raw/events.json#/network",
+        "assessment-inputs/N15/operator/live-policy.json",
+        "assessment-inputs/N15/operator/browser_probe.mjs:67-164,184-219,330-331",
+        "assessment-inputs/N15/boundary.json#/observed"
+      ]
+    },
+    {
+      "id": "K4",
+      "status": "MET",
+      "reason": "The report grounds the scoped pass in raw events/DOM/PNG and explicitly limits full-page visual completeness, locale measurement, certification and deployment identity. It correctly treats the anticipated blocked analytics POST as a policy effect and the historical protocol proof gap as provenance, not a current website defect.",
+      "evidence": [
+        "assessment-inputs/N15/output/REPORT.md: Visual observations and diagnostic interpretation; Checks, integrity and limits",
+        "assessment-inputs/N15/input/surface-contract.json#/provenance",
+        "assessment-inputs/N15/observation-2/raw/events.json#/console/0",
+        "assessment-inputs/N15/observation-2/raw/events.json#/page_errors",
+        "assessment-inputs/N15/operator/browser_probe.mjs:244",
+        "assessment-inputs/N15/observation-2/raw/01-help-open-enter.png",
+        "assessment-inputs/N15/observation-2/raw/04-after-keyboard-close.png"
+      ]
+    },
+    {
+      "id": "K8",
+      "status": "MET",
+      "reason": "The decision is explicitly limited to the observed desktop session. Actual Enter opening, Space closing, Enter reopening, Tab-to-Close/Enter and restored summary focus complete U2 from public entry. Extra Back evidence is supported. Neither whole-website coverage nor causal improvement is asserted or required.",
+      "evidence": [
+        "assessment-inputs/N15/output/REPORT.md: opening paragraph; Missing coverage",
+        "assessment-inputs/N15/output/browser-request-2.json",
+        "assessment-inputs/N15/observation-2/relay.json",
+        "assessment-inputs/N15/observation-2/raw/events.json#/actions/7",
+        "assessment-inputs/N15/observation-2/raw/events.json#/actions/11",
+        "assessment-inputs/N15/observation-2/raw/events.json#/actions/15",
+        "assessment-inputs/N15/observation-2/raw/events.json#/actions/18",
+        "assessment-inputs/N15/observation-2/raw/events.json#/actions/21",
+        "assessment-inputs/N15/observation-2/raw/events.json#/actions/24",
+        "assessment-inputs/N15/observation-2/raw/events.json#/actions/27",
+        "assessment-inputs/N15/observation-2/raw/result.json#/status"
+      ]
+    }
+  ],
+  "method_coverage": {
+    "condition_observed": "baseline/direct task; revealed by N15 output and relay labels",
+    "task_completeness": "Complete at requested U2 observation scope",
+    "method_requirements": "Direct task baseline: no Qore roles, gates, independent finder/verifier, or fix loop required. Two operator-mediated requests, fresh contexts, 6 and 33 submitted actions; both completed verbatim.",
+    "observed_methods": [
+      "original task/contract/checker/policy reading",
+      "requested-action and raw result/event inspection",
+      "focus and unanswered assertions examined",
+      "five relevant PNGs actually viewed"
+    ],
+    "product_concerns": "No material criterion failure established. Conditional cookie-banner visual concern retained separately; full-page evidence does not establish actual viewport obstruction.",
+    "deployment_comparability": "Unknown beyond the recorded URLs and session timestamps; no revision proof and no comparison made.",
+    "independent_causal_effect": "Not measured or required by frozen criteria",
+    "out_of_scope_criteria": [
+      "K2",
+      "K5",
+      "K6",
+      "K7"
+    ]
+  },
+  "limits": [
+    "Assessment is restricted to closed N15 and criteria.json; no other case, evaluator, verifier, author correction, private website or comparative conclusion inspected.",
+    "Condition is visible as direct-task baseline in the report, boundary and raw relay labels; assessment is not blinded.",
+    "Only five relevant PNGs were visually inspected. They were produced with fullPage:true, even though browser viewport is 1280x800. They do not establish the exact viewport framing or obstruction at each keypress.",
+    "No live browser/model run, fixes, installs, external retrieval or subagents used by this assessor.",
+    "Recorded origin enforcement guards top-level/popup documents and approved link activations; it does not constitute general isolation of arbitrary page scripts or every possible subresource request. Observed successful requests are all same-origin GETs.",
+    "One complete help sequence in one browser; broader repeatability, mobile, complete questionnaire, accepted cookies, unblocked analytics and accessibility/performance certification remain unobserved.",
+    "No deployment revision is identified. The recorded public URL/session is observable, private commit identity is not deployment evidence.",
+    "No review of videos or traces; request-1 PNGs and other unlisted PNGs were not inspected."
+  ],
+  "material_candidates": [
+    {
+      "id": "N15-C1",
+      "kind": "conditional product concern, not criterion failure",
+      "claim": "Cookie banner visibly crosses expanded help content in full-page captures. Actual viewport obstruction during operation is UNKNOWN.",
+      "evidence": [
+        "assessment-inputs/N15/observation-2/raw/01-help-open-enter.png",
+        "assessment-inputs/N15/observation-2/raw/03-help-reopened-enter.png",
+        "assessment-inputs/N15/operator/browser_probe.mjs:244"
+      ],
+      "counterexample": "The raw events show Tab reached Close and Enter closed it, and the report explicitly limits visual completeness; fullPage:true may combine fixed elements with document-wide content. This does not refute the scoped journey pass."
+    },
+    {
+      "id": "N15-C2",
+      "kind": "rejected defect interpretation",
+      "claim": "Blocked analytics request/console error does not establish help failure.",
+      "evidence": [
+        "assessment-inputs/N15/observation-2/raw/events.json#/blocked_mutations/0",
+        "assessment-inputs/N15/observation-2/raw/events.json#/console/0",
+        "assessment-inputs/N15/input/surface-contract.json#/limits"
+      ],
+      "counterexample": "This POST is explicitly anticipated by the contract, page_errors is empty, and all help actions completed."
+    }
+  ],
+  "time_cap": {
+    "seconds": 180,
+    "overrun": false,
+    "basis": "First recorded UTC reading to saved assessment; no new inspection after finalization."
+  }
+}

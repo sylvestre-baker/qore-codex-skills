@@ -1,0 +1,78 @@
+{
+  "driver": "neutral operator relay; actual probe pending",
+  "depth": "entry+state",
+  "checks": [
+    {
+      "check": "entry",
+      "gate": "G0",
+      "capabilities": [
+        "navigation",
+        "click",
+        "DOM",
+        "screenshot"
+      ],
+      "status": "REQUESTED"
+    },
+    {
+      "check": "reload/history",
+      "gate": "G1",
+      "capabilities": [
+        "navigation",
+        "reload",
+        "history",
+        "console",
+        "network"
+      ],
+      "status": "REQUESTED"
+    },
+    {
+      "check": "unanswered/help-toggle",
+      "gate": "G2",
+      "capabilities": [
+        "DOM",
+        "keyboard",
+        "network"
+      ],
+      "status": "REQUESTED"
+    },
+    {
+      "check": "layout/default/1280x800",
+      "gate": "G3",
+      "capabilities": [
+        "screenshot",
+        "viewport evidence"
+      ],
+      "status": "REQUESTED"
+    },
+    {
+      "check": "affected-state copy",
+      "gate": "G4",
+      "capabilities": [
+        "DOM",
+        "screenshot"
+      ],
+      "status": "REQUESTED"
+    },
+    {
+      "check": "close-focus/keyboard-back/introduction-focus",
+      "gate": "G5",
+      "capabilities": [
+        "keyboard traversal",
+        "focus assertion",
+        "semantics",
+        "screenshot"
+      ],
+      "status": "REQUESTED"
+    },
+    {
+      "check": "falsify passes",
+      "gate": "G6",
+      "capabilities": [
+        "repeat entry",
+        "adversarial state assertions"
+      ],
+      "status": "REQUESTED"
+    }
+  ],
+  "instrumentation": "No automated accessibility audit or performance certification required by explicit narrow acceptance. Risky contrast pairs, if found, require measurement; general accessibility certification excluded."
+}

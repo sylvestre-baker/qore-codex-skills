@@ -1,0 +1,56 @@
+{
+  "commands": [
+    {
+      "argv": [
+        "sh",
+        "-c",
+        "pwd && rg --files -g 'TASK.md' -g 'AGENTS.md' -g '*SKILL*' -g '!node_modules'"
+      ],
+      "exit_code": 127,
+      "stdout": "/workspace/worker\n",
+      "stderr": "/bin/sh: rg: not found\n",
+      "note": "Initial capability probe; find used as fallback."
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "checks/check_contract.py",
+        "surface-contract.json"
+      ],
+      "exit_code": 0,
+      "artifact": "contract-check.json"
+    },
+    {
+      "argv": [
+        "find",
+        "..",
+        "-name",
+        "AGENTS.md",
+        "-print"
+      ],
+      "exit_code": 0,
+      "artifact": "agents-probe.json"
+    },
+    {
+      "argv": [
+        "node",
+        "--version"
+      ],
+      "exit_code": 0,
+      "artifact": "node-probe.json"
+    },
+    {
+      "argv": [
+        "python3",
+        "--version"
+      ],
+      "exit_code": 0,
+      "artifact": "python-probe.json"
+    }
+  ],
+  "profile_preflight": "Not applicable: no references/project.json exists, and enclosing profile is null.",
+  "permissions": "No network, only supplied sources; original inputs unchanged; no website/shared-data mutations.",
+  "actors": "Three actual fork_turns=none contexts successfully spawned. Fresh fourth verifier will be dispatched only after mechanical redaction.",
+  "usage": "Per-actor usage unavailable: collaboration host provides context identity/status but no token or agent-second counters."
+}

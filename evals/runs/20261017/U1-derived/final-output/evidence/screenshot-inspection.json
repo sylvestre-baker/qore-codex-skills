@@ -1,0 +1,52 @@
+{
+  "actor_id": "/root",
+  "notes_recorded_at": "2026-10-17T10:59:20.311671+00:00",
+  "procedure": "Opened actual operator PNGs through view_image; no generated or substituted screenshots. All images are full-page captures at DOM-reported 1280x800 DPR1; fixed/sticky chrome follows captured scroll location.",
+  "inspected": [
+    {
+      "path": "response-1/00-entry.png",
+      "finding": "Readable entry card and CTA, banner at viewport bottom."
+    },
+    {
+      "path": "response-2/01-introduction.png",
+      "finding": "Distinct introduction heading, descriptive content and Start CTA; banner crosses lower privacy copy."
+    },
+    {
+      "path": "response-2/02-first-question.png",
+      "finding": "Question/answer hierarchy readable; content extends below viewport; fixed banner intersects lower answer content."
+    },
+    {
+      "path": "response-2/03-help-open-enter.png",
+      "finding": "Help expands with explanatory sections; summary has visible gold focus indicator."
+    },
+    {
+      "path": "response-2/05-close-summary-focus.png",
+      "finding": "Help collapsed and summary focus ring visible."
+    },
+    {
+      "path": "response-2/06-back-keyboard-focus.png",
+      "finding": "Focused Back is at lower left below question card; only upper edge of focus ring visible above cookie banner; label concealed."
+    },
+    {
+      "path": "response-2/07-returned-introduction.png",
+      "finding": "Introduction restored with heading in view and Start visible."
+    },
+    {
+      "path": "response-4/02-close-keyboard-focus-challenge.png",
+      "finding": "Close has distinct visible gold focus ring; not concealed by bottom banner in this capture."
+    },
+    {
+      "path": "response-4/03-back-focus-obscuration-challenge.png",
+      "finding": "Exact same bytes as request2 Back-focus PNG; label and most ring concealed by banner."
+    },
+    {
+      "path": "response-4/04-back-result-challenge.png",
+      "finding": "Distinct introduction visibly restored."
+    },
+    {
+      "path": "response-4/05-restart-unanswered-help-reset.png",
+      "finding": "First question visible again with help collapsed."
+    }
+  ],
+  "finding_limit": "No viewport-only capture, bounding rectangles, scroll offsets or hit testing exposed. The overlap conclusion is restricted to the repeated full-page capture states; precise runtime overlap dimensions and behavior after dismissing cookies are unmeasured. Not a claim of a keyboard trap or WCAG certification."
+}

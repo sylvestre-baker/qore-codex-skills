@@ -1,0 +1,154 @@
+[
+  {
+    "type": "click",
+    "selector": "a[href$='/labs/readiness-check']"
+  },
+  {
+    "type": "assert-url",
+    "url": "https://qaizen.io/labs/readiness-check"
+  },
+  {
+    "type": "assert-visible",
+    "selector": "main h1"
+  },
+  {
+    "type": "snapshot",
+    "label": "introduction-via-entry"
+  },
+  {
+    "type": "reload"
+  },
+  {
+    "type": "snapshot",
+    "label": "introduction-after-document-reload"
+  },
+  {
+    "type": "click",
+    "selector": "main button[type=\"button\"]",
+    "label": "Start the check"
+  },
+  {
+    "type": "assert-visible",
+    "selector": "main [role=\"radiogroup\"]"
+  },
+  {
+    "type": "assert-none-checked"
+  },
+  {
+    "type": "snapshot",
+    "label": "first-question-unanswered"
+  },
+  {
+    "type": "traverse-focus",
+    "selector": "main details summary",
+    "max_steps": 24
+  },
+  {
+    "type": "keyboard",
+    "key": "Enter"
+  },
+  {
+    "type": "assert-visible",
+    "selector": "main details[open]"
+  },
+  {
+    "type": "snapshot",
+    "label": "help-open-via-Enter"
+  },
+  {
+    "type": "keyboard",
+    "key": "Space"
+  },
+  {
+    "type": "assert-hidden",
+    "selector": "main details[open]"
+  },
+  {
+    "type": "assert-focused",
+    "selector": "main details summary"
+  },
+  {
+    "type": "snapshot",
+    "label": "help-closed-via-Space"
+  },
+  {
+    "type": "keyboard",
+    "key": "Enter"
+  },
+  {
+    "type": "assert-visible",
+    "selector": "main details[open]"
+  },
+  {
+    "type": "traverse-focus",
+    "role": "button",
+    "name": "Close",
+    "exact": true,
+    "max_steps": 24
+  },
+  {
+    "type": "assert-focused",
+    "role": "button",
+    "name": "Close",
+    "exact": true
+  },
+  {
+    "type": "snapshot",
+    "label": "close-keyboard-focus"
+  },
+  {
+    "type": "keyboard",
+    "key": "Enter"
+  },
+  {
+    "type": "assert-hidden",
+    "selector": "main details[open]"
+  },
+  {
+    "type": "assert-focused",
+    "selector": "main details summary"
+  },
+  {
+    "type": "assert-none-checked"
+  },
+  {
+    "type": "snapshot",
+    "label": "close-restores-summary-focus"
+  },
+  {
+    "type": "traverse-focus",
+    "role": "button",
+    "name": "Back",
+    "exact": true,
+    "max_steps": 24
+  },
+  {
+    "type": "assert-focused",
+    "role": "button",
+    "name": "Back",
+    "exact": true
+  },
+  {
+    "type": "snapshot",
+    "label": "Back-sequential-keyboard-focus"
+  },
+  {
+    "type": "keyboard",
+    "key": "Enter"
+  },
+  {
+    "type": "assert-hidden",
+    "selector": "main [role=\"radiogroup\"]"
+  },
+  {
+    "type": "assert-focused",
+    "selector": "main h1"
+  },
+  {
+    "type": "snapshot",
+    "label": "returned-introduction-heading-focus"
+  },
+  {
+    "type": "assert-none-checked"
+  }
+]

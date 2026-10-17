@@ -1,0 +1,17 @@
+{
+  "schema": "qore-eval-qualification/1",
+  "run_id": "qore003-20261017-r2-generic-1",
+  "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+  "input_manifest_sha256": "3131271b248dda5824cc374eb7f519d1bc3c16b0da28ee676ec7a00471859f3b",
+  "qore_run_sha256": "0fb8e87708fed541bba6cdeb5a88d6931ce1202d72d6358d8a16d09b89e01c26",
+  "declared_coverage": "COMPLETE",
+  "coverage": "COMPLETE",
+  "assessor": "/root/campaign_review_assessor",
+  "verifier": "/root/campaign_final_verifier",
+  "assessed_at": "2026-10-17T12:22:41.534375Z",
+  "reason": "Required static finder, redactor, verifier and validation activities returned retained evidence. Wave4 refuted prohibited report/rationale/verdict exposure on the actual retained packets; allowed contextual evidence alone does not make the phase absent. No website acceptance is claimed.",
+  "evidence": [
+    "independent-assessment.json",
+    "independent-verification.json"
+  ]
+}

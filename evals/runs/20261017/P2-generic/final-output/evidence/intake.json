@@ -1,0 +1,30 @@
+{
+  "mode": "Workflow",
+  "deciding_artifact": "target/verification-protocol.md",
+  "reason": "Existing procedure specifies the same journey and acceptance observations requested for clarification. It is the applicable specification to strengthen, but not project authority.",
+  "authority": [
+    "TASK.md",
+    "surface-contract.json",
+    "checks/check_contract.py",
+    "observation-policy.json"
+  ],
+  "profile": null,
+  "profile_reason": "No references/project.json exists in supplied skill.",
+  "start_utc": "2026-10-17T11:41:44Z",
+  "wall_deadline_utc": "2026-10-17T11:56:44Z",
+  "aggregate_agent_seconds_limit": 2400,
+  "initial_role_deadline_seconds": 120,
+  "cross_examination_deadline_seconds": 90,
+  "max_simultaneous_children": 3,
+  "instructions": "TASK.md and supplied qore-plan SKILL.md/references; no AGENTS.md found.",
+  "capabilities": {
+    "subagents": "Available via collaboration tools; actual identities retained in roster",
+    "rg": "Unavailable: /bin/sh: rg: not found, exit 127",
+    "network": "Prohibited and unused",
+    "browser": "Out of task scope; no live observation attempted"
+  },
+  "usage": {
+    "tokens": null,
+    "reason": "Host collaboration tools expose no token or billed agent-second usage; elapsed dispatch/return intervals will be recorded as conservative occupancy bounds."
+  }
+}

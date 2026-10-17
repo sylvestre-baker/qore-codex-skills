@@ -1,0 +1,504 @@
+{
+  "schema": "qore-run/1",
+  "id": "qore003-20261017-r2-derived-1",
+  "method": "review",
+  "skill": "qore-review-qaizen-labs",
+  "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+  "target": {
+    "label": "Entire frozen prepared-input manifest supplied by enclosing run; reviewed target/verification-protocol.md against surface-contract.json, checks/check_contract.py, observation-policy.json",
+    "snapshot_sha256": "9689f41f4f94e52c4074c5cd0760e78a4ce34fb03b6d5a3504d16e61735c8c66"
+  },
+  "last_relevant_change": "2026-10-17T09:53:58.746658+00:00",
+  "environment": {
+    "id": "qore-qualification-qore003-20261017-r2-derived-1",
+    "operator": "agent",
+    "host": "Docker Desktop Linux arm64 / Codex0.162.0"
+  },
+  "profile": {
+    "id": "qaizen-labs",
+    "version": "0.1.0",
+    "sha256": "f76afdd45cb6352e5044a06affc4182ea6cd40aa9c012fb216636a61faa428f0"
+  },
+  "required_phases": [
+    "profile_preflight",
+    "finder.correctness",
+    "finder.security",
+    "finder.feasibility",
+    "redaction",
+    "verifier",
+    "findings_validation"
+  ],
+  "phases": [
+    {
+      "id": "profile_preflight",
+      "actor_id": "/root",
+      "status": "PASS",
+      "artifacts": [
+        "phase-profile_preflight.json"
+      ]
+    },
+    {
+      "id": "finder.correctness",
+      "actor_id": "/root/finder_correctness",
+      "status": "PASS",
+      "artifacts": [
+        "phase-finder.correctness.json"
+      ]
+    },
+    {
+      "id": "finder.security",
+      "actor_id": "/root/finder_security",
+      "status": "PASS",
+      "artifacts": [
+        "phase-finder.security.json"
+      ]
+    },
+    {
+      "id": "finder.feasibility",
+      "actor_id": "/root/finder_feasibility",
+      "status": "PASS",
+      "artifacts": [
+        "phase-finder.feasibility.json"
+      ]
+    },
+    {
+      "id": "redaction",
+      "actor_id": "/root",
+      "status": "PASS",
+      "artifacts": [
+        "phase-redaction.json"
+      ]
+    },
+    {
+      "id": "verifier",
+      "actor_id": "/root/verifier",
+      "status": "PASS",
+      "artifacts": [
+        "phase-verifier.json"
+      ]
+    },
+    {
+      "id": "findings_validation",
+      "actor_id": "/root",
+      "status": "PASS",
+      "artifacts": [
+        "phase-findings_validation.json"
+      ]
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "audit-limitations.json",
+      "sha256": "3c2beed0b789dcc8edb38582b7ba3a0ad6382f171bc0781908fbb99471e1437b",
+      "kind": "presentation"
+    },
+    {
+      "path": "budget.json",
+      "sha256": "4433e1764bc94dc2becdab0fe50dce1d2e3351a2f768ece9f364b1077ce47994",
+      "kind": "presentation"
+    },
+    {
+      "path": "candidates-correctness.json",
+      "sha256": "c6112d944ad154317337efd6bc586a2c00e0593b3d45044983016f4cc95309a6",
+      "kind": "presentation"
+    },
+    {
+      "path": "candidates-feasibility.json",
+      "sha256": "a0230c462728a1601088dde721d32eaf23a2072a6f8aba2690e572489799d059",
+      "kind": "presentation"
+    },
+    {
+      "path": "candidates-security.json",
+      "sha256": "63865228744cc6e599d01101b5847e064890d2f5edadcaa4d4c00866734c51c1",
+      "kind": "presentation"
+    },
+    {
+      "path": "capabilities.json",
+      "sha256": "b2ed11a287ce39b62d1e7237befd120f23dff567d6ca783dd776fce204819805",
+      "kind": "presentation"
+    },
+    {
+      "path": "claims.json",
+      "sha256": "58febdd3d9e9e4ead5c00dd9bf494c1fe81d7d562f1996bb79814176ab1d6bfb",
+      "kind": "presentation"
+    },
+    {
+      "path": "contract-check.json",
+      "sha256": "7f557ba27626c65e7eb10c7b17773f82e9feae273715b633b694723f87b3c1ee",
+      "kind": "presentation"
+    },
+    {
+      "path": "enclosing-metadata.json",
+      "sha256": "b8f6cd6277895b2ab06cfa7f5b9203b4e11ec30320b44ba0b72811ee0da5aa76",
+      "kind": "presentation"
+    },
+    {
+      "path": "finder-correctness.md",
+      "sha256": "ca2af830f34abf7f89ae193ffd7e39e56428ac305e1480e309860cb02247b194",
+      "kind": "presentation"
+    },
+    {
+      "path": "finder-feasibility.md",
+      "sha256": "75a8e07ecaa54983eb50752e6629f550460b691741dff485969a1371cc2d2259",
+      "kind": "presentation"
+    },
+    {
+      "path": "finder-security.md",
+      "sha256": "493a199aff5acffd3413f7b08d3941f7e42f6a3f259e09b80d1296614a827ff5",
+      "kind": "presentation"
+    },
+    {
+      "path": "finding-lint.json",
+      "sha256": "256fe8e358ab357d29adc6561b4ffccb7f379a9b5d16e61efca091a00c3a27a8",
+      "kind": "presentation"
+    },
+    {
+      "path": "finding-lint.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "presentation"
+    },
+    {
+      "path": "findings-validation-command.json",
+      "sha256": "9c8f50fbd41bb718d24e91e9429112977a1459aafcffd42783ad7b8d0922380d",
+      "kind": "presentation"
+    },
+    {
+      "path": "findings.json",
+      "sha256": "dea42b04b8e507485970908ace532a5017c6fa3df55805a59059b7ff60a24683",
+      "kind": "presentation"
+    },
+    {
+      "path": "initial-probe.txt",
+      "sha256": "dd9466b1a87450bbf21cfb57421df1b365e84415d77f4a94c21ffb3446cc4303",
+      "kind": "presentation"
+    },
+    {
+      "path": "input-integrity-check.json",
+      "sha256": "d8717661950689bc7050dc63d497716afea4a7db48137a7f5e4457f9016d700c",
+      "kind": "presentation"
+    },
+    {
+      "path": "phase-finder.correctness.json",
+      "sha256": "c20a8db13fabd6d353b7272802c0576b5f508c0ee31b13f809c20e46590a5349",
+      "kind": "execution",
+      "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+      "target_snapshot_sha256": "9689f41f4f94e52c4074c5cd0760e78a4ce34fb03b6d5a3504d16e61735c8c66",
+      "observed_at": "2026-10-17T11:15:32.843405+00:00"
+    },
+    {
+      "path": "phase-finder.feasibility.json",
+      "sha256": "62b8e4d234eeb952e8beb6efb3f686b0ad187e04f590dfc2401767399ce2465f",
+      "kind": "execution",
+      "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+      "target_snapshot_sha256": "9689f41f4f94e52c4074c5cd0760e78a4ce34fb03b6d5a3504d16e61735c8c66",
+      "observed_at": "2026-10-17T11:15:32.844177+00:00"
+    },
+    {
+      "path": "phase-finder.security.json",
+      "sha256": "72b2a467e15850b565ce601e1f9089e433aa60266c25f4ebec9263bfa0e69f39",
+      "kind": "execution",
+      "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+      "target_snapshot_sha256": "9689f41f4f94e52c4074c5cd0760e78a4ce34fb03b6d5a3504d16e61735c8c66",
+      "observed_at": "2026-10-17T11:15:32.843841+00:00"
+    },
+    {
+      "path": "phase-findings_validation.json",
+      "sha256": "dc6467e6410745a8a264c85b7e5db387e0d5ae8d9be4ef6e92d4ac81417e8263",
+      "kind": "execution",
+      "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+      "target_snapshot_sha256": "9689f41f4f94e52c4074c5cd0760e78a4ce34fb03b6d5a3504d16e61735c8c66",
+      "observed_at": "2026-10-17T11:17:48.710872+00:00"
+    },
+    {
+      "path": "phase-profile_preflight.json",
+      "sha256": "90410583c942fdc703229ac54ac35c2d89b096fbf0f10264355786ccff8032f9",
+      "kind": "execution",
+      "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+      "target_snapshot_sha256": "9689f41f4f94e52c4074c5cd0760e78a4ce34fb03b6d5a3504d16e61735c8c66",
+      "observed_at": "2026-10-17T11:14:42.344787+00:00"
+    },
+    {
+      "path": "phase-redaction.json",
+      "sha256": "f57d8061f541e5c1da47e2b8069c009eb3037e2b34a25ab0e31716757dafa401",
+      "kind": "execution",
+      "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+      "target_snapshot_sha256": "9689f41f4f94e52c4074c5cd0760e78a4ce34fb03b6d5a3504d16e61735c8c66",
+      "observed_at": "2026-10-17T11:15:33.082261+00:00"
+    },
+    {
+      "path": "phase-verifier.json",
+      "sha256": "d03c88e16e9e8f87a7134f4891eb0a196ba9db1823d7ba6bb53de1701c38e1bc",
+      "kind": "execution",
+      "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+      "target_snapshot_sha256": "9689f41f4f94e52c4074c5cd0760e78a4ce34fb03b6d5a3504d16e61735c8c66",
+      "observed_at": "2026-10-17T11:17:48.493242+00:00"
+    },
+    {
+      "path": "profile-check.json",
+      "sha256": "6963bef24c3370dc2e782736ac44dd0291b138745fc110e507dadbfa30ad2cac",
+      "kind": "presentation"
+    },
+    {
+      "path": "profile-use.json",
+      "sha256": "54269a4773486c5a7c0bab6d3949f273ca879de1f58859dfe82cae7e55e3984e",
+      "kind": "presentation"
+    },
+    {
+      "path": "redaction-command.json",
+      "sha256": "3db7b929b1e5a78d08f2315be282e84a546fd0e3d898e0dccdd48c5bbe763a01",
+      "kind": "presentation"
+    },
+    {
+      "path": "redactor.stderr.txt",
+      "sha256": "fbab7191fd30a70543cfa9ed05f0a95c9aecbdc170a9f4beb9fa3c1e9ad3c67e",
+      "kind": "presentation"
+    },
+    {
+      "path": "roster.json",
+      "sha256": "036a3e1a2c3f859726e1074947954a7bf97e80a5be6fc2dd0eca0051e645508a",
+      "kind": "presentation"
+    },
+    {
+      "path": "run-notes.json",
+      "sha256": "59a3fb76fa1ab8fb1cf293f58c476f6e6c57f49a8ecb7d5c6a756003fb0f101a",
+      "kind": "presentation"
+    },
+    {
+      "path": "source-locations.txt",
+      "sha256": "fc146566a339f451999f514c1222f093846bbfeadbc9c9a4903602b237194a5e",
+      "kind": "presentation"
+    },
+    {
+      "path": "source-manifest.json",
+      "sha256": "086d2bda0e91bd465bb65d289e611a1b8f6d1046991ca296afaf683dfdb48a3f",
+      "kind": "presentation"
+    },
+    {
+      "path": "sources/.agents/skills/qore-review-qaizen-labs/SKILL.md",
+      "sha256": "eb84df209a56465c7d5aa8caa4ae20d6ad56cbb70121cf474706a587948cd1c3",
+      "kind": "source"
+    },
+    {
+      "path": "sources/.agents/skills/qore-review-qaizen-labs/agents/openai.yaml",
+      "sha256": "322a16d228ce0020f05d273ff5b50a85aaa771ba4421d623e655afca0ac31a5c",
+      "kind": "source"
+    },
+    {
+      "path": "sources/.agents/skills/qore-review-qaizen-labs/references/findings.md",
+      "sha256": "f9f9035e471c9832c6546e80e4fe857777fefceba781bd5801ee8f97bdeaa409",
+      "kind": "source"
+    },
+    {
+      "path": "sources/.agents/skills/qore-review-qaizen-labs/references/project-profile.md",
+      "sha256": "5d3b69aac18f83a634f4c57c214cc1f53fa186c03c536adcefd4c905a8767c8d",
+      "kind": "source"
+    },
+    {
+      "path": "sources/.agents/skills/qore-review-qaizen-labs/references/project.json",
+      "sha256": "f76afdd45cb6352e5044a06affc4182ea6cd40aa9c012fb216636a61faa428f0",
+      "kind": "source"
+    },
+    {
+      "path": "sources/.agents/skills/qore-review-qaizen-labs/references/protocol.md",
+      "sha256": "e27e0050fdf4d75d2840dd257b9a759f1f48d459ef540990cd3aed5528c5f340",
+      "kind": "source"
+    },
+    {
+      "path": "sources/.agents/skills/qore-review-qaizen-labs/references/release.json",
+      "sha256": "5c1a3aa6d7cb18e15adc606625e856b52834b45452cf39b7e1497143d28d7ddf",
+      "kind": "source"
+    },
+    {
+      "path": "sources/.agents/skills/qore-review-qaizen-labs/references/run-evidence.md",
+      "sha256": "fbdf433ef8b3e972f97bed5fdec4990cf3b49535bf63120c729a7daf4af71746",
+      "kind": "source"
+    },
+    {
+      "path": "sources/.agents/skills/qore-review-qaizen-labs/scripts/finding-lint.mjs",
+      "sha256": "d3d22ae7d0b1b6b53b36006f13a8aaf6e1aa9e89df27b98312e6ac72ea079a26",
+      "kind": "source"
+    },
+    {
+      "path": "sources/.agents/skills/qore-review-qaizen-labs/scripts/project-check.py",
+      "sha256": "d87afa433fe485bdebca3e281d06e0896e4a8980ea7cf7baee739053614ea0ac",
+      "kind": "source"
+    },
+    {
+      "path": "sources/.agents/skills/qore-review-qaizen-labs/scripts/redact-for-verifier.mjs",
+      "sha256": "dc249524c749ad5b511aef0a2cf08b4cfd5c47c1e0de4fd41c5c70746b471083",
+      "kind": "source"
+    },
+    {
+      "path": "sources/.agents/skills/qore-review-qaizen-labs/scripts/run-check.py",
+      "sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+      "kind": "source"
+    },
+    {
+      "path": "sources/TASK.md",
+      "sha256": "d3ce29449ae03b8f5705947a577786f7a829c8440733637f4cfb5555cab2fc18",
+      "kind": "source"
+    },
+    {
+      "path": "sources/checks/check_contract.py",
+      "sha256": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b",
+      "kind": "source"
+    },
+    {
+      "path": "sources/observation-policy.json",
+      "sha256": "15f4e5b4960b5011684be265f027e42b8637a3b8aae96b24bba1ba3a4d0f0202",
+      "kind": "source"
+    },
+    {
+      "path": "sources/surface-contract.json",
+      "sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+      "kind": "source"
+    },
+    {
+      "path": "sources/target/verification-protocol.md",
+      "sha256": "0a3452f02e358d8800fb26d591083deb972c5531165473990dc27007a9a9e0d4",
+      "kind": "source"
+    },
+    {
+      "path": "verified.json",
+      "sha256": "a949a4445a8210a20819e712a717b0afceca0114f31111774d4617c7e48de47e",
+      "kind": "presentation"
+    },
+    {
+      "path": "verifier-report.md",
+      "sha256": "67814d4636a040809bafb41af304ace1f48a504e6c53aca83c56aee49cdb6087",
+      "kind": "presentation"
+    },
+    {
+      "path": "verifier-static-audit.json",
+      "sha256": "5da817db749041445d91f3b8828527b3282b09f39c0e83e299452953abdb07ad",
+      "kind": "presentation"
+    },
+    {
+      "path": "verifier-static-audit.py",
+      "sha256": "8608a836c228d777a2eff2db928b513651921bf86a784f5e3dea57306ddb987d",
+      "kind": "source"
+    },
+    {
+      "path": "verifier-write-results.py",
+      "sha256": "ccbcc7394171baa29c203d0ab3596a83c4b76662fe587809495c3315fa955807",
+      "kind": "source"
+    }
+  ],
+  "commands": [
+    {
+      "argv": [
+        "sh",
+        "-c",
+        "pwd && rg --files -g 'TASK.md' -g 'AGENTS.md' -g '*SKILL*' -g '*qore*' -g '*manifest*'"
+      ],
+      "exit_code": 127,
+      "artifact": "initial-probe.txt"
+    },
+    {
+      "argv": [
+        "python3",
+        ".agents/skills/qore-review-qaizen-labs/scripts/project-check.py",
+        ".agents/skills/qore-review-qaizen-labs/references/project.json",
+        "--root",
+        "/workspace/worker",
+        "--method",
+        "review"
+      ],
+      "exit_code": 0,
+      "artifact": "profile-check.json"
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "checks/check_contract.py",
+        "surface-contract.json"
+      ],
+      "exit_code": 0,
+      "artifact": "contract-check.json"
+    },
+    {
+      "argv": [
+        "node",
+        "scripts/redact-for-verifier.mjs",
+        "/workspace/output/evidence/findings.json"
+      ],
+      "exit_code": 0,
+      "artifact": "claims.json",
+      "cwd": "/workspace/worker/.agents/skills/qore-review-qaizen-labs",
+      "diagnostic_artifact": "redaction-command.json"
+    },
+    {
+      "argv": [
+        "node",
+        "scripts/finding-lint.mjs",
+        "/workspace/output/evidence/verified.json",
+        "--verifier=ran",
+        "--json"
+      ],
+      "exit_code": 0,
+      "artifact": "finding-lint.json",
+      "cwd": "/workspace/worker/.agents/skills/qore-review-qaizen-labs",
+      "diagnostic_artifact": "findings-validation-command.json"
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "/workspace/worker/checks/check_contract.py",
+        "/workspace/worker/surface-contract.json"
+      ],
+      "exit_code": 0,
+      "artifact": "verifier-static-audit.json",
+      "actor_id": "/root/verifier"
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "/workspace/output/verifier-static-audit.py"
+      ],
+      "exit_code": 0,
+      "artifact": "verifier-static-audit.json",
+      "actor_id": "/root/verifier"
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "/workspace/output/verifier-write-results.py"
+      ],
+      "exit_code": 0,
+      "artifact": "verified.json",
+      "actor_id": "/root/verifier"
+    }
+  ],
+  "limitations": [
+    "Scope is static review of supplied verification protocol; network and browser execution prohibited. No deployed defect, actual request, redirect/popup, tab distance, or external safeguard was observed.",
+    "No missing roles or unexamined IDs. Five medium confirmed candidate records overlap into two document-coverage concerns; no critical/high blockers. No deployment or publication decision.",
+    "Exact finder dispatch instants were not sampled. Actual calls are bounded by UTC 11:13:27\u201311:13:59; role entry and lead receipt timestamps are retained. Verifier dispatch clock sample 11:15:33 precedes the tool call. Scheduler completion instants are unavailable.",
+    "Per-context metered aggregate agent-seconds and token usage are unavailable from host tools. budget.json records nulls/reasons and a conservative active-context wall bound, not zero usage.",
+    "Candidate and entire frozen prepared-input target digests are supplied enclosing identities. Canonical enclosing manifest serialization/digest procedure is unavailable; copied inputs and per-file SHA-256 manifest supplement, not replace, them.",
+    "Verifier corrected an exploratory regex and reran its static audit. Earlier draft check output was overwritten and is unavailable; the complete final role report discloses it. Full target reading and refutation attempts support the retained results.",
+    "No source/skill edits or shared-data mutations. Reports and evidence were authored by AI contexts; no external human or live deployment evidence.",
+    "The initial rg capability probe failed with exit 127; local find/cat fallback used. Contract check and structural validators do not prove browser behavior or reasoning correctness.",
+    "No specific observation-policy precondition order or interception mechanism is mandated by supplied criteria; C-002 was narrowed accordingly while keeping original severity and candidate history.",
+    "The final run-check output is a companion outside the evidence manifest to avoid a self-referential digest cycle; its validation record binds the exact execution.json SHA-256."
+  ],
+  "coverage": "COMPLETE",
+  "roster": "evidence/roster.json",
+  "identity_procedure": "Supplied enclosing identities retained; see enclosing-metadata.json and source-manifest.json for exact source bytes, revisions and local SHA-256 procedure.",
+  "post_record_validation": {
+    "argv": [
+      "python3",
+      "scripts/run-check.py",
+      "/workspace/output/execution.json",
+      "--evidence-root",
+      "/workspace/output/evidence"
+    ],
+    "cwd": "/workspace/worker/.agents/skills/qore-review-qaizen-labs",
+    "output_file": "/workspace/output/run-check.json",
+    "record_file": "/workspace/output/structural-validation.json",
+    "reason": "Saved outside own artifact digest list to avoid self-reference."
+  }
+}

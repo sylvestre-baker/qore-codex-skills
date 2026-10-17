@@ -1,0 +1,23 @@
+{
+  "written": [
+    "verifier-report.md",
+    "verified.json",
+    "verification-coverage.json"
+  ],
+  "examined_ids": [
+    "C-1",
+    "C-2",
+    "S-1",
+    "S-2",
+    "F-201",
+    "F-202",
+    "F-203"
+  ],
+  "unexamined_ids": [],
+  "verdicts": {
+    "CONFIRMED": 7,
+    "PLAUSIBLE": 0,
+    "REFUTED": 0
+  },
+  "execution_coverage": "COMPLETE"
+}

@@ -1,0 +1,499 @@
+{
+  "observed_at": "2026-10-17T10:52:11.217271+00:00",
+  "derive": {
+    "output": "/var/folders/4r/1cnctlhj0457b5kgw29hzr4h0000gn/T/qore003-correction-eauy58vp/derived",
+    "profile": {
+      "id": "qaizen-labs",
+      "version": "0.1.1",
+      "sha256": "26714a43fa60fad7c3251c11a82e88418c237ccd5cc9f04714c6afd1726e44e9"
+    },
+    "valid": true,
+    "schema": "qore-release/1",
+    "version": "0.2.1",
+    "kind": "derived",
+    "files": 39,
+    "manifest_sha256": "dae37ce774c47f23346329a1b026ab1df622ecc285080117fd5ac471095c4f1a"
+  },
+  "new_temporary_directory": "/var/folders/4r/1cnctlhj0457b5kgw29hzr4h0000gn/T/qore003-correction-eauy58vp",
+  "preflights": {
+    "plan": {
+      "exit_code": 0,
+      "coverage": "COMPLETE",
+      "profile": {
+        "id": "qaizen-labs",
+        "version": "0.1.1",
+        "sha256": "26714a43fa60fad7c3251c11a82e88418c237ccd5cc9f04714c6afd1726e44e9"
+      },
+      "sources_current": true
+    },
+    "review": {
+      "exit_code": 0,
+      "coverage": "COMPLETE",
+      "profile": {
+        "id": "qaizen-labs",
+        "version": "0.1.1",
+        "sha256": "26714a43fa60fad7c3251c11a82e88418c237ccd5cc9f04714c6afd1726e44e9"
+      },
+      "sources_current": true
+    },
+    "ux": {
+      "exit_code": 0,
+      "coverage": "COMPLETE",
+      "profile": {
+        "id": "qaizen-labs",
+        "version": "0.1.1",
+        "sha256": "26714a43fa60fad7c3251c11a82e88418c237ccd5cc9f04714c6afd1726e44e9"
+      },
+      "sources_current": true
+    }
+  },
+  "back_fact_comparisons": {
+    "plan": {
+      "fact": {
+        "id": "back-focus",
+        "statement": "Reach the application Back control using sequential Tab, as selected by the current surface contract; activate with Enter and verify introduction heading focus. A click, programmatic focus or reverse-only traversal does not prove the required forward-Tab reachability.",
+        "source": "surface",
+        "applies_to": [
+          "plan",
+          "review",
+          "ux"
+        ]
+      },
+      "source_transition": {
+        "id": "back",
+        "from": "help-closed",
+        "to": "returned-introduction",
+        "control": "Back",
+        "activation": "Enter",
+        "traversal": "Tab",
+        "focus_after": "introduction-heading"
+      },
+      "source_digest": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+      "profile_matches_current_source_bytes": true,
+      "selected_tab_preserved": true,
+      "reverse_only_proof_explicitly_insufficient": true,
+      "actual_consumption": "Compared returned fact and current source; no browser journey executed."
+    },
+    "review": {
+      "fact": {
+        "id": "back-focus",
+        "statement": "Reach the application Back control using sequential Tab, as selected by the current surface contract; activate with Enter and verify introduction heading focus. A click, programmatic focus or reverse-only traversal does not prove the required forward-Tab reachability.",
+        "source": "surface",
+        "applies_to": [
+          "plan",
+          "review",
+          "ux"
+        ]
+      },
+      "source_transition": {
+        "id": "back",
+        "from": "help-closed",
+        "to": "returned-introduction",
+        "control": "Back",
+        "activation": "Enter",
+        "traversal": "Tab",
+        "focus_after": "introduction-heading"
+      },
+      "source_digest": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+      "profile_matches_current_source_bytes": true,
+      "selected_tab_preserved": true,
+      "reverse_only_proof_explicitly_insufficient": true,
+      "actual_consumption": "Compared returned fact and current source; no browser journey executed."
+    },
+    "ux": {
+      "fact": {
+        "id": "back-focus",
+        "statement": "Reach the application Back control using sequential Tab, as selected by the current surface contract; activate with Enter and verify introduction heading focus. A click, programmatic focus or reverse-only traversal does not prove the required forward-Tab reachability.",
+        "source": "surface",
+        "applies_to": [
+          "plan",
+          "review",
+          "ux"
+        ]
+      },
+      "source_transition": {
+        "id": "back",
+        "from": "help-closed",
+        "to": "returned-introduction",
+        "control": "Back",
+        "activation": "Enter",
+        "traversal": "Tab",
+        "focus_after": "introduction-heading"
+      },
+      "source_digest": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+      "profile_matches_current_source_bytes": true,
+      "selected_tab_preserved": true,
+      "reverse_only_proof_explicitly_insufficient": true,
+      "actual_consumption": "Compared returned fact and current source; no browser journey executed."
+    }
+  },
+  "contract_check": {
+    "valid": true,
+    "schema": "qaizen-labs-surface/1",
+    "checks": [
+      "entry",
+      "unanswered",
+      "help-toggle",
+      "close-focus",
+      "keyboard-back",
+      "introduction-focus",
+      "read-only-policy",
+      "origin-policy"
+    ],
+    "limit": "Contract consistency only; browser observations establish current behavior."
+  },
+  "existing_destination_refusal": {
+    "exit_code": 1,
+    "diagnostic": "{\"valid\": false, \"error\": \"Derived destination exists; choose new staging\"}",
+    "new_derivative_unchanged": true
+  },
+  "filter_probe": {
+    "explicit_reasoning_removed": true,
+    "verdict_removed": true,
+    "complete_report_text_in_evidence_preserved": true,
+    "implication": "Procedural withholding of complete reports is required; field selection alone cannot prevent their contents inside an allowed string."
+  },
+  "old_input_integrity": {
+    "prepared-R1": {
+      "manifest": "research/qore003-campaign-20261017/prepared/R1-derived/input-manifest.json",
+      "checks": [
+        {
+          "path": ".agents/skills/qore-review-qaizen-labs/SKILL.md",
+          "expected_sha256": "eb84df209a56465c7d5aa8caa4ae20d6ad56cbb70121cf474706a587948cd1c3",
+          "actual_sha256": "eb84df209a56465c7d5aa8caa4ae20d6ad56cbb70121cf474706a587948cd1c3"
+        },
+        {
+          "path": ".agents/skills/qore-review-qaizen-labs/agents/openai.yaml",
+          "expected_sha256": "322a16d228ce0020f05d273ff5b50a85aaa771ba4421d623e655afca0ac31a5c",
+          "actual_sha256": "322a16d228ce0020f05d273ff5b50a85aaa771ba4421d623e655afca0ac31a5c"
+        },
+        {
+          "path": ".agents/skills/qore-review-qaizen-labs/references/findings.md",
+          "expected_sha256": "f9f9035e471c9832c6546e80e4fe857777fefceba781bd5801ee8f97bdeaa409",
+          "actual_sha256": "f9f9035e471c9832c6546e80e4fe857777fefceba781bd5801ee8f97bdeaa409"
+        },
+        {
+          "path": ".agents/skills/qore-review-qaizen-labs/references/project-profile.md",
+          "expected_sha256": "5d3b69aac18f83a634f4c57c214cc1f53fa186c03c536adcefd4c905a8767c8d",
+          "actual_sha256": "5d3b69aac18f83a634f4c57c214cc1f53fa186c03c536adcefd4c905a8767c8d"
+        },
+        {
+          "path": ".agents/skills/qore-review-qaizen-labs/references/project.json",
+          "expected_sha256": "f76afdd45cb6352e5044a06affc4182ea6cd40aa9c012fb216636a61faa428f0",
+          "actual_sha256": "f76afdd45cb6352e5044a06affc4182ea6cd40aa9c012fb216636a61faa428f0"
+        },
+        {
+          "path": ".agents/skills/qore-review-qaizen-labs/references/protocol.md",
+          "expected_sha256": "e27e0050fdf4d75d2840dd257b9a759f1f48d459ef540990cd3aed5528c5f340",
+          "actual_sha256": "e27e0050fdf4d75d2840dd257b9a759f1f48d459ef540990cd3aed5528c5f340"
+        },
+        {
+          "path": ".agents/skills/qore-review-qaizen-labs/references/release.json",
+          "expected_sha256": "5c1a3aa6d7cb18e15adc606625e856b52834b45452cf39b7e1497143d28d7ddf",
+          "actual_sha256": "5c1a3aa6d7cb18e15adc606625e856b52834b45452cf39b7e1497143d28d7ddf"
+        },
+        {
+          "path": ".agents/skills/qore-review-qaizen-labs/references/run-evidence.md",
+          "expected_sha256": "fbdf433ef8b3e972f97bed5fdec4990cf3b49535bf63120c729a7daf4af71746",
+          "actual_sha256": "fbdf433ef8b3e972f97bed5fdec4990cf3b49535bf63120c729a7daf4af71746"
+        },
+        {
+          "path": ".agents/skills/qore-review-qaizen-labs/scripts/finding-lint.mjs",
+          "expected_sha256": "d3d22ae7d0b1b6b53b36006f13a8aaf6e1aa9e89df27b98312e6ac72ea079a26",
+          "actual_sha256": "d3d22ae7d0b1b6b53b36006f13a8aaf6e1aa9e89df27b98312e6ac72ea079a26"
+        },
+        {
+          "path": ".agents/skills/qore-review-qaizen-labs/scripts/project-check.py",
+          "expected_sha256": "d87afa433fe485bdebca3e281d06e0896e4a8980ea7cf7baee739053614ea0ac",
+          "actual_sha256": "d87afa433fe485bdebca3e281d06e0896e4a8980ea7cf7baee739053614ea0ac"
+        },
+        {
+          "path": ".agents/skills/qore-review-qaizen-labs/scripts/redact-for-verifier.mjs",
+          "expected_sha256": "dc249524c749ad5b511aef0a2cf08b4cfd5c47c1e0de4fd41c5c70746b471083",
+          "actual_sha256": "dc249524c749ad5b511aef0a2cf08b4cfd5c47c1e0de4fd41c5c70746b471083"
+        },
+        {
+          "path": ".agents/skills/qore-review-qaizen-labs/scripts/run-check.py",
+          "expected_sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+          "actual_sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa"
+        },
+        {
+          "path": "TASK.md",
+          "expected_sha256": "d3ce29449ae03b8f5705947a577786f7a829c8440733637f4cfb5555cab2fc18",
+          "actual_sha256": "d3ce29449ae03b8f5705947a577786f7a829c8440733637f4cfb5555cab2fc18"
+        },
+        {
+          "path": "checks/check_contract.py",
+          "expected_sha256": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b",
+          "actual_sha256": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b"
+        },
+        {
+          "path": "observation-policy.json",
+          "expected_sha256": "15f4e5b4960b5011684be265f027e42b8637a3b8aae96b24bba1ba3a4d0f0202",
+          "actual_sha256": "15f4e5b4960b5011684be265f027e42b8637a3b8aae96b24bba1ba3a4d0f0202"
+        },
+        {
+          "path": "surface-contract.json",
+          "expected_sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+          "actual_sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3"
+        },
+        {
+          "path": "target/verification-protocol.md",
+          "expected_sha256": "b8d1f4ad7bd691dbf8f019cd3b87a7644a21899e6317edebac545fd3b245136e",
+          "actual_sha256": "b8d1f4ad7bd691dbf8f019cd3b87a7644a21899e6317edebac545fd3b245136e"
+        }
+      ],
+      "all_match": true,
+      "old_profile_sha256": "f76afdd45cb6352e5044a06affc4182ea6cd40aa9c012fb216636a61faa428f0",
+      "old_version": "0.1.0",
+      "old_back_fact": "Reach the application Back control using sequential Tab or Shift+Tab; activate with Enter and verify introduction heading focus. A click or programmatic focus does not prove keyboard reachability."
+    },
+    "trial-R1": {
+      "manifest": "research/qore003-campaign-20261017/trials/R1-derived/prepared/input-manifest.json",
+      "checks": [
+        {
+          "path": ".agents/skills/qore-review-qaizen-labs/SKILL.md",
+          "expected_sha256": "eb84df209a56465c7d5aa8caa4ae20d6ad56cbb70121cf474706a587948cd1c3",
+          "actual_sha256": "eb84df209a56465c7d5aa8caa4ae20d6ad56cbb70121cf474706a587948cd1c3"
+        },
+        {
+          "path": ".agents/skills/qore-review-qaizen-labs/agents/openai.yaml",
+          "expected_sha256": "322a16d228ce0020f05d273ff5b50a85aaa771ba4421d623e655afca0ac31a5c",
+          "actual_sha256": "322a16d228ce0020f05d273ff5b50a85aaa771ba4421d623e655afca0ac31a5c"
+        },
+        {
+          "path": ".agents/skills/qore-review-qaizen-labs/references/findings.md",
+          "expected_sha256": "f9f9035e471c9832c6546e80e4fe857777fefceba781bd5801ee8f97bdeaa409",
+          "actual_sha256": "f9f9035e471c9832c6546e80e4fe857777fefceba781bd5801ee8f97bdeaa409"
+        },
+        {
+          "path": ".agents/skills/qore-review-qaizen-labs/references/project-profile.md",
+          "expected_sha256": "5d3b69aac18f83a634f4c57c214cc1f53fa186c03c536adcefd4c905a8767c8d",
+          "actual_sha256": "5d3b69aac18f83a634f4c57c214cc1f53fa186c03c536adcefd4c905a8767c8d"
+        },
+        {
+          "path": ".agents/skills/qore-review-qaizen-labs/references/project.json",
+          "expected_sha256": "f76afdd45cb6352e5044a06affc4182ea6cd40aa9c012fb216636a61faa428f0",
+          "actual_sha256": "f76afdd45cb6352e5044a06affc4182ea6cd40aa9c012fb216636a61faa428f0"
+        },
+        {
+          "path": ".agents/skills/qore-review-qaizen-labs/references/protocol.md",
+          "expected_sha256": "e27e0050fdf4d75d2840dd257b9a759f1f48d459ef540990cd3aed5528c5f340",
+          "actual_sha256": "e27e0050fdf4d75d2840dd257b9a759f1f48d459ef540990cd3aed5528c5f340"
+        },
+        {
+          "path": ".agents/skills/qore-review-qaizen-labs/references/release.json",
+          "expected_sha256": "5c1a3aa6d7cb18e15adc606625e856b52834b45452cf39b7e1497143d28d7ddf",
+          "actual_sha256": "5c1a3aa6d7cb18e15adc606625e856b52834b45452cf39b7e1497143d28d7ddf"
+        },
+        {
+          "path": ".agents/skills/qore-review-qaizen-labs/references/run-evidence.md",
+          "expected_sha256": "fbdf433ef8b3e972f97bed5fdec4990cf3b49535bf63120c729a7daf4af71746",
+          "actual_sha256": "fbdf433ef8b3e972f97bed5fdec4990cf3b49535bf63120c729a7daf4af71746"
+        },
+        {
+          "path": ".agents/skills/qore-review-qaizen-labs/scripts/finding-lint.mjs",
+          "expected_sha256": "d3d22ae7d0b1b6b53b36006f13a8aaf6e1aa9e89df27b98312e6ac72ea079a26",
+          "actual_sha256": "d3d22ae7d0b1b6b53b36006f13a8aaf6e1aa9e89df27b98312e6ac72ea079a26"
+        },
+        {
+          "path": ".agents/skills/qore-review-qaizen-labs/scripts/project-check.py",
+          "expected_sha256": "d87afa433fe485bdebca3e281d06e0896e4a8980ea7cf7baee739053614ea0ac",
+          "actual_sha256": "d87afa433fe485bdebca3e281d06e0896e4a8980ea7cf7baee739053614ea0ac"
+        },
+        {
+          "path": ".agents/skills/qore-review-qaizen-labs/scripts/redact-for-verifier.mjs",
+          "expected_sha256": "dc249524c749ad5b511aef0a2cf08b4cfd5c47c1e0de4fd41c5c70746b471083",
+          "actual_sha256": "dc249524c749ad5b511aef0a2cf08b4cfd5c47c1e0de4fd41c5c70746b471083"
+        },
+        {
+          "path": ".agents/skills/qore-review-qaizen-labs/scripts/run-check.py",
+          "expected_sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+          "actual_sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa"
+        },
+        {
+          "path": "TASK.md",
+          "expected_sha256": "d3ce29449ae03b8f5705947a577786f7a829c8440733637f4cfb5555cab2fc18",
+          "actual_sha256": "d3ce29449ae03b8f5705947a577786f7a829c8440733637f4cfb5555cab2fc18"
+        },
+        {
+          "path": "checks/check_contract.py",
+          "expected_sha256": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b",
+          "actual_sha256": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b"
+        },
+        {
+          "path": "observation-policy.json",
+          "expected_sha256": "15f4e5b4960b5011684be265f027e42b8637a3b8aae96b24bba1ba3a4d0f0202",
+          "actual_sha256": "15f4e5b4960b5011684be265f027e42b8637a3b8aae96b24bba1ba3a4d0f0202"
+        },
+        {
+          "path": "surface-contract.json",
+          "expected_sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+          "actual_sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3"
+        },
+        {
+          "path": "target/verification-protocol.md",
+          "expected_sha256": "b8d1f4ad7bd691dbf8f019cd3b87a7644a21899e6317edebac545fd3b245136e",
+          "actual_sha256": "b8d1f4ad7bd691dbf8f019cd3b87a7644a21899e6317edebac545fd3b245136e"
+        }
+      ],
+      "all_match": true,
+      "old_profile_sha256": "f76afdd45cb6352e5044a06affc4182ea6cd40aa9c012fb216636a61faa428f0",
+      "old_version": "0.1.0",
+      "old_back_fact": "Reach the application Back control using sequential Tab or Shift+Tab; activate with Enter and verify introduction heading focus. A click or programmatic focus does not prove keyboard reachability."
+    },
+    "frozen-N09": {
+      "manifest": "research/qore003-campaign-20261017/assessment-inputs/N09/output/evidence/source-manifest.json",
+      "checks": [
+        {
+          "path": ".agents/skills/qore-review-qaizen-labs/SKILL.md",
+          "expected_sha256": "eb84df209a56465c7d5aa8caa4ae20d6ad56cbb70121cf474706a587948cd1c3",
+          "actual_sha256": "eb84df209a56465c7d5aa8caa4ae20d6ad56cbb70121cf474706a587948cd1c3"
+        },
+        {
+          "path": ".agents/skills/qore-review-qaizen-labs/agents/openai.yaml",
+          "expected_sha256": "322a16d228ce0020f05d273ff5b50a85aaa771ba4421d623e655afca0ac31a5c",
+          "actual_sha256": "322a16d228ce0020f05d273ff5b50a85aaa771ba4421d623e655afca0ac31a5c"
+        },
+        {
+          "path": ".agents/skills/qore-review-qaizen-labs/references/findings.md",
+          "expected_sha256": "f9f9035e471c9832c6546e80e4fe857777fefceba781bd5801ee8f97bdeaa409",
+          "actual_sha256": "f9f9035e471c9832c6546e80e4fe857777fefceba781bd5801ee8f97bdeaa409"
+        },
+        {
+          "path": ".agents/skills/qore-review-qaizen-labs/references/project-profile.md",
+          "expected_sha256": "5d3b69aac18f83a634f4c57c214cc1f53fa186c03c536adcefd4c905a8767c8d",
+          "actual_sha256": "5d3b69aac18f83a634f4c57c214cc1f53fa186c03c536adcefd4c905a8767c8d"
+        },
+        {
+          "path": ".agents/skills/qore-review-qaizen-labs/references/project.json",
+          "expected_sha256": "f76afdd45cb6352e5044a06affc4182ea6cd40aa9c012fb216636a61faa428f0",
+          "actual_sha256": "f76afdd45cb6352e5044a06affc4182ea6cd40aa9c012fb216636a61faa428f0"
+        },
+        {
+          "path": ".agents/skills/qore-review-qaizen-labs/references/protocol.md",
+          "expected_sha256": "e27e0050fdf4d75d2840dd257b9a759f1f48d459ef540990cd3aed5528c5f340",
+          "actual_sha256": "e27e0050fdf4d75d2840dd257b9a759f1f48d459ef540990cd3aed5528c5f340"
+        },
+        {
+          "path": ".agents/skills/qore-review-qaizen-labs/references/release.json",
+          "expected_sha256": "5c1a3aa6d7cb18e15adc606625e856b52834b45452cf39b7e1497143d28d7ddf",
+          "actual_sha256": "5c1a3aa6d7cb18e15adc606625e856b52834b45452cf39b7e1497143d28d7ddf"
+        },
+        {
+          "path": ".agents/skills/qore-review-qaizen-labs/references/run-evidence.md",
+          "expected_sha256": "fbdf433ef8b3e972f97bed5fdec4990cf3b49535bf63120c729a7daf4af71746",
+          "actual_sha256": "fbdf433ef8b3e972f97bed5fdec4990cf3b49535bf63120c729a7daf4af71746"
+        },
+        {
+          "path": ".agents/skills/qore-review-qaizen-labs/scripts/finding-lint.mjs",
+          "expected_sha256": "d3d22ae7d0b1b6b53b36006f13a8aaf6e1aa9e89df27b98312e6ac72ea079a26",
+          "actual_sha256": "d3d22ae7d0b1b6b53b36006f13a8aaf6e1aa9e89df27b98312e6ac72ea079a26"
+        },
+        {
+          "path": ".agents/skills/qore-review-qaizen-labs/scripts/project-check.py",
+          "expected_sha256": "d87afa433fe485bdebca3e281d06e0896e4a8980ea7cf7baee739053614ea0ac",
+          "actual_sha256": "d87afa433fe485bdebca3e281d06e0896e4a8980ea7cf7baee739053614ea0ac"
+        },
+        {
+          "path": ".agents/skills/qore-review-qaizen-labs/scripts/redact-for-verifier.mjs",
+          "expected_sha256": "dc249524c749ad5b511aef0a2cf08b4cfd5c47c1e0de4fd41c5c70746b471083",
+          "actual_sha256": "dc249524c749ad5b511aef0a2cf08b4cfd5c47c1e0de4fd41c5c70746b471083"
+        },
+        {
+          "path": ".agents/skills/qore-review-qaizen-labs/scripts/run-check.py",
+          "expected_sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+          "actual_sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa"
+        },
+        {
+          "path": "TASK.md",
+          "expected_sha256": "d3ce29449ae03b8f5705947a577786f7a829c8440733637f4cfb5555cab2fc18",
+          "actual_sha256": "d3ce29449ae03b8f5705947a577786f7a829c8440733637f4cfb5555cab2fc18"
+        },
+        {
+          "path": "checks/check_contract.py",
+          "expected_sha256": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b",
+          "actual_sha256": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b"
+        },
+        {
+          "path": "observation-policy.json",
+          "expected_sha256": "15f4e5b4960b5011684be265f027e42b8637a3b8aae96b24bba1ba3a4d0f0202",
+          "actual_sha256": "15f4e5b4960b5011684be265f027e42b8637a3b8aae96b24bba1ba3a4d0f0202"
+        },
+        {
+          "path": "surface-contract.json",
+          "expected_sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+          "actual_sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3"
+        },
+        {
+          "path": "target/verification-protocol.md",
+          "expected_sha256": "b8d1f4ad7bd691dbf8f019cd3b87a7644a21899e6317edebac545fd3b245136e",
+          "actual_sha256": "b8d1f4ad7bd691dbf8f019cd3b87a7644a21899e6317edebac545fd3b245136e"
+        }
+      ],
+      "all_match": true,
+      "old_profile_sha256": "f76afdd45cb6352e5044a06affc4182ea6cd40aa9c012fb216636a61faa428f0",
+      "old_version": "0.1.0",
+      "old_back_fact": "Reach the application Back control using sequential Tab or Shift+Tab; activate with Enter and verify introduction heading focus. A click or programmatic focus does not prove keyboard reachability."
+    }
+  },
+  "original_contract_checker_unchanged": {
+    "qore-skills/examples/qaizen-labs/surface-contract.json": true,
+    "qore-skills/examples/qaizen-labs/checks/check_contract.py": true
+  },
+  "preservation": {
+    "protected_files": 6255,
+    "protected_bytes_unchanged": true,
+    "source_snapshot_unchanged_during_check": true,
+    "original_verified_sha256": "00e7ec2d843912f2253069d5b84f04eaf11379f4bae998ba2de8f005b242aa99",
+    "original_verdict_history": [
+      [
+        "R1-C01",
+        "medium",
+        "REFUTED"
+      ],
+      [
+        "R1-C02",
+        "medium",
+        "CONFIRMED"
+      ]
+    ]
+  },
+  "independent_document_review": {
+    "observed_at": "2026-10-17T10:53:03.723238+00:00",
+    "profile_fix": {
+      "status": "SUPPORTED",
+      "source": "qore-skills/profiles/qaizen-labs.json:45-47",
+      "basis": "All three newly derived returned Back facts preserve current source Tab; reverse-only proof is explicitly insufficient."
+    },
+    "project_profile_guidance": {
+      "status": "SUPPORTED",
+      "sources": [
+        "qore-plan/references/project-profile.md:24",
+        "qore-review/references/project-profile.md:24",
+        "qore-ux-review/references/project-profile.md:24"
+      ],
+      "basis": "All three distinguish the current selected value from the broader schema/checker domain."
+    },
+    "boundary_entry_and_findings": {
+      "status": "SUPPORTED",
+      "sources": [
+        "qore-review/SKILL.md:13",
+        "qore-review/references/findings.md:14"
+      ],
+      "basis": "Accurately permits explanatory evidence and denies semantic blinding."
+    },
+    "boundary_protocol_capability_sentence": {
+      "status": "QUALIFICATION_REQUIRED",
+      "source": "qore-review/references/protocol.md:37",
+      "quote": "Field selection prevents unrelated fields and complete reports from crossing",
+      "basis": "Actual scalar evidence probe retains a synthetic report unchanged. Withholding full reports is a procedural obligation, not a capability of the filter. No actual campaign leakage is alleged."
+    },
+    "context_continuation": {
+      "status": "SUPPORTED",
+      "source": "qore-plan/references/protocol.md:25,29-35",
+      "basis": "Requires recorded failed continuation, full original and peer reports, both actual actor identities, disclosure of continuity limit, actual cross-examination, same round and aggregate budget; missing reports or challenge remains PARTIAL."
+    },
+    "overall_disposition": "R1-C02 correction supported; R1-C01 historical refutation retained. Boundary clarification mostly supported, with one precise overstatement requiring qualification. No new campaign cell or semantic scrubber required."
+  }
+}

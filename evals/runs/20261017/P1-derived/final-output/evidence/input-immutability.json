@@ -1,0 +1,9 @@
+{
+  "observed_at": "2026-10-17T10:50:36.229949+00:00",
+  "valid": true,
+  "expected_files": 18,
+  "actual_files": 18,
+  "changed": [],
+  "added": [],
+  "procedure": "Re-enumerate every supplied input file and compare exact SHA-256 and inventory with initial frozen manifest."
+}

@@ -1,0 +1,74 @@
+{
+  "schema": "qore-local-qualification/1",
+  "observed_at": "2026-10-17T08:23:20.545840+00:00",
+  "operator": "agent",
+  "source_sha256": {
+    "tools/evaluate.py": "3c53e167b98fd787943066c53a17bf0505bcab445a5f690b7514dcfcd33f33d8",
+    "tools/browser_probe.mjs": "544d47211ac5aefde57072aef4ded1140c21030555b0e45e93f8821794249add",
+    "tools/clean_room.sh": "a22e60630cdf9dc508c57c580ba620c8d1addc6faf0d7b771bae7e6361e4111f",
+    "tests/test_evaluate.py": "5f4f31816ec33bf60d1ddbd23714d7dbdbacd0b04f0842d2353c52be0b125d33",
+    "evals/scenarios.json": "46534adc957971607cb4af8ae555727b933746b61081822be77acf9d79d2ea49",
+    "schemas/qore-eval-run.schema.json": "5b8f7b9b327d9158448a0579782859277dffd11023c246fd6f8b25abb8334306",
+    "skills/qore-ux-review/scripts/depth-lint.mjs": "fd7be484c8e4bf3ba376bdddb88663b31ae9da4c2c7678232ea7a6cc7782bd0f"
+  },
+  "local_commands": [
+    {
+      "operation": "prepare",
+      "condition": "baseline",
+      "exit_code": 0,
+      "raw_receipt_sha256": "8e74e62f76b4e41ddb98ac35e412b3462c6a93634a20d46f7fd5549a68ea85f0"
+    },
+    {
+      "operation": "prepare",
+      "condition": "generic",
+      "exit_code": 0,
+      "raw_receipt_sha256": "351fb23cc0bf6638ce843f412eeb4c7dc20f20683fc05f3ba00353a173738c43"
+    },
+    {
+      "operation": "prepare",
+      "condition": "derived",
+      "exit_code": 0,
+      "raw_receipt_sha256": "120700d123e70f9c26b74ff504192937c2d033d81a5ffcfe6361d6aee3ab372c"
+    },
+    {
+      "operation": "summarize",
+      "exit_code": 0,
+      "raw_receipt_sha256": "5c261c4db26a82360e47aa40fc39ba5a6b6edec6f9f52b55e389db2e33c91488"
+    },
+    {
+      "operation": "check",
+      "synthetic_record": true,
+      "exit_code": 0,
+      "raw_receipt_sha256": "d850ac8505d7d6e9156873220ca8b79f206f31f92fc3d295ef8ef8c4397b8a90"
+    }
+  ],
+  "unit_suite": {
+    "command": [
+      "python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-v"
+    ],
+    "tests": 214,
+    "skipped": 19,
+    "exit_code": 0,
+    "raw_log_sha256": "1abd39a875d8a7b06385fe34647caf895627c218836e8499bd1568d52eb93a63",
+    "limit": "Optional browser tests were skipped in this invocation; separately recorded real Chromium controls cover them."
+  },
+  "campaign": {
+    "status": "BLOCKED",
+    "completed_cells": 0,
+    "planned_cells": 18,
+    "reason": "Required nested Codex sandbox cannot start in the observed unprivileged container."
+  },
+  "limits": [
+    "Preparation and structural checks are not method execution.",
+    "The check operation used an explicitly synthetic unit fixture, not a real model trial.",
+    "Private receipt paths are omitted; hashes refer to unchanged raw receipts.",
+    "No statistical, efficiency, general benefit, external-human or Ambassador acceptance result follows."
+  ]
+}

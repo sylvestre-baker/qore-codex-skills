@@ -1,0 +1,12 @@
+{
+  "findings": [
+    {
+      "id": "REPORT-PROBE",
+      "title": "Probe only",
+      "severity": "medium",
+      "evidence": "target.md:1\n# Complete finder report\nRole: correctness\nScope: complete\nReasoning: FULL_REPORT_SENTINEL\nConclusion: candidate only",
+      "reasoning": "SEPARATE_FIELD_SENTINEL",
+      "verdict": "CONFIRMED"
+    }
+  ]
+}

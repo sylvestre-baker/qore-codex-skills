@@ -1,0 +1,11 @@
+{
+  "recorded_at_utc": "2026-10-17T11:27:33.700855+00:00",
+  "algorithm": "sha256",
+  "files": {
+    "TASK.md": "ee8be3d440c260cbc2e47e0ae8d79e0877aa8704f78efce83f6f1cfe80d51a45",
+    "surface-contract.json": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+    "checks/check_contract.py": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b",
+    "observation-policy.json": "15f4e5b4960b5011684be265f027e42b8637a3b8aae96b24bba1ba3a4d0f0202",
+    "target/verification-protocol.md": "0a3452f02e358d8800fb26d591083deb972c5531165473990dc27007a9a9e0d4"
+  }
+}

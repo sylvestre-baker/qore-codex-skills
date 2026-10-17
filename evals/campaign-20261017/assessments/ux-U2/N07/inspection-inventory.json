@@ -1,0 +1,93 @@
+{
+  "schema": "qore003-independent-ux-inventory/1",
+  "neutral_id": "N07",
+  "actor_id": "/root/campaign_ux_assessor",
+  "timing": {
+    "started_at_utc": "2026-10-17T12:05:15+00:00",
+    "finalized_at_utc": "2026-10-17T12:13:34.032690+00:00",
+    "accounted_window_seconds": 499.03269,
+    "cap_seconds": 300,
+    "cap_overrun_seconds": 199.03269,
+    "prior_evaluator_seconds": 539.22,
+    "conservative_cumulative_seconds": 1038.25269,
+    "interrupted_finalization": true,
+    "timing_limit": "Actual start and save time retained. Window includes the interruption/finalization interval; precise active versus interrupted seconds were not independently metered. Entire elapsed window is conservatively charged; no end time was backdated. Final inspection stopped before this save."
+  },
+  "actually_viewed_images": [
+    {
+      "path": "observation-3/raw/01-introduction.png",
+      "tool": "functions tools.view_image",
+      "view_call_clock_utc": "2026-10-17T12:06:04Z"
+    },
+    {
+      "path": "observation-3/raw/02-first-question.png",
+      "tool": "functions tools.view_image",
+      "view_call_clock_utc": "2026-10-17T12:06:04Z"
+    },
+    {
+      "path": "observation-3/raw/03-help-open-enter.png",
+      "tool": "functions tools.view_image",
+      "view_call_clock_utc": "2026-10-17T12:06:04Z"
+    },
+    {
+      "path": "observation-3/raw/04-help-closed-space.png",
+      "tool": "functions tools.view_image",
+      "view_call_clock_utc": "2026-10-17T12:06:04Z"
+    },
+    {
+      "path": "observation-3/raw/05-help-reopened.png",
+      "tool": "functions tools.view_image",
+      "view_call_clock_utc": "2026-10-17T12:06:04Z"
+    },
+    {
+      "path": "observation-3/raw/06-help-closed-close-focus.png",
+      "tool": "functions tools.view_image",
+      "view_call_clock_utc": "2026-10-17T12:06:04Z"
+    },
+    {
+      "path": "observation-5/raw/04-challenged-help-open.png",
+      "tool": "functions tools.view_image",
+      "view_call_clock_utc": "2026-10-17T12:06:04Z"
+    },
+    {
+      "path": "observation-5/raw/05-close-focused.png",
+      "tool": "functions tools.view_image",
+      "view_call_clock_utc": "2026-10-17T12:06:04Z"
+    },
+    {
+      "path": "observation-5/raw/06-challenged-close-restored.png",
+      "tool": "functions tools.view_image",
+      "view_call_clock_utc": "2026-10-17T12:06:04Z"
+    },
+    {
+      "path": "observation-5/raw/07-back-focused.png",
+      "tool": "functions tools.view_image",
+      "view_call_clock_utc": "2026-10-17T12:06:04Z"
+    },
+    {
+      "path": "observation-5/raw/08-challenged-returned-introduction.png",
+      "tool": "functions tools.view_image",
+      "view_call_clock_utc": "2026-10-17T12:06:04Z"
+    }
+  ],
+  "retained_checks": [
+    "Original criteria.json U2 applicability read: K1,K3,K4,K8.",
+    "Original surface contract, policy, checker, generic method/protocol/gates/evidence, initial scope/depth/matrix and report read.",
+    "All16 input-manifest hashes independently checked: no mismatches.",
+    "All five raw relay-listed file sets independently hash-checked: no mismatches.",
+    "Each authored action array, exact harness and policy independently matched its relay hash in all five requests.",
+    "Actual arrays0/29/29/36/36 read. Request1 probe COMPLETE; request2 PARTIAL Start refusal; request3 COMPLETE help sequence; request4 PARTIAL Labs exact-text timeout; request5 COMPLETE challenge.",
+    "Request3 Enter/open, Space/closed, Enter/reopen and Close/closed attribute assertions actually completed. Summary focus restored, unanswered assertions passed. Request5 independently repeats opening/Close and summary restoration.",
+    "Paired DOM reports CSS viewport1280x800 DPR1; SUMMARY after Close; BUTTON Close before activation; BUTTON Back before activation; H1 after Back.",
+    "Requests3/5 each record one blocked analytics POST and matching console error; no page exceptions, route errors or blocked external navigation in any inspected request.",
+    "Actual harness source inspected for native activation/state allowlist enforcement, request-method/origin guards, keyboard traversal and fullPage screenshot behavior."
+  ],
+  "not_performed_or_unknown": [
+    "No further inspection after finalization request.",
+    "No complete independent inventory of all PNG dimensions/hashes was produced; do not infer metadata-only images were viewed.",
+    "Actual scroll offsets, Back/banner bounding rectangles, visual viewport overlap/hit testing and viewport-only image are absent/unmeasured.",
+    "No rerun, live browser, network, source edit, implementation inspection, other new case or current fix inspection.",
+    "Standalone cold deep entry, unrestricted analytics, deployment revision, other browsers/viewports and standards conformance not established."
+  ],
+  "image_interpretation": "Eleven original images actually viewed. Back capture conceals label/most outline in full-page pixels, but actual runtime viewport impact remains unresolved."
+}

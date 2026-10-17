@@ -1,0 +1,23 @@
+{
+  "exit_code": 1,
+  "request_sha256": "68b5dfedc86722c7776a34809b25b5acfce3a8930c79b5a583cda70279ac0632",
+  "harness_sha256": "544d47211ac5aefde57072aef4ded1140c21030555b0e45e93f8821794249add",
+  "policy_sha256": "2160973fbe4d0a603d061688d2d4fe9ee633d8b3f018fec773d7b8d7a28c7ff2",
+  "started_at": "2026-10-17T11:03:04.949818+00:00",
+  "ended_at": "2026-10-17T11:03:11.950787+00:00",
+  "fresh_context": true,
+  "input_actions_modified": false,
+  "operator_interpretation": null,
+  "stderr": "",
+  "diagnostic_transformation": "Only private operator evidence prefix replaced in returned stderr; original retained.",
+  "files": {
+    "00-entry.dom.json": "09a05d31c16faaf8980d863723e3f901798ef49b4cac43ea54aec912de99112d",
+    "00-entry.png": "095283e6a92818f6baf91a977793ff14591a91a60cef7b82ea9019642c2251e2",
+    "01-public-entry.dom.json": "2e72d94aeb80a87a73191e51ac1edd98ea33a03d36fe37719b667b5f754ac9e2",
+    "01-public-entry.png": "041319a5d5542b9a5ddae0bd2c782d018a031320b7ef69be076a71a99c470b8a",
+    "02-introduction.dom.json": "524b0152744d052e6bb253eaeda4ff35b7bc69b132546fc509c7edd1958c13a1",
+    "02-introduction.png": "8c12568cc767e1d111812033ddd4823fc5ffcaf12d6561cb61b74ffa210a4bc8",
+    "events.json": "1c1e565feca426b99d33aa2e1d6f8d6b7e10973ccd1e20d416b7631c63ca4e8d",
+    "result.json": "b5ded30955973266449bfeee5aaf0aa55af8409edcc8bdd02f62b1f60793993c"
+  }
+}

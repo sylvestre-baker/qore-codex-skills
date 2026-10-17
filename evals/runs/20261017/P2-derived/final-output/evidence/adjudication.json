@@ -1,0 +1,113 @@
+{
+  "observed_at": "2026-10-17T11:38:09.032655+00:00",
+  "actor_id": "/root",
+  "mode": "Workflow",
+  "basis": "Five complete initial and cross reports; direct raw sources. Fresh verifier is additional, not a substitute for any role challenge.",
+  "decisions": [
+    {
+      "id": "D1,D8",
+      "conflict": "Minimal document clarification versus adding guard/logger/harness implementation or requiring a live pass.",
+      "alternatives": [
+        "New runtime tooling before planning done",
+        "Single proposed procedure and source coverage map with future enforcement prerequisites"
+      ],
+      "evidence": [
+        "TASK.md:3-5",
+        "checks/check_contract.py:46-51",
+        "all five cross reports"
+      ],
+      "selected": "Single procedure proposal and offline review; observer owns future enforcement.",
+      "consequence": "No application, tooling or input change; actual enforcement remains unknown.",
+      "dissent": "Initial prerequisite wording could imply planning block; every cross pass qualifies it."
+    },
+    {
+      "id": "D2",
+      "conflict": "Generic help opening versus full source-defined keyboard help cycle.",
+      "alternatives": [
+        "Leave generic open only",
+        "Explicit summary Enter/open, Space/closed, Enter/reopen before Close"
+      ],
+      "evidence": [
+        "target/verification-protocol.md:7",
+        "surface-contract.json:11-14,18"
+      ],
+      "selected": "Explicit three-key cycle and each immediate state.",
+      "consequence": "Repairs documentation coverage, not a claimed site bug.",
+      "dissent": "UX retains HIGH reliability severity; other roles MEDIUM. Both retained."
+    },
+    {
+      "id": "D3,D4",
+      "conflict": "Simplifying repetitive checks/bound versus preserving existing valid obligations.",
+      "alternatives": [
+        "Merge unanswered assertions or remove bound",
+        "Keep both checkpoints, all Back and Close postconditions, and 24 total sequential traversals"
+      ],
+      "evidence": [
+        "target/verification-protocol.md:8-10",
+        "surface-contract.json:14-17"
+      ],
+      "selected": "Preserve all; define one traversal key as one step, across directions without reset.",
+      "consequence": "Bound is local operational rule; exhaustion is bounded noncompletion, not universal inaccessibility.",
+      "dissent": "No sourced reason supports deletion; earlier broad failed/incomplete terminology corrected."
+    },
+    {
+      "id": "D5",
+      "conflict": "Target Close Tab-or-Shift+Tab alternative versus literal contract Close Tab path.",
+      "alternatives": [
+        "Delete Shift+Tab",
+        "Treat Shift+Tab alone as observed Tab",
+        "Retain alternative and explicitly distinguish actual path evidence"
+      ],
+      "evidence": [
+        "target/verification-protocol.md:8",
+        "surface-contract.json:14-15",
+        "checks/check_contract.py:32-36",
+        "all five cross reports"
+      ],
+      "selected": "Canonical Tab default; preserved labeled Shift+Tab alternative; no mandatory second run. Back either direction remains accepted.",
+      "consequence": "Retains valid target allowance while avoiding invented canonical observation.",
+      "dissent": "Initial UX/Product broad preservation needed qualification; initial QA checker statement applied Back rule too broadly and is explicitly refuted."
+    },
+    {
+      "id": "D6",
+      "conflict": "All-resource origin ban versus scoped navigation origin guard and all-request methods.",
+      "alternatives": [
+        "Block every cross-origin resource",
+        "Block disallowed methods for all requests and disallowed main-frame/popup navigations"
+      ],
+      "evidence": [
+        "surface-contract.json:5-6",
+        "observation-policy.json:2-4",
+        "skill references/project.json unanswered-scope invariant",
+        "fresh profile-check.json"
+      ],
+      "selected": "Separate boundaries and cite profile-only main-frame/popup detail accurately.",
+      "consequence": "No invented blanket subresource restriction or guard API; redirects remain subject to navigation guard.",
+      "dissent": "Initial Architecture/Delivery raw-source attribution too broad; corrections retained in cross and claims."
+    },
+    {
+      "id": "D7",
+      "conflict": "One generic pass/fail label versus per-obligation evidence and interruption distinctions.",
+      "alternatives": [
+        "Static pass proves journey or all interruption is website failure",
+        "Separate actual wrong focus, actual bound exhaustion, and missing observation"
+      ],
+      "evidence": [
+        "checks/check_contract.py:42-43",
+        "target/verification-protocol.md:3,8-10",
+        "surface-contract.json:19-20",
+        "QA/UX cross outcome tables"
+      ],
+      "selected": "Per-obligation result and actual evidence; downstream unobserved when not executed; blocked analytics effects retained.",
+      "consequence": "No fabricated website pass or defect, no guard relaxation, no forced focus rescue.",
+      "dissent": "Severity differences retained in full report; no averaging."
+    }
+  ],
+  "boundary_consistency": "Contract/policy/profile declarations -> proposed instructions -> future observer guards/actions -> actual evidence -> per-obligation consumer judgments; no storage/schema writers exist in supplied snapshot.",
+  "stopping_reason": "All mandatory role challenges performed; conflicts resolved by direct evidence and labeling. One Analyze plus one Cross-examine pass, no additional planning round. Empirical questions out of authorized scope remain open.",
+  "fresh_verifier": {
+    "report": "reports/verifier.md",
+    "result": "35 IDs: 17 supported, 18 qualified; no unfinished IDs",
+    "retained_limit": "Prior checker execution unresolved within verifier permitted evidence; lead has independent actual command output. Effort unmeasured. Operational taxonomy/counting/redirects are proposals."
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "schema": "qore-render-selection/1",
+  "selected_at": "2026-10-17T08:21:51.636629+00:00",
+  "category": "Agent browser review of authored documentation; not a comparative trial or external human test",
+  "transformation": "Selected factual summaries and exact source identities from two retained private browser-review executions. Absolute paths, raw traces and unrelated artifacts omitted. The original observations and first depth-lint refusal remain unchanged.",
+  "driver": "Existing Playwright 1.62.1 / Chromium 151.0.7922.34; no installation",
+  "main_surface": {
+    "run_id": "qore003-specialization-render-20261017",
+    "source_sha256": {
+      "README.md": "bee096ea1cb7ad2cd2128566ba134120112470ec1c6e0ec7c23f471d34f89cdc",
+      "showcase/index.html": "1edcca9fe78dc7797478abe802d12f819f3b985c25fa1b2d68551012c58d1bb0",
+      "showcase/styles.css": "c6169b41c88f3aa66a5de2512164ffc6555f9341f581eb20494e39d81237541a"
+    },
+    "original_target_snapshot_sha256": "2e0d38810558d8839a16132648847998db917dde1f98a3bd7ba874e13548db43",
+    "original_skill_candidate_sha256": "6fc0b215ad9691e533338d7ad3cd4ff89d658ad1aec60bcf51895280df46eb0f",
+    "scope": "Changed README and showcase specialization section; full static depth; 320 and 1280 CSS pixels",
+    "iterations": 2,
+    "source_corrections": 0,
+    "coverage": "COMPLETE within the declared local scope",
+    "verdict": "SHIP within local scope; no deployment authorization",
+    "observations": [
+      "Actual click and sequential Tab/Enter reach the new section; direct URL, reload and Back/Forward reach the expected headings.",
+      "PNG screenshots captured and visually inspected; three cards stack at 320 pixels, with document width equal to the viewport.",
+      "Named table region, visible keyboard focus, Tab exit, logical headings and selected computed contrast checks passed.",
+      "Actual browser zoom factor 2.0 and reduced-motion behavior observed.",
+      "Console and network observed; no page exception. One uncorrelated resource 404 in an isolated zoom context remains an unresolved diagnostic.",
+      "CDP tracing and lab observations captured locally; no field, cross-platform or general performance claim."
+    ],
+    "raw_receipts": [
+      {
+        "logical_origin": "REPORT.md",
+        "sha256": "18ef2b73995bd95182a705bf2b745aeef4e9259b5f2db310b90ba88131d7b244"
+      },
+      {
+        "logical_origin": "execution.json",
+        "sha256": "6d3edc42c63f35513adc64abb487557af91a7704dea704cfb57c4b6b5ba66ecf"
+      },
+      {
+        "logical_origin": "snapshot.json",
+        "sha256": "49e9b72b666641129bbaa72d1a1903d09346043534a91949fbd3f9118c90f7aa"
+      },
+      {
+        "logical_origin": "capability-matrix.json",
+        "sha256": "ed8c01b59f99125a36843e1db8d897f10782903a872dec2bf3ba0e9f15c7227c"
+      },
+      {
+        "logical_origin": "stop-rule-i2.json",
+        "sha256": "1ef1203d955bba61466e0f068587f3c344a42dbe654d4cda3e40ce973c46819a"
+      },
+      {
+        "logical_origin": "run-check.json",
+        "sha256": "8d085ae91a40590cad8adcd59b0749ea49d1ccc71f6d545f241ed25b9ad11d3e"
+      }
+    ]
+  },
+  "final_guide": {
+    "run_id": "qore003-guide-final-copy-20261017-iteration2",
+    "source_path": "docs/specialization.md",
+    "source_sha256": "2cebe4879178343c9ae0009273b3a59e372bffda3a6ac4a101a3b6269f80349b",
+    "skill_candidate_sha256": "58c565b9f018a13cd177d4988a44633944efb69740ff2da2bfa781dd5242b5ab",
+    "scope": "Final guide revision; copy depth with G4, G5 manual and G6, at 320 and 1280 CSS pixels",
+    "coverage": "COMPLETE within the declared manual copy scope",
+    "verdict": "SHIP within final guide copy scope only",
+    "observations": [
+      "Final guide reobserved after its text changes and the Markdown depth-lint fix; prior observations were not rebound.",
+      "Worker-only staging, evaluator-only source snapshot, record checks, comparability and excluded-pilot limitations remain visible.",
+      "Keyboard reaches the record-schema link with visible focus. Document selection contains both complete commands; code-only clipboard behavior was not established.",
+      "No document horizontal overflow at either viewport; narrow overflow stays inside code and table regions."
+    ],
+    "depth_lint_exit_code": 0,
+    "run_check_exit_code": 0,
+    "raw_receipts": [
+      {
+        "logical_origin": "guide-final.json",
+        "sha256": "a2edc83182c051dc4dfd96be4c2a8debedb41e05df56fff014289c63594b59d3"
+      },
+      {
+        "logical_origin": "guide-final-iteration2/candidate-snapshot.json",
+        "sha256": "1b1402cf74df711c52a2084d2df86510241bc4e7a8c093f452379cb7aef14b9d"
+      },
+      {
+        "logical_origin": "guide-final-iteration2/run-check.json",
+        "sha256": "171a967860355d1b3e9731e634c53f3ddab920284596e0930ac683909dd1c607"
+      },
+      {
+        "logical_origin": "guide-final-iteration2/stop-rule.json",
+        "sha256": "30ac0fc528c750f4063b37bc3a470679f87e1f7601c9254ad2c00f66804730b2"
+      }
+    ]
+  },
+  "selected_images": [
+    {
+      "path": "render/showcase-320.png",
+      "sha256": "146841a5d27d99d4976c28f25ee3e92a6c4c094db056f86fb3c7e17996481ac8",
+      "logical_origin": "i2-showcase-320-entry-settled.png",
+      "transformation": "Byte-identical copy of a reviewed screenshot of first-party static content; no user data or browser chrome.",
+      "alt": "Local specialization section at 320 CSS pixels, showing the BLOCKED campaign status and baseline, generic and derived conditions."
+    },
+    {
+      "path": "render/showcase-1280.png",
+      "sha256": "6f81738fdb9442ad10e35d20576406a4f8bf45c85fa5c3c7d928f2e3288dc475",
+      "logical_origin": "i2-showcase-1280-entry-settled.png",
+      "transformation": "Byte-identical copy of a reviewed screenshot of first-party static content; no user data or browser chrome.",
+      "alt": "Local specialization section at 1280 CSS pixels, showing the BLOCKED campaign status and baseline, generic and derived conditions."
+    }
+  ],
+  "limits": [
+    "Local marked/GitHub-like rendering is not an observed GitHub-hosted rendering.",
+    "Three prospective GitHub main file URLs returned 404 before merge. The new hosted path remains unqualified until authorized publication and recheck.",
+    "Main-surface evidence stays tied to its original target and skill candidate. The linked guide was later changed and received its own fresh focused run.",
+    "Manual accessibility checks do not establish instrumented conformance or screen-reader certification.",
+    "The current result-inventory update is not part of the main-surface browser snapshot.",
+    "No actual comparative trial, model evaluation, external human first use, publication or general benefit is established. All 18 campaign cells remain NOT_RUN."
+  ],
+  "cleanup": "All owned browser contexts and local servers closed after the runs."
+}

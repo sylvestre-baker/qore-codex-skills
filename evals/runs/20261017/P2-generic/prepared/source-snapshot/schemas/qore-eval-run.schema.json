@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Recorded specialization diagnostic, separate from Qore method phases",
+  "type": "object",
+  "required": ["schema", "id", "series_id", "scenario_id", "condition", "trial", "candidate_sha256", "input_manifest", "input_manifest_sha256", "condition_resources_sha256", "environment", "resources", "artifacts", "execution", "assessment", "comparison", "limitations", "qore_run"],
+  "properties": {
+    "schema": {"const": "qore-eval-run/1"},
+    "id": {"type": "string", "minLength": 1},
+    "series_id": {"type": "string", "minLength": 1},
+    "scenario_id": {"enum": ["P1", "P2", "R1", "R2", "U1", "U2"]},
+    "condition": {"enum": ["baseline", "generic", "derived"]},
+    "trial": {"type": "integer", "minimum": 1},
+    "candidate_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "input_manifest": {"type": "string", "minLength": 1},
+    "input_manifest_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "condition_resources_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "environment": {"type": "object", "required": ["operator", "host", "model", "actor_id", "tools", "settings", "isolation"]},
+    "resources": {"type": "object", "required": ["caps", "started_at", "ended_at", "children", "tokens", "aggregate_agent_seconds"]},
+    "artifacts": {"type": "array"},
+    "execution": {"type": "object", "required": ["coverage", "evidence"], "properties": {"coverage": {"enum": ["COMPLETE", "PARTIAL", "BLOCKED"]}}},
+    "assessment": {"type": "array"},
+    "comparison": {"type": "object", "required": ["comparability", "decision", "reason", "verification"]},
+    "limitations": {"type": "array", "items": {"type": "string"}},
+    "qore_run": {"type": ["object", "null"]}
+  },
+  "$comment": "tools/evaluate.py additionally checks frozen scenario applicability, contained paths, evidence identities, input mutations, resource envelopes and linked Qore method records. Neither checker establishes factual quality or real isolation from metadata alone."
+}

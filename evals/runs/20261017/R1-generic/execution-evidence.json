@@ -1,0 +1,407 @@
+{
+  "schema": "qore-eval-evidence/1",
+  "run_id": "qore003-20261017-r1-generic-1",
+  "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+  "input_manifest_sha256": "7524a35a5d08ec4b101aa1aa8b05360fd82d841eaec4c8800dbd51590e3e4c25",
+  "observed_at": "2026-10-17T10:15:04.175684+00:00",
+  "payload": {
+    "actual_launch": {
+      "started_at": "2026-10-17T10:09:06.202215+00:00",
+      "argv": [
+        "docker",
+        "exec",
+        "-i",
+        "--workdir",
+        "/workspace/worker",
+        "qore-qualification-qore003-20261017-r1-generic-1",
+        "codex",
+        "--ask-for-approval",
+        "never",
+        "exec",
+        "--ignore-user-config",
+        "--ignore-rules",
+        "--ephemeral",
+        "--json",
+        "--skip-git-repo-check",
+        "--strict-config",
+        "-m",
+        "gpt-6.1-sol",
+        "-c",
+        "default_permissions=\"qore-trial\"",
+        "-c",
+        "permissions.qore-trial.extends=\":workspace\"",
+        "-c",
+        "permissions.qore-trial.filesystem={\":root\"=\"deny\",\":minimal\"=\"read\",\":tmpdir\"=\"write\",\":slash_tmp\"=\"write\",\":workspace_roots\"={\".\"=\"read\"},\"/workspace/output\"=\"write\"}",
+        "-c",
+        "permissions.qore-trial.network.enabled=false",
+        "-c",
+        "allow_login_shell=false",
+        "-c",
+        "web_search=\"disabled\"",
+        "-c",
+        "model_reasoning_effort=\"high\"",
+        "-c",
+        "service_tier=\"default\"",
+        "-c",
+        "features.multi_agent=true",
+        "-c",
+        "agents.max_threads=3",
+        "-c",
+        "features.apps=false",
+        "-c",
+        "features.plugins=false",
+        "-c",
+        "features.remote_plugin=false",
+        "-c",
+        "features.memories=false",
+        "-c",
+        "features.skill_search=false",
+        "-c",
+        "features.skill_mcp_dependency_install=false",
+        "-c",
+        "features.request_permissions_tool=false",
+        "-c",
+        "mcp_servers={}",
+        "-"
+      ],
+      "prompt_sha256": "a712728b6cd06bc9976cb573f2a068891780d3b97f988759959decbe9d7c7e8a"
+    },
+    "actual_exit": {
+      "started_at": "2026-10-17T10:09:06.202215+00:00",
+      "ended_at": "2026-10-17T10:15:04.175684+00:00",
+      "exit_code": 0
+    },
+    "native_parent_usage": {
+      "input_tokens": 992142,
+      "cached_input_tokens": 935552,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 14394,
+      "reasoning_output_tokens": 3465
+    },
+    "outputs": [
+      {
+        "path": "final-output/REPORT.md",
+        "sha256": "8a0c46c46eeb9ec6ba943bfd10980ec1eaad837707885c0af53ee31df05ffb98"
+      },
+      {
+        "path": "final-output/build-execution.py",
+        "sha256": "573626c40604631c50423b497c0b5b7f76d941af64fa1b2667fb09c46c721e18"
+      },
+      {
+        "path": "final-output/evidence/REPORT.md",
+        "sha256": "8a0c46c46eeb9ec6ba943bfd10980ec1eaad837707885c0af53ee31df05ffb98"
+      },
+      {
+        "path": "final-output/evidence/agents-probe.json",
+        "sha256": "6cf75ebd41ad5322a1313e88299f86b6fa8b56d932c8a9b10a2a508945bca643"
+      },
+      {
+        "path": "final-output/evidence/candidates-correctness.json",
+        "sha256": "0b14cab4004405d6289b3179bdde7f3083c61050afd0206ec68ba88e416b14e8"
+      },
+      {
+        "path": "final-output/evidence/candidates-feasibility.json",
+        "sha256": "519ecb5a8cf2b83d2139600763d8479a00a4a942b103f9206d7ad246e6cdf245"
+      },
+      {
+        "path": "final-output/evidence/candidates-security.json",
+        "sha256": "af350dd85f65dff535791efae73d84a2a21ba4fa7d4a7c0a76f0ba7935a91f0e"
+      },
+      {
+        "path": "final-output/evidence/capability-and-commands.json",
+        "sha256": "2796c947816b7d27a8af9160f55ff4eeb39b0f9b7858f68975d5c2196d2083ae"
+      },
+      {
+        "path": "final-output/evidence/claims.json",
+        "sha256": "4987d00709b35420b5121550c72a81bfbf3ae257560e74a0a86810612c7ba8b0"
+      },
+      {
+        "path": "final-output/evidence/contract-check.json",
+        "sha256": "5f050cb42a1b10ecb3a0ce054758b3729f580bba750c9515740d9ccf340a88f4"
+      },
+      {
+        "path": "final-output/evidence/correctness-check-output.json",
+        "sha256": "7f557ba27626c65e7eb10c7b17773f82e9feae273715b633b694723f87b3c1ee"
+      },
+      {
+        "path": "final-output/evidence/execution.json",
+        "sha256": "5eff62aac3cde7efe88e60806a79a6bd7652dc376c780958377a265213bba858"
+      },
+      {
+        "path": "final-output/evidence/feasibility-check-output.txt",
+        "sha256": "c1cf75842c133a58f87585a3de684fc6c8f7370913bb4210d029e4e10f4d63f5"
+      },
+      {
+        "path": "final-output/evidence/finder-correctness.md",
+        "sha256": "8249978d0dd3923b010e6a3c0b9670275443859b830ee9556737a538c28634fc"
+      },
+      {
+        "path": "final-output/evidence/finder-feasibility.md",
+        "sha256": "9d65cf91f5c1d68a328d00725940cafa7068f14b3bf6190cb73f639058f883ca"
+      },
+      {
+        "path": "final-output/evidence/finder-security.md",
+        "sha256": "216b672bab11bba7cf94c241a0046bf3b85245d2b8c4575cf9a4cb3f25300d82"
+      },
+      {
+        "path": "final-output/evidence/finding-lint-output.json",
+        "sha256": "c606242839ccf3ed7fd54359e0a7dd3688198c7add18fd883fa2765214e83e3f"
+      },
+      {
+        "path": "final-output/evidence/finding-lint.stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "final-output/evidence/findings.json",
+        "sha256": "dc0a332746cd9e444b27ced87ba71187ef8d6fc7fc9263a15ea4c96e4c6fe67d"
+      },
+      {
+        "path": "final-output/evidence/input-integrity-final.json",
+        "sha256": "c9bdeb841e79682ef3cb323d69c5ef560889d15ae8f9b0365bc06e98d6ed8d96"
+      },
+      {
+        "path": "final-output/evidence/input-manifest.json",
+        "sha256": "b743bbbb2c8ac4a43e750d114b53444f84e19a73d33660db21f7477f1f5519b4"
+      },
+      {
+        "path": "final-output/evidence/metadata.json",
+        "sha256": "bf66a0397161b226e32b86bb21002dd495d212a7f8900dadee7140e9cb4ba9d8"
+      },
+      {
+        "path": "final-output/evidence/node-probe.json",
+        "sha256": "af99d9915c3981e01604be81830e89eeb0af1a08bec9b7c3f4e366088c54b3d1"
+      },
+      {
+        "path": "final-output/evidence/orchestration.json",
+        "sha256": "5935fd82a30209c49d6d5f66e544555b58ed4b66a394dcd30a244a1b17f3b0f3"
+      },
+      {
+        "path": "final-output/evidence/phase-finder-correctness.json",
+        "sha256": "0ae713871bb7885b4341e89981fa7145f3f205f778b94ec524c40c833130740e"
+      },
+      {
+        "path": "final-output/evidence/phase-finder-feasibility.json",
+        "sha256": "73234766bc8e339638b60f95cbf6f5716523e2133f722d699009e9dee3736c0d"
+      },
+      {
+        "path": "final-output/evidence/phase-finder-security.json",
+        "sha256": "f1d5e9c9e30ebcaf9f6b6181012fd99417d1d81de549e1219acf8f38536c50aa"
+      },
+      {
+        "path": "final-output/evidence/phase-findings-validation.json",
+        "sha256": "759c0d6eeefed6a1d5a0368ef905714c4fe14ffd1bf49d9ceec2b138a43422ec"
+      },
+      {
+        "path": "final-output/evidence/phase-redaction.json",
+        "sha256": "3a396095c827b5aa799301baf0bbc3311e994a7843f6153a15265ace9fa27094"
+      },
+      {
+        "path": "final-output/evidence/phase-verifier.json",
+        "sha256": "fc340ee97bd663263da223e49fcfe67d15022382cd07f8a028172654d4edea97"
+      },
+      {
+        "path": "final-output/evidence/python-probe.json",
+        "sha256": "c0b090e2f636bc8542190bde6d5d46c52a789c42fc82bbe25644abc06c5ac365"
+      },
+      {
+        "path": "final-output/evidence/redactor.stderr.txt",
+        "sha256": "658cb5061e5ff9dfe7edc8ebc6f465b9d09efdd5fa497afec9044d2fabdc00b5"
+      },
+      {
+        "path": "final-output/evidence/roster.json",
+        "sha256": "28b1afece8aae388c7c01005294f894dedc7a1c7468b1f21cb99fbdaa0b0b557"
+      },
+      {
+        "path": "final-output/evidence/sources/.agents/skills/qore-review/SKILL.md",
+        "sha256": "ae7a3bc448eda7262fa8163a67b0ce712efc2779eaaf00ce57618dc966dd6367"
+      },
+      {
+        "path": "final-output/evidence/sources/.agents/skills/qore-review/agents/openai.yaml",
+        "sha256": "6c689fd93445ab3edcb6b88320e7680ee37c746bca5635e8c406304b081250ed"
+      },
+      {
+        "path": "final-output/evidence/sources/.agents/skills/qore-review/references/findings.md",
+        "sha256": "f9f9035e471c9832c6546e80e4fe857777fefceba781bd5801ee8f97bdeaa409"
+      },
+      {
+        "path": "final-output/evidence/sources/.agents/skills/qore-review/references/project-profile.md",
+        "sha256": "5d3b69aac18f83a634f4c57c214cc1f53fa186c03c536adcefd4c905a8767c8d"
+      },
+      {
+        "path": "final-output/evidence/sources/.agents/skills/qore-review/references/protocol.md",
+        "sha256": "e27e0050fdf4d75d2840dd257b9a759f1f48d459ef540990cd3aed5528c5f340"
+      },
+      {
+        "path": "final-output/evidence/sources/.agents/skills/qore-review/references/release.json",
+        "sha256": "ea208126d9987aa696258167c08654a7abdf2ead6a83718e8e14be210c37af58"
+      },
+      {
+        "path": "final-output/evidence/sources/.agents/skills/qore-review/references/run-evidence.md",
+        "sha256": "fbdf433ef8b3e972f97bed5fdec4990cf3b49535bf63120c729a7daf4af71746"
+      },
+      {
+        "path": "final-output/evidence/sources/.agents/skills/qore-review/scripts/finding-lint.mjs",
+        "sha256": "d3d22ae7d0b1b6b53b36006f13a8aaf6e1aa9e89df27b98312e6ac72ea079a26"
+      },
+      {
+        "path": "final-output/evidence/sources/.agents/skills/qore-review/scripts/project-check.py",
+        "sha256": "d87afa433fe485bdebca3e281d06e0896e4a8980ea7cf7baee739053614ea0ac"
+      },
+      {
+        "path": "final-output/evidence/sources/.agents/skills/qore-review/scripts/redact-for-verifier.mjs",
+        "sha256": "dc249524c749ad5b511aef0a2cf08b4cfd5c47c1e0de4fd41c5c70746b471083"
+      },
+      {
+        "path": "final-output/evidence/sources/.agents/skills/qore-review/scripts/run-check.py",
+        "sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa"
+      },
+      {
+        "path": "final-output/evidence/sources/TASK.md",
+        "sha256": "14529cc0572da58ddcb7f3a8e0e1e83a605496b8ee29a27d2bf6cade91531702"
+      },
+      {
+        "path": "final-output/evidence/sources/checks/check_contract.py",
+        "sha256": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b"
+      },
+      {
+        "path": "final-output/evidence/sources/observation-policy.json",
+        "sha256": "15f4e5b4960b5011684be265f027e42b8637a3b8aae96b24bba1ba3a4d0f0202"
+      },
+      {
+        "path": "final-output/evidence/sources/surface-contract.json",
+        "sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3"
+      },
+      {
+        "path": "final-output/evidence/sources/target/verification-protocol.md",
+        "sha256": "b8d1f4ad7bd691dbf8f019cd3b87a7644a21899e6317edebac545fd3b245136e"
+      },
+      {
+        "path": "final-output/evidence/verification-coverage.json",
+        "sha256": "6c01104b406e324ac1889854de22edceadae843296827bf83f5640f29c88a171"
+      },
+      {
+        "path": "final-output/evidence/verified.json",
+        "sha256": "2bd527f854d13769df5e44b8eb587474361db83d7dc4a5fe3dceb6ca8ff3c162"
+      },
+      {
+        "path": "final-output/evidence/verifier-checks.json",
+        "sha256": "0b58328ff75893041e9d3e803cd9bb1e575830bd64d0b0463c864ed9d330402d"
+      },
+      {
+        "path": "final-output/evidence/verifier-report.md",
+        "sha256": "2198bb4c09f679f819db0a478890fad29b40e5464e7380e36f096098a558bda2"
+      },
+      {
+        "path": "final-output/evidence/verifier-reproduce-output.txt",
+        "sha256": "ae14a30e57d0846591a1ab8f13342737f24b04ca12e62eb5915f9f4cb1d92c05"
+      },
+      {
+        "path": "final-output/evidence/verifier-reproduce.py",
+        "sha256": "ac925f62dc2750cfd964fab01c6d9a6b32871f0a67d486c9521a916854e172bc"
+      },
+      {
+        "path": "final-output/evidence/verifier-write-report-output.txt",
+        "sha256": "e950306ae4c098a9840ec1f47140ef90bfe473b9ee80292ae248a8255219a785"
+      },
+      {
+        "path": "final-output/evidence/verifier-write-report.py",
+        "sha256": "f57011215d7638f95d764cdcd7aeda5990f2d1955a5f7c0fdcf70dc604a597a3"
+      },
+      {
+        "path": "final-output/execution.json",
+        "sha256": "5eff62aac3cde7efe88e60806a79a6bd7652dc376c780958377a265213bba858"
+      },
+      {
+        "path": "final-output/metadata.json",
+        "sha256": "bf66a0397161b226e32b86bb21002dd495d212a7f8900dadee7140e9cb4ba9d8"
+      },
+      {
+        "path": "final-output/roster.json",
+        "sha256": "28b1afece8aae388c7c01005294f894dedc7a1c7468b1f21cb99fbdaa0b0b557"
+      },
+      {
+        "path": "final-output/run-check-command.json",
+        "sha256": "2562351febfc72df52054d0456eae7ca1857fb6f37f3c316222a9213e63c748f"
+      },
+      {
+        "path": "final-output/run-check-output.json",
+        "sha256": "a66a74fd1eba43e124073769c3aa03575a7c4d923db4839c5efca84b327572c6"
+      },
+      {
+        "path": "final-output/run-check.stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "final-output/write-canary",
+        "sha256": "2d711642b726b04401627ca9fbac32f5c8530fb1903cc4db02258717921a4881"
+      }
+    ],
+    "post_inputs": [
+      {
+        "path": ".agents/skills/qore-review/SKILL.md",
+        "sha256": "ae7a3bc448eda7262fa8163a67b0ce712efc2779eaaf00ce57618dc966dd6367"
+      },
+      {
+        "path": ".agents/skills/qore-review/agents/openai.yaml",
+        "sha256": "6c689fd93445ab3edcb6b88320e7680ee37c746bca5635e8c406304b081250ed"
+      },
+      {
+        "path": ".agents/skills/qore-review/references/findings.md",
+        "sha256": "f9f9035e471c9832c6546e80e4fe857777fefceba781bd5801ee8f97bdeaa409"
+      },
+      {
+        "path": ".agents/skills/qore-review/references/project-profile.md",
+        "sha256": "5d3b69aac18f83a634f4c57c214cc1f53fa186c03c536adcefd4c905a8767c8d"
+      },
+      {
+        "path": ".agents/skills/qore-review/references/protocol.md",
+        "sha256": "e27e0050fdf4d75d2840dd257b9a759f1f48d459ef540990cd3aed5528c5f340"
+      },
+      {
+        "path": ".agents/skills/qore-review/references/release.json",
+        "sha256": "ea208126d9987aa696258167c08654a7abdf2ead6a83718e8e14be210c37af58"
+      },
+      {
+        "path": ".agents/skills/qore-review/references/run-evidence.md",
+        "sha256": "fbdf433ef8b3e972f97bed5fdec4990cf3b49535bf63120c729a7daf4af71746"
+      },
+      {
+        "path": ".agents/skills/qore-review/scripts/finding-lint.mjs",
+        "sha256": "d3d22ae7d0b1b6b53b36006f13a8aaf6e1aa9e89df27b98312e6ac72ea079a26"
+      },
+      {
+        "path": ".agents/skills/qore-review/scripts/project-check.py",
+        "sha256": "d87afa433fe485bdebca3e281d06e0896e4a8980ea7cf7baee739053614ea0ac"
+      },
+      {
+        "path": ".agents/skills/qore-review/scripts/redact-for-verifier.mjs",
+        "sha256": "dc249524c749ad5b511aef0a2cf08b4cfd5c47c1e0de4fd41c5c70746b471083"
+      },
+      {
+        "path": ".agents/skills/qore-review/scripts/run-check.py",
+        "sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa"
+      },
+      {
+        "path": "TASK.md",
+        "sha256": "14529cc0572da58ddcb7f3a8e0e1e83a605496b8ee29a27d2bf6cade91531702"
+      },
+      {
+        "path": "checks/check_contract.py",
+        "sha256": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b"
+      },
+      {
+        "path": "observation-policy.json",
+        "sha256": "15f4e5b4960b5011684be265f027e42b8637a3b8aae96b24bba1ba3a4d0f0202"
+      },
+      {
+        "path": "surface-contract.json",
+        "sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3"
+      },
+      {
+        "path": "target/verification-protocol.md",
+        "sha256": "b8d1f4ad7bd691dbf8f019cd3b87a7644a21899e6317edebac545fd3b245136e"
+      }
+    ],
+    "limit": "Retained actual output identities and execution receipts; this wrapper does not grade task correctness."
+  }
+}

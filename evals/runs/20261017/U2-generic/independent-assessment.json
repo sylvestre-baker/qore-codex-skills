@@ -1,0 +1,152 @@
+{
+  "schema": "qore-selected-independent-assessment/1",
+  "run_id": "qore003-20261017-u2-generic-1",
+  "neutral_id": "N07",
+  "source_raw_sha256": "404ef3238ecc80b8d8e9a01f96e43fa6b8a09f28022ed17a009a022488b031af",
+  "public_source": "evals/campaign-20261017/assessments/ux-U2/N07/assessment.json",
+  "public_source_sha256": "404ef3238ecc80b8d8e9a01f96e43fa6b8a09f28022ed17a009a022488b031af",
+  "assessor": "/root/campaign_ux_assessor",
+  "original_case_assessment": {
+    "schema": "qore003-independent-ux-assessment/1",
+    "neutral_id": "N07",
+    "scenario_id": "U2",
+    "actor_id": "/root/campaign_ux_assessor",
+    "timing": {
+      "started_at_utc": "2026-10-17T12:05:15+00:00",
+      "finalized_at_utc": "2026-10-17T12:13:34.032690+00:00",
+      "accounted_window_seconds": 499.03269,
+      "cap_seconds": 300,
+      "cap_overrun_seconds": 199.03269,
+      "prior_evaluator_seconds": 539.22,
+      "conservative_cumulative_seconds": 1038.25269,
+      "interrupted_finalization": true,
+      "timing_limit": "Actual start and save time retained. Window includes the interruption/finalization interval; precise active versus interrupted seconds were not independently metered. Entire elapsed window is conservatively charged; no end time was backdated. Final inspection stopped before this save."
+    },
+    "finalization_status": "Saved from retained reviewed evidence after interruption and cap overrun; no further source inspection.",
+    "criteria": [
+      {
+        "id": "K1",
+        "status": "MET",
+        "reason": "Actual source rules and distinct destinations are represented correctly. Request3 proves help Enter/Space/reopen/Close with summary restoration; request5 repeats Close restoration. Back separately restores introduction h1.",
+        "evidence": [
+          "input/surface-contract.json:11-16",
+          "observation-3/actions.json",
+          "observation-3/raw/events.json",
+          "observation-3/raw/06-help-closed-close-focus.dom.json#/active_element",
+          "observation-5/raw/06-challenged-close-restored.dom.json#/active_element",
+          "observation-5/raw/08-challenged-returned-introduction.dom.json#/active_element"
+        ],
+        "uncertainty": "K2 is not applicable to U2; no extra frozen criterion added."
+      },
+      {
+        "id": "K3",
+        "status": "MET",
+        "reason": "No answer activations; no-checked assertions pass while question exists, and Next remains disabled. Matching operator code/policy enforce approved native activations, read-only requests and allowed document origins. Expected analytics POSTs are blocked.",
+        "evidence": [
+          "observation-3/raw/events.json",
+          "observation-5/raw/events.json",
+          "operator/live-policy.json",
+          "operator/browser_probe.mjs:91-165",
+          "operator/browser_probe.mjs:184-213",
+          "operator/browser_probe.mjs:330-347"
+        ],
+        "uncertainty": "Cooperative observation guard, not exhaustive security isolation. No deliberate adversarial origin activation attempted."
+      },
+      {
+        "id": "K4",
+        "status": "MET",
+        "reason": "Raw evidence and explicit uncertainty are retained. Requests2/4 are correctly observation locator failures, not site defects. Report discloses full-page geometry and deployment limits and refutes broader failed-Back/focus claims.",
+        "evidence": [
+          "output/REPORT.md:7-9",
+          "output/REPORT.md:37-43",
+          "output/evidence/iteration-1-report.md",
+          "output/evidence/iteration-3-report.md"
+        ],
+        "uncertainty": "This credits explicit limits; it does not certify the product severity or DO-NOT-SHIP rationale."
+      },
+      {
+        "id": "K8",
+        "status": "UNKNOWN",
+        "reason": "Scoped help-pass and PARTIAL loop completion are supported. The global DO-NOT-SHIP rationale additionally treats full-page captured Back concealment as a medium product defect. Actual viewport impact/severity cannot be resolved from retained images and semantic DOM alone.",
+        "evidence": [
+          "output/REPORT.md:3",
+          "output/REPORT.md:7",
+          "observation-5/raw/07-back-focused.png",
+          "observation-5/raw/07-back-focused.dom.json",
+          "operator/browser_probe.mjs:231-246"
+        ],
+        "counterexample": "A full-page screenshot procedure can repeatedly place fixed/sticky chrome across document content; semantic Back focus plus those pixels does not independently measure viewport occlusion. Conversely artifact causation is not proven.",
+        "uncertainty": "Viewport-only capture and simultaneous scroll/rectangles would distinguish the hypotheses. No further inspection permitted after cap."
+      }
+    ],
+    "worker_original_global_verdict": "DO-NOT-SHIP",
+    "worker_original_coverage": {
+      "loop": "PARTIAL",
+      "scoped_observations": "COMPLETE",
+      "phase_execution": "COMPLETE"
+    },
+    "original_worker_artifacts_preserved": true,
+    "task_support": "SUPPORTED_HELP_JOURNEY",
+    "method_assessment": {
+      "loop_coverage": "PARTIAL_SUPPORTED",
+      "scope_observations": "Supported within explicit help/Close/Back plus entered-route reload/history matrix.",
+      "phase_execution": "Five phase reports and structural validation retained; structural validity does not prove reasoning or fix completion.",
+      "initial_required_gates": [
+        "G0",
+        "G1",
+        "G2",
+        "G3",
+        "G4",
+        "G5",
+        "G6"
+      ],
+      "scope_boundary": "Initial matrix defines G1 as reload entered route and real-entry Back/Forward, with no route-state permutations. No separate cold-context criterion is introduced in this assessment. General standalone deep-entry behavior remains untested, not a website defect or retroactive task failure.",
+      "tool_limits": "Missing viewport geometry limits product-impact confidence; it is not treated as product non-applicability.",
+      "stop": "Actual STOP_PLATEAU/PARTIAL preserved; incomplete attempts contribute to no-improvement count as explicitly disclosed."
+    },
+    "material_candidates": [
+      {
+        "id": "F1",
+        "status": "UNRESOLVED_PRODUCT_CANDIDATE",
+        "category": "suggestion",
+        "supported_observation": "Viewed request5 Back-focused full-page PNG hides label and most outline; paired DOM identifies Back active.",
+        "not_established": [
+          "Runtime viewport overlap geometry",
+          "Medium product severity",
+          "Confirmed product blocker or implementation cause"
+        ],
+        "counterevidence": "Close outline visible; Close restores summary; Tab reaches Back and Enter restores h1 in actual events.",
+        "next_evidence": "Viewport-only capture plus simultaneous scroll offsets and control/banner rectangles, in a separately authorized observation.",
+        "confirmed_implementation_issue": false
+      }
+    ],
+    "corrected_worker_failures": [
+      {
+        "request": 2,
+        "classification": "worker failure",
+        "observation": "Exact role/name Start locator refused before help actions.",
+        "resolution": "Request3 uses supported native selector and completes journey; unexecuted tail not counted."
+      },
+      {
+        "request": 4,
+        "classification": "worker failure",
+        "observation": "Exact uppercase Labs text assertion times out after history Back.",
+        "resolution": "Request5 captures h1 and actual history states; not a website defect."
+      }
+    ],
+    "comparability": {
+      "supported": "Same declared public URLs, exact operator harness/policy identities, fresh contexts, DOM viewport/language and default appearance within this case.",
+      "unknown": "Live deployment source revision and unrestricted real-user behavior; no cross-case or treatment comparison made."
+    },
+    "blinding": "Not blinded: generic skill references and run labels reveal treatment clues. Neutral names do not guarantee blindness.",
+    "no_comparative_inference": true,
+    "artifacts": [
+      "REPORT.md",
+      "inspection-inventory.json"
+    ]
+  },
+  "limits": [
+    "Neutral filenames did not blind conditions.",
+    "The raw criterion judgments concern their declared task scope; later method-coverage qualification is separate."
+  ]
+}

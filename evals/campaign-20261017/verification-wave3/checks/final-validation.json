@@ -1,0 +1,12 @@
+{
+  "observed_at": "2026-10-17T11:19:52.772674+00:00",
+  "strict_envelope_valid": true,
+  "original_medium_severity_retained": true,
+  "all_19_original_files_unchanged": true,
+  "original_COMPLETE_retained": true,
+  "finding_counts": {
+    "CONFIRMED": 1,
+    "PLAUSIBLE": 0,
+    "REFUTED": 0
+  }
+}

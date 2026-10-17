@@ -1,0 +1,826 @@
+{
+  "observed_at": "2026-10-17T12:22:39.391961+00:00",
+  "scope": "Existing original cells, assessments, phase artifacts and browser action records; no trial/model/browser rerun.",
+  "runs": {
+    "N01": {
+      "cell": "R2-derived",
+      "original_execution_coverage": "COMPLETE",
+      "original_evaluation_sha256": "d865bb3c2c5b89e22c23d42997c8a44b4899a47f0d12ee5453e2c6742fe4cdcf",
+      "assessment_source": "assessments/review-R2/assessment.json",
+      "phase_inventory": [
+        {
+          "id": "profile_preflight",
+          "status": "PASS"
+        },
+        {
+          "id": "finder.correctness",
+          "status": "PASS"
+        },
+        {
+          "id": "finder.security",
+          "status": "PASS"
+        },
+        {
+          "id": "finder.feasibility",
+          "status": "PASS"
+        },
+        {
+          "id": "redaction",
+          "status": "PASS"
+        },
+        {
+          "id": "verifier",
+          "status": "PASS"
+        },
+        {
+          "id": "findings_validation",
+          "status": "PASS"
+        }
+      ],
+      "assessment_sha256": "ce988b014da2a54e5c9afe50ea95c46766a3ab1242d466ae5da6b976e97b36a6",
+      "qore_run_path": "trials/R2-derived/final-output/evidence/execution.json",
+      "qore_run_digest_matches": true,
+      "qore_coverage": "COMPLETE",
+      "artifact_count": 55,
+      "missing_artifacts": [],
+      "digest_mismatches": [],
+      "required_phases": [
+        "profile_preflight",
+        "finder.correctness",
+        "finder.security",
+        "finder.feasibility",
+        "redaction",
+        "verifier",
+        "findings_validation"
+      ]
+    },
+    "N02": {
+      "cell": "P1-generic",
+      "original_execution_coverage": "COMPLETE",
+      "original_evaluation_sha256": "fda436badbe8c949d93755f479edc359200fb8d62bb311765dfbc8a3bfee78ba",
+      "assessment_source": "assessments/plan-first/N02-plan-assessment.json",
+      "phase_inventory": [
+        {
+          "id": "product",
+          "status": "PASS"
+        },
+        {
+          "id": "architecture",
+          "status": "PASS"
+        },
+        {
+          "id": "ux",
+          "status": "PASS"
+        },
+        {
+          "id": "delivery",
+          "status": "PASS"
+        },
+        {
+          "id": "qa",
+          "status": "PASS"
+        },
+        {
+          "id": "adjudication",
+          "status": "PASS"
+        },
+        {
+          "id": "spec_validation",
+          "status": "PASS"
+        }
+      ],
+      "assessment_sha256": "811e0b358b234ee95f124d2c5dacf3fdb19cb23ba9a17f9d9534138f5421c118",
+      "qore_run_path": "trials/P1-generic/final-output/execution.json",
+      "qore_run_digest_matches": true,
+      "qore_coverage": "COMPLETE",
+      "artifact_count": 53,
+      "missing_artifacts": [],
+      "digest_mismatches": [],
+      "required_phases": [
+        "product",
+        "architecture",
+        "ux",
+        "delivery",
+        "qa",
+        "adjudication",
+        "spec_validation"
+      ]
+    },
+    "N03": {
+      "cell": "R1-generic",
+      "original_execution_coverage": "COMPLETE",
+      "original_evaluation_sha256": "feca5acb33a95090c3764d3b1fb56ca159f54aff2ec557062ffc08a71d2ef7e3",
+      "assessment_source": "assessments/review-R1/assessment.json",
+      "phase_inventory": [
+        {
+          "id": "finder.correctness",
+          "status": "PASS"
+        },
+        {
+          "id": "finder.security",
+          "status": "PASS"
+        },
+        {
+          "id": "finder.feasibility",
+          "status": "PASS"
+        },
+        {
+          "id": "redaction",
+          "status": "PASS"
+        },
+        {
+          "id": "verifier",
+          "status": "PASS"
+        },
+        {
+          "id": "findings_validation",
+          "status": "PASS"
+        }
+      ],
+      "assessment_sha256": "2de2ee8b2d71992b0d2822185f58db4b60ec307617487c2c7c77568e97955f27",
+      "qore_run_path": "trials/R1-generic/final-output/evidence/execution.json",
+      "qore_run_digest_matches": true,
+      "qore_coverage": "COMPLETE",
+      "artifact_count": 54,
+      "missing_artifacts": [],
+      "digest_mismatches": [],
+      "required_phases": [
+        "finder.correctness",
+        "finder.security",
+        "finder.feasibility",
+        "redaction",
+        "verifier",
+        "findings_validation"
+      ]
+    },
+    "N04": {
+      "cell": "P2-derived",
+      "original_execution_coverage": "COMPLETE",
+      "original_evaluation_sha256": "ff049cc1016cb492d02e97f554046e5b6081a9aaa951654a08569cee11612338",
+      "assessment_source": "assessments/plan-P2/N04-plan-assessment.json",
+      "phase_inventory": [
+        {
+          "id": "profile_preflight",
+          "status": "PASS"
+        },
+        {
+          "id": "product",
+          "status": "PASS"
+        },
+        {
+          "id": "architecture",
+          "status": "PASS"
+        },
+        {
+          "id": "ux",
+          "status": "PASS"
+        },
+        {
+          "id": "delivery",
+          "status": "PASS"
+        },
+        {
+          "id": "qa",
+          "status": "PASS"
+        },
+        {
+          "id": "claim_filter",
+          "status": "PASS"
+        },
+        {
+          "id": "verifier",
+          "status": "PASS"
+        },
+        {
+          "id": "adjudication",
+          "status": "PASS"
+        },
+        {
+          "id": "contract_check",
+          "status": "PASS"
+        },
+        {
+          "id": "input_integrity",
+          "status": "PASS"
+        },
+        {
+          "id": "spec_validation",
+          "status": "PASS"
+        }
+      ],
+      "assessment_sha256": "bcae26bbc4b8832807bb1f4a7f2014ed51e3d1da84249d4b74b29546745b6ece",
+      "qore_run_path": "trials/P2-derived/final-output/execution.json",
+      "qore_run_digest_matches": true,
+      "qore_coverage": "COMPLETE",
+      "artifact_count": 69,
+      "missing_artifacts": [],
+      "digest_mismatches": [],
+      "required_phases": [
+        "profile_preflight",
+        "product",
+        "architecture",
+        "ux",
+        "delivery",
+        "qa",
+        "claim_filter",
+        "verifier",
+        "adjudication",
+        "contract_check",
+        "input_integrity",
+        "spec_validation"
+      ]
+    },
+    "N05": {
+      "cell": "U1-baseline",
+      "original_execution_coverage": "COMPLETE",
+      "original_evaluation_sha256": "1fc0a5a91550019981886e9724fef16137282ee0a7543918ebff274f6a93a0ac",
+      "assessment_source": "assessments/ux-baseline/N05/assessment.json",
+      "phase_inventory": null,
+      "assessment_sha256": "3e1a8e846d6865a0068d638f8c9a2889845d7d6eefbb818b30e4d7762799dd06"
+    },
+    "N06": {
+      "cell": "P1-baseline",
+      "original_execution_coverage": "COMPLETE",
+      "original_evaluation_sha256": "a08e61fb4603e65068d5d6a1afb3bc3b2d8ad43c7c6cdfc69cefba64603645d5",
+      "assessment_source": "assessments/plan-P1-rest/N06-plan-assessment.json",
+      "phase_inventory": null,
+      "assessment_sha256": "26a9d3c8094054ae5fed0f53294fec75c6a9bd0b9cd671339683543f083ebfa4"
+    },
+    "N07": {
+      "cell": "U2-generic",
+      "original_execution_coverage": "COMPLETE",
+      "original_evaluation_sha256": "6c4d05d721d287b23a2652f5d71b2e9f0062a1decec6fe0d574446e124fc51c0",
+      "assessment_source": "assessments/ux-U2/N07/assessment.json",
+      "phase_inventory": [
+        {
+          "id": "scope",
+          "status": "PASS"
+        },
+        {
+          "id": "browser",
+          "status": "PASS"
+        },
+        {
+          "id": "state_transition",
+          "status": "PASS"
+        },
+        {
+          "id": "freshness",
+          "status": "PASS"
+        },
+        {
+          "id": "verdict",
+          "status": "PASS"
+        }
+      ],
+      "assessment_sha256": "404ef3238ecc80b8d8e9a01f96e43fa6b8a09f28022ed17a009a022488b031af",
+      "qore_run_path": "trials/U2-generic/final-output/execution.json",
+      "qore_run_digest_matches": true,
+      "qore_coverage": "COMPLETE",
+      "artifact_count": 113,
+      "missing_artifacts": [],
+      "digest_mismatches": [],
+      "required_phases": [
+        "scope",
+        "browser",
+        "state_transition",
+        "freshness",
+        "verdict"
+      ]
+    },
+    "N08": {
+      "cell": "R2-baseline",
+      "original_execution_coverage": "COMPLETE",
+      "original_evaluation_sha256": "d1e949a39d9a8c35a5fea0d6368d472373894383fe7531761cfcc0b1513207f3",
+      "assessment_source": "assessments/review-R2/assessment.json",
+      "phase_inventory": null,
+      "assessment_sha256": "ce988b014da2a54e5c9afe50ea95c46766a3ab1242d466ae5da6b976e97b36a6"
+    },
+    "N09": {
+      "cell": "R1-derived",
+      "original_execution_coverage": "COMPLETE",
+      "original_evaluation_sha256": "7df3a9c11bf803bf3dd351568756b76752e4d8615dfcfec1ef4dd9afcfe2a041",
+      "assessment_source": "assessments/review-R1/assessment.json",
+      "phase_inventory": [
+        {
+          "id": "profile_preflight",
+          "status": "PASS"
+        },
+        {
+          "id": "finder.correctness",
+          "status": "PASS"
+        },
+        {
+          "id": "finder.security",
+          "status": "PASS"
+        },
+        {
+          "id": "finder.feasibility",
+          "status": "PASS"
+        },
+        {
+          "id": "redaction",
+          "status": "PASS"
+        },
+        {
+          "id": "verifier",
+          "status": "PASS"
+        },
+        {
+          "id": "findings_validation",
+          "status": "PASS"
+        }
+      ],
+      "assessment_sha256": "2de2ee8b2d71992b0d2822185f58db4b60ec307617487c2c7c77568e97955f27",
+      "qore_run_path": "trials/R1-derived/final-output/evidence/execution.json",
+      "qore_run_digest_matches": true,
+      "qore_coverage": "COMPLETE",
+      "artifact_count": 63,
+      "missing_artifacts": [],
+      "digest_mismatches": [],
+      "required_phases": [
+        "profile_preflight",
+        "finder.correctness",
+        "finder.security",
+        "finder.feasibility",
+        "redaction",
+        "verifier",
+        "findings_validation"
+      ]
+    },
+    "N10": {
+      "cell": "R2-generic",
+      "original_execution_coverage": "COMPLETE",
+      "original_evaluation_sha256": "50621fb7e23b9c62cbd3caf59a379e6d9092e781e97fbf01add3d4404edc91b5",
+      "assessment_source": "assessments/review-R2/assessment.json",
+      "phase_inventory": [
+        {
+          "id": "finder.correctness",
+          "status": "PASS"
+        },
+        {
+          "id": "finder.security",
+          "status": "PASS"
+        },
+        {
+          "id": "finder.feasibility",
+          "status": "PASS"
+        },
+        {
+          "id": "redaction",
+          "status": "PASS"
+        },
+        {
+          "id": "verifier",
+          "status": "PASS"
+        },
+        {
+          "id": "findings_validation",
+          "status": "PASS"
+        }
+      ],
+      "assessment_sha256": "ce988b014da2a54e5c9afe50ea95c46766a3ab1242d466ae5da6b976e97b36a6",
+      "qore_run_path": "trials/R2-generic/final-output/execution.json",
+      "qore_run_digest_matches": true,
+      "qore_coverage": "COMPLETE",
+      "artifact_count": 61,
+      "missing_artifacts": [],
+      "digest_mismatches": [],
+      "required_phases": [
+        "finder.correctness",
+        "finder.security",
+        "finder.feasibility",
+        "redaction",
+        "verifier",
+        "findings_validation"
+      ]
+    },
+    "N11": {
+      "cell": "U2-derived",
+      "original_execution_coverage": "PARTIAL",
+      "original_evaluation_sha256": "795d89f1996006cd23100aacc62ec92f73f8f92b427dd767bab59f8aaba4a80c",
+      "assessment_source": "assessments/ux-U2/N11/assessment.json",
+      "phase_inventory": [
+        {
+          "id": "profile_preflight",
+          "status": "PASS"
+        },
+        {
+          "id": "scope",
+          "status": "PASS"
+        },
+        {
+          "id": "browser",
+          "status": "PASS"
+        },
+        {
+          "id": "state_transition",
+          "status": "PASS"
+        },
+        {
+          "id": "freshness",
+          "status": "FAIL"
+        },
+        {
+          "id": "verdict",
+          "status": "PASS"
+        }
+      ],
+      "assessment_sha256": "eadcc2bbc3498aa6e9a921d0763a59fbe26500cbb7b74661f7b544ec219ef1ca",
+      "qore_run_path": "trials/U2-derived/final-output/execution.json",
+      "qore_run_digest_matches": true,
+      "qore_coverage": "PARTIAL",
+      "artifact_count": 103,
+      "missing_artifacts": [],
+      "digest_mismatches": [],
+      "required_phases": [
+        "profile_preflight",
+        "scope",
+        "browser",
+        "state_transition",
+        "freshness",
+        "verdict"
+      ]
+    },
+    "N12": {
+      "cell": "U1-derived",
+      "original_execution_coverage": "PARTIAL",
+      "original_evaluation_sha256": "429b17d00f858069105c0b3fbc9b4465586872788f8e320d7aa2f32c8942a3bd",
+      "assessment_source": "assessments/ux-first/N12/assessment.json",
+      "phase_inventory": [
+        {
+          "id": "scope",
+          "status": "PASS"
+        },
+        {
+          "id": "profile_preflight",
+          "status": "PASS"
+        },
+        {
+          "id": "browser",
+          "status": "BLOCKED"
+        },
+        {
+          "id": "state_transition",
+          "status": "PASS"
+        },
+        {
+          "id": "freshness",
+          "status": "PASS"
+        },
+        {
+          "id": "verdict",
+          "status": "PASS"
+        }
+      ],
+      "assessment_sha256": "45b6684c22ef399bc9b4720369d961eec878dd1280021123a26df767da426d49",
+      "qore_run_path": "trials/U1-derived/final-output/execution.json",
+      "qore_run_digest_matches": true,
+      "qore_coverage": "PARTIAL",
+      "artifact_count": 108,
+      "missing_artifacts": [],
+      "digest_mismatches": [],
+      "required_phases": [
+        "scope",
+        "profile_preflight",
+        "browser",
+        "state_transition",
+        "freshness",
+        "verdict"
+      ]
+    },
+    "N13": {
+      "cell": "P2-generic",
+      "original_execution_coverage": "COMPLETE",
+      "original_evaluation_sha256": "e1b6913858d11e43dc031c6170f7953d568930f6e147a4e7e448c3df40e0ddd0",
+      "assessment_source": "assessments/plan-P2/N13-plan-assessment.json",
+      "phase_inventory": [
+        {
+          "id": "product",
+          "status": "PASS"
+        },
+        {
+          "id": "architecture",
+          "status": "PASS"
+        },
+        {
+          "id": "ux",
+          "status": "PASS"
+        },
+        {
+          "id": "delivery",
+          "status": "PASS"
+        },
+        {
+          "id": "qa",
+          "status": "PASS"
+        },
+        {
+          "id": "adjudication",
+          "status": "PASS"
+        },
+        {
+          "id": "spec_validation",
+          "status": "PASS"
+        }
+      ],
+      "assessment_sha256": "e93b3b82b8dfcaf9330035d1a9bf04afbaa2ea2e22ae559db168982f1849079f",
+      "qore_run_path": "trials/P2-generic/final-output/execution.json",
+      "qore_run_digest_matches": true,
+      "qore_coverage": "COMPLETE",
+      "artifact_count": 53,
+      "missing_artifacts": [],
+      "digest_mismatches": [],
+      "required_phases": [
+        "product",
+        "architecture",
+        "ux",
+        "delivery",
+        "qa",
+        "adjudication",
+        "spec_validation"
+      ]
+    },
+    "N14": {
+      "cell": "R1-baseline",
+      "original_execution_coverage": "COMPLETE",
+      "original_evaluation_sha256": "3c6487e9f0ea85a7a16f8b2900cbbde05278102722e70da562607ee19b7b336f",
+      "assessment_source": "assessments/review-R1/assessment.json",
+      "phase_inventory": null,
+      "assessment_sha256": "2de2ee8b2d71992b0d2822185f58db4b60ec307617487c2c7c77568e97955f27"
+    },
+    "N15": {
+      "cell": "U2-baseline",
+      "original_execution_coverage": "COMPLETE",
+      "original_evaluation_sha256": "c158737fcaabb9b26a1345dd75616636300fd55a1c44af8f6b6a25a60784d648",
+      "assessment_source": "assessments/ux-U2/N15/assessment.json",
+      "phase_inventory": null,
+      "assessment_sha256": "504f7445f946590eee273f496108b43b1e347d7fc1f3879a922dd03d5ea862c6"
+    },
+    "N16": {
+      "cell": "U1-generic",
+      "original_execution_coverage": "COMPLETE",
+      "original_evaluation_sha256": "548a51932387e27a0818ad37e449c4f3f0c678780bc36c958f27286267b84e45",
+      "assessment_source": "assessments/ux-generic/N16/assessment.json",
+      "phase_inventory": [
+        {
+          "id": "scope",
+          "status": "PASS"
+        },
+        {
+          "id": "browser",
+          "status": "PASS"
+        },
+        {
+          "id": "state_transition",
+          "status": "PASS"
+        },
+        {
+          "id": "freshness",
+          "status": "PASS"
+        },
+        {
+          "id": "verdict",
+          "status": "PASS"
+        }
+      ],
+      "assessment_sha256": "9a12e807bc99d7214ddd4b7d8a7b7c6ed66925bf631e5da9ff77eea69d83e961",
+      "qore_run_path": "trials/U1-generic/final-output/execution.json",
+      "qore_run_digest_matches": true,
+      "qore_coverage": "COMPLETE",
+      "artifact_count": 89,
+      "missing_artifacts": [],
+      "digest_mismatches": [],
+      "required_phases": [
+        "scope",
+        "browser",
+        "state_transition",
+        "freshness",
+        "verdict"
+      ]
+    },
+    "N17": {
+      "cell": "P1-derived",
+      "original_execution_coverage": "COMPLETE",
+      "original_evaluation_sha256": "ae34a6d988cb23a2e39d9650202b1c062d7403eb44e8679abb7904fe7b62a5e8",
+      "assessment_source": "assessments/plan-P1-rest/N17-plan-assessment.json",
+      "phase_inventory": [
+        {
+          "id": "profile_preflight",
+          "status": "PASS"
+        },
+        {
+          "id": "product",
+          "status": "PASS"
+        },
+        {
+          "id": "architecture",
+          "status": "PASS"
+        },
+        {
+          "id": "ux",
+          "status": "PASS"
+        },
+        {
+          "id": "delivery",
+          "status": "PASS"
+        },
+        {
+          "id": "qa",
+          "status": "PASS"
+        },
+        {
+          "id": "adjudication",
+          "status": "PASS"
+        },
+        {
+          "id": "spec_validation",
+          "status": "PASS"
+        },
+        {
+          "id": "claim_verification",
+          "status": "PASS"
+        }
+      ],
+      "assessment_sha256": "6b3401ac535da25f5d501b917c91c0a284c7bea7f651b30295482f6ad6453008",
+      "qore_run_path": "trials/P1-derived/final-output/execution.json",
+      "qore_run_digest_matches": true,
+      "qore_coverage": "COMPLETE",
+      "artifact_count": 62,
+      "missing_artifacts": [],
+      "digest_mismatches": [],
+      "required_phases": [
+        "profile_preflight",
+        "product",
+        "architecture",
+        "ux",
+        "delivery",
+        "qa",
+        "adjudication",
+        "spec_validation",
+        "claim_verification"
+      ]
+    },
+    "N18": {
+      "cell": "P2-baseline",
+      "original_execution_coverage": "COMPLETE",
+      "original_evaluation_sha256": "23d766a8965c2d646b6aa61625bf7c988de7874d122937cb69e969cc798b9496",
+      "assessment_source": "assessments/plan-P2/N18-plan-assessment.json",
+      "phase_inventory": null,
+      "assessment_sha256": "5a3f68586e72c20a6b87f623a95ecd26b8b4e45ddf049a2499419c7717c07ebc"
+    }
+  },
+  "ux_direct_entry_inventory": {
+    "N07": [
+      {
+        "command": "assessment-inputs/N07/observation-1/command.json",
+        "initial_url": "https://qaizen.io/labs",
+        "actions_path": "assessment-inputs/N07/observation-1/actions.json",
+        "action_types": []
+      },
+      {
+        "command": "assessment-inputs/N07/observation-2/command.json",
+        "initial_url": "https://qaizen.io/labs",
+        "actions_path": "assessment-inputs/N07/observation-2/actions.json",
+        "action_types": [
+          "assert-attribute",
+          "assert-focused",
+          "assert-none-checked",
+          "assert-url",
+          "click",
+          "keyboard",
+          "snapshot",
+          "traverse-focus"
+        ]
+      },
+      {
+        "command": "assessment-inputs/N07/observation-3/command.json",
+        "initial_url": "https://qaizen.io/labs",
+        "actions_path": "assessment-inputs/N07/observation-3/actions.json",
+        "action_types": [
+          "assert-attribute",
+          "assert-focused",
+          "assert-none-checked",
+          "assert-url",
+          "click",
+          "keyboard",
+          "snapshot",
+          "traverse-focus"
+        ]
+      },
+      {
+        "command": "assessment-inputs/N07/observation-4/command.json",
+        "initial_url": "https://qaizen.io/labs",
+        "actions_path": "assessment-inputs/N07/observation-4/actions.json",
+        "action_types": [
+          "assert-attribute",
+          "assert-focused",
+          "assert-hidden",
+          "assert-none-checked",
+          "assert-text",
+          "assert-url",
+          "assert-visible",
+          "click",
+          "history-back",
+          "history-forward",
+          "keyboard",
+          "reload",
+          "snapshot",
+          "traverse-focus"
+        ]
+      },
+      {
+        "command": "assessment-inputs/N07/observation-5/command.json",
+        "initial_url": "https://qaizen.io/labs",
+        "actions_path": "assessment-inputs/N07/observation-5/actions.json",
+        "action_types": [
+          "assert-attribute",
+          "assert-focused",
+          "assert-hidden",
+          "assert-none-checked",
+          "assert-text",
+          "assert-url",
+          "assert-visible",
+          "click",
+          "history-back",
+          "history-forward",
+          "keyboard",
+          "reload",
+          "snapshot",
+          "traverse-focus"
+        ]
+      }
+    ],
+    "N11": [
+      {
+        "command": "assessment-inputs/N11/observation-1/command.json",
+        "initial_url": "https://qaizen.io/labs",
+        "actions_path": "assessment-inputs/N11/observation-1/actions.json",
+        "action_types": []
+      },
+      {
+        "command": "assessment-inputs/N11/observation-2/command.json",
+        "initial_url": "https://qaizen.io/labs",
+        "actions_path": "assessment-inputs/N11/observation-2/actions.json",
+        "action_types": [
+          "assert-focused",
+          "assert-hidden",
+          "assert-none-checked",
+          "assert-url",
+          "assert-visible",
+          "click",
+          "keyboard",
+          "reload",
+          "snapshot",
+          "traverse-focus"
+        ]
+      },
+      {
+        "command": "assessment-inputs/N11/observation-3/command.json",
+        "initial_url": "https://qaizen.io/labs",
+        "actions_path": "assessment-inputs/N11/observation-3/actions.json",
+        "action_types": [
+          "assert-focused",
+          "assert-hidden",
+          "assert-none-checked",
+          "assert-text",
+          "assert-url",
+          "assert-visible",
+          "click",
+          "history-back",
+          "history-forward",
+          "keyboard",
+          "reload",
+          "snapshot",
+          "traverse-focus"
+        ]
+      },
+      {
+        "command": "assessment-inputs/N11/observation-4/command.json",
+        "initial_url": "https://qaizen.io/labs",
+        "actions_path": "assessment-inputs/N11/observation-4/actions.json",
+        "action_types": [
+          "assert-focused",
+          "assert-hidden",
+          "assert-none-checked",
+          "assert-url",
+          "assert-visible",
+          "click",
+          "history-back",
+          "history-forward",
+          "keyboard",
+          "reload",
+          "snapshot",
+          "traverse-focus"
+        ]
+      }
+    ]
+  },
+  "importer_comparability_line": [
+    "run['comparison']['comparability']='UNVERIFIED'  # Coverage alone does not establish equal-scope comparability."
+  ],
+  "all18_accounted": true,
+  "original_cells": 18,
+  "current_assessments": 18,
+  "all_qore_digests_match": true
+}

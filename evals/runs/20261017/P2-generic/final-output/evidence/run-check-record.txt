@@ -1,0 +1,14 @@
+argv: ["python3", "scripts/run-check.py", "/workspace/output/execution.json", "--evidence-root", "/workspace/output"]
+cwd: /workspace/worker/.agents/skills/qore-plan
+stdout:
+{
+  "valid": true,
+  "coverage": "COMPLETE",
+  "missing_phases": [],
+  "artifact_count": 51,
+  "note": "Evidence identity and declared phase coverage checked; factual quality is not certified."
+}
+stderr:
+exit_code: 0
+observed_at: 2026-10-17T11:52:20.259351+00:00
+Stage: initial evidence graph, before adding this validator output and final report. Final graph is checked separately in run-check-final.txt to avoid recursive digest binding.

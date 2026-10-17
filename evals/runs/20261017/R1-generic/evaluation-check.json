@@ -1,0 +1,12 @@
+{
+  "valid": true,
+  "id": "qore003-20261017-r1-generic-1",
+  "scenario_id": "R1",
+  "condition": "generic",
+  "coverage": "COMPLETE",
+  "declared_coverage": "COMPLETE",
+  "qualification_supplied": true,
+  "comparability": "UNVERIFIED",
+  "changed_inputs": [],
+  "limit": "Identity and entered evidence checked; assessor independence, reasoning, isolation and causal benefit are not certified by metadata."
+}

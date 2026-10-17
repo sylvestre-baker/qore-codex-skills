@@ -1,0 +1,15 @@
+{
+  "argv": [
+    "python3",
+    "-B",
+    "/workspace/worker/.agents/skills/qore-ux-review/scripts/run-check.py",
+    "/workspace/output/execution.json",
+    "--evidence-root",
+    "/workspace/output"
+  ],
+  "exit_code": 0,
+  "stdout": "{\n  \"valid\": true,\n  \"coverage\": \"COMPLETE\",\n  \"missing_phases\": [],\n  \"artifact_count\": 89,\n  \"note\": \"Evidence identity and declared phase coverage checked; factual quality is not certified.\"\n}\n",
+  "stderr": "",
+  "observed_at": "2026-10-17T11:13:08.413461+00:00",
+  "reason_for_final_pass": "Check final record after adding the actual initial validator command/output to its artifact manifest. This output is a companion, avoiding a self-referential digest."
+}

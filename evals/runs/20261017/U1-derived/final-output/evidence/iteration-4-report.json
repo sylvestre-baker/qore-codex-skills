@@ -1,0 +1,175 @@
+{
+  "actor_id": "/root",
+  "request": 5,
+  "observed_window": [
+    "2026-10-17T10:59:00.164Z",
+    "2026-10-17T10:59:16.162Z"
+  ],
+  "actions": [
+    {
+      "at": "2026-10-17T10:59:03.241Z",
+      "type": "keyboard",
+      "key": "Tab",
+      "active_element": {
+        "tag": "A",
+        "id": "",
+        "text": "Skip to content"
+      },
+      "outcome": "completed"
+    },
+    {
+      "at": "2026-10-17T10:59:03.241Z",
+      "type": "click",
+      "selector": "a[href$='/labs/readiness-check']",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-17T10:59:04.396Z",
+      "type": "click",
+      "role": "button",
+      "name": "Start the check",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-17T10:59:05.379Z",
+      "type": "assert-none-checked",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-17T10:59:06.285Z",
+      "type": "reload",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-17T10:59:07.387Z",
+      "type": "snapshot",
+      "label": "unanswered-question-reload-observed",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-17T10:59:08.479Z",
+      "type": "assert-none-checked",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-17T10:59:09.385Z",
+      "type": "history-back",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs"
+    },
+    {
+      "at": "2026-10-17T10:59:10.303Z",
+      "type": "snapshot",
+      "label": "history-back-observed",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs"
+    },
+    {
+      "at": "2026-10-17T10:59:11.430Z",
+      "type": "history-forward",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-17T10:59:12.344Z",
+      "type": "snapshot",
+      "label": "history-forward-observed",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-17T10:59:13.417Z",
+      "type": "assert-none-checked",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    }
+  ],
+  "conclusions": [
+    "Reload preserves unanswered first question with h2 focus. No reset acceptance obligation exists; previous h1 expectation refuted.",
+    "Browser history Back returns to labs; Forward restores first question with h2 focus, still unanswered.",
+    "Cold deep entry remains unobservable with relay API."
+  ],
+  "console": [
+    {
+      "at": "2026-10-17T10:59:04.469Z",
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_BLOCKED_BY_CLIENT.Inspector",
+      "location": {
+        "url": "https://qaizen.io/api/labs/readiness/event",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    }
+  ],
+  "blocked_mutations": [
+    {
+      "at": "2026-10-17T10:59:04.462Z",
+      "method": "POST",
+      "url": "https://qaizen.io/api/labs/readiness/event",
+      "reason": "Read-only probe policy"
+    }
+  ],
+  "page_errors": [],
+  "navigation": [
+    {
+      "at": "2026-10-17T10:59:01.047Z",
+      "url": "https://qaizen.io/labs"
+    },
+    {
+      "at": "2026-10-17T10:59:01.426Z",
+      "url": "https://qaizen.io/labs"
+    },
+    {
+      "at": "2026-10-17T10:59:03.463Z",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-17T10:59:06.359Z",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-17T10:59:06.473Z",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-17T10:59:09.389Z",
+      "url": "https://qaizen.io/labs"
+    },
+    {
+      "at": "2026-10-17T10:59:09.391Z",
+      "url": "https://qaizen.io/labs"
+    },
+    {
+      "at": "2026-10-17T10:59:11.432Z",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-17T10:59:11.433Z",
+      "url": "https://qaizen.io/labs/readiness-check"
+    }
+  ],
+  "network_document_outcomes": [
+    {
+      "at": "2026-10-17T10:59:01.042Z",
+      "url": "https://qaizen.io/labs",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "document"
+    },
+    {
+      "at": "2026-10-17T10:59:06.357Z",
+      "url": "https://qaizen.io/labs/readiness-check",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "document"
+    }
+  ]
+}

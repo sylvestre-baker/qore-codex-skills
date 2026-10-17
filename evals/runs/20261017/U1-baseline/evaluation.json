@@ -1,0 +1,190 @@
+{
+  "schema": "qore-eval-run/1",
+  "id": "qore003-20261017-u1-baseline-1",
+  "series_id": "specialization-v1",
+  "scenario_id": "U1",
+  "condition": "baseline",
+  "trial": 1,
+  "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+  "input_manifest": "prepared/input-manifest.json",
+  "input_manifest_sha256": "ac79f382c3f69aafe033bb3df651d1d2a974f7b5b9bcd94fcef6c0771e8daa02",
+  "condition_resources_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "environment": {
+    "operator": "agent",
+    "host": "Docker Desktop Linux arm64 / Codex0.162.0",
+    "model": "gpt-6.1-sol",
+    "actor_id": "/root",
+    "tools": {
+      "codex": "0.162.0",
+      "image_id": "sha256:09894b981972962ae27f1e8e1726eb49886108a56c80742e70f71b0790c73aba",
+      "native_tool_catalog": "Twelve observed base helpers, native collaboration; no search/fetch/browser/connector; empty MCP resources/templates in qualified parent and child."
+    },
+    "settings": {
+      "model_reasoning_effort": "high",
+      "service_tier": "default",
+      "configs": [
+        "default_permissions=\"qore-trial\"",
+        "permissions.qore-trial.extends=\":workspace\"",
+        "permissions.qore-trial.filesystem={\":root\"=\"deny\",\":minimal\"=\"read\",\":tmpdir\"=\"write\",\":slash_tmp\"=\"write\",\":workspace_roots\"={\".\"=\"read\"},\"/workspace/output\"=\"write\",\"/var/lib/qore-feedback\"=\"read\"}",
+        "permissions.qore-trial.network.enabled=false",
+        "allow_login_shell=false",
+        "web_search=\"disabled\"",
+        "model_reasoning_effort=\"high\"",
+        "service_tier=\"default\"",
+        "features.multi_agent=true",
+        "agents.max_threads=3",
+        "features.apps=false",
+        "features.plugins=false",
+        "features.remote_plugin=false",
+        "features.memories=false",
+        "features.skill_search=false",
+        "features.skill_mcp_dependency_install=false",
+        "features.request_permissions_tool=false",
+        "mcp_servers={}"
+      ],
+      "operator_procedure": "operator-freeze.json; same frozen task/common runtime instruction template"
+    },
+    "isolation": {
+      "status": "PASS",
+      "evidence": [
+        "isolation-evidence.json"
+      ]
+    }
+  },
+  "resources": {
+    "caps": {
+      "wall_seconds": 900,
+      "aggregate_agent_seconds": 2400,
+      "browser_requests": 6,
+      "transient_browser_retries": 1,
+      "evaluator_seconds": 1800,
+      "verifier_seconds": 1800,
+      "maximum_original_cells": 21,
+      "limit": "Provisional operator policy, not measured feasibility or hard timeout enforcement."
+    },
+    "started_at": "2026-10-17T11:02:41.281552+00:00",
+    "ended_at": "2026-10-17T11:06:29.919874+00:00",
+    "children": [],
+    "tokens": 831661,
+    "aggregate_agent_seconds": 225.795184,
+    "unavailable": {},
+    "parent_native_usage": {
+      "input_tokens": 821268,
+      "cached_input_tokens": 748672,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 10393,
+      "reasoning_output_tokens": 3012
+    },
+    "parent_wall_seconds": 225.795184,
+    "measurement_basis": "Single context only: CLI turn input+output tokens including cached input, and observed launcher-to-return wall interval including transport/tool waits; not CPU, billing, unique tokens or productivity."
+  },
+  "artifacts": [
+    {
+      "path": "isolation-evidence.json",
+      "sha256": "2a70b444a4fb2c779446fdea3de828eec18d08777705cd6413a2c4593dec3945",
+      "kind": "execution",
+      "observed_at": "2026-10-17T11:02:41.763633+00:00"
+    },
+    {
+      "path": "execution-evidence.json",
+      "sha256": "39ba55e8b8cb48840df172dac9f754ff6f228245a05d3a6f38858256a6654596",
+      "kind": "execution",
+      "observed_at": "2026-10-17T11:06:27.773527+00:00"
+    },
+    {
+      "path": "independent-assessment.json",
+      "sha256": "29c6d3f06fb163fef83eb2ea7a5db97a3cf896b7aa679d8c27b5b2c1232e7cd5",
+      "kind": "presentation"
+    },
+    {
+      "path": "independent-verification.json",
+      "sha256": "77dc44ec989e99e6aeccea1c39a652b10d22cfd55424aec4d9bc3e0b01fd5722",
+      "kind": "presentation"
+    },
+    {
+      "path": "qualification.json",
+      "sha256": "666c2f705a2491447367a8fd07eefb6496524d45482d8fc936c4b6c31f9a5396",
+      "kind": "presentation"
+    }
+  ],
+  "execution": {
+    "coverage": "COMPLETE",
+    "evidence": [
+      "execution-evidence.json"
+    ]
+  },
+  "assessment": [
+    {
+      "criterion": "K1",
+      "status": "MET",
+      "independent_task_status": "MET",
+      "reason": "The report accurately uses the actual project contract and distinguishes Close restoring summary from Back restoring introduction h1.",
+      "evidence": [
+        "independent-assessment.json",
+        "independent-verification.json"
+      ]
+    },
+    {
+      "criterion": "K2",
+      "status": "MET",
+      "independent_task_status": "MET",
+      "reason": "One real Tab reaches Back from restored summary at11:04:02.890Z; Enter at11:04:05.787Z activates it; h1 focus at11:04:09.570Z is asserted. Harness implements traversal with keyboard.press, not programmatic focus.",
+      "evidence": [
+        "independent-assessment.json",
+        "independent-verification.json"
+      ]
+    },
+    {
+      "criterion": "K3",
+      "status": "MET",
+      "independent_task_status": "MET",
+      "reason": "Unanswered assertions succeed before help and after Close, while question exists; Next is disabled. Hash-matched live policy and harness enforce approved activations and read-only/origin boundaries. Analytics POST blocked; recorded origins authorized.",
+      "evidence": [
+        "independent-assessment.json",
+        "independent-verification.json"
+      ]
+    },
+    {
+      "criterion": "K4",
+      "status": "MET",
+      "independent_task_status": "MET",
+      "reason": "Actual captures/events support the required journey, with explicit limits for full-page visual interpretation, one replay, deployment identity and unavailable trace/video. No protocol fixture result or script failure is labeled a website Back defect.",
+      "evidence": [
+        "independent-assessment.json",
+        "independent-verification.json"
+      ]
+    },
+    {
+      "criterion": "K8",
+      "status": "MET",
+      "independent_task_status": "MET",
+      "reason": "The report concludes only that all eight required checks pass in the observed replay and retains a conditional visual concern with viewport confirmation before any implementation change. It claims neither product readiness certification nor a blocking website defect.",
+      "evidence": [
+        "independent-assessment.json",
+        "independent-verification.json"
+      ]
+    }
+  ],
+  "comparison": {
+    "comparability": "UNVERIFIED",
+    "decision": "Unknown",
+    "reason": "Separate evaluators and verifier retained task/coverage observations. One observation on related known tasks and visible conditions does not establish a comparative winner; live deployment comparability is unverified for UX.",
+    "verification": [
+      "independent-assessment.json",
+      "independent-verification.json"
+    ]
+  },
+  "limitations": [
+    "One observation on a related known task, not a general benefit benchmark.",
+    "CLI JSONL omits some native child lifecycle events; child identities and history-free dispatches rely on retained role reports/roster plus the qualified inheritance probe.",
+    "All resource timing precision and unavailable measurements remain explicit; no cost or efficiency conclusion.",
+    "Independent criteria were applied qualitatively after outputs using predeclared criteria; operational grading interpretation was not a validated standardized scoring rubric.",
+    "Original method coverage and artifacts are unchanged. Later qualification and its identities are separate; entered metadata does not establish its own truth."
+  ],
+  "qore_run": null,
+  "normalization": [],
+  "qualification": {
+    "path": "qualification.json",
+    "sha256": "666c2f705a2491447367a8fd07eefb6496524d45482d8fc936c4b6c31f9a5396"
+  }
+}

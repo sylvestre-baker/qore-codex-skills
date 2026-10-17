@@ -1,0 +1,425 @@
+{
+  "schema": "qore003-planning-assessor-checks/1",
+  "actor_id": "/root/campaign_plan_assessor",
+  "neutral_id": "N13",
+  "procedure": "Read-only SHA-256 of every declared artifact, original/copy byte comparison, roster interval arithmetic and captured-command inspection. No trial, validator, model or website rerun.",
+  "artifact_count": 53,
+  "files": [
+    {
+      "path": "N13/output/REPORT.md",
+      "exists": true,
+      "expected_sha256": "7bd7e6dd734542c0b84701bfa292c51945497ba57cbbd9598ef0fd57dafbc30a",
+      "actual_sha256": "7bd7e6dd734542c0b84701bfa292c51945497ba57cbbd9598ef0fd57dafbc30a"
+    },
+    {
+      "path": "N13/output/adjudication.md",
+      "exists": true,
+      "expected_sha256": "21f4115e59938ef3c41b245e41f0f28123485e5b9e73c6609ce580f3f17562be",
+      "actual_sha256": "21f4115e59938ef3c41b245e41f0f28123485e5b9e73c6609ce580f3f17562be"
+    },
+    {
+      "path": "N13/output/build_execution.py",
+      "exists": true,
+      "expected_sha256": "65a7872675b3ed5de7f6dd30e1e0f834ba007aef933e4ae24762a4ba0e676dad",
+      "actual_sha256": "65a7872675b3ed5de7f6dd30e1e0f834ba007aef933e4ae24762a4ba0e676dad"
+    },
+    {
+      "path": "N13/output/evidence/capability-probe.txt",
+      "exists": true,
+      "expected_sha256": "cafceab535946cc8810f57bd50d172f322a4a4fdd9ae07935f7c4e3d8da9f8b8",
+      "actual_sha256": "cafceab535946cc8810f57bd50d172f322a4a4fdd9ae07935f7c4e3d8da9f8b8"
+    },
+    {
+      "path": "N13/output/evidence/commands.json",
+      "exists": true,
+      "expected_sha256": "afd14e412d20b73eca8bd6635cb12f882b2bcae82663dac21bc3cca1a5ade6e6",
+      "actual_sha256": "afd14e412d20b73eca8bd6635cb12f882b2bcae82663dac21bc3cca1a5ade6e6"
+    },
+    {
+      "path": "N13/output/evidence/contract-check.txt",
+      "exists": true,
+      "expected_sha256": "2be1896c6fe4a69a13c514bd5f17771bd9996718d2810f82ba01e252ca00c464",
+      "actual_sha256": "2be1896c6fe4a69a13c514bd5f17771bd9996718d2810f82ba01e252ca00c464"
+    },
+    {
+      "path": "N13/output/evidence/cross-barrier.json",
+      "exists": true,
+      "expected_sha256": "a9fb15b67ee7daa3f5cdb3b8541f8754c9e65ff54b0c9d44815be1d0ecdb377d",
+      "actual_sha256": "a9fb15b67ee7daa3f5cdb3b8541f8754c9e65ff54b0c9d44815be1d0ecdb377d"
+    },
+    {
+      "path": "N13/output/evidence/immutability.json",
+      "exists": true,
+      "expected_sha256": "6d5be44e9c0a7f96d013d14f9d5b8e8de39b46d078a585ca8f3b3a4901a6f0a0",
+      "actual_sha256": "6d5be44e9c0a7f96d013d14f9d5b8e8de39b46d078a585ca8f3b3a4901a6f0a0"
+    },
+    {
+      "path": "N13/output/evidence/input-inventory.json",
+      "exists": true,
+      "expected_sha256": "d561696b3c154e93cf7c6a94dcb129b1c4bf7d0e593a119e6c9e6ccdb6db52bb",
+      "actual_sha256": "d561696b3c154e93cf7c6a94dcb129b1c4bf7d0e593a119e6c9e6ccdb6db52bb"
+    },
+    {
+      "path": "N13/output/evidence/intake.json",
+      "exists": true,
+      "expected_sha256": "dbc029f58238761abd5c43a57eb95e7296b52ee8d000d03b8ea318b5b9e20420",
+      "actual_sha256": "dbc029f58238761abd5c43a57eb95e7296b52ee8d000d03b8ea318b5b9e20420"
+    },
+    {
+      "path": "N13/output/evidence/limits.json",
+      "exists": true,
+      "expected_sha256": "d0636b90ebaab01b00d68ef0fbc7e6dac8bcb733ced5516058f8766d4164ac42",
+      "actual_sha256": "d0636b90ebaab01b00d68ef0fbc7e6dac8bcb733ced5516058f8766d4164ac42"
+    },
+    {
+      "path": "N13/output/evidence/phase-adjudication.json",
+      "exists": true,
+      "expected_sha256": "ce578b2c5cd77c68c9c2a6dfdeaf7a9ded22f092562c091f98d1a8e9bb8d209c",
+      "actual_sha256": "ce578b2c5cd77c68c9c2a6dfdeaf7a9ded22f092562c091f98d1a8e9bb8d209c"
+    },
+    {
+      "path": "N13/output/evidence/phase-architecture.json",
+      "exists": true,
+      "expected_sha256": "c8f5ba324dca83e2fa26fdca433da41bcbc06a99f8fc45b18988ad08ba7c40fd",
+      "actual_sha256": "c8f5ba324dca83e2fa26fdca433da41bcbc06a99f8fc45b18988ad08ba7c40fd"
+    },
+    {
+      "path": "N13/output/evidence/phase-delivery.json",
+      "exists": true,
+      "expected_sha256": "34ef1c35026d2d7063e753afe7555d06302c6e38e56eeb819b021407eae8725c",
+      "actual_sha256": "34ef1c35026d2d7063e753afe7555d06302c6e38e56eeb819b021407eae8725c"
+    },
+    {
+      "path": "N13/output/evidence/phase-product.json",
+      "exists": true,
+      "expected_sha256": "c3798538bac699cdf117ef808b4a2427e837f2269babee8fd78f98e85c604b63",
+      "actual_sha256": "c3798538bac699cdf117ef808b4a2427e837f2269babee8fd78f98e85c604b63"
+    },
+    {
+      "path": "N13/output/evidence/phase-qa.json",
+      "exists": true,
+      "expected_sha256": "fad041b3780cba3f92154a038c6a511e7f091950e795a05243a8aabb0c92ecf0",
+      "actual_sha256": "fad041b3780cba3f92154a038c6a511e7f091950e795a05243a8aabb0c92ecf0"
+    },
+    {
+      "path": "N13/output/evidence/phase-spec_validation.json",
+      "exists": true,
+      "expected_sha256": "2091b0143485f6cccb4f8b87626201513d574403c61a0e95f3ac26c24a4a60c5",
+      "actual_sha256": "2091b0143485f6cccb4f8b87626201513d574403c61a0e95f3ac26c24a4a60c5"
+    },
+    {
+      "path": "N13/output/evidence/phase-ux.json",
+      "exists": true,
+      "expected_sha256": "d4994e4ba093cfaefd866205ec9c08f97b278a5fd3bd2b5605257e10d885900c",
+      "actual_sha256": "d4994e4ba093cfaefd866205ec9c08f97b278a5fd3bd2b5605257e10d885900c"
+    },
+    {
+      "path": "N13/output/evidence/report-barrier.json",
+      "exists": true,
+      "expected_sha256": "e650ce789f0c615b2112f31c6322a0f5cf1eca8f8333c5a0ed966a959b4aef56",
+      "actual_sha256": "e650ce789f0c615b2112f31c6322a0f5cf1eca8f8333c5a0ed966a959b4aef56"
+    },
+    {
+      "path": "N13/output/evidence/run-check-record.txt",
+      "exists": true,
+      "expected_sha256": "d0b3c2d3346894c0a74766f5da7589232ff77907de2499066094bac9d84155f3",
+      "actual_sha256": "d0b3c2d3346894c0a74766f5da7589232ff77907de2499066094bac9d84155f3"
+    },
+    {
+      "path": "N13/output/evidence/run-metadata.json",
+      "exists": true,
+      "expected_sha256": "c2f3d3e4664ed910da9aa7d45bc09fe219549ab2c428696a8a96a713deadc4be",
+      "actual_sha256": "c2f3d3e4664ed910da9aa7d45bc09fe219549ab2c428696a8a96a713deadc4be"
+    },
+    {
+      "path": "N13/output/evidence/spec-lint.txt",
+      "exists": true,
+      "expected_sha256": "3cecc92afdcfb24687125021976b43c77eea4d73395a96d067c1ce5997d25d7e",
+      "actual_sha256": "3cecc92afdcfb24687125021976b43c77eea4d73395a96d067c1ce5997d25d7e"
+    },
+    {
+      "path": "N13/output/proposed-verification-protocol.md",
+      "exists": true,
+      "expected_sha256": "4ec94d5b8a98767003a8b70fbc8dd34693d4a9f06f1e7fbc6a9aada0ce74e97b",
+      "actual_sha256": "4ec94d5b8a98767003a8b70fbc8dd34693d4a9f06f1e7fbc6a9aada0ce74e97b"
+    },
+    {
+      "path": "N13/output/reports/architecture-analysis.md",
+      "exists": true,
+      "expected_sha256": "0be6b6bae46afcd2970fc4337f758d5ffdeee03e863d03c1f0369346864df4aa",
+      "actual_sha256": "0be6b6bae46afcd2970fc4337f758d5ffdeee03e863d03c1f0369346864df4aa"
+    },
+    {
+      "path": "N13/output/reports/architecture-cross-examination.md",
+      "exists": true,
+      "expected_sha256": "6fb75ce7e3ea526b81408d18e35060e1cc39ed8f4b5d18ce728fa5bffeda4a8b",
+      "actual_sha256": "6fb75ce7e3ea526b81408d18e35060e1cc39ed8f4b5d18ce728fa5bffeda4a8b"
+    },
+    {
+      "path": "N13/output/reports/delivery-analysis.md",
+      "exists": true,
+      "expected_sha256": "ec82fe4f8f15988270c03e9cb59a60658a13ede0fd1521659c62ee95352436e9",
+      "actual_sha256": "ec82fe4f8f15988270c03e9cb59a60658a13ede0fd1521659c62ee95352436e9"
+    },
+    {
+      "path": "N13/output/reports/delivery-cross-examination.md",
+      "exists": true,
+      "expected_sha256": "6638cf9ef69c2cde5e168b54dea32aafb7a15511024794dbd137946907df0229",
+      "actual_sha256": "6638cf9ef69c2cde5e168b54dea32aafb7a15511024794dbd137946907df0229"
+    },
+    {
+      "path": "N13/output/reports/product-analysis.md",
+      "exists": true,
+      "expected_sha256": "851f1993fa6abb1829cbc69c135696a1c767e512abd64b33ed978388fa52e282",
+      "actual_sha256": "851f1993fa6abb1829cbc69c135696a1c767e512abd64b33ed978388fa52e282"
+    },
+    {
+      "path": "N13/output/reports/product-cross-examination.md",
+      "exists": true,
+      "expected_sha256": "a94dd7edae137b6cc229874f0712cf66fb3deb9ac081abb7cdc6d2f4ce5cddfd",
+      "actual_sha256": "a94dd7edae137b6cc229874f0712cf66fb3deb9ac081abb7cdc6d2f4ce5cddfd"
+    },
+    {
+      "path": "N13/output/reports/qa-analysis.md",
+      "exists": true,
+      "expected_sha256": "d3c5a24acd202ed51062f5a46d9f6903f8327fd52aa6219097e5975ac816c4b9",
+      "actual_sha256": "d3c5a24acd202ed51062f5a46d9f6903f8327fd52aa6219097e5975ac816c4b9"
+    },
+    {
+      "path": "N13/output/reports/qa-cross-examination.md",
+      "exists": true,
+      "expected_sha256": "c019bbd12871066564f44ec940174940545549aa55cc68c1372dc4fc709712e5",
+      "actual_sha256": "c019bbd12871066564f44ec940174940545549aa55cc68c1372dc4fc709712e5"
+    },
+    {
+      "path": "N13/output/reports/ux-analysis.md",
+      "exists": true,
+      "expected_sha256": "ed0014775aeadc9dcfb00c849667035cf373bd8db39e48fb26f8d4675b2a0190",
+      "actual_sha256": "ed0014775aeadc9dcfb00c849667035cf373bd8db39e48fb26f8d4675b2a0190"
+    },
+    {
+      "path": "N13/output/reports/ux-cross-examination.md",
+      "exists": true,
+      "expected_sha256": "53b5a1b01d15d35489e0cf0417d8653d06d37764da398cd9f47e80a04fbeb076",
+      "actual_sha256": "53b5a1b01d15d35489e0cf0417d8653d06d37764da398cd9f47e80a04fbeb076"
+    },
+    {
+      "path": "N13/output/roster.json",
+      "exists": true,
+      "expected_sha256": "eeebdc95d6077b560b3c0949c5dab480c3ebbcc0f7b1928e4af27f3f93fe6651",
+      "actual_sha256": "eeebdc95d6077b560b3c0949c5dab480c3ebbcc0f7b1928e4af27f3f93fe6651"
+    },
+    {
+      "path": "N13/output/sources/.agents/skills/qore-plan/SKILL.md",
+      "exists": true,
+      "expected_sha256": "6a0b7a03d888595e6b9e76bc16644a313a187df91622fd5245d4b2253bdf83da",
+      "actual_sha256": "6a0b7a03d888595e6b9e76bc16644a313a187df91622fd5245d4b2253bdf83da"
+    },
+    {
+      "path": "N13/output/sources/.agents/skills/qore-plan/agents/openai.yaml",
+      "exists": true,
+      "expected_sha256": "21ffa75d5bc52d68819ff68d4b8c65dc33584464f755487e6a02302f0924c22b",
+      "actual_sha256": "21ffa75d5bc52d68819ff68d4b8c65dc33584464f755487e6a02302f0924c22b"
+    },
+    {
+      "path": "N13/output/sources/.agents/skills/qore-plan/references/project-profile.md",
+      "exists": true,
+      "expected_sha256": "16c5ff087c83b7503b23d5d94726834462dd4fd73d78a5380cf85135fa85b0b3",
+      "actual_sha256": "16c5ff087c83b7503b23d5d94726834462dd4fd73d78a5380cf85135fa85b0b3"
+    },
+    {
+      "path": "N13/output/sources/.agents/skills/qore-plan/references/protocol.md",
+      "exists": true,
+      "expected_sha256": "83f92490a5601b83fc6eaa21861344e35cd04a3ac7edb56b98cd2eb0ecfea84b",
+      "actual_sha256": "83f92490a5601b83fc6eaa21861344e35cd04a3ac7edb56b98cd2eb0ecfea84b"
+    },
+    {
+      "path": "N13/output/sources/.agents/skills/qore-plan/references/release.json",
+      "exists": true,
+      "expected_sha256": "38514ca5e540a1e5f1ef17859e86fe7202518d8db1aeb5bae9222cfb09e7f28a",
+      "actual_sha256": "38514ca5e540a1e5f1ef17859e86fe7202518d8db1aeb5bae9222cfb09e7f28a"
+    },
+    {
+      "path": "N13/output/sources/.agents/skills/qore-plan/references/roles.md",
+      "exists": true,
+      "expected_sha256": "cc8060c7c852c143b9671af4fc0176b9c5068f338c19b2556b6ff494c0f0d318",
+      "actual_sha256": "cc8060c7c852c143b9671af4fc0176b9c5068f338c19b2556b6ff494c0f0d318"
+    },
+    {
+      "path": "N13/output/sources/.agents/skills/qore-plan/references/run-evidence.md",
+      "exists": true,
+      "expected_sha256": "35cd6dc6d3e1177bbae96e5b9e829ed1aa55901747c856f4db20e946421f163d",
+      "actual_sha256": "35cd6dc6d3e1177bbae96e5b9e829ed1aa55901747c856f4db20e946421f163d"
+    },
+    {
+      "path": "N13/output/sources/.agents/skills/qore-plan/references/specification.md",
+      "exists": true,
+      "expected_sha256": "7eb06b91fca66a3ec00bda4b49b035c5e6bfe827c4624768f66a09b6ae7827a1",
+      "actual_sha256": "7eb06b91fca66a3ec00bda4b49b035c5e6bfe827c4624768f66a09b6ae7827a1"
+    },
+    {
+      "path": "N13/output/sources/.agents/skills/qore-plan/scripts/project-check.py",
+      "exists": true,
+      "expected_sha256": "d87afa433fe485bdebca3e281d06e0896e4a8980ea7cf7baee739053614ea0ac",
+      "actual_sha256": "d87afa433fe485bdebca3e281d06e0896e4a8980ea7cf7baee739053614ea0ac"
+    },
+    {
+      "path": "N13/output/sources/.agents/skills/qore-plan/scripts/run-check.py",
+      "exists": true,
+      "expected_sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+      "actual_sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa"
+    },
+    {
+      "path": "N13/output/sources/.agents/skills/qore-plan/scripts/spec-lint.mjs",
+      "exists": true,
+      "expected_sha256": "321ac211bfac936c4da3ffe173cdfc0d92cb695351273d289809c05c8b037ada",
+      "actual_sha256": "321ac211bfac936c4da3ffe173cdfc0d92cb695351273d289809c05c8b037ada"
+    },
+    {
+      "path": "N13/output/sources/.agents/skills/qore-plan/scripts/spec-lint.sh",
+      "exists": true,
+      "expected_sha256": "ee4b0c491833f8f3960037255f7ea601548a353d18b317aae25d8e5f2cd461b6",
+      "actual_sha256": "ee4b0c491833f8f3960037255f7ea601548a353d18b317aae25d8e5f2cd461b6"
+    },
+    {
+      "path": "N13/output/sources/TASK.md",
+      "exists": true,
+      "expected_sha256": "76689d03b48468b5c40941177d49c91c28026c0d845b11bfd7ff94c4d70e10a9",
+      "actual_sha256": "76689d03b48468b5c40941177d49c91c28026c0d845b11bfd7ff94c4d70e10a9"
+    },
+    {
+      "path": "N13/output/sources/checks/check_contract.py",
+      "exists": true,
+      "expected_sha256": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b",
+      "actual_sha256": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b"
+    },
+    {
+      "path": "N13/output/sources/observation-policy.json",
+      "exists": true,
+      "expected_sha256": "15f4e5b4960b5011684be265f027e42b8637a3b8aae96b24bba1ba3a4d0f0202",
+      "actual_sha256": "15f4e5b4960b5011684be265f027e42b8637a3b8aae96b24bba1ba3a4d0f0202"
+    },
+    {
+      "path": "N13/output/sources/surface-contract.json",
+      "exists": true,
+      "expected_sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+      "actual_sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3"
+    },
+    {
+      "path": "N13/output/sources/target/verification-protocol.md",
+      "exists": true,
+      "expected_sha256": "0a3452f02e358d8800fb26d591083deb972c5531165473990dc27007a9a9e0d4",
+      "actual_sha256": "0a3452f02e358d8800fb26d591083deb972c5531165473990dc27007a9a9e0d4"
+    },
+    {
+      "path": "N13/output/specification.md",
+      "exists": true,
+      "expected_sha256": "0a1dca832f3c9456342d1265b348329b1b847af3072f8ee1617919aadf2b4db5",
+      "actual_sha256": "0a1dca832f3c9456342d1265b348329b1b847af3072f8ee1617919aadf2b4db5"
+    },
+    {
+      "path": "N13/output/write-canary",
+      "exists": true,
+      "expected_sha256": "2d711642b726b04401627ca9fbac32f5c8530fb1903cc4db02258717921a4881",
+      "actual_sha256": "2d711642b726b04401627ca9fbac32f5c8530fb1903cc4db02258717921a4881"
+    }
+  ],
+  "missing": [],
+  "mismatches": [],
+  "execution_sha256": "8e8405b267698c6aef3a301f4b8d8d36a916bf21255beaf7fa494a7d1814ac50",
+  "source_copy_comparisons": [
+    {
+      "path": "surface-contract.json",
+      "matches_copy": true
+    },
+    {
+      "path": "TASK.md",
+      "matches_copy": true
+    },
+    {
+      "path": "observation-policy.json",
+      "matches_copy": true
+    },
+    {
+      "path": "checks/check_contract.py",
+      "matches_copy": true
+    },
+    {
+      "path": "target/verification-protocol.md",
+      "matches_copy": true
+    },
+    {
+      "path": ".agents/skills/qore-plan/SKILL.md",
+      "matches_copy": true
+    },
+    {
+      "path": ".agents/skills/qore-plan/references/specification.md",
+      "matches_copy": true
+    },
+    {
+      "path": ".agents/skills/qore-plan/references/release.json",
+      "matches_copy": true
+    },
+    {
+      "path": ".agents/skills/qore-plan/references/roles.md",
+      "matches_copy": true
+    },
+    {
+      "path": ".agents/skills/qore-plan/references/run-evidence.md",
+      "matches_copy": true
+    },
+    {
+      "path": ".agents/skills/qore-plan/references/project-profile.md",
+      "matches_copy": true
+    },
+    {
+      "path": ".agents/skills/qore-plan/references/protocol.md",
+      "matches_copy": true
+    },
+    {
+      "path": ".agents/skills/qore-plan/agents/openai.yaml",
+      "matches_copy": true
+    },
+    {
+      "path": ".agents/skills/qore-plan/scripts/spec-lint.mjs",
+      "matches_copy": true
+    },
+    {
+      "path": ".agents/skills/qore-plan/scripts/run-check.py",
+      "matches_copy": true
+    },
+    {
+      "path": ".agents/skills/qore-plan/scripts/project-check.py",
+      "matches_copy": true
+    },
+    {
+      "path": ".agents/skills/qore-plan/scripts/spec-lint.sh",
+      "matches_copy": true
+    }
+  ],
+  "original_input_count": 17,
+  "occupancy_arithmetic": {
+    "phase_interval_count": 10,
+    "sum_child_recorded_upper_seconds": 1218.0,
+    "claimed_child_upper_seconds": 1218.0,
+    "sum_plus_full_900_root_seconds": 2118.0,
+    "interpretation": "Elapsed scheduling/notification occupancy bounds, not model compute, token or billed-usage measurement."
+  },
+  "profile": null,
+  "timing": {
+    "started_at_utc": "2026-10-17T11:53:49+00:00",
+    "ended_at_utc": "2026-10-17T11:56:56.973329+00:00",
+    "active_intervals_utc": [
+      [
+        "2026-10-17T11:53:49+00:00",
+        "2026-10-17T11:56:56.973329+00:00"
+      ]
+    ],
+    "idle_intervals_utc": [],
+    "active_seconds_this_wave": 187.973329,
+    "prior_cumulative_active_seconds": 874.43,
+    "cumulative_active_seconds": 1062.403329,
+    "accounting_note": "Continuous active assessment window; no idle wait in this wave. Idle between prior completion and this dispatch excluded. Evaluator wall activity, not billed model compute."
+  },
+  "checked_at_utc": "2026-10-17T11:56:56.973329+00:00"
+}

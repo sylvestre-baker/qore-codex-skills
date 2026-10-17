@@ -1,0 +1,167 @@
+{
+  "schema": "qore-selected-independent-assessment/1",
+  "run_id": "qore003-20261017-u1-baseline-1",
+  "neutral_id": "N05",
+  "source_raw_sha256": "3e1a8e846d6865a0068d638f8c9a2889845d7d6eefbb818b30e4d7762799dd06",
+  "public_source": "evals/campaign-20261017/assessments/ux-baseline/N05/assessment.json",
+  "public_source_sha256": "3e1a8e846d6865a0068d638f8c9a2889845d7d6eefbb818b30e4d7762799dd06",
+  "assessor": "/root/campaign_ux_assessor",
+  "original_case_assessment": {
+    "schema": "qore003-independent-ux-assessment/1",
+    "neutral_id": "N05",
+    "scenario_id": "U1",
+    "actor_id": "/root/campaign_ux_assessor",
+    "started_at_utc": "2026-10-17T11:08:08+00:00",
+    "completed_at_utc": "2026-10-17T11:10:13.069274+00:00",
+    "elapsed_wall_seconds": 134.690167,
+    "assessment_cap_seconds": 240,
+    "prior_case_seconds": 236,
+    "cumulative_evaluator_seconds": 370.690167,
+    "scope": "N05 closed neutral tree and frozen U1 criteria only; no other case report/verdict or repository source was read for this assessment. No new live observation, network, source edits, outreach or delegation. N12 unchanged.",
+    "blinding": "Not blinded: run-record/result labels contain u1-baseline and report explicitly states no Qore skill. Neutral filenames do not hide treatment; no comparison inferred.",
+    "criteria": [
+      {
+        "id": "K1",
+        "status": "MET",
+        "reason": "The report accurately uses the actual project contract and distinguishes Close restoring summary from Back restoring introduction h1.",
+        "evidence": [
+          "input/surface-contract.json:14",
+          "input/surface-contract.json:15",
+          "output/REPORT.md:12",
+          "output/REPORT.md:14",
+          "observation-2/raw/05-close-result.dom.json#/active_element",
+          "observation-2/raw/07-back-result.dom.json#/active_element"
+        ],
+        "uncertainty": "No Qore phase/profile requirements apply to this task."
+      },
+      {
+        "id": "K2",
+        "status": "MET",
+        "reason": "One real Tab reaches Back from restored summary at11:04:02.890Z; Enter at11:04:05.787Z activates it; h1 focus at11:04:09.570Z is asserted. Harness implements traversal with keyboard.press, not programmatic focus.",
+        "evidence": [
+          "operator/browser_probe.mjs:333-343",
+          "observation-2/raw/events.json:778",
+          "observation-2/raw/events.json:818",
+          "observation-2/raw/events.json:846",
+          "observation-2/actions.json"
+        ],
+        "uncertainty": "Only one completed replay; visibility of focus in the actual viewport is separate."
+      },
+      {
+        "id": "K3",
+        "status": "MET",
+        "reason": "Unanswered assertions succeed before help and after Close, while question exists; Next is disabled. Hash-matched live policy and harness enforce approved activations and read-only/origin boundaries. Analytics POST blocked; recorded origins authorized.",
+        "evidence": [
+          "observation-2/raw/events.json#/actions/5",
+          "observation-2/raw/events.json#/actions/27",
+          "observation-2/raw/01-first-question-unanswered.dom.json#/buttons",
+          "operator/live-policy.json",
+          "operator/browser_probe.mjs:185-211",
+          "operator/browser_probe.mjs:330-331",
+          "inspection-inventory.json#/receipt_checks"
+        ],
+        "uncertainty": "Guard is a cooperative observation boundary; no adversarial origin attempt or exhaustive security test was performed."
+      },
+      {
+        "id": "K4",
+        "status": "MET",
+        "reason": "Actual captures/events support the required journey, with explicit limits for full-page visual interpretation, one replay, deployment identity and unavailable trace/video. No protocol fixture result or script failure is labeled a website Back defect.",
+        "evidence": [
+          "output/REPORT.md:18",
+          "output/REPORT.md:20",
+          "output/REPORT.md:22",
+          "output/REPORT.md:35",
+          "input/surface-contract.json:19"
+        ],
+        "uncertainty": "The exact-case explanation for request1 is inaccurate: its click has an unsupported text field and no supported locator. This bounded diagnostic error does not invalidate the corrected journey or turn into a product finding."
+      },
+      {
+        "id": "K8",
+        "status": "MET",
+        "reason": "The report concludes only that all eight required checks pass in the observed replay and retains a conditional visual concern with viewport confirmation before any implementation change. It claims neither product readiness certification nor a blocking website defect.",
+        "evidence": [
+          "output/REPORT.md:1",
+          "output/REPORT.md:20",
+          "output/REPORT.md:35",
+          "observation-2/raw/events.json",
+          "observation-2/raw/07-back-result.dom.json"
+        ],
+        "uncertainty": "Medium potential impact/confidence are worker judgment, not independently measured severity. Actual viewport concealment remains unknown."
+      }
+    ],
+    "task_observation_coverage": {
+      "status": "COMPLETE_WITHIN_REQUESTED_CONTRACT",
+      "required_checks_observed": [
+        "entry",
+        "unanswered",
+        "help-toggle",
+        "close-focus",
+        "keyboard-back",
+        "introduction-focus",
+        "read-only-policy",
+        "origin-policy"
+      ],
+      "reason": "One complete request2 replay plus actual entry/introduction evidence from request1 covers the supplied contract. Initial script failure is repaired in fresh request2."
+    },
+    "method_coverage": {
+      "formal_method": "none invoked",
+      "qore_phase_coverage": "NOT_APPLICABLE",
+      "reason": "Original TASK contains the direct observation request and no Qore method/profile. No later cold-deep-navigation, gate, loop, profile, roster-independence or execution.json obligations are imposed.",
+      "broader_product_evaluation": "Limited to stated contract, one desktop replay and blocked analytics. Visual viewport impact unresolved; no certification or SHIP/DO-NOT-SHIP inferred."
+    },
+    "product_findings": [
+      {
+        "id": "banner-focused-back",
+        "independent_status": "UNRESOLVED_PRODUCT_CANDIDATE",
+        "supported_observation": "Actually viewed full-page1280x1033 image hides Back label and most outline under banner; paired DOM active element BUTTON Back.",
+        "missing_evidence": "Actual viewport capture, scroll offsets and simultaneous Back/banner rectangles.",
+        "counterevidence": "Back is sequentially reachable and Enter restores h1 focus successfully.",
+        "severity": "NOT_CONFIRMED",
+        "correction_category": "suggestion",
+        "correction": "Confirm actual viewport impact before reserving banner space or changing focus scroll behavior.",
+        "repeat_count": 1
+      }
+    ],
+    "corrections": [
+      {
+        "category": "worker failure",
+        "item": "Request1 click uses text without role/selector; harness locator dispatch does not implement click.text.",
+        "evidence": [
+          "observation-1/actions.json#/3",
+          "operator/browser_probe.mjs:297",
+          "output/REPORT.md:22"
+        ],
+        "status": "Request2 corrected action succeeds. Report should describe unsupported locator rather than demonstrated exact-case mismatch."
+      },
+      {
+        "category": "expected limitation",
+        "item": "Only full-page captures and semantic DOM; no actual geometry or returned trace/video.",
+        "status": "Correctly disclosed; not an application defect."
+      },
+      {
+        "category": "suggestion",
+        "item": "Keep banner finding conditional and confirm viewport geometry before product correction.",
+        "status": "Already broadly reflected in worker report; no established application implementation issue."
+      },
+      {
+        "category": "expected limitation",
+        "item": "Analytics POST refused by read-only policy.",
+        "status": "Expected policy effect; not product outage."
+      }
+    ],
+    "generalization_limits": [
+      "No winner, general quality, treatment-effect or efficiency inference.",
+      "No confirmed application implementation defect.",
+      "No repeated Back reliability, mobile/cross-browser/full-questionnaire/performance/accessibility claim."
+    ],
+    "artifacts": [
+      "REPORT.md",
+      "inspection-inventory.json"
+    ],
+    "assessment_finished_at_utc": "2026-10-17T11:10:22.690167+00:00"
+  },
+  "limits": [
+    "Neutral filenames did not blind conditions.",
+    "The raw criterion judgments concern their declared task scope; later method-coverage qualification is separate."
+  ]
+}

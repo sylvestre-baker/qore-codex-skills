@@ -1,0 +1,83 @@
+{
+  "declared_scope": "scope.json",
+  "driver": "Playwright Chromium 1.62.1, Chromium 151.0.7922.34, Node v22.23.3, neutral relay",
+  "capability_probe": "evidence/response-1/result.json",
+  "checks": [
+    {
+      "id": "entry",
+      "gate": "G0",
+      "capability": "navigation + DOM + screenshot",
+      "procedure": "Activate declared Labs anchor; heading and distinguishing introduction content"
+    },
+    {
+      "id": "unanswered",
+      "gate": "G2",
+      "capability": "DOM assertions + snapshots",
+      "procedure": "assert-none-checked before and after help; activate no answer"
+    },
+    {
+      "id": "help-toggle",
+      "gate": "G2/G5",
+      "capability": "keyboard + DOM + screenshots",
+      "procedure": "Summary Enter opens; Space closes; Enter reopens"
+    },
+    {
+      "id": "close-focus",
+      "gate": "G5",
+      "capability": "keyboard sequential traversal + focused assertion",
+      "procedure": "Tab to Close; Enter closes; summary is active"
+    },
+    {
+      "id": "keyboard-back",
+      "gate": "G2/G5",
+      "capability": "keyboard sequential traversal + DOM",
+      "procedure": "Tab to Back from closed help, Enter returns to introduction"
+    },
+    {
+      "id": "introduction-focus",
+      "gate": "G5",
+      "capability": "focused assertion + DOM",
+      "procedure": "h1 active after Back"
+    },
+    {
+      "id": "read-only-policy",
+      "gate": "G2/G6",
+      "capability": "network + guard events",
+      "procedure": "Only GET/HEAD/OPTIONS allowed; retain blocked analytics mutation"
+    },
+    {
+      "id": "origin-policy",
+      "gate": "G0/G6",
+      "capability": "network + navigation policy",
+      "procedure": "Only https://qaizen.io allowed; retain attempted/blocked external navigation"
+    },
+    {
+      "id": "render-reload-history",
+      "gate": "G1",
+      "capability": "reload + history + DOM + console/network",
+      "procedure": "Reload entered route and exercise real entry Back/Forward"
+    },
+    {
+      "id": "visual",
+      "gate": "G3",
+      "capability": "view PNG + DOM viewport",
+      "procedure": "Inspect at actual default theme 1280x800"
+    },
+    {
+      "id": "content",
+      "gate": "G4",
+      "capability": "visible text + DOM",
+      "procedure": "Inspect affected introduction, first question, help and return text"
+    },
+    {
+      "id": "challenge",
+      "gate": "G6",
+      "capability": "repeat transitions + stronger navigation checks",
+      "procedure": "Try falsifying focus, unanswered state and fresh reload/route claims"
+    }
+  ],
+  "instrumentation_limits": [
+    "No instrumented accessibility audit, contrast API, performance tracing or field metrics exposed by supported action array. Performance/certification excluded by product scope; any required risky contrast measurement would remain a gap.",
+    "No direct goto action; entered URL can be reloaded as a direct document request. Invalid URL permutations not applicable: no route-state permutations in declared help journey."
+  ]
+}

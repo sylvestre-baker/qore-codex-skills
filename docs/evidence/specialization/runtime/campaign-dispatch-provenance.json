@@ -1,0 +1,23 @@
+{
+  "schema": "qore-campaign-dispatch-selection/1",
+  "artifacts": [
+    {
+      "path": "pilot-gate.json",
+      "raw_sha256": "c5821ac3c255c01a54d539e6cb8ae4e56b05bc2bee4dd2a6126c451ea92278d1",
+      "public_sha256": "c5821ac3c255c01a54d539e6cb8ae4e56b05bc2bee4dd2a6126c451ea92278d1",
+      "transformation": "Selected operator feasibility/dispatch metadata; normalize declared private root prefixes only. Gate is not a quality result and dispatch alone is not coverage."
+    },
+    {
+      "path": "pilot-usage-supplement.json",
+      "raw_sha256": "61531b6423119b3c0cb5943aca241bc6e3ed46c7cd70f99852db5ceac9dc9a8c",
+      "public_sha256": "61531b6423119b3c0cb5943aca241bc6e3ed46c7cd70f99852db5ceac9dc9a8c",
+      "transformation": "Selected operator feasibility/dispatch metadata; normalize declared private root prefixes only. Gate is not a quality result and dispatch alone is not coverage."
+    },
+    {
+      "path": "dispatch-complete.json",
+      "raw_sha256": "45eff440c30e7774eae2ff15f2b379490fb538e22d182322dc2644bbf9569c4a",
+      "public_sha256": "45eff440c30e7774eae2ff15f2b379490fb538e22d182322dc2644bbf9569c4a",
+      "transformation": "Selected operator feasibility/dispatch metadata; normalize declared private root prefixes only. Gate is not a quality result and dispatch alone is not coverage."
+    }
+  ]
+}

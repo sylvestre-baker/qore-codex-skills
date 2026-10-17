@@ -1,0 +1,88 @@
+{
+  "allowed_origins": [
+    "https://qaizen.io"
+  ],
+  "activation_guard": [
+    {
+      "id": "entry",
+      "selector": "a[href$='/labs/readiness-check']",
+      "role": "link",
+      "name": "START HERE PRODUCTION READINESS CHECK Could your AI pilot go live? Ten questions show which of the five production gates is most likely to block it, and why. About 3 minutes \u00b7 10 questions \u00b7 5 gates \u00b7 no e-mail needed START THE CHECK",
+      "state": [
+        {
+          "selector": "h1",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "id": "start",
+      "selector": "main button[type=\"button\"]",
+      "role": "button",
+      "name": "START THE CHECK",
+      "attributes": {
+        "type": "button"
+      },
+      "state": [
+        {
+          "selector": "h1",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "id": "help-summary",
+      "selector": "main details summary",
+      "role": "button",
+      "name": "What does this mean?",
+      "state": [
+        {
+          "selector": "main [role=\"radiogroup\"]",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "id": "close",
+      "selector": "main details button[type=\"button\"]",
+      "role": "button",
+      "name": "Close",
+      "attributes": {
+        "type": "button"
+      },
+      "state": [
+        {
+          "selector": "main [role=\"radiogroup\"]",
+          "visible": true
+        },
+        {
+          "selector": "main details",
+          "attributes": {
+            "open": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "back",
+      "selector": "main button[type=\"button\"]:not([role]):not([disabled]):not(details button)",
+      "role": "button",
+      "name": "Back",
+      "attributes": {
+        "type": "button"
+      },
+      "state": [
+        {
+          "selector": "main [role=\"radiogroup\"]",
+          "visible": true
+        },
+        {
+          "selector": "main details",
+          "attributes": {
+            "open": null
+          }
+        }
+      ]
+    }
+  ]
+}

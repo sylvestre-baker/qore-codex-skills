@@ -1,0 +1,17 @@
+{
+  "schema": "qore-eval-qualification/1",
+  "run_id": "qore003-20261017-u2-generic-1",
+  "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+  "input_manifest_sha256": "1d94a8dd5aaa4c37b55fec05f9fcd4ac55e09b8f27fad7be02501ca69cbec3da",
+  "qore_run_sha256": "f196c89715135491f2dd6a3769442dfd4084f66f9ad4cd73056dc289fc1c713d",
+  "declared_coverage": "COMPLETE",
+  "coverage": "PARTIAL",
+  "assessor": "/root/campaign_ux_assessor",
+  "verifier": "/root/campaign_final_verifier",
+  "assessed_at": "2026-10-17T12:22:41.534375Z",
+  "reason": "Restrict original COMPLETE to PARTIAL. Initial entry/state scope explicitly requires G1, whose frozen contract includes direct applicable URL navigation as well as reload. All original initial URLs are Labs and no direct-navigation action is retained; missing goto capability cannot waive the check. Actual plateau stop also reports PARTIAL loop. Retain completed narrow help/Close/Back and warm reload/history observations without asserting complete required coverage.",
+  "evidence": [
+    "independent-assessment.json",
+    "independent-verification.json"
+  ]
+}

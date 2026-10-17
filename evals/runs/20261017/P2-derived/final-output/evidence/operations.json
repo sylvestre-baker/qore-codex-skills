@@ -1,0 +1,29 @@
+{
+  "observed_at": "2026-10-17T11:33:02.223913+00:00",
+  "commands_completed": [
+    {
+      "argv": [
+        "sh",
+        "-c",
+        "pwd && rg --files -g 'TASK.md' -g 'AGENTS.md' -g '*SKILL*' -g '*qore*' -g '*manifest*'"
+      ],
+      "exit_code": 127,
+      "result": "cwd /workspace/worker; /bin/sh: rg: not found; fallback find and full reads used."
+    },
+    {
+      "argv": [
+        "find",
+        "/workspace/output/reports",
+        "-maxdepth",
+        "1",
+        "-type",
+        "f",
+        "-printf",
+        "%f\\n"
+      ],
+      "exit_code": 1,
+      "result": "BusyBox find rejects -printf; standard find -type f subsequently used."
+    }
+  ],
+  "input_policy": "All writes confined to /workspace/output (source copies only); no input, shared-data, network, browser or application mutations."
+}

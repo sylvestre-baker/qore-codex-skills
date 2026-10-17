@@ -1,0 +1,21 @@
+{
+  "schema": "qore-selected-independent-verification/1",
+  "run_id": "qore003-20261017-u1-generic-1",
+  "neutral_id": "N16",
+  "verifier": "/root/campaign_final_verifier",
+  "verified_at": "2026-10-17T12:22:41.534375Z",
+  "source_verification": "verification-final/REPORT.md",
+  "decision": {
+    "coverage": "PARTIAL",
+    "reason": "Restrict original COMPLETE to PARTIAL as independently reproduced in wave3. Initially required G1 direct applicable URL entry is unobserved; actual entry-click, warm reload and history are useful passes but are not the separate direct navigation. Tool absence and a disclosed limit cannot mark the required check complete.",
+    "evidence": [
+      "trials/U1-generic/evaluation.json",
+      "assessments/ux-generic/N16/assessment.json",
+      "assessment-inputs/N16/output/REPORT.md",
+      "trials/U1-generic/final-output/execution.json",
+      "verification-wave3/REPORT.md",
+      "verification-final/read-only-checks.json"
+    ]
+  },
+  "limit": "Independent bounded coverage/claims reconciliation of all original retained cells and saved separate assessments; not an exhaustive code, product or security certification. Phase coverage is distinct from source/claim quality and narrow task passes. No winner, general benefit, efficiency, causal advantage, equal-scope comparability, live-revision identity or deployment/release readiness established. Native lifecycle/deadline/usage telemetry limits remain. Later corrections are separate evidence and do not rewrite original campaign results."
+}

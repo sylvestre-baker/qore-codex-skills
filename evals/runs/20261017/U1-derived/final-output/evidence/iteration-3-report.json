@@ -1,0 +1,326 @@
+{
+  "actor_id": "/root",
+  "request": 4,
+  "observed_window": [
+    "2026-10-17T10:57:30.520Z",
+    "2026-10-17T10:58:18.195Z"
+  ],
+  "actions": [
+    {
+      "at": "2026-10-17T10:57:33.337Z",
+      "type": "keyboard",
+      "key": "Tab",
+      "active_element": {
+        "tag": "A",
+        "id": "",
+        "text": "Skip to content"
+      },
+      "outcome": "completed"
+    },
+    {
+      "at": "2026-10-17T10:57:33.337Z",
+      "type": "click",
+      "selector": "a[href$='/labs/readiness-check']",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-17T10:57:34.327Z",
+      "type": "assert-visible",
+      "role": "heading",
+      "name": "Could your AI pilot go live? A check in about 3 minutes",
+      "exact": false,
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-17T10:57:35.240Z",
+      "type": "reload",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-17T10:57:36.353Z",
+      "type": "assert-url",
+      "url": "https://qaizen.io/labs/readiness-check",
+      "outcome": "completed"
+    },
+    {
+      "at": "2026-10-17T10:57:37.258Z",
+      "type": "assert-visible",
+      "selector": "h1",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-17T10:57:38.168Z",
+      "type": "snapshot",
+      "label": "deep-document-reload",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-17T10:57:39.225Z",
+      "type": "click",
+      "role": "button",
+      "name": "Start the check",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-17T10:57:40.174Z",
+      "type": "assert-none-checked",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-17T10:57:41.090Z",
+      "type": "focus-step",
+      "key": "Tab",
+      "step": 1,
+      "active_element": {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "Every production source and flow is written down, with a named owner"
+      },
+      "reached": false,
+      "outcome": "observed"
+    },
+    {
+      "at": "2026-10-17T10:57:41.099Z",
+      "type": "focus-step",
+      "key": "Tab",
+      "step": 2,
+      "active_element": {
+        "tag": "SUMMARY",
+        "id": "",
+        "text": "What does this mean?"
+      },
+      "reached": true,
+      "outcome": "observed"
+    },
+    {
+      "at": "2026-10-17T10:57:41.080Z",
+      "type": "traverse-focus",
+      "selector": "main details summary",
+      "max_steps": 24,
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-17T10:57:42.003Z",
+      "type": "keyboard",
+      "key": "Enter",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-17T10:57:42.926Z",
+      "type": "focus-step",
+      "key": "Tab",
+      "step": 1,
+      "active_element": {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "Close"
+      },
+      "reached": true,
+      "outcome": "observed"
+    },
+    {
+      "at": "2026-10-17T10:57:42.917Z",
+      "type": "traverse-focus",
+      "role": "button",
+      "name": "Close",
+      "max_steps": 24,
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-17T10:57:43.830Z",
+      "type": "snapshot",
+      "label": "close-keyboard-focus-challenge",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-17T10:57:44.940Z",
+      "type": "keyboard",
+      "key": "Enter",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-17T10:57:45.853Z",
+      "type": "assert-focused",
+      "selector": "main details summary",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-17T10:57:46.760Z",
+      "type": "assert-attribute",
+      "selector": "main details",
+      "attribute": "open",
+      "value": null,
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-17T10:57:47.674Z",
+      "type": "focus-step",
+      "key": "Tab",
+      "step": 1,
+      "active_element": {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "Back"
+      },
+      "reached": true,
+      "outcome": "observed"
+    },
+    {
+      "at": "2026-10-17T10:57:47.666Z",
+      "type": "traverse-focus",
+      "role": "button",
+      "name": "Back",
+      "max_steps": 24,
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-17T10:57:48.578Z",
+      "type": "assert-focused",
+      "role": "button",
+      "name": "Back",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-17T10:57:49.484Z",
+      "type": "snapshot",
+      "label": "back-focus-obscuration-challenge",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-17T10:57:50.576Z",
+      "type": "keyboard",
+      "key": "Enter",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-17T10:57:51.488Z",
+      "type": "assert-focused",
+      "selector": "h1",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-17T10:57:52.395Z",
+      "type": "assert-visible",
+      "role": "heading",
+      "name": "Could your AI pilot go live? A check in about 3 minutes",
+      "exact": false,
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-17T10:57:53.299Z",
+      "type": "snapshot",
+      "label": "back-result-challenge",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-17T10:57:54.351Z",
+      "type": "click",
+      "role": "button",
+      "name": "Start the check",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-17T10:57:55.284Z",
+      "type": "assert-none-checked",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-17T10:57:56.189Z",
+      "type": "assert-attribute",
+      "selector": "main details",
+      "attribute": "open",
+      "value": null,
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-17T10:57:57.097Z",
+      "type": "snapshot",
+      "label": "restart-unanswered-help-reset",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-17T10:57:58.175Z",
+      "type": "reload",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    }
+  ],
+  "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('h1') to be visible\u001b[22m\n",
+  "conclusions": [
+    "Deep-document introduction reload observed.",
+    "Close and Back focus assertions passed again.",
+    "Back-focused screenshot is byte-identical to request2, retaining the overlap finding.",
+    "Starting again after Back preserves unanswered state and resets help closed.",
+    "Final assertion expected an introduction on question reload, but this expectation is not in the contract. Absence of h1 alone does not establish a defect; request5 observes the result without assuming reset."
+  ],
+  "unexecuted": [
+    "Post-question-reload snapshot",
+    "Browser history Back/Forward"
+  ],
+  "console": [
+    {
+      "at": "2026-10-17T10:57:39.268Z",
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_BLOCKED_BY_CLIENT.Inspector",
+      "location": {
+        "url": "https://qaizen.io/api/labs/readiness/event",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "at": "2026-10-17T10:57:54.380Z",
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_BLOCKED_BY_CLIENT.Inspector",
+      "location": {
+        "url": "https://qaizen.io/api/labs/readiness/event",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    }
+  ],
+  "blocked_mutations": [
+    {
+      "at": "2026-10-17T10:57:39.265Z",
+      "method": "POST",
+      "url": "https://qaizen.io/api/labs/readiness/event",
+      "reason": "Read-only probe policy"
+    },
+    {
+      "at": "2026-10-17T10:57:54.376Z",
+      "method": "POST",
+      "url": "https://qaizen.io/api/labs/readiness/event",
+      "reason": "Read-only probe policy"
+    }
+  ],
+  "page_errors": []
+}

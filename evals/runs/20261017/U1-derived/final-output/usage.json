@@ -1,0 +1,15 @@
+{
+  "root_actor_id": "/root",
+  "started_at": "2026-10-17T10:54:04+00:00",
+  "accounted_through": "2026-10-17T11:02:26.638708+00:00",
+  "elapsed_wall_seconds": 502.638708,
+  "wall_limit_seconds": 900,
+  "aggregate_agent_seconds_limit": 2400,
+  "aggregate_billable_agent_seconds": null,
+  "token_usage": null,
+  "usage_unavailable_reason": "No runtime token/billed-agent-seconds telemetry API provided. With no children, elapsed root wall is a conservative bound for root context residency through this accounting snapshot, not a fabricated billing measurement.",
+  "child_contexts": [],
+  "browser_requests": 5,
+  "loop_iterations": 4,
+  "stop": "STOP_PLATEAU; no new dispatches after iteration4."
+}

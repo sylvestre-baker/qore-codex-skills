@@ -1,0 +1,267 @@
+{
+  "schema": "qore-eval-evidence/1",
+  "run_id": "qore003-20261017-u1-baseline-1",
+  "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+  "input_manifest_sha256": "ac79f382c3f69aafe033bb3df651d1d2a974f7b5b9bcd94fcef6c0771e8daa02",
+  "observed_at": "2026-10-17T11:06:27.773527+00:00",
+  "payload": {
+    "actual_launch": {
+      "started_at": "2026-10-17T11:02:41.978343+00:00",
+      "argv": [
+        "docker",
+        "exec",
+        "-i",
+        "--workdir",
+        "/workspace/worker",
+        "qore-qualification-qore003-20261017-u1-baseline-1",
+        "codex",
+        "--ask-for-approval",
+        "never",
+        "exec",
+        "--ignore-user-config",
+        "--ignore-rules",
+        "--ephemeral",
+        "--json",
+        "--skip-git-repo-check",
+        "--strict-config",
+        "-m",
+        "gpt-6.1-sol",
+        "-c",
+        "default_permissions=\"qore-trial\"",
+        "-c",
+        "permissions.qore-trial.extends=\":workspace\"",
+        "-c",
+        "permissions.qore-trial.filesystem={\":root\"=\"deny\",\":minimal\"=\"read\",\":tmpdir\"=\"write\",\":slash_tmp\"=\"write\",\":workspace_roots\"={\".\"=\"read\"},\"/workspace/output\"=\"write\",\"/var/lib/qore-feedback\"=\"read\"}",
+        "-c",
+        "permissions.qore-trial.network.enabled=false",
+        "-c",
+        "allow_login_shell=false",
+        "-c",
+        "web_search=\"disabled\"",
+        "-c",
+        "model_reasoning_effort=\"high\"",
+        "-c",
+        "service_tier=\"default\"",
+        "-c",
+        "features.multi_agent=true",
+        "-c",
+        "agents.max_threads=3",
+        "-c",
+        "features.apps=false",
+        "-c",
+        "features.plugins=false",
+        "-c",
+        "features.remote_plugin=false",
+        "-c",
+        "features.memories=false",
+        "-c",
+        "features.skill_search=false",
+        "-c",
+        "features.skill_mcp_dependency_install=false",
+        "-c",
+        "features.request_permissions_tool=false",
+        "-c",
+        "mcp_servers={}",
+        "-"
+      ],
+      "prompt_sha256": "b7bbe0516fb66bac3e8f7eb12268359a9665618a77f658754b22990578bb0e76"
+    },
+    "actual_exit": {
+      "started_at": "2026-10-17T11:02:41.978343+00:00",
+      "ended_at": "2026-10-17T11:06:27.773527+00:00",
+      "exit_code": 0
+    },
+    "native_parent_usage": {
+      "input_tokens": 821268,
+      "cached_input_tokens": 748672,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 10393,
+      "reasoning_output_tokens": 3012
+    },
+    "outputs": [
+      {
+        "path": "final-output/REPORT.md",
+        "sha256": "91d0c06e1c8b119e3fafce0215cbd2f0428f7b3c724d329b1ac02ca33fdf1d0b"
+      },
+      {
+        "path": "final-output/browser-request-1.json",
+        "sha256": "68b5dfedc86722c7776a34809b25b5acfce3a8930c79b5a583cda70279ac0632"
+      },
+      {
+        "path": "final-output/browser-request-2.json",
+        "sha256": "64b719a94f3bc66477640de8fe032aeab1ddbbeedd295d1850b5eda32cce1dce"
+      },
+      {
+        "path": "final-output/check_evidence.py",
+        "sha256": "576c7b9867d04ad75be5ea4d96fe00c05465351e4b42023f921af179dd6ca462"
+      },
+      {
+        "path": "final-output/contract-check.json",
+        "sha256": "7f557ba27626c65e7eb10c7b17773f82e9feae273715b633b694723f87b3c1ee"
+      },
+      {
+        "path": "final-output/evidence/response-1/00-entry.dom.json",
+        "sha256": "09a05d31c16faaf8980d863723e3f901798ef49b4cac43ea54aec912de99112d"
+      },
+      {
+        "path": "final-output/evidence/response-1/00-entry.png",
+        "sha256": "095283e6a92818f6baf91a977793ff14591a91a60cef7b82ea9019642c2251e2"
+      },
+      {
+        "path": "final-output/evidence/response-1/01-public-entry.dom.json",
+        "sha256": "2e72d94aeb80a87a73191e51ac1edd98ea33a03d36fe37719b667b5f754ac9e2"
+      },
+      {
+        "path": "final-output/evidence/response-1/01-public-entry.png",
+        "sha256": "041319a5d5542b9a5ddae0bd2c782d018a031320b7ef69be076a71a99c470b8a"
+      },
+      {
+        "path": "final-output/evidence/response-1/02-introduction.dom.json",
+        "sha256": "524b0152744d052e6bb253eaeda4ff35b7bc69b132546fc509c7edd1958c13a1"
+      },
+      {
+        "path": "final-output/evidence/response-1/02-introduction.png",
+        "sha256": "8c12568cc767e1d111812033ddd4823fc5ffcaf12d6561cb61b74ffa210a4bc8"
+      },
+      {
+        "path": "final-output/evidence/response-1/events.json",
+        "sha256": "1c1e565feca426b99d33aa2e1d6f8d6b7e10973ccd1e20d416b7631c63ca4e8d"
+      },
+      {
+        "path": "final-output/evidence/response-1/relay.json",
+        "sha256": "c9c3868ec3c7d7f6182d5936d7730f54d745e8eba2007b41a68271efc312ba9d"
+      },
+      {
+        "path": "final-output/evidence/response-1/result.json",
+        "sha256": "b5ded30955973266449bfeee5aaf0aa55af8409edcc8bdd02f62b1f60793993c"
+      },
+      {
+        "path": "final-output/evidence/response-2/00-entry.dom.json",
+        "sha256": "09a05d31c16faaf8980d863723e3f901798ef49b4cac43ea54aec912de99112d"
+      },
+      {
+        "path": "final-output/evidence/response-2/00-entry.png",
+        "sha256": "095283e6a92818f6baf91a977793ff14591a91a60cef7b82ea9019642c2251e2"
+      },
+      {
+        "path": "final-output/evidence/response-2/01-first-question-unanswered.dom.json",
+        "sha256": "d914c65d93824bf0ad2af509c711239181aeace21ca36164765ced95fe000fba"
+      },
+      {
+        "path": "final-output/evidence/response-2/01-first-question-unanswered.png",
+        "sha256": "4e9a3b37fca4b08a7cd5123cae0c30d5a65225ec092b00091699bad327691393"
+      },
+      {
+        "path": "final-output/evidence/response-2/02-help-open-enter.dom.json",
+        "sha256": "4b9b0bf3e78667d19a134f9156a0d80080297bd8ab7a6a122e64eff2c6f4510d"
+      },
+      {
+        "path": "final-output/evidence/response-2/02-help-open-enter.png",
+        "sha256": "46f967ac12fcf923160726b0003edafa7b461aa20501c22fa83283f7e8bdde4d"
+      },
+      {
+        "path": "final-output/evidence/response-2/03-help-closed-space.dom.json",
+        "sha256": "076f396281cfb2f2e10bd7059a532f1182e9e42966166617cfea9badfd2c439f"
+      },
+      {
+        "path": "final-output/evidence/response-2/03-help-closed-space.png",
+        "sha256": "154537c2923ff969a06afd9a5d39ba885d067ce6190af63b29e9daef57fc1977"
+      },
+      {
+        "path": "final-output/evidence/response-2/04-help-reopened-enter.dom.json",
+        "sha256": "4b9b0bf3e78667d19a134f9156a0d80080297bd8ab7a6a122e64eff2c6f4510d"
+      },
+      {
+        "path": "final-output/evidence/response-2/04-help-reopened-enter.png",
+        "sha256": "46f967ac12fcf923160726b0003edafa7b461aa20501c22fa83283f7e8bdde4d"
+      },
+      {
+        "path": "final-output/evidence/response-2/05-close-result.dom.json",
+        "sha256": "076f396281cfb2f2e10bd7059a532f1182e9e42966166617cfea9badfd2c439f"
+      },
+      {
+        "path": "final-output/evidence/response-2/05-close-result.png",
+        "sha256": "90a40fe641a1eff7651756586a3b073b55da7cef825ba998125ef3aea3dfd89e"
+      },
+      {
+        "path": "final-output/evidence/response-2/06-back-keyboard-focused.dom.json",
+        "sha256": "495b50eac16f5a7872812186e9c3c02cac07f2a883bb9da673b62c4b576e9480"
+      },
+      {
+        "path": "final-output/evidence/response-2/06-back-keyboard-focused.png",
+        "sha256": "1c19e3dc23f6dcb33d0d930aa391f28cfce6205cdee1e3af133222737d219ce6"
+      },
+      {
+        "path": "final-output/evidence/response-2/07-back-result.dom.json",
+        "sha256": "6dd0bd08efd546fdbbcd0dff658a6b903f90f9d8ec7a12c9d8946c956ddeb37b"
+      },
+      {
+        "path": "final-output/evidence/response-2/07-back-result.png",
+        "sha256": "87473a933533895cf780dd9d517969cda71d5a8afdb74b99a57e97434cd8a824"
+      },
+      {
+        "path": "final-output/evidence/response-2/08-final.dom.json",
+        "sha256": "6dd0bd08efd546fdbbcd0dff658a6b903f90f9d8ec7a12c9d8946c956ddeb37b"
+      },
+      {
+        "path": "final-output/evidence/response-2/08-final.png",
+        "sha256": "87473a933533895cf780dd9d517969cda71d5a8afdb74b99a57e97434cd8a824"
+      },
+      {
+        "path": "final-output/evidence/response-2/events.json",
+        "sha256": "bea4ff60425a5c908d2883111ae2eb83ae01ca06213636416a1000df4c50f1dc"
+      },
+      {
+        "path": "final-output/evidence/response-2/relay.json",
+        "sha256": "4f674e1e3508db93181836d5cff045756de91a45838c54d8efca4b714511592c"
+      },
+      {
+        "path": "final-output/evidence/response-2/result.json",
+        "sha256": "27260a2c31c092521b2cbbe6d845b27091ae52ef654d6aa3baa6a35d59fc3ee7"
+      },
+      {
+        "path": "final-output/evidence-check-output.json",
+        "sha256": "d8bce1654312e8523fef8d2a5ec55e1d6363e33dc16cdf89508c26b8a89a877a"
+      },
+      {
+        "path": "final-output/evidence-check.json",
+        "sha256": "aca543e131e6e4aa1b2d33de18ab97ad75e1e57cebaa5bd56201ffa925b06d7e"
+      },
+      {
+        "path": "final-output/input-sha256.json",
+        "sha256": "6cd2f6732e7abc9352ce52899b221a80705de0cbbcddbfb47b3be622684f9ad6"
+      },
+      {
+        "path": "final-output/roster.json",
+        "sha256": "eab16363f67a638fac616017c4f932b177aa7138f9975ee60b1fa5f01d6173e6"
+      },
+      {
+        "path": "final-output/run-record.json",
+        "sha256": "e642ab6544d2817d05ca562aff0bdf638e2204a322423c88b71dd289a032f5c2"
+      },
+      {
+        "path": "final-output/write-canary",
+        "sha256": "2d711642b726b04401627ca9fbac32f5c8530fb1903cc4db02258717921a4881"
+      }
+    ],
+    "post_inputs": [
+      {
+        "path": "TASK.md",
+        "sha256": "3708d4c233f7b6adae155f379a962ee7ebf18fe781add69a69157d1a8b8605a9"
+      },
+      {
+        "path": "checks/check_contract.py",
+        "sha256": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b"
+      },
+      {
+        "path": "observation-policy.json",
+        "sha256": "15f4e5b4960b5011684be265f027e42b8637a3b8aae96b24bba1ba3a4d0f0202"
+      },
+      {
+        "path": "surface-contract.json",
+        "sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3"
+      }
+    ],
+    "limit": "Retained actual output identities and execution receipts; this wrapper does not grade task correctness."
+  }
+}

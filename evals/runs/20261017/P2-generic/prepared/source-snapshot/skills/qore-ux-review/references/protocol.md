@@ -1,0 +1,54 @@
+# Web scope and bounded loop
+
+## Declare scope before execution
+
+Record the target snapshot, authorized origins, entry path, personas/account contexts, data availability, themes, viewports, required states, and budget. Use the actual diff or explicit surface scope to choose depth. The names below describe gate coverage rather than confidence levels.
+
+| Depth | Appropriate trigger | Required gates and scope |
+|---|---|---|
+| `full` | New data-driven screen, broad frontend change, or a complete surface review | G0–G6 and GP; applicable data states, supported themes and representative desktop/mobile viewports. |
+| `entry` | New/rewired route, page, modal, or entry control | G0–G6 for affected entries and states, including sibling persona/account contexts. GP when performance is part of acceptance or affected by the change. |
+| `state` | A new branch or state within an existing surface | G1–G6 for changed states and relevant neighbors; add G0 if reachability changes. |
+| `visual` | Style, token, layout, or visual behavior change | G3, G5, G6 for all affected consumers, themes and viewports. Add state/render gates for behavior changes. |
+| `copy` | Text-only change | G4 and G6 in every affected state; G1 when text encodes URL state and G5 when names/instructions affect accessibility. |
+| `perf` | Performance change or slow load | G1, G3, G6 and GP; inspect trace and relevant interaction/render paths. Add G0 for changed routes. |
+| `none` | No rendered web behavior is affected | Explain the evidence-based boundary; no browser success claim. Use the appropriate code/artifact review instead. |
+
+For static pages, use the applicable full surface gates: G0 checks in-page controls, G1 includes hash/history behavior, and G2 may be NOT_APPLICABLE if there is no data layer or asynchronous state. Tool absence is never non-applicability. For a review without a diff, list the files or explicit target artifacts inspected and explain the surface scope; do not invent a changed-file list.
+
+Write `depth.json` with `depth`, nonempty `changed_files`, and `justification`. For `none`, the justification must explain why no rendered web behavior is affected. Run:
+
+```bash
+node scripts/depth-lint.mjs /absolute/path/to/depth.json
+```
+
+The checker catches coarse contradictions, not every semantic effect. Broaden scope when observed behavior or changed dependencies require it. Do not narrow the initially required set after discovering unavailable tools. An explicit user scope change starts a separately identified run; preserve the original partial result.
+
+## Capability preflight
+
+Use the actual available driver, its documented APIs, and an authorized target. Record observed capability for navigation, screenshots, DOM/semantic inspection, keyboard, console, and network. Test rather than infer from a tool name. Record whether accessibility instrumentation, contrast measurement, performance tracing, and field metrics are available when the chosen scope requires them. Publish a matrix linking each required check to its capability and actual probe evidence.
+
+Check authentication and persona context, data availability, and state-control prerequisites before the loop. Obtain only data and access already authorized. Missing real/representative data limits G2; empty-only rendering cannot stand in for typical/overflow states. Do not spend the run repeatedly rediscovering a known unavailable prerequisite.
+
+A transient failure permits one non-destructive retry. Preserve the error and mark dependent checks SKIPPED or BLOCKED if it persists. Browser termination, lock removal, software installation, shared-data seeding, and new external writes need their own authorization; no recovery instruction silently authorizes them.
+
+## One iteration
+
+1. **Drive:** reach the real entry first for G0, then navigate/reload relevant deep URLs. Establish the exact persona, context, and state.
+2. **Capture and inspect:** view screenshots and semantic/DOM output; inspect console and network; drive pending/loading UI to its resolved state. Collect the evidence required by [gates](gates.md).
+3. **Score:** record 0–5 for measured gates. PASS is at least 4; FAIL is below 4. SKIPPED/BLOCKED is missing observation, not a numeric defect score. A verified zero gate makes the surface DO-NOT-SHIP; it never bypasses budgets.
+4. **Challenge:** restate each pass as a falsifiable claim tied to an artifact. Re-test the highest-impact applicable risks and revise the affected score if the challenge finds a miss.
+5. **Correct if authorized:** fix established in-scope defects, prioritize reachability/render/data before polish, and record the resulting snapshot. If fixes are not authorized, retain the finding and stop with a review result.
+6. **Re-verify:** renew failed checks and relevant neighbors after a correction. Before SHIP, remeasure **every required gate** after the last fix, including accessibility/performance when required. Screenshots or measurements from an earlier revision do not establish the corrected state.
+
+Use [loop evidence](evidence.md) and the bundled stop-rule after every iteration. Fixes land at the end of an iteration, so same-iteration measurements precede that fix and are stale. A fresh measurement has an iteration number strictly greater than the last `fix_applied` iteration. Conservatively remeasure all required gates before final success.
+
+## Stop and report
+
+Stop when all applicable required gates have fresh evidence and pass, the declared budget ends, the required driver is blocked, a plateau ends the useful loop, or iteration six completes without success. The sixth iteration can SHIP only if it is already fresh, complete, and passing. Never begin a seventh iteration; a persistent zero does not extend the ceiling.
+
+After two unchanged failing comparisons, change the investigation or correction approach; do not repeat the same adjustment indefinitely. After three comparisons without improvement, the loop stops at plateau. The script determines the precise control outcome and takes ceiling precedence over further fixes. If its decision conflicts with a material unrecorded fact, repair the input/evidence or report the limitation; do not route around it.
+
+Keep two axes visible. COMPLETE means required observations are covered and current, and can coexist with a demonstrated defect/DO-NOT-SHIP. PARTIAL/BLOCKED means required observations are missing, skipped, or stale; it cannot establish SHIP. A justified NOT_APPLICABLE gate carries a product/scope reason independent of tool availability. Record the exact resume path for unresolved work.
+
+A ceiling or plateau stop with unresolved required work makes method execution coverage PARTIAL, even when every gate was observed. The checker retains observation_coverage separately so measured failures are not misrepresented as missing measurements. A normally completed scoped review can still be COMPLETE with a defect; exhaustion is a separate unfinished-work condition.

@@ -1,0 +1,185 @@
+{
+  "actor_id": "/root",
+  "checked_at": "2026-10-17T11:01:10.932545+00:00",
+  "last_relevant_change": "2026-10-17T09:53:58.639550+00:00",
+  "input_comparisons": [
+    {
+      "path": ".agents/skills/qore-ux-review-qaizen-labs/SKILL.md",
+      "sha256": "f785a696d4bf08aa48b99588fbc236322e5681b5be5d3e85cec7f959a8d65fc1",
+      "final_sha256": "f785a696d4bf08aa48b99588fbc236322e5681b5be5d3e85cec7f959a8d65fc1",
+      "unchanged": true
+    },
+    {
+      "path": ".agents/skills/qore-ux-review-qaizen-labs/agents/openai.yaml",
+      "sha256": "1a9fb2ea5b4842bc00c8c785bd207d2ac89edc149a0d7ea39d52b18ef43e4c79",
+      "final_sha256": "1a9fb2ea5b4842bc00c8c785bd207d2ac89edc149a0d7ea39d52b18ef43e4c79",
+      "unchanged": true
+    },
+    {
+      "path": ".agents/skills/qore-ux-review-qaizen-labs/references/evidence.md",
+      "sha256": "659560f88b965371e2c6e886b5f4c648a4879ebb7c69af4b1d307dfae176c8b3",
+      "final_sha256": "659560f88b965371e2c6e886b5f4c648a4879ebb7c69af4b1d307dfae176c8b3",
+      "unchanged": true
+    },
+    {
+      "path": ".agents/skills/qore-ux-review-qaizen-labs/references/gates.md",
+      "sha256": "667063cd64c576a9c5b4ec69f6ddcd677d4e969bae96184b3136ede9fd12fd87",
+      "final_sha256": "667063cd64c576a9c5b4ec69f6ddcd677d4e969bae96184b3136ede9fd12fd87",
+      "unchanged": true
+    },
+    {
+      "path": ".agents/skills/qore-ux-review-qaizen-labs/references/project-profile.md",
+      "sha256": "154ed11dab8e8499e74a5f3a6afb512827d5de5c73408523b845684e38f59dfc",
+      "final_sha256": "154ed11dab8e8499e74a5f3a6afb512827d5de5c73408523b845684e38f59dfc",
+      "unchanged": true
+    },
+    {
+      "path": ".agents/skills/qore-ux-review-qaizen-labs/references/project.json",
+      "sha256": "f76afdd45cb6352e5044a06affc4182ea6cd40aa9c012fb216636a61faa428f0",
+      "final_sha256": "f76afdd45cb6352e5044a06affc4182ea6cd40aa9c012fb216636a61faa428f0",
+      "unchanged": true
+    },
+    {
+      "path": ".agents/skills/qore-ux-review-qaizen-labs/references/protocol.md",
+      "sha256": "eda7c7c7c9e711e4b9fca59ec6b622d713c3d95b14cd6e3b008a978ebf156004",
+      "final_sha256": "eda7c7c7c9e711e4b9fca59ec6b622d713c3d95b14cd6e3b008a978ebf156004",
+      "unchanged": true
+    },
+    {
+      "path": ".agents/skills/qore-ux-review-qaizen-labs/references/release.json",
+      "sha256": "26a8aebdfb48c3c011713e02f53ae8f650179f0f24e7d58a9737b4897126602b",
+      "final_sha256": "26a8aebdfb48c3c011713e02f53ae8f650179f0f24e7d58a9737b4897126602b",
+      "unchanged": true
+    },
+    {
+      "path": ".agents/skills/qore-ux-review-qaizen-labs/references/run-evidence.md",
+      "sha256": "2ede0b19d58fd5535c90023068355679ee7bb27d3070967ada38f9ad156a9e69",
+      "final_sha256": "2ede0b19d58fd5535c90023068355679ee7bb27d3070967ada38f9ad156a9e69",
+      "unchanged": true
+    },
+    {
+      "path": ".agents/skills/qore-ux-review-qaizen-labs/scripts/depth-lint.mjs",
+      "sha256": "fd7be484c8e4bf3ba376bdddb88663b31ae9da4c2c7678232ea7a6cc7782bd0f",
+      "final_sha256": "fd7be484c8e4bf3ba376bdddb88663b31ae9da4c2c7678232ea7a6cc7782bd0f",
+      "unchanged": true
+    },
+    {
+      "path": ".agents/skills/qore-ux-review-qaizen-labs/scripts/project-check.py",
+      "sha256": "d87afa433fe485bdebca3e281d06e0896e4a8980ea7cf7baee739053614ea0ac",
+      "final_sha256": "d87afa433fe485bdebca3e281d06e0896e4a8980ea7cf7baee739053614ea0ac",
+      "unchanged": true
+    },
+    {
+      "path": ".agents/skills/qore-ux-review-qaizen-labs/scripts/run-check.py",
+      "sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+      "final_sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+      "unchanged": true
+    },
+    {
+      "path": ".agents/skills/qore-ux-review-qaizen-labs/scripts/stop-rule.mjs",
+      "sha256": "5c8d898e3accd82ed1932c791ff5ed1285aae659bae6757488158fc7a8120443",
+      "final_sha256": "5c8d898e3accd82ed1932c791ff5ed1285aae659bae6757488158fc7a8120443",
+      "unchanged": true
+    },
+    {
+      "path": "TASK.md",
+      "sha256": "37eade26e4e3b258d3619fece2f8370a41265f4fb19ee71fc359df097e9a7361",
+      "final_sha256": "37eade26e4e3b258d3619fece2f8370a41265f4fb19ee71fc359df097e9a7361",
+      "unchanged": true
+    },
+    {
+      "path": "checks/check_contract.py",
+      "sha256": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b",
+      "final_sha256": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b",
+      "unchanged": true
+    },
+    {
+      "path": "observation-policy.json",
+      "sha256": "15f4e5b4960b5011684be265f027e42b8637a3b8aae96b24bba1ba3a4d0f0202",
+      "final_sha256": "15f4e5b4960b5011684be265f027e42b8637a3b8aae96b24bba1ba3a4d0f0202",
+      "unchanged": true
+    },
+    {
+      "path": "surface-contract.json",
+      "sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+      "final_sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+      "unchanged": true
+    }
+  ],
+  "all_inputs_unchanged": true,
+  "corrections": [],
+  "browser_windows": [
+    {
+      "request": 1,
+      "actor": "neutral operator relay (operator name not exposed)",
+      "context": "fresh isolated request-1; browser context internal ID not exposed",
+      "requested_actions": 0,
+      "dispatch_utc": "2026-10-17T10:54:26.558311+00:00",
+      "return_utc": "2026-10-17T10:54:31.746689+00:00",
+      "status": "COMPLETE",
+      "exit_code": 0,
+      "error": null,
+      "request_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "receipt": "evidence/response-1/relay.json",
+      "events": "evidence/response-1/events.json"
+    },
+    {
+      "request": 2,
+      "actor": "neutral operator relay (operator name not exposed)",
+      "context": "fresh isolated request-2; browser context internal ID not exposed",
+      "requested_actions": 31,
+      "dispatch_utc": "2026-10-17T10:55:19.742301+00:00",
+      "return_utc": "2026-10-17T10:55:57.376638+00:00",
+      "status": "COMPLETE",
+      "exit_code": 0,
+      "error": null,
+      "request_sha256": "d8603f6db1244bfac82c8cde313d7eaccc065a1cebf0356f4662fbd5062d7ee3",
+      "receipt": "evidence/response-2/relay.json",
+      "events": "evidence/response-2/events.json"
+    },
+    {
+      "request": 3,
+      "actor": "neutral operator relay (operator name not exposed)",
+      "context": "fresh isolated request-3; browser context internal ID not exposed",
+      "requested_actions": 38,
+      "dispatch_utc": "2026-10-17T10:56:28.783562+00:00",
+      "return_utc": "2026-10-17T10:56:48.578792+00:00",
+      "status": "PARTIAL",
+      "exit_code": 1,
+      "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('COULD YOUR AI PILOT GO LIVE? A CHECK IN ABOUT 3 MINUTES', { exact: true }) to be visible\u001b[22m\n",
+      "request_sha256": "a675da55df1691a261ccafac2c3875d4aed25b79510cfc473ba9becdc6093fee",
+      "receipt": "evidence/response-3/relay.json",
+      "events": "evidence/response-3/events.json"
+    },
+    {
+      "request": 4,
+      "actor": "neutral operator relay (operator name not exposed)",
+      "context": "fresh isolated request-4; browser context internal ID not exposed",
+      "requested_actions": 38,
+      "dispatch_utc": "2026-10-17T10:57:30.493125+00:00",
+      "return_utc": "2026-10-17T10:58:18.211122+00:00",
+      "status": "PARTIAL",
+      "exit_code": 1,
+      "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('h1') to be visible\u001b[22m\n",
+      "request_sha256": "ed30b6388a7abb5dd6e1ea1b84105e25f3a3131ad1ba9f4feba6d7089785709e",
+      "receipt": "evidence/response-4/relay.json",
+      "events": "evidence/response-4/events.json"
+    },
+    {
+      "request": 5,
+      "actor": "neutral operator relay (operator name not exposed)",
+      "context": "fresh isolated request-5; browser context internal ID not exposed",
+      "requested_actions": 11,
+      "dispatch_utc": "2026-10-17T10:59:00.135675+00:00",
+      "return_utc": "2026-10-17T10:59:16.173664+00:00",
+      "status": "COMPLETE",
+      "exit_code": 0,
+      "error": null,
+      "request_sha256": "b1bae1fba772883427fdee5107997783059b079c215a11884f6ed739a1193b56",
+      "receipt": "evidence/response-5/relay.json",
+      "events": "evidence/response-5/events.json"
+    }
+  ],
+  "identity_procedure": "User-supplied enclosing candidate/target/run identity retained verbatim. input-manifest.json records independently computed per-file byte hashes. Aggregate prepared-input manifest serialization was not supplied and is not reconstructed. Target digest is NOT the digest of surface-contract.json or a deployed website commit.",
+  "freshness_limit": "All observed browser windows are later than supplied change timestamp; no target correction occurred. Live deployment commit and stability outside those windows are unknown."
+}

@@ -1,0 +1,268 @@
+{
+  "started_at": "2026-10-17T11:19:05.614693+00:00",
+  "batch_start_observed_utc": "2026-10-17T11:17:50Z",
+  "original_worker_coverage": "COMPLETE",
+  "original_worker_observation_coverage": "COMPLETE",
+  "declared_required_gates": [
+    "G0",
+    "G1",
+    "G2",
+    "G3",
+    "G4",
+    "G5",
+    "G6"
+  ],
+  "initial_G1_scope": "Reload and relevant history in observed route; deep navigation action not offered by relay, retain limitation if unproved. Invalid URL permutations outside explicit journey.",
+  "observations": [
+    {
+      "observation": 1,
+      "start_url": "https://qaizen.io/labs",
+      "exit_code": 0,
+      "action_types": [
+        "snapshot",
+        "click",
+        "snapshot",
+        "click",
+        "assert-none-checked",
+        "snapshot"
+      ],
+      "first_actions": [
+        {
+          "type": "snapshot",
+          "label": "labs-entry"
+        },
+        {
+          "type": "click",
+          "selector": "a[href$='/labs/readiness-check']",
+          "label": "public-entry-control"
+        }
+      ],
+      "navigation": [
+        {
+          "at": "2026-10-17T11:07:11.955Z",
+          "url": "https://qaizen.io/labs"
+        },
+        {
+          "at": "2026-10-17T11:07:12.322Z",
+          "url": "https://qaizen.io/labs"
+        },
+        {
+          "at": "2026-10-17T11:07:15.245Z",
+          "url": "https://qaizen.io/labs/readiness-check"
+        }
+      ],
+      "direct_navigation_action_count": 0,
+      "reload_action_count": 0,
+      "first_readiness_entry_action": {
+        "type": "click",
+        "selector": "a[href$='/labs/readiness-check']",
+        "label": "public-entry-control"
+      }
+    },
+    {
+      "observation": 2,
+      "start_url": "https://qaizen.io/labs",
+      "exit_code": 0,
+      "action_types": [
+        "click",
+        "assert-visible",
+        "assert-text",
+        "click",
+        "assert-none-checked",
+        "traverse-focus",
+        "assert-focused",
+        "snapshot",
+        "keyboard",
+        "assert-attribute",
+        "snapshot",
+        "keyboard",
+        "assert-hidden",
+        "snapshot",
+        "keyboard",
+        "assert-visible",
+        "traverse-focus",
+        "assert-focused",
+        "snapshot",
+        "keyboard",
+        "snapshot",
+        "assert-focused",
+        "assert-hidden",
+        "assert-none-checked",
+        "traverse-focus",
+        "assert-focused",
+        "snapshot",
+        "keyboard",
+        "snapshot",
+        "assert-visible",
+        "assert-focused",
+        "assert-hidden",
+        "assert-url"
+      ],
+      "first_actions": [
+        {
+          "type": "click",
+          "selector": "a[href$='/labs/readiness-check']"
+        },
+        {
+          "type": "assert-visible",
+          "selector": "h1"
+        }
+      ],
+      "navigation": [
+        {
+          "at": "2026-10-17T11:07:58.956Z",
+          "url": "https://qaizen.io/labs"
+        },
+        {
+          "at": "2026-10-17T11:07:59.397Z",
+          "url": "https://qaizen.io/labs"
+        },
+        {
+          "at": "2026-10-17T11:08:01.208Z",
+          "url": "https://qaizen.io/labs/readiness-check"
+        }
+      ],
+      "direct_navigation_action_count": 0,
+      "reload_action_count": 0,
+      "first_readiness_entry_action": {
+        "type": "click",
+        "selector": "a[href$='/labs/readiness-check']"
+      }
+    },
+    {
+      "observation": 3,
+      "start_url": "https://qaizen.io/labs",
+      "exit_code": 0,
+      "action_types": [
+        "click",
+        "reload",
+        "assert-visible",
+        "snapshot",
+        "history-back",
+        "assert-url",
+        "snapshot",
+        "history-forward",
+        "assert-url",
+        "assert-visible",
+        "snapshot",
+        "click",
+        "assert-none-checked",
+        "traverse-focus",
+        "keyboard",
+        "keyboard",
+        "keyboard",
+        "traverse-focus",
+        "keyboard",
+        "assert-focused",
+        "traverse-focus",
+        "snapshot",
+        "keyboard",
+        "assert-focused",
+        "snapshot",
+        "keyboard",
+        "assert-focused",
+        "snapshot",
+        "assert-none-checked",
+        "keyboard",
+        "snapshot",
+        "assert-focused"
+      ],
+      "first_actions": [
+        {
+          "type": "click",
+          "selector": "a[href$='/labs/readiness-check']"
+        },
+        {
+          "type": "reload"
+        }
+      ],
+      "navigation": [
+        {
+          "at": "2026-10-17T11:09:34.216Z",
+          "url": "https://qaizen.io/labs"
+        },
+        {
+          "at": "2026-10-17T11:09:34.554Z",
+          "url": "https://qaizen.io/labs"
+        },
+        {
+          "at": "2026-10-17T11:09:36.368Z",
+          "url": "https://qaizen.io/labs/readiness-check"
+        },
+        {
+          "at": "2026-10-17T11:09:37.423Z",
+          "url": "https://qaizen.io/labs/readiness-check"
+        },
+        {
+          "at": "2026-10-17T11:09:37.533Z",
+          "url": "https://qaizen.io/labs/readiness-check"
+        },
+        {
+          "at": "2026-10-17T11:09:40.361Z",
+          "url": "https://qaizen.io/labs"
+        },
+        {
+          "at": "2026-10-17T11:09:40.363Z",
+          "url": "https://qaizen.io/labs"
+        },
+        {
+          "at": "2026-10-17T11:09:43.330Z",
+          "url": "https://qaizen.io/labs/readiness-check"
+        },
+        {
+          "at": "2026-10-17T11:09:43.332Z",
+          "url": "https://qaizen.io/labs/readiness-check"
+        }
+      ],
+      "direct_navigation_action_count": 0,
+      "reload_action_count": 1,
+      "first_readiness_entry_action": {
+        "type": "click",
+        "selector": "a[href$='/labs/readiness-check']"
+      }
+    }
+  ],
+  "independent_assessed_coverage": "PARTIAL",
+  "missing_required_check": "Direct URL navigation to the applicable readiness route; recorded reload/history passes remain separate observed checks.",
+  "exclusion_assessment": "No source/user-based exclusion of applicable direct URL entry was recorded; initial limitation invokes missing relay action, which frozen contracts forbid as a non-applicability reason.",
+  "refutation_attempts": [
+    {
+      "theory": "Declared scope justified direct navigation outside the task",
+      "result": "Not supported: entry/state scope explicitly requires G1 and invokes relay action absence, not a surface/source reason."
+    },
+    {
+      "theory": "HTTP200 reload equals the entire G1 requirement",
+      "result": "It proves reload/document handling after entry, but the frozen gate separately says navigate directly and reload. All actual sessions started at Labs and entered readiness by click."
+    },
+    {
+      "theory": "COMPLETE means no product defects",
+      "result": "Rejected interpretation: defects may be found during complete work; the issue here is an unobserved applicable required check, independent of existing DO-NOT-SHIP."
+    }
+  ],
+  "source_preservation": {
+    "unchanged": true,
+    "files_checked": 19,
+    "sha256": {
+      "assessment-inputs/N16/output/REPORT.md": "fdafba9796ac7bdf77d1719ab499540298bf758bf58e505f9851afa40969bd2b",
+      "assessment-inputs/N16/output/scope-plan.json": "6efb4c8870b818ebae5561412c89c4608a8674ae78b8af4baccfe410e3203e42",
+      "assessment-inputs/N16/output/execution.json": "4e5021ede168c3bc6c4d2eb52b941cfffd1662efdff5625cc0fbdece73dc5626",
+      "assessment-inputs/N16/output/gate-results.json": "0515cefda22422036d57c70823cd8dda66535732ec25ef5707aa21c3d8d6fa94",
+      "assessment-inputs/N16/input/TASK.md": "3f9d638f2a8b8b9677c313ff3872f6c7afadf89b470fd1cc7e034407543782f3",
+      "assessment-inputs/N16/input/.agents/skills/qore-ux-review/SKILL.md": "33b1367f256f1a6304902d08cdff9b023add92fb750834216268cca8de84b851",
+      "assessment-inputs/N16/input/.agents/skills/qore-ux-review/references/gates.md": "667063cd64c576a9c5b4ec69f6ddcd677d4e969bae96184b3136ede9fd12fd87",
+      "assessment-inputs/N16/input/.agents/skills/qore-ux-review/references/protocol.md": "eda7c7c7c9e711e4b9fca59ec6b622d713c3d95b14cd6e3b008a978ebf156004",
+      "assessment-inputs/N16/input/.agents/skills/qore-ux-review/references/run-evidence.md": "2ede0b19d58fd5535c90023068355679ee7bb27d3070967ada38f9ad156a9e69",
+      "assessment-inputs/N16/operator/browser_probe.mjs": "544d47211ac5aefde57072aef4ded1140c21030555b0e45e93f8821794249add",
+      "assessment-inputs/N16/observation-1/command.json": "35d84276e6836b023ebf6485b664950590202f3ff15d0776d7a08f482e72a054",
+      "assessment-inputs/N16/observation-1/actions.json": "d2d45dc81331345404c2ec8f97eb472faa04b099faea723f3159fdb1f64dbd13",
+      "assessment-inputs/N16/observation-1/raw/events.json": "c2dff768ec10804452c3222d25a88057dd3ddd2c9839ad6660994d4095836301",
+      "assessment-inputs/N16/observation-2/command.json": "92d1639a88fe5f9bc8ff791a6cb0b56e67fffab4881d0dca24c7f39109287acf",
+      "assessment-inputs/N16/observation-2/actions.json": "a7452f8aa9c9bbdd8f796f534090aa5c461736e7adef6dfa560ceaaff6b62e36",
+      "assessment-inputs/N16/observation-2/raw/events.json": "104fa85e8db7a62356ae94b0845502eb3ff54be2c7143b4bb2ff6d5b875f518b",
+      "assessment-inputs/N16/observation-3/command.json": "ebaa6c8985ea5aab863d69da10815eaa15dfbbcf9a22dcd6c588bbbbb4145845",
+      "assessment-inputs/N16/observation-3/actions.json": "468218470e7b9f6562a7cc91a56d8b2e60c97f5589907d1d92c49210a4f8fad7",
+      "assessment-inputs/N16/observation-3/raw/events.json": "3661c0dfc24f3f1c3a6b9b88de86646feee91e63e9642770359aa39f30cf1eb2"
+    }
+  },
+  "finished_at": "2026-10-17T11:19:05.661257+00:00"
+}

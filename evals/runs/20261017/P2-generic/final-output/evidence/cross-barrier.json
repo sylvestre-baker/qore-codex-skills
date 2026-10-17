@@ -1,0 +1,23 @@
+{
+  "observed_at": "2026-10-17T11:51:08.756598+00:00",
+  "requested": [
+    "product",
+    "architecture",
+    "ux",
+    "delivery",
+    "qa"
+  ],
+  "returned": [
+    "product",
+    "architecture",
+    "ux",
+    "delivery",
+    "qa"
+  ],
+  "missing": [],
+  "phase_count_per_role": {
+    "Analyze": 1,
+    "Cross-examine": 1
+  },
+  "stopping_reason": "All required reports returned; bounded source investigations sufficient for adjudication; no additional round or quality retry."
+}

@@ -1,0 +1,11 @@
+{
+  "argv": [
+    "node",
+    "/workspace/worker/.agents/skills/qore-ux-review/scripts/stop-rule.mjs",
+    "/workspace/output/loop.json"
+  ],
+  "exit_code": 0,
+  "stdout": "{\n  \"decision\": \"CONTINUE\",\n  \"verdict\": \"DO-NOT-SHIP\",\n  \"coverage\": \"COMPLETE\",\n  \"observation_coverage\": \"COMPLETE\",\n  \"iteration\": 2,\n  \"ceiling\": 6,\n  \"surface_score\": null,\n  \"consecutive_fresh_passes\": 0,\n  \"passes_required\": 1,\n  \"lowest_failing_gate\": \"G3\",\n  \"failing_gates\": [\n    \"G3\",\n    \"G5\"\n  ],\n  \"stale_gates\": [],\n  \"missing_gates\": [],\n  \"skipped\": [],\n  \"infra_blocked\": [],\n  \"not_applicable\": {},\n  \"stuck_count\": 1,\n  \"no_improve_count\": 1,\n  \"limit\": \"Coverage describes observations. SHIP is a scoped review result, not deployment authorization. Non-applicability reasons require independent review.\"\n}\n",
+  "stderr": "",
+  "observed_at": "2026-10-17T11:11:48.795846+00:00"
+}

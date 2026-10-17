@@ -1,0 +1,20 @@
+{
+  "findings": [
+    {
+      "id": "R1-C01",
+      "title": "Filtered verifier packets retain finder rationale despite the declared no-finder-reasoning boundary",
+      "severity": "medium",
+      "evidence": "qore-skills/skills/qore-review/scripts/redact-for-verifier.mjs:13-31; references/findings.md:3-5,14-20; references/protocol.md:31-35; assessment-inputs/N03/output/evidence/claims.json:19,25,31,37,43; assessment-inputs/N09/output/evidence/claims.json:7,13,19; verification-wave1/checks/results.json (claims and synthetic_filter_probe).",
+      "verdict": "REFUTED",
+      "refuted_because": "The actual redactor preserves exactly the permitted scalar claim fields, and the two frozen packets contain only id/title/severity/evidence. Re-running it preserved all 7 N03 and 3 N09 claims exactly; a separate probe showed that explicit reasoning and verdict fields were dropped. Trigger, requirement, and impact explanations inside evidence are observable, but the findings contract expressly requires checkable evidence and enough target context to reproduce the claim. A verifier necessarily receives a hypothesis with supporting claim context. No prohibited standalone finder report/field exposure, reused finder context, or actual false verification behavior is demonstrated by these packets. Treating every inference inside required evidence as forbidden finder reasoning imposes an unimplementable semantic guarantee beyond the documented mechanical field selection. The absolute phrase no finder reasoning can be clarified to describe the actual boundary; this is not evidence that a mandatory phase failed."
+    },
+    {
+      "id": "R1-C02",
+      "title": "The source-bound Back invariant permits Shift+Tab while the current contract selects Tab",
+      "severity": "medium",
+      "evidence": "qore-skills/profiles/qaizen-labs.json:45-47; qore-skills/examples/qaizen-labs/surface-contract.json:15; qore-skills/examples/qaizen-labs/checks/check_contract.py:35-36,42-43; qore-skills/skills/qore-review/references/project-profile.md:22-26,36; assessment-inputs/N09/output/REPORT.md:3; assessment-inputs/N03/output/evidence/finder-correctness.md:11,15; verification-wave1/checks/results.json (profile, back_trace).",
+      "verdict": "CONFIRMED",
+      "counterexample": "At 2026-10-17T10:47:43Z the actual project-check.py command returned exit 0 / COMPLETE, both source digests current, and back-focus statement Reach ... using sequential Tab or Shift+Tab. The bound current source transition actually has traversal=Tab. A proof record {traversal: Shift+Tab, activation: Enter, focus_after: introduction-heading} satisfies the profile disjunction but does not execute the source-selected Tab traversal. The source checker accepts an in-memory Shift+Tab contract variant as a valid alternative contract, while its output omits traversal entirely; that general schema allowance does not change the unmodified current contract. The same broadened recommendation occurs in the supplied N09 report line 3 and N03 finder report line 15. This reproduces semantic drift in acceptance guidance despite digest freshness, not a website or keyboard runtime failure."
+    }
+  ]
+}

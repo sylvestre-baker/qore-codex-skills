@@ -1,0 +1,17 @@
+{
+  "actor": "/root/delivery_cross",
+  "phase": "Workflow Cross-examine, fresh migrated role context",
+  "cwd": "/workspace/worker",
+  "shell": "sh",
+  "utc_bounds": {"earliest_previous_clock": "2026-10-17T10:45:54Z", "completion_clock": "2026-10-17T10:46:08Z", "limitation": "Exact command start timestamp was not separately measured; these clock observations bracket execution."},
+  "shell_command": "python3 -B - <<'PY'\nimport importlib.util,json\ns=importlib.util.spec_from_file_location('supplied_checker','/workspace/worker/checks/check_contract.py')\nm=importlib.util.module_from_spec(s);s.loader.exec_module(m)\nd=json.load(open('/workspace/worker/surface-contract.json'))\nprint('original',m.validate(d))\nd['transitions']=[t for t in d['transitions'] if t['id'] not in ('toggle-help','reopen-help')]\nprint('in_memory_help_omission',m.validate(d))\nPY",
+  "python_argv": ["python3", "-B", "-"],
+  "original_predicate": "Supplied validate(data) from checks/check_contract.py imported unchanged; original JSON validated before in-memory mutation.",
+  "mutation": "Only in-memory d['transitions'] filtered to exclude IDs toggle-help and reopen-help; no input written.",
+  "exit_code": 0,
+  "stdout": "original {'valid': True, 'schema': 'qaizen-labs-surface/1', 'checks': ['entry', 'unanswered', 'help-toggle', 'close-focus', 'keyboard-back', 'introduction-focus', 'read-only-policy', 'origin-policy'], 'limit': 'Contract consistency only; browser observations establish current behavior.'}\nin_memory_help_omission {'valid': True, 'schema': 'qaizen-labs-surface/1', 'checks': ['entry', 'unanswered', 'help-toggle', 'close-focus', 'keyboard-back', 'introduction-focus', 'read-only-policy', 'origin-policy'], 'limit': 'Contract consistency only; browser observations establish current behavior.'}\n",
+  "stderr": "",
+  "capture_limit": "exec_command returns combined output; no stderr text or exception appeared. Stdout attributed to the two print calls; stderr empty on that evidence.",
+  "tool_result": {"chunk_id": "202ca7", "wall_time_seconds": 0.210069, "exit_code": 0},
+  "interpretation": "Validator consistency success does not prove complete transition coverage, target prose coverage, or browser behavior. Manual semantic mapping remains necessary; no checker rewrite follows from this bounded planning probe."
+}

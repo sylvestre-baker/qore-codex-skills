@@ -1,0 +1,5 @@
+Command: pwd && rg --files -g TASK.md -g AGENTS.md -g *SKILL* -g *qore* -g *manifest*
+Exit code: 127
+stdout: /workspace/worker
+stderr: /bin/sh: rg: not found
+Fallback: local find and cat used.

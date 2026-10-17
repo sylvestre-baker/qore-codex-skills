@@ -1,0 +1,6 @@
+{
+  "at": "2026-10-17T12:04:01.594061+00:00",
+  "exit_code": 0,
+  "stdout": "{\n  \"valid\": true,\n  \"id\": \"qore003-20261017-u2-generic-1\",\n  \"scenario_id\": \"U2\",\n  \"condition\": \"generic\",\n  \"coverage\": \"COMPLETE\",\n  \"declared_coverage\": \"COMPLETE\",\n  \"qualification_supplied\": false,\n  \"comparability\": \"UNVERIFIED\",\n  \"changed_inputs\": [],\n  \"limit\": \"Identity and entered evidence checked; assessor independence, reasoning, isolation and causal benefit are not certified by metadata.\"\n}\n",
+  "stderr": ""
+}

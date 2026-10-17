@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "find",
+    "..",
+    "-name",
+    "AGENTS.md",
+    "-print"
+  ],
+  "cwd": "/workspace/worker",
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "",
+  "observed_at": "2026-10-17T10:10:12.178580+00:00"
+}

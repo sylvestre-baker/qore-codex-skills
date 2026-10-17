@@ -1,0 +1,421 @@
+{
+  "schema": "qore003-independent-planning-assessment/1",
+  "neutral_id": "N13",
+  "scenario_id": "P2",
+  "actor_id": "/root/campaign_plan_assessor",
+  "timing": {
+    "started_at_utc": "2026-10-17T11:53:49+00:00",
+    "ended_at_utc": "2026-10-17T11:56:56.973329+00:00",
+    "active_intervals_utc": [
+      [
+        "2026-10-17T11:53:49+00:00",
+        "2026-10-17T11:56:56.973329+00:00"
+      ]
+    ],
+    "idle_intervals_utc": [],
+    "active_seconds_this_wave": 187.973329,
+    "prior_cumulative_active_seconds": 874.43,
+    "cumulative_active_seconds": 1062.403329,
+    "accounting_note": "Continuous active assessment window; no idle wait in this wave. Idle between prior completion and this dispatch excluded. Evaluator wall activity, not billed model compute."
+  },
+  "evidence_path_base": "assessment-inputs",
+  "scope": {
+    "only_N13_and_frozen_criteria_used": true,
+    "author_fixes_used": false,
+    "other_evaluator_or_independent_verifier_conclusions_used": false,
+    "previous_assessment_outputs_read_or_changed": false,
+    "trial_or_validator_reruns": false,
+    "live_website": false,
+    "new_agents": false,
+    "outreach": false,
+    "source_or_repo_changes": false
+  },
+  "blinding": "NOT_BLINDED: neutral filename only; content reveals generic qore-plan condition.",
+  "criteria": [
+    {
+      "criterion": "K1",
+      "status": "MET",
+      "scope": "Frozen P2 documentation-only planning; no executed website evidence required",
+      "rationale": "The plan accurately represents all seven transitions, distinct Close-summary and Back-introduction-h1 focus, the target already containing keyboard Back proof, and literal Tab versus preserved reverse/mixed procedure alternatives. It explicitly prevents one direction from being claimed as evidence of an unobserved direction.",
+      "evidence": [
+        {
+          "path": "N13/input/surface-contract.json",
+          "lines": "9-20",
+          "claim": "Actual declared transitions, targets, check IDs and limits"
+        },
+        {
+          "path": "N13/input/target/verification-protocol.md",
+          "lines": "8-10",
+          "claim": "Corrected keyboard proof, separate focus/checkpoints and target-only 24 bound"
+        },
+        {
+          "path": "N13/output/specification.md",
+          "lines": "14-20,36-42",
+          "claim": "Sourced facts and selected decisions"
+        },
+        {
+          "path": "N13/output/proposed-verification-protocol.md",
+          "lines": "17-26",
+          "claim": "Concrete ordered journey, actual focus and direction-specific claim limits"
+        }
+      ],
+      "missing_proof_or_limit": "No actual DOM, control uniqueness, tab order or focus was observed. Literal forward-Tab behavior remains unobserved after a future reverse-only trace; the proposal expressly says so."
+    },
+    {
+      "criterion": "K3",
+      "status": "MET",
+      "scope": "Frozen P2 documentation-only planning; no executed website evidence required",
+      "rationale": "The documentation requires exact sole-origin and GET/HEAD/OPTIONS enforcement before navigation and throughout requests, subrequests and redirects. It preserves unanswered scope and both checkpoints, prohibited actions, conditional blocked-analytics effects, fail-closed start and stop on breach/lost invariant.",
+      "evidence": [
+        {
+          "path": "N13/output/proposed-verification-protocol.md",
+          "lines": "9-13,23-24,30-34",
+          "claim": "Policy throughout the journey, unanswered checkpoints and safe interrupted outcomes"
+        },
+        {
+          "path": "N13/output/specification.md",
+          "lines": "37,101,135-146,191-204",
+          "claim": "Decision, missing-precondition rejection and meaningful policy acceptance"
+        },
+        {
+          "path": "N13/input/surface-contract.json",
+          "lines": "4-6,18-20",
+          "claim": "Original observation boundaries"
+        },
+        {
+          "path": "N13/input/observation-policy.json",
+          "lines": "2-4",
+          "claim": "Sole allowed origin"
+        }
+      ],
+      "missing_proof_or_limit": "Actual guard implementation, request interception, unanswered runtime state and blocked-request effects remain unperformed. They are not certified by source prose or the local checker."
+    },
+    {
+      "criterion": "K4",
+      "status": "MET",
+      "scope": "Frozen P2 documentation-only planning; no executed website evidence required",
+      "rationale": "The plan preserves fixture/historical provenance and distinguishes current target obligations, declarations, local consistency, proposed conventions and actual future observations. It does not call the already corrected Back instruction missing, or turn the fixture, count or blocked POST into a website defect/pass.",
+      "evidence": [
+        {
+          "path": "N13/output/REPORT.md",
+          "lines": "5,9-15,35-43",
+          "claim": "Accurate source delta, bounded checks and runtime/deadline limitations"
+        },
+        {
+          "path": "N13/output/proposed-verification-protocol.md",
+          "lines": "3,7,26,30-34",
+          "claim": "Fixture, history, proposed count/evidence conventions and observed-vs-unperformed outcomes"
+        },
+        {
+          "path": "N13/output/specification.md",
+          "lines": "124,169-219,240-244",
+          "claim": "Planned acceptance and explicit missing runtime proof"
+        }
+      ],
+      "missing_proof_or_limit": "Current deployment conformance, hidden answer persistence and causality of any request effects remain unknown; no unsupported actual behavior is supplied."
+    },
+    {
+      "criterion": "K5",
+      "status": "MET",
+      "scope": "Frozen P2 documentation-only planning; no executed website evidence required",
+      "rationale": "The correct relevant checker command has captured actual exit-zero output and its consistency-only disclaimer. Manual preservation/coverage review and thirteen substantive Gherkin cases supplement the limited checker. Spec-lint and run-check actual commands/results are retained separately from unexecuted browser acceptance.",
+      "evidence": [
+        {
+          "path": "N13/output/evidence/contract-check.txt",
+          "lines": "1-10",
+          "claim": "Actual command, environment, exit 0, values and output normalization disclosure"
+        },
+        {
+          "path": "N13/output/evidence/commands.json",
+          "lines": "11-39",
+          "claim": "Actual checker, lint and execution-record vectors/statuses"
+        },
+        {
+          "path": "N13/output/specification.md",
+          "lines": "103-124,126-222,228-234",
+          "claim": "Seven-transition/eight-check preservation map, meaningful positive/negative acceptance and review tasks"
+        },
+        {
+          "path": "N13/output/evidence/spec-lint.txt",
+          "lines": "1-7",
+          "claim": "Actual final specification lint, exit 0, thirteen scenarios"
+        },
+        {
+          "path": "N13/output/evidence/run-check-final-status.json",
+          "lines": "2-20",
+          "claim": "Sealed record identity/coverage validation"
+        }
+      ],
+      "missing_proof_or_limit": "No validator or trial was rerun by this assessor. Structural success and echoed check names cannot certify source reasoning, prose completeness or current browser behavior."
+    },
+    {
+      "criterion": "K7",
+      "status": "MET",
+      "scope": "Frozen P2 documentation-only planning; no executed website evidence required",
+      "rationale": "The concrete proposal preserves the corrected target\u2019s valid Close/Back traversal and Enter, both unanswered checkpoints, 24-step Back guard, introduction visibility/question-help absence and distinct focus. The exact help cycle and scope/evidence additions are justified. No application, contract/checker/policy or new runtime tooling change is proposed.",
+      "evidence": [
+        {
+          "path": "N13/input/TASK.md",
+          "lines": "3-5",
+          "claim": "Documentation-only preserve/justify scope"
+        },
+        {
+          "path": "N13/input/target/verification-protocol.md",
+          "lines": "3,5-10",
+          "claim": "Existing obligations to retain"
+        },
+        {
+          "path": "N13/output/specification.md",
+          "lines": "6,36-42,103-120",
+          "claim": "Selected justifications and clause-by-clause preservation map"
+        },
+        {
+          "path": "N13/output/proposed-verification-protocol.md",
+          "lines": "17-34",
+          "claim": "Reviewable replacement retains alternatives, 24 inclusive count and full postconditions"
+        }
+      ],
+      "missing_proof_or_limit": "Count-zero, inclusive action24, result labels and sanitized recording are labeled operational clarification/proposals, not new application facts or a universal accessibility limit. Original inputs remain unchanged."
+    },
+    {
+      "criterion": "K8",
+      "status": "MET",
+      "scope": "Frozen P2 documentation-only planning; no executed website evidence required",
+      "rationale": "Actual frozen-source inspection identifies the remaining help-cycle/documentation omissions while rejecting a missing-Back diagnosis. A bounded one-document proposal, concrete source comparisons, substantive challenge/adjudication and captured local check support the selected planning outcome.",
+      "evidence": [
+        {
+          "path": "N13/output/REPORT.md",
+          "lines": "3-15,19-31,43",
+          "claim": "Scoped outcome, actual roles and missing runtime evidence"
+        },
+        {
+          "path": "N13/output/adjudication.md",
+          "lines": "5-47,63-69",
+          "claim": "Direct-source decisions, counterexamples, rejected alternatives and remaining uncertainty"
+        },
+        {
+          "path": "N13/output/specification.md",
+          "lines": "6-24,228-244",
+          "claim": "Scope, actual local result and done/remaining-evidence boundary"
+        }
+      ],
+      "missing_proof_or_limit": "The source-based planning decision is supported; website acceptance, implementation productivity, comparative gains and a method winner are not established."
+    }
+  ],
+  "not_applicable": [
+    {
+      "criterion": "K2",
+      "reason": "Not in frozen P2 criterion list; related keyboard content still examined under K1/K7."
+    },
+    {
+      "criterion": "K6",
+      "reason": "Review-only corrected-comparator criterion, not in frozen P2 list."
+    }
+  ],
+  "method_coverage": {
+    "declared_method": "Generic qore-plan Workflow; profile=null; no finder/verifier phase invoked",
+    "claimed_coverage": "COMPLETE",
+    "assessed_role_phase_execution": "SUBSTANTIATED_COMPLETE_WITH_DISCLOSED_LIMITATIONS",
+    "parts": [
+      {
+        "part": "Mode, authority and profile boundary",
+        "status": "MET",
+        "evidence": [
+          {
+            "path": "N13/input/.agents/skills/qore-plan/SKILL.md",
+            "lines": "10-15",
+            "claim": "Actual supplied generic method obligations"
+          },
+          {
+            "path": "N13/output/evidence/intake.json",
+            "lines": "2-19",
+            "claim": "Existing deciding artifact, finite budgets and profile=null"
+          },
+          {
+            "path": "N13/output/specification.md",
+            "lines": "14-24",
+            "claim": "Actual original sources and no invented profile"
+          }
+        ],
+        "limit": "No profile exists in this input and no project-derivative preflight is required or claimed."
+      },
+      {
+        "part": "Five actual substantive initial perspectives",
+        "status": "MET",
+        "evidence": [
+          {
+            "path": "N13/output/roster.json",
+            "lines": "17-178",
+            "claim": "Five distinct initial actor contexts, retained complete reports and observed timing"
+          },
+          {
+            "path": "N13/output/reports/product-analysis.md",
+            "lines": "20-37,51-64",
+            "claim": "Minimum scope, stories/acceptance and named peer questions"
+          },
+          {
+            "path": "N13/output/reports/architecture-analysis.md",
+            "lines": "30-57,108-122",
+            "claim": "Actual reuse/reader-writer sweep, fields, boundaries and decisions"
+          },
+          {
+            "path": "N13/output/reports/ux-analysis.md",
+            "lines": "19-62,81-93",
+            "claim": "Seven-state/action table, evidence and bounded recovery"
+          },
+          {
+            "path": "N13/output/reports/delivery-analysis.md",
+            "lines": "23-53,78-97",
+            "claim": "Preservation, tasks/estimate basis/dependencies and document done/adoption"
+          },
+          {
+            "path": "N13/output/reports/qa-analysis.md",
+            "lines": "21-59,61-118,131-149",
+            "claim": "Matrix and meaningful negative-path Gherkin with evidence boundaries"
+          }
+        ],
+        "limit": "The actual report bodies substantiate distinct lenses. Full native initial dispatch prompts/private-context histories are unavailable, so perfect historical no-peer-access cannot be independently reconstructed merely from actor names."
+      },
+      {
+        "part": "Analysis barrier and one substantive cross pass per role",
+        "status": "MET",
+        "evidence": [
+          {
+            "path": "N13/output/evidence/report-barrier.json",
+            "lines": "2-38",
+            "claim": "Five complete saved report bodies before cross dispatch"
+          },
+          {
+            "path": "N13/output/reports/product-cross-examination.md",
+            "lines": "13-35,49-74",
+            "claim": "Architecture/Delivery challenges, source comparisons, own evidence-scope correction"
+          },
+          {
+            "path": "N13/output/reports/architecture-cross-examination.md",
+            "lines": "11-63",
+            "claim": "Product invariants, UX complexity and QA warnings with counterexamples and own A3 revision"
+          },
+          {
+            "path": "N13/output/reports/delivery-cross-examination.md",
+            "lines": "13-31,35-64",
+            "claim": "Product scope, Architecture prerequisite and own canonical-only implication narrowed"
+          },
+          {
+            "path": "N13/output/reports/ux-cross-examination.md",
+            "lines": "13-49",
+            "claim": "Architecture complexity and QA observable-state/count boundary challenge"
+          },
+          {
+            "path": "N13/output/reports/qa-cross-examination.md",
+            "lines": "9-74",
+            "claim": "All four roles challenged, own direction/classification correction and inclusive action24"
+          }
+        ],
+        "limit": "Product and UX use explicit fresh report-based successors after host retirement; three roles resume their original contexts. Same-original-context continuity is not claimed."
+      },
+      {
+        "part": "Lead adjudication, material dissent and stopping",
+        "status": "MET",
+        "evidence": [
+          {
+            "path": "N13/output/evidence/cross-barrier.json",
+            "lines": "2-22",
+            "claim": "All five one-pass cross reports returned before final consolidation"
+          },
+          {
+            "path": "N13/output/adjudication.md",
+            "lines": "5-47",
+            "claim": "Alternatives, exact source divergence, counterexamples and selected consequences"
+          },
+          {
+            "path": "N13/output/adjudication.md",
+            "lines": "49-69",
+            "claim": "Role-specific judgments, boundary sweep, stop reason and timing deviations"
+          },
+          {
+            "path": "N13/output/specification.md",
+            "lines": "36-42,238-244",
+            "claim": "Selected source/evidence claim boundaries and remaining runtime proof"
+          }
+        ],
+        "limit": "Source conflicts are resolved for the proposed document without voting away dissent. Agreement does not establish current website behavior."
+      },
+      {
+        "part": "Actual commands, complete retained evidence and identity",
+        "status": "MET",
+        "evidence": [
+          {
+            "path": "N13/output/evidence/contract-check.txt",
+            "lines": "1-10",
+            "claim": "Actual relevant command/result and disclosed JSON whitespace compaction"
+          },
+          {
+            "path": "N13/output/evidence/spec-lint.txt",
+            "lines": "1-7",
+            "claim": "Actual structural lint and thirteen scenarios"
+          },
+          {
+            "path": "N13/output/evidence/run-check-final-status.json",
+            "lines": "2-20",
+            "claim": "Final successful record check, exact execution digest and 53 artifacts"
+          }
+        ],
+        "limit": "Read-only assessor checks verify bytes/records, not execution merely from wrappers. Source content and substantive phase reports were separately examined."
+      }
+    ],
+    "actual_contexts": {
+      "initial_perspectives": 5,
+      "fresh_cross_successors": 2,
+      "distinct_child_contexts": 7,
+      "analysis_and_cross_phase_intervals": 10,
+      "additional_finder_or_verifier_contexts": 0
+    },
+    "nominal_worker_deadline_adherence": "NOT_MET as disclosed for QA/UX cross completion; no unqualified strict-timing conformance claimed.",
+    "exact_active_usage": "UNKNOWN; retained conservative occupancy bounds are not actual billed or model usage.",
+    "context_limit": "Product/UX continuations are explicit; the supplied method requires one cross pass per role and does not expressly require the identical initial context to survive. Full prior role proposals and all initial reports were provided."
+  },
+  "material_source_or_decision_findings": [],
+  "required_worker_content_corrections": [],
+  "method_observations": [
+    {
+      "id": "N13-O1",
+      "classification": "implementation/protocol issue",
+      "scope": "Declared timing/monitoring, not a source or planning-decision defect",
+      "observation": "The packet explicitly reports nominal QA cross completion five seconds late and UX successor completion fifteen seconds late; the lead missed UX exact-expiry available-results capture while composing artifacts. All required work subsequently returned and no further investigation/round is claimed.",
+      "evidence": [
+        {
+          "path": "N13/output/reports/qa-cross-examination.md",
+          "lines": "110",
+          "claim": "Own completion timestamp and stated five-second lateness"
+        },
+        {
+          "path": "N13/output/reports/ux-cross-examination.md",
+          "lines": "5,71",
+          "claim": "Supplied 90-second deadline and stated fifteen-second late full report save"
+        },
+        {
+          "path": "N13/output/roster.json",
+          "lines": "105-118,164-175,289-301",
+          "claim": "Nominal timing, actual retained completion and missed UX expiry capture"
+        },
+        {
+          "path": "N13/output/evidence/limits.json",
+          "lines": "20-25",
+          "claim": "Deviations retained as limitations"
+        },
+        {
+          "path": "N13/input/.agents/skills/qore-plan/references/protocol.md",
+          "lines": "9,33",
+          "claim": "Finite worker budgets and exhaustion/stop requirement"
+        }
+      ],
+      "counterexample": "UX nominal expiry was 11:49:03 UTC, its full report save was 11:49:18, and the lead did not issue the available-results request at expiry. Thus completed phase evidence does not support a claim that every configured deadline/capture control was met.",
+      "minimal_remedy": "For later runs, reserve output-retention margin and use an enforced expiry/capture event independent of lead drafting. Preserve complete available/partial work and unavailable host event timing. No N13 rerun or content rewrite is justified by this timing issue alone.",
+      "task_criterion_impact": "None established: all frozen source/documentation obligations are supported. Timing adherence is a separate method dimension.",
+      "worker_content_failure_established": false,
+      "fresh_verification_question": "Confirm the disclosed nominal deviations and missed capture from original records; do not infer extra investigation, a source defect, active billed usage or an undisclosed global budget breach."
+    }
+  ],
+  "checks_file": "N13-checks.json",
+  "conclusion": "All six frozen P2 criteria are MET at documentation-planning scope. No material source or planning-decision defect is supported. Actual role-phase work substantiates qualified COMPLETE coverage, with disclosed nominal timing/monitoring deviations. No live deployment acceptance, comparative winner, gain or quality score follows."
+}

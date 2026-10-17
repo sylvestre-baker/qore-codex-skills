@@ -1,0 +1,4 @@
+interface:
+  display_name: "Qore UX Review"
+  short_description: "Verify rendered web behavior with fresh evidence"
+  default_prompt: "Use $qore-ux-review to inspect this web surface and report evidence and limits."

@@ -1,0 +1,153 @@
+[
+  {
+    "type": "click",
+    "selector": "a[href$='/labs/readiness-check']"
+  },
+  {
+    "type": "assert-visible",
+    "selector": "h1"
+  },
+  {
+    "type": "assert-text",
+    "text": "10 questions \u00b7 5 gates \u00b7 no e-mail needed"
+  },
+  {
+    "type": "click",
+    "role": "button",
+    "name": "Start the check",
+    "exact": true
+  },
+  {
+    "type": "assert-none-checked"
+  },
+  {
+    "type": "traverse-focus",
+    "selector": "main details summary",
+    "max_steps": 16
+  },
+  {
+    "type": "assert-focused",
+    "selector": "main details summary"
+  },
+  {
+    "type": "snapshot",
+    "label": "help-summary-focus"
+  },
+  {
+    "type": "keyboard",
+    "key": "Enter"
+  },
+  {
+    "type": "assert-attribute",
+    "selector": "main details",
+    "attribute": "open",
+    "value": ""
+  },
+  {
+    "type": "snapshot",
+    "label": "help-open-enter"
+  },
+  {
+    "type": "keyboard",
+    "key": "Space"
+  },
+  {
+    "type": "assert-hidden",
+    "role": "button",
+    "name": "Close",
+    "exact": true
+  },
+  {
+    "type": "snapshot",
+    "label": "help-closed-space"
+  },
+  {
+    "type": "keyboard",
+    "key": "Enter"
+  },
+  {
+    "type": "assert-visible",
+    "role": "button",
+    "name": "Close",
+    "exact": true
+  },
+  {
+    "type": "traverse-focus",
+    "role": "button",
+    "name": "Close",
+    "exact": true,
+    "max_steps": 16
+  },
+  {
+    "type": "assert-focused",
+    "role": "button",
+    "name": "Close",
+    "exact": true
+  },
+  {
+    "type": "snapshot",
+    "label": "close-focus-before-activation"
+  },
+  {
+    "type": "keyboard",
+    "key": "Enter"
+  },
+  {
+    "type": "snapshot",
+    "label": "after-close-focus-restoration"
+  },
+  {
+    "type": "assert-focused",
+    "selector": "main details summary"
+  },
+  {
+    "type": "assert-hidden",
+    "role": "button",
+    "name": "Close",
+    "exact": true
+  },
+  {
+    "type": "assert-none-checked"
+  },
+  {
+    "type": "traverse-focus",
+    "role": "button",
+    "name": "Back",
+    "exact": true,
+    "max_steps": 16
+  },
+  {
+    "type": "assert-focused",
+    "role": "button",
+    "name": "Back",
+    "exact": true
+  },
+  {
+    "type": "snapshot",
+    "label": "back-focus-before-activation"
+  },
+  {
+    "type": "keyboard",
+    "key": "Enter"
+  },
+  {
+    "type": "snapshot",
+    "label": "returned-introduction"
+  },
+  {
+    "type": "assert-visible",
+    "selector": "h1"
+  },
+  {
+    "type": "assert-focused",
+    "selector": "h1"
+  },
+  {
+    "type": "assert-hidden",
+    "selector": "main [role=\"radiogroup\"]"
+  },
+  {
+    "type": "assert-url",
+    "url": "https://qaizen.io/labs/readiness-check"
+  }
+]

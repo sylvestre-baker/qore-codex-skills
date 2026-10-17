@@ -1,0 +1,181 @@
+{
+  "schema": "qore-browser-probe/1",
+  "label": "qore003-20261017-u1-derived-1 request1; verbatim neutral relay",
+  "started_at": "2026-10-17T10:54:26.604Z",
+  "target": "https://qaizen.io/labs",
+  "status": "COMPLETE",
+  "scope": "Navigation, screenshots, DOM, keyboard, console and network observation. No accessibility or performance certification.",
+  "driver": {
+    "name": "Playwright Chromium",
+    "node": "v22.23.3",
+    "version": "1.62.1",
+    "browser_version": "151.0.7922.34"
+  },
+  "capabilities": {
+    "navigation": {
+      "status": "OBSERVED",
+      "evidence": "events.json#/navigation",
+      "entry_status": 200
+    },
+    "screenshot": {
+      "status": "OBSERVED",
+      "evidence": "01-final.png"
+    },
+    "dom": {
+      "status": "OBSERVED",
+      "evidence": "01-final.dom.json"
+    },
+    "keyboard": {
+      "status": "OBSERVED",
+      "key": "Tab",
+      "active_element": {
+        "tag": "A",
+        "id": "",
+        "text": "Skip to content"
+      },
+      "evidence": "events.json#/actions/0"
+    },
+    "console": {
+      "status": "OBSERVED",
+      "evidence": "events.json#/console",
+      "note": "Listener attached before entry navigation; an empty list means no emitted events were observed."
+    },
+    "network": {
+      "status": "OBSERVED",
+      "evidence": "events.json#/network"
+    }
+  },
+  "snapshots": [
+    {
+      "at": "2026-10-17T10:54:31.028Z",
+      "label": "entry",
+      "url": "https://qaizen.io/labs",
+      "dom": "00-entry.dom.json",
+      "screenshot": "00-entry.png"
+    },
+    {
+      "at": "2026-10-17T10:54:31.329Z",
+      "label": "final",
+      "url": "https://qaizen.io/labs",
+      "dom": "01-final.dom.json",
+      "screenshot": "01-final.png"
+    }
+  ],
+  "limits": [
+    "An isolated browser context is used; no user browser session is accessed.",
+    "Non-GET/HEAD/OPTIONS requests are blocked. Structured events omit request headers and bodies; raw traces, DOM, video and screenshots may retain network/page data and require separate review before sharing.",
+    "HTTP document redirects are blocked before following, including same-origin redirects; that support is unqualified. Top-level documents use one guarded fetch without redirect following, then the actual response is fulfilled into the browser.",
+    "This is an execution record, not a product-quality or general-performance benchmark.",
+    "The optional activation guard checks actual native controls, labels and declared state before activation. It is a cooperative observation boundary, not isolation from arbitrary page scripts or full accessible-name certification. Guarded keys are Tab/Shift+Tab and unmodified Enter/Space only."
+  ],
+  "policy": {
+    "allowed_origins": [
+      "https://qaizen.io"
+    ],
+    "service_workers": "block",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ],
+    "activation_guard": [
+      {
+        "id": "entry",
+        "selector": "a[href$='/labs/readiness-check']",
+        "role": "link",
+        "name": "START HERE PRODUCTION READINESS CHECK Could your AI pilot go live? Ten questions show which of the five production gates is most likely to block it, and why. About 3 minutes · 10 questions · 5 gates · no e-mail needed START THE CHECK",
+        "state": [
+          {
+            "selector": "h1",
+            "visible": true
+          }
+        ]
+      },
+      {
+        "id": "start",
+        "selector": "main button[type=\"button\"]",
+        "role": "button",
+        "name": "START THE CHECK",
+        "attributes": {
+          "type": "button"
+        },
+        "state": [
+          {
+            "selector": "h1",
+            "visible": true
+          }
+        ]
+      },
+      {
+        "id": "help-summary",
+        "selector": "main details summary",
+        "role": "button",
+        "name": "What does this mean?",
+        "state": [
+          {
+            "selector": "main [role=\"radiogroup\"]",
+            "visible": true
+          }
+        ]
+      },
+      {
+        "id": "close",
+        "selector": "main details button[type=\"button\"]",
+        "role": "button",
+        "name": "Close",
+        "attributes": {
+          "type": "button"
+        },
+        "state": [
+          {
+            "selector": "main [role=\"radiogroup\"]",
+            "visible": true
+          },
+          {
+            "selector": "main details",
+            "attributes": {
+              "open": ""
+            }
+          }
+        ]
+      },
+      {
+        "id": "back",
+        "selector": "main button[type=\"button\"]:not([role]):not([disabled]):not(details button)",
+        "role": "button",
+        "name": "Back",
+        "attributes": {
+          "type": "button"
+        },
+        "state": [
+          {
+            "selector": "main [role=\"radiogroup\"]",
+            "visible": true
+          },
+          {
+            "selector": "main details",
+            "attributes": {
+              "open": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "trace": "trace.zip",
+  "video": "video/page@46daac7c69ffecddacd877855a81c4dc.webm",
+  "finished_at": "2026-10-17T10:54:31.738Z",
+  "counts": {
+    "console": 0,
+    "page_errors": 0,
+    "network": 67,
+    "requests_failed": 0,
+    "blocked_mutations": 0,
+    "blocked_navigation": 0,
+    "route_errors": 0,
+    "navigation": 2,
+    "actions": 1,
+    "activation_checks": 0,
+    "blocked_activations": 0
+  }
+}

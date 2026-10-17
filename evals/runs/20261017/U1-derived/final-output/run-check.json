@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "python3",
+    "scripts/run-check.py",
+    "/workspace/output/execution.json",
+    "--evidence-root",
+    "/workspace/output"
+  ],
+  "exit_code": 0,
+  "stdout": "{\n  \"valid\": true,\n  \"coverage\": \"PARTIAL\",\n  \"missing_phases\": [\n    \"browser\"\n  ],\n  \"artifact_count\": 108,\n  \"note\": \"Evidence identity and declared phase coverage checked; factual quality is not certified.\"\n}\n",
+  "stderr": "",
+  "observed_at": "2026-10-17T11:02:34.604211+00:00",
+  "note": "Final structural validation after adding REPORT.md, usage and the first validation receipt. This receipt is outside the record artifact inventory to avoid a self-referential digest."
+}

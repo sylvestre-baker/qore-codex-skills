@@ -1,0 +1,16 @@
+{
+  "findings": [
+    {
+      "id": "C-001",
+      "title": "Required keyboard help-toggle sequence is untested",
+      "severity": "medium",
+      "evidence": "/workspace/worker/target/verification-protocol.md:7-8 goes from opening help using summary, with no activation key specified, directly to Close. /workspace/worker/surface-contract.json:11-13 requires summary Enter to open, Space to close, and Enter to reopen; line 18 requires help-toggle. A page whose pointer opening and Close/Back work but whose summary Space toggle or Enter reopening fails can satisfy every target instruction without exercising the required failure path. Target execution therefore cannot establish help-toggle coverage. The contract checker at checks/check_contract.py:42-43 reports contract consistency only. Actual website behavior is unknown; no external runner adding these steps is supplied."
+    },
+    {
+      "id": "C-002",
+      "title": "Procedure omits the mandatory observation-policy precondition",
+      "severity": "medium",
+      "evidence": "/workspace/worker/surface-contract.json:5-6 allows only https://qaizen.io and GET/HEAD/OPTIONS; line 18 requires read-only-policy and origin-policy; line 20 expects an analytics POST to be blocked with observed effects retained. /workspace/worker/observation-policy.json:2-3 supplies the same sole origin. The complete target procedure at /workspace/worker/target/verification-protocol.md:5-10 begins navigation without any request guard, policy verification, or blocked-effect capture. If the expected analytics POST occurs in an ordinary unguarded browser, or an off-origin request occurs, every UI assertion can pass while the observation violates the scope and omits two required policy checks. The unanswered assertions constrain answer state rather than request methods. No actual prohibited request is asserted; an independent guard outside the supplied procedure remains possible."
+    }
+  ]
+}

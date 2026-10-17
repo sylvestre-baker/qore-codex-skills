@@ -1,0 +1,19 @@
+{
+  "start_utc": "2026-10-17T11:06:36+00:00",
+  "recorded_at": "2026-10-17T11:13:07.503512+00:00",
+  "wall_elapsed_seconds": 391.503512,
+  "wall_limit_seconds": 900,
+  "aggregate_agent_limit_seconds": 2400,
+  "aggregate_agent_seconds": null,
+  "unavailable_usage_reason": "Runtime supplied no agent-seconds/token meter. Only root context used; elapsed wall time available, not substituted for metered agent usage.",
+  "child_context_count": 0,
+  "max_simultaneous_child_limit": 3,
+  "relay_requests_used": 3,
+  "relay_request_limit": 6,
+  "iterations_used": 2,
+  "iteration_limit": 6,
+  "dispatch_exhaustion": false,
+  "role_deadline_events": [],
+  "partial_results_requested_at_expiry": [],
+  "reason_no_expiry_requests": "No independent roles dispatched; each relay returned within declared180-second request deadline."
+}

@@ -1,0 +1,25 @@
+{
+  "actor_id": "/root/campaign_plan_assessor",
+  "neutral_id": "N13",
+  "timing": {
+    "started_at_utc": "2026-10-17T11:53:49+00:00",
+    "ended_at_utc": "2026-10-17T11:56:56.973329+00:00",
+    "active_intervals_utc": [
+      [
+        "2026-10-17T11:53:49+00:00",
+        "2026-10-17T11:56:56.973329+00:00"
+      ]
+    ],
+    "idle_intervals_utc": [],
+    "active_seconds_this_wave": 187.973329,
+    "prior_cumulative_active_seconds": 874.43,
+    "cumulative_active_seconds": 1062.403329,
+    "accounting_note": "Continuous active assessment window; no idle wait in this wave. Idle between prior completion and this dispatch excluded. Evaluator wall activity, not billed model compute."
+  },
+  "source_or_decision_findings": [],
+  "files": [
+    "N13-plan-assessment.md",
+    "N13-plan-assessment.json",
+    "N13-checks.json"
+  ]
+}

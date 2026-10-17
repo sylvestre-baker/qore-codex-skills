@@ -1,0 +1,269 @@
+{
+  "schema": "qore-roster/1",
+  "requested": [
+    "product",
+    "architecture",
+    "ux",
+    "delivery",
+    "qa"
+  ],
+  "returned": [
+    "product",
+    "architecture",
+    "ux",
+    "delivery",
+    "qa"
+  ],
+  "missing": [],
+  "barrier": {
+    "utc": "2026-10-17T10:43:51.194754+00:00",
+    "requested": [
+      "product",
+      "architecture",
+      "ux",
+      "delivery",
+      "qa"
+    ],
+    "returned": [
+      "product",
+      "architecture",
+      "ux",
+      "delivery",
+      "qa"
+    ],
+    "missing": [],
+    "full_report_files": [
+      {
+        "path": "reports/product-analysis.md",
+        "sha256": "6356be021d9e14dc2147fdb2e6723e18c3b62fb03b5c5864e5ffb4cde9643be5"
+      },
+      {
+        "path": "reports/architecture-analysis.md",
+        "sha256": "1bad2a39bcc2cf9870949c2eaabefabcbc4fae918ff3310193fec90a544eb18f"
+      },
+      {
+        "path": "reports/ux-analysis.md",
+        "sha256": "d373fd33c0a0d92d4dda490967477f421bf2b4ddc3f82de1144bb54fd532b22a"
+      },
+      {
+        "path": "reports/delivery-analysis.md",
+        "sha256": "33ca83f4dd5923fb9f2e502cf9a16409ea85e939151f0cd8783ea5b95e3bf5ef"
+      },
+      {
+        "path": "reports/qa-analysis.md",
+        "sha256": "40feecda31ccefeb2ec29493e8add1ac3177bad407325668b181f61790397183"
+      }
+    ],
+    "outcome": "All five complete initial reports saved before any cross-examination dispatch."
+  },
+  "actors": [
+    {
+      "role": "product",
+      "actor_id": "/root/product",
+      "initial_fork_turns": "none",
+      "analysis": {
+        "dispatch_recorded_utc": "2026-10-17T10:40:00.976445+00:00",
+        "dispatch_timestamp_precision": "Recorded immediately after three sequential tool dispatches; exact API dispatch time not exposed. Child start timestamps retained in full reports.",
+        "deadline_seconds": 150,
+        "report": "reports/product-analysis.md",
+        "status": "returned",
+        "return_observed_utc": "2026-10-17T10:41:23.660796+00:00",
+        "reported_start_utc": "2026-10-17T10:39:45+00:00",
+        "reported_end_utc": "2026-10-17T10:41:12+00:00",
+        "observed_activity_wall_seconds": 87.0
+      },
+      "cross_examination": {
+        "actor_id": "/root/product_cross",
+        "initial_fork_turns": "none",
+        "dispatch_recorded_utc": "2026-10-17T10:44:51.912759+00:00",
+        "dispatch_timestamp_precision": "UTC sampled after sequential dispatches; exact API event time unavailable",
+        "deadline_seconds": 100,
+        "status": "returned",
+        "report": "reports/product-cross-examination.md",
+        "continuity": "Original completed context unavailable; fresh context explicitly loaded own complete initial report and all five reports after barrier.",
+        "return_observed_utc": "2026-10-17T10:45:37.653377+00:00",
+        "reported_start_utc": "2026-10-17T10:44:16+00:00",
+        "reported_end_utc": "2026-10-17T10:45:24.519524+00:00",
+        "observed_activity_wall_seconds": 68.519524
+      }
+    },
+    {
+      "role": "architecture",
+      "actor_id": "/root/architecture",
+      "initial_fork_turns": "none",
+      "analysis": {
+        "dispatch_recorded_utc": "2026-10-17T10:40:00.976445+00:00",
+        "dispatch_timestamp_precision": "Recorded immediately after three sequential tool dispatches; exact API dispatch time not exposed. Child start timestamps retained in full reports.",
+        "deadline_seconds": 150,
+        "report": "reports/architecture-analysis.md",
+        "status": "returned",
+        "return_observed_utc": "2026-10-17T10:41:38.483864+00:00",
+        "reported_start_utc": "2026-10-17T10:39:59+00:00",
+        "reported_end_utc": "2026-10-17T10:41:23+00:00",
+        "observed_activity_wall_seconds": 84.0
+      },
+      "cross_examination": {
+        "actor_id": "/root/architecture_cross",
+        "initial_fork_turns": "none",
+        "dispatch_recorded_utc": "2026-10-17T10:44:51.912759+00:00",
+        "dispatch_timestamp_precision": "UTC sampled after sequential dispatches; exact API event time unavailable",
+        "deadline_seconds": 100,
+        "status": "returned",
+        "report": "reports/architecture-cross-examination.md",
+        "continuity": "Original completed context unavailable; fresh context explicitly loaded own complete initial report and all five reports after barrier.",
+        "return_observed_utc": "2026-10-17T10:45:26.716963+00:00",
+        "reported_start_utc": "2026-10-17T10:44:26+00:00",
+        "reported_end_utc": "2026-10-17T10:45:16+00:00",
+        "observed_activity_wall_seconds": 50.0
+      }
+    },
+    {
+      "role": "ux",
+      "actor_id": "/root/ux",
+      "initial_fork_turns": "none",
+      "analysis": {
+        "dispatch_recorded_utc": "2026-10-17T10:40:00.976445+00:00",
+        "dispatch_timestamp_precision": "Recorded immediately after three sequential tool dispatches; exact API dispatch time not exposed. Child start timestamps retained in full reports.",
+        "deadline_seconds": 150,
+        "report": "reports/ux-analysis.md",
+        "status": "returned",
+        "return_observed_utc": "2026-10-17T10:41:48.986105+00:00",
+        "reported_start_utc": "2026-10-17T10:39:59+00:00",
+        "reported_end_utc": "2026-10-17T10:41:36+00:00",
+        "observed_activity_wall_seconds": 97.0
+      },
+      "cross_examination": {
+        "actor_id": "/root/ux_cross",
+        "initial_fork_turns": "none",
+        "dispatch_recorded_utc": "2026-10-17T10:44:51.912759+00:00",
+        "dispatch_timestamp_precision": "UTC sampled after sequential dispatches; exact API event time unavailable",
+        "deadline_seconds": 100,
+        "status": "returned",
+        "report": "reports/ux-cross-examination.md",
+        "continuity": "Original completed context unavailable; fresh context explicitly loaded own complete initial report and all five reports after barrier.",
+        "return_observed_utc": "2026-10-17T10:46:26.080161+00:00",
+        "reported_start_utc": "2026-10-17T10:44:48+00:00",
+        "reported_end_utc": "2026-10-17T10:46:10+00:00",
+        "observed_activity_wall_seconds": 82.0
+      }
+    },
+    {
+      "role": "delivery",
+      "actor_id": "/root/delivery",
+      "initial_fork_turns": "none",
+      "analysis": {
+        "dispatch_recorded_utc": "2026-10-17T10:41:34.938234+00:00",
+        "dispatch_timestamp_precision": "UTC recorded immediately after actual dispatch; exact API event time unavailable",
+        "deadline_seconds": 150,
+        "report": "reports/delivery-analysis.md",
+        "status": "returned",
+        "return_observed_utc": "2026-10-17T10:43:10.584742+00:00",
+        "reported_start_utc": "2026-10-17T10:41:38+00:00",
+        "reported_end_utc": "2026-10-17T10:43:04+00:00",
+        "observed_activity_wall_seconds": 86.0
+      },
+      "cross_examination": {
+        "actor_id": "/root/delivery_cross",
+        "initial_fork_turns": "none",
+        "dispatch_recorded_utc": "2026-10-17T10:45:37.653377+00:00",
+        "dispatch_timestamp_precision": "UTC sampled immediately after actual dispatch",
+        "deadline_seconds": 100,
+        "status": "returned",
+        "report": "reports/delivery-cross-examination.md",
+        "continuity": "Fresh context supplied own complete initial report and all five peers after barrier; original completed actors unavailable to followup.",
+        "return_observed_utc": "2026-10-17T10:47:41.089559+00:00",
+        "deadline_limitation": "Available results requested before and at expiry; child finalized retention beyond declared deadline. Actual report preserves overrun. No new investigation authorized.",
+        "reported_start_utc": "2026-10-17T10:45:40+00:00",
+        "reported_end_utc": "2026-10-17T10:47:09+00:00",
+        "observed_activity_wall_seconds": 89.0
+      }
+    },
+    {
+      "role": "qa",
+      "actor_id": "/root/qa",
+      "initial_fork_turns": "none",
+      "analysis": {
+        "dispatch_recorded_utc": "2026-10-17T10:41:48.986105+00:00",
+        "dispatch_timestamp_precision": "UTC recorded immediately after actual dispatch; exact API event time unavailable",
+        "deadline_seconds": 150,
+        "report": "reports/qa-analysis.md",
+        "status": "returned",
+        "return_observed_utc": "2026-10-17T10:43:51.194754+00:00",
+        "reported_start_utc": "2026-10-17T10:41:48+00:00",
+        "reported_end_utc": "2026-10-17T10:43:43.035074+00:00",
+        "observed_activity_wall_seconds": 115.035074
+      },
+      "cross_examination": {
+        "actor_id": "/root/qa_cross",
+        "initial_fork_turns": "none",
+        "dispatch_recorded_utc": "2026-10-17T10:45:51.415459+00:00",
+        "dispatch_timestamp_precision": "UTC sampled immediately after actual dispatch",
+        "deadline_seconds": 100,
+        "status": "returned",
+        "report": "reports/qa-cross-examination.md",
+        "continuity": "Fresh context supplied complete own initial report plus all five initial reports after barrier; completed original actors unavailable to followup.",
+        "return_observed_utc": "2026-10-17T10:47:14.801113+00:00",
+        "reported_start_utc": "2026-10-17T10:45:48+00:00",
+        "reported_end_utc": "2026-10-17T10:47:02.840588+00:00",
+        "observed_activity_wall_seconds": 74.840588
+      }
+    }
+  ],
+  "usage": {
+    "measured_agent_seconds": null,
+    "reason": "Collaboration API provides no aggregate agent-seconds or child CPU/token usage; active wall intervals recorded as conservative scheduling proxy.",
+    "child_reported_active_wall_seconds_excluding_verifier": 833.3951860000001,
+    "fresh_verifier_reported_wall_seconds": 52,
+    "interpretation": "Wall-clock intervals between actual reported phase clock observations, not CPU/token/aggregate agent-seconds. Dispatch-to-first-clock and post-save handoff time not fully captured. Conservative allocations and deadline overrun separately disclosed."
+  },
+  "runtime_failures": [
+    {
+      "operation": "followup_task product",
+      "error": "agent with id 01a14972-28ca-7252-bdb3-35fc7191240d not found"
+    },
+    {
+      "operation": "followup_task ux",
+      "error": "agent with id 01a14972-60b6-7703-b8e5-e86b51b66ad7 not found"
+    },
+    {
+      "operation": "list_agents",
+      "observation": "product and architecture completed contexts absent after later-wave dispatch; use fresh cross-examination role contexts."
+    }
+  ],
+  "cross_examination_barrier": {
+    "utc": "2026-10-17T10:47:41.089559+00:00",
+    "requested": [
+      "product",
+      "architecture",
+      "ux",
+      "delivery",
+      "qa"
+    ],
+    "returned": [
+      "product",
+      "architecture",
+      "ux",
+      "delivery",
+      "qa"
+    ],
+    "missing": [],
+    "stopping_reason": "One pass per role complete; remaining source/host boundaries recorded, no extra quality round."
+  },
+  "fresh_verifier": {
+    "actor_id": "/root/fresh_verifier",
+    "fork_turns": "none",
+    "dispatch_recorded_utc": "2026-10-17T10:47:41.089559+00:00",
+    "deadline_seconds": 90,
+    "status": "returned",
+    "reports": [
+      "reports/fresh-verifier.md",
+      "verifier-results.json"
+    ],
+    "input": "claims-filtered.json plus raw original sources only",
+    "mechanical_filter": "filter-claims.py whitelists id/severity/kind/statement/source_locations; excludes full role reports and verdicts.",
+    "return_observed_utc": "2026-10-17T10:50:36.228525+00:00",
+    "reported_start_utc": "2026-10-17T10:47:39+00:00",
+    "reported_end_utc": "2026-10-17T10:48:31+00:00"
+  },
+  "cross_examination_missing": []
+}

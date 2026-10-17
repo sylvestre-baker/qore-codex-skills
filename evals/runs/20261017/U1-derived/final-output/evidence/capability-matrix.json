@@ -1,0 +1,94 @@
+{
+  "actor_id": "/root",
+  "recorded_at": "2026-10-17T10:58:16.097892+00:00",
+  "driver": {
+    "name": "Playwright Chromium via neutral operator relay",
+    "playwright": "1.62.1",
+    "chromium": "151.0.7922.34",
+    "node": "v22.23.3"
+  },
+  "probes": [
+    {
+      "capability": "navigation",
+      "status": "OBSERVED",
+      "depth": "entry",
+      "required_checks": [
+        "entry",
+        "origin-policy"
+      ],
+      "evidence": "response-1/result.json#capabilities/navigation"
+    },
+    {
+      "capability": "screenshot",
+      "status": "OBSERVED",
+      "depth": "entry",
+      "required_checks": [
+        "G3 layout",
+        "G5 visible focus"
+      ],
+      "evidence": "response-1/result.json#capabilities/screenshot"
+    },
+    {
+      "capability": "dom",
+      "status": "OBSERVED",
+      "depth": "entry",
+      "required_checks": [
+        "G0 surface identity",
+        "G4 text",
+        "G5 headings/focus"
+      ],
+      "evidence": "response-1/result.json#capabilities/dom"
+    },
+    {
+      "capability": "keyboard",
+      "status": "OBSERVED",
+      "depth": "entry",
+      "required_checks": [
+        "help-toggle",
+        "close-focus",
+        "keyboard-back",
+        "introduction-focus"
+      ],
+      "evidence": "response-1/result.json#capabilities/keyboard"
+    },
+    {
+      "capability": "console",
+      "status": "OBSERVED",
+      "depth": "entry",
+      "required_checks": [
+        "G1 render exceptions"
+      ],
+      "evidence": "response-1/result.json#capabilities/console"
+    },
+    {
+      "capability": "network",
+      "status": "OBSERVED",
+      "depth": "entry",
+      "required_checks": [
+        "G1 document outcomes",
+        "read-only-policy",
+        "origin-policy"
+      ],
+      "evidence": "response-1/result.json#capabilities/network"
+    }
+  ],
+  "limits": [
+    {
+      "capability": "arbitrary direct navigation to a cold deep URL",
+      "status": "UNAVAILABLE",
+      "reason": "Supported action API has no navigate/goto action and every context is forced to public /labs entry. Deep-document reload and browser history can still be exercised; neither proves a fresh-context deep-link initialization.",
+      "gate": "G1"
+    },
+    {
+      "capability": "viewport-only screenshot, live geometry, contrast measurement or automated accessibility audit",
+      "status": "NOT_EXPOSED",
+      "reason": "Relay supports snapshots/semantic assertions and keyboard only. Scope requires live focus/semantics; no contrast certification is claimed. Full-page screenshots can place fixed/sticky chrome at captured scroll positions."
+    },
+    {
+      "capability": "performance trace/field metrics",
+      "status": "OUT_OF_SCOPE",
+      "reason": "Contract explicitly excludes performance certification."
+    }
+  ],
+  "assertion_limit": "Visibility assertions and DOM active_element establish visibility/focus by driver semantics; they do not prove the focused control is unobscured by another element. Inspect PNGs separately."
+}

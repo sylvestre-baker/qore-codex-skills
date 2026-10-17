@@ -1,0 +1,24 @@
+{
+  "mode": "Workflow",
+  "deciding_artifact": "target/verification-protocol.md",
+  "reason": "Existing scoped six-step journey procedure is the applicable specification to strengthen; original contract/checker/policy retain authority over fixture target.",
+  "phases": [
+    "Analyze (five independent roles)",
+    "Report barrier",
+    "Cross-examine (one pass per role)",
+    "Lead adjudication",
+    "Fresh verification of mechanically filtered claim fields (additional user requirement)",
+    "Specification and structural validation"
+  ],
+  "budgets": {
+    "wall_seconds": 900,
+    "aggregate_agent_seconds": 2400,
+    "initial_role_seconds": 120,
+    "cross_role_seconds": 90,
+    "verifier_seconds": 90,
+    "max_simultaneous_children": 3
+  },
+  "exhaustion": "Request available complete reports at role deadlines; preserve unfinished coverage; stop new dispatches at global exhaustion.",
+  "instruction_revision": "All input and skill file hashes in input-manifest.json; immutable source copies in sources/.",
+  "identity_procedure": "Use user-supplied enclosing candidate and prepared-input-manifest target digests. Per-file SHA-256 manifest retained; no claim that an individual target file equals enclosing digest."
+}

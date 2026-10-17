@@ -1,0 +1,30 @@
+[
+  {
+    "request": 1,
+    "submitted_at": "2026-10-17T11:54:02+00:00",
+    "timestamp_precision": "operator started_at available separately; submission approximate from initial write command"
+  },
+  {
+    "request": 2,
+    "submitted_at": "2026-10-17T11:54:49.493314+00:00",
+    "actions": 29
+  },
+  {
+    "request": 3,
+    "submitted_at": "2026-10-17T11:56:22.093901+00:00",
+    "actions": 29,
+    "purpose": "Single corrected replay after Start exact-name locator refusal; no target fix."
+  },
+  {
+    "request": 4,
+    "submitted_at": "2026-10-17T11:58:08.142551+00:00",
+    "actions": 36,
+    "purpose": "Focused challenge and remaining G1 reload/history checks; full fresh replay."
+  },
+  {
+    "request": 5,
+    "submitted_at": "2026-10-17T11:59:28.489508+00:00",
+    "actions": 36,
+    "purpose": "Remaining history/visual-focus challenge with heading selector; preserve request 4 text timeout. No sixth request planned."
+  }
+]

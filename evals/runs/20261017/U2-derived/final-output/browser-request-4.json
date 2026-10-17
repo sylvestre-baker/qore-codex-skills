@@ -1,0 +1,151 @@
+[
+  {
+    "type": "click",
+    "selector": "a[href$='/labs/readiness-check']"
+  },
+  {
+    "type": "assert-visible",
+    "selector": "main h1"
+  },
+  {
+    "type": "click",
+    "selector": "main button[type=\"button\"]"
+  },
+  {
+    "type": "assert-visible",
+    "selector": "main [role=\"radiogroup\"]"
+  },
+  {
+    "type": "assert-none-checked"
+  },
+  {
+    "type": "traverse-focus",
+    "selector": "main details summary",
+    "max_steps": 24
+  },
+  {
+    "type": "keyboard",
+    "key": "Enter"
+  },
+  {
+    "type": "assert-visible",
+    "selector": "main details[open]"
+  },
+  {
+    "type": "traverse-focus",
+    "role": "button",
+    "name": "Close",
+    "exact": true,
+    "max_steps": 24
+  },
+  {
+    "type": "keyboard",
+    "key": "Enter"
+  },
+  {
+    "type": "assert-focused",
+    "selector": "main details summary"
+  },
+  {
+    "type": "traverse-focus",
+    "role": "button",
+    "name": "Back",
+    "exact": true,
+    "max_steps": 24
+  },
+  {
+    "type": "assert-focused",
+    "role": "button",
+    "name": "Back",
+    "exact": true
+  },
+  {
+    "type": "snapshot",
+    "label": "challenge-Back-focus-with-cookie-banner"
+  },
+  {
+    "type": "keyboard",
+    "key": "Shift+Tab"
+  },
+  {
+    "type": "assert-focused",
+    "selector": "main details summary"
+  },
+  {
+    "type": "keyboard",
+    "key": "Tab"
+  },
+  {
+    "type": "assert-focused",
+    "role": "button",
+    "name": "Back",
+    "exact": true
+  },
+  {
+    "type": "snapshot",
+    "label": "challenge-Back-refocus-with-cookie-banner"
+  },
+  {
+    "type": "keyboard",
+    "key": "Enter"
+  },
+  {
+    "type": "assert-focused",
+    "selector": "main h1"
+  },
+  {
+    "type": "click",
+    "selector": "main button[type=\"button\"]"
+  },
+  {
+    "type": "assert-none-checked"
+  },
+  {
+    "type": "assert-hidden",
+    "selector": "main details[open]"
+  },
+  {
+    "type": "snapshot",
+    "label": "restart-still-unanswered-help-closed"
+  },
+  {
+    "type": "history-back"
+  },
+  {
+    "type": "assert-url",
+    "url": "https://qaizen.io/labs"
+  },
+  {
+    "type": "snapshot",
+    "label": "browser-history-back-entry"
+  },
+  {
+    "type": "history-forward"
+  },
+  {
+    "type": "assert-url",
+    "url": "https://qaizen.io/labs/readiness-check"
+  },
+  {
+    "type": "snapshot",
+    "label": "browser-history-forward-check"
+  },
+  {
+    "type": "reload"
+  },
+  {
+    "type": "assert-visible",
+    "selector": "main h1"
+  },
+  {
+    "type": "assert-visible",
+    "selector": "main h1"
+  },
+  {
+    "type": "snapshot",
+    "label": "reload-resolved-introduction"
+  },
+  {
+    "type": "assert-none-checked"
+  }
+]

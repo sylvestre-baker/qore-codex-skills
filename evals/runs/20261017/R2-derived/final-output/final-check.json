@@ -1,0 +1,28 @@
+{
+  "observed_at": "2026-10-17T11:19:33.192806+00:00",
+  "all_inputs_and_skill_resources_unchanged": true,
+  "changed_files": [],
+  "execution_matches_validated_sha256": true,
+  "requested_roles": [
+    "finder.correctness",
+    "finder.security",
+    "finder.feasibility",
+    "verifier"
+  ],
+  "returned_roles": [
+    "finder.correctness",
+    "finder.security",
+    "finder.feasibility",
+    "verifier"
+  ],
+  "missing_roles": [],
+  "wall_elapsed_seconds": 366.192806,
+  "context_wall_bound_seconds": 777.192806,
+  "metered_aggregate_agent_seconds": null,
+  "metered_usage_unavailable_reason": "Host collaboration API provides no metered context usage. Wall bound is not substituted for that quantity.",
+  "wall_budget_seconds": 900,
+  "aggregate_agent_seconds_budget": 2400,
+  "all_roles_returned_before_expiry": true,
+  "no_new_dispatches_after_exhaustion": true,
+  "final_report_sha256_before_status_annotation": "af65e6bd207325a038be5fd5bd51e33171eec650090eeef96e044e2d3d1894b8"
+}

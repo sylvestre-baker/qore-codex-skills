@@ -1,0 +1,6 @@
+{
+  "checked_at": "2026-10-17T12:15:43.589161+00:00",
+  "differences": [],
+  "all_supplied_files_unchanged": true,
+  "procedure": "Rehash every file in initial local input manifest; no writes to input performed."
+}

@@ -1,0 +1,7 @@
+argv: ["bash", "scripts/spec-lint.sh", "/workspace/output/specification.md"]
+cwd: /workspace/worker/.agents/skills/qore-plan
+stdout:
+spec-lint: valid qore-spec/1 (13 scenarios).
+stderr:
+exit_code: 0
+observed_at: 2026-10-17T11:51:31.582455+00:00

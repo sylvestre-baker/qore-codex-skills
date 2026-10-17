@@ -1,0 +1,96 @@
+{
+  "observed_at": "2026-10-17T10:39:31.590241+00:00",
+  "files": [
+    {
+      "path": ".agents/skills/qore-plan-qaizen-labs/SKILL.md",
+      "sha256": "0a5eba8728408a38b4cf505018a2f55b576194db229b67e3ed5bc974579055b9",
+      "bytes": 2985
+    },
+    {
+      "path": ".agents/skills/qore-plan-qaizen-labs/agents/openai.yaml",
+      "sha256": "feeb8fab45b8271d61b60ef6e9534161fe59bdd9b13489eb5ab13ad06dd4c90c",
+      "bytes": 209
+    },
+    {
+      "path": ".agents/skills/qore-plan-qaizen-labs/references/project-profile.md",
+      "sha256": "16c5ff087c83b7503b23d5d94726834462dd4fd73d78a5380cf85135fa85b0b3",
+      "bytes": 4238
+    },
+    {
+      "path": ".agents/skills/qore-plan-qaizen-labs/references/project.json",
+      "sha256": "f76afdd45cb6352e5044a06affc4182ea6cd40aa9c012fb216636a61faa428f0",
+      "bytes": 2146
+    },
+    {
+      "path": ".agents/skills/qore-plan-qaizen-labs/references/protocol.md",
+      "sha256": "83f92490a5601b83fc6eaa21861344e35cd04a3ac7edb56b98cd2eb0ecfea84b",
+      "bytes": 4655
+    },
+    {
+      "path": ".agents/skills/qore-plan-qaizen-labs/references/release.json",
+      "sha256": "ec6fc0f8243faa36831ed41702cf14cc45473873e607efc0838d5f5315b4c999",
+      "bytes": 2569
+    },
+    {
+      "path": ".agents/skills/qore-plan-qaizen-labs/references/roles.md",
+      "sha256": "cc8060c7c852c143b9671af4fc0176b9c5068f338c19b2556b6ff494c0f0d318",
+      "bytes": 2699
+    },
+    {
+      "path": ".agents/skills/qore-plan-qaizen-labs/references/run-evidence.md",
+      "sha256": "35cd6dc6d3e1177bbae96e5b9e829ed1aa55901747c856f4db20e946421f163d",
+      "bytes": 5595
+    },
+    {
+      "path": ".agents/skills/qore-plan-qaizen-labs/references/specification.md",
+      "sha256": "7eb06b91fca66a3ec00bda4b49b035c5e6bfe827c4624768f66a09b6ae7827a1",
+      "bytes": 3110
+    },
+    {
+      "path": ".agents/skills/qore-plan-qaizen-labs/scripts/project-check.py",
+      "sha256": "d87afa433fe485bdebca3e281d06e0896e4a8980ea7cf7baee739053614ea0ac",
+      "bytes": 8551
+    },
+    {
+      "path": ".agents/skills/qore-plan-qaizen-labs/scripts/run-check.py",
+      "sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+      "bytes": 9315
+    },
+    {
+      "path": ".agents/skills/qore-plan-qaizen-labs/scripts/spec-lint.mjs",
+      "sha256": "321ac211bfac936c4da3ffe173cdfc0d92cb695351273d289809c05c8b037ada",
+      "bytes": 6602
+    },
+    {
+      "path": ".agents/skills/qore-plan-qaizen-labs/scripts/spec-lint.sh",
+      "sha256": "ee4b0c491833f8f3960037255f7ea601548a353d18b317aae25d8e5f2cd461b6",
+      "bytes": 166
+    },
+    {
+      "path": "TASK.md",
+      "sha256": "096d208075bdef7298a3a8a943e85cdbce644a6eca22d6e7b95883ad20f8a363",
+      "bytes": 596
+    },
+    {
+      "path": "checks/check_contract.py",
+      "sha256": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b",
+      "bytes": 3204
+    },
+    {
+      "path": "observation-policy.json",
+      "sha256": "15f4e5b4960b5011684be265f027e42b8637a3b8aae96b24bba1ba3a4d0f0202",
+      "bytes": 55
+    },
+    {
+      "path": "surface-contract.json",
+      "sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+      "bytes": 2348
+    },
+    {
+      "path": "target/verification-protocol.md",
+      "sha256": "b8d1f4ad7bd691dbf8f019cd3b87a7644a21899e6317edebac545fd3b245136e",
+      "bytes": 621
+    }
+  ],
+  "procedure": "SHA-256 of each frozen input file; enclosing candidate and whole-prepared-input identities are operator-supplied, not substituted with a single file hash. No enclosing digest manifest algorithm was supplied; cannot independently reproduce those two enclosing hashes."
+}

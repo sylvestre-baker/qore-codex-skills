@@ -1,0 +1,10 @@
+{
+  "started_at": "2026-10-17T11:44:54.298807+00:00",
+  "ended_at": "2026-10-17T11:49:15.242182+00:00",
+  "exit_code": 0,
+  "driver_sha256": "19f980d0ad6d5d48029239c9dcc9ef3dfd7ada6f1d3ad653fdb2aa7c93c16ca7",
+  "test_source_sha256": "eee30ccb00758cf9deda42fcf5216bd2114e9942c160713eee896363c2715a3d",
+  "scope": "All existing synthetic local browser regressions plus text locator guard and viewport occlusion captures; staged future driver, never the frozen campaign driver. Same bytes may be applied only after all original cells close.",
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "e33092c7e362709eccc7036f57cdcc3a40a2d02c08081ce6065535606bf9b45a"
+}

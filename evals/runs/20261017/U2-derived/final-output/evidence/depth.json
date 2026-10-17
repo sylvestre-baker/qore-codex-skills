@@ -1,0 +1,9 @@
+{
+  "depth": "entry",
+  "changed_files": [
+    "surface-contract.json",
+    "checks/check_contract.py",
+    "observation-policy.json"
+  ],
+  "justification": "Explicit review target artifacts, not a changed-file claim. Entry plus state scope for public help opening/closing and keyboard Back; G0-G6 required. No source implementation or diff supplied."
+}

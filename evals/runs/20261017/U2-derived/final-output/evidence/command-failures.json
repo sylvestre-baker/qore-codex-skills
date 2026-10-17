@@ -1,0 +1,14 @@
+{
+  "failed_discovery": {
+    "argv": [
+      "sh",
+      "-c",
+      "pwd && rg --files -g 'TASK.md' -g 'AGENTS.md' -g '*SKILL*' -g '*qore*' -g '*profile*'"
+    ],
+    "exit_code": 127,
+    "stdout": "/workspace/worker\n",
+    "stderr": "/bin/sh: rg: not found\n",
+    "recovery": "Used ls/find and Python file traversal; no installation."
+  },
+  "polling": "ls response-2/3/4 sometimes exited1 before feedback existed; bounded waits followed; all four responses returned. These are pending-inbox checks, not browser/product failures."
+}

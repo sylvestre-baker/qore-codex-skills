@@ -1,0 +1,302 @@
+{
+  "requested": [
+    "product",
+    "architecture",
+    "ux",
+    "delivery",
+    "qa"
+  ],
+  "returned": [
+    "product",
+    "architecture",
+    "ux",
+    "delivery",
+    "qa"
+  ],
+  "missing": [],
+  "actual_contexts": [
+    {
+      "role": "product",
+      "actor_id": "/root/product",
+      "initial": {
+        "dispatch_utc": null,
+        "deadline_seconds": 120,
+        "return_utc": "2026-10-17T11:43:31Z",
+        "dispatch_window_utc": [
+          "2026-10-17T11:41:44Z",
+          "2026-10-17T11:42:37Z"
+        ],
+        "dispatch_timestamp_limitation": "Exact host dispatch timestamp not exposed and lead clock was not sampled immediately before these first three calls; observed enclosing interval retained instead of estimating.",
+        "report_completed_utc": "2026-10-17T11:43:20Z",
+        "return_observed_utc": "2026-10-17T11:43:31Z",
+        "report": "reports/product-analysis.md",
+        "status": "complete",
+        "return_semantics": "Lead UTC clock observation bounding receipt; actual worker completion separately retained. Host exact delivery timestamp unavailable."
+      },
+      "cross_examination": {
+        "actor_id": "/root/product_cross",
+        "dispatch_utc": "2026-10-17T11:47:25Z",
+        "dispatch_semantics": "Lead clock immediately before dispatch; exact host enqueue not exposed",
+        "deadline_seconds": 90,
+        "status": "complete",
+        "fresh_successor": true,
+        "reason": "Initial context retired by host before followup; own original and all peer reports explicitly supplied after barrier.",
+        "report_completed_utc": "2026-10-17T11:48:52.209372+00:00",
+        "return_observed_utc": "2026-10-17T11:49:59Z",
+        "report": "reports/product-cross-examination.md",
+        "deadline_note": "Completed within deadline.",
+        "return_utc": "2026-10-17T11:49:59Z",
+        "return_semantics": "Lead UTC clock observation bounding receipt; actual worker completion separately retained. Host exact delivery timestamp unavailable."
+      }
+    },
+    {
+      "role": "architecture",
+      "actor_id": "/root/architecture",
+      "initial": {
+        "dispatch_utc": null,
+        "deadline_seconds": 120,
+        "return_utc": "2026-10-17T11:44:17Z",
+        "dispatch_window_utc": [
+          "2026-10-17T11:41:44Z",
+          "2026-10-17T11:42:37Z"
+        ],
+        "dispatch_timestamp_limitation": "Exact host dispatch timestamp not exposed and lead clock was not sampled immediately before these first three calls; observed enclosing interval retained instead of estimating.",
+        "report_completed_utc": "2026-10-17T11:44:14Z",
+        "return_observed_utc": "2026-10-17T11:44:17Z",
+        "report": "reports/architecture-analysis.md",
+        "status": "complete",
+        "timing_note": "Worker report notes saved11:43:57 and administrative identity amendment11:44:06; final worker message declares11:44:14.",
+        "return_semantics": "Lead UTC clock observation bounding receipt; actual worker completion separately retained. Host exact delivery timestamp unavailable."
+      },
+      "cross_examination": {
+        "actor_id": "/root/architecture",
+        "dispatch_utc": "2026-10-17T11:45:46Z",
+        "dispatch_semantics": "Clock observation immediately before three sequential followup calls; exact enqueue timestamp unavailable",
+        "deadline_seconds": 90,
+        "status": "complete",
+        "report_completed_utc": "2026-10-17T11:47:14Z",
+        "return_observed_utc": "2026-10-17T11:47:33Z",
+        "report": "reports/architecture-cross-examination.md",
+        "deadline_partial_request_utc": "2026-10-17T11:47:16Z",
+        "deadline_note": "Lead requested available results at expiry; complete report returned.",
+        "return_utc": "2026-10-17T11:47:33Z",
+        "return_semantics": "Lead UTC clock observation bounding receipt; actual worker completion separately retained. Host exact delivery timestamp unavailable."
+      }
+    },
+    {
+      "role": "ux",
+      "actor_id": "/root/ux",
+      "initial": {
+        "dispatch_utc": null,
+        "deadline_seconds": 120,
+        "return_utc": "2026-10-17T11:43:42Z",
+        "dispatch_window_utc": [
+          "2026-10-17T11:41:44Z",
+          "2026-10-17T11:42:37Z"
+        ],
+        "dispatch_timestamp_limitation": "Exact host dispatch timestamp not exposed and lead clock was not sampled immediately before these first three calls; observed enclosing interval retained instead of estimating.",
+        "report_completed_utc": "2026-10-17T11:43:36Z",
+        "return_observed_utc": "2026-10-17T11:43:42Z",
+        "report": "reports/ux-analysis.md",
+        "status": "complete",
+        "timing_note": "Report main analysis timestamp11:43:31; worker final return states11:43:36, including administrative addendum.",
+        "return_semantics": "Lead UTC clock observation bounding receipt; actual worker completion separately retained. Host exact delivery timestamp unavailable."
+      },
+      "cross_examination": {
+        "actor_id": "/root/ux_cross",
+        "dispatch_utc": "2026-10-17T11:47:33Z",
+        "dispatch_semantics": "Lead clock immediately before dispatch; exact host enqueue not exposed",
+        "deadline_seconds": 90,
+        "status": "complete",
+        "fresh_successor": true,
+        "reason": "Initial context retired by host before followup; own original and all peer reports explicitly supplied after barrier.",
+        "report_completed_utc": "2026-10-17T11:49:18Z",
+        "return_observed_utc": "2026-10-17T11:49:59Z",
+        "report": "reports/ux-cross-examination.md",
+        "deadline_note": "Completed15 seconds beyond deadline; no further investigation. Lead did not issue expiry request at11:49:03 while composing specification, a monitoring gap disclosed rather than backdated.",
+        "return_utc": "2026-10-17T11:49:59Z",
+        "return_semantics": "Lead UTC clock observation bounding receipt; actual worker completion separately retained. Host exact delivery timestamp unavailable."
+      }
+    },
+    {
+      "role": "delivery",
+      "actor_id": "/root/delivery",
+      "initial": {
+        "dispatch_utc": "2026-10-17T11:43:31Z",
+        "dispatch_semantics": "Lead clock immediately before collaboration dispatch, not host enqueue instant",
+        "deadline_seconds": 120,
+        "return_utc": "2026-10-17T11:45:26Z",
+        "report_completed_utc": "2026-10-17T11:45:07Z",
+        "return_observed_utc": "2026-10-17T11:45:26Z",
+        "report": "reports/delivery-analysis.md",
+        "status": "complete",
+        "return_semantics": "Lead UTC clock observation bounding receipt; actual worker completion separately retained. Host exact delivery timestamp unavailable."
+      },
+      "cross_examination": {
+        "actor_id": "/root/delivery",
+        "dispatch_utc": "2026-10-17T11:45:46Z",
+        "dispatch_semantics": "Clock observation immediately before three sequential followup calls; exact enqueue timestamp unavailable",
+        "deadline_seconds": 90,
+        "status": "complete",
+        "report_completed_utc": "2026-10-17T11:47:16Z",
+        "return_observed_utc": "2026-10-17T11:47:33Z",
+        "report": "reports/delivery-cross-examination.md",
+        "deadline_partial_request_utc": "2026-10-17T11:47:16Z",
+        "deadline_note": "Lead requested available results at expiry; complete report returned.",
+        "return_utc": "2026-10-17T11:47:33Z",
+        "return_semantics": "Lead UTC clock observation bounding receipt; actual worker completion separately retained. Host exact delivery timestamp unavailable."
+      }
+    },
+    {
+      "role": "qa",
+      "actor_id": "/root/qa",
+      "initial": {
+        "dispatch_utc": "2026-10-17T11:43:42Z",
+        "dispatch_semantics": "Lead clock immediately before collaboration dispatch, not host enqueue instant",
+        "deadline_seconds": 120,
+        "return_utc": "2026-10-17T11:45:26Z",
+        "report_completed_utc": "2026-10-17T11:45:18Z",
+        "return_observed_utc": "2026-10-17T11:45:26Z",
+        "report": "reports/qa-analysis.md",
+        "status": "complete",
+        "return_semantics": "Lead UTC clock observation bounding receipt; actual worker completion separately retained. Host exact delivery timestamp unavailable."
+      },
+      "cross_examination": {
+        "actor_id": "/root/qa",
+        "dispatch_utc": "2026-10-17T11:45:46Z",
+        "dispatch_semantics": "Clock observation immediately before three sequential followup calls; exact enqueue timestamp unavailable",
+        "deadline_seconds": 90,
+        "status": "complete",
+        "report_completed_utc": "2026-10-17T11:47:21Z",
+        "return_observed_utc": "2026-10-17T11:47:33Z",
+        "report": "reports/qa-cross-examination.md",
+        "deadline_partial_request_utc": "2026-10-17T11:47:16Z",
+        "deadline_note": "Lead requested available complete/partial results at expiry; QA saved report five seconds after deadline, no further investigation.",
+        "return_utc": "2026-10-17T11:47:33Z",
+        "return_semantics": "Lead UTC clock observation bounding receipt; actual worker completion separately retained. Host exact delivery timestamp unavailable."
+      }
+    }
+  ],
+  "timestamp_note": "Actual clock observations are used. First wave exact dispatch instants unavailable; enclosing clock bounds recorded. Subsequent dispatches are clock-bracketed.",
+  "usage": {
+    "aggregate_agent_seconds": null,
+    "tokens": null,
+    "reason": "No actual usage counters exposed; dispatch-return occupancy bounds will be provided.",
+    "measurement_checkpoint_utc": "2026-10-17T11:52:09.333877+00:00",
+    "child_occupancy_upper_bound_seconds": 1218.0,
+    "lead_wall_elapsed_at_checkpoint_seconds": 625.333877,
+    "lead_plus_child_conservative_upper_bound_at_checkpoint_seconds": 1843.333877,
+    "upper_bound_including_full_900_second_lead_wall_budget": 2118.0,
+    "bounds": [
+      {
+        "role": "product",
+        "phase": "initial",
+        "actor_id": "/root/product",
+        "dispatch_lower_bound_utc": "2026-10-17T11:41:44Z",
+        "return_upper_bound_utc": "2026-10-17T11:43:31Z",
+        "occupancy_upper_bound_seconds": 107.0
+      },
+      {
+        "role": "product",
+        "phase": "cross_examination",
+        "actor_id": "/root/product_cross",
+        "dispatch_lower_bound_utc": "2026-10-17T11:47:25Z",
+        "return_upper_bound_utc": "2026-10-17T11:49:59Z",
+        "occupancy_upper_bound_seconds": 154.0
+      },
+      {
+        "role": "architecture",
+        "phase": "initial",
+        "actor_id": "/root/architecture",
+        "dispatch_lower_bound_utc": "2026-10-17T11:41:44Z",
+        "return_upper_bound_utc": "2026-10-17T11:44:17Z",
+        "occupancy_upper_bound_seconds": 153.0
+      },
+      {
+        "role": "architecture",
+        "phase": "cross_examination",
+        "actor_id": "/root/architecture",
+        "dispatch_lower_bound_utc": "2026-10-17T11:45:46Z",
+        "return_upper_bound_utc": "2026-10-17T11:47:33Z",
+        "occupancy_upper_bound_seconds": 107.0
+      },
+      {
+        "role": "ux",
+        "phase": "initial",
+        "actor_id": "/root/ux",
+        "dispatch_lower_bound_utc": "2026-10-17T11:41:44Z",
+        "return_upper_bound_utc": "2026-10-17T11:43:42Z",
+        "occupancy_upper_bound_seconds": 118.0
+      },
+      {
+        "role": "ux",
+        "phase": "cross_examination",
+        "actor_id": "/root/ux_cross",
+        "dispatch_lower_bound_utc": "2026-10-17T11:47:33Z",
+        "return_upper_bound_utc": "2026-10-17T11:49:59Z",
+        "occupancy_upper_bound_seconds": 146.0
+      },
+      {
+        "role": "delivery",
+        "phase": "initial",
+        "actor_id": "/root/delivery",
+        "dispatch_lower_bound_utc": "2026-10-17T11:43:31Z",
+        "return_upper_bound_utc": "2026-10-17T11:45:26Z",
+        "occupancy_upper_bound_seconds": 115.0
+      },
+      {
+        "role": "delivery",
+        "phase": "cross_examination",
+        "actor_id": "/root/delivery",
+        "dispatch_lower_bound_utc": "2026-10-17T11:45:46Z",
+        "return_upper_bound_utc": "2026-10-17T11:47:33Z",
+        "occupancy_upper_bound_seconds": 107.0
+      },
+      {
+        "role": "qa",
+        "phase": "initial",
+        "actor_id": "/root/qa",
+        "dispatch_lower_bound_utc": "2026-10-17T11:43:42Z",
+        "return_upper_bound_utc": "2026-10-17T11:45:26Z",
+        "occupancy_upper_bound_seconds": 104.0
+      },
+      {
+        "role": "qa",
+        "phase": "cross_examination",
+        "actor_id": "/root/qa",
+        "dispatch_lower_bound_utc": "2026-10-17T11:45:46Z",
+        "return_upper_bound_utc": "2026-10-17T11:47:33Z",
+        "occupancy_upper_bound_seconds": 107.0
+      }
+    ],
+    "interpretation": "Elapsed occupancy bounds include scheduling and delivery delays; they are not actual billed usage. First-wave starts conservatively use run start. The full lead wall allowance plus child bounds remains below2400 seconds. Actual token/agent-second usage unavailable, not zero."
+  },
+  "context_retention_limitation": {
+    "observed_utc": "2026-10-17T11:45:46Z",
+    "action": "collaboration.followup_task target product",
+    "result": "agent with id 01a149ab-8125-73a2-a3be-a44d9434178b not found",
+    "list_agents_result": "Only root plus completed architecture, delivery, qa retained; product and ux absent.",
+    "response": "Use fresh successor contexts for Product/UX cross-examination, supplying all initial reports after barrier; no independent initial analyses repeated."
+  },
+  "returned_cross_examinations": [
+    "product",
+    "architecture",
+    "ux",
+    "delivery",
+    "qa"
+  ],
+  "missing_cross_examinations": [],
+  "deadline_events": [
+    {
+      "utc": "2026-10-17T11:47:16Z",
+      "action": "Requested available complete/partial results from Architecture, Delivery, QA at cross deadline",
+      "result": "All reports complete; QA finished5 seconds late."
+    },
+    {
+      "utc": "2026-10-17T11:49:59Z",
+      "action": "Observed Product/UX successor results after lead artifact drafting",
+      "result": "Product completed before deadline; UX complete15 seconds late; exact-expiry partial request missed, no extra investigation or retry."
+    }
+  ],
+  "coverage_note": "All five distinct initial roles and all five role cross-examinations completed. Two successor contexts and minor deadline/monitoring limitations disclosed."
+}

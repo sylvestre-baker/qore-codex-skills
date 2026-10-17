@@ -1,0 +1,18 @@
+{
+  "observed_at": "2026-10-17T11:33:53.557779+00:00",
+  "requested": [
+    "product",
+    "architecture",
+    "ux",
+    "delivery",
+    "qa"
+  ],
+  "returned_complete": [
+    "product",
+    "architecture",
+    "ux",
+    "delivery",
+    "qa"
+  ],
+  "missing": []
+}

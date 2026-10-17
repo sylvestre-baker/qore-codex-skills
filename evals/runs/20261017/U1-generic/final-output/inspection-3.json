@@ -1,0 +1,39 @@
+{
+  "observed_at": "2026-10-17T11:11:48.473821+00:00",
+  "actor_id": "/root",
+  "screenshots_opened": [
+    "relay-3/01-deep-route-reloaded-introduction.png",
+    "relay-3/02-history-back-labs.png",
+    "relay-3/03-history-forward-introduction.png",
+    "relay-3/04-back-focus-challenge.png",
+    "relay-3/05-summary-reverse-tab.png",
+    "relay-3/06-back-focus-repeat-tab.png",
+    "relay-3/07-challenge-returned-introduction.png"
+  ],
+  "observations": [
+    "Readiness-check document reload returns HTTP200 and same introduction; browser history Back returns Labs and Forward restores introduction, without stale question content.",
+    "Fresh Back screenshot and repeat-Tab screenshot reproduce cookie banner covering Back label and all but the top sliver of its gold outline. Matching PNG SHA256 across request2 and both request3 Back captures strengthens repeatability.",
+    "Shift+Tab returns to clearly outlined help summary, then Tab returns to hidden Back label. This refutes a complete focus trap but preserves the visibility defect.",
+    "Enter activates Back again, with returned introduction H1 active.",
+    "No page errors, route errors, unexpected network failure, origin escape or successful mutation observed. Expected analytics POST blocked once in each context."
+  ],
+  "finding": {
+    "id": "UX-1",
+    "severity": "Moderate",
+    "status": "Observed, reproduced in fresh context",
+    "score_effect": {
+      "G3": 3,
+      "G5": 3
+    },
+    "impact": "A keyboard user can reach and activate Back, but cannot read its label or see a useful complete focus indicator while the cookie banner is present.",
+    "scope": "Anonymous visitor, cookie choice unset, default desktop theme, CSS viewport1280x800",
+    "evidence": [
+      "relay-2/06-back-focus-before-activation.png",
+      "relay-3/04-back-focus-challenge.png",
+      "relay-3/06-back-focus-repeat-tab.png"
+    ],
+    "caveat": "Full-page capture positions fixed/sticky elements at the current scroll position; this is a rendered observation, not an independent viewport-only screenshot or WCAG certification.",
+    "proposal": "Reserve bottom space for the cookie banner and ensure focused controls scroll into the unobscured viewport. Preserve help-summary and introduction-heading focus restoration.",
+    "not_executed": "No source modification or deployed fix; inputs immutable and public-site changes unauthorized."
+  }
+}

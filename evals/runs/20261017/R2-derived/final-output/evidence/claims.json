@@ -1,0 +1,34 @@
+{
+  "findings": [
+    {
+      "id": "C-001",
+      "title": "Required keyboard help-toggle sequence is untested",
+      "severity": "medium",
+      "evidence": "/workspace/worker/target/verification-protocol.md:7-8 goes from opening help using summary, with no activation key specified, directly to Close. /workspace/worker/surface-contract.json:11-13 requires summary Enter to open, Space to close, and Enter to reopen; line 18 requires help-toggle. A page whose pointer opening and Close/Back work but whose summary Space toggle or Enter reopening fails can satisfy every target instruction without exercising the required failure path. Target execution therefore cannot establish help-toggle coverage. The contract checker at checks/check_contract.py:42-43 reports contract consistency only. Actual website behavior is unknown; no external runner adding these steps is supplied."
+    },
+    {
+      "id": "C-002",
+      "title": "Procedure omits the mandatory observation-policy precondition",
+      "severity": "medium",
+      "evidence": "/workspace/worker/surface-contract.json:5-6 allows only https://qaizen.io and GET/HEAD/OPTIONS; line 18 requires read-only-policy and origin-policy; line 20 expects an analytics POST to be blocked with observed effects retained. /workspace/worker/observation-policy.json:2-3 supplies the same sole origin. The complete target procedure at /workspace/worker/target/verification-protocol.md:5-10 begins navigation without any request guard, policy verification, or blocked-effect capture. If the expected analytics POST occurs in an ordinary unguarded browser, or an off-origin request occurs, every UI assertion can pass while the observation violates the scope and omits two required policy checks. The unanswered assertions constrain answer state rather than request methods. No actual prohibited request is asserted; an independent guard outside the supplied procedure remains possible."
+    },
+    {
+      "id": "S-1",
+      "title": "Procedure never enforces or observes the read-only HTTP policy",
+      "severity": "medium",
+      "evidence": "verification-protocol.md:5-10 gives the full browser procedure without HTTP-method interception, request-method checks, or retention of blocked-request effects. surface-contract.json:6 allows only GET, HEAD, OPTIONS; :18 requires read-only-policy; :20 expects an analytics POST to be blocked and its observed effects retained. checks/check_contract.py:16-18,42-43 validates declared policy only and explicitly limits its output to contract consistency. If the procedure is executed without a separate interceptor and a page action emits the expected analytics POST, every written UI assertion can pass while a prohibited request is sent; blocked-request effects are also unrecorded. No current website request was observed; the missing enforcement/evidence is in the procedure."
+    },
+    {
+      "id": "S-2",
+      "title": "Procedure follows navigation without checking the authorized origin",
+      "severity": "medium",
+      "evidence": "verification-protocol.md:5 instructs opening the public Labs entry and following its journey link; :6-10 contains no actual-origin assertion, redirect check, or request-origin guard. surface-contract.json:4-5 fixes https://qaizen.io/labs and permits only https://qaizen.io; :18 requires origin-policy; observation-policy.json:2-4 repeats that restriction. surface-contract.json:9 uses only an href suffix, which does not establish origin. checks/check_contract.py:12-15 checks the declared initial URL, not real navigation. If a link, redirect, or secondary request is off-origin and no separate guard exists, the written UI assertions can still pass while observation crosses the authorized boundary. Actual off-origin traffic is not established by the supplied material."
+    },
+    {
+      "id": "F-301",
+      "title": "Required summary keyboard toggling has no observation in the procedure",
+      "severity": "medium",
+      "evidence": "surface-contract.json:11-13 requires summary Enter opening, Space closing, and Enter reopening; :18 includes help-toggle in required_checks. target/verification-protocol.md:7 only says to open help using summary, with no input specified, and :8 immediately traverses to Close and activates Enter. Its remaining steps :9-10 cover unanswered state and Back, with no summary Space or reopening observation. If summary Space is broken while opening, Close, and Back work, every stated procedure step can still succeed without establishing required help-toggle behavior. checks/check_contract.py:42-43,50-51 emits declared checks including help-toggle but explicitly limits validity to contract consistency; it supplies no missing browser observation. Actual deployed behavior has not been examined."
+    }
+  ]
+}

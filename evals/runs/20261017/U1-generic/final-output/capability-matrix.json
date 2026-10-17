@@ -1,0 +1,102 @@
+{
+  "declared_required_checks": {
+    "entry": [
+      "navigation",
+      "dom",
+      "screenshot"
+    ],
+    "unanswered": [
+      "dom",
+      "keyboard"
+    ],
+    "help-toggle": [
+      "dom",
+      "keyboard",
+      "screenshot"
+    ],
+    "close-focus": [
+      "dom",
+      "keyboard",
+      "screenshot"
+    ],
+    "keyboard-back": [
+      "dom",
+      "keyboard",
+      "screenshot"
+    ],
+    "introduction-focus": [
+      "dom",
+      "keyboard",
+      "screenshot"
+    ],
+    "read-only-policy": [
+      "network"
+    ],
+    "origin-policy": [
+      "navigation",
+      "network"
+    ],
+    "G1-reload-history": [
+      "navigation",
+      "dom",
+      "console",
+      "network"
+    ],
+    "G3-layout": [
+      "screenshot",
+      "dom"
+    ],
+    "G4-content": [
+      "dom",
+      "screenshot"
+    ]
+  },
+  "driver": {
+    "name": "Playwright Chromium",
+    "node": "v22.23.3",
+    "version": "1.62.1",
+    "browser_version": "151.0.7922.34"
+  },
+  "actual_probe": {
+    "navigation": {
+      "status": "OBSERVED",
+      "evidence": "events.json#/navigation",
+      "entry_status": 200
+    },
+    "screenshot": {
+      "status": "OBSERVED",
+      "evidence": "04-final.png"
+    },
+    "dom": {
+      "status": "OBSERVED",
+      "evidence": "04-final.dom.json"
+    },
+    "keyboard": {
+      "status": "OBSERVED",
+      "key": "Tab",
+      "active_element": {
+        "tag": "A",
+        "id": "",
+        "text": "Skip to content"
+      },
+      "evidence": "events.json#/actions/0"
+    },
+    "console": {
+      "status": "OBSERVED",
+      "evidence": "events.json#/console",
+      "note": "Listener attached before entry navigation; an empty list means no emitted events were observed."
+    },
+    "network": {
+      "status": "OBSERVED",
+      "evidence": "events.json#/network"
+    }
+  },
+  "probe_evidence": "relay-1/result.json and events.json",
+  "keyboard_boundary": "Observed automatic Tab establishes only Tab capability; required full sequential activation remains pending request2.",
+  "not_required": {
+    "performance": "No performance acceptance/change in explicit source contract",
+    "instrumented_a11y": "No instrumented audit requirement; targeted keyboard review only"
+  },
+  "available_action_boundary": "Relay supports entry-click, reload, history and guarded local controls; arbitrary navigate, evaluate, resize, color sampling and audits not offered.",
+  "viewport_probe": "relay-1/02-introduction.dom.json#/viewport = 1280x800, DPR1; PNGs are full-page and may exceed viewport height."
+}

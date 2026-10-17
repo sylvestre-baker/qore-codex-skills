@@ -1,0 +1,178 @@
+{
+  "qore_evidence": {
+    "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+    "target_snapshot_sha256": "b269181f3e44e5b4d84fe94ae1d683f85d2b8bde69f389d32d030b1e0909ef36",
+    "observed_at": "2026-10-17T11:01:10.933565+00:00",
+    "phase_id": "browser"
+  },
+  "payload": {
+    "coverage": "PARTIAL",
+    "capabilities": {
+      "actor_id": "/root",
+      "recorded_at": "2026-10-17T10:58:16.097892+00:00",
+      "driver": {
+        "name": "Playwright Chromium via neutral operator relay",
+        "playwright": "1.62.1",
+        "chromium": "151.0.7922.34",
+        "node": "v22.23.3"
+      },
+      "probes": [
+        {
+          "capability": "navigation",
+          "status": "OBSERVED",
+          "depth": "entry",
+          "required_checks": [
+            "entry",
+            "origin-policy"
+          ],
+          "evidence": "response-1/result.json#capabilities/navigation"
+        },
+        {
+          "capability": "screenshot",
+          "status": "OBSERVED",
+          "depth": "entry",
+          "required_checks": [
+            "G3 layout",
+            "G5 visible focus"
+          ],
+          "evidence": "response-1/result.json#capabilities/screenshot"
+        },
+        {
+          "capability": "dom",
+          "status": "OBSERVED",
+          "depth": "entry",
+          "required_checks": [
+            "G0 surface identity",
+            "G4 text",
+            "G5 headings/focus"
+          ],
+          "evidence": "response-1/result.json#capabilities/dom"
+        },
+        {
+          "capability": "keyboard",
+          "status": "OBSERVED",
+          "depth": "entry",
+          "required_checks": [
+            "help-toggle",
+            "close-focus",
+            "keyboard-back",
+            "introduction-focus"
+          ],
+          "evidence": "response-1/result.json#capabilities/keyboard"
+        },
+        {
+          "capability": "console",
+          "status": "OBSERVED",
+          "depth": "entry",
+          "required_checks": [
+            "G1 render exceptions"
+          ],
+          "evidence": "response-1/result.json#capabilities/console"
+        },
+        {
+          "capability": "network",
+          "status": "OBSERVED",
+          "depth": "entry",
+          "required_checks": [
+            "G1 document outcomes",
+            "read-only-policy",
+            "origin-policy"
+          ],
+          "evidence": "response-1/result.json#capabilities/network"
+        }
+      ],
+      "limits": [
+        {
+          "capability": "arbitrary direct navigation to a cold deep URL",
+          "status": "UNAVAILABLE",
+          "reason": "Supported action API has no navigate/goto action and every context is forced to public /labs entry. Deep-document reload and browser history can still be exercised; neither proves a fresh-context deep-link initialization.",
+          "gate": "G1"
+        },
+        {
+          "capability": "viewport-only screenshot, live geometry, contrast measurement or automated accessibility audit",
+          "status": "NOT_EXPOSED",
+          "reason": "Relay supports snapshots/semantic assertions and keyboard only. Scope requires live focus/semantics; no contrast certification is claimed. Full-page screenshots can place fixed/sticky chrome at captured scroll positions."
+        },
+        {
+          "capability": "performance trace/field metrics",
+          "status": "OUT_OF_SCOPE",
+          "reason": "Contract explicitly excludes performance certification."
+        }
+      ],
+      "assertion_limit": "Visibility assertions and DOM active_element establish visibility/focus by driver semantics; they do not prove the focused control is unobscured by another element. Inspect PNGs separately."
+    },
+    "observations": [
+      {
+        "request": 1,
+        "actor": "neutral operator relay (operator name not exposed)",
+        "context": "fresh isolated request-1; browser context internal ID not exposed",
+        "requested_actions": 0,
+        "dispatch_utc": "2026-10-17T10:54:26.558311+00:00",
+        "return_utc": "2026-10-17T10:54:31.746689+00:00",
+        "status": "COMPLETE",
+        "exit_code": 0,
+        "error": null,
+        "request_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+        "receipt": "evidence/response-1/relay.json",
+        "events": "evidence/response-1/events.json"
+      },
+      {
+        "request": 2,
+        "actor": "neutral operator relay (operator name not exposed)",
+        "context": "fresh isolated request-2; browser context internal ID not exposed",
+        "requested_actions": 31,
+        "dispatch_utc": "2026-10-17T10:55:19.742301+00:00",
+        "return_utc": "2026-10-17T10:55:57.376638+00:00",
+        "status": "COMPLETE",
+        "exit_code": 0,
+        "error": null,
+        "request_sha256": "d8603f6db1244bfac82c8cde313d7eaccc065a1cebf0356f4662fbd5062d7ee3",
+        "receipt": "evidence/response-2/relay.json",
+        "events": "evidence/response-2/events.json"
+      },
+      {
+        "request": 3,
+        "actor": "neutral operator relay (operator name not exposed)",
+        "context": "fresh isolated request-3; browser context internal ID not exposed",
+        "requested_actions": 38,
+        "dispatch_utc": "2026-10-17T10:56:28.783562+00:00",
+        "return_utc": "2026-10-17T10:56:48.578792+00:00",
+        "status": "PARTIAL",
+        "exit_code": 1,
+        "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('COULD YOUR AI PILOT GO LIVE? A CHECK IN ABOUT 3 MINUTES', { exact: true }) to be visible\u001b[22m\n",
+        "request_sha256": "a675da55df1691a261ccafac2c3875d4aed25b79510cfc473ba9becdc6093fee",
+        "receipt": "evidence/response-3/relay.json",
+        "events": "evidence/response-3/events.json"
+      },
+      {
+        "request": 4,
+        "actor": "neutral operator relay (operator name not exposed)",
+        "context": "fresh isolated request-4; browser context internal ID not exposed",
+        "requested_actions": 38,
+        "dispatch_utc": "2026-10-17T10:57:30.493125+00:00",
+        "return_utc": "2026-10-17T10:58:18.211122+00:00",
+        "status": "PARTIAL",
+        "exit_code": 1,
+        "error": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('h1') to be visible\u001b[22m\n",
+        "request_sha256": "ed30b6388a7abb5dd6e1ea1b84105e25f3a3131ad1ba9f4feba6d7089785709e",
+        "receipt": "evidence/response-4/relay.json",
+        "events": "evidence/response-4/events.json"
+      },
+      {
+        "request": 5,
+        "actor": "neutral operator relay (operator name not exposed)",
+        "context": "fresh isolated request-5; browser context internal ID not exposed",
+        "requested_actions": 11,
+        "dispatch_utc": "2026-10-17T10:59:00.135675+00:00",
+        "return_utc": "2026-10-17T10:59:16.173664+00:00",
+        "status": "COMPLETE",
+        "exit_code": 0,
+        "error": null,
+        "request_sha256": "b1bae1fba772883427fdee5107997783059b079c215a11884f6ed739a1193b56",
+        "receipt": "evidence/response-5/relay.json",
+        "events": "evidence/response-5/events.json"
+      }
+    ],
+    "missing": "Cold direct deep URL initialization not executable in API; actual capture/DOM/keyboard/network/console work retained."
+  }
+}

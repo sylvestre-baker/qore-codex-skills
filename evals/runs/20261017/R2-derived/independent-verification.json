@@ -1,0 +1,21 @@
+{
+  "schema": "qore-selected-independent-verification/1",
+  "run_id": "qore003-20261017-r2-derived-1",
+  "neutral_id": "N01",
+  "verifier": "/root/campaign_final_verifier",
+  "verified_at": "2026-10-17T12:22:41.534375Z",
+  "source_verification": "verification-final/REPORT.md",
+  "decision": {
+    "coverage": "COMPLETE",
+    "reason": "Required review and current-profile preflight activities returned retained evidence. Confirmed broader Tab/Shift+Tab profile guidance is a source-fidelity quality defect, retained separately; qore-run coverage explicitly does not certify source support. Reconcile with R1 by preserving execution COMPLETE, qualifying full-conformity claims and preserving wave4 dissent.",
+    "evidence": [
+      "trials/R2-derived/evaluation.json",
+      "assessments/review-R2/assessment.json",
+      "assessment-inputs/N01/output/REPORT.md",
+      "trials/R2-derived/final-output/evidence/execution.json",
+      "verification-wave4/REPORT.md",
+      "verification-final/read-only-checks.json"
+    ]
+  },
+  "limit": "Independent bounded coverage/claims reconciliation of all original retained cells and saved separate assessments; not an exhaustive code, product or security certification. Phase coverage is distinct from source/claim quality and narrow task passes. No winner, general benefit, efficiency, causal advantage, equal-scope comparability, live-revision identity or deployment/release readiness established. Native lifecycle/deadline/usage telemetry limits remain. Later corrections are separate evidence and do not rewrite original campaign results."
+}

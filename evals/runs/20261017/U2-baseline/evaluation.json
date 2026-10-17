@@ -1,0 +1,180 @@
+{
+  "schema": "qore-eval-run/1",
+  "id": "qore003-20261017-u2-baseline-1",
+  "series_id": "specialization-v1",
+  "scenario_id": "U2",
+  "condition": "baseline",
+  "trial": 1,
+  "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+  "input_manifest": "prepared/input-manifest.json",
+  "input_manifest_sha256": "0bb1ff698dd162ed66edca309b29df5b89a7e8a04a39292cbff9ba3f2227d926",
+  "condition_resources_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "environment": {
+    "operator": "agent",
+    "host": "Docker Desktop Linux arm64 / Codex0.162.0",
+    "model": "gpt-6.1-sol",
+    "actor_id": "/root",
+    "tools": {
+      "codex": "0.162.0",
+      "image_id": "sha256:09894b981972962ae27f1e8e1726eb49886108a56c80742e70f71b0790c73aba",
+      "native_tool_catalog": "Twelve observed base helpers, native collaboration; no search/fetch/browser/connector; empty MCP resources/templates in qualified parent and child."
+    },
+    "settings": {
+      "model_reasoning_effort": "high",
+      "service_tier": "default",
+      "configs": [
+        "default_permissions=\"qore-trial\"",
+        "permissions.qore-trial.extends=\":workspace\"",
+        "permissions.qore-trial.filesystem={\":root\"=\"deny\",\":minimal\"=\"read\",\":tmpdir\"=\"write\",\":slash_tmp\"=\"write\",\":workspace_roots\"={\".\"=\"read\"},\"/workspace/output\"=\"write\",\"/var/lib/qore-feedback\"=\"read\"}",
+        "permissions.qore-trial.network.enabled=false",
+        "allow_login_shell=false",
+        "web_search=\"disabled\"",
+        "model_reasoning_effort=\"high\"",
+        "service_tier=\"default\"",
+        "features.multi_agent=true",
+        "agents.max_threads=3",
+        "features.apps=false",
+        "features.plugins=false",
+        "features.remote_plugin=false",
+        "features.memories=false",
+        "features.skill_search=false",
+        "features.skill_mcp_dependency_install=false",
+        "features.request_permissions_tool=false",
+        "mcp_servers={}"
+      ],
+      "operator_procedure": "operator-freeze.json; same frozen task/common runtime instruction template"
+    },
+    "isolation": {
+      "status": "PASS",
+      "evidence": [
+        "isolation-evidence.json"
+      ]
+    }
+  },
+  "resources": {
+    "caps": {
+      "wall_seconds": 900,
+      "aggregate_agent_seconds": 2400,
+      "browser_requests": 6,
+      "transient_browser_retries": 1,
+      "evaluator_seconds": 1800,
+      "verifier_seconds": 1800,
+      "maximum_original_cells": 21,
+      "limit": "Provisional operator policy, not measured feasibility or hard timeout enforcement."
+    },
+    "started_at": "2026-10-17T12:04:05.360499+00:00",
+    "ended_at": "2026-10-17T12:07:36.537294+00:00",
+    "children": [],
+    "tokens": 534787,
+    "aggregate_agent_seconds": 208.464253,
+    "unavailable": {},
+    "parent_native_usage": {
+      "input_tokens": 527931,
+      "cached_input_tokens": 455680,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 6856,
+      "reasoning_output_tokens": 1036
+    },
+    "parent_wall_seconds": 208.464253,
+    "measurement_basis": "Single context only: CLI turn input+output tokens including cached input, and observed launcher-to-return wall interval including transport/tool waits; not CPU, billing, unique tokens or productivity."
+  },
+  "artifacts": [
+    {
+      "path": "isolation-evidence.json",
+      "sha256": "de238712008971eea292a59ac44483883a316787298e06ff74f8648d284ccc3f",
+      "kind": "execution",
+      "observed_at": "2026-10-17T12:04:05.918954+00:00"
+    },
+    {
+      "path": "execution-evidence.json",
+      "sha256": "4661e184f01d808e7636c04b87b0171dfa78762fa36f3cebcebfd7950c7cd843",
+      "kind": "execution",
+      "observed_at": "2026-10-17T12:07:34.606773+00:00"
+    },
+    {
+      "path": "independent-assessment.json",
+      "sha256": "c7228a13fc1dfa6e6450830f148071f75b56a7461e226e839dcf7f53afc80bc0",
+      "kind": "presentation"
+    },
+    {
+      "path": "independent-verification.json",
+      "sha256": "ece787f12ff7b813396c577bf5cae5a0e40f515b2130a46f34e4d845272e093f",
+      "kind": "presentation"
+    },
+    {
+      "path": "qualification.json",
+      "sha256": "be5029e2b9c42b8658d16993c770140e1af5206810e86040fa97d46fda80b2be",
+      "kind": "presentation"
+    }
+  ],
+  "execution": {
+    "coverage": "COMPLETE",
+    "evidence": [
+      "execution-evidence.json"
+    ]
+  },
+  "assessment": [
+    {
+      "criterion": "K1",
+      "status": "MET",
+      "independent_task_status": "MET",
+      "reason": "The report accurately selects original contract obligations and distinguishes Close focus to summary from Back focus to introduction H1; the recorded keyboard journey and DOM corroborate both destinations.",
+      "evidence": [
+        "independent-assessment.json",
+        "independent-verification.json"
+      ]
+    },
+    {
+      "criterion": "K3",
+      "status": "MET",
+      "independent_task_status": "MET",
+      "reason": "No answers were activated; none-checked assertions passed before help and after Close, with empty answer circles and disabled Next in captures. Enforced activation descriptors cover only entry/start/help/Close/Back; actual guarded Enter/Space targets match. The relay rejects mutation methods and unauthorized main-frame/popup navigation and link destinations. Both observed sessions contain only successful same-origin GETs and one rejected analytics POST each. This is the observation boundary, not arbitrary-script or universal subresource-origin isolation.",
+      "evidence": [
+        "independent-assessment.json",
+        "independent-verification.json"
+      ]
+    },
+    {
+      "criterion": "K4",
+      "status": "MET",
+      "independent_task_status": "MET",
+      "reason": "The report grounds the scoped pass in raw events/DOM/PNG and explicitly limits full-page visual completeness, locale measurement, certification and deployment identity. It correctly treats the anticipated blocked analytics POST as a policy effect and the historical protocol proof gap as provenance, not a current website defect.",
+      "evidence": [
+        "independent-assessment.json",
+        "independent-verification.json"
+      ]
+    },
+    {
+      "criterion": "K8",
+      "status": "MET",
+      "independent_task_status": "MET",
+      "reason": "The decision is explicitly limited to the observed desktop session. Actual Enter opening, Space closing, Enter reopening, Tab-to-Close/Enter and restored summary focus complete U2 from public entry. Extra Back evidence is supported. Neither whole-website coverage nor causal improvement is asserted or required.",
+      "evidence": [
+        "independent-assessment.json",
+        "independent-verification.json"
+      ]
+    }
+  ],
+  "comparison": {
+    "comparability": "UNVERIFIED",
+    "decision": "Unknown",
+    "reason": "Separate evaluators and verifier retained task/coverage observations. One observation on related known tasks and visible conditions does not establish a comparative winner; live deployment comparability is unverified for UX.",
+    "verification": [
+      "independent-assessment.json",
+      "independent-verification.json"
+    ]
+  },
+  "limitations": [
+    "One observation on a related known task, not a general benefit benchmark.",
+    "CLI JSONL omits some native child lifecycle events; child identities and history-free dispatches rely on retained role reports/roster plus the qualified inheritance probe.",
+    "All resource timing precision and unavailable measurements remain explicit; no cost or efficiency conclusion.",
+    "Independent criteria were applied qualitatively after outputs using predeclared criteria; operational grading interpretation was not a validated standardized scoring rubric.",
+    "Original method coverage and artifacts are unchanged. Later qualification and its identities are separate; entered metadata does not establish its own truth."
+  ],
+  "qore_run": null,
+  "normalization": [],
+  "qualification": {
+    "path": "qualification.json",
+    "sha256": "be5029e2b9c42b8658d16993c770140e1af5206810e86040fa97d46fda80b2be"
+  }
+}

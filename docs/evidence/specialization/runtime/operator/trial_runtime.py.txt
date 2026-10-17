@@ -1,0 +1,89 @@
+"""Private operator helper for one explicitly dispatched trial, not a public scheduler."""
+from pathlib import Path, PurePosixPath
+from datetime import datetime, timezone
+import subprocess,json,tarfile,io,hashlib,os,time
+ROOT=Path(__file__).parent
+IMAGE='qore-qualification-qore002-20261016:codex-0.162.0'
+MODEL='gpt-6.1-sol'
+CONFIGS=['default_permissions="qore-trial"','permissions.qore-trial.extends=":workspace"','permissions.qore-trial.filesystem={":root"="deny",":minimal"="read",":tmpdir"="write",":slash_tmp"="write",":workspace_roots"={"."="read"},"/workspace/output"="write"}','permissions.qore-trial.network.enabled=false','allow_login_shell=false','web_search="disabled"','model_reasoning_effort="high"','service_tier="default"','features.multi_agent=true','agents.max_threads=3','features.apps=false','features.plugins=false','features.remote_plugin=false','features.memories=false','features.skill_search=false','features.skill_mcp_dependency_install=false','features.request_permissions_tool=false','mcp_servers={}']
+REQUIREMENTS='''allowed_web_search_modes = ["disabled"]
+allow_browser_and_computer_use = false
+allow_login_shell = false
+[features]
+apps = false
+plugins = false
+memories = false
+[mcp_servers]
+'''
+def now():return datetime.now(timezone.utc).isoformat()
+def sha(path):return hashlib.sha256(Path(path).read_bytes()).hexdigest()
+def write(path,value):Path(path).write_text(json.dumps(value,indent=2)+'\n')
+def call(args,**kwargs):return subprocess.run(args,check=True,capture_output=True,**kwargs)
+def create(name,bundle,audit):
+ audit=Path(audit);audit.mkdir(parents=True,exist_ok=False)
+ args=['docker','run','--detach','--init','--name',name,'--label','io.qaizen.qore.campaign=20261017','--cap-drop','ALL','--security-opt','no-new-privileges','--security-opt','seccomp='+str(ROOT/'namespace-seccomp-v1.json'),'--pids-limit','512','--memory','4g','--cpus','2',IMAGE]
+ r=call(args,text=True);write(audit/'container.json',{'created_at':now(),'name':name,'id':r.stdout.strip(),'argv':args,'seccomp_sha256':sha(ROOT/'namespace-seccomp-v1.json')})
+ call(['docker','exec',name,'mkdir','-p','/workspace/worker','/workspace/output'])
+ data=io.BytesIO()
+ with tarfile.open(fileobj=data,mode='w') as archive:
+  for file in sorted(Path(bundle).rglob('*')):
+   if file.is_file():archive.add(file,arcname=file.relative_to(bundle).as_posix(),recursive=False)
+ call(['docker','exec','-i','--workdir','/workspace/worker',name,'tar','--no-same-owner','-xf','-'],input=data.getvalue())
+ call(['docker','exec','--user','root','-i',name,'sh','-c','mkdir -p /etc/codex; cat > /etc/codex/requirements.toml; chmod 0644 /etc/codex/requirements.toml'],input=REQUIREMENTS,text=True)
+ call(['docker','exec',name,'python3','-c','from pathlib import Path;Path("/workspace/outside-canary").write_text("harmless outside canary");Path("/home/node/.codex/auth-canary").write_text("harmless auth canary")'])
+ inspect=json.loads(call(['docker','inspect',name],text=True).stdout)[0]
+ assert not inspect['Mounts'] and not inspect['HostConfig']['Privileged'] and not inspect['HostConfig']['CapAdd']
+ write(audit/'environment.json',{'image_id':inspect['Image'],'uid_name':inspect['Config']['User'],'mounts':inspect['Mounts'],'cap_drop':inspect['HostConfig']['CapDrop'],'no_new_privileges':'no-new-privileges' in inspect['HostConfig']['SecurityOpt'],'network_mode':inspect['HostConfig']['NetworkMode'],'configs':CONFIGS,'requirements':REQUIREMENTS,'model':MODEL,'codex_version':'0.162.0'})
+ code='''from pathlib import Path
+import socket,json,hashlib
+r={"source_sha256":hashlib.sha256(Path("surface-contract.json").read_bytes()).hexdigest(),"forbidden_reads":{}}
+for p in ["/workspace/outside-canary","/home/node/.codex/auth-canary","/workspace/old-answers","/Users"]:
+ try:Path(p).read_bytes();r["forbidden_reads"][p]="READABLE"
+ except Exception as e:r["forbidden_reads"][p]=type(e).__name__
+try:Path("mutation-canary").write_text("x");r["input_mutable"]=True
+except Exception:r["input_mutable"]=False
+try:Path("/workspace/output/write-canary").write_text("x");r["output_writable"]=True
+except Exception:r["output_writable"]=False
+try:s=socket.create_connection(("1.1.1.1",443),2);r["network"]="CONNECTED";s.close()
+except Exception as e:r["network"]=type(e).__name__
+print(json.dumps(r))'''
+ cmd=['docker','exec','--workdir','/workspace/worker',name,'codex','sandbox']
+ for c in CONFIGS:cmd+=['-c',c]
+ cmd+=['--','python3','-c',code]
+ r=call(cmd,text=True,timeout=30);result=json.loads(r.stdout)
+ write(audit/'boundary.json',{'at':now(),'argv':cmd,'exit_code':r.returncode,'stdout':r.stdout,'stderr':r.stderr,'observed':result})
+ assert result['source_sha256']==sha(Path(bundle)/'surface-contract.json')
+ assert all(v!='READABLE' for v in result['forbidden_reads'].values()) and not result['input_mutable'] and result['output_writable'] and result['network']=='PermissionError'
+ call(['docker','exec','-i',name,'sh','-c','umask 077; cat > /home/node/.codex/auth.json'],input=Path('<operator-codex-auth.json>').read_bytes())
+ return audit
+
+def launch(name,prompt,audit,timeout=900,label='turn1'):
+ audit=Path(audit);(audit/(label+'-prompt.txt')).write_text(prompt+'\n')
+ args=['docker','exec','-i','--workdir','/workspace/worker',name,'codex','--ask-for-approval','never','exec','--ignore-user-config','--ignore-rules','--ephemeral','--json','--skip-git-repo-check','--strict-config','-m',MODEL]
+ for c in CONFIGS:args+=['-c',c]
+ args+=['-']
+ started=now();write(audit/(label+'-launch.json'),{'started_at':started,'argv':args,'prompt_sha256':sha(audit/(label+'-prompt.txt'))})
+ with (audit/(label+'-stdout.jsonl')).open('w') as out,(audit/(label+'-stderr.txt')).open('w') as err:
+  proc=subprocess.Popen(args,stdin=subprocess.PIPE,stdout=out,stderr=err,text=True)
+  try:proc.communicate(prompt,timeout=timeout);exit_code=proc.returncode
+  except subprocess.TimeoutExpired:
+   proc.kill();proc.communicate();exit_code=124
+ write(audit/(label+'-exit.json'),{'started_at':started,'ended_at':now(),'exit_code':exit_code})
+ return exit_code
+
+def collect(name,audit,label='final'):
+ audit=Path(audit);archive=call(['docker','exec',name,'tar','-C','/workspace/output','-cf','-','.']).stdout
+ (audit/(label+'-output.tar')).write_bytes(archive)
+ dest=audit/(label+'-output');dest.mkdir(exist_ok=False)
+ with tarfile.open(fileobj=io.BytesIO(archive)) as t:
+  for m in t.getmembers():
+   path=PurePosixPath(m.name.removeprefix('./'))
+   if '..' in path.parts or path.is_absolute() or m.issym() or m.islnk():raise ValueError('Unsafe output member')
+   if m.isfile():
+    target=dest/path;target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes(t.extractfile(m).read())
+ return dest
+
+def cleanup(name):
+ label=call(['docker','inspect',name,'--format','{{index .Config.Labels "io.qaizen.qore.campaign"}}'],text=True).stdout.strip()
+ assert label=='20261017'
+ call(['docker','rm','--force',name])

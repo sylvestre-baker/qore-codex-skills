@@ -1,0 +1,85 @@
+[
+  {
+    "id": "ux-help-sequence",
+    "claim": "The target leaves open-help activation unspecified and omits contract-required Space-close and Enter-reopen transitions.",
+    "source_locations": [
+      "target/verification-protocol.md:7",
+      "surface-contract.json:11-13",
+      "surface-contract.json:18"
+    ],
+    "proposed_change": "Specify summary Enter to open, Space to close, Enter to reopen with resulting state assertions before the existing Close step.",
+    "severity": "high",
+    "refutation": null
+  },
+  {
+    "id": "ux-preserve-existing",
+    "claim": "The target already specifies Close keyboard activation and summary focus, two unanswered checkpoints, and bounded keyboard Back with introduction heading focus and visibility/absence assertions.",
+    "source_locations": [
+      "target/verification-protocol.md:8-10",
+      "surface-contract.json:14-17"
+    ],
+    "proposed_change": "Preserve all existing valid obligations including both unanswered checkpoints, Tab/Shift+Tab options, and the 24-step Back bound.",
+    "severity": "high",
+    "refutation": "Qualification after cross-examination: preserve the target Close alternative, but do not infer canonical Tab coverage from Shift+Tab-only evidence. Both unanswered checkpoints and the 24-step Back bound remain unchanged."
+  },
+  {
+    "id": "ux-entry-start",
+    "claim": "Entry and Start are click transitions, so a keyboard-only rewrite of the whole journey adds obligations absent from the contract.",
+    "source_locations": [
+      "surface-contract.json:4",
+      "surface-contract.json:9-10"
+    ],
+    "proposed_change": "Clarify exact entry URL, journey link and Start control while retaining declared click actions and resulting states.",
+    "severity": "medium",
+    "refutation": null
+  },
+  {
+    "id": "ux-focus-evidence",
+    "claim": "The checker requires Back sequential traversal and Enter activation, with distinct Close and Back focus destinations; contract consistency cannot prove actual browser behavior.",
+    "source_locations": [
+      "checks/check_contract.py:32-36",
+      "checks/check_contract.py:42-43",
+      "surface-contract.json:14-17"
+    ],
+    "proposed_change": "Require tool-independent traversal/activation and actual focused-element evidence; prohibit treating click or injected focus as keyboard proof.",
+    "severity": "high",
+    "refutation": "Wording correction: checker validates declared Back traversal and activation fields; it does not inspect any actual execution or observed activation. Future browser evidence, not checker success, establishes focus/keyboard results."
+  },
+  {
+    "id": "ux-traversal-nuance",
+    "claim": "The target permits Tab or Shift+Tab for Close, while the contract labels Close traversal Tab; the checker explicitly accepts either direction only for Back.",
+    "source_locations": [
+      "target/verification-protocol.md:8",
+      "surface-contract.json:14",
+      "checks/check_contract.py:35-36"
+    ],
+    "proposed_change": "Preserve both target directions, recommend canonical Tab Close, and label actual direction and canonical-versus-alternative coverage without changing the contract.",
+    "severity": "medium",
+    "refutation": "Cross correction: preserving target Shift+Tab Close does not establish canonical Tab coverage. Recommend Tab for the canonical run; record actual direction and label Shift+Tab Close as alternative evidence. If only the alternative is observed, canonical Tab remains not observed. Checker direction acceptance applies only to Back."
+  },
+  {
+    "id": "ux-scope-policy",
+    "claim": "The target omits explicit locale/viewport, read-only methods, allowed origin and blocked-analytics retention setup present in original sources.",
+    "source_locations": [
+      "target/verification-protocol.md:5-10",
+      "surface-contract.json:4-6",
+      "surface-contract.json:18-20",
+      "observation-policy.json:2-4"
+    ],
+    "proposed_change": "Add future-run setup with all-request method restrictions and profile-supported main-frame/popup origin guards; retain blocked analytics effects. Do not imply an all-resource same-origin ban or make runtime enforcement a prerequisite to documentation readiness.",
+    "severity": "high",
+    "refutation": null
+  },
+  {
+    "id": "ux-observation-limits",
+    "claim": "The fixture and contract explicitly distinguish expected acceptance obligations from current website observations; no product defect has been established.",
+    "source_locations": [
+      "target/verification-protocol.md:3",
+      "surface-contract.json:19-20",
+      "checks/check_contract.py:42-43"
+    ],
+    "proposed_change": "Retain provenance and distinguish failed 24-step bound, observed unmet focus assertion, and missing downstream observation; none supplies a website-defect claim in this fixture task.",
+    "severity": "high",
+    "refutation": null
+  }
+]

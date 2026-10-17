@@ -1,0 +1,5 @@
+Initial discovery command: pwd && rg --files -g TASK.md -g AGENTS.md -g *SKILL* -g *qore* -g *manifest* .
+Observed cwd: /workspace/worker
+/bin/sh: rg: not found
+Actual exit_code: 127
+Fallback: ls/find and direct file reads. No network command run.

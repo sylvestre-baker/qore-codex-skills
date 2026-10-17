@@ -1,0 +1,28 @@
+{
+  "observed_at": "2026-10-17T11:52:09.333877+00:00",
+  "wall_start_utc": "2026-10-17T11:41:44Z",
+  "wall_limit_seconds": 900,
+  "wall_deadline_utc": "2026-10-17T11:56:44Z",
+  "aggregate_agent_seconds_limit": 2400,
+  "worker_deadlines_seconds": {
+    "Analyze": 120,
+    "Cross-examine": 90
+  },
+  "max_simultaneous_children": 3,
+  "actual_initial_contexts": 5,
+  "actual_successor_contexts": 2,
+  "required_roles_missing": [],
+  "required_cross_examinations_missing": [],
+  "child_occupancy_upper_bound_seconds": 1218.0,
+  "aggregate_upper_bound_even_with_full_lead_budget": 2118.0,
+  "actual_usage": null,
+  "actual_usage_unavailable_reason": "Host tools expose canonical context/status and tool wall durations, but no token/billed agent-second counters.",
+  "deviations": [
+    "First-wave exact dispatch instants unavailable; UTC intervals retained.",
+    "Host evicted Product and UX completed contexts; fresh role successors performed cross-examinations only, after barrier.",
+    "QA cross completed5 seconds after its declared deadline; available-results request sent at expiry.",
+    "UX cross completed15 seconds after its declared deadline; lead missed exact-expiry available-results request while drafting, and observed complete result at11:49:59Z.",
+    "No additional role round, quality retry or browser phase was dispatched."
+  ],
+  "identity_note": "Supplied enclosing hashes retained; local per-file inventory does not reconstruct unknown enclosing manifest serialization."
+}

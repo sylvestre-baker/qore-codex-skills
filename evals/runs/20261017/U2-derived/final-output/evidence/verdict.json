@@ -1,0 +1,30 @@
+{
+  "qore_evidence": {
+    "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+    "target_snapshot_sha256": "f1c94eff9d8d9044073bbe14c71e2ef897c187a01238ba9363eedecdcca6d228",
+    "observed_at": "2026-10-17T12:15:43.589417+00:00",
+    "phase_id": "verdict"
+  },
+  "payload": {
+    "actor_id": "/root",
+    "coverage": "PARTIAL",
+    "scoped_verdict": "DO-NOT-SHIP",
+    "report": "Core requested help and focus acceptance transitions pass. MEDIUM V1 is a demonstrated focus visibility issue in observed consent-unset desktop rendering; G3/G5 score3. G1 retains missing final reload terminal capture. No global SHIP.",
+    "gates": "evidence/gates.json",
+    "findings": "evidence/findings.json",
+    "stop_rule": "evidence/stop-rule-1.json",
+    "stopping_reason": "Review-only: demonstrated V1 retained without code changes. One corrected challenge replay used; final render gap retained, no additional retry. Stop before ceiling and budget, not plateau or exhaustion.",
+    "limitations": [
+      "Final post-history reload terminal DOM/screenshot and last no-selection assertion did not execute after h1 timeout; G1 incomplete.",
+      "Request3 failed due reviewer uppercase text locator assumption; request4 reached most challenge checks then timed out on reviewer assumption of introduction after reload. Neither timeout establishes product failure.",
+      "V1 is supported by inspected repeated full-page screenshots; live geometry, scrolling video, and assistive-technology effects were not supplied.",
+      "Anonymous public, consent unset, en English, default theme and CSS viewport 1280x800 only. Browser locale en-US was requested from contract but actual navigator locale is not independently exposed.",
+      "No answers, results, full questionnaire, mobile, alternate themes, account contexts, accessibility/performance certification or invalid URL permutations were evaluated; task excludes these flows.",
+      "HTTP redirects unqualified/blocked by relay; top-level documents fulfilled via guarded fetch; service workers blocked. Instrumented audits and custom live geometry unavailable through supported actions.",
+      "Trace/video paths are named in relay result but files not supplied in feedback; retained raw result/events/DOM/PNG files only.",
+      "Operator-supplied enclosing candidate and frozen-input manifest digests retained; packaging procedure unavailable, local per-file hashes do not independently reproduce enclosing identities or identify website deployment.",
+      "UX method requires no independent child contexts; no children dispatched. Operator specific context identity and token/CPU/aggregate-agent usage meter unavailable. Wall timestamps retained; no zero-usage claim.",
+      "No fixes authorized or performed. V1 proposal requires a later implementation and fresh re-verification."
+    ]
+  }
+}

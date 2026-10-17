@@ -491,5 +491,43 @@ class PackageTests(unittest.TestCase):
             context.validate_profile(profile, self.project, "plan")
 
 
+    def test_historical_report_links_require_exact_non_runtime_pin_and_adapter(self):
+        root = self.base / "historical"
+        report = root / "evals/runs/20261017/R1-generic/final-output/REPORT.md"
+        report.parent.mkdir(parents=True)
+        report.write_text("[Original workspace input](/workspace/worker/target.md:1)\n")
+        adapter = report.parent.parent / "REPORT.md"
+        adapter.write_text("Preserved original report; source path is historical.\n")
+        policy = root / "docs/evidence/specialization/historical-links.json"
+        policy.parent.mkdir(parents=True)
+        item = {"path": report.relative_to(root).as_posix(), "sha256": qore.digest(report),
+                "adapter": adapter.relative_to(root).as_posix(), "reason": "Preserve original evidence bytes"}
+        qore.write_json(policy, {"schema": "qore-historical-links/1", "reports": [item]})
+        with self.assertRaisesRegex(ValueError, "Unresolved"):
+            qore.check_references(root)
+        qore.check_references(root, historical=qore.historical_markdown(root))
+        report.write_text("Altered original report")
+        with self.assertRaisesRegex(ValueError, "digest"):
+            qore.historical_markdown(root)
+        item.update(path="skills/qore-review/SKILL.md")
+        qore.write_json(policy, {"schema": "qore-historical-links/1", "reports": [item]})
+        with self.assertRaisesRegex(ValueError, "non-runtime"):
+            qore.historical_markdown(root)
+
+    def test_historical_exception_does_not_exempt_maintained_adapter(self):
+        root = self.base / "adapter"
+        report = root / "evals/runs/20261017/R1-generic/final-output/REPORT.md"
+        report.parent.mkdir(parents=True)
+        report.write_text("[Historical input](/workspace/worker/input.md)\n")
+        adapter = report.parent.parent / "REPORT.md"
+        adapter.write_text("[Missing maintained link](missing.md)\n")
+        policy = root / "docs/evidence/specialization/historical-links.json"
+        qore.write_json(policy, {"schema": "qore-historical-links/1", "reports": [{
+            "path": report.relative_to(root).as_posix(), "sha256": qore.digest(report),
+            "adapter": adapter.relative_to(root).as_posix(), "reason": "Preserve original"}]})
+        with self.assertRaisesRegex(ValueError, "Unresolved"):
+            qore.check_references(root, historical=qore.historical_markdown(root))
+
+
 if __name__ == "__main__":
     unittest.main()

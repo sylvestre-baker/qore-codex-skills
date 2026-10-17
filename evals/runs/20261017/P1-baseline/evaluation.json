@@ -1,0 +1,200 @@
+{
+  "schema": "qore-eval-run/1",
+  "id": "qore003-20261017-p1-baseline-1",
+  "series_id": "specialization-v1",
+  "scenario_id": "P1",
+  "condition": "baseline",
+  "trial": 1,
+  "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+  "input_manifest": "prepared/input-manifest.json",
+  "input_manifest_sha256": "87d7e194904832d17cb2f5c6240a03f89cfe63305d1cadb262d07f723d1eb342",
+  "condition_resources_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "environment": {
+    "operator": "agent",
+    "host": "Docker Desktop Linux arm64 / Codex0.162.0",
+    "model": "gpt-6.1-sol",
+    "actor_id": "/root",
+    "tools": {
+      "codex": "0.162.0",
+      "image_id": "sha256:09894b981972962ae27f1e8e1726eb49886108a56c80742e70f71b0790c73aba",
+      "native_tool_catalog": "Twelve observed base helpers, native collaboration; no search/fetch/browser/connector; empty MCP resources/templates in qualified parent and child."
+    },
+    "settings": {
+      "model_reasoning_effort": "high",
+      "service_tier": "default",
+      "configs": [
+        "default_permissions=\"qore-trial\"",
+        "permissions.qore-trial.extends=\":workspace\"",
+        "permissions.qore-trial.filesystem={\":root\"=\"deny\",\":minimal\"=\"read\",\":tmpdir\"=\"write\",\":slash_tmp\"=\"write\",\":workspace_roots\"={\".\"=\"read\"},\"/workspace/output\"=\"write\"}",
+        "permissions.qore-trial.network.enabled=false",
+        "allow_login_shell=false",
+        "web_search=\"disabled\"",
+        "model_reasoning_effort=\"high\"",
+        "service_tier=\"default\"",
+        "features.multi_agent=true",
+        "agents.max_threads=3",
+        "features.apps=false",
+        "features.plugins=false",
+        "features.remote_plugin=false",
+        "features.memories=false",
+        "features.skill_search=false",
+        "features.skill_mcp_dependency_install=false",
+        "features.request_permissions_tool=false",
+        "mcp_servers={}"
+      ],
+      "operator_procedure": "operator-freeze.json; same frozen task/common runtime instruction template"
+    },
+    "isolation": {
+      "status": "PASS",
+      "evidence": [
+        "isolation-evidence.json"
+      ]
+    }
+  },
+  "resources": {
+    "caps": {
+      "wall_seconds": 900,
+      "aggregate_agent_seconds": 2400,
+      "browser_requests": 6,
+      "transient_browser_retries": 1,
+      "evaluator_seconds": 1800,
+      "verifier_seconds": 1800,
+      "maximum_original_cells": 21,
+      "limit": "Provisional operator policy, not measured feasibility or hard timeout enforcement."
+    },
+    "started_at": "2026-10-17T10:51:32.766288+00:00",
+    "ended_at": "2026-10-17T10:53:57.486524+00:00",
+    "children": [],
+    "tokens": 141608,
+    "aggregate_agent_seconds": 144.102695,
+    "unavailable": {},
+    "parent_native_usage": {
+      "input_tokens": 134172,
+      "cached_input_tokens": 108544,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 7436,
+      "reasoning_output_tokens": 1370
+    },
+    "parent_wall_seconds": 144.102695,
+    "measurement_basis": "Single context only: CLI turn input+output tokens including cached input, and observed launcher-to-return wall interval including transport/tool waits; not CPU, billing, unique tokens or productivity."
+  },
+  "artifacts": [
+    {
+      "path": "isolation-evidence.json",
+      "sha256": "85494c71979bdf0491bd2a5a39f782cf56db95215f3bc7e2ea117b3081ce990f",
+      "kind": "execution",
+      "observed_at": "2026-10-17T10:51:33.166153+00:00"
+    },
+    {
+      "path": "execution-evidence.json",
+      "sha256": "3d789e33f8b586b719f56f1504afced2227816b5fcfb11ed5f4e1a4f05e5ae30",
+      "kind": "execution",
+      "observed_at": "2026-10-17T10:53:57.333479+00:00"
+    },
+    {
+      "path": "independent-assessment.json",
+      "sha256": "0dfe9b9beb7708454da080c877778f5b8f1193803004afa9ff2a21e3b8ec841d",
+      "kind": "presentation"
+    },
+    {
+      "path": "independent-verification.json",
+      "sha256": "cf0be99da641d6489f202a94b26e2c18cb49ce018d2f5cd31b8d6dae36bc57eb",
+      "kind": "presentation"
+    },
+    {
+      "path": "qualification.json",
+      "sha256": "db3b940a3687f71685a85e917fa6fbedea394f0cfba1710085550cc8aa2f9ef2",
+      "kind": "presentation"
+    }
+  ],
+  "execution": {
+    "coverage": "COMPLETE",
+    "evidence": [
+      "execution-evidence.json"
+    ]
+  },
+  "assessment": [
+    {
+      "criterion": "K1",
+      "status": "MET",
+      "independent_task_status": "MET",
+      "reason": "The plan accurately distinguishes the original project sources from the reconstructed target, covers all seven transitions and all eight checks, and separates Close-to-summary from Back-to-introduction-h1 focus. Exact forward Tab is selected against the concrete source rather than the broader checker tolerance.",
+      "evidence": [
+        "independent-assessment.json",
+        "independent-verification.json"
+      ]
+    },
+    {
+      "criterion": "K2",
+      "status": "MET",
+      "independent_task_status": "MET",
+      "reason": "Both the plan and proposed replacement require sequential Tab starting at actual post-Close summary focus, focused Back before Enter, actual Enter and returned h1 focus. Mouse, assigned-focus and direct-handler substitutes are expressly rejected.",
+      "evidence": [
+        "independent-assessment.json",
+        "independent-verification.json"
+      ]
+    },
+    {
+      "criterion": "K3",
+      "status": "MET",
+      "independent_task_status": "MET",
+      "reason": "The proposed procedure establishes unanswered state by inspecting selection, keeps excluded actions prohibited, installs method and exact-origin guards before navigation, includes redirects/subordinate requests, and stops if any uninspectable path can bypass enforcement. It retains conditional blocked-analytics effects and does not send prohibited probes.",
+      "evidence": [
+        "independent-assessment.json",
+        "independent-verification.json"
+      ]
+    },
+    {
+      "criterion": "K4",
+      "status": "MET",
+      "independent_task_status": "MET",
+      "reason": "The report and proposed replacement preserve fixture provenance and distinguish expectations, checker validity, documentation coverage and future browser results. Missing behavior is expressly untested, and the proof gap is not called a website defect.",
+      "evidence": [
+        "independent-assessment.json",
+        "independent-verification.json"
+      ]
+    },
+    {
+      "criterion": "K5",
+      "status": "MET",
+      "independent_task_status": "MET",
+      "reason": "The correct existing local checker command has retained argv-equivalent text, stdout/stderr and exit 0. Planned acceptance covers every required check with observable oracles, explicit manual source review and relevant negative-evidence rejection. No Qore structural linter is required for this baseline.",
+      "evidence": [
+        "independent-assessment.json",
+        "independent-verification.json"
+      ]
+    },
+    {
+      "criterion": "K8",
+      "status": "MET",
+      "independent_task_status": "MET",
+      "reason": "The scoped outcome is a source-based plan plus a proposed document replacement outside the immutable input. The observed target/source differences justify full help-cycle and keyboard-proof correction; they do not justify application repair or a deployment verdict.",
+      "evidence": [
+        "independent-assessment.json",
+        "independent-verification.json"
+      ]
+    }
+  ],
+  "comparison": {
+    "comparability": "UNVERIFIED",
+    "decision": "Unknown",
+    "reason": "Separate evaluators and verifier retained task/coverage observations. One observation on related known tasks and visible conditions does not establish a comparative winner; live deployment comparability is unverified for UX.",
+    "verification": [
+      "independent-assessment.json",
+      "independent-verification.json"
+    ]
+  },
+  "limitations": [
+    "One observation on a related known task, not a general benefit benchmark.",
+    "CLI JSONL omits some native child lifecycle events; child identities and history-free dispatches rely on retained role reports/roster plus the qualified inheritance probe.",
+    "All resource timing precision and unavailable measurements remain explicit; no cost or efficiency conclusion.",
+    "Independent criteria were applied qualitatively after outputs using predeclared criteria; operational grading interpretation was not a validated standardized scoring rubric.",
+    "Original method coverage and artifacts are unchanged. Later qualification and its identities are separate; entered metadata does not establish its own truth."
+  ],
+  "qore_run": null,
+  "normalization": [],
+  "qualification": {
+    "path": "qualification.json",
+    "sha256": "db3b940a3687f71685a85e917fa6fbedea394f0cfba1710085550cc8aa2f9ef2"
+  }
+}

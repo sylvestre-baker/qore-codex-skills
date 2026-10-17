@@ -1,0 +1,18 @@
+{
+  "findings": [
+    {
+      "id": "R2-C01",
+      "title": "R2 filtered verifier packets expose forbidden finder rationale",
+      "severity": "medium",
+      "evidence": "assessment-inputs/N01/input/.agents/skills/qore-review-qaizen-labs/SKILL.md and references/protocol.md; N01/output/evidence/claims.json and verifier report; N10/input/.agents/skills/qore-review/SKILL.md and references/protocol.md; N10/output/claims.json or evidence/claims.json and verifier report; actual redactor source and command receipts. Check exact contract allowlist, actual packet content and actual verifier intake.",
+      "counterexample": "If a prohibited complete finder report, separate rationale field or earlier verdict actually reaches the verifier contrary to the pinned method contract, named-phase inventory alone cannot establish compliant completion."
+    },
+    {
+      "id": "R2-C02",
+      "title": "R2 derivative consumes a broader traversal profile than its selected source",
+      "severity": "medium",
+      "evidence": "assessment-inputs/N01/input/.agents/skills/qore-review-qaizen-labs/references/project.json back-focus; N01/input/surface-contract.json transition back traversal; N01/output/evidence/profile-use.json and report.",
+      "counterexample": "A source selecting Tab is not equivalent to the checker's larger domain permitting a different contract to choose Shift+Tab. Retained source mapping and actual consumption must agree."
+    }
+  ]
+}

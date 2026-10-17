@@ -1,0 +1,15 @@
+{
+  "context": "/root/verifier",
+  "first_observed_utc": "2026-10-17T10:18:19Z",
+  "completion_utc": "2026-10-17T10:20:09Z",
+  "examined": [
+    "C-1",
+    "C-2",
+    "C-3"
+  ],
+  "unexamined": [],
+  "coverage": "COMPLETE",
+  "deployment_coverage": "NOT EXECUTED",
+  "usage": null,
+  "usage_unavailable_reason": "No role-local token or aggregate compute usage telemetry available."
+}

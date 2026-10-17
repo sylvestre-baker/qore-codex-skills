@@ -1,0 +1,31 @@
+{
+  "start_utc": "2026-10-17T10:38:53+00:00",
+  "deadline_utc": "2026-10-17T10:53:53+00:00",
+  "wall_seconds": 900,
+  "aggregate_agent_seconds": 2400,
+  "max_simultaneous_children": 3,
+  "analysis_deadline_seconds": 150,
+  "challenge_deadline_seconds": 100,
+  "fresh_verifier_deadline_seconds": 90,
+  "expiry": "Request available complete/partial reports, stop new dispatches at exhaustion; preserve missing coverage.",
+  "usage_limitation": "Tool API does not expose child CPU/token usage. Record observed active wall intervals rather than fabricate measured agent usage.",
+  "mode": "Workflow",
+  "deciding_artifact": "target/verification-protocol.md",
+  "dispatch_budget_upper_bound_seconds": {
+    "lead": 900,
+    "five_initial_analyses": 750,
+    "five_cross_examinations": 500,
+    "fresh_verifier": 90,
+    "total": 2240
+  },
+  "note": "2240 is an allocation upper bound based on declared active-role deadlines, not measured usage; 160 seconds remain unallocated within user aggregate ceiling. No further quality retry is allocated.",
+  "final_evidence_assembly_at": "2026-10-17T10:51:14.227388+00:00",
+  "elapsed_wall_seconds_at_assembly": 741.227391,
+  "observed_child_report_intervals_seconds": 885.3951860000001,
+  "observed_wall_proxy_total_at_assembly": 1626.622577,
+  "limitations": [
+    "Exact aggregate agent usage unavailable from API. Proxy excludes some dispatch-to-first-clock and return handoff overhead; not a measurement of CPU, tokens or aggregate agent-seconds.",
+    "Delivery cross report/evidence retention returned beyond nominal role deadline after available-results requests; no new investigation at expiry.",
+    "Initial three dispatch UTCs are post-dispatch local observations, not exposed API event timestamps; role clocks give additional actual activity bounds."
+  ]
+}

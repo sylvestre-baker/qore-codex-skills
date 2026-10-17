@@ -1,0 +1,65 @@
+{
+  "qore_evidence": {
+    "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+    "target_snapshot_sha256": "b269181f3e44e5b4d84fe94ae1d683f85d2b8bde69f389d32d030b1e0909ef36",
+    "observed_at": "2026-10-17T11:01:10.933426+00:00",
+    "phase_id": "scope"
+  },
+  "payload": {
+    "actor_id": "/root",
+    "started_at": "2026-10-17T10:54:04+00:00",
+    "completed_at": "2026-10-17T10:55:46.543258+00:00",
+    "target": "Public application Back journey from /labs via readiness-check entry, anonymous unanswered state",
+    "identities": {
+      "run_id": "qore003-20261017-u1-derived-1",
+      "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+      "target_snapshot_sha256": "b269181f3e44e5b4d84fe94ae1d683f85d2b8bde69f389d32d030b1e0909ef36",
+      "last_relevant_change": "2026-10-17T09:53:58.639550+00:00"
+    },
+    "depth": "entry",
+    "required_gates": [
+      "G0",
+      "G1",
+      "G2",
+      "G3",
+      "G4",
+      "G5",
+      "G6"
+    ],
+    "transitions_applicable": true,
+    "profile_check": "evidence/project-check.json",
+    "initial_check_matrix": "evidence/initial-check-matrix.json",
+    "input_files_immutable": true,
+    "fix_authorization": "Proposals only; no input or shared-data mutations permitted.",
+    "independent_roles": {
+      "required": [],
+      "requested": [],
+      "returned": [],
+      "missing": [],
+      "reason": "Invoked UX method requires sequential observation/scoring/challenge phases, not independent finders or planning perspectives. No children dispatched."
+    },
+    "budget": {
+      "wall_deadline": "2026-10-17T11:09:04+00:00",
+      "aggregate_agent_seconds_limit": 2400,
+      "max_children": 3,
+      "role_deadline": "No child roles applicable",
+      "browser_deadline_per_request_seconds": 90,
+      "max_requests": 6,
+      "max_iterations": 6
+    },
+    "authority_read": [
+      "TASK.md",
+      "surface-contract.json",
+      "checks/check_contract.py",
+      "observation-policy.json",
+      ".agents/skills/qore-ux-review-qaizen-labs/SKILL.md",
+      "all six referenced method documents and bundled project.json"
+    ],
+    "non_applicability": {
+      "GP": "Performance expressly outside supplied contract.",
+      "full questionnaire/result states": "Answers/results/form submission forbidden; review is limited to unanswered first question.",
+      "mobile/additional themes": "Only desktop 1280x800 and deployed default theme required for this scoped journey.",
+      "automated accessibility certification": "Contract excludes accessibility certification; live keyboard/semantic checks still required."
+    }
+  }
+}

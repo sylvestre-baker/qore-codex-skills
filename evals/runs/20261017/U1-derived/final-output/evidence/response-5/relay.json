@@ -1,0 +1,27 @@
+{
+  "exit_code": 0,
+  "request_sha256": "b1bae1fba772883427fdee5107997783059b079c215a11884f6ed739a1193b56",
+  "harness_sha256": "544d47211ac5aefde57072aef4ded1140c21030555b0e45e93f8821794249add",
+  "policy_sha256": "2160973fbe4d0a603d061688d2d4fe9ee633d8b3f018fec773d7b8d7a28c7ff2",
+  "started_at": "2026-10-17T10:59:00.135675+00:00",
+  "ended_at": "2026-10-17T10:59:16.173664+00:00",
+  "fresh_context": true,
+  "input_actions_modified": false,
+  "operator_interpretation": null,
+  "stderr": "",
+  "diagnostic_transformation": "Only private operator evidence prefix replaced in returned stderr; original retained.",
+  "files": {
+    "00-entry.dom.json": "09a05d31c16faaf8980d863723e3f901798ef49b4cac43ea54aec912de99112d",
+    "00-entry.png": "484c55e66c4e31ca320607543e4ad4b28e877409b4f861352c1ef9af0f013137",
+    "01-unanswered-question-reload-observed.dom.json": "d914c65d93824bf0ad2af509c711239181aeace21ca36164765ced95fe000fba",
+    "01-unanswered-question-reload-observed.png": "96a1c004d1a9e10eacffce8041b18e850e3be0c59535043784da52814c8af0c4",
+    "02-history-back-observed.dom.json": "09a05d31c16faaf8980d863723e3f901798ef49b4cac43ea54aec912de99112d",
+    "02-history-back-observed.png": "f9860a65d0aa70adc43fab4133460ede071137ee0870635cc6150bef76f2200b",
+    "03-history-forward-observed.dom.json": "d914c65d93824bf0ad2af509c711239181aeace21ca36164765ced95fe000fba",
+    "03-history-forward-observed.png": "96a1c004d1a9e10eacffce8041b18e850e3be0c59535043784da52814c8af0c4",
+    "04-final.dom.json": "d914c65d93824bf0ad2af509c711239181aeace21ca36164765ced95fe000fba",
+    "04-final.png": "96a1c004d1a9e10eacffce8041b18e850e3be0c59535043784da52814c8af0c4",
+    "events.json": "e6c27295b4ec9fa1ae72ba4968ba7c0c1ef28b84a0b90d69b27c42fc20709516",
+    "result.json": "305f8a222c4db04302fd7b580c59b95f2c40d8d63a2f89361085a253f22701d0"
+  }
+}

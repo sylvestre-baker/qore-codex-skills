@@ -1,0 +1,40 @@
+{
+  "selected_facts": {
+    "commands": [
+      "surface-contract"
+    ],
+    "invariants": [
+      "close-focus",
+      "back-focus",
+      "unanswered-scope"
+    ]
+  },
+  "consumed": [
+    {
+      "fact_id": "surface-contract",
+      "source_id": "checker",
+      "source_sha256": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b",
+      "effect": "Executed inspected read-only contract-consistency command; output contract-check.json. Contract check does not validate tutorial completeness or current website behavior."
+    },
+    {
+      "fact_id": "close-focus",
+      "source_id": "surface",
+      "source_sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+      "effect": "Used as review criterion against target and direct source: Closing question help restores focus to its summary; verify this separately from the application Back transition."
+    },
+    {
+      "fact_id": "back-focus",
+      "source_id": "surface",
+      "source_sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+      "effect": "Used as review criterion against target and direct source: Reach the application Back control using sequential Tab or Shift+Tab; activate with Enter and verify introduction heading focus. A click or programmatic focus does not prove keyboard reachability."
+    },
+    {
+      "fact_id": "unanswered-scope",
+      "source_id": "surface",
+      "source_sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+      "effect": "Used as review criterion against target and direct source: Leave the first question unanswered, block all non-GET/HEAD/OPTIONS requests and main-frame/popup navigation outside the allowed origins. Record blocked analytics; do not relax policy for a successful recording."
+    }
+  ],
+  "surfaces": [],
+  "surface_reason": "Review method preflight returns no web surface; no browsing authorized."
+}

@@ -1,0 +1,33 @@
+[
+  {
+    "id": "V1",
+    "severity": "MEDIUM",
+    "status": "OBSERVED; uncorrected",
+    "title": "Cookie banner obscures keyboard-focused Back",
+    "scope": "Anonymous visitor, consent unset, default rendering, CSS viewport 1280x800; first question after Close restores summary focus.",
+    "reproduction": [
+      "Enter from summary opens help",
+      "Tab to Close, Enter closes and restores summary focus",
+      "Tab once to Back",
+      "Observe focused Back under cookie banner; Shift+Tab then Tab reproduces it"
+    ],
+    "evidence": [
+      "response-2/08-Back-sequential-keyboard-focus.png",
+      "response-4/01-challenge-Back-focus-with-cookie-banner.png",
+      "response-4/02-challenge-Back-refocus-with-cookie-banner.png",
+      "response-4/events.json"
+    ],
+    "timestamps": [
+      "2026-10-17T12:09:40.862Z",
+      "2026-10-17T12:12:25.025Z",
+      "2026-10-17T12:12:29.756Z"
+    ],
+    "impact": "Back label and almost all focus outline are covered, so a sighted keyboard user cannot clearly identify the focused navigation control.",
+    "refutations": [
+      "Not an unreachable or nonfunctional Back: focus assertions and Enter return to introduction succeed twice.",
+      "Not a Close focus restoration defect: summary receives focus correctly.",
+      "Full-page capture includes sticky elements at scroll positions. Exact live occlusion geometry and assistive-technology effects were not measured; repeated captures support the scoped visual finding, not a general accessibility certification."
+    ],
+    "proposal": "Account for the consent banner when revealing focused controls, using layout space or appropriate scroll margins; verify Back remains visible with consent unset. No input files or website code changed."
+  }
+]

@@ -1,0 +1,145 @@
+{
+  "schema": "qore-selected-independent-assessment/1",
+  "run_id": "qore003-20261017-u2-derived-1",
+  "neutral_id": "N11",
+  "source_raw_sha256": "eadcc2bbc3498aa6e9a921d0763a59fbe26500cbb7b74661f7b544ec219ef1ca",
+  "public_source": "evals/campaign-20261017/assessments/ux-U2/N11/assessment.json",
+  "public_source_sha256": "eadcc2bbc3498aa6e9a921d0763a59fbe26500cbb7b74661f7b544ec219ef1ca",
+  "assessor": "/root/campaign_ux_last_assessor",
+  "original_case_assessment": {
+    "actor_id": "/root/campaign_ux_last_assessor",
+    "neutral_id": "N11",
+    "scenario_id": "U2",
+    "started_at_utc": "2026-10-17T12:19:05Z",
+    "ended_at_utc": "2026-10-17T12:21:49.573106+00:00",
+    "criteria": [
+      {
+        "id": "K1",
+        "status": "MET",
+        "reason": "Original contract/profile rules are accurately selected and the report keeps Close-to-summary distinct from Back-to-introduction-H1. Actual sequential focus and Enter records plus DOM corroborate both destinations.",
+        "evidence": [
+          "assessment-inputs/N11/input/surface-contract.json#/transitions",
+          "assessment-inputs/N11/output/REPORT.md: required-observation table",
+          "assessment-inputs/N11/observation-2/raw/events.json#/actions/23",
+          "assessment-inputs/N11/observation-2/raw/events.json#/actions/27",
+          "assessment-inputs/N11/observation-2/raw/events.json#/actions/29",
+          "assessment-inputs/N11/observation-2/raw/07-close-restores-summary-focus.dom.json#/active_element",
+          "assessment-inputs/N11/observation-2/raw/09-returned-introduction-heading-focus.dom.json#/active_element"
+        ]
+      },
+      {
+        "id": "K3",
+        "status": "MET",
+        "reason": "Primary before/after none-checked assertions pass, and restart is also unanswered. Actual guard records approve only source-authorized entry/start/help/Close/Back activations. Mutation methods and unauthorized top-level/popup/link navigation are enforced by the retained harness; successful recorded traffic in all four requests is same-origin GET, with three analytics POSTs blocked. Boundaries are scoped observation guards, not arbitrary-page-script isolation.",
+        "evidence": [
+          "assessment-inputs/N11/observation-2/raw/events.json#/actions/9",
+          "assessment-inputs/N11/observation-2/raw/events.json#/actions/30",
+          "assessment-inputs/N11/observation-2/raw/events.json#/actions/40",
+          "assessment-inputs/N11/observation-4/raw/events.json#/actions/27",
+          "assessment-inputs/N11/observation-2/raw/events.json#/activation_checks/8",
+          "assessment-inputs/N11/observation-2/raw/events.json#/activation_checks/17",
+          "assessment-inputs/N11/observation-2/raw/events.json#/blocked_mutations/0",
+          "assessment-inputs/N11/observation-4/raw/events.json#/blocked_mutations",
+          "assessment-inputs/N11/operator/browser_probe.mjs:67-164,184-217,330-349",
+          "assessment-inputs/N11/input/.agents/skills/qore-ux-review-qaizen-labs/references/project.json#/invariants/2"
+        ]
+      },
+      {
+        "id": "K4",
+        "status": "MET",
+        "reason": "The narrow journey is directly evidenced. The report explicitly retains the two failed assertions, missing terminal reload capture, full-page screenshot/live-geometry limits and deployment uncertainty; it does not promote the protocol provenance or observer locator failures to website defects. Repeated pixels support a rendered overlap concern, although exact viewport impact and the assigned MEDIUM severity are not independently established here. This caveat is separate from the directly supported task observations.",
+        "evidence": [
+          "assessment-inputs/N11/output/REPORT.md: V1 paragraph; execution failures; remaining limits",
+          "assessment-inputs/N11/observation-3/raw/result.json#/error",
+          "assessment-inputs/N11/observation-4/raw/result.json#/error",
+          "assessment-inputs/N11/observation-2/raw/08-Back-sequential-keyboard-focus.png",
+          "assessment-inputs/N11/observation-4/raw/01-challenge-Back-focus-with-cookie-banner.png",
+          "assessment-inputs/N11/observation-4/raw/02-challenge-Back-refocus-with-cookie-banner.png",
+          "assessment-inputs/N11/operator/browser_probe.mjs:244"
+        ]
+      },
+      {
+        "id": "K8",
+        "status": "MET",
+        "reason": "Observed Enter/Space/Enter help toggling and keyboard Close with restored summary focus support the scoped task result. The report separates this working journey from its broader PARTIAL method coverage and conservative DO-NOT-SHIP review disposition. It makes no global SHIP or deployment claim. The missing broader G1 terminal capture does not erase the completed U2 path, and no causal improvement is asserted.",
+        "evidence": [
+          "assessment-inputs/N11/observation-2/raw/events.json#/actions/14",
+          "assessment-inputs/N11/observation-2/raw/events.json#/actions/17",
+          "assessment-inputs/N11/observation-2/raw/events.json#/actions/21",
+          "assessment-inputs/N11/observation-2/raw/events.json#/actions/27",
+          "assessment-inputs/N11/observation-2/raw/events.json#/actions/29",
+          "assessment-inputs/N11/observation-2/raw/result.json#/status",
+          "assessment-inputs/N11/output/evidence/gates.json#/gates/G1",
+          "assessment-inputs/N11/output/evidence/run-check-final.json",
+          "assessment-inputs/N11/output/REPORT.md: opening paragraph; gate table"
+        ]
+      }
+    ],
+    "method_coverage": {
+      "condition_observed": "derived qore-ux-review-qaizen-labs; visible in original TASK and output, not blinded",
+      "narrow_task_observation": "Complete: request2 from public entry observes Enter open, Space close, Enter reopen, Tab-to-Close/Enter and restored SUMMARY; extra Back/Enter restores H1.",
+      "declared_method_scope": "entry+state, G0-G6, anonymous consent-unset English desktop at 1280x800; GP explicitly not applicable to this contract",
+      "method_execution_coverage": "PARTIAL; no conversion to COMPLETE in this assessment",
+      "required_gap": "G1 final post-history reload terminal rendering and last unanswered assertion are absent after main h1 timeout; direct state URL navigation was not independently covered. Initial introduction reload and history Back/Forward evidence exist.",
+      "phases": "Profile preflight, scope, browser, state_transition and verdict artifacts retained; freshness explicitly FAIL because complete required observation set is absent. Validator valid:true is structural, with PARTIAL and missing freshness.",
+      "gates": "G0/G2/G4 have relevant narrow observations; G1 incomplete; G3/G5 retain overlap candidate, with live viewport impact unresolved here; G6 challenge actually executed. Numeric gate scores not independently rated.",
+      "roles": "UX source requires no independent finder/verifier child contexts. No such roles added as assessment requirements.",
+      "loop": "One review iteration, stop-rule CONTINUE/DO-NOT-SHIP/PARTIAL retained; stopping with an unfixed review finding is permitted by protocol when fixes are unauthorized. No successful fresh loop claimed.",
+      "requests": "Four fresh operator contexts, 0/36/36/36 submitted actions; request1/2 COMPLETE, request3/4 PARTIAL due assertions. Responses executed verbatim, input_actions_modified:false.",
+      "product_concern": "Repeated full-page pixels show Back label/outline covered by cookie banner; exact actual-viewport visibility, user impact and MEDIUM severity remain unconfirmed by this assessor.",
+      "deployment_comparability": "UNKNOWN beyond recorded public URLs and times; supplied frozen input and candidate identities do not identify deployed application revision.",
+      "out_of_scope_criteria": [
+        "K2",
+        "K5",
+        "K6",
+        "K7"
+      ]
+    },
+    "material_candidates": [
+      {
+        "id": "N11-C1",
+        "kind": "supported rendered-pixel concern; viewport impact uncertain",
+        "claim": "Back label and most gold focus outline are covered by the cookie banner in three full-page captures while active-element DOM says Back.",
+        "evidence": [
+          "assessment-inputs/N11/observation-2/raw/08-Back-sequential-keyboard-focus.png",
+          "assessment-inputs/N11/observation-4/raw/01-challenge-Back-focus-with-cookie-banner.png",
+          "assessment-inputs/N11/observation-4/raw/02-challenge-Back-refocus-with-cookie-banner.png",
+          "assessment-inputs/N11/observation-4/raw/02-challenge-Back-refocus-with-cookie-banner.dom.json#/active_element"
+        ],
+        "counterexample": "Sequential Tab and Enter succeed twice (request2 actions32-38 and request4 actions15-25), so unreachable/nonfunctional Back is refuted. FullPage:true and missing live geometry prevent independent confirmation of exact viewport occlusion, sighted-user impact or MEDIUM severity. Retain a conditional visual concern, not an unqualified viewport finding."
+      },
+      {
+        "id": "N11-C2",
+        "kind": "method gap, separate from U2 completion",
+        "claim": "The last post-history reload has no returned terminal DOM/PNG and final no-selection assertion never executes.",
+        "evidence": [
+          "assessment-inputs/N11/observation-4/actions.json",
+          "assessment-inputs/N11/observation-4/raw/events.json#/actions/36",
+          "assessment-inputs/N11/observation-4/raw/result.json#/error",
+          "assessment-inputs/N11/output/evidence/run-check-final.json"
+        ],
+        "counterexample": "Request2 fully completed the core help/focus path, and its initial introduction reload was captured. Neither timeout proves a website reload defect. They do prevent complete broader G1/freshness coverage."
+      }
+    ],
+    "limits": [
+      "Only N11 and frozen criteria inspected for this assignment; no new case, comparison, prior evaluator/verifier report, campaign-author diagnosis, private website source or live rerun used.",
+      "The assessed N11 report/findings/gates are subject outputs, not independent proof. Judgments rely on original rules plus actual raw events/DOM and eight viewed PNGs.",
+      "Full-page PNGs are not viewport-only captures. Browser viewport is 1280x800, but scroll coordinates, live bounding rectangles, hit testing and supplied video are unavailable/uninspected. Exact live occlusion and accessibility impact remain UNKNOWN.",
+      "No fresh browser/model trial, code changes, fixes, installs, external retrieval, other agents or outreach.",
+      "Raw request1/3 PNGs, most entry/history PNGs and trace/video archives not inspected. Core request2 and request4 action/DOM/state evidence examined selectively.",
+      "No mobile, alternate browser/theme, answered/results path, accepted-cookie, unblocked analytics, full accessibility, contrast or performance certification established.",
+      "Enclosing source/candidate digests and validator outputs do not establish deployed revision identity; no causal effect or comparative conclusion drawn.",
+      "Method G1 and freshness remain PARTIAL/FAIL as disclosed, without adding them to frozen U2 criteria or waiving them from the invoked method."
+    ],
+    "time_cap": {
+      "seconds": 240,
+      "overrun": false,
+      "elapsed_seconds": 164.573106,
+      "basis": "First actual recorded UTC reading to assessment finalization; new inspection stopped before saving."
+    }
+  },
+  "limits": [
+    "Neutral filenames did not blind conditions.",
+    "The raw criterion judgments concern their declared task scope; later method-coverage qualification is separate."
+  ]
+}

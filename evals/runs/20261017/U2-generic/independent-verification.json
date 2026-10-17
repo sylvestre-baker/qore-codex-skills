@@ -1,0 +1,24 @@
+{
+  "schema": "qore-selected-independent-verification/1",
+  "run_id": "qore003-20261017-u2-generic-1",
+  "neutral_id": "N07",
+  "verifier": "/root/campaign_final_verifier",
+  "verified_at": "2026-10-17T12:22:41.534375Z",
+  "source_verification": "verification-final/REPORT.md",
+  "decision": {
+    "coverage": "PARTIAL",
+    "reason": "Restrict original COMPLETE to PARTIAL. Initial entry/state scope explicitly requires G1, whose frozen contract includes direct applicable URL navigation as well as reload. All original initial URLs are Labs and no direct-navigation action is retained; missing goto capability cannot waive the check. Actual plateau stop also reports PARTIAL loop. Retain completed narrow help/Close/Back and warm reload/history observations without asserting complete required coverage.",
+    "evidence": [
+      "trials/U2-generic/evaluation.json",
+      "assessments/ux-U2/N07/assessment.json",
+      "assessment-inputs/N07/output/REPORT.md",
+      "trials/U2-generic/final-output/execution.json",
+      "assessment-inputs/N07/output/scope.json",
+      "assessment-inputs/N07/output/required-check-matrix.json",
+      "assessment-inputs/N07/input/.agents/skills/qore-ux-review/references/gates.md",
+      "assessment-inputs/N07/input/.agents/skills/qore-ux-review/references/protocol.md",
+      "verification-final/read-only-checks.json"
+    ]
+  },
+  "limit": "Independent bounded coverage/claims reconciliation of all original retained cells and saved separate assessments; not an exhaustive code, product or security certification. Phase coverage is distinct from source/claim quality and narrow task passes. No winner, general benefit, efficiency, causal advantage, equal-scope comparability, live-revision identity or deployment/release readiness established. Native lifecycle/deadline/usage telemetry limits remain. Later corrections are separate evidence and do not rewrite original campaign results."
+}

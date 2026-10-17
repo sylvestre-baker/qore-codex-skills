@@ -1,0 +1,17 @@
+{
+  "start_utc": "2026-10-17T10:23:33+00:00",
+  "wall_deadline_utc": "2026-10-17T10:38:33+00:00",
+  "wall_budget_seconds": 900,
+  "aggregate_agent_budget_seconds": 2400,
+  "concurrency_children_max": 3,
+  "analysis_role_deadline_seconds": 150,
+  "cross_examination_role_deadline_seconds": 100,
+  "scheduled_maximum_child_occupancy_seconds": 1250,
+  "maximum_total_with_full_root_wall_seconds": 2150,
+  "exhaustion": "Stop new dispatches; request available partial results for expired roles, record missing phases and unfinished claims; no quality retry.",
+  "method_mode": "Workflow",
+  "mode_deciding_artifact": "target/verification-protocol.md",
+  "barrier": "All five independent analysis reports must return before any cross-examination receives any peer report.",
+  "review_method_specific_requirements": "No finder or verifier phase invoked by qore-plan; initial planning roles are independent, lead adjudicates.",
+  "source_mutations": "Not authorized; output only. No browser/network execution authorized."
+}

@@ -1,0 +1,84 @@
+{
+  "actual_procedure_steps": [
+    "1. Open the public Labs entry and follow its journey link.",
+    "2. Start the check without selecting an answer.",
+    "3. Open help using its summary control.",
+    "4. Reach Close with Tab or Shift+Tab, activate with Enter, and assert that help is closed and the summary is focused.",
+    "5. Assert that the first question remains unanswered.",
+    "6. Assert that the question remains unanswered before leaving it. Reach Back with Tab or Shift+Tab within 24 steps and activate it with Enter. Assert that the introduction is visible, the question and help are absent, and the introduction heading is focused."
+  ],
+  "required_summary_transitions": [
+    {
+      "id": "open-help",
+      "from": "first-question",
+      "to": "help-open",
+      "control": "summary",
+      "activation": "Enter"
+    },
+    {
+      "id": "toggle-help",
+      "from": "help-open",
+      "to": "help-closed",
+      "control": "summary",
+      "activation": "Space"
+    },
+    {
+      "id": "reopen-help",
+      "from": "help-closed",
+      "to": "help-open",
+      "control": "summary",
+      "activation": "Enter"
+    }
+  ],
+  "actual_steps_explicitly_naming_Space": [],
+  "actual_steps_explicitly_naming_reopening": [],
+  "actual_steps_naming_Enter": [
+    "4. Reach Close with Tab or Shift+Tab, activate with Enter, and assert that help is closed and the summary is focused.",
+    "6. Assert that the question remains unanswered before leaving it. Reach Back with Tab or Shift+Tab within 24 steps and activate it with Enter. Assert that the introduction is visible, the question and help are absent, and the introduction heading is focused."
+  ],
+  "required_network_policies": {
+    "allowed_origins": [
+      "https://qaizen.io"
+    ],
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ],
+    "required_checks": [
+      "read-only-policy",
+      "origin-policy"
+    ],
+    "analytics_limit": [
+      "An analytics POST is expected to be blocked; retain its observed effects."
+    ]
+  },
+  "observation_policy": {
+    "allowed_origins": [
+      "https://qaizen.io"
+    ]
+  },
+  "actual_steps_explicitly_naming_network_policy_terms": [],
+  "source_sha256": {
+    "/workspace/worker/target/verification-protocol.md": "0a3452f02e358d8800fb26d591083deb972c5531165473990dc27007a9a9e0d4",
+    "/workspace/worker/surface-contract.json": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+    "/workspace/worker/checks/check_contract.py": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b",
+    "/workspace/worker/observation-policy.json": "15f4e5b4960b5011684be265f027e42b8637a3b8aae96b24bba1ba3a4d0f0202"
+  },
+  "comparison_scope": "Static document comparison only. No browser, network, deployment observation, or simulated surface was used.",
+  "observed_comparison_utc": "2026-10-17T11:23:13Z",
+  "network_term_match_method": "Case-insensitive whole words; manual inspection of complete numbered source accompanies this search.",
+  "network_terms_searched": [
+    "origin",
+    "request",
+    "network",
+    "GET",
+    "HEAD",
+    "OPTIONS",
+    "POST",
+    "analytics",
+    "read-only",
+    "block",
+    "allowlist"
+  ]
+}

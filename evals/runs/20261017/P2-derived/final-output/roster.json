@@ -1,0 +1,246 @@
+{
+  "schema": "role-roster/1",
+  "requested": [
+    "product",
+    "architecture",
+    "ux",
+    "delivery",
+    "qa",
+    "verifier"
+  ],
+  "returned": [
+    "product",
+    "ux",
+    "architecture",
+    "delivery",
+    "qa",
+    "verifier"
+  ],
+  "missing": [],
+  "dispatch_time_precision": "Initial wave dispatches bounded by recorded pre/post timestamps; precise host tool event timestamps unavailable. Follow-up dispatch times recorded immediately before calls.",
+  "actors": [
+    {
+      "role": "product",
+      "actor_id": "/root/product",
+      "initial_dispatch_utc_interval": [
+        "2026-10-17T11:30:54.605766+00:00",
+        "2026-10-17T11:31:13.980563+00:00"
+      ],
+      "initial_return_utc": "2026-10-17T11:32:18.775761+00:00",
+      "deadline_seconds": 120,
+      "report": "reports/product-analysis.md",
+      "initial_status": "COMPLETE",
+      "context_continuity": "Initial context retired by runtime during wave scheduling; cross-examination will use fresh same-role context with full saved report."
+    },
+    {
+      "role": "architecture",
+      "actor_id": "/root/architecture",
+      "initial_dispatch_utc_interval": [
+        "2026-10-17T11:30:54.605766+00:00",
+        "2026-10-17T11:31:13.980563+00:00"
+      ],
+      "initial_return_utc": "2026-10-17T11:32:49.867945+00:00",
+      "deadline_seconds": 120,
+      "report": "reports/architecture-analysis.md",
+      "initial_status": "COMPLETE",
+      "cross_dispatch_utc": "2026-10-17T11:34:05.109078+00:00",
+      "cross_deadline_seconds": 90,
+      "cross_return_utc": "2026-10-17T11:35:57.701078+00:00",
+      "cross_status": "COMPLETE",
+      "cross_dispatch_utc_interval": [
+        "2026-10-17T11:34:05.109078+00:00",
+        "2026-10-17T11:34:34.360745+00:00"
+      ],
+      "deadline_limit": "Completion observed at scheduling boundary; conservative span exceeds 90 seconds; no expiry request was sent before completion notification. Exact tool dispatch/completion instant unavailable."
+    },
+    {
+      "role": "ux",
+      "actor_id": "/root/ux",
+      "initial_dispatch_utc_interval": [
+        "2026-10-17T11:30:54.605766+00:00",
+        "2026-10-17T11:31:13.980563+00:00"
+      ],
+      "initial_return_utc": "2026-10-17T11:32:26.085039+00:00",
+      "deadline_seconds": 120,
+      "report": "reports/ux-analysis.md",
+      "initial_status": "COMPLETE",
+      "context_continuity": "Initial context retired by runtime during wave scheduling; cross-examination will use fresh same-role context with full saved report."
+    },
+    {
+      "role": "delivery",
+      "actor_id": "/root/delivery",
+      "initial_dispatch_utc": "2026-10-17T11:32:18.775761+00:00",
+      "initial_return_utc": "2026-10-17T11:33:46.185363+00:00",
+      "deadline_seconds": 120,
+      "report": "reports/delivery-analysis.md",
+      "initial_status": "COMPLETE",
+      "cross_dispatch_utc": "2026-10-17T11:34:34.360745+00:00",
+      "cross_deadline_seconds": 90,
+      "cross_return_utc": "2026-10-17T11:35:39.397603+00:00",
+      "cross_status": "COMPLETE"
+    },
+    {
+      "role": "qa",
+      "actor_id": "/root/qa",
+      "initial_dispatch_utc": "2026-10-17T11:32:26.085039+00:00",
+      "initial_return_utc": "2026-10-17T11:33:53.557779+00:00",
+      "deadline_seconds": 120,
+      "report": "reports/qa-analysis.md",
+      "initial_status": "COMPLETE",
+      "cross_dispatch_utc": "2026-10-17T11:34:34.360745+00:00",
+      "cross_deadline_seconds": 90,
+      "cross_return_utc": "2026-10-17T11:35:31.242203+00:00",
+      "cross_status": "COMPLETE"
+    },
+    {
+      "role": "product",
+      "phase": "cross",
+      "actor_id": "/root/product_cross",
+      "cross_dispatch_utc": "2026-10-17T11:35:31.242203+00:00",
+      "cross_deadline_seconds": 90,
+      "report": "reports/product-cross.md",
+      "continuity": "Fresh context because initial context retired; own and all peer full reports supplied.",
+      "cross_return_utc": "2026-10-17T11:37:18.292209+00:00",
+      "cross_status": "COMPLETE"
+    },
+    {
+      "role": "ux",
+      "phase": "cross",
+      "actor_id": "/root/ux_cross",
+      "cross_dispatch_utc": "2026-10-17T11:35:39.397603+00:00",
+      "cross_deadline_seconds": 90,
+      "report": "reports/ux-cross.md",
+      "continuity": "Fresh context because initial context retired; own and all peer full reports supplied.",
+      "cross_return_utc": "2026-10-17T11:37:18.292209+00:00",
+      "cross_status": "COMPLETE"
+    },
+    {
+      "role": "verifier",
+      "actor_id": "/root/verifier",
+      "dispatch_utc": "2026-10-17T11:37:29.121580+00:00",
+      "deadline_seconds": 90,
+      "report": "reports/verifier.md",
+      "context": "fresh fork_turns=none; mechanically whitelisted claims and raw sources only",
+      "return_utc": "2026-10-17T11:39:21.077006+00:00",
+      "status": "COMPLETE",
+      "deadline_request": "Requested available results at expiry (11:39:00 UTC scheduling boundary); full files were present at first subsequent filesystem inspection."
+    }
+  ],
+  "usage": {
+    "aggregate_agent_seconds": null,
+    "reason": "Host exposes no per-agent CPU/token/active-seconds usage metric. Wall dispatch/return bounds will be retained; not fabricated as zero.",
+    "timing_measure": "Conservative elapsed dispatch/lead-observed return intervals, not actual active or CPU usage. Includes waiting/notification lag. Some dispatches are bounded rather than exact.",
+    "phase_elapsed_bounds": [
+      {
+        "actor_id": "/root/product",
+        "phase": "analysis",
+        "conservative_observed_elapsed_seconds": 84.169995
+      },
+      {
+        "actor_id": "/root/architecture",
+        "phase": "analysis",
+        "conservative_observed_elapsed_seconds": 115.262179
+      },
+      {
+        "actor_id": "/root/architecture",
+        "phase": "cross",
+        "conservative_observed_elapsed_seconds": 112.592
+      },
+      {
+        "actor_id": "/root/ux",
+        "phase": "analysis",
+        "conservative_observed_elapsed_seconds": 91.479273
+      },
+      {
+        "actor_id": "/root/delivery",
+        "phase": "analysis",
+        "conservative_observed_elapsed_seconds": 87.409602
+      },
+      {
+        "actor_id": "/root/delivery",
+        "phase": "cross",
+        "conservative_observed_elapsed_seconds": 94.288525
+      },
+      {
+        "actor_id": "/root/qa",
+        "phase": "analysis",
+        "conservative_observed_elapsed_seconds": 87.47274
+      },
+      {
+        "actor_id": "/root/qa",
+        "phase": "cross",
+        "conservative_observed_elapsed_seconds": 86.133125
+      },
+      {
+        "actor_id": "/root/product_cross",
+        "phase": "cross",
+        "conservative_observed_elapsed_seconds": 107.050006
+      },
+      {
+        "actor_id": "/root/ux_cross",
+        "phase": "cross",
+        "conservative_observed_elapsed_seconds": 98.894606
+      },
+      {
+        "actor_id": "/root/verifier",
+        "phase": "verifier",
+        "conservative_observed_elapsed_seconds": 111.955426
+      }
+    ],
+    "child_elapsed_seconds_bound": 1076.707477,
+    "lead_wall_seconds_since_first_clock": 597.208612,
+    "aggregate_elapsed_bound_since_first_clock": 1673.9160889999998,
+    "measured_at": "2026-10-17T11:40:19.208612+00:00",
+    "budget_seconds": {
+      "wall": 900,
+      "aggregate": 2400
+    },
+    "max_observed_active_children": 3
+  },
+  "analysis_barrier": {
+    "observed_at": "2026-10-17T11:33:53.557779+00:00",
+    "requested": [
+      "product",
+      "architecture",
+      "ux",
+      "delivery",
+      "qa"
+    ],
+    "returned_complete": [
+      "product",
+      "architecture",
+      "ux",
+      "delivery",
+      "qa"
+    ],
+    "missing": []
+  },
+  "runtime_events": [
+    {
+      "observed_at": "2026-10-17T11:34:34.360745+00:00",
+      "action": "followup_task product",
+      "result": "agent with id 01a149a1-1f2d-79e0-ae43-253041c90c64 not found",
+      "effect": "No cross work dispatched; initial report preserved; fresh Product/UX role contexts will reconstruct continuity from reports."
+    }
+  ],
+  "time_semantics": "Return times are UTC lead-observation timestamps after host completion notifications, not unavailable exact child completion instants. Dispatches recorded before call or as UTC bounding intervals.",
+  "cross_barrier": {
+    "observed_at": "2026-10-17T11:37:18.292209+00:00",
+    "requested": [
+      "product",
+      "architecture",
+      "ux",
+      "delivery",
+      "qa"
+    ],
+    "returned_complete": [
+      "product",
+      "architecture",
+      "ux",
+      "delivery",
+      "qa"
+    ],
+    "missing": []
+  },
+  "deadline_caveat": "Some lead-observed return spans exceed role deadlines because exact child completion times were unavailable and notifications were processed at scheduling boundaries. Product/UX/Architecture cross reports were already complete when observed; no expiry request preceded those notifications. No claim that every role deadline was met."
+}
