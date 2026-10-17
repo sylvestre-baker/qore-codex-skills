@@ -9932,6 +9932,14 @@
       "basis": "Selected English first-party Qore code/docs, frozen public Qore inputs, generated method outputs, independent assessment or authorized public/own local Qaizen browser observations for the user-approved MIT project. No private client/website source, credentials, full CLI/model trace, browser video/trace, cache or copied upstream Docker profile. Original and transformed identities are retained separately. Branch review does not deploy a site or release an application."
     },
     {
+      "path": "docs/evidence/specialization/corrections/package-checks.json",
+      "sha256": "f6f4a3fcec9ce76479e2e64bea1e5c4d1ab397c90899baa122e64401c54c0b33",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Selected English first-party Qore code/docs, frozen public Qore inputs, generated method outputs, independent assessment or authorized public/own local Qaizen browser observations for the user-approved MIT project. No private client/website source, credentials, full CLI/model trace, browser video/trace, cache or copied upstream Docker profile. Original and transformed identities are retained separately. Branch review does not deploy a site or release an application."
+    },
+    {
       "path": "docs/evidence/specialization/corrections/profile-preflights.json",
       "sha256": "06d895237d023af8a39666226a9d07552b26e9b6c36f76c06e2ed2696fc54863",
       "origin": "first-party",
@@ -31725,7 +31733,7 @@
     },
     {
       "path": "showcase/index.html",
-      "sha256": "3b0397c31fdfc58642677c64c7485afce82552e03bd8d764e8a1098e0f1f7d24",
+      "sha256": "dcbf9521bb5ad6aa8b5baead7c51c36b4190128875f5d5207636d954b07b3cfc",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
@@ -32221,7 +32229,7 @@
     },
     {
       "path": "tools/build_site.py",
-      "sha256": "003c207e198d24b13c1572eda3eb2abb956d69a19cc20bfeb17dc81dc8a696c5",
+      "sha256": "43d494954516848985dfa9fdad3192848823fc0facb9bfda711fc3e4b217e0d5",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",

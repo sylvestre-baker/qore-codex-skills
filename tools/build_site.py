@@ -29,7 +29,7 @@ def build(output):
             text = dest.read_text().replace("../../../profiles/", "../profiles/")
             text = text.replace("../../demo/qaizen-labs/", "../media/")
             text = text.replace("../../showcase.md", "../reference/showcase.md")
-            text = text.replace("../specialization/README.md", "https://github.com/sylvestre-baker/qore-codex-skills/blob/main/docs/evidence/specialization/README.md")
+            text = text.replace("../specialization/README.md", "https://github.com/sylvestre-baker/qore-codex-skills/blob/41f1355de4686d9014557b17997edfb375af25d3/docs/evidence/specialization/README.md")
             dest.write_text(text.replace("../../coordination-dependencies.md", "../reference/coordination-dependencies.md"))
         records.append({"path": rel, "sha256": hashlib.sha256(dest.read_bytes()).hexdigest(), "source": str(source.relative_to(ROOT)),
                         "source_sha256": hashlib.sha256(source.read_bytes()).hexdigest(),

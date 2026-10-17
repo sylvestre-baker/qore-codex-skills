@@ -1,0 +1,199 @@
+{
+  "schema": "qore-package-checks/1",
+  "qualified_source_commit": "41f1355de4686d9014557b17997edfb375af25d3",
+  "observed_at": "2026-10-17T12:28:04.606595+00:00",
+  "category": "Actual deterministic maintainer checks; not agent reasoning, fresh model invocation, deployment or human usability",
+  "full_builds_identical": true,
+  "skills_builds_identical": true,
+  "archives": [
+    {
+      "scope": "full",
+      "sha256": "598f824b6d9bc8578e8046d280458534694865e04b0eb5fbe1a891a3f6187eb9",
+      "manifest_sha256": "a475e0f8247d27d1abf168ab260ee4d97adf074f4287f11a9bbb843aec28e9e2",
+      "files": 4045
+    },
+    {
+      "scope": "full",
+      "sha256": "598f824b6d9bc8578e8046d280458534694865e04b0eb5fbe1a891a3f6187eb9",
+      "manifest_sha256": "a475e0f8247d27d1abf168ab260ee4d97adf074f4287f11a9bbb843aec28e9e2",
+      "files": 4045
+    },
+    {
+      "scope": "skills",
+      "sha256": "a35c22a60a2f353880b2b72ec4c2a378fe5ab6c186abbce2ac60c8ee314c8d73",
+      "manifest_sha256": "381e913f95f896c5546af7cb0a82aba84633ea40d91d45b6e004879553d249fc",
+      "files": 42
+    },
+    {
+      "scope": "skills",
+      "sha256": "a35c22a60a2f353880b2b72ec4c2a378fe5ab6c186abbce2ac60c8ee314c8d73",
+      "manifest_sha256": "381e913f95f896c5546af7cb0a82aba84633ea40d91d45b6e004879553d249fc",
+      "files": 42
+    }
+  ],
+  "exported_records": {
+    "checked": 18,
+    "valid": true,
+    "qualified_complete": 14,
+    "qualified_partial": 4
+  },
+  "checks": [
+    {
+      "label": "full-a",
+      "exit_code": 0,
+      "started_at": "2026-10-17T12:27:35.740079+00:00",
+      "ended_at": "2026-10-17T12:27:45.880478+00:00"
+    },
+    {
+      "label": "full-b",
+      "exit_code": 0,
+      "started_at": "2026-10-17T12:27:45.880793+00:00",
+      "ended_at": "2026-10-17T12:27:55.442038+00:00"
+    },
+    {
+      "label": "skills-a",
+      "exit_code": 0,
+      "started_at": "2026-10-17T12:27:55.442400+00:00",
+      "ended_at": "2026-10-17T12:27:56.661837+00:00"
+    },
+    {
+      "label": "skills-b",
+      "exit_code": 0,
+      "started_at": "2026-10-17T12:27:56.662193+00:00",
+      "ended_at": "2026-10-17T12:27:57.764586+00:00"
+    },
+    {
+      "label": "record-P1-baseline",
+      "exit_code": 0,
+      "started_at": "2026-10-17T12:27:57.765183+00:00",
+      "ended_at": "2026-10-17T12:27:57.998453+00:00"
+    },
+    {
+      "label": "record-P1-derived",
+      "exit_code": 0,
+      "started_at": "2026-10-17T12:27:57.998790+00:00",
+      "ended_at": "2026-10-17T12:27:58.340770+00:00"
+    },
+    {
+      "label": "record-P1-generic",
+      "exit_code": 0,
+      "started_at": "2026-10-17T12:27:58.341083+00:00",
+      "ended_at": "2026-10-17T12:27:58.502031+00:00"
+    },
+    {
+      "label": "record-P2-baseline",
+      "exit_code": 0,
+      "started_at": "2026-10-17T12:27:58.502357+00:00",
+      "ended_at": "2026-10-17T12:27:58.734391+00:00"
+    },
+    {
+      "label": "record-P2-derived",
+      "exit_code": 0,
+      "started_at": "2026-10-17T12:27:58.734926+00:00",
+      "ended_at": "2026-10-17T12:27:59.215254+00:00"
+    },
+    {
+      "label": "record-P2-generic",
+      "exit_code": 0,
+      "started_at": "2026-10-17T12:27:59.215633+00:00",
+      "ended_at": "2026-10-17T12:27:59.472334+00:00"
+    },
+    {
+      "label": "record-R1-baseline",
+      "exit_code": 0,
+      "started_at": "2026-10-17T12:27:59.472750+00:00",
+      "ended_at": "2026-10-17T12:27:59.698732+00:00"
+    },
+    {
+      "label": "record-R1-derived",
+      "exit_code": 0,
+      "started_at": "2026-10-17T12:27:59.699201+00:00",
+      "ended_at": "2026-10-17T12:28:00.251464+00:00"
+    },
+    {
+      "label": "record-R1-generic",
+      "exit_code": 0,
+      "started_at": "2026-10-17T12:28:00.251887+00:00",
+      "ended_at": "2026-10-17T12:28:00.819818+00:00"
+    },
+    {
+      "label": "record-R2-baseline",
+      "exit_code": 0,
+      "started_at": "2026-10-17T12:28:00.820209+00:00",
+      "ended_at": "2026-10-17T12:28:01.219823+00:00"
+    },
+    {
+      "label": "record-R2-derived",
+      "exit_code": 0,
+      "started_at": "2026-10-17T12:28:01.220161+00:00",
+      "ended_at": "2026-10-17T12:28:01.996838+00:00"
+    },
+    {
+      "label": "record-R2-generic",
+      "exit_code": 0,
+      "started_at": "2026-10-17T12:28:01.997181+00:00",
+      "ended_at": "2026-10-17T12:28:02.322269+00:00"
+    },
+    {
+      "label": "record-U1-baseline",
+      "exit_code": 0,
+      "started_at": "2026-10-17T12:28:02.322562+00:00",
+      "ended_at": "2026-10-17T12:28:02.508557+00:00"
+    },
+    {
+      "label": "record-U1-derived",
+      "exit_code": 0,
+      "started_at": "2026-10-17T12:28:02.508895+00:00",
+      "ended_at": "2026-10-17T12:28:02.910387+00:00"
+    },
+    {
+      "label": "record-U1-generic",
+      "exit_code": 0,
+      "started_at": "2026-10-17T12:28:02.910697+00:00",
+      "ended_at": "2026-10-17T12:28:03.130913+00:00"
+    },
+    {
+      "label": "record-U2-baseline",
+      "exit_code": 0,
+      "started_at": "2026-10-17T12:28:03.131252+00:00",
+      "ended_at": "2026-10-17T12:28:03.279016+00:00"
+    },
+    {
+      "label": "record-U2-derived",
+      "exit_code": 0,
+      "started_at": "2026-10-17T12:28:03.279333+00:00",
+      "ended_at": "2026-10-17T12:28:03.745087+00:00"
+    },
+    {
+      "label": "record-U2-generic",
+      "exit_code": 0,
+      "started_at": "2026-10-17T12:28:03.745449+00:00",
+      "ended_at": "2026-10-17T12:28:03.926279+00:00"
+    },
+    {
+      "label": "history",
+      "exit_code": 0,
+      "started_at": "2026-10-17T12:28:03.926631+00:00",
+      "ended_at": "2026-10-17T12:28:04.085749+00:00"
+    },
+    {
+      "label": "install",
+      "exit_code": 0,
+      "started_at": "2026-10-17T12:28:04.086566+00:00",
+      "ended_at": "2026-10-17T12:28:04.226753+00:00"
+    },
+    {
+      "label": "site-build",
+      "exit_code": 0,
+      "started_at": "2026-10-17T12:28:04.227086+00:00",
+      "ended_at": "2026-10-17T12:28:04.498481+00:00"
+    },
+    {
+      "label": "site-check",
+      "exit_code": 0,
+      "started_at": "2026-10-17T12:28:04.498840+00:00",
+      "ended_at": "2026-10-17T12:28:04.606246+00:00"
+    }
+  ],
+  "limit": "This receipt binds the preceding immutable source commit, not itself. Later immutable-link/receipt changes and final Git HEAD are separate; no archive digest can recursively include its own receipt. Actual18 frozen trials and later correction checks remain distinct. No release or deployment."
+}
