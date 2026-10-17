@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><title>Synthetic activation guard control</title>
+<main>
+  <section id="intro"><h1 tabindex="-1">Introduction</h1><button id="start" type="button">Start</button><a id="entry" href="#entry-ready">Open Labs</a></section>
+  <section id="question" hidden><h2>Unanswered question</h2>
+    <details id="help"><summary id="summary">Help</summary><p>Explanation</p><button id="close" type="button">Close</button></details>
+    <label><input type="radio" name="answer" id="answer">Synthetic answer</label>
+    <button id="back" type="button">Back</button>
+    <button id="unapproved" type="button">Close</button>
+    <button id="mislabeled" type="button" aria-label="Close">Choose an answer</button>
+    <button id="late-change" type="button">Back</button>
+    <button id="nested-close" type="button">Close<input id="nested-answer" type="checkbox" aria-label="Answer"></button>
+    <div role="button" aria-label="Back"><button id="nested-back" type="button">Back</button></div>
+    <form id="submission"><button id="submit" type="submit">Back</button></form>
+  </section>
+</main>
+<script>
+const intro = document.querySelector('#intro');
+const question = document.querySelector('#question');
+const summary = document.querySelector('#summary');
+const record = event => fetch('/activation-observed?event=' + encodeURIComponent(event));
+const choose = event => { document.querySelector('#answer').checked = true; record(event); };
+document.querySelector('#entry').onclick = () => record('entry');
+document.querySelector('#start').onclick = () => { intro.hidden = true; question.hidden = false; summary.focus(); record('start'); };
+document.querySelector('#close').onclick = () => { document.querySelector('#help').open = false; summary.focus(); record('close'); };
+document.querySelector('#back').onclick = () => { question.hidden = true; intro.hidden = false; document.querySelector('h1').focus(); record('back'); };
+document.querySelector('#answer').onchange = () => record('answer');
+document.querySelector('#nested-answer').onchange = () => record('nested-answer');
+for (const id of ['unapproved', 'mislabeled', 'nested-close', 'nested-back']) {
+  document.getElementById(id).onclick = () => choose(id);
+}
+document.querySelector('#late-change').onpointerdown = event => { event.currentTarget.textContent = 'Choose an answer'; };
+document.querySelector('#late-change').onclick = () => choose('late-change');
+document.querySelector('#submission').onsubmit = event => { event.preventDefault(); record('submit'); };
+</script></html>

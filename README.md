@@ -82,6 +82,14 @@ The [planning report](docs/evidence/qaizen-labs/plan/REPORT.md), [review and cor
 
 Browser evidence covers one desktop English entry/state flow. It does not establish whole-site readiness, instrumented accessibility conformance, performance or external human usability. One analytics POST was blocked and recorded. Linux source review ran without a browser driver; its skipped browser checks are not passes. The [earlier validator case](docs/evidence/validator-case.md) and [0.1.0 execution record](docs/qualification.md) retain their original identities.
 
+## Evaluate a project adaptation
+
+The Labs case shows the three specialized methods using project facts. It does not establish that specialization improves their results. The optional [specialization evaluation](docs/specialization.md) asks a narrower question: **for the tested obligations, should a maintainer retain, simplify or fix an adaptation?**
+
+**Campaign status: BLOCKED at isolation preflight. All eighteen cells are NOT_RUN. No comparative benefit is established.** Six related scenarios compare the same public source material under an agent baseline, generic Qore and derived Qore. Generic versus derived is the primary comparison; the baseline also changes the method and organization of work. Reconstructed tutorial protocols are labelled fixtures, not new website defects. Browser observations, when attempted, use a declared manual relay and retain its limits.
+
+Read the [protocol and prerequisites](docs/specialization.md), [scenario registry](evals/scenarios.json), [series registry](evals/series.json) and [result inventory](docs/evidence/specialization/README.md). This path is separate from the published review quickstart above. Preparation and structural checks do not count as completed agent trials.
+
 ## Adapt all three methods from one profile
 
 The methods stay reusable; a profile supplies the rules for one project. In the Labs example, a keyboard requirement changes the plan's acceptance checks, the review's evidence requirements and the browser actions.
@@ -163,6 +171,7 @@ If a role or required browser capability is unavailable, retain its name and evi
 - [Architecture](docs/architecture.md): core, project facts, Codex adaptation, and local trust boundaries.
 - [Contracts and validators](docs/contracts.md): project, release, and execution records; what checks can and cannot establish.
 - [Command and prompt inventory](docs/command-inventory.json): prerequisites, effects, substitutions, and actual execution status for the documentation examples.
+- [Specialization evaluation](docs/specialization.md): bounded scenarios, controlled inputs and evidence required before a comparative conclusion.
 - [Troubleshooting](docs/troubleshooting.md): discovery, stale facts, unavailable tools, and refused updates.
 - Method protocols: [planning](skills/qore-plan/SKILL.md), [review](skills/qore-review/SKILL.md), and [web UX](skills/qore-ux-review/SKILL.md).
 - [Contributing](CONTRIBUTING.md), [provenance](PROVENANCE.md), and [MIT license](LICENSE).

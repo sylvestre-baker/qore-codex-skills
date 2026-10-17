@@ -1,0 +1,142 @@
+{
+  "schema": "qore-eval-series/1",
+  "id": "specialization-v1",
+  "scenarios_sha256": "46534adc957971607cb4af8ae555727b933746b61081822be77acf9d79d2ea49",
+  "status": "BLOCKED",
+  "cells": [
+    {
+      "scenario_id": "R1",
+      "condition": "baseline",
+      "status": "NOT_RUN",
+      "records": [],
+      "reason": "Required nested Codex sandbox failed before canary execution; see docs/evidence/specialization/isolation-probe.json. No controlled trial started."
+    },
+    {
+      "scenario_id": "R1",
+      "condition": "generic",
+      "status": "NOT_RUN",
+      "records": [],
+      "reason": "Required nested Codex sandbox failed before canary execution; see docs/evidence/specialization/isolation-probe.json. No controlled trial started."
+    },
+    {
+      "scenario_id": "R1",
+      "condition": "derived",
+      "status": "NOT_RUN",
+      "records": [],
+      "reason": "Required nested Codex sandbox failed before canary execution; see docs/evidence/specialization/isolation-probe.json. No controlled trial started."
+    },
+    {
+      "scenario_id": "P1",
+      "condition": "generic",
+      "status": "NOT_RUN",
+      "records": [],
+      "reason": "Required nested Codex sandbox failed before canary execution; see docs/evidence/specialization/isolation-probe.json. No controlled trial started."
+    },
+    {
+      "scenario_id": "P1",
+      "condition": "derived",
+      "status": "NOT_RUN",
+      "records": [],
+      "reason": "Required nested Codex sandbox failed before canary execution; see docs/evidence/specialization/isolation-probe.json. No controlled trial started."
+    },
+    {
+      "scenario_id": "P1",
+      "condition": "baseline",
+      "status": "NOT_RUN",
+      "records": [],
+      "reason": "Required nested Codex sandbox failed before canary execution; see docs/evidence/specialization/isolation-probe.json. No controlled trial started."
+    },
+    {
+      "scenario_id": "U1",
+      "condition": "derived",
+      "status": "NOT_RUN",
+      "records": [],
+      "reason": "Required nested Codex sandbox failed before canary execution; see docs/evidence/specialization/isolation-probe.json. No controlled trial started."
+    },
+    {
+      "scenario_id": "U1",
+      "condition": "baseline",
+      "status": "NOT_RUN",
+      "records": [],
+      "reason": "Required nested Codex sandbox failed before canary execution; see docs/evidence/specialization/isolation-probe.json. No controlled trial started."
+    },
+    {
+      "scenario_id": "U1",
+      "condition": "generic",
+      "status": "NOT_RUN",
+      "records": [],
+      "reason": "Required nested Codex sandbox failed before canary execution; see docs/evidence/specialization/isolation-probe.json. No controlled trial started."
+    },
+    {
+      "scenario_id": "R2",
+      "condition": "derived",
+      "status": "NOT_RUN",
+      "records": [],
+      "reason": "Required nested Codex sandbox failed before canary execution; see docs/evidence/specialization/isolation-probe.json. No controlled trial started."
+    },
+    {
+      "scenario_id": "R2",
+      "condition": "generic",
+      "status": "NOT_RUN",
+      "records": [],
+      "reason": "Required nested Codex sandbox failed before canary execution; see docs/evidence/specialization/isolation-probe.json. No controlled trial started."
+    },
+    {
+      "scenario_id": "R2",
+      "condition": "baseline",
+      "status": "NOT_RUN",
+      "records": [],
+      "reason": "Required nested Codex sandbox failed before canary execution; see docs/evidence/specialization/isolation-probe.json. No controlled trial started."
+    },
+    {
+      "scenario_id": "P2",
+      "condition": "baseline",
+      "status": "NOT_RUN",
+      "records": [],
+      "reason": "Required nested Codex sandbox failed before canary execution; see docs/evidence/specialization/isolation-probe.json. No controlled trial started."
+    },
+    {
+      "scenario_id": "P2",
+      "condition": "derived",
+      "status": "NOT_RUN",
+      "records": [],
+      "reason": "Required nested Codex sandbox failed before canary execution; see docs/evidence/specialization/isolation-probe.json. No controlled trial started."
+    },
+    {
+      "scenario_id": "P2",
+      "condition": "generic",
+      "status": "NOT_RUN",
+      "records": [],
+      "reason": "Required nested Codex sandbox failed before canary execution; see docs/evidence/specialization/isolation-probe.json. No controlled trial started."
+    },
+    {
+      "scenario_id": "U2",
+      "condition": "generic",
+      "status": "NOT_RUN",
+      "records": [],
+      "reason": "Required nested Codex sandbox failed before canary execution; see docs/evidence/specialization/isolation-probe.json. No controlled trial started."
+    },
+    {
+      "scenario_id": "U2",
+      "condition": "baseline",
+      "status": "NOT_RUN",
+      "records": [],
+      "reason": "Required nested Codex sandbox failed before canary execution; see docs/evidence/specialization/isolation-probe.json. No controlled trial started."
+    },
+    {
+      "scenario_id": "U2",
+      "condition": "derived",
+      "status": "NOT_RUN",
+      "records": [],
+      "reason": "Required nested Codex sandbox failed before canary execution; see docs/evidence/specialization/isolation-probe.json. No controlled trial started."
+    }
+  ],
+  "excluded_pilot": [],
+  "limitations": [
+    "No comparative trial was started.",
+    "The required unprivileged container cannot start the nested Codex command sandbox: bwrap reports that creating a new namespace is not permitted.",
+    "No fallback to unrestricted commands was used.",
+    "Docker and Codex version checks alone do not establish isolated role execution.",
+    "Known reconstructed tasks on one related surface do not establish general superiority."
+  ]
+}

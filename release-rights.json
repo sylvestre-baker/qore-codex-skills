@@ -13,11 +13,11 @@
     },
     {
       "path": ".github/workflows/check.yml",
-      "sha256": "55a855e21b5e024dc96a699101fc30e19fc52740174f19ae005c65dac14baedc",
+      "sha256": "2533bf9f4e126304efcfe6355c7645ba1a8b95cfc1250ee1e298acad21fa88bc",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "First-party Qore code, tests, configuration or documentation in the reviewed 0.2.1 correction inventory. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
+      "basis": "First-party English QORE-003 code, tests, reconstructed fixtures, documentation or selected public qualification evidence within the user-authorized MIT project. No private client source, credentials or raw model traces. Publication remains separate."
     },
     {
       "path": ".github/workflows/pages.yml",
@@ -77,11 +77,11 @@
     },
     {
       "path": "README.md",
-      "sha256": "763a68439ea924286d2eb44e09852df01f7afe755c25a99c36fd6916b52d08d6",
+      "sha256": "bee096ea1cb7ad2cd2128566ba134120112470ec1c6e0ec7c23f471d34f89cdc",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "First-party factual distribution documentation within the MIT correction scope confirmed by Sylvestre Franceschi on 16 October 2026. Current changes reviewed for that scope under the subsequent explicit instruction to finalize and publish v0.2.1; no third-party or client content added. Historical execution artifacts and cache exclusions are unchanged."
+      "basis": "First-party English QORE-003 code, tests, reconstructed fixtures, documentation or selected public qualification evidence within the user-authorized MIT project. No private client source, credentials or raw model traces. Publication remains separate."
     },
     {
       "path": "docs/acceptance-evidence.md",
@@ -101,19 +101,19 @@
     },
     {
       "path": "docs/clean-environment.md",
-      "sha256": "4133c8a821ce8bf9aa955c4bb714949e5df16c9f0fa692381d1b24dfd1282c04",
+      "sha256": "f7e17a336d14df6cdbdc21b31d955461b7bd3d7bf03e82fbaebb2030b9fe2988",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "New or revised first-party Qore implementation, public acceptance contract, fixtures or English documentation authored for the approved QORE-002 work; no private website source or raw agent trace."
+      "basis": "First-party English QORE-003 code, tests, reconstructed fixtures, documentation or selected public qualification evidence within the user-authorized MIT project. No private client source, credentials or raw model traces. Publication remains separate."
     },
     {
       "path": "docs/command-inventory.json",
-      "sha256": "d7b00114fd8060c3144ecda15333c4437657d7f27251cbf3f3db85612f1dc9aa",
+      "sha256": "a289d05a09acab921314f1e1c3338c01c7aa3594d6a190e3045a444cd8671d29",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "First-party factual distribution documentation within the MIT correction scope confirmed by Sylvestre Franceschi on 16 October 2026. Current changes reviewed for that scope under the subsequent explicit instruction to finalize and publish v0.2.1; no third-party or client content added. Historical execution artifacts and cache exclusions are unchanged."
+      "basis": "First-party English QORE-003 code, tests, reconstructed fixtures, documentation or selected public qualification evidence within the user-authorized MIT project. No private client source, credentials or raw model traces. Publication remains separate."
     },
     {
       "path": "docs/contracts.md",
@@ -9844,6 +9844,78 @@
       "basis": "New first-party Qore implementation, documentation or preserved execution of public Qore inputs; authored for this requested public package."
     },
     {
+      "path": "docs/evidence/specialization/README.md",
+      "sha256": "807ac61b6920f2d0c73f3984cbfb19ad19154574fea7e7a6583d09b9aab6ddd7",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "First-party English QORE-003 code, tests, reconstructed fixtures, documentation or selected public qualification evidence within the user-authorized MIT project. No private client source, credentials or raw model traces. Publication remains separate."
+    },
+    {
+      "path": "docs/evidence/specialization/browser-guard.json",
+      "sha256": "60b046351a44ac866c9020133b5b5cae27f15bb757f3b7a821680e9cfa1a1b7d",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "First-party English QORE-003 code, tests, reconstructed fixtures, documentation or selected public qualification evidence within the user-authorized MIT project. No private client source, credentials or raw model traces. Publication remains separate."
+    },
+    {
+      "path": "docs/evidence/specialization/implementation-review.json",
+      "sha256": "203c0469bcaac7b64e23e1c2ab0e6f662d2b7a203484829a243140ab5bdda3cf",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "First-party English QORE-003 code, tests, reconstructed fixtures, documentation or selected public qualification evidence within the user-authorized MIT project. No private client source, credentials or raw model traces. Publication remains separate."
+    },
+    {
+      "path": "docs/evidence/specialization/isolation-probe.json",
+      "sha256": "77d964c36455d7a26a14e3935f9e61fd8ca29bd8b08cbdf9d73fc6b33d03d693",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "First-party English QORE-003 code, tests, reconstructed fixtures, documentation or selected public qualification evidence within the user-authorized MIT project. No private client source, credentials or raw model traces. Publication remains separate."
+    },
+    {
+      "path": "docs/evidence/specialization/local-qualification.json",
+      "sha256": "754fc32d5394abf900f99c94880eafed0d425d227e79467af2a00b4b9946b872",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "First-party English QORE-003 code, tests, reconstructed fixtures, documentation or selected public qualification evidence within the user-authorized MIT project. No private client source, credentials or raw model traces. Publication remains separate."
+    },
+    {
+      "path": "docs/evidence/specialization/render-review.json",
+      "sha256": "6ebe4fc164803a1c5a0f9a2d7da55e48a5e9bb2e6a1e725df6abc75072dc835a",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "First-party English QORE-003 code, tests, reconstructed fixtures, documentation or selected public qualification evidence within the user-authorized MIT project. No private client source, credentials or raw model traces. Publication remains separate."
+    },
+    {
+      "path": "docs/evidence/specialization/render/showcase-1280.png",
+      "sha256": "6f81738fdb9442ad10e35d20576406a4f8bf45c85fa5c3c7d928f2e3288dc475",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "First-party English QORE-003 code, tests, reconstructed fixtures, documentation or selected public qualification evidence within the user-authorized MIT project. No private client source, credentials or raw model traces. Publication remains separate."
+    },
+    {
+      "path": "docs/evidence/specialization/render/showcase-320.png",
+      "sha256": "146841a5d27d99d4976c28f25ee3e92a6c4c094db056f86fb3c7e17996481ac8",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "First-party English QORE-003 code, tests, reconstructed fixtures, documentation or selected public qualification evidence within the user-authorized MIT project. No private client source, credentials or raw model traces. Publication remains separate."
+    },
+    {
+      "path": "docs/evidence/specialization/summary.json",
+      "sha256": "be82c77ed20f45e5bb52347362b6a7d7102c3da23dc6d2330b3fd45240fb6dbe",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "First-party English QORE-003 code, tests, reconstructed fixtures, documentation or selected public qualification evidence within the user-authorized MIT project. No private client source, credentials or raw model traces. Publication remains separate."
+    },
+    {
       "path": "docs/evidence/validator-case.md",
       "sha256": "9ededf35a9a8e99d36a74262b7e0de7f4c0e6783e67fa4cfe1c60b8569279742",
       "origin": "first-party",
@@ -9884,12 +9956,60 @@
       "basis": "First-party publication metadata and documentation for the user-authorized Qore 0.2.0 distribution. The build marker describes staging, not the eventual hosting state."
     },
     {
+      "path": "docs/specialization.md",
+      "sha256": "2cebe4879178343c9ae0009273b3a59e372bffda3a6ac4a101a3b6269f80349b",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "First-party English QORE-003 code, tests, reconstructed fixtures, documentation or selected public qualification evidence within the user-authorized MIT project. No private client source, credentials or raw model traces. Publication remains separate."
+    },
+    {
+      "path": "docs/specs/QORE-003-feature-spec.md",
+      "sha256": "3151fc9fb4507315c539ea2b2fe379a5fa0157e6a5104cbcb6b0bd3f6a937465",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "First-party English QORE-003 code, tests, reconstructed fixtures, documentation or selected public qualification evidence within the user-authorized MIT project. No private client source, credentials or raw model traces. Publication remains separate."
+    },
+    {
       "path": "docs/troubleshooting.md",
       "sha256": "641cd391f0ca40dedaa80a4a383982e0c72004d6a2886d5019ea94072fb48a2f",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
       "basis": "First-party Qore code, tests, configuration or documentation in the reviewed 0.2.1 correction inventory. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
+    },
+    {
+      "path": "evals/fixtures/protocol-corrected.md",
+      "sha256": "0a3452f02e358d8800fb26d591083deb972c5531165473990dc27007a9a9e0d4",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "First-party English QORE-003 code, tests, reconstructed fixtures, documentation or selected public qualification evidence within the user-authorized MIT project. No private client source, credentials or raw model traces. Publication remains separate."
+    },
+    {
+      "path": "evals/fixtures/protocol-incomplete.md",
+      "sha256": "b8d1f4ad7bd691dbf8f019cd3b87a7644a21899e6317edebac545fd3b245136e",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "First-party English QORE-003 code, tests, reconstructed fixtures, documentation or selected public qualification evidence within the user-authorized MIT project. No private client source, credentials or raw model traces. Publication remains separate."
+    },
+    {
+      "path": "evals/scenarios.json",
+      "sha256": "46534adc957971607cb4af8ae555727b933746b61081822be77acf9d79d2ea49",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "First-party English QORE-003 code, tests, reconstructed fixtures, documentation or selected public qualification evidence within the user-authorized MIT project. No private client source, credentials or raw model traces. Publication remains separate."
+    },
+    {
+      "path": "evals/series.json",
+      "sha256": "8528d3b9b483449376a9591fcdb7efad4fa6352d7ecc5fb2af5c1a2edabb64d0",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "First-party English QORE-003 code, tests, reconstructed fixtures, documentation or selected public qualification evidence within the user-authorized MIT project. No private client source, credentials or raw model traces. Publication remains separate."
     },
     {
       "path": "examples/qaizen-labs/README.md",
@@ -9988,6 +10108,14 @@
       "basis": "First-party Qore code, tests, configuration or documentation in the reviewed 0.2.1 correction inventory. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
     },
     {
+      "path": "schemas/qore-eval-run.schema.json",
+      "sha256": "5b8f7b9b327d9158448a0579782859277dffd11023c246fd6f8b25abb8334306",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "First-party English QORE-003 code, tests, reconstructed fixtures, documentation or selected public qualification evidence within the user-authorized MIT project. No private client source, credentials or raw model traces. Publication remains separate."
+    },
+    {
       "path": "schemas/qore-project.schema.json",
       "sha256": "fca2a81851fa75e59b22c21b7ed4766e981ec39db2a1bcc01acb8a14b64e3ead",
       "origin": "first-party",
@@ -10013,19 +10141,19 @@
     },
     {
       "path": "showcase/index.html",
-      "sha256": "e4ced00b2a86e11e80399bf905c9cc67ba40908439a643b529ea9ce494be6306",
+      "sha256": "1edcca9fe78dc7797478abe802d12f819f3b985c25fa1b2d68551012c58d1bb0",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "First-party factual distribution documentation within the MIT correction scope confirmed by Sylvestre Franceschi on 16 October 2026. Current changes reviewed for that scope under the subsequent explicit instruction to finalize and publish v0.2.1; no third-party or client content added. Historical execution artifacts and cache exclusions are unchanged."
+      "basis": "First-party English QORE-003 code, tests, reconstructed fixtures, documentation or selected public qualification evidence within the user-authorized MIT project. No private client source, credentials or raw model traces. Publication remains separate."
     },
     {
       "path": "showcase/styles.css",
-      "sha256": "dc7ae0fa922f8e7f93d5f0690207c9ee4637f71825dfeba7dfb6d71b0933792e",
+      "sha256": "c6169b41c88f3aa66a5de2512164ffc6555f9341f581eb20494e39d81237541a",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "English first-party explanation of implemented skill derivation and recorded PM/production/reviewer coordination; source-linked examples and selectable diagrams. No new capability or external human comprehension result is asserted."
+      "basis": "First-party English QORE-003 code, tests, reconstructed fixtures, documentation or selected public qualification evidence within the user-authorized MIT project. No private client source, credentials or raw model traces. Publication remains separate."
     },
     {
       "path": "skills/qore-plan/SKILL.md",
@@ -10253,11 +10381,11 @@
     },
     {
       "path": "skills/qore-ux-review/scripts/depth-lint.mjs",
-      "sha256": "9b9cdcea3e87f4820944ddfc075ef19e75aad0bb08a7f1fd279ea6590267def7",
+      "sha256": "fd7be484c8e4bf3ba376bdddb88663b31ae9da4c2c7678232ea7a6cc7782bd0f",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "New first-party Qore implementation, documentation or preserved execution of public Qore inputs; authored for this requested public package."
+      "basis": "First-party English QORE-003 code, tests, reconstructed fixtures, documentation or selected public qualification evidence within the user-authorized MIT project. No private client source, credentials or raw model traces. Publication remains separate."
     },
     {
       "path": "skills/qore-ux-review/scripts/project-check.py",
@@ -10282,6 +10410,14 @@
       "license": "MIT",
       "status": "approved",
       "basis": "New first-party Qore implementation, documentation or preserved execution of public Qore inputs; authored for this requested public package."
+    },
+    {
+      "path": "tests/fixtures/activation-journey.html",
+      "sha256": "652eefb713fa37e4c7eae2c4f579f8581d1ca3584c5955c415399d50c6cf9575",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "First-party English QORE-003 code, tests, reconstructed fixtures, documentation or selected public qualification evidence within the user-authorized MIT project. No private client source, credentials or raw model traces. Publication remains separate."
     },
     {
       "path": "tests/fixtures/keyboard-journey.html",
@@ -10397,11 +10533,19 @@
     },
     {
       "path": "tests/test_browser_probe.py",
-      "sha256": "028cd7367461c6ac03825d7ffd4a16daf44e883b161365c5b78eb30cf48a1644",
+      "sha256": "8a73423261e76747f3fe380626438ce690a475adfe4b4ac08f988ed1d0678b8a",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "New or revised English first-party Qore code, specification, selected method evidence or documentation for the user-authorized QORE-002 candidate. No private website code or raw agent/mail traces."
+      "basis": "First-party English QORE-003 code, tests, reconstructed fixtures, documentation or selected public qualification evidence within the user-authorized MIT project. No private client source, credentials or raw model traces. Publication remains separate."
+    },
+    {
+      "path": "tests/test_clean_room.py",
+      "sha256": "734bc828128eadd5836b404cb5b0538ce745ce3a8f68ac1639b7521a621f13a2",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "First-party English QORE-003 code, tests, reconstructed fixtures, documentation or selected public qualification evidence within the user-authorized MIT project. No private client source, credentials or raw model traces. Publication remains separate."
     },
     {
       "path": "tests/test_coordination.py",
@@ -10410,6 +10554,14 @@
       "license": "MIT",
       "status": "approved",
       "basis": "First-party Qore code, tests, configuration or documentation in the reviewed 0.2.1 correction inventory. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
+    },
+    {
+      "path": "tests/test_evaluate.py",
+      "sha256": "5f4f31816ec33bf60d1ddbd23714d7dbdbacd0b04f0842d2353c52be0b125d33",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "First-party English QORE-003 code, tests, reconstructed fixtures, documentation or selected public qualification evidence within the user-authorized MIT project. No private client source, credentials or raw model traces. Publication remains separate."
     },
     {
       "path": "tests/test_labs_contract.py",
@@ -10453,11 +10605,11 @@
     },
     {
       "path": "tests/test_validators.py",
-      "sha256": "29fe7a6b8b4ce3a5d40ec21ebb3bec4cbd3cc9d02c81d5be5a95f185107294b2",
+      "sha256": "66ac15829daaa8e1ee799914000ac04aad163ac7637e0db40dae5615ad9aea20",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "First-party Qore code, tests, configuration or documentation in the reviewed 0.2.1 correction inventory. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
+      "basis": "First-party English QORE-003 code, tests, reconstructed fixtures, documentation or selected public qualification evidence within the user-authorized MIT project. No private client source, credentials or raw model traces. Publication remains separate."
     },
     {
       "path": "tools/agent_mail.py",
@@ -10469,11 +10621,11 @@
     },
     {
       "path": "tools/browser_probe.mjs",
-      "sha256": "f55111928e7eebdbbffcb8e49d57fa3366e4ddf84ecb175e00fc9191904a7b7f",
+      "sha256": "544d47211ac5aefde57072aef4ded1140c21030555b0e45e93f8821794249add",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "New or revised English first-party Qore code, specification, selected method evidence or documentation for the user-authorized QORE-002 candidate. No private website code or raw agent/mail traces."
+      "basis": "First-party English QORE-003 code, tests, reconstructed fixtures, documentation or selected public qualification evidence within the user-authorized MIT project. No private client source, credentials or raw model traces. Publication remains separate."
     },
     {
       "path": "tools/build_site.py",
@@ -10501,11 +10653,11 @@
     },
     {
       "path": "tools/clean_room.sh",
-      "sha256": "2157838f9f7c7fdd337298f2eee402bfb19665f102f96cf8585c179414f5608e",
+      "sha256": "a22e60630cdf9dc508c57c580ba620c8d1addc6faf0d7b771bae7e6361e4111f",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "New or revised first-party Qore implementation, public acceptance contract, fixtures or English documentation authored for the approved QORE-002 work; no private website source or raw agent trace."
+      "basis": "First-party English QORE-003 code, tests, reconstructed fixtures, documentation or selected public qualification evidence within the user-authorized MIT project. No private client source, credentials or raw model traces. Publication remains separate."
     },
     {
       "path": "tools/context.py",
@@ -10530,6 +10682,14 @@
       "license": "MIT",
       "status": "approved",
       "basis": "New or revised English first-party Qore code, specification, selected method evidence or documentation for the user-authorized QORE-002 candidate. No private website code or raw agent/mail traces."
+    },
+    {
+      "path": "tools/evaluate.py",
+      "sha256": "3c53e167b98fd787943066c53a17bf0505bcab445a5f690b7514dcfcd33f33d8",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "First-party English QORE-003 code, tests, reconstructed fixtures, documentation or selected public qualification evidence within the user-authorized MIT project. No private client source, credentials or raw model traces. Publication remains separate."
     },
     {
       "path": "tools/qore.py",

@@ -1,0 +1,39 @@
+{
+  "schema": "qore-browser-guard-selection/1",
+  "selected_at": "2026-10-17T08:13:20.860205+00:00",
+  "operator": "agent",
+  "target_kind": "synthetic local journey only",
+  "source_sha256": {
+    "tools/browser_probe.mjs": "544d47211ac5aefde57072aef4ded1140c21030555b0e45e93f8821794249add",
+    "tests/test_browser_probe.py": "8a73423261e76747f3fe380626438ce690a475adfe4b4ac08f988ed1d0678b8a",
+    "tests/fixtures/activation-journey.html": "652eefb713fa37e4c7eae2c4f579f8581d1ca3584c5955c415399d50c6cf9575"
+  },
+  "actual_runs": [
+    {
+      "scope": "Initial complete browser suite before final entry-link test",
+      "tests": 19,
+      "seconds": 207.186,
+      "result": "PASS"
+    },
+    {
+      "scope": "Final activation subset including entry-link test",
+      "tests": 8,
+      "seconds": 67.037,
+      "result": "PASS"
+    },
+    {
+      "scope": "Final strict schema test",
+      "tests": 1,
+      "subcases": 9,
+      "result": "PASS"
+    }
+  ],
+  "raw_report_sha256": "cc4f35657c727165228cfa1870b029b80163ec2fcc3829bdaabc06b352c91c38",
+  "transformation": "Selected actual test outcomes and final source digests; no raw trace or machine-specific module path exported.",
+  "limits": [
+    "No single final twenty-test browser invocation is claimed.",
+    "No live Qaizen website observation occurred.",
+    "The cooperative guard is not isolation against arbitrary page scripts or a full accessible-name implementation.",
+    "No model trial, general accessibility certification or comparative benefit follows."
+  ]
+}

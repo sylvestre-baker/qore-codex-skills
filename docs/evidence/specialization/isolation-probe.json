@@ -1,0 +1,57 @@
+{
+  "schema": "qore-isolation-probe/1",
+  "observed_at": "2026-10-17T07:56:09.328849+00:00",
+  "status": "BLOCKED",
+  "operator": "agent",
+  "category": "local_no_model_capability_probe",
+  "environment": {
+    "image": "qore-qualification-qore002-20261016:codex-0.162.0",
+    "image_id": "sha256:09894b981972962ae27f1e8e1726eb49886108a56c80742e70f71b0790c73aba",
+    "docker_server": "29.2.1",
+    "user": "node",
+    "cap_drop": [
+      "ALL"
+    ],
+    "no_new_privileges": true,
+    "host_mounts": [],
+    "credentials_supplied": false
+  },
+  "command": [
+    "docker",
+    "run",
+    "--rm",
+    "--cap-drop",
+    "ALL",
+    "--security-opt",
+    "no-new-privileges",
+    "--pids-limit",
+    "128",
+    "--memory",
+    "512m",
+    "--cpus",
+    "1",
+    "--entrypoint",
+    "sh",
+    "qore-qualification-qore002-20261016:codex-0.162.0",
+    "-c",
+    "cd /workspace && codex sandbox -c 'sandbox_mode=\"workspace-write\"' -c 'sandbox_workspace_write.network_access=false' -- python3 -c 'import json,pathlib,socket; pathlib.Path(\"canary\").write_text(\"local sandbox probe\"); print(json.dumps({\"workspace_write\":True})); socket.create_connection((\"1.1.1.1\",443),timeout=2)'"
+  ],
+  "started_at": "2026-10-17T07:56:09.018673+00:00",
+  "finished_at": "2026-10-17T07:56:09.328849+00:00",
+  "exit_code": 1,
+  "stdout": "",
+  "stderr": "bwrap: No permissions to create a new namespace, likely because the kernel does not allow non-privileged user namespaces. On e.g. debian this can be enabled with 'sysctl kernel.unprivileged_userns_clone=1'.\n",
+  "candidate_revision": "not_applicable_runtime_probe_only",
+  "raw_record_sha256": "f58847f74f046517dad54c09977da8c6e9238ef55f8fa32083bcfcaefc02658f",
+  "payload_executed": false,
+  "model_calls": 0,
+  "installs": 0,
+  "external_human_first_use": "NOT_OBSERVED",
+  "limits": [
+    "Sandbox startup failed before the payload ran. Filesystem and command-network denial canaries were not observed.",
+    "No authenticated Codex invocation or skill execution occurred.",
+    "The finding applies only to this image and declared Docker security configuration.",
+    "Container networking was permitted; sandbox denial was not inferred from an outer network-disabled container."
+  ],
+  "recovery": "Use an authorized compatible independent environment and rerun positive and negative boundary canaries. Do not relax the declared Docker privileges or use full access to complete this comparison."
+}

@@ -1,0 +1,146 @@
+{
+  "schema": "qore-eval-summary/1",
+  "series_id": "specialization-v1",
+  "scenarios_sha256": "46534adc957971607cb4af8ae555727b933746b61081822be77acf9d79d2ea49",
+  "coverage": "BLOCKED",
+  "completed_cells": 0,
+  "planned_cells": 18,
+  "cells": [
+    {
+      "scenario_id": "R1",
+      "condition": "baseline",
+      "status": "NOT_RUN",
+      "reason": "Required nested Codex sandbox failed before canary execution; see docs/evidence/specialization/isolation-probe.json. No controlled trial started."
+    },
+    {
+      "scenario_id": "R1",
+      "condition": "generic",
+      "status": "NOT_RUN",
+      "reason": "Required nested Codex sandbox failed before canary execution; see docs/evidence/specialization/isolation-probe.json. No controlled trial started."
+    },
+    {
+      "scenario_id": "R1",
+      "condition": "derived",
+      "status": "NOT_RUN",
+      "reason": "Required nested Codex sandbox failed before canary execution; see docs/evidence/specialization/isolation-probe.json. No controlled trial started."
+    },
+    {
+      "scenario_id": "P1",
+      "condition": "generic",
+      "status": "NOT_RUN",
+      "reason": "Required nested Codex sandbox failed before canary execution; see docs/evidence/specialization/isolation-probe.json. No controlled trial started."
+    },
+    {
+      "scenario_id": "P1",
+      "condition": "derived",
+      "status": "NOT_RUN",
+      "reason": "Required nested Codex sandbox failed before canary execution; see docs/evidence/specialization/isolation-probe.json. No controlled trial started."
+    },
+    {
+      "scenario_id": "P1",
+      "condition": "baseline",
+      "status": "NOT_RUN",
+      "reason": "Required nested Codex sandbox failed before canary execution; see docs/evidence/specialization/isolation-probe.json. No controlled trial started."
+    },
+    {
+      "scenario_id": "U1",
+      "condition": "derived",
+      "status": "NOT_RUN",
+      "reason": "Required nested Codex sandbox failed before canary execution; see docs/evidence/specialization/isolation-probe.json. No controlled trial started."
+    },
+    {
+      "scenario_id": "U1",
+      "condition": "baseline",
+      "status": "NOT_RUN",
+      "reason": "Required nested Codex sandbox failed before canary execution; see docs/evidence/specialization/isolation-probe.json. No controlled trial started."
+    },
+    {
+      "scenario_id": "U1",
+      "condition": "generic",
+      "status": "NOT_RUN",
+      "reason": "Required nested Codex sandbox failed before canary execution; see docs/evidence/specialization/isolation-probe.json. No controlled trial started."
+    },
+    {
+      "scenario_id": "R2",
+      "condition": "derived",
+      "status": "NOT_RUN",
+      "reason": "Required nested Codex sandbox failed before canary execution; see docs/evidence/specialization/isolation-probe.json. No controlled trial started."
+    },
+    {
+      "scenario_id": "R2",
+      "condition": "generic",
+      "status": "NOT_RUN",
+      "reason": "Required nested Codex sandbox failed before canary execution; see docs/evidence/specialization/isolation-probe.json. No controlled trial started."
+    },
+    {
+      "scenario_id": "R2",
+      "condition": "baseline",
+      "status": "NOT_RUN",
+      "reason": "Required nested Codex sandbox failed before canary execution; see docs/evidence/specialization/isolation-probe.json. No controlled trial started."
+    },
+    {
+      "scenario_id": "P2",
+      "condition": "baseline",
+      "status": "NOT_RUN",
+      "reason": "Required nested Codex sandbox failed before canary execution; see docs/evidence/specialization/isolation-probe.json. No controlled trial started."
+    },
+    {
+      "scenario_id": "P2",
+      "condition": "derived",
+      "status": "NOT_RUN",
+      "reason": "Required nested Codex sandbox failed before canary execution; see docs/evidence/specialization/isolation-probe.json. No controlled trial started."
+    },
+    {
+      "scenario_id": "P2",
+      "condition": "generic",
+      "status": "NOT_RUN",
+      "reason": "Required nested Codex sandbox failed before canary execution; see docs/evidence/specialization/isolation-probe.json. No controlled trial started."
+    },
+    {
+      "scenario_id": "U2",
+      "condition": "generic",
+      "status": "NOT_RUN",
+      "reason": "Required nested Codex sandbox failed before canary execution; see docs/evidence/specialization/isolation-probe.json. No controlled trial started."
+    },
+    {
+      "scenario_id": "U2",
+      "condition": "baseline",
+      "status": "NOT_RUN",
+      "reason": "Required nested Codex sandbox failed before canary execution; see docs/evidence/specialization/isolation-probe.json. No controlled trial started."
+    },
+    {
+      "scenario_id": "U2",
+      "condition": "derived",
+      "status": "NOT_RUN",
+      "reason": "Required nested Codex sandbox failed before canary execution; see docs/evidence/specialization/isolation-probe.json. No controlled trial started."
+    }
+  ],
+  "groups": {
+    "P1": {
+      "comparability": "UNVERIFIED",
+      "reason": "Missing, invalid or unmatched conditions; no comparative benefit inferred"
+    },
+    "P2": {
+      "comparability": "UNVERIFIED",
+      "reason": "Missing, invalid or unmatched conditions; no comparative benefit inferred"
+    },
+    "R1": {
+      "comparability": "UNVERIFIED",
+      "reason": "Missing, invalid or unmatched conditions; no comparative benefit inferred"
+    },
+    "R2": {
+      "comparability": "UNVERIFIED",
+      "reason": "Missing, invalid or unmatched conditions; no comparative benefit inferred"
+    },
+    "U1": {
+      "comparability": "UNVERIFIED",
+      "reason": "Missing, invalid or unmatched conditions; no comparative benefit inferred"
+    },
+    "U2": {
+      "comparability": "UNVERIFIED",
+      "reason": "Missing, invalid or unmatched conditions; no comparative benefit inferred"
+    }
+  },
+  "excluded_pilot": [],
+  "limit": "One observation per condition on related known tasks. No winner, efficiency or general benefit is inferred."
+}

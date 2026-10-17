@@ -54,6 +54,10 @@ jobs:
               python3 tools/qore.py verify /tmp/qore-labs
               python3 -B tools/build_site.py --output /tmp/qore-showcase
               python3 -B tools/check_site.py /tmp/qore-showcase
+              python3 -B tools/evaluate.py prepare --scenario R1 --condition baseline --output /tmp/qore-eval-baseline
+              python3 -B tools/evaluate.py prepare --scenario R1 --condition generic --output /tmp/qore-eval-generic
+              python3 -B tools/evaluate.py prepare --scenario R1 --condition derived --output /tmp/qore-eval-derived
+              python3 -B tools/evaluate.py summarize evals/series.json --output /tmp/qore-eval-summary
             '
   home-venv-tests:
     runs-on: ubuntu-24.04

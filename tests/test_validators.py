@@ -318,6 +318,14 @@ class ValidatorTests(unittest.TestCase):
         self.assertEqual(self.depth("none", ["src/Button.tsx"], justification="Helper")[0], 1)
         self.assertEqual(self.depth("none", ["src/utils/a.ts"])[0], 1)
 
+    def test_copy_accepts_plain_documentation_without_accepting_components_or_skill_protocols(self):
+        for file in ("docs/specialization.md", "README.md", "docs/guide.md"):
+            with self.subTest(file=file):
+                self.assertEqual(self.depth("copy", [file])[0], 0)
+        for file in ("docs/guide.mdx", "src/page.tsx", "skills/qore-plan/SKILL.md", "docs/check.py"):
+            with self.subTest(file=file):
+                self.assertNotEqual(self.depth("copy", [file])[0], 0)
+
     def test_route_reachability_applies_to_modern_app_and_root_paths(self):
         for file in ["pages/index.tsx", "src/routes.ts", "app/accounts/page.tsx"]:
             self.assertEqual(self.depth("state", [file])[0], 1)
