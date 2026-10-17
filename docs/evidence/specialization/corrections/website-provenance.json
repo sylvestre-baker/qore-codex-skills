@@ -1,0 +1,64 @@
+{
+  "schema": "qore-correction-evidence/1",
+  "website_commit": "c04568acc16245e8dfbd31525e00bf02ed3b1e76",
+  "website_branch": "fix/labs-focus-cookie-banner",
+  "website_base": "fb9f8039824b4d43f3d372d1fc90038bad17e670",
+  "deployment": "NOT_DEPLOYED; local branch only, not pushed.",
+  "scope": "Separate correction qualification, not a comparative cell or replacement. The live before observation and local after observation have different environment identities. No benchmark gain is claimed.",
+  "limits": [
+    "Private website source is not exported; independent local code inspection and selected browser observations are separate kinds of support.",
+    "Local normal-navigation variant does not qualify canonical redirect interception; it blocks non-loopback/non-read requests and retains the same five-control activation guard.",
+    "Only a separate loopback test clicks Reject to check cleanup; no public consent choice or questionnaire answer was changed.",
+    "Finite sampled hit tests are not exhaustive visibility or accessibility certification."
+  ],
+  "artifacts": [
+    {
+      "path": "cookie-focus-before.png",
+      "raw_sha256": "cdb0c5fb5bebc7400c26ad355de82a7b5ae523d163231c16086fdb31cf3b8a2f",
+      "sha256": "cdb0c5fb5bebc7400c26ad355de82a7b5ae523d163231c16086fdb31cf3b8a2f",
+      "transformation": "Byte-identical authorized public-site/own local-site PNG, or selected first-party observation/report with private campaign root normalized. No private website source or raw dev trace."
+    },
+    {
+      "path": "cookie-focus-before.json",
+      "raw_sha256": "9a905700a2bf9103388618ad5d39609d1470e9fc8b59abeb4f18d4021dcf65f8",
+      "sha256": "9a905700a2bf9103388618ad5d39609d1470e9fc8b59abeb4f18d4021dcf65f8",
+      "transformation": "Byte-identical authorized public-site/own local-site PNG, or selected first-party observation/report with private campaign root normalized. No private website source or raw dev trace."
+    },
+    {
+      "path": "cookie-focus-desktop.png",
+      "raw_sha256": "a0696bcb99e90f11dcc8d19c779aceda4e2d28063539341aebadc3386f37a6c2",
+      "sha256": "a0696bcb99e90f11dcc8d19c779aceda4e2d28063539341aebadc3386f37a6c2",
+      "transformation": "Byte-identical authorized public-site/own local-site PNG, or selected first-party observation/report with private campaign root normalized. No private website source or raw dev trace."
+    },
+    {
+      "path": "cookie-focus-desktop.json",
+      "raw_sha256": "295da04ba31df4c4681c2c309ea695df1cb0ed6cf7960d540043b131d5fc9ab8",
+      "sha256": "295da04ba31df4c4681c2c309ea695df1cb0ed6cf7960d540043b131d5fc9ab8",
+      "transformation": "Byte-identical authorized public-site/own local-site PNG, or selected first-party observation/report with private campaign root normalized. No private website source or raw dev trace."
+    },
+    {
+      "path": "cookie-focus-mobile.png",
+      "raw_sha256": "86dc28cdf857f37a457f8f18c4ee192a3534ca95c16c774f74b7d97b3b825eb9",
+      "sha256": "86dc28cdf857f37a457f8f18c4ee192a3534ca95c16c774f74b7d97b3b825eb9",
+      "transformation": "Byte-identical authorized public-site/own local-site PNG, or selected first-party observation/report with private campaign root normalized. No private website source or raw dev trace."
+    },
+    {
+      "path": "cookie-focus-mobile.json",
+      "raw_sha256": "999867d255705d5b39cca7db0320ac39225d73f1c394550d12384cd257b63512",
+      "sha256": "999867d255705d5b39cca7db0320ac39225d73f1c394550d12384cd257b63512",
+      "transformation": "Byte-identical authorized public-site/own local-site PNG, or selected first-party observation/report with private campaign root normalized. No private website source or raw dev trace."
+    },
+    {
+      "path": "website-checks.json",
+      "raw_sha256": "d0e8c521e1b588eaac17d6422680e24eddce8e461ffd3e43857419e630a0fa87",
+      "sha256": "d0e8c521e1b588eaac17d6422680e24eddce8e461ffd3e43857419e630a0fa87",
+      "transformation": "Byte-identical authorized public-site/own local-site PNG, or selected first-party observation/report with private campaign root normalized. No private website source or raw dev trace."
+    },
+    {
+      "path": "website-independent-report.md",
+      "raw_sha256": "cc3dc87b0f7456095a5c1a1df23f8d7258b5e3930affe34f9cb0c5430b0c27c3",
+      "sha256": "cc3dc87b0f7456095a5c1a1df23f8d7258b5e3930affe34f9cb0c5430b0c27c3",
+      "transformation": "Byte-identical authorized public-site/own local-site PNG, or selected first-party observation/report with private campaign root normalized. No private website source or raw dev trace."
+    }
+  ]
+}

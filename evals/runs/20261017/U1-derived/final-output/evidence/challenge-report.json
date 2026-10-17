@@ -1,0 +1,38 @@
+{
+  "actor_id": "/root",
+  "independent_verifier": false,
+  "method_requirement": "UX G6 challenge by reviewing actor; no independent context requirement.",
+  "claims_challenged": [
+    {
+      "claim": "Back works and focus is usable.",
+      "test": "Request4 fresh entry replay and screenshot while Back focused.",
+      "result": "Activation/h1 restoration passes; visibility claim refuted by UX-1."
+    },
+    {
+      "claim": "Close restoration proves Back focus.",
+      "test": "Separate summary and h1 assertions on distinct actions.",
+      "result": "Conflation rejected; both actual restoration destinations verified."
+    },
+    {
+      "claim": "Back/Start preserves clean first-question state.",
+      "test": "Restart in request4 then none-checked/details-closed assertions.",
+      "result": "Pass."
+    },
+    {
+      "claim": "Question reload implies introduction reset.",
+      "test": "Request5 snapshot without reset assumption.",
+      "result": "Refuted assumption; first question persists without selected answers."
+    },
+    {
+      "claim": "Browser history behaves like application Back.",
+      "test": "Request5 history-back/forward compared with request2 Back Enter.",
+      "result": "Distinct: browser Back goes to Labs; application Back stays on readiness URL with introduction."
+    },
+    {
+      "claim": "Required G1 can globally pass.",
+      "test": "Check supported relay action API and actual request coverage.",
+      "result": "No cold-deep navigation available; retain required gap."
+    }
+  ],
+  "scope_exclusions_challenged": "No answers/results/form submission permitted by source contract. No mobile, performance or accessibility certification required. Keyboard and live semantics remained in scope."
+}

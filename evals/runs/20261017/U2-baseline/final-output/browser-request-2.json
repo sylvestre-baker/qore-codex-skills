@@ -1,0 +1,160 @@
+[
+  {
+    "type": "click",
+    "selector": "a[href$='/labs/readiness-check']"
+  },
+  {
+    "type": "assert-url",
+    "url": "https://qaizen.io/labs/readiness-check"
+  },
+  {
+    "type": "click",
+    "role": "button",
+    "name": "Start the check",
+    "exact": true
+  },
+  {
+    "type": "assert-none-checked"
+  },
+  {
+    "type": "assert-visible",
+    "selector": "main [role=\"radiogroup\"]"
+  },
+  {
+    "type": "assert-hidden",
+    "selector": "main details button"
+  },
+  {
+    "type": "traverse-focus",
+    "selector": "main details summary",
+    "max_steps": 12,
+    "key": "Tab"
+  },
+  {
+    "type": "assert-focused",
+    "selector": "main details summary"
+  },
+  {
+    "type": "keyboard",
+    "key": "Enter"
+  },
+  {
+    "type": "assert-attribute",
+    "selector": "main details",
+    "attribute": "open",
+    "value": ""
+  },
+  {
+    "type": "assert-visible",
+    "role": "button",
+    "name": "Close",
+    "exact": true
+  },
+  {
+    "type": "snapshot",
+    "label": "help-open-enter"
+  },
+  {
+    "type": "keyboard",
+    "key": "Space"
+  },
+  {
+    "type": "assert-hidden",
+    "role": "button",
+    "name": "Close",
+    "exact": true
+  },
+  {
+    "type": "snapshot",
+    "label": "help-closed-space"
+  },
+  {
+    "type": "keyboard",
+    "key": "Enter"
+  },
+  {
+    "type": "assert-visible",
+    "role": "button",
+    "name": "Close",
+    "exact": true
+  },
+  {
+    "type": "snapshot",
+    "label": "help-reopened-enter"
+  },
+  {
+    "type": "traverse-focus",
+    "role": "button",
+    "name": "Close",
+    "exact": true,
+    "max_steps": 8,
+    "key": "Tab"
+  },
+  {
+    "type": "assert-focused",
+    "role": "button",
+    "name": "Close",
+    "exact": true
+  },
+  {
+    "type": "keyboard",
+    "key": "Enter"
+  },
+  {
+    "type": "snapshot",
+    "label": "after-keyboard-close"
+  },
+  {
+    "type": "assert-hidden",
+    "role": "button",
+    "name": "Close",
+    "exact": true
+  },
+  {
+    "type": "assert-focused",
+    "selector": "main details summary"
+  },
+  {
+    "type": "assert-none-checked"
+  },
+  {
+    "type": "traverse-focus",
+    "role": "button",
+    "name": "Back",
+    "exact": true,
+    "max_steps": 12,
+    "key": "Tab"
+  },
+  {
+    "type": "assert-focused",
+    "role": "button",
+    "name": "Back",
+    "exact": true
+  },
+  {
+    "type": "keyboard",
+    "key": "Enter"
+  },
+  {
+    "type": "snapshot",
+    "label": "returned-introduction"
+  },
+  {
+    "type": "assert-focused",
+    "selector": "h1"
+  },
+  {
+    "type": "assert-visible",
+    "role": "button",
+    "name": "Start the check",
+    "exact": true
+  },
+  {
+    "type": "assert-hidden",
+    "selector": "main [role=\"radiogroup\"]"
+  },
+  {
+    "type": "assert-url",
+    "url": "https://qaizen.io/labs/readiness-check"
+  }
+]

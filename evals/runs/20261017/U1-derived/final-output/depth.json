@@ -1,0 +1,43 @@
+{
+  "depth": "entry",
+  "changed_files": [
+    "surface-contract.json",
+    "checks/check_contract.py",
+    "observation-policy.json"
+  ],
+  "justification": "No source diff supplied. Explicit public Back journey review covers entry and neighboring question/help/introduction states at desktop 1280x800, en-US, anonymous account, current default theme. Required G0-G6; GP excluded because performance is outside contract. No complete questionnaire, mobile or accessibility certification. Required transitions are entry, Start, help Enter/Space toggles, keyboard Close and keyboard Back. All answers remain unselected.",
+  "required_gates": [
+    "G0",
+    "G1",
+    "G2",
+    "G3",
+    "G4",
+    "G5",
+    "G6"
+  ],
+  "budget": {
+    "wall_seconds": 900,
+    "aggregate_agent_seconds": 2400,
+    "max_browser_requests": 6,
+    "max_iterations": 6,
+    "role_deadline_seconds": null,
+    "reason": "UX method has no independent role requirement; root only."
+  },
+  "matrix": {
+    "persona": "anonymous public visitor",
+    "locale": "en-US",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "theme": "current default",
+    "states": [
+      "labs",
+      "introduction",
+      "first-question",
+      "help-open",
+      "help-closed",
+      "returned-introduction"
+    ]
+  }
+}

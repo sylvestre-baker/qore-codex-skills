@@ -1,0 +1,33 @@
+[
+  {
+    "argv": [
+      "python3",
+      "-B",
+      "/workspace/output/evidence/verifier-check.py"
+    ],
+    "exit_code": 1,
+    "artifact": "verifier-check-initial-command.json",
+    "cwd": "/workspace/worker"
+  },
+  {
+    "argv": [
+      "python3",
+      "-B",
+      "/workspace/output/evidence/verifier-check.py"
+    ],
+    "exit_code": 0,
+    "artifact": "verifier-check-command.json",
+    "cwd": "/workspace/worker"
+  },
+  {
+    "argv": [
+      "/usr/bin/python3",
+      "-B",
+      "/workspace/worker/checks/check_contract.py",
+      "/workspace/worker/surface-contract.json"
+    ],
+    "exit_code": 0,
+    "artifact": "verifier-check-command.json",
+    "cwd": "/workspace/worker"
+  }
+]

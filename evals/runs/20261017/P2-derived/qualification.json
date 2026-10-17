@@ -1,0 +1,17 @@
+{
+  "schema": "qore-eval-qualification/1",
+  "run_id": "qore003-20261017-p2-derived-1",
+  "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+  "input_manifest_sha256": "92981d42bbb636d2809b22af476c7974c1a1f54b539b8e5a7d6c9767b0d53b1d",
+  "qore_run_sha256": "c3acc0ec968c536fee92257e7b42b3696fee18f733d3a88ac0d1da82fc42eb2b",
+  "declared_coverage": "COMPLETE",
+  "coverage": "COMPLETE",
+  "assessor": "/root/campaign_plan_assessor",
+  "verifier": "/root/campaign_final_verifier",
+  "assessed_at": "2026-10-17T12:22:41.534375Z",
+  "reason": "Preserve COMPLETE at the frozen planning scope: retained substantive role analyses, required report barrier/cross-examination, adjudication and actual checks substantiate completed required activities. Disclosed continuation/context, timing and source-support limits remain; completion certifies neither every plan claim nor implementation/browser acceptance.",
+  "evidence": [
+    "independent-assessment.json",
+    "independent-verification.json"
+  ]
+}

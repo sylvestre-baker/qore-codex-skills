@@ -1,0 +1,13 @@
+{
+  "run_id": "qore003-20261017-r1-generic-1",
+  "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+  "target_snapshot_sha256": "7524a35a5d08ec4b101aa1aa8b05360fd82d841eaec4c8800dbd51590e3e4c25",
+  "last_relevant_change": "2026-10-17T09:53:58.399944+00:00",
+  "environment": {
+    "id": "qore-qualification-qore003-20261017-r1-generic-1",
+    "operator": "agent",
+    "host": "Docker Desktop Linux arm64 / Codex0.162.0"
+  },
+  "profile": null,
+  "output_directory": "/workspace/output"
+}

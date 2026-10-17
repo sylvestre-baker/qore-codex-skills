@@ -1,0 +1,117 @@
+{
+  "requested": [
+    "finder.correctness",
+    "finder.security",
+    "finder.feasibility",
+    "verifier"
+  ],
+  "returned": [
+    "finder.feasibility",
+    "finder.security",
+    "finder.correctness",
+    "verifier"
+  ],
+  "missing": [],
+  "roles": [
+    {
+      "role": "finder.correctness",
+      "actor_id": "/root/correctness",
+      "fork_turns": "none",
+      "dispatch_observed_utc": "2026-10-17T11:20:51.081136+00:00",
+      "dispatch_utc_bounds": [
+        "2026-10-17T11:20:16+00:00",
+        "2026-10-17T11:20:51.081136+00:00"
+      ],
+      "dispatch_timestamp_note": "Dispatch calls completed between clock observations; host returned actor name but no dispatch timestamp. Exact call time unavailable. This is post-dispatch observation time, with actual interval preserved.",
+      "deadline_utc": "2026-10-17T11:23:20+00:00",
+      "allocation_seconds": 180,
+      "return_utc": "2026-10-17T11:22:28.003875+00:00",
+      "reports": [
+        "roles/correctness/report.md",
+        "roles/correctness/findings.json"
+      ],
+      "usage": {
+        "aggregate_agent_seconds": null,
+        "reason": "Host exposes no actual per-context resource usage telemetry; wall-clock intervals retained separately."
+      },
+      "return_timestamp_note": "UTC observation immediately after host delivered final completion message."
+    },
+    {
+      "role": "finder.security",
+      "actor_id": "/root/security",
+      "fork_turns": "none",
+      "dispatch_observed_utc": "2026-10-17T11:20:51.081136+00:00",
+      "dispatch_utc_bounds": [
+        "2026-10-17T11:20:16+00:00",
+        "2026-10-17T11:20:51.081136+00:00"
+      ],
+      "dispatch_timestamp_note": "Dispatch calls completed between clock observations; host returned actor name but no dispatch timestamp. Exact call time unavailable. This is post-dispatch observation time, with actual interval preserved.",
+      "deadline_utc": "2026-10-17T11:23:25+00:00",
+      "allocation_seconds": 180,
+      "return_utc": "2026-10-17T11:22:04.624967+00:00",
+      "reports": [
+        "roles/security/report.md",
+        "roles/security/findings.json"
+      ],
+      "usage": {
+        "aggregate_agent_seconds": null,
+        "reason": "Host exposes no actual per-context resource usage telemetry; wall-clock intervals retained separately."
+      },
+      "return_timestamp_note": "UTC observation immediately after host delivered final completion message."
+    },
+    {
+      "role": "finder.feasibility",
+      "actor_id": "/root/feasibility",
+      "fork_turns": "none",
+      "dispatch_observed_utc": "2026-10-17T11:20:51.081136+00:00",
+      "dispatch_utc_bounds": [
+        "2026-10-17T11:20:16+00:00",
+        "2026-10-17T11:20:51.081136+00:00"
+      ],
+      "dispatch_timestamp_note": "Dispatch calls completed between clock observations; host returned actor name but no dispatch timestamp. Exact call time unavailable. This is post-dispatch observation time, with actual interval preserved.",
+      "deadline_utc": "2026-10-17T11:23:30+00:00",
+      "allocation_seconds": 180,
+      "return_utc": "2026-10-17T11:22:00.817183+00:00",
+      "reports": [
+        "roles/feasibility/report.md",
+        "roles/feasibility/findings.json"
+      ],
+      "usage": {
+        "aggregate_agent_seconds": null,
+        "reason": "Host exposes no actual per-context resource usage telemetry; wall-clock intervals retained separately."
+      },
+      "return_timestamp_note": "UTC observation immediately after host delivered final completion message."
+    },
+    {
+      "role": "verifier",
+      "actor_id": "/root/verifier",
+      "fork_turns": "none",
+      "dispatch_observed_utc": "2026-10-17T11:22:46.652315+00:00",
+      "dispatch_utc_bounds": [
+        "2026-10-17T11:22:29+00:00",
+        "2026-10-17T11:22:46.652315+00:00"
+      ],
+      "dispatch_timestamp_note": "Host returns actor name but no internal dispatch timestamp; bracketing UTC observations retained.",
+      "deadline_utc": "2026-10-17T11:26:30+00:00",
+      "allocation_seconds": 240,
+      "return_utc": "2026-10-17T11:24:49.036972+00:00",
+      "reports": [
+        "roles/verifier/report.md",
+        "roles/verifier/coverage.json",
+        "verified.json"
+      ],
+      "usage": {
+        "aggregate_agent_seconds": null,
+        "reason": "No per-context resource telemetry exposed by host."
+      },
+      "return_timestamp_note": "UTC observation immediately after host delivered final completion message."
+    }
+  ],
+  "resource_accounting": {
+    "actual_usage": null,
+    "reason": "Host does not expose actual agent-seconds, CPU or token counters. Dispatch/return intervals and fixed allocations are retained; no zero usage invented.",
+    "conservative_allocated_upper_bound_agent_seconds": 1680,
+    "upper_bound_procedure": "Root maximum 900s + three finder allocations180s each + verifier240s =1680s, below2400s. All roles returned before their deadlines; no additional child dispatches.",
+    "initial_dispatch_precision": "First three calls bracketed by UTC clock observations 11:20:16 and 11:20:51; exact internal dispatch instants unavailable."
+  }
+}

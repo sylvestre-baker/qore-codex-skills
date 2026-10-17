@@ -1,0 +1,23 @@
+[
+  {
+    "type": "snapshot",
+    "label": "public-entry"
+  },
+  {
+    "type": "click",
+    "selector": "a[href$='/labs/readiness-check']"
+  },
+  {
+    "type": "snapshot",
+    "label": "introduction"
+  },
+  {
+    "type": "click",
+    "text": "Start the check",
+    "exact": true
+  },
+  {
+    "type": "snapshot",
+    "label": "first-question"
+  }
+]

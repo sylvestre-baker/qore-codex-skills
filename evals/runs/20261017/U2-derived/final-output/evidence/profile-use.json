@@ -1,0 +1,35 @@
+{
+  "profile": {
+    "id": "qaizen-labs",
+    "version": "0.1.0",
+    "sha256": "f76afdd45cb6352e5044a06affc4182ea6cd40aa9c012fb216636a61faa428f0"
+  },
+  "selected_commands": [],
+  "consumed": [
+    {
+      "fact_id": "close-focus",
+      "source_id": "surface",
+      "current_source_digest": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+      "effect": "Separate Close focus from Back focus assertions"
+    },
+    {
+      "fact_id": "back-focus",
+      "source_id": "surface",
+      "current_source_digest": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+      "effect": "Use sequential traversal and Enter for Back, never pointer or programmatic focus"
+    },
+    {
+      "fact_id": "unanswered-scope",
+      "source_id": "surface",
+      "current_source_digest": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+      "effect": "Assert no answers and inspect blocked requests/origin guard"
+    },
+    {
+      "fact_id": "surfaces.web",
+      "source_id": "surface",
+      "current_source_digest": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+      "effect": "Select public /labs entry and required help/Back state"
+    }
+  ],
+  "note": "Checker command is not selected for ux; original checker source was read and may be executed as task input consistency only."
+}

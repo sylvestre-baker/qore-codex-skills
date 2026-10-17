@@ -1,0 +1,46 @@
+{
+  "observed_at": "2026-10-17T11:09:31.636686+00:00",
+  "actor_id": "/root",
+  "screenshots_opened": [
+    "relay-2/01-help-summary-focus.png",
+    "relay-2/02-help-open-enter.png",
+    "relay-2/03-help-closed-space.png",
+    "relay-2/04-close-focus-before-activation.png",
+    "relay-2/05-after-close-focus-restoration.png",
+    "relay-2/06-back-focus-before-activation.png",
+    "relay-2/07-returned-introduction.png"
+  ],
+  "conclusions": [
+    "Help summary has clear gold focus outline; Enter opens details, Space closes, Enter reopens. DOM text contains explanation, answer examples, who to ask and why it matters.",
+    "Close reached with one Tab from reopened summary; Close outline visible. Enter closes and restores summary focus with visible outline.",
+    "One Tab from restored summary reaches Back; focus-step and assert-focused establish actual sequential keyboard reachability. Enter returns to introduction; H1 active and radiogroup hidden.",
+    "Back focus screenshot shows cookie banner covering button text and most of focus indicator, leaving only upper sliver. This is a visible-focus/usability candidate, not a failure to activate Back. Full-page screenshot sticky positioning could affect pixel interpretation; re-test fresh context and reverse/forward Tab.",
+    "Introduction H1 is active on return, despite no decorative outline. Do not treat this programmatic heading focus as missing.",
+    "Question remains unanswered before and after help; Next disabled in DOM."
+  ],
+  "refutations": [
+    {
+      "claim": "Back is unreachable or cannot activate by keyboard",
+      "result": "Refuted by Tab focus-step, Enter and returned-introduction H1 assertion."
+    },
+    {
+      "claim": "Close and Back should focus same element",
+      "result": "Refuted by source contract and distinct observed targets: summary versus H1."
+    },
+    {
+      "claim": "Analytics console error proves broken page",
+      "result": "Refuted: expected blocked POST matches failure, UI resolves and no page_errors."
+    }
+  ],
+  "candidate_defect": {
+    "id": "UX-1",
+    "severity": "Moderate",
+    "gates": [
+      "G3",
+      "G5"
+    ],
+    "impact": "Keyboard user reaches Back but its label and nearly all focus outline are obscured by persistent cookie banner. Main path still activates successfully.",
+    "evidence": "relay-2/06-back-focus-before-activation.png",
+    "confidence": "Needs fresh replay to separate persistent overlap from full-page capture artifact."
+  }
+}

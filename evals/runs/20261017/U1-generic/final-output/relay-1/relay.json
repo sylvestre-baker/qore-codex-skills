@@ -1,0 +1,27 @@
+{
+  "exit_code": 0,
+  "request_sha256": "d2d45dc81331345404c2ec8f97eb472faa04b099faea723f3159fdb1f64dbd13",
+  "harness_sha256": "544d47211ac5aefde57072aef4ded1140c21030555b0e45e93f8821794249add",
+  "policy_sha256": "2160973fbe4d0a603d061688d2d4fe9ee633d8b3f018fec773d7b8d7a28c7ff2",
+  "started_at": "2026-10-17T11:07:11.178915+00:00",
+  "ended_at": "2026-10-17T11:07:26.427753+00:00",
+  "fresh_context": true,
+  "input_actions_modified": false,
+  "operator_interpretation": null,
+  "stderr": "",
+  "diagnostic_transformation": "Only private operator evidence prefix replaced in returned stderr; original retained.",
+  "files": {
+    "00-entry.dom.json": "09a05d31c16faaf8980d863723e3f901798ef49b4cac43ea54aec912de99112d",
+    "00-entry.png": "095283e6a92818f6baf91a977793ff14591a91a60cef7b82ea9019642c2251e2",
+    "01-labs-entry.dom.json": "2e72d94aeb80a87a73191e51ac1edd98ea33a03d36fe37719b667b5f754ac9e2",
+    "01-labs-entry.png": "041319a5d5542b9a5ddae0bd2c782d018a031320b7ef69be076a71a99c470b8a",
+    "02-introduction.dom.json": "524b0152744d052e6bb253eaeda4ff35b7bc69b132546fc509c7edd1958c13a1",
+    "02-introduction.png": "8c12568cc767e1d111812033ddd4823fc5ffcaf12d6561cb61b74ffa210a4bc8",
+    "03-first-question-unanswered.dom.json": "d914c65d93824bf0ad2af509c711239181aeace21ca36164765ced95fe000fba",
+    "03-first-question-unanswered.png": "6d439ba30a14c5b52a343d6821056842fb2a60b15bcd5d7437b9b4088a685938",
+    "04-final.dom.json": "d914c65d93824bf0ad2af509c711239181aeace21ca36164765ced95fe000fba",
+    "04-final.png": "4e9a3b37fca4b08a7cd5123cae0c30d5a65225ec092b00091699bad327691393",
+    "events.json": "c2dff768ec10804452c3222d25a88057dd3ddd2c9839ad6660994d4095836301",
+    "result.json": "6d1a8ae8164da72963591b3823c04bf33b1f47ee64eb60ed093a51d2d3943961"
+  }
+}

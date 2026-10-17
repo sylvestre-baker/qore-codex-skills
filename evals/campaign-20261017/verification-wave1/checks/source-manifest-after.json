@@ -1,0 +1,22 @@
+{
+  "observed_at": "2026-10-17T10:47:43.851109+00:00",
+  "sha256": {
+    "qore-skills/skills/qore-review/SKILL.md": "ae7a3bc448eda7262fa8163a67b0ce712efc2779eaaf00ce57618dc966dd6367",
+    "qore-skills/skills/qore-review/agents/openai.yaml": "6c689fd93445ab3edcb6b88320e7680ee37c746bca5635e8c406304b081250ed",
+    "qore-skills/skills/qore-review/references/findings.md": "f9f9035e471c9832c6546e80e4fe857777fefceba781bd5801ee8f97bdeaa409",
+    "qore-skills/skills/qore-review/references/project-profile.md": "5d3b69aac18f83a634f4c57c214cc1f53fa186c03c536adcefd4c905a8767c8d",
+    "qore-skills/skills/qore-review/references/protocol.md": "e27e0050fdf4d75d2840dd257b9a759f1f48d459ef540990cd3aed5528c5f340",
+    "qore-skills/skills/qore-review/references/run-evidence.md": "fbdf433ef8b3e972f97bed5fdec4990cf3b49535bf63120c729a7daf4af71746",
+    "qore-skills/skills/qore-review/scripts/finding-lint.mjs": "d3d22ae7d0b1b6b53b36006f13a8aaf6e1aa9e89df27b98312e6ac72ea079a26",
+    "qore-skills/skills/qore-review/scripts/project-check.py": "d87afa433fe485bdebca3e281d06e0896e4a8980ea7cf7baee739053614ea0ac",
+    "qore-skills/skills/qore-review/scripts/redact-for-verifier.mjs": "dc249524c749ad5b511aef0a2cf08b4cfd5c47c1e0de4fd41c5c70746b471083",
+    "qore-skills/skills/qore-review/scripts/run-check.py": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+    "qore-skills/profiles/qaizen-labs.json": "f76afdd45cb6352e5044a06affc4182ea6cd40aa9c012fb216636a61faa428f0",
+    "qore-skills/examples/qaizen-labs/surface-contract.json": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+    "qore-skills/examples/qaizen-labs/checks/check_contract.py": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b",
+    "research/qore003-campaign-20261017/assessment-inputs/N03/output/evidence/claims.json": "4987d00709b35420b5121550c72a81bfbf3ae257560e74a0a86810612c7ba8b0",
+    "research/qore003-campaign-20261017/assessment-inputs/N09/output/evidence/claims.json": "583561c20ba9c44ae855b10bbf8a99f19ddcaeed3de99d0ce8f616f4ab4556f3",
+    "research/qore003-campaign-20261017/assessment-inputs/N09/output/REPORT.md": "acf6977342ec872df594a901372a5de580312d117fd3ea5bc6ff0ab5781cd812",
+    "research/qore003-campaign-20261017/assessment-inputs/N03/output/evidence/finder-correctness.md": "8249978d0dd3923b010e6a3c0b9670275443859b830ee9556737a538c28634fc"
+  }
+}

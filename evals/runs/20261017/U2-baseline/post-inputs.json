@@ -1,0 +1,18 @@
+[
+  {
+    "path": "TASK.md",
+    "sha256": "b7421fcc42588c9f7d1e3a7b94e261a69ea57d9f9bf599f25502c72cc1639be6"
+  },
+  {
+    "path": "checks/check_contract.py",
+    "sha256": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b"
+  },
+  {
+    "path": "observation-policy.json",
+    "sha256": "15f4e5b4960b5011684be265f027e42b8637a3b8aae96b24bba1ba3a4d0f0202"
+  },
+  {
+    "path": "surface-contract.json",
+    "sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3"
+  }
+]

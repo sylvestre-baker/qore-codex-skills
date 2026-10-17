@@ -1,0 +1,52 @@
+{
+  "observed_at": "2026-10-17T10:40:25.690106+00:00",
+  "profile": {
+    "id": "qaizen-labs",
+    "version": "0.1.0",
+    "sha256": "f76afdd45cb6352e5044a06affc4182ea6cd40aa9c012fb216636a61faa428f0"
+  },
+  "facts": [
+    {
+      "fact_id": "surface-contract",
+      "fact_kind": "commands",
+      "source_id": "checker",
+      "source_sha256": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b",
+      "selected_by_checker": true,
+      "consumed": true,
+      "effect": "Executed original checker; retained exit/output and consistency-only limit; T5/AC11 retain this limited gate."
+    },
+    {
+      "fact_id": "close-focus",
+      "fact_kind": "invariants",
+      "source_id": "surface",
+      "source_sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+      "selected_by_checker": true,
+      "consumed": true,
+      "effect": "D3, step 5 and AC03/AC06 require independent closed-help summary focus."
+    },
+    {
+      "fact_id": "back-focus",
+      "fact_kind": "invariants",
+      "source_id": "surface",
+      "source_sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+      "selected_by_checker": true,
+      "consumed": true,
+      "effect": "D3/D6, step 6 and AC04/AC05/AC06 require actual sequential Tab and Enter plus separate heading focus."
+    },
+    {
+      "fact_id": "unanswered-scope",
+      "fact_kind": "invariants",
+      "source_id": "surface",
+      "source_sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+      "selected_by_checker": true,
+      "consumed": true,
+      "effect": "D4/D7, setup and AC07-AC13 require pre-navigation method/origin guards, unanswered scope, denied analytics effects; no scope permission inferred."
+    }
+  ],
+  "surfaces": {
+    "selected": {},
+    "consumed": false,
+    "reason": "No surfaces returned for method plan; no browser execution authorized."
+  },
+  "consumption_completed_at": "2026-10-17T10:50:36.228812+00:00"
+}

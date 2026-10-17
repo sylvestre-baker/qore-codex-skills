@@ -1,0 +1,26 @@
+{
+  "missing_usage": [
+    {
+      "scope": "root and all child contexts",
+      "aggregate_agent_seconds": null,
+      "tokens": null,
+      "reason": "No usage-metering API is available in tools. Active-context wall intervals are reported as bounds, not fabricated metered usage."
+    }
+  ],
+  "timestamp_precision": [
+    "Finder dispatch per-call instants were not sampled; the known UTC window and actor-reported entry times are retained.",
+    "Return times are lead observation instants after notifications, not unexposed scheduler completion instants.",
+    "Verifier dispatch time is a clock sample preceding tool dispatch at second resolution."
+  ],
+  "budget_policy": {
+    "wall_seconds": 900,
+    "aggregate_agent_seconds": 2400,
+    "child_concurrency_limit": 3,
+    "role_seconds": 240,
+    "consequence": "At expiry request partial reports, stop or interrupt remaining work, preserve unfinished claims and mark required missing coverage partial; no new dispatch at overall budget exhaustion."
+  },
+  "unavailable_observations": [
+    "No network, browser/deployment behavior or actual traffic can be observed under task restrictions.",
+    "Enclosing digest values are supplied identities; no enclosing manifest canonicalization/digest recipe is supplied. Supplemental individual byte manifests and copied skill/target sources are retained."
+  ]
+}

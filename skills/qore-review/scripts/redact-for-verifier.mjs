@@ -14,7 +14,8 @@ const keep = ['id', 'title', 'severity', 'evidence', 'counterexample'];
 if (!object(packet) || !Array.isArray(packet.findings) || packet.findings.some(finding => !object(finding))) {
   console.error('redact-for-verifier: expected an object containing findings: [objects].'); process.exit(2);
 }
-// Only scalar claim fields cross this boundary; nested objects could conceal rationale.
+// Only declared scalar claim fields cross; unrelated structures are refused.
+// Allowed evidence prose is not semantically sanitized or made hypothesis-blind.
 if (packet.findings.some(finding => keep.some(key => key in finding && typeof finding[key] !== 'string'))) {
   console.error('redact-for-verifier: allowlisted fields must be strings.'); process.exit(2);
 }

@@ -1,0 +1,109 @@
+{
+  "neutral_id": "N01",
+  "scenario_id": "R2",
+  "coverage": "COMPLETE",
+  "resources": {
+    "caps": {
+      "wall_seconds": 900,
+      "aggregate_agent_seconds": 2400,
+      "browser_requests": 6,
+      "transient_browser_retries": 1,
+      "evaluator_seconds": 1800,
+      "verifier_seconds": 1800,
+      "maximum_original_cells": 21,
+      "limit": "Provisional operator policy, not measured feasibility or hard timeout enforcement."
+    },
+    "started_at": "2026-10-17T11:13:18.666110+00:00",
+    "ended_at": "2026-10-17T11:19:40.920971+00:00",
+    "children": [
+      {
+        "actor_id": "/root/finder_correctness",
+        "started_at": "2026-10-17T11:13:27+00:00",
+        "ended_at": "2026-10-17T11:15:06+00:00",
+        "timing_precision": "Observed dispatch bracket through first post-return sample; includes idle gaps between repeated role phases, not model compute time.",
+        "phase_intervals": [
+          {
+            "started_at": "2026-10-17T11:13:27+00:00",
+            "ended_at": "2026-10-17T11:15:06+00:00",
+            "phase": null
+          }
+        ],
+        "source": "final-output/roster.json"
+      },
+      {
+        "actor_id": "/root/finder_feasibility",
+        "started_at": "2026-10-17T11:13:27+00:00",
+        "ended_at": "2026-10-17T11:15:14+00:00",
+        "timing_precision": "Observed dispatch bracket through first post-return sample; includes idle gaps between repeated role phases, not model compute time.",
+        "phase_intervals": [
+          {
+            "started_at": "2026-10-17T11:13:27+00:00",
+            "ended_at": "2026-10-17T11:15:14+00:00",
+            "phase": null
+          }
+        ],
+        "source": "final-output/roster.json"
+      },
+      {
+        "actor_id": "/root/finder_security",
+        "started_at": "2026-10-17T11:13:27+00:00",
+        "ended_at": "2026-10-17T11:15:04+00:00",
+        "timing_precision": "Observed dispatch bracket through first post-return sample; includes idle gaps between repeated role phases, not model compute time.",
+        "phase_intervals": [
+          {
+            "started_at": "2026-10-17T11:13:27+00:00",
+            "ended_at": "2026-10-17T11:15:04+00:00",
+            "phase": null
+          }
+        ],
+        "source": "final-output/roster.json"
+      },
+      {
+        "actor_id": "/root/verifier",
+        "started_at": "2026-10-17T11:15:33+00:00",
+        "ended_at": "2026-10-17T11:17:21+00:00",
+        "timing_precision": "Observed dispatch bracket through first post-return sample; includes idle gaps between repeated role phases, not model compute time.",
+        "phase_intervals": [
+          {
+            "started_at": "2026-10-17T11:15:33+00:00",
+            "ended_at": "2026-10-17T11:17:21+00:00",
+            "phase": null
+          }
+        ],
+        "source": "final-output/roster.json"
+      }
+    ],
+    "tokens": null,
+    "aggregate_agent_seconds": null,
+    "unavailable": {
+      "tokens": "CLI exposes parent turn usage; complete child-token totals are not exposed. Raw parent usage retained separately.",
+      "aggregate_agent_seconds": "Exact model/child agent-time accounting is not exposed. Parent wall interval and clock-bracketed child intervals are retained as observed bounds, not invented measurements."
+    },
+    "parent_native_usage": {
+      "input_tokens": 1080463,
+      "cached_input_tokens": 1017216,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 17244,
+      "reasoning_output_tokens": 4758
+    },
+    "parent_wall_seconds": 380.3694
+  },
+  "limitations": [
+    "One observation on a related known task, not a general benefit benchmark.",
+    "Criterion assessments remain UNKNOWN until a separate actual evaluator and verifier inspect retained outputs.",
+    "CLI JSONL omits some native child lifecycle events; child identities and history-free dispatches rely on retained role reports/roster plus the qualified inheritance probe.",
+    "All resource timing precision and unavailable measurements remain explicit; no cost or efficiency conclusion.",
+    "Scope is static review of supplied verification protocol; network and browser execution prohibited. No deployed defect, actual request, redirect/popup, tab distance, or external safeguard was observed.",
+    "No missing roles or unexamined IDs. Five medium confirmed candidate records overlap into two document-coverage concerns; no critical/high blockers. No deployment or publication decision.",
+    "Exact finder dispatch instants were not sampled. Actual calls are bounded by UTC 11:13:27\u201311:13:59; role entry and lead receipt timestamps are retained. Verifier dispatch clock sample 11:15:33 precedes the tool call. Scheduler completion instants are unavailable.",
+    "Per-context metered aggregate agent-seconds and token usage are unavailable from host tools. budget.json records nulls/reasons and a conservative active-context wall bound, not zero usage.",
+    "Candidate and entire frozen prepared-input target digests are supplied enclosing identities. Canonical enclosing manifest serialization/digest procedure is unavailable; copied inputs and per-file SHA-256 manifest supplement, not replace, them.",
+    "Verifier corrected an exploratory regex and reran its static audit. Earlier draft check output was overwritten and is unavailable; the complete final role report discloses it. Full target reading and refutation attempts support the retained results.",
+    "No source/skill edits or shared-data mutations. Reports and evidence were authored by AI contexts; no external human or live deployment evidence.",
+    "The initial rg capability probe failed with exit 127; local find/cat fallback used. Contract check and structural validators do not prove browser behavior or reasoning correctness.",
+    "No specific observation-policy precondition order or interception mechanism is mandated by supplied criteria; C-002 was narrowed accordingly while keeping original severity and candidate history.",
+    "The final run-check output is a companion outside the evidence manifest to avoid a self-referential digest cycle; its validation record binds the exact execution.json SHA-256."
+  ],
+  "raw_output_sha256": "5b61ba349427842d3f50385f8c5a0d25e8ea86311728659cc253d7fe133105f0",
+  "blinding_limit": "Neutral filenames only; method/profile citations and role rosters can reveal condition. This is not a blinded comparison."
+}

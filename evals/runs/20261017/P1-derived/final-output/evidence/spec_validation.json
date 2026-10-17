@@ -1,0 +1,25 @@
+{
+  "qore_evidence": {
+    "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+    "target_snapshot_sha256": "ed6c0fb8d8737cb4b8fc9e6b3485e0e618bf332d15725a557cf30d17b127e394",
+    "observed_at": "2026-10-17T10:50:36.403323+00:00",
+    "phase_id": "spec_validation"
+  },
+  "payload": {
+    "command": {
+      "argv": [
+        "bash",
+        "scripts/spec-lint.sh",
+        "/workspace/output/REPORT.md"
+      ],
+      "cwd": "/workspace/worker/.agents/skills/qore-plan-qaizen-labs",
+      "started_at": "2026-10-17T10:50:36.230105+00:00",
+      "returned_at": "2026-10-17T10:50:36.401766+00:00",
+      "exit_code": 0,
+      "stdout": "spec-lint: valid qore-spec/1 (14 scenarios).\n",
+      "stderr": ""
+    },
+    "report_sha256": "80e783a6e9170bd5bdefcd47867e307c423b2e444a7ab03c54dd819cf1590a35",
+    "limit": "Structure only; not product correctness."
+  }
+}

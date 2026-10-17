@@ -1,0 +1,9 @@
+{
+  "actor_id": "/root",
+  "dispatch_at": "2026-10-17T12:12:04.793022+00:00",
+  "request": "browser-request-4.json",
+  "actions": 36,
+  "deadline_seconds": 150,
+  "purpose": "One corrected challenge replay; CSS uppercase innerText was not matching locator textContent; inspect heading DOM instead",
+  "retry_of": 3
+}

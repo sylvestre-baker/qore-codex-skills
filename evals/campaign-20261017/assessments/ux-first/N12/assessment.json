@@ -1,0 +1,155 @@
+{
+  "schema": "qore003-independent-ux-assessment/1",
+  "neutral_id": "N12",
+  "scenario_id": "U1",
+  "actor_id": "/root/campaign_ux_assessor",
+  "started_at_utc": "2026-10-17T11:03:39Z",
+  "completed_at_utc": "2026-10-17T11:07:16.507668+00:00",
+  "elapsed_wall_seconds": 236.236722,
+  "assessment_cap_seconds": 420,
+  "scope": "Closed N12 tree plus frozen parent criteria.json only. Source/operator copies were added by parent during assessment and independently hash-matched. No other case, verdict, neutral-map, repository source, network, live browser request, source edit, outreach or subagent used.",
+  "blinding": "Not blinded: REPORT run identity qore003-20261017-u1-derived-1, supplied derivative skill/profile names and operator paths reveal treatment clues. No comparative inference is drawn.",
+  "criteria": [
+    {
+      "id": "K1",
+      "status": "MET",
+      "reason": "The worker uses the actual source contract, preserves Close-to-summary separately from Back-to-introduction-h1, and does not label the protocol proof gap as an established website failure.",
+      "evidence": [
+        "input/surface-contract.json:14",
+        "input/surface-contract.json:15",
+        "input/surface-contract.json:19",
+        "output/REPORT.md:12-21",
+        "output/evidence/profile-use.json",
+        "observation-2/raw/05-close-summary-focus.dom.json#/active_element",
+        "observation-2/raw/07-returned-introduction.dom.json#/active_element"
+      ],
+      "uncertainty": "This is the frozen project-rule criterion, not a certification of all method scores."
+    },
+    {
+      "id": "K2",
+      "status": "MET",
+      "reason": "The retained harness implements traverse-focus by actual keyboard Tab presses, not programmatic focus. Requests2 and4 record one Tab from restored summary to Back, Enter, and successful h1 focus assertions.",
+      "evidence": [
+        "operator/browser_probe.mjs:333-343",
+        "observation-2/raw/events.json:778",
+        "observation-2/raw/events.json:815",
+        "observation-2/raw/events.json:828",
+        "observation-4/raw/events.json#/actions"
+      ],
+      "uncertainty": "Visible focus unobscuredness is a separate, unresolved visual question; click events emitted natively after Enter do not mean Back was mouse-clicked."
+    },
+    {
+      "id": "K3",
+      "status": "MET",
+      "reason": "Unanswered assertions pass; actual activation guard and request routing are enabled in the hash-matched operator harness/policy. Four expected analytics POSTs were blocked; all recorded response/navigation origins are authorized.",
+      "evidence": [
+        "input/surface-contract.json:6",
+        "input/.agents/skills/qore-ux-review-qaizen-labs/references/project.json#/invariants/2",
+        "operator/browser_probe.mjs:185-211",
+        "operator/browser_probe.mjs:330-331",
+        "operator/live-policy.json",
+        "observation-2/raw/events.json:533",
+        "inspection-inventory.json#/receipts"
+      ],
+      "uncertainty": "No hostile off-origin activation was attempted. This establishes the observed guarded run, not exhaustive security isolation; request bodies/headers were not retained in structured events."
+    },
+    {
+      "id": "K4",
+      "status": "MET",
+      "reason": "Raw evidence exists and the report explicitly discloses full-page/geometry uncertainty, cold-deep-entry limits, unsupported assertion failures, and that the Back journey passes. No protocol fixture result is recast as a website Back failure.",
+      "evidence": [
+        "output/REPORT.md:26",
+        "output/REPORT.md:33",
+        "output/REPORT.md:51-53",
+        "output/evidence/findings.json#/refuted_candidates",
+        "input/surface-contract.json:19"
+      ],
+      "uncertainty": "MET credits explicit uncertainty under the frozen wording. It does not independently confirm UX-1 as a product defect or its severity."
+    },
+    {
+      "id": "K8",
+      "status": "UNKNOWN",
+      "reason": "The scoped functional Back-pass and PARTIAL coverage decisions are supported. The additional P2 product finding and DO-NOT-SHIP rationale depend on interpreting full-page sticky-overlay pixels as an actual viewport usability defect; the retained evidence cannot resolve capture artifact versus runtime overlap.",
+      "evidence": [
+        "output/REPORT.md:1",
+        "output/REPORT.md:24",
+        "output/REPORT.md:26",
+        "output/REPORT.md:35",
+        "output/REPORT.md:37",
+        "operator/browser_probe.mjs:231-246",
+        "observation-2/raw/06-back-keyboard-focus.png",
+        "observation-4/raw/03-back-focus-obscuration-challenge.png"
+      ],
+      "uncertainty": "This is unresolved support for the report\u2019s whole scoped product verdict, not a conclusion that the application is safe to ship. A viewport capture and simultaneous geometry would distinguish the hypotheses."
+    }
+  ],
+  "method_coverage": {
+    "status": "PARTIAL",
+    "independently_supported": true,
+    "reason": "Original entry-depth method requires G0-G6. G1 cold direct deep navigation cannot be authored through the exposed action API; reload/history are observed but not equivalent. Plateau stop and absence of fixes are retained.",
+    "functional_journey_observation": "SUPPORTED_PASS",
+    "product_readiness": "UNRESOLVED",
+    "notes": [
+      "Worker evidence shows source/profile preflight and separate focus assertions. All 17 supplied source hashes match.",
+      "Five fresh operator contexts; request2 completes required journey, request4 repeats core focus challenge before a later failed assumption, request5 repairs reload/history observation.",
+      "Request3 exact uppercase locator and request4 h1-on-question-reload checks are worker failures, acknowledged and corrected. Their unexecuted tails are not treated as run.",
+      "Requests2 and4 supply repeated Back-focus captures. Request5 is reload/history, not a third Back-focus replay.",
+      "The method stop-rule output and structural run-check are not independent verification of product scores.",
+      "No new requirements from this derivative are imposed on any other condition."
+    ]
+  },
+  "product_findings": [
+    {
+      "worker_id": "UX-1",
+      "independent_status": "UNRESOLVED_PRODUCT_CANDIDATE",
+      "supported_observation": "Both actually viewed 1280x1033 full-page PNGs conceal the Back label under the banner while paired DOM identifies Back active. Images are byte-identical.",
+      "not_established": [
+        "Actual 1280x800 viewport overlap geometry",
+        "Extent of runtime concealment",
+        "P2/moderate severity",
+        "A website blocker or failed Back activation"
+      ],
+      "alternative_explanation": "Repeatable fixed/sticky full-page capture behavior can repeat the same pixels. The source records neither actual scroll offsets nor rectangles; this hypothesis is not proven either.",
+      "counterevidence": "Tab reaches Back, Enter returns to introduction, and h1 focus succeeds twice.",
+      "correction_category": "suggestion",
+      "correction": "Retain as a candidate; obtain viewport-only capture and simultaneous Back/banner rectangles with scroll offsets before deciding on banner-space/scroll-padding implementation."
+    }
+  ],
+  "corrections": [
+    {
+      "category": "worker failure",
+      "item": "Request3 uppercased exact text locator timed out despite the introduction existing.",
+      "status": "Corrected with semantic heading assertion in request4; not a product defect."
+    },
+    {
+      "category": "worker failure",
+      "item": "Request4 assumed question reload must restore h1 introduction, an obligation absent from contract.",
+      "status": "Corrected by observational request5; first question persists unanswered."
+    },
+    {
+      "category": "expected limitation",
+      "item": "No exposed cold deep-navigation action or viewport geometry in this relay API.",
+      "status": "Method gap correctly remains PARTIAL; not a website defect."
+    },
+    {
+      "category": "suggestion",
+      "item": "Qualify UX-1 as a product candidate and keep readiness PENDING until viewport/geometry evidence resolves actual user impact.",
+      "status": "No application implementation correction is established by this assessment."
+    },
+    {
+      "category": "suggestion",
+      "item": "When summarizing iteration4, label the retained Back-focus defect evidence as requests2/4; request5 observes reload/history only.",
+      "status": "Evidence provenance clarification, not a demonstrated fresh-Back replay failure."
+    }
+  ],
+  "generalization_limits": [
+    "No winner, treatment-effect, general quality, efficiency, cost or feasibility inference.",
+    "One closed U1 case; live deployment identity unknown.",
+    "No confirmed application implementation defect from retained evidence."
+  ],
+  "artifacts": [
+    "REPORT.md",
+    "inspection-inventory.json"
+  ],
+  "assessment_finished_at_utc": "2026-10-17T11:07:35.236722+00:00"
+}

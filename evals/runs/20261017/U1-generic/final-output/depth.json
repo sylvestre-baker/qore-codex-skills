@@ -1,0 +1,9 @@
+{
+  "depth": "entry",
+  "changed_files": [
+    "surface-contract.json",
+    "checks/check_contract.py",
+    "observation-policy.json"
+  ],
+  "justification": "Explicit public Back-journey review without source diff; these are inspected target artifacts, not changed application files. Entry and all six declared neighboring states require G0-G6."
+}

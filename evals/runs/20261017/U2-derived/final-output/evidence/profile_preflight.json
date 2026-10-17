@@ -1,0 +1,16 @@
+{
+  "qore_evidence": {
+    "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+    "target_snapshot_sha256": "f1c94eff9d8d9044073bbe14c71e2ef897c187a01238ba9363eedecdcca6d228",
+    "observed_at": "2026-10-17T12:08:06.869976+00:00",
+    "phase_id": "profile_preflight"
+  },
+  "payload": {
+    "actor_id": "/root",
+    "report": "Current profile checker returned COMPLETE; both source digests match. Read original sources; consumed only UX invariants and application surface. Profile grants no authorization.",
+    "checker": "evidence/profile-check.json",
+    "consumption": "evidence/profile-use.json",
+    "command_output": "Complete JSON retained. Compound shell exit 0; checker success is reported in its output.",
+    "profile_sha256": "f76afdd45cb6352e5044a06affc4182ea6cd40aa9c012fb216636a61faa428f0"
+  }
+}

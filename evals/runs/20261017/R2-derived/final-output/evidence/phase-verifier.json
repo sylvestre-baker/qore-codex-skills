@@ -1,0 +1,185 @@
+{
+  "qore_evidence": {
+    "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+    "target_snapshot_sha256": "9689f41f4f94e52c4074c5cd0760e78a4ce34fb03b6d5a3504d16e61735c8c66",
+    "observed_at": "2026-10-17T11:17:48.493242+00:00",
+    "phase_id": "verifier"
+  },
+  "payload": {
+    "actor_id": "/root/verifier",
+    "full_report": "# Independent verifier report\n\nContext identity: `/root/verifier`, a fresh context dispatched by `/root`. I did not author the target or discover candidates. I read only the mechanically filtered claims and the seven allowed input/source paths recorded by the audit. I did not read finder reports, candidate packets, other output, or peer/lead conclusions. No children, network, live browser, shared-data mutation, or input edits occurred. All writes are unique verifier artifacts under `/workspace/output`, plus the requested final files.\n\nStart: 2026-10-17 11:15:33 UTC (dispatch); first sampled verifier clock: 2026-10-17 11:15:53 UTC.\nEnd: 2026-10-17 11:17:13 UTC.\nDeadline: 2026-10-17 11:19:40 UTC. Scope completed within the 240-second role budget.\n\n## Target and source identity\n\nTarget: `/workspace/worker/target/verification-protocol.md`, a reconstructed tutorial fixture, expressly not historical evidence or website-defect evidence. SHA-256: 0a3452f02e358d8800fb26d591083deb972c5531165473990dc27007a9a9e0d4. The audit records SHA-256 values for every read source: filtered claims, target, surface contract, contract checker, observation policy, method `references/protocol.md`, and `references/findings.md`.\n\nReview scope: the written procedure against the declared surface contract and observation policy. Static omissions can be demonstrated; deployed behavior and any external browser guard cannot be established from these sources.\n\n## Exact commands and results\n\n1. `cat /workspace/output/evidence/claims.json /workspace/worker/target/verification-protocol.md /workspace/worker/surface-contract.json /workspace/worker/checks/check_contract.py /workspace/worker/observation-policy.json /workspace/worker/.agents/skills/qore-review-qaizen-labs/references/protocol.md /workspace/worker/.agents/skills/qore-review-qaizen-labs/references/findings.md` \u2014 exit 0; read the only permitted source set.\n2. `python3 -B /workspace/worker/checks/check_contract.py /workspace/worker/surface-contract.json` \u2014 exit 0; valid=true and declared checks include help-toggle, read-only-policy, origin-policy. Its limit explicitly says contract consistency only.\n3. `nl -ba /workspace/worker/target/verification-protocol.md` \u2014 exit 0; ten lines total; six procedure steps at lines 5-10.\n4. `python3 -B /workspace/output/verifier-static-audit.py > /workspace/output/verifier-static-audit.json` \u2014 exit 0. Saved full target lines, required summary transitions, method/origin requirements, source hashes, exact checker output, and static presence results. One draft regex matched the Close/Enter line as summary opening; I narrowed it to the actual open-help instruction and reran. Final results: summary_Space_instruction=false; summary_Enter_instruction=false; reopen_instruction=false; HTTP_method_or_request_policy_instruction=false; authorized_origin_or_URL_instruction=false; blocked_effect_instruction=false. These string scans supplement manual reading of all ten lines; they are not a general natural-language proof engine.\n5. `python3 -B /workspace/output/verifier-write-results.py` \u2014 exit 0 if this report and strict envelope exist; serializes the independently determined results.\n\n## Batch 1: C-001, C-002, S-1\n\nC-001 \u2014 medium, CONFIRMED as a document coverage gap. Reproduction input: exact target and contract. Expected: summary Enter opens, Space closes, Enter reopens before Close. Actual written trace: unspecified summary opening immediately followed by Close/Enter, then unanswered and Back assertions. The complete target has no Space or reopening instruction. Consequence: following every stated step does not establish required help-toggle behavior.\n\nRefutation attempted: perhaps the Enter on line 8 or line 10 supplies the missing summary action. Reading their controls shows they activate Close and Back respectively, not summary. Perhaps the checker fills the gap: it reads only the contract, never the target, and disclaims browser proof. The term \"summary control\" alone cannot require the missing Space/reopen sequence. None refutes the document gap. No hypothetical broken website was executed or observed.\n\nC-002 \u2014 medium, CONFIRMED with a narrower title: required policy checks are absent. Reproduction input: complete target plus required_checks and limits. Actual text moves directly from opening/following the link into UI checks with no method/origin observation or blocked-effect retention. Expected: coverage of both required policy checks and the explicit blocked analytics-effect obligation. Consequence: this artifact does not specify evidence by which those checks can be established.\n\nRefutation attempted: a separate guard could enforce the policy, and the contract does not mandate a named setup precondition, its order, or a particular interception API. This prevents a claim that an actual run necessarily sent a forbidden request and defeats a literal requirement for a specific precondition. It does not supply the missing policy check/evidence instructions in this standalone target. Accordingly I narrowed the title; confirmation is the omission only, not a demonstrated unauthorized observation.\n\nS-1 \u2014 medium, CONFIRMED as the method-policy part of the same document omission. Actual source output includes no GET/HEAD/OPTIONS checks, interception, or blocked POST-effect capture; those obligations are explicit in the contract. Consequence: UI success alone cannot establish required read-only observation.\n\nRefutation attempted: \"without selecting an answer\" might imply read-only behavior. The contract separately restricts HTTP methods and anticipates an analytics POST; answer state is therefore insufficient. The checker enforces declared allowed_methods only, not requests. An external guard remains possible, so no actual POST is claimed. This is duplicated evidence with C-002, retained by ID as requested.\n\n## Batch 2: S-2, F-301\n\nS-2 \u2014 medium, CONFIRMED as an origin-coverage omission. Actual complete target has no URL/origin assertion, redirect check, or allowed-origin guard instruction. Expected: establish required origin-policy against the sole authorized origin https://qaizen.io. Consequence: the written procedure supplies no evidence that navigation and requests stay within scope.\n\nRefutation attempted: \"public Labs entry\" may denote the correct entry URL, and the checker validates that declared URL. That establishes only the declaration, not a followed link/redirect or request. The suffix selector in contract line 9 places no origin restriction on the selected href. An external guard could satisfy the boundary, but no such guard is specified in this target. Thus a document omission is confirmed; actual cross-origin traffic is unobserved and unclaimed. This overlaps C-002 and is retained.\n\nF-301 \u2014 medium, CONFIRMED; independent rereading of the same full target gives the C-001 result. Refutation attempted: Close also closes help and could count as \"help-toggle.\" The contract explicitly distinguishes toggle-help (summary/Space), reopen-help (summary/Enter), and close-help (Close/Enter). Close does not exercise those two required transitions. The checker only emits declared help-toggle and never consumes the procedure. This duplicates C-001 and is retained.\n\n## Coverage and limitations\n\nExamined IDs: C-001, C-002, S-1, S-2, F-301. Unexamined/unfinished IDs: none. Original severity medium preserved for all five. Results: 5 CONFIRMED document omissions, 0 PLAUSIBLE, 0 REFUTED. These represent overlapping concerns, not five independent root causes. Confirmations establish missing written coverage only; no deployed website defect, actual prohibited request, or absence of external browser safeguards was observed. The fixture warning at line 3 remains fully respected.\n\nRequested/returned verifier role: 1/1. Verifier execution coverage: COMPLETE for the five supplied IDs. I cannot attest other review-role execution from this isolated context. All-medium findings are not verified critical/high blockers under the supplied findings contract. Delivery decisions belong to the lead's authorized workflow.\n",
+    "verified": {
+      "findings": [
+        {
+          "id": "C-001",
+          "title": "Required keyboard help-toggle sequence is untested",
+          "severity": "medium",
+          "verdict": "CONFIRMED",
+          "evidence": "Static reproduction: python3 -B /workspace/output/verifier-static-audit.py; saved output /workspace/output/verifier-static-audit.json. The full target has six numbered steps (target/verification-protocol.md:5-10). Step 3 at :7 says only \"Open help using its summary control\"; step 4 at :8 immediately activates Close with Enter. surface-contract.json:11-13 requires summary Enter, Space, Enter; :18 requires help-toggle. Manual reading plus the static checks finds no Space instruction and no reopen instruction. The checker exits 0 but explicitly reports \"Contract consistency only; browser observations establish current behavior.\" No website behavior was tested.",
+          "counterexample": "Concrete input is the supplied 10-line verification-protocol.md, SHA-256 0a3452f02e358d8800fb26d591083deb972c5531165473990dc27007a9a9e0d4. Its actual prescribed help trace is summary-open with unspecified activation -> Close/Enter -> help-closed -> Back/Enter; no summary Space close or Enter reopen observation is emitted anywhere. Expected trace from surface-contract.json is summary/Enter -> summary/Space -> summary/Enter -> Close/Enter. The saved static audit returns summary_Space_instruction=false and reopen_instruction=false. This reproduces missing document coverage, not a deployed keyboard failure."
+        },
+        {
+          "id": "C-002",
+          "title": "Required observation-policy checks are absent from the procedure",
+          "severity": "medium",
+          "verdict": "CONFIRMED",
+          "evidence": "Static reproduction and full source text are in /workspace/output/verifier-static-audit.json, generated by /workspace/output/verifier-static-audit.py. target/verification-protocol.md:5-10 contains only navigation, answer-state, help, focus, and Back instructions. surface-contract.json:6 permits GET/HEAD/OPTIONS; :18 requires read-only-policy and origin-policy; :20 expects an analytics POST to be blocked with observed effects retained. observation-policy.json:2-4 permits only https://qaizen.io. No request-method, allowed-origin, interception, or blocked-effect instruction occurs in the full target. checks/check_contract.py:12-18 validates declared entry/policy; :42-43 explicitly limits the result to contract consistency. No requests were issued. Confirmation is limited to missing policy coverage. The sources do not separately mandate a named precondition or a particular interception mechanism; the original title was narrowed accordingly.",
+          "counterexample": "Concrete input is the supplied six-step procedure and contract. Static audit of all ten target lines returns HTTP_method_or_request_policy_instruction=false, authorized_origin_or_URL_instruction=false, blocked_effect_instruction=false, while required_policy_checks is [read-only-policy, origin-policy]. Actual artifact output prescribes navigation followed solely by UI assertions; expected artifact coverage must establish the required method/origin policy checks and retention of blocked analytics effects. This is a demonstrated document coverage gap. An actual prohibited request or an absent external guard is not demonstrated."
+        },
+        {
+          "id": "S-1",
+          "title": "Procedure never enforces or observes the read-only HTTP policy",
+          "severity": "medium",
+          "verdict": "CONFIRMED",
+          "evidence": "Static reproduction and full source text are in /workspace/output/verifier-static-audit.json, generated by /workspace/output/verifier-static-audit.py. target/verification-protocol.md:5-10 contains only navigation, answer-state, help, focus, and Back instructions. surface-contract.json:6 permits GET/HEAD/OPTIONS; :18 requires read-only-policy and origin-policy; :20 expects an analytics POST to be blocked with observed effects retained. observation-policy.json:2-4 permits only https://qaizen.io. No request-method, allowed-origin, interception, or blocked-effect instruction occurs in the full target. checks/check_contract.py:12-18 validates declared entry/policy; :42-43 explicitly limits the result to contract consistency. No requests were issued. The unanswered assertions address questionnaire state, not HTTP methods; the expected analytics POST makes that distinction explicit.",
+          "counterexample": "Concrete input is the supplied six-step procedure and contract. Static audit of all ten target lines returns HTTP_method_or_request_policy_instruction=false, authorized_origin_or_URL_instruction=false, blocked_effect_instruction=false, while required_policy_checks is [read-only-policy, origin-policy]. Actual artifact output prescribes navigation followed solely by UI assertions; expected artifact coverage must establish the required method/origin policy checks and retention of blocked analytics effects. This is a demonstrated document coverage gap. An actual prohibited request or an absent external guard is not demonstrated."
+        },
+        {
+          "id": "S-2",
+          "title": "Procedure follows navigation without checking the authorized origin",
+          "severity": "medium",
+          "verdict": "CONFIRMED",
+          "evidence": "Static reproduction and full source text are in /workspace/output/verifier-static-audit.json, generated by /workspace/output/verifier-static-audit.py. target/verification-protocol.md:5-10 contains only navigation, answer-state, help, focus, and Back instructions. surface-contract.json:6 permits GET/HEAD/OPTIONS; :18 requires read-only-policy and origin-policy; :20 expects an analytics POST to be blocked with observed effects retained. observation-policy.json:2-4 permits only https://qaizen.io. No request-method, allowed-origin, interception, or blocked-effect instruction occurs in the full target. checks/check_contract.py:12-18 validates declared entry/policy; :42-43 explicitly limits the result to contract consistency. No requests were issued. A selector ending in /labs/readiness-check at surface-contract.json:9 does not assert the origin of a followed URL or redirect. Confirmation concerns missing origin verification in this procedure, not observed off-origin traffic.",
+          "counterexample": "Concrete input is the supplied six-step procedure and contract. Static audit of all ten target lines returns HTTP_method_or_request_policy_instruction=false, authorized_origin_or_URL_instruction=false, blocked_effect_instruction=false, while required_policy_checks is [read-only-policy, origin-policy]. Actual artifact output prescribes navigation followed solely by UI assertions; expected artifact coverage must establish the required method/origin policy checks and retention of blocked analytics effects. This is a demonstrated document coverage gap. An actual prohibited request or an absent external guard is not demonstrated."
+        },
+        {
+          "id": "F-301",
+          "title": "Required summary keyboard toggling has no observation in the procedure",
+          "severity": "medium",
+          "verdict": "CONFIRMED",
+          "evidence": "Static reproduction: python3 -B /workspace/output/verifier-static-audit.py; saved output /workspace/output/verifier-static-audit.json. The full target has six numbered steps (target/verification-protocol.md:5-10). Step 3 at :7 says only \"Open help using its summary control\"; step 4 at :8 immediately activates Close with Enter. surface-contract.json:11-13 requires summary Enter, Space, Enter; :18 requires help-toggle. Manual reading plus the static checks finds no Space instruction and no reopen instruction. The checker exits 0 but explicitly reports \"Contract consistency only; browser observations establish current behavior.\" No website behavior was tested.",
+          "counterexample": "Concrete input is the supplied 10-line verification-protocol.md, SHA-256 0a3452f02e358d8800fb26d591083deb972c5531165473990dc27007a9a9e0d4. Its actual prescribed help trace is summary-open with unspecified activation -> Close/Enter -> help-closed -> Back/Enter; no summary Space close or Enter reopen observation is emitted anywhere. Expected trace from surface-contract.json is summary/Enter -> summary/Space -> summary/Enter -> Close/Enter. The saved static audit returns summary_Space_instruction=false and reopen_instruction=false. This reproduces missing document coverage, not a deployed keyboard failure."
+        }
+      ]
+    },
+    "examined_ids": [
+      "C-001",
+      "C-002",
+      "S-1",
+      "S-2",
+      "F-301"
+    ],
+    "unexamined_ids": [],
+    "audit": {
+      "timestamp_UTC": "2026-10-17T11:16:20.352286+00:00",
+      "scope": "Static document omission audit only; no browser, website requests, or hypothetical fixtures executed.",
+      "input_sha256": {
+        "/workspace/output/evidence/claims.json": "58febdd3d9e9e4ead5c00dd9bf494c1fe81d7d562f1996bb79814176ab1d6bfb",
+        "/workspace/worker/target/verification-protocol.md": "0a3452f02e358d8800fb26d591083deb972c5531165473990dc27007a9a9e0d4",
+        "/workspace/worker/surface-contract.json": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+        "/workspace/worker/checks/check_contract.py": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b",
+        "/workspace/worker/observation-policy.json": "15f4e5b4960b5011684be265f027e42b8637a3b8aae96b24bba1ba3a4d0f0202",
+        "/workspace/worker/.agents/skills/qore-review-qaizen-labs/references/protocol.md": "e27e0050fdf4d75d2840dd257b9a759f1f48d459ef540990cd3aed5528c5f340",
+        "/workspace/worker/.agents/skills/qore-review-qaizen-labs/references/findings.md": "f9f9035e471c9832c6546e80e4fe857777fefceba781bd5801ee8f97bdeaa409"
+      },
+      "target_numbered_lines": [
+        {
+          "line": 1,
+          "text": "# Journey verification procedure"
+        },
+        {
+          "line": 2,
+          "text": ""
+        },
+        {
+          "line": 3,
+          "text": "Reconstructed tutorial fixture. Newly authored for QORE-003; not an authentic historical protocol or evidence of a website defect."
+        },
+        {
+          "line": 4,
+          "text": ""
+        },
+        {
+          "line": 5,
+          "text": "1. Open the public Labs entry and follow its journey link."
+        },
+        {
+          "line": 6,
+          "text": "2. Start the check without selecting an answer."
+        },
+        {
+          "line": 7,
+          "text": "3. Open help using its summary control."
+        },
+        {
+          "line": 8,
+          "text": "4. Reach Close with Tab or Shift+Tab, activate with Enter, and assert that help is closed and the summary is focused."
+        },
+        {
+          "line": 9,
+          "text": "5. Assert that the first question remains unanswered."
+        },
+        {
+          "line": 10,
+          "text": "6. Assert that the question remains unanswered before leaving it. Reach Back with Tab or Shift+Tab within 24 steps and activate it with Enter. Assert that the introduction is visible, the question and help are absent, and the introduction heading is focused."
+        }
+      ],
+      "required_summary_transitions": [
+        {
+          "id": "open-help",
+          "from": "first-question",
+          "to": "help-open",
+          "control": "summary",
+          "activation": "Enter"
+        },
+        {
+          "id": "toggle-help",
+          "from": "help-open",
+          "to": "help-closed",
+          "control": "summary",
+          "activation": "Space"
+        },
+        {
+          "id": "reopen-help",
+          "from": "help-closed",
+          "to": "help-open",
+          "control": "summary",
+          "activation": "Enter"
+        }
+      ],
+      "required_policy_checks": [
+        "read-only-policy",
+        "origin-policy"
+      ],
+      "allowed_methods": [
+        "GET",
+        "HEAD",
+        "OPTIONS"
+      ],
+      "allowed_origins": [
+        "https://qaizen.io"
+      ],
+      "observation_policy": {
+        "allowed_origins": [
+          "https://qaizen.io"
+        ]
+      },
+      "limits": [
+        "No answers, result generation, form submission or website source redistribution.",
+        "No mobile, complete questionnaire, performance or accessibility certification.",
+        "An analytics POST is expected to be blocked; retain its observed effects.",
+        "Private source commits do not identify the current deployment."
+      ],
+      "static_presence_checks": {
+        "summary_Space_instruction": false,
+        "summary_Enter_instruction": false,
+        "reopen_instruction": false,
+        "HTTP_method_or_request_policy_instruction": false,
+        "authorized_origin_or_URL_instruction": false,
+        "blocked_effect_instruction": false
+      },
+      "checker_command": "python3 -B /workspace/worker/checks/check_contract.py /workspace/worker/surface-contract.json",
+      "checker_exit": 0,
+      "checker_stdout": "{\n  \"valid\": true,\n  \"schema\": \"qaizen-labs-surface/1\",\n  \"checks\": [\n    \"entry\",\n    \"unanswered\",\n    \"help-toggle\",\n    \"close-focus\",\n    \"keyboard-back\",\n    \"introduction-focus\",\n    \"read-only-policy\",\n    \"origin-policy\"\n  ],\n  \"limit\": \"Contract consistency only; browser observations establish current behavior.\"\n}\n",
+      "checker_stderr": ""
+    },
+    "original_severity_preserved": true,
+    "candidate_narrowing": {
+      "C-002": "Confirmed missing policy coverage; no specific named precondition order or interception API is required."
+    },
+    "limitations": [
+      "Static document evidence only; no live website requests.",
+      "Verifier corrected a draft regex and reran its static audit; earlier draft output was not preserved. The complete final role report discloses this, and full target text is retained."
+    ]
+  }
+}

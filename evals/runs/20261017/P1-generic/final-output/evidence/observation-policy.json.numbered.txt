@@ -1,0 +1,5 @@
+1: {
+2:   "allowed_origins": [
+3:     "https://qaizen.io"
+4:   ]
+5: }

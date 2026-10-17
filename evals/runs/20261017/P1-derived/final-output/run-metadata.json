@@ -1,0 +1,17 @@
+{
+  "run_id": "qore003-20261017-p1-derived-1",
+  "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+  "target_snapshot_sha256": "ed6c0fb8d8737cb4b8fc9e6b3485e0e618bf332d15725a557cf30d17b127e394",
+  "last_relevant_change": "2026-10-17T09:53:58.555717+00:00",
+  "environment": {
+    "id": "qore-qualification-qore003-20261017-p1-derived-1",
+    "operator": "agent",
+    "host": "Docker Desktop Linux arm64 / Codex0.162.0"
+  },
+  "profile": {
+    "id": "qaizen-labs",
+    "version": "0.1.0",
+    "sha256": "f76afdd45cb6352e5044a06affc4182ea6cd40aa9c012fb216636a61faa428f0"
+  },
+  "identity_provenance": "Operator-supplied enclosing run metadata; target identity denotes the whole frozen prepared-input manifest. Per-file hashes and original bytes independently retained; enclosing digest serialization was not supplied."
+}

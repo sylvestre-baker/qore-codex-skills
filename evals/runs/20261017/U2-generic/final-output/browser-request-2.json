@@ -1,0 +1,137 @@
+[
+  {
+    "type": "click",
+    "selector": "a[href$='/labs/readiness-check']"
+  },
+  {
+    "type": "assert-url",
+    "url": "https://qaizen.io/labs/readiness-check"
+  },
+  {
+    "type": "snapshot",
+    "label": "introduction"
+  },
+  {
+    "type": "click",
+    "role": "button",
+    "name": "START THE CHECK",
+    "exact": true
+  },
+  {
+    "type": "assert-none-checked"
+  },
+  {
+    "type": "snapshot",
+    "label": "first-question"
+  },
+  {
+    "type": "traverse-focus",
+    "selector": "main details summary",
+    "max_steps": 24
+  },
+  {
+    "type": "assert-focused",
+    "selector": "main details summary"
+  },
+  {
+    "type": "keyboard",
+    "key": "Enter"
+  },
+  {
+    "type": "assert-attribute",
+    "selector": "main details",
+    "attribute": "open",
+    "value": ""
+  },
+  {
+    "type": "snapshot",
+    "label": "help-open-enter"
+  },
+  {
+    "type": "keyboard",
+    "key": "Space"
+  },
+  {
+    "type": "assert-attribute",
+    "selector": "main details",
+    "attribute": "open",
+    "value": null
+  },
+  {
+    "type": "snapshot",
+    "label": "help-closed-space"
+  },
+  {
+    "type": "keyboard",
+    "key": "Enter"
+  },
+  {
+    "type": "assert-attribute",
+    "selector": "main details",
+    "attribute": "open",
+    "value": ""
+  },
+  {
+    "type": "snapshot",
+    "label": "help-reopened"
+  },
+  {
+    "type": "traverse-focus",
+    "role": "button",
+    "name": "Close",
+    "exact": true,
+    "max_steps": 24
+  },
+  {
+    "type": "assert-focused",
+    "role": "button",
+    "name": "Close",
+    "exact": true
+  },
+  {
+    "type": "keyboard",
+    "key": "Enter"
+  },
+  {
+    "type": "assert-attribute",
+    "selector": "main details",
+    "attribute": "open",
+    "value": null
+  },
+  {
+    "type": "assert-focused",
+    "selector": "main details summary"
+  },
+  {
+    "type": "assert-none-checked"
+  },
+  {
+    "type": "snapshot",
+    "label": "help-closed-close-focus"
+  },
+  {
+    "type": "traverse-focus",
+    "role": "button",
+    "name": "Back",
+    "exact": true,
+    "max_steps": 24
+  },
+  {
+    "type": "assert-focused",
+    "role": "button",
+    "name": "Back",
+    "exact": true
+  },
+  {
+    "type": "keyboard",
+    "key": "Enter"
+  },
+  {
+    "type": "assert-focused",
+    "selector": "h1"
+  },
+  {
+    "type": "snapshot",
+    "label": "returned-introduction"
+  }
+]

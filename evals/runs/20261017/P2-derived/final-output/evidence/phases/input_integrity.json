@@ -1,0 +1,15 @@
+{
+  "qore_evidence": {
+    "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+    "target_snapshot_sha256": "92981d42bbb636d2809b22af476c7974c1a1f54b539b8e5a7d6c9767b0d53b1d",
+    "observed_at": "2026-10-17T11:40:19.208612+00:00",
+    "phase_id": "input_integrity"
+  },
+  "payload": {
+    "observed_at": "2026-10-17T11:40:19.208612+00:00",
+    "file_count": 18,
+    "unchanged": true,
+    "differences": [],
+    "procedure": "Recompute SHA-256 for every original supplied input/skill file and compare with initial input-manifest.json; no input writes performed."
+  }
+}

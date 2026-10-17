@@ -1,0 +1,40 @@
+{
+  "profile": {
+    "id": "qaizen-labs",
+    "version": "0.1.0",
+    "sha256": "f76afdd45cb6352e5044a06affc4182ea6cd40aa9c012fb216636a61faa428f0"
+  },
+  "selected_facts": [
+    {
+      "fact_id": "close-focus",
+      "source_id": "surface",
+      "source_digest": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+      "effect": "Selected as acceptance criterion for independent document review; finders read original sources. Actual findings will establish use.",
+      "actual_effect": "Reviewed separately: target step 4 specifies sequential keyboard Close, Enter activation, closure and summary focus. No defect found in this prescribed transition; this is not a browser pass."
+    },
+    {
+      "fact_id": "back-focus",
+      "source_id": "surface",
+      "source_digest": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+      "effect": "Selected as acceptance criterion for independent document review; finders read original sources. Actual findings will establish use.",
+      "actual_effect": "Review found click instead of sequential keyboard Back/Enter; independently confirmed C-1."
+    },
+    {
+      "fact_id": "unanswered-scope",
+      "source_id": "surface",
+      "source_digest": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+      "effect": "Selected as acceptance criterion for independent document review; finders read original sources. Actual findings will establish use.",
+      "actual_effect": "Unanswered instructions are present; independent C-3 confirms absent policy setup/validation and blocked analytics observation instructions. No traffic observed."
+    },
+    {
+      "fact_id": "surface-contract",
+      "source_id": "checker",
+      "source_digest": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b",
+      "effect": "Inspected check_contract.py, then ran python3 -B checks/check_contract.py surface-contract.json from project root; exit 0. This validates contract consistency only.",
+      "actual_effect": "Inspected then executed declared command; exit 0. Finders and verifier independently ran it too. Result only proves contract consistency, not executed browser checks."
+    }
+  ],
+  "unused_facts": [],
+  "observation_policy": "Read observation-policy.json directly as required; profile does not bind that source. Its supplied origin agrees with surface-contract.json.",
+  "surface_selection": "No web surface returned for review; no browser or network authorized."
+}

@@ -1,0 +1,8 @@
+{
+  "actor_id": "/root",
+  "dispatch_at": "2026-10-17T12:10:54.779460+00:00",
+  "request": "browser-request-3.json",
+  "actions": 36,
+  "deadline_seconds": 150,
+  "purpose": "G6 challenge Back visual focus occlusion, restart no selection/help reset, browser history and document reload"
+}

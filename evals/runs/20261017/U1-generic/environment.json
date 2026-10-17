@@ -1,0 +1,33 @@
+{
+  "image_id": "sha256:09894b981972962ae27f1e8e1726eb49886108a56c80742e70f71b0790c73aba",
+  "uid_name": "node",
+  "mounts": [],
+  "cap_drop": [
+    "ALL"
+  ],
+  "no_new_privileges": true,
+  "network_mode": "bridge",
+  "configs": [
+    "default_permissions=\"qore-trial\"",
+    "permissions.qore-trial.extends=\":workspace\"",
+    "permissions.qore-trial.filesystem={\":root\"=\"deny\",\":minimal\"=\"read\",\":tmpdir\"=\"write\",\":slash_tmp\"=\"write\",\":workspace_roots\"={\".\"=\"read\"},\"/workspace/output\"=\"write\",\"/var/lib/qore-feedback\"=\"read\"}",
+    "permissions.qore-trial.network.enabled=false",
+    "allow_login_shell=false",
+    "web_search=\"disabled\"",
+    "model_reasoning_effort=\"high\"",
+    "service_tier=\"default\"",
+    "features.multi_agent=true",
+    "agents.max_threads=3",
+    "features.apps=false",
+    "features.plugins=false",
+    "features.remote_plugin=false",
+    "features.memories=false",
+    "features.skill_search=false",
+    "features.skill_mcp_dependency_install=false",
+    "features.request_permissions_tool=false",
+    "mcp_servers={}"
+  ],
+  "requirements": "allowed_web_search_modes = [\"disabled\"]\nallow_browser_and_computer_use = false\nallow_login_shell = false\n[features]\napps = false\nplugins = false\nmemories = false\n[mcp_servers]\n",
+  "model": "gpt-6.1-sol",
+  "codex_version": "0.162.0"
+}

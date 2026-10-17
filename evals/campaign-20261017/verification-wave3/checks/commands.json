@@ -1,0 +1,17 @@
+{
+  "commands": [
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "<private-campaign-root>/verification-wave3/checks/reproduce.py"
+      ],
+      "cwd": "<private-workspace-root>",
+      "started_at": "2026-10-17T11:19:05.614693+00:00",
+      "finished_at": "2026-10-17T11:19:05.661257+00:00",
+      "exit_code": 0,
+      "artifact": "checks/results.json"
+    }
+  ],
+  "note": "Initial bounded source reads started at observed 11:17:50Z; no exact per-read timestamps are invented."
+}

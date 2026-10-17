@@ -1,0 +1,6 @@
+allowed_web_search_modes = ["disabled"]
+[features]
+apps = false
+plugins = false
+memories = false
+[mcp_servers]

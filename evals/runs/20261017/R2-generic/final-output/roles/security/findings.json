@@ -1,0 +1,13 @@
+{
+  "findings": [
+    {
+      "id": "S-1",
+      "title": "Procedure omits the required origin and read-only network controls",
+      "severity": "medium",
+      "evidence": "/workspace/worker/target/verification-protocol.md:5-10 contains the entire executable procedure: navigation, unanswered state, help, Close and Back assertions, but no network-policy setup, allowed-origin check, method restriction, or blocked-request observation. /workspace/worker/surface-contract.json:5-6 allows only https://qaizen.io and GET/HEAD/OPTIONS; :18 explicitly requires read-only-policy and origin-policy checks; :20 says an analytics POST is expected to be blocked and its observed effects retained. /workspace/worker/observation-policy.json:2-4 independently limits allowed_origins to https://qaizen.io. Concrete trigger: execute the six written steps in a browser without an independently installed request filter, while navigation or a control attempts the analytics POST anticipated by contract line 20, or follows a redirect to an unauthorized origin. Every written UI assertion can pass without either required policy being established or the prohibited request being recorded. Impact: the procedure can produce an apparently successful UI trace despite unverified observation authorization and potential disallowed network side effects. This is a demonstrated omission in the procedure, not an observation of emitted traffic or a deployment defect. Static reproduction is saved in /workspace/output/roles/security/static-policy-trace.json; the actual contract checker returned valid=true with limit=Contract consistency only; browser observations establish current behavior. (/workspace/output/roles/security/contract-check.json).",
+      "rationale": "The network authorization boundary must be effective before the first navigation. The supplied contract explicitly makes policy checks acceptance obligations; unanswered UI state alone does not establish allowed methods or origins.",
+      "uncertainty": "The supplied files contain no browser runner, request log or externally installed interception configuration. If a separately mandatory policy-enforcing harness is an established precondition for this procedure, it may supply the missing controls; that is not established by the three permitted primary sources. No actual POST, cross-origin request, privacy disclosure or website defect is alleged.",
+      "proposed_correction": "Before navigation, require enforcement of the supplied origin allowlist and GET/HEAD/OPTIONS method allowlist, and require evidence of policy effectiveness and the expected blocked analytics request and its effects. State the policy-enforcing harness as a required precondition if enforcement is supplied elsewhere."
+    }
+  ]
+}

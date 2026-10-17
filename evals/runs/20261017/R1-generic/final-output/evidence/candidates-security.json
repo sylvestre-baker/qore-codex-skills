@@ -1,0 +1,22 @@
+{
+  "findings": [
+    {
+      "id": "S-1",
+      "title": "The verification procedure omits the required read-only request policy",
+      "severity": "medium",
+      "evidence": "target/verification-protocol.md:5-10 starts navigation and checks only UI/answer state; it contains no method allowlist setup, request observation, blocked-POST assertion, or retention of blocked-request effects. surface-contract.json:6 permits only GET, HEAD, OPTIONS; :18 requires read-only-policy; :20 explicitly expects an analytics POST to be blocked and its observed effects retained. checks/check_contract.py:17-18 and :37-43 validate declarations only and explicitly limit their result to contract consistency. Trigger: the journey attempts the analytics POST anticipated by the contract, or any other disallowed request. Requirement: the observation must remain within the method allowlist and retain the blocked POST effects. Impact: following these steps alone neither establishes the required block before navigation nor detects/records a disallowed request, so a successful UI walkthrough can lack required read-only evidence and can permit a request outside authorized methods absent external setup. This is a protocol gap, not a claim that the live site sends any request.",
+      "triggering_condition": "A browser journey attempts the analytics POST anticipated in the contract or another method outside GET, HEAD, OPTIONS, with no separate externally configured request guard.",
+      "requirement": "surface-contract.json:6,18,20: allowed_methods, read-only-policy, expected analytics POST blocking and observed-effects retention.",
+      "practical_impact": "Procedure execution alone cannot establish or enforce the authorized request boundary; UI pass evidence can omit the required blocked-request evidence."
+    },
+    {
+      "id": "S-2",
+      "title": "The verification procedure never checks the authorized origin boundary",
+      "severity": "medium",
+      "evidence": "target/verification-protocol.md:5 directs the operator to open the public Labs entry and follow its journey link, but :5-10 never names, loads, checks, or enforces an origin allowlist. observation-policy.json:2-4 authorizes only https://qaizen.io, matching surface-contract.json:5; surface-contract.json:18 explicitly requires origin-policy. checks/check_contract.py:12-15 checks only the declared entry URL, not the actual followed URL or subsequent requests, and :42-43 limits its output to contract consistency. Trigger: a selected journey link, redirect, or observed request crosses to an origin outside https://qaizen.io. Requirement: verify the observation against the sole authorized origin. Impact: the written procedure has no stopping condition or evidence check for the crossing, so it can finish all listed assertions without establishing the required origin-policy check. No actual external navigation or request is alleged.",
+      "triggering_condition": "Navigation or an observed request crosses to an origin other than https://qaizen.io and no independently configured allowlist intercepts it.",
+      "requirement": "observation-policy.json:2-4 and surface-contract.json:5,18: sole allowed origin and required origin-policy check.",
+      "practical_impact": "An apparently successful walkthrough can lack evidence of scope compliance and can continue beyond the authorized origin absent external guarding."
+    }
+  ]
+}

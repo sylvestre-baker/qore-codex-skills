@@ -1,0 +1,17 @@
+{
+  "schema": "qore-eval-qualification/1",
+  "run_id": "qore003-20261017-u1-derived-1",
+  "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+  "input_manifest_sha256": "b269181f3e44e5b4d84fe94ae1d683f85d2b8bde69f389d32d030b1e0909ef36",
+  "qore_run_sha256": "3371097831299aedb99f03bace12270070d454997b059a32df69bd1f504ec44d",
+  "declared_coverage": "PARTIAL",
+  "coverage": "PARTIAL",
+  "assessor": "/root/campaign_ux_assessor",
+  "verifier": "/root/campaign_final_verifier",
+  "assessed_at": "2026-10-17T12:22:41.534375Z",
+  "reason": "Preserve original PARTIAL. Applicable G1 direct deep entry remains unavailable/unobserved; actual functional entry/help/keyboard Back passes and warm reload/history do not fill that distinct required observation. No product finding is regraded here.",
+  "evidence": [
+    "independent-assessment.json",
+    "independent-verification.json"
+  ]
+}

@@ -57,7 +57,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "bee096ea1cb7ad2cd2128566ba134120112470ec1c6e0ec7c23f471d34f89cdc"
+      "sha256": "79a35ec41312d557025f11da60fd888feb4dd4fef2be56315eda97634e062020"
     },
     {
       "path": "docs/architecture.md",
@@ -69,7 +69,7 @@
     },
     {
       "path": "docs/contracts.md",
-      "sha256": "441846fbc4e4d1699df1fc609eca37b529ac56b665a593b6419812d94298639d"
+      "sha256": "deabe860ffeb06245f8687e9acf23bb49b8438cd20322735214b83c76f314638"
     },
     {
       "path": "docs/coordination.md",
@@ -117,7 +117,7 @@
     },
     {
       "path": "docs/specialization.md",
-      "sha256": "2cebe4879178343c9ae0009273b3a59e372bffda3a6ac4a101a3b6269f80349b"
+      "sha256": "2896ff5b3bec60758bd32e19bdc0a2afe91d07f3a53680984f156882fec83eac"
     },
     {
       "path": "docs/troubleshooting.md",
@@ -287,6 +287,12 @@
       "limits": [
         "No model trial. check used a synthetic unit fixture."
       ]
+    },
+    {
+      "id": "qore003-campaign-20261017",
+      "path": "docs/evidence/specialization/README.md",
+      "sha256": "97cdf16b2a607b711a3cd25f3990dcf5f201260ed2909bae05f6338774cdc7b7",
+      "category": "Selected actual campaign, independent qualification and correction evidence; bounded maintainer/agent observations, not external human use"
     }
   ],
   "entries": [
@@ -338,7 +344,7 @@
       "implementation": [
         {
           "path": "tools/qore.py",
-          "sha256": "ac501036c702b7ca5eae75d333298b6db22e519e0114a8c05c1f2bded4a9f713"
+          "sha256": "0eb527d8b47eaeb4f380e4ec47ff4e64d0d80fdff3bc342018e54ea5bc161ebc"
         }
       ],
       "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
@@ -384,7 +390,7 @@
       "implementation": [
         {
           "path": "skills/qore-review/SKILL.md",
-          "sha256": "ae7a3bc448eda7262fa8163a67b0ce712efc2779eaaf00ce57618dc966dd6367"
+          "sha256": "18a9df8887c6d37d3b72355da974b42c00032ad2703faf89b2681b0fb8c459f5"
         }
       ],
       "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
@@ -426,7 +432,7 @@
       "implementation": [
         {
           "path": "tools/qore.py",
-          "sha256": "ac501036c702b7ca5eae75d333298b6db22e519e0114a8c05c1f2bded4a9f713"
+          "sha256": "0eb527d8b47eaeb4f380e4ec47ff4e64d0d80fdff3bc342018e54ea5bc161ebc"
         },
         {
           "path": "tools/context.py",
@@ -657,7 +663,7 @@
       "implementation": [
         {
           "path": "tools/browser_probe.mjs",
-          "sha256": "544d47211ac5aefde57072aef4ded1140c21030555b0e45e93f8821794249add"
+          "sha256": "19f980d0ad6d5d48029239c9dcc9ef3dfd7ada6f1d3ad653fdb2aa7c93c16ca7"
         }
       ],
       "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
@@ -782,7 +788,7 @@
       "implementation": [
         {
           "path": "tools/qore.py",
-          "sha256": "ac501036c702b7ca5eae75d333298b6db22e519e0114a8c05c1f2bded4a9f713"
+          "sha256": "0eb527d8b47eaeb4f380e4ec47ff4e64d0d80fdff3bc342018e54ea5bc161ebc"
         },
         {
           "path": "tools/context.py",
@@ -827,7 +833,7 @@
       "implementation": [
         {
           "path": "tools/qore.py",
-          "sha256": "ac501036c702b7ca5eae75d333298b6db22e519e0114a8c05c1f2bded4a9f713"
+          "sha256": "0eb527d8b47eaeb4f380e4ec47ff4e64d0d80fdff3bc342018e54ea5bc161ebc"
         }
       ],
       "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
@@ -865,7 +871,7 @@
       "implementation": [
         {
           "path": "tests/test_package.py",
-          "sha256": "750e9313080f6764f6fbb6cf6abc60a01c47770b37db36714509e476075ddebc"
+          "sha256": "13532d3b78f76ed9712ce9555dbfa3ef99973792840da4819403639feb73ba2a"
         },
         {
           "path": "tests/test_validators.py",
@@ -985,7 +991,7 @@
       "implementation": [
         {
           "path": "skills/qore-review/SKILL.md",
-          "sha256": "ae7a3bc448eda7262fa8163a67b0ce712efc2779eaaf00ce57618dc966dd6367"
+          "sha256": "18a9df8887c6d37d3b72355da974b42c00032ad2703faf89b2681b0fb8c459f5"
         }
       ],
       "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
@@ -1061,7 +1067,7 @@
       "implementation": [
         {
           "path": "tools/qore.py",
-          "sha256": "ac501036c702b7ca5eae75d333298b6db22e519e0114a8c05c1f2bded4a9f713"
+          "sha256": "0eb527d8b47eaeb4f380e4ec47ff4e64d0d80fdff3bc342018e54ea5bc161ebc"
         }
       ],
       "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
@@ -1100,7 +1106,7 @@
       "implementation": [
         {
           "path": "tools/qore.py",
-          "sha256": "ac501036c702b7ca5eae75d333298b6db22e519e0114a8c05c1f2bded4a9f713"
+          "sha256": "0eb527d8b47eaeb4f380e4ec47ff4e64d0d80fdff3bc342018e54ea5bc161ebc"
         }
       ],
       "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
@@ -1138,7 +1144,7 @@
       "implementation": [
         {
           "path": "tools/qore.py",
-          "sha256": "ac501036c702b7ca5eae75d333298b6db22e519e0114a8c05c1f2bded4a9f713"
+          "sha256": "0eb527d8b47eaeb4f380e4ec47ff4e64d0d80fdff3bc342018e54ea5bc161ebc"
         }
       ],
       "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
@@ -1177,7 +1183,7 @@
       "implementation": [
         {
           "path": "tools/qore.py",
-          "sha256": "ac501036c702b7ca5eae75d333298b6db22e519e0114a8c05c1f2bded4a9f713"
+          "sha256": "0eb527d8b47eaeb4f380e4ec47ff4e64d0d80fdff3bc342018e54ea5bc161ebc"
         }
       ],
       "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
@@ -1216,7 +1222,7 @@
       "implementation": [
         {
           "path": "tools/qore.py",
-          "sha256": "ac501036c702b7ca5eae75d333298b6db22e519e0114a8c05c1f2bded4a9f713"
+          "sha256": "0eb527d8b47eaeb4f380e4ec47ff4e64d0d80fdff3bc342018e54ea5bc161ebc"
         }
       ],
       "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
@@ -1255,7 +1261,7 @@
       "implementation": [
         {
           "path": "tools/qore.py",
-          "sha256": "ac501036c702b7ca5eae75d333298b6db22e519e0114a8c05c1f2bded4a9f713"
+          "sha256": "0eb527d8b47eaeb4f380e4ec47ff4e64d0d80fdff3bc342018e54ea5bc161ebc"
         }
       ],
       "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
@@ -1293,7 +1299,7 @@
       "implementation": [
         {
           "path": "tools/qore.py",
-          "sha256": "ac501036c702b7ca5eae75d333298b6db22e519e0114a8c05c1f2bded4a9f713"
+          "sha256": "0eb527d8b47eaeb4f380e4ec47ff4e64d0d80fdff3bc342018e54ea5bc161ebc"
         }
       ],
       "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
@@ -1408,7 +1414,7 @@
       "implementation": [
         {
           "path": "skills/qore-review/scripts/redact-for-verifier.mjs",
-          "sha256": "dc249524c749ad5b511aef0a2cf08b4cfd5c47c1e0de4fd41c5c70746b471083"
+          "sha256": "7be2426d315d8c28d19fe0b640f5088d52363aa800fec00c7d013ee83e6fa6e9"
         }
       ],
       "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
@@ -1561,7 +1567,7 @@
       "implementation": [
         {
           "path": "tools/build_site.py",
-          "sha256": "35dee480f041feb5f11dd9f640be18f77e7825d64c76fd7ada721a1dd50bf0bf"
+          "sha256": "003c207e198d24b13c1572eda3eb2abb956d69a19cc20bfeb17dc81dc8a696c5"
         },
         {
           "path": "tools/check_site.py",
@@ -1932,7 +1938,7 @@
       "implementation": [
         {
           "path": "tools/qore.py",
-          "sha256": "ac501036c702b7ca5eae75d333298b6db22e519e0114a8c05c1f2bded4a9f713"
+          "sha256": "0eb527d8b47eaeb4f380e4ec47ff4e64d0d80fdff3bc342018e54ea5bc161ebc"
         }
       ],
       "supported_host": "Local Python 3 interpreter",
@@ -1971,7 +1977,7 @@
       "implementation": [
         {
           "path": "tools/evaluate.py",
-          "sha256": "3c53e167b98fd787943066c53a17bf0505bcab445a5f690b7514dcfcd33f33d8"
+          "sha256": "775e3b4ec4713ed8e4f97b950cec8b16bb0eca25334f8722330f727b478029e8"
         }
       ],
       "supported_host": "Python3 standard library, matching frozen Qore candidate",
@@ -1981,9 +1987,9 @@
         "Actual identity-bound record and evidence for check"
       ],
       "inputs_and_substitutions": {
-        "RECORD": "Actual evaluation record; no real trial exists yet",
+        "RECORD": "An actual evaluation record from evals/runs/20261017/<cell>/evaluation.json; preserve its evidence root",
         "ROOT": "Evidence root",
-        "SERIES": "evals/series.json for current blocked registry",
+        "SERIES": "evals/series.json, containing all18 original attempts with later independent qualification",
         "NEW_DIR": "Unused local output directory"
       },
       "expected_output": [
@@ -1996,9 +2002,10 @@
       "execution": {
         "status": "REFERENCE_TEMPLATE_NOT_EXECUTED_AS_WRITTEN",
         "evidence_ids": [
-          "qore003-local-qualification"
+          "qore003-local-qualification",
+          "qore003-campaign-20261017"
         ],
-        "limit": "Related local preparation/summary and synthetic record tests are recorded separately; no actual model trial is established."
+        "limit": "Command shown with placeholders; actual eighteen preparation/record checks and summary execution are retained with exact input/candidate identities. Helpers validate entered evidence and do not execute or independently judge a model."
       }
     },
     {
@@ -2013,7 +2020,7 @@
       "implementation": [
         {
           "path": "tools/evaluate.py",
-          "sha256": "3c53e167b98fd787943066c53a17bf0505bcab445a5f690b7514dcfcd33f33d8"
+          "sha256": "775e3b4ec4713ed8e4f97b950cec8b16bb0eca25334f8722330f727b478029e8"
         }
       ],
       "supported_host": "Python3 standard library, matching frozen Qore candidate",
@@ -2023,9 +2030,9 @@
         "Actual identity-bound record and evidence for check"
       ],
       "inputs_and_substitutions": {
-        "RECORD": "Actual evaluation record; no real trial exists yet",
+        "RECORD": "An actual evaluation record from evals/runs/20261017/<cell>/evaluation.json; preserve its evidence root",
         "ROOT": "Evidence root",
-        "SERIES": "evals/series.json for current blocked registry",
+        "SERIES": "evals/series.json, containing all18 original attempts with later independent qualification",
         "NEW_DIR": "Unused local output directory"
       },
       "expected_output": [
@@ -2038,15 +2045,17 @@
       "execution": {
         "status": "REFERENCE_TEMPLATE_NOT_EXECUTED_AS_WRITTEN",
         "evidence_ids": [
-          "qore003-local-qualification"
+          "qore003-local-qualification",
+          "qore003-campaign-20261017"
         ],
-        "limit": "Related local preparation/summary and synthetic record tests are recorded separately; no actual model trial is established."
+        "limit": "Command shown with placeholders; actual eighteen preparation/record checks and summary execution are retained with exact input/candidate identities. Helpers validate entered evidence and do not execute or independently judge a model."
       }
     }
   ],
   "limits": [
     "This inventory is a documentation index, not a qore-run/1 execution record or readiness certificate",
     "Logical private evidence references are audit identities, not required runtime dependencies",
-    "Public summaries retain narrow scope; no benchmark, external human usability, or full-method success is inferred"
+    "Public summaries retain narrow scope; no benchmark, external human usability, or full-method success is inferred",
+    "Implementation digests identify current source, not an automatic requalification of historical command evidence. The18 original trials retain their frozen candidate, distinct from later corrections."
   ]
 }

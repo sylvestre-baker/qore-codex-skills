@@ -1,6 +1,6 @@
 # Evaluate a project adaptation
 
-**Campaign status: BLOCKED at isolation preflight. All eighteen cells are NOT_RUN. No comparative benefit is established.**
+**All 18 original cells executed, including the retained pilot; 14 COMPLETE and 4 PARTIAL after independent coverage qualification. Comparative benefit remains UNKNOWN.**
 
 Use this optional protocol to decide whether to retain, simplify or fix an adaptation for the obligations tested on Qaizen Labs. For your first Qore result, use the [published review quickstart](../README.md#try-one-review). The [recorded Labs case](evidence/qaizen-labs/README.md) remains separate from this experiment.
 
@@ -37,7 +37,7 @@ The criteria examine relevant project rules, evidence, omissions, unsupported as
 
 ## Prepare the environment before trials
 
-**Observed blocker:** the existing unprivileged Linux image cannot start the nested Codex command sandbox. Bubblewrap fails before the payload executes. See the [actual no-model probe](evidence/specialization/isolation-probe.json). No comparative cell was started and no unrestricted fallback was used. The recovery is a compatible authorized independent environment followed by the same boundary checks.
+**Observed recovery:** the original [no-model probe](evidence/specialization/isolation-probe.json) failed before command execution. A separately qualified [disposable Linux runtime](evidence/specialization/runtime/README.md) then ran the pilot and all remaining cells. It used an explicit scoped seccomp syscall allowance, UID 1000, dropped capabilities, no new privileges, no host mounts, a named inner filesystem sandbox, disabled connectors and observed parent/child boundary controls. Model transport remained available; command networking did not. This qualifies the recorded environment, not arbitrary Docker installations or the historical clean-room default.
 
 Workers must not reach old answers, reports, evaluator keys, neighboring cell results, private sources, personal skill directories or the full repository history. A new chat alone does not establish that isolation. The common input bundle contains the selected sources and the target document; each Qore condition also receives its complete autonomous skill resources.
 
@@ -59,7 +59,7 @@ The live deployment may change independently of the local surface contract. Matc
 
 The implementation is `tools/evaluate.py`. Its three operations prepare local files, check recorded evidence and summarize entered evaluations. They do not run agents, models, browsers or paid services, and they do not judge reasoning quality.
 
-**Command status:** preparation was executed for all three R1 conditions, and the current series summary was generated. Record validation is exercised with explicit synthetic positive and negative fixtures; no real comparative run is claimed. Candidate qualification receipts are linked in the result inventory.
+**Command status:** all eighteen preparations and original agent executions are retained. The checker validates their exported records and the generated summary consumes later independent qualification without rewriting original method declarations. Candidate and correction checks are linked in the result inventory. These helpers still do not execute or grade agents themselves.
 
 Run from the repository root with Python 3. Substitute a scenario ID and condition listed in the registries; use a new, unused output directory:
 
@@ -77,6 +77,8 @@ python3 tools/evaluate.py summarize SERIES --output NEW_DIR
 ```
 
 `RECORD` is an actual evaluation record, `ROOT` is its evidence root, and `SERIES` is the actual series registry. `NEW_DIR` is an unused directory for generated summaries. These are substitutions, not existing evidence files. Validation checks the record’s identities and referenced bytes. A passing structure does not establish a completed phase or correct conclusion.
+
+A later independent qualification can restrict the effective coverage while preserving the original method record and declared coverage; see the [qualification contract](contracts.md#independent-diagnostic-qualification). Summaries report both declarations and effective states and disclose unqualified cells. A valid metadata packet never proves independent work occurred.
 
 The evaluation record references existing Qore execution records where applicable. Baseline records have no Qore run reference. Applicable criterion states are **MET / NOT_MET / UNKNOWN**. Applicability is frozen per scenario; an applicable criterion cannot be skipped as NOT_APPLICABLE. Comparability is **COMPARABLE / UNVERIFIED / INVALID**. These are separate from execution coverage and finding severity. Cells without execution remain **NOT_RUN** in the series.
 
@@ -102,3 +104,9 @@ A tie, valid empty review or absent demonstrated benefit is an acceptable outcom
 Qodo may review the frozen implementation diff separately if access and capabilities are available. Its actual output is retained and independently checked. An unobserved Qodo review stays NOT_OBSERVED and is not part of the three-condition comparison.
 
 No trial or helper grants publication, merge, deployment, outreach or spending permission. Public evidence requires a provenance and disclosure review. Private sources, credentials, raw traces and client code are not automatically exported.
+
+## Recorded execution limits
+
+The frozen candidate remains bound to the original eighteen attempts. Later profile 0.1.1, browser-harness, planning-deadline and reporting corrections are separately identified. There were no excluded pilots or replacement quality trials. Neutral filenames did not blind evaluators to method content. Predeclared criteria were applied qualitatively after outputs; the operational interpretation was not a validated standardized rubric.
+
+Child context wall intervals are conservative bounds, not exact compute or billing telemetry. Some role returns and one evaluator exceeded their smaller declared budgets; missed expiry requests and actual times remain in evidence. No universal budget-compliance claim is made. A required deep-entry observation unavailable through the frozen relay remains missing; warm navigation, reload and history do not silently replace it.

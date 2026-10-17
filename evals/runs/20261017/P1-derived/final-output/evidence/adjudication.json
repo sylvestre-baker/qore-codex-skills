@@ -1,0 +1,197 @@
+{
+  "qore_evidence": {
+    "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+    "target_snapshot_sha256": "ed6c0fb8d8737cb4b8fc9e6b3485e0e618bf332d15725a557cf30d17b127e394",
+    "observed_at": "2026-10-17T10:50:36.403163+00:00",
+    "phase_id": "adjudication"
+  },
+  "payload": {
+    "mode": "Workflow",
+    "actor_id": "/root",
+    "observed_at": "2026-10-17T10:50:36.228877+00:00",
+    "barrier": {
+      "utc": "2026-10-17T10:43:51.194754+00:00",
+      "requested": [
+        "product",
+        "architecture",
+        "ux",
+        "delivery",
+        "qa"
+      ],
+      "returned": [
+        "product",
+        "architecture",
+        "ux",
+        "delivery",
+        "qa"
+      ],
+      "missing": [],
+      "full_report_files": [
+        {
+          "path": "reports/product-analysis.md",
+          "sha256": "6356be021d9e14dc2147fdb2e6723e18c3b62fb03b5c5864e5ffb4cde9643be5"
+        },
+        {
+          "path": "reports/architecture-analysis.md",
+          "sha256": "1bad2a39bcc2cf9870949c2eaabefabcbc4fae918ff3310193fec90a544eb18f"
+        },
+        {
+          "path": "reports/ux-analysis.md",
+          "sha256": "d373fd33c0a0d92d4dda490967477f421bf2b4ddc3f82de1144bb54fd532b22a"
+        },
+        {
+          "path": "reports/delivery-analysis.md",
+          "sha256": "33ca83f4dd5923fb9f2e502cf9a16409ea85e939151f0cd8783ea5b95e3bf5ef"
+        },
+        {
+          "path": "reports/qa-analysis.md",
+          "sha256": "40feecda31ccefeb2ec29493e8add1ac3177bad407325668b181f61790397183"
+        }
+      ],
+      "outcome": "All five complete initial reports saved before any cross-examination dispatch."
+    },
+    "cross_examination_barrier": {
+      "utc": "2026-10-17T10:47:41.089559+00:00",
+      "requested": [
+        "product",
+        "architecture",
+        "ux",
+        "delivery",
+        "qa"
+      ],
+      "returned": [
+        "product",
+        "architecture",
+        "ux",
+        "delivery",
+        "qa"
+      ],
+      "missing": [],
+      "stopping_reason": "One pass per role complete; remaining source/host boundaries recorded, no extra quality round."
+    },
+    "decisions": [
+      {
+        "id": "D1",
+        "alternatives": [
+          "Back-only patch",
+          "one complete existing-procedure correction",
+          "new runner/checker/app work"
+        ],
+        "selected": "One source-aligned existing-procedure correction; preserve fixture and useful assertions.",
+        "evidence": [
+          "TASK.md",
+          "surface-contract.json:/transitions,/required_checks",
+          "checker:46-50"
+        ],
+        "rejected": "Back-only omits help/policy; runner/checker rewrite has no supplied need.",
+        "consequence": "No input edits or browser work."
+      },
+      {
+        "id": "D2",
+        "selected": "All seven transitions and eight checks explicitly covered.",
+        "evidence": [
+          "surface-contract.json:/transitions,/required_checks"
+        ],
+        "consequence": "AC01-AC14 and manual coverage review; static validator not complete predicate."
+      },
+      {
+        "id": "D3",
+        "alternatives": [
+          "merged focus evidence",
+          "distinct reachability/control/destination observations"
+        ],
+        "selected": "Distinct observations and actual focus, no assigned focus as proof.",
+        "evidence": [
+          "checker:32-36",
+          "surface-contract.json:/focus_targets"
+        ],
+        "qualification": "Presentation-level absence is an adopted proposal, not explicit DOM/accessibility-tree source wording; verifier C12 partially supported. No DOM deletion or re-entry required."
+      },
+      {
+        "id": "D4",
+        "selected": "Guard readiness before entry; methods all requests, exact-origin main-frame/popup checks including redirects, retain blocked effects.",
+        "evidence": [
+          "surface-contract.json:/scope,/limits/2",
+          "observation-policy.json",
+          "fresh profile unanswered-scope"
+        ],
+        "refutations": [
+          "href suffix is a control locator, not origin authority",
+          "expected analytics blocking is not harmlessness or automatic journey pass"
+        ],
+        "uncertainty": "Host enforcement and actual effects unknown."
+      },
+      {
+        "id": "D5",
+        "selected": "Separate static/document/observed gates, per-check outcomes and first failure retained.",
+        "evidence": [
+          "checker:42-50",
+          "delivery-probe-command.json",
+          "qa-cross-examination.md"
+        ],
+        "qualification": "QA probe has report evidence but no separately retained raw transcript."
+      },
+      {
+        "id": "D6",
+        "alternatives": [
+          "canonical Tab",
+          "Tab or Shift+Tab either-direction proof"
+        ],
+        "selected": "Forward Tab then Enter for canonical Close and Back.",
+        "evidence": [
+          "surface-contract.json:/transitions/5-6",
+          "checker:35-36"
+        ],
+        "refutations": [
+          "checker reverse tolerance applies Back only, does not amend literal transitions or validate Close traversal"
+        ],
+        "minority_revision": "Product narrows initial broader Close wording; Architecture retracts reverse-as-equivalent; original reports retained. Shift+Tab is not declared forbidden."
+      },
+      {
+        "id": "D7",
+        "alternatives": [
+          "infer third-party subresource permission from navigation-specific profile",
+          "treat all-resource blocking as an explicit measured source rule",
+          "retain unresolved authority boundary"
+        ],
+        "selected": "Retain open boundary; no broader permission inferred; resolve or conservatively block before future affected requests. Stop on allowlist mismatch.",
+        "evidence": [
+          "surface-contract.json:/allowed_origins",
+          "observation-policy.json",
+          "profile unanswered-scope"
+        ],
+        "dissent": "Product/QA challenge Architecture navigation-only wording; Architecture qualifies no implied permission.",
+        "consequence": "Document plan ready; affected future observation lacks prerequisite."
+      }
+    ],
+    "severity_preservation": {
+      "confirmed_keyboard_gap": "High",
+      "help_toggle_omission": "Medium",
+      "guard_document_omission_QA": "Medium",
+      "conditional_guard_violation_impact_peers": "High",
+      "origin_ambiguity": "Medium; potential guard violation High",
+      "canonical_traversal_precision": "Low",
+      "deployment_misstatement": "Low in Delivery, Medium in Architecture"
+    },
+    "stopping_reason": "All five analyses and one challenge per role returned; source conflicts adjudicated without vote count; external unknowns retained, no extra quality pass.",
+    "fresh_verifier": {
+      "input": "claims-filtered.json; mechanical whitelist; original raw sources only",
+      "provided": 12,
+      "covered": 12,
+      "supported": 11,
+      "partially_supported": [
+        "C12"
+      ],
+      "refuted": [],
+      "missing": [],
+      "effect": "Presentation absence remains explicitly interpretive. No live certification."
+    },
+    "unresolved": [
+      "third-party subresource authorization",
+      "observer host capabilities",
+      "actual DOM and control identity",
+      "numeric observation waits/traversal bounds",
+      "analytics effects and deployed behavior"
+    ]
+  }
+}

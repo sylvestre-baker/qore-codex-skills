@@ -1,0 +1,118 @@
+{
+  "requested": [
+    "finder.correctness",
+    "finder.security",
+    "finder.feasibility",
+    "verifier"
+  ],
+  "returned": [
+    "finder.correctness",
+    "finder.security",
+    "finder.feasibility",
+    "verifier"
+  ],
+  "missing": [],
+  "overall_started_at": "2026-10-17T10:09:12Z",
+  "overall_deadline": "2026-10-17T10:24:12Z",
+  "budget": {
+    "wall_seconds": 900,
+    "aggregate_agent_seconds": 2400,
+    "finder_deadline": "2026-10-17T10:13:30Z",
+    "per_worker_seconds": 240,
+    "verifier_seconds": 240,
+    "conservative_total_agent_seconds_ceiling": 1860,
+    "ceiling_explanation": "Root <=900 wall seconds plus four child contexts <=240 seconds each. Actual aggregate usage is not exposed by host; ceiling is a scheduling bound, not measured usage."
+  },
+  "actors": [
+    {
+      "role": "finder.correctness",
+      "actor_id": "/root/correctness",
+      "context_name": "/root/correctness",
+      "fork_turns": "none",
+      "dispatch_utc_interval": [
+        "2026-10-17T10:09:22Z",
+        "2026-10-17T10:09:48Z"
+      ],
+      "dispatch_timestamp_precision": "Tool does not expose per-spawn UTC; clock readings bracket the actual three dispatches.",
+      "return_observed_at": "2026-10-17T10:11:04Z",
+      "report_file": "evidence/finder-correctness.md",
+      "usage": null,
+      "usage_unavailable_reason": "Host collaboration tool does not expose token or agent-second accounting.",
+      "completed": true,
+      "returned_report": "evidence/finder-correctness.md",
+      "return_timestamp_precision": "First UTC clock sampled immediately after receiving complete final role response; host supplies no per-message UTC."
+    },
+    {
+      "role": "finder.security",
+      "actor_id": "/root/security",
+      "context_name": "/root/security",
+      "fork_turns": "none",
+      "dispatch_utc_interval": [
+        "2026-10-17T10:09:22Z",
+        "2026-10-17T10:09:48Z"
+      ],
+      "dispatch_timestamp_precision": "Tool does not expose per-spawn UTC; clock readings bracket the actual three dispatches.",
+      "return_observed_at": "2026-10-17T10:10:46Z",
+      "report_file": "evidence/finder-security.md",
+      "usage": null,
+      "usage_unavailable_reason": "Host collaboration tool does not expose token or agent-second accounting.",
+      "returned_report": "evidence/finder-security.md",
+      "completed": true,
+      "return_timestamp_precision": "First UTC clock sampled immediately after receiving complete final role response; host supplies no per-message UTC."
+    },
+    {
+      "role": "finder.feasibility",
+      "actor_id": "/root/feasibility",
+      "context_name": "/root/feasibility",
+      "fork_turns": "none",
+      "dispatch_utc_interval": [
+        "2026-10-17T10:09:22Z",
+        "2026-10-17T10:09:48Z"
+      ],
+      "dispatch_timestamp_precision": "Tool does not expose per-spawn UTC; clock readings bracket the actual three dispatches.",
+      "return_observed_at": "2026-10-17T10:10:56Z",
+      "report_file": "evidence/finder-feasibility.md",
+      "usage": null,
+      "usage_unavailable_reason": "Host collaboration tool does not expose token or agent-second accounting.",
+      "completed": true,
+      "returned_report": "evidence/finder-feasibility.md",
+      "return_timestamp_precision": "First UTC clock sampled immediately after receiving complete final role response; host supplies no per-message UTC."
+    },
+    {
+      "role": "verifier",
+      "actor_id": "/root/verifier",
+      "context_name": "/root/verifier",
+      "fork_turns": "none",
+      "dispatch_utc_interval": [
+        "2026-10-17T10:11:17Z",
+        "2026-10-17T10:11:33.436467+00:00"
+      ],
+      "dispatch_timestamp_precision": "Clock readings bracket actual successful spawn.",
+      "deadline": "2026-10-17T10:15:25Z",
+      "return_observed_at": "2026-10-17T10:13:16Z",
+      "report_file": "evidence/verifier-report.md",
+      "usage": null,
+      "usage_unavailable_reason": "Host collaboration tool exposes neither token nor agent-second accounting.",
+      "inputs": [
+        "evidence/claims.json",
+        "/workspace/worker/target/verification-protocol.md",
+        "/workspace/worker/surface-contract.json",
+        "/workspace/worker/checks/check_contract.py",
+        "/workspace/worker/observation-policy.json",
+        "skill protocol.md and findings.md"
+      ],
+      "isolation": "Fresh fork_turns=none context. No finder reports or unfiltered packet supplied.",
+      "completed_at_utc": "2026-10-17T10:13:08.686301+00:00",
+      "completed": true,
+      "returned_report": "evidence/verifier-report.md",
+      "return_timestamp_precision": "First UTC clock sampled after complete final response; worker separately records completed_at_utc."
+    }
+  ],
+  "role_expiries": [],
+  "usage_summary": {
+    "actual_aggregate_agent_seconds": null,
+    "actual_tokens": null,
+    "reason": "Host exposes no agent-second/token counters; wall-time observations and conservative scheduling bound are retained instead.",
+    "upper_bound_from_observed_intervals_seconds": 399.0
+  }
+}

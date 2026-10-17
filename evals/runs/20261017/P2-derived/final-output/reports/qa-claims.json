@@ -1,0 +1,52 @@
+[
+  {
+    "id": "QA-1",
+    "claim": "The target already requires sequential keyboard Back, Enter activation, a 24-step bound, unanswered precondition and full return/focus assertions; replacing these as a newly missing requirement would misstate the artifact.",
+    "source_locations": [
+      "target/verification-protocol.md:8-10",
+      "surface-contract.json:14-17",
+      "checks/check_contract.py:32-36"
+    ],
+    "proposed_change": "Preserve all existing Close and Back obligations; clarify evidence rather than inventing a missing Back action. Identify canonical Tab and preserve Shift+Tab as a separately evidenced target alternative; do not infer unobserved path coverage.",
+    "severity": "high",
+    "refutation": "A line-level candidate diff may show a particular existing obligation is actually removed or ambiguous; absence of runtime evidence does not refute its written presence. Cross-examination correction: checker lines 35-36 permit Tab/Shift+Tab for Back only; literal surface-contract lines 14-15 declare Tab for Close and Back. Preserve target alternatives, but label observed directions; Shift+Tab-only Close does not establish canonical Tab traversal."
+  },
+  {
+    "id": "QA-2",
+    "claim": "The fixture does not explicitly cover the contract's Enter-open, Space-close and Enter-reopen help sequence.",
+    "source_locations": [
+      "surface-contract.json:11-13",
+      "target/verification-protocol.md:7"
+    ],
+    "proposed_change": "Specify all three summary activations and visible states before independently exercising Close.",
+    "severity": "medium",
+    "refutation": "An applicable current procedure explicitly specifying those three transitions would resolve the gap; no such detail exists in the inspected target."
+  },
+  {
+    "id": "QA-3",
+    "claim": "The fixture lacks explicit read-only and origin policy setup; passing the contract checker does not enforce browser boundaries.",
+    "source_locations": [
+      "surface-contract.json:4-6",
+      "surface-contract.json:18-20",
+      "observation-policy.json:2-4",
+      "checks/check_contract.py:12-18",
+      "checks/check_contract.py:42-43",
+      ".agents/skills/qore-plan-qaizen-labs/references/project.json:invariants/unanswered-scope"
+    ],
+    "proposed_change": "Add pre-entry request-method and main-frame/popup origin restrictions, including redirect handling, and record blocked analytics effects without relaxing policy.",
+    "severity": "high",
+    "refutation": "An already-applicable external execution procedure could supply setup, but it would need an explicit citation; no actual enforcement evidence was supplied and this task does not authorize browsing. Provenance clarification: raw contract and policy establish origin value and methods; original current project.json unanswered-scope supplies main-frame/popup semantics. Do not broaden to all-resource same-origin enforcement."
+  },
+  {
+    "id": "QA-4",
+    "claim": "Runtime transition and focus results remain unobserved; contract consistency is insufficient evidence for a deployment pass.",
+    "source_locations": [
+      "checks/check_contract.py:42-43",
+      "surface-contract.json:19-20",
+      "target/verification-protocol.md:3"
+    ],
+    "proposed_change": "Require per-obligation observations and distinguish pass/fail/unobserved from offline consistency; retain fixture provenance and scope limits. Distinguish observed wrong-focus assertion failure, observed local 24-step bound unmet with dependent checks unobserved, and missing observation; none implies an unqualified website defect.",
+    "severity": "high",
+    "refutation": "Fresh authorized runtime evidence could establish individual results for its stated environment; it would not turn checker success alone into browser evidence. Cross-examination rejects conflating failed assertions, local-bound exhaustion and absent evidence. A bound-unmet trace establishes only that bounded result, not universal inaccessibility."
+  }
+]

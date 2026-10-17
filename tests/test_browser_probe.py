@@ -63,6 +63,7 @@ class BrowserProbeTests(unittest.TestCase):
         self.last_outside_requests = self.server.outside_requests
         self.last_activations = list(self.server.activations)
         result = json.loads((base / "output/result.json").read_text()); events = json.loads((base / "output/events.json").read_text())
+        self.last_output = base / "output"
         return run, result, events
 
     def activation_policy(self, extra=()):
@@ -277,6 +278,44 @@ class BrowserProbeTests(unittest.TestCase):
         checks = [check for check in events["activation_checks"] if check["target"] and check["target"]["id"] == "late-change"]
         self.assertTrue(any(check["source"] == "preflight" and check["allowed"] for check in checks))
         self.assertTrue(any(check["source"] == "event-capture" and not check["allowed"] for check in checks))
+
+    def test_text_locators_use_the_same_activation_guard(self):
+        run, result, events = self.guarded_probe([
+            {"type": "click", "text": "Start"},
+            {"type": "assert-focused", "text": "Help"},
+            {"type": "keyboard", "key": "Enter"},
+            {"type": "assert-visible", "text": "Explanation"},
+            {"type": "traverse-focus", "selector": "#close"},
+            {"type": "keyboard", "key": "Enter"},
+            {"type": "assert-focused", "text": "Help"},
+            {"type": "traverse-focus", "selector": "#back"},
+            {"type": "assert-focused", "selector": "#back"},
+            {"type": "keyboard", "key": "Enter"},
+            {"type": "assert-focused", "selector": "h1"}])
+        self.assertEqual(run.returncode, 0, json.dumps(result))
+        self.assertEqual(result["status"], "COMPLETE")
+        self.assertEqual(self.last_activations, ["start", "close", "back"])
+        run, result, events = self.guarded_probe([
+            {"type": "click", "text": "Start"},
+            {"type": "click", "text": "Synthetic answer"}])
+        self.assertNotEqual(run.returncode, 0)
+        self.assertTrue(events["blocked_activations"])
+        self.assertEqual(self.last_activations, ["start"])
+
+    def test_viewport_evidence_retains_focused_control_occlusion(self):
+        run, result, _ = self.probe([
+            {"type": "click", "selector": "#start"},
+            {"type": "snapshot", "label": "covered-focus"}], fixture="focus-overlay.html")
+        self.assertEqual(run.returncode, 0, json.dumps(result))
+        shot = next(item for item in result["snapshots"] if item["label"] == "covered-focus")
+        data = json.loads((self.last_output / shot["viewport_measurements"]).read_text())
+        self.assertEqual(shot["screenshot_mode"], "full-page")
+        self.assertTrue((self.last_output / shot["viewport_screenshot"]).is_file())
+        self.assertEqual(data["viewport"], {"width": 1280, "height": 800, "device_pixel_ratio": 1})
+        self.assertEqual(data["active_element"]["id"], "covered")
+        self.assertEqual(len(data["sampled_points"]), 25)
+        self.assertTrue(all(point["in_viewport"] and not point["active_or_descendant"]
+                            and point["hit"]["id"] == "overlay" for point in data["sampled_points"]))
 
 
 class ActivationPolicyValidationTests(unittest.TestCase):

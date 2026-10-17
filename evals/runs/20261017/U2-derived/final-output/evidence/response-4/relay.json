@@ -1,0 +1,29 @@
+{
+  "exit_code": 1,
+  "request_sha256": "99ee26f4c5174b35f046305dd75a5ee2589c28ed9a0ac5d086a10d67822e9eee",
+  "harness_sha256": "544d47211ac5aefde57072aef4ded1140c21030555b0e45e93f8821794249add",
+  "policy_sha256": "2160973fbe4d0a603d061688d2d4fe9ee633d8b3f018fec773d7b8d7a28c7ff2",
+  "started_at": "2026-10-17T12:12:05.890994+00:00",
+  "ended_at": "2026-10-17T12:13:06.130884+00:00",
+  "fresh_context": true,
+  "input_actions_modified": false,
+  "operator_interpretation": null,
+  "stderr": "",
+  "diagnostic_transformation": "Only private operator evidence prefix replaced in returned stderr; original retained.",
+  "files": {
+    "00-entry.dom.json": "09a05d31c16faaf8980d863723e3f901798ef49b4cac43ea54aec912de99112d",
+    "00-entry.png": "095283e6a92818f6baf91a977793ff14591a91a60cef7b82ea9019642c2251e2",
+    "01-challenge-Back-focus-with-cookie-banner.dom.json": "495b50eac16f5a7872812186e9c3c02cac07f2a883bb9da673b62c4b576e9480",
+    "01-challenge-Back-focus-with-cookie-banner.png": "0139a6dc00bde0a2a7e76574b2a85014839f6dd87e0ac239237859830bae4419",
+    "02-challenge-Back-refocus-with-cookie-banner.dom.json": "495b50eac16f5a7872812186e9c3c02cac07f2a883bb9da673b62c4b576e9480",
+    "02-challenge-Back-refocus-with-cookie-banner.png": "57673acee0c4875835c892ce68bfe1efd2182ec2cbb4c6904ecaad0f4004aa31",
+    "03-restart-still-unanswered-help-closed.dom.json": "d914c65d93824bf0ad2af509c711239181aeace21ca36164765ced95fe000fba",
+    "03-restart-still-unanswered-help-closed.png": "6177196c4d7dc3ad62bfe16b8bb2912649bd4d378ded080c9f4ccc0ad9bf6841",
+    "04-browser-history-back-entry.dom.json": "09a05d31c16faaf8980d863723e3f901798ef49b4cac43ea54aec912de99112d",
+    "04-browser-history-back-entry.png": "095283e6a92818f6baf91a977793ff14591a91a60cef7b82ea9019642c2251e2",
+    "05-browser-history-forward-check.dom.json": "d914c65d93824bf0ad2af509c711239181aeace21ca36164765ced95fe000fba",
+    "05-browser-history-forward-check.png": "6177196c4d7dc3ad62bfe16b8bb2912649bd4d378ded080c9f4ccc0ad9bf6841",
+    "events.json": "ce3b20e084b5c6cb13fae2c9883dd49bbfbd2ac7a537d9e20386b195ab9db4b5",
+    "result.json": "a91a808c743b03e942ea985e5104af3ef26e949f5819a209d8a7ab9f6a878d70"
+  }
+}

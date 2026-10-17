@@ -1,2 +1,4 @@
 # Preserve archived evidence bytes, including numbered blank lines and receipts.
 docs/evidence/** -text -whitespace
+evals/runs/** -text -whitespace
+evals/campaign-20261017/** -text -whitespace

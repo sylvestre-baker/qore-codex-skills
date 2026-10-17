@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "node",
+    "scripts/stop-rule.mjs",
+    "/workspace/output/evidence/loop.json"
+  ],
+  "cwd": "/workspace/worker/.agents/skills/qore-ux-review-qaizen-labs",
+  "exit_code": 0,
+  "stdout": "stop-rule-1.json",
+  "stderr": "stop-rule-1.stderr.txt",
+  "interpretation": "Validator returns CONTINUE with DO-NOT-SHIP/PARTIAL. No fixes authorized; protocol permits retaining findings and stopping review. No SHIP or plateau/ceiling claim."
+}

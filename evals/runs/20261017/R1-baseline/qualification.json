@@ -1,0 +1,17 @@
+{
+  "schema": "qore-eval-qualification/1",
+  "run_id": "qore003-20261017-r1-baseline-1",
+  "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+  "input_manifest_sha256": "5f359871871d1561d0410237bf74907655d83748b1e0f81673b566d50c5fe5d3",
+  "qore_run_sha256": null,
+  "declared_coverage": "COMPLETE",
+  "coverage": "COMPLETE",
+  "assessor": "/root/campaign_review_assessor",
+  "verifier": "/root/campaign_final_verifier",
+  "assessed_at": "2026-10-17T12:22:41.534375Z",
+  "reason": "Preserve COMPLETE for the requested offline baseline document review, supported by the retained source review and actual local check. No independent Qore verifier or live website acceptance was required or claimed.",
+  "evidence": [
+    "independent-assessment.json",
+    "independent-verification.json"
+  ]
+}

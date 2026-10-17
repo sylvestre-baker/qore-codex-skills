@@ -1,0 +1,22 @@
+{
+  "schema": "qore003-evaluator-wave/1",
+  "actor_id": "/root/campaign_plan_assessor",
+  "cases": [
+    "N06",
+    "N17"
+  ],
+  "started_at_utc": "2026-10-17T10:55:18+00:00",
+  "ended_at_utc": "2026-10-17T11:00:41.578641+00:00",
+  "shared_wall_window_seconds": 323.578641,
+  "earlier_wave_budget_seconds_charged_as_instructed": 194,
+  "conservative_cumulative_evaluator_window_seconds": 517.5786410000001,
+  "cumulative_cap_seconds": 1800,
+  "timing_limit": "Shared wall window counted once; not a model/compute measurement.",
+  "files": [
+    "N06-plan-assessment.md",
+    "N06-plan-assessment.json",
+    "N17-plan-assessment.md",
+    "N17-plan-assessment.json"
+  ],
+  "first_wave_files_changed": false
+}

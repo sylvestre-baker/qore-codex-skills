@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "python3",
+    "scripts/run-check.py",
+    "/workspace/output/execution.json",
+    "--evidence-root",
+    "/workspace/output/evidence"
+  ],
+  "cwd": "/workspace/worker/.agents/skills/qore-review-qaizen-labs",
+  "exit_code": 0,
+  "started_at": "2026-10-17T10:21:42.496732+00:00",
+  "returned_at": "2026-10-17T10:21:42.680393+00:00",
+  "stdout": "{\n  \"valid\": true,\n  \"coverage\": \"COMPLETE\",\n  \"missing_phases\": [],\n  \"artifact_count\": 63,\n  \"note\": \"Evidence identity and declared phase coverage checked; factual quality is not certified.\"\n}\n",
+  "stderr": "",
+  "note": "Final validation is a companion output outside the hashed evidence set to avoid a self-referential execution-record digest. Earlier actual validator command/output is included in execution.json."
+}

@@ -1,7 +1,7 @@
 {
   "schema": "qore-project/1",
   "id": "qaizen-labs",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "sources": [
     {
       "id": "surface",
@@ -43,7 +43,7 @@
     },
     {
       "id": "back-focus",
-      "statement": "Reach the application Back control using sequential Tab or Shift+Tab; activate with Enter and verify introduction heading focus. A click or programmatic focus does not prove keyboard reachability.",
+      "statement": "Reach the application Back control using sequential Tab, as selected by the current surface contract; activate with Enter and verify introduction heading focus. A click, programmatic focus or reverse-only traversal does not prove the required forward-Tab reachability.",
       "source": "surface",
       "applies_to": [
         "plan",

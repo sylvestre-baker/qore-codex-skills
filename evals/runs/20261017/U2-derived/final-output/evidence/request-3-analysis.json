@@ -1,0 +1,17 @@
+{
+  "status": "PARTIAL",
+  "failure": "Exact uppercase text assertion timed out after successful entry click",
+  "attribution": "Reviewer locator assumption, not established product failure. Request2 active H1 text uses title case while headings/visible innerText is uppercase.",
+  "executed": [
+    "automatic Tab capability probe",
+    "entry click"
+  ],
+  "missing": [
+    "help replay",
+    "Back visual challenge",
+    "restart",
+    "history",
+    "reload"
+  ],
+  "retry": "request4 removes text assertion in favor of selector h1 and actual DOM inspection; no policy relaxed"
+}

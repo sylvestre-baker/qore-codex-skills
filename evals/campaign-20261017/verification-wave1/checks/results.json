@@ -1,0 +1,150 @@
+{
+  "observed_at": "2026-10-17T10:47:43.674472+00:00",
+  "claims": {
+    "N03": {
+      "exit_code": 0,
+      "exact_json_value_preserved": true,
+      "claim_count": 7,
+      "actual_fields": [
+        "evidence",
+        "id",
+        "severity",
+        "title"
+      ],
+      "reasoning_marker_claims": [
+        "S-1",
+        "S-2",
+        "F-201",
+        "F-202",
+        "F-203"
+      ]
+    },
+    "N09": {
+      "exit_code": 0,
+      "exact_json_value_preserved": true,
+      "claim_count": 3,
+      "actual_fields": [
+        "evidence",
+        "id",
+        "severity",
+        "title"
+      ],
+      "reasoning_marker_claims": [
+        "C-1",
+        "C-2",
+        "C-3"
+      ]
+    }
+  },
+  "synthetic_filter_probe": {
+    "explicit_reasoning_dropped": true,
+    "verdict_dropped": true,
+    "evidence_string_preserved": true,
+    "limit": "This is a filter mechanics probe, not a reconstruction of an unavailable original campaign candidate packet."
+  },
+  "profile": {
+    "exit_code": 0,
+    "coverage": "COMPLETE",
+    "sources_current": true,
+    "back_invariant": {
+      "id": "back-focus",
+      "statement": "Reach the application Back control using sequential Tab or Shift+Tab; activate with Enter and verify introduction heading focus. A click or programmatic focus does not prove keyboard reachability.",
+      "source": "surface",
+      "applies_to": [
+        "plan",
+        "review",
+        "ux"
+      ]
+    }
+  },
+  "current_contract_check": {
+    "exit_code": 0,
+    "payload": {
+      "valid": true,
+      "schema": "qaizen-labs-surface/1",
+      "checks": [
+        "entry",
+        "unanswered",
+        "help-toggle",
+        "close-focus",
+        "keyboard-back",
+        "introduction-focus",
+        "read-only-policy",
+        "origin-policy"
+      ],
+      "limit": "Contract consistency only; browser observations establish current behavior."
+    }
+  },
+  "back_trace": {
+    "current_source_transition": {
+      "id": "back",
+      "from": "help-closed",
+      "to": "returned-introduction",
+      "control": "Back",
+      "activation": "Enter",
+      "traversal": "Tab",
+      "focus_after": "introduction-heading"
+    },
+    "profile_source_id": "surface",
+    "current_source_digest": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+    "statement_accepts_shift_tab": true,
+    "source_declares_shift_tab": false,
+    "variant_results": {
+      "Tab": {
+        "accepted": true,
+        "result": {
+          "valid": true,
+          "schema": "qaizen-labs-surface/1",
+          "checks": [
+            "entry",
+            "unanswered",
+            "help-toggle",
+            "close-focus",
+            "keyboard-back",
+            "introduction-focus",
+            "read-only-policy",
+            "origin-policy"
+          ],
+          "limit": "Contract consistency only; browser observations establish current behavior."
+        }
+      },
+      "Shift+Tab": {
+        "accepted": true,
+        "result": {
+          "valid": true,
+          "schema": "qaizen-labs-surface/1",
+          "checks": [
+            "entry",
+            "unanswered",
+            "help-toggle",
+            "close-focus",
+            "keyboard-back",
+            "introduction-focus",
+            "read-only-policy",
+            "origin-policy"
+          ],
+          "limit": "Contract consistency only; browser observations establish current behavior."
+        }
+      },
+      "Click": {
+        "accepted": false,
+        "error": "Back requires sequential keyboard traversal and observed activation"
+      }
+    },
+    "counterexample": {
+      "candidate_proof": {
+        "traversal": "Shift+Tab",
+        "activation": "Enter",
+        "focus_after": "introduction-heading"
+      },
+      "satisfies_profile_disjunction": true,
+      "equals_current_source_traversal": false,
+      "limit": "No browser state, implementation defect, or live journey is asserted."
+    }
+  },
+  "source_integrity": {
+    "unchanged": true,
+    "checked_files": 17,
+    "changed": []
+  }
+}

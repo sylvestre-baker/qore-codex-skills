@@ -1,0 +1,73 @@
+[
+  {
+    "id": "P1",
+    "claim": "The candidate already requires sequential keyboard Back traversal, Enter activation, introduction focus, unanswered checkpoint and absence assertions; the 24-step bound is an existing local obligation.",
+    "source_locations": [
+      "target/verification-protocol.md:8-10",
+      "surface-contract.json:14-17",
+      "checks/check_contract.py:32-36"
+    ],
+    "proposed_change": "Preserve every existing Close and Back assertion, both unanswered checkpoints and the 24-step bound; do not present keyboard Back as absent from this candidate.",
+    "severity": "high",
+    "refutation": "QUALIFIED after cross-examination: preserve target Close Tab/Shift+Tab, but raw surface-contract.json:14 canonical Close traversal is Tab. Checker :35-36 accepts either direction only for Back. A Shift+Tab-only Close run must not mark canonical Tab traversal observed. Preserve both unanswered checkpoints and 24-step Back bound."
+  },
+  {
+    "id": "P2",
+    "claim": "The generic current instruction to open help does not specify the declared Enter-open, Space-close, Enter-reopen sequence.",
+    "source_locations": [
+      "target/verification-protocol.md:7",
+      "surface-contract.json:11-14",
+      "surface-contract.json:18"
+    ],
+    "proposed_change": "Expand the help instruction to name each activation and observed state before traversing to Close.",
+    "severity": "medium",
+    "refutation": null
+  },
+  {
+    "id": "P3",
+    "claim": "The original contract declares entry URL, en-US locale, 1280x800 viewport, unanswered scope and GET/HEAD/OPTIONS methods, while the candidate lacks these explicit setup details.",
+    "source_locations": [
+      "surface-contract.json:4-10",
+      "target/verification-protocol.md:5-10"
+    ],
+    "proposed_change": "Add concise prerequisites for the existing declared scope without broadening into questionnaire completion.",
+    "severity": "medium",
+    "refutation": null
+  },
+  {
+    "id": "P4",
+    "claim": "The contract and separate policy allow https://qaizen.io, and the contract requires read-only observation and retention of observed effects of blocked analytics POSTs.",
+    "source_locations": [
+      "surface-contract.json:5-6",
+      "surface-contract.json:20",
+      "observation-policy.json:2-4",
+      "checks/check_contract.py:14-18"
+    ],
+    "proposed_change": "State method and origin enforcement prerequisites before navigation and record blocked analytics effects; have Architecture/QA settle precise navigation guard wording without inventing a new implementation.",
+    "severity": "high",
+    "refutation": "QUALIFIED: raw contract supplies allowed methods/origins; current project.json unanswered-scope supplies main-frame/popup navigation specificity. Filter methods for all requests, restrict navigation origins, and do not infer an all-resource same-origin ban. Guard enforcement is a future execution precondition, not a planning-completion dependency."
+  },
+  {
+    "id": "P5",
+    "claim": "The target is a reconstructed fixture, expected contract transitions are not current deployment results, and validator success establishes contract consistency only.",
+    "source_locations": [
+      "target/verification-protocol.md:3",
+      "surface-contract.json:19-20",
+      "checks/check_contract.py:42-43"
+    ],
+    "proposed_change": "Keep fixture disclaimer and distinguish proposed acceptance, static validation and live observations; no unsupported site defect or deployment pass claims. Distinguish observed exhaustion of the 24-step procedure bound, observed unmet focus assertion, and missing/downstream observation; none alone establishes a website defect.",
+    "severity": "high",
+    "refutation": null
+  },
+  {
+    "id": "P6",
+    "claim": "The request is documentation-only planning and the contract excludes answers, results, submissions, mobile, full questionnaire, performance and accessibility certification.",
+    "source_locations": [
+      "TASK.md:3-5",
+      "surface-contract.json:20"
+    ],
+    "proposed_change": "Deliver a concrete proposed passage or patch with preservation/rationale mapping; defer input edits, application changes, harness construction and live verification.",
+    "severity": "medium",
+    "refutation": null
+  }
+]

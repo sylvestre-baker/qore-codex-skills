@@ -1,0 +1,328 @@
+{
+  "schema": "qore-eval-run/1",
+  "id": "qore003-20261017-p2-generic-1",
+  "series_id": "specialization-v1",
+  "scenario_id": "P2",
+  "condition": "generic",
+  "trial": 1,
+  "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+  "input_manifest": "prepared/input-manifest.json",
+  "input_manifest_sha256": "e9aeec2eee10b52c3339b53b4e491d3ff69f57c68be2f5ea1d61e70df55acccc",
+  "condition_resources_sha256": "2087b05693d282496452133a5c70a3c863b358e6e4b2c306b6b9926215fb6b89",
+  "environment": {
+    "operator": "agent",
+    "host": "Docker Desktop Linux arm64 / Codex0.162.0",
+    "model": "gpt-6.1-sol",
+    "actor_id": "/root",
+    "tools": {
+      "codex": "0.162.0",
+      "image_id": "sha256:09894b981972962ae27f1e8e1726eb49886108a56c80742e70f71b0790c73aba",
+      "native_tool_catalog": "Twelve observed base helpers, native collaboration; no search/fetch/browser/connector; empty MCP resources/templates in qualified parent and child."
+    },
+    "settings": {
+      "model_reasoning_effort": "high",
+      "service_tier": "default",
+      "configs": [
+        "default_permissions=\"qore-trial\"",
+        "permissions.qore-trial.extends=\":workspace\"",
+        "permissions.qore-trial.filesystem={\":root\"=\"deny\",\":minimal\"=\"read\",\":tmpdir\"=\"write\",\":slash_tmp\"=\"write\",\":workspace_roots\"={\".\"=\"read\"},\"/workspace/output\"=\"write\"}",
+        "permissions.qore-trial.network.enabled=false",
+        "allow_login_shell=false",
+        "web_search=\"disabled\"",
+        "model_reasoning_effort=\"high\"",
+        "service_tier=\"default\"",
+        "features.multi_agent=true",
+        "agents.max_threads=3",
+        "features.apps=false",
+        "features.plugins=false",
+        "features.remote_plugin=false",
+        "features.memories=false",
+        "features.skill_search=false",
+        "features.skill_mcp_dependency_install=false",
+        "features.request_permissions_tool=false",
+        "mcp_servers={}"
+      ],
+      "operator_procedure": "operator-freeze.json; same frozen task/common runtime instruction template"
+    },
+    "isolation": {
+      "status": "PASS",
+      "evidence": [
+        "isolation-evidence.json"
+      ]
+    }
+  },
+  "resources": {
+    "caps": {
+      "wall_seconds": 900,
+      "aggregate_agent_seconds": 2400,
+      "browser_requests": 6,
+      "transient_browser_retries": 1,
+      "evaluator_seconds": 1800,
+      "verifier_seconds": 1800,
+      "maximum_original_cells": 21,
+      "limit": "Provisional operator policy, not measured feasibility or hard timeout enforcement."
+    },
+    "started_at": "2026-10-17T11:41:35.353492+00:00",
+    "ended_at": "2026-10-17T11:53:19.438327+00:00",
+    "children": [
+      {
+        "actor_id": "/root/architecture",
+        "started_at": "2026-10-17T11:41:44Z",
+        "ended_at": "2026-10-17T11:47:33Z",
+        "timing_precision": "Observed dispatch bracket through first post-return sample; includes idle gaps between repeated role phases, not model compute time.",
+        "phase_intervals": [
+          {
+            "started_at": "2026-10-17T11:41:44Z",
+            "ended_at": "2026-10-17T11:44:17Z",
+            "phase": "initial"
+          },
+          {
+            "started_at": "2026-10-17T11:45:46Z",
+            "ended_at": "2026-10-17T11:47:33Z",
+            "phase": "cross_examination"
+          }
+        ],
+        "source": "final-output/roster.json"
+      },
+      {
+        "actor_id": "/root/delivery",
+        "started_at": "2026-10-17T11:43:31Z",
+        "ended_at": "2026-10-17T11:47:33Z",
+        "timing_precision": "Observed dispatch bracket through first post-return sample; includes idle gaps between repeated role phases, not model compute time.",
+        "phase_intervals": [
+          {
+            "started_at": "2026-10-17T11:43:31Z",
+            "ended_at": "2026-10-17T11:45:26Z",
+            "phase": "initial"
+          },
+          {
+            "started_at": "2026-10-17T11:45:46Z",
+            "ended_at": "2026-10-17T11:47:33Z",
+            "phase": "cross_examination"
+          }
+        ],
+        "source": "final-output/roster.json"
+      },
+      {
+        "actor_id": "/root/product",
+        "started_at": "2026-10-17T11:41:44Z",
+        "ended_at": "2026-10-17T11:43:31Z",
+        "timing_precision": "Observed dispatch bracket through first post-return sample; includes idle gaps between repeated role phases, not model compute time.",
+        "phase_intervals": [
+          {
+            "started_at": "2026-10-17T11:41:44Z",
+            "ended_at": "2026-10-17T11:43:31Z",
+            "phase": "initial"
+          }
+        ],
+        "source": "final-output/roster.json"
+      },
+      {
+        "actor_id": "/root/product_cross",
+        "started_at": "2026-10-17T11:47:25Z",
+        "ended_at": "2026-10-17T11:49:59Z",
+        "timing_precision": "Observed dispatch bracket through first post-return sample; includes idle gaps between repeated role phases, not model compute time.",
+        "phase_intervals": [
+          {
+            "started_at": "2026-10-17T11:47:25Z",
+            "ended_at": "2026-10-17T11:49:59Z",
+            "phase": "cross_examination"
+          }
+        ],
+        "source": "final-output/roster.json"
+      },
+      {
+        "actor_id": "/root/qa",
+        "started_at": "2026-10-17T11:43:42Z",
+        "ended_at": "2026-10-17T11:47:33Z",
+        "timing_precision": "Observed dispatch bracket through first post-return sample; includes idle gaps between repeated role phases, not model compute time.",
+        "phase_intervals": [
+          {
+            "started_at": "2026-10-17T11:43:42Z",
+            "ended_at": "2026-10-17T11:45:26Z",
+            "phase": "initial"
+          },
+          {
+            "started_at": "2026-10-17T11:45:46Z",
+            "ended_at": "2026-10-17T11:47:33Z",
+            "phase": "cross_examination"
+          }
+        ],
+        "source": "final-output/roster.json"
+      },
+      {
+        "actor_id": "/root/ux",
+        "started_at": "2026-10-17T11:41:44Z",
+        "ended_at": "2026-10-17T11:43:42Z",
+        "timing_precision": "Observed dispatch bracket through first post-return sample; includes idle gaps between repeated role phases, not model compute time.",
+        "phase_intervals": [
+          {
+            "started_at": "2026-10-17T11:41:44Z",
+            "ended_at": "2026-10-17T11:43:42Z",
+            "phase": "initial"
+          }
+        ],
+        "source": "final-output/roster.json"
+      },
+      {
+        "actor_id": "/root/ux_cross",
+        "started_at": "2026-10-17T11:47:33Z",
+        "ended_at": "2026-10-17T11:49:59Z",
+        "timing_precision": "Observed dispatch bracket through first post-return sample; includes idle gaps between repeated role phases, not model compute time.",
+        "phase_intervals": [
+          {
+            "started_at": "2026-10-17T11:47:33Z",
+            "ended_at": "2026-10-17T11:49:59Z",
+            "phase": "cross_examination"
+          }
+        ],
+        "source": "final-output/roster.json"
+      }
+    ],
+    "tokens": null,
+    "aggregate_agent_seconds": null,
+    "unavailable": {
+      "tokens": "CLI exposes parent turn usage; complete child-token totals are not exposed. Raw parent usage retained separately.",
+      "aggregate_agent_seconds": "Exact model/child agent-time accounting is not exposed. Parent wall interval and clock-bracketed child intervals are retained as observed bounds, not invented measurements."
+    },
+    "parent_native_usage": {
+      "input_tokens": 3195964,
+      "cached_input_tokens": 3084032,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 30017,
+      "reasoning_output_tokens": 7332
+    },
+    "parent_wall_seconds": 702.465254
+  },
+  "artifacts": [
+    {
+      "path": "isolation-evidence.json",
+      "sha256": "d35c78d975a3a7650b93f4d3a2652787deaf28a01db9e31919c3fe08083257be",
+      "kind": "execution",
+      "observed_at": "2026-10-17T11:41:36.250525+00:00"
+    },
+    {
+      "path": "execution-evidence.json",
+      "sha256": "ca0bf801576365e99341169b0515ccea25dd959883dc6540aae361dac9632380",
+      "kind": "execution",
+      "observed_at": "2026-10-17T11:53:18.818999+00:00"
+    },
+    {
+      "path": "independent-assessment.json",
+      "sha256": "8f2f86cebbabbf229924c39db9b8624ff16bc6fe38ca2234e28b33ae918078cc",
+      "kind": "presentation"
+    },
+    {
+      "path": "independent-verification.json",
+      "sha256": "880dae5f06c3b7ebc034df29d6a38f0a252a417c41c41254195ded465db80312",
+      "kind": "presentation"
+    },
+    {
+      "path": "qualification.json",
+      "sha256": "029fd17371d4c203f19a70b98aa9e5937d879e86f08b96662b96cdbeaac82ff5",
+      "kind": "presentation"
+    }
+  ],
+  "execution": {
+    "coverage": "COMPLETE",
+    "evidence": [
+      "execution-evidence.json"
+    ]
+  },
+  "assessment": [
+    {
+      "criterion": "K1",
+      "status": "MET",
+      "independent_task_status": "MET",
+      "reason": "The plan accurately represents all seven transitions, distinct Close-summary and Back-introduction-h1 focus, the target already containing keyboard Back proof, and literal Tab versus preserved reverse/mixed procedure alternatives. It explicitly prevents one direction from being claimed as evidence of an unobserved direction.",
+      "evidence": [
+        "independent-assessment.json",
+        "independent-verification.json"
+      ]
+    },
+    {
+      "criterion": "K3",
+      "status": "MET",
+      "independent_task_status": "MET",
+      "reason": "The documentation requires exact sole-origin and GET/HEAD/OPTIONS enforcement before navigation and throughout requests, subrequests and redirects. It preserves unanswered scope and both checkpoints, prohibited actions, conditional blocked-analytics effects, fail-closed start and stop on breach/lost invariant.",
+      "evidence": [
+        "independent-assessment.json",
+        "independent-verification.json"
+      ]
+    },
+    {
+      "criterion": "K4",
+      "status": "MET",
+      "independent_task_status": "MET",
+      "reason": "The plan preserves fixture/historical provenance and distinguishes current target obligations, declarations, local consistency, proposed conventions and actual future observations. It does not call the already corrected Back instruction missing, or turn the fixture, count or blocked POST into a website defect/pass.",
+      "evidence": [
+        "independent-assessment.json",
+        "independent-verification.json"
+      ]
+    },
+    {
+      "criterion": "K5",
+      "status": "MET",
+      "independent_task_status": "MET",
+      "reason": "The correct relevant checker command has captured actual exit-zero output and its consistency-only disclaimer. Manual preservation/coverage review and thirteen substantive Gherkin cases supplement the limited checker. Spec-lint and run-check actual commands/results are retained separately from unexecuted browser acceptance.",
+      "evidence": [
+        "independent-assessment.json",
+        "independent-verification.json"
+      ]
+    },
+    {
+      "criterion": "K7",
+      "status": "MET",
+      "independent_task_status": "MET",
+      "reason": "The concrete proposal preserves the corrected target\u2019s valid Close/Back traversal and Enter, both unanswered checkpoints, 24-step Back guard, introduction visibility/question-help absence and distinct focus. The exact help cycle and scope/evidence additions are justified. No application, contract/checker/policy or new runtime tooling change is proposed.",
+      "evidence": [
+        "independent-assessment.json",
+        "independent-verification.json"
+      ]
+    },
+    {
+      "criterion": "K8",
+      "status": "MET",
+      "independent_task_status": "MET",
+      "reason": "Actual frozen-source inspection identifies the remaining help-cycle/documentation omissions while rejecting a missing-Back diagnosis. A bounded one-document proposal, concrete source comparisons, substantive challenge/adjudication and captured local check support the selected planning outcome.",
+      "evidence": [
+        "independent-assessment.json",
+        "independent-verification.json"
+      ]
+    }
+  ],
+  "comparison": {
+    "comparability": "UNVERIFIED",
+    "decision": "Unknown",
+    "reason": "Separate evaluators and verifier retained task/coverage observations. One observation on related known tasks and visible conditions does not establish a comparative winner; live deployment comparability is unverified for UX.",
+    "verification": [
+      "independent-assessment.json",
+      "independent-verification.json"
+    ]
+  },
+  "limitations": [
+    "One observation on a related known task, not a general benefit benchmark.",
+    "CLI JSONL omits some native child lifecycle events; child identities and history-free dispatches rely on retained role reports/roster plus the qualified inheritance probe.",
+    "All resource timing precision and unavailable measurements remain explicit; no cost or efficiency conclusion.",
+    "No website/browser/network observation performed or required for this documentation-only plan. Runtime conformance, guard implementation and deployment identity remain unexamined.",
+    "Candidate and enclosing prepared-input snapshot digests supplied by user; per-file inventories retained, but enclosing manifest serialization unavailable for independent recomputation.",
+    "Exact first-wave dispatch instants unavailable; observed UTC enclosing intervals retained. Subsequent dispatch times are adjacent lead clock observations; exact host enqueue instants unavailable.",
+    "Host retired Product and UX initial contexts when later roles were spawned. Fresh successor contexts performed their required cross-examination using all reports after barrier; initial reports were preserved.",
+    "Actual token/billed agent-second counters unavailable from host tools. Roster records elapsed occupancy bounds; no zero usage asserted.",
+    "QA and UX cross-examinations finished5 and15 seconds beyond role deadlines. Lead requested available reports at first cross deadline, but missed exact UX expiry request during drafting; full available report retained with monitoring gap disclosed.",
+    "Role-local commands are recorded as workers reported them in complete reports; root cannot retrieve retired-context raw tool transcripts.",
+    "Structural validators establish declared structure and evidence identity only, not reasoning correctness or approval to implement.",
+    "No profile supplied or consumed. No application, shared-data, input or skill-resource mutation performed.",
+    "Independent criteria were applied qualitatively after outputs using predeclared criteria; operational grading interpretation was not a validated standardized scoring rubric.",
+    "Original method coverage and artifacts are unchanged. Later qualification and its identities are separate; entered metadata does not establish its own truth."
+  ],
+  "qore_run": {
+    "path": "final-output/execution.json",
+    "sha256": "8e8405b267698c6aef3a301f4b8d8d36a916bf21255beaf7fa494a7d1814ac50"
+  },
+  "normalization": [],
+  "qualification": {
+    "path": "qualification.json",
+    "sha256": "029fd17371d4c203f19a70b98aa9e5937d879e86f08b96662b96cdbeaac82ff5"
+  }
+}

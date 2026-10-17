@@ -1,0 +1,54 @@
+{
+  "observed_at": "2026-10-17T10:16:46.068148+00:00",
+  "probes": [
+    {
+      "argv": [
+        "python3",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "Python 3.14.8\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "node",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "v22.23.2\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "bash",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "GNU bash, version 5.3.9(1)-release (aarch64-alpine-linux-musl)\nCopyright (C) 2025 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>\n\nThis is free software; you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law.\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "git version 2.54.0\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "sh",
+        "-c",
+        "pwd && rg --files -g 'TASK.md' -g 'AGENTS.md' -g 'SKILL.md' -g '*qore*' -g '*manifest*'"
+      ],
+      "exit_code": 127,
+      "stdout": "/workspace/worker\n",
+      "stderr": "/bin/sh: rg: not found\n",
+      "note": "Actual initial probe captured in tool output; discovery used find afterward."
+    }
+  ],
+  "subagents": "Actual collaboration.spawn_agent available; three independent history-free finders dispatched. Fresh history-free verifier planned after mechanical redaction.",
+  "usage_api": "No aggregate usage or per-agent CPU/token accounting tool exposed; usage unavailable, never assumed zero."
+}

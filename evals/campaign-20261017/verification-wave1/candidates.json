@@ -1,0 +1,16 @@
+{
+  "findings": [
+    {
+      "id": "R1-C01",
+      "title": "Filtered verifier packets retain finder rationale despite the declared no-finder-reasoning boundary",
+      "severity": "medium",
+      "evidence": "assessment-inputs/N03/output/evidence/claims.json:19,25,31,37,43; assessment-inputs/N09/output/evidence/claims.json:7,13,19; qore-skills/skills/qore-review/scripts/redact-for-verifier.mjs:13-31; qore-skills/skills/qore-review/references/protocol.md:49-55"
+    },
+    {
+      "id": "R1-C02",
+      "title": "The source-bound Back invariant permits Shift+Tab while the current contract selects Tab",
+      "severity": "medium",
+      "evidence": "qore-skills/profiles/qaizen-labs.json:45-47; qore-skills/examples/qaizen-labs/surface-contract.json:14-15; qore-skills/examples/qaizen-labs/checks/check_contract.py:35-36; assessment-inputs/N09/output/REPORT.md:3; assessment-inputs/N03/output/evidence/finder-correctness.md:15"
+    }
+  ]
+}

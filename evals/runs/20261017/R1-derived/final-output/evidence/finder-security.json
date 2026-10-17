@@ -1,0 +1,10 @@
+{
+  "findings": [
+    {
+      "id": "S-1",
+      "title": "Procedure omits the required browser request policy before opening the journey",
+      "severity": "medium",
+      "evidence": "Target /workspace/worker/target/verification-protocol.md:5-10 begins by opening the public entry and supplies only UI/unanswered assertions; it gives no origin allowlist, allowed HTTP methods, request-blocking prerequisite, or check of blocked analytics effects. /workspace/worker/surface-contract.json:5-6 authorizes only https://qaizen.io and GET/HEAD/OPTIONS; :18 explicitly requires read-only-policy and origin-policy checks; :20 says an analytics POST is expected to be blocked and its observed effects retained. /workspace/worker/observation-policy.json:2-4 also restricts origins to https://qaizen.io. Trigger: execute the procedure as a standalone browser checklist without a separately configured request guard. It supplies no step that would prevent the expected analytics POST or requests outside the allowlist, so completing its UI assertions cannot establish compliance with the authorized observation boundary or preserve the required blocked-request effects. No network request or deployment defect is asserted. /workspace/worker/checks/check_contract.py:12-18 validates declared values, :42-43 returns consistency-only success, and :50-51 reads only surface-contract.json and serializes that result; its passing output does not enforce or observe a browser policy. Full numbered inputs, SHA-256 identities, exact checker command (exit 0), and target term-search results are retained in /workspace/output/evidence/finder-security-source-audit.txt."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "observed_at": "2026-10-17T10:24:34.245325+00:00",
+  "local_tools": {
+    "python3": "/usr/bin/python3",
+    "node": "/usr/local/bin/node",
+    "bash": "/bin/bash",
+    "git": "/usr/bin/git",
+    "rg": "/usr/local/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-arm64/vendor/aarch64-unknown-linux-musl/codex-path/rg"
+  },
+  "network": "Prohibited; no network probe attempted",
+  "subagents": "Actual collaboration.spawn_agent; first wave three distinct fork_turns=none contexts",
+  "profile": "references/project.json absent; metadata profile null; no profile created or consumed",
+  "verifier": "No verifier phase in qore-plan; lead adjudication follows cross-examination. Review-method finder/redaction/verifier phases do not apply."
+}

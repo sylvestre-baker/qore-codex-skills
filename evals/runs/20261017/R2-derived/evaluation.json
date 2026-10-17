@@ -1,0 +1,289 @@
+{
+  "schema": "qore-eval-run/1",
+  "id": "qore003-20261017-r2-derived-1",
+  "series_id": "specialization-v1",
+  "scenario_id": "R2",
+  "condition": "derived",
+  "trial": 1,
+  "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+  "input_manifest": "prepared/input-manifest.json",
+  "input_manifest_sha256": "9689f41f4f94e52c4074c5cd0760e78a4ce34fb03b6d5a3504d16e61735c8c66",
+  "condition_resources_sha256": "2fc4f47f46a72300825705eaaadbf76805d368b74815423d595adf57fbad394e",
+  "environment": {
+    "operator": "agent",
+    "host": "Docker Desktop Linux arm64 / Codex0.162.0",
+    "model": "gpt-6.1-sol",
+    "actor_id": "/root",
+    "tools": {
+      "codex": "0.162.0",
+      "image_id": "sha256:09894b981972962ae27f1e8e1726eb49886108a56c80742e70f71b0790c73aba",
+      "native_tool_catalog": "Twelve observed base helpers, native collaboration; no search/fetch/browser/connector; empty MCP resources/templates in qualified parent and child."
+    },
+    "settings": {
+      "model_reasoning_effort": "high",
+      "service_tier": "default",
+      "configs": [
+        "default_permissions=\"qore-trial\"",
+        "permissions.qore-trial.extends=\":workspace\"",
+        "permissions.qore-trial.filesystem={\":root\"=\"deny\",\":minimal\"=\"read\",\":tmpdir\"=\"write\",\":slash_tmp\"=\"write\",\":workspace_roots\"={\".\"=\"read\"},\"/workspace/output\"=\"write\"}",
+        "permissions.qore-trial.network.enabled=false",
+        "allow_login_shell=false",
+        "web_search=\"disabled\"",
+        "model_reasoning_effort=\"high\"",
+        "service_tier=\"default\"",
+        "features.multi_agent=true",
+        "agents.max_threads=3",
+        "features.apps=false",
+        "features.plugins=false",
+        "features.remote_plugin=false",
+        "features.memories=false",
+        "features.skill_search=false",
+        "features.skill_mcp_dependency_install=false",
+        "features.request_permissions_tool=false",
+        "mcp_servers={}"
+      ],
+      "operator_procedure": "operator-freeze.json; same frozen task/common runtime instruction template"
+    },
+    "isolation": {
+      "status": "PASS",
+      "evidence": [
+        "isolation-evidence.json"
+      ]
+    }
+  },
+  "resources": {
+    "caps": {
+      "wall_seconds": 900,
+      "aggregate_agent_seconds": 2400,
+      "browser_requests": 6,
+      "transient_browser_retries": 1,
+      "evaluator_seconds": 1800,
+      "verifier_seconds": 1800,
+      "maximum_original_cells": 21,
+      "limit": "Provisional operator policy, not measured feasibility or hard timeout enforcement."
+    },
+    "started_at": "2026-10-17T11:13:18.666110+00:00",
+    "ended_at": "2026-10-17T11:19:40.920971+00:00",
+    "children": [
+      {
+        "actor_id": "/root/finder_correctness",
+        "started_at": "2026-10-17T11:13:27+00:00",
+        "ended_at": "2026-10-17T11:15:06+00:00",
+        "timing_precision": "Observed dispatch bracket through first post-return sample; includes idle gaps between repeated role phases, not model compute time.",
+        "phase_intervals": [
+          {
+            "started_at": "2026-10-17T11:13:27+00:00",
+            "ended_at": "2026-10-17T11:15:06+00:00",
+            "phase": null
+          }
+        ],
+        "source": "final-output/roster.json"
+      },
+      {
+        "actor_id": "/root/finder_feasibility",
+        "started_at": "2026-10-17T11:13:27+00:00",
+        "ended_at": "2026-10-17T11:15:14+00:00",
+        "timing_precision": "Observed dispatch bracket through first post-return sample; includes idle gaps between repeated role phases, not model compute time.",
+        "phase_intervals": [
+          {
+            "started_at": "2026-10-17T11:13:27+00:00",
+            "ended_at": "2026-10-17T11:15:14+00:00",
+            "phase": null
+          }
+        ],
+        "source": "final-output/roster.json"
+      },
+      {
+        "actor_id": "/root/finder_security",
+        "started_at": "2026-10-17T11:13:27+00:00",
+        "ended_at": "2026-10-17T11:15:04+00:00",
+        "timing_precision": "Observed dispatch bracket through first post-return sample; includes idle gaps between repeated role phases, not model compute time.",
+        "phase_intervals": [
+          {
+            "started_at": "2026-10-17T11:13:27+00:00",
+            "ended_at": "2026-10-17T11:15:04+00:00",
+            "phase": null
+          }
+        ],
+        "source": "final-output/roster.json"
+      },
+      {
+        "actor_id": "/root/verifier",
+        "started_at": "2026-10-17T11:15:33+00:00",
+        "ended_at": "2026-10-17T11:17:21+00:00",
+        "timing_precision": "Observed dispatch bracket through first post-return sample; includes idle gaps between repeated role phases, not model compute time.",
+        "phase_intervals": [
+          {
+            "started_at": "2026-10-17T11:15:33+00:00",
+            "ended_at": "2026-10-17T11:17:21+00:00",
+            "phase": null
+          }
+        ],
+        "source": "final-output/roster.json"
+      }
+    ],
+    "tokens": null,
+    "aggregate_agent_seconds": null,
+    "unavailable": {
+      "tokens": "CLI exposes parent turn usage; complete child-token totals are not exposed. Raw parent usage retained separately.",
+      "aggregate_agent_seconds": "Exact model/child agent-time accounting is not exposed. Parent wall interval and clock-bracketed child intervals are retained as observed bounds, not invented measurements."
+    },
+    "parent_native_usage": {
+      "input_tokens": 1080463,
+      "cached_input_tokens": 1017216,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 17244,
+      "reasoning_output_tokens": 4758
+    },
+    "parent_wall_seconds": 380.3694
+  },
+  "artifacts": [
+    {
+      "path": "isolation-evidence.json",
+      "sha256": "cfe256f9de6622d99efcd2f0f7ed8a8cee7db437447a24a3a3548874aa33655e",
+      "kind": "execution",
+      "observed_at": "2026-10-17T11:13:20.152548+00:00"
+    },
+    {
+      "path": "execution-evidence.json",
+      "sha256": "fc27352b47d1476758176bb6dc514407347dadc6fd33542202688537eab445c8",
+      "kind": "execution",
+      "observed_at": "2026-10-17T11:19:40.712703+00:00"
+    },
+    {
+      "path": "independent-assessment.json",
+      "sha256": "be9171aeb3cd4d7a6084bb9a09e3d758876e8ea49e1989c4f53fe1cb3074ef7d",
+      "kind": "presentation"
+    },
+    {
+      "path": "independent-verification.json",
+      "sha256": "35d8758b66939d1ec9897982bc6ba8d4c9e04155ce8591fd229018e9777f329a",
+      "kind": "presentation"
+    },
+    {
+      "path": "qualification.json",
+      "sha256": "2d6a6260c78f6a9a38278fa771f19ad7263021110139e669471d5cfa8af967ca",
+      "kind": "presentation"
+    }
+  ],
+  "execution": {
+    "coverage": "COMPLETE",
+    "evidence": [
+      "execution-evidence.json"
+    ]
+  },
+  "assessment": [
+    {
+      "criterion": "K1",
+      "status": "NOT_MET",
+      "independent_task_status": "NOT_MET",
+      "reason": "The target review correctly preserves distinct Close/summary and Back/introduction-heading focus, Enter activation and unanswered state. However, the consumed source-bound back-focus profile states Tab OR Shift+Tab while its cited current source specifically selects Tab. The completed profile-use record repeats that broader invariant without exposing the contradiction. This is the same narrow source-fidelity interpretation used in R1, rather than a claim that the central Back keyboard-proof gap remains.",
+      "evidence": [
+        "independent-assessment.json",
+        "independent-verification.json"
+      ]
+    },
+    {
+      "criterion": "K2",
+      "status": "MET",
+      "independent_task_status": "MET",
+      "reason": "The review accurately recognizes that the corrected target now specifies sequential Tab/Shift+Tab traversal and Enter followed by introduction-heading focus. It does not repeat the old click-only finding or claim that real keyboard behavior was observed.",
+      "evidence": [
+        "independent-assessment.json",
+        "independent-verification.json"
+      ]
+    },
+    {
+      "criterion": "K3",
+      "status": "MET",
+      "independent_task_status": "MET",
+      "reason": "The review preserves unanswered state and correctly identifies that the target still omits required method/origin policy checks and blocked-analytics-effect evidence. It retains uncertainty about external enforcement and narrows a stronger asserted setup-precondition requirement.",
+      "evidence": [
+        "independent-assessment.json",
+        "independent-verification.json"
+      ]
+    },
+    {
+      "criterion": "K4",
+      "status": "MET",
+      "independent_task_status": "MET",
+      "reason": "The target findings have exact source/document support and retain both uncertainty and contrary reasoning. They are explicitly fixture-coverage omissions, not observed website defects or prohibited traffic. Lost draft audit output is disclosed.",
+      "evidence": [
+        "independent-assessment.json",
+        "independent-verification.json"
+      ]
+    },
+    {
+      "criterion": "K5",
+      "status": "MET",
+      "independent_task_status": "MET",
+      "reason": "The actual contract-check command/exit/stdout is retained, as are redaction, finding-lint and record-check command results. Proposed help/policy acceptance corrections remain separate from executed static checks and their consistency-only limit.",
+      "evidence": [
+        "independent-assessment.json",
+        "independent-verification.json"
+      ]
+    },
+    {
+      "criterion": "K6",
+      "status": "MET",
+      "independent_task_status": "MET",
+      "reason": "The nonempty review is supported on this comparator. Correcting Back leaves help summary Space/reopening and both policy/effect checks absent. Five confirmed audit IDs are explicitly grouped into two overlapping omissions, with C-002 narrowed to supported policy coverage rather than a mandated named setup order.",
+      "evidence": [
+        "independent-assessment.json",
+        "independent-verification.json"
+      ]
+    },
+    {
+      "criterion": "K8",
+      "status": "MET",
+      "independent_task_status": "MET",
+      "reason": "The target-scoped decision is supported by actual full-document comparisons and separately states missing deployment/network/path-length observations. The record does not convert medium findings or a mechanical SHIP result into release permission.",
+      "evidence": [
+        "independent-assessment.json",
+        "independent-verification.json"
+      ]
+    }
+  ],
+  "comparison": {
+    "comparability": "UNVERIFIED",
+    "decision": "Unknown",
+    "reason": "Separate evaluators and verifier retained task/coverage observations. One observation on related known tasks and visible conditions does not establish a comparative winner; live deployment comparability is unverified for UX.",
+    "verification": [
+      "independent-assessment.json",
+      "independent-verification.json"
+    ]
+  },
+  "limitations": [
+    "One observation on a related known task, not a general benefit benchmark.",
+    "CLI JSONL omits some native child lifecycle events; child identities and history-free dispatches rely on retained role reports/roster plus the qualified inheritance probe.",
+    "All resource timing precision and unavailable measurements remain explicit; no cost or efficiency conclusion.",
+    "Scope is static review of supplied verification protocol; network and browser execution prohibited. No deployed defect, actual request, redirect/popup, tab distance, or external safeguard was observed.",
+    "No missing roles or unexamined IDs. Five medium confirmed candidate records overlap into two document-coverage concerns; no critical/high blockers. No deployment or publication decision.",
+    "Exact finder dispatch instants were not sampled. Actual calls are bounded by UTC 11:13:27\u201311:13:59; role entry and lead receipt timestamps are retained. Verifier dispatch clock sample 11:15:33 precedes the tool call. Scheduler completion instants are unavailable.",
+    "Per-context metered aggregate agent-seconds and token usage are unavailable from host tools. budget.json records nulls/reasons and a conservative active-context wall bound, not zero usage.",
+    "Candidate and entire frozen prepared-input target digests are supplied enclosing identities. Canonical enclosing manifest serialization/digest procedure is unavailable; copied inputs and per-file SHA-256 manifest supplement, not replace, them.",
+    "Verifier corrected an exploratory regex and reran its static audit. Earlier draft check output was overwritten and is unavailable; the complete final role report discloses it. Full target reading and refutation attempts support the retained results.",
+    "No source/skill edits or shared-data mutations. Reports and evidence were authored by AI contexts; no external human or live deployment evidence.",
+    "The initial rg capability probe failed with exit 127; local find/cat fallback used. Contract check and structural validators do not prove browser behavior or reasoning correctness.",
+    "No specific observation-policy precondition order or interception mechanism is mandated by supplied criteria; C-002 was narrowed accordingly while keeping original severity and candidate history.",
+    "The final run-check output is a companion outside the evidence manifest to avoid a self-referential digest cycle; its validation record binds the exact execution.json SHA-256.",
+    "Independent criteria were applied qualitatively after outputs using predeclared criteria; operational grading interpretation was not a validated standardized scoring rubric.",
+    "Original method coverage and artifacts are unchanged. Later qualification and its identities are separate; entered metadata does not establish its own truth."
+  ],
+  "qore_run": {
+    "path": "final-output/evidence/execution.json",
+    "sha256": "9cee6afbeb91b691342742e6f4c0a64eb5e6969512db333a81dc2d6b6ea5492a"
+  },
+  "normalization": [
+    {
+      "original": "final-output/execution.json",
+      "relocated": "final-output/evidence/execution.json",
+      "sha256": "9cee6afbeb91b691342742e6f4c0a64eb5e6969512db333a81dc2d6b6ea5492a",
+      "transformation": "Byte-identical relocation of the standalone record to its explicitly used evidence root for the enclosing checker; no observation or verdict changed."
+    }
+  ],
+  "qualification": {
+    "path": "qualification.json",
+    "sha256": "2d6a6260c78f6a9a38278fa771f19ad7263021110139e669471d5cfa8af967ca"
+  }
+}

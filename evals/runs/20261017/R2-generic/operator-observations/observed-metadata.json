@@ -1,0 +1,110 @@
+{
+  "neutral_id": "N10",
+  "scenario_id": "R2",
+  "coverage": "COMPLETE",
+  "resources": {
+    "caps": {
+      "wall_seconds": 900,
+      "aggregate_agent_seconds": 2400,
+      "browser_requests": 6,
+      "transient_browser_retries": 1,
+      "evaluator_seconds": 1800,
+      "verifier_seconds": 1800,
+      "maximum_original_cells": 21,
+      "limit": "Provisional operator policy, not measured feasibility or hard timeout enforcement."
+    },
+    "started_at": "2026-10-17T11:19:45.274038+00:00",
+    "ended_at": "2026-10-17T11:26:07.797968+00:00",
+    "children": [
+      {
+        "actor_id": "/root/correctness",
+        "started_at": "2026-10-17T11:20:16+00:00",
+        "ended_at": "2026-10-17T11:22:28.003875+00:00",
+        "timing_precision": "Observed dispatch bracket through first post-return sample; includes idle gaps between repeated role phases, not model compute time.",
+        "phase_intervals": [
+          {
+            "started_at": "2026-10-17T11:20:16+00:00",
+            "ended_at": "2026-10-17T11:22:28.003875+00:00",
+            "phase": null
+          }
+        ],
+        "source": "final-output/roster.json"
+      },
+      {
+        "actor_id": "/root/feasibility",
+        "started_at": "2026-10-17T11:20:16+00:00",
+        "ended_at": "2026-10-17T11:22:00.817183+00:00",
+        "timing_precision": "Observed dispatch bracket through first post-return sample; includes idle gaps between repeated role phases, not model compute time.",
+        "phase_intervals": [
+          {
+            "started_at": "2026-10-17T11:20:16+00:00",
+            "ended_at": "2026-10-17T11:22:00.817183+00:00",
+            "phase": null
+          }
+        ],
+        "source": "final-output/roster.json"
+      },
+      {
+        "actor_id": "/root/security",
+        "started_at": "2026-10-17T11:20:16+00:00",
+        "ended_at": "2026-10-17T11:22:04.624967+00:00",
+        "timing_precision": "Observed dispatch bracket through first post-return sample; includes idle gaps between repeated role phases, not model compute time.",
+        "phase_intervals": [
+          {
+            "started_at": "2026-10-17T11:20:16+00:00",
+            "ended_at": "2026-10-17T11:22:04.624967+00:00",
+            "phase": null
+          }
+        ],
+        "source": "final-output/roster.json"
+      },
+      {
+        "actor_id": "/root/verifier",
+        "started_at": "2026-10-17T11:22:29+00:00",
+        "ended_at": "2026-10-17T11:24:49.036972+00:00",
+        "timing_precision": "Observed dispatch bracket through first post-return sample; includes idle gaps between repeated role phases, not model compute time.",
+        "phase_intervals": [
+          {
+            "started_at": "2026-10-17T11:22:29+00:00",
+            "ended_at": "2026-10-17T11:24:49.036972+00:00",
+            "phase": null
+          }
+        ],
+        "source": "final-output/roster.json"
+      }
+    ],
+    "tokens": null,
+    "aggregate_agent_seconds": null,
+    "unavailable": {
+      "tokens": "CLI exposes parent turn usage; complete child-token totals are not exposed. Raw parent usage retained separately.",
+      "aggregate_agent_seconds": "Exact model/child agent-time accounting is not exposed. Parent wall interval and clock-bracketed child intervals are retained as observed bounds, not invented measurements."
+    },
+    "parent_native_usage": {
+      "input_tokens": 1278816,
+      "cached_input_tokens": 1230592,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 16157,
+      "reasoning_output_tokens": 4809
+    },
+    "parent_wall_seconds": 381.680643
+  },
+  "limitations": [
+    "One observation on a related known task, not a general benefit benchmark.",
+    "Criterion assessments remain UNKNOWN until a separate actual evaluator and verifier inspect retained outputs.",
+    "CLI JSONL omits some native child lifecycle events; child identities and history-free dispatches rely on retained role reports/roster plus the qualified inheritance probe.",
+    "All resource timing precision and unavailable measurements remain explicit; no cost or efficiency conclusion.",
+    "Static supplied-source document review only; no website, browser, traffic, focus-order/path-length, current deployment, external harness, or performance certification evidence.",
+    "No network, search, connector, site interaction, input edits, shared-data writes or publication performed.",
+    "Actual per-context CPU/token/aggregate agent-second telemetry is unavailable; bounded wall allocations and UTC observation intervals are retained instead of zero usage.",
+    "Internal dispatch timestamps are not exposed by host. Initial finder dispatches bracketed 11:20:16Z\u201311:20:51Z; fresh verifier bracketed 11:22:29Z\u201311:22:46.652315Z. Return observations and role first-clock observations retained in roster/reports.",
+    "Operator-supplied enclosing candidate and target manifest hashes retained verbatim; their upstream manifest serialization procedure was not supplied. Complete local source snapshot and per-file SHA-256 manifest retained, unchanged check passed.",
+    "Full finder context reports remain independent; root received all reports, collected candidates and wrote final synthesis. Fresh verifier only received actual mechanically filtered claims and raw criteria.",
+    "C-2 and S-1 are duplicate policy-omission claims, retained as separate IDs; 3 confirmed IDs represent 2 distinct medium issues. Severity unchanged. No unexamined or unresolved IDs; no missing roles.",
+    "An initial rg search failed (rg absent); initial shell exit code was not retained. Its actual command/output and unavailable status are in capability-probe.json. Explicit paths/Python supplied all access. Some inline comparison argv were not retained; complete comparison outputs and role reports were.",
+    "No expiry partial-result requests required: every worker returned within the smaller declared deadline; no additional quality retries or child dispatches.",
+    "No project profile bundled; profile null. Last relevant change supplied by enclosing run; source bytes stayed unchanged.",
+    "Run-check is run twice to retain actual stdout and then validate its final digest binding. Full actual invocation metadata is saved in run-check-invocations.json outside the self-hashed artifact set to avoid a self-reference cycle."
+  ],
+  "raw_output_sha256": "58e3667fbd52b28a45ca20347cdd6518579cd45f7d3371cec7e88337d4ea142a",
+  "blinding_limit": "Neutral filenames only; method/profile citations and role rosters can reveal condition. This is not a blinded comparison."
+}

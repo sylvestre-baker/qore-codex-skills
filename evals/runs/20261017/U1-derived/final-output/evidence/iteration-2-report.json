@@ -1,0 +1,11 @@
+{
+  "actor_id": "/root",
+  "at": "2026-10-17T10:57:28.452463+00:00",
+  "request": 3,
+  "result": "PARTIAL",
+  "error": "Exact uppercase text assertion timed out; getByText checks underlying mixed-case text whereas collected headings use visually uppercased text. This is an authored locator error; no evidence of a product render failure.",
+  "executed_actions": "Automatic Tab and entry click completed. Assertion timed out before reload or focused challenge.",
+  "unexecuted": "Remaining request-3 actions, including reload/history/focus challenge.",
+  "preserved_diagnostic": "response-3/result.json",
+  "next_observation": "Request4 replaces text assertion with supported case-insensitive heading assertion. One bounded corrected replay; no repeated quality retry planned."
+}

@@ -1,0 +1,5 @@
+{
+  "command": "python3 -B checks/check_contract.py surface-contract.json",
+  "exit_status": 0,
+  "time_utc": "2026-10-17T11:21:14.045596+00:00"
+}

@@ -1,0 +1,40 @@
+{
+  "neutral_id": "N08",
+  "scenario_id": "R2",
+  "coverage": "COMPLETE",
+  "resources": {
+    "caps": {
+      "wall_seconds": 900,
+      "aggregate_agent_seconds": 2400,
+      "browser_requests": 6,
+      "transient_browser_retries": 1,
+      "evaluator_seconds": 1800,
+      "verifier_seconds": 1800,
+      "maximum_original_cells": 21,
+      "limit": "Provisional operator policy, not measured feasibility or hard timeout enforcement."
+    },
+    "started_at": "2026-10-17T11:26:13.081985+00:00",
+    "ended_at": "2026-10-17T11:27:37.891032+00:00",
+    "children": [],
+    "tokens": 92612,
+    "aggregate_agent_seconds": 82.162838,
+    "unavailable": {},
+    "parent_native_usage": {
+      "input_tokens": 89195,
+      "cached_input_tokens": 77824,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 3417,
+      "reasoning_output_tokens": 820
+    },
+    "parent_wall_seconds": 82.162838,
+    "measurement_basis": "Single context only: CLI turn input+output tokens including cached input, and observed launcher-to-return wall interval including transport/tool waits; not CPU, billing, unique tokens or productivity."
+  },
+  "limitations": [
+    "One observation on a related known task, not a general benefit benchmark.",
+    "Criterion assessments remain UNKNOWN until a separate actual evaluator and verifier inspect retained outputs.",
+    "CLI JSONL omits some native child lifecycle events; child identities and history-free dispatches rely on retained role reports/roster plus the qualified inheritance probe.",
+    "All resource timing precision and unavailable measurements remain explicit; no cost or efficiency conclusion."
+  ],
+  "raw_output_sha256": "46a87c3b76c7064a858cb558eef174ff158242e235d513221b06f6ae5677ac3a",
+  "blinding_limit": "Neutral filenames only; method/profile citations and role rosters can reveal condition. This is not a blinded comparison."
+}

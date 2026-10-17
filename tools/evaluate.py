@@ -162,7 +162,7 @@ def candidate():
     selected += [ROOT / p for p in (
         "evals/scenarios.json", "profiles/qaizen-labs.json", "tools/evaluate.py",
         "tools/qore.py", "tools/context.py", "tools/run_contract.py", "tools/browser_probe.mjs",
-        "tools/clean_room.sh", "schemas/qore-eval-run.schema.json",
+        "tools/clean_room.sh", "schemas/qore-eval-run.schema.json", "schemas/qore-eval-qualification.schema.json",
     )]
     selected += list(qore.files_under(ROOT / "examples/qaizen-labs/checks"))
     selected += [ROOT / "examples/qaizen-labs" / name for name in ("surface-contract.json", "observation-policy.json")]
@@ -421,6 +421,43 @@ def check_record(record_path, evidence_root):
             profile = read_json(p)
             if qrun["profile"] != {"id": profile["id"], "version": profile["version"], "sha256": digest(p)}:
                 raise ValueError("Qore record profile differs from the supplied profile")
+    # Keep the original phase declaration intact. A later independent assessment
+    # can restrict coverage, but cannot backdate observations or promote a run.
+    declared_coverage = coverage
+    qualification = run.get("qualification")
+    if qualification is not None:
+        if not isinstance(qualification, dict):
+            raise ValueError("Qualification must reference a recorded assessment")
+        name = qualification.get("path")
+        references([name], nonempty=True)
+        if by_path[name]["kind"] != "presentation" or qualification.get("sha256") != by_path[name]["sha256"]:
+            raise ValueError("Qualification needs a digest-matched presentation artifact")
+        packet = read_json(contained(evidence_root, name))
+        if not isinstance(packet, dict) or packet.get("schema") != "qore-eval-qualification/1":
+            raise ValueError("Expected qore-eval-qualification/1")
+        for field in ("candidate_sha256", "input_manifest_sha256"):
+            if packet.get(field) != run[field]:
+                raise ValueError("Qualification belongs to another trial")
+        if packet.get("run_id") != run["id"] or packet.get("declared_coverage") != declared_coverage:
+            raise ValueError("Qualification belongs to another trial or declaration")
+        link = run.get("qore_run")
+        if packet.get("qore_run_sha256") != (link["sha256"] if link else None):
+            raise ValueError("Qualification does not identify the original Qore record")
+        assessor = text(packet.get("assessor"), "Qualification assessor")
+        verifier = text(packet.get("verifier"), "Qualification verifier")
+        if assessor == verifier or assessor in [environment["actor_id"], *actors] or verifier in [environment["actor_id"], *actors]:
+            raise ValueError("Qualification requires separate non-execution assessor and verifier identities")
+        if instant(packet.get("assessed_at")) < end:
+            raise ValueError("Qualification cannot predate the trial's completion")
+        text(packet.get("reason"), "Qualification reason")
+        references(packet.get("evidence"), nonempty=True)
+        if name in packet["evidence"]:
+            raise ValueError("Qualification cannot substantiate itself")
+        qualified = packet.get("coverage")
+        rank = {"BLOCKED": 0, "PARTIAL": 1, "COMPLETE": 2}
+        if qualified not in rank or rank[qualified] > rank[declared_coverage]:
+            raise ValueError("Qualification cannot promote declared coverage")
+        coverage = qualified
     assessments = run.get("assessment")
     if not isinstance(assessments, list):
         raise ValueError("Assessment must be an explicit list")
@@ -448,8 +485,10 @@ def check_record(record_path, evidence_root):
     if comparison["comparability"] != "COMPARABLE" and comparison["decision"] != "Unknown":
         raise ValueError("Unverified or invalid comparability requires Unknown")
     return {"valid": True, "id": run["id"], "scenario_id": sid, "condition": condition,
-            "coverage": coverage, "comparability": comparison["comparability"], "changed_inputs": changed,
-            "limit": "Identity and declared evidence checked; reasoning, isolation and causal benefit are not certified."}
+            "coverage": coverage, "declared_coverage": declared_coverage,
+            "qualification_supplied": qualification is not None,
+            "comparability": comparison["comparability"], "changed_inputs": changed,
+            "limit": "Identity and entered evidence checked; assessor independence, reasoning, isolation and causal benefit are not certified by metadata."}
 
 
 def summarize(series_path, output):
@@ -505,7 +544,7 @@ def summarize(series_path, output):
     if not isinstance(cells, list) or len(cells) != 18:
         raise ValueError("Series must account for all eighteen cells")
     seen, ids, rows = set(), set(excluded_ids), []
-    complete = 0
+    complete = declared_complete = attempted = qualified_count = 0
     comparable_groups = {}
     for cell in cells:
         key = (cell.get("scenario_id"), cell.get("condition"))
@@ -533,6 +572,9 @@ def summarize(series_path, output):
         if cell.get("status") != checked["coverage"]:
             raise ValueError("Cell status differs from its checked execution")
         complete += checked["coverage"] == "COMPLETE"
+        declared_complete += checked["declared_coverage"] == "COMPLETE"
+        qualified_count += checked["qualification_supplied"]
+        attempted += 1
         rows.append({**checked, "assessment": run["assessment"], "comparison": run["comparison"]})
         signature = {"candidate": run["candidate_sha256"], "model": run["environment"]["model"],
                      "settings": run["environment"]["settings"], "tools": run["environment"]["tools"]}
@@ -545,15 +587,19 @@ def summarize(series_path, output):
                        "reason": "Matched complete input/model/tool conditions" if comparable else "Missing, invalid or unmatched conditions; no comparative benefit inferred"}
     result = {"schema": "qore-eval-summary/1", "series_id": series["id"], "scenarios_sha256": config_sha,
               "coverage": "COMPLETE" if complete == 18 else ("PARTIAL" if ids - excluded_ids else "BLOCKED"),
-              "completed_cells": complete, "planned_cells": 18, "cells": rows, "groups": groups, "excluded_pilot": excluded_results,
+              "completed_cells": complete, "declared_complete_cells": declared_complete,
+              "attempted_cells": attempted, "qualified_cells": qualified_count,
+              "planned_cells": 18, "cells": rows, "groups": groups, "excluded_pilot": excluded_results,
               "limit": "One observation per condition on related known tasks. No winner, efficiency or general benefit is inferred."}
     if output.exists() or output.is_symlink():
         raise ValueError("Output exists; choose new staging")
     output.mkdir(parents=True)
     write(output / "summary.json", result)
     lines = ["# Specialization diagnostic", "", "Coverage: " + result["coverage"], "",
-             result["limit"], "", "| Scenario | Condition | Execution |", "|---|---|---|"]
-    lines += ["| " + r["scenario_id"] + " | " + r["condition"] + " | " + r.get("status", r.get("coverage", "UNKNOWN")) + " |" for r in rows]
+             result["limit"], "", "Attempted: " + str(attempted) + "/18. Independent qualification supplied: " + str(qualified_count) + "/18.",
+             "Unqualified cells retain their declared coverage; structural validation does not establish completion.",
+             "", "| Scenario | Condition | Declared | Effective | Qualified |", "|---|---|---|---|---|"]
+    lines += ["| " + r["scenario_id"] + " | " + r["condition"] + " | " + r.get("declared_coverage", r.get("status", "UNKNOWN")) + " | " + r.get("coverage", r.get("status", "UNKNOWN")) + " | " + str(r.get("qualification_supplied", False)) + " |" for r in rows]
     if excluded_results:
         lines += ["", "## Excluded pilot (preserved)", "", "These attempts remain evidence, not final-protocol results.", ""]
         lines += ["- " + r["id"] + " (" + r["condition"] + ", " + r["coverage"] + "): " + r["reason"] + "; record: " + r["record"]

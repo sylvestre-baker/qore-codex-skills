@@ -1,0 +1,57 @@
+{
+  "schema": "qore-runtime-versions/1",
+  "image_id": "sha256:09894b981972962ae27f1e8e1726eb49886108a56c80742e70f71b0790c73aba",
+  "actual": {
+    "architecture": "aarch64",
+    "kernel": "6.12.72-linuxkit",
+    "uid": 1000,
+    "versions": {
+      "codex": {
+        "argv": [
+          "codex",
+          "--version"
+        ],
+        "exit_code": 0,
+        "stdout": "codex-cli 0.162.0",
+        "stderr": ""
+      },
+      "node": {
+        "argv": [
+          "node",
+          "--version"
+        ],
+        "exit_code": 0,
+        "stdout": "v22.23.2",
+        "stderr": ""
+      },
+      "python": {
+        "argv": [
+          "python3",
+          "--version"
+        ],
+        "exit_code": 0,
+        "stdout": "Python 3.14.8",
+        "stderr": ""
+      },
+      "git": {
+        "argv": [
+          "git",
+          "--version"
+        ],
+        "exit_code": 0,
+        "stdout": "git version 2.54.0",
+        "stderr": ""
+      },
+      "bash": {
+        "argv": [
+          "bash",
+          "--version"
+        ],
+        "exit_code": 0,
+        "stdout": "GNU bash, version 5.3.9(1)-release (aarch64-alpine-linux-musl)",
+        "stderr": ""
+      }
+    }
+  },
+  "scope": "Observed tools in the same immutable image used by campaign workers; measurement occurred during P1 generic, not retroactively inside earlier trials."
+}

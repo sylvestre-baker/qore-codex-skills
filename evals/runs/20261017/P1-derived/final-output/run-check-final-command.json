@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "python3",
+    "scripts/run-check.py",
+    "/workspace/output/execution.json",
+    "--evidence-root",
+    "/workspace/output"
+  ],
+  "cwd": "/workspace/worker/.agents/skills/qore-plan-qaizen-labs",
+  "started_at": "2026-10-17T10:51:14.248667+00:00",
+  "returned_at": "2026-10-17T10:51:14.418017+00:00",
+  "exit_code": 0,
+  "stdout": "{\n  \"valid\": true,\n  \"coverage\": \"COMPLETE\",\n  \"missing_phases\": [],\n  \"artifact_count\": 62,\n  \"note\": \"Evidence identity and declared phase coverage checked; factual quality is not certified.\"\n}\n",
+  "stderr": "",
+  "execution_sha256": "37969ef69dba40f5464710cab48e255d516af51dd86fc5f8a1a215392c0c3436"
+}

@@ -1,0 +1,1157 @@
+{
+  "schema": "qore-public-evidence-selection/1",
+  "original_trial": "U1-generic",
+  "selection_scope": "Only frozen public Qore resources, first-party outputs, public Qaizen screenshots/DOM/events and selected operator receipts; excludes private website source, auth files, full CLI/model traces, browser traces/video and caches.",
+  "artifacts": [
+    {
+      "path": "prepared/candidate.json",
+      "raw_sha256": "bffb2525dfb53251a3faca626dac672426307122fbddbca0906e9fb1a9c83215",
+      "public_sha256": "bffb2525dfb53251a3faca626dac672426307122fbddbca0906e9fb1a9c83215",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "prepared/input-manifest.json",
+      "raw_sha256": "ca02b75180a201ba8f9abb4e095a3d72cd0066f939e66c2e34bc7a781ad0c34d",
+      "public_sha256": "ca02b75180a201ba8f9abb4e095a3d72cd0066f939e66c2e34bc7a781ad0c34d",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "prepared/instructions.json",
+      "raw_sha256": "18b33e0e6df3fa68c5cad5847c57af2797c6dd062e52e65e963b66cdc2773a09",
+      "public_sha256": "18b33e0e6df3fa68c5cad5847c57af2797c6dd062e52e65e963b66cdc2773a09",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "prepared/source-snapshot/evals/fixtures/protocol-corrected.md",
+      "raw_sha256": "0a3452f02e358d8800fb26d591083deb972c5531165473990dc27007a9a9e0d4",
+      "public_sha256": "0a3452f02e358d8800fb26d591083deb972c5531165473990dc27007a9a9e0d4",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "prepared/source-snapshot/evals/fixtures/protocol-incomplete.md",
+      "raw_sha256": "b8d1f4ad7bd691dbf8f019cd3b87a7644a21899e6317edebac545fd3b245136e",
+      "public_sha256": "b8d1f4ad7bd691dbf8f019cd3b87a7644a21899e6317edebac545fd3b245136e",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "prepared/source-snapshot/evals/scenarios.json",
+      "raw_sha256": "46534adc957971607cb4af8ae555727b933746b61081822be77acf9d79d2ea49",
+      "public_sha256": "46534adc957971607cb4af8ae555727b933746b61081822be77acf9d79d2ea49",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "prepared/source-snapshot/examples/qaizen-labs/checks/check_contract.py",
+      "raw_sha256": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b",
+      "public_sha256": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "prepared/source-snapshot/examples/qaizen-labs/observation-policy.json",
+      "raw_sha256": "15f4e5b4960b5011684be265f027e42b8637a3b8aae96b24bba1ba3a4d0f0202",
+      "public_sha256": "15f4e5b4960b5011684be265f027e42b8637a3b8aae96b24bba1ba3a4d0f0202",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "prepared/source-snapshot/examples/qaizen-labs/surface-contract.json",
+      "raw_sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+      "public_sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "prepared/source-snapshot/profiles/qaizen-labs.json",
+      "raw_sha256": "f76afdd45cb6352e5044a06affc4182ea6cd40aa9c012fb216636a61faa428f0",
+      "public_sha256": "f76afdd45cb6352e5044a06affc4182ea6cd40aa9c012fb216636a61faa428f0",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "prepared/source-snapshot/schemas/qore-eval-run.schema.json",
+      "raw_sha256": "5b8f7b9b327d9158448a0579782859277dffd11023c246fd6f8b25abb8334306",
+      "public_sha256": "5b8f7b9b327d9158448a0579782859277dffd11023c246fd6f8b25abb8334306",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "prepared/source-snapshot/skills/qore-plan/SKILL.md",
+      "raw_sha256": "6a0b7a03d888595e6b9e76bc16644a313a187df91622fd5245d4b2253bdf83da",
+      "public_sha256": "6a0b7a03d888595e6b9e76bc16644a313a187df91622fd5245d4b2253bdf83da",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "prepared/source-snapshot/skills/qore-plan/agents/openai.yaml",
+      "raw_sha256": "21ffa75d5bc52d68819ff68d4b8c65dc33584464f755487e6a02302f0924c22b",
+      "public_sha256": "21ffa75d5bc52d68819ff68d4b8c65dc33584464f755487e6a02302f0924c22b",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "prepared/source-snapshot/skills/qore-plan/references/project-profile.md",
+      "raw_sha256": "16c5ff087c83b7503b23d5d94726834462dd4fd73d78a5380cf85135fa85b0b3",
+      "public_sha256": "16c5ff087c83b7503b23d5d94726834462dd4fd73d78a5380cf85135fa85b0b3",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "prepared/source-snapshot/skills/qore-plan/references/protocol.md",
+      "raw_sha256": "83f92490a5601b83fc6eaa21861344e35cd04a3ac7edb56b98cd2eb0ecfea84b",
+      "public_sha256": "83f92490a5601b83fc6eaa21861344e35cd04a3ac7edb56b98cd2eb0ecfea84b",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "prepared/source-snapshot/skills/qore-plan/references/roles.md",
+      "raw_sha256": "cc8060c7c852c143b9671af4fc0176b9c5068f338c19b2556b6ff494c0f0d318",
+      "public_sha256": "cc8060c7c852c143b9671af4fc0176b9c5068f338c19b2556b6ff494c0f0d318",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "prepared/source-snapshot/skills/qore-plan/references/run-evidence.md",
+      "raw_sha256": "35cd6dc6d3e1177bbae96e5b9e829ed1aa55901747c856f4db20e946421f163d",
+      "public_sha256": "35cd6dc6d3e1177bbae96e5b9e829ed1aa55901747c856f4db20e946421f163d",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "prepared/source-snapshot/skills/qore-plan/references/specification.md",
+      "raw_sha256": "7eb06b91fca66a3ec00bda4b49b035c5e6bfe827c4624768f66a09b6ae7827a1",
+      "public_sha256": "7eb06b91fca66a3ec00bda4b49b035c5e6bfe827c4624768f66a09b6ae7827a1",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "prepared/source-snapshot/skills/qore-plan/scripts/project-check.py",
+      "raw_sha256": "d87afa433fe485bdebca3e281d06e0896e4a8980ea7cf7baee739053614ea0ac",
+      "public_sha256": "d87afa433fe485bdebca3e281d06e0896e4a8980ea7cf7baee739053614ea0ac",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "prepared/source-snapshot/skills/qore-plan/scripts/run-check.py",
+      "raw_sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+      "public_sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "prepared/source-snapshot/skills/qore-plan/scripts/spec-lint.mjs",
+      "raw_sha256": "321ac211bfac936c4da3ffe173cdfc0d92cb695351273d289809c05c8b037ada",
+      "public_sha256": "321ac211bfac936c4da3ffe173cdfc0d92cb695351273d289809c05c8b037ada",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "prepared/source-snapshot/skills/qore-plan/scripts/spec-lint.sh",
+      "raw_sha256": "ee4b0c491833f8f3960037255f7ea601548a353d18b317aae25d8e5f2cd461b6",
+      "public_sha256": "ee4b0c491833f8f3960037255f7ea601548a353d18b317aae25d8e5f2cd461b6",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "prepared/source-snapshot/skills/qore-review/SKILL.md",
+      "raw_sha256": "ae7a3bc448eda7262fa8163a67b0ce712efc2779eaaf00ce57618dc966dd6367",
+      "public_sha256": "ae7a3bc448eda7262fa8163a67b0ce712efc2779eaaf00ce57618dc966dd6367",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "prepared/source-snapshot/skills/qore-review/agents/openai.yaml",
+      "raw_sha256": "6c689fd93445ab3edcb6b88320e7680ee37c746bca5635e8c406304b081250ed",
+      "public_sha256": "6c689fd93445ab3edcb6b88320e7680ee37c746bca5635e8c406304b081250ed",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "prepared/source-snapshot/skills/qore-review/references/findings.md",
+      "raw_sha256": "f9f9035e471c9832c6546e80e4fe857777fefceba781bd5801ee8f97bdeaa409",
+      "public_sha256": "f9f9035e471c9832c6546e80e4fe857777fefceba781bd5801ee8f97bdeaa409",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "prepared/source-snapshot/skills/qore-review/references/project-profile.md",
+      "raw_sha256": "5d3b69aac18f83a634f4c57c214cc1f53fa186c03c536adcefd4c905a8767c8d",
+      "public_sha256": "5d3b69aac18f83a634f4c57c214cc1f53fa186c03c536adcefd4c905a8767c8d",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "prepared/source-snapshot/skills/qore-review/references/protocol.md",
+      "raw_sha256": "e27e0050fdf4d75d2840dd257b9a759f1f48d459ef540990cd3aed5528c5f340",
+      "public_sha256": "e27e0050fdf4d75d2840dd257b9a759f1f48d459ef540990cd3aed5528c5f340",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "prepared/source-snapshot/skills/qore-review/references/run-evidence.md",
+      "raw_sha256": "fbdf433ef8b3e972f97bed5fdec4990cf3b49535bf63120c729a7daf4af71746",
+      "public_sha256": "fbdf433ef8b3e972f97bed5fdec4990cf3b49535bf63120c729a7daf4af71746",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "prepared/source-snapshot/skills/qore-review/scripts/finding-lint.mjs",
+      "raw_sha256": "d3d22ae7d0b1b6b53b36006f13a8aaf6e1aa9e89df27b98312e6ac72ea079a26",
+      "public_sha256": "d3d22ae7d0b1b6b53b36006f13a8aaf6e1aa9e89df27b98312e6ac72ea079a26",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "prepared/source-snapshot/skills/qore-review/scripts/project-check.py",
+      "raw_sha256": "d87afa433fe485bdebca3e281d06e0896e4a8980ea7cf7baee739053614ea0ac",
+      "public_sha256": "d87afa433fe485bdebca3e281d06e0896e4a8980ea7cf7baee739053614ea0ac",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "prepared/source-snapshot/skills/qore-review/scripts/redact-for-verifier.mjs",
+      "raw_sha256": "dc249524c749ad5b511aef0a2cf08b4cfd5c47c1e0de4fd41c5c70746b471083",
+      "public_sha256": "dc249524c749ad5b511aef0a2cf08b4cfd5c47c1e0de4fd41c5c70746b471083",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "prepared/source-snapshot/skills/qore-review/scripts/run-check.py",
+      "raw_sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+      "public_sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "prepared/source-snapshot/skills/qore-ux-review/SKILL.md",
+      "raw_sha256": "33b1367f256f1a6304902d08cdff9b023add92fb750834216268cca8de84b851",
+      "public_sha256": "33b1367f256f1a6304902d08cdff9b023add92fb750834216268cca8de84b851",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "prepared/source-snapshot/skills/qore-ux-review/agents/openai.yaml",
+      "raw_sha256": "2bafca3b7edce2edac4814b4028fdb814f83c1c2efbea4d461b7469fbe1bd7af",
+      "public_sha256": "2bafca3b7edce2edac4814b4028fdb814f83c1c2efbea4d461b7469fbe1bd7af",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "prepared/source-snapshot/skills/qore-ux-review/references/evidence.md",
+      "raw_sha256": "659560f88b965371e2c6e886b5f4c648a4879ebb7c69af4b1d307dfae176c8b3",
+      "public_sha256": "659560f88b965371e2c6e886b5f4c648a4879ebb7c69af4b1d307dfae176c8b3",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "prepared/source-snapshot/skills/qore-ux-review/references/gates.md",
+      "raw_sha256": "667063cd64c576a9c5b4ec69f6ddcd677d4e969bae96184b3136ede9fd12fd87",
+      "public_sha256": "667063cd64c576a9c5b4ec69f6ddcd677d4e969bae96184b3136ede9fd12fd87",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "prepared/source-snapshot/skills/qore-ux-review/references/project-profile.md",
+      "raw_sha256": "154ed11dab8e8499e74a5f3a6afb512827d5de5c73408523b845684e38f59dfc",
+      "public_sha256": "154ed11dab8e8499e74a5f3a6afb512827d5de5c73408523b845684e38f59dfc",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "prepared/source-snapshot/skills/qore-ux-review/references/protocol.md",
+      "raw_sha256": "eda7c7c7c9e711e4b9fca59ec6b622d713c3d95b14cd6e3b008a978ebf156004",
+      "public_sha256": "eda7c7c7c9e711e4b9fca59ec6b622d713c3d95b14cd6e3b008a978ebf156004",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "prepared/source-snapshot/skills/qore-ux-review/references/run-evidence.md",
+      "raw_sha256": "2ede0b19d58fd5535c90023068355679ee7bb27d3070967ada38f9ad156a9e69",
+      "public_sha256": "2ede0b19d58fd5535c90023068355679ee7bb27d3070967ada38f9ad156a9e69",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "prepared/source-snapshot/skills/qore-ux-review/scripts/depth-lint.mjs",
+      "raw_sha256": "fd7be484c8e4bf3ba376bdddb88663b31ae9da4c2c7678232ea7a6cc7782bd0f",
+      "public_sha256": "fd7be484c8e4bf3ba376bdddb88663b31ae9da4c2c7678232ea7a6cc7782bd0f",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "prepared/source-snapshot/skills/qore-ux-review/scripts/project-check.py",
+      "raw_sha256": "d87afa433fe485bdebca3e281d06e0896e4a8980ea7cf7baee739053614ea0ac",
+      "public_sha256": "d87afa433fe485bdebca3e281d06e0896e4a8980ea7cf7baee739053614ea0ac",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "prepared/source-snapshot/skills/qore-ux-review/scripts/run-check.py",
+      "raw_sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+      "public_sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "prepared/source-snapshot/skills/qore-ux-review/scripts/stop-rule.mjs",
+      "raw_sha256": "5c8d898e3accd82ed1932c791ff5ed1285aae659bae6757488158fc7a8120443",
+      "public_sha256": "5c8d898e3accd82ed1932c791ff5ed1285aae659bae6757488158fc7a8120443",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "prepared/source-snapshot/tools/browser_probe.mjs",
+      "raw_sha256": "544d47211ac5aefde57072aef4ded1140c21030555b0e45e93f8821794249add",
+      "public_sha256": "544d47211ac5aefde57072aef4ded1140c21030555b0e45e93f8821794249add",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "prepared/source-snapshot/tools/clean_room.sh",
+      "raw_sha256": "a22e60630cdf9dc508c57c580ba620c8d1addc6faf0d7b771bae7e6361e4111f",
+      "public_sha256": "a22e60630cdf9dc508c57c580ba620c8d1addc6faf0d7b771bae7e6361e4111f",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "prepared/source-snapshot/tools/context.py",
+      "raw_sha256": "d87afa433fe485bdebca3e281d06e0896e4a8980ea7cf7baee739053614ea0ac",
+      "public_sha256": "d87afa433fe485bdebca3e281d06e0896e4a8980ea7cf7baee739053614ea0ac",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "prepared/source-snapshot/tools/evaluate.py",
+      "raw_sha256": "3c53e167b98fd787943066c53a17bf0505bcab445a5f690b7514dcfcd33f33d8",
+      "public_sha256": "3c53e167b98fd787943066c53a17bf0505bcab445a5f690b7514dcfcd33f33d8",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "prepared/source-snapshot/tools/qore.py",
+      "raw_sha256": "ac501036c702b7ca5eae75d333298b6db22e519e0114a8c05c1f2bded4a9f713",
+      "public_sha256": "ac501036c702b7ca5eae75d333298b6db22e519e0114a8c05c1f2bded4a9f713",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "prepared/source-snapshot/tools/run_contract.py",
+      "raw_sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+      "public_sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "prepared/worker/.agents/skills/qore-ux-review/SKILL.md",
+      "raw_sha256": "33b1367f256f1a6304902d08cdff9b023add92fb750834216268cca8de84b851",
+      "public_sha256": "33b1367f256f1a6304902d08cdff9b023add92fb750834216268cca8de84b851",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "prepared/worker/.agents/skills/qore-ux-review/agents/openai.yaml",
+      "raw_sha256": "2bafca3b7edce2edac4814b4028fdb814f83c1c2efbea4d461b7469fbe1bd7af",
+      "public_sha256": "2bafca3b7edce2edac4814b4028fdb814f83c1c2efbea4d461b7469fbe1bd7af",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "prepared/worker/.agents/skills/qore-ux-review/references/evidence.md",
+      "raw_sha256": "659560f88b965371e2c6e886b5f4c648a4879ebb7c69af4b1d307dfae176c8b3",
+      "public_sha256": "659560f88b965371e2c6e886b5f4c648a4879ebb7c69af4b1d307dfae176c8b3",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "prepared/worker/.agents/skills/qore-ux-review/references/gates.md",
+      "raw_sha256": "667063cd64c576a9c5b4ec69f6ddcd677d4e969bae96184b3136ede9fd12fd87",
+      "public_sha256": "667063cd64c576a9c5b4ec69f6ddcd677d4e969bae96184b3136ede9fd12fd87",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "prepared/worker/.agents/skills/qore-ux-review/references/project-profile.md",
+      "raw_sha256": "154ed11dab8e8499e74a5f3a6afb512827d5de5c73408523b845684e38f59dfc",
+      "public_sha256": "154ed11dab8e8499e74a5f3a6afb512827d5de5c73408523b845684e38f59dfc",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "prepared/worker/.agents/skills/qore-ux-review/references/protocol.md",
+      "raw_sha256": "eda7c7c7c9e711e4b9fca59ec6b622d713c3d95b14cd6e3b008a978ebf156004",
+      "public_sha256": "eda7c7c7c9e711e4b9fca59ec6b622d713c3d95b14cd6e3b008a978ebf156004",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "prepared/worker/.agents/skills/qore-ux-review/references/release.json",
+      "raw_sha256": "61a9f43551f486340fbb2807c3b38c82fe6872b67907c0e6a19d4903cc85ea3e",
+      "public_sha256": "61a9f43551f486340fbb2807c3b38c82fe6872b67907c0e6a19d4903cc85ea3e",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "prepared/worker/.agents/skills/qore-ux-review/references/run-evidence.md",
+      "raw_sha256": "2ede0b19d58fd5535c90023068355679ee7bb27d3070967ada38f9ad156a9e69",
+      "public_sha256": "2ede0b19d58fd5535c90023068355679ee7bb27d3070967ada38f9ad156a9e69",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "prepared/worker/.agents/skills/qore-ux-review/scripts/depth-lint.mjs",
+      "raw_sha256": "fd7be484c8e4bf3ba376bdddb88663b31ae9da4c2c7678232ea7a6cc7782bd0f",
+      "public_sha256": "fd7be484c8e4bf3ba376bdddb88663b31ae9da4c2c7678232ea7a6cc7782bd0f",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "prepared/worker/.agents/skills/qore-ux-review/scripts/project-check.py",
+      "raw_sha256": "d87afa433fe485bdebca3e281d06e0896e4a8980ea7cf7baee739053614ea0ac",
+      "public_sha256": "d87afa433fe485bdebca3e281d06e0896e4a8980ea7cf7baee739053614ea0ac",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "prepared/worker/.agents/skills/qore-ux-review/scripts/run-check.py",
+      "raw_sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+      "public_sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "prepared/worker/.agents/skills/qore-ux-review/scripts/stop-rule.mjs",
+      "raw_sha256": "5c8d898e3accd82ed1932c791ff5ed1285aae659bae6757488158fc7a8120443",
+      "public_sha256": "5c8d898e3accd82ed1932c791ff5ed1285aae659bae6757488158fc7a8120443",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "prepared/worker/TASK.md",
+      "raw_sha256": "3f9d638f2a8b8b9677c313ff3872f6c7afadf89b470fd1cc7e034407543782f3",
+      "public_sha256": "3f9d638f2a8b8b9677c313ff3872f6c7afadf89b470fd1cc7e034407543782f3",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "prepared/worker/checks/check_contract.py",
+      "raw_sha256": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b",
+      "public_sha256": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "prepared/worker/observation-policy.json",
+      "raw_sha256": "15f4e5b4960b5011684be265f027e42b8637a3b8aae96b24bba1ba3a4d0f0202",
+      "public_sha256": "15f4e5b4960b5011684be265f027e42b8637a3b8aae96b24bba1ba3a4d0f0202",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "prepared/worker/surface-contract.json",
+      "raw_sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+      "public_sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/REPORT.md",
+      "raw_sha256": "fdafba9796ac7bdf77d1719ab499540298bf758bf58e505f9851afa40969bd2b",
+      "public_sha256": "fdafba9796ac7bdf77d1719ab499540298bf758bf58e505f9851afa40969bd2b",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/browser-phase.json",
+      "raw_sha256": "867af3c45dfd0c0c6e840a95386323f01f75b8c062d9511f74be881707682000",
+      "public_sha256": "867af3c45dfd0c0c6e840a95386323f01f75b8c062d9511f74be881707682000",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/browser-request-1.json",
+      "raw_sha256": "d2d45dc81331345404c2ec8f97eb472faa04b099faea723f3159fdb1f64dbd13",
+      "public_sha256": "d2d45dc81331345404c2ec8f97eb472faa04b099faea723f3159fdb1f64dbd13",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/browser-request-2.json",
+      "raw_sha256": "a7452f8aa9c9bbdd8f796f534090aa5c461736e7adef6dfa560ceaaff6b62e36",
+      "public_sha256": "a7452f8aa9c9bbdd8f796f534090aa5c461736e7adef6dfa560ceaaff6b62e36",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/browser-request-3.json",
+      "raw_sha256": "468218470e7b9f6562a7cc91a56d8b2e60c97f5589907d1d92c49210a4f8fad7",
+      "public_sha256": "468218470e7b9f6562a7cc91a56d8b2e60c97f5589907d1d92c49210a4f8fad7",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/budget-record.json",
+      "raw_sha256": "ca5e5e12d5fc73f3adef7fe26a137d22d737f51622d06d1bed12bf3b8e187046",
+      "public_sha256": "ca5e5e12d5fc73f3adef7fe26a137d22d737f51622d06d1bed12bf3b8e187046",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/build-record.py",
+      "raw_sha256": "4e5f17e7ec15bcdf0a2683dda51812b72888b2b0048a95830de0c7f6eacb3368",
+      "public_sha256": "4e5f17e7ec15bcdf0a2683dda51812b72888b2b0048a95830de0c7f6eacb3368",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/capability-matrix.json",
+      "raw_sha256": "e8c228eec968826ade25521db5da85c575d1b80e89f7a6c3c4b622c01bffc5f7",
+      "public_sha256": "e8c228eec968826ade25521db5da85c575d1b80e89f7a6c3c4b622c01bffc5f7",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/command-records.json",
+      "raw_sha256": "adb6260cc6f6025f3abba42a8d081af5e1bb2d39d2098979f8017202dece5e95",
+      "public_sha256": "adb6260cc6f6025f3abba42a8d081af5e1bb2d39d2098979f8017202dece5e95",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/contract-check.json",
+      "raw_sha256": "69afc941aa72b91d1deabd32cf15a067021645e9657b644fcca40fe270145e3d",
+      "public_sha256": "69afc941aa72b91d1deabd32cf15a067021645e9657b644fcca40fe270145e3d",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/depth-lint.json",
+      "raw_sha256": "27c42e4079a8744d8acc908be09dbd5775dd252d63bb20f24e2ccf299e4cb452",
+      "public_sha256": "27c42e4079a8744d8acc908be09dbd5775dd252d63bb20f24e2ccf299e4cb452",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/depth.json",
+      "raw_sha256": "1ffdf6255af1dc5a23b867dc24d4256bf97e12a4e83781273ff37cadcbf64aba",
+      "public_sha256": "1ffdf6255af1dc5a23b867dc24d4256bf97e12a4e83781273ff37cadcbf64aba",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/discovery-failure.json",
+      "raw_sha256": "eac5afaba13b7f60330d60c969eb7c4a6040ad113c1c0b58473e181aef085a65",
+      "public_sha256": "eac5afaba13b7f60330d60c969eb7c4a6040ad113c1c0b58473e181aef085a65",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/execution.json",
+      "raw_sha256": "4e5021ede168c3bc6c4d2eb52b941cfffd1662efdff5625cc0fbdece73dc5626",
+      "public_sha256": "4e5021ede168c3bc6c4d2eb52b941cfffd1662efdff5625cc0fbdece73dc5626",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/finalize.py",
+      "raw_sha256": "5f710f2c14a00c9686fd806c444021ac90ef3f8cb617468f83d0c061e0b8ec61",
+      "public_sha256": "5f710f2c14a00c9686fd806c444021ac90ef3f8cb617468f83d0c061e0b8ec61",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/freshness-phase.json",
+      "raw_sha256": "19d8a57a0ed37ef80a7b8e3a1d2f83cbb50680e8ea6406edf8688af7e56c965b",
+      "public_sha256": "19d8a57a0ed37ef80a7b8e3a1d2f83cbb50680e8ea6406edf8688af7e56c965b",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/gate-results.json",
+      "raw_sha256": "0515cefda22422036d57c70823cd8dda66535732ec25ef5707aa21c3d8d6fa94",
+      "public_sha256": "0515cefda22422036d57c70823cd8dda66535732ec25ef5707aa21c3d8d6fa94",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/immutability-check.json",
+      "raw_sha256": "14d754cc3023774815c097ea70e70b001d7cdd8dad1afb3e24b68f354b4a6e31",
+      "public_sha256": "14d754cc3023774815c097ea70e70b001d7cdd8dad1afb3e24b68f354b4a6e31",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/input-manifest.json",
+      "raw_sha256": "90a1077974377c199642143608dcdb6945431b8af4253bc07de9e5a227275732",
+      "public_sha256": "90a1077974377c199642143608dcdb6945431b8af4253bc07de9e5a227275732",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/inspection-1.json",
+      "raw_sha256": "72a7ae85cf40be578eb4e8db3d7dc2b36bf3e121c4806cea4c5921c495dfb83c",
+      "public_sha256": "72a7ae85cf40be578eb4e8db3d7dc2b36bf3e121c4806cea4c5921c495dfb83c",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/inspection-2.json",
+      "raw_sha256": "c91d2da2c6de003fa7a9fb57bd2ef1880059a493e3f1fd0bf7ff4c2335322096",
+      "public_sha256": "c91d2da2c6de003fa7a9fb57bd2ef1880059a493e3f1fd0bf7ff4c2335322096",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/inspection-3.json",
+      "raw_sha256": "54e5a4bf8417c889fb91a6c7a200d15438633d77fbc66315b2e37e7a5ef09ba4",
+      "public_sha256": "54e5a4bf8417c889fb91a6c7a200d15438633d77fbc66315b2e37e7a5ef09ba4",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/limitations.json",
+      "raw_sha256": "432eebb82000facc3318435b1544d7899f50b91d71f68570096122cd89863716",
+      "public_sha256": "432eebb82000facc3318435b1544d7899f50b91d71f68570096122cd89863716",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/loop.json",
+      "raw_sha256": "d2b84ba7a92cb5f118184bbad0c75fb758e34258210f52e3914b90a1c3729ca6",
+      "public_sha256": "d2b84ba7a92cb5f118184bbad0c75fb758e34258210f52e3914b90a1c3729ca6",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/policy-evidence.json",
+      "raw_sha256": "8ab8814fa129a9459e097592ef52fb1d7a35da41a3599bda419ba854f54df965",
+      "public_sha256": "8ab8814fa129a9459e097592ef52fb1d7a35da41a3599bda419ba854f54df965",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/relay-1/00-entry.dom.json",
+      "raw_sha256": "09a05d31c16faaf8980d863723e3f901798ef49b4cac43ea54aec912de99112d",
+      "public_sha256": "09a05d31c16faaf8980d863723e3f901798ef49b4cac43ea54aec912de99112d",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/relay-1/00-entry.png",
+      "raw_sha256": "095283e6a92818f6baf91a977793ff14591a91a60cef7b82ea9019642c2251e2",
+      "public_sha256": "095283e6a92818f6baf91a977793ff14591a91a60cef7b82ea9019642c2251e2",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/relay-1/01-labs-entry.dom.json",
+      "raw_sha256": "2e72d94aeb80a87a73191e51ac1edd98ea33a03d36fe37719b667b5f754ac9e2",
+      "public_sha256": "2e72d94aeb80a87a73191e51ac1edd98ea33a03d36fe37719b667b5f754ac9e2",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/relay-1/01-labs-entry.png",
+      "raw_sha256": "041319a5d5542b9a5ddae0bd2c782d018a031320b7ef69be076a71a99c470b8a",
+      "public_sha256": "041319a5d5542b9a5ddae0bd2c782d018a031320b7ef69be076a71a99c470b8a",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/relay-1/02-introduction.dom.json",
+      "raw_sha256": "524b0152744d052e6bb253eaeda4ff35b7bc69b132546fc509c7edd1958c13a1",
+      "public_sha256": "524b0152744d052e6bb253eaeda4ff35b7bc69b132546fc509c7edd1958c13a1",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/relay-1/02-introduction.png",
+      "raw_sha256": "8c12568cc767e1d111812033ddd4823fc5ffcaf12d6561cb61b74ffa210a4bc8",
+      "public_sha256": "8c12568cc767e1d111812033ddd4823fc5ffcaf12d6561cb61b74ffa210a4bc8",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/relay-1/03-first-question-unanswered.dom.json",
+      "raw_sha256": "d914c65d93824bf0ad2af509c711239181aeace21ca36164765ced95fe000fba",
+      "public_sha256": "d914c65d93824bf0ad2af509c711239181aeace21ca36164765ced95fe000fba",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/relay-1/03-first-question-unanswered.png",
+      "raw_sha256": "6d439ba30a14c5b52a343d6821056842fb2a60b15bcd5d7437b9b4088a685938",
+      "public_sha256": "6d439ba30a14c5b52a343d6821056842fb2a60b15bcd5d7437b9b4088a685938",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/relay-1/04-final.dom.json",
+      "raw_sha256": "d914c65d93824bf0ad2af509c711239181aeace21ca36164765ced95fe000fba",
+      "public_sha256": "d914c65d93824bf0ad2af509c711239181aeace21ca36164765ced95fe000fba",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/relay-1/04-final.png",
+      "raw_sha256": "4e9a3b37fca4b08a7cd5123cae0c30d5a65225ec092b00091699bad327691393",
+      "public_sha256": "4e9a3b37fca4b08a7cd5123cae0c30d5a65225ec092b00091699bad327691393",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/relay-1/events.json",
+      "raw_sha256": "c2dff768ec10804452c3222d25a88057dd3ddd2c9839ad6660994d4095836301",
+      "public_sha256": "c2dff768ec10804452c3222d25a88057dd3ddd2c9839ad6660994d4095836301",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/relay-1/relay.json",
+      "raw_sha256": "7203dad3516dde9b6406449a67ca77ef049479c8f3e392da063e82d3c5a53ba1",
+      "public_sha256": "7203dad3516dde9b6406449a67ca77ef049479c8f3e392da063e82d3c5a53ba1",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/relay-1/result.json",
+      "raw_sha256": "6d1a8ae8164da72963591b3823c04bf33b1f47ee64eb60ed093a51d2d3943961",
+      "public_sha256": "6d1a8ae8164da72963591b3823c04bf33b1f47ee64eb60ed093a51d2d3943961",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/relay-2/00-entry.dom.json",
+      "raw_sha256": "09a05d31c16faaf8980d863723e3f901798ef49b4cac43ea54aec912de99112d",
+      "public_sha256": "09a05d31c16faaf8980d863723e3f901798ef49b4cac43ea54aec912de99112d",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/relay-2/00-entry.png",
+      "raw_sha256": "484c55e66c4e31ca320607543e4ad4b28e877409b4f861352c1ef9af0f013137",
+      "public_sha256": "484c55e66c4e31ca320607543e4ad4b28e877409b4f861352c1ef9af0f013137",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/relay-2/01-help-summary-focus.dom.json",
+      "raw_sha256": "076f396281cfb2f2e10bd7059a532f1182e9e42966166617cfea9badfd2c439f",
+      "public_sha256": "076f396281cfb2f2e10bd7059a532f1182e9e42966166617cfea9badfd2c439f",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/relay-2/01-help-summary-focus.png",
+      "raw_sha256": "154537c2923ff969a06afd9a5d39ba885d067ce6190af63b29e9daef57fc1977",
+      "public_sha256": "154537c2923ff969a06afd9a5d39ba885d067ce6190af63b29e9daef57fc1977",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/relay-2/02-help-open-enter.dom.json",
+      "raw_sha256": "4b9b0bf3e78667d19a134f9156a0d80080297bd8ab7a6a122e64eff2c6f4510d",
+      "public_sha256": "4b9b0bf3e78667d19a134f9156a0d80080297bd8ab7a6a122e64eff2c6f4510d",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/relay-2/02-help-open-enter.png",
+      "raw_sha256": "3a56491c56bc3abd5103cc8844547c55fdaca4437b08b2924f293e2f4c143242",
+      "public_sha256": "3a56491c56bc3abd5103cc8844547c55fdaca4437b08b2924f293e2f4c143242",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/relay-2/03-help-closed-space.dom.json",
+      "raw_sha256": "076f396281cfb2f2e10bd7059a532f1182e9e42966166617cfea9badfd2c439f",
+      "public_sha256": "076f396281cfb2f2e10bd7059a532f1182e9e42966166617cfea9badfd2c439f",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/relay-2/03-help-closed-space.png",
+      "raw_sha256": "ae1d461d10359d6639b8cea3241d58d08951ea067ae8740e84959862d9a4414e",
+      "public_sha256": "ae1d461d10359d6639b8cea3241d58d08951ea067ae8740e84959862d9a4414e",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/relay-2/04-close-focus-before-activation.dom.json",
+      "raw_sha256": "baa708ae3cbe364b3a84d89f0c0106c0336e24d34e5e78bc05815cab695d3ac8",
+      "public_sha256": "baa708ae3cbe364b3a84d89f0c0106c0336e24d34e5e78bc05815cab695d3ac8",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/relay-2/04-close-focus-before-activation.png",
+      "raw_sha256": "19e2db3f2d7813c675b52c8ae0dbc548eb2e0d8e7c2b55e8cb7b2e649bc50ceb",
+      "public_sha256": "19e2db3f2d7813c675b52c8ae0dbc548eb2e0d8e7c2b55e8cb7b2e649bc50ceb",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/relay-2/05-after-close-focus-restoration.dom.json",
+      "raw_sha256": "076f396281cfb2f2e10bd7059a532f1182e9e42966166617cfea9badfd2c439f",
+      "public_sha256": "076f396281cfb2f2e10bd7059a532f1182e9e42966166617cfea9badfd2c439f",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/relay-2/05-after-close-focus-restoration.png",
+      "raw_sha256": "154537c2923ff969a06afd9a5d39ba885d067ce6190af63b29e9daef57fc1977",
+      "public_sha256": "154537c2923ff969a06afd9a5d39ba885d067ce6190af63b29e9daef57fc1977",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/relay-2/06-back-focus-before-activation.dom.json",
+      "raw_sha256": "495b50eac16f5a7872812186e9c3c02cac07f2a883bb9da673b62c4b576e9480",
+      "public_sha256": "495b50eac16f5a7872812186e9c3c02cac07f2a883bb9da673b62c4b576e9480",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/relay-2/06-back-focus-before-activation.png",
+      "raw_sha256": "57673acee0c4875835c892ce68bfe1efd2182ec2cbb4c6904ecaad0f4004aa31",
+      "public_sha256": "57673acee0c4875835c892ce68bfe1efd2182ec2cbb4c6904ecaad0f4004aa31",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/relay-2/07-returned-introduction.dom.json",
+      "raw_sha256": "6dd0bd08efd546fdbbcd0dff658a6b903f90f9d8ec7a12c9d8946c956ddeb37b",
+      "public_sha256": "6dd0bd08efd546fdbbcd0dff658a6b903f90f9d8ec7a12c9d8946c956ddeb37b",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/relay-2/07-returned-introduction.png",
+      "raw_sha256": "01b5a2bbf6947a76673ac13bacc27f8bf31f8fa4ca2cd30dbe8e62dcd864f822",
+      "public_sha256": "01b5a2bbf6947a76673ac13bacc27f8bf31f8fa4ca2cd30dbe8e62dcd864f822",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/relay-2/08-final.dom.json",
+      "raw_sha256": "6dd0bd08efd546fdbbcd0dff658a6b903f90f9d8ec7a12c9d8946c956ddeb37b",
+      "public_sha256": "6dd0bd08efd546fdbbcd0dff658a6b903f90f9d8ec7a12c9d8946c956ddeb37b",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/relay-2/08-final.png",
+      "raw_sha256": "87473a933533895cf780dd9d517969cda71d5a8afdb74b99a57e97434cd8a824",
+      "public_sha256": "87473a933533895cf780dd9d517969cda71d5a8afdb74b99a57e97434cd8a824",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/relay-2/events.json",
+      "raw_sha256": "104fa85e8db7a62356ae94b0845502eb3ff54be2c7143b4bb2ff6d5b875f518b",
+      "public_sha256": "104fa85e8db7a62356ae94b0845502eb3ff54be2c7143b4bb2ff6d5b875f518b",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/relay-2/relay.json",
+      "raw_sha256": "830fc70ff4b79b79a3177c2b0e9b9f9d05806f1bf9a48836350cbba2e52f7219",
+      "public_sha256": "830fc70ff4b79b79a3177c2b0e9b9f9d05806f1bf9a48836350cbba2e52f7219",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/relay-2/result.json",
+      "raw_sha256": "331615585a8bfeddec9d724c106ae3947c21d9151493a8c0497c50a2051bbba1",
+      "public_sha256": "331615585a8bfeddec9d724c106ae3947c21d9151493a8c0497c50a2051bbba1",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/relay-3/00-entry.dom.json",
+      "raw_sha256": "09a05d31c16faaf8980d863723e3f901798ef49b4cac43ea54aec912de99112d",
+      "public_sha256": "09a05d31c16faaf8980d863723e3f901798ef49b4cac43ea54aec912de99112d",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/relay-3/00-entry.png",
+      "raw_sha256": "484c55e66c4e31ca320607543e4ad4b28e877409b4f861352c1ef9af0f013137",
+      "public_sha256": "484c55e66c4e31ca320607543e4ad4b28e877409b4f861352c1ef9af0f013137",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/relay-3/01-deep-route-reloaded-introduction.dom.json",
+      "raw_sha256": "524b0152744d052e6bb253eaeda4ff35b7bc69b132546fc509c7edd1958c13a1",
+      "public_sha256": "524b0152744d052e6bb253eaeda4ff35b7bc69b132546fc509c7edd1958c13a1",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/relay-3/01-deep-route-reloaded-introduction.png",
+      "raw_sha256": "8c12568cc767e1d111812033ddd4823fc5ffcaf12d6561cb61b74ffa210a4bc8",
+      "public_sha256": "8c12568cc767e1d111812033ddd4823fc5ffcaf12d6561cb61b74ffa210a4bc8",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/relay-3/02-history-back-labs.dom.json",
+      "raw_sha256": "09a05d31c16faaf8980d863723e3f901798ef49b4cac43ea54aec912de99112d",
+      "public_sha256": "09a05d31c16faaf8980d863723e3f901798ef49b4cac43ea54aec912de99112d",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/relay-3/02-history-back-labs.png",
+      "raw_sha256": "095283e6a92818f6baf91a977793ff14591a91a60cef7b82ea9019642c2251e2",
+      "public_sha256": "095283e6a92818f6baf91a977793ff14591a91a60cef7b82ea9019642c2251e2",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/relay-3/03-history-forward-introduction.dom.json",
+      "raw_sha256": "524b0152744d052e6bb253eaeda4ff35b7bc69b132546fc509c7edd1958c13a1",
+      "public_sha256": "524b0152744d052e6bb253eaeda4ff35b7bc69b132546fc509c7edd1958c13a1",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/relay-3/03-history-forward-introduction.png",
+      "raw_sha256": "70dbd413a19e36568b831e887cdeb70ed1ddebcd60b6ba2466418dec8c82c975",
+      "public_sha256": "70dbd413a19e36568b831e887cdeb70ed1ddebcd60b6ba2466418dec8c82c975",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/relay-3/04-back-focus-challenge.dom.json",
+      "raw_sha256": "495b50eac16f5a7872812186e9c3c02cac07f2a883bb9da673b62c4b576e9480",
+      "public_sha256": "495b50eac16f5a7872812186e9c3c02cac07f2a883bb9da673b62c4b576e9480",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/relay-3/04-back-focus-challenge.png",
+      "raw_sha256": "57673acee0c4875835c892ce68bfe1efd2182ec2cbb4c6904ecaad0f4004aa31",
+      "public_sha256": "57673acee0c4875835c892ce68bfe1efd2182ec2cbb4c6904ecaad0f4004aa31",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/relay-3/05-summary-reverse-tab.dom.json",
+      "raw_sha256": "076f396281cfb2f2e10bd7059a532f1182e9e42966166617cfea9badfd2c439f",
+      "public_sha256": "076f396281cfb2f2e10bd7059a532f1182e9e42966166617cfea9badfd2c439f",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/relay-3/05-summary-reverse-tab.png",
+      "raw_sha256": "90a40fe641a1eff7651756586a3b073b55da7cef825ba998125ef3aea3dfd89e",
+      "public_sha256": "90a40fe641a1eff7651756586a3b073b55da7cef825ba998125ef3aea3dfd89e",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/relay-3/06-back-focus-repeat-tab.dom.json",
+      "raw_sha256": "495b50eac16f5a7872812186e9c3c02cac07f2a883bb9da673b62c4b576e9480",
+      "public_sha256": "495b50eac16f5a7872812186e9c3c02cac07f2a883bb9da673b62c4b576e9480",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/relay-3/06-back-focus-repeat-tab.png",
+      "raw_sha256": "57673acee0c4875835c892ce68bfe1efd2182ec2cbb4c6904ecaad0f4004aa31",
+      "public_sha256": "57673acee0c4875835c892ce68bfe1efd2182ec2cbb4c6904ecaad0f4004aa31",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/relay-3/07-challenge-returned-introduction.dom.json",
+      "raw_sha256": "6dd0bd08efd546fdbbcd0dff658a6b903f90f9d8ec7a12c9d8946c956ddeb37b",
+      "public_sha256": "6dd0bd08efd546fdbbcd0dff658a6b903f90f9d8ec7a12c9d8946c956ddeb37b",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/relay-3/07-challenge-returned-introduction.png",
+      "raw_sha256": "4cf01741cddbdd55bd0c9d4c0e4ab0b3ead5be51a227e3c445a836081583e2ba",
+      "public_sha256": "4cf01741cddbdd55bd0c9d4c0e4ab0b3ead5be51a227e3c445a836081583e2ba",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/relay-3/08-final.dom.json",
+      "raw_sha256": "6dd0bd08efd546fdbbcd0dff658a6b903f90f9d8ec7a12c9d8946c956ddeb37b",
+      "public_sha256": "6dd0bd08efd546fdbbcd0dff658a6b903f90f9d8ec7a12c9d8946c956ddeb37b",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/relay-3/08-final.png",
+      "raw_sha256": "87473a933533895cf780dd9d517969cda71d5a8afdb74b99a57e97434cd8a824",
+      "public_sha256": "87473a933533895cf780dd9d517969cda71d5a8afdb74b99a57e97434cd8a824",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/relay-3/events.json",
+      "raw_sha256": "3661c0dfc24f3f1c3a6b9b88de86646feee91e63e9642770359aa39f30cf1eb2",
+      "public_sha256": "3661c0dfc24f3f1c3a6b9b88de86646feee91e63e9642770359aa39f30cf1eb2",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/relay-3/relay.json",
+      "raw_sha256": "c9f0aab065e452ca9621964f003084696ae33dc80c96ac8d35de43fc1bc8e73c",
+      "public_sha256": "c9f0aab065e452ca9621964f003084696ae33dc80c96ac8d35de43fc1bc8e73c",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/relay-3/result.json",
+      "raw_sha256": "8e28de5f587cd19eb30f6d6063a27e987684c92e953043d1f5c18597067dfbad",
+      "public_sha256": "8e28de5f587cd19eb30f6d6063a27e987684c92e953043d1f5c18597067dfbad",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/request-log.json",
+      "raw_sha256": "0717f132601078c1bfdd29781972868a904118da1e0f4ad87fddade0c0aab164",
+      "public_sha256": "0717f132601078c1bfdd29781972868a904118da1e0f4ad87fddade0c0aab164",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/required-check-results.json",
+      "raw_sha256": "42f7c417d9d2099706d09bf0d681267938a8fc3a42e5d39e9571bac555cc2dc3",
+      "public_sha256": "42f7c417d9d2099706d09bf0d681267938a8fc3a42e5d39e9571bac555cc2dc3",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/roster.json",
+      "raw_sha256": "3298048c4d3c448603355eb0a282f47a3b05e075adb377c141a7767a07a674e5",
+      "public_sha256": "3298048c4d3c448603355eb0a282f47a3b05e075adb377c141a7767a07a674e5",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/run-check-final.json",
+      "raw_sha256": "43473d7b2a8c3ccd9d6ea690a80a881f17456bdd60531e67642676cdfa98e947",
+      "public_sha256": "43473d7b2a8c3ccd9d6ea690a80a881f17456bdd60531e67642676cdfa98e947",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/run-check-initial.json",
+      "raw_sha256": "acb80c31917b8e145cd64b65e7012564dd939d0891cae447971dab839450a1ec",
+      "public_sha256": "acb80c31917b8e145cd64b65e7012564dd939d0891cae447971dab839450a1ec",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/scope-phase.json",
+      "raw_sha256": "05137cbbdbb6919a02ac8764b352efeabde1e2ec406f7640808344ab99c1f996",
+      "public_sha256": "05137cbbdbb6919a02ac8764b352efeabde1e2ec406f7640808344ab99c1f996",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/scope-plan.json",
+      "raw_sha256": "6efb4c8870b818ebae5561412c89c4608a8674ae78b8af4baccfe410e3203e42",
+      "public_sha256": "6efb4c8870b818ebae5561412c89c4608a8674ae78b8af4baccfe410e3203e42",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/state_transition-phase.json",
+      "raw_sha256": "1330c70dfa8a7f544f4f337e2f84f7747b02e51e3253b90e16d9e8210ba7ffcc",
+      "public_sha256": "1330c70dfa8a7f544f4f337e2f84f7747b02e51e3253b90e16d9e8210ba7ffcc",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/stop-rule-1.json",
+      "raw_sha256": "450f92e1be8153b91115fc8e649d1008195080eaad1f4be83aef8c913d6df8cb",
+      "public_sha256": "450f92e1be8153b91115fc8e649d1008195080eaad1f4be83aef8c913d6df8cb",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/stop-rule-2.json",
+      "raw_sha256": "49483771e3277a53498aa15d60341ad65ab101b28cd017ae8156ccbcb3ff4555",
+      "public_sha256": "49483771e3277a53498aa15d60341ad65ab101b28cd017ae8156ccbcb3ff4555",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/verdict-phase.json",
+      "raw_sha256": "5344e470c6ad8e88c6fd14df02ba4f4ae0fdcc2b4772eaef7cc3194263778427",
+      "public_sha256": "5344e470c6ad8e88c6fd14df02ba4f4ae0fdcc2b4772eaef7cc3194263778427",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "final-output/write-canary",
+      "raw_sha256": "2d711642b726b04401627ca9fbac32f5c8530fb1903cc4db02258717921a4881",
+      "public_sha256": "2d711642b726b04401627ca9fbac32f5c8530fb1903cc4db02258717921a4881",
+      "transformation": "Byte-identical selected first-party task input/output or authorized public Qaizen observation; raw CLI/model traces, credentials and private website code excluded."
+    },
+    {
+      "path": "isolation-evidence.json",
+      "raw_sha256": "3ba93f4d4a063f7278de72e6081350b988530f1c297d996273c398754de20bcc",
+      "public_sha256": "3ba93f4d4a063f7278de72e6081350b988530f1c297d996273c398754de20bcc",
+      "transformation": "Byte-identical selected operator receipt; no credential file or raw model trace."
+    },
+    {
+      "path": "execution-evidence.json",
+      "raw_sha256": "72b3fccf5ba86653a26eebeef597d78d6f549cfd5091c61aa66ea64af98cbdcc",
+      "public_sha256": "72b3fccf5ba86653a26eebeef597d78d6f549cfd5091c61aa66ea64af98cbdcc",
+      "transformation": "Byte-identical selected operator receipt; no credential file or raw model trace."
+    },
+    {
+      "path": "evaluation.json",
+      "raw_sha256": "548a51932387e27a0818ad37e449c4f3f0c678780bc36c958f27286267b84e45",
+      "public_sha256": "548a51932387e27a0818ad37e449c4f3f0c678780bc36c958f27286267b84e45",
+      "transformation": "Byte-identical selected operator receipt; no credential file or raw model trace."
+    },
+    {
+      "path": "evaluation-check.json",
+      "raw_sha256": "20947db964dddb71f3cf4cdfdfdc284c0398c4941f1ea22dc69786b7c860f7da",
+      "public_sha256": "20947db964dddb71f3cf4cdfdfdc284c0398c4941f1ea22dc69786b7c860f7da",
+      "transformation": "Byte-identical selected operator receipt; no credential file or raw model trace."
+    },
+    {
+      "path": "completion.json",
+      "raw_sha256": "d2217d3da221da0cff7e2a98491dcf7b148ddeed5c3277795e945e9b9ba88ce0",
+      "public_sha256": "d2217d3da221da0cff7e2a98491dcf7b148ddeed5c3277795e945e9b9ba88ce0",
+      "transformation": "Byte-identical selected operator receipt; no credential file or raw model trace."
+    },
+    {
+      "path": "post-inputs.json",
+      "raw_sha256": "b1d792a4b5c08201c4b0607812c2e12d74d6abfed340d7d13e7865514139e010",
+      "public_sha256": "b1d792a4b5c08201c4b0607812c2e12d74d6abfed340d7d13e7865514139e010",
+      "transformation": "Byte-identical selected operator receipt; no credential file or raw model trace."
+    },
+    {
+      "path": "boundary.json",
+      "raw_sha256": "f4d8e156ef1200d4c5f96a4ec3ff7a4726ed55626684893bd058c10ab3923d44",
+      "public_sha256": "f4d8e156ef1200d4c5f96a4ec3ff7a4726ed55626684893bd058c10ab3923d44",
+      "transformation": "Byte-identical selected operator receipt; no credential file or raw model trace."
+    },
+    {
+      "path": "turn1-launch.json",
+      "raw_sha256": "d3961b1ed0916180ba16a68a144d240fb047973efd371dea5afb4da147c134c1",
+      "public_sha256": "d3961b1ed0916180ba16a68a144d240fb047973efd371dea5afb4da147c134c1",
+      "transformation": "Byte-identical selected operator receipt; no credential file or raw model trace."
+    },
+    {
+      "path": "turn1-exit.json",
+      "raw_sha256": "cd750bbc93451f374858dc836b768403547c9efbc46bd2aae3bc8df4f3945b6e",
+      "public_sha256": "cd750bbc93451f374858dc836b768403547c9efbc46bd2aae3bc8df4f3945b6e",
+      "transformation": "Byte-identical selected operator receipt; no credential file or raw model trace."
+    },
+    {
+      "path": "environment.json",
+      "raw_sha256": "b1b23fdc42bac9cad45a55f455d1b92352fe3e407a46630cd90e3d5e0b216b17",
+      "public_sha256": "b1b23fdc42bac9cad45a55f455d1b92352fe3e407a46630cd90e3d5e0b216b17",
+      "transformation": "Byte-identical selected operator receipt; no credential file or raw model trace."
+    },
+    {
+      "path": "operation-metadata.json",
+      "raw_sha256": "5a5ebfe06671cfeeff5c85646c99191579d5aca1cc97a0000d3b64d330756e09",
+      "public_sha256": "5a5ebfe06671cfeeff5c85646c99191579d5aca1cc97a0000d3b64d330756e09",
+      "transformation": "Byte-identical selected operator receipt; no credential file or raw model trace."
+    },
+    {
+      "path": "normalization-receipt.json",
+      "raw_sha256": "bada1ecb043e0a7d8d778ca1c24ea5b20da4529cfd786dbf70faea490b992990",
+      "public_sha256": "bada1ecb043e0a7d8d778ca1c24ea5b20da4529cfd786dbf70faea490b992990",
+      "transformation": "Byte-identical selected operator receipt; no credential file or raw model trace."
+    },
+    {
+      "path": "REPORT.md",
+      "raw_sha256": "fdafba9796ac7bdf77d1719ab499540298bf758bf58e505f9851afa40969bd2b",
+      "public_sha256": "bc522837014676aefc5c7446f41f66f8e0d2197353a495ca3c5939fa11f4900f",
+      "transformation": "Presentation adapter: add provenance notice and relocate historical workspace/output links only.",
+      "link_changes": [
+        {
+          "from": "immutability-check.json",
+          "to": "final-output/immutability-check.json"
+        },
+        {
+          "from": "input-manifest.json",
+          "to": "final-output/input-manifest.json"
+        },
+        {
+          "from": "capability-matrix.json",
+          "to": "final-output/capability-matrix.json"
+        },
+        {
+          "from": "request-log.json",
+          "to": "final-output/request-log.json"
+        },
+        {
+          "from": "relay-1/relay.json",
+          "to": "final-output/relay-1/relay.json"
+        },
+        {
+          "from": "relay-2/relay.json",
+          "to": "final-output/relay-2/relay.json"
+        },
+        {
+          "from": "relay-3/relay.json",
+          "to": "final-output/relay-3/relay.json"
+        },
+        {
+          "from": "relay-1/01-labs-entry.png",
+          "to": "final-output/relay-1/01-labs-entry.png"
+        },
+        {
+          "from": "relay-1/02-introduction.dom.json",
+          "to": "final-output/relay-1/02-introduction.dom.json"
+        },
+        {
+          "from": "relay-2/events.json",
+          "to": "final-output/relay-2/events.json"
+        },
+        {
+          "from": "relay-2/02-help-open-enter.dom.json",
+          "to": "final-output/relay-2/02-help-open-enter.dom.json"
+        },
+        {
+          "from": "relay-2/05-after-close-focus-restoration.dom.json",
+          "to": "final-output/relay-2/05-after-close-focus-restoration.dom.json"
+        },
+        {
+          "from": "relay-2/events.json",
+          "to": "final-output/relay-2/events.json"
+        },
+        {
+          "from": "relay-3/events.json",
+          "to": "final-output/relay-3/events.json"
+        },
+        {
+          "from": "relay-2/07-returned-introduction.dom.json",
+          "to": "final-output/relay-2/07-returned-introduction.dom.json"
+        },
+        {
+          "from": "relay-3/07-challenge-returned-introduction.dom.json",
+          "to": "final-output/relay-3/07-challenge-returned-introduction.dom.json"
+        },
+        {
+          "from": "relay-2/06-back-focus-before-activation.png",
+          "to": "final-output/relay-2/06-back-focus-before-activation.png"
+        },
+        {
+          "from": "relay-3/04-back-focus-challenge.png",
+          "to": "final-output/relay-3/04-back-focus-challenge.png"
+        },
+        {
+          "from": "relay-3/06-back-focus-repeat-tab.png",
+          "to": "final-output/relay-3/06-back-focus-repeat-tab.png"
+        },
+        {
+          "from": "gate-results.json",
+          "to": "final-output/gate-results.json"
+        },
+        {
+          "from": "required-check-results.json",
+          "to": "final-output/required-check-results.json"
+        },
+        {
+          "from": "policy-evidence.json",
+          "to": "final-output/policy-evidence.json"
+        },
+        {
+          "from": "stop-rule-1.json",
+          "to": "final-output/stop-rule-1.json"
+        },
+        {
+          "from": "stop-rule-2.json",
+          "to": "final-output/stop-rule-2.json"
+        },
+        {
+          "from": "roster.json",
+          "to": "final-output/roster.json"
+        },
+        {
+          "from": "scope-phase.json",
+          "to": "final-output/scope-phase.json"
+        },
+        {
+          "from": "browser-phase.json",
+          "to": "final-output/browser-phase.json"
+        },
+        {
+          "from": "state_transition-phase.json",
+          "to": "final-output/state_transition-phase.json"
+        },
+        {
+          "from": "freshness-phase.json",
+          "to": "final-output/freshness-phase.json"
+        },
+        {
+          "from": "verdict-phase.json",
+          "to": "final-output/verdict-phase.json"
+        },
+        {
+          "from": "execution.json",
+          "to": "final-output/execution.json"
+        },
+        {
+          "from": "budget-record.json",
+          "to": "final-output/budget-record.json"
+        }
+      ]
+    }
+  ]
+}

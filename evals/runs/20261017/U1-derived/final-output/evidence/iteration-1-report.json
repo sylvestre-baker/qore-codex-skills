@@ -1,0 +1,594 @@
+{
+  "observed_window": {
+    "start": "2026-10-17T10:55:19.771Z",
+    "end": "2026-10-17T10:55:57.364Z"
+  },
+  "actions": [
+    {
+      "at": "2026-10-17T10:55:23.879Z",
+      "type": "keyboard",
+      "key": "Tab",
+      "active_element": {
+        "tag": "A",
+        "id": "",
+        "text": "Skip to content"
+      },
+      "outcome": "completed"
+    },
+    {
+      "at": "2026-10-17T10:55:23.879Z",
+      "type": "click",
+      "selector": "a[href$='/labs/readiness-check']",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-17T10:55:24.872Z",
+      "type": "assert-url",
+      "url": "https://qaizen.io/labs/readiness-check",
+      "outcome": "completed"
+    },
+    {
+      "at": "2026-10-17T10:55:25.776Z",
+      "type": "snapshot",
+      "label": "introduction",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-17T10:55:26.831Z",
+      "type": "click",
+      "role": "button",
+      "name": "Start the check",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-17T10:55:27.779Z",
+      "type": "assert-visible",
+      "selector": "main [role=\"radiogroup\"]",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-17T10:55:28.688Z",
+      "type": "assert-none-checked",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-17T10:55:29.594Z",
+      "type": "snapshot",
+      "label": "first-question",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-17T10:55:30.689Z",
+      "type": "focus-step",
+      "key": "Tab",
+      "step": 1,
+      "active_element": {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "Every production source and flow is written down, with a named owner"
+      },
+      "reached": false,
+      "outcome": "observed"
+    },
+    {
+      "at": "2026-10-17T10:55:30.696Z",
+      "type": "focus-step",
+      "key": "Tab",
+      "step": 2,
+      "active_element": {
+        "tag": "SUMMARY",
+        "id": "",
+        "text": "What does this mean?"
+      },
+      "reached": true,
+      "outcome": "observed"
+    },
+    {
+      "at": "2026-10-17T10:55:30.681Z",
+      "type": "traverse-focus",
+      "selector": "main details summary",
+      "max_steps": 24,
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-17T10:55:31.598Z",
+      "type": "keyboard",
+      "key": "Enter",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-17T10:55:32.510Z",
+      "type": "assert-attribute",
+      "selector": "main details",
+      "attribute": "open",
+      "value": "",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-17T10:55:33.417Z",
+      "type": "snapshot",
+      "label": "help-open-enter",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-17T10:55:34.528Z",
+      "type": "keyboard",
+      "key": "Space",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-17T10:55:35.436Z",
+      "type": "assert-attribute",
+      "selector": "main details",
+      "attribute": "open",
+      "value": null,
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-17T10:55:36.342Z",
+      "type": "snapshot",
+      "label": "help-closed-space",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-17T10:55:37.431Z",
+      "type": "keyboard",
+      "key": "Enter",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-17T10:55:38.341Z",
+      "type": "assert-attribute",
+      "selector": "main details",
+      "attribute": "open",
+      "value": "",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-17T10:55:39.255Z",
+      "type": "focus-step",
+      "key": "Tab",
+      "step": 1,
+      "active_element": {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "Close"
+      },
+      "reached": true,
+      "outcome": "observed"
+    },
+    {
+      "at": "2026-10-17T10:55:39.248Z",
+      "type": "traverse-focus",
+      "role": "button",
+      "name": "Close",
+      "max_steps": 24,
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-17T10:55:40.159Z",
+      "type": "assert-focused",
+      "role": "button",
+      "name": "Close",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-17T10:55:41.069Z",
+      "type": "keyboard",
+      "key": "Enter",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-17T10:55:41.982Z",
+      "type": "assert-focused",
+      "selector": "main details summary",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-17T10:55:42.891Z",
+      "type": "assert-attribute",
+      "selector": "main details",
+      "attribute": "open",
+      "value": null,
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-17T10:55:43.797Z",
+      "type": "assert-none-checked",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-17T10:55:44.702Z",
+      "type": "snapshot",
+      "label": "close-summary-focus",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-17T10:55:45.798Z",
+      "type": "focus-step",
+      "key": "Tab",
+      "step": 1,
+      "active_element": {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "Back"
+      },
+      "reached": true,
+      "outcome": "observed"
+    },
+    {
+      "at": "2026-10-17T10:55:45.790Z",
+      "type": "traverse-focus",
+      "role": "button",
+      "name": "Back",
+      "max_steps": 24,
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-17T10:55:46.702Z",
+      "type": "assert-focused",
+      "role": "button",
+      "name": "Back",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-17T10:55:47.608Z",
+      "type": "snapshot",
+      "label": "back-keyboard-focus",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-17T10:55:48.698Z",
+      "type": "keyboard",
+      "key": "Enter",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-17T10:55:49.610Z",
+      "type": "assert-url",
+      "url": "https://qaizen.io/labs/readiness-check",
+      "outcome": "completed"
+    },
+    {
+      "at": "2026-10-17T10:55:50.515Z",
+      "type": "assert-focused",
+      "selector": "h1",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-17T10:55:51.419Z",
+      "type": "assert-none-checked",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-17T10:55:52.323Z",
+      "type": "snapshot",
+      "label": "returned-introduction",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    }
+  ],
+  "console": [
+    {
+      "at": "2026-10-17T10:55:26.873Z",
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_BLOCKED_BY_CLIENT.Inspector",
+      "location": {
+        "url": "https://qaizen.io/api/labs/readiness/event",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    }
+  ],
+  "page_errors": [],
+  "requests_failed": [
+    {
+      "at": "2026-10-17T10:55:26.873Z",
+      "url": "https://qaizen.io/api/labs/readiness/event",
+      "method": "POST",
+      "error": "net::ERR_BLOCKED_BY_CLIENT.Inspector"
+    }
+  ],
+  "blocked_mutations": [
+    {
+      "at": "2026-10-17T10:55:26.871Z",
+      "method": "POST",
+      "url": "https://qaizen.io/api/labs/readiness/event",
+      "reason": "Read-only probe policy"
+    }
+  ],
+  "blocked_navigation": [],
+  "route_errors": [],
+  "navigation": [
+    {
+      "at": "2026-10-17T10:55:21.404Z",
+      "url": "https://qaizen.io/labs"
+    },
+    {
+      "at": "2026-10-17T10:55:22.125Z",
+      "url": "https://qaizen.io/labs"
+    },
+    {
+      "at": "2026-10-17T10:55:23.957Z",
+      "url": "https://qaizen.io/labs/readiness-check"
+    }
+  ],
+  "network_summary": {
+    "count": 72,
+    "methods": [
+      "GET"
+    ],
+    "non_200": []
+  },
+  "dom_summary": {
+    "00-entry.dom.json": {
+      "url": "https://qaizen.io/labs",
+      "title": "Labs \u2014 Free AI Governance and ROI Self-Assessments | QAIZEN",
+      "viewport": {
+        "width": 1280,
+        "height": 800,
+        "device_pixel_ratio": 1
+      },
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "QAIZEN LABS"
+        },
+        {
+          "tag": "H2",
+          "text": "PRODUCTION READINESS CHECK"
+        },
+        {
+          "tag": "H2",
+          "text": "SHADOW AI AUDIT"
+        },
+        {
+          "tag": "H2",
+          "text": "WHAT IS A STALLED AI PILOT COSTING YOU?"
+        },
+        {
+          "tag": "H2",
+          "text": "WATCH AN AI AGENT MEET ITS CONTROLS"
+        },
+        {
+          "tag": "H2",
+          "text": "MODELS BEHIND EACH TOOL"
+        }
+      ],
+      "active_element": {
+        "tag": "BODY",
+        "text": "Skip to contentAnalytics cookies. We would like to measure visits with Google Analytics and Microsoft Clarity to improve this site. Nothing is loaded unless you accept; you can change your mind at any",
+        "id": ""
+      },
+      "disabled_buttons": []
+    },
+    "01-introduction.dom.json": {
+      "url": "https://qaizen.io/labs/readiness-check",
+      "title": "Production Readiness Check: Could Your AI Pilot Go Live? | QAIZEN",
+      "viewport": {
+        "width": 1280,
+        "height": 800,
+        "device_pixel_ratio": 1
+      },
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "COULD YOUR AI PILOT GO LIVE? A CHECK IN ABOUT 3 MINUTES"
+        }
+      ],
+      "active_element": {
+        "tag": "BODY",
+        "text": "Skip to contentAnalytics cookies. We would like to measure visits with Google Analytics and Microsoft Clarity to improve this site. Nothing is loaded unless you accept; you can change your mind at any",
+        "id": ""
+      },
+      "disabled_buttons": []
+    },
+    "02-first-question.dom.json": {
+      "url": "https://qaizen.io/labs/readiness-check",
+      "title": "Production Readiness Check: Could Your AI Pilot Go Live? | QAIZEN",
+      "viewport": {
+        "width": 1280,
+        "height": 800,
+        "device_pixel_ratio": 1
+      },
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Which data will the AI system read and write in production, and who owns each source?"
+        }
+      ],
+      "active_element": {
+        "tag": "H2",
+        "text": "Which data will the AI system read and write in production, and who owns each source?",
+        "id": "question-dataSources"
+      },
+      "disabled_buttons": [
+        {
+          "text": "NEXT",
+          "type": "button",
+          "disabled": true
+        }
+      ]
+    },
+    "03-help-open-enter.dom.json": {
+      "url": "https://qaizen.io/labs/readiness-check",
+      "title": "Production Readiness Check: Could Your AI Pilot Go Live? | QAIZEN",
+      "viewport": {
+        "width": 1280,
+        "height": 800,
+        "device_pixel_ratio": 1
+      },
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Which data will the AI system read and write in production, and who owns each source?"
+        }
+      ],
+      "active_element": {
+        "tag": "SUMMARY",
+        "text": "What does this mean?",
+        "id": ""
+      },
+      "disabled_buttons": [
+        {
+          "text": "NEXT",
+          "type": "button",
+          "disabled": true
+        }
+      ]
+    },
+    "04-help-closed-space.dom.json": {
+      "url": "https://qaizen.io/labs/readiness-check",
+      "title": "Production Readiness Check: Could Your AI Pilot Go Live? | QAIZEN",
+      "viewport": {
+        "width": 1280,
+        "height": 800,
+        "device_pixel_ratio": 1
+      },
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Which data will the AI system read and write in production, and who owns each source?"
+        }
+      ],
+      "active_element": {
+        "tag": "SUMMARY",
+        "text": "What does this mean?",
+        "id": ""
+      },
+      "disabled_buttons": [
+        {
+          "text": "NEXT",
+          "type": "button",
+          "disabled": true
+        }
+      ]
+    },
+    "05-close-summary-focus.dom.json": {
+      "url": "https://qaizen.io/labs/readiness-check",
+      "title": "Production Readiness Check: Could Your AI Pilot Go Live? | QAIZEN",
+      "viewport": {
+        "width": 1280,
+        "height": 800,
+        "device_pixel_ratio": 1
+      },
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Which data will the AI system read and write in production, and who owns each source?"
+        }
+      ],
+      "active_element": {
+        "tag": "SUMMARY",
+        "text": "What does this mean?",
+        "id": ""
+      },
+      "disabled_buttons": [
+        {
+          "text": "NEXT",
+          "type": "button",
+          "disabled": true
+        }
+      ]
+    },
+    "06-back-keyboard-focus.dom.json": {
+      "url": "https://qaizen.io/labs/readiness-check",
+      "title": "Production Readiness Check: Could Your AI Pilot Go Live? | QAIZEN",
+      "viewport": {
+        "width": 1280,
+        "height": 800,
+        "device_pixel_ratio": 1
+      },
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Which data will the AI system read and write in production, and who owns each source?"
+        }
+      ],
+      "active_element": {
+        "tag": "BUTTON",
+        "text": "Back",
+        "id": ""
+      },
+      "disabled_buttons": [
+        {
+          "text": "NEXT",
+          "type": "button",
+          "disabled": true
+        }
+      ]
+    },
+    "07-returned-introduction.dom.json": {
+      "url": "https://qaizen.io/labs/readiness-check",
+      "title": "Production Readiness Check: Could Your AI Pilot Go Live? | QAIZEN",
+      "viewport": {
+        "width": 1280,
+        "height": 800,
+        "device_pixel_ratio": 1
+      },
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "COULD YOUR AI PILOT GO LIVE? A CHECK IN ABOUT 3 MINUTES"
+        }
+      ],
+      "active_element": {
+        "tag": "H1",
+        "text": "Could your AI pilot go live? A check in about 3 minutes",
+        "id": ""
+      },
+      "disabled_buttons": []
+    },
+    "08-final.dom.json": {
+      "url": "https://qaizen.io/labs/readiness-check",
+      "title": "Production Readiness Check: Could Your AI Pilot Go Live? | QAIZEN",
+      "viewport": {
+        "width": 1280,
+        "height": 800,
+        "device_pixel_ratio": 1
+      },
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "COULD YOUR AI PILOT GO LIVE? A CHECK IN ABOUT 3 MINUTES"
+        }
+      ],
+      "active_element": {
+        "tag": "H1",
+        "text": "Could your AI pilot go live? A check in about 3 minutes",
+        "id": ""
+      },
+      "disabled_buttons": []
+    }
+  }
+}

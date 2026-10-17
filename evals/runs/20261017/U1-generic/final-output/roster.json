@@ -1,0 +1,13 @@
+{
+  "method": "ux",
+  "root_context": "/root",
+  "requested_children": [],
+  "returned_children": [],
+  "missing_children": [],
+  "child_actor_identities": [],
+  "reason": "No independent subagent phase in invoked qore-ux-review; none dispatched. Phase actor /root is an actual shared root context, not labels for independent roles.",
+  "usage": {
+    "aggregate_agent_seconds": null,
+    "reason": "No usage telemetry tool exposed; no child agents. Root elapsed wall time recorded separately."
+  }
+}

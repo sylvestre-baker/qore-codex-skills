@@ -1,0 +1,89 @@
+{
+  "iteration": 1,
+  "required_gates": [
+    "G0",
+    "G1",
+    "G2",
+    "G3",
+    "G4",
+    "G5",
+    "G6"
+  ],
+  "gates": {
+    "G0": {
+      "score": 4,
+      "status": "PASS",
+      "evidence": [
+        "response-2/01-introduction-via-entry.dom.json",
+        "response-2/events.json"
+      ],
+      "finding": "Real entry click resolves correct heading/content; repeated entry success."
+    },
+    "G1": {
+      "score": null,
+      "status": "SKIPPED/PARTIAL",
+      "evidence": [
+        "response-2/02-introduction-after-document-reload.dom.json",
+        "response-4/04-browser-history-back-entry.dom.json",
+        "response-4/05-browser-history-forward-check.dom.json",
+        "response-4/result.json"
+      ],
+      "finding": "Initial introduction document reload returns 200 and resolves. History Back to labs and Forward to unanswered question observed. Final post-history reload terminal view missing after incorrect h1 expectation timed out; no invented product defect."
+    },
+    "G2": {
+      "score": 4,
+      "status": "PASS",
+      "evidence": [
+        "required-check-results.json",
+        "response-2/events.json",
+        "response-4/events.json"
+      ],
+      "finding": "All seven contract transitions and restart outcome observed; no answers selected. No authorized remote save/data list/results path; loading/error/overflow data scenarios for those excluded paths are outside explicit contract, not substitutes for observed states."
+    },
+    "G3": {
+      "score": 3,
+      "status": "FAIL",
+      "evidence": [
+        "visual-inspection.json",
+        "findings.json"
+      ],
+      "finding": "V1: focused Back visually obscured by cookie banner; inspected actual pixels at declared viewport."
+    },
+    "G4": {
+      "score": 4,
+      "status": "PASS",
+      "evidence": [
+        "response-2/04-help-open-via-Enter.dom.json",
+        "response-2/01-introduction-via-entry.dom.json",
+        "visual-inspection.json"
+      ],
+      "finding": "Affected English intro, question, help definition/examples/advice, Close/Back labels inspected; coherent copy, no exposed null/undefined or stack traces observed. Hidden keyboard instructions are intentional guidance, not verified by a screen reader."
+    },
+    "G5": {
+      "score": 3,
+      "status": "FAIL",
+      "evidence": [
+        "required-check-results.json",
+        "findings.json",
+        "visual-inspection.json"
+      ],
+      "finding": "Names, heading focus, sequential reachability and restoration verified. V1 affects visible keyboard focus; no trap observed along exercised route. No full accessibility or contrast audit claimed."
+    },
+    "G6": {
+      "score": 4,
+      "status": "PASS",
+      "evidence": [
+        "iteration-1-challenge-candidates.json",
+        "request-3-analysis.json",
+        "request-4-analysis.json",
+        "findings.json"
+      ],
+      "finding": "Falsified a functional-focus-only pass using pixels; reopened G3/G5 as defects. Restart and history challenge ran. Preserved request3 locator failure and request4 unresolved render as limitations; did not convert either into a product defect."
+    }
+  },
+  "GP": {
+    "status": "NOT_APPLICABLE",
+    "reason": "No performance acceptance or affected performance change; contract explicitly excludes certification."
+  },
+  "freshness": "No target/candidate fixes applied; all captured observations after supplied last change. Missing measurement remains missing, not stale or a score."
+}

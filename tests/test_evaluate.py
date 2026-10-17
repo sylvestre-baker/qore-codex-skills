@@ -19,6 +19,15 @@ class EvaluationTests(unittest.TestCase):
         self.addCleanup(self.temp.cleanup)
         self.root = Path(self.temp.name)
 
+    def empty_series(self):
+        """Keep synthetic refusal controls independent of published campaign results."""
+        config, _, config_sha = evaluate.configuration()
+        return {"schema": "qore-eval-series/1", "id": "synthetic-unit-series",
+                "scenarios_sha256": config_sha, "status": "BLOCKED", "excluded_pilot": [],
+                "cells": [{"scenario_id": sid, "condition": condition, "status": "NOT_RUN",
+                           "records": [], "reason": "Synthetic not-run control; no model invocation."}
+                          for sid, condition in config["order"]]}
+
     def prepared(self, condition="baseline", scenario="R2"):
         path = self.root / (scenario + "-" + condition)
         evaluate.prepare(scenario, condition, path)
@@ -65,6 +74,83 @@ class EvaluationTests(unittest.TestCase):
         result = self.check(self.baseline())
         self.assertTrue(result["valid"])
         self.assertEqual(result["coverage"], "COMPLETE")
+
+    def qualification(self, run, coverage="PARTIAL"):
+        packet = {"schema": "qore-eval-qualification/1", "run_id": run["id"],
+                  "candidate_sha256": run["candidate_sha256"],
+                  "input_manifest_sha256": run["input_manifest_sha256"],
+                  "qore_run_sha256": None, "declared_coverage": run["execution"]["coverage"],
+                  "coverage": coverage, "assessor": "unit-assessor", "verifier": "unit-verifier",
+                  "assessed_at": "2026-10-17T06:02:00Z", "reason": "Synthetic missing required observation",
+                  "evidence": ["observation.json"]}
+        self.save_qualification(run, packet)
+        run["comparison"]["comparability"] = "UNVERIFIED"
+        return packet
+
+    def save_qualification(self, run, packet):
+        evaluate.write(self.root / "qualification.json", packet)
+        descriptor = {"path": "qualification.json", "sha256": evaluate.digest(self.root / "qualification.json"), "kind": "presentation"}
+        run["artifacts"] = [a for a in run["artifacts"] if a["path"] != "qualification.json"] + [descriptor]
+        run["qualification"] = {k: descriptor[k] for k in ("path", "sha256")}
+
+    def test_independent_restriction_preserves_original_declaration(self):
+        run = self.baseline()
+        before = copy.deepcopy(run["execution"])
+        self.qualification(run)
+        checked = self.check(run)
+        self.assertEqual(checked["coverage"], "PARTIAL")
+        self.assertEqual(checked["declared_coverage"], "COMPLETE")
+        self.assertTrue(checked["qualification_supplied"])
+        self.assertEqual(run["execution"], before)
+
+    def test_qualification_rejects_other_identity_or_promotion(self):
+        run = self.baseline()
+        run["execution"].update(coverage="PARTIAL", reason="Synthetic missing phase")
+        packet = self.qualification(run, "COMPLETE")
+        with self.assertRaisesRegex(ValueError, "cannot promote"):
+            self.check(run)
+        packet.update(coverage="PARTIAL", run_id="other-trial")
+        self.save_qualification(run, packet)
+        with self.assertRaisesRegex(ValueError, "another trial"):
+            self.check(run)
+
+    def test_qualification_requires_separate_actors_and_existing_evidence(self):
+        run = self.baseline()
+        packet = self.qualification(run)
+        packet["verifier"] = packet["assessor"]
+        self.save_qualification(run, packet)
+        with self.assertRaisesRegex(ValueError, "separate non-execution"):
+            self.check(run)
+        packet.update(verifier="unit-verifier", evidence=["missing.json"])
+        self.save_qualification(run, packet)
+        with self.assertRaisesRegex(ValueError, "undeclared evidence"):
+            self.check(run)
+
+    def test_restricted_execution_cannot_keep_success_or_comparability(self):
+        run = self.baseline()
+        self.qualification(run)
+        run["assessment"][0].update(status="MET", evidence=["observation.json"])
+        with self.assertRaisesRegex(ValueError, "Incomplete method"):
+            self.check(run)
+        run["assessment"][0]["status"] = "UNKNOWN"
+        run["comparison"]["comparability"] = "COMPARABLE"
+        with self.assertRaisesRegex(ValueError, "Missing phases"):
+            self.check(run)
+
+    def test_summary_uses_restricted_coverage_and_retains_declared_count(self):
+        run = self.baseline()
+        self.qualification(run)
+        self.check(run)
+        series = self.empty_series()
+        cell = next(c for c in series["cells"] if (c["scenario_id"], c["condition"]) == ("R2", "baseline"))
+        cell.update(status="PARTIAL", records=["record.json"])
+        path = self.root / "series.json"
+        evaluate.write(path, series)
+        result = evaluate.summarize(path, self.root / "summary")
+        self.assertEqual(result["attempted_cells"], 1)
+        self.assertEqual(result["completed_cells"], 0)
+        self.assertEqual(result["declared_complete_cells"], 1)
+        self.assertEqual(result["qualified_cells"], 1)
 
     def test_all_conditions_have_equal_authoritative_facts_without_answers(self):
         bundles = [self.prepared(c, "R1") for c in evaluate.CONDITIONS]
@@ -250,7 +336,7 @@ class EvaluationTests(unittest.TestCase):
             self.check(run)
 
     def test_excluded_missing_pilot_or_outcome_selection_is_rejected(self):
-        packet = evaluate.read_json(evaluate.ROOT / "evals/series.json")
+        packet = self.empty_series()
         packet["excluded_pilot"] = [{"scenario_id": "R1", "condition": c, "reason": "Unfavorable result", "record": "missing-" + c + ".json"} for c in evaluate.CONDITIONS]
         evaluate.write(self.root / "series.json", packet)
         with self.assertRaisesRegex(ValueError, "never outcome selection"):
@@ -263,7 +349,7 @@ class EvaluationTests(unittest.TestCase):
 
     def test_valid_excluded_pilot_is_checked_and_retained_in_both_outputs(self):
         import shutil
-        packet = evaluate.read_json(evaluate.ROOT / "evals/series.json")
+        packet = self.empty_series()
         packet["excluded_pilot"] = []
         for condition in evaluate.CONDITIONS:
             case = EvaluationTests(); case.setUp(); self.addCleanup(case.doCleanups)
@@ -318,7 +404,7 @@ class EvaluationTests(unittest.TestCase):
                 evaluate.check_record(path, self.root)
 
     def test_not_run_series_has_no_fake_results_or_winner(self):
-        packet = evaluate.read_json(evaluate.ROOT / "evals/series.json")
+        packet = self.empty_series()
         packet["scenarios_sha256"] = evaluate.configuration()[2]
         evaluate.write(self.root / "series.json", packet)
         result = evaluate.summarize(self.root / "series.json", self.root / "summary")
@@ -330,7 +416,7 @@ class EvaluationTests(unittest.TestCase):
             evaluate.summarize(self.root / "series.json", self.root / "summary")
 
     def test_missing_or_duplicate_series_cells_are_rejected(self):
-        packet = evaluate.read_json(evaluate.ROOT / "evals/series.json")
+        packet = self.empty_series()
         packet["scenarios_sha256"] = evaluate.configuration()[2]
         packet["cells"][1] = copy.deepcopy(packet["cells"][0])
         evaluate.write(self.root / "series.json", packet)

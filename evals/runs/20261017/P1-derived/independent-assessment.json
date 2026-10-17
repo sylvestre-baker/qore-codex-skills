@@ -1,0 +1,564 @@
+{
+  "schema": "qore-selected-independent-assessment/1",
+  "run_id": "qore003-20261017-p1-derived-1",
+  "neutral_id": "N17",
+  "source_raw_sha256": "6b3401ac535da25f5d501b917c91c0a284c7bea7f651b30295482f6ad6453008",
+  "public_source": "evals/campaign-20261017/assessments/plan-P1-rest/N17-plan-assessment.json",
+  "public_source_sha256": "6b3401ac535da25f5d501b917c91c0a284c7bea7f651b30295482f6ad6453008",
+  "assessor": "/root/campaign_plan_assessor",
+  "original_case_assessment": {
+    "schema": "qore003-independent-planning-assessment/1",
+    "scenario_id": "P1",
+    "actor_id": "/root/campaign_plan_assessor",
+    "started_at_utc": "2026-10-17T10:55:18+00:00",
+    "ended_at_utc": "2026-10-17T11:00:41.578641+00:00",
+    "timing_note": "Shared bounded assessment window for N06 and N17, counted once; wall window is not billed/model compute time.",
+    "evidence_path_base": "assessment-inputs",
+    "frozen_applicable_criteria": [
+      "K1",
+      "K2",
+      "K3",
+      "K4",
+      "K5",
+      "K8"
+    ],
+    "not_applicable": [
+      {
+        "criterion": "K6",
+        "reason": "Not in frozen P1 list; corrected-comparator review criterion."
+      },
+      {
+        "criterion": "K7",
+        "reason": "Not in frozen P1 list; P2 documentation-only criterion."
+      }
+    ],
+    "constraints": {
+      "other_campaign_cases_read": false,
+      "previous_assessment_files_read_or_changed": false,
+      "current_repo_sources_used": false,
+      "network_used": false,
+      "trial_reruns": false,
+      "new_agents": false,
+      "outreach": false,
+      "source_or_repository_changes": false
+    },
+    "blinding": "NOT_BLINDED: neutral filenames only; actual report/task/method metadata reveal baseline or derivative. No method comparison/winner inferred.",
+    "neutral_id": "N17",
+    "criteria": [
+      {
+        "criterion": "K1",
+        "status": "MET",
+        "scope": "Source-based P1 planning obligations, not an executed website journey",
+        "rationale": "The final plan accurately covers seven transitions, distinct summary/h1 focus and eight checks. It corrects initial reverse-traversal breadth by choosing literal forward Tab. It distinguishes the profile as context, and explicitly leaves broader resource authorization and presentation-absence interpretation qualified rather than claiming supplied markup facts.",
+        "evidence": [
+          {
+            "path": "N17/output/REPORT.md",
+            "lines": "10-24",
+            "claim": "Source/snapshot/profile authority and scope"
+          },
+          {
+            "path": "N17/output/REPORT.md",
+            "lines": "35-41,49-56",
+            "claim": "Selected decisions and exact journey/focus requirements"
+          },
+          {
+            "path": "N17/output/REPORT.md",
+            "lines": "207-218",
+            "claim": "All eight check mappings"
+          },
+          {
+            "path": "N17/output/sources/surface-contract.json",
+            "lines": "9-20",
+            "claim": "Actual original transition/focus/check/provenance values"
+          },
+          {
+            "path": "N17/output/reports/product-cross-examination.md",
+            "lines": "28",
+            "claim": "Own initial traversal wording corrected"
+          }
+        ],
+        "missing_proof_or_limit": "Presentation-level absence is an adopted proposal, not an explicit source rule or measured accessibility/DOM behavior; final report:53 and adjudication.json:101 keep that qualification."
+      },
+      {
+        "criterion": "K2",
+        "status": "MET",
+        "scope": "Source-based P1 planning obligations, not an executed website journey",
+        "rationale": "The plan requires actual sequential Tab from the observed summary after Close to focused application Back, Enter, and independent returned introduction-h1 focus. It rejects mouse Back, browser-history Back and direct focus as proof and retains failed prerequisites.",
+        "evidence": [
+          {
+            "path": "N17/output/REPORT.md",
+            "lines": "37,40,51-56",
+            "claim": "Control reached, key trace, actual destination focus and stop rules"
+          },
+          {
+            "path": "N17/output/REPORT.md",
+            "lines": "130-153",
+            "claim": "AC03-AC06 require precise proof and reject invalid substitutes"
+          },
+          {
+            "path": "N17/output/reports/qa-cross-examination.md",
+            "lines": "9,21",
+            "claim": "Canonical path correction and clicked/assigned-focus counterexample"
+          }
+        ],
+        "missing_proof_or_limit": "No live Tab sequence, Enter event or focus observation exists. The final report explicitly labels its runtime sequence and acceptance cases future obligations."
+      },
+      {
+        "criterion": "K3",
+        "status": "MET",
+        "scope": "Source-based P1 planning obligations, not an executed website journey",
+        "rationale": "Unanswered observable checkpoints, all-request method denial, pre-entry exact-origin navigation/redirect/popup guards, blocked-analytics effects and no excluded actions are specified. The narrower profile is not used to grant third-party permission: unresolved affected requests must not be allowed pending resolution or must be conservatively blocked.",
+        "evidence": [
+          {
+            "path": "N17/output/REPORT.md",
+            "lines": "38-41,47-54",
+            "claim": "Guard readiness, unresolved-resource rule and unanswered checkpoints"
+          },
+          {
+            "path": "N17/output/REPORT.md",
+            "lines": "155-196",
+            "claim": "AC07-AC13 boundary/negative cases"
+          },
+          {
+            "path": "N17/output/sources/surface-contract.json",
+            "lines": "4-6,18-20",
+            "claim": "Original scope, checks and limits"
+          },
+          {
+            "path": "N17/output/sources/observation-policy.json",
+            "lines": "2-4",
+            "claim": "Sole original allowed origin"
+          },
+          {
+            "path": "N17/output/reports/product-cross-examination.md",
+            "lines": "14-16",
+            "claim": "Navigation-specific profile is not extra-origin authorization"
+          }
+        ],
+        "missing_proof_or_limit": "Comprehensive future subresource scope and host capability are unresolved. This is not proof that a navigation-only guard satisfies every possible request boundary; the plan prevents that inference and blocks affected unknown permission."
+      },
+      {
+        "criterion": "K4",
+        "status": "MET",
+        "scope": "Source-based P1 planning obligations, not an executed website journey",
+        "rationale": "The plan calls demonstrated gaps documentary, labels future website acceptance unexecuted, preserves provenance/exclusions, and separates observed wrong behavior from unavailable prerequisites. C12 presentation absence remains an interpretive proposal, with partial source support disclosed. No site defect or pass is claimed.",
+        "evidence": [
+          {
+            "path": "N17/output/REPORT.md",
+            "lines": "4,20-24",
+            "claim": "Fixture, supplied identities, authority and offline scope"
+          },
+          {
+            "path": "N17/output/REPORT.md",
+            "lines": "81,114,249-271",
+            "claim": "Future/runtime boundary, uncertainty and partial C12 qualification"
+          },
+          {
+            "path": "N17/output/adjudication.json",
+            "lines": "91-101,144-157",
+            "claim": "Interpretation qualification and unresolved boundary"
+          },
+          {
+            "path": "N17/output/reports/fresh-verifier.md",
+            "lines": "152-166",
+            "claim": "C12 partial support and limited audit scope"
+          }
+        ],
+        "missing_proof_or_limit": "Live DOM/focus, request effects, deployment identity and unrestricted behavior remain unknown. An ancillary filter-description issue is separately recorded; it does not convert planning claims into a website claim."
+      },
+      {
+        "criterion": "K5",
+        "status": "MET",
+        "scope": "Source-based P1 planning obligations, not an executed website journey",
+        "rationale": "The proper project command and actual exit/output are retained. Fourteen meaningful planned Gherkin scenarios include negative focus, policy and incomplete-evidence paths; eight-check mapping and manual full-source review supplement the limited checker. Actual profile, spec-lint and record-check results are explicitly separated from browser proof.",
+        "evidence": [
+          {
+            "path": "N17/output/evidence/contract-check-command.json",
+            "lines": "2-13",
+            "claim": "Actual relevant checker command and captured result"
+          },
+          {
+            "path": "N17/output/REPORT.md",
+            "lines": "114-218,226-232",
+            "claim": "Future acceptance cases, coverage matrix and manual review tasks"
+          },
+          {
+            "path": "N17/output/evidence/spec-lint-command.json",
+            "lines": "2-12",
+            "claim": "Actual final structural lint, exit 0 and 14 scenarios"
+          },
+          {
+            "path": "N17/output/evidence/delivery-probe-command.json",
+            "lines": "6-16",
+            "claim": "Exact retained in-memory checker counterexample, output and time bounds"
+          }
+        ],
+        "missing_proof_or_limit": "No website or local-double guard case was executed; they are future checks. QA probe has report text but no separately retained raw command transcript; the report acknowledges that distinction."
+      },
+      {
+        "criterion": "K8",
+        "status": "MET",
+        "scope": "Source-based P1 planning obligations, not an executed website journey",
+        "rationale": "A one-document revision is supported by actual frozen-source comparisons and captured offline checks. Actual cross-examination narrows reverse traversal and boundary/persistence interpretations; adjudication records alternatives, consequences, dissent and unresolved runtime evidence. No application behavior change, live verdict or measured benefit is inferred.",
+        "evidence": [
+          {
+            "path": "N17/output/REPORT.md",
+            "lines": "24,35-41,45-64",
+            "claim": "Single-document scope and precise proposed changes"
+          },
+          {
+            "path": "N17/output/REPORT.md",
+            "lines": "240-251",
+            "claim": "Adjudicated alternatives and consequences"
+          },
+          {
+            "path": "N17/output/adjudication.json",
+            "lines": "65-158",
+            "claim": "Source-grounded dispositions and dissent"
+          },
+          {
+            "path": "N17/output/REPORT.md",
+            "lines": "268-271",
+            "claim": "Actual completed planning boundary and missing live evidence"
+          }
+        ],
+        "missing_proof_or_limit": "Target edit, actual browser feasibility and deployment conformance remain unperformed. Future document-edit estimates are qualified proposals, not measurements."
+      }
+    ],
+    "method_coverage": {
+      "declared_method": "qore-plan-qaizen-labs; Workflow; profile qaizen-labs 0.1.0",
+      "claimed_coverage": "COMPLETE",
+      "assessment": "SUBSTANTIATED_WITH_OPERATIONAL_AND_INDEPENDENCE_LIMITATIONS",
+      "parts": [
+        {
+          "part": "Current profile preflight and actual consumption",
+          "status": "MET",
+          "evidence": [
+            {
+              "path": "N17/output/sources/.agents/skills/qore-plan-qaizen-labs/SKILL.md",
+              "lines": "10,19-21",
+              "claim": "Derivative requires current preflight before consuming facts"
+            },
+            {
+              "path": "N17/output/evidence/profile-preflight-command.json",
+              "lines": "2-17",
+              "claim": "Actual preflight at 10:39:31 UTC, correct root/method and exit 0"
+            },
+            {
+              "path": "N17/output/profile-check.json",
+              "lines": "3-80",
+              "claim": "Current source hashes, command, three applicable invariants and no plan web surface"
+            },
+            {
+              "path": "N17/output/profile-use.json",
+              "lines": "8-49,51",
+              "claim": "Consumed fact IDs/source digests and their specific effect; no returned web surface consumed"
+            },
+            {
+              "path": "N17/output/REPORT.md",
+              "lines": "37-41,130-196,230",
+              "claim": "Focus, scope and checker facts shape decisions, acceptance and tasks"
+            }
+          ],
+          "limit": "Selection alone is not treated as consumption. Final report does visibly use each claimed fact; native pre-consumption prompt chronology is not independently reconstructed."
+        },
+        {
+          "part": "Five substantive initial perspectives",
+          "status": "MET",
+          "evidence": [
+            {
+              "path": "N17/output/roster.json",
+              "lines": "3-17,59-208",
+              "claim": "Five distinct initial actors and separate reports; analysis fork_turns none recorded"
+            },
+            {
+              "path": "N17/output/reports/product-analysis.md",
+              "lines": "28-94",
+              "claim": "Stories, D-P1-D-P5, measurable acceptance and named peer questions"
+            },
+            {
+              "path": "N17/output/reports/architecture-analysis.md",
+              "lines": "16-86",
+              "claim": "Actual reuse/consumer boundaries, interface fields, component and runtime flow"
+            },
+            {
+              "path": "N17/output/reports/ux-analysis.md",
+              "lines": "23-87",
+              "claim": "Exact state/action requirements, recovery and observability"
+            },
+            {
+              "path": "N17/output/reports/delivery-analysis.md",
+              "lines": "24-83",
+              "claim": "Task estimate basis, dependency order, completion/adoption/rollback gates"
+            },
+            {
+              "path": "N17/output/reports/qa-analysis.md",
+              "lines": "19-59,74-144",
+              "claim": "Acceptance matrix, boundaries, meaningful edge Gherkin and peer challenges"
+            }
+          ],
+          "limit": "Full role bodies are present and substantively distinct. Raw original dispatch prompts and complete native lifecycle traces are not in this packet, so fresh-context/no-peer-access claims remain supported by roster/reports rather than independently reconstructed."
+        },
+        {
+          "part": "Analysis barrier and one cross-examination per role",
+          "status": "MET",
+          "evidence": [
+            {
+              "path": "N17/output/roster.json",
+              "lines": "18-58",
+              "claim": "All five complete hashed report files at 10:43:51.194754 UTC barrier"
+            },
+            {
+              "path": "N17/output/reports/product-cross-examination.md",
+              "lines": "3-30",
+              "claim": "Post-barrier peer challenges and correction of own canonical traversal"
+            },
+            {
+              "path": "N17/output/reports/architecture-cross-examination.md",
+              "lines": "11-35",
+              "claim": "Product/UX counterexamples, own retraction and QA failure warnings"
+            },
+            {
+              "path": "N17/output/reports/ux-cross-examination.md",
+              "lines": "11-29",
+              "claim": "Architecture complexity and QA state/absence/persistence challenges"
+            },
+            {
+              "path": "N17/output/reports/delivery-cross-examination.md",
+              "lines": "7-35",
+              "claim": "Product scope and Architecture implementability challenges with concrete local probe"
+            },
+            {
+              "path": "N17/output/reports/qa-cross-examination.md",
+              "lines": "7-25",
+              "claim": "All four peer groups challenged and own after-return observation corrected"
+            }
+          ],
+          "limit": "All five cross contexts are disclosed fresh continuations adopting their full prior role proposal. Same-original-context continuity is not claimed or established."
+        },
+        {
+          "part": "Lead adjudication, dissent and stop",
+          "status": "MET",
+          "evidence": [
+            {
+              "path": "N17/output/roster.json",
+              "lines": "233-250",
+              "claim": "Complete cross-report barrier at 10:47:41.089559 UTC"
+            },
+            {
+              "path": "N17/output/adjudication.json",
+              "lines": "65-188",
+              "claim": "Seven source-grounded decisions, alternatives, consequences, dissent and remaining uncertainty"
+            },
+            {
+              "path": "N17/output/REPORT.md",
+              "lines": "240-257",
+              "claim": "Selected corrections, minority impact interpretations, one Workflow pass and no extra debate round"
+            }
+          ],
+          "limit": "Agreement is not evidence of runtime correctness. Role-level COMPLETE can coexist with unresolved host and resource boundaries."
+        },
+        {
+          "part": "Additional fresh claim-audit child and retained scope",
+          "status": "MET",
+          "evidence": [
+            {
+              "path": "N17/output/roster.json",
+              "lines": "252-267",
+              "claim": "Separate fresh_verifier actor, 90-second budget, inputs, report paths and observed return"
+            },
+            {
+              "path": "N17/output/budget.json",
+              "lines": "14-21,24-29",
+              "claim": "Additional 90 seconds explicitly allocated and reported 52-second activity interval included"
+            },
+            {
+              "path": "N17/output/reports/fresh-verifier.md",
+              "lines": "3-19,20-166",
+              "claim": "Twelve source-backed claim verdicts with qualification, including partial C12"
+            },
+            {
+              "path": "N17/output/claims-filtered.json",
+              "lines": "5-132",
+              "claim": "Actual audit input claim set"
+            },
+            {
+              "path": "N17/output/adjudication.json",
+              "lines": "170-180",
+              "claim": "Limited audit outcome, no overall correctness inference"
+            }
+          ],
+          "limit": "This is an additional source audit rather than a mandatory base planning phase or second debate. Its role-attributed severity strings mean the filter does not achieve its broad no-role-identities description; see correction candidate P1R-03. No quota or benefit inference follows from 11 supported and one partial claim."
+        },
+        {
+          "part": "Captured checks and artifact identity",
+          "status": "MET",
+          "evidence": [
+            {
+              "path": "N17/output/evidence/contract-check-command.json",
+              "lines": "2-13",
+              "claim": "Actual local consistency command/output"
+            },
+            {
+              "path": "N17/output/evidence/spec-lint-command.json",
+              "lines": "2-12",
+              "claim": "Final report structural lint passed with 14 scenarios"
+            },
+            {
+              "path": "N17/output/run-check-final-command.json",
+              "lines": "2-15",
+              "claim": "Final record validation: COMPLETE, 62 artifacts and exact execution digest"
+            },
+            {
+              "path": "N17/output/evidence/input-immutability.json",
+              "lines": "2-8",
+              "claim": "18 input files reported unchanged"
+            }
+          ],
+          "measurement": {
+            "procedure": "Assessor read-only SHA-256 of every execution.json declared artifact and copied profile, without rerunning validators or trials",
+            "declared_artifacts": 62,
+            "missing": [],
+            "mismatches": [],
+            "execution_sha256": "37969ef69dba40f5464710cab48e255d516af51dd86fc5f8a1a215392c0c3436",
+            "profile_sha256": "f76afdd45cb6352e5044a06affc4182ea6cd40aa9c012fb216636a61faa428f0"
+          },
+          "limit": "Structure and hashes alone do not prove reasoning, execution or independence; source comparisons and report content were assessed separately."
+        }
+      ],
+      "actual_children": {
+        "initial_roles": 5,
+        "cross_continuations": 5,
+        "additional_claim_auditor": 1,
+        "total_distinct_children": 11
+      },
+      "role_continuity_judgment": "The method requires one independent fresh initial perspective and one cross pass per role; it does not expressly require the identical original actor for the later pass. All five substitutes identify adoption of their saved prior proposal and perform the assigned cross links. Qualified role-level COMPLETE is supported; uninterrupted original-context continuity is not.",
+      "budget_assessment": {
+        "finite_allocations_and_accounting": "MET: 900 root wall, 2400 aggregate ceiling, role deadlines and all 11 children are represented; extra auditor included in 2240-second allocation and 52-second reported activity proxy.",
+        "nominal_worker_deadline_adherence": "NOT_MET for disclosed Delivery cross return/retention overrun.",
+        "exact_aggregate_ceiling_compliance": "UNKNOWN: actual aggregate model/agent-time is unavailable, proxies exclude overhead and are explicitly qualified. No violation inferred.",
+        "other_exact_deadlines": "UNKNOWN where only post-dispatch observations and delayed notification receipts exist. No unobserved timing invented.",
+        "evidence": [
+          {
+            "path": "N17/output/budget.json",
+            "lines": "2-29",
+            "claim": "Finite allocation, exhaustion rule and proxy/overrun limitations"
+          },
+          {
+            "path": "N17/output/reports/delivery-cross-examination.md",
+            "lines": "37",
+            "claim": "Explicit dispatch-relative overrun and no further investigation"
+          },
+          {
+            "path": "N17/output/roster.json",
+            "lines": "165-178,212-217,252-267",
+            "claim": "Overrun, usage gaps and extra audit child"
+          }
+        ]
+      }
+    },
+    "observations_and_correction_candidates": [
+      {
+        "id": "P1R-01",
+        "classification": "implementation/protocol issue",
+        "required_for_frozen_criteria": false,
+        "observation": "Original role contexts were unavailable for follow-up; all five cross passes migrated to fresh contexts. This is disclosed host/protocol recovery, not evidence that a required role failed to return.",
+        "evidence": [
+          {
+            "path": "N17/output/roster.json",
+            "lines": "219-231",
+            "claim": "Actual actor-not-found/absent-context observations"
+          },
+          {
+            "path": "N17/output/REPORT.md",
+            "lines": "255",
+            "claim": "Explicit all-role continuation disclosure"
+          }
+        ],
+        "minimal_remedy": "Preserve completed role contexts if possible or formalize report-based continuation with explicit prior-proposal adoption and actor identity; do not claim original-context continuity.",
+        "worker_failure_established": false
+      },
+      {
+        "id": "P1R-02",
+        "classification": "implementation/protocol issue",
+        "required_for_frozen_criteria": false,
+        "observation": "Delivery cross return/retention exceeded its nominal dispatch-relative 100-second budget. The completed report and roster disclose the overrun and no further investigation; the phase itself completed.",
+        "evidence": [
+          {
+            "path": "N17/output/reports/delivery-cross-examination.md",
+            "lines": "3,37",
+            "claim": "Budget, recorded end, approximate dispatch and explicit overrun"
+          },
+          {
+            "path": "N17/output/roster.json",
+            "lines": "165-178",
+            "claim": "Available-results requests, late return and disclosed timing limitation"
+          },
+          {
+            "path": "N17/output/budget.json",
+            "lines": "27-29",
+            "claim": "Accounting limits and overrun"
+          }
+        ],
+        "minimal_remedy": "Use an enforced cutoff or earlier capture/return threshold that includes retention/handoff, and preserve a partial report if time expires. Record any allowed retention grace separately from investigation time. Exact runtime cause or worker fault cannot be established from these files.",
+        "worker_failure_established": false
+      },
+      {
+        "id": "P1R-03",
+        "classification": "implementation/protocol issue",
+        "required_for_frozen_criteria": false,
+        "observation": "The mechanical filter removes unlisted fields but its no-role-identities description is overbroad: retained severity strings explicitly name QA, Delivery and Architecture and preserve their attributed impact judgments. This limits claims of content-level separation for the extra auditor.",
+        "evidence": [
+          {
+            "path": "N17/output/filter-claims.py",
+            "lines": "5-7",
+            "claim": "Whitelist retains arbitrary severity strings and describes no role identities"
+          },
+          {
+            "path": "N17/output/claims-filtered.json",
+            "lines": "3,29,92",
+            "claim": "Counterexample: omission Medium in QA report; Low in Delivery / Medium in Architecture"
+          },
+          {
+            "path": "N17/output/reports/fresh-verifier.md",
+            "lines": "46,118",
+            "claim": "Auditor receives and retains those role-attributed severity strings"
+          }
+        ],
+        "minimal_remedy": "Either describe the filter precisely as removing full reports and top-level identity/verdict fields while preserving role-attributed severities, or normalize those strings before a future audit claiming role-free input. Preserve originals. A whitelist alone cannot promise semantic redaction.",
+        "impact_limit": "No full role reports or explicit adjudicator verdict fields are present in the filtered file. This does not prove the claim verdicts wrong, require a refutation quota, or invalidate the five planning role phases.",
+        "worker_failure_established": false
+      },
+      {
+        "id": "P1R-04",
+        "classification": "expected fixture defect",
+        "required_for_frozen_criteria": false,
+        "observation": "The target proof gaps are expected input defects; initial role reverse-traversal breadth was corrected in the recorded cross/adjudication process. Neither is an uncorrected final website defect.",
+        "evidence": [
+          {
+            "path": "N17/output/sources/target/verification-protocol.md",
+            "lines": "3,7-10",
+            "claim": "Frozen input fixture"
+          },
+          {
+            "path": "N17/output/reports/product-cross-examination.md",
+            "lines": "28",
+            "claim": "Actual own-proposal correction"
+          },
+          {
+            "path": "N17/output/REPORT.md",
+            "lines": "40,243",
+            "claim": "Final canonical Tab decision"
+          }
+        ],
+        "minimal_remedy": "No additional planning retry is justified. Later implement the selected document revision if authorized."
+      }
+    ],
+    "required_worker_content_corrections": [],
+    "conclusion": "All six applicable frozen criteria are MET at source-based planning scope. Declared role-level Workflow/profile/extra-audit work is substantiated with context, timing and auxiliary filter limitations. Delivery nominal deadline adherence was not met; exact aggregate compliance remains UNKNOWN. No website result, comparative winner or gain follows."
+  },
+  "limits": [
+    "Neutral filenames did not blind conditions.",
+    "The raw criterion judgments concern their declared task scope; later method-coverage qualification is separate."
+  ]
+}

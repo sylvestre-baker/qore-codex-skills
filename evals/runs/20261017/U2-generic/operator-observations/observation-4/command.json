@@ -1,0 +1,26 @@
+{
+  "argv": [
+    "node",
+    "tools/browser_probe.mjs",
+    "--url",
+    "https://qaizen.io/labs",
+    "--output",
+    "<private-campaign-root>/trials/U2-generic/observation-4/raw",
+    "--actions",
+    "<private-campaign-root>/trials/U2-generic/observation-4/actions.json",
+    "--policy",
+    "<private-campaign-root>/browser-qualification/live-policy.json",
+    "--playwright-module",
+    "<approved-playwright-module>",
+    "--label",
+    "qore003-20261017-u2-generic-1 request4; verbatim neutral relay"
+  ],
+  "started_at": "2026-10-17T11:58:09.783226+00:00",
+  "ended_at": "2026-10-17T11:58:37.954334+00:00",
+  "exit_code": 1,
+  "stdout": "{\n  \"status\": \"PARTIAL\",\n  \"target\": \"https://qaizen.io/labs\",\n  \"output\": \"<private-campaign-root>/trials/U2-generic/observation-4/raw\",\n  \"capabilities\": {\n    \"navigation\": {\n      \"status\": \"OBSERVED\",\n      \"evidence\": \"events.json#/navigation\",\n      \"entry_status\": 200\n    },\n    \"screenshot\": {\n      \"status\": \"OBSERVED\",\n      \"evidence\": \"01-reloaded-introduction.png\"\n    },\n    \"dom\": {\n      \"status\": \"OBSERVED\",\n      \"evidence\": \"01-reloaded-introduction.dom.json\"\n    },\n    \"keyboard\": {\n      \"status\": \"OBSERVED\",\n      \"key\": \"Tab\",\n      \"active_element\": {\n        \"tag\": \"A\",\n        \"id\": \"\",\n        \"text\": \"Skip to content\"\n      },\n      \"evidence\": \"events.json#/actions/0\"\n    },\n    \"console\": {\n      \"status\": \"OBSERVED\",\n      \"evidence\": \"events.json#/console\",\n      \"note\": \"Listener attached before entry navigation; an empty list means no emitted events were observed.\"\n    },\n    \"network\": {\n      \"status\": \"OBSERVED\",\n      \"evidence\": \"events.json#/network\"\n    }\n  },\n  \"error\": \"locator.waitFor: Timeout 15000ms exceeded.\\nCall log:\\n\\u001b[2m  - waiting for getByText('QAIZEN LABS', { exact: true }) to be visible\\u001b[22m\\n\"\n}\n",
+  "stderr": "",
+  "request_sha256": "6bea158d57c2cde9c5e23fd97908df51decfa160f32357ff04357a095fe67a79",
+  "harness_sha256": "544d47211ac5aefde57072aef4ded1140c21030555b0e45e93f8821794249add",
+  "policy_sha256": "2160973fbe4d0a603d061688d2d4fe9ee633d8b3f018fec773d7b8d7a28c7ff2"
+}

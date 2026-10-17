@@ -1,0 +1,17 @@
+{
+  "schema": "qore-eval-qualification/1",
+  "run_id": "qore003-20261017-r1-generic-1",
+  "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+  "input_manifest_sha256": "7524a35a5d08ec4b101aa1aa8b05360fd82d841eaec4c8800dbd51590e3e4c25",
+  "qore_run_sha256": "5eff62aac3cde7efe88e60806a79a6bd7652dc376c780958377a265213bba858",
+  "declared_coverage": "COMPLETE",
+  "coverage": "COMPLETE",
+  "assessor": "/root/campaign_review_assessor",
+  "verifier": "/root/campaign_final_verifier",
+  "assessed_at": "2026-10-17T12:22:41.534375Z",
+  "reason": "Required static review activities returned substantive retained outputs. Wave1 refuted the proposed semantic-filter failure under the explicit scalar claim allowlist. Preserve execution COMPLETE, with native-context provenance and recommendation correctness limits.",
+  "evidence": [
+    "independent-assessment.json",
+    "independent-verification.json"
+  ]
+}

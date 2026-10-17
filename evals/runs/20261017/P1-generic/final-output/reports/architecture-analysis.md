@@ -1,0 +1,96 @@
+# Architecture analysis — initial Analyze report
+
+Role: Architecture. Mode: Workflow, independent Analyze pass. Supplied target snapshot: `0aa277436d8dcda4d6c2412c6ad4307dd0192b0f6230fa96c8b16d99c8bac194` (dispatch metadata, not a claim that a deployed website shares this identifier). Target: `/workspace/worker/target/verification-protocol.md`. Status: complete initial role analysis; cross-examination not yet supplied or performed.
+
+## Sources and evidence boundary
+
+Inspected in full: `TASK.md:1-5`; `surface-contract.json:1-21`; `checks/check_contract.py:1-54`; `observation-policy.json:1-5`; `target/verification-protocol.md:1-10`; `.agents/skills/qore-plan/SKILL.md`; `.agents/skills/qore-plan/references/protocol.md`; `.agents/skills/qore-plan/references/roles.md:1-22`. A local file inventory and `find . -name AGENTS.md -o -name project.json` found no additional AGENTS instructions or project profile. `rg` is unavailable, so the visible sweep used `find`, `cat`, and numbered `nl` reads. No prior reports or peer conclusions were used.
+
+Uninspected/not supplied: browser implementation, website DOM, deployed scripts, request logs, screenshots, accessibility tree, service-worker behavior, browser tooling, private source history, and deployment identity. No network was used. Browser behavior remains unknown. The task is a document change plan, not implementation or site verification (`TASK.md:3-5`). The target explicitly labels itself a reconstructed fixture, not historical evidence (`target/verification-protocol.md:3`).
+
+Local measurement: from `/workspace/worker`, ran `python3 -B checks/check_contract.py surface-contract.json`; exit 0, `valid: true`, schema `qaizen-labs-surface/1`, all eight source check names returned. The checker itself states that it checks contract consistency only and that browser observations establish current behavior (`checks/check_contract.py:42-43`). This result supports source consistency; it proves no browser outcome. No input files were changed.
+
+## Visible reuse and impact sweep
+
+| Existing boundary | Existing producer/reader | Reuse and planned impact |
+| --- | --- | --- |
+| Source contract JSON | Supplied source file → `validate(data)` via JSON load (`checks/check_contract.py:9-43,50`) | Reuse its schema, states, transitions, guard values and check IDs; do not create a competing schema or modify acceptance authority. Only the target document needs planned changes. |
+| Observation policy JSON | Supplied policy → intended observer; no executable reader supplied (`observation-policy.json:2-4`) | Document an explicit policy read and origin equality check before observation. Checker does not load this file. No claim that an origin guard already exists. |
+| Existing journey procedure | Target → human reader or a future runner (`target/verification-protocol.md:5-10`) | Keep public entry, unanswered start, Close/focus observation, unanswered check and returned introduction/focus; specify the missing keys, exact traversal and policy/evidence setup. No duplicate operation or new application component is needed. |
+| Public browser boundary | Future operator/tool → public site | Plan only; guard implementation and browser observation are prerequisites for a later authorized run. No website/API/database implementation supplied or needed. |
+| Evidence boundary | Future browser observations → evidence record → reviewer | Propose a compact evidence record, distinguishing expected values from observed values and source consistency from browser results. No storage backend or new runtime API is proposed. |
+
+The visible supplied project surfaces contain no application service, database, transaction helper, retry system or source deployment mechanism. Consequently these are not change targets. This is an inventory result for the supplied files, not a claim about the website's unseen architecture. Existing shared values have one authoritative writer (supplied immutable source), one limited executable reader (checker), and the document/future observer as additional consumers. Evidence is a timestamped observation snapshot; it must not be mistaken for a durable statement about later deployments (`surface-contract.json:19-20`).
+
+## Decisions and alternatives
+
+**A1 — Preserve the source-of-truth boundary.** Plan changes to the target procedure only, with source citations and a contract-to-step map. Keep source contract, checker, policy and skill resources unchanged (`TASK.md:3-5`). The target disclaimer remains; a clearer provenance/evidence paragraph may be added. Alternative rejected: repair the JSON/checker to agree with the fixture, which would reverse authority and broaden scope.
+
+**A2 — Exercise all seven explicit transitions in one ordered journey.** Follow `entry → start → open-help → toggle-help → reopen-help → close-help → back`, using exact source controls and activations (`surface-contract.json:9-15`). Help requires summary Enter, summary Space, summary Enter; Close requires Tab traversal and Enter; Back requires Tab traversal and Enter. Observe intermediate open/closed state after each transition. This reuses the existing journey and exposes the missing help cycle (`target:7`) and contradictory click Back (`target:10`). Alternative rejected: only replace “Click Back” with Enter; this would leave both sequential focus evidence and the help-toggle requirement uncovered.
+
+**A3 — Prefer the concrete contract over the validator's looser acceptance.** Use Tab for both Close and Back because the actual transition records specify Tab (`surface-contract.json:14-15`). The checker allows either Tab or Shift+Tab for Back (`checks/check_contract.py:35-36`) and does not enforce Close traversal or the precise help-cycle keys; it is a consistency floor, not a full protocol oracle. Do not infer permission to weaken the concrete contract from a checker omission. Alternative: allowing Shift+Tab as an additional exploratory run can be recorded separately; it must not replace the specified Tab proof.
+
+**A4 — Keep three focus facts distinct.** Before activation, record that sequential traversal reached the actual Close/Back control; after Close, record summary focus; after Back, record introduction `h1` focus (`surface-contract.json:14-17`). Introduction focus cannot be substituted for preactivation Back focus. Clicking/focusing a control programmatically would erase traversal evidence; a read-only active-element inspection is a proposed observation method, not itself traversal. Exact public-site locators for Close and Back are not supplied and must be established during a later run without inventing IDs. Alternative rejected: a final screenshot alone, because it cannot establish the sequence or active element reliably.
+
+**A5 — Put guard and environment setup before the first public navigation.** Document locale en-US, viewport 1280×800, public entry URL, depth entry/state and unanswered scope (`surface-contract.json:4-6`). Allowed origins must agree between contract and policy, currently exactly `https://qaizen.io` (`surface-contract.json:5`; `observation-policy.json:2-4`). Allow only GET/HEAD/OPTIONS (`surface-contract.json:6`; `checks/check_contract.py:16-18`). A future observation tool must prevent disallowed methods and destinations before sending requests, including redirects and requests initiated by the page; the mechanism is an explicit tool-capability prerequisite, not an invented existing API. Policy mismatch or inability to establish enforcement blocks that future run. Merely logging disallowed outgoing traffic afterward is insufficient. No network run is part of this planning task.
+
+**A6 — Treat expected analytics blocking as evidence, not an automatic journey pass or failure.** The contract expects an analytics POST to be blocked and requires retaining its observed effects (`surface-contract.json:20`). Proposed evidence captures blocked method/destination, associated transition and visible effects without publishing website source or unnecessary payload data. If the guard works and the journey remains observable, continue within scope; if blocking prevents a required transition, record the transition's observed failure or blocked observation and retain the effect. Never relax the method guard to make the journey pass. Blocking an unexpected disallowed request is also evidence; distinguish it from inability to enforce policy.
+
+**A7 — Make evidence minimal but sufficient and preserve uncertainty.** Proposed record fields: run time, browser/tool identity, entry/final URL and observed origin, configured locale/viewport, contract schema/version, transition ID, expected from/to state, control, traversal, activation, expected focus target/selector, observed state/focus, unanswered observation, request-policy outcome, and pass/fail/blocked/not-observed status with reason. Source contract fields cross into the protocol as expectations; browser/tool readings cross into the record as observations; reviewer derives a result from both. The exact evidence schema is a proposal, not source-mandated software work. Record only needed observations; no website source redistribution (`surface-contract.json:20`).
+
+**A8 — Keep target-only assertions distinguishable.** The fixture says the question/help are absent after Back (`target:10`); the authoritative contract expressly supplies returned-introduction state and introduction-heading focus, but no DOM absence selector/assertion (`surface-contract.json:15,17`). Preserve these visibility observations if useful, labeled as supplementary proposed assertions until Product/UX justify the exact interpretation. Do not silently turn a fixture phrase into a new authoritative website-defect criterion. The source state names alone do not determine whether “absent” means hidden, detached, or inaccessible.
+
+## Component flow and runtime sequence
+
+Document/local-tool flow: authoritative source JSON and policy → proposed revised verification document (with source mappings) → local source-consistency check plus manual coverage review → later authorized observer with network guard → public browser observations → evidence record → reviewer. Only the document revision is the proposed implementation deliverable. The checker reads the contract JSON; it does not read the target or the policy, and therefore cannot validate their consistency automatically (`checks/check_contract.py:46-54`).
+
+Planned later runtime sequence, not performed here:
+
+1. Read policy and contract; check their origin values agree, run consistency checker, configure locale/viewport and pre-navigation guard. Record unsupported enforcement as blocked before navigation.
+2. Open Labs at the source URL, click the source entry link `a[href$='/labs/readiness-check']`, observe introduction. Start via “Start the check”; establish first-question/unanswered evidence.
+3. Reach summary by sequential keyboard navigation as needed (exact route unknown); activate Enter, observe help open; activate Space on summary, observe closed; Enter, observe reopened. The contract specifies activations but not the initial path to summary, so record that route as procedure detail rather than new source fact.
+4. Traverse with Tab to Close; record focused control; Enter; observe help closed and summary focused. Retain unanswered evidence through the journey.
+5. Traverse with Tab from the returned summary focus to Back, recording intervening focus or at least an auditable traversal trace and final focused Back; Enter; observe returned introduction and focused introduction `h1`.
+6. Finalize per-check results and observed blocking effects, keeping failure and not-observed outcomes visible. A failed/blocked transition cannot supply evidence for dependent downstream transitions; a repeat may start from the entry in a new recorded run, within the same guard and unanswered limits. Do not assume reload/reset behavior clears unseen website state.
+
+The future observer owns navigation, sequential key actions, policy setup and evidence capture. The website owns its runtime DOM/focus behavior and request attempts. The guard owns prevention of disallowed requests. The reviewer owns pass/fail classification. There is no shared transaction boundary or rollback operation in this document change; resetting a browser journey is a proposed recovery action, not a data transaction or proof of server-side reset.
+
+## Acceptance and planned checks
+
+- Every source transition has a procedure step, exact control/activation, expected state and evidence field; explicit Tab proof exists for Close and Back. Map all eight required IDs from `surface-contract.json:18` to steps/evidence.
+- Summary Enter→Space→Enter is explicit; Close and Back postactivation focus are distinct and preactivation Back focus is observed. A final-state-only run does not meet keyboard-back evidence.
+- Unanswered scope is an invariant from first-question entry through Back; no answer selection, result generation or form submission is requested. Exact observable unanswered indicators are unresolved browser evidence, not invented selectors (`surface-contract.json:6,20`).
+- Entry URL, origin authorization, all allowed methods, locale, viewport and depth appear before the action sequence. Policy/source origin mismatch and unavailable request prevention are explicit future-run blockers.
+- Local checker success is reported with its scope limitation. Manual source→procedure→evidence review is separately required because the checker cannot inspect the target or policy.
+- Each planned browser check can end pass, fail, blocked, or not observed with reason; source obligations and unknown current behavior remain separate. No claim of current deployment correctness, accessibility certification, mobile coverage, full questionnaire coverage or performance coverage is made (`surface-contract.json:19-20`).
+
+## Risks and failure behavior
+
+| Trigger | Impact / severity | Evidence or hypothesis | Planned response |
+| --- | --- | --- | --- |
+| Reviewer treats validator success as protocol/browser proof | High: missing help keys/Back traversal could be accepted | Checker does not read target/policy and disclaims browser proof (`checks/check_contract.py:42-50`) | Separate local consistency, document coverage and later browser evidence gates. |
+| Back reached with click or programmatic focus | High: keyboard route remains unproved | Contract Back Tab+Enter, target click (`surface-contract.json:15`; target:10) | Require real sequential Tab evidence before Enter, plus separate destination focus assertion. |
+| Guard installed after navigation, unsupported on a request surface, or method filtering omitted | High: observation can leave authorized origin/method boundary | Scope and origin policy; enforcement tool behavior unknown | Capability/setup check before navigation, abort/block when prevention cannot be assured; do not claim a particular tool exists. |
+| Expected analytics POST is blocked and affects UI | Medium: downstream transition may fail or become unobservable | Explicit source warning (`surface-contract.json:20`) | Preserve blocked request and UI effect; classify transition without relaxing guard or fabricating downstream observations. |
+| Earlier state/key/focus fails but later evidence is assembled as if one journey passed | High: false acceptance chain | Transition graph source; future failure hypothesis | Mark dependent checks not observed/blocked; keep failed evidence and identify any separately restarted run. |
+| “Unanswered” inferred only from no deliberate answer click | Medium: a default/persisted answer could go unnoticed | Unanswered source obligation; live initial state unknown | Establish observed unanswered indicators at first question and after help; unresolved indicator blocks a defensible claim. |
+| Source-only absence assertions become strict DOM tests | Medium: source obligation silently broadens | Fixture absence wording versus source state/focus fields | Product/UX resolve hidden/detached semantics or label as supplementary observations. |
+| Private commit/snapshot presented as deployment ID | Medium: misleading freshness/provenance | Source limits and provenance (`surface-contract.json:19-20`) | Record public URL/time/context and explicitly retain deployment identity uncertainty. |
+
+## Questions for named peers and bounded alternatives
+
+Product: Which exact observed facts establish the unanswered invariant? Can an unanswered claim be made when the observer only avoids clicking answers but cannot identify current selection state? Please keep first-question establishment and persistence through help/Back measurable. Also decide whether the fixture's “question and help absent” wording is an additional proposed requirement or merely supplementary visibility evidence; it is not explicit in the source contract.
+
+UX: Can the procedure express the full summary cycle and distinct Close/Back Tab proofs in one short ordered sequence without introducing site-specific selectors that are not supplied? Please distinguish expected state from an unknown DOM visibility/detachment mechanism, and specify what to record if focus is lost or a summary/control is unavailable.
+
+QA and security warning: Validator omissions allow a document to remain wrong while JSON consistency passes. Please cover blocked analytics effects, unavailable guard capability, redirect/off-origin attempts, failed intermediate transitions, missing unanswered evidence, and distinct preactivation versus destination focus. Do not require intentionally sending prohibited requests or answering the questionnaire to prove these boundaries.
+
+Delivery: Guard/tool readiness is a prerequisite only for a future browser run, not for finishing this source-only plan or later editing this document. Avoid making site observation, application patches, new test harnesses, or checker expansion part of the smallest requested document change.
+
+Alternatives retained: a manual protocol with a concise trace table is sufficient if its observer can enforce the guard and collect the needed evidence; no automated browser framework is mandated. A future automated runner is optional additional scope. The validator can be cited and reused without extending it; target-document coverage review must remain explicit.
+
+## Deliverables and unfinished work
+
+This report delivers architecture decisions, actual boundary/reuse sweep, interface fields, component flow, runtime sequence, checks, risks and peer questions. Proposed downstream deliverables are a sourced change specification and, only when separately authorized, a revised target protocol. No protocol edit or network observation has been performed.
+
+Unfinished by design: one Workflow cross-examination pass after all five independent reports are supplied; lead adjudication of peer questions; rendered browser behavior, actual tab stops/locators/unanswered indicators and guard capability remain unmeasured. No independent-source inspection required for this role remains unfinished at this Analyze deadline. Evidence to resolve runtime unknowns would be a later authorized observation with enforced source policy and recorded state/focus/request outcomes; it is outside this task's no-network limit.

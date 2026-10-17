@@ -1,0 +1,11 @@
+{
+  "command": [
+    "python3",
+    "-B",
+    "/workspace/worker/checks/check_contract.py",
+    "/workspace/worker/surface-contract.json"
+  ],
+  "exit_code": 0,
+  "stdout": "{\n  \"valid\": true,\n  \"schema\": \"qaizen-labs-surface/1\",\n  \"checks\": [\n    \"entry\",\n    \"unanswered\",\n    \"help-toggle\",\n    \"close-focus\",\n    \"keyboard-back\",\n    \"introduction-focus\",\n    \"read-only-policy\",\n    \"origin-policy\"\n  ],\n  \"limit\": \"Contract consistency only; browser observations establish current behavior.\"\n}\n",
+  "stderr": ""
+}

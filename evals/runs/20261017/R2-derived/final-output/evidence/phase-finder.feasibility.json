@@ -1,0 +1,46 @@
+{
+  "qore_evidence": {
+    "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+    "target_snapshot_sha256": "9689f41f4f94e52c4074c5cd0760e78a4ce34fb03b6d5a3504d16e61735c8c66",
+    "observed_at": "2026-10-17T11:15:32.844177+00:00",
+    "phase_id": "finder.feasibility"
+  },
+  "payload": {
+    "actor_id": "/root/finder_feasibility",
+    "report": "# Independent performance/feasibility finder\n\nContext identity: /root/finder_feasibility, independent child context of /root. Runtime model identity was not exposed to this context; no model identity is inferred.\nStart UTC: 2026-10-17 11:14:01 UTC.\nEnd UTC: 2026-10-17 11:14:58 UTC.\nRole deadline: 2026-10-17 11:18:40 UTC; returned before deadline.\nNo peer or lead output was read. No network was used. Inputs were not changed.\n\nScope: target/verification-protocol.md against surface-contract.json version 0.1.0, checks/check_contract.py, and observation-policy.json. Method references read: .agents/skills/qore-review-qaizen-labs/references/protocol.md and references/findings.md. This is a document feasibility review, not an observation of qaizen.io.\n\nSnapshot SHA-256:\n- target/verification-protocol.md: 0a3452f02e358d8800fb26d591083deb972c5531165473990dc27007a9a9e0d4\n- surface-contract.json: 3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3\n- checks/check_contract.py: 9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b\n- observation-policy.json: 15f4e5b4960b5011684be265f027e42b8637a3b8aae96b24bba1ba3a4d0f0202\n\n## F-301: Required summary keyboard toggling has no observation in the procedure\n\nSeverity: medium.\n\nEvidence: surface-contract.json:11-13 requires summary Enter to open help, summary Space to close it, and summary Enter to reopen it. Its line 18 expressly lists help-toggle among required_checks. In contrast, target/verification-protocol.md:7 only says to open help using its summary control, with no input specified; line 8 immediately goes to Close by Tab/Shift+Tab and Enter. Lines 9-10 assert unanswered state and Back navigation. No step presses Space on summary, observes that toggle closing, or reopens help through summary Enter.\n\nCondition: the summary Space activation is broken while opening help, Close, and Back still work. The procedure never exercises the failing action. Its opening step can also be satisfied by a pointer activation even if summary Enter is broken.\n\nConsequence: an operator can satisfy every stated procedure step without collecting the observation needed for the required help-toggle check. A successful run cannot establish all acceptance results listed by the supplied contract. This is a limitation of the proposed verification, not a claim about the deployed site's behavior.\n\nRequirement: surface-contract.json:11-13 and :18. The target needs an explicit summary Enter / Space / Enter sequence with resulting open/closed assertions before the Close test to cover those transitions.\n\nUncertainty: no browser or website behavior was inspected. The independent verifier must assess the candidate; this finder assigns no confirmation/refutation verdict.\n\n## Source-to-decision trace\n\nCentral value: the required help-toggle result.\n\nProducer: surface-contract.json:18 declares required_checks as eight strings: entry, unanswered, help-toggle, close-focus, keyboard-back, introduction-focus, read-only-policy, origin-policy. The detailed summary transitions on lines 11-13 each carry id, from, to, control, and activation. The required toggle activation is Space.\n\nTransformation and actual serializer: checks/check_contract.py reads the JSON file with json.loads at line 50. validate checks declarations but does not execute a browser. Its required-check validation at lines 37-39 accepts the current help-toggle string; its required subset does not independently demand help-toggle. Lines 42-43 return exactly valid, schema, checks, and limit. Lines 50-51 serialize that return value with json.dumps. The actual command \"python3 -B checks/check_contract.py surface-contract.json\" exited 0 and emitted valid=true, schema=qaizen-labs-surface/1, checks containing help-toggle, and limit=\"Contract consistency only; browser observations establish current behavior.\"\n\nReceiving observation contract: the document contains six imperative steps, rather than an observation-result schema. The action actually described after opening summary is Close activation. No observation entry, help-toggle measurement, summary Space action, or summary reopening action is specified.\n\nFinal consumer/decision: the supplied materials do not define a report serializer or delivery decision consumer for these steps. Therefore the checker's checks array cannot be treated as observed success; its explicit limit states the contrary. The concrete adjacent-boundary mismatch is that the declaration requires the summary toggle observation while the procedure supplies none.\n\n## Resource and operational limits checked\n\nThe Back instruction at target line 10 has a 24-step traversal cap. Neither surface-contract.json nor its validator defines a maximum tab distance. However the sources provide no actual deployment traversal count and the procedure defines no failure/inconclusive classification. The cap alone is not reported as a supported defect: it is an unresolved operational assumption, and no claim is made that the site requires more than 24 steps.\n\nThe supplied contract expressly excludes performance or accessibility certification (surface-contract.json:20). No throughput, latency, memory, or load claim was found, so no benchmark was invented. Runtime origin and method enforcement are declared in the raw criteria; no browser execution was authorized in this role.\n\nCoverage: all four supplied target/criteria files and both assigned method references read. One supported candidate submitted; no independent verdict assigned. Remaining uncertainty is actual browser behavior, actual traversal distance, and how an operator records or classifies observation outcomes. No assigned file-review scope remains unfinished.\n",
+    "candidates": {
+      "findings": [
+        {
+          "id": "F-301",
+          "title": "Required summary keyboard toggling has no observation in the procedure",
+          "severity": "medium",
+          "evidence": "surface-contract.json:11-13 requires summary Enter opening, Space closing, and Enter reopening; :18 includes help-toggle in required_checks. target/verification-protocol.md:7 only says to open help using summary, with no input specified, and :8 immediately traverses to Close and activates Enter. Its remaining steps :9-10 cover unanswered state and Back, with no summary Space or reopening observation. If summary Space is broken while opening, Close, and Back work, every stated procedure step can still succeed without establishing required help-toggle behavior. checks/check_contract.py:42-43,50-51 emits declared checks including help-toggle but explicitly limits validity to contract consistency; it supplies no missing browser observation. Actual deployed behavior has not been examined."
+        }
+      ]
+    },
+    "timing": {
+      "role": "finder.feasibility",
+      "actor_id": "/root/finder_feasibility",
+      "requested": true,
+      "returned": true,
+      "dispatch_at_utc": null,
+      "dispatch_window_utc": [
+        "2026-10-17T11:13:27+00:00",
+        "2026-10-17T11:13:59+00:00"
+      ],
+      "dispatch_timestamp_reason": "No per-call clock sample; actual dispatch lies within this recorded tool-call window. Agent entry timestamp to be retained in full report.",
+      "return_at_utc": "2026-10-17T11:15:14+00:00",
+      "deadline_utc": "2026-10-17T11:18:40+00:00",
+      "report_file": "finder-feasibility.md",
+      "candidate_file": "candidates-feasibility.json",
+      "usage": {
+        "aggregate_agent_seconds": null,
+        "tokens": null,
+        "reason": "Host collaboration tools expose actor context names and status, not per-agent metered seconds or token usage."
+      },
+      "return_timestamp_kind": "Lead receipt observed by UTC clock sampling immediately after final notification",
+      "agent_report_start_utc": "2026-10-17T11:14:01+00:00"
+    },
+    "coverage": "All assigned document sources reviewed; live website excluded."
+  }
+}

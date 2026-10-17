@@ -1,0 +1,7 @@
+{
+  "observed_at": "2026-10-17T11:40:19.208612+00:00",
+  "file_count": 18,
+  "unchanged": true,
+  "differences": [],
+  "procedure": "Recompute SHA-256 for every original supplied input/skill file and compare with initial input-manifest.json; no input writes performed."
+}

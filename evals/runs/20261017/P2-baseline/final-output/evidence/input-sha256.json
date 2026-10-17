@@ -1,0 +1,7 @@
+{
+  "TASK.md": "35903aa61c5634aecfd79bdeb74e0aa38cc0dd4f211bc4502214b7a24674578d",
+  "checks/check_contract.py": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b",
+  "observation-policy.json": "15f4e5b4960b5011684be265f027e42b8637a3b8aae96b24bba1ba3a4d0f0202",
+  "surface-contract.json": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+  "target/verification-protocol.md": "0a3452f02e358d8800fb26d591083deb972c5531165473990dc27007a9a9e0d4"
+}

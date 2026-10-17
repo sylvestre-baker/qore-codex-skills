@@ -1,0 +1,12 @@
+{
+  "valid": true,
+  "id": "qore003-20261017-u2-derived-1",
+  "scenario_id": "U2",
+  "condition": "derived",
+  "coverage": "PARTIAL",
+  "declared_coverage": "PARTIAL",
+  "qualification_supplied": true,
+  "comparability": "UNVERIFIED",
+  "changed_inputs": [],
+  "limit": "Identity and entered evidence checked; assessor independence, reasoning, isolation and causal benefit are not certified by metadata."
+}

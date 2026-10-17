@@ -241,9 +241,31 @@ try {
     }));
     await write(`${stem}.dom.json`, dom);
     result.capabilities.dom = { status: 'OBSERVED', evidence: `${stem}.dom.json` };
+    // Viewport evidence precedes full-page capture, which can alter layout/scroll.
+    const viewport = await page.evaluate(() => {
+      const rect = element => { const r = element.getBoundingClientRect(); return { x: r.x, y: r.y, width: r.width, height: r.height, top: r.top, right: r.right, bottom: r.bottom, left: r.left }; };
+      const describe = element => element ? { tag: element.tagName, id: element.id, role: element.getAttribute('role'), text: element.textContent?.trim().slice(0, 200), rect: rect(element), position: getComputedStyle(element).position, z_index: getComputedStyle(element).zIndex } : null;
+      const active = document.activeElement;
+      const bounds = active ? rect(active) : null;
+      const samples = [];
+      if (bounds && active !== document.body && bounds.width > 0 && bounds.height > 0) {
+        for (const xFraction of [.1, .3, .5, .7, .9]) for (const yFraction of [.1, .3, .5, .7, .9]) {
+          const x = bounds.x + bounds.width * xFraction, y = bounds.y + bounds.height * yFraction;
+          const hit = document.elementFromPoint(x, y);
+          samples.push({ x, y, in_viewport: x >= 0 && x < innerWidth && y >= 0 && y < innerHeight,
+            active_or_descendant: Boolean(hit && (hit === active || active.contains(hit))), hit: describe(hit) });
+        }
+      }
+      return { at: new Date().toISOString(), viewport: { width: innerWidth, height: innerHeight, device_pixel_ratio: devicePixelRatio },
+        scroll: { x: scrollX, y: scrollY }, active_element: describe(active), sampled_points: samples,
+        fixed_or_sticky: [...document.querySelectorAll('body *')].filter(element => ['fixed', 'sticky'].includes(getComputedStyle(element).position) && element.getClientRects().length).map(describe),
+        limit: 'Sampled paint hit tests and geometry are observations, not complete visibility or accessibility certification.' };
+    });
+    await write(`${stem}.viewport.json`, viewport);
+    await page.screenshot({ path: path.join(output, `${stem}.viewport.png`), fullPage: false });
     await page.screenshot({ path: path.join(output, `${stem}.png`), fullPage: true });
     result.capabilities.screenshot = { status: 'OBSERVED', evidence: `${stem}.png` };
-    result.snapshots.push({ at: new Date().toISOString(), label, url: page.url(), dom: `${stem}.dom.json`, screenshot: `${stem}.png` });
+    result.snapshots.push({ at: new Date().toISOString(), label, url: page.url(), dom: `${stem}.dom.json`, screenshot: `${stem}.png`, screenshot_mode: 'full-page', viewport_screenshot: `${stem}.viewport.png`, viewport_measurements: `${stem}.viewport.json` });
     return dom;
   };
   const response = await page.goto(target.href, { waitUntil: 'domcontentloaded', timeout: 30000 });
@@ -294,7 +316,10 @@ try {
   for (const action of actions) {
     const at = new Date().toISOString();
     let actionOutcome = 'completed';
-    const locator = () => action.role ? page.getByRole(action.role, { name: action.name, exact: action.exact !== false }) : page.locator(action.selector);
+    const locator = () => action.role ? page.getByRole(action.role, { name: action.name, exact: action.exact !== false })
+      : action.selector ? page.locator(action.selector)
+        : typeof action.text === 'string' ? page.getByText(action.text, { exact: action.exact !== false })
+          : (() => { throw new Error('Action needs a selector, role/name or text locator.'); })();
     if (action.type === 'click') {
       const chosen = locator();
       await guardActivation(action, chosen);

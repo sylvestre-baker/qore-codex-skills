@@ -1,0 +1,269 @@
+{
+  "started_at": "2026-10-17T11:44:56.975225+00:00",
+  "scope": "Existing local files and read-only redactor/validator invocations; no website, network or model rerun.",
+  "redactors": {
+    "N01": {
+      "command": [
+        "node",
+        "<private-campaign-root>/assessment-inputs/N01/input/.agents/skills/qore-review-qaizen-labs/scripts/redact-for-verifier.mjs",
+        "<private-campaign-root>/assessment-inputs/N01/output/evidence/findings.json"
+      ],
+      "exit_code": 0,
+      "stderr": "redact-for-verifier: 5 claims; withheld fields: finder_report.\n",
+      "retained_output_byte_identical_to_actual_rerun": true,
+      "retained_output_json_equal_to_actual_rerun": true,
+      "raw_fields": {
+        "C-001": [
+          "id",
+          "title",
+          "severity",
+          "evidence",
+          "finder_report"
+        ],
+        "C-002": [
+          "id",
+          "title",
+          "severity",
+          "evidence",
+          "finder_report"
+        ],
+        "S-1": [
+          "id",
+          "title",
+          "severity",
+          "evidence",
+          "finder_report"
+        ],
+        "S-2": [
+          "id",
+          "title",
+          "severity",
+          "evidence",
+          "finder_report"
+        ],
+        "F-301": [
+          "id",
+          "title",
+          "severity",
+          "evidence",
+          "finder_report"
+        ]
+      },
+      "retained_fields": {
+        "C-001": [
+          "id",
+          "title",
+          "severity",
+          "evidence"
+        ],
+        "C-002": [
+          "id",
+          "title",
+          "severity",
+          "evidence"
+        ],
+        "S-1": [
+          "id",
+          "title",
+          "severity",
+          "evidence"
+        ],
+        "S-2": [
+          "id",
+          "title",
+          "severity",
+          "evidence"
+        ],
+        "F-301": [
+          "id",
+          "title",
+          "severity",
+          "evidence"
+        ]
+      },
+      "retained_fields_all_allowlisted_scalar_strings": true,
+      "dropped_fields": [
+        "finder_report"
+      ],
+      "finder_reports": {
+        "output/evidence/finder-correctness.md": {
+          "bytes": 8472,
+          "complete_report_found_in_retained_scalars": false
+        },
+        "output/evidence/finder-security.md": {
+          "bytes": 7517,
+          "complete_report_found_in_retained_scalars": false
+        },
+        "output/evidence/finder-feasibility.md": {
+          "bytes": 5698,
+          "complete_report_found_in_retained_scalars": false
+        }
+      },
+      "limitations": "Exact full-report containment is a mechanical supplement; manual reading evaluated whether evidence was a repackaged full report or prohibited separate rationale/verdict exposure."
+    },
+    "N10": {
+      "command": [
+        "node",
+        "<private-campaign-root>/assessment-inputs/N10/input/.agents/skills/qore-review/scripts/redact-for-verifier.mjs",
+        "<private-campaign-root>/assessment-inputs/N10/output/findings.json"
+      ],
+      "exit_code": 0,
+      "stderr": "redact-for-verifier: 3 claims; withheld fields: proposed_correction, rationale, uncertainty.\n",
+      "retained_output_byte_identical_to_actual_rerun": true,
+      "retained_output_json_equal_to_actual_rerun": true,
+      "raw_fields": {
+        "C-1": [
+          "id",
+          "title",
+          "severity",
+          "evidence",
+          "rationale",
+          "uncertainty",
+          "proposed_correction"
+        ],
+        "C-2": [
+          "id",
+          "title",
+          "severity",
+          "evidence",
+          "rationale",
+          "uncertainty",
+          "proposed_correction"
+        ],
+        "S-1": [
+          "id",
+          "title",
+          "severity",
+          "evidence",
+          "rationale",
+          "uncertainty",
+          "proposed_correction"
+        ]
+      },
+      "retained_fields": {
+        "C-1": [
+          "id",
+          "title",
+          "severity",
+          "evidence"
+        ],
+        "C-2": [
+          "id",
+          "title",
+          "severity",
+          "evidence"
+        ],
+        "S-1": [
+          "id",
+          "title",
+          "severity",
+          "evidence"
+        ]
+      },
+      "retained_fields_all_allowlisted_scalar_strings": true,
+      "dropped_fields": [
+        "proposed_correction",
+        "rationale",
+        "uncertainty"
+      ],
+      "finder_reports": {
+        "output/roles/correctness/report.md": {
+          "bytes": 8583,
+          "complete_report_found_in_retained_scalars": false
+        },
+        "output/roles/security/report.md": {
+          "bytes": 6798,
+          "complete_report_found_in_retained_scalars": false
+        },
+        "output/roles/feasibility/report.md": {
+          "bytes": 6709,
+          "complete_report_found_in_retained_scalars": false
+        }
+      },
+      "limitations": "Exact full-report containment is a mechanical supplement; manual reading evaluated whether evidence was a repackaged full report or prohibited separate rationale/verdict exposure."
+    }
+  },
+  "profile_fidelity": {
+    "profile_bound_source": {
+      "id": "surface",
+      "path": "surface-contract.json",
+      "sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3"
+    },
+    "source_actual_sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+    "source_back_transition": {
+      "id": "back",
+      "from": "help-closed",
+      "to": "returned-introduction",
+      "control": "Back",
+      "activation": "Enter",
+      "traversal": "Tab",
+      "focus_after": "introduction-heading"
+    },
+    "profile_back_fact": {
+      "id": "back-focus",
+      "statement": "Reach the application Back control using sequential Tab or Shift+Tab; activate with Enter and verify introduction heading focus. A click or programmatic focus does not prove keyboard reachability.",
+      "source": "surface",
+      "applies_to": [
+        "plan",
+        "review",
+        "ux"
+      ]
+    },
+    "actual_consumption": {
+      "fact_id": "back-focus",
+      "source_id": "surface",
+      "source_sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+      "effect": "Used as review criterion against target and direct source: Reach the application Back control using sequential Tab or Shift+Tab; activate with Enter and verify introduction heading focus. A click or programmatic focus does not prove keyboard reachability."
+    },
+    "original_Tab_contract_validation": {
+      "valid": true,
+      "schema": "qaizen-labs-surface/1",
+      "checks": [
+        "entry",
+        "unanswered",
+        "help-toggle",
+        "close-focus",
+        "keyboard-back",
+        "introduction-focus",
+        "read-only-policy",
+        "origin-policy"
+      ],
+      "limit": "Contract consistency only; browser observations establish current behavior."
+    },
+    "different_Shift_Tab_contract_validation": {
+      "valid": true,
+      "schema": "qaizen-labs-surface/1",
+      "checks": [
+        "entry",
+        "unanswered",
+        "help-toggle",
+        "close-focus",
+        "keyboard-back",
+        "introduction-focus",
+        "read-only-policy",
+        "origin-policy"
+      ],
+      "limit": "Contract consistency only; browser observations establish current behavior."
+    },
+    "different_contract_is_in_memory_only": true,
+    "conclusion": "The checker accepts either value across different contracts. The selected source binds the concrete value Tab; profile and actual consumption broaden it to Tab or Shift+Tab."
+  },
+  "source_sha256": {
+    "assessment-inputs/N01/input/.agents/skills/qore-review-qaizen-labs/scripts/redact-for-verifier.mjs": "dc249524c749ad5b511aef0a2cf08b4cfd5c47c1e0de4fd41c5c70746b471083",
+    "assessment-inputs/N01/output/evidence/findings.json": "dea42b04b8e507485970908ace532a5017c6fa3df55805a59059b7ff60a24683",
+    "assessment-inputs/N01/output/evidence/claims.json": "58febdd3d9e9e4ead5c00dd9bf494c1fe81d7d562f1996bb79814176ab1d6bfb",
+    "assessment-inputs/N01/output/evidence/finder-correctness.md": "ca2af830f34abf7f89ae193ffd7e39e56428ac305e1480e309860cb02247b194",
+    "assessment-inputs/N01/output/evidence/finder-security.md": "493a199aff5acffd3413f7b08d3941f7e42f6a3f259e09b80d1296614a827ff5",
+    "assessment-inputs/N01/output/evidence/finder-feasibility.md": "75a8e07ecaa54983eb50752e6629f550460b691741dff485969a1371cc2d2259",
+    "assessment-inputs/N10/input/.agents/skills/qore-review/scripts/redact-for-verifier.mjs": "dc249524c749ad5b511aef0a2cf08b4cfd5c47c1e0de4fd41c5c70746b471083",
+    "assessment-inputs/N10/output/findings.json": "9f2e60d7ab2780ba158d42d542aa53e2fcd4f3f761bf994187e31c210f13c56b",
+    "assessment-inputs/N10/output/claims.json": "ed860206017c33198c638544776ae437bdd8dec04c78034b2bb94d0771b7d36e",
+    "assessment-inputs/N10/output/roles/correctness/report.md": "01ce16cccd2655c093e3fd5d81757af7649e44959c4f5584c4653535989f0ab0",
+    "assessment-inputs/N10/output/roles/security/report.md": "07ff81f03bb049428d17df14c587ba36c728b798c2785be5d83db29f2aad44ec",
+    "assessment-inputs/N10/output/roles/feasibility/report.md": "c4d83b4c8118e646f2cf15d52be485e36e8df8846e1aef06e0d1d828c4ea698b",
+    "assessment-inputs/N01/input/.agents/skills/qore-review-qaizen-labs/references/project.json": "f76afdd45cb6352e5044a06affc4182ea6cd40aa9c012fb216636a61faa428f0",
+    "assessment-inputs/N01/input/surface-contract.json": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+    "assessment-inputs/N01/input/checks/check_contract.py": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b"
+  },
+  "finished_at": "2026-10-17T11:44:57.112917+00:00"
+}

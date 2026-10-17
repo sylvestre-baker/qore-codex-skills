@@ -1,0 +1,94 @@
+{
+  "run_id": "qore003-20261017-u1-baseline-1",
+  "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+  "target_snapshot_sha256": "ac79f382c3f69aafe033bb3df651d1d2a974f7b5b9bcd94fcef6c0771e8daa02",
+  "target_digest_scope": "Entire frozen prepared-input manifest, as supplied; not an individual file or deployment commit.",
+  "last_relevant_change": "2026-10-17T09:53:58.656876+00:00",
+  "environment": {
+    "id": "qore-qualification-qore003-20261017-u1-baseline-1",
+    "operator": "agent",
+    "host": "Docker Desktop Linux arm64 / Codex0.162.0"
+  },
+  "profile": null,
+  "qore_skill_invoked": false,
+  "method": "baseline source-derived browser observation",
+  "primary_context": "/root",
+  "first_recorded_clock_utc": "2026-10-17T11:02:47+00:00",
+  "report_written_utc": "2026-10-17T11:06:13.810139+00:00",
+  "primary_dispatch_utc": null,
+  "primary_dispatch_reason": "Primary context was already active; no role dispatch occurred.",
+  "primary_report": "REPORT.md",
+  "roster": "roster.json",
+  "budget": {
+    "wall_seconds": 900,
+    "aggregate_agent_seconds": 2400,
+    "max_simultaneous_children": 3,
+    "browser_request_limit": 6,
+    "actions_per_request_limit": 40,
+    "role_deadlines": null,
+    "role_deadlines_reason": "No child roles required or dispatched.",
+    "expired_roles": [],
+    "budget_exhausted": false
+  },
+  "usage": {
+    "exact_tokens": null,
+    "metered_aggregate_agent_seconds": null,
+    "unavailable_reason": "No model token or aggregate agent-second accounting API/counters are exposed in this runtime.",
+    "elapsed_seconds_since_first_recorded_clock": 206.810139
+  },
+  "commands": [
+    {
+      "command": "python3 -B checks/check_contract.py surface-contract.json",
+      "exit_code": 0,
+      "output": "contract-check.json"
+    },
+    {
+      "command": "python3 -B /workspace/output/check_evidence.py",
+      "exit_code": 0,
+      "output": "evidence-check-output.json",
+      "details": "evidence-check.json"
+    }
+  ],
+  "requests": [
+    {
+      "request": 1,
+      "actor": "/root",
+      "executor": "neutral operator relay",
+      "array_written_utc": "2026-10-17T11:03:02.947873+00:00",
+      "dispatch_utc": "2026-10-17T11:03:04.949818+00:00",
+      "return_utc": "2026-10-17T11:03:11.950787+00:00",
+      "return_timestamp_source": "relay.json ended_at",
+      "request_file": "browser-request-1.json",
+      "action_count": 5,
+      "evidence_directory": "evidence/response-1",
+      "full_execution_report": "evidence/response-1/result.json",
+      "status": "PARTIAL",
+      "exit_code": 1
+    },
+    {
+      "request": 2,
+      "actor": "/root",
+      "executor": "neutral operator relay",
+      "array_written_utc": "2026-10-17T11:03:35.445435+00:00",
+      "dispatch_utc": "2026-10-17T11:03:37.187579+00:00",
+      "return_utc": "2026-10-17T11:04:16.326700+00:00",
+      "return_timestamp_source": "relay.json ended_at",
+      "request_file": "browser-request-2.json",
+      "action_count": 34,
+      "evidence_directory": "evidence/response-2",
+      "full_execution_report": "evidence/response-2/result.json",
+      "status": "COMPLETE",
+      "exit_code": 0
+    }
+  ],
+  "limitations": [
+    "No independent child verification was required or performed.",
+    "Exact en-US browser locale not independently exposed; DOM language en observed.",
+    "One full replay, no cross-browser/mobile/full questionnaire/performance/accessibility certification.",
+    "Focus-obscuring concern based on full-page screenshots; viewport-only geometry not available.",
+    "Trace/video references exist, but files not returned by relay.",
+    "Supplied enclosing identity digests retained as metadata, not independently verified against a supplied manifest."
+  ],
+  "input_integrity": "input-sha256.json; unchanged verified in evidence-check.json",
+  "outcome": "All eight contract checks observed passing within scoped replay; medium-impact visual concern about cookie banner obscuring focused Back remains qualified."
+}

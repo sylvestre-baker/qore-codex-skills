@@ -1,0 +1,441 @@
+{
+  "schema": "qore-run/1",
+  "id": "qore003-20261017-p2-generic-1",
+  "method": "plan",
+  "skill": "qore-plan",
+  "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+  "target": {
+    "label": "Frozen prepared-input manifest; documentation target target/verification-protocol.md",
+    "snapshot_sha256": "e9aeec2eee10b52c3339b53b4e491d3ff69f57c68be2f5ea1d61e70df55acccc"
+  },
+  "last_relevant_change": "2026-10-17T09:53:58.901555+00:00",
+  "environment": {
+    "id": "qore-qualification-qore003-20261017-p2-generic-1",
+    "operator": "agent",
+    "host": "Docker Desktop Linux arm64 / Codex0.162.0"
+  },
+  "profile": null,
+  "required_phases": [
+    "product",
+    "architecture",
+    "ux",
+    "delivery",
+    "qa",
+    "adjudication",
+    "spec_validation"
+  ],
+  "phases": [
+    {
+      "id": "product",
+      "actor_id": "/root/product",
+      "status": "PASS",
+      "artifacts": [
+        "evidence/phase-product.json",
+        "reports/product-analysis.md",
+        "reports/product-cross-examination.md"
+      ]
+    },
+    {
+      "id": "architecture",
+      "actor_id": "/root/architecture",
+      "status": "PASS",
+      "artifacts": [
+        "evidence/phase-architecture.json",
+        "reports/architecture-analysis.md",
+        "reports/architecture-cross-examination.md"
+      ]
+    },
+    {
+      "id": "ux",
+      "actor_id": "/root/ux",
+      "status": "PASS",
+      "artifacts": [
+        "evidence/phase-ux.json",
+        "reports/ux-analysis.md",
+        "reports/ux-cross-examination.md"
+      ]
+    },
+    {
+      "id": "delivery",
+      "actor_id": "/root/delivery",
+      "status": "PASS",
+      "artifacts": [
+        "evidence/phase-delivery.json",
+        "reports/delivery-analysis.md",
+        "reports/delivery-cross-examination.md"
+      ]
+    },
+    {
+      "id": "qa",
+      "actor_id": "/root/qa",
+      "status": "PASS",
+      "artifacts": [
+        "evidence/phase-qa.json",
+        "reports/qa-analysis.md",
+        "reports/qa-cross-examination.md"
+      ]
+    },
+    {
+      "id": "adjudication",
+      "actor_id": "/root",
+      "status": "PASS",
+      "artifacts": [
+        "evidence/phase-adjudication.json",
+        "adjudication.md",
+        "specification.md",
+        "proposed-verification-protocol.md"
+      ]
+    },
+    {
+      "id": "spec_validation",
+      "actor_id": "/root",
+      "status": "PASS",
+      "artifacts": [
+        "evidence/phase-spec_validation.json",
+        "evidence/spec-lint.txt",
+        "specification.md"
+      ]
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "REPORT.md",
+      "sha256": "7bd7e6dd734542c0b84701bfa292c51945497ba57cbbd9598ef0fd57dafbc30a",
+      "kind": "presentation"
+    },
+    {
+      "path": "adjudication.md",
+      "sha256": "21f4115e59938ef3c41b245e41f0f28123485e5b9e73c6609ce580f3f17562be",
+      "kind": "presentation"
+    },
+    {
+      "path": "build_execution.py",
+      "sha256": "65a7872675b3ed5de7f6dd30e1e0f834ba007aef933e4ae24762a4ba0e676dad",
+      "kind": "presentation"
+    },
+    {
+      "path": "evidence/capability-probe.txt",
+      "sha256": "cafceab535946cc8810f57bd50d172f322a4a4fdd9ae07935f7c4e3d8da9f8b8",
+      "kind": "presentation"
+    },
+    {
+      "path": "evidence/commands.json",
+      "sha256": "afd14e412d20b73eca8bd6635cb12f882b2bcae82663dac21bc3cca1a5ade6e6",
+      "kind": "presentation"
+    },
+    {
+      "path": "evidence/contract-check.txt",
+      "sha256": "2be1896c6fe4a69a13c514bd5f17771bd9996718d2810f82ba01e252ca00c464",
+      "kind": "presentation"
+    },
+    {
+      "path": "evidence/cross-barrier.json",
+      "sha256": "a9fb15b67ee7daa3f5cdb3b8541f8754c9e65ff54b0c9d44815be1d0ecdb377d",
+      "kind": "presentation"
+    },
+    {
+      "path": "evidence/immutability.json",
+      "sha256": "6d5be44e9c0a7f96d013d14f9d5b8e8de39b46d078a585ca8f3b3a4901a6f0a0",
+      "kind": "presentation"
+    },
+    {
+      "path": "evidence/input-inventory.json",
+      "sha256": "d561696b3c154e93cf7c6a94dcb129b1c4bf7d0e593a119e6c9e6ccdb6db52bb",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/intake.json",
+      "sha256": "dbc029f58238761abd5c43a57eb95e7296b52ee8d000d03b8ea318b5b9e20420",
+      "kind": "presentation"
+    },
+    {
+      "path": "evidence/limits.json",
+      "sha256": "d0636b90ebaab01b00d68ef0fbc7e6dac8bcb733ced5516058f8766d4164ac42",
+      "kind": "presentation"
+    },
+    {
+      "path": "evidence/phase-adjudication.json",
+      "sha256": "ce578b2c5cd77c68c9c2a6dfdeaf7a9ded22f092562c091f98d1a8e9bb8d209c",
+      "kind": "execution",
+      "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+      "target_snapshot_sha256": "e9aeec2eee10b52c3339b53b4e491d3ff69f57c68be2f5ea1d61e70df55acccc",
+      "observed_at": "2026-10-17T11:51:08.761234+00:00"
+    },
+    {
+      "path": "evidence/phase-architecture.json",
+      "sha256": "c8f5ba324dca83e2fa26fdca433da41bcbc06a99f8fc45b18988ad08ba7c40fd",
+      "kind": "execution",
+      "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+      "target_snapshot_sha256": "e9aeec2eee10b52c3339b53b4e491d3ff69f57c68be2f5ea1d61e70df55acccc",
+      "observed_at": "2026-10-17T11:47:14.405562+00:00"
+    },
+    {
+      "path": "evidence/phase-delivery.json",
+      "sha256": "34ef1c35026d2d7063e753afe7555d06302c6e38e56eeb819b021407eae8725c",
+      "kind": "execution",
+      "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+      "target_snapshot_sha256": "e9aeec2eee10b52c3339b53b4e491d3ff69f57c68be2f5ea1d61e70df55acccc",
+      "observed_at": "2026-10-17T11:47:16.676562+00:00"
+    },
+    {
+      "path": "evidence/phase-product.json",
+      "sha256": "c3798538bac699cdf117ef808b4a2427e837f2269babee8fd78f98e85c604b63",
+      "kind": "execution",
+      "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+      "target_snapshot_sha256": "e9aeec2eee10b52c3339b53b4e491d3ff69f57c68be2f5ea1d61e70df55acccc",
+      "observed_at": "2026-10-17T11:48:52.208545+00:00"
+    },
+    {
+      "path": "evidence/phase-qa.json",
+      "sha256": "fad041b3780cba3f92154a038c6a511e7f091950e795a05243a8aabb0c92ecf0",
+      "kind": "execution",
+      "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+      "target_snapshot_sha256": "e9aeec2eee10b52c3339b53b4e491d3ff69f57c68be2f5ea1d61e70df55acccc",
+      "observed_at": "2026-10-17T11:47:28.214562+00:00"
+    },
+    {
+      "path": "evidence/phase-spec_validation.json",
+      "sha256": "2091b0143485f6cccb4f8b87626201513d574403c61a0e95f3ac26c24a4a60c5",
+      "kind": "execution",
+      "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+      "target_snapshot_sha256": "e9aeec2eee10b52c3339b53b4e491d3ff69f57c68be2f5ea1d61e70df55acccc",
+      "observed_at": "2026-10-17T11:51:31.582455+00:00"
+    },
+    {
+      "path": "evidence/phase-ux.json",
+      "sha256": "d4994e4ba093cfaefd866205ec9c08f97b278a5fd3bd2b5605257e10d885900c",
+      "kind": "execution",
+      "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+      "target_snapshot_sha256": "e9aeec2eee10b52c3339b53b4e491d3ff69f57c68be2f5ea1d61e70df55acccc",
+      "observed_at": "2026-10-17T11:49:21.845704+00:00"
+    },
+    {
+      "path": "evidence/report-barrier.json",
+      "sha256": "e650ce789f0c615b2112f31c6322a0f5cf1eca8f8333c5a0ed966a959b4aef56",
+      "kind": "presentation"
+    },
+    {
+      "path": "evidence/run-check-record.txt",
+      "sha256": "d0b3c2d3346894c0a74766f5da7589232ff77907de2499066094bac9d84155f3",
+      "kind": "presentation"
+    },
+    {
+      "path": "evidence/run-metadata.json",
+      "sha256": "c2f3d3e4664ed910da9aa7d45bc09fe219549ab2c428696a8a96a713deadc4be",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/spec-lint.txt",
+      "sha256": "3cecc92afdcfb24687125021976b43c77eea4d73395a96d067c1ce5997d25d7e",
+      "kind": "presentation"
+    },
+    {
+      "path": "proposed-verification-protocol.md",
+      "sha256": "4ec94d5b8a98767003a8b70fbc8dd34693d4a9f06f1e7fbc6a9aada0ce74e97b",
+      "kind": "presentation"
+    },
+    {
+      "path": "reports/architecture-analysis.md",
+      "sha256": "0be6b6bae46afcd2970fc4337f758d5ffdeee03e863d03c1f0369346864df4aa",
+      "kind": "presentation"
+    },
+    {
+      "path": "reports/architecture-cross-examination.md",
+      "sha256": "6fb75ce7e3ea526b81408d18e35060e1cc39ed8f4b5d18ce728fa5bffeda4a8b",
+      "kind": "presentation"
+    },
+    {
+      "path": "reports/delivery-analysis.md",
+      "sha256": "ec82fe4f8f15988270c03e9cb59a60658a13ede0fd1521659c62ee95352436e9",
+      "kind": "presentation"
+    },
+    {
+      "path": "reports/delivery-cross-examination.md",
+      "sha256": "6638cf9ef69c2cde5e168b54dea32aafb7a15511024794dbd137946907df0229",
+      "kind": "presentation"
+    },
+    {
+      "path": "reports/product-analysis.md",
+      "sha256": "851f1993fa6abb1829cbc69c135696a1c767e512abd64b33ed978388fa52e282",
+      "kind": "presentation"
+    },
+    {
+      "path": "reports/product-cross-examination.md",
+      "sha256": "a94dd7edae137b6cc229874f0712cf66fb3deb9ac081abb7cdc6d2f4ce5cddfd",
+      "kind": "presentation"
+    },
+    {
+      "path": "reports/qa-analysis.md",
+      "sha256": "d3c5a24acd202ed51062f5a46d9f6903f8327fd52aa6219097e5975ac816c4b9",
+      "kind": "presentation"
+    },
+    {
+      "path": "reports/qa-cross-examination.md",
+      "sha256": "c019bbd12871066564f44ec940174940545549aa55cc68c1372dc4fc709712e5",
+      "kind": "presentation"
+    },
+    {
+      "path": "reports/ux-analysis.md",
+      "sha256": "ed0014775aeadc9dcfb00c849667035cf373bd8db39e48fb26f8d4675b2a0190",
+      "kind": "presentation"
+    },
+    {
+      "path": "reports/ux-cross-examination.md",
+      "sha256": "53b5a1b01d15d35489e0cf0417d8653d06d37764da398cd9f47e80a04fbeb076",
+      "kind": "presentation"
+    },
+    {
+      "path": "roster.json",
+      "sha256": "eeebdc95d6077b560b3c0949c5dab480c3ebbcc0f7b1928e4af27f3f93fe6651",
+      "kind": "presentation"
+    },
+    {
+      "path": "sources/.agents/skills/qore-plan/SKILL.md",
+      "sha256": "6a0b7a03d888595e6b9e76bc16644a313a187df91622fd5245d4b2253bdf83da",
+      "kind": "source"
+    },
+    {
+      "path": "sources/.agents/skills/qore-plan/agents/openai.yaml",
+      "sha256": "21ffa75d5bc52d68819ff68d4b8c65dc33584464f755487e6a02302f0924c22b",
+      "kind": "source"
+    },
+    {
+      "path": "sources/.agents/skills/qore-plan/references/project-profile.md",
+      "sha256": "16c5ff087c83b7503b23d5d94726834462dd4fd73d78a5380cf85135fa85b0b3",
+      "kind": "source"
+    },
+    {
+      "path": "sources/.agents/skills/qore-plan/references/protocol.md",
+      "sha256": "83f92490a5601b83fc6eaa21861344e35cd04a3ac7edb56b98cd2eb0ecfea84b",
+      "kind": "source"
+    },
+    {
+      "path": "sources/.agents/skills/qore-plan/references/release.json",
+      "sha256": "38514ca5e540a1e5f1ef17859e86fe7202518d8db1aeb5bae9222cfb09e7f28a",
+      "kind": "source"
+    },
+    {
+      "path": "sources/.agents/skills/qore-plan/references/roles.md",
+      "sha256": "cc8060c7c852c143b9671af4fc0176b9c5068f338c19b2556b6ff494c0f0d318",
+      "kind": "source"
+    },
+    {
+      "path": "sources/.agents/skills/qore-plan/references/run-evidence.md",
+      "sha256": "35cd6dc6d3e1177bbae96e5b9e829ed1aa55901747c856f4db20e946421f163d",
+      "kind": "source"
+    },
+    {
+      "path": "sources/.agents/skills/qore-plan/references/specification.md",
+      "sha256": "7eb06b91fca66a3ec00bda4b49b035c5e6bfe827c4624768f66a09b6ae7827a1",
+      "kind": "source"
+    },
+    {
+      "path": "sources/.agents/skills/qore-plan/scripts/project-check.py",
+      "sha256": "d87afa433fe485bdebca3e281d06e0896e4a8980ea7cf7baee739053614ea0ac",
+      "kind": "source"
+    },
+    {
+      "path": "sources/.agents/skills/qore-plan/scripts/run-check.py",
+      "sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+      "kind": "source"
+    },
+    {
+      "path": "sources/.agents/skills/qore-plan/scripts/spec-lint.mjs",
+      "sha256": "321ac211bfac936c4da3ffe173cdfc0d92cb695351273d289809c05c8b037ada",
+      "kind": "source"
+    },
+    {
+      "path": "sources/.agents/skills/qore-plan/scripts/spec-lint.sh",
+      "sha256": "ee4b0c491833f8f3960037255f7ea601548a353d18b317aae25d8e5f2cd461b6",
+      "kind": "source"
+    },
+    {
+      "path": "sources/TASK.md",
+      "sha256": "76689d03b48468b5c40941177d49c91c28026c0d845b11bfd7ff94c4d70e10a9",
+      "kind": "source"
+    },
+    {
+      "path": "sources/checks/check_contract.py",
+      "sha256": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b",
+      "kind": "source"
+    },
+    {
+      "path": "sources/observation-policy.json",
+      "sha256": "15f4e5b4960b5011684be265f027e42b8637a3b8aae96b24bba1ba3a4d0f0202",
+      "kind": "source"
+    },
+    {
+      "path": "sources/surface-contract.json",
+      "sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+      "kind": "source"
+    },
+    {
+      "path": "sources/target/verification-protocol.md",
+      "sha256": "0a3452f02e358d8800fb26d591083deb972c5531165473990dc27007a9a9e0d4",
+      "kind": "source"
+    },
+    {
+      "path": "specification.md",
+      "sha256": "0a1dca832f3c9456342d1265b348329b1b847af3072f8ee1617919aadf2b4db5",
+      "kind": "presentation"
+    },
+    {
+      "path": "write-canary",
+      "sha256": "2d711642b726b04401627ca9fbac32f5c8530fb1903cc4db02258717921a4881",
+      "kind": "presentation"
+    }
+  ],
+  "commands": [
+    {
+      "argv": [
+        "sh",
+        "-c",
+        "pwd && rg --files -g 'TASK.md' -g 'AGENTS.md' -g '*SKILL*' -g '*manifest*'"
+      ],
+      "exit_code": 127,
+      "artifact": "evidence/capability-probe.txt"
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "checks/check_contract.py",
+        "surface-contract.json"
+      ],
+      "exit_code": 0,
+      "artifact": "evidence/contract-check.txt"
+    },
+    {
+      "argv": [
+        "bash",
+        "scripts/spec-lint.sh",
+        "/workspace/output/specification.md"
+      ],
+      "exit_code": 0,
+      "artifact": "evidence/spec-lint.txt"
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/run-check.py",
+        "/workspace/output/execution.json",
+        "--evidence-root",
+        "/workspace/output"
+      ],
+      "exit_code": 0,
+      "artifact": "evidence/run-check-record.txt"
+    }
+  ],
+  "limitations": [
+    "No website/browser/network observation performed or required for this documentation-only plan. Runtime conformance, guard implementation and deployment identity remain unexamined.",
+    "Candidate and enclosing prepared-input snapshot digests supplied by user; per-file inventories retained, but enclosing manifest serialization unavailable for independent recomputation.",
+    "Exact first-wave dispatch instants unavailable; observed UTC enclosing intervals retained. Subsequent dispatch times are adjacent lead clock observations; exact host enqueue instants unavailable.",
+    "Host retired Product and UX initial contexts when later roles were spawned. Fresh successor contexts performed their required cross-examination using all reports after barrier; initial reports were preserved.",
+    "Actual token/billed agent-second counters unavailable from host tools. Roster records elapsed occupancy bounds; no zero usage asserted.",
+    "QA and UX cross-examinations finished5 and15 seconds beyond role deadlines. Lead requested available reports at first cross deadline, but missed exact UX expiry request during drafting; full available report retained with monitoring gap disclosed.",
+    "Role-local commands are recorded as workers reported them in complete reports; root cannot retrieve retired-context raw tool transcripts.",
+    "Structural validators establish declared structure and evidence identity only, not reasoning correctness or approval to implement.",
+    "No profile supplied or consumed. No application, shared-data, input or skill-resource mutation performed."
+  ],
+  "coverage": "COMPLETE"
+}

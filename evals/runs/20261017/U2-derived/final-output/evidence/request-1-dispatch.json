@@ -1,0 +1,7 @@
+{
+  "actor_id": "/root",
+  "dispatch_at": "2026-10-17T12:08:23.374487+00:00",
+  "request": "browser-request-1.json",
+  "purpose": "Observed entry/driver capability probe; not transition evidence",
+  "deadline_seconds": 150
+}

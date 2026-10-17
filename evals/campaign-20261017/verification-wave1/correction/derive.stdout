@@ -1,0 +1,14 @@
+{
+  "output": "/var/folders/4r/1cnctlhj0457b5kgw29hzr4h0000gn/T/qore003-correction-eauy58vp/derived",
+  "profile": {
+    "id": "qaizen-labs",
+    "version": "0.1.1",
+    "sha256": "26714a43fa60fad7c3251c11a82e88418c237ccd5cc9f04714c6afd1726e44e9"
+  },
+  "valid": true,
+  "schema": "qore-release/1",
+  "version": "0.2.1",
+  "kind": "derived",
+  "files": 39,
+  "manifest_sha256": "dae37ce774c47f23346329a1b026ab1df622ecc285080117fd5ac471095c4f1a"
+}

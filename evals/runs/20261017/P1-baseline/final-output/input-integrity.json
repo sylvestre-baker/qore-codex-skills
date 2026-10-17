@@ -1,0 +1,23 @@
+{
+  "initial_observation_window_utc": [
+    "2026-10-17T10:51:39Z",
+    "2026-10-17T10:51:52Z"
+  ],
+  "final_checked_at_utc": "2026-10-17T10:53:48.950907+00:00",
+  "initial_sha256": {
+    "TASK.md": "c5f0e3c2b96b97fd5e987b5670ed7780d994045c319ce2e518daae7137d53cdc",
+    "checks/check_contract.py": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b",
+    "observation-policy.json": "15f4e5b4960b5011684be265f027e42b8637a3b8aae96b24bba1ba3a4d0f0202",
+    "surface-contract.json": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+    "target/verification-protocol.md": "b8d1f4ad7bd691dbf8f019cd3b87a7644a21899e6317edebac545fd3b245136e"
+  },
+  "final_sha256": {
+    "TASK.md": "c5f0e3c2b96b97fd5e987b5670ed7780d994045c319ce2e518daae7137d53cdc",
+    "checks/check_contract.py": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b",
+    "observation-policy.json": "15f4e5b4960b5011684be265f027e42b8637a3b8aae96b24bba1ba3a4d0f0202",
+    "surface-contract.json": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+    "target/verification-protocol.md": "b8d1f4ad7bd691dbf8f019cd3b87a7644a21899e6317edebac545fd3b245136e"
+  },
+  "unchanged": true,
+  "digest_scope": "Individual supplied files; not the enclosing prepared-input manifest digest."
+}

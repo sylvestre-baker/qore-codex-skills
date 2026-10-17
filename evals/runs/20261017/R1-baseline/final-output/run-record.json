@@ -1,0 +1,97 @@
+{
+  "record_kind": "baseline-source-review",
+  "run_id": "qore003-20261017-r1-baseline-1",
+  "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+  "target_snapshot_sha256": "5f359871871d1561d0410237bf74907655d83748b1e0f81673b566d50c5fe5d3",
+  "target_digest_scope": "Supplied entire frozen prepared-input manifest; not independently recomputed.",
+  "last_relevant_change": "2026-10-17T09:53:58.375615+00:00",
+  "environment": {
+    "id": "qore-qualification-qore003-20261017-r1-baseline-1",
+    "operator": "agent",
+    "host": "Docker Desktop Linux arm64 / Codex0.162.0"
+  },
+  "profile": null,
+  "primary_context": "/root",
+  "observed_start_utc": "2026-10-17T10:07:05+00:00",
+  "completed_utc": "2026-10-17T10:08:55.006327+00:00",
+  "primary_full_report": "/workspace/output/REPORT.md",
+  "method": "Single baseline review of supplied target against all three supplied project authority sources.",
+  "qore_skill_invoked": false,
+  "independent_verification_performed": false,
+  "role_dispatches": [],
+  "roster": {
+    "requested_children": [],
+    "returned_children": [],
+    "missing_children": [],
+    "reason": "TASK.md invokes no multi-agent method; no child contexts dispatched."
+  },
+  "role_deadlines_and_partial_requests": "Not applicable: no delegated roles, dispatches, or phase barriers.",
+  "budgets": {
+    "wall_seconds": 900,
+    "aggregate_agent_seconds": 2400,
+    "maximum_simultaneous_children": 3
+  },
+  "usage": {
+    "observed_primary_wall_span_seconds": 110.006327,
+    "aggregate_agent_seconds": null,
+    "tokens": null,
+    "unavailable_reason": "No aggregate agent-seconds or token accounting API is exposed. Observed wall span begins at the first UTC tool reading, not an exact model-turn start."
+  },
+  "commands_and_checks": [
+    {
+      "command": "pwd && rg --files -g 'TASK.md' -g 'AGENTS.md' -g '*SKILL.md' -g '*manifest*' .",
+      "exit_code": 127,
+      "result": "pwd succeeded; rg unavailable. Used ls, cat, find and Python for local discovery and reads."
+    },
+    {
+      "command": "ls -la; cat TASK.md",
+      "exit_code": 0
+    },
+    {
+      "command": "cat surface-contract.json observation-policy.json checks/check_contract.py target/verification-protocol.md; find . -type f -maxdepth 3",
+      "exit_code": 0
+    },
+    {
+      "command": "python3 -B checks/check_contract.py surface-contract.json",
+      "exit_code": 0,
+      "full_check_record": "contract-check.json"
+    },
+    {
+      "command": "Python line-numbered source read",
+      "exit_code": 0,
+      "full_evidence": "source-evidence.txt"
+    },
+    {
+      "command": "Python SHA-256 of all five inputs before and after artifact writes",
+      "exit_code": 0,
+      "inputs_unchanged": true,
+      "hashes": "input-hashes.json"
+    },
+    {
+      "command": "Python output JSON parsing, report presence, and hash comparison",
+      "exit_code": 0,
+      "result": "Passed; artifact sanity only, not reasoning validation."
+    }
+  ],
+  "artifacts_created": [
+    "REPORT.md",
+    "source-evidence.txt",
+    "input-hashes.json",
+    "contract-check.json",
+    "run-record.json"
+  ],
+  "limitations": [
+    "No live website behavior or request-policy effects observed.",
+    "No independent reviewer.",
+    "No Qore structural validators applicable.",
+    "Supplied manifest digest not independently reconstructed.",
+    "Exact command UTC timestamps unavailable except bounded checker window.",
+    "Existing unrelated output-directory entries were not used as task evidence."
+  ],
+  "outcome": {
+    "supported_findings": 3,
+    "severity": "Medium",
+    "production_defect_established": false,
+    "budget_exhausted": false
+  }
+}

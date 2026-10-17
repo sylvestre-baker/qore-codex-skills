@@ -1,0 +1,10 @@
+{
+  "findings": [
+    {
+      "id": "F-301",
+      "title": "Required summary keyboard toggling has no observation in the procedure",
+      "severity": "medium",
+      "evidence": "surface-contract.json:11-13 requires summary Enter opening, Space closing, and Enter reopening; :18 includes help-toggle in required_checks. target/verification-protocol.md:7 only says to open help using summary, with no input specified, and :8 immediately traverses to Close and activates Enter. Its remaining steps :9-10 cover unanswered state and Back, with no summary Space or reopening observation. If summary Space is broken while opening, Close, and Back work, every stated procedure step can still succeed without establishing required help-toggle behavior. checks/check_contract.py:42-43,50-51 emits declared checks including help-toggle but explicitly limits validity to contract consistency; it supplies no missing browser observation. Actual deployed behavior has not been examined."
+    }
+  ]
+}

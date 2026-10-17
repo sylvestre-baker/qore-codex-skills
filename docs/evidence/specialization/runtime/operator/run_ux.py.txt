@@ -1,0 +1,102 @@
+"""Single-cell neutral browser relay: execute agent-supplied arrays verbatim."""
+from pathlib import Path
+from datetime import datetime,timezone
+import ast,json,sys,subprocess,tarfile,io,concurrent.futures,time,hashlib
+import trial_runtime as runtime
+ROOT=Path(__file__).parent
+REPO=ROOT.parents[1]/'qore-skills'
+DRIVER='<existing-playwright-module>'
+POLICY=ROOT/'browser-qualification/live-policy.json'
+FEEDBACK='/var/lib/qore-feedback'
+# Same command boundary as qualified, with an additional read-only observation inbox.
+runtime.CONFIGS=list(runtime.CONFIGS)
+idx=next(i for i,c in enumerate(runtime.CONFIGS) if c.startswith('permissions.qore-trial.filesystem={'))
+runtime.CONFIGS[idx]=runtime.CONFIGS[idx][:-1]+',"/var/lib/qore-feedback"="read"}'
+
+def read_request(name,number):
+ code='''import os,json,stat,base64
+p="/workspace/output/browser-request-%s.json"
+try:
+ fd=os.open(p,os.O_RDONLY|os.O_NOFOLLOW)
+ with os.fdopen(fd,"rb") as f:
+  if not stat.S_ISREG(os.fstat(f.fileno()).st_mode):raise ValueError("Request is not regular")
+  data=f.read(256001)
+  if len(data)>256000:raise ValueError("Request exceeds256000bytes")
+ print(json.dumps({"present":True,"bytes_base64":base64.b64encode(data).decode()}))
+except FileNotFoundError:print(json.dumps({"present":False}))
+except Exception as e:print(json.dumps({"present":True,"error":type(e).__name__+":"+str(e)}))'''%number
+ return json.loads(runtime.call(['docker','exec',name,'python3','-c',code],text=True).stdout)
+
+def deliver(name,number,files):
+ directory=f'{FEEDBACK}/response-{number}'
+ # Root owns this read-only inbox; a sandboxed worker cannot precreate or alter it.
+ runtime.call(['docker','exec','--user','root',name,'mkdir',directory])
+ data=io.BytesIO()
+ with tarfile.open(fileobj=data,mode='w') as tar:
+  for filename,body in sorted(files.items()):
+   member=tarfile.TarInfo(filename);member.size=len(body);member.mode=0o444;member.uid=0;member.gid=0
+   tar.addfile(member,io.BytesIO(body))
+ runtime.call(['docker','exec','--user','root','-i','--workdir',directory,name,'tar','--no-same-owner','-xf','-'],input=data.getvalue())
+ runtime.call(['docker','exec','--user','root',name,'chmod','0555',directory])
+
+INTERFACE='''Browser observation is available only through the neutral operator relay. Command networking, search/fetch and connectors remain disabled. Write a complete JSON action array to /workspace/output/browser-request-N.json, N=1..6; then poll for /var/lib/qore-feedback/response-N/relay.json and read the actual result/events/DOM/PNG files there. At most6requests and40actions/request. Every request starts a fresh isolated browser context at the source-defined public entry, including one automatic Tab capability probe. It is not continuation of a browser session: later arrays must include the full intended replay. The operator runs your array verbatim and returns actual observations/refusals, without repairing selectors, adding checks, or giving conclusions. Do not write the next request before consuming the prior response. Use bounded waits while the operator executes; stay inside900seconds wall and the method's iteration cap. No hidden direct browser tool is available.
+Supported action objects use type and optional label, with these implemented fields: click or click-if-visible(selector OR role/name OR text, exact optional); keyboard(key); assert-text(text,exact optional); assert-url(url); reload; history-back; history-forward; assert-visible/assert-hidden/assert-focused(selector OR role/name OR text); assert-attribute(selector,attribute,value); assert-none-checked; traverse-focus(selector OR role/name OR text,max_steps1..24,key="Tab" or"Shift+Tab"); snapshot(label optional). Selectors use the existing Playwright locator syntax. Guarded activations permit only the declared entry, Start, help summary, Close and Back controls under observed state; unsupported/prohibited actions are refused. Requesting an empty array is permitted for an initial observed driver/entry probe. Existing driver qualification alone does not establish your required state transition. Screenshots must actually be inspected if your method requires them. The relay inbox is immutable to model tools. Full receipts and raw outputs are retained by the operator.
+'''
+
+def operate(scenario,condition,probe=False):
+ prepared=ROOT/'prepared'/f'{scenario}-{condition}'
+ manifest=json.loads((prepared/'input-manifest.json').read_text())
+ trial_id=f'qore003-20261017-{scenario.lower()}-{condition}-1'
+ if probe:trial_id='qore003-ux-relay-capability-probe'
+ name='qore-qualification-'+trial_id
+ out=ROOT/('ux-relay-qualification' if probe else 'trials/'+f'{scenario}-{condition}')
+ profile=None
+ for p in (prepared/'worker/.agents/skills').glob('*/references/project.json'):
+  j=json.loads(p.read_text());profile={'id':j['id'],'version':j['version'],'sha256':runtime.sha(p)}
+ meta={'run_id':trial_id,'candidate_sha256':manifest['candidate_sha256'],'target_snapshot_sha256':runtime.sha(prepared/'input-manifest.json'),'last_relevant_change':datetime.fromtimestamp(max(p.stat().st_mtime for p in prepared.rglob('*') if p.is_file()),tz=timezone.utc).isoformat(),'environment':{'id':name,'operator':'agent','host':'Docker Desktop Linux arm64 / Codex0.162.0'},'profile':profile,'output_directory':'/workspace/output'}
+ tree=ast.parse((ROOT/'run_one.py').read_text())
+ common=next(n.value.value for n in tree.body if isinstance(n,ast.Assign) and any(isinstance(t,ast.Name) and t.id=='common' for t in n.targets))
+ prompt=common+json.dumps(meta,indent=2)+'\n\n'+INTERFACE
+ if probe:prompt='Capability probe only; do not review or solve TASK.md or any target protocol. Read surface-contract.json solely to identify the authorized entry. Use the relay to request one empty action array, consume the returned actual capability/entry data, inspect one returned PNG with the actual image-view tool, then write /workspace/output/REPORT.md with observed facilities and limitations. Do not perform journey actions or claim a campaign trial. Budget180seconds.\n'+INTERFACE
+ try:
+  audit=runtime.create(name,prepared/'worker',out)
+  runtime.call(['docker','exec','--user','root',name,'mkdir','-p',FEEDBACK])
+  runtime.call(['docker','exec','--user','root',name,'chmod','0755',FEEDBACK])
+  runtime.write(out/'operation-metadata.json',meta)
+  print('STARTED',scenario,condition,'probe' if probe else 'actual cell',flush=True)
+  with concurrent.futures.ThreadPoolExecutor(max_workers=1) as pool:
+   future=pool.submit(runtime.launch,name,prompt,out,180 if probe else 900)
+   number=1
+   while not future.done():
+    if number>6:time.sleep(2);continue
+    request=read_request(name,number)
+    if not request['present']:time.sleep(2);continue
+    target=out/f'observation-{number}';target.mkdir()
+    began=runtime.now();files={}
+    if 'error' in request:
+     receipt={'exit_code':2,'request_error':request['error'],'observed_at':began,'operator_interpretation':None}
+    else:
+     import base64
+     raw=base64.b64decode(request['bytes_base64']);(target/'actions.json').write_bytes(raw)
+     args=['node','tools/browser_probe.mjs','--url','https://qaizen.io/labs','--output',str(target/'raw'),'--actions',str(target/'actions.json'),'--policy',str(POLICY),'--playwright-module',DRIVER,'--label',trial_id+f' request{number}; verbatim neutral relay']
+     try:r=subprocess.run(args,cwd=REPO,capture_output=True,text=True,timeout=90);code=r.returncode;stdout=r.stdout;stderr=r.stderr
+     except subprocess.TimeoutExpired:code=124;stdout='';stderr='Operator90-second browser limit reached; no automatic retry.'
+     runtime.write(target/'command.json',{'argv':args,'started_at':began,'ended_at':runtime.now(),'exit_code':code,'stdout':stdout,'stderr':stderr,'request_sha256':hashlib.sha256(raw).hexdigest(),'harness_sha256':runtime.sha(REPO/'tools/browser_probe.mjs'),'policy_sha256':runtime.sha(POLICY)})
+     if (target/'raw').exists():
+      for p in sorted((target/'raw').iterdir()):
+       if p.is_file() and p.suffix in ['.json','.png'] and p.name!='trace.zip':files[p.name]=p.read_bytes()
+     receipt={'exit_code':code,'request_sha256':hashlib.sha256(raw).hexdigest(),'harness_sha256':runtime.sha(REPO/'tools/browser_probe.mjs'),'policy_sha256':runtime.sha(POLICY),'started_at':began,'ended_at':runtime.now(),'fresh_context':True,'input_actions_modified':False,'operator_interpretation':None,'stderr':stderr.replace(str(ROOT),'/operator-evidence'),'diagnostic_transformation':'Only private operator evidence prefix replaced in returned stderr; original retained.','files':{n:hashlib.sha256(b).hexdigest() for n,b in files.items()}}
+    runtime.write(target/'relay.json',receipt);files['relay.json']=(target/'relay.json').read_bytes()
+    deliver(name,number,files)
+    print('OBSERVED',trial_id,'request',number,'exit',receipt['exit_code'],flush=True)
+    number+=1
+   code=future.result()
+  result=runtime.collect(name,out)
+  post=json.loads(runtime.call(['docker','exec',name,'python3','-c','from pathlib import Path;import json,hashlib;root=Path("/workspace/worker");print(json.dumps([{\"path\":p.relative_to(root).as_posix(),\"sha256\":hashlib.sha256(p.read_bytes()).hexdigest()} for p in sorted(root.rglob("*")) if p.is_file()]))'],text=True).stdout)
+  runtime.write(out/'post-inputs.json',post);assert post==manifest['resources']
+  runtime.write(out/'completion.json',{'exit_code':code,'outputs':sorted(p.relative_to(result).as_posix() for p in result.rglob('*') if p.is_file()),'inputs_unchanged':True,'completed_at':runtime.now(),'trial_id':trial_id,'browser_requests':number-1,'qualification_only':probe})
+  print('FINISHED',trial_id,'exit',code,'requests',number-1,flush=True)
+  print((result/'REPORT.md').read_text()[-3500:] if (result/'REPORT.md').exists() else 'No REPORT.md')
+ finally:runtime.cleanup(name)
+
+if __name__=='__main__':operate(*sys.argv[1:3],probe='--probe' in sys.argv)

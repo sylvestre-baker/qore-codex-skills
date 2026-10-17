@@ -1,0 +1,31 @@
+{
+  "actor_id": "/root/campaign_plan_assessor",
+  "cases": [
+    "N18",
+    "N04"
+  ],
+  "timing": {
+    "started_at_utc": "2026-10-17T11:42:08+00:00",
+    "ended_at_utc": "2026-10-17T11:48:04.851124+00:00",
+    "active_intervals_utc": [
+      [
+        "2026-10-17T11:42:08+00:00",
+        "2026-10-17T11:48:04.851124+00:00"
+      ]
+    ],
+    "idle_intervals_utc": [],
+    "active_seconds_this_wave": 356.851124,
+    "prior_cumulative_active_seconds": 517.58,
+    "cumulative_active_seconds": 874.4311240000001,
+    "active_accounting_note": "Continuous active reading/reasoning/checking/writing window; no idle wait occurred in this wave. The interval between prior completion and this new dispatch is excluded. Shared two-case interval is counted once, not per case; this is evaluator active wall time, not model compute/billing."
+  },
+  "N13_read": false,
+  "material_worker_findings": [],
+  "files": [
+    "N18-plan-assessment.md",
+    "N18-plan-assessment.json",
+    "N04-plan-assessment.md",
+    "N04-plan-assessment.json",
+    "checks.json"
+  ]
+}

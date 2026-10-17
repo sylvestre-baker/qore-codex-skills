@@ -1,0 +1,15 @@
+{
+  "verified_at": "2026-10-17T12:22:41.534375Z",
+  "run_count": 18,
+  "counts": {
+    "COMPLETE": 14,
+    "PARTIAL": 4
+  },
+  "all_assessments_saved": true,
+  "only_restricts_original_coverage": true,
+  "all_evidence_paths_exist": true,
+  "qore_original_artifacts_hash_consistent": true,
+  "importer_comparability_line": [
+    "run['comparison']['comparability']='UNVERIFIED'  # Coverage alone does not establish equal-scope comparability."
+  ]
+}

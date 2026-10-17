@@ -2,117 +2,1446 @@
   "schema": "qore-eval-summary/1",
   "series_id": "specialization-v1",
   "scenarios_sha256": "46534adc957971607cb4af8ae555727b933746b61081822be77acf9d79d2ea49",
-  "coverage": "BLOCKED",
-  "completed_cells": 0,
+  "coverage": "PARTIAL",
+  "completed_cells": 14,
+  "declared_complete_cells": 16,
+  "attempted_cells": 18,
+  "qualified_cells": 18,
   "planned_cells": 18,
   "cells": [
     {
+      "valid": true,
+      "id": "qore003-20261017-r1-baseline-1",
       "scenario_id": "R1",
       "condition": "baseline",
-      "status": "NOT_RUN",
-      "reason": "Required nested Codex sandbox failed before canary execution; see docs/evidence/specialization/isolation-probe.json. No controlled trial started."
+      "coverage": "COMPLETE",
+      "declared_coverage": "COMPLETE",
+      "qualification_supplied": true,
+      "comparability": "UNVERIFIED",
+      "changed_inputs": [],
+      "limit": "Identity and entered evidence checked; assessor independence, reasoning, isolation and causal benefit are not certified by metadata.",
+      "assessment": [
+        {
+          "criterion": "K1",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "The final review accurately separates Close-to-summary focus from Back-to-introduction-heading focus, distinguishes the current contract's forward Tab route from the checker's broader accepted set, and identifies the Enter/Space/Enter help cycle.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K2",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "For this document-review task, the report correctly diagnoses that a click plus destination focus is insufficient, and requires actual sequential Tab reachability, observed Back focus and Enter activation as the correction. It does not pretend it observed a browser.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K3",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "The review preserves unanswered state and identifies the absent enforcement/evidence for origin and allowed-method boundaries, including blocked analytics effects. Its proposed prerequisites precede future navigation. The trial itself had a recorded disabled-network/read-only-input boundary.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K4",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "Findings cite source lines, retain counterpoints and uncertainty, and explicitly identify the target as a reconstructed fixture rather than a website defect. No browser performance, focus or network success is claimed.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K5",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "The relevant contract checker is actually recorded with command, cwd, exit 0 and complete stdout. Proposed procedure/acceptance corrections remain distinct from that executed consistency check; the report states the checker cannot validate the Markdown or website.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K8",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "The decision is limited to three supported procedure-proof gaps plus an explicitly bounded reproducibility observation. No release, deployment or website acceptance decision is inferred.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        }
+      ],
+      "comparison": {
+        "comparability": "UNVERIFIED",
+        "decision": "Unknown",
+        "reason": "Separate evaluators and verifier retained task/coverage observations. One observation on related known tasks and visible conditions does not establish a comparative winner; live deployment comparability is unverified for UX.",
+        "verification": [
+          "independent-assessment.json",
+          "independent-verification.json"
+        ]
+      }
     },
     {
+      "valid": true,
+      "id": "qore003-20261017-r1-generic-1",
       "scenario_id": "R1",
       "condition": "generic",
-      "status": "NOT_RUN",
-      "reason": "Required nested Codex sandbox failed before canary execution; see docs/evidence/specialization/isolation-probe.json. No controlled trial started."
+      "coverage": "COMPLETE",
+      "declared_coverage": "COMPLETE",
+      "qualification_supplied": true,
+      "comparability": "UNVERIFIED",
+      "changed_inputs": [],
+      "limit": "Identity and entered evidence checked; assessor independence, reasoning, isolation and causal benefit are not certified by metadata.",
+      "assessment": [
+        {
+          "criterion": "K1",
+          "status": "NOT_MET",
+          "independent_task_status": "NOT_MET",
+          "reason": "The main report correctly names Tab/Enter and the two distinct focus destinations, but a retained finder correction explicitly permits Tab OR Shift+Tab for this current Back route. The raw contract specifies Tab. The checker accepting either value in a contract does not change the current contract's selected value. This is a narrow source-fidelity failure in advice retained as part of the completed output, not a failure of the core Back finding.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K2",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "The document review correctly requires sequential keyboard traversal and Enter for Back, rejects click/final-focus substitution, and retains actual offline countermodels demonstrating the written procedure can miss either reachability or Enter failure. These countermodels are labeled synthetic.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K3",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "The report preserves the unanswered checks, identifies both method and origin evidence gaps, retains the expected blocked analytics effect requirement, and proposes enforcement before navigation. In-memory request examples are explicitly separated from transmitted requests.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K4",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "The target findings are grounded in the raw supplied text and explicitly limited to reconstructed-procedure defects. Synthetic observations, actual command results and hypothetical deployed behavior are distinguished. Source provenance and usage limitations are visible.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K5",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "The relevant checker was actually run, with argv, cwd, exit 0 and stdout retained. The review explains its JSON-only limit and separately proposes acceptance corrections. Findings lint and execution-record check have actual outputs/exit records but are not treated as website acceptance.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K8",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "The supported disposition is to revise four distinct documentary omissions before treating this fixture as full acceptance evidence. Seven overlapping candidate records are not presented as seven distinct website defects; the SHIP gate is explicitly confined to absence of high/critical verified blockers.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        }
+      ],
+      "comparison": {
+        "comparability": "UNVERIFIED",
+        "decision": "Unknown",
+        "reason": "Separate evaluators and verifier retained task/coverage observations. One observation on related known tasks and visible conditions does not establish a comparative winner; live deployment comparability is unverified for UX.",
+        "verification": [
+          "independent-assessment.json",
+          "independent-verification.json"
+        ]
+      }
     },
     {
+      "valid": true,
+      "id": "qore003-20261017-r1-derived-1",
       "scenario_id": "R1",
       "condition": "derived",
-      "status": "NOT_RUN",
-      "reason": "Required nested Codex sandbox failed before canary execution; see docs/evidence/specialization/isolation-probe.json. No controlled trial started."
+      "coverage": "COMPLETE",
+      "declared_coverage": "COMPLETE",
+      "qualification_supplied": true,
+      "comparability": "UNVERIFIED",
+      "changed_inputs": [],
+      "limit": "Identity and entered evidence checked; assessor independence, reasoning, isolation and causal benefit are not certified by metadata.",
+      "assessment": [
+        {
+          "criterion": "K1",
+          "status": "NOT_MET",
+          "independent_task_status": "NOT_MET",
+          "reason": "The final correction allows Tab OR Shift+Tab and the consumed back-focus profile says the same, while the authoritative current surface contract prescribes Tab. Distinct Close/summary and Back/introduction-heading destinations are correct. The narrower selected route was broadened without exposing the source/profile contradiction; a passing freshness check only proves matching bytes.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K2",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "The review identifies that the actual sole Back step is a click and contains no Back traversal/Enter instruction; it preserves the correct subsequent heading-focus assertion. The verifier's saved document comparison prints the actual step, the expected Tab/Enter transition, and relevant contrary evidence.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K3",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "The review retains unanswered state, recognizes the absent pre-navigation request-policy prerequisite and origin/method/blocked-analytics observations, and distinguishes possible external enforcement from a proven unblocked request. Actual trial network access was denied by the recorded sandbox probe.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K4",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "The actual documentary omissions and source comparisons support the three target findings. The report repeatedly disclaims website defect/behavior observations, and retains the harness failure and successful correction instead of labeling that failure a target defect.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K5",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "The contract checker actually returned valid=true with its consistency-only limit. The verifier command record/output includes exact nested argv and exit 0. Proposed corrections and final finding/structural gates remain distinct from runtime acceptance checks.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K8",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "The report's concrete target decision is bounded to three documentary defects with no high/critical confirmed blocker and no release/deployment authorization. It preserves six original candidates through a collection map rather than treating deduplication as disappearance of claims.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        }
+      ],
+      "comparison": {
+        "comparability": "UNVERIFIED",
+        "decision": "Unknown",
+        "reason": "Separate evaluators and verifier retained task/coverage observations. One observation on related known tasks and visible conditions does not establish a comparative winner; live deployment comparability is unverified for UX.",
+        "verification": [
+          "independent-assessment.json",
+          "independent-verification.json"
+        ]
+      }
     },
     {
+      "valid": true,
+      "id": "qore003-20261017-p1-generic-1",
       "scenario_id": "P1",
       "condition": "generic",
-      "status": "NOT_RUN",
-      "reason": "Required nested Codex sandbox failed before canary execution; see docs/evidence/specialization/isolation-probe.json. No controlled trial started."
+      "coverage": "COMPLETE",
+      "declared_coverage": "COMPLETE",
+      "qualification_supplied": true,
+      "comparability": "UNVERIFIED",
+      "changed_inputs": [],
+      "limit": "Identity and entered evidence checked; assessor independence, reasoning, isolation and causal benefit are not certified by metadata.",
+      "assessment": [
+        {
+          "criterion": "K1",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "The plan follows the supplied authority, preserves all seven concrete transition tuples, and distinguishes Close-to-summary from Back-to-introduction-h1 focus. It treats the target as a fixture rather than project authority.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K2",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "The plan requires genuine sequential Tab from the observed restored summary focus to Back, focused Back before Enter, actual Enter activation, and resulting introduction-h1 focus. It expressly rejects click, direct focus, screenshots alone and repaired focus as substitutes.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K3",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "The plan specifies observable unanswered state, no prohibited actions, pre-navigation origin and method prevention, redirects/subresources, blocked execution if prevention is unavailable, and conditional analytics evidence. It does not claim a working browser guard. The retained harness probe separately records blocked network and immutable inputs.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K4",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "The plan calls the target a reconstructed fixture, identifies its omissions as documentary, and expressly leaves current deployment behavior unknown. It separates local checker success, document coverage, browser acceptance failure and blocked/unobserved evidence.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K5",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "The correct checker command has captured exit-zero output, while the planned document work has full transition-tuple review, eight-check mapping and meaningful positive/negative Gherkin. Proposed future browser/guard checks are labeled unexecuted. Structural lint is correctly bounded.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K8",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "The selected outcome is one document plan supported by the actual supplied target/source differences. It includes the missing summary key cycle and keyboard Back, preserves distinct focus and boundaries, and justifies excluding application/harness changes. The actual local consistency check supports source consistency only.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        }
+      ],
+      "comparison": {
+        "comparability": "UNVERIFIED",
+        "decision": "Unknown",
+        "reason": "Separate evaluators and verifier retained task/coverage observations. One observation on related known tasks and visible conditions does not establish a comparative winner; live deployment comparability is unverified for UX.",
+        "verification": [
+          "independent-assessment.json",
+          "independent-verification.json"
+        ]
+      }
     },
     {
+      "valid": true,
+      "id": "qore003-20261017-p1-derived-1",
       "scenario_id": "P1",
       "condition": "derived",
-      "status": "NOT_RUN",
-      "reason": "Required nested Codex sandbox failed before canary execution; see docs/evidence/specialization/isolation-probe.json. No controlled trial started."
+      "coverage": "COMPLETE",
+      "declared_coverage": "COMPLETE",
+      "qualification_supplied": true,
+      "comparability": "UNVERIFIED",
+      "changed_inputs": [],
+      "limit": "Identity and entered evidence checked; assessor independence, reasoning, isolation and causal benefit are not certified by metadata.",
+      "assessment": [
+        {
+          "criterion": "K1",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "The final plan accurately covers seven transitions, distinct summary/h1 focus and eight checks. It corrects initial reverse-traversal breadth by choosing literal forward Tab. It distinguishes the profile as context, and explicitly leaves broader resource authorization and presentation-absence interpretation qualified rather than claiming supplied markup facts.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K2",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "The plan requires actual sequential Tab from the observed summary after Close to focused application Back, Enter, and independent returned introduction-h1 focus. It rejects mouse Back, browser-history Back and direct focus as proof and retains failed prerequisites.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K3",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "Unanswered observable checkpoints, all-request method denial, pre-entry exact-origin navigation/redirect/popup guards, blocked-analytics effects and no excluded actions are specified. The narrower profile is not used to grant third-party permission: unresolved affected requests must not be allowed pending resolution or must be conservatively blocked.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K4",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "The plan calls demonstrated gaps documentary, labels future website acceptance unexecuted, preserves provenance/exclusions, and separates observed wrong behavior from unavailable prerequisites. C12 presentation absence remains an interpretive proposal, with partial source support disclosed. No site defect or pass is claimed.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K5",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "The proper project command and actual exit/output are retained. Fourteen meaningful planned Gherkin scenarios include negative focus, policy and incomplete-evidence paths; eight-check mapping and manual full-source review supplement the limited checker. Actual profile, spec-lint and record-check results are explicitly separated from browser proof.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K8",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "A one-document revision is supported by actual frozen-source comparisons and captured offline checks. Actual cross-examination narrows reverse traversal and boundary/persistence interpretations; adjudication records alternatives, consequences, dissent and unresolved runtime evidence. No application behavior change, live verdict or measured benefit is inferred.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        }
+      ],
+      "comparison": {
+        "comparability": "UNVERIFIED",
+        "decision": "Unknown",
+        "reason": "Separate evaluators and verifier retained task/coverage observations. One observation on related known tasks and visible conditions does not establish a comparative winner; live deployment comparability is unverified for UX.",
+        "verification": [
+          "independent-assessment.json",
+          "independent-verification.json"
+        ]
+      }
     },
     {
+      "valid": true,
+      "id": "qore003-20261017-p1-baseline-1",
       "scenario_id": "P1",
       "condition": "baseline",
-      "status": "NOT_RUN",
-      "reason": "Required nested Codex sandbox failed before canary execution; see docs/evidence/specialization/isolation-probe.json. No controlled trial started."
+      "coverage": "COMPLETE",
+      "declared_coverage": "COMPLETE",
+      "qualification_supplied": true,
+      "comparability": "UNVERIFIED",
+      "changed_inputs": [],
+      "limit": "Identity and entered evidence checked; assessor independence, reasoning, isolation and causal benefit are not certified by metadata.",
+      "assessment": [
+        {
+          "criterion": "K1",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "The plan accurately distinguishes the original project sources from the reconstructed target, covers all seven transitions and all eight checks, and separates Close-to-summary from Back-to-introduction-h1 focus. Exact forward Tab is selected against the concrete source rather than the broader checker tolerance.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K2",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "Both the plan and proposed replacement require sequential Tab starting at actual post-Close summary focus, focused Back before Enter, actual Enter and returned h1 focus. Mouse, assigned-focus and direct-handler substitutes are expressly rejected.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K3",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "The proposed procedure establishes unanswered state by inspecting selection, keeps excluded actions prohibited, installs method and exact-origin guards before navigation, includes redirects/subordinate requests, and stops if any uninspectable path can bypass enforcement. It retains conditional blocked-analytics effects and does not send prohibited probes.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K4",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "The report and proposed replacement preserve fixture provenance and distinguish expectations, checker validity, documentation coverage and future browser results. Missing behavior is expressly untested, and the proof gap is not called a website defect.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K5",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "The correct existing local checker command has retained argv-equivalent text, stdout/stderr and exit 0. Planned acceptance covers every required check with observable oracles, explicit manual source review and relevant negative-evidence rejection. No Qore structural linter is required for this baseline.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K8",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "The scoped outcome is a source-based plan plus a proposed document replacement outside the immutable input. The observed target/source differences justify full help-cycle and keyboard-proof correction; they do not justify application repair or a deployment verdict.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        }
+      ],
+      "comparison": {
+        "comparability": "UNVERIFIED",
+        "decision": "Unknown",
+        "reason": "Separate evaluators and verifier retained task/coverage observations. One observation on related known tasks and visible conditions does not establish a comparative winner; live deployment comparability is unverified for UX.",
+        "verification": [
+          "independent-assessment.json",
+          "independent-verification.json"
+        ]
+      }
     },
     {
+      "valid": true,
+      "id": "qore003-20261017-u1-derived-1",
       "scenario_id": "U1",
       "condition": "derived",
-      "status": "NOT_RUN",
-      "reason": "Required nested Codex sandbox failed before canary execution; see docs/evidence/specialization/isolation-probe.json. No controlled trial started."
+      "coverage": "PARTIAL",
+      "declared_coverage": "PARTIAL",
+      "qualification_supplied": true,
+      "comparability": "UNVERIFIED",
+      "changed_inputs": [],
+      "limit": "Identity and entered evidence checked; assessor independence, reasoning, isolation and causal benefit are not certified by metadata.",
+      "assessment": [
+        {
+          "criterion": "K1",
+          "status": "UNKNOWN",
+          "independent_task_status": "MET",
+          "reason": "The independent evaluator observed MET within narrower task scope, retained verbatim in independent-assessment.json. Required method coverage remains incomplete: Preserve original PARTIAL. Applicable G1 direct deep entry remains unavailable/unobserved; actual functional entry/help/keyboard Back passes and warm reload/history do not fill that distinct required observation. No product finding is regraded here. Original criterion rationale: The worker uses the actual source contract, preserves Close-to-summary separately from Back-to-introduction-h1, and does not label the protocol proof gap as an established website failure.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K2",
+          "status": "UNKNOWN",
+          "independent_task_status": "MET",
+          "reason": "The independent evaluator observed MET within narrower task scope, retained verbatim in independent-assessment.json. Required method coverage remains incomplete: Preserve original PARTIAL. Applicable G1 direct deep entry remains unavailable/unobserved; actual functional entry/help/keyboard Back passes and warm reload/history do not fill that distinct required observation. No product finding is regraded here. Original criterion rationale: The retained harness implements traverse-focus by actual keyboard Tab presses, not programmatic focus. Requests2 and4 record one Tab from restored summary to Back, Enter, and successful h1 focus assertions.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K3",
+          "status": "UNKNOWN",
+          "independent_task_status": "MET",
+          "reason": "The independent evaluator observed MET within narrower task scope, retained verbatim in independent-assessment.json. Required method coverage remains incomplete: Preserve original PARTIAL. Applicable G1 direct deep entry remains unavailable/unobserved; actual functional entry/help/keyboard Back passes and warm reload/history do not fill that distinct required observation. No product finding is regraded here. Original criterion rationale: Unanswered assertions pass; actual activation guard and request routing are enabled in the hash-matched operator harness/policy. Four expected analytics POSTs were blocked; all recorded response/navigation origins are authorized.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K4",
+          "status": "UNKNOWN",
+          "independent_task_status": "MET",
+          "reason": "The independent evaluator observed MET within narrower task scope, retained verbatim in independent-assessment.json. Required method coverage remains incomplete: Preserve original PARTIAL. Applicable G1 direct deep entry remains unavailable/unobserved; actual functional entry/help/keyboard Back passes and warm reload/history do not fill that distinct required observation. No product finding is regraded here. Original criterion rationale: Raw evidence exists and the report explicitly discloses full-page/geometry uncertainty, cold-deep-entry limits, unsupported assertion failures, and that the Back journey passes. No protocol fixture result is recast as a website Back failure.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K8",
+          "status": "UNKNOWN",
+          "independent_task_status": "UNKNOWN",
+          "reason": "The scoped functional Back-pass and PARTIAL coverage decisions are supported. The additional P2 product finding and DO-NOT-SHIP rationale depend on interpreting full-page sticky-overlay pixels as an actual viewport usability defect; the retained evidence cannot resolve capture artifact versus runtime overlap.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        }
+      ],
+      "comparison": {
+        "comparability": "UNVERIFIED",
+        "decision": "Unknown",
+        "reason": "Separate evaluators and verifier retained task/coverage observations. One observation on related known tasks and visible conditions does not establish a comparative winner; live deployment comparability is unverified for UX.",
+        "verification": [
+          "independent-assessment.json",
+          "independent-verification.json"
+        ]
+      }
     },
     {
+      "valid": true,
+      "id": "qore003-20261017-u1-baseline-1",
       "scenario_id": "U1",
       "condition": "baseline",
-      "status": "NOT_RUN",
-      "reason": "Required nested Codex sandbox failed before canary execution; see docs/evidence/specialization/isolation-probe.json. No controlled trial started."
+      "coverage": "COMPLETE",
+      "declared_coverage": "COMPLETE",
+      "qualification_supplied": true,
+      "comparability": "UNVERIFIED",
+      "changed_inputs": [],
+      "limit": "Identity and entered evidence checked; assessor independence, reasoning, isolation and causal benefit are not certified by metadata.",
+      "assessment": [
+        {
+          "criterion": "K1",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "The report accurately uses the actual project contract and distinguishes Close restoring summary from Back restoring introduction h1.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K2",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "One real Tab reaches Back from restored summary at11:04:02.890Z; Enter at11:04:05.787Z activates it; h1 focus at11:04:09.570Z is asserted. Harness implements traversal with keyboard.press, not programmatic focus.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K3",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "Unanswered assertions succeed before help and after Close, while question exists; Next is disabled. Hash-matched live policy and harness enforce approved activations and read-only/origin boundaries. Analytics POST blocked; recorded origins authorized.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K4",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "Actual captures/events support the required journey, with explicit limits for full-page visual interpretation, one replay, deployment identity and unavailable trace/video. No protocol fixture result or script failure is labeled a website Back defect.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K8",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "The report concludes only that all eight required checks pass in the observed replay and retains a conditional visual concern with viewport confirmation before any implementation change. It claims neither product readiness certification nor a blocking website defect.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        }
+      ],
+      "comparison": {
+        "comparability": "UNVERIFIED",
+        "decision": "Unknown",
+        "reason": "Separate evaluators and verifier retained task/coverage observations. One observation on related known tasks and visible conditions does not establish a comparative winner; live deployment comparability is unverified for UX.",
+        "verification": [
+          "independent-assessment.json",
+          "independent-verification.json"
+        ]
+      }
     },
     {
+      "valid": true,
+      "id": "qore003-20261017-u1-generic-1",
       "scenario_id": "U1",
       "condition": "generic",
-      "status": "NOT_RUN",
-      "reason": "Required nested Codex sandbox failed before canary execution; see docs/evidence/specialization/isolation-probe.json. No controlled trial started."
+      "coverage": "PARTIAL",
+      "declared_coverage": "COMPLETE",
+      "qualification_supplied": true,
+      "comparability": "UNVERIFIED",
+      "changed_inputs": [],
+      "limit": "Identity and entered evidence checked; assessor independence, reasoning, isolation and causal benefit are not certified by metadata.",
+      "assessment": [
+        {
+          "criterion": "K1",
+          "status": "UNKNOWN",
+          "independent_task_status": "MET",
+          "reason": "The independent evaluator observed MET within narrower task scope, retained verbatim in independent-assessment.json. Required method coverage remains incomplete: Restrict original COMPLETE to PARTIAL as independently reproduced in wave3. Initially required G1 direct applicable URL entry is unobserved; actual entry-click, warm reload and history are useful passes but are not the separate direct navigation. Tool absence and a disclosed limit cannot mark the required check complete. Original criterion rationale: Actual project contract is used accurately and separates Close→summary from Back→introduction h1. Both are observed in original DOM/events, twice.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K2",
+          "status": "UNKNOWN",
+          "independent_task_status": "MET",
+          "reason": "The independent evaluator observed MET within narrower task scope, retained verbatim in independent-assessment.json. Required method coverage remains incomplete: Restrict original COMPLETE to PARTIAL as independently reproduced in wave3. Initially required G1 direct applicable URL entry is unobserved; actual entry-click, warm reload and history are useful passes but are not the separate direct navigation. Tool absence and a disclosed limit cannot mark the required check complete. Original criterion rationale: Raw request2 records actual sequential Tab reaching Back at11:08:24.004Z, Enter at11:08:26.890Z, then h1 focus at11:08:29.767Z. Request3 repeats, including reverse Tab to summary then forward Tab to Back. Harness uses keyboard.press, not programmatic focus.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K3",
+          "status": "UNKNOWN",
+          "independent_task_status": "MET",
+          "reason": "The independent evaluator observed MET within narrower task scope, retained verbatim in independent-assessment.json. Required method coverage remains incomplete: Restrict original COMPLETE to PARTIAL as independently reproduced in wave3. Initially required G1 direct applicable URL entry is unobserved; actual entry-click, warm reload and history are useful passes but are not the separate direct navigation. Tool absence and a disclosed limit cannot mark the required check complete. Original criterion rationale: No-checked assertions pass before/after help and prior to challenged Back; no answer activations. Hash-matched guard/policy enforce approved controls, block writes and unauthorized document navigation. Three expected analytics POSTs blocked; recorded origins/methods remain authorized.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K4",
+          "status": "UNKNOWN",
+          "independent_task_status": "MET",
+          "reason": "The independent evaluator observed MET within narrower task scope, retained verbatim in independent-assessment.json. Required method coverage remains incomplete: Restrict original COMPLETE to PARTIAL as independently reproduced in wave3. Initially required G1 direct applicable URL entry is unobserved; actual entry-click, warm reload and history are useful passes but are not the separate direct navigation. Tool absence and a disclosed limit cannot mark the required check complete. Original criterion rationale: Actual raw evidence exists; report explicitly retains full-page/geometry and arbitrary-entry limits, blocked analytics effects, and unknown deployment cause. No protocol fixture result is called a website Back defect.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K8",
+          "status": "NOT_MET",
+          "independent_task_status": "NOT_MET",
+          "reason": "The whole scoped decision includes COMPLETE method/observation coverage, although originally selected G1 requires direct deep navigation and reload. Only warm entry→reload/history is observed, and scope-plan/report acknowledge direct entry unavailable/unobserved. Scoring that G1 PASS and declaring no missing requirements is unsupported. The DO-NOT-SHIP product rationale also depends on unresolved runtime interpretation of full-page capture pixels.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        }
+      ],
+      "comparison": {
+        "comparability": "UNVERIFIED",
+        "decision": "Unknown",
+        "reason": "Separate evaluators and verifier retained task/coverage observations. One observation on related known tasks and visible conditions does not establish a comparative winner; live deployment comparability is unverified for UX.",
+        "verification": [
+          "independent-assessment.json",
+          "independent-verification.json"
+        ]
+      }
     },
     {
+      "valid": true,
+      "id": "qore003-20261017-r2-derived-1",
       "scenario_id": "R2",
       "condition": "derived",
-      "status": "NOT_RUN",
-      "reason": "Required nested Codex sandbox failed before canary execution; see docs/evidence/specialization/isolation-probe.json. No controlled trial started."
+      "coverage": "COMPLETE",
+      "declared_coverage": "COMPLETE",
+      "qualification_supplied": true,
+      "comparability": "UNVERIFIED",
+      "changed_inputs": [],
+      "limit": "Identity and entered evidence checked; assessor independence, reasoning, isolation and causal benefit are not certified by metadata.",
+      "assessment": [
+        {
+          "criterion": "K1",
+          "status": "NOT_MET",
+          "independent_task_status": "NOT_MET",
+          "reason": "The target review correctly preserves distinct Close/summary and Back/introduction-heading focus, Enter activation and unanswered state. However, the consumed source-bound back-focus profile states Tab OR Shift+Tab while its cited current source specifically selects Tab. The completed profile-use record repeats that broader invariant without exposing the contradiction. This is the same narrow source-fidelity interpretation used in R1, rather than a claim that the central Back keyboard-proof gap remains.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K2",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "The review accurately recognizes that the corrected target now specifies sequential Tab/Shift+Tab traversal and Enter followed by introduction-heading focus. It does not repeat the old click-only finding or claim that real keyboard behavior was observed.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K3",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "The review preserves unanswered state and correctly identifies that the target still omits required method/origin policy checks and blocked-analytics-effect evidence. It retains uncertainty about external enforcement and narrows a stronger asserted setup-precondition requirement.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K4",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "The target findings have exact source/document support and retain both uncertainty and contrary reasoning. They are explicitly fixture-coverage omissions, not observed website defects or prohibited traffic. Lost draft audit output is disclosed.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K5",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "The actual contract-check command/exit/stdout is retained, as are redaction, finding-lint and record-check command results. Proposed help/policy acceptance corrections remain separate from executed static checks and their consistency-only limit.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K6",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "The nonempty review is supported on this comparator. Correcting Back leaves help summary Space/reopening and both policy/effect checks absent. Five confirmed audit IDs are explicitly grouped into two overlapping omissions, with C-002 narrowed to supported policy coverage rather than a mandated named setup order.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K8",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "The target-scoped decision is supported by actual full-document comparisons and separately states missing deployment/network/path-length observations. The record does not convert medium findings or a mechanical SHIP result into release permission.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        }
+      ],
+      "comparison": {
+        "comparability": "UNVERIFIED",
+        "decision": "Unknown",
+        "reason": "Separate evaluators and verifier retained task/coverage observations. One observation on related known tasks and visible conditions does not establish a comparative winner; live deployment comparability is unverified for UX.",
+        "verification": [
+          "independent-assessment.json",
+          "independent-verification.json"
+        ]
+      }
     },
     {
+      "valid": true,
+      "id": "qore003-20261017-r2-generic-1",
       "scenario_id": "R2",
       "condition": "generic",
-      "status": "NOT_RUN",
-      "reason": "Required nested Codex sandbox failed before canary execution; see docs/evidence/specialization/isolation-probe.json. No controlled trial started."
+      "coverage": "COMPLETE",
+      "declared_coverage": "COMPLETE",
+      "qualification_supplied": true,
+      "comparability": "UNVERIFIED",
+      "changed_inputs": [],
+      "limit": "Identity and entered evidence checked; assessor independence, reasoning, isolation and causal benefit are not certified by metadata.",
+      "assessment": [
+        {
+          "criterion": "K1",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "The review accurately distinguishes Close summary focus from Back heading focus and retains the help and policy obligations. Supporting role reports expressly distinguish the source's selected Tab value from the validator's broader accepted Tab/Shift+Tab domain. The final report recognizes that the target now contains sequential traversal and Enter; it does not propose replacing a source-required route with an alternative.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K2",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "The corrected target's sequential Back traversal and Enter are recognized as present, and no continuing click-only proof gap is alleged. The report retains uncertainty about actual focus order and the 24-step bound.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K3",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "The review correctly separates unanswered assertions from network-policy proof, identifies the remaining required origin/method/effect omissions, and proposes controls/checks rather than alleging traffic occurred. Recorded sandbox probes support no-network input review, not website guard acceptance.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K4",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "The findings are supported by whole-document static comparisons, explicitly labeled as fixture omissions, with hypothetical failure/traffic separated from actual observations. The report discloses missing inline command argv and a corrected search issue.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K5",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "The lead and verifier retain actual contract checker commands, streams and exit 0. Redaction and finding-lint retain actual invocation/exit metadata; record-check invocation logs are saved. Proposed acceptance actions are clearly proposals and consistency-only checks are not browser acceptance.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K6",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "All three retained IDs represent two supported remaining omissions, not an invented continuing Back flaw. The full corrected comparator still lacks summary Space/Enter reopening and network-policy/effect evidence; feasibility legitimately returns an empty envelope where no measured infeasibility is established.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K8",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "The disposition and proposed changes are confined to two supported document omissions, with duplicate IDs retained, uncertainty on the 24-step bound, no source fixes and no deployment decision. Structural validation is explicitly limited.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        }
+      ],
+      "comparison": {
+        "comparability": "UNVERIFIED",
+        "decision": "Unknown",
+        "reason": "Separate evaluators and verifier retained task/coverage observations. One observation on related known tasks and visible conditions does not establish a comparative winner; live deployment comparability is unverified for UX.",
+        "verification": [
+          "independent-assessment.json",
+          "independent-verification.json"
+        ]
+      }
     },
     {
+      "valid": true,
+      "id": "qore003-20261017-r2-baseline-1",
       "scenario_id": "R2",
       "condition": "baseline",
-      "status": "NOT_RUN",
-      "reason": "Required nested Codex sandbox failed before canary execution; see docs/evidence/specialization/isolation-probe.json. No controlled trial started."
+      "coverage": "COMPLETE",
+      "declared_coverage": "COMPLETE",
+      "qualification_supplied": true,
+      "comparability": "UNVERIFIED",
+      "changed_inputs": [],
+      "limit": "Identity and entered evidence checked; assessor independence, reasoning, isolation and causal benefit are not certified by metadata.",
+      "assessment": [
+        {
+          "criterion": "K1",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "The review accurately identifies the help key sequence, distinct Close/summary and Back/introduction-heading focus, unanswered state, policy limits, locale and viewport. It explicitly exposes current Tab versus target/checker Tab/Shift+Tab and recommends Tab for literal source alignment without inventing a deployment defect.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K2",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "The review recognizes that the corrected Back instruction supplies sequential traversal and Enter rather than a click-only proof. It does not equate that written step with actual browser observations or treat the unmeasured 24-step cap as a proved failure.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K3",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "The review preserves unanswered state and supports the missing method/origin policy and blocked-effect evidence finding. It proposes pre-navigation enforcement/checking, retains possible external-harness uncertainty, and reports no actual forbidden request.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K4",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "All three findings have source/document evidence, explicit qualifications and fixture attribution. The locale/viewport finding is described as missing scope/reproducibility proof rather than demonstrated layout behavior.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K5",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "The checker command, working directory, actual exit 0 and complete stdout are retained in check-contract.txt. The report separates proposed acceptance corrections from actual static consistency execution and states its limit.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K6",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "The nonempty result is supported: F1 and F2 correspond to unrepaired help/policy obligations; F3 observes that neither declared locale nor viewport is set or recorded in the target. F3 does not require a live layout failure to establish a documentary scope omission, and it is qualified accordingly. No continuing missing-Back-proof finding is invented.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K8",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "The actual outcome is three documentary omissions, with supported scope, source identity, actual checker limit and unobserved deployment/runtime behavior. The baseline correctly does not manufacture Qore phases or independent verification.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        }
+      ],
+      "comparison": {
+        "comparability": "UNVERIFIED",
+        "decision": "Unknown",
+        "reason": "Separate evaluators and verifier retained task/coverage observations. One observation on related known tasks and visible conditions does not establish a comparative winner; live deployment comparability is unverified for UX.",
+        "verification": [
+          "independent-assessment.json",
+          "independent-verification.json"
+        ]
+      }
     },
     {
+      "valid": true,
+      "id": "qore003-20261017-p2-baseline-1",
       "scenario_id": "P2",
       "condition": "baseline",
-      "status": "NOT_RUN",
-      "reason": "Required nested Codex sandbox failed before canary execution; see docs/evidence/specialization/isolation-probe.json. No controlled trial started."
+      "coverage": "COMPLETE",
+      "declared_coverage": "COMPLETE",
+      "qualification_supplied": true,
+      "comparability": "UNVERIFIED",
+      "changed_inputs": [],
+      "limit": "Identity and entered evidence checked; assessor independence, reasoning, isolation and causal benefit are not certified by metadata.",
+      "assessment": [
+        {
+          "criterion": "K1",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "Original rules, seven transitions and distinct Close-summary versus Back-heading focus are accurately represented. The corrected target is recognized as already containing keyboard Back proof. Canonical forward Tab is distinguished from preserved additional Shift+Tab coverage.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K3",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "The plan retains unanswered checkpoints and excluded actions; it requires request origin/method restrictions before entry, including redirects and other requests, with blocked analytics evidence and no relaxation.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K4",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "Fixture provenance, expected versus observed behavior, checker limitation, retained failures and missing coverage are explicit. No website defect or pass is inferred from the corrected fixture or static check.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K5",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "The relevant existing checker command has actual argv, UTC bounds, exit 0 and full separately retained stdout/stderr. Future acceptance includes exact source-to-step mapping, evidence requirements and incomplete-bound handling. Literal inventory is correctly limited to presence.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K7",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "The proposal is confined to documentation, preserves valid keyboard Back/Enter, two distinct focus outcomes, two unanswered checkpoints, question/help absence and the existing 24-step local bound, and justifies additions with supplied sources.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K8",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "Actual frozen-source reading identifies the remaining help-cycle/documentation gap, while rejecting a missing-Back claim. A concrete proposed replacement and relevant offline check support a bounded documentation decision.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        }
+      ],
+      "comparison": {
+        "comparability": "UNVERIFIED",
+        "decision": "Unknown",
+        "reason": "Separate evaluators and verifier retained task/coverage observations. One observation on related known tasks and visible conditions does not establish a comparative winner; live deployment comparability is unverified for UX.",
+        "verification": [
+          "independent-assessment.json",
+          "independent-verification.json"
+        ]
+      }
     },
     {
+      "valid": true,
+      "id": "qore003-20261017-p2-derived-1",
       "scenario_id": "P2",
       "condition": "derived",
-      "status": "NOT_RUN",
-      "reason": "Required nested Codex sandbox failed before canary execution; see docs/evidence/specialization/isolation-probe.json. No controlled trial started."
+      "coverage": "COMPLETE",
+      "declared_coverage": "COMPLETE",
+      "qualification_supplied": true,
+      "comparability": "UNVERIFIED",
+      "changed_inputs": [],
+      "limit": "Identity and entered evidence checked; assessor independence, reasoning, isolation and causal benefit are not certified by metadata.",
+      "assessment": [
+        {
+          "criterion": "K1",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "The final proposal covers every help transition and preserves corrected Back proof, two unanswered checkpoints, the target-only 24 bound and distinct summary/h1 focus. It distinguishes raw values from current profile detail. Canonical Close Tab is labeled separately from retained reverse evidence; Back either-direction reachability is supported by the target, checker and current profile, while actual directions must be recorded.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K3",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "The plan keeps no-answer/results/submission boundaries, all-request GET/HEAD/OPTIONS filtering and pre-entry exact-origin main-frame/popup navigation protection including redirects. Missing enforcement blocks a future run and analytics remains blocked with effects retained. Navigation granularity is explicitly attributed to the current original profile.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K4",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "Planning/observed results, source/checker limits, target fixture status, unavailable runtime facts and proposed operational conventions remain explicit. Verifier qualifications and the inability to establish Delivery prior execution from its restricted evidence are retained rather than converted into proof.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K5",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "Actual preflight, relevant checker, final structural lint and record checks are retained with command identity and exit/output. Nine substantive planned Gherkin scenarios cover preservation, help states, guard absence, focus errors and bounded interruption; a manual source/prose map supplements checker limits.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K7",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "The plan preserves existing valid procedure clauses and proposes only documented clarification. The 24-step bound and both unanswered checkpoints remain, Close and Back focus remain distinct, and no application or new runtime tool change is required.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K8",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "Actual source inspection and offline results support a scoped maintainer documentation proposal. The plan correctly identifies full help-cycle wording as the remaining concrete gap and preserves written Back proof rather than inventing its absence. Adjudication records specific alternatives and source-based consequences.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        }
+      ],
+      "comparison": {
+        "comparability": "UNVERIFIED",
+        "decision": "Unknown",
+        "reason": "Separate evaluators and verifier retained task/coverage observations. One observation on related known tasks and visible conditions does not establish a comparative winner; live deployment comparability is unverified for UX.",
+        "verification": [
+          "independent-assessment.json",
+          "independent-verification.json"
+        ]
+      }
     },
     {
+      "valid": true,
+      "id": "qore003-20261017-p2-generic-1",
       "scenario_id": "P2",
       "condition": "generic",
-      "status": "NOT_RUN",
-      "reason": "Required nested Codex sandbox failed before canary execution; see docs/evidence/specialization/isolation-probe.json. No controlled trial started."
+      "coverage": "COMPLETE",
+      "declared_coverage": "COMPLETE",
+      "qualification_supplied": true,
+      "comparability": "UNVERIFIED",
+      "changed_inputs": [],
+      "limit": "Identity and entered evidence checked; assessor independence, reasoning, isolation and causal benefit are not certified by metadata.",
+      "assessment": [
+        {
+          "criterion": "K1",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "The plan accurately represents all seven transitions, distinct Close-summary and Back-introduction-h1 focus, the target already containing keyboard Back proof, and literal Tab versus preserved reverse/mixed procedure alternatives. It explicitly prevents one direction from being claimed as evidence of an unobserved direction.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K3",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "The documentation requires exact sole-origin and GET/HEAD/OPTIONS enforcement before navigation and throughout requests, subrequests and redirects. It preserves unanswered scope and both checkpoints, prohibited actions, conditional blocked-analytics effects, fail-closed start and stop on breach/lost invariant.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K4",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "The plan preserves fixture/historical provenance and distinguishes current target obligations, declarations, local consistency, proposed conventions and actual future observations. It does not call the already corrected Back instruction missing, or turn the fixture, count or blocked POST into a website defect/pass.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K5",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "The correct relevant checker command has captured actual exit-zero output and its consistency-only disclaimer. Manual preservation/coverage review and thirteen substantive Gherkin cases supplement the limited checker. Spec-lint and run-check actual commands/results are retained separately from unexecuted browser acceptance.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K7",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "The concrete proposal preserves the corrected target’s valid Close/Back traversal and Enter, both unanswered checkpoints, 24-step Back guard, introduction visibility/question-help absence and distinct focus. The exact help cycle and scope/evidence additions are justified. No application, contract/checker/policy or new runtime tooling change is proposed.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K8",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "Actual frozen-source inspection identifies the remaining help-cycle/documentation omissions while rejecting a missing-Back diagnosis. A bounded one-document proposal, concrete source comparisons, substantive challenge/adjudication and captured local check support the selected planning outcome.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        }
+      ],
+      "comparison": {
+        "comparability": "UNVERIFIED",
+        "decision": "Unknown",
+        "reason": "Separate evaluators and verifier retained task/coverage observations. One observation on related known tasks and visible conditions does not establish a comparative winner; live deployment comparability is unverified for UX.",
+        "verification": [
+          "independent-assessment.json",
+          "independent-verification.json"
+        ]
+      }
     },
     {
+      "valid": true,
+      "id": "qore003-20261017-u2-generic-1",
       "scenario_id": "U2",
       "condition": "generic",
-      "status": "NOT_RUN",
-      "reason": "Required nested Codex sandbox failed before canary execution; see docs/evidence/specialization/isolation-probe.json. No controlled trial started."
+      "coverage": "PARTIAL",
+      "declared_coverage": "COMPLETE",
+      "qualification_supplied": true,
+      "comparability": "UNVERIFIED",
+      "changed_inputs": [],
+      "limit": "Identity and entered evidence checked; assessor independence, reasoning, isolation and causal benefit are not certified by metadata.",
+      "assessment": [
+        {
+          "criterion": "K1",
+          "status": "UNKNOWN",
+          "independent_task_status": "MET",
+          "reason": "The independent evaluator observed MET within narrower task scope, retained verbatim in independent-assessment.json. Required method coverage remains incomplete: Restrict original COMPLETE to PARTIAL. Initial entry/state scope explicitly requires G1, whose frozen contract includes direct applicable URL navigation as well as reload. All original initial URLs are Labs and no direct-navigation action is retained; missing goto capability cannot waive the check. Actual plateau stop also reports PARTIAL loop. Retain completed narrow help/Close/Back and warm reload/history observations without asserting complete required coverage. Original criterion rationale: Actual source rules and distinct destinations are represented correctly. Request3 proves help Enter/Space/reopen/Close with summary restoration; request5 repeats Close restoration. Back separately restores introduction h1.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K3",
+          "status": "UNKNOWN",
+          "independent_task_status": "MET",
+          "reason": "The independent evaluator observed MET within narrower task scope, retained verbatim in independent-assessment.json. Required method coverage remains incomplete: Restrict original COMPLETE to PARTIAL. Initial entry/state scope explicitly requires G1, whose frozen contract includes direct applicable URL navigation as well as reload. All original initial URLs are Labs and no direct-navigation action is retained; missing goto capability cannot waive the check. Actual plateau stop also reports PARTIAL loop. Retain completed narrow help/Close/Back and warm reload/history observations without asserting complete required coverage. Original criterion rationale: No answer activations; no-checked assertions pass while question exists, and Next remains disabled. Matching operator code/policy enforce approved native activations, read-only requests and allowed document origins. Expected analytics POSTs are blocked.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K4",
+          "status": "UNKNOWN",
+          "independent_task_status": "MET",
+          "reason": "The independent evaluator observed MET within narrower task scope, retained verbatim in independent-assessment.json. Required method coverage remains incomplete: Restrict original COMPLETE to PARTIAL. Initial entry/state scope explicitly requires G1, whose frozen contract includes direct applicable URL navigation as well as reload. All original initial URLs are Labs and no direct-navigation action is retained; missing goto capability cannot waive the check. Actual plateau stop also reports PARTIAL loop. Retain completed narrow help/Close/Back and warm reload/history observations without asserting complete required coverage. Original criterion rationale: Raw evidence and explicit uncertainty are retained. Requests2/4 are correctly observation locator failures, not site defects. Report discloses full-page geometry and deployment limits and refutes broader failed-Back/focus claims.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K8",
+          "status": "UNKNOWN",
+          "independent_task_status": "UNKNOWN",
+          "reason": "Scoped help-pass and PARTIAL loop completion are supported. The global DO-NOT-SHIP rationale additionally treats full-page captured Back concealment as a medium product defect. Actual viewport impact/severity cannot be resolved from retained images and semantic DOM alone.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        }
+      ],
+      "comparison": {
+        "comparability": "UNVERIFIED",
+        "decision": "Unknown",
+        "reason": "Separate evaluators and verifier retained task/coverage observations. One observation on related known tasks and visible conditions does not establish a comparative winner; live deployment comparability is unverified for UX.",
+        "verification": [
+          "independent-assessment.json",
+          "independent-verification.json"
+        ]
+      }
     },
     {
+      "valid": true,
+      "id": "qore003-20261017-u2-baseline-1",
       "scenario_id": "U2",
       "condition": "baseline",
-      "status": "NOT_RUN",
-      "reason": "Required nested Codex sandbox failed before canary execution; see docs/evidence/specialization/isolation-probe.json. No controlled trial started."
+      "coverage": "COMPLETE",
+      "declared_coverage": "COMPLETE",
+      "qualification_supplied": true,
+      "comparability": "UNVERIFIED",
+      "changed_inputs": [],
+      "limit": "Identity and entered evidence checked; assessor independence, reasoning, isolation and causal benefit are not certified by metadata.",
+      "assessment": [
+        {
+          "criterion": "K1",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "The report accurately selects original contract obligations and distinguishes Close focus to summary from Back focus to introduction H1; the recorded keyboard journey and DOM corroborate both destinations.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K3",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "No answers were activated; none-checked assertions passed before help and after Close, with empty answer circles and disabled Next in captures. Enforced activation descriptors cover only entry/start/help/Close/Back; actual guarded Enter/Space targets match. The relay rejects mutation methods and unauthorized main-frame/popup navigation and link destinations. Both observed sessions contain only successful same-origin GETs and one rejected analytics POST each. This is the observation boundary, not arbitrary-script or universal subresource-origin isolation.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K4",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "The report grounds the scoped pass in raw events/DOM/PNG and explicitly limits full-page visual completeness, locale measurement, certification and deployment identity. It correctly treats the anticipated blocked analytics POST as a policy effect and the historical protocol proof gap as provenance, not a current website defect.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K8",
+          "status": "MET",
+          "independent_task_status": "MET",
+          "reason": "The decision is explicitly limited to the observed desktop session. Actual Enter opening, Space closing, Enter reopening, Tab-to-Close/Enter and restored summary focus complete U2 from public entry. Extra Back evidence is supported. Neither whole-website coverage nor causal improvement is asserted or required.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        }
+      ],
+      "comparison": {
+        "comparability": "UNVERIFIED",
+        "decision": "Unknown",
+        "reason": "Separate evaluators and verifier retained task/coverage observations. One observation on related known tasks and visible conditions does not establish a comparative winner; live deployment comparability is unverified for UX.",
+        "verification": [
+          "independent-assessment.json",
+          "independent-verification.json"
+        ]
+      }
     },
     {
+      "valid": true,
+      "id": "qore003-20261017-u2-derived-1",
       "scenario_id": "U2",
       "condition": "derived",
-      "status": "NOT_RUN",
-      "reason": "Required nested Codex sandbox failed before canary execution; see docs/evidence/specialization/isolation-probe.json. No controlled trial started."
+      "coverage": "PARTIAL",
+      "declared_coverage": "PARTIAL",
+      "qualification_supplied": true,
+      "comparability": "UNVERIFIED",
+      "changed_inputs": [],
+      "limit": "Identity and entered evidence checked; assessor independence, reasoning, isolation and causal benefit are not certified by metadata.",
+      "assessment": [
+        {
+          "criterion": "K1",
+          "status": "UNKNOWN",
+          "independent_task_status": "MET",
+          "reason": "The independent evaluator observed MET within narrower task scope, retained verbatim in independent-assessment.json. Required method coverage remains incomplete: Preserve original PARTIAL. Initial entry/state scope requires G1 and explicitly says absent direct deep navigation remains a gap. Final post-history reload terminal capture is missing; no successful terminal render or website failure is inferred. Completed help/Close/Back observations and narrower task passes coexist with incomplete required coverage. Original criterion rationale: Original contract/profile rules are accurately selected and the report keeps Close-to-summary distinct from Back-to-introduction-H1. Actual sequential focus and Enter records plus DOM corroborate both destinations.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K3",
+          "status": "UNKNOWN",
+          "independent_task_status": "MET",
+          "reason": "The independent evaluator observed MET within narrower task scope, retained verbatim in independent-assessment.json. Required method coverage remains incomplete: Preserve original PARTIAL. Initial entry/state scope requires G1 and explicitly says absent direct deep navigation remains a gap. Final post-history reload terminal capture is missing; no successful terminal render or website failure is inferred. Completed help/Close/Back observations and narrower task passes coexist with incomplete required coverage. Original criterion rationale: Primary before/after none-checked assertions pass, and restart is also unanswered. Actual guard records approve only source-authorized entry/start/help/Close/Back activations. Mutation methods and unauthorized top-level/popup/link navigation are enforced by the retained harness; successful recorded traffic in all four requests is same-origin GET, with three analytics POSTs blocked. Boundaries are scoped observation guards, not arbitrary-page-script isolation.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K4",
+          "status": "UNKNOWN",
+          "independent_task_status": "MET",
+          "reason": "The independent evaluator observed MET within narrower task scope, retained verbatim in independent-assessment.json. Required method coverage remains incomplete: Preserve original PARTIAL. Initial entry/state scope requires G1 and explicitly says absent direct deep navigation remains a gap. Final post-history reload terminal capture is missing; no successful terminal render or website failure is inferred. Completed help/Close/Back observations and narrower task passes coexist with incomplete required coverage. Original criterion rationale: The narrow journey is directly evidenced. The report explicitly retains the two failed assertions, missing terminal reload capture, full-page screenshot/live-geometry limits and deployment uncertainty; it does not promote the protocol provenance or observer locator failures to website defects. Repeated pixels support a rendered overlap concern, although exact viewport impact and the assigned MEDIUM severity are not independently established here. This caveat is separate from the directly supported task observations.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        },
+        {
+          "criterion": "K8",
+          "status": "UNKNOWN",
+          "independent_task_status": "MET",
+          "reason": "The independent evaluator observed MET within narrower task scope, retained verbatim in independent-assessment.json. Required method coverage remains incomplete: Preserve original PARTIAL. Initial entry/state scope requires G1 and explicitly says absent direct deep navigation remains a gap. Final post-history reload terminal capture is missing; no successful terminal render or website failure is inferred. Completed help/Close/Back observations and narrower task passes coexist with incomplete required coverage. Original criterion rationale: Observed Enter/Space/Enter help toggling and keyboard Close with restored summary focus support the scoped task result. The report separates this working journey from its broader PARTIAL method coverage and conservative DO-NOT-SHIP review disposition. It makes no global SHIP or deployment claim. The missing broader G1 terminal capture does not erase the completed U2 path, and no causal improvement is asserted.",
+          "evidence": [
+            "independent-assessment.json",
+            "independent-verification.json"
+          ]
+        }
+      ],
+      "comparison": {
+        "comparability": "UNVERIFIED",
+        "decision": "Unknown",
+        "reason": "Separate evaluators and verifier retained task/coverage observations. One observation on related known tasks and visible conditions does not establish a comparative winner; live deployment comparability is unverified for UX.",
+        "verification": [
+          "independent-assessment.json",
+          "independent-verification.json"
+        ]
+      }
     }
   ],
   "groups": {

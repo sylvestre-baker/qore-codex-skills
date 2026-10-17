@@ -1,0 +1,246 @@
+{
+  "checked_at": "2026-10-17T12:15:42.718013+00:00",
+  "files": [
+    {
+      "request": 1,
+      "path": "00-entry.dom.json",
+      "matches_receipt": true
+    },
+    {
+      "request": 1,
+      "path": "00-entry.png",
+      "matches_receipt": true
+    },
+    {
+      "request": 1,
+      "path": "01-final.dom.json",
+      "matches_receipt": true
+    },
+    {
+      "request": 1,
+      "path": "01-final.png",
+      "matches_receipt": true
+    },
+    {
+      "request": 1,
+      "path": "events.json",
+      "matches_receipt": true
+    },
+    {
+      "request": 1,
+      "path": "result.json",
+      "matches_receipt": true
+    },
+    {
+      "request": 2,
+      "path": "00-entry.dom.json",
+      "matches_receipt": true
+    },
+    {
+      "request": 2,
+      "path": "00-entry.png",
+      "matches_receipt": true
+    },
+    {
+      "request": 2,
+      "path": "01-introduction-via-entry.dom.json",
+      "matches_receipt": true
+    },
+    {
+      "request": 2,
+      "path": "01-introduction-via-entry.png",
+      "matches_receipt": true
+    },
+    {
+      "request": 2,
+      "path": "02-introduction-after-document-reload.dom.json",
+      "matches_receipt": true
+    },
+    {
+      "request": 2,
+      "path": "02-introduction-after-document-reload.png",
+      "matches_receipt": true
+    },
+    {
+      "request": 2,
+      "path": "03-first-question-unanswered.dom.json",
+      "matches_receipt": true
+    },
+    {
+      "request": 2,
+      "path": "03-first-question-unanswered.png",
+      "matches_receipt": true
+    },
+    {
+      "request": 2,
+      "path": "04-help-open-via-Enter.dom.json",
+      "matches_receipt": true
+    },
+    {
+      "request": 2,
+      "path": "04-help-open-via-Enter.png",
+      "matches_receipt": true
+    },
+    {
+      "request": 2,
+      "path": "05-help-closed-via-Space.dom.json",
+      "matches_receipt": true
+    },
+    {
+      "request": 2,
+      "path": "05-help-closed-via-Space.png",
+      "matches_receipt": true
+    },
+    {
+      "request": 2,
+      "path": "06-close-keyboard-focus.dom.json",
+      "matches_receipt": true
+    },
+    {
+      "request": 2,
+      "path": "06-close-keyboard-focus.png",
+      "matches_receipt": true
+    },
+    {
+      "request": 2,
+      "path": "07-close-restores-summary-focus.dom.json",
+      "matches_receipt": true
+    },
+    {
+      "request": 2,
+      "path": "07-close-restores-summary-focus.png",
+      "matches_receipt": true
+    },
+    {
+      "request": 2,
+      "path": "08-Back-sequential-keyboard-focus.dom.json",
+      "matches_receipt": true
+    },
+    {
+      "request": 2,
+      "path": "08-Back-sequential-keyboard-focus.png",
+      "matches_receipt": true
+    },
+    {
+      "request": 2,
+      "path": "09-returned-introduction-heading-focus.dom.json",
+      "matches_receipt": true
+    },
+    {
+      "request": 2,
+      "path": "09-returned-introduction-heading-focus.png",
+      "matches_receipt": true
+    },
+    {
+      "request": 2,
+      "path": "10-final.dom.json",
+      "matches_receipt": true
+    },
+    {
+      "request": 2,
+      "path": "10-final.png",
+      "matches_receipt": true
+    },
+    {
+      "request": 2,
+      "path": "events.json",
+      "matches_receipt": true
+    },
+    {
+      "request": 2,
+      "path": "result.json",
+      "matches_receipt": true
+    },
+    {
+      "request": 3,
+      "path": "00-entry.dom.json",
+      "matches_receipt": true
+    },
+    {
+      "request": 3,
+      "path": "00-entry.png",
+      "matches_receipt": true
+    },
+    {
+      "request": 3,
+      "path": "events.json",
+      "matches_receipt": true
+    },
+    {
+      "request": 3,
+      "path": "result.json",
+      "matches_receipt": true
+    },
+    {
+      "request": 4,
+      "path": "00-entry.dom.json",
+      "matches_receipt": true
+    },
+    {
+      "request": 4,
+      "path": "00-entry.png",
+      "matches_receipt": true
+    },
+    {
+      "request": 4,
+      "path": "01-challenge-Back-focus-with-cookie-banner.dom.json",
+      "matches_receipt": true
+    },
+    {
+      "request": 4,
+      "path": "01-challenge-Back-focus-with-cookie-banner.png",
+      "matches_receipt": true
+    },
+    {
+      "request": 4,
+      "path": "02-challenge-Back-refocus-with-cookie-banner.dom.json",
+      "matches_receipt": true
+    },
+    {
+      "request": 4,
+      "path": "02-challenge-Back-refocus-with-cookie-banner.png",
+      "matches_receipt": true
+    },
+    {
+      "request": 4,
+      "path": "03-restart-still-unanswered-help-closed.dom.json",
+      "matches_receipt": true
+    },
+    {
+      "request": 4,
+      "path": "03-restart-still-unanswered-help-closed.png",
+      "matches_receipt": true
+    },
+    {
+      "request": 4,
+      "path": "04-browser-history-back-entry.dom.json",
+      "matches_receipt": true
+    },
+    {
+      "request": 4,
+      "path": "04-browser-history-back-entry.png",
+      "matches_receipt": true
+    },
+    {
+      "request": 4,
+      "path": "05-browser-history-forward-check.dom.json",
+      "matches_receipt": true
+    },
+    {
+      "request": 4,
+      "path": "05-browser-history-forward-check.png",
+      "matches_receipt": true
+    },
+    {
+      "request": 4,
+      "path": "events.json",
+      "matches_receipt": true
+    },
+    {
+      "request": 4,
+      "path": "result.json",
+      "matches_receipt": true
+    }
+  ],
+  "all_match": true
+}

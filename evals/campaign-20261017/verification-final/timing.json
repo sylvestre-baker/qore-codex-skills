@@ -1,0 +1,10 @@
+{
+  "start_utc": "2026-10-17T12:19:32+00:00",
+  "end_utc": "2026-10-17T12:23:29.284474+00:00",
+  "continuous_active_wall_seconds": 237.284,
+  "intentional_idle_seconds": 0,
+  "cap_seconds": 300,
+  "within_cap": true,
+  "verifier": "/root/campaign_final_verifier",
+  "window_scope": "Final coverage/claim reconciliation; original wave4 window separately recorded."
+}

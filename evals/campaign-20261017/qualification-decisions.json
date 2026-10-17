@@ -1,0 +1,213 @@
+{
+  "schema": "qore-final-qualification/1",
+  "status": "VERIFIED",
+  "verifier": "/root/campaign_final_verifier",
+  "verified_at": "2026-10-17T12:22:41.534375Z",
+  "source_verification": "verification-final/REPORT.md",
+  "limit": "Independent bounded coverage/claims reconciliation of all original retained cells and saved separate assessments; not an exhaustive code, product or security certification. Phase coverage is distinct from source/claim quality and narrow task passes. No winner, general benefit, efficiency, causal advantage, equal-scope comparability, live-revision identity or deployment/release readiness established. Native lifecycle/deadline/usage telemetry limits remain. Later corrections are separate evidence and do not rewrite original campaign results.",
+  "runs": {
+    "N01": {
+      "coverage": "COMPLETE",
+      "reason": "Required review and current-profile preflight activities returned retained evidence. Confirmed broader Tab/Shift+Tab profile guidance is a source-fidelity quality defect, retained separately; qore-run coverage explicitly does not certify source support. Reconcile with R1 by preserving execution COMPLETE, qualifying full-conformity claims and preserving wave4 dissent.",
+      "evidence": [
+        "trials/R2-derived/evaluation.json",
+        "assessments/review-R2/assessment.json",
+        "assessment-inputs/N01/output/REPORT.md",
+        "trials/R2-derived/final-output/evidence/execution.json",
+        "verification-wave4/REPORT.md",
+        "verification-final/read-only-checks.json"
+      ]
+    },
+    "N02": {
+      "coverage": "COMPLETE",
+      "reason": "Preserve COMPLETE at the frozen planning scope: retained substantive role analyses, required report barrier/cross-examination, adjudication and actual checks substantiate completed required activities. Disclosed continuation/context, timing and source-support limits remain; completion certifies neither every plan claim nor implementation/browser acceptance.",
+      "evidence": [
+        "trials/P1-generic/evaluation.json",
+        "assessments/plan-first/N02-plan-assessment.json",
+        "assessment-inputs/N02/output/REPORT.md",
+        "trials/P1-generic/final-output/execution.json",
+        "verification-final/read-only-checks.json"
+      ]
+    },
+    "N03": {
+      "coverage": "COMPLETE",
+      "reason": "Required static review activities returned substantive retained outputs. Wave1 refuted the proposed semantic-filter failure under the explicit scalar claim allowlist. Preserve execution COMPLETE, with native-context provenance and recommendation correctness limits.",
+      "evidence": [
+        "trials/R1-generic/evaluation.json",
+        "assessments/review-R1/assessment.json",
+        "assessment-inputs/N03/output/REPORT.md",
+        "trials/R1-generic/final-output/evidence/execution.json",
+        "verification-wave1/REPORT.md",
+        "verification-final/read-only-checks.json"
+      ]
+    },
+    "N04": {
+      "coverage": "COMPLETE",
+      "reason": "Preserve COMPLETE at the frozen planning scope: retained substantive role analyses, required report barrier/cross-examination, adjudication and actual checks substantiate completed required activities. Disclosed continuation/context, timing and source-support limits remain; completion certifies neither every plan claim nor implementation/browser acceptance.",
+      "evidence": [
+        "trials/P2-derived/evaluation.json",
+        "assessments/plan-P2/N04-plan-assessment.json",
+        "assessment-inputs/N04/output/REPORT.md",
+        "trials/P2-derived/final-output/execution.json",
+        "verification-final/read-only-checks.json"
+      ]
+    },
+    "N05": {
+      "coverage": "COMPLETE",
+      "reason": "Preserve COMPLETE at the frozen direct baseline observation scope. The separate evaluator inspected actual entry/help/focus/unanswered and policy evidence. No uninvoked Qore cold-entry gate, loop, profile or role obligation is imposed; live revision and broader product certification remain unknown.",
+      "evidence": [
+        "trials/U1-baseline/evaluation.json",
+        "assessments/ux-baseline/N05/assessment.json",
+        "assessment-inputs/N05/output/REPORT.md",
+        "verification-final/read-only-checks.json"
+      ]
+    },
+    "N06": {
+      "coverage": "COMPLETE",
+      "reason": "Preserve COMPLETE for the requested baseline source-based planning task, supported by a retained plan/proposal and relevant original local check. No uninvoked Qore role/profile/verifier obligations or browser execution are added.",
+      "evidence": [
+        "trials/P1-baseline/evaluation.json",
+        "assessments/plan-P1-rest/N06-plan-assessment.json",
+        "assessment-inputs/N06/output/REPORT.md",
+        "verification-final/read-only-checks.json"
+      ]
+    },
+    "N07": {
+      "coverage": "PARTIAL",
+      "reason": "Restrict original COMPLETE to PARTIAL. Initial entry/state scope explicitly requires G1, whose frozen contract includes direct applicable URL navigation as well as reload. All original initial URLs are Labs and no direct-navigation action is retained; missing goto capability cannot waive the check. Actual plateau stop also reports PARTIAL loop. Retain completed narrow help/Close/Back and warm reload/history observations without asserting complete required coverage.",
+      "evidence": [
+        "trials/U2-generic/evaluation.json",
+        "assessments/ux-U2/N07/assessment.json",
+        "assessment-inputs/N07/output/REPORT.md",
+        "trials/U2-generic/final-output/execution.json",
+        "assessment-inputs/N07/output/scope.json",
+        "assessment-inputs/N07/output/required-check-matrix.json",
+        "assessment-inputs/N07/input/.agents/skills/qore-ux-review/references/gates.md",
+        "assessment-inputs/N07/input/.agents/skills/qore-ux-review/references/protocol.md",
+        "verification-final/read-only-checks.json"
+      ]
+    },
+    "N08": {
+      "coverage": "COMPLETE",
+      "reason": "Preserve COMPLETE for the requested offline baseline document review, supported by the retained source review and actual local check. No independent Qore verifier or live website acceptance was required or claimed.",
+      "evidence": [
+        "trials/R2-baseline/evaluation.json",
+        "assessments/review-R2/assessment.json",
+        "assessment-inputs/N08/output/REPORT.md",
+        "verification-final/read-only-checks.json"
+      ]
+    },
+    "N09": {
+      "coverage": "COMPLETE",
+      "reason": "Required review/profile activities have retained evidence. Wave1 confirmed the broader traversal recommendation/profile defect and refuted the proposed prohibited packet exposure. Correctness of that recommendation is separate from completed phase coverage; preserve the defect and strict-conformity dissent.",
+      "evidence": [
+        "trials/R1-derived/evaluation.json",
+        "assessments/review-R1/assessment.json",
+        "assessment-inputs/N09/output/REPORT.md",
+        "trials/R1-derived/final-output/evidence/execution.json",
+        "verification-wave1/REPORT.md",
+        "verification-final/read-only-checks.json"
+      ]
+    },
+    "N10": {
+      "coverage": "COMPLETE",
+      "reason": "Required static finder, redactor, verifier and validation activities returned retained evidence. Wave4 refuted prohibited report/rationale/verdict exposure on the actual retained packets; allowed contextual evidence alone does not make the phase absent. No website acceptance is claimed.",
+      "evidence": [
+        "trials/R2-generic/evaluation.json",
+        "assessments/review-R2/assessment.json",
+        "assessment-inputs/N10/output/REPORT.md",
+        "trials/R2-generic/final-output/execution.json",
+        "verification-wave4/REPORT.md",
+        "verification-final/read-only-checks.json"
+      ]
+    },
+    "N11": {
+      "coverage": "PARTIAL",
+      "reason": "Preserve original PARTIAL. Initial entry/state scope requires G1 and explicitly says absent direct deep navigation remains a gap. Final post-history reload terminal capture is missing; no successful terminal render or website failure is inferred. Completed help/Close/Back observations and narrower task passes coexist with incomplete required coverage.",
+      "evidence": [
+        "trials/U2-derived/evaluation.json",
+        "assessments/ux-U2/N11/assessment.json",
+        "assessment-inputs/N11/output/REPORT.md",
+        "trials/U2-derived/final-output/execution.json",
+        "assessment-inputs/N11/output/evidence/scope.json",
+        "assessment-inputs/N11/output/evidence/required-check-matrix.json",
+        "verification-final/read-only-checks.json"
+      ]
+    },
+    "N12": {
+      "coverage": "PARTIAL",
+      "reason": "Preserve original PARTIAL. Applicable G1 direct deep entry remains unavailable/unobserved; actual functional entry/help/keyboard Back passes and warm reload/history do not fill that distinct required observation. No product finding is regraded here.",
+      "evidence": [
+        "trials/U1-derived/evaluation.json",
+        "assessments/ux-first/N12/assessment.json",
+        "assessment-inputs/N12/output/REPORT.md",
+        "trials/U1-derived/final-output/execution.json",
+        "verification-final/read-only-checks.json"
+      ]
+    },
+    "N13": {
+      "coverage": "COMPLETE",
+      "reason": "Preserve COMPLETE at the frozen planning scope: retained substantive role analyses, required report barrier/cross-examination, adjudication and actual checks substantiate completed required activities. Disclosed continuation/context, timing and source-support limits remain; completion certifies neither every plan claim nor implementation/browser acceptance.",
+      "evidence": [
+        "trials/P2-generic/evaluation.json",
+        "assessments/plan-P2/N13-plan-assessment.json",
+        "assessment-inputs/N13/output/REPORT.md",
+        "trials/P2-generic/final-output/execution.json",
+        "verification-final/read-only-checks.json"
+      ]
+    },
+    "N14": {
+      "coverage": "COMPLETE",
+      "reason": "Preserve COMPLETE for the requested offline baseline document review, supported by the retained source review and actual local check. No independent Qore verifier or live website acceptance was required or claimed.",
+      "evidence": [
+        "trials/R1-baseline/evaluation.json",
+        "assessments/review-R1/assessment.json",
+        "assessment-inputs/N14/output/REPORT.md",
+        "verification-final/read-only-checks.json"
+      ]
+    },
+    "N15": {
+      "coverage": "COMPLETE",
+      "reason": "Preserve COMPLETE at the frozen direct baseline observation scope. The separate evaluator inspected actual entry/help/focus/unanswered and policy evidence. No uninvoked Qore cold-entry gate, loop, profile or role obligation is imposed; live revision and broader product certification remain unknown.",
+      "evidence": [
+        "trials/U2-baseline/evaluation.json",
+        "assessments/ux-U2/N15/assessment.json",
+        "assessment-inputs/N15/output/REPORT.md",
+        "verification-final/read-only-checks.json"
+      ]
+    },
+    "N16": {
+      "coverage": "PARTIAL",
+      "reason": "Restrict original COMPLETE to PARTIAL as independently reproduced in wave3. Initially required G1 direct applicable URL entry is unobserved; actual entry-click, warm reload and history are useful passes but are not the separate direct navigation. Tool absence and a disclosed limit cannot mark the required check complete.",
+      "evidence": [
+        "trials/U1-generic/evaluation.json",
+        "assessments/ux-generic/N16/assessment.json",
+        "assessment-inputs/N16/output/REPORT.md",
+        "trials/U1-generic/final-output/execution.json",
+        "verification-wave3/REPORT.md",
+        "verification-final/read-only-checks.json"
+      ]
+    },
+    "N17": {
+      "coverage": "COMPLETE",
+      "reason": "Preserve COMPLETE at the frozen planning scope: retained substantive role analyses, required report barrier/cross-examination, adjudication and actual checks substantiate completed required activities. Disclosed continuation/context, timing and source-support limits remain; completion certifies neither every plan claim nor implementation/browser acceptance.",
+      "evidence": [
+        "trials/P1-derived/evaluation.json",
+        "assessments/plan-P1-rest/N17-plan-assessment.json",
+        "assessment-inputs/N17/output/REPORT.md",
+        "trials/P1-derived/final-output/execution.json",
+        "verification-final/read-only-checks.json"
+      ]
+    },
+    "N18": {
+      "coverage": "COMPLETE",
+      "reason": "Preserve COMPLETE for the requested baseline source-based planning task, supported by a retained plan/proposal and relevant original local check. No uninvoked Qore role/profile/verifier obligations or browser execution are added.",
+      "evidence": [
+        "trials/P2-baseline/evaluation.json",
+        "assessments/plan-P2/N18-plan-assessment.json",
+        "assessment-inputs/N18/output/REPORT.md",
+        "verification-final/read-only-checks.json"
+      ]
+    }
+  }
+}

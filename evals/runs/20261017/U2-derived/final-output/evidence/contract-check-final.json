@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "python3",
+    "-B",
+    "checks/check_contract.py",
+    "surface-contract.json"
+  ],
+  "cwd": "/workspace/worker",
+  "exit_code": 0,
+  "stdout": "{\n  \"valid\": true,\n  \"schema\": \"qaizen-labs-surface/1\",\n  \"checks\": [\n    \"entry\",\n    \"unanswered\",\n    \"help-toggle\",\n    \"close-focus\",\n    \"keyboard-back\",\n    \"introduction-focus\",\n    \"read-only-policy\",\n    \"origin-policy\"\n  ],\n  \"limit\": \"Contract consistency only; browser observations establish current behavior.\"\n}\n",
+  "stderr": "",
+  "observed_at": "2026-10-17T12:17:59.424308+00:00",
+  "purpose": "Explicit individual checker exit-status capture for final evidence record, not a browser or product-quality retry."
+}

@@ -1,0 +1,639 @@
+{
+  "schema": "qore-run/1",
+  "id": "qore003-20261017-u2-derived-1",
+  "method": "ux",
+  "skill": "qore-ux-review-qaizen-labs",
+  "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+  "target": {
+    "label": "Frozen prepared-input manifest; observed public qaizen.io Labs readiness-check surface",
+    "snapshot_sha256": "f1c94eff9d8d9044073bbe14c71e2ef897c187a01238ba9363eedecdcca6d228"
+  },
+  "last_relevant_change": "2026-10-17T09:53:59.039788+00:00",
+  "environment": {
+    "id": "qore-qualification-qore003-20261017-u2-derived-1",
+    "operator": "agent",
+    "host": "Docker Desktop Linux arm64 / Codex0.162.0"
+  },
+  "profile": {
+    "id": "qaizen-labs",
+    "version": "0.1.0",
+    "sha256": "f76afdd45cb6352e5044a06affc4182ea6cd40aa9c012fb216636a61faa428f0"
+  },
+  "required_phases": [
+    "profile_preflight",
+    "scope",
+    "browser",
+    "state_transition",
+    "freshness",
+    "verdict"
+  ],
+  "phases": [
+    {
+      "id": "profile_preflight",
+      "actor_id": "/root",
+      "status": "PASS",
+      "artifacts": [
+        "evidence/profile_preflight.json"
+      ]
+    },
+    {
+      "id": "scope",
+      "actor_id": "/root",
+      "status": "PASS",
+      "artifacts": [
+        "evidence/scope.json"
+      ]
+    },
+    {
+      "id": "browser",
+      "actor_id": "/root",
+      "status": "PASS",
+      "artifacts": [
+        "evidence/browser.json"
+      ]
+    },
+    {
+      "id": "state_transition",
+      "actor_id": "/root",
+      "status": "PASS",
+      "artifacts": [
+        "evidence/state_transition.json"
+      ]
+    },
+    {
+      "id": "freshness",
+      "actor_id": "/root",
+      "status": "FAIL",
+      "artifacts": [
+        "evidence/freshness.json"
+      ],
+      "reason": "Full fresh required-check coverage incomplete: final post-history reload terminal rendering not captured; retained prior observations are current."
+    },
+    {
+      "id": "verdict",
+      "actor_id": "/root",
+      "status": "PASS",
+      "artifacts": [
+        "evidence/verdict.json"
+      ]
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "evidence/actors-and-usage.json",
+      "sha256": "b4fd93c55dafe4e7415a672ea336b7be185c566074e21d8c8f938c205596fd0e",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/browser-request-1.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/browser-request-2.json",
+      "sha256": "5a519c1a836a4667212c2a5b19f673a6a05f7d83d31a2b6248cd459ccf45d0c3",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/browser-request-3.json",
+      "sha256": "ae7a7fe0783ea7a2c0a336fcf9b135e52f7b292ecd56a77a9ae3ab6ed87fbadd",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/browser-request-4.json",
+      "sha256": "99ee26f4c5174b35f046305dd75a5ee2589c28ed9a0ac5d086a10d67822e9eee",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/browser-request-ledger.json",
+      "sha256": "9e36a9f3a0e0a91f43ad72f51a4f4f99c1412eae8af7b784bf900b268f5520cc",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/browser.json",
+      "sha256": "56951336093b0c52676b15c99844be974af01994124db577d8512999da1e617d",
+      "kind": "execution",
+      "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+      "target_snapshot_sha256": "f1c94eff9d8d9044073bbe14c71e2ef897c187a01238ba9363eedecdcca6d228",
+      "observed_at": "2026-10-17T12:08:29.898Z"
+    },
+    {
+      "path": "evidence/command-failures.json",
+      "sha256": "995e6a7627b20256d8670beeec2f89e22f1b786260fdfe98cdfc42cba6ab6761",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/contract-check.json",
+      "sha256": "7f557ba27626c65e7eb10c7b17773f82e9feae273715b633b694723f87b3c1ee",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/depth-lint.json",
+      "sha256": "eab497d12a7b657c9efcbea4cc69081ef94a2747dbca08c1278b15ced666bcec",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/depth.json",
+      "sha256": "f915a27650fc2079a321b273f8b1f8f9700370a76e118a8301177e24d6e50a9d",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/findings.json",
+      "sha256": "b1dc8e5948514c74a68ecb00cbfaf2d3d90e439f3faee5ca4614649d9dc2bf3f",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/freshness.json",
+      "sha256": "04b5490e01ffdb7053cdac057a38b0e748d8da86a6035b95112bdde8283694ca",
+      "kind": "execution",
+      "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+      "target_snapshot_sha256": "f1c94eff9d8d9044073bbe14c71e2ef897c187a01238ba9363eedecdcca6d228",
+      "observed_at": "2026-10-17T12:15:43.589340+00:00"
+    },
+    {
+      "path": "evidence/gates.json",
+      "sha256": "1b1a28020ec458e3183bdcc5fb7da010236a8f00c67f1437b5bd0eccfe5d3f50",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/input/.agents/skills/qore-ux-review-qaizen-labs/SKILL.md",
+      "sha256": "f785a696d4bf08aa48b99588fbc236322e5681b5be5d3e85cec7f959a8d65fc1",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/input/TASK.md",
+      "sha256": "414b9ccebe191696552733a4ea34506d8e3a71bcb87c4cea67abb1210beebb69",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/input/checks/check_contract.py",
+      "sha256": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/input/observation-policy.json",
+      "sha256": "15f4e5b4960b5011684be265f027e42b8637a3b8aae96b24bba1ba3a4d0f0202",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/input/surface-contract.json",
+      "sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/input-immutability-check.json",
+      "sha256": "427b2eab586a08c0d726bd242e134a60a8e08a53af8addcc534a4d7a3231dc67",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/input-manifest.json",
+      "sha256": "d27569893faeac9426f7e50f389c753fcf7463f6d31a20133b8cd1f5884a8f13",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/iteration-1-challenge-candidates.json",
+      "sha256": "a3a97634bc5099aa73144c146b630f493e6350fad9651216aa3766678186fc15",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/loop.json",
+      "sha256": "67fc2e0c6c79bcf4385f0a29ad3e8da7c710e077168a38d7630a19cd67b7c761",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/profile-check.json",
+      "sha256": "5ce4d4722f95db8a7268fc421213fd73caf89c5d3817dd65455a165d8976f0dc",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/profile-use.json",
+      "sha256": "00a0cde626ebc7bf3fb476f42a860fe390debc530b581a2a589b5a4210a8a5b3",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/profile_preflight.json",
+      "sha256": "c9ca7e7fa43afcacec6a81e496f98832ac5d4f8ac7bdeb678a421e98224f976f",
+      "kind": "execution",
+      "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+      "target_snapshot_sha256": "f1c94eff9d8d9044073bbe14c71e2ef897c187a01238ba9363eedecdcca6d228",
+      "observed_at": "2026-10-17T12:08:06.869976+00:00"
+    },
+    {
+      "path": "evidence/receipt-verification.json",
+      "sha256": "17828739363d834337aa242d4a032dc8633d011acbd4aeec456724e730ff7cbc",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/request-1-dispatch.json",
+      "sha256": "36bf1ac182c66d903e7856d5a1e80493c805820bab8ee3076ec705988be37d22",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/request-2-dispatch.json",
+      "sha256": "4c699f71428cb105aaeec8a0b09c1c88611b9cf450ddb9612318f17a739404fa",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/request-3-analysis.json",
+      "sha256": "5d1f75167a420d1876dfbcbd5e55ad258ee3cbc628a197b6c2b227eadcaa4dd5",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/request-3-dispatch.json",
+      "sha256": "8fd10460748ecb49c630b5e74746804d45a9b023aace15e393415cf84ec0ffaa",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/request-4-analysis.json",
+      "sha256": "55537a627346312edfda36bbf5eea154de6d1d38caacd43a42f95b0aee26a5a7",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/request-4-dispatch.json",
+      "sha256": "0a9cf92658981e4a1ae02d3137ccbe5707183fd95559c363cb36fa27a6b18b2f",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/required-check-matrix.json",
+      "sha256": "9d34fb700aa043b3261f26be20e7168549afcd3be390e42f7e60bbc5f6e90941",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/required-check-results.json",
+      "sha256": "ee0ec94d51e56d1a2a88b6e9b97db3b0898f5647ddd85bad6d69d14f5dfa945e",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/response-1/00-entry.dom.json",
+      "sha256": "09a05d31c16faaf8980d863723e3f901798ef49b4cac43ea54aec912de99112d",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/response-1/00-entry.png",
+      "sha256": "095283e6a92818f6baf91a977793ff14591a91a60cef7b82ea9019642c2251e2",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/response-1/01-final.dom.json",
+      "sha256": "2e72d94aeb80a87a73191e51ac1edd98ea33a03d36fe37719b667b5f754ac9e2",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/response-1/01-final.png",
+      "sha256": "041319a5d5542b9a5ddae0bd2c782d018a031320b7ef69be076a71a99c470b8a",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/response-1/events.json",
+      "sha256": "773cc913b1c8ad76751e5c84aeef76575d94202bb957cb0479e91ef41cdea079",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/response-1/relay.json",
+      "sha256": "8fcd3a32e86e61e4373246eaa345bf73b2989af84223387fc935780c8ed3ddb9",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/response-1/result.json",
+      "sha256": "44b28ac7fea594451cf35d3a124c449944f118c474d5a0249e7304b174a6981f",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/response-2/00-entry.dom.json",
+      "sha256": "09a05d31c16faaf8980d863723e3f901798ef49b4cac43ea54aec912de99112d",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/response-2/00-entry.png",
+      "sha256": "484c55e66c4e31ca320607543e4ad4b28e877409b4f861352c1ef9af0f013137",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/response-2/01-introduction-via-entry.dom.json",
+      "sha256": "524b0152744d052e6bb253eaeda4ff35b7bc69b132546fc509c7edd1958c13a1",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/response-2/01-introduction-via-entry.png",
+      "sha256": "8c12568cc767e1d111812033ddd4823fc5ffcaf12d6561cb61b74ffa210a4bc8",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/response-2/02-introduction-after-document-reload.dom.json",
+      "sha256": "524b0152744d052e6bb253eaeda4ff35b7bc69b132546fc509c7edd1958c13a1",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/response-2/02-introduction-after-document-reload.png",
+      "sha256": "8c12568cc767e1d111812033ddd4823fc5ffcaf12d6561cb61b74ffa210a4bc8",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/response-2/03-first-question-unanswered.dom.json",
+      "sha256": "d914c65d93824bf0ad2af509c711239181aeace21ca36164765ced95fe000fba",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/response-2/03-first-question-unanswered.png",
+      "sha256": "4e9a3b37fca4b08a7cd5123cae0c30d5a65225ec092b00091699bad327691393",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/response-2/04-help-open-via-Enter.dom.json",
+      "sha256": "4b9b0bf3e78667d19a134f9156a0d80080297bd8ab7a6a122e64eff2c6f4510d",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/response-2/04-help-open-via-Enter.png",
+      "sha256": "f438d94c1eadc1565702cdb8913924ab211a846e3463a68ce17170762ad91c15",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/response-2/05-help-closed-via-Space.dom.json",
+      "sha256": "076f396281cfb2f2e10bd7059a532f1182e9e42966166617cfea9badfd2c439f",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/response-2/05-help-closed-via-Space.png",
+      "sha256": "154537c2923ff969a06afd9a5d39ba885d067ce6190af63b29e9daef57fc1977",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/response-2/06-close-keyboard-focus.dom.json",
+      "sha256": "baa708ae3cbe364b3a84d89f0c0106c0336e24d34e5e78bc05815cab695d3ac8",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/response-2/06-close-keyboard-focus.png",
+      "sha256": "20283dde9b43e0112896e340db7d6351ee4cb4fe29acef35eab9ba79da87331a",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/response-2/07-close-restores-summary-focus.dom.json",
+      "sha256": "076f396281cfb2f2e10bd7059a532f1182e9e42966166617cfea9badfd2c439f",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/response-2/07-close-restores-summary-focus.png",
+      "sha256": "154537c2923ff969a06afd9a5d39ba885d067ce6190af63b29e9daef57fc1977",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/response-2/08-Back-sequential-keyboard-focus.dom.json",
+      "sha256": "495b50eac16f5a7872812186e9c3c02cac07f2a883bb9da673b62c4b576e9480",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/response-2/08-Back-sequential-keyboard-focus.png",
+      "sha256": "fc9f463800cad8af5d9b9c734a2b220267a1c7310320bd878158e3b638222ed7",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/response-2/09-returned-introduction-heading-focus.dom.json",
+      "sha256": "6dd0bd08efd546fdbbcd0dff658a6b903f90f9d8ec7a12c9d8946c956ddeb37b",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/response-2/09-returned-introduction-heading-focus.png",
+      "sha256": "87473a933533895cf780dd9d517969cda71d5a8afdb74b99a57e97434cd8a824",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/response-2/10-final.dom.json",
+      "sha256": "6dd0bd08efd546fdbbcd0dff658a6b903f90f9d8ec7a12c9d8946c956ddeb37b",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/response-2/10-final.png",
+      "sha256": "87473a933533895cf780dd9d517969cda71d5a8afdb74b99a57e97434cd8a824",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/response-2/events.json",
+      "sha256": "a2570c8f320bdff66d5598b4763ad155c64bb71929d63ff9cd5a98f52adc8449",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/response-2/relay.json",
+      "sha256": "623cfd7e5eab1a426c3042957a336b9bac57318c28d21c0c6b925de00df51732",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/response-2/result.json",
+      "sha256": "9819dec9888a715ec65ebadbf31e1579e1bd61ab84438bb800a3186d586b6728",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/response-3/00-entry.dom.json",
+      "sha256": "09a05d31c16faaf8980d863723e3f901798ef49b4cac43ea54aec912de99112d",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/response-3/00-entry.png",
+      "sha256": "095283e6a92818f6baf91a977793ff14591a91a60cef7b82ea9019642c2251e2",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/response-3/events.json",
+      "sha256": "821d4717e1b1409f6f4a04b12e33e866131bcff5b90fd917c61206b046d9a40d",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/response-3/relay.json",
+      "sha256": "2be86c9992e84209e1e47b6d73f363683bdeac7467eadad1d54017ef24a01a46",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/response-3/result.json",
+      "sha256": "c3341dd3dd1d76ef233230459c1573541c38c48de70763d8ae07dbddf679037b",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/response-4/00-entry.dom.json",
+      "sha256": "09a05d31c16faaf8980d863723e3f901798ef49b4cac43ea54aec912de99112d",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/response-4/00-entry.png",
+      "sha256": "095283e6a92818f6baf91a977793ff14591a91a60cef7b82ea9019642c2251e2",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/response-4/01-challenge-Back-focus-with-cookie-banner.dom.json",
+      "sha256": "495b50eac16f5a7872812186e9c3c02cac07f2a883bb9da673b62c4b576e9480",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/response-4/01-challenge-Back-focus-with-cookie-banner.png",
+      "sha256": "0139a6dc00bde0a2a7e76574b2a85014839f6dd87e0ac239237859830bae4419",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/response-4/02-challenge-Back-refocus-with-cookie-banner.dom.json",
+      "sha256": "495b50eac16f5a7872812186e9c3c02cac07f2a883bb9da673b62c4b576e9480",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/response-4/02-challenge-Back-refocus-with-cookie-banner.png",
+      "sha256": "57673acee0c4875835c892ce68bfe1efd2182ec2cbb4c6904ecaad0f4004aa31",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/response-4/03-restart-still-unanswered-help-closed.dom.json",
+      "sha256": "d914c65d93824bf0ad2af509c711239181aeace21ca36164765ced95fe000fba",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/response-4/03-restart-still-unanswered-help-closed.png",
+      "sha256": "6177196c4d7dc3ad62bfe16b8bb2912649bd4d378ded080c9f4ccc0ad9bf6841",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/response-4/04-browser-history-back-entry.dom.json",
+      "sha256": "09a05d31c16faaf8980d863723e3f901798ef49b4cac43ea54aec912de99112d",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/response-4/04-browser-history-back-entry.png",
+      "sha256": "095283e6a92818f6baf91a977793ff14591a91a60cef7b82ea9019642c2251e2",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/response-4/05-browser-history-forward-check.dom.json",
+      "sha256": "d914c65d93824bf0ad2af509c711239181aeace21ca36164765ced95fe000fba",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/response-4/05-browser-history-forward-check.png",
+      "sha256": "6177196c4d7dc3ad62bfe16b8bb2912649bd4d378ded080c9f4ccc0ad9bf6841",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/response-4/events.json",
+      "sha256": "ce3b20e084b5c6cb13fae2c9883dd49bbfbd2ac7a537d9e20386b195ab9db4b5",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/response-4/relay.json",
+      "sha256": "b3a6e18d9e707da7772203675e72865336da48fab7d87cb29c4970e0a1d65325",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/response-4/result.json",
+      "sha256": "a91a808c743b03e942ea985e5104af3ef26e949f5819a209d8a7ab9f6a878d70",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/scope-initial.json",
+      "sha256": "9b1e823202476d81aad11218613c89dfd45b41953f1dbd7564e2f3048c0c8642",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/scope.json",
+      "sha256": "5f97db782cab36dbc04fd7c8847c1e85a73a6c0cef2a0018177fb7182e1bb38e",
+      "kind": "execution",
+      "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+      "target_snapshot_sha256": "f1c94eff9d8d9044073bbe14c71e2ef897c187a01238ba9363eedecdcca6d228",
+      "observed_at": "2026-10-17T12:08:23.374113+00:00"
+    },
+    {
+      "path": "evidence/state_transition.json",
+      "sha256": "1e1c83580ebd1cdf323970ae97cea298eac80571c8fcd3fe6afb44a1a18f29c6",
+      "kind": "execution",
+      "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+      "target_snapshot_sha256": "f1c94eff9d8d9044073bbe14c71e2ef897c187a01238ba9363eedecdcca6d228",
+      "observed_at": "2026-10-17T12:15:43.575253+00:00"
+    },
+    {
+      "path": "evidence/stop-rule-1.json",
+      "sha256": "def68217977b9d651a1bfd2bbe639c195d0a3681e7284e2928604f031d17a49b",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/stop-rule-1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/stop-rule-command.json",
+      "sha256": "595436688f5000f3230d99e3df5b1a9601b7d27c5453bae76567278cfe5b0a3d",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/verdict.json",
+      "sha256": "2c07eb2bb0e517b844d8f81b8f9c74d9226e40da3e175393167d59e3d46b8525",
+      "kind": "execution",
+      "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+      "target_snapshot_sha256": "f1c94eff9d8d9044073bbe14c71e2ef897c187a01238ba9363eedecdcca6d228",
+      "observed_at": "2026-10-17T12:15:43.589417+00:00"
+    },
+    {
+      "path": "evidence/visual-inspection.json",
+      "sha256": "64a44231c0c183dc6c28ec8616fa731b653723b04b92d086cd1ce2f4787ad95f",
+      "kind": "source"
+    }
+  ],
+  "commands": [
+    {
+      "argv": [
+        "sh",
+        "-c",
+        "pwd && rg --files -g 'TASK.md' -g 'AGENTS.md' -g '*SKILL*' -g '*qore*' -g '*profile*'"
+      ],
+      "exit_code": 127,
+      "artifact": "evidence/command-failures.json"
+    },
+    {
+      "argv": [
+        "sh",
+        "-c",
+        "python3 scripts/project-check.py references/project.json --root /workspace/worker --method ux > /workspace/output/evidence/profile-check.json; cat /workspace/output/evidence/profile-check.json; cat scripts/depth-lint.mjs; cat scripts/run-check.py"
+      ],
+      "exit_code": 0,
+      "artifact": "evidence/profile-check.json",
+      "exit_scope": "Compound shell exit observed; checker output reports COMPLETE; individual checker status not separately retained."
+    },
+    {
+      "argv": [
+        "sh",
+        "-c",
+        "node scripts/depth-lint.mjs /workspace/output/evidence/depth.json > /workspace/output/evidence/depth-lint.json\ncat /workspace/output/evidence/depth-lint.json"
+      ],
+      "exit_code": 0,
+      "artifact": "evidence/depth-lint.json",
+      "exit_scope": "Compound shell exit observed; lint output valid=true."
+    },
+    {
+      "argv": [
+        "sh",
+        "-c",
+        "ls -la /var/lib/qore-feedback; python3 -B checks/check_contract.py surface-contract.json > /workspace/output/evidence/contract-check.json; cat /workspace/output/evidence/contract-check.json"
+      ],
+      "exit_code": 0,
+      "artifact": "evidence/contract-check.json",
+      "exit_scope": "Compound shell exit observed; checker output valid=true."
+    },
+    {
+      "argv": [
+        "node",
+        "scripts/stop-rule.mjs",
+        "/workspace/output/evidence/loop.json"
+      ],
+      "exit_code": 0,
+      "artifact": "evidence/stop-rule-1.json"
+    }
+  ],
+  "limitations": [
+    "Final post-history reload terminal DOM/screenshot and last no-selection assertion did not execute after h1 timeout; G1 incomplete.",
+    "Request3 failed due reviewer uppercase text locator assumption; request4 reached most challenge checks then timed out on reviewer assumption of introduction after reload. Neither timeout establishes product failure.",
+    "V1 is supported by inspected repeated full-page screenshots; live geometry, scrolling video, and assistive-technology effects were not supplied.",
+    "Anonymous public, consent unset, en English, default theme and CSS viewport 1280x800 only. Browser locale en-US was requested from contract but actual navigator locale is not independently exposed.",
+    "No answers, results, full questionnaire, mobile, alternate themes, account contexts, accessibility/performance certification or invalid URL permutations were evaluated; task excludes these flows.",
+    "HTTP redirects unqualified/blocked by relay; top-level documents fulfilled via guarded fetch; service workers blocked. Instrumented audits and custom live geometry unavailable through supported actions.",
+    "Trace/video paths are named in relay result but files not supplied in feedback; retained raw result/events/DOM/PNG files only.",
+    "Operator-supplied enclosing candidate and frozen-input manifest digests retained; packaging procedure unavailable, local per-file hashes do not independently reproduce enclosing identities or identify website deployment.",
+    "UX method requires no independent child contexts; no children dispatched. Operator specific context identity and token/CPU/aggregate-agent usage meter unavailable. Wall timestamps retained; no zero-usage claim.",
+    "No fixes authorized or performed. V1 proposal requires a later implementation and fresh re-verification."
+  ],
+  "coverage": "PARTIAL"
+}

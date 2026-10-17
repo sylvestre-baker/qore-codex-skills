@@ -1,0 +1,50 @@
+{
+  "neutral_id": "N16",
+  "scenario_id": "U1",
+  "coverage": "COMPLETE",
+  "resources": {
+    "caps": {
+      "wall_seconds": 900,
+      "aggregate_agent_seconds": 2400,
+      "browser_requests": 6,
+      "transient_browser_retries": 1,
+      "evaluator_seconds": 1800,
+      "verifier_seconds": 1800,
+      "maximum_original_cells": 21,
+      "limit": "Provisional operator policy, not measured feasibility or hard timeout enforcement."
+    },
+    "started_at": "2026-10-17T11:06:30.916739+00:00",
+    "ended_at": "2026-10-17T11:13:15.710508+00:00",
+    "children": [],
+    "tokens": 1570529,
+    "aggregate_agent_seconds": 403.517583,
+    "unavailable": {},
+    "parent_native_usage": {
+      "input_tokens": 1552072,
+      "cached_input_tokens": 1446656,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 18457,
+      "reasoning_output_tokens": 3759
+    },
+    "parent_wall_seconds": 403.517583,
+    "measurement_basis": "Single context only: CLI turn input+output tokens including cached input, and observed launcher-to-return wall interval including transport/tool waits; not CPU, billing, unique tokens or productivity."
+  },
+  "limitations": [
+    "One observation on a related known task, not a general benefit benchmark.",
+    "Criterion assessments remain UNKNOWN until a separate actual evaluator and verifier inspect retained outputs.",
+    "CLI JSONL omits some native child lifecycle events; child identities and history-free dispatches rely on retained role reports/roster plus the qualified inheritance probe.",
+    "All resource timing precision and unavailable measurements remain explicit; no cost or efficiency conclusion.",
+    "Only anonymous public en-US desktop default theme at CSS1280x800/DPR1; no mobile, other themes, accounts, full questionnaire, answer selection, results or submission.",
+    "No performance, screen-reader, automated accessibility audit or measured contrast certification. No risky contrast failure established from inspected colors.",
+    "Relay screenshots are full-page captures with fixed/sticky overlays at capture scroll; no separately supplied viewport-only screenshots, geometry evaluation or contrast sampler. Overlap finding is limited to reproducible captured rendering.",
+    "Relay blocks non-GET/HEAD/OPTIONS, service workers and document redirects. Analytics POST expected blocked; behavior with analytics allowed and redirect behavior unqualified.",
+    "No arbitrary navigate action; deep-route server document behavior established by HTTP200 reload after real entry. Invalid URL permutations and arbitrary address-bar entry not separately tested.",
+    "Public deployment observed in UTC windows recorded in relay receipts. Frozen target digest names entire prepared-input manifest, not a deployed source revision; private commits do not establish deployed identity. Enclosing candidate/target digests accepted as supplied; per-file SHA256 retained, enclosing digest serialization not supplied for independent recomputation.",
+    "No application source available for implementation/root-cause inspection; suggested padding/scroll change is a proposal, not an applied or verified fix.",
+    "Trace/video paths are mentioned by driver but files were not returned in relay receipt; available raw DOM/PNG/events/results/receipts retained unmodified.",
+    "Only root actor /root used; UX method requires no independent agents. No independent human first-use or independent verifier claim. Agent-second/token usage telemetry unavailable through supplied tools; elapsed wall time recorded rather than fabricated zero usage.",
+    "Stop-rule suggests CONTINUE because defect remains; review-only protocol explicitly permits stopping with retained finding when fixes unauthorized. No seventh iteration, budget exhaustion, plateau, hidden-rubric comparison or quality retry."
+  ],
+  "raw_output_sha256": "fdafba9796ac7bdf77d1719ab499540298bf758bf58e505f9851afa40969bd2b",
+  "blinding_limit": "Neutral filenames only; method/profile citations and role rosters can reveal condition. This is not a blinded comparison."
+}

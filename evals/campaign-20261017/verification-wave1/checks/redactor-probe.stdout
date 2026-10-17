@@ -1,0 +1,10 @@
+{
+  "findings": [
+    {
+      "id": "MECHANICAL-PROBE",
+      "title": "Probe only",
+      "severity": "medium",
+      "evidence": "target.md:10. Trigger: the claim consumer follows the step. Impact: the resulting output lacks the stated check."
+    }
+  ]
+}

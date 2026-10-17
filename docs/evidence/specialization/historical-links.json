@@ -1,0 +1,29 @@
+{
+  "schema": "qore-historical-links/1",
+  "reports": [
+    {
+      "path": "evals/runs/20261017/P1-baseline/final-output/REPORT.md",
+      "sha256": "aedd1083e89327974c3faf4b26e016cb86866595091ac325b61ee3c77eb12bf7",
+      "adapter": "evals/runs/20261017/P1-baseline/REPORT.md",
+      "reason": "Original trial report preserved byte-for-byte with its original record. Historical workspace links are provenance, not executable dependencies; the separate maintained cell report relocates links without changing observations or verdicts."
+    },
+    {
+      "path": "evals/runs/20261017/R1-generic/final-output/REPORT.md",
+      "sha256": "8a0c46c46eeb9ec6ba943bfd10980ec1eaad837707885c0af53ee31df05ffb98",
+      "adapter": "evals/runs/20261017/R1-generic/REPORT.md",
+      "reason": "Original trial report preserved byte-for-byte with its original record. Historical workspace links are provenance, not executable dependencies; the separate maintained cell report relocates links without changing observations or verdicts."
+    },
+    {
+      "path": "evals/runs/20261017/R1-generic/final-output/evidence/REPORT.md",
+      "sha256": "8a0c46c46eeb9ec6ba943bfd10980ec1eaad837707885c0af53ee31df05ffb98",
+      "adapter": "evals/runs/20261017/R1-generic/REPORT.md",
+      "reason": "Original trial report preserved byte-for-byte with its original record. Historical workspace links are provenance, not executable dependencies; the separate maintained cell report relocates links without changing observations or verdicts."
+    },
+    {
+      "path": "evals/runs/20261017/R2-derived/final-output/REPORT.md",
+      "sha256": "5b61ba349427842d3f50385f8c5a0d25e8ea86311728659cc253d7fe133105f0",
+      "adapter": "evals/runs/20261017/R2-derived/REPORT.md",
+      "reason": "Original trial report preserved byte-for-byte with its original record. Historical workspace links are provenance, not executable dependencies; the separate maintained cell report relocates links without changing observations or verdicts."
+    }
+  ]
+}

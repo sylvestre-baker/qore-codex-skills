@@ -1,0 +1,679 @@
+{
+  "schema": "qore-public-assessment-selection/1",
+  "artifacts": [
+    {
+      "path": "assessments/plan-P1-rest/N06-plan-assessment.json",
+      "raw_sha256": "26a9d3c8094054ae5fed0f53294fec75c6a9bd0b9cd671339683543f083ebfa4",
+      "public_sha256": "26a9d3c8094054ae5fed0f53294fec75c6a9bd0b9cd671339683543f083ebfa4",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "assessments/plan-P1-rest/N06-plan-assessment.md",
+      "raw_sha256": "5760b44a5b7ff2f75aa578a71ba5a387e0bef8d6a84e014f0df4c65d43a505d0",
+      "public_sha256": "5760b44a5b7ff2f75aa578a71ba5a387e0bef8d6a84e014f0df4c65d43a505d0",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "assessments/plan-P1-rest/N17-plan-assessment.json",
+      "raw_sha256": "6b3401ac535da25f5d501b917c91c0a284c7bea7f651b30295482f6ad6453008",
+      "public_sha256": "6b3401ac535da25f5d501b917c91c0a284c7bea7f651b30295482f6ad6453008",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "assessments/plan-P1-rest/N17-plan-assessment.md",
+      "raw_sha256": "711bb3145fae6204ead1e1f73dcf7445eb79eaa7158e7846fa540e92984d774f",
+      "public_sha256": "711bb3145fae6204ead1e1f73dcf7445eb79eaa7158e7846fa540e92984d774f",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "assessments/plan-P1-rest/wave-manifest.json",
+      "raw_sha256": "2fa9c4b7b1f8a850c712ff6027c9bee9704b5d2744e2963653a30fb2acb68d79",
+      "public_sha256": "2fa9c4b7b1f8a850c712ff6027c9bee9704b5d2744e2963653a30fb2acb68d79",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "assessments/plan-P2/N04-plan-assessment.json",
+      "raw_sha256": "bcae26bbc4b8832807bb1f4a7f2014ed51e3d1da84249d4b74b29546745b6ece",
+      "public_sha256": "bcae26bbc4b8832807bb1f4a7f2014ed51e3d1da84249d4b74b29546745b6ece",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "assessments/plan-P2/N04-plan-assessment.md",
+      "raw_sha256": "5ca99370276fcffb3cee256807d97748bea3f5698c21510d5bf17cd6c0235b96",
+      "public_sha256": "5ca99370276fcffb3cee256807d97748bea3f5698c21510d5bf17cd6c0235b96",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "assessments/plan-P2/N13-checks.json",
+      "raw_sha256": "496c4df3a329e23006ad506b9f35b7f512d1ec52588bd6b84c25ac85e5911429",
+      "public_sha256": "496c4df3a329e23006ad506b9f35b7f512d1ec52588bd6b84c25ac85e5911429",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "assessments/plan-P2/N13-plan-assessment.json",
+      "raw_sha256": "e93b3b82b8dfcaf9330035d1a9bf04afbaa2ea2e22ae559db168982f1849079f",
+      "public_sha256": "e93b3b82b8dfcaf9330035d1a9bf04afbaa2ea2e22ae559db168982f1849079f",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "assessments/plan-P2/N13-plan-assessment.md",
+      "raw_sha256": "d4deccad39acd6c23ff0d7e6201991ed61a58af1f08dba45a04205b97e7dcfb2",
+      "public_sha256": "d4deccad39acd6c23ff0d7e6201991ed61a58af1f08dba45a04205b97e7dcfb2",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "assessments/plan-P2/N13-wave.json",
+      "raw_sha256": "16c64c877d6c94311a1252502f72e9f5e37733e81ccd283dc90351b408e1b733",
+      "public_sha256": "16c64c877d6c94311a1252502f72e9f5e37733e81ccd283dc90351b408e1b733",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "assessments/plan-P2/N18-plan-assessment.json",
+      "raw_sha256": "5a3f68586e72c20a6b87f623a95ecd26b8b4e45ddf049a2499419c7717c07ebc",
+      "public_sha256": "5a3f68586e72c20a6b87f623a95ecd26b8b4e45ddf049a2499419c7717c07ebc",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "assessments/plan-P2/N18-plan-assessment.md",
+      "raw_sha256": "b60d31e92a181fc8ee1146e3fe97dfb7b217a13505908bbf20f5e1bf817e1fde",
+      "public_sha256": "b60d31e92a181fc8ee1146e3fe97dfb7b217a13505908bbf20f5e1bf817e1fde",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "assessments/plan-P2/checks.json",
+      "raw_sha256": "e89bf2a7a7e10faeff7b0356bb5e591c5eb81abb80afa3d77ffee567656979ba",
+      "public_sha256": "e89bf2a7a7e10faeff7b0356bb5e591c5eb81abb80afa3d77ffee567656979ba",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "assessments/plan-P2/two-case-wave.json",
+      "raw_sha256": "c079a454a000ab80d474ea7aa4ed992c14d39107d48a92477128f6592936d753",
+      "public_sha256": "c079a454a000ab80d474ea7aa4ed992c14d39107d48a92477128f6592936d753",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "assessments/plan-first/N02-plan-assessment.json",
+      "raw_sha256": "811e0b358b234ee95f124d2c5dacf3fdb19cb23ba9a17f9d9534138f5421c118",
+      "public_sha256": "811e0b358b234ee95f124d2c5dacf3fdb19cb23ba9a17f9d9534138f5421c118",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "assessments/plan-first/N02-plan-assessment.md",
+      "raw_sha256": "35f59b95c8e4f881150fdbe2a664ed3d1751f65ce310a06fd9eb62a34923295b",
+      "public_sha256": "35f59b95c8e4f881150fdbe2a664ed3d1751f65ce310a06fd9eb62a34923295b",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "assessments/review-R1/REPORT.md",
+      "raw_sha256": "ce9210f5f691bbee5d34d24ade88c7f0373fcf43d0135f74c60d07c0cdb613f3",
+      "public_sha256": "64695ad7127d365267ba9dd6379d25dd3215e9a9e67c9043c9ed85797893ed78",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "assessments/review-R1/assessment.json",
+      "raw_sha256": "2de2ee8b2d71992b0d2822185f58db4b60ec307617487c2c7c77568e97955f27",
+      "public_sha256": "e077197f8abd6a4197d2e5300168003b129e1b47c4958d86384f1e5e8ccb9d8d",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "assessments/review-R1/independent-checks.json",
+      "raw_sha256": "c985848d19e628f90bea0fcf10bd15b1ba8b761cf447e49406e99522bcdc1fbe",
+      "public_sha256": "c985848d19e628f90bea0fcf10bd15b1ba8b761cf447e49406e99522bcdc1fbe",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "assessments/review-R2/REPORT.md",
+      "raw_sha256": "8c786125d1c86987b13562387b38c8690045704e6c344badd73a69857a221038",
+      "public_sha256": "25cacff7601e612a473b37acf6750c96e4bea7de2773c32bb99f2fc05ac5e8de",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "assessments/review-R2/assessment.json",
+      "raw_sha256": "ce988b014da2a54e5c9afe50ea95c46766a3ab1242d466ae5da6b976e97b36a6",
+      "public_sha256": "e4d95591c7204bdea5387888983cfa67556dc2199f843215ff0733720468503b",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "assessments/review-R2/independent-checks.json",
+      "raw_sha256": "ecef585edd352c71feb8f3bb22d043a31c0024d2354caf0b8bee924513a48dd4",
+      "public_sha256": "ecef585edd352c71feb8f3bb22d043a31c0024d2354caf0b8bee924513a48dd4",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "assessments/ux-U2/N07/REPORT.md",
+      "raw_sha256": "e0d34aa1eb93eed2d5b0a214a55613de3f0c8d1fdb774e475793e04a62780dc5",
+      "public_sha256": "e0d34aa1eb93eed2d5b0a214a55613de3f0c8d1fdb774e475793e04a62780dc5",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "assessments/ux-U2/N07/assessment.json",
+      "raw_sha256": "404ef3238ecc80b8d8e9a01f96e43fa6b8a09f28022ed17a009a022488b031af",
+      "public_sha256": "404ef3238ecc80b8d8e9a01f96e43fa6b8a09f28022ed17a009a022488b031af",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "assessments/ux-U2/N07/inspection-inventory.json",
+      "raw_sha256": "9f7fa00bf7ae314f2a33aaa523df767947880d5c09313e7ee491650babf30eba",
+      "public_sha256": "9f7fa00bf7ae314f2a33aaa523df767947880d5c09313e7ee491650babf30eba",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "assessments/ux-U2/N11/REPORT.md",
+      "raw_sha256": "4a99d0b5aea5206989848c711034566ccb68a851e021a82fdc6dfb5d1ba4876d",
+      "public_sha256": "4a99d0b5aea5206989848c711034566ccb68a851e021a82fdc6dfb5d1ba4876d",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "assessments/ux-U2/N11/assessment.json",
+      "raw_sha256": "eadcc2bbc3498aa6e9a921d0763a59fbe26500cbb7b74661f7b544ec219ef1ca",
+      "public_sha256": "eadcc2bbc3498aa6e9a921d0763a59fbe26500cbb7b74661f7b544ec219ef1ca",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "assessments/ux-U2/N11/inspection-inventory.json",
+      "raw_sha256": "6793d3f08d39fd9a8e4dbb931bcfa94f643619538bddece9d913067dab5fc4fb",
+      "public_sha256": "6793d3f08d39fd9a8e4dbb931bcfa94f643619538bddece9d913067dab5fc4fb",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "assessments/ux-U2/N15/REPORT.md",
+      "raw_sha256": "c42e502a5cd504e7c9fbe120a7ef3c7bec7f12c55f1fb818fa2413f6e34b090e",
+      "public_sha256": "c42e502a5cd504e7c9fbe120a7ef3c7bec7f12c55f1fb818fa2413f6e34b090e",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "assessments/ux-U2/N15/assessment.json",
+      "raw_sha256": "504f7445f946590eee273f496108b43b1e347d7fc1f3879a922dd03d5ea862c6",
+      "public_sha256": "504f7445f946590eee273f496108b43b1e347d7fc1f3879a922dd03d5ea862c6",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "assessments/ux-U2/N15/inspection-inventory.json",
+      "raw_sha256": "dfea4745740f8ad0008e6e0d7c4cc42e85756fcfc2999303a59b96156cf9fa90",
+      "public_sha256": "dfea4745740f8ad0008e6e0d7c4cc42e85756fcfc2999303a59b96156cf9fa90",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "assessments/ux-baseline/N05/REPORT.md",
+      "raw_sha256": "2af222287bc5e1182e53e5b9b13719ee44d8aabf86ff3fda631d789a96069d9a",
+      "public_sha256": "2af222287bc5e1182e53e5b9b13719ee44d8aabf86ff3fda631d789a96069d9a",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "assessments/ux-baseline/N05/assessment.json",
+      "raw_sha256": "3e1a8e846d6865a0068d638f8c9a2889845d7d6eefbb818b30e4d7762799dd06",
+      "public_sha256": "3e1a8e846d6865a0068d638f8c9a2889845d7d6eefbb818b30e4d7762799dd06",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "assessments/ux-baseline/N05/inspection-inventory.json",
+      "raw_sha256": "65ab39706a1bbea935beaaa70a87bb7a6c0b400f16d2b6aa835a351be6fd961f",
+      "public_sha256": "65ab39706a1bbea935beaaa70a87bb7a6c0b400f16d2b6aa835a351be6fd961f",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "assessments/ux-first/N12/REPORT.md",
+      "raw_sha256": "e961ac2d7cd08f48494ee3a7a733d997878373cac85be680476f08ac2499ff26",
+      "public_sha256": "e961ac2d7cd08f48494ee3a7a733d997878373cac85be680476f08ac2499ff26",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "assessments/ux-first/N12/assessment.json",
+      "raw_sha256": "45b6684c22ef399bc9b4720369d961eec878dd1280021123a26df767da426d49",
+      "public_sha256": "45b6684c22ef399bc9b4720369d961eec878dd1280021123a26df767da426d49",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "assessments/ux-first/N12/inspection-inventory.json",
+      "raw_sha256": "7de3d98a2eaf37e8ccdf16a8eb2b7d21085118b7ed7ea59444f9aff8a206f998",
+      "public_sha256": "7de3d98a2eaf37e8ccdf16a8eb2b7d21085118b7ed7ea59444f9aff8a206f998",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "assessments/ux-generic/N16/REPORT.md",
+      "raw_sha256": "78cd7567c797e3f74ab1340bedfc13faf39ea766d50a4801c546a921b25afc5a",
+      "public_sha256": "78cd7567c797e3f74ab1340bedfc13faf39ea766d50a4801c546a921b25afc5a",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "assessments/ux-generic/N16/assessment.json",
+      "raw_sha256": "9a12e807bc99d7214ddd4b7d8a7b7c6ed66925bf631e5da9ff77eea69d83e961",
+      "public_sha256": "9a12e807bc99d7214ddd4b7d8a7b7c6ed66925bf631e5da9ff77eea69d83e961",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "assessments/ux-generic/N16/inspection-inventory.json",
+      "raw_sha256": "81681a2dc2ffc01a057e42aae4f983af94afee784bf80eed8048d3f2d4e03329",
+      "public_sha256": "81681a2dc2ffc01a057e42aae4f983af94afee784bf80eed8048d3f2d4e03329",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "verification-wave1/REPORT.md",
+      "raw_sha256": "4a6954a27d229e111b6dfaf6081bfe6806ffa7b5c6b7867e8712f86746c20650",
+      "public_sha256": "4a6954a27d229e111b6dfaf6081bfe6806ffa7b5c6b7867e8712f86746c20650",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "verification-wave1/candidates.json",
+      "raw_sha256": "c59daedb92acb59e2bbd809857de99372a287302a42a72a2d6cdbed0227eac83",
+      "public_sha256": "c59daedb92acb59e2bbd809857de99372a287302a42a72a2d6cdbed0227eac83",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "verification-wave1/checks/commands.json",
+      "raw_sha256": "e914d3565074ead19fd912b641be0db3cc029ea66ff72f897da61159f142e0b4",
+      "public_sha256": "13edb35ad38d0294d54026030010daca467970bb5f7336d8c36a4c0d91bff8dc",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "verification-wave1/checks/contract-check.stderr",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "verification-wave1/checks/contract-check.stdout",
+      "raw_sha256": "7f557ba27626c65e7eb10c7b17773f82e9feae273715b633b694723f87b3c1ee",
+      "public_sha256": "7f557ba27626c65e7eb10c7b17773f82e9feae273715b633b694723f87b3c1ee",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "verification-wave1/checks/finding-lint.json",
+      "raw_sha256": "511f96cf6d8ed540b708969cfeac4120bd9b7dae595397125453b5072434155e",
+      "public_sha256": "511f96cf6d8ed540b708969cfeac4120bd9b7dae595397125453b5072434155e",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "verification-wave1/checks/finding-lint.stderr",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "verification-wave1/checks/mechanical-probe-input.json",
+      "raw_sha256": "a82e5ae997bcfd7a0d701f780abfb42e668607d502a73c9b0c6894673750e63f",
+      "public_sha256": "a82e5ae997bcfd7a0d701f780abfb42e668607d502a73c9b0c6894673750e63f",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "verification-wave1/checks/project-check.stderr",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "verification-wave1/checks/project-check.stdout",
+      "raw_sha256": "6963bef24c3370dc2e782736ac44dd0291b138745fc110e507dadbfa30ad2cac",
+      "public_sha256": "6963bef24c3370dc2e782736ac44dd0291b138745fc110e507dadbfa30ad2cac",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "verification-wave1/checks/redactor-N03.stderr",
+      "raw_sha256": "0185924dab32b0221f3e1c353f617386eb59380951202e8054324b34e0c7c2cd",
+      "public_sha256": "0185924dab32b0221f3e1c353f617386eb59380951202e8054324b34e0c7c2cd",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "verification-wave1/checks/redactor-N03.stdout",
+      "raw_sha256": "4987d00709b35420b5121550c72a81bfbf3ae257560e74a0a86810612c7ba8b0",
+      "public_sha256": "4987d00709b35420b5121550c72a81bfbf3ae257560e74a0a86810612c7ba8b0",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "verification-wave1/checks/redactor-N09.stderr",
+      "raw_sha256": "fb15fcff74f26b83f866adb410dcba18d5be7c44e0491bc1dc9a0e4ea2da746d",
+      "public_sha256": "fb15fcff74f26b83f866adb410dcba18d5be7c44e0491bc1dc9a0e4ea2da746d",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "verification-wave1/checks/redactor-N09.stdout",
+      "raw_sha256": "583561c20ba9c44ae855b10bbf8a99f19ddcaeed3de99d0ce8f616f4ab4556f3",
+      "public_sha256": "583561c20ba9c44ae855b10bbf8a99f19ddcaeed3de99d0ce8f616f4ab4556f3",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "verification-wave1/checks/redactor-probe.stderr",
+      "raw_sha256": "0616b290cbdf0ab2dd25abb3086378c63c00c1b873de3d3434c94395b919d199",
+      "public_sha256": "0616b290cbdf0ab2dd25abb3086378c63c00c1b873de3d3434c94395b919d199",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "verification-wave1/checks/redactor-probe.stdout",
+      "raw_sha256": "e7023d342caf62ce6f39a174890464c3b8c4b88c316b81acaf427266fa204be5",
+      "public_sha256": "e7023d342caf62ce6f39a174890464c3b8c4b88c316b81acaf427266fa204be5",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "verification-wave1/checks/results.json",
+      "raw_sha256": "04b675210fd34b04cb2ab995c3fb1637b95198ad6905c9200cef29bd1d4ffe44",
+      "public_sha256": "04b675210fd34b04cb2ab995c3fb1637b95198ad6905c9200cef29bd1d4ffe44",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "verification-wave1/checks/source-manifest-after.json",
+      "raw_sha256": "2ef752fb22f4f8a0d0bab6dcab0e19d1b82e9c30f9aa45e2a28b971f45d1465e",
+      "public_sha256": "2ef752fb22f4f8a0d0bab6dcab0e19d1b82e9c30f9aa45e2a28b971f45d1465e",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "verification-wave1/checks/source-manifest-before.json",
+      "raw_sha256": "e0073460edc21333f018e5d043924160b1c9843f2f1af292f2efb738c7eff8ba",
+      "public_sha256": "e0073460edc21333f018e5d043924160b1c9843f2f1af292f2efb738c7eff8ba",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "verification-wave1/checks/source-manifest-final.json",
+      "raw_sha256": "fc452b973ae21a75a1b7a9d2d31d823e1208ec9ae8de4f27883e0fff97991925",
+      "public_sha256": "fc452b973ae21a75a1b7a9d2d31d823e1208ec9ae8de4f27883e0fff97991925",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "verification-wave1/claims.json",
+      "raw_sha256": "c59daedb92acb59e2bbd809857de99372a287302a42a72a2d6cdbed0227eac83",
+      "public_sha256": "c59daedb92acb59e2bbd809857de99372a287302a42a72a2d6cdbed0227eac83",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "verification-wave1/correction/CORRECTION.md",
+      "raw_sha256": "bf349643eb8e036cc7afba1671ab7d11dae42c851423feac15b73920bdd86414",
+      "public_sha256": "bf349643eb8e036cc7afba1671ab7d11dae42c851423feac15b73920bdd86414",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "verification-wave1/correction/checks.json",
+      "raw_sha256": "90687463666964a07794be29927d3e9d4a8bf1a3cb0cb7e331a113397b950259",
+      "public_sha256": "90687463666964a07794be29927d3e9d4a8bf1a3cb0cb7e331a113397b950259",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "verification-wave1/correction/commands.json",
+      "raw_sha256": "d3c09254174d2f17098e7a9f2741e818675c96a23469e088a2959ca2cd939a1a",
+      "public_sha256": "6b8879aee3d2b8aef30c208e93cf28e50b63db36dcb41112acfc9903e198d637",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "verification-wave1/correction/contract-check.stderr",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "verification-wave1/correction/contract-check.stdout",
+      "raw_sha256": "7f557ba27626c65e7eb10c7b17773f82e9feae273715b633b694723f87b3c1ee",
+      "public_sha256": "7f557ba27626c65e7eb10c7b17773f82e9feae273715b633b694723f87b3c1ee",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "verification-wave1/correction/derive-existing-refusal.stderr",
+      "raw_sha256": "bef923c5b1e1ecb751e271beff025170e122f7cc73c454a28dccf94f3fe78042",
+      "public_sha256": "bef923c5b1e1ecb751e271beff025170e122f7cc73c454a28dccf94f3fe78042",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "verification-wave1/correction/derive-existing-refusal.stdout",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "verification-wave1/correction/derive.stderr",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "verification-wave1/correction/derive.stdout",
+      "raw_sha256": "2cddd64a4f8a2da8793cb84920f753aec9bf6c91b4b131efe7ebf2a153342414",
+      "public_sha256": "2cddd64a4f8a2da8793cb84920f753aec9bf6c91b4b131efe7ebf2a153342414",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "verification-wave1/correction/filter-probe-input.json",
+      "raw_sha256": "73cc6e3f60d6c06791f48546e230a341d3f4ffc57f1343db2a923c3a2272dc31",
+      "public_sha256": "73cc6e3f60d6c06791f48546e230a341d3f4ffc57f1343db2a923c3a2272dc31",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "verification-wave1/correction/filter-probe.stderr",
+      "raw_sha256": "0616b290cbdf0ab2dd25abb3086378c63c00c1b873de3d3434c94395b919d199",
+      "public_sha256": "0616b290cbdf0ab2dd25abb3086378c63c00c1b873de3d3434c94395b919d199",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "verification-wave1/correction/filter-probe.stdout",
+      "raw_sha256": "722530b3c98661d2e5ab75e5a6c93150fe59ef2958fc033e40e863bc3cd077b3",
+      "public_sha256": "722530b3c98661d2e5ab75e5a6c93150fe59ef2958fc033e40e863bc3cd077b3",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "verification-wave1/correction/preflight-plan.stderr",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "verification-wave1/correction/preflight-plan.stdout",
+      "raw_sha256": "69e88530ef58ae72c8636527d2598d8f9365a55e94746fda4aa1a28a0ce005e3",
+      "public_sha256": "69e88530ef58ae72c8636527d2598d8f9365a55e94746fda4aa1a28a0ce005e3",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "verification-wave1/correction/preflight-review.stderr",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "verification-wave1/correction/preflight-review.stdout",
+      "raw_sha256": "0f20a5330d0bfa0791f388a93b1a0d56a1dbc4df8cade38df4c5fd23c0caea76",
+      "public_sha256": "0f20a5330d0bfa0791f388a93b1a0d56a1dbc4df8cade38df4c5fd23c0caea76",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "verification-wave1/correction/preflight-ux.stderr",
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "verification-wave1/correction/preflight-ux.stdout",
+      "raw_sha256": "3727e15d9b9b2041824696ddc6e0bcf8aff75f1fafe1052e654f9019a4fcad3d",
+      "public_sha256": "3727e15d9b9b2041824696ddc6e0bcf8aff75f1fafe1052e654f9019a4fcad3d",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "verification-wave1/correction/sources-after.json",
+      "raw_sha256": "43d98e955c50653a80ac07189fa989ff30bb900a0ee75e57626400f383434d4d",
+      "public_sha256": "43d98e955c50653a80ac07189fa989ff30bb900a0ee75e57626400f383434d4d",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "verification-wave1/correction/sources-before.json",
+      "raw_sha256": "9e46d5f215d92ddbdaa11c8b37843b8fb081f594e9f5700fa92c8a194a6aa23a",
+      "public_sha256": "9e46d5f215d92ddbdaa11c8b37843b8fb081f594e9f5700fa92c8a194a6aa23a",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "verification-wave1/redaction.txt",
+      "raw_sha256": "67e7971e36705ea6af7b930660ea213ecc52bdda76d264e8f557b5d992d8d911",
+      "public_sha256": "67e7971e36705ea6af7b930660ea213ecc52bdda76d264e8f557b5d992d8d911",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "verification-wave1/verified.json",
+      "raw_sha256": "00e7ec2d843912f2253069d5b84f04eaf11379f4bae998ba2de8f005b242aa99",
+      "public_sha256": "00e7ec2d843912f2253069d5b84f04eaf11379f4bae998ba2de8f005b242aa99",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "verification-wave3/REPORT.md",
+      "raw_sha256": "a544fa9cc06e72d4dbbef7b15c62523e94d57b1ae3fe37a85cc6284e4e6adbb8",
+      "public_sha256": "a544fa9cc06e72d4dbbef7b15c62523e94d57b1ae3fe37a85cc6284e4e6adbb8",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "verification-wave3/candidates.json",
+      "raw_sha256": "a1781bfae78a8720e320156582413cfcc7933ed6393183d94af4afcbcfd71158",
+      "public_sha256": "a1781bfae78a8720e320156582413cfcc7933ed6393183d94af4afcbcfd71158",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "verification-wave3/checks/commands.json",
+      "raw_sha256": "f4f7628cd64235cbf699f1ed9d923b4372aca4361b7529212d176078d2510cac",
+      "public_sha256": "fc97836877a22a028c514c99cb3d75a3b80e166fc2788fe10f1b879f51368a39",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "verification-wave3/checks/final-validation.json",
+      "raw_sha256": "29ee619e5709a18d2a82ec85225c975cf28c095dc3c1263059b3c936db22b4d9",
+      "public_sha256": "29ee619e5709a18d2a82ec85225c975cf28c095dc3c1263059b3c936db22b4d9",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "verification-wave3/checks/results.json",
+      "raw_sha256": "803f1fc7d30c60867c2d2280af8225dc6232e34e2d2125cda14fd2ba31d66c6b",
+      "public_sha256": "803f1fc7d30c60867c2d2280af8225dc6232e34e2d2125cda14fd2ba31d66c6b",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "verification-wave3/claims.json",
+      "raw_sha256": "a1781bfae78a8720e320156582413cfcc7933ed6393183d94af4afcbcfd71158",
+      "public_sha256": "a1781bfae78a8720e320156582413cfcc7933ed6393183d94af4afcbcfd71158",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "verification-wave3/redaction.txt",
+      "raw_sha256": "f0cdbc8ba07ff8c02eeff3d247478dc41eac00476fe70f356367e572073b06d6",
+      "public_sha256": "f0cdbc8ba07ff8c02eeff3d247478dc41eac00476fe70f356367e572073b06d6",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "verification-wave3/verified.json",
+      "raw_sha256": "663ed51d7eb96de97b2f96dc235bcf30894f2028dcaf96c20135564379abf3cd",
+      "public_sha256": "663ed51d7eb96de97b2f96dc235bcf30894f2028dcaf96c20135564379abf3cd",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "verification-wave4/REPORT.md",
+      "raw_sha256": "0638b238a94fcef853ed04043f6cd499df7c4e4a1795fbc700196c03ffb680a9",
+      "public_sha256": "0638b238a94fcef853ed04043f6cd499df7c4e4a1795fbc700196c03ffb680a9",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "verification-wave4/candidates.json",
+      "raw_sha256": "6c54af41e26a508926092e4b85946289dbe61c85716f88461fb7c96898aa4387",
+      "public_sha256": "6c54af41e26a508926092e4b85946289dbe61c85716f88461fb7c96898aa4387",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "verification-wave4/claims.json",
+      "raw_sha256": "6c54af41e26a508926092e4b85946289dbe61c85716f88461fb7c96898aa4387",
+      "public_sha256": "6c54af41e26a508926092e4b85946289dbe61c85716f88461fb7c96898aa4387",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "verification-wave4/finding-lint.json",
+      "raw_sha256": "6baaaf2c8ae9c02d41c0204906e5f7e1265996dc13633ed541154de09d471aed",
+      "public_sha256": "8c823cdaa339f17e4340113a441f4ff6e167d2cf665ed1dc29346e2934898ee1",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "verification-wave4/read-only-checks.json",
+      "raw_sha256": "add4609661c7ecd334e059893ca8b7dc6e508007ad4971f5dbee5b424d9f7d7a",
+      "public_sha256": "0ae2bc43f4e0b8baab6b9f6ee4af533d548aee03357b456d6cc81af9d79703cc",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "verification-wave4/timing-and-integrity.json",
+      "raw_sha256": "8ce5cfc27a6fcbc175cb95e3abb65dfa57e42c8eb4f2e4e4b181988d9e832d5b",
+      "public_sha256": "8ce5cfc27a6fcbc175cb95e3abb65dfa57e42c8eb4f2e4e4b181988d9e832d5b",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "verification-wave4/verified.json",
+      "raw_sha256": "fd0a1449d8c05d4d30280b26bf1496e827ee9f24eacbb2b16f5317bea42ce692",
+      "public_sha256": "fd0a1449d8c05d4d30280b26bf1496e827ee9f24eacbb2b16f5317bea42ce692",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "verification-final/REPORT.md",
+      "raw_sha256": "59b54fef5f6cdb912f2302c365cf4c6d09ccf328dc47411192d24d5ac69cb78a",
+      "public_sha256": "59b54fef5f6cdb912f2302c365cf4c6d09ccf328dc47411192d24d5ac69cb78a",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "verification-final/final-checks.json",
+      "raw_sha256": "68ea9c73b64742402d3200dc9c88039f743d3b03d7eb6fa63c0ffe8d8801ca09",
+      "public_sha256": "68ea9c73b64742402d3200dc9c88039f743d3b03d7eb6fa63c0ffe8d8801ca09",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "verification-final/read-only-checks.json",
+      "raw_sha256": "d0befe28ca7721fc00c251b32b128818e0d7e7b790d8e3ec2c2aa3d9f8e5766d",
+      "public_sha256": "d0befe28ca7721fc00c251b32b128818e0d7e7b790d8e3ec2c2aa3d9f8e5766d",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "verification-final/timing.json",
+      "raw_sha256": "a4e30fb20f7bbbddceb242b02b1dfe14724f092f29f9ca058b0fc0c7a845f33b",
+      "public_sha256": "a4e30fb20f7bbbddceb242b02b1dfe14724f092f29f9ca058b0fc0c7a845f33b",
+      "transformation": "Selected independent report/check receipt; normalize only declared private root prefixes. Verdicts and observations unchanged."
+    },
+    {
+      "path": "verification-wave2/verified.json",
+      "raw_sha256": "526405d1490da12920da33b779568c40c9fcef18df03c5206dfc149cae1024b1",
+      "public_sha256": "526405d1490da12920da33b779568c40c9fcef18df03c5206dfc149cae1024b1",
+      "transformation": "Selected independent disposition; normalize private campaign prefix only. No website source or full browser trace."
+    },
+    {
+      "path": "verification-wave2/REPORT.md",
+      "raw_sha256": "bfe2ff84720c20c660d05d511041765d4df03d0bf19126d17a78a15e19ee5b92",
+      "public_sha256": "bfe2ff84720c20c660d05d511041765d4df03d0bf19126d17a78a15e19ee5b92",
+      "transformation": "Selected independent disposition; normalize private campaign prefix only. No website source or full browser trace."
+    },
+    {
+      "path": "qualification-decisions.json",
+      "raw_sha256": "b06a38ed4a193e4fb6e17433f42437f757ed889001c755a3eed5c9718fbf6cec",
+      "public_sha256": "b06a38ed4a193e4fb6e17433f42437f757ed889001c755a3eed5c9718fbf6cec",
+      "transformation": "Actual separate final qualification; declared private root prefixes normalized only. Original method declarations remain unchanged."
+    },
+    {
+      "path": "verification-final/export-closure-check.json",
+      "raw_sha256": "705672a8d9237369912d1818dd077d6e66b97f3c68d89daa09e6204b87fb360f",
+      "public_sha256": "705672a8d9237369912d1818dd077d6e66b97f3c68d89daa09e6204b87fb360f",
+      "transformation": "Separate actual export-only companion verification, exact private root prefixes normalized only. No original verdict changed."
+    },
+    {
+      "path": "verification-final/export-closure-check.md",
+      "raw_sha256": "60cfce23ad51ada797628291f0a0fff918772d1810454b18899fe9632ec2896b",
+      "public_sha256": "60cfce23ad51ada797628291f0a0fff918772d1810454b18899fe9632ec2896b",
+      "transformation": "Separate actual export-only companion verification, exact private root prefixes normalized only. No original verdict changed."
+    }
+  ],
+  "neutral_mapping": {
+    "R1-baseline": "N14",
+    "R1-generic": "N03",
+    "R1-derived": "N09",
+    "P1-generic": "N02",
+    "P1-derived": "N17",
+    "P1-baseline": "N06",
+    "U1-derived": "N12",
+    "U1-baseline": "N05",
+    "U1-generic": "N16",
+    "R2-derived": "N01",
+    "R2-generic": "N10",
+    "R2-baseline": "N08",
+    "P2-baseline": "N18",
+    "P2-derived": "N04",
+    "P2-generic": "N13",
+    "U2-generic": "N07",
+    "U2-baseline": "N15",
+    "U2-derived": "N11"
+  },
+  "limits": [
+    "Assessment content reveals conditions; not blinded.",
+    "Criteria frozen before trials, qualitative operational grading interpretation disclosed after outputs; no standardized score or generalized winner.",
+    "Earlier candidate findings and later refutations are both retained. Qualification must follow the separate verifier, not silently adopt the first evaluator.",
+    "Mapped inputs preserve exact supplied evaluator bytes. Raw original CLI traces and private website source excluded."
+  ]
+}

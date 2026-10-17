@@ -1,0 +1,13 @@
+{
+  "argv": [
+    "node",
+    "scripts/redact-for-verifier.mjs",
+    "/workspace/output/findings.json"
+  ],
+  "cwd": "/workspace/worker/.agents/skills/qore-review",
+  "started_at": "2026-10-17T11:22:28.047560+00:00",
+  "completed_at": "2026-10-17T11:22:29.149321+00:00",
+  "exit_code": 0,
+  "stdout_path": "claims.json",
+  "stderr": "redact-for-verifier: 3 claims; withheld fields: proposed_correction, rationale, uncertainty.\n"
+}

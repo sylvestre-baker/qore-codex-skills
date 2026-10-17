@@ -1,0 +1,61 @@
+{
+  "schema": "qore-pilot-gate/1",
+  "observed_at": "2026-10-17T10:23:26.273775+00:00",
+  "operator": "parent operator; mechanical feasibility gate, not independent quality assessment",
+  "decision": "CONTINUE",
+  "checks": [
+    {
+      "condition": "baseline",
+      "record_sha256": "e38299a5b5ecd7352f4ac46bace2b442a1e480ef3a8809eb9e9c918e37fe861d",
+      "coverage": "COMPLETE",
+      "wall_seconds": 124.550855,
+      "conservative_observed_context_interval_upper_bound_seconds": 122.934387,
+      "limit": "Clock-bracketed context intervals, not measured model compute or cost.",
+      "phases": []
+    },
+    {
+      "condition": "generic",
+      "record_sha256": "feca5acb33a95090c3764d3b1fb56ca159f54aff2ec557062ffc08a71d2ef7e3",
+      "coverage": "COMPLETE",
+      "wall_seconds": 358.931276,
+      "conservative_observed_context_interval_upper_bound_seconds": 756.973469,
+      "limit": "Clock-bracketed context intervals, not measured model compute or cost.",
+      "phases": [
+        "finder.correctness",
+        "finder.security",
+        "finder.feasibility",
+        "redaction",
+        "verifier",
+        "findings_validation"
+      ]
+    },
+    {
+      "condition": "derived",
+      "record_sha256": "7df3a9c11bf803bf3dd351568756b76752e4d8615dfcfec1ef4dd9afcfe2a041",
+      "coverage": "COMPLETE",
+      "wall_seconds": 367.778374,
+      "conservative_observed_context_interval_upper_bound_seconds": 828.511204,
+      "limit": "Clock-bracketed context intervals, not measured model compute or cost.",
+      "phases": [
+        "profile_preflight",
+        "finder.correctness",
+        "finder.security",
+        "finder.feasibility",
+        "redaction",
+        "verifier",
+        "findings_validation"
+      ]
+    }
+  ],
+  "same_runtime_signature": "f585dc96d09172299f9ffce89a802edf6fa980f8a47ca6bfaced7c8d9f297119",
+  "same_authoritative_target_bytes": true,
+  "quality_used_to_select_continuation": false,
+  "excluded_pilot": [],
+  "remaining_cells": 15,
+  "limitations": [
+    "No comparative quality or efficiency conclusion.",
+    "Actual aggregate model/child usage remains unavailable; bounded observed context windows retained.",
+    "Native CLI exports incomplete child lifecycle events; setup inheritance and actual full role reports support the bounded trial scope.",
+    "UX relay has a separate actual empty-action capability run; real guard positive/refusal controls are not comparative cells."
+  ]
+}

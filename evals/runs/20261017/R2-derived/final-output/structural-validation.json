@@ -1,0 +1,24 @@
+{
+  "argv": [
+    "python3",
+    "scripts/run-check.py",
+    "/workspace/output/execution.json",
+    "--evidence-root",
+    "/workspace/output/evidence"
+  ],
+  "cwd": "/workspace/worker/.agents/skills/qore-review-qaizen-labs",
+  "exit_code": 0,
+  "started_at": "2026-10-17T11:19:13.279822+00:00",
+  "finished_at": "2026-10-17T11:19:13.561209+00:00",
+  "execution_sha256": "9cee6afbeb91b691342742e6f4c0a64eb5e6969512db333a81dc2d6b6ea5492a",
+  "stdout_artifact": "run-check.json",
+  "stdout_sha256": "31949f434d0b0f5c7af25d76c274010eb47216207720dee81d328e675c85b164",
+  "stderr": "",
+  "result": {
+    "valid": true,
+    "coverage": "COMPLETE",
+    "missing_phases": [],
+    "artifact_count": 55,
+    "note": "Evidence identity and declared phase coverage checked; factual quality is not certified."
+  }
+}

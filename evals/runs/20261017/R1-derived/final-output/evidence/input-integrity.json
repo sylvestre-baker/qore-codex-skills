@@ -1,0 +1,109 @@
+{
+  "observed_at": "2026-10-17T10:21:35.651765+00:00",
+  "procedure": "Final exact-byte SHA-256 comparison against initial manifest.",
+  "all_unchanged": true,
+  "files": [
+    {
+      "path": ".agents/skills/qore-review-qaizen-labs/SKILL.md",
+      "expected_sha256": "eb84df209a56465c7d5aa8caa4ae20d6ad56cbb70121cf474706a587948cd1c3",
+      "actual_sha256": "eb84df209a56465c7d5aa8caa4ae20d6ad56cbb70121cf474706a587948cd1c3",
+      "unchanged": true
+    },
+    {
+      "path": ".agents/skills/qore-review-qaizen-labs/agents/openai.yaml",
+      "expected_sha256": "322a16d228ce0020f05d273ff5b50a85aaa771ba4421d623e655afca0ac31a5c",
+      "actual_sha256": "322a16d228ce0020f05d273ff5b50a85aaa771ba4421d623e655afca0ac31a5c",
+      "unchanged": true
+    },
+    {
+      "path": ".agents/skills/qore-review-qaizen-labs/references/findings.md",
+      "expected_sha256": "f9f9035e471c9832c6546e80e4fe857777fefceba781bd5801ee8f97bdeaa409",
+      "actual_sha256": "f9f9035e471c9832c6546e80e4fe857777fefceba781bd5801ee8f97bdeaa409",
+      "unchanged": true
+    },
+    {
+      "path": ".agents/skills/qore-review-qaizen-labs/references/project-profile.md",
+      "expected_sha256": "5d3b69aac18f83a634f4c57c214cc1f53fa186c03c536adcefd4c905a8767c8d",
+      "actual_sha256": "5d3b69aac18f83a634f4c57c214cc1f53fa186c03c536adcefd4c905a8767c8d",
+      "unchanged": true
+    },
+    {
+      "path": ".agents/skills/qore-review-qaizen-labs/references/project.json",
+      "expected_sha256": "f76afdd45cb6352e5044a06affc4182ea6cd40aa9c012fb216636a61faa428f0",
+      "actual_sha256": "f76afdd45cb6352e5044a06affc4182ea6cd40aa9c012fb216636a61faa428f0",
+      "unchanged": true
+    },
+    {
+      "path": ".agents/skills/qore-review-qaizen-labs/references/protocol.md",
+      "expected_sha256": "e27e0050fdf4d75d2840dd257b9a759f1f48d459ef540990cd3aed5528c5f340",
+      "actual_sha256": "e27e0050fdf4d75d2840dd257b9a759f1f48d459ef540990cd3aed5528c5f340",
+      "unchanged": true
+    },
+    {
+      "path": ".agents/skills/qore-review-qaizen-labs/references/release.json",
+      "expected_sha256": "5c1a3aa6d7cb18e15adc606625e856b52834b45452cf39b7e1497143d28d7ddf",
+      "actual_sha256": "5c1a3aa6d7cb18e15adc606625e856b52834b45452cf39b7e1497143d28d7ddf",
+      "unchanged": true
+    },
+    {
+      "path": ".agents/skills/qore-review-qaizen-labs/references/run-evidence.md",
+      "expected_sha256": "fbdf433ef8b3e972f97bed5fdec4990cf3b49535bf63120c729a7daf4af71746",
+      "actual_sha256": "fbdf433ef8b3e972f97bed5fdec4990cf3b49535bf63120c729a7daf4af71746",
+      "unchanged": true
+    },
+    {
+      "path": ".agents/skills/qore-review-qaizen-labs/scripts/finding-lint.mjs",
+      "expected_sha256": "d3d22ae7d0b1b6b53b36006f13a8aaf6e1aa9e89df27b98312e6ac72ea079a26",
+      "actual_sha256": "d3d22ae7d0b1b6b53b36006f13a8aaf6e1aa9e89df27b98312e6ac72ea079a26",
+      "unchanged": true
+    },
+    {
+      "path": ".agents/skills/qore-review-qaizen-labs/scripts/project-check.py",
+      "expected_sha256": "d87afa433fe485bdebca3e281d06e0896e4a8980ea7cf7baee739053614ea0ac",
+      "actual_sha256": "d87afa433fe485bdebca3e281d06e0896e4a8980ea7cf7baee739053614ea0ac",
+      "unchanged": true
+    },
+    {
+      "path": ".agents/skills/qore-review-qaizen-labs/scripts/redact-for-verifier.mjs",
+      "expected_sha256": "dc249524c749ad5b511aef0a2cf08b4cfd5c47c1e0de4fd41c5c70746b471083",
+      "actual_sha256": "dc249524c749ad5b511aef0a2cf08b4cfd5c47c1e0de4fd41c5c70746b471083",
+      "unchanged": true
+    },
+    {
+      "path": ".agents/skills/qore-review-qaizen-labs/scripts/run-check.py",
+      "expected_sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+      "actual_sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+      "unchanged": true
+    },
+    {
+      "path": "TASK.md",
+      "expected_sha256": "d3ce29449ae03b8f5705947a577786f7a829c8440733637f4cfb5555cab2fc18",
+      "actual_sha256": "d3ce29449ae03b8f5705947a577786f7a829c8440733637f4cfb5555cab2fc18",
+      "unchanged": true
+    },
+    {
+      "path": "checks/check_contract.py",
+      "expected_sha256": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b",
+      "actual_sha256": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b",
+      "unchanged": true
+    },
+    {
+      "path": "observation-policy.json",
+      "expected_sha256": "15f4e5b4960b5011684be265f027e42b8637a3b8aae96b24bba1ba3a4d0f0202",
+      "actual_sha256": "15f4e5b4960b5011684be265f027e42b8637a3b8aae96b24bba1ba3a4d0f0202",
+      "unchanged": true
+    },
+    {
+      "path": "surface-contract.json",
+      "expected_sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+      "actual_sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+      "unchanged": true
+    },
+    {
+      "path": "target/verification-protocol.md",
+      "expected_sha256": "b8d1f4ad7bd691dbf8f019cd3b87a7644a21899e6317edebac545fd3b245136e",
+      "actual_sha256": "b8d1f4ad7bd691dbf8f019cd3b87a7644a21899e6317edebac545fd3b245136e",
+      "unchanged": true
+    }
+  ]
+}

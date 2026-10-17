@@ -1,0 +1,94 @@
+[
+  {
+    "id": "G0",
+    "score": 4,
+    "status": "PASS",
+    "iteration": 2,
+    "reason": "Public entry click and correct introduction rendered in each context; no authenticated context in supplied scope.",
+    "evidence": [
+      "relay-1/01-labs-entry.png",
+      "relay-1/02-introduction.dom.json",
+      "relay-3/events.json"
+    ]
+  },
+  {
+    "id": "G1",
+    "score": 4,
+    "status": "PASS",
+    "iteration": 2,
+    "reason": "Valid deep-route GET document200 on reload; history Back/Forward observed appropriate headings and no render/page errors. No parameterized states in supplied journey.",
+    "evidence": [
+      "relay-3/events.json",
+      "relay-3/01-deep-route-reloaded-introduction.dom.json",
+      "relay-3/02-history-back-labs.dom.json",
+      "relay-3/03-history-forward-introduction.dom.json"
+    ]
+  },
+  {
+    "id": "G2",
+    "score": 4,
+    "status": "PASS",
+    "iteration": 2,
+    "reason": "Actual unanswered question and help terminal states exercised. Help is local, synchronous UI; no pending save/optimistic write in authorized journey. Analytics failure did not strand UI. Answered/results/error-data permutations outside explicit scope.",
+    "evidence": [
+      "relay-2/events.json",
+      "relay-3/events.json",
+      "required-check-results.json"
+    ]
+  },
+  {
+    "id": "G3",
+    "score": 3,
+    "status": "FAIL",
+    "iteration": 2,
+    "reason": "UX-1: cookie banner overlaps focused Back label and most outline in inspected pixels. Principal content otherwise readable in declared desktop/default theme; no responsive generalization.",
+    "evidence": [
+      "inspection-1.json",
+      "inspection-2.json",
+      "inspection-3.json",
+      "relay-3/06-back-focus-repeat-tab.png"
+    ]
+  },
+  {
+    "id": "G4",
+    "score": 4,
+    "status": "PASS",
+    "iteration": 2,
+    "reason": "Inspected entry, introduction, question, help text/examples and returned introduction. Labels/instructions meaningful; no exposed implementation values found in inspected content. Does not certify all questionnaire copy.",
+    "evidence": [
+      "relay-1/02-introduction.dom.json",
+      "relay-2/02-help-open-enter.dom.json",
+      "relay-3/07-challenge-returned-introduction.dom.json"
+    ]
+  },
+  {
+    "id": "G5",
+    "score": 3,
+    "status": "FAIL",
+    "iteration": 2,
+    "reason": "UX-1: poor Back focus visibility. Keyboard help, Close restoration and Back/heading restoration all work; summary and Close visibly outlined. Full accessibility/contrast/screen-reader certification not performed.",
+    "evidence": [
+      "relay-2/events.json",
+      "relay-2/05-after-close-focus-restoration.png",
+      "relay-3/events.json",
+      "relay-3/06-back-focus-repeat-tab.png"
+    ]
+  },
+  {
+    "id": "G6",
+    "score": 4,
+    "status": "PASS",
+    "iteration": 2,
+    "reason": "Challenged keyboard-proof versus probe-only claim, distinct Close/Back destinations, focus visibility, repeated forward/reverse Tab and stale-route risk. Visibility claim failed; affected gates scored3 rather than averaging away defect.",
+    "evidence": [
+      "inspection-2.json",
+      "inspection-3.json",
+      "relay-3/events.json"
+    ]
+  },
+  {
+    "id": "GP",
+    "status": "EXCLUDED",
+    "reason": "No performance requirement/change in explicit Back-journey scope; no performance claim."
+  }
+]

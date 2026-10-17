@@ -1,0 +1,14 @@
+{
+  "exit_code": 0,
+  "outputs": [
+    "REPORT.md",
+    "checks.json",
+    "input-integrity.json",
+    "run-record.json",
+    "verification-protocol.proposed.md",
+    "write-canary"
+  ],
+  "inputs_unchanged": true,
+  "completed_at": "2026-10-17T10:53:57.486524+00:00",
+  "trial_id": "qore003-20261017-p1-baseline-1"
+}

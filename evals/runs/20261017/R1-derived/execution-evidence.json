@@ -1,0 +1,443 @@
+{
+  "schema": "qore-eval-evidence/1",
+  "run_id": "qore003-20261017-r1-derived-1",
+  "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+  "input_manifest_sha256": "e5f7338342cd59473e3270db3f6632505b9da5b21c93220ca745734c0edd3f45",
+  "observed_at": "2026-10-17T10:21:47.206747+00:00",
+  "payload": {
+    "actual_launch": {
+      "started_at": "2026-10-17T10:15:40.695543+00:00",
+      "argv": [
+        "docker",
+        "exec",
+        "-i",
+        "--workdir",
+        "/workspace/worker",
+        "qore-qualification-qore003-20261017-r1-derived-1",
+        "codex",
+        "--ask-for-approval",
+        "never",
+        "exec",
+        "--ignore-user-config",
+        "--ignore-rules",
+        "--ephemeral",
+        "--json",
+        "--skip-git-repo-check",
+        "--strict-config",
+        "-m",
+        "gpt-6.1-sol",
+        "-c",
+        "default_permissions=\"qore-trial\"",
+        "-c",
+        "permissions.qore-trial.extends=\":workspace\"",
+        "-c",
+        "permissions.qore-trial.filesystem={\":root\"=\"deny\",\":minimal\"=\"read\",\":tmpdir\"=\"write\",\":slash_tmp\"=\"write\",\":workspace_roots\"={\".\"=\"read\"},\"/workspace/output\"=\"write\"}",
+        "-c",
+        "permissions.qore-trial.network.enabled=false",
+        "-c",
+        "allow_login_shell=false",
+        "-c",
+        "web_search=\"disabled\"",
+        "-c",
+        "model_reasoning_effort=\"high\"",
+        "-c",
+        "service_tier=\"default\"",
+        "-c",
+        "features.multi_agent=true",
+        "-c",
+        "agents.max_threads=3",
+        "-c",
+        "features.apps=false",
+        "-c",
+        "features.plugins=false",
+        "-c",
+        "features.remote_plugin=false",
+        "-c",
+        "features.memories=false",
+        "-c",
+        "features.skill_search=false",
+        "-c",
+        "features.skill_mcp_dependency_install=false",
+        "-c",
+        "features.request_permissions_tool=false",
+        "-c",
+        "mcp_servers={}",
+        "-"
+      ],
+      "prompt_sha256": "cbf1c17497a474285ff465f2845949d298219d6293bf7c13cebf9b1dc5d80ee5"
+    },
+    "actual_exit": {
+      "started_at": "2026-10-17T10:15:40.695543+00:00",
+      "ended_at": "2026-10-17T10:21:47.206747+00:00",
+      "exit_code": 0
+    },
+    "native_parent_usage": {
+      "input_tokens": 1430589,
+      "cached_input_tokens": 1321600,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 17507,
+      "reasoning_output_tokens": 4617
+    },
+    "outputs": [
+      {
+        "path": "final-output/REPORT.md",
+        "sha256": "acf6977342ec872df594a901372a5de580312d117fd3ea5bc6ff0ab5781cd812"
+      },
+      {
+        "path": "final-output/build_execution.py",
+        "sha256": "bbe8dfe9c8f65aaf477cba4af6699b299fd3c9cf8ffb3e87d486f5d9536d656e"
+      },
+      {
+        "path": "final-output/evidence/capabilities.json",
+        "sha256": "c6f89880f4d56b678fd2dad4a6921b4e6d31b5bf8c351244a47dc795592f8232"
+      },
+      {
+        "path": "final-output/evidence/claims.json",
+        "sha256": "583561c20ba9c44ae855b10bbf8a99f19ddcaeed3de99d0ce8f616f4ab4556f3"
+      },
+      {
+        "path": "final-output/evidence/collection.json",
+        "sha256": "3f940b6933c177e84a680c3e1069a75441551e1a6b1fba371427ce6dddfd4fc9"
+      },
+      {
+        "path": "final-output/evidence/contract-check.json",
+        "sha256": "7f557ba27626c65e7eb10c7b17773f82e9feae273715b633b694723f87b3c1ee"
+      },
+      {
+        "path": "final-output/evidence/execution.json",
+        "sha256": "14285f8968b2dabae2a6b8abcc87258d01690b9f2baf4b9be6edb5c32be21e74"
+      },
+      {
+        "path": "final-output/evidence/finder-correctness-contrary-search.json",
+        "sha256": "599430cd06ece2e01371df7dfa03658c7703e58c1862149c1cb2176f9b477593"
+      },
+      {
+        "path": "final-output/evidence/finder-correctness-source-audit.json",
+        "sha256": "e3d55c1570ff13f33cc0306cc5a71d4aa70d714c51566021468974959f661c38"
+      },
+      {
+        "path": "final-output/evidence/finder-correctness.json",
+        "sha256": "583561c20ba9c44ae855b10bbf8a99f19ddcaeed3de99d0ce8f616f4ab4556f3"
+      },
+      {
+        "path": "final-output/evidence/finder-correctness.md",
+        "sha256": "ec422638a2fcfaae5f43110b0bab35a7665aaab238121c942d22baa208fc93e8"
+      },
+      {
+        "path": "final-output/evidence/finder-feasibility-checker-output.json",
+        "sha256": "735c031bced5f7bec24da38ffc73925b1dcde069cb4e949e7661197ec25a5549"
+      },
+      {
+        "path": "final-output/evidence/finder-feasibility-source-output.json",
+        "sha256": "a583bcf9431cee7ac8b8283cf07e988bee7abb88c971b21c15f70c6b464fe50c"
+      },
+      {
+        "path": "final-output/evidence/finder-feasibility.json",
+        "sha256": "b09631df80c3a43ecfe3270bde14f59ae316a429fb0dfabfa91d1f12c67a1232"
+      },
+      {
+        "path": "final-output/evidence/finder-feasibility.md",
+        "sha256": "95bc299776663077b4035bf2dcc49fe65198ec43daff4abd2aabfad27e5cf9d9"
+      },
+      {
+        "path": "final-output/evidence/finder-security-source-audit.txt",
+        "sha256": "b288bdd1ef4879e0c54e7c95c68a91982e015b15bcefe1c65a06810d0de2745a"
+      },
+      {
+        "path": "final-output/evidence/finder-security.json",
+        "sha256": "62a9935c87d8d70e9392ffbc2c88fa32a9399ffa8b38eb01b71fcbb4c90043ad"
+      },
+      {
+        "path": "final-output/evidence/finder-security.md",
+        "sha256": "425655e498511247fc1db5b37ed3124941e7bf61d44627776653f90c314c1b6b"
+      },
+      {
+        "path": "final-output/evidence/finding-lint.json",
+        "sha256": "f00daac79f1321a399d4c92e2b5befc08352108a5bc3f914295e27c3a962aa11"
+      },
+      {
+        "path": "final-output/evidence/findings.json",
+        "sha256": "0c048baaf2106ebc4637cfe7b0507625256245d4b5cfd373baaa3f6cf097a775"
+      },
+      {
+        "path": "final-output/evidence/identity.json",
+        "sha256": "c347225104eecc8fa598b94baa2f8ac10dd21e502532c4f02c6431fbee91003b"
+      },
+      {
+        "path": "final-output/evidence/input-integrity.json",
+        "sha256": "1a56312532f75ba344bf7d6ae8e56e5e01cf63e43feee30d746375176709c30c"
+      },
+      {
+        "path": "final-output/evidence/phase-finder-correctness.json",
+        "sha256": "fe615a595a73ca9e3cb63cc018ff054d5de0ba78376ef0f10ef4088d45a144fc"
+      },
+      {
+        "path": "final-output/evidence/phase-finder-feasibility.json",
+        "sha256": "97bbca58769dd6c6e3c988013b6ddf5dd7055ad9b30d0a9ad60cd884ea81434e"
+      },
+      {
+        "path": "final-output/evidence/phase-finder-security.json",
+        "sha256": "c587f7dddcfe54fc7bcd706d87a6c9acb017c9e677f096eb07efa2a64348ea0d"
+      },
+      {
+        "path": "final-output/evidence/phase-findings_validation.json",
+        "sha256": "da61665fea6f9a783e71000d703b23a8d4bd66c7bb08a33dd28531f29ce4b9aa"
+      },
+      {
+        "path": "final-output/evidence/phase-profile_preflight.json",
+        "sha256": "0e97a18cfff498d0769c1d9669dc617644830d895e04f2fc34817a34e007612e"
+      },
+      {
+        "path": "final-output/evidence/phase-redaction.json",
+        "sha256": "e1d18268b6818171022cc89878a6dca419990f8886feea020880978676c3896a"
+      },
+      {
+        "path": "final-output/evidence/phase-verifier.json",
+        "sha256": "267df4f4fee07238e23178b6447c1c6b8b46f72cdc8805b31928341d58b374f7"
+      },
+      {
+        "path": "final-output/evidence/profile-check.json",
+        "sha256": "6963bef24c3370dc2e782736ac44dd0291b138745fc110e507dadbfa30ad2cac"
+      },
+      {
+        "path": "final-output/evidence/profile-use.json",
+        "sha256": "a9663c783e12f5ba086582db084c38f9eb400a88e125555e52ca31dc9a24f531"
+      },
+      {
+        "path": "final-output/evidence/redaction-stderr.txt",
+        "sha256": "88f907579540f21a7f27d362159504c8d6554587114d81ef78eb70dd8cd3589d"
+      },
+      {
+        "path": "final-output/evidence/roster.json",
+        "sha256": "a24660183b85ea6fe3fb3140df731556ab55eaddfd75601e1c241c4a2f366ccd"
+      },
+      {
+        "path": "final-output/evidence/run-check-initial-stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "final-output/evidence/run-check-initial.json",
+        "sha256": "3039e6194ce1d7e236f44cc6857b766d60ab2869eb50f6b6ad533e7d19ca729e"
+      },
+      {
+        "path": "final-output/evidence/source/.agents/skills/qore-review-qaizen-labs/SKILL.md",
+        "sha256": "eb84df209a56465c7d5aa8caa4ae20d6ad56cbb70121cf474706a587948cd1c3"
+      },
+      {
+        "path": "final-output/evidence/source/.agents/skills/qore-review-qaizen-labs/agents/openai.yaml",
+        "sha256": "322a16d228ce0020f05d273ff5b50a85aaa771ba4421d623e655afca0ac31a5c"
+      },
+      {
+        "path": "final-output/evidence/source/.agents/skills/qore-review-qaizen-labs/references/findings.md",
+        "sha256": "f9f9035e471c9832c6546e80e4fe857777fefceba781bd5801ee8f97bdeaa409"
+      },
+      {
+        "path": "final-output/evidence/source/.agents/skills/qore-review-qaizen-labs/references/project-profile.md",
+        "sha256": "5d3b69aac18f83a634f4c57c214cc1f53fa186c03c536adcefd4c905a8767c8d"
+      },
+      {
+        "path": "final-output/evidence/source/.agents/skills/qore-review-qaizen-labs/references/project.json",
+        "sha256": "f76afdd45cb6352e5044a06affc4182ea6cd40aa9c012fb216636a61faa428f0"
+      },
+      {
+        "path": "final-output/evidence/source/.agents/skills/qore-review-qaizen-labs/references/protocol.md",
+        "sha256": "e27e0050fdf4d75d2840dd257b9a759f1f48d459ef540990cd3aed5528c5f340"
+      },
+      {
+        "path": "final-output/evidence/source/.agents/skills/qore-review-qaizen-labs/references/release.json",
+        "sha256": "5c1a3aa6d7cb18e15adc606625e856b52834b45452cf39b7e1497143d28d7ddf"
+      },
+      {
+        "path": "final-output/evidence/source/.agents/skills/qore-review-qaizen-labs/references/run-evidence.md",
+        "sha256": "fbdf433ef8b3e972f97bed5fdec4990cf3b49535bf63120c729a7daf4af71746"
+      },
+      {
+        "path": "final-output/evidence/source/.agents/skills/qore-review-qaizen-labs/scripts/finding-lint.mjs",
+        "sha256": "d3d22ae7d0b1b6b53b36006f13a8aaf6e1aa9e89df27b98312e6ac72ea079a26"
+      },
+      {
+        "path": "final-output/evidence/source/.agents/skills/qore-review-qaizen-labs/scripts/project-check.py",
+        "sha256": "d87afa433fe485bdebca3e281d06e0896e4a8980ea7cf7baee739053614ea0ac"
+      },
+      {
+        "path": "final-output/evidence/source/.agents/skills/qore-review-qaizen-labs/scripts/redact-for-verifier.mjs",
+        "sha256": "dc249524c749ad5b511aef0a2cf08b4cfd5c47c1e0de4fd41c5c70746b471083"
+      },
+      {
+        "path": "final-output/evidence/source/.agents/skills/qore-review-qaizen-labs/scripts/run-check.py",
+        "sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa"
+      },
+      {
+        "path": "final-output/evidence/source/TASK.md",
+        "sha256": "d3ce29449ae03b8f5705947a577786f7a829c8440733637f4cfb5555cab2fc18"
+      },
+      {
+        "path": "final-output/evidence/source/checks/check_contract.py",
+        "sha256": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b"
+      },
+      {
+        "path": "final-output/evidence/source/observation-policy.json",
+        "sha256": "15f4e5b4960b5011684be265f027e42b8637a3b8aae96b24bba1ba3a4d0f0202"
+      },
+      {
+        "path": "final-output/evidence/source/surface-contract.json",
+        "sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3"
+      },
+      {
+        "path": "final-output/evidence/source/target/verification-protocol.md",
+        "sha256": "b8d1f4ad7bd691dbf8f019cd3b87a7644a21899e6317edebac545fd3b245136e"
+      },
+      {
+        "path": "final-output/evidence/source-manifest.json",
+        "sha256": "5d91485524406ac9a449d6fbbd96b95d70684bc2c83b42f9e0ecc007a2c8b358"
+      },
+      {
+        "path": "final-output/evidence/timeline.json",
+        "sha256": "2864c1a40cc949abc14c8759a5def92b7481ef9a6bb5a3baffe1dc69dfa18e15"
+      },
+      {
+        "path": "final-output/evidence/verified.json",
+        "sha256": "f5d8dc48cfad6d140d0f90920349b09ffbad54ec3f86850dec8415e176a44c09"
+      },
+      {
+        "path": "final-output/evidence/verifier-check-command.json",
+        "sha256": "dc9551afb0de65a4da70dbadbbef5e4a07248684c491578ef094a87ab5eba955"
+      },
+      {
+        "path": "final-output/evidence/verifier-check-initial-command.json",
+        "sha256": "893522d32be96c914d44182b6d89714b5d56f50c7f15d65a83745dc79505eef7"
+      },
+      {
+        "path": "final-output/evidence/verifier-check-initial-stderr.txt",
+        "sha256": "15b9c0d6c2a279f513c4d8ebe3e8f823ac901ad5767d050466de0a5c5bc56a37"
+      },
+      {
+        "path": "final-output/evidence/verifier-check-initial-stdout.txt",
+        "sha256": "a547ce9e257c7ac410857ad24b1fe3c777e16744cd99bc5ef07a45134030819e"
+      },
+      {
+        "path": "final-output/evidence/verifier-check-stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "final-output/evidence/verifier-check-stdout.txt",
+        "sha256": "e75b273aa357c699cb2d641fe8b2112c4f6ac50819318e532cb49d1b0984f00c"
+      },
+      {
+        "path": "final-output/evidence/verifier-check.py",
+        "sha256": "bcb92fa2b1e4f18f4c38e250c66050df6ffd96b1902268ec19d157b46cbff18c"
+      },
+      {
+        "path": "final-output/evidence/verifier-commands.json",
+        "sha256": "ed4a14f78c7b3592fe584750070d87c3889488d3b2429bae0dbe2eeeb90c98c6"
+      },
+      {
+        "path": "final-output/evidence/verifier-examination.json",
+        "sha256": "9cfe72e4646b4301b4f710882cb7b26cbd44162aead957783274c2ba04435f04"
+      },
+      {
+        "path": "final-output/evidence/verifier-roster.json",
+        "sha256": "9cfe72e4646b4301b4f710882cb7b26cbd44162aead957783274c2ba04435f04"
+      },
+      {
+        "path": "final-output/evidence/verifier.md",
+        "sha256": "8a43914da1114d1fbcf6dad86f608e3792711dc80b0e17b8449be86f58ba1ab1"
+      },
+      {
+        "path": "final-output/execution.json",
+        "sha256": "14285f8968b2dabae2a6b8abcc87258d01690b9f2baf4b9be6edb5c32be21e74"
+      },
+      {
+        "path": "final-output/roster.json",
+        "sha256": "a24660183b85ea6fe3fb3140df731556ab55eaddfd75601e1c241c4a2f366ccd"
+      },
+      {
+        "path": "final-output/run-check-final-command.json",
+        "sha256": "7c25ff5d8c9f70e787207dd7fdb947b1f80e645cefd3f39c495de16b2580108c"
+      },
+      {
+        "path": "final-output/run-check-final-stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "final-output/run-check-final.json",
+        "sha256": "78bb48df7f20ea69476758a7219118222c5653f8b83cfd0051e0f3877e11f3e1"
+      },
+      {
+        "path": "final-output/write-canary",
+        "sha256": "2d711642b726b04401627ca9fbac32f5c8530fb1903cc4db02258717921a4881"
+      }
+    ],
+    "post_inputs": [
+      {
+        "path": ".agents/skills/qore-review-qaizen-labs/SKILL.md",
+        "sha256": "eb84df209a56465c7d5aa8caa4ae20d6ad56cbb70121cf474706a587948cd1c3"
+      },
+      {
+        "path": ".agents/skills/qore-review-qaizen-labs/agents/openai.yaml",
+        "sha256": "322a16d228ce0020f05d273ff5b50a85aaa771ba4421d623e655afca0ac31a5c"
+      },
+      {
+        "path": ".agents/skills/qore-review-qaizen-labs/references/findings.md",
+        "sha256": "f9f9035e471c9832c6546e80e4fe857777fefceba781bd5801ee8f97bdeaa409"
+      },
+      {
+        "path": ".agents/skills/qore-review-qaizen-labs/references/project-profile.md",
+        "sha256": "5d3b69aac18f83a634f4c57c214cc1f53fa186c03c536adcefd4c905a8767c8d"
+      },
+      {
+        "path": ".agents/skills/qore-review-qaizen-labs/references/project.json",
+        "sha256": "f76afdd45cb6352e5044a06affc4182ea6cd40aa9c012fb216636a61faa428f0"
+      },
+      {
+        "path": ".agents/skills/qore-review-qaizen-labs/references/protocol.md",
+        "sha256": "e27e0050fdf4d75d2840dd257b9a759f1f48d459ef540990cd3aed5528c5f340"
+      },
+      {
+        "path": ".agents/skills/qore-review-qaizen-labs/references/release.json",
+        "sha256": "5c1a3aa6d7cb18e15adc606625e856b52834b45452cf39b7e1497143d28d7ddf"
+      },
+      {
+        "path": ".agents/skills/qore-review-qaizen-labs/references/run-evidence.md",
+        "sha256": "fbdf433ef8b3e972f97bed5fdec4990cf3b49535bf63120c729a7daf4af71746"
+      },
+      {
+        "path": ".agents/skills/qore-review-qaizen-labs/scripts/finding-lint.mjs",
+        "sha256": "d3d22ae7d0b1b6b53b36006f13a8aaf6e1aa9e89df27b98312e6ac72ea079a26"
+      },
+      {
+        "path": ".agents/skills/qore-review-qaizen-labs/scripts/project-check.py",
+        "sha256": "d87afa433fe485bdebca3e281d06e0896e4a8980ea7cf7baee739053614ea0ac"
+      },
+      {
+        "path": ".agents/skills/qore-review-qaizen-labs/scripts/redact-for-verifier.mjs",
+        "sha256": "dc249524c749ad5b511aef0a2cf08b4cfd5c47c1e0de4fd41c5c70746b471083"
+      },
+      {
+        "path": ".agents/skills/qore-review-qaizen-labs/scripts/run-check.py",
+        "sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa"
+      },
+      {
+        "path": "TASK.md",
+        "sha256": "d3ce29449ae03b8f5705947a577786f7a829c8440733637f4cfb5555cab2fc18"
+      },
+      {
+        "path": "checks/check_contract.py",
+        "sha256": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b"
+      },
+      {
+        "path": "observation-policy.json",
+        "sha256": "15f4e5b4960b5011684be265f027e42b8637a3b8aae96b24bba1ba3a4d0f0202"
+      },
+      {
+        "path": "surface-contract.json",
+        "sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3"
+      },
+      {
+        "path": "target/verification-protocol.md",
+        "sha256": "b8d1f4ad7bd691dbf8f019cd3b87a7644a21899e6317edebac545fd3b245136e"
+      }
+    ],
+    "limit": "Retained actual output identities and execution receipts; this wrapper does not grade task correctness."
+  }
+}

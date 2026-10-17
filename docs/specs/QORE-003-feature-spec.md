@@ -1,6 +1,6 @@
 <!-- qore-spec/1 -->
 # QORE-003 — Bounded project-specialization diagnostic
-Status: accepted implementation specification. Runtime qualification and comparative observations remain pending.
+Status: implemented and executed on the recorded candidate; later independent qualification, partial coverage and separate corrections are documented in the result inventory. No general comparative benefit is established.
 Baseline: e9d74cfeadd299a52f66919598b8330d6225e947. One existing repository and proposed branch feat/specialization-evals.
 
 ## Outcome and sources

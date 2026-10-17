@@ -1,0 +1,210 @@
+{
+  "checked_at": "2026-10-17T12:06:28.893589+00:00",
+  "input_files_unchanged": true,
+  "requests": [
+    {
+      "request": 1,
+      "submitted_actions": 6,
+      "request_hash_matches": true,
+      "evidence_hash_mismatches": [],
+      "status": "COMPLETE",
+      "all_action_outcomes_completed_or_observed": true,
+      "recorded_action_count_including_probe_and_focus_steps": 7,
+      "network_origins": [
+        "https://qaizen.io"
+      ],
+      "network_methods": [
+        "GET"
+      ],
+      "non_readonly_network_events": [],
+      "blocked_mutations": [
+        {
+          "at": "2026-10-17T12:04:42.014Z",
+          "method": "POST",
+          "url": "https://qaizen.io/api/labs/readiness/event",
+          "reason": "Read-only probe policy"
+        }
+      ],
+      "page_errors": [],
+      "blocked_activations": [],
+      "blocked_navigation": [],
+      "route_errors": [],
+      "focus_steps": [],
+      "keyboard_activation_targets": []
+    },
+    {
+      "request": 2,
+      "submitted_actions": 33,
+      "request_hash_matches": true,
+      "evidence_hash_mismatches": [],
+      "status": "COMPLETE",
+      "all_action_outcomes_completed_or_observed": true,
+      "recorded_action_count_including_probe_and_focus_steps": 38,
+      "network_origins": [
+        "https://qaizen.io"
+      ],
+      "network_methods": [
+        "GET"
+      ],
+      "non_readonly_network_events": [],
+      "blocked_mutations": [
+        {
+          "at": "2026-10-17T12:05:21.840Z",
+          "method": "POST",
+          "url": "https://qaizen.io/api/labs/readiness/event",
+          "reason": "Read-only probe policy"
+        }
+      ],
+      "page_errors": [],
+      "blocked_activations": [],
+      "blocked_navigation": [],
+      "route_errors": [],
+      "focus_steps": [
+        {
+          "at": "2026-10-17T12:05:25.484Z",
+          "type": "focus-step",
+          "key": "Tab",
+          "step": 1,
+          "active_element": {
+            "tag": "BUTTON",
+            "id": "",
+            "text": "Every production source and flow is written down, with a named owner"
+          },
+          "reached": false,
+          "outcome": "observed"
+        },
+        {
+          "at": "2026-10-17T12:05:25.501Z",
+          "type": "focus-step",
+          "key": "Tab",
+          "step": 2,
+          "active_element": {
+            "tag": "SUMMARY",
+            "id": "",
+            "text": "What does this mean?"
+          },
+          "reached": true,
+          "outcome": "observed"
+        },
+        {
+          "at": "2026-10-17T12:05:37.299Z",
+          "type": "focus-step",
+          "key": "Tab",
+          "step": 1,
+          "active_element": {
+            "tag": "BUTTON",
+            "id": "",
+            "text": "Close"
+          },
+          "reached": true,
+          "outcome": "observed"
+        },
+        {
+          "at": "2026-10-17T12:05:43.994Z",
+          "type": "focus-step",
+          "key": "Tab",
+          "step": 1,
+          "active_element": {
+            "tag": "BUTTON",
+            "id": "",
+            "text": "Back"
+          },
+          "reached": true,
+          "outcome": "observed"
+        }
+      ],
+      "keyboard_activation_targets": [
+        {
+          "at": "2026-10-17T12:05:27.316Z",
+          "trigger": "Enter",
+          "control": "help-summary",
+          "allowed": true,
+          "target": {
+            "tag": "summary",
+            "id": null,
+            "role": "button",
+            "declared_role": null,
+            "name": "What does this mean?",
+            "text": "What does this mean?",
+            "type": null,
+            "href": null,
+            "visible": true,
+            "disabled": false
+          }
+        },
+        {
+          "at": "2026-10-17T12:05:31.204Z",
+          "trigger": "Space",
+          "control": "help-summary",
+          "allowed": true,
+          "target": {
+            "tag": "summary",
+            "id": null,
+            "role": "button",
+            "declared_role": null,
+            "name": "What does this mean?",
+            "text": "What does this mean?",
+            "type": null,
+            "href": null,
+            "visible": true,
+            "disabled": false
+          }
+        },
+        {
+          "at": "2026-10-17T12:05:34.265Z",
+          "trigger": "Enter",
+          "control": "help-summary",
+          "allowed": true,
+          "target": {
+            "tag": "summary",
+            "id": null,
+            "role": "button",
+            "declared_role": null,
+            "name": "What does this mean?",
+            "text": "What does this mean?",
+            "type": null,
+            "href": null,
+            "visible": true,
+            "disabled": false
+          }
+        },
+        {
+          "at": "2026-10-17T12:05:39.118Z",
+          "trigger": "Enter",
+          "control": "close",
+          "allowed": true,
+          "target": {
+            "tag": "button",
+            "id": null,
+            "role": "button",
+            "declared_role": null,
+            "name": "Close",
+            "text": "Close",
+            "type": "button",
+            "href": null,
+            "visible": true,
+            "disabled": false
+          }
+        },
+        {
+          "at": "2026-10-17T12:05:45.813Z",
+          "trigger": "Enter",
+          "control": "back",
+          "allowed": true,
+          "target": {
+            "tag": "button",
+            "id": null,
+            "role": "button",
+            "declared_role": null,
+            "name": "Back",
+            "text": "Back",
+            "type": "button",
+            "href": null,
+            "visible": true,
+            "disabled": false
+          }
+        }
+      ]
+    }
+  ]
+}

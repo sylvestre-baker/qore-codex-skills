@@ -3,4 +3,6 @@ __pycache__/
 .venv/
 dist/
 .agents/
+!evals/runs/20261017/**/.agents/
+!evals/runs/20261017/**/.agents/**
 .DS_Store

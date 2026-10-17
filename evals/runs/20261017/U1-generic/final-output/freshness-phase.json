@@ -1,0 +1,40 @@
+{
+  "qore_evidence": {
+    "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+    "target_snapshot_sha256": "ca02b75180a201ba8f9abb4e095a3d72cd0066f939e66c2e34bc7a781ad0c34d",
+    "observed_at": "2026-10-17T11:11:48.842837+00:00",
+    "phase_id": "freshness"
+  },
+  "payload": {
+    "actor_id": "/root",
+    "status": "PASS",
+    "last_relevant_change": "2026-10-17T09:53:58.681100+00:00",
+    "observation_windows": [
+      {
+        "request": 1,
+        "dispatch_utc": "2026-10-17T11:07:09.603835+00:00",
+        "return_utc": "2026-10-17T11:07:26.427753+00:00",
+        "consumed_utc": "2026-10-17T11:07:57.253980+00:00"
+      },
+      {
+        "request": 2,
+        "dispatch_utc": "2026-10-17T11:07:57.254096+00:00",
+        "return_utc": "2026-10-17T11:08:36.240227+00:00",
+        "consumed_utc": "2026-10-17T11:09:31.636542+00:00"
+      },
+      {
+        "request": 3,
+        "dispatch_utc": "2026-10-17T11:09:31.825250+00:00",
+        "return_utc": "2026-10-17T11:10:11.883489+00:00",
+        "consumed_utc": "2026-10-17T11:11:48.473685+00:00"
+      }
+    ],
+    "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+    "target_snapshot_sha256": "ca02b75180a201ba8f9abb4e095a3d72cd0066f939e66c2e34bc7a781ad0c34d",
+    "corrections": [],
+    "input_identity": "input-manifest.json",
+    "input_immutability": "immutability-check.json",
+    "source_revision_limit": "Supplied enclosing digests bind prepared inputs; no deployed source commit attested.",
+    "freshness": "All relay observations after last relevant change, within same recorded run. No correction invalidates evidence."
+  }
+}

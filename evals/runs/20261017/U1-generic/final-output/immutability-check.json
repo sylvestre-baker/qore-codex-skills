@@ -1,0 +1,7 @@
+{
+  "observed_at": "2026-10-17T11:11:48.842663+00:00",
+  "checked_files": 16,
+  "changed_files": [],
+  "valid": true,
+  "procedure": "Compare SHA256 of every supplied regular file with initial input-manifest.json; writes confined to output."
+}

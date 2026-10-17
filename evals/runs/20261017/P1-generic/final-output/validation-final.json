@@ -1,0 +1,12 @@
+{
+  "observed_at": "2026-10-17T10:35:16.315921+00:00",
+  "contract_consistency_exit_code": 0,
+  "spec_lint_exit_code": 0,
+  "run_check_exit_code": 0,
+  "input_files_checked": 17,
+  "input_files_changed": [],
+  "role_reports": 10,
+  "coverage": "COMPLETE",
+  "browser_checks": "not executed",
+  "note": "Post-seal summary; not part of its own execution digest graph."
+}

@@ -1,0 +1,12 @@
+{
+  "findings": [
+    {
+      "id": "COV-C01",
+      "title": "The generic U1 record declares COMPLETE while its required cold deep-entry check remains unobserved",
+      "severity": "medium",
+      "evidence": "assessment-inputs/N16/output/REPORT.md; assessment-inputs/N16/output/scope-plan.json or evidence/scope-plan.json; assessment-inputs/N16/input/.agents/skills/qore-ux-review/references/gates.md G1; assessment-inputs/N16/observation-3/actions.json; assessment-inputs/N16/output/execution.json",
+      "verdict": "CONFIRMED",
+      "counterexample": "The unchanged original N16 record declares coverage=COMPLETE and observation_coverage=COMPLETE while its initial entry/state scope lists required G1. Frozen gates.md:22 requires direct navigation to applicable stateful URLs and reload; SKILL.md:11-12 and run-evidence.md:36,48 prohibit treating a missing required capability as non-applicability. The actual three commands all start at https://qaizen.io/labs; all readiness entries are clicks, and observation-3/actions.json:3-7 performs click then reload, followed by history checks, with no direct URL navigation. The initial scope-plan.json:112 names absence of a relay deep-navigation action as the limitation, not a source-based exclusion. This reproduces a recorded required-coverage gap despite the actual successful reload/history observations; justified assessed coverage is PARTIAL. It does not establish a website failure or require inventing a new cold-cache condition."
+    }
+  ]
+}

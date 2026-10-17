@@ -1,0 +1,260 @@
+{
+  "schema": "qore-eval-run/1",
+  "id": "qore003-20261017-u2-derived-1",
+  "series_id": "specialization-v1",
+  "scenario_id": "U2",
+  "condition": "derived",
+  "trial": 1,
+  "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+  "input_manifest": "prepared/input-manifest.json",
+  "input_manifest_sha256": "f1c94eff9d8d9044073bbe14c71e2ef897c187a01238ba9363eedecdcca6d228",
+  "condition_resources_sha256": "998b62f74b37609662fc956dd296454a1950cd7cea9719b755aba10e84ff5c19",
+  "environment": {
+    "operator": "agent",
+    "host": "Docker Desktop Linux arm64 / Codex0.162.0",
+    "model": "gpt-6.1-sol",
+    "actor_id": "/root",
+    "tools": {
+      "codex": "0.162.0",
+      "image_id": "sha256:09894b981972962ae27f1e8e1726eb49886108a56c80742e70f71b0790c73aba",
+      "native_tool_catalog": "Twelve observed base helpers, native collaboration; no search/fetch/browser/connector; empty MCP resources/templates in qualified parent and child."
+    },
+    "settings": {
+      "model_reasoning_effort": "high",
+      "service_tier": "default",
+      "configs": [
+        "default_permissions=\"qore-trial\"",
+        "permissions.qore-trial.extends=\":workspace\"",
+        "permissions.qore-trial.filesystem={\":root\"=\"deny\",\":minimal\"=\"read\",\":tmpdir\"=\"write\",\":slash_tmp\"=\"write\",\":workspace_roots\"={\".\"=\"read\"},\"/workspace/output\"=\"write\",\"/var/lib/qore-feedback\"=\"read\"}",
+        "permissions.qore-trial.network.enabled=false",
+        "allow_login_shell=false",
+        "web_search=\"disabled\"",
+        "model_reasoning_effort=\"high\"",
+        "service_tier=\"default\"",
+        "features.multi_agent=true",
+        "agents.max_threads=3",
+        "features.apps=false",
+        "features.plugins=false",
+        "features.remote_plugin=false",
+        "features.memories=false",
+        "features.skill_search=false",
+        "features.skill_mcp_dependency_install=false",
+        "features.request_permissions_tool=false",
+        "mcp_servers={}"
+      ],
+      "operator_procedure": "operator-freeze.json; same frozen task/common runtime instruction template"
+    },
+    "isolation": {
+      "status": "PASS",
+      "evidence": [
+        "isolation-evidence.json"
+      ]
+    }
+  },
+  "resources": {
+    "caps": {
+      "wall_seconds": 900,
+      "aggregate_agent_seconds": 2400,
+      "browser_requests": 6,
+      "transient_browser_retries": 1,
+      "evaluator_seconds": 1800,
+      "verifier_seconds": 1800,
+      "maximum_original_cells": 21,
+      "limit": "Provisional operator policy, not measured feasibility or hard timeout enforcement."
+    },
+    "started_at": "2026-10-17T12:07:42.021015+00:00",
+    "ended_at": "2026-10-17T12:18:05.968662+00:00",
+    "children": [],
+    "tokens": 2644447,
+    "aggregate_agent_seconds": 621.942397,
+    "unavailable": {},
+    "parent_native_usage": {
+      "input_tokens": 2620673,
+      "cached_input_tokens": 2503808,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 23774,
+      "reasoning_output_tokens": 6594
+    },
+    "parent_wall_seconds": 621.942397,
+    "measurement_basis": "Single context only: CLI turn input+output tokens including cached input, and observed launcher-to-return wall interval including transport/tool waits; not CPU, billing, unique tokens or productivity."
+  },
+  "artifacts": [
+    {
+      "path": "isolation-evidence.json",
+      "sha256": "95b85cd960438672bd7879666e2591972bbf27bf2d758a966fd00ad47318d6f5",
+      "kind": "execution",
+      "observed_at": "2026-10-17T12:07:42.663502+00:00"
+    },
+    {
+      "path": "execution-evidence.json",
+      "sha256": "2f99b2cc46b355c6b861a10171b8847705bc87b4ede2f49f17c2270ff89be2f5",
+      "kind": "execution",
+      "observed_at": "2026-10-17T12:18:04.896334+00:00"
+    },
+    {
+      "path": "independent-assessment.json",
+      "sha256": "4d1f72863914d92f45df0b94312cc22aad3a143a7fb8ac8a5e17c8dc555c24ca",
+      "kind": "presentation"
+    },
+    {
+      "path": "independent-verification.json",
+      "sha256": "e818be0854f3d4c062ffdc707e6af22364aaf55878a4a6c06e509dc17230fcac",
+      "kind": "presentation"
+    },
+    {
+      "path": "qualification.json",
+      "sha256": "65054e2fcea92fc27c94a15c945ce6c85ad757760457a81b6caa0d934a6c9189",
+      "kind": "presentation"
+    },
+    {
+      "path": "final-output/evidence/input/.agents/skills/qore-ux-review-qaizen-labs/agents/openai.yaml",
+      "sha256": "1a9fb2ea5b4842bc00c8c785bd207d2ac89edc149a0d7ea39d52b18ef43e4c79",
+      "kind": "presentation"
+    },
+    {
+      "path": "final-output/evidence/input/.agents/skills/qore-ux-review-qaizen-labs/references/evidence.md",
+      "sha256": "659560f88b965371e2c6e886b5f4c648a4879ebb7c69af4b1d307dfae176c8b3",
+      "kind": "presentation"
+    },
+    {
+      "path": "final-output/evidence/input/.agents/skills/qore-ux-review-qaizen-labs/references/gates.md",
+      "sha256": "667063cd64c576a9c5b4ec69f6ddcd677d4e969bae96184b3136ede9fd12fd87",
+      "kind": "presentation"
+    },
+    {
+      "path": "final-output/evidence/input/.agents/skills/qore-ux-review-qaizen-labs/references/project-profile.md",
+      "sha256": "154ed11dab8e8499e74a5f3a6afb512827d5de5c73408523b845684e38f59dfc",
+      "kind": "presentation"
+    },
+    {
+      "path": "final-output/evidence/input/.agents/skills/qore-ux-review-qaizen-labs/references/project.json",
+      "sha256": "f76afdd45cb6352e5044a06affc4182ea6cd40aa9c012fb216636a61faa428f0",
+      "kind": "presentation"
+    },
+    {
+      "path": "final-output/evidence/input/.agents/skills/qore-ux-review-qaizen-labs/references/protocol.md",
+      "sha256": "eda7c7c7c9e711e4b9fca59ec6b622d713c3d95b14cd6e3b008a978ebf156004",
+      "kind": "presentation"
+    },
+    {
+      "path": "final-output/evidence/input/.agents/skills/qore-ux-review-qaizen-labs/references/release.json",
+      "sha256": "26a8aebdfb48c3c011713e02f53ae8f650179f0f24e7d58a9737b4897126602b",
+      "kind": "presentation"
+    },
+    {
+      "path": "final-output/evidence/input/.agents/skills/qore-ux-review-qaizen-labs/references/run-evidence.md",
+      "sha256": "2ede0b19d58fd5535c90023068355679ee7bb27d3070967ada38f9ad156a9e69",
+      "kind": "presentation"
+    },
+    {
+      "path": "final-output/evidence/input/.agents/skills/qore-ux-review-qaizen-labs/scripts/depth-lint.mjs",
+      "sha256": "fd7be484c8e4bf3ba376bdddb88663b31ae9da4c2c7678232ea7a6cc7782bd0f",
+      "kind": "presentation"
+    },
+    {
+      "path": "final-output/evidence/input/.agents/skills/qore-ux-review-qaizen-labs/scripts/project-check.py",
+      "sha256": "d87afa433fe485bdebca3e281d06e0896e4a8980ea7cf7baee739053614ea0ac",
+      "kind": "presentation"
+    },
+    {
+      "path": "final-output/evidence/input/.agents/skills/qore-ux-review-qaizen-labs/scripts/run-check.py",
+      "sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+      "kind": "presentation"
+    },
+    {
+      "path": "final-output/evidence/input/.agents/skills/qore-ux-review-qaizen-labs/scripts/stop-rule.mjs",
+      "sha256": "5c8d898e3accd82ed1932c791ff5ed1285aae659bae6757488158fc7a8120443",
+      "kind": "presentation"
+    },
+    {
+      "path": "export-reference-companions.json",
+      "sha256": "d4afe54dc1948bc4c03416e115675cf6930d617e904d58ba3d593f19e4e5525b",
+      "kind": "presentation"
+    }
+  ],
+  "execution": {
+    "coverage": "PARTIAL",
+    "evidence": [
+      "execution-evidence.json"
+    ],
+    "reason": "Actual Qore method record retains incomplete required phases."
+  },
+  "assessment": [
+    {
+      "criterion": "K1",
+      "status": "UNKNOWN",
+      "independent_task_status": "MET",
+      "reason": "The independent evaluator observed MET within narrower task scope, retained verbatim in independent-assessment.json. Required method coverage remains incomplete: Preserve original PARTIAL. Initial entry/state scope requires G1 and explicitly says absent direct deep navigation remains a gap. Final post-history reload terminal capture is missing; no successful terminal render or website failure is inferred. Completed help/Close/Back observations and narrower task passes coexist with incomplete required coverage. Original criterion rationale: Original contract/profile rules are accurately selected and the report keeps Close-to-summary distinct from Back-to-introduction-H1. Actual sequential focus and Enter records plus DOM corroborate both destinations.",
+      "evidence": [
+        "independent-assessment.json",
+        "independent-verification.json"
+      ]
+    },
+    {
+      "criterion": "K3",
+      "status": "UNKNOWN",
+      "independent_task_status": "MET",
+      "reason": "The independent evaluator observed MET within narrower task scope, retained verbatim in independent-assessment.json. Required method coverage remains incomplete: Preserve original PARTIAL. Initial entry/state scope requires G1 and explicitly says absent direct deep navigation remains a gap. Final post-history reload terminal capture is missing; no successful terminal render or website failure is inferred. Completed help/Close/Back observations and narrower task passes coexist with incomplete required coverage. Original criterion rationale: Primary before/after none-checked assertions pass, and restart is also unanswered. Actual guard records approve only source-authorized entry/start/help/Close/Back activations. Mutation methods and unauthorized top-level/popup/link navigation are enforced by the retained harness; successful recorded traffic in all four requests is same-origin GET, with three analytics POSTs blocked. Boundaries are scoped observation guards, not arbitrary-page-script isolation.",
+      "evidence": [
+        "independent-assessment.json",
+        "independent-verification.json"
+      ]
+    },
+    {
+      "criterion": "K4",
+      "status": "UNKNOWN",
+      "independent_task_status": "MET",
+      "reason": "The independent evaluator observed MET within narrower task scope, retained verbatim in independent-assessment.json. Required method coverage remains incomplete: Preserve original PARTIAL. Initial entry/state scope requires G1 and explicitly says absent direct deep navigation remains a gap. Final post-history reload terminal capture is missing; no successful terminal render or website failure is inferred. Completed help/Close/Back observations and narrower task passes coexist with incomplete required coverage. Original criterion rationale: The narrow journey is directly evidenced. The report explicitly retains the two failed assertions, missing terminal reload capture, full-page screenshot/live-geometry limits and deployment uncertainty; it does not promote the protocol provenance or observer locator failures to website defects. Repeated pixels support a rendered overlap concern, although exact viewport impact and the assigned MEDIUM severity are not independently established here. This caveat is separate from the directly supported task observations.",
+      "evidence": [
+        "independent-assessment.json",
+        "independent-verification.json"
+      ]
+    },
+    {
+      "criterion": "K8",
+      "status": "UNKNOWN",
+      "independent_task_status": "MET",
+      "reason": "The independent evaluator observed MET within narrower task scope, retained verbatim in independent-assessment.json. Required method coverage remains incomplete: Preserve original PARTIAL. Initial entry/state scope requires G1 and explicitly says absent direct deep navigation remains a gap. Final post-history reload terminal capture is missing; no successful terminal render or website failure is inferred. Completed help/Close/Back observations and narrower task passes coexist with incomplete required coverage. Original criterion rationale: Observed Enter/Space/Enter help toggling and keyboard Close with restored summary focus support the scoped task result. The report separates this working journey from its broader PARTIAL method coverage and conservative DO-NOT-SHIP review disposition. It makes no global SHIP or deployment claim. The missing broader G1 terminal capture does not erase the completed U2 path, and no causal improvement is asserted.",
+      "evidence": [
+        "independent-assessment.json",
+        "independent-verification.json"
+      ]
+    }
+  ],
+  "comparison": {
+    "comparability": "UNVERIFIED",
+    "decision": "Unknown",
+    "reason": "Separate evaluators and verifier retained task/coverage observations. One observation on related known tasks and visible conditions does not establish a comparative winner; live deployment comparability is unverified for UX.",
+    "verification": [
+      "independent-assessment.json",
+      "independent-verification.json"
+    ]
+  },
+  "limitations": [
+    "One observation on a related known task, not a general benefit benchmark.",
+    "CLI JSONL omits some native child lifecycle events; child identities and history-free dispatches rely on retained role reports/roster plus the qualified inheritance probe.",
+    "All resource timing precision and unavailable measurements remain explicit; no cost or efficiency conclusion.",
+    "Final post-history reload terminal DOM/screenshot and last no-selection assertion did not execute after h1 timeout; G1 incomplete.",
+    "Request3 failed due reviewer uppercase text locator assumption; request4 reached most challenge checks then timed out on reviewer assumption of introduction after reload. Neither timeout establishes product failure.",
+    "V1 is supported by inspected repeated full-page screenshots; live geometry, scrolling video, and assistive-technology effects were not supplied.",
+    "Anonymous public, consent unset, en English, default theme and CSS viewport 1280x800 only. Browser locale en-US was requested from contract but actual navigator locale is not independently exposed.",
+    "No answers, results, full questionnaire, mobile, alternate themes, account contexts, accessibility/performance certification or invalid URL permutations were evaluated; task excludes these flows.",
+    "HTTP redirects unqualified/blocked by relay; top-level documents fulfilled via guarded fetch; service workers blocked. Instrumented audits and custom live geometry unavailable through supported actions.",
+    "Trace/video paths are named in relay result but files not supplied in feedback; retained raw result/events/DOM/PNG files only.",
+    "Operator-supplied enclosing candidate and frozen-input manifest digests retained; packaging procedure unavailable, local per-file hashes do not independently reproduce enclosing identities or identify website deployment.",
+    "UX method requires no independent child contexts; no children dispatched. Operator specific context identity and token/CPU/aggregate-agent usage meter unavailable. Wall timestamps retained; no zero-usage claim.",
+    "No fixes authorized or performed. V1 proposal requires a later implementation and fresh re-verification.",
+    "Independent criteria were applied qualitatively after outputs using predeclared criteria; operational grading interpretation was not a validated standardized scoring rubric.",
+    "Original method coverage and artifacts are unchanged. Later qualification and its identities are separate; entered metadata does not establish its own truth.",
+    "Export-only closure of partial source copies archived by the original worker. Every added file is byte-identical to that trial prepared input. No original worker file or native qore-run record changed; these additions are not proof the worker read them. Original model output inventory remains authoritative for execution evidence."
+  ],
+  "qore_run": {
+    "path": "final-output/execution.json",
+    "sha256": "8901f963b56b1ec66611fc777014a1ae04fd2040cee0da1c1a18ae212dcacdc1"
+  },
+  "normalization": [],
+  "qualification": {
+    "path": "qualification.json",
+    "sha256": "65054e2fcea92fc27c94a15c945ce6c85ad757760457a81b6caa0d934a6c9189"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "sh",
+    "-c",
+    "pwd && rg --files -g 'TASK.md' -g 'AGENTS.md' -g '*SKILL*' -g '*qore*' -g '!node_modules' . /workspace/output"
+  ],
+  "exit_code": 127,
+  "stdout": "/workspace/worker\n",
+  "stderr": "/bin/sh: rg: not found\n",
+  "observed_at": "2026-10-17T11:06:36+00:00",
+  "recovery": "Used ls/find/cat and Python to read supplied files; no installation."
+}

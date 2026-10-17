@@ -1,0 +1,42 @@
+"""Operator-dispatched single cell; no rubric or neighboring answers enter the runtime."""
+from pathlib import Path
+import sys,json,hashlib
+import trial_runtime as runtime
+ROOT=Path(__file__).parent
+scenario,condition=sys.argv[1:3]
+prepared=ROOT/'prepared'/f'{scenario}-{condition}'
+manifest=json.loads((prepared/'input-manifest.json').read_text())
+trial_id=f'qore003-20261017-{scenario.lower()}-{condition}-1'
+name='qore-qualification-'+trial_id
+out=ROOT/'trials'/f'{scenario}-{condition}'
+profile=None
+for p in (prepared/'worker/.agents/skills').glob('*/references/project.json'):
+ j=json.loads(p.read_text());profile={'id':j['id'],'version':j['version'],'sha256':runtime.sha(p)}
+metadata={'run_id':trial_id,'candidate_sha256':manifest['candidate_sha256'],'target_snapshot_sha256':runtime.sha(prepared/'input-manifest.json'),'last_relevant_change':runtime.datetime.fromtimestamp(max(p.stat().st_mtime for p in prepared.rglob('*') if p.is_file()),tz=runtime.timezone.utc).isoformat(),'environment':{'id':name,'operator':'agent','host':'Docker Desktop Linux arm64 / Codex0.162.0'},'profile':profile,'output_directory':'/workspace/output'}
+common='''Read TASK.md and perform that task using only the supplied input and any method required there. Input files are immutable. This is an actual recorded execution, not a request to simulate execution.
+
+Runtime facilities: Python3, Node, Bash and Git are installed; use non-login shells. No network/search/fetch/connector access is permitted for task work. Use actual available independent subagents when the invoked method requires them, with fork_turns="none" for initial roles and a fresh verifier. Do not replace required independent phases with your own labels. Save every complete role/phase report. Keep initial finder contexts separate and provide only mechanically filtered claims to a fresh verifier. For planning, honor the method's actual role barrier and cross-examination; bounded waves are available. Use only this cell's resources, never another project or previous answer. You may propose changes but must not alter input files or execute shared-data mutations.
+
+Budget:900seconds wall and2400aggregate agent-seconds including children; at most3 simultaneous child contexts. Declare smaller role deadlines and request available partial results at expiry. Stop new dispatches at budget exhaustion and report limits; no extra quality retry. Record actual role context names, dispatch/return UTC timestamps, full report files, requested/returned/missing roster, and any unavailable usage with its reason. Never fabricate zero usage. Preserve impact severity and refutations.
+
+Write final REPORT.md in /workspace/output. If TASK invokes a Qore skill, also produce execution.json satisfying its bundled qore-run/1 contract with actual phase evidence files, profile consumption if applicable, commands/check outputs, child actor identities, and limitations. Use the supplied enclosing run metadata below for candidate/target/run identity. The target digest here identifies the entire frozen prepared-input manifest, not an individual target file. Baseline has no Qore requirement and must not invent Qore phases. Save roster.json when subagents run. Run the skill's structural validators where applicable; a valid validator output does not prove reasoning correctness. Do not evaluate yourself against any hidden rubric or manufacture a comparative winner. Finish with the actual outcome and missing coverage.
+
+Operational identity metadata (not task answers):
+'''
+prompt=common+json.dumps(metadata,indent=2)+'\n'
+try:
+ audit=runtime.create(name,prepared/'worker',out)
+ runtime.write(out/'operation-metadata.json',metadata)
+ print('STARTED',scenario,condition,trial_id,flush=True)
+ code=runtime.launch(name,prompt,out,timeout=900)
+ result=runtime.collect(name,out)
+ post=json.loads(runtime.call(['docker','exec',name,'python3','-c','from pathlib import Path;import json,hashlib;root=Path("/workspace/worker");print(json.dumps([{\"path\":p.relative_to(root).as_posix(),\"sha256\":hashlib.sha256(p.read_bytes()).hexdigest()} for p in sorted(root.rglob("*")) if p.is_file()]))'],text=True).stdout)
+ runtime.write(out/'post-inputs.json',post)
+ assert post==manifest['resources'],'Inputs changed during the actual trial'
+ runtime.write(out/'completion.json',{'exit_code':code,'outputs':sorted(p.relative_to(result).as_posix() for p in result.rglob('*') if p.is_file()),'inputs_unchanged':True,'completed_at':runtime.now(),'trial_id':trial_id})
+ print('FINISHED',scenario,condition,'exit',code,'files',len(list(result.rglob('*'))),flush=True)
+ report=result/'REPORT.md'
+ if report.exists():print(report.read_text()[-3500:])
+ else:print('Missing REPORT.md; inspect retained transcript and actual outputs.')
+finally:
+ runtime.cleanup(name)

@@ -21,7 +21,8 @@
     "assessment": {"type": "array"},
     "comparison": {"type": "object", "required": ["comparability", "decision", "reason", "verification"]},
     "limitations": {"type": "array", "items": {"type": "string"}},
-    "qore_run": {"type": ["object", "null"]}
+    "qore_run": {"type": ["object", "null"]},
+    "qualification": {"type": "object", "required": ["path", "sha256"], "properties": {"path": {"type": "string", "minLength": 1}, "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}}}
   },
   "$comment": "tools/evaluate.py additionally checks frozen scenario applicability, contained paths, evidence identities, input mutations, resource envelopes and linked Qore method records. Neither checker establishes factual quality or real isolation from metadata alone."
 }

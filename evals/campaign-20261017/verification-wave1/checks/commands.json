@@ -1,0 +1,95 @@
+{
+  "recorded_at": "2026-10-17T10:47:43.851390+00:00",
+  "commands": [
+    {
+      "argv": [
+        "node",
+        "<public-repository-root>/skills/qore-review/scripts/redact-for-verifier.mjs",
+        "<private-campaign-root>/assessment-inputs/N03/output/evidence/claims.json"
+      ],
+      "cwd": "<private-workspace-root>",
+      "started_at": "2026-10-17T10:47:43.674560+00:00",
+      "finished_at": "2026-10-17T10:47:43.712391+00:00",
+      "exit_code": 0,
+      "stdout": "checks/redactor-N03.stdout",
+      "stderr": "checks/redactor-N03.stderr"
+    },
+    {
+      "argv": [
+        "node",
+        "<public-repository-root>/skills/qore-review/scripts/redact-for-verifier.mjs",
+        "<private-campaign-root>/assessment-inputs/N09/output/evidence/claims.json"
+      ],
+      "cwd": "<private-workspace-root>",
+      "started_at": "2026-10-17T10:47:43.712805+00:00",
+      "finished_at": "2026-10-17T10:47:43.737763+00:00",
+      "exit_code": 0,
+      "stdout": "checks/redactor-N09.stdout",
+      "stderr": "checks/redactor-N09.stderr"
+    },
+    {
+      "argv": [
+        "node",
+        "<public-repository-root>/skills/qore-review/scripts/redact-for-verifier.mjs",
+        "<private-campaign-root>/verification-wave1/checks/mechanical-probe-input.json"
+      ],
+      "cwd": "<private-workspace-root>",
+      "started_at": "2026-10-17T10:47:43.738538+00:00",
+      "finished_at": "2026-10-17T10:47:43.764862+00:00",
+      "exit_code": 0,
+      "stdout": "checks/redactor-probe.stdout",
+      "stderr": "checks/redactor-probe.stderr"
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "<public-repository-root>/skills/qore-review/scripts/project-check.py",
+        "<public-repository-root>/profiles/qaizen-labs.json",
+        "--root",
+        "<public-repository-root>/examples/qaizen-labs",
+        "--method",
+        "review"
+      ],
+      "cwd": "<private-workspace-root>",
+      "started_at": "2026-10-17T10:47:43.765336+00:00",
+      "finished_at": "2026-10-17T10:47:43.819409+00:00",
+      "exit_code": 0,
+      "stdout": "checks/project-check.stdout",
+      "stderr": "checks/project-check.stderr"
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "<public-repository-root>/examples/qaizen-labs/checks/check_contract.py",
+        "<public-repository-root>/examples/qaizen-labs/surface-contract.json"
+      ],
+      "cwd": "<private-workspace-root>",
+      "started_at": "2026-10-17T10:47:43.819805+00:00",
+      "finished_at": "2026-10-17T10:47:43.847197+00:00",
+      "exit_code": 0,
+      "stdout": "checks/contract-check.stdout",
+      "stderr": "checks/contract-check.stderr"
+    },
+    {
+      "argv": [
+        "node",
+        "<public-repository-root>/skills/qore-review/scripts/finding-lint.mjs",
+        "<private-campaign-root>/verification-wave1/verified.json",
+        "--verifier=ran",
+        "--json"
+      ],
+      "cwd": "<private-workspace-root>",
+      "started_at": "2026-10-17T10:49:31.593187+00:00",
+      "finished_at": "2026-10-17T10:49:31.645423+00:00",
+      "exit_code": 0,
+      "stdout": "checks/finding-lint.json",
+      "stderr": "checks/finding-lint.stderr"
+    }
+  ],
+  "harness_argv": [
+    "research/qore003-campaign-20261017/verification-wave1/checks/reproduce.py"
+  ],
+  "harness_limit": "Initial exploratory reads precede this timestamped check log; no exact timestamps are invented for those reads."
+}

@@ -1,0 +1,21 @@
+{
+  "qore_evidence": {
+    "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+    "target_snapshot_sha256": "e9aeec2eee10b52c3339b53b4e491d3ff69f57c68be2f5ea1d61e70df55acccc",
+    "observed_at": "2026-10-17T11:51:31.582455+00:00",
+    "phase_id": "spec_validation"
+  },
+  "payload": {
+    "argv": [
+      "bash",
+      "scripts/spec-lint.sh",
+      "/workspace/output/specification.md"
+    ],
+    "cwd": "/workspace/worker/.agents/skills/qore-plan",
+    "stdout": "spec-lint: valid qore-spec/1 (13 scenarios).\n",
+    "stderr": "",
+    "exit_code": 0,
+    "specification_sha256": "0a1dca832f3c9456342d1265b348329b1b847af3072f8ee1617919aadf2b4db5",
+    "limitation": "Structural validation only; source/preservation mapping is manual planning evidence, not website proof."
+  }
+}

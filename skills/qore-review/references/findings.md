@@ -11,7 +11,7 @@ node scripts/redact-for-verifier.mjs /absolute/path/to/findings.json > /absolute
 node scripts/finding-lint.mjs /absolute/path/to/verified.json --verifier=ran --json
 ```
 
-The redactor validates shape before mechanically selecting the permitted claim fields. Use its actual output, not finder prose, as verifier input. The verifier writes a final strict findings envelope preserving IDs and original candidate severity. Add `verdict`:
+The redactor validates shape before mechanically selecting `id`, `title`, `severity`, `evidence`, and optional `counterexample`. It removes other fields, not the meaning of prose inside allowed strings. Finder-supplied claim context remains visible; this is a field/report boundary, not semantic blinding. Use its actual output, not finder prose, as verifier input. The verifier writes a final strict findings envelope preserving IDs and original candidate severity. Add `verdict`:
 
 | Verdict | Required support |
 |---|---|

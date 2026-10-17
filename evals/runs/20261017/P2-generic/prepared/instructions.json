@@ -1,0 +1,29 @@
+{
+  "status": "PREPARED_NOT_EXECUTED",
+  "skill": "qore-plan",
+  "budgets": {
+    "wall_seconds": 900,
+    "aggregate_agent_seconds": 2400,
+    "browser_requests": 6,
+    "transient_browser_retries": 1,
+    "evaluator_seconds": 1800,
+    "verifier_seconds": 1800,
+    "maximum_original_cells": 21,
+    "limit": "Provisional operator policy, not measured feasibility or hard timeout enforcement."
+  },
+  "criteria": [
+    "K1",
+    "K3",
+    "K4",
+    "K5",
+    "K7",
+    "K8"
+  ],
+  "required_preflight": [
+    "Enforced input and command-network isolation, including every child context",
+    "Actual model authentication and method roles",
+    "Pre/post input integrity",
+    "Qualified activation guard and neutral browser relay for UX"
+  ],
+  "limit": "Preparation and structural checks do not establish isolation, execution or comparative quality."
+}

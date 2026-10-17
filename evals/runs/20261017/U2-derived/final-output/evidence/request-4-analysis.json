@@ -1,0 +1,10 @@
+{
+  "status": "PARTIAL",
+  "report": "Primary help/Close/Back challenge, reverse/refocus challenge, restart and history Back/Forward executed. Final reload completed as an action, but main h1 assertion timed out. No post-reload screenshot/DOM returned.",
+  "attribution": "Expected introduction after reload was a reviewer assumption. Contract does not require reload to reset question state. History Forward restored the unanswered first question before reload. Neither a broken reload nor successful terminal rendering is established.",
+  "missing": [
+    "Post-history reload resolved screenshot/DOM",
+    "Final subsequent no-selection assertion"
+  ],
+  "retry": "No further retry dispatched after the corrected challenge request; retain gap."
+}

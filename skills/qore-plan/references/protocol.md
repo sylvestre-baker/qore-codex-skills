@@ -8,6 +8,8 @@ Use **Workflow** when an applicable specification already exists: independent An
 
 Before dispatch, state a finite task budget appropriate to the scope, worker deadlines, and the consequence of exhaustion. A worker returns its complete available report and names unfinished items when its budget ends. Use the host's real subagent tools and observed concurrency; schedule waves rather than assuming five simultaneous workers. Do not depend on a particular model, undocumented tool name, or external shared skill.
 
+Keep an actor/deadline ledger and check the earliest pending deadline before a blocking wait or extended lead drafting. At expiry, request the available report and stop further investigation within the existing budget. Retain delayed returns, missed expiry requests and unfinished work explicitly; do not backdate a request or claim hard cancellation. Dispatch-to-return wall intervals include waiting and notification lag, and do not establish exact model compute, token usage or universal budget compliance.
+
 ## Independent analysis
 
 Create one fresh context per [role](roles.md). Give each the same raw target and relevant requirements, plus its own role brief. Do not provide another role's conclusions during initial analysis. The lead routes and adjudicates rather than masquerading as a sixth independent role.
@@ -29,6 +31,8 @@ Save full report files. Before synthesis, compare requested roles with returned 
 After the report barrier, give each role all returned reports. Assign the challenge links in [roles](roles.md), adding a challenger for any major decision otherwise untouched. A challenge identifies the exact decision, contradicting evidence or concrete failure case, and the smallest useful investigation. A challenge need not produce a defect.
 
 In Workflow, each role performs one cross-examination pass and revises its own report when the evidence warrants it. In Debate, round two does the same; use round three only for a genuine unresolved question with a bounded investigation. The lead explicitly supplies the relevant messages or files for each pass. Workers send their results and end their turn rather than waiting indefinitely for peers.
+
+If the host has released a completed role context, record the failed continuation and use a fresh continuation actor for that role only when its full initial report and all peer reports are available. Identify both actual actors, retain the original report, and disclose the continuity limit. The replacement performs the required cross-examination; it is neither the original actor nor another initial analysis. Keep it within the same round and aggregate budget. Missing reports or an unperformed challenge still make coverage PARTIAL.
 
 Stop at resolved decisions, repeated disagreement without new evidence, the declared budget, or the third round. Preserve open questions on stalemate or exhaustion. Do not invent consensus to finish.
 

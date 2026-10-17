@@ -1,0 +1,27 @@
+{
+  "procedure": "Read saved execution.json artifact declarations; for every declared artifact, resolve under the same neutral run output/evidence directory, test presence and recompute SHA-256 from current bytes. Separately hash the four supplied raw project/target source copies. No trial scripts, browser, contract validator, linter, redactor, or trial rerun were executed by the evaluator.",
+  "runs": {
+    "N03": {
+      "declared_artifacts": 54,
+      "missing": [],
+      "digest_mismatches": [],
+      "source_sha256": {
+        "surface-contract.json": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+        "observation-policy.json": "15f4e5b4960b5011684be265f027e42b8637a3b8aae96b24bba1ba3a4d0f0202",
+        "checks/check_contract.py": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b",
+        "target/verification-protocol.md": "b8d1f4ad7bd691dbf8f019cd3b87a7644a21899e6317edebac545fd3b245136e"
+      }
+    },
+    "N09": {
+      "declared_artifacts": 63,
+      "missing": [],
+      "digest_mismatches": [],
+      "source_sha256": {
+        "surface-contract.json": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+        "observation-policy.json": "15f4e5b4960b5011684be265f027e42b8637a3b8aae96b24bba1ba3a4d0f0202",
+        "checks/check_contract.py": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b",
+        "target/verification-protocol.md": "b8d1f4ad7bd691dbf8f019cd3b87a7644a21899e6317edebac545fd3b245136e"
+      }
+    }
+  }
+}

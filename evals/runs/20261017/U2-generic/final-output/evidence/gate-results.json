@@ -1,0 +1,83 @@
+{
+  "actor": "/root",
+  "observed_windows": [
+    "2026-10-17T11:56:22.874929+00:00/2026-10-17T11:57:13.138178+00:00",
+    "2026-10-17T11:59:29.408031+00:00/2026-10-17T12:00:19.824660+00:00"
+  ],
+  "gates": [
+    {
+      "id": "G0",
+      "score": 4,
+      "status": "PASS",
+      "finding": "Actual Labs anchor reached intended heading and distinguishing introduction copy.",
+      "evidence": "response-3/01-introduction.dom.json; response-5/events.json",
+      "fresh": true
+    },
+    {
+      "id": "G1",
+      "score": 4,
+      "status": "PASS",
+      "finding": "Entered route document reload 200 and history Back/Forward restored Labs/introduction. No page exception.",
+      "evidence": "response-5/01-reloaded-introduction.dom.json; response-5/02-history-back-labs.dom.json; response-5/03-history-forward-introduction.dom.json; response-5/events.json",
+      "fresh": true
+    },
+    {
+      "id": "G2",
+      "score": 4,
+      "status": "PASS",
+      "finding": "All specified help transitions resolved, no answers checked, Next disabled, expected analytics mutation blocked.",
+      "evidence": "response-3/events.json; response-5/events.json",
+      "fresh": true
+    },
+    {
+      "id": "G3",
+      "score": 3,
+      "status": "FAIL",
+      "finding": "F1: fixed cookie banner obscures focused Back label and almost all focus outline.",
+      "evidence": "response-5/07-back-focused.png",
+      "fresh": true
+    },
+    {
+      "id": "G4",
+      "score": 4,
+      "status": "PASS",
+      "finding": "Introduction, question and help definition/examples/instructions coherent in affected states.",
+      "evidence": "response-3/03-help-open-enter.dom.json; response-5/08-challenged-returned-introduction.dom.json",
+      "fresh": true
+    },
+    {
+      "id": "G5",
+      "score": 3,
+      "status": "FAIL",
+      "finding": "Keyboard activation and distinct focus destinations pass, but focused Back is visually obscured (F1).",
+      "evidence": "response-5/05-close-focused.png; response-5/07-back-focused.png; response-5/events.json",
+      "fresh": true
+    },
+    {
+      "id": "G6",
+      "score": 4,
+      "status": "PASS",
+      "finding": "Fresh route/history replay and visible-focus challenge refuted blanket visual/focus pass; scores corrected.",
+      "evidence": "iteration-4-report.md; response-5/events.json; response-5/07-back-focused.png",
+      "fresh": true
+    }
+  ],
+  "excluded": {
+    "GP": "Performance explicitly outside supplied project scope"
+  },
+  "finding": {
+    "id": "F1",
+    "severity": "medium",
+    "impact": "Keyboard user can activate Back but cannot see its label/current focus clearly with cookie banner present.",
+    "refutations": [
+      "Back is not unreachable: Tab reached it and Enter returned to introduction.",
+      "Focus restoration is not broken: summary and h1 assertions passed.",
+      "The blocked analytics POST did not prevent help/Back transitions."
+    ],
+    "unexamined": [
+      "Consent dismissal and manually scrolled alternatives",
+      "Exact viewport geometry or formal standards-conformance measurement",
+      "Occurrence in other viewports/themes/browsers"
+    ]
+  }
+}

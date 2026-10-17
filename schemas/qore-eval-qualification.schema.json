@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Later independent qualification of an unchanged diagnostic declaration",
+  "type": "object",
+  "required": ["schema", "run_id", "candidate_sha256", "input_manifest_sha256", "qore_run_sha256", "declared_coverage", "coverage", "assessor", "verifier", "assessed_at", "reason", "evidence"],
+  "properties": {
+    "schema": {"const": "qore-eval-qualification/1"},
+    "run_id": {"type": "string", "minLength": 1},
+    "candidate_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "input_manifest_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "qore_run_sha256": {"type": ["string", "null"], "pattern": "^[a-f0-9]{64}$"},
+    "declared_coverage": {"enum": ["COMPLETE", "PARTIAL", "BLOCKED"]},
+    "coverage": {"enum": ["COMPLETE", "PARTIAL", "BLOCKED"]},
+    "assessor": {"type": "string", "minLength": 1},
+    "verifier": {"type": "string", "minLength": 1},
+    "assessed_at": {"type": "string", "format": "date-time"},
+    "reason": {"type": "string", "minLength": 1},
+    "evidence": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1}}
+  },
+  "$comment": "The operational checker requires matching original identities, declared contained artifacts, a later timestamp, separate non-execution actor labels and no coverage promotion. Metadata cannot establish actual independent reasoning or truth."
+}

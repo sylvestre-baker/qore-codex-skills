@@ -1,0 +1,15 @@
+{
+  "argv": [
+    "python3",
+    "scripts/run-check.py",
+    "/workspace/output/execution.json",
+    "--evidence-root",
+    "/workspace/output"
+  ],
+  "cwd": "/workspace/worker/.agents/skills/qore-ux-review-qaizen-labs",
+  "exit_code": 0,
+  "stdout": "{\n  \"valid\": true,\n  \"coverage\": \"PARTIAL\",\n  \"missing_phases\": [\n    \"freshness\"\n  ],\n  \"artifact_count\": 103,\n  \"note\": \"Evidence identity and declared phase coverage checked; factual quality is not certified.\"\n}\n",
+  "stderr": "",
+  "observed_at": "2026-10-17T12:17:59.654509+00:00",
+  "note": "Final validation output retained outside record artifact hash list to avoid a self-referential hash cycle."
+}

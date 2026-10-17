@@ -1,0 +1,32 @@
+{
+  "schema": "qore-eval-inputs/1",
+  "scenario_id": "P2",
+  "condition": "baseline",
+  "method": "plan",
+  "scenarios_sha256": "46534adc957971607cb4af8ae555727b933746b61081822be77acf9d79d2ea49",
+  "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+  "condition_resources_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "resources": [
+    {
+      "path": "TASK.md",
+      "sha256": "35903aa61c5634aecfd79bdeb74e0aa38cc0dd4f211bc4502214b7a24674578d"
+    },
+    {
+      "path": "checks/check_contract.py",
+      "sha256": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b"
+    },
+    {
+      "path": "observation-policy.json",
+      "sha256": "15f4e5b4960b5011684be265f027e42b8637a3b8aae96b24bba1ba3a4d0f0202"
+    },
+    {
+      "path": "surface-contract.json",
+      "sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3"
+    },
+    {
+      "path": "target/verification-protocol.md",
+      "sha256": "0a3452f02e358d8800fb26d591083deb972c5531165473990dc27007a9a9e0d4"
+    }
+  ],
+  "limit": "Stage only worker/, not this preparation directory or the author repository."
+}

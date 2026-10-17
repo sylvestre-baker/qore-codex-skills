@@ -1,0 +1,19 @@
+{
+  "start_utc": "2026-10-17T11:19:52+00:00",
+  "overall_deadline_utc": "2026-10-17T11:34:52+00:00",
+  "wall_budget_seconds": 900,
+  "aggregate_agent_budget_seconds": 2400,
+  "finder_budget_seconds_each": 180,
+  "verifier_budget_seconds": 240,
+  "at_expiry": "Request available partial results; preserve unfinished scope; do not dispatch after overall or aggregate budget exhaustion.",
+  "profile": null,
+  "profile_reason": "No references/project.json supplied; generic profile.",
+  "capabilities": {
+    "python": "3.14.8 (main, Oct  1 2026, 11:52:26) [GCC 15.2.0]",
+    "node": "v22.23.2",
+    "independent_agents": "collaboration.spawn_agent available, initial contexts fork_turns=none; fresh verifier after redaction",
+    "network": "prohibited and unused",
+    "rg": "unavailable; find/cat/Python used",
+    "agent_usage": "No per-context token or CPU usage telemetry exposed; report wall intervals, do not fabricate usage."
+  }
+}

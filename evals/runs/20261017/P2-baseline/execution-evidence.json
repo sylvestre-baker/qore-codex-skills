@@ -1,0 +1,147 @@
+{
+  "schema": "qore-eval-evidence/1",
+  "run_id": "qore003-20261017-p2-baseline-1",
+  "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+  "input_manifest_sha256": "66ae2c461eb7022ef72fafe24c31962507088e17863803d12197cc7d1a895aa4",
+  "observed_at": "2026-10-17T11:30:08.059032+00:00",
+  "payload": {
+    "actual_launch": {
+      "started_at": "2026-10-17T11:27:47.955470+00:00",
+      "argv": [
+        "docker",
+        "exec",
+        "-i",
+        "--workdir",
+        "/workspace/worker",
+        "qore-qualification-qore003-20261017-p2-baseline-1",
+        "codex",
+        "--ask-for-approval",
+        "never",
+        "exec",
+        "--ignore-user-config",
+        "--ignore-rules",
+        "--ephemeral",
+        "--json",
+        "--skip-git-repo-check",
+        "--strict-config",
+        "-m",
+        "gpt-6.1-sol",
+        "-c",
+        "default_permissions=\"qore-trial\"",
+        "-c",
+        "permissions.qore-trial.extends=\":workspace\"",
+        "-c",
+        "permissions.qore-trial.filesystem={\":root\"=\"deny\",\":minimal\"=\"read\",\":tmpdir\"=\"write\",\":slash_tmp\"=\"write\",\":workspace_roots\"={\".\"=\"read\"},\"/workspace/output\"=\"write\"}",
+        "-c",
+        "permissions.qore-trial.network.enabled=false",
+        "-c",
+        "allow_login_shell=false",
+        "-c",
+        "web_search=\"disabled\"",
+        "-c",
+        "model_reasoning_effort=\"high\"",
+        "-c",
+        "service_tier=\"default\"",
+        "-c",
+        "features.multi_agent=true",
+        "-c",
+        "agents.max_threads=3",
+        "-c",
+        "features.apps=false",
+        "-c",
+        "features.plugins=false",
+        "-c",
+        "features.remote_plugin=false",
+        "-c",
+        "features.memories=false",
+        "-c",
+        "features.skill_search=false",
+        "-c",
+        "features.skill_mcp_dependency_install=false",
+        "-c",
+        "features.request_permissions_tool=false",
+        "-c",
+        "mcp_servers={}",
+        "-"
+      ],
+      "prompt_sha256": "e9c9971c0ffa4fe994eb093b32d5979a4a84fd6fec2df213a567f7c7d72bd4e6"
+    },
+    "actual_exit": {
+      "started_at": "2026-10-17T11:27:47.955470+00:00",
+      "ended_at": "2026-10-17T11:30:08.059032+00:00",
+      "exit_code": 0
+    },
+    "native_parent_usage": {
+      "input_tokens": 133479,
+      "cached_input_tokens": 108672,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 6041,
+      "reasoning_output_tokens": 1097
+    },
+    "outputs": [
+      {
+        "path": "final-output/PROPOSED-verification-protocol.md",
+        "sha256": "f4320a14157c65d4c0ace420b2034a7fdec5c101786830b036a35b63ecf68d35"
+      },
+      {
+        "path": "final-output/REPORT.md",
+        "sha256": "aa3b864204e0c8cc962d48162610575ff20c2cd4fd4c10900c431eb47d127932"
+      },
+      {
+        "path": "final-output/evidence/check-contract-command.json",
+        "sha256": "77745fab4d15225e28ce016921bc247227c418af6f62dbdaf0d710d91d6a8fd0"
+      },
+      {
+        "path": "final-output/evidence/check-contract.stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "final-output/evidence/check-contract.stdout.json",
+        "sha256": "7f557ba27626c65e7eb10c7b17773f82e9feae273715b633b694723f87b3c1ee"
+      },
+      {
+        "path": "final-output/evidence/input-preservation.json",
+        "sha256": "04c505d3057e9bbd5d260f02fb966fc3c99af33a8a9672f267941e38f29c0bb7"
+      },
+      {
+        "path": "final-output/evidence/input-sha256.json",
+        "sha256": "91cec4c02c28aa3b6cd4a8b5fefc2a1f956715448e6a6a94593873b3fa35a6d3"
+      },
+      {
+        "path": "final-output/evidence/proposal-inventory.json",
+        "sha256": "02c91fde9469748e17475e0a620576311ecf24fc8c8880aea9d9020f82721bd6"
+      },
+      {
+        "path": "final-output/run-record.json",
+        "sha256": "c1c09adb12a5deef57ab377a1e2f9327a7336f443887d0f050431f9744cae8b4"
+      },
+      {
+        "path": "final-output/write-canary",
+        "sha256": "2d711642b726b04401627ca9fbac32f5c8530fb1903cc4db02258717921a4881"
+      }
+    ],
+    "post_inputs": [
+      {
+        "path": "TASK.md",
+        "sha256": "35903aa61c5634aecfd79bdeb74e0aa38cc0dd4f211bc4502214b7a24674578d"
+      },
+      {
+        "path": "checks/check_contract.py",
+        "sha256": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b"
+      },
+      {
+        "path": "observation-policy.json",
+        "sha256": "15f4e5b4960b5011684be265f027e42b8637a3b8aae96b24bba1ba3a4d0f0202"
+      },
+      {
+        "path": "surface-contract.json",
+        "sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3"
+      },
+      {
+        "path": "target/verification-protocol.md",
+        "sha256": "0a3452f02e358d8800fb26d591083deb972c5531165473990dc27007a9a9e0d4"
+      }
+    ],
+    "limit": "Retained actual output identities and execution receipts; this wrapper does not grade task correctness."
+  }
+}

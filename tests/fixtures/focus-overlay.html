@@ -1,0 +1,7 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><title>Synthetic focused-control overlay</title>
+<style>body{min-height:1800px}#covered{position:fixed;left:40px;bottom:10px}#overlay{position:fixed;inset:auto 0 0;height:100px;background:#123;color:white;z-index:10}</style>
+<main><h1>Synthetic capture-order control</h1><button id="start" type="button">Focus the control</button><button id="covered" type="button">Covered control</button></main>
+<div id="overlay">Synthetic fixed overlay</div>
+<script>document.getElementById('start').onclick=()=>document.getElementById('covered').focus();</script>
+</html>

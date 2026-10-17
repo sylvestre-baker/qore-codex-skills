@@ -1,0 +1,59 @@
+{
+  "role": "fresh-independent-verifier",
+  "observed_start_utc": "2026-10-17T11:22:46Z",
+  "observed_completion_utc": "2026-10-17T11:24:24Z",
+  "deadline_utc": "2026-10-17T11:26:30Z",
+  "allocation_seconds": 240,
+  "resource_telemetry": "unavailable",
+  "coverage": "COMPLETE",
+  "examined_ids": [
+    "C-1",
+    "C-2",
+    "S-1"
+  ],
+  "unexamined_ids": [],
+  "unresolved_ids": [],
+  "unfinished_scope": [],
+  "totals": {
+    "confirmed": 3,
+    "plausible": 0,
+    "refuted": 0,
+    "unique_confirmed_issues": 2,
+    "confirmed_critical_high_blockers": 0
+  },
+  "duplicates": [
+    {
+      "id": "S-1",
+      "duplicate_of": "C-2",
+      "retained_in_packet": true
+    }
+  ],
+  "commands": [
+    {
+      "command": "python3 -B /workspace/worker/checks/check_contract.py /workspace/worker/surface-contract.json",
+      "exit_code": 0,
+      "output": "contract-check.json"
+    },
+    {
+      "command": "Python static original-document comparison and SHA-256 snapshot capture",
+      "exit_code": 0,
+      "output": "static-comparison.json"
+    },
+    {
+      "command": "Python strict-envelope/ID/severity/verdict/counterexample/refutation-attempt assertions",
+      "exit_code": 0
+    }
+  ],
+  "limits": [
+    "Static document completeness verification only.",
+    "No browser/network/site activity, deployment observation, toy simulation, or original/shared-input mutation.",
+    "No inference about finder execution coverage; only assigned fresh verifier phase reported."
+  ],
+  "artifacts": {
+    "report": "/workspace/output/roles/verifier/report.md",
+    "packet": "/workspace/output/verified.json",
+    "comparison": "/workspace/output/roles/verifier/static-comparison.json",
+    "checker": "/workspace/output/roles/verifier/contract-check.json",
+    "numbered_sources": "/workspace/output/roles/verifier/numbered-sources.txt"
+  }
+}

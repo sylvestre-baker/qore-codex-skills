@@ -1,0 +1,21 @@
+{
+  "actor_id": "/root",
+  "inspection_recorded_at": "2026-10-17T12:15:42.725063+00:00",
+  "opened_with": "tools.view_image; actual image output inspected",
+  "screenshots": [
+    "response-1/00-entry.png",
+    "response-2/01-introduction-via-entry.png",
+    "response-2/03-first-question-unanswered.png",
+    "response-2/04-help-open-via-Enter.png",
+    "response-2/06-close-keyboard-focus.png",
+    "response-2/07-close-restores-summary-focus.png",
+    "response-2/08-Back-sequential-keyboard-focus.png",
+    "response-2/09-returned-introduction-heading-focus.png",
+    "response-4/01-challenge-Back-focus-with-cookie-banner.png",
+    "response-4/02-challenge-Back-refocus-with-cookie-banner.png",
+    "response-4/03-restart-still-unanswered-help-closed.png",
+    "response-4/05-browser-history-forward-check.png"
+  ],
+  "observations": "Readable consistent central card, no observed horizontal clipping in affected card. Summary and Close show gold focus outlines. Back focus is mostly concealed by fixed cookie banner in three captures; header positions in full-page captures depend on scroll. Intro privacy text and some question content also cross banner; no claim of permanent unreadability.",
+  "not_claimed": "No mobile/responsive matrix, alternative theme, reduced-motion comparison, contrast certification or pixel geometry measurements. Duplicate images/DOM are retained but not all were opened separately."
+}

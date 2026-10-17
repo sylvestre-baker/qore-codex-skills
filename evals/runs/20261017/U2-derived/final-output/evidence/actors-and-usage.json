@@ -1,0 +1,30 @@
+{
+  "method": "ux",
+  "actor_id": "/root",
+  "requested": [
+    "/root"
+  ],
+  "returned": [
+    "/root"
+  ],
+  "missing": [],
+  "child_contexts": [],
+  "independence": "No independent multi-role phases required by invoked UX method; no child dispatches. No finder/verifier phases invented.",
+  "wall_start_utc": "2026-10-17T12:07:49+00:00",
+  "wall_deadline_utc": "2026-10-17T12:22:49+00:00",
+  "aggregate_budget_agent_seconds": 2400,
+  "usage": {
+    "agent_token_usage": null,
+    "reason": "No per-context token or agent CPU usage meter is exposed. Elapsed wall time recorded separately; no fabricated zero usage."
+  },
+  "report_utc": "2026-10-17T12:15:43.590123+00:00",
+  "elapsed_wall_seconds_at_report": 474.590126,
+  "full_phase_reports": [
+    "evidence/profile_preflight.json",
+    "evidence/scope.json",
+    "evidence/browser.json",
+    "evidence/state_transition.json",
+    "evidence/freshness.json",
+    "evidence/verdict.json"
+  ]
+}

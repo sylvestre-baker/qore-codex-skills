@@ -1,0 +1,6 @@
+{
+  "at": "2026-10-17T11:53:20.373551+00:00",
+  "exit_code": 1,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"<private-campaign-root>/record_cell.py\", line 118, in <module>\n    if __name__=='__main__':finalize(*sys.argv[1:3])\n                            ~~~~~~~~^^^^^^^^^^^^^^^^\n  File \"<private-campaign-root>/record_cell.py\", line 90, in finalize\n    if not needed.issubset({c['actor_id'] for c in children}):raise ValueError('Actual roster does not account for all Qore phase actors')\n                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: Actual roster does not account for all Qore phase actors\n"
+}

@@ -1,0 +1,36 @@
+[
+  {
+    "argv": [
+      "python3",
+      "-B",
+      "scripts/run-check.py",
+      "/workspace/output/execution.json",
+      "--evidence-root",
+      "/workspace/output"
+    ],
+    "cwd": "/workspace/worker/.agents/skills/qore-review",
+    "started_at": "2026-10-17T11:25:58.340567+00:00",
+    "completed_at": "2026-10-17T11:25:59.073474+00:00",
+    "exit_code": 0,
+    "stdout": "{\n  \"valid\": true,\n  \"coverage\": \"COMPLETE\",\n  \"missing_phases\": [],\n  \"artifact_count\": 61,\n  \"note\": \"Evidence identity and declared phase coverage checked; factual quality is not certified.\"\n}\n",
+    "stderr": "",
+    "validated_execution_sha256": "48ec6effe481e22eff135f61d2e8bd3d2392b6a50aea0e293036ecb3fa21cb6c"
+  },
+  {
+    "argv": [
+      "python3",
+      "-B",
+      "scripts/run-check.py",
+      "/workspace/output/execution.json",
+      "--evidence-root",
+      "/workspace/output"
+    ],
+    "cwd": "/workspace/worker/.agents/skills/qore-review",
+    "started_at": "2026-10-17T11:25:59.076146+00:00",
+    "completed_at": "2026-10-17T11:25:59.266025+00:00",
+    "exit_code": 0,
+    "stdout": "{\n  \"valid\": true,\n  \"coverage\": \"COMPLETE\",\n  \"missing_phases\": [],\n  \"artifact_count\": 61,\n  \"note\": \"Evidence identity and declared phase coverage checked; factual quality is not certified.\"\n}\n",
+    "stderr": "",
+    "validated_execution_sha256": "0fb8e87708fed541bba6cdeb5a88d6931ce1202d72d6358d8a16d09b89e01c26"
+  }
+]

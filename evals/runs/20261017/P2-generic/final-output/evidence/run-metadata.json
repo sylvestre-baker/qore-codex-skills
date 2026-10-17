@@ -1,0 +1,9 @@
+{
+  "run_id": "qore003-20261017-p2-generic-1",
+  "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+  "target_snapshot_sha256": "e9aeec2eee10b52c3339b53b4e491d3ff69f57c68be2f5ea1d61e70df55acccc",
+  "last_relevant_change": "2026-10-17T09:53:58.901555+00:00",
+  "environment": {"id": "qore-qualification-qore003-20261017-p2-generic-1", "operator": "agent", "host": "Docker Desktop Linux arm64 / Codex0.162.0"},
+  "profile": null,
+  "identity_procedure": "Enclosing candidate and prepared-input-manifest identities supplied by user, retained verbatim. Per-file raw-byte SHA-256 inventory and copied snapshots retained in sources/ and evidence/input-inventory.json. No manifest serialization was supplied to independently recompute enclosing hashes."
+}

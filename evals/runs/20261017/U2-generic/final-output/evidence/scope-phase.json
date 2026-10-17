@@ -1,0 +1,16 @@
+{
+  "qore_evidence": {
+    "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+    "target_snapshot_sha256": "1d94a8dd5aaa4c37b55fec05f9fcd4ac55e09b8f27fad7be02501ca69cbec3da",
+    "observed_at": "2026-10-17T12:03:50.216928+00:00",
+    "phase_id": "scope"
+  },
+  "payload": {
+    "actor_context": "/root",
+    "report_file": "evidence/scope-report.md",
+    "full_report": "# Scope phase report\n\nActor/context: /root. Supplied TASK explicitly invokes qore-ux-review. Original project sources read in full: surface-contract.json, checks/check_contract.py, observation-policy.json. Supplied skill SKILL.md, protocol.md, gates.md, evidence.md and run-evidence.md were read. No tutorial protocol or project.json profile is present in the supplied file list. Generic run; profile null. Skill revision and project file hashes are retained in input-manifest.json; original scope sources are retained under source/.\n\nThe entry is https://qaizen.io/labs, permitted origin https://qaizen.io. Only GET/HEAD/OPTIONS are permitted. Public anonymous context, actual public default dark appearance, declared 1280\u00d7800 desktop viewport, en-US scope (page language en). Explicit target is unanswered first-question help. Entry depth covers G0\u2013G6; state depth is additionally relevant. GP excluded because supplied contract explicitly excludes performance. No deployment diff or private source commit is supplied. depth.json lists inspected scope artifacts rather than pretending they were changed deployment files.\n\nApplicable transitions are entry click, Start click, summary Enter, summary Space, summary Enter again, Tab/Enter on Close with focus restored to summary, Tab/Enter on Back with focus moved to introduction h1. Real entry and resolved state are mandatory. Required-check matrix retains each obligation and required capability. Loading/error/results/answer-data permutations are outside the explicit unanswered help journey and would require prohibited actions; no testing of those branches is claimed. No alternative persona/account, mobile or other theme was supplied.\n\nFinite limits: 900 wall seconds, 2400 aggregate agent-seconds, at most three concurrent children, six fresh relay requests, 40 supplied actions each and six UX iterations. Planned review work 720 seconds. No child roles are required by this UX method; no finder/verifier or planning role phases were invented. No children dispatched. Each browser receipt retains actual start/end timestamps. No aggregate agent-seconds usage telemetry is available; usage remains unavailable rather than reported as zero.\n\nDepth lint and source contract checker ran successfully; their outputs prove structural consistency only. No input writes, website answers, submissions or shared-data mutation are authorized. Browser runtime is solely through the neutral relay. Direct command networking, connectors and external guidance were not used. Proposed improvements, if any, remain proposals; target inputs stay immutable.\n",
+    "browser_evidence_window": "2026-10-17T11:54:02.598969+00:00/2026-10-17T12:00:19.824660+00:00",
+    "report_completed_at": "2026-10-17T12:03:50.216928+00:00",
+    "child_actors": []
+  }
+}
