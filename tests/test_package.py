@@ -380,6 +380,29 @@ class PackageTests(unittest.TestCase):
             response = subprocess.run([sys.executable, "-B", str(TOOLS / "context.py"), str(copied), "--root", str(self.project), "--method", qore.METHODS[skill]], capture_output=True, text=True, check=True)
             self.assertEqual(json.loads(response.stdout)["profile"]["sha256"], expected)
 
+    def test_install_copy_failure_can_be_retried_without_manual_skill_removal(self):
+        bundle = Path(self.build()["bundle"])
+        unrelated = self.project / ".agents/skills/local-policy/SKILL.md"
+        unrelated.parent.mkdir(parents=True)
+        unrelated.write_text("Keep the user's existing policy.\n")
+        real_copytree = qore.shutil.copytree
+
+        def fail_second_skill(source, destination, *args, **kwargs):
+            if Path(source).name == "qore-review":
+                raise PermissionError("Controlled second-skill copy failure")
+            return real_copytree(source, destination, *args, **kwargs)
+
+        with patch.object(qore.shutil, "copytree", side_effect=fail_second_skill):
+            with self.assertRaises(OSError):
+                qore.install(bundle, self.project)
+        target = self.project / ".agents/skills"
+        self.assertEqual(sorted(path.name for path in target.iterdir()), ["local-policy"])
+        self.assertEqual(unrelated.read_text(), "Keep the user's existing policy.\n")
+        result = qore.install(bundle, self.project)
+        self.assertEqual(len(result["installed"]), 3)
+        self.assertFalse(result["replaced"])
+        self.assertEqual(qore.compare(bundle, self.project)["changes"], [])
+
     def test_install_refuses_to_overwrite_a_modified_existing_skill(self):
         bundle = Path(self.build()["bundle"])
         installed = qore.install(bundle, self.project)

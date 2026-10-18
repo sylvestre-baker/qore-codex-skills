@@ -53,7 +53,7 @@
     },
     {
       "path": "INSTALL.md",
-      "sha256": "1803f6f40d6539d39dd37f657c67741cf0c137666e31dd446a864f2f0e1f0474",
+      "sha256": "d8c452c6d2731fedb5acaeede42cfddc42150e2cc64f5f197ba2165bb50530aa",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
@@ -10421,7 +10421,7 @@
     },
     {
       "path": "tests/test_package.py",
-      "sha256": "750e9313080f6764f6fbb6cf6abc60a01c47770b37db36714509e476075ddebc",
+      "sha256": "3f126f256567cb8fdf2c1c70fbc50b0c8439b9a5fbf9d82402b170ffd54c1ef0",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
