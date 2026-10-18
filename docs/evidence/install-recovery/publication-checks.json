@@ -1,0 +1,90 @@
+{
+  "schema": "qore-recovery-publication-checks/1",
+  "recorded_date": "2026-10-18",
+  "correction_source": "c3ce75cce730429d21d8b068672beda93c2a4de5",
+  "environment": {
+    "os": "Darwin",
+    "architecture": "arm64",
+    "python": "3.14.7"
+  },
+  "checked_inputs": [
+    {
+      "path": "tools/qore.py",
+      "sha256": "9098c9d890c915e8e0d07b3d30e9f99aa7f2fa6d5032d9ae2b31259a482ff090"
+    },
+    {
+      "path": "tests/test_package.py",
+      "sha256": "8f3e3e49863d4183078a63a7ea142fd393b54ae1afaa9e948a7c31e1f05967ed"
+    },
+    {
+      "path": "examples/install-recovery/reproduce.py",
+      "sha256": "e44e29704ac0ee8516a2da356d1f29e8c455e9f2fd3d9952ce443482158961d7"
+    },
+    {
+      "path": "docs/evidence/install-recovery/replay/reproduce.py",
+      "sha256": "4f7a773006200e83db8265b8ab5ae4a75d8f8ed2c92acdc48459c820eac5e66b"
+    },
+    {
+      "path": "docs/evidence/install-recovery/replay/provenance.json",
+      "sha256": "1da5aa8ff875c4ca2f9b2d0261237773f803f139df3dfb4197383897df2e5194"
+    },
+    {
+      "path": ".github/workflows/check.yml",
+      "sha256": "3fce65776a5964d573a4ed076e204727beb4b4bb9737d42cd1f186789b2bf48b"
+    },
+    {
+      "path": "tests/test_install_replay.py",
+      "sha256": "98cc2940eec8e19803514a79355c25bef5effd8350bc50fa2084152b5f668b2c"
+    }
+  ],
+  "full_suite": {
+    "command": "python3 -B -m unittest discover -s tests -v",
+    "collected": 189,
+    "passed": 178,
+    "skipped": 11,
+    "exit_code": 0,
+    "skips": "Browser-dependent checks were unavailable; skips are not passes."
+  },
+  "offline_replay": {
+    "command": "python3 -B docs/evidence/install-recovery/replay/reproduce.py --output /tmp/qore-offline-recovery-qodo-followup-20261018",
+    "status": "PASS",
+    "cases": [
+      "installation_before",
+      "installation_after",
+      "diagnostic_before",
+      "diagnostic_after"
+    ],
+    "exact_installer_bytes_match": true
+  },
+  "publication_wrapper": "Documentation, selected evidence, command and rights inventories, and CI replay step added after c3ce75c. The tested installer bytes are unchanged. CI records the eventual public branch head separately.",
+  "limits": [
+    "The command records are maintainer-operated automated evidence.",
+    "No full browser qualification or external human first use was performed for this correction.",
+    "Historical Toolbox review was not rerun on c3ce75c; the later GitHub review and replay correction are assessed separately.",
+    "A public review branch does not update main, Pages or released assets."
+  ],
+  "targeted_installer_suite": {
+    "command": "python3 -B -m unittest discover -s tests -p test_package.py -k install -v",
+    "collected": 23,
+    "passed": 23,
+    "skipped": 0,
+    "exit_code": 0
+  },
+  "current_source_replay": {
+    "command": "python3 -B examples/install-recovery/reproduce.py --output /tmp/qore-recovery-publication-20261018",
+    "retry_installs_three": true,
+    "unrelated_policy_preserved": true,
+    "installed_differences": []
+  },
+  "packages": {
+    "full_and_skills_built_verified_and_installed": true,
+    "two_builds_each_reproducible": true,
+    "scope": "Local source and archive checks; immutable CI receipts identify the published head. Detailed local archive receipts are retained privately to avoid self-referential package hashes."
+  },
+  "mutation_regression": {
+    "path": "tests/test_install_replay.py",
+    "historical_result": "FAIL: unsafe packet emitted PASS before the replay assertion was added",
+    "corrected_result": "PASS: unsafe packet rejected before writing result.json",
+    "original_finding": "8586887b-534a-4a89-8009-5d1a6f2a7e2b"
+  }
+}
