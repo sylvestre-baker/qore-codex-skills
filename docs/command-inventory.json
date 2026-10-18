@@ -22,7 +22,9 @@
       "examples/qaizen-labs/README.md",
       "INSTALL.md",
       "docs/tutorials/qodo-review.md",
-      "docs/tutorials/qodo-live-review.md"
+      "docs/tutorials/qodo-live-review.md",
+      "docs/tutorials/recoverable-install.md",
+      "docs/evidence/install-recovery/README.md"
     ],
     "includes": [
       "Every executable shell fence",
@@ -50,7 +52,7 @@
   "documents": [
     {
       "path": "README.md",
-      "sha256": "21c436aeb568156905d816a6acabb723504449f1f8cecf1869668b2cd81d1959"
+      "sha256": "0299aaaf617bfac03d4f0795077c48881e6866ab83a219a346b16e556bcf9582"
     },
     {
       "path": "docs/architecture.md",
@@ -102,7 +104,7 @@
     },
     {
       "path": "docs/troubleshooting.md",
-      "sha256": "641cd391f0ca40dedaa80a4a383982e0c72004d6a2886d5019ea94072fb48a2f"
+      "sha256": "bdbdef1d37aa1aa4dfca447c9512afc7cdf29f6a58330892bcb1a81b988fb93a"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -122,7 +124,7 @@
     },
     {
       "path": "INSTALL.md",
-      "sha256": "1803f6f40d6539d39dd37f657c67741cf0c137666e31dd446a864f2f0e1f0474"
+      "sha256": "91dfcbfbe40e0a1e28d51c48b9d89b6dae080e09f7cbfe0543d89761018c85f8"
     },
     {
       "path": "docs/tutorials/qodo-review.md",
@@ -131,6 +133,14 @@
     {
       "path": "docs/tutorials/qodo-live-review.md",
       "sha256": "1c3c347e281f551080bae5c2b0fb80292b3cf51d776dd632570fb373250c3586"
+    },
+    {
+      "path": "docs/tutorials/recoverable-install.md",
+      "sha256": "18f9139fe3d8d924a21a185ded52754ad882711bcb2e88ad1ae3bbae22c3db06"
+    },
+    {
+      "path": "docs/evidence/install-recovery/README.md",
+      "sha256": "b7802afd3173bf0e5951c30b5cb2383aaf277c6098226e4e55c15f0f04b83e36"
     }
   ],
   "evidence_records": [
@@ -303,6 +313,11 @@
         "Retrospective, different input scopes; unresolved spec context and incomplete prior inventory remain PARTIAL.",
         "Current recipe substitutions are templates, not a new executed review."
       ]
+    },
+    {
+      "id": "recoverable-install-publication",
+      "path": "docs/evidence/install-recovery/publication-checks.json",
+      "scope": "Controlled before/after replay and installer regressions; no external human first-use claim."
     }
   ],
   "entries": [
@@ -2155,6 +2170,132 @@
           "qodo-tutorial-original-review"
         ],
         "limit": "User paths and operation IDs require substitution; original review is separately identified."
+      }
+    },
+    {
+      "id": "install-recovery-docs-tutorials-recoverable-install.md-1",
+      "kind": "shell_recipe",
+      "location": {
+        "path": "docs/tutorials/recoverable-install.md",
+        "fence": 1
+      },
+      "text": "python3 -B examples/install-recovery/reproduce.py --output /tmp/qore-recovery-new",
+      "text_sha256": "512aa5299d851f937d233c56322b91700c9f2c0be8bc35c231715cc48bb456cc",
+      "implementation": [
+        {
+          "path": "examples/install-recovery/reproduce.py",
+          "sha256": "e44e29704ac0ee8516a2da356d1f29e8c455e9f2fd3d9952ce443482158961d7"
+        },
+        {
+          "path": "tools/qore.py",
+          "sha256": "9098c9d890c915e8e0d07b3d30e9f99aa7f2fa6d5032d9ae2b31259a482ff090"
+        }
+      ],
+      "supported_host": "Local Python 3 interpreter",
+      "working_directory": "Candidate repository root",
+      "prerequisites": [
+        "Current checkout, or the complete pinned replay directory for the offline example",
+        "Unused output path for replay commands"
+      ],
+      "inputs_and_substitutions": {
+        "output": "Choose an unused output directory. Publication verification used a distinct temporary path."
+      },
+      "expected_output": [
+        "Four checked replay cases or passing targeted installation regressions"
+      ],
+      "effects": [
+        "Temporary local skill installations; replay retains only the explicitly chosen result directory. No Qodo or network call."
+      ],
+      "execution": {
+        "status": "EXECUTED_RELATED_HISTORICAL_DESTINATION",
+        "evidence_ids": [
+          "recoverable-install-publication"
+        ],
+        "limit": "The same implementation was executed with a different new output path; the displayed output placeholder itself is not a fixed test fixture."
+      }
+    },
+    {
+      "id": "install-recovery-docs-tutorials-recoverable-install.md-2",
+      "kind": "shell_recipe",
+      "location": {
+        "path": "docs/tutorials/recoverable-install.md",
+        "fence": 2
+      },
+      "text": "python3 -B -m unittest discover -s tests -p test_package.py -k install -v",
+      "text_sha256": "20baca635f62d53e7d032ce89c8ef1d6700ee56948e0de472886883ef880e2ef",
+      "implementation": [
+        {
+          "path": "examples/install-recovery/reproduce.py",
+          "sha256": "e44e29704ac0ee8516a2da356d1f29e8c455e9f2fd3d9952ce443482158961d7"
+        },
+        {
+          "path": "tools/qore.py",
+          "sha256": "9098c9d890c915e8e0d07b3d30e9f99aa7f2fa6d5032d9ae2b31259a482ff090"
+        }
+      ],
+      "supported_host": "Local Python 3 interpreter",
+      "working_directory": "Candidate repository root",
+      "prerequisites": [
+        "Current checkout, or the complete pinned replay directory for the offline example",
+        "Unused output path for replay commands"
+      ],
+      "inputs_and_substitutions": {
+        "output": "Choose an unused output directory. Publication verification used a distinct temporary path."
+      },
+      "expected_output": [
+        "Four checked replay cases or passing targeted installation regressions"
+      ],
+      "effects": [
+        "Temporary local skill installations; replay retains only the explicitly chosen result directory. No Qodo or network call."
+      ],
+      "execution": {
+        "status": "EXECUTED_RELATED_HISTORICAL_DESTINATION",
+        "evidence_ids": [
+          "recoverable-install-publication"
+        ],
+        "limit": "The same implementation was executed with a different new output path; the displayed output placeholder itself is not a fixed test fixture."
+      }
+    },
+    {
+      "id": "install-recovery-docs-evidence-install-recovery-README.md-1",
+      "kind": "shell_recipe",
+      "location": {
+        "path": "docs/evidence/install-recovery/README.md",
+        "fence": 1
+      },
+      "text": "python3 -B docs/evidence/install-recovery/replay/reproduce.py --output /tmp/qore-offline-recovery-new",
+      "text_sha256": "0040bd637e038bb27acefcb129cc9ae0e6728982c579a6004c1cf2adf446d9aa",
+      "implementation": [
+        {
+          "path": "docs/evidence/install-recovery/replay/reproduce.py",
+          "sha256": "4f7a773006200e83db8265b8ab5ae4a75d8f8ed2c92acdc48459c820eac5e66b"
+        },
+        {
+          "path": "docs/evidence/install-recovery/replay/provenance.json",
+          "sha256": "1da5aa8ff875c4ca2f9b2d0261237773f803f139df3dfb4197383897df2e5194"
+        }
+      ],
+      "supported_host": "Local Python 3 interpreter",
+      "working_directory": "Candidate repository root",
+      "prerequisites": [
+        "Current checkout, or the complete pinned replay directory for the offline example",
+        "Unused output path for replay commands"
+      ],
+      "inputs_and_substitutions": {
+        "output": "Choose an unused output directory. Publication verification used a distinct temporary path."
+      },
+      "expected_output": [
+        "Four checked replay cases or passing targeted installation regressions"
+      ],
+      "effects": [
+        "Temporary local skill installations; replay retains only the explicitly chosen result directory. No Qodo or network call."
+      ],
+      "execution": {
+        "status": "EXECUTED_RELATED_HISTORICAL_DESTINATION",
+        "evidence_ids": [
+          "recoverable-install-publication"
+        ],
+        "limit": "The same implementation was executed with a different new output path; the displayed output placeholder itself is not a fixed test fixture."
       }
     }
   ],

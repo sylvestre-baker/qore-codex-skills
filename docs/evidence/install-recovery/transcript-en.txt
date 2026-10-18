@@ -1,0 +1,38 @@
+A RECOVERABLE QORE INSTALLATION — VERIFIED QODO ADVICE
+English transcript - V5
+
+1. Qore: three Codex methods, adapted to your project.
+Qore is my independent open-source project. It gives Codex three methods: plan a change from project rules, challenge a specification or deliverable with independent verification, and inspect a rendered web interface. One sourced project profile can specialize all three. Now an installation problem has become a manual cleanup problem.
+
+2. A failed install should not block your next step.
+You install Qore into a project. The first skill copies, then the second copy fails. You fix the original cause and run the same command again. It refuses, because the first folder is already there. This is the real failure path we reproduced.
+
+3. Ask Qodo. Keep the original result.
+We found the recovery gap ourselves. Before changing production code, we added a regression test and wrote the required behavior in English. The test was deliberately red. We asked Qodo to analyze that change, with the complete repository available as context. This was a targeted review of a known problem, not a blind discovery test. Qodo connected the failure to the direct-copy loop and the absence of recovery. It recommended staging, tracking what the attempt created, and cleaning up only that content. It also challenged our first test: a failure before copying does not cover an interrupted file copy or unsafe cleanup. Those were concrete review recommendations, with their original classifications retained.
+
+4. Test the advice before adopting it.
+Qodo's proposed remedy used plain rename. A fresh independent Codex verifier tested that detail. On this machine, rename could replace an existing empty folder. We rejected that detail. The implemented solution prepares and verifies the three skills in private staging, creates each destination exclusively, and checks ownership and content before cleanup.
+
+5. Qodo flagged a hidden failure.
+When a copy failed, scanning staged files failed too. The second error hid the original cause. Qodo flagged it.
+
+6. The same finding: compare before and after.
+We reproduced it, then fixed the code to preserve the original error and report cleanup failures separately.
+
+7. Run the same failure. Compare the outcome.
+We replayed the same original failure. This time, no partial skill folder blocked the retry. After the injected fault was disabled, the same install command installed all three skills, and the unrelated user policy stayed unchanged. Additional tests cover partial copies, publication failures, final checks, and cleanup errors. If recovery is uncertain, the tool preserves the files and reports the retained paths.
+
+8. What we resolved — and what remains limited.
+The practical result is a recoverable installation, with a clear manual path when automatic cleanup is unsafe.
+
+9. The lesson: reproduce, challenge, then decide.
+We discovered the issue. Qodo supplied a targeted diagnosis and recommendations. Separate verification shaped the final correction, which we implemented and tested.
+
+10. Inspect the evidence. Try the replay.
+I'm Sylvestre, at Healthmov.
+
+Context: the lesson defines Qore, its core-to-project specialization and the controlled installation blocker before showing the detailed failure. The initial installation defect was found by the maintainer. Qodo reviewed the known issue, supplied recommendations, and later flagged a separate diagnostic defect. Native excerpts, a rejected remedy, source identities and scoped limits are described in README.md and qodo-assessment.json. AI-generated narration, reordered from existing approved recordings. Two redundant passages were removed; all technical cases and evidence remain. A reused four-word presenter phrase identifies the author at the close. No new voice-generation request was made for V5. Visuals reconstruct recorded observations. The offline replay injects controlled failures and makes no Qodo call. There is no measured savings or customer-incident claim, nor a crash, hostile-concurrency or whole-product guarantee.
+
+Evidence: README.md
+Replay instructions: README.md (offline replay section)
+Minimal runtime source: replay/qore-source-c3ce75c.zip

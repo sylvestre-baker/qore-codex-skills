@@ -34,6 +34,7 @@ jobs:
               node --version
               python3 --version
               python3 -B -m unittest discover -s tests -v
+              python3 -B docs/evidence/install-recovery/replay/reproduce.py --output /tmp/qore-offline-recovery-ci
               python3 -B tools/check_execution_records.py
               python3 tools/qore.py build --output /tmp/qore-build-a
               python3 tools/qore.py build --output /tmp/qore-build-b

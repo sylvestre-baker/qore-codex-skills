@@ -40,4 +40,6 @@ For local fixtures, confirm the server is listening and that the URL belongs to 
 
 ## Report a reproducible issue
 
+For handled installation failures, inspect `recovery.safe_to_retry`, `retained_paths`, `cleanup_errors` and `next_action` in stderr JSON. Preserve uncertain files; do not delete every folder matching `qore-*`. Follow the [recovery instructions](../INSTALL.md#recover-from-a-handled-installation-error) or [controlled recovery tutorial](tutorials/recoverable-install.md).
+
 Provide the method, target/candidate/profile identities, actual command or prompt, expected outcome, observed outcome, relevant evidence, and execution limits. Remove credentials and private data before sharing. Follow [contributing guidance](../CONTRIBUTING.md); no external message or publication happens automatically.

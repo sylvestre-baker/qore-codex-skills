@@ -1,0 +1,86 @@
+{
+  "schema": "qore-qodo-assessment/1",
+  "transformation": "First-party paraphrases of six selected native remarks. Native IDs and action levels are unchanged. Full provider packets and account/session metadata are not redistributed. This is not a complete raw provider report.",
+  "reviews": [
+    {
+      "reviewed_commit": "f92d9c200893b023c523011b00d74cabd4c1170e",
+      "private_source_packet_sha256": "0771195b8f30e5f70fc91462bfdba040c2b833539e4db1d7720b04100120829d",
+      "roles_ran": [
+        "issue"
+      ],
+      "roles_skipped": [
+        "compliance",
+        "skills",
+        "spec",
+        "ui",
+        "persona",
+        "cross_repo"
+      ],
+      "selected_findings": [
+        {
+          "native_id": "2799a484-4eb0-4393-872c-1b0ec80fe4e1",
+          "native_action_level": "action_required",
+          "maintainer_assessment": "Confirmed known failure",
+          "paraphrased_observation": "Direct copies leave a skill destination that blocks retry. The maintainer supplied this reproduction before the review. Staging was already considered in planning.",
+          "disposition": "Handled failures recover conservatively; staged and installed bytes are checked."
+        },
+        {
+          "native_id": "012ddd18-b107-4a02-94bd-11d9f141430c",
+          "native_action_level": "remediation_recommended",
+          "maintainer_assessment": "Confirmed coverage gap",
+          "paraphrased_observation": "The first test failed before a destination was created. That alone could not catch partial-copy cleanup or preservation mistakes.",
+          "disposition": "Added partial-copy, publication-position, content-change, conflict and cleanup-failure tests."
+        },
+        {
+          "native_id": "56276cb1-ab4b-4286-8f29-61553d4834b9",
+          "native_action_level": "informational",
+          "maintainer_assessment": "Qualified documentation advice",
+          "paraphrased_observation": "Recovery instructions were useful, but the existing guide already disclosed that compact downloads omit tests.",
+          "disposition": "The compact guide now explains safe recovery and explicitly retained uncertainty."
+        }
+      ]
+    },
+    {
+      "reviewed_commit": "d5a66ce2fbb4328fd279166f3a8f1ab8d636c3f3",
+      "private_source_packet_sha256": "5a7e39bf20ed5f5ad0ba7d97284b6d650ce631ede9688d7e63c5aa7f7377f56d",
+      "roles_ran": [
+        "issue"
+      ],
+      "roles_skipped": [
+        "compliance",
+        "skills",
+        "spec",
+        "ui",
+        "persona",
+        "cross_repo"
+      ],
+      "selected_findings": [
+        {
+          "native_id": "21899c58-0f27-484b-af89-1694f49e1718",
+          "native_action_level": "remediation_recommended",
+          "maintainer_assessment": "Confirmed misplaced assertion",
+          "paraphrased_observation": "The asserted project-root glob did not cover the preferred .agents staging parent. Other tests already detected some leftovers.",
+          "disposition": "Strengthened assertions to inspect the actual staging locations."
+        },
+        {
+          "native_id": "e12b270b-7129-4845-a780-b430e140595c",
+          "native_action_level": "informational",
+          "maintainer_assessment": "Confirmed diagnostic defect",
+          "paraphrased_observation": "In the reviewed d5a66ce snapshot, a directory scan could mask the primary copy error.",
+          "disposition": "Follow-up c3ce75c retains the primary error and records secondary bookkeeping errors separately. Uncertainty keeps safe_to_retry false."
+        },
+        {
+          "native_id": "9518b6b9-e38f-4db9-8119-4dd1766a7c9e",
+          "native_action_level": "informational",
+          "maintainer_assessment": "Nonblocking refinement retained",
+          "paraphrased_observation": "The wrapper retains the original exception through __cause__, while direct Python callers would need that chain to recover its type and metadata.",
+          "disposition": "No stable Python SDK compatibility claim is made. This observation is retained rather than presented as fixed or refuted."
+        }
+      ]
+    }
+  ],
+  "rejected_recommendation_detail": "On the tested macOS filesystem, plain os.rename could replace an existing empty destination. Exclusive destination creation was used instead.",
+  "source_candidate": "c3ce75cce730429d21d8b068672beda93c2a4de5",
+  "toolbox_review_after_source_candidate": false,
+  "later_github_review": "qodo-github-followup.json"
+}
