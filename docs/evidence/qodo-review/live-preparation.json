@@ -1,0 +1,12 @@
+{
+  "schema": "qore-qodo-live-preparation/1",
+  "base_commit": "a4fef83aadd6610435da5ac0cc7e53b34fe1dd4f",
+  "source_fix_commit": "d67673097e41d5e4c4fd02241c9f0c392cdac1f5",
+  "source_fix_tree": "c10015840a872caf200164d69aa650b6d0bda8b5",
+  "changed_files": 77,
+  "origin": "https://github.com/sylvestre-baker/qore-codex-skills",
+  "qodo_submitted": false,
+  "effects": "New isolated public-code Git tree and context only; source checkout unchanged; no network request or Qodo call.",
+  "limit": "A shallow or source-archive checkout may lack historical Git objects. Use a full clone; this script never fetches a remote automatically.",
+  "observed_at": "2026-10-18T08:36:12.023903+00:00"
+}

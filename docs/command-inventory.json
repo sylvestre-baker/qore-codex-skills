@@ -20,7 +20,9 @@
       "docs/showcase.md",
       "docs/coordination.md",
       "examples/qaizen-labs/README.md",
-      "INSTALL.md"
+      "INSTALL.md",
+      "docs/tutorials/qodo-review.md",
+      "docs/tutorials/qodo-live-review.md"
     ],
     "includes": [
       "Every executable shell fence",
@@ -48,7 +50,7 @@
   "documents": [
     {
       "path": "README.md",
-      "sha256": "763a68439ea924286d2eb44e09852df01f7afe755c25a99c36fd6916b52d08d6"
+      "sha256": "21c436aeb568156905d816a6acabb723504449f1f8cecf1869668b2cd81d1959"
     },
     {
       "path": "docs/architecture.md",
@@ -121,6 +123,14 @@
     {
       "path": "INSTALL.md",
       "sha256": "1803f6f40d6539d39dd37f657c67741cf0c137666e31dd446a864f2f0e1f0474"
+    },
+    {
+      "path": "docs/tutorials/qodo-review.md",
+      "sha256": "7e85ad0b6aff4a6cbbc78af02c143a5ca41cb450d701626d9570cee28bc78b65"
+    },
+    {
+      "path": "docs/tutorials/qodo-live-review.md",
+      "sha256": "1c3c347e281f551080bae5c2b0fb80292b3cf51d776dd632570fb373250c3586"
     }
   ],
   "evidence_records": [
@@ -263,6 +273,35 @@
         "Original archive and source/profile identities remain distinct from later presentation builds.",
         "Linux browser skips are not passes; no external human or general compatibility claim.",
         "The original generic tutorial has not been repeated for every archive revision."
+      ]
+    },
+    {
+      "id": "qodo-tutorial-focused-replay",
+      "category": "New focused helper replay using exact public snapshots and labeled fixtures",
+      "status": "EXECUTED",
+      "public_execution_artifact": "docs/evidence/qodo-review/focused-replay.json",
+      "limits": [
+        "No Qodo request, original model-review rerun or full package installation.",
+        "Hash-boundary comparison is narrower than running the builder."
+      ]
+    },
+    {
+      "id": "qodo-tutorial-live-preparation",
+      "category": "New local preparation of the exact complete historical change",
+      "status": "EXECUTED",
+      "public_execution_artifact": "docs/evidence/qodo-review/live-preparation.json",
+      "limits": [
+        "Git history required; no network fetch, authentication, installation or Qodo submission."
+      ]
+    },
+    {
+      "id": "qodo-tutorial-original-review",
+      "category": "Selected historical Qodo issue-review excerpts and independent claim checks",
+      "status": "EXECUTED",
+      "public_execution_artifact": "docs/evidence/qodo-review/README.md",
+      "limits": [
+        "Retrospective, different input scopes; unresolved spec context and incomplete prior inventory remain PARTIAL.",
+        "Current recipe substitutions are templates, not a new executed review."
       ]
     }
   ],
@@ -1929,6 +1968,193 @@
         "status": "TEMPLATE_NOT_EXECUTED_AS_WRITTEN",
         "evidence_ids": [],
         "limit": "Covered by isolated fixture tests. Actual compact 0.2.1 archive awaits maintainer rights review."
+      }
+    },
+    {
+      "id": "qodo-tutorial-qodo-review-1",
+      "kind": "shell_recipe",
+      "location": {
+        "path": "docs/tutorials/qodo-review.md",
+        "shell_fence": 1
+      },
+      "text": "qodo_replay_root=\"$(mktemp -d \"${TMPDIR:-/tmp}/qore-qodo.XXXXXX\")\"\npython3 -B examples/qodo-review/reproduce.py --output \"$qodo_replay_root/run\"",
+      "text_sha256": "5a9e88b053b1ac1d7ebdd87653b24ecc63fb7bd64056e3d7815da6d1cbcf55ab",
+      "implementation": [
+        {
+          "path": "examples/qodo-review/reproduce.py",
+          "sha256": "72d2dd98aeafcd7229e5b04adfd63a238753b213f822347a7ad1965e08d0eb5d"
+        }
+      ],
+      "supported_host": "Local Python/Node executor; live templates use reviewed Qodo Agentic Toolbox CLI 1.6.0",
+      "working_directory": "Repository root; live submission/collection runs in the prepared target",
+      "prerequisites": [
+        "python3",
+        "Node.js",
+        "Unused output directory"
+      ],
+      "inputs_and_substitutions": {
+        "paths": "Temporary root from the preceding recipe; live templates also need a reviewed CLI path and an actual returned operation ID."
+      },
+      "expected_output": [
+        "Terminal JSON/status or explicit prerequisite refusal; no defect-absence inference"
+      ],
+      "effects": [
+        "New local files only; existing output preserved"
+      ],
+      "execution": {
+        "status": "EXECUTED_RECORDED",
+        "evidence_ids": [
+          "qodo-tutorial-focused-replay"
+        ],
+        "limit": "Executed on the maintainer computer with the named bundled inputs; no external human or general compatibility claim."
+      }
+    },
+    {
+      "id": "qodo-tutorial-qodo-review-2",
+      "kind": "shell_recipe",
+      "location": {
+        "path": "docs/tutorials/qodo-review.md",
+        "shell_fence": 2
+      },
+      "text": "python3 -m json.tool \"$qodo_replay_root/run/observations.json\"",
+      "text_sha256": "4de75d3440f703c4e528d1cc600a397d4cf19a80cb978ed6aa8425dcab776044",
+      "implementation": [],
+      "supported_host": "Local Python/Node executor; live templates use reviewed Qodo Agentic Toolbox CLI 1.6.0",
+      "working_directory": "Repository root; live submission/collection runs in the prepared target",
+      "prerequisites": [
+        "python3",
+        "Node.js",
+        "Unused output directory"
+      ],
+      "inputs_and_substitutions": {
+        "paths": "Temporary root from the preceding recipe; live templates also need a reviewed CLI path and an actual returned operation ID."
+      },
+      "expected_output": [
+        "Terminal JSON/status or explicit prerequisite refusal; no defect-absence inference"
+      ],
+      "effects": [
+        "Reads retained JSON and writes formatted JSON to stdout"
+      ],
+      "execution": {
+        "status": "EXECUTED_RECORDED",
+        "evidence_ids": [
+          "qodo-tutorial-focused-replay"
+        ],
+        "limit": "Executed on the maintainer computer with the named bundled inputs; no external human or general compatibility claim."
+      }
+    },
+    {
+      "id": "qodo-tutorial-qodo-live-review-1",
+      "kind": "shell_recipe",
+      "location": {
+        "path": "docs/tutorials/qodo-live-review.md",
+        "shell_fence": 1
+      },
+      "text": "qodo_live_root=\"$(mktemp -d \"${TMPDIR:-/tmp}/qore-qodo-live.XXXXXX\")\"\npython3 -B examples/qodo-review/prepare_live.py --output \"$qodo_live_root/run\"",
+      "text_sha256": "186000a75320d421591e8bc22f8e3f7397d530c167dd0bd1e3a27a3b846ab580",
+      "implementation": [
+        {
+          "path": "examples/qodo-review/prepare_live.py",
+          "sha256": "6223197ed994224253659e1bf0912d207a6c04c9f8fd48097fed29806e7e6534"
+        }
+      ],
+      "supported_host": "Local Python/Node executor; live templates use reviewed Qodo Agentic Toolbox CLI 1.6.0",
+      "working_directory": "Repository root; live submission/collection runs in the prepared target",
+      "prerequisites": [
+        "python3",
+        "Node.js",
+        "Unused output directory",
+        "Git with the full recorded public history"
+      ],
+      "inputs_and_substitutions": {
+        "paths": "Temporary root from the preceding recipe; live templates also need a reviewed CLI path and an actual returned operation ID."
+      },
+      "expected_output": [
+        "Terminal JSON/status or explicit prerequisite refusal; no defect-absence inference"
+      ],
+      "effects": [
+        "New local files only; existing output preserved"
+      ],
+      "execution": {
+        "status": "EXECUTED_RECORDED",
+        "evidence_ids": [
+          "qodo-tutorial-live-preparation"
+        ],
+        "limit": "Executed on the maintainer computer with the named bundled inputs; no external human or general compatibility claim."
+      }
+    },
+    {
+      "id": "qodo-tutorial-qodo-live-review-2",
+      "kind": "shell_recipe_template",
+      "location": {
+        "path": "docs/tutorials/qodo-live-review.md",
+        "shell_fence": 2
+      },
+      "text": "qodo_cli=/absolute/path/to/your/reviewed/qodo.mjs\ncd \"$qodo_live_root/run/target\"\nnode \"$qodo_cli\" --no-onboarding --json review \\\n  --base a4fef83aadd6610435da5ac0cc7e53b34fe1dd4f \\\n  --context-file ../review-context.json --full --deep --async \\\n  > ../submission.json 2> ../submission.stderr",
+      "text_sha256": "2169856e9ca674588b8246e9f65165845fb9dccbe579bf71cdb819a84d8ceb2e",
+      "implementation": [],
+      "supported_host": "Local Python/Node executor; live templates use reviewed Qodo Agentic Toolbox CLI 1.6.0",
+      "working_directory": "Repository root; live submission/collection runs in the prepared target",
+      "prerequisites": [
+        "python3",
+        "Node.js",
+        "Unused output directory",
+        "Official reviewed CLI",
+        "Authenticated intended workspace",
+        "Authorized public base repository"
+      ],
+      "inputs_and_substitutions": {
+        "paths": "Temporary root from the preceding recipe; live templates also need a reviewed CLI path and an actual returned operation ID."
+      },
+      "expected_output": [
+        "Terminal JSON/status or explicit prerequisite refusal; no defect-absence inference"
+      ],
+      "effects": [
+        "Contacts Qodo; submission sends the prepared public-code diff and context; collection reads its operation"
+      ],
+      "execution": {
+        "status": "REFERENCE_TEMPLATE_NOT_EXECUTED_AS_WRITTEN",
+        "evidence_ids": [
+          "qodo-tutorial-original-review"
+        ],
+        "limit": "User paths and operation IDs require substitution; original review is separately identified."
+      }
+    },
+    {
+      "id": "qodo-tutorial-qodo-live-review-3",
+      "kind": "shell_recipe_template",
+      "location": {
+        "path": "docs/tutorials/qodo-live-review.md",
+        "shell_fence": 3
+      },
+      "text": "node \"$qodo_cli\" --no-onboarding --json review status ACTUAL_OPERATION_ID \\\n  > ../collection-01.json 2> ../collection-01.stderr",
+      "text_sha256": "af592425fe618e22fbf456b18a40056561402bb5284a071707b9fa1b75df8b39",
+      "implementation": [],
+      "supported_host": "Local Python/Node executor; live templates use reviewed Qodo Agentic Toolbox CLI 1.6.0",
+      "working_directory": "Repository root; live submission/collection runs in the prepared target",
+      "prerequisites": [
+        "python3",
+        "Node.js",
+        "Unused output directory",
+        "Official reviewed CLI",
+        "Authenticated intended workspace",
+        "Authorized public base repository"
+      ],
+      "inputs_and_substitutions": {
+        "paths": "Temporary root from the preceding recipe; live templates also need a reviewed CLI path and an actual returned operation ID."
+      },
+      "expected_output": [
+        "Terminal JSON/status or explicit prerequisite refusal; no defect-absence inference"
+      ],
+      "effects": [
+        "Contacts Qodo; submission sends the prepared public-code diff and context; collection reads its operation"
+      ],
+      "execution": {
+        "status": "REFERENCE_TEMPLATE_NOT_EXECUTED_AS_WRITTEN",
+        "evidence_ids": [
+          "qodo-tutorial-original-review"
+        ],
+        "limit": "User paths and operation IDs require substitution; original review is separately identified."
       }
     }
   ],

@@ -1,0 +1,82 @@
+{
+  "schema": "qore-qodo-replay-sources/1",
+  "repository": "https://github.com/sylvestre-baker/qore-codex-skills",
+  "snapshots": {
+    "base": "a4fef83aadd6610435da5ac0cc7e53b34fe1dd4f",
+    "historical": "d67673097e41d5e4c4fd02241c9f0c392cdac1f5",
+    "current": "e9d74cfeadd299a52f66919598b8330d6225e947",
+    "historical_profile_fix": "908ba019ce43b8566d0f68fda4b2bf237a2b5d66"
+  },
+  "resources": [
+    {
+      "path": "snapshots/base-project-check.py",
+      "label": "base",
+      "source_path": "skills/qore-review/scripts/project-check.py",
+      "source_commit": "a4fef83aadd6610435da5ac0cc7e53b34fe1dd4f",
+      "source_url": "https://github.com/sylvestre-baker/qore-codex-skills/blob/a4fef83aadd6610435da5ac0cc7e53b34fe1dd4f/skills/qore-review/scripts/project-check.py",
+      "sha256": "3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd",
+      "transformation": "Exact public first-party source bytes",
+      "license": "MIT"
+    },
+    {
+      "path": "snapshots/historical-project-check.py",
+      "label": "historical",
+      "source_path": "skills/qore-review/scripts/project-check.py",
+      "source_commit": "d67673097e41d5e4c4fd02241c9f0c392cdac1f5",
+      "source_url": "https://github.com/sylvestre-baker/qore-codex-skills/blob/d67673097e41d5e4c4fd02241c9f0c392cdac1f5/skills/qore-review/scripts/project-check.py",
+      "sha256": "2c1ddb8084c15ee276b9e289965333e57c8cd37fb62c442a93351daefaf9f297",
+      "transformation": "Exact public first-party source bytes",
+      "license": "MIT"
+    },
+    {
+      "path": "snapshots/current-project-check.py",
+      "label": "current",
+      "source_path": "skills/qore-review/scripts/project-check.py",
+      "source_commit": "e9d74cfeadd299a52f66919598b8330d6225e947",
+      "source_url": "https://github.com/sylvestre-baker/qore-codex-skills/blob/e9d74cfeadd299a52f66919598b8330d6225e947/skills/qore-review/scripts/project-check.py",
+      "sha256": "d87afa433fe485bdebca3e281d06e0896e4a8980ea7cf7baee739053614ea0ac",
+      "transformation": "Exact public first-party source bytes",
+      "license": "MIT"
+    },
+    {
+      "path": "snapshots/finding-lint.mjs",
+      "label": "current",
+      "source_path": "skills/qore-review/scripts/finding-lint.mjs",
+      "source_commit": "e9d74cfeadd299a52f66919598b8330d6225e947",
+      "source_url": "https://github.com/sylvestre-baker/qore-codex-skills/blob/e9d74cfeadd299a52f66919598b8330d6225e947/skills/qore-review/scripts/finding-lint.mjs",
+      "sha256": "d3d22ae7d0b1b6b53b36006f13a8aaf6e1aa9e89df27b98312e6ac72ea079a26",
+      "transformation": "Exact public first-party source bytes",
+      "license": "MIT"
+    },
+    {
+      "path": "snapshots/findings.md.txt",
+      "label": "historical",
+      "source_path": "skills/qore-review/references/findings.md",
+      "source_commit": "d67673097e41d5e4c4fd02241c9f0c392cdac1f5",
+      "source_url": "https://github.com/sylvestre-baker/qore-codex-skills/blob/d67673097e41d5e4c4fd02241c9f0c392cdac1f5/skills/qore-review/references/findings.md",
+      "sha256": "f9f9035e471c9832c6546e80e4fe857777fefceba781bd5801ee8f97bdeaa409",
+      "transformation": "Exact public first-party source bytes",
+      "license": "MIT"
+    }
+  ],
+  "hash_boundary": [
+    {
+      "source_path": "skills/qore-review/references/findings.md",
+      "selected_candidate_sha256": "f9f9035e471c9832c6546e80e4fe857777fefceba781bd5801ee8f97bdeaa409",
+      "slice_retained_base_approved_sha256": "79b2b5f52e88761331c01b92af9b492ef1888c6c20a0af1b94a8bead7aa2d6cb",
+      "complete_fix_approved_sha256": "f9f9035e471c9832c6546e80e4fe857777fefceba781bd5801ee8f97bdeaa409",
+      "replay_path": "snapshots/findings.md.txt"
+    },
+    {
+      "source_path": "skills/qore-review/scripts/finding-lint.mjs",
+      "selected_candidate_sha256": "d3d22ae7d0b1b6b53b36006f13a8aaf6e1aa9e89df27b98312e6ac72ea079a26",
+      "slice_retained_base_approved_sha256": "fcaa096759c5100b2e68987f846734c8d72922e7938dd00fe25bb1964a824168",
+      "complete_fix_approved_sha256": "d3d22ae7d0b1b6b53b36006f13a8aaf6e1aa9e89df27b98312e6ac72ea079a26",
+      "replay_path": "snapshots/finding-lint.mjs"
+    }
+  ],
+  "limits": [
+    "The focused replay is new execution of exact public helpers with labeled synthetic inputs; it is not the original Qodo review or a complete package installation.",
+    "The hash boundary compares recorded public source digests, not a fresh full package build."
+  ]
+}

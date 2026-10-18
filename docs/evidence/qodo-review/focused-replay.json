@@ -1,0 +1,220 @@
+{
+  "schema": "qore-qodo-focused-replay/1",
+  "observed_at": "2026-10-18T08:43:10.818757+00:00",
+  "sources_sha256": "cd27cdbb70cdc2947f1425f9cb6d0de66f82deed1cbce72cafd94251d3b60909",
+  "runner_sha256": "72d2dd98aeafcd7229e5b04adfd63a238753b213f822347a7ad1965e08d0eb5d",
+  "fixture_findings_sha256": "b597c7aef34470da18226bf9a914fc8b51768af6b15240fa47789f21fd393be1",
+  "snapshots": {
+    "base": "a4fef83aadd6610435da5ac0cc7e53b34fe1dd4f",
+    "historical": "d67673097e41d5e4c4fd02241c9f0c392cdac1f5",
+    "current": "e9d74cfeadd299a52f66919598b8330d6225e947",
+    "historical_profile_fix": "908ba019ce43b8566d0f68fda4b2bf237a2b5d66"
+  },
+  "environment": {
+    "python": "3.14.7",
+    "node": "v22.23.3",
+    "platform": "darwin"
+  },
+  "profile_preflight": [
+    {
+      "snapshot": "base",
+      "exit_code": 0,
+      "coverage": "COMPLETE",
+      "direct_profile_control_exit": 0,
+      "problems": []
+    },
+    {
+      "snapshot": "historical",
+      "exit_code": 2,
+      "coverage": "BLOCKED",
+      "direct_profile_control_exit": 0,
+      "problems": [
+        "Bundled profile baseline needs exactly one project resource"
+      ]
+    },
+    {
+      "snapshot": "current",
+      "exit_code": 0,
+      "coverage": "COMPLETE",
+      "direct_profile_control_exit": 0,
+      "problems": []
+    }
+  ],
+  "text_summary": {
+    "stdout": "finding-lint: valid; coverage PARTIAL; verdict PENDING; 0 blocking findings.\n",
+    "json_verdict": "PENDING",
+    "json_coverage": "PARTIAL",
+    "json_unresolved_findings": [
+      "F1"
+    ]
+  },
+  "hash_boundary": [
+    {
+      "path": "skills/qore-review/references/findings.md",
+      "actual_sha256": "f9f9035e471c9832c6546e80e4fe857777fefceba781bd5801ee8f97bdeaa409",
+      "slice_approval_matches": false,
+      "complete_fix_approval_matches": true
+    },
+    {
+      "path": "skills/qore-review/scripts/finding-lint.mjs",
+      "actual_sha256": "d3d22ae7d0b1b6b53b36006f13a8aaf6e1aa9e89df27b98312e6ac72ea079a26",
+      "slice_approval_matches": false,
+      "complete_fix_approval_matches": true
+    }
+  ],
+  "checks": [
+    {
+      "id": "profile-base",
+      "matches_expected_observation": true
+    },
+    {
+      "id": "profile-historical",
+      "matches_expected_observation": true
+    },
+    {
+      "id": "profile-current",
+      "matches_expected_observation": true
+    },
+    {
+      "id": "text-summary",
+      "matches_expected_observation": true
+    },
+    {
+      "id": "selection-hash-boundary",
+      "matches_expected_observation": true
+    }
+  ],
+  "matches_recorded_observations": true,
+  "commands": [
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "EXAMPLE/snapshots/base-project-check.py",
+        "OUTPUT/project/profile.json",
+        "--root",
+        "OUTPUT/project",
+        "--method",
+        "review"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"schema\": \"qore-context-check/1\",\n  \"profile\": {\n    \"id\": \"tutorial\",\n    \"version\": \"1.0.0\",\n    \"sha256\": \"af843d6ba047fa87e9cc24087cf9ec06f210acbd51fadf1ffe47f68c381eae5b\"\n  },\n  \"method\": \"review\",\n  \"coverage\": \"COMPLETE\",\n  \"sources\": [\n    {\n      \"id\": \"policy\",\n      \"path\": \"policy.txt\",\n      \"expected_sha256\": \"78de3b69b0b1475fb7c2cc619d98e161ed765d5f4421b32d8fcf249d7af2e7d6\",\n      \"actual_sha256\": \"78de3b69b0b1475fb7c2cc619d98e161ed765d5f4421b32d8fcf249d7af2e7d6\",\n      \"current\": true\n    }\n  ],\n  \"commands\": [],\n  \"invariants\": [\n    {\n      \"id\": \"current-facts\",\n      \"source\": \"policy\",\n      \"statement\": \"Project facts must be current before use.\"\n    }\n  ],\n  \"surfaces\": {},\n  \"consumed_source_ids\": [\n    \"policy\"\n  ],\n  \"problems\": []\n}\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "EXAMPLE/snapshots/base-project-check.py",
+        "OUTPUT/base/references/project.json",
+        "--root",
+        "OUTPUT/project",
+        "--method",
+        "review"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"schema\": \"qore-context-check/1\",\n  \"profile\": {\n    \"id\": \"tutorial\",\n    \"version\": \"1.0.0\",\n    \"sha256\": \"af843d6ba047fa87e9cc24087cf9ec06f210acbd51fadf1ffe47f68c381eae5b\"\n  },\n  \"method\": \"review\",\n  \"coverage\": \"COMPLETE\",\n  \"sources\": [\n    {\n      \"id\": \"policy\",\n      \"path\": \"policy.txt\",\n      \"expected_sha256\": \"78de3b69b0b1475fb7c2cc619d98e161ed765d5f4421b32d8fcf249d7af2e7d6\",\n      \"actual_sha256\": \"78de3b69b0b1475fb7c2cc619d98e161ed765d5f4421b32d8fcf249d7af2e7d6\",\n      \"current\": true\n    }\n  ],\n  \"commands\": [],\n  \"invariants\": [\n    {\n      \"id\": \"current-facts\",\n      \"source\": \"policy\",\n      \"statement\": \"Project facts must be current before use.\"\n    }\n  ],\n  \"surfaces\": {},\n  \"consumed_source_ids\": [\n    \"policy\"\n  ],\n  \"problems\": []\n}\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "EXAMPLE/snapshots/historical-project-check.py",
+        "OUTPUT/project/profile.json",
+        "--root",
+        "OUTPUT/project",
+        "--method",
+        "review"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"schema\": \"qore-context-check/1\",\n  \"profile\": {\n    \"id\": \"tutorial\",\n    \"version\": \"1.0.0\",\n    \"sha256\": \"af843d6ba047fa87e9cc24087cf9ec06f210acbd51fadf1ffe47f68c381eae5b\"\n  },\n  \"method\": \"review\",\n  \"coverage\": \"COMPLETE\",\n  \"sources\": [\n    {\n      \"id\": \"policy\",\n      \"path\": \"policy.txt\",\n      \"expected_sha256\": \"78de3b69b0b1475fb7c2cc619d98e161ed765d5f4421b32d8fcf249d7af2e7d6\",\n      \"actual_sha256\": \"78de3b69b0b1475fb7c2cc619d98e161ed765d5f4421b32d8fcf249d7af2e7d6\",\n      \"current\": true\n    }\n  ],\n  \"commands\": [],\n  \"invariants\": [\n    {\n      \"id\": \"current-facts\",\n      \"source\": \"policy\",\n      \"statement\": \"Project facts must be current before use.\"\n    }\n  ],\n  \"surfaces\": {},\n  \"consumed_source_ids\": [\n    \"policy\"\n  ],\n  \"problems\": [],\n  \"local_adaptations\": []\n}\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "EXAMPLE/snapshots/historical-project-check.py",
+        "OUTPUT/historical/references/project.json",
+        "--root",
+        "OUTPUT/project",
+        "--method",
+        "review"
+      ],
+      "exit_code": 2,
+      "stdout": "",
+      "stderr": "{\"coverage\": \"BLOCKED\", \"problems\": [\"Bundled profile baseline needs exactly one project resource\"]}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "EXAMPLE/snapshots/current-project-check.py",
+        "OUTPUT/project/profile.json",
+        "--root",
+        "OUTPUT/project",
+        "--method",
+        "review"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"schema\": \"qore-context-check/1\",\n  \"profile\": {\n    \"id\": \"tutorial\",\n    \"version\": \"1.0.0\",\n    \"sha256\": \"af843d6ba047fa87e9cc24087cf9ec06f210acbd51fadf1ffe47f68c381eae5b\"\n  },\n  \"method\": \"review\",\n  \"coverage\": \"COMPLETE\",\n  \"sources\": [\n    {\n      \"id\": \"policy\",\n      \"path\": \"policy.txt\",\n      \"expected_sha256\": \"78de3b69b0b1475fb7c2cc619d98e161ed765d5f4421b32d8fcf249d7af2e7d6\",\n      \"actual_sha256\": \"78de3b69b0b1475fb7c2cc619d98e161ed765d5f4421b32d8fcf249d7af2e7d6\",\n      \"current\": true\n    }\n  ],\n  \"commands\": [],\n  \"invariants\": [\n    {\n      \"id\": \"current-facts\",\n      \"source\": \"policy\",\n      \"statement\": \"Project facts must be current before use.\"\n    }\n  ],\n  \"surfaces\": {},\n  \"consumed_source_ids\": [\n    \"policy\"\n  ],\n  \"problems\": [],\n  \"local_adaptations\": []\n}\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "EXAMPLE/snapshots/current-project-check.py",
+        "OUTPUT/current/references/project.json",
+        "--root",
+        "OUTPUT/project",
+        "--method",
+        "review"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"schema\": \"qore-context-check/1\",\n  \"profile\": {\n    \"id\": \"tutorial\",\n    \"version\": \"1.0.0\",\n    \"sha256\": \"af843d6ba047fa87e9cc24087cf9ec06f210acbd51fadf1ffe47f68c381eae5b\"\n  },\n  \"method\": \"review\",\n  \"coverage\": \"COMPLETE\",\n  \"sources\": [\n    {\n      \"id\": \"policy\",\n      \"path\": \"policy.txt\",\n      \"expected_sha256\": \"78de3b69b0b1475fb7c2cc619d98e161ed765d5f4421b32d8fcf249d7af2e7d6\",\n      \"actual_sha256\": \"78de3b69b0b1475fb7c2cc619d98e161ed765d5f4421b32d8fcf249d7af2e7d6\",\n      \"current\": true\n    }\n  ],\n  \"commands\": [],\n  \"invariants\": [\n    {\n      \"id\": \"current-facts\",\n      \"source\": \"policy\",\n      \"statement\": \"Project facts must be current before use.\"\n    }\n  ],\n  \"surfaces\": {},\n  \"consumed_source_ids\": [\n    \"policy\"\n  ],\n  \"problems\": [],\n  \"local_adaptations\": []\n}\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "node",
+        "EXAMPLE/snapshots/finding-lint.mjs",
+        "EXAMPLE/unresolved-finding.json",
+        "--verifier=ran"
+      ],
+      "exit_code": 0,
+      "stdout": "finding-lint: valid; coverage PARTIAL; verdict PENDING; 0 blocking findings.\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "node",
+        "EXAMPLE/snapshots/finding-lint.mjs",
+        "EXAMPLE/unresolved-finding.json",
+        "--verifier=ran",
+        "--json"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"valid\": true,\n  \"coverage\": \"PARTIAL\",\n  \"verdict\": \"PENDING\",\n  \"verifier\": \"ran\",\n  \"total\": 1,\n  \"counts\": {\n    \"CONFIRMED\": 0,\n    \"PLAUSIBLE\": 1,\n    \"REFUTED\": 0\n  },\n  \"blocking_findings\": [],\n  \"unresolved_findings\": [\n    \"F1\"\n  ],\n  \"findings\": [\n    {\n      \"id\": \"F1\",\n      \"title\": \"Candidate\",\n      \"severity\": \"high\",\n      \"verdict\": \"PLAUSIBLE\",\n      \"evidence\": \"src/input.ts:12\"\n    }\n  ],\n  \"problems\": [],\n  \"limit\": \"The verifier flag records an execution declaration; validate actual independent phase evidence separately.\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "node",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "v22.23.3\n",
+      "stderr": ""
+    }
+  ],
+  "limits": [
+    "New focused local replay, not a new Qodo run or the original private execution.",
+    "Synthetic current policy/profile and a minimal generic-manifest fixture, not a full release integrity check or installed derivative.",
+    "The --verifier=ran token is test input to a structural helper, not evidence of a fresh independent review in this replay.",
+    "Hash comparisons are narrower than executing the package builder.",
+    "Recorded executable paths are normalized to python3/node; EXAMPLE/OUTPUT are local path labels, not replayable absolute paths.",
+    "No network, login, commands supplied by a project profile, source edit or external publication."
+  ]
+}
