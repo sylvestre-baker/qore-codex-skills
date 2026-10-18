@@ -18,8 +18,9 @@
   "copied_artifacts": [
     {
       "path": "replay/reproduce.py",
-      "sha256": "8f08d99d712218915a6dcfec520a4dda9e7529c8f1a7277c403de417d903a72d",
-      "transformation": "Byte-for-byte copy from the retained V5 delivery; the replay retains its earlier V3 identity."
+      "sha256": "4f7a773006200e83db8265b8ab5ae4a75d8f8ed2c92acdc48459c820eac5e66b",
+      "transformation": "Pinned V5 replay wrapper plus an explicit diagnostic safe_to_retry=false assertion added after independently reproducing native Qodo GitHub finding 8586887b. Installer archive and historical modules unchanged.",
+      "source_sha256": "8f08d99d712218915a6dcfec520a4dda9e7529c8f1a7277c403de417d903a72d"
     },
     {
       "path": "replay/provenance.json",
@@ -72,8 +73,9 @@
   "limits": [
     "Controlled injected failures, not a customer incident.",
     "No measured time or money saving.",
-    "No native Qodo review after c3ce75c.",
+    "Historical Toolbox review was not rerun on c3ce75c; the later GitHub review and replay correction are assessed separately.",
     "No external learner trial or human listening observation.",
     "Publishing a branch does not merge it or update the v0.2.1 release."
-  ]
+  ],
+  "later_github_review": "qodo-github-followup.json"
 }

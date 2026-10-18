@@ -23,9 +23,15 @@ This is a controlled filesystem fault injection on public Qore sources. It is no
 
 The maintainer first reproduced the installation failure. Qodo's initial native review received the real failing test and recovery requirement before production code changed. It supplied a targeted causal diagnosis, recommendations and missing-test feedback. Staging was already considered; Qodo corroborated that direction. A separate verifier rejected a plain-rename detail after observing it replace an existing empty destination on the tested macOS filesystem.
 
-A later native review of `d5a66ce` flagged the diagnostic scan defect. The follow-up `c3ce75c` corrected it and received separate independent checks. **No native Qodo review after that follow-up is claimed.** Both operations executed the issue reviewer; compliance, skills, spec, UI, persona and cross-repository roles were skipped.
+A later native review of `d5a66ce` flagged the diagnostic scan defect. The follow-up `c3ce75c` corrected it and received separate independent checks. **The historical Toolbox evaluation ends with that independently checked follow-up.** Both operations executed the issue reviewer; compliance, skills, spec, UI, persona and cross-repository roles were skipped.
 
 [Six selected remarks and their dispositions](qodo-assessment.json) preserve native classifications, including the diagnostic finding's `informational` classification. They are first-party paraphrases tied to hashes of retained private source packets. The video contains selected original excerpts. Neither resource is a full raw provider response. The exception-metadata refinement remains visible and nonblocking; there is no claim of an all-clear provider verdict.
+
+## Additional GitHub review of the public candidate
+
+After publication, [Qodo's GitHub review](https://github.com/sylvestre-baker/qore-codex-skills/pull/6#discussion_r4307540433) found a missing assertion in the replay. The actual recorded diagnostic was correctly unsafe to retry, but the wrapper did not enforce that value. A separate verifier reproduced a false PASS by changing only that returned value to `true`. The wrapper now asserts `false`; the same mutation is rejected before a PASS result is written. A [negative regression](../../../tests/test_install_replay.py) protects that consumer contract.
+
+[The follow-up assessment](qodo-github-followup.json) records the original Medium label, counterexample, disposition and retained provider limits. This later GitHub review is separate from the earlier Toolbox operations. It does not change the installer shown in V5 or relabel the original six selected remarks. The preserved video and recorded replay retain their original identities; the runnable public wrapper includes this additional check.
 
 ## Run the offline before/after replay
 

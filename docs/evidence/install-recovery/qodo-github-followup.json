@@ -1,0 +1,24 @@
+{
+  "schema": "qore-github-review-followup/1",
+  "recorded_date": "2026-10-18",
+  "reviewed_commit": "cd8b7c48a5761a97ef94e5810aef6c3d1c2dcbcf",
+  "provider": "Qodo GitHub Code Review",
+  "source_url": "https://github.com/sylvestre-baker/qore-codex-skills/pull/6#discussion_r4307540433",
+  "native_finding_id": "8586887b-534a-4a89-8009-5d1a6f2a7e2b",
+  "native_label": "Medium / Remediation recommended",
+  "first_party_paraphrase": "The diagnostic replay did not assert safe_to_retry=false before reporting PASS. An otherwise identical diagnostic packet with true could pass its checks.",
+  "independent_verdict": "CONFIRMED; corrected and reverified",
+  "counterexample": "Run the real pinned historical replay and alter only the returned corrected diagnostic safe_to_retry from false to true. Before correction it writes status PASS. After adding the assertion the same mutation raises AssertionError and writes no PASS result.",
+  "regression": "../../../tests/test_install_replay.py",
+  "correction_scope": "One replay assertion and its negative regression. tools/qore.py and the minimal runtime archive retain their exact c3ce75c bytes. The V5 video remains a truthful record of the actual false packet observed; this follow-up strengthens validation, not the installer behavior.",
+  "other_report_items": {
+    "resolved_by_provider": [
+      "Original blocked-retry issue",
+      "Misplaced staging assertion",
+      "Primary diagnostic masking issue"
+    ],
+    "historical_partial_copy_test_remark": "The original single red test was limited. Current test_package.py:406,442,499,518,593 contains separate publication/partial-copy/conflict/preservation/cleanup regressions. No new absence of those tests was established.",
+    "exception_metadata": "Retained as a nonblocking refinement; original cause remains chained. No stable Python SDK regression established."
+  },
+  "coverage_limit": "This GitHub operation is separate from the two earlier Toolbox reviews. Provider context reports ticket collection incomplete. A completed review does not establish full product or human usability coverage."
+}

@@ -130,7 +130,7 @@
     },
     {
       "path": "docs/evidence/install-recovery/README.md",
-      "sha256": "276196d7597546eb9fbdb2a612f4d84080c7a89125ef2c956dcda908ca190608"
+      "sha256": "b7802afd3173bf0e5951c30b5cb2383aaf277c6098226e4e55c15f0f04b83e36"
     }
   ],
   "evidence_records": [
@@ -2042,7 +2042,7 @@
       "implementation": [
         {
           "path": "docs/evidence/install-recovery/replay/reproduce.py",
-          "sha256": "8f08d99d712218915a6dcfec520a4dda9e7529c8f1a7277c403de417d903a72d"
+          "sha256": "4f7a773006200e83db8265b8ab5ae4a75d8f8ed2c92acdc48459c820eac5e66b"
         },
         {
           "path": "docs/evidence/install-recovery/replay/provenance.json",

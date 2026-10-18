@@ -139,6 +139,7 @@ def main():
         diagnostic = cases["diagnostic_after"]["packet"]
         assert diagnostic["error"] == "PRIMARY_COPY_DENIED"
         assert any("SECONDARY_SCAN_DENIED" in entry["error"] for entry in diagnostic["recovery"]["cleanup_errors"])
+        assert diagnostic["recovery"]["safe_to_retry"] is False, "Diagnostic recovery must not be marked safe to retry"
         record = {"schema": "qore-offline-review-replay/1", "status": "PASS", "cases": cases,
                   "source_identities": provenance["source_identities"],
                   "candidate_installer_sha256": sha256(source / "tools/qore.py"),

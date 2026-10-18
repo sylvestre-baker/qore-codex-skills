@@ -81,5 +81,6 @@
   ],
   "rejected_recommendation_detail": "On the tested macOS filesystem, plain os.rename could replace an existing empty destination. Exclusive destination creation was used instead.",
   "source_candidate": "c3ce75cce730429d21d8b068672beda93c2a4de5",
-  "qodo_review_after_source_candidate": false
+  "toolbox_review_after_source_candidate": false,
+  "later_github_review": "qodo-github-followup.json"
 }

@@ -109,7 +109,7 @@
     },
     {
       "path": "docs/command-inventory.json",
-      "sha256": "1d3d9161b2660c6ab018ae8f2485bd84652817505f7d9482a12a6810075f8cf3",
+      "sha256": "5524b8ed7256a9f0e71e2ad5de6d57b67d6c1471f885bd55284e17defbd8b1e1",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
@@ -7213,7 +7213,7 @@
     },
     {
       "path": "docs/evidence/install-recovery/README.md",
-      "sha256": "276196d7597546eb9fbdb2a612f4d84080c7a89125ef2c956dcda908ca190608",
+      "sha256": "b7802afd3173bf0e5951c30b5cb2383aaf277c6098226e4e55c15f0f04b83e36",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
@@ -7229,7 +7229,7 @@
     },
     {
       "path": "docs/evidence/install-recovery/provenance.json",
-      "sha256": "44c4df9112f91be6f7e03986806f5ad2009d3536d1f347150929fc7bcf4ccb16",
+      "sha256": "254904cf544712eb2234a93dae0d43ab87ef3398abdbb3a74634027d4c161de9",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
@@ -7237,7 +7237,7 @@
     },
     {
       "path": "docs/evidence/install-recovery/publication-checks.json",
-      "sha256": "b35f94a33d39fdacaaea2d14f4e5ddcdc5da35fd845285c2302177ba15978f0d",
+      "sha256": "33295e53bc162146d634200fceb26f7c56c63be70394b5f9de871369447f3059",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
@@ -7245,7 +7245,15 @@
     },
     {
       "path": "docs/evidence/install-recovery/qodo-assessment.json",
-      "sha256": "e64f44f021b3331960e1c5a8230a315541146af9bf873ee01df9048bbba28898",
+      "sha256": "4649ceb6da427dfc508a865b19e74a0235c646e26f2b2b7cfeab2ee6d735f6f1",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Scoped English first-party recovery case, Qore MIT source snapshots, maintainer paraphrases of review advice, generated tutorial still/transcript or publication validation. Selected for the user-authorized public correction PR; no client code, private application, account trace or third-party implementation. Historical runtime bytes and source transformation remain explicitly identified."
+    },
+    {
+      "path": "docs/evidence/install-recovery/qodo-github-followup.json",
+      "sha256": "a2aa0feb0c37e708abde6b5fb5fb14fb36bd5feb299b9c8a66dd24f7a5a00f77",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
@@ -7309,7 +7317,7 @@
     },
     {
       "path": "docs/evidence/install-recovery/replay/reproduce.py",
-      "sha256": "8f08d99d712218915a6dcfec520a4dda9e7529c8f1a7277c403de417d903a72d",
+      "sha256": "4f7a773006200e83db8265b8ab5ae4a75d8f8ed2c92acdc48459c820eac5e66b",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
@@ -10538,6 +10546,14 @@
       "license": "MIT",
       "status": "approved",
       "basis": "First-party Qore code, tests, configuration or documentation in the reviewed 0.2.1 correction inventory. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
+    },
+    {
+      "path": "tests/test_install_replay.py",
+      "sha256": "98cc2940eec8e19803514a79355c25bef5effd8350bc50fa2084152b5f668b2c",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Scoped English first-party recovery case, Qore MIT source snapshots, maintainer paraphrases of review advice, generated tutorial still/transcript or publication validation. Selected for the user-authorized public correction PR; no client code, private application, account trace or third-party implementation. Historical runtime bytes and source transformation remain explicitly identified."
     },
     {
       "path": "tests/test_labs_contract.py",
