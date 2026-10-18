@@ -1,0 +1,86 @@
+{
+  "schema": "qore-evidence-transformation/1",
+  "created_date": "2026-10-18",
+  "source_repository": "https://github.com/sylvestre-baker/qore-codex-skills",
+  "source_fix": "d67673097e41d5e4c4fd02241c9f0c392cdac1f5",
+  "source_base": "a4fef83aadd6610435da5ac0cc7e53b34fe1dd4f",
+  "current_snapshot": "e9d74cfeadd299a52f66919598b8330d6225e947",
+  "cli_version": "1.6.0",
+  "cli_bundle_sha256": "cc4171611b9016386fc7d7bbd5d4e94a3d3a5f079b86c7ebc425a8d171efd4e7",
+  "private_inputs_published": false,
+  "transformations": [
+    {
+      "input_identity": "three-file-slice:qodo-result.json",
+      "private_input_sha256": "52a58b4b3f8dcffa153d3d715be2d7290e992a00ca03996d141270dfa44cde78",
+      "output": "provider-excerpts.json#three-file-slice",
+      "transformation": "Explicit field selection: findings identity/native action level/category/description/location, source snapshot, observed finish time, depth, coverage, reviewer roles, spec-context status and warnings. Account, workspace, operation, trace, attribution and internal model metadata omitted."
+    },
+    {
+      "input_identity": "complete-published-change:qodo-result.json",
+      "private_input_sha256": "8947d794f9c54839189c990ff3eb0b6b652d94db8b71b44c60e29f042539d143",
+      "output": "provider-excerpts.json#complete-published-change",
+      "transformation": "Explicit field selection: findings identity/native action level/category/description/location, source snapshot, observed finish time, depth, coverage, reviewer roles, spec-context status and warnings. Account, workspace, operation, trace, attribution and internal model metadata omitted."
+    },
+    {
+      "input_identity": "slice-verifier:verdicts.json",
+      "private_input_sha256": "6c4672c8b57e3787a3b83fae20998f2db0ad808ae3a7f8a98d4f79c1ede70464",
+      "output": "verification.json",
+      "transformation": "Selected native IDs, classifications, scope-specific verdicts, concrete counterexamples and interpretation. Personal paths, unselected snapshots and full terminal trace omitted."
+    },
+    {
+      "input_identity": "complete-verifier:verdicts.json",
+      "private_input_sha256": "e8968a80e80aa5eaab0654926b9ca060ac33f36d99e1892b39d0b4a4625ea5b2",
+      "output": "verification.json",
+      "transformation": "Selected native IDs, classifications, scope-specific verdicts, concrete counterexamples and interpretation. Personal paths, unselected snapshots and full terminal trace omitted."
+    },
+    {
+      "input_identity": "new-focused-replay-20261018",
+      "output": "focused-replay.json",
+      "transformation": "Exact new generated replay record; executable paths normalized to python3/node and source/example/output roots to EXAMPLE/OUTPUT. Runner and fixture digests retained. Only public helpers and synthetic policy/profile inputs used; separate from original Qodo operations."
+    },
+    {
+      "input_identity": "slice-verifier:probe-results.json",
+      "private_input_sha256": "a1c5d85c721058123fc460aec2292499961fd0befcf98054b29741f85798cd57",
+      "output": "recorded-probes.json",
+      "transformation": "Selected actual public/synthetic probe argv, cwd, exit code and stdout/stderr. Workspace, temporary, existing global skill and author checkout roots normalized to CASE/SNAPSHOTS/TEMP/EXISTING_SKILLS/AUTHOR_CHECKOUT; unselected probes and full source/trace omitted. Normalized paths are logical identities, not directly copyable commands."
+    },
+    {
+      "input_identity": "complete-verifier:probe-results.json",
+      "private_input_sha256": "da06d82d77f9635532ad7f38d928d3690e05d0ce139cd28da863c1eba5cdf31c",
+      "output": "recorded-probes.json",
+      "transformation": "Selected actual public/synthetic probe argv, cwd, exit code and stdout/stderr. Workspace, temporary, existing global skill and author checkout roots normalized to CASE/SNAPSHOTS/TEMP/EXISTING_SKILLS/AUTHOR_CHECKOUT; unselected probes and full source/trace omitted. Normalized paths are logical identities, not directly copyable commands."
+    },
+    {
+      "input_identity": "new-live-preparation-20261018",
+      "output": "live-preparation.json",
+      "transformation": "Original preparation record plus observed output-file modification time; no absolute target paths or Git object directory published. No Qodo submission."
+    },
+    {
+      "input_identity": "tutorial-independent-review-C1",
+      "output": "verification.json and ../../tutorials/qodo-review.md",
+      "transformation": "Narrowed an installation-success description after independent verification: original selected records establish derivation plus all three derivative preflight checks, and separately generic installations. No derived installation record is asserted. Original private verifier bytes remain unchanged."
+    }
+  ],
+  "public_output_integrity": "Release resource digests bind public output bytes. The source inventory separately binds exact public helper bytes to their commits.",
+  "authentication_limit": "A private-input digest preserves a maintainer audit identity; without the private input it cannot independently authenticate provider origin. Public focused reproductions establish only the named code behavior.",
+  "rights": "First-party MIT Qore sources and authored explanation; limited generated review excerpts about the author's public code. Qodo's general terms section 4.1 addresses generated output. The Qodo CLI bundle, website content, logos, account/session data and authentication screens are not redistributed.",
+  "terms_source": "https://www.qodo.ai/terms/",
+  "terms_observed": "2026-10-18",
+  "sensitive_material_excluded": [
+    "personal paths",
+    "account email",
+    "workspace and tenant identifiers",
+    "installation identifiers",
+    "authentication screens",
+    "tokens",
+    "full CLI bundle",
+    "client sources",
+    "raw terminal traces"
+  ],
+  "historical_limits_retained": [
+    "Original three-file slice omitted companion hashes",
+    "Historical profile regression already fixed on pinned current main",
+    "Spec context unresolved and spec reviewer skipped",
+    "Previous finding inventory incomplete"
+  ]
+}

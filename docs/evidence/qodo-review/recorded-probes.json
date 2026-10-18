@@ -1,0 +1,526 @@
+{
+  "schema": "qore-selected-terminal-probes/1",
+  "observed_date": "2026-10-18",
+  "category": "agent-driven maintainer execution",
+  "scope": "Historical public snapshots; selected original reproductions and controls, separate from the new focused replay.",
+  "records": [
+    {
+      "id": "slice-verifier:6",
+      "label": "replay-build",
+      "command": "python3 -B tools/qore.py build --output TEMP/qodo-independent-20261018-aypgohgp/replay-build",
+      "cwd": "CASE/target-repository",
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "{\"valid\": false, \"error\": \"Redistribution review is stale: skills/qore-review/references/findings.md\"}\n"
+    },
+    {
+      "id": "slice-verifier:7",
+      "label": "replay-text-summary",
+      "command": "node CASE/target-repository/skills/qore-review/scripts/finding-lint.mjs CASE/verification/unresolved-high-input.json --verifier=ran",
+      "cwd": "CASE/target-repository",
+      "exit_code": 0,
+      "stdout": "finding-lint: valid; coverage PARTIAL; verdict PENDING; 0 blocking findings.\n",
+      "stderr": ""
+    },
+    {
+      "id": "slice-verifier:8",
+      "label": "replay-json-summary",
+      "command": "node CASE/target-repository/skills/qore-review/scripts/finding-lint.mjs CASE/verification/unresolved-high-input.json --verifier=ran --json",
+      "cwd": "CASE/target-repository",
+      "exit_code": 0,
+      "stdout": "{\n  \"valid\": true,\n  \"coverage\": \"PARTIAL\",\n  \"verdict\": \"PENDING\",\n  \"verifier\": \"ran\",\n  \"total\": 1,\n  \"counts\": {\n    \"CONFIRMED\": 0,\n    \"PLAUSIBLE\": 1,\n    \"REFUTED\": 0\n  },\n  \"blocking_findings\": [],\n  \"unresolved_findings\": [\n    \"F1\"\n  ],\n  \"findings\": [\n    {\n      \"id\": \"F1\",\n      \"title\": \"Candidate\",\n      \"severity\": \"high\",\n      \"verdict\": \"PLAUSIBLE\",\n      \"evidence\": \"src/input.ts:12\"\n    }\n  ],\n  \"problems\": [],\n  \"limit\": \"The verifier flag records an execution declaration; validate actual independent phase evidence separately.\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "id": "slice-verifier:12",
+      "label": "published_fix-build",
+      "command": "python3 -B tools/qore.py build --output TEMP/qodo-independent-20261018-aypgohgp/published_fix-build",
+      "cwd": "TEMP/qodo-independent-20261018-aypgohgp/published_fix",
+      "exit_code": 0,
+      "stdout": "{\n  \"bundle\": \"TEMP/qodo-independent-20261018-aypgohgp/published_fix-build/qore-skills-0.2.1\",\n  \"archive\": \"TEMP/qodo-independent-20261018-aypgohgp/published_fix-build/qore-skills-0.2.1.zip\",\n  \"sha256\": \"ec1e78e79c0dc7512f4bb7943d661773b265a8b9baf4c2bd92eb743860fad4ba\",\n  \"scope\": \"full\",\n  \"valid\": true,\n  \"schema\": \"qore-release/1\",\n  \"version\": \"0.2.1\",\n  \"kind\": \"generic\",\n  \"files\": 1326,\n  \"manifest_sha256\": \"6e26c4baaad7c3b3b02af8346c34892007750e52c43171d6985f89961b51e7f2\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "id": "slice-verifier:13",
+      "label": "published_fix-text-summary",
+      "command": "node TEMP/qodo-independent-20261018-aypgohgp/published_fix/skills/qore-review/scripts/finding-lint.mjs CASE/verification/unresolved-high-input.json --verifier=ran",
+      "cwd": "TEMP/qodo-independent-20261018-aypgohgp/published_fix",
+      "exit_code": 0,
+      "stdout": "finding-lint: valid; coverage PARTIAL; verdict PENDING; 0 blocking findings.\n",
+      "stderr": ""
+    },
+    {
+      "id": "slice-verifier:14",
+      "label": "published_fix-json-summary",
+      "command": "node TEMP/qodo-independent-20261018-aypgohgp/published_fix/skills/qore-review/scripts/finding-lint.mjs CASE/verification/unresolved-high-input.json --verifier=ran --json",
+      "cwd": "TEMP/qodo-independent-20261018-aypgohgp/published_fix",
+      "exit_code": 0,
+      "stdout": "{\n  \"valid\": true,\n  \"coverage\": \"PARTIAL\",\n  \"verdict\": \"PENDING\",\n  \"verifier\": \"ran\",\n  \"total\": 1,\n  \"counts\": {\n    \"CONFIRMED\": 0,\n    \"PLAUSIBLE\": 1,\n    \"REFUTED\": 0\n  },\n  \"blocking_findings\": [],\n  \"unresolved_findings\": [\n    \"F1\"\n  ],\n  \"findings\": [\n    {\n      \"id\": \"F1\",\n      \"title\": \"Candidate\",\n      \"severity\": \"high\",\n      \"verdict\": \"PLAUSIBLE\",\n      \"evidence\": \"src/input.ts:12\"\n    }\n  ],\n  \"problems\": [],\n  \"limit\": \"The verifier flag records an execution declaration; validate actual independent phase evidence separately.\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "id": "slice-verifier:18",
+      "label": "public_head-build",
+      "command": "python3 -B tools/qore.py build --output TEMP/qodo-independent-20261018-aypgohgp/public_head-build",
+      "cwd": "TEMP/qodo-independent-20261018-aypgohgp/public_head",
+      "exit_code": 0,
+      "stdout": "{\n  \"bundle\": \"TEMP/qodo-independent-20261018-aypgohgp/public_head-build/qore-skills-0.2.1\",\n  \"archive\": \"TEMP/qodo-independent-20261018-aypgohgp/public_head-build/qore-skills-0.2.1.zip\",\n  \"sha256\": \"8bb252817918fb9e03a6b5d4f429f9ec96a075110363009e134a0ef257d1297b\",\n  \"scope\": \"full\",\n  \"valid\": true,\n  \"schema\": \"qore-release/1\",\n  \"version\": \"0.2.1\",\n  \"kind\": \"generic\",\n  \"files\": 1326,\n  \"manifest_sha256\": \"31223cfdcd0e18f85971518d77d8b73d2a360751a506ec731ea1df7e8bb290bd\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "id": "slice-verifier:19",
+      "label": "public_head-text-summary",
+      "command": "node TEMP/qodo-independent-20261018-aypgohgp/public_head/skills/qore-review/scripts/finding-lint.mjs CASE/verification/unresolved-high-input.json --verifier=ran",
+      "cwd": "TEMP/qodo-independent-20261018-aypgohgp/public_head",
+      "exit_code": 0,
+      "stdout": "finding-lint: valid; coverage PARTIAL; verdict PENDING; 0 blocking findings.\n",
+      "stderr": ""
+    },
+    {
+      "id": "slice-verifier:20",
+      "label": "public_head-json-summary",
+      "command": "node TEMP/qodo-independent-20261018-aypgohgp/public_head/skills/qore-review/scripts/finding-lint.mjs CASE/verification/unresolved-high-input.json --verifier=ran --json",
+      "cwd": "TEMP/qodo-independent-20261018-aypgohgp/public_head",
+      "exit_code": 0,
+      "stdout": "{\n  \"valid\": true,\n  \"coverage\": \"PARTIAL\",\n  \"verdict\": \"PENDING\",\n  \"verifier\": \"ran\",\n  \"total\": 1,\n  \"counts\": {\n    \"CONFIRMED\": 0,\n    \"PLAUSIBLE\": 1,\n    \"REFUTED\": 0\n  },\n  \"blocking_findings\": [],\n  \"unresolved_findings\": [\n    \"F1\"\n  ],\n  \"findings\": [\n    {\n      \"id\": \"F1\",\n      \"title\": \"Candidate\",\n      \"severity\": \"high\",\n      \"verdict\": \"PLAUSIBLE\",\n      \"evidence\": \"src/input.ts:12\"\n    }\n  ],\n  \"problems\": [],\n  \"limit\": \"The verifier flag records an execution declaration; validate actual independent phase evidence separately.\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "id": "complete-verifier:0",
+      "command": [
+        "git",
+        "rev-parse",
+        "a4fef83aadd6610435da5ac0cc7e53b34fe1dd4f^{tree}"
+      ],
+      "cwd": "CASE/full-change-replay/target-repository",
+      "exit_code": 0,
+      "stdout": "ffdef482bccab9741fa76c3b800ad8f0cf7e6276\n",
+      "stderr": ""
+    },
+    {
+      "id": "complete-verifier:1",
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "-B",
+        "tools/qore.py",
+        "build",
+        "--output",
+        "SNAPSHOTS/base/build-output"
+      ],
+      "cwd": "SNAPSHOTS/base",
+      "exit_code": 0,
+      "stdout": "{\n  \"bundle\": \"SNAPSHOTS/base/build-output/qore-skills-0.2.0\",\n  \"archive\": \"SNAPSHOTS/base/build-output/qore-skills-0.2.0.zip\",\n  \"sha256\": \"93111404cf20da528ba633452e6720110753041e0b9a4ff3928bbf143691f792\",\n  \"valid\": true,\n  \"schema\": \"qore-release/1\",\n  \"version\": \"0.2.0\",\n  \"kind\": \"generic\",\n  \"files\": 1276,\n  \"manifest_sha256\": \"1755569a6f9767711a11d19f15c11b0d77bb4450bf13d54cfb78b47e8ab973f9\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "id": "complete-verifier:2",
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "-B",
+        "tools/qore.py",
+        "install",
+        "--source",
+        "SNAPSHOTS/base/build-output/qore-skills-0.2.0",
+        "--project-root",
+        "SNAPSHOTS/base/probe-project"
+      ],
+      "cwd": "SNAPSHOTS/base",
+      "exit_code": 0,
+      "stdout": "{\n  \"installed\": [\n    \"SNAPSHOTS/base/probe-project/.agents/skills/qore-plan\",\n    \"SNAPSHOTS/base/probe-project/.agents/skills/qore-review\",\n    \"SNAPSHOTS/base/probe-project/.agents/skills/qore-ux-review\"\n  ],\n  \"replaced\": false\n}\n",
+      "stderr": ""
+    },
+    {
+      "id": "complete-verifier:5",
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "-B",
+        "scripts/project-check.py",
+        "references/project.json",
+        "--root",
+        "SNAPSHOTS/base/probe-project",
+        "--method",
+        "plan"
+      ],
+      "cwd": "SNAPSHOTS/base/probe-project/.agents/skills/qore-plan",
+      "exit_code": 0,
+      "stdout": "{\n  \"schema\": \"qore-context-check/1\",\n  \"profile\": {\n    \"id\": \"probe\",\n    \"version\": \"1.0.0\",\n    \"sha256\": \"f91159bcb485b06841f01a464b499d6a7926ab19fa0931d6c10992c935e7ab50\"\n  },\n  \"method\": \"plan\",\n  \"coverage\": \"COMPLETE\",\n  \"sources\": [\n    {\n      \"id\": \"policy\",\n      \"path\": \"policy.txt\",\n      \"expected_sha256\": \"f39ffb74fc9fb52d0ffe56fef6d8c83e4818e0fe72e920ba1d016e728c407e82\",\n      \"actual_sha256\": \"f39ffb74fc9fb52d0ffe56fef6d8c83e4818e0fe72e920ba1d016e728c407e82\",\n      \"current\": true\n    }\n  ],\n  \"commands\": [],\n  \"invariants\": [\n    {\n      \"id\": \"probe-invariant\",\n      \"source\": \"policy\",\n      \"statement\": \"Independent generic profile probe.\"\n    }\n  ],\n  \"surfaces\": {},\n  \"consumed_source_ids\": [\n    \"policy\"\n  ],\n  \"problems\": []\n}\n",
+      "stderr": ""
+    },
+    {
+      "id": "complete-verifier:8",
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "-B",
+        "scripts/project-check.py",
+        "references/project.json",
+        "--root",
+        "SNAPSHOTS/base/probe-project",
+        "--method",
+        "review"
+      ],
+      "cwd": "SNAPSHOTS/base/probe-project/.agents/skills/qore-review",
+      "exit_code": 0,
+      "stdout": "{\n  \"schema\": \"qore-context-check/1\",\n  \"profile\": {\n    \"id\": \"probe\",\n    \"version\": \"1.0.0\",\n    \"sha256\": \"f91159bcb485b06841f01a464b499d6a7926ab19fa0931d6c10992c935e7ab50\"\n  },\n  \"method\": \"review\",\n  \"coverage\": \"COMPLETE\",\n  \"sources\": [\n    {\n      \"id\": \"policy\",\n      \"path\": \"policy.txt\",\n      \"expected_sha256\": \"f39ffb74fc9fb52d0ffe56fef6d8c83e4818e0fe72e920ba1d016e728c407e82\",\n      \"actual_sha256\": \"f39ffb74fc9fb52d0ffe56fef6d8c83e4818e0fe72e920ba1d016e728c407e82\",\n      \"current\": true\n    }\n  ],\n  \"commands\": [],\n  \"invariants\": [\n    {\n      \"id\": \"probe-invariant\",\n      \"source\": \"policy\",\n      \"statement\": \"Independent generic profile probe.\"\n    }\n  ],\n  \"surfaces\": {},\n  \"consumed_source_ids\": [\n    \"policy\"\n  ],\n  \"problems\": []\n}\n",
+      "stderr": ""
+    },
+    {
+      "id": "complete-verifier:11",
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "-B",
+        "scripts/project-check.py",
+        "references/project.json",
+        "--root",
+        "SNAPSHOTS/base/probe-project",
+        "--method",
+        "ux"
+      ],
+      "cwd": "SNAPSHOTS/base/probe-project/.agents/skills/qore-ux-review",
+      "exit_code": 0,
+      "stdout": "{\n  \"schema\": \"qore-context-check/1\",\n  \"profile\": {\n    \"id\": \"probe\",\n    \"version\": \"1.0.0\",\n    \"sha256\": \"f91159bcb485b06841f01a464b499d6a7926ab19fa0931d6c10992c935e7ab50\"\n  },\n  \"method\": \"ux\",\n  \"coverage\": \"COMPLETE\",\n  \"sources\": [\n    {\n      \"id\": \"policy\",\n      \"path\": \"policy.txt\",\n      \"expected_sha256\": \"f39ffb74fc9fb52d0ffe56fef6d8c83e4818e0fe72e920ba1d016e728c407e82\",\n      \"actual_sha256\": \"f39ffb74fc9fb52d0ffe56fef6d8c83e4818e0fe72e920ba1d016e728c407e82\",\n      \"current\": true\n    }\n  ],\n  \"commands\": [],\n  \"invariants\": [\n    {\n      \"id\": \"probe-invariant\",\n      \"source\": \"policy\",\n      \"statement\": \"Independent generic profile probe.\"\n    }\n  ],\n  \"surfaces\": {\n    \"web\": {\n      \"kind\": \"fixture\",\n      \"entry_url\": \"http://127.0.0.1:8765/\",\n      \"allowed_origins\": [\n        \"http://127.0.0.1:8765\"\n      ],\n      \"required_state\": \"Probe\",\n      \"source\": \"policy\",\n      \"applies_to\": [\n        \"ux\"\n      ]\n    }\n  },\n  \"consumed_source_ids\": [\n    \"policy\"\n  ],\n  \"problems\": []\n}\n",
+      "stderr": ""
+    },
+    {
+      "id": "complete-verifier:12",
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "-B",
+        "tools/context.py",
+        "SNAPSHOTS/base/probe-project/.agents/skills/qore-review/references/project.json",
+        "--root",
+        "SNAPSHOTS/base/probe-project",
+        "--method",
+        "review"
+      ],
+      "cwd": "SNAPSHOTS/base",
+      "exit_code": 0,
+      "stdout": "{\n  \"schema\": \"qore-context-check/1\",\n  \"profile\": {\n    \"id\": \"probe\",\n    \"version\": \"1.0.0\",\n    \"sha256\": \"f91159bcb485b06841f01a464b499d6a7926ab19fa0931d6c10992c935e7ab50\"\n  },\n  \"method\": \"review\",\n  \"coverage\": \"COMPLETE\",\n  \"sources\": [\n    {\n      \"id\": \"policy\",\n      \"path\": \"policy.txt\",\n      \"expected_sha256\": \"f39ffb74fc9fb52d0ffe56fef6d8c83e4818e0fe72e920ba1d016e728c407e82\",\n      \"actual_sha256\": \"f39ffb74fc9fb52d0ffe56fef6d8c83e4818e0fe72e920ba1d016e728c407e82\",\n      \"current\": true\n    }\n  ],\n  \"commands\": [],\n  \"invariants\": [\n    {\n      \"id\": \"probe-invariant\",\n      \"source\": \"policy\",\n      \"statement\": \"Independent generic profile probe.\"\n    }\n  ],\n  \"surfaces\": {},\n  \"consumed_source_ids\": [\n    \"policy\"\n  ],\n  \"problems\": []\n}\n",
+      "stderr": ""
+    },
+    {
+      "id": "complete-verifier:13",
+      "command": [
+        "git",
+        "rev-parse",
+        "d67673097e41d5e4c4fd02241c9f0c392cdac1f5^{tree}"
+      ],
+      "cwd": "CASE/full-change-replay/target-repository",
+      "exit_code": 0,
+      "stdout": "c10015840a872caf200164d69aa650b6d0bda8b5\n",
+      "stderr": ""
+    },
+    {
+      "id": "complete-verifier:14",
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "-B",
+        "tools/qore.py",
+        "build",
+        "--output",
+        "SNAPSHOTS/correction/build-output"
+      ],
+      "cwd": "SNAPSHOTS/correction",
+      "exit_code": 0,
+      "stdout": "{\n  \"bundle\": \"SNAPSHOTS/correction/build-output/qore-skills-0.2.1\",\n  \"archive\": \"SNAPSHOTS/correction/build-output/qore-skills-0.2.1.zip\",\n  \"sha256\": \"ec1e78e79c0dc7512f4bb7943d661773b265a8b9baf4c2bd92eb743860fad4ba\",\n  \"scope\": \"full\",\n  \"valid\": true,\n  \"schema\": \"qore-release/1\",\n  \"version\": \"0.2.1\",\n  \"kind\": \"generic\",\n  \"files\": 1326,\n  \"manifest_sha256\": \"6e26c4baaad7c3b3b02af8346c34892007750e52c43171d6985f89961b51e7f2\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "id": "complete-verifier:15",
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "-B",
+        "tools/qore.py",
+        "install",
+        "--source",
+        "SNAPSHOTS/correction/build-output/qore-skills-0.2.1",
+        "--project-root",
+        "SNAPSHOTS/correction/probe-project"
+      ],
+      "cwd": "SNAPSHOTS/correction",
+      "exit_code": 0,
+      "stdout": "{\n  \"installed\": [\n    \"SNAPSHOTS/correction/probe-project/.agents/skills/qore-plan\",\n    \"SNAPSHOTS/correction/probe-project/.agents/skills/qore-review\",\n    \"SNAPSHOTS/correction/probe-project/.agents/skills/qore-ux-review\"\n  ],\n  \"replaced\": false,\n  \"warnings\": [\n    {\n      \"code\": \"same-name-user-skill\",\n      \"skill\": \"qore-review\",\n      \"path\": \"EXISTING_SKILLS/qore-review\",\n      \"message\": \"Another same-name user installation exists. Inspect the selected skill path in a fresh chat; this installer leaves it unchanged.\"\n    },\n    {\n      \"code\": \"same-name-user-skill\",\n      \"skill\": \"qore-ux-review\",\n      \"path\": \"EXISTING_SKILLS/qore-ux-review\",\n      \"message\": \"Another same-name user installation exists. Inspect the selected skill path in a fresh chat; this installer leaves it unchanged.\"\n    }\n  ]\n}\n",
+      "stderr": ""
+    },
+    {
+      "id": "complete-verifier:18",
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "-B",
+        "scripts/project-check.py",
+        "references/project.json",
+        "--root",
+        "SNAPSHOTS/correction/probe-project",
+        "--method",
+        "plan"
+      ],
+      "cwd": "SNAPSHOTS/correction/probe-project/.agents/skills/qore-plan",
+      "exit_code": 2,
+      "stdout": "",
+      "stderr": "{\"coverage\": \"BLOCKED\", \"problems\": [\"Bundled profile baseline needs exactly one project resource\"]}\n"
+    },
+    {
+      "id": "complete-verifier:21",
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "-B",
+        "scripts/project-check.py",
+        "references/project.json",
+        "--root",
+        "SNAPSHOTS/correction/probe-project",
+        "--method",
+        "review"
+      ],
+      "cwd": "SNAPSHOTS/correction/probe-project/.agents/skills/qore-review",
+      "exit_code": 2,
+      "stdout": "",
+      "stderr": "{\"coverage\": \"BLOCKED\", \"problems\": [\"Bundled profile baseline needs exactly one project resource\"]}\n"
+    },
+    {
+      "id": "complete-verifier:24",
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "-B",
+        "scripts/project-check.py",
+        "references/project.json",
+        "--root",
+        "SNAPSHOTS/correction/probe-project",
+        "--method",
+        "ux"
+      ],
+      "cwd": "SNAPSHOTS/correction/probe-project/.agents/skills/qore-ux-review",
+      "exit_code": 2,
+      "stdout": "",
+      "stderr": "{\"coverage\": \"BLOCKED\", \"problems\": [\"Bundled profile baseline needs exactly one project resource\"]}\n"
+    },
+    {
+      "id": "complete-verifier:25",
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "-B",
+        "tools/context.py",
+        "SNAPSHOTS/correction/probe-project/.agents/skills/qore-review/references/project.json",
+        "--root",
+        "SNAPSHOTS/correction/probe-project",
+        "--method",
+        "review"
+      ],
+      "cwd": "SNAPSHOTS/correction",
+      "exit_code": 2,
+      "stdout": "",
+      "stderr": "{\"coverage\": \"BLOCKED\", \"problems\": [\"Bundled profile baseline needs exactly one project resource\"]}\n"
+    },
+    {
+      "id": "complete-verifier:26",
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "-B",
+        "tools/qore.py",
+        "derive",
+        "--profile",
+        "SNAPSHOTS/correction/probe-project/profile.json",
+        "--project-root",
+        "SNAPSHOTS/correction/probe-project",
+        "--output",
+        "SNAPSHOTS/correction/derived-output"
+      ],
+      "cwd": "SNAPSHOTS/correction",
+      "exit_code": 0,
+      "stdout": "{\n  \"output\": \"SNAPSHOTS/correction/derived-output\",\n  \"profile\": {\n    \"id\": \"probe\",\n    \"version\": \"1.0.0\",\n    \"sha256\": \"f91159bcb485b06841f01a464b499d6a7926ab19fa0931d6c10992c935e7ab50\"\n  },\n  \"valid\": true,\n  \"schema\": \"qore-release/1\",\n  \"version\": \"0.2.1\",\n  \"kind\": \"derived\",\n  \"files\": 39,\n  \"manifest_sha256\": \"39cbae05ba140febf45af27c766f652eed322740834797274226bcce84a0101d\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "id": "complete-verifier:27",
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "-B",
+        "scripts/project-check.py",
+        "references/project.json",
+        "--root",
+        "SNAPSHOTS/correction/probe-project",
+        "--method",
+        "plan"
+      ],
+      "cwd": "SNAPSHOTS/correction/derived-output/qore-plan-probe",
+      "exit_code": 0,
+      "stdout": "{\n  \"schema\": \"qore-context-check/1\",\n  \"profile\": {\n    \"id\": \"probe\",\n    \"version\": \"1.0.0\",\n    \"sha256\": \"f91159bcb485b06841f01a464b499d6a7926ab19fa0931d6c10992c935e7ab50\"\n  },\n  \"method\": \"plan\",\n  \"coverage\": \"COMPLETE\",\n  \"sources\": [\n    {\n      \"id\": \"policy\",\n      \"path\": \"policy.txt\",\n      \"expected_sha256\": \"f39ffb74fc9fb52d0ffe56fef6d8c83e4818e0fe72e920ba1d016e728c407e82\",\n      \"actual_sha256\": \"f39ffb74fc9fb52d0ffe56fef6d8c83e4818e0fe72e920ba1d016e728c407e82\",\n      \"current\": true\n    }\n  ],\n  \"commands\": [],\n  \"invariants\": [\n    {\n      \"id\": \"probe-invariant\",\n      \"source\": \"policy\",\n      \"statement\": \"Independent generic profile probe.\"\n    }\n  ],\n  \"surfaces\": {},\n  \"consumed_source_ids\": [\n    \"policy\"\n  ],\n  \"problems\": [],\n  \"local_adaptations\": []\n}\n",
+      "stderr": ""
+    },
+    {
+      "id": "complete-verifier:28",
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "-B",
+        "scripts/project-check.py",
+        "references/project.json",
+        "--root",
+        "SNAPSHOTS/correction/probe-project",
+        "--method",
+        "review"
+      ],
+      "cwd": "SNAPSHOTS/correction/derived-output/qore-review-probe",
+      "exit_code": 0,
+      "stdout": "{\n  \"schema\": \"qore-context-check/1\",\n  \"profile\": {\n    \"id\": \"probe\",\n    \"version\": \"1.0.0\",\n    \"sha256\": \"f91159bcb485b06841f01a464b499d6a7926ab19fa0931d6c10992c935e7ab50\"\n  },\n  \"method\": \"review\",\n  \"coverage\": \"COMPLETE\",\n  \"sources\": [\n    {\n      \"id\": \"policy\",\n      \"path\": \"policy.txt\",\n      \"expected_sha256\": \"f39ffb74fc9fb52d0ffe56fef6d8c83e4818e0fe72e920ba1d016e728c407e82\",\n      \"actual_sha256\": \"f39ffb74fc9fb52d0ffe56fef6d8c83e4818e0fe72e920ba1d016e728c407e82\",\n      \"current\": true\n    }\n  ],\n  \"commands\": [],\n  \"invariants\": [\n    {\n      \"id\": \"probe-invariant\",\n      \"source\": \"policy\",\n      \"statement\": \"Independent generic profile probe.\"\n    }\n  ],\n  \"surfaces\": {},\n  \"consumed_source_ids\": [\n    \"policy\"\n  ],\n  \"problems\": [],\n  \"local_adaptations\": []\n}\n",
+      "stderr": ""
+    },
+    {
+      "id": "complete-verifier:29",
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "-B",
+        "scripts/project-check.py",
+        "references/project.json",
+        "--root",
+        "SNAPSHOTS/correction/probe-project",
+        "--method",
+        "ux"
+      ],
+      "cwd": "SNAPSHOTS/correction/derived-output/qore-ux-review-probe",
+      "exit_code": 0,
+      "stdout": "{\n  \"schema\": \"qore-context-check/1\",\n  \"profile\": {\n    \"id\": \"probe\",\n    \"version\": \"1.0.0\",\n    \"sha256\": \"f91159bcb485b06841f01a464b499d6a7926ab19fa0931d6c10992c935e7ab50\"\n  },\n  \"method\": \"ux\",\n  \"coverage\": \"COMPLETE\",\n  \"sources\": [\n    {\n      \"id\": \"policy\",\n      \"path\": \"policy.txt\",\n      \"expected_sha256\": \"f39ffb74fc9fb52d0ffe56fef6d8c83e4818e0fe72e920ba1d016e728c407e82\",\n      \"actual_sha256\": \"f39ffb74fc9fb52d0ffe56fef6d8c83e4818e0fe72e920ba1d016e728c407e82\",\n      \"current\": true\n    }\n  ],\n  \"commands\": [],\n  \"invariants\": [\n    {\n      \"id\": \"probe-invariant\",\n      \"source\": \"policy\",\n      \"statement\": \"Independent generic profile probe.\"\n    }\n  ],\n  \"surfaces\": {\n    \"web\": {\n      \"kind\": \"fixture\",\n      \"entry_url\": \"http://127.0.0.1:8765/\",\n      \"allowed_origins\": [\n        \"http://127.0.0.1:8765\"\n      ],\n      \"required_state\": \"Probe\",\n      \"source\": \"policy\",\n      \"applies_to\": [\n        \"ux\"\n      ]\n    }\n  },\n  \"consumed_source_ids\": [\n    \"policy\"\n  ],\n  \"problems\": [],\n  \"local_adaptations\": []\n}\n",
+      "stderr": ""
+    },
+    {
+      "id": "complete-verifier:30",
+      "command": [
+        "git",
+        "rev-parse",
+        "e9d74cfeadd299a52f66919598b8330d6225e947^{tree}"
+      ],
+      "cwd": "CASE/full-change-replay/target-repository",
+      "exit_code": 0,
+      "stdout": "fb17324ccf3d4cb3a4571e5adcd56e1514422e78\n",
+      "stderr": ""
+    },
+    {
+      "id": "complete-verifier:31",
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "-B",
+        "tools/qore.py",
+        "build",
+        "--output",
+        "SNAPSHOTS/public-main/build-output"
+      ],
+      "cwd": "SNAPSHOTS/public-main",
+      "exit_code": 0,
+      "stdout": "{\n  \"bundle\": \"SNAPSHOTS/public-main/build-output/qore-skills-0.2.1\",\n  \"archive\": \"SNAPSHOTS/public-main/build-output/qore-skills-0.2.1.zip\",\n  \"sha256\": \"8bb252817918fb9e03a6b5d4f429f9ec96a075110363009e134a0ef257d1297b\",\n  \"scope\": \"full\",\n  \"valid\": true,\n  \"schema\": \"qore-release/1\",\n  \"version\": \"0.2.1\",\n  \"kind\": \"generic\",\n  \"files\": 1326,\n  \"manifest_sha256\": \"31223cfdcd0e18f85971518d77d8b73d2a360751a506ec731ea1df7e8bb290bd\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "id": "complete-verifier:32",
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "-B",
+        "tools/qore.py",
+        "install",
+        "--source",
+        "SNAPSHOTS/public-main/build-output/qore-skills-0.2.1",
+        "--project-root",
+        "SNAPSHOTS/public-main/probe-project"
+      ],
+      "cwd": "SNAPSHOTS/public-main",
+      "exit_code": 0,
+      "stdout": "{\n  \"installed\": [\n    \"SNAPSHOTS/public-main/probe-project/.agents/skills/qore-plan\",\n    \"SNAPSHOTS/public-main/probe-project/.agents/skills/qore-review\",\n    \"SNAPSHOTS/public-main/probe-project/.agents/skills/qore-ux-review\"\n  ],\n  \"replaced\": false,\n  \"warnings\": [\n    {\n      \"code\": \"same-name-user-skill\",\n      \"skill\": \"qore-review\",\n      \"path\": \"EXISTING_SKILLS/qore-review\",\n      \"message\": \"Another same-name user installation exists. Inspect the selected skill path in a fresh chat; this installer leaves it unchanged.\"\n    },\n    {\n      \"code\": \"same-name-user-skill\",\n      \"skill\": \"qore-ux-review\",\n      \"path\": \"EXISTING_SKILLS/qore-ux-review\",\n      \"message\": \"Another same-name user installation exists. Inspect the selected skill path in a fresh chat; this installer leaves it unchanged.\"\n    }\n  ]\n}\n",
+      "stderr": ""
+    },
+    {
+      "id": "complete-verifier:35",
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "-B",
+        "scripts/project-check.py",
+        "references/project.json",
+        "--root",
+        "SNAPSHOTS/public-main/probe-project",
+        "--method",
+        "plan"
+      ],
+      "cwd": "SNAPSHOTS/public-main/probe-project/.agents/skills/qore-plan",
+      "exit_code": 0,
+      "stdout": "{\n  \"schema\": \"qore-context-check/1\",\n  \"profile\": {\n    \"id\": \"probe\",\n    \"version\": \"1.0.0\",\n    \"sha256\": \"f91159bcb485b06841f01a464b499d6a7926ab19fa0931d6c10992c935e7ab50\"\n  },\n  \"method\": \"plan\",\n  \"coverage\": \"COMPLETE\",\n  \"sources\": [\n    {\n      \"id\": \"policy\",\n      \"path\": \"policy.txt\",\n      \"expected_sha256\": \"f39ffb74fc9fb52d0ffe56fef6d8c83e4818e0fe72e920ba1d016e728c407e82\",\n      \"actual_sha256\": \"f39ffb74fc9fb52d0ffe56fef6d8c83e4818e0fe72e920ba1d016e728c407e82\",\n      \"current\": true\n    }\n  ],\n  \"commands\": [],\n  \"invariants\": [\n    {\n      \"id\": \"probe-invariant\",\n      \"source\": \"policy\",\n      \"statement\": \"Independent generic profile probe.\"\n    }\n  ],\n  \"surfaces\": {},\n  \"consumed_source_ids\": [\n    \"policy\"\n  ],\n  \"problems\": [],\n  \"local_adaptations\": []\n}\n",
+      "stderr": ""
+    },
+    {
+      "id": "complete-verifier:38",
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "-B",
+        "scripts/project-check.py",
+        "references/project.json",
+        "--root",
+        "SNAPSHOTS/public-main/probe-project",
+        "--method",
+        "review"
+      ],
+      "cwd": "SNAPSHOTS/public-main/probe-project/.agents/skills/qore-review",
+      "exit_code": 0,
+      "stdout": "{\n  \"schema\": \"qore-context-check/1\",\n  \"profile\": {\n    \"id\": \"probe\",\n    \"version\": \"1.0.0\",\n    \"sha256\": \"f91159bcb485b06841f01a464b499d6a7926ab19fa0931d6c10992c935e7ab50\"\n  },\n  \"method\": \"review\",\n  \"coverage\": \"COMPLETE\",\n  \"sources\": [\n    {\n      \"id\": \"policy\",\n      \"path\": \"policy.txt\",\n      \"expected_sha256\": \"f39ffb74fc9fb52d0ffe56fef6d8c83e4818e0fe72e920ba1d016e728c407e82\",\n      \"actual_sha256\": \"f39ffb74fc9fb52d0ffe56fef6d8c83e4818e0fe72e920ba1d016e728c407e82\",\n      \"current\": true\n    }\n  ],\n  \"commands\": [],\n  \"invariants\": [\n    {\n      \"id\": \"probe-invariant\",\n      \"source\": \"policy\",\n      \"statement\": \"Independent generic profile probe.\"\n    }\n  ],\n  \"surfaces\": {},\n  \"consumed_source_ids\": [\n    \"policy\"\n  ],\n  \"problems\": [],\n  \"local_adaptations\": []\n}\n",
+      "stderr": ""
+    },
+    {
+      "id": "complete-verifier:41",
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "-B",
+        "scripts/project-check.py",
+        "references/project.json",
+        "--root",
+        "SNAPSHOTS/public-main/probe-project",
+        "--method",
+        "ux"
+      ],
+      "cwd": "SNAPSHOTS/public-main/probe-project/.agents/skills/qore-ux-review",
+      "exit_code": 0,
+      "stdout": "{\n  \"schema\": \"qore-context-check/1\",\n  \"profile\": {\n    \"id\": \"probe\",\n    \"version\": \"1.0.0\",\n    \"sha256\": \"f91159bcb485b06841f01a464b499d6a7926ab19fa0931d6c10992c935e7ab50\"\n  },\n  \"method\": \"ux\",\n  \"coverage\": \"COMPLETE\",\n  \"sources\": [\n    {\n      \"id\": \"policy\",\n      \"path\": \"policy.txt\",\n      \"expected_sha256\": \"f39ffb74fc9fb52d0ffe56fef6d8c83e4818e0fe72e920ba1d016e728c407e82\",\n      \"actual_sha256\": \"f39ffb74fc9fb52d0ffe56fef6d8c83e4818e0fe72e920ba1d016e728c407e82\",\n      \"current\": true\n    }\n  ],\n  \"commands\": [],\n  \"invariants\": [\n    {\n      \"id\": \"probe-invariant\",\n      \"source\": \"policy\",\n      \"statement\": \"Independent generic profile probe.\"\n    }\n  ],\n  \"surfaces\": {\n    \"web\": {\n      \"kind\": \"fixture\",\n      \"entry_url\": \"http://127.0.0.1:8765/\",\n      \"allowed_origins\": [\n        \"http://127.0.0.1:8765\"\n      ],\n      \"required_state\": \"Probe\",\n      \"source\": \"policy\",\n      \"applies_to\": [\n        \"ux\"\n      ]\n    }\n  },\n  \"consumed_source_ids\": [\n    \"policy\"\n  ],\n  \"problems\": [],\n  \"local_adaptations\": []\n}\n",
+      "stderr": ""
+    },
+    {
+      "id": "complete-verifier:42",
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "-B",
+        "tools/context.py",
+        "SNAPSHOTS/public-main/probe-project/.agents/skills/qore-review/references/project.json",
+        "--root",
+        "SNAPSHOTS/public-main/probe-project",
+        "--method",
+        "review"
+      ],
+      "cwd": "SNAPSHOTS/public-main",
+      "exit_code": 0,
+      "stdout": "{\n  \"schema\": \"qore-context-check/1\",\n  \"profile\": {\n    \"id\": \"probe\",\n    \"version\": \"1.0.0\",\n    \"sha256\": \"f91159bcb485b06841f01a464b499d6a7926ab19fa0931d6c10992c935e7ab50\"\n  },\n  \"method\": \"review\",\n  \"coverage\": \"COMPLETE\",\n  \"sources\": [\n    {\n      \"id\": \"policy\",\n      \"path\": \"policy.txt\",\n      \"expected_sha256\": \"f39ffb74fc9fb52d0ffe56fef6d8c83e4818e0fe72e920ba1d016e728c407e82\",\n      \"actual_sha256\": \"f39ffb74fc9fb52d0ffe56fef6d8c83e4818e0fe72e920ba1d016e728c407e82\",\n      \"current\": true\n    }\n  ],\n  \"commands\": [],\n  \"invariants\": [\n    {\n      \"id\": \"probe-invariant\",\n      \"source\": \"policy\",\n      \"statement\": \"Independent generic profile probe.\"\n    }\n  ],\n  \"surfaces\": {},\n  \"consumed_source_ids\": [\n    \"policy\"\n  ],\n  \"problems\": [],\n  \"local_adaptations\": []\n}\n",
+      "stderr": ""
+    },
+    {
+      "id": "complete-change-local-control:0",
+      "argv": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_validators.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_all_required_skipped_never_ship (test_validators.ValidatorTests.test_all_required_skipped_never_ship) ... ok\ntest_blocking_findings_need_counterexample_and_checkable_evidence (test_validators.ValidatorTests.test_blocking_findings_need_counterexample_and_checkable_evidence) ... ok\ntest_confirmed_blocker_remains_do_not_ship_with_unresolved_candidate (test_validators.ValidatorTests.test_confirmed_blocker_remains_do_not_ship_with_unresolved_candidate) ... ok\ntest_depth_missing_files_unknown_depth_and_bad_shape (test_validators.ValidatorTests.test_depth_missing_files_unknown_depth_and_bad_shape) ... ok\ntest_depth_positive_source_families (test_validators.ValidatorTests.test_depth_positive_source_families) ... ok\ntest_depth_rejects_data_as_visual_and_render_as_none (test_validators.ValidatorTests.test_depth_rejects_data_as_visual_and_render_as_none) ... ok\ntest_duplicate_ids_and_non_object_findings_are_refused (test_validators.ValidatorTests.test_duplicate_ids_and_non_object_findings_are_refused) ... ok\ntest_each_scenario_requires_its_own_three_step_types (test_validators.ValidatorTests.test_each_scenario_requires_its_own_three_step_types) ... ok\ntest_empty_fence_cannot_borrow_steps_outside (test_validators.ValidatorTests.test_empty_fence_cannot_borrow_steps_outside) ... ok\ntest_empty_findings_is_a_valid_complete_packet (test_validators.ValidatorTests.test_empty_findings_is_a_valid_complete_packet) ... ok\ntest_empty_null_array_and_missing_envelope_are_refused (test_validators.ValidatorTests.test_empty_null_array_and_missing_envelope_are_refused) ... ok\ntest_every_confirmed_severity_needs_a_counterexample (test_validators.ValidatorTests.test_every_confirmed_severity_needs_a_counterexample) ... ok\ntest_exhausted_budget_is_partial_while_measured_coverage_remains_visible (test_validators.ValidatorTests.test_exhausted_budget_is_partial_while_measured_coverage_remains_visible) ... ok\ntest_fixes_invalidate_same_iteration_and_carried_scores (test_validators.ValidatorTests.test_fixes_invalidate_same_iteration_and_carried_scores) ... ok\ntest_infra_blockage_affects_coverage_without_failing_observed_gates (test_validators.ValidatorTests.test_infra_blockage_affects_coverage_without_failing_observed_gates) ... ok\ntest_inherited_or_unknown_gate_names_cannot_supply_measurements (test_validators.ValidatorTests.test_inherited_or_unknown_gate_names_cannot_supply_measurements) ... ok\ntest_justified_non_applicability_is_distinct_from_tool_absence (test_validators.ValidatorTests.test_justified_non_applicability_is_distinct_from_tool_absence) ... ok\ntest_measurements_and_source_identifiers_remain_accepted (test_validators.ValidatorTests.test_measurements_and_source_identifiers_remain_accepted) ... ok\ntest_missing_required_gate_is_not_treated_as_pass (test_validators.ValidatorTests.test_missing_required_gate_is_not_treated_as_pass) ... ok\ntest_missing_verifier_never_proves_or_refutes (test_validators.ValidatorTests.test_missing_verifier_never_proves_or_refutes) ... ok\ntest_optional_coverage_fields_do_not_silently_coerce_bad_types (test_validators.ValidatorTests.test_optional_coverage_fields_do_not_silently_coerce_bad_types) ... ok\ntest_positive_review_retains_refutations_and_blocks_confirmed_high (test_validators.ValidatorTests.test_positive_review_retains_refutations_and_blocks_confirmed_high) ... ok\ntest_positive_spec (test_validators.ValidatorTests.test_positive_spec) ... ok\ntest_positive_ux (test_validators.ValidatorTests.test_positive_ux) ... ok\ntest_ran_verifier_cannot_clear_unresolved_high_or_critical (test_validators.ValidatorTests.test_ran_verifier_cannot_clear_unresolved_high_or_critical) ... ok\ntest_redactor_allowlist_drops_unanticipated_rationale (test_validators.ValidatorTests.test_redactor_allowlist_drops_unanticipated_rationale) ... ok\ntest_redactor_refuses_bad_envelope_and_nested_allowed_field (test_validators.ValidatorTests.test_redactor_refuses_bad_envelope_and_nested_allowed_field) ... ok\ntest_refutations_preserve_the_original_checkable_evidence (test_validators.ValidatorTests.test_refutations_preserve_the_original_checkable_evidence) ... ok\ntest_refuted_high_and_lower_severity_uncertainty_do_not_create_blockers (test_validators.ValidatorTests.test_refuted_high_and_lower_severity_uncertainty_do_not_create_blockers) ... ok\ntest_required_skipped_gate_prevents_ship_despite_passing_score (test_validators.ValidatorTests.test_required_skipped_gate_prevents_ship_despite_passing_score) ... ok\ntest_route_reachability_applies_to_modern_app_and_root_paths (test_validators.ValidatorTests.test_route_reachability_applies_to_modern_app_and_root_paths) ... ok\ntest_sixth_fresh_pass_can_ship_but_seventh_cannot (test_validators.ValidatorTests.test_sixth_fresh_pass_can_ship_but_seventh_cannot) ... ok\ntest_skipped_verifier_preserves_high_and_critical_severity (test_validators.ValidatorTests.test_skipped_verifier_preserves_high_and_critical_severity) ... ok\ntest_spec_duplicate_ids_and_orphan_coverage_fail (test_validators.ValidatorTests.test_spec_duplicate_ids_and_orphan_coverage_fail) ... ok\ntest_spec_requires_coverage_and_fenced_sequence (test_validators.ValidatorTests.test_spec_requires_coverage_and_fenced_sequence) ... ok\ntest_spec_supports_named_scenarios_and_bold_coverage (test_validators.ValidatorTests.test_spec_supports_named_scenarios_and_bold_coverage) ... ok\ntest_spec_version_must_be_first_and_known (test_validators.ValidatorTests.test_spec_version_must_be_first_and_known) ... ok\ntest_three_nonimproving_comparisons_stop_even_persistent_failures (test_validators.ValidatorTests.test_three_nonimproving_comparisons_stop_even_persistent_failures) ... ok\ntest_truncated_json_is_not_an_empty_review (test_validators.ValidatorTests.test_truncated_json_is_not_an_empty_review) ... ok\ntest_unknown_verdict_and_severity_are_refused (test_validators.ValidatorTests.test_unknown_verdict_and_severity_are_refused) ... ok\ntest_ux_rejects_invalid_scores_iteration_order_and_unmeasured_change (test_validators.ValidatorTests.test_ux_rejects_invalid_scores_iteration_order_and_unmeasured_change) ... ok\ntest_verifier_declaration_requires_the_entire_exact_value (test_validators.ValidatorTests.test_verifier_declaration_requires_the_entire_exact_value) ... ok\ntest_zero_gate_cannot_extend_six_iteration_budget (test_validators.ValidatorTests.test_zero_gate_cannot_extend_six_iteration_budget) ... ok\n\n----------------------------------------------------------------------\nRan 43 tests in 3.195s\n\nOK\n"
+    },
+    {
+      "id": "complete-change-local-control:1",
+      "argv": [
+        "python3",
+        "tools/qore.py",
+        "build",
+        "--output",
+        "TEMP/qodo-full-fix-build-xizi_bql/candidate"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"bundle\": \"TEMP/qodo-full-fix-build-xizi_bql/candidate/qore-skills-0.2.1\",\n  \"archive\": \"TEMP/qodo-full-fix-build-xizi_bql/candidate/qore-skills-0.2.1.zip\",\n  \"sha256\": \"ec1e78e79c0dc7512f4bb7943d661773b265a8b9baf4c2bd92eb743860fad4ba\",\n  \"scope\": \"full\",\n  \"valid\": true,\n  \"schema\": \"qore-release/1\",\n  \"version\": \"0.2.1\",\n  \"kind\": \"generic\",\n  \"files\": 1326,\n  \"manifest_sha256\": \"6e26c4baaad7c3b3b02af8346c34892007750e52c43171d6985f89961b51e7f2\"\n}\n",
+      "stderr": ""
+    }
+  ],
+  "path_normalization": "CASE/SNAPSHOTS/TEMP/EXISTING_SKILLS/AUTHOR_CHECKOUT are stable logical labels. No source fact, exit status, finding verdict or error text is changed."
+}

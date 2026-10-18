@@ -1,0 +1,136 @@
+{
+  "schema": "qore-qodo-provider-excerpts/1",
+  "observed_date": "2026-10-18",
+  "product": "Qodo Agentic Toolbox CLI",
+  "cli_version": "1.6.0",
+  "runs": [
+    {
+      "id": "three-file-slice",
+      "base_commit": "a4fef83aadd6610435da5ac0cc7e53b34fe1dd4f",
+      "source_fix_commit": "d67673097e41d5e4c4fd02241c9f0c392cdac1f5",
+      "observed_finished_at": "2026-10-18T07:37:37.049231+00:00",
+      "findings": [
+        {
+          "id": "9f0d5a97-5e27-428f-983b-d7e96bb7c5a3",
+          "title": "Package builds fail on stale file hashes",
+          "action_level": "action_required",
+          "category": "Reliability",
+          "description": "The changes to `finding-lint.mjs` and `findings.md` leave their approved SHA-256 values in `release-rights.json` unchanged. When the package-check workflow runs `tools/qore.py build`, its redistribution check compares those values with the changed files and raises `Redistribution review is stale` before producing a package.",
+          "location": {
+            "file_path": "skills/qore-review/scripts/finding-lint.mjs",
+            "start_line": 51,
+            "end_line": 51,
+            "side": "right"
+          }
+        },
+        {
+          "id": "2ae99e58-b64b-47e9-be6a-e627d9767dff",
+          "title": "Plain-text summary hides why a review is held",
+          "action_level": "informational",
+          "category": "Observability",
+          "description": "The non-JSON summary line still prints only coverage, verdict and `blocking.length`. The new `unresolved` list is never mentioned, so a `--verifier=ran` run with an unresolved high/critical PLAUSIBLE finding prints `coverage PARTIAL; verdict PENDING; 0 blocking findings.` and gives the reader no hint which ID is holding the verdict.",
+          "location": {
+            "file_path": "skills/qore-review/scripts/finding-lint.mjs",
+            "start_line": 45,
+            "end_line": 46,
+            "side": "right"
+          }
+        }
+      ],
+      "depth": "deep",
+      "reported_coverage": {
+        "complete": true
+      },
+      "reviewers": {
+        "ran": [
+          "issue"
+        ],
+        "skipped": [
+          "compliance",
+          "skills",
+          "spec",
+          "ui",
+          "persona",
+          "cross_repo"
+        ]
+      },
+      "spec_context": null,
+      "previous_finding_inventory_complete": false,
+      "warnings": [
+        {
+          "code": "finding_state_unavailable",
+          "message": "The previous finding inventory is incomplete; verify earlier open findings before treating this review as clean."
+        }
+      ],
+      "provider_observed_tree": "8c1930c2787aff0b6beb456662b0493caaf48239",
+      "reviewed_scope": [
+        "skills/qore-review/scripts/finding-lint.mjs",
+        "tests/test_validators.py",
+        "skills/qore-review/references/findings.md"
+      ],
+      "scope_semantics": "Only the three declared changed paths",
+      "patch_sha256": "c13b7cce0abc1a857398e0ab24b4fb47c228415c439a4d3a382bcec05446a912",
+      "context_sha256": "50d43802eb2cc993344f07df460a9f7350748ec9349e9111a80c3a8462cbcb4e"
+    },
+    {
+      "id": "complete-published-change",
+      "base_commit": "a4fef83aadd6610435da5ac0cc7e53b34fe1dd4f",
+      "source_fix_commit": "d67673097e41d5e4c4fd02241c9f0c392cdac1f5",
+      "observed_finished_at": "2026-10-18T07:46:56.260834+00:00",
+      "findings": [
+        {
+          "id": "777de8a5-6b8e-4ec0-a3a7-3cea3db25788",
+          "title": "Adding a profile to a generic skill now blocks the profile check",
+          "action_level": "remediation_recommended",
+          "category": "Correctness",
+          "description": "`local_adaptations` raises `ValueError(\"Bundled profile baseline needs exactly one project resource\")` when `references/project.json` sits next to a `release.json` that has no entry for it. A generic skill's `release.json` never lists `references/project.json`. So if a user adds a profile to a generic install, which `project-profile.md` allows ('When a profile exists, ... run the bundled checker'), the result that already passed `validate_profile` is thrown away and the checker prints `coverage: BLOCKED` and exits 2. The same code was copied into the qore-plan and qore-ux-review checkers and into `tools/context.py`.",
+          "location": {
+            "file_path": "skills/qore-review/scripts/project-check.py",
+            "start_line": 146,
+            "end_line": 148,
+            "side": "right"
+          }
+        }
+      ],
+      "depth": "deep",
+      "reported_coverage": {
+        "complete": true
+      },
+      "reviewers": {
+        "ran": [
+          "issue"
+        ],
+        "skipped": [
+          "compliance",
+          "skills",
+          "spec",
+          "ui",
+          "persona",
+          "cross_repo"
+        ]
+      },
+      "spec_context": {
+        "explicit_refs_attempted": 1,
+        "explicit_refs_received": 1,
+        "outcome": "unresolved"
+      },
+      "previous_finding_inventory_complete": false,
+      "warnings": [
+        {
+          "code": "spec_context_unresolved",
+          "message": "Explicit spec context could not be resolved; check the URL and integration access."
+        },
+        {
+          "code": "finding_state_unavailable",
+          "message": "The previous finding inventory is incomplete; verify earlier open findings before treating this review as clean."
+        }
+      ],
+      "provider_observed_tree": "c10015840a872caf200164d69aa650b6d0bda8b5",
+      "reviewed_scope": [],
+      "scope_semantics": "All 77 actual changed files",
+      "patch_sha256": "c8694eade5659fcefbc5e0d32e2641675ee69eb88bb2ac555a20c74f17dd122e",
+      "context_sha256": "99786c34f1e9c922fa6b9e890875bb8d75a047b193d8ccb6e8ed224ec0db9fde"
+    }
+  ],
+  "limit": "Maintainer-selected excerpts of private terminal responses, not a public provider attestation. No fresh Qodo call is made by the replay."
+}

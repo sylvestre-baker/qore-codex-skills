@@ -72,6 +72,8 @@ Supply the actual target, relevant requirements, and authorized web origin when 
 
 ## See the evidence
 
+The [Qodo review tutorial](docs/tutorials/qodo-review.md) follows a real external review comment through local reproduction, a checked correction and an engineering decision. Replay the focused observations without a Qodo account, then inspect the separate live-review recipe and coverage limits. It distinguishes a historical regression already fixed, an informational diagnostic suggestion and a failure introduced by our own input selection.
+
 The [Qaizen Labs case](docs/evidence/qaizen-labs/README.md) shows all three specialized methods acting on one sourced profile. Planning separated Back keyboard reachability, resolved state and focus. Independent review reproduced four distinct coordination helper defects and retained separate post-fix verification. The actual desktop UX run followed the real entry, operated help and returned to the introduction without answering a question.
 
 [![Qore Labs demonstration: three methods and one sourced project profile](docs/demo/qaizen-labs/poster.jpg)](docs/demo/qaizen-labs/demo.mp4)
@@ -81,6 +83,8 @@ The [Qaizen Labs case](docs/evidence/qaizen-labs/README.md) shows all three spec
 The [planning report](docs/evidence/qaizen-labs/plan/REPORT.md), [review and corrections](docs/evidence/qaizen-labs/review/REPORT.md), [dated UX observations](docs/evidence/qaizen-labs/ux/REPORT.md) and [actual PM acceptance](docs/evidence/qaizen-labs/coordination/README.md) connect the problem to a supported decision and explicit limits. The keyboard coverage gap was already known and concerned the protocol; it was not a newly discovered website bug.
 
 Browser evidence covers one desktop English entry/state flow. It does not establish whole-site readiness, instrumented accessibility conformance, performance or external human usability. One analytics POST was blocked and recorded. Linux source review ran without a browser driver; its skipped browser checks are not passes. The [earlier validator case](docs/evidence/validator-case.md) and [0.1.0 execution record](docs/qualification.md) retain their original identities.
+
+The [recoverable-installation case](docs/evidence/install-recovery/README.md) adds a 3:30 English lesson and an offline replay: a controlled copy failure blocks retry before the correction; safe cleanup permits retry afterward. It distinguishes the known failure, targeted Qodo advice, rejected remedy detail and independent checks. This branch contains the candidate; released v0.2.1 assets are unchanged.
 
 ## Evaluate a project adaptation
 

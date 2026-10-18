@@ -1,0 +1,106 @@
+{
+  "schema": "qore-offline-review-replay/1",
+  "status": "PASS",
+  "cases": {
+    "installation_before": {
+      "failure": {
+        "error": "Controlled second-skill copy failure",
+        "recovery": null
+      },
+      "folders_after_failure": [
+        "local-policy",
+        "qore-plan"
+      ],
+      "retry": {
+        "success": false,
+        "error": "Installed destination exists; preserve it and compare a new candidate: qore-plan"
+      },
+      "normal_control": {
+        "installed": [
+          "qore-plan",
+          "qore-review",
+          "qore-ux-review"
+        ],
+        "differences": []
+      },
+      "unrelated_policy_preserved": true
+    },
+    "installation_after": {
+      "failure": {
+        "error": "Controlled second-skill copy failure",
+        "recovery": {
+          "safe_to_retry": true,
+          "retained_paths": [],
+          "cleanup_errors": [],
+          "next_action": "Correct the reported cause, then rerun the same install command."
+        }
+      },
+      "folders_after_failure": [
+        "local-policy"
+      ],
+      "retry": {
+        "success": true,
+        "installed": [
+          "qore-plan",
+          "qore-review",
+          "qore-ux-review"
+        ],
+        "differences": []
+      },
+      "normal_control": {
+        "installed": [
+          "qore-plan",
+          "qore-review",
+          "qore-ux-review"
+        ],
+        "differences": []
+      },
+      "unrelated_policy_preserved": true
+    },
+    "diagnostic_before": {
+      "exit_code": 1,
+      "packet": {
+        "valid": false,
+        "error": "SECONDARY_SCAN_DENIED",
+        "recovery": {
+          "safe_to_retry": true,
+          "retained_paths": [],
+          "cleanup_errors": [],
+          "next_action": "Correct the reported cause, then rerun the same install command."
+        }
+      }
+    },
+    "diagnostic_after": {
+      "exit_code": 1,
+      "packet": {
+        "valid": false,
+        "error": "PRIMARY_COPY_DENIED",
+        "recovery": {
+          "safe_to_retry": false,
+          "retained_paths": [],
+          "cleanup_errors": [
+            {
+              "path": ".agents/.qore-install-sz7bcyyi/qore-plan",
+              "error": "SECONDARY_SCAN_DENIED"
+            }
+          ],
+          "next_action": "Inspect the retained paths and preserve any local edits. Compare against the verified source; remove or relocate only confirmed attempt-owned content before retrying."
+        }
+      }
+    }
+  },
+  "source_identities": {
+    "installation_before": "e9d74cfeadd299a52f66919598b8330d6225e947",
+    "diagnostic_before": "d5a66ce2fbb4328fd279166f3a8f1ab8d636c3f3",
+    "candidate": "c3ce75cce730429d21d8b068672beda93c2a4de5"
+  },
+  "candidate_installer_sha256": "9098c9d890c915e8e0d07b3d30e9f99aa7f2fa6d5032d9ae2b31259a482ff090",
+  "bundle_manifest_sha256": "a06f7b0f367f15853feff1e001b81c533972632bdd9f82c117eb177a22ecff6a",
+  "python": "3.14.7",
+  "limits": [
+    "Controlled injected failures, not a customer incident.",
+    "Historical code is executed only in temporary projects.",
+    "No Qodo call, network access, personal installation or source checkout is needed.",
+    "No crash, power-loss, hostile-concurrency or whole-product guarantee."
+  ]
+}

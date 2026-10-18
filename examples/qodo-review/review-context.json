@@ -1,0 +1,15 @@
+{
+  "summary": "Retrospective review of the complete, already published Qore 0.2.1 corrective change d676730 against its actual parent a4fef83. All 77 changed files are supplied, including companion release rights, profiles, workflow, source exports, documentation and tests. The validator must preserve unresolved high/critical PLAUSIBLE findings as PARTIAL/PENDING while independently CONFIRMED high/critical findings remain blockers. Check actual changed behavior and affected consumers; distinguish substantive defects from intentional source snapshots and documented protocol limits.",
+  "decisions": [
+    "This is an existing public change, not a blind benchmark or a seeded-defect exercise.",
+    "The working tree exactly matches the complete source-fix Git tree; no source-file subset is being substituted for the published change.",
+    "The verifier flag records an execution declaration, not proof that a separate verifier ran.",
+    "No production deployment, general superiority or safety certification is implied."
+  ],
+  "context_refs": [
+    {
+      "kind": "spec",
+      "url": "https://github.com/sylvestre-baker/qore-codex-skills/blob/d67673097e41d5e4c4fd02241c9f0c392cdac1f5/skills/qore-review/references/findings.md"
+    }
+  ]
+}

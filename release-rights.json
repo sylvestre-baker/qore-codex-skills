@@ -13,11 +13,11 @@
     },
     {
       "path": ".github/workflows/check.yml",
-      "sha256": "2533bf9f4e126304efcfe6355c7645ba1a8b95cfc1250ee1e298acad21fa88bc",
+      "sha256": "b6f19cf448a749c0560e6f9e01cbcc61fc359b8c4136af929b93d5e3e4a9291d",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "First-party English QORE-003 code, tests, reconstructed fixtures, documentation or selected public qualification evidence within the user-authorized MIT project. No private client source, credentials or raw model traces. Publication remains separate."
+      "basis": "Reconciled previously reviewed English first-party Qore documentation and explicit command/evidence inventories from specialization PR #4 and main with merged recovery PR #6 and historical tutorial PR #5. Both cases and their original evidence identities are preserved; no new client content or provider trace is introduced. Exact composed bytes reviewed for this integration."
     },
     {
       "path": ".github/workflows/pages.yml",
@@ -53,7 +53,7 @@
     },
     {
       "path": "INSTALL.md",
-      "sha256": "1803f6f40d6539d39dd37f657c67741cf0c137666e31dd446a864f2f0e1f0474",
+      "sha256": "91dfcbfbe40e0a1e28d51c48b9d89b6dae080e09f7cbfe0543d89761018c85f8",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
@@ -69,19 +69,19 @@
     },
     {
       "path": "PROVENANCE.md",
-      "sha256": "0ba998907e47de19ce9a590e5a2937aa78cf0b91039e6a32bdf085eab252a893",
+      "sha256": "21213562218e7285cfe76480956b40a2dd231835896c968a5930ade06f455a60",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "New first-party Qore implementation, documentation or preserved execution of public Qore inputs; authored for this requested public package."
+      "basis": "Reviewed English Qodo tutorial contribution for the user-authorized public MIT Qore project: exact existing MIT Qore source snapshots, authored replay/guide/tests, labeled synthetic inputs, and selected generated review/verification output concerning the author's public code. Qodo general terms section 4.1 observed 18 October 2026 addresses generated output. Selection and path normalization retained in docs/evidence/qodo-review/provenance.json. No proprietary CLI, website copy, logos, account/session identifiers, authentication images, client sources or full raw private trace. No deployment or release action."
     },
     {
       "path": "README.md",
-      "sha256": "79a35ec41312d557025f11da60fd888feb4dd4fef2be56315eda97634e062020",
+      "sha256": "5b5875bd19cdb2c12194887644897a6cbbf0aefba53eaf00f1183e7122f74406",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "Selected English first-party Qore code/docs, frozen public Qore inputs, generated method outputs, independent assessment or authorized public/own local Qaizen browser observations for the user-approved MIT project. No private client/website source, credentials, full CLI/model trace, browser video/trace, cache or copied upstream Docker profile. Original and transformed identities are retained separately. Branch review does not deploy a site or release an application."
+      "basis": "Reconciled previously reviewed English first-party Qore documentation and explicit command/evidence inventories from specialization PR #4 and main with merged recovery PR #6 and historical tutorial PR #5. Both cases and their original evidence identities are preserved; no new client content or provider trace is introduced. Exact composed bytes reviewed for this integration."
     },
     {
       "path": "docs/acceptance-evidence.md",
@@ -109,11 +109,11 @@
     },
     {
       "path": "docs/command-inventory.json",
-      "sha256": "b022fbdba0992bef198f9625404ae87aa3b4787e5b3793ca7f6fe32a77069c46",
+      "sha256": "67f39f5188481a8e55a8a409cb5e70ce9284fd4f2e58167de1236a3772536203",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "Selected English first-party Qore code/docs, frozen public Qore inputs, generated method outputs, independent assessment or authorized public/own local Qaizen browser observations for the user-approved MIT project. No private client/website source, credentials, full CLI/model trace, browser video/trace, cache or copied upstream Docker profile. Original and transformed identities are retained separately. Branch review does not deploy a site or release an application."
+      "basis": "Reconciled previously reviewed English first-party Qore documentation and explicit command/evidence inventories from specialization PR #4 and main with merged recovery PR #6 and historical tutorial PR #5. Both cases and their original evidence identities are preserved; no new client content or provider trace is introduced. Exact composed bytes reviewed for this integration."
     },
     {
       "path": "docs/contracts.md",
@@ -7212,6 +7212,126 @@
       "basis": "New first-party Qore implementation, documentation or preserved execution of public Qore inputs; authored for this requested public package."
     },
     {
+      "path": "docs/evidence/install-recovery/README.md",
+      "sha256": "b7802afd3173bf0e5951c30b5cb2383aaf277c6098226e4e55c15f0f04b83e36",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Scoped English first-party recovery case, Qore MIT source snapshots, maintainer paraphrases of review advice, generated tutorial still/transcript or publication validation. Selected for the user-authorized public correction PR; no client code, private application, account trace or third-party implementation. Historical runtime bytes and source transformation remain explicitly identified."
+    },
+    {
+      "path": "docs/evidence/install-recovery/overview.png",
+      "sha256": "f0dfcfaff5c9edacc02914d089e62ba0e5146b9cfee22745036608321a669dcf",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Scoped English first-party recovery case, Qore MIT source snapshots, maintainer paraphrases of review advice, generated tutorial still/transcript or publication validation. Selected for the user-authorized public correction PR; no client code, private application, account trace or third-party implementation. Historical runtime bytes and source transformation remain explicitly identified."
+    },
+    {
+      "path": "docs/evidence/install-recovery/provenance.json",
+      "sha256": "254904cf544712eb2234a93dae0d43ab87ef3398abdbb3a74634027d4c161de9",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Scoped English first-party recovery case, Qore MIT source snapshots, maintainer paraphrases of review advice, generated tutorial still/transcript or publication validation. Selected for the user-authorized public correction PR; no client code, private application, account trace or third-party implementation. Historical runtime bytes and source transformation remain explicitly identified."
+    },
+    {
+      "path": "docs/evidence/install-recovery/publication-checks.json",
+      "sha256": "33295e53bc162146d634200fceb26f7c56c63be70394b5f9de871369447f3059",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Scoped English first-party recovery case, Qore MIT source snapshots, maintainer paraphrases of review advice, generated tutorial still/transcript or publication validation. Selected for the user-authorized public correction PR; no client code, private application, account trace or third-party implementation. Historical runtime bytes and source transformation remain explicitly identified."
+    },
+    {
+      "path": "docs/evidence/install-recovery/qodo-assessment.json",
+      "sha256": "4649ceb6da427dfc508a865b19e74a0235c646e26f2b2b7cfeab2ee6d735f6f1",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Scoped English first-party recovery case, Qore MIT source snapshots, maintainer paraphrases of review advice, generated tutorial still/transcript or publication validation. Selected for the user-authorized public correction PR; no client code, private application, account trace or third-party implementation. Historical runtime bytes and source transformation remain explicitly identified."
+    },
+    {
+      "path": "docs/evidence/install-recovery/qodo-github-followup.json",
+      "sha256": "a2aa0feb0c37e708abde6b5fb5fb14fb36bd5feb299b9c8a66dd24f7a5a00f77",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Scoped English first-party recovery case, Qore MIT source snapshots, maintainer paraphrases of review advice, generated tutorial still/transcript or publication validation. Selected for the user-authorized public correction PR; no client code, private application, account trace or third-party implementation. Historical runtime bytes and source transformation remain explicitly identified."
+    },
+    {
+      "path": "docs/evidence/install-recovery/recorded-replay.json",
+      "sha256": "ca5db8161bd2429a24f7b9750d97cc5786793dcb9ae25d7e8568e70a49d7fa50",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Scoped English first-party recovery case, Qore MIT source snapshots, maintainer paraphrases of review advice, generated tutorial still/transcript or publication validation. Selected for the user-authorized public correction PR; no client code, private application, account trace or third-party implementation. Historical runtime bytes and source transformation remain explicitly identified."
+    },
+    {
+      "path": "docs/evidence/install-recovery/replay-export-transform.json",
+      "sha256": "6bd259b86269625f1d8e93aecb68d2f6f2d2de77202ccc06ebe2f4ce62a4c61c",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Scoped English first-party recovery case, Qore MIT source snapshots, maintainer paraphrases of review advice, generated tutorial still/transcript or publication validation. Selected for the user-authorized public correction PR; no client code, private application, account trace or third-party implementation. Historical runtime bytes and source transformation remain explicitly identified."
+    },
+    {
+      "path": "docs/evidence/install-recovery/replay/historical/LICENSE",
+      "sha256": "2869451aacba8375c013dee1749f630a9c0d6bef71b6caeea63e5fa15b8f85a6",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Scoped English first-party recovery case, Qore MIT source snapshots, maintainer paraphrases of review advice, generated tutorial still/transcript or publication validation. Selected for the user-authorized public correction PR; no client code, private application, account trace or third-party implementation. Historical runtime bytes and source transformation remain explicitly identified."
+    },
+    {
+      "path": "docs/evidence/install-recovery/replay/historical/baseline-qore.py",
+      "sha256": "ac501036c702b7ca5eae75d333298b6db22e519e0114a8c05c1f2bded4a9f713",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Scoped English first-party recovery case, Qore MIT source snapshots, maintainer paraphrases of review advice, generated tutorial still/transcript or publication validation. Selected for the user-authorized public correction PR; no client code, private application, account trace or third-party implementation. Historical runtime bytes and source transformation remain explicitly identified."
+    },
+    {
+      "path": "docs/evidence/install-recovery/replay/historical/reviewed-qore.py",
+      "sha256": "bd00ace66b2e903cc1c99e1ce531a176ebd306947abc795f1a774fd3f1dee22c",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Scoped English first-party recovery case, Qore MIT source snapshots, maintainer paraphrases of review advice, generated tutorial still/transcript or publication validation. Selected for the user-authorized public correction PR; no client code, private application, account trace or third-party implementation. Historical runtime bytes and source transformation remain explicitly identified."
+    },
+    {
+      "path": "docs/evidence/install-recovery/replay/provenance.json",
+      "sha256": "1da5aa8ff875c4ca2f9b2d0261237773f803f139df3dfb4197383897df2e5194",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Scoped English first-party recovery case, Qore MIT source snapshots, maintainer paraphrases of review advice, generated tutorial still/transcript or publication validation. Selected for the user-authorized public correction PR; no client code, private application, account trace or third-party implementation. Historical runtime bytes and source transformation remain explicitly identified."
+    },
+    {
+      "path": "docs/evidence/install-recovery/replay/qore-source-c3ce75c.zip",
+      "sha256": "6a2eeebe07fd94a9f24681217b69330e826218e9d7b7089fb772e4c7d32ef71c",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Scoped English first-party recovery case, Qore MIT source snapshots, maintainer paraphrases of review advice, generated tutorial still/transcript or publication validation. Selected for the user-authorized public correction PR; no client code, private application, account trace or third-party implementation. Historical runtime bytes and source transformation remain explicitly identified."
+    },
+    {
+      "path": "docs/evidence/install-recovery/replay/reproduce.py",
+      "sha256": "4f7a773006200e83db8265b8ab5ae4a75d8f8ed2c92acdc48459c820eac5e66b",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Scoped English first-party recovery case, Qore MIT source snapshots, maintainer paraphrases of review advice, generated tutorial still/transcript or publication validation. Selected for the user-authorized public correction PR; no client code, private application, account trace or third-party implementation. Historical runtime bytes and source transformation remain explicitly identified."
+    },
+    {
+      "path": "docs/evidence/install-recovery/transcript-en.txt",
+      "sha256": "45f94a064163297edaea5805f98d1244a8b9514ef461c755ccdde534d6dda28c",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Scoped English first-party recovery case, Qore MIT source snapshots, maintainer paraphrases of review advice, generated tutorial still/transcript or publication validation. Selected for the user-authorized public correction PR; no client code, private application, account trace or third-party implementation. Historical runtime bytes and source transformation remain explicitly identified."
+    },
+    {
       "path": "docs/evidence/publication/first-use.json",
       "sha256": "62a5fbd234a2cf353d4592d6d3ac3030e1e4526b2526651edbb1836271520b30",
       "origin": "first-party",
@@ -9428,6 +9548,62 @@
       "basis": "New or revised English first-party Qore code, specification, selected method evidence or documentation for the user-authorized QORE-002 candidate. No private website code or raw agent/mail traces."
     },
     {
+      "path": "docs/evidence/qodo-review/README.md",
+      "sha256": "74b70e4a8d86760f8e699e38be692b5cdc4d5bcd8a243f06f64ac44f0efe52fd",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Reviewed English Qodo tutorial contribution for the user-authorized public MIT Qore project: exact existing MIT Qore source snapshots, authored replay/guide/tests, labeled synthetic inputs, and selected generated review/verification output concerning the author's public code. Qodo general terms section 4.1 observed 18 October 2026 addresses generated output. Selection and path normalization retained in docs/evidence/qodo-review/provenance.json. No proprietary CLI, website copy, logos, account/session identifiers, authentication images, client sources or full raw private trace. No deployment or release action."
+    },
+    {
+      "path": "docs/evidence/qodo-review/focused-replay.json",
+      "sha256": "54461defdadd91432a34ba89b43ca8f0b9efa697e6ba2502e00919017ce5a986",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Reviewed English Qodo tutorial contribution for the user-authorized public MIT Qore project: exact existing MIT Qore source snapshots, authored replay/guide/tests, labeled synthetic inputs, and selected generated review/verification output concerning the author's public code. Qodo general terms section 4.1 observed 18 October 2026 addresses generated output. Selection and path normalization retained in docs/evidence/qodo-review/provenance.json. No proprietary CLI, website copy, logos, account/session identifiers, authentication images, client sources or full raw private trace. No deployment or release action."
+    },
+    {
+      "path": "docs/evidence/qodo-review/live-preparation.json",
+      "sha256": "56cf418c96658748e5eb8e4d05672fb6f2e6e25afd052fc94e020e55860efbaa",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Reviewed English Qodo tutorial contribution for the user-authorized public MIT Qore project: exact existing MIT Qore source snapshots, authored replay/guide/tests, labeled synthetic inputs, and selected generated review/verification output concerning the author's public code. Qodo general terms section 4.1 observed 18 October 2026 addresses generated output. Selection and path normalization retained in docs/evidence/qodo-review/provenance.json. No proprietary CLI, website copy, logos, account/session identifiers, authentication images, client sources or full raw private trace. No deployment or release action."
+    },
+    {
+      "path": "docs/evidence/qodo-review/provenance.json",
+      "sha256": "db055dc87ae5703524c0b255989b147ba640bae9303101889447a87fd0f36cb5",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Reviewed English Qodo tutorial contribution for the user-authorized public MIT Qore project: exact existing MIT Qore source snapshots, authored replay/guide/tests, labeled synthetic inputs, and selected generated review/verification output concerning the author's public code. Qodo general terms section 4.1 observed 18 October 2026 addresses generated output. Selection and path normalization retained in docs/evidence/qodo-review/provenance.json. No proprietary CLI, website copy, logos, account/session identifiers, authentication images, client sources or full raw private trace. No deployment or release action."
+    },
+    {
+      "path": "docs/evidence/qodo-review/provider-excerpts.json",
+      "sha256": "7c58e0c39eb3e1345aee1defb3d919ff9aa971e54fcedf872325d3f933cc1a04",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Reviewed English Qodo tutorial contribution for the user-authorized public MIT Qore project: exact existing MIT Qore source snapshots, authored replay/guide/tests, labeled synthetic inputs, and selected generated review/verification output concerning the author's public code. Qodo general terms section 4.1 observed 18 October 2026 addresses generated output. Selection and path normalization retained in docs/evidence/qodo-review/provenance.json. No proprietary CLI, website copy, logos, account/session identifiers, authentication images, client sources or full raw private trace. No deployment or release action."
+    },
+    {
+      "path": "docs/evidence/qodo-review/recorded-probes.json",
+      "sha256": "34600bbeee612bed26795667a70219332114650560c7bbfec10e8c96d8905abd",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Reviewed English Qodo tutorial contribution for the user-authorized public MIT Qore project: exact existing MIT Qore source snapshots, authored replay/guide/tests, labeled synthetic inputs, and selected generated review/verification output concerning the author's public code. Qodo general terms section 4.1 observed 18 October 2026 addresses generated output. Selection and path normalization retained in docs/evidence/qodo-review/provenance.json. No proprietary CLI, website copy, logos, account/session identifiers, authentication images, client sources or full raw private trace. No deployment or release action."
+    },
+    {
+      "path": "docs/evidence/qodo-review/verification.json",
+      "sha256": "5f3cf2521a6ad83c0237ca4d3bc74124252b4fc41d957b04a3e6523390291b02",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Reviewed English Qodo tutorial contribution for the user-authorized public MIT Qore project: exact existing MIT Qore source snapshots, authored replay/guide/tests, labeled synthetic inputs, and selected generated review/verification output concerning the author's public code. Qodo general terms section 4.1 observed 18 October 2026 addresses generated output. Selection and path normalization retained in docs/evidence/qodo-review/provenance.json. No proprietary CLI, website copy, logos, account/session identifiers, authentication images, client sources or full raw private trace. No deployment or release action."
+    },
+    {
       "path": "docs/evidence/readme-render/README.md",
       "sha256": "406482ca75c60b50d8b03084c55dc4538005160d4fd6b999c80cea0085a77914",
       "origin": "first-party",
@@ -10381,11 +10557,35 @@
     },
     {
       "path": "docs/troubleshooting.md",
-      "sha256": "641cd391f0ca40dedaa80a4a383982e0c72004d6a2886d5019ea94072fb48a2f",
+      "sha256": "bdbdef1d37aa1aa4dfca447c9512afc7cdf29f6a58330892bcb1a81b988fb93a",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
       "basis": "First-party Qore code, tests, configuration or documentation in the reviewed 0.2.1 correction inventory. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
+    },
+    {
+      "path": "docs/tutorials/qodo-live-review.md",
+      "sha256": "1c3c347e281f551080bae5c2b0fb80292b3cf51d776dd632570fb373250c3586",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Reviewed English Qodo tutorial contribution for the user-authorized public MIT Qore project: exact existing MIT Qore source snapshots, authored replay/guide/tests, labeled synthetic inputs, and selected generated review/verification output concerning the author's public code. Qodo general terms section 4.1 observed 18 October 2026 addresses generated output. Selection and path normalization retained in docs/evidence/qodo-review/provenance.json. No proprietary CLI, website copy, logos, account/session identifiers, authentication images, client sources or full raw private trace. No deployment or release action."
+    },
+    {
+      "path": "docs/tutorials/qodo-review.md",
+      "sha256": "7e85ad0b6aff4a6cbbc78af02c143a5ca41cb450d701626d9570cee28bc78b65",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Reviewed English Qodo tutorial contribution for the user-authorized public MIT Qore project: exact existing MIT Qore source snapshots, authored replay/guide/tests, labeled synthetic inputs, and selected generated review/verification output concerning the author's public code. Qodo general terms section 4.1 observed 18 October 2026 addresses generated output. Selection and path normalization retained in docs/evidence/qodo-review/provenance.json. No proprietary CLI, website copy, logos, account/session identifiers, authentication images, client sources or full raw private trace. No deployment or release action."
+    },
+    {
+      "path": "docs/tutorials/recoverable-install.md",
+      "sha256": "18f9139fe3d8d924a21a185ded52754ad882711bcb2e88ad1ae3bbae22c3db06",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Scoped English first-party recovery case, Qore MIT source snapshots, maintainer paraphrases of review advice, generated tutorial still/transcript or publication validation. Selected for the user-authorized public correction PR; no client code, private application, account trace or third-party implementation. Historical runtime bytes and source transformation remain explicitly identified."
     },
     {
       "path": "evals/campaign-20261017/assessments/plan-P1-rest/N06-plan-assessment.json",
@@ -31596,6 +31796,14 @@
       "basis": "Selected English first-party Qore code/docs, frozen public Qore inputs, generated method outputs, independent assessment or authorized public/own local Qaizen browser observations for the user-approved MIT project. No private client/website source, credentials, full CLI/model trace, browser video/trace, cache or copied upstream Docker profile. Original and transformed identities are retained separately. Branch review does not deploy a site or release an application."
     },
     {
+      "path": "examples/install-recovery/reproduce.py",
+      "sha256": "e44e29704ac0ee8516a2da356d1f29e8c455e9f2fd3d9952ce443482158961d7",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "New first-party recovery tutorial or replay helper authored for the approved Qore correction; no private raw provider traces exported."
+    },
+    {
       "path": "examples/qaizen-labs/README.md",
       "sha256": "8c5c5d95df81d3d07413f3e067d400b465921acd166d4519fcb3ab2da3e7ca37",
       "origin": "first-party",
@@ -31642,6 +31850,86 @@
       "license": "MIT",
       "status": "approved",
       "basis": "New or revised English first-party Qore code, specification, selected method evidence or documentation for the user-authorized QORE-002 candidate. No private website code or raw agent/mail traces."
+    },
+    {
+      "path": "examples/qodo-review/prepare_live.py",
+      "sha256": "6223197ed994224253659e1bf0912d207a6c04c9f8fd48097fed29806e7e6534",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Reviewed English Qodo tutorial contribution for the user-authorized public MIT Qore project: exact existing MIT Qore source snapshots, authored replay/guide/tests, labeled synthetic inputs, and selected generated review/verification output concerning the author's public code. Qodo general terms section 4.1 observed 18 October 2026 addresses generated output. Selection and path normalization retained in docs/evidence/qodo-review/provenance.json. No proprietary CLI, website copy, logos, account/session identifiers, authentication images, client sources or full raw private trace. No deployment or release action."
+    },
+    {
+      "path": "examples/qodo-review/reproduce.py",
+      "sha256": "72d2dd98aeafcd7229e5b04adfd63a238753b213f822347a7ad1965e08d0eb5d",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Reviewed English Qodo tutorial contribution for the user-authorized public MIT Qore project: exact existing MIT Qore source snapshots, authored replay/guide/tests, labeled synthetic inputs, and selected generated review/verification output concerning the author's public code. Qodo general terms section 4.1 observed 18 October 2026 addresses generated output. Selection and path normalization retained in docs/evidence/qodo-review/provenance.json. No proprietary CLI, website copy, logos, account/session identifiers, authentication images, client sources or full raw private trace. No deployment or release action."
+    },
+    {
+      "path": "examples/qodo-review/review-context.json",
+      "sha256": "99786c34f1e9c922fa6b9e890875bb8d75a047b193d8ccb6e8ed224ec0db9fde",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Reviewed English Qodo tutorial contribution for the user-authorized public MIT Qore project: exact existing MIT Qore source snapshots, authored replay/guide/tests, labeled synthetic inputs, and selected generated review/verification output concerning the author's public code. Qodo general terms section 4.1 observed 18 October 2026 addresses generated output. Selection and path normalization retained in docs/evidence/qodo-review/provenance.json. No proprietary CLI, website copy, logos, account/session identifiers, authentication images, client sources or full raw private trace. No deployment or release action."
+    },
+    {
+      "path": "examples/qodo-review/snapshots/base-project-check.py",
+      "sha256": "3fcd49b12d5ec168fa857a42324efc7474d4a37dd176cb8841350f6a6204c2cd",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Reviewed English Qodo tutorial contribution for the user-authorized public MIT Qore project: exact existing MIT Qore source snapshots, authored replay/guide/tests, labeled synthetic inputs, and selected generated review/verification output concerning the author's public code. Qodo general terms section 4.1 observed 18 October 2026 addresses generated output. Selection and path normalization retained in docs/evidence/qodo-review/provenance.json. No proprietary CLI, website copy, logos, account/session identifiers, authentication images, client sources or full raw private trace. No deployment or release action."
+    },
+    {
+      "path": "examples/qodo-review/snapshots/current-project-check.py",
+      "sha256": "d87afa433fe485bdebca3e281d06e0896e4a8980ea7cf7baee739053614ea0ac",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Reviewed English Qodo tutorial contribution for the user-authorized public MIT Qore project: exact existing MIT Qore source snapshots, authored replay/guide/tests, labeled synthetic inputs, and selected generated review/verification output concerning the author's public code. Qodo general terms section 4.1 observed 18 October 2026 addresses generated output. Selection and path normalization retained in docs/evidence/qodo-review/provenance.json. No proprietary CLI, website copy, logos, account/session identifiers, authentication images, client sources or full raw private trace. No deployment or release action."
+    },
+    {
+      "path": "examples/qodo-review/snapshots/finding-lint.mjs",
+      "sha256": "d3d22ae7d0b1b6b53b36006f13a8aaf6e1aa9e89df27b98312e6ac72ea079a26",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Reviewed English Qodo tutorial contribution for the user-authorized public MIT Qore project: exact existing MIT Qore source snapshots, authored replay/guide/tests, labeled synthetic inputs, and selected generated review/verification output concerning the author's public code. Qodo general terms section 4.1 observed 18 October 2026 addresses generated output. Selection and path normalization retained in docs/evidence/qodo-review/provenance.json. No proprietary CLI, website copy, logos, account/session identifiers, authentication images, client sources or full raw private trace. No deployment or release action."
+    },
+    {
+      "path": "examples/qodo-review/snapshots/findings.md.txt",
+      "sha256": "f9f9035e471c9832c6546e80e4fe857777fefceba781bd5801ee8f97bdeaa409",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Reviewed English Qodo tutorial contribution for the user-authorized public MIT Qore project: exact existing MIT Qore source snapshots, authored replay/guide/tests, labeled synthetic inputs, and selected generated review/verification output concerning the author's public code. Qodo general terms section 4.1 observed 18 October 2026 addresses generated output. Selection and path normalization retained in docs/evidence/qodo-review/provenance.json. No proprietary CLI, website copy, logos, account/session identifiers, authentication images, client sources or full raw private trace. No deployment or release action."
+    },
+    {
+      "path": "examples/qodo-review/snapshots/historical-project-check.py",
+      "sha256": "2c1ddb8084c15ee276b9e289965333e57c8cd37fb62c442a93351daefaf9f297",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Reviewed English Qodo tutorial contribution for the user-authorized public MIT Qore project: exact existing MIT Qore source snapshots, authored replay/guide/tests, labeled synthetic inputs, and selected generated review/verification output concerning the author's public code. Qodo general terms section 4.1 observed 18 October 2026 addresses generated output. Selection and path normalization retained in docs/evidence/qodo-review/provenance.json. No proprietary CLI, website copy, logos, account/session identifiers, authentication images, client sources or full raw private trace. No deployment or release action."
+    },
+    {
+      "path": "examples/qodo-review/sources.json",
+      "sha256": "cd27cdbb70cdc2947f1425f9cb6d0de66f82deed1cbce72cafd94251d3b60909",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Reviewed English Qodo tutorial contribution for the user-authorized public MIT Qore project: exact existing MIT Qore source snapshots, authored replay/guide/tests, labeled synthetic inputs, and selected generated review/verification output concerning the author's public code. Qodo general terms section 4.1 observed 18 October 2026 addresses generated output. Selection and path normalization retained in docs/evidence/qodo-review/provenance.json. No proprietary CLI, website copy, logos, account/session identifiers, authentication images, client sources or full raw private trace. No deployment or release action."
+    },
+    {
+      "path": "examples/qodo-review/unresolved-finding.json",
+      "sha256": "b597c7aef34470da18226bf9a914fc8b51768af6b15240fa47789f21fd393be1",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Reviewed English Qodo tutorial contribution for the user-authorized public MIT Qore project: exact existing MIT Qore source snapshots, authored replay/guide/tests, labeled synthetic inputs, and selected generated review/verification output concerning the author's public code. Qodo general terms section 4.1 observed 18 October 2026 addresses generated output. Selection and path normalization retained in docs/evidence/qodo-review/provenance.json. No proprietary CLI, website copy, logos, account/session identifiers, authentication images, client sources or full raw private trace. No deployment or release action."
     },
     {
       "path": "examples/validator-hardening.md",
@@ -32164,6 +32452,14 @@
       "basis": "Selected English first-party Qore code/docs, frozen public Qore inputs, generated method outputs, independent assessment or authorized public/own local Qaizen browser observations for the user-approved MIT project. No private client/website source, credentials, full CLI/model trace, browser video/trace, cache or copied upstream Docker profile. Original and transformed identities are retained separately. Branch review does not deploy a site or release an application."
     },
     {
+      "path": "tests/test_install_replay.py",
+      "sha256": "98cc2940eec8e19803514a79355c25bef5effd8350bc50fa2084152b5f668b2c",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Scoped English first-party recovery case, Qore MIT source snapshots, maintainer paraphrases of review advice, generated tutorial still/transcript or publication validation. Selected for the user-authorized public correction PR; no client code, private application, account trace or third-party implementation. Historical runtime bytes and source transformation remain explicitly identified."
+    },
+    {
       "path": "tests/test_labs_contract.py",
       "sha256": "86e0148aa76987aad9a7a6115104f0e0b61e2fb380662be07581867e6edbfadf",
       "origin": "first-party",
@@ -32173,11 +32469,19 @@
     },
     {
       "path": "tests/test_package.py",
-      "sha256": "13532d3b78f76ed9712ce9555dbfa3ef99973792840da4819403639feb73ba2a",
+      "sha256": "660c72081a8b2cbf585090aa3bfa7ee760a22d0e3a9e1d6d82d9081339082e38",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "Selected English first-party Qore code/docs, frozen public Qore inputs, generated method outputs, independent assessment or authorized public/own local Qaizen browser observations for the user-approved MIT project. No private client/website source, credentials, full CLI/model trace, browser video/trace, cache or copied upstream Docker profile. Original and transformed identities are retained separately. Branch review does not deploy a site or release an application."
+      "basis": "Reconciled previously reviewed English first-party Qore documentation and explicit command/evidence inventories from specialization PR #4 and main with merged recovery PR #6 and historical tutorial PR #5. Both cases and their original evidence identities are preserved; no new client content or provider trace is introduced. Exact composed bytes reviewed for this integration."
+    },
+    {
+      "path": "tests/test_qodo_tutorial.py",
+      "sha256": "e75ca648d4e67b4ae92185cd1136b0867a3e53844f4af2d810761ede484552e8",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Reviewed English Qodo tutorial contribution for the user-authorized public MIT Qore project: exact existing MIT Qore source snapshots, authored replay/guide/tests, labeled synthetic inputs, and selected generated review/verification output concerning the author's public code. Qodo general terms section 4.1 observed 18 October 2026 addresses generated output. Selection and path normalization retained in docs/evidence/qodo-review/provenance.json. No proprietary CLI, website copy, logos, account/session identifiers, authentication images, client sources or full raw private trace. No deployment or release action."
     },
     {
       "path": "tests/test_run_contract.py",
@@ -32293,11 +32597,11 @@
     },
     {
       "path": "tools/qore.py",
-      "sha256": "0eb527d8b47eaeb4f380e4ec47ff4e64d0d80fdff3bc342018e54ea5bc161ebc",
+      "sha256": "73eea1d9bc2d174f5d2e3a32dfec42fbe43be08913fc25c175837c9a7d446f1d",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "Selected English first-party Qore code/docs, frozen public Qore inputs, generated method outputs, independent assessment or authorized public/own local Qaizen browser observations for the user-approved MIT project. No private client/website source, credentials, full CLI/model trace, browser video/trace, cache or copied upstream Docker profile. Original and transformed identities are retained separately. Branch review does not deploy a site or release an application."
+      "basis": "Reconciled previously reviewed English first-party Qore documentation and explicit command/evidence inventories from specialization PR #4 and main with merged recovery PR #6 and historical tutorial PR #5. Both cases and their original evidence identities are preserved; no new client content or provider trace is introduced. Exact composed bytes reviewed for this integration."
     },
     {
       "path": "tools/refresh_profiles.py",

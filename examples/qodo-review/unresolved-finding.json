@@ -1,0 +1,11 @@
+{
+  "findings": [
+    {
+      "id": "F1",
+      "title": "Candidate",
+      "severity": "high",
+      "verdict": "PLAUSIBLE",
+      "evidence": "src/input.ts:12"
+    }
+  ]
+}

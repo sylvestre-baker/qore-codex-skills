@@ -21,7 +21,11 @@
       "docs/coordination.md",
       "examples/qaizen-labs/README.md",
       "INSTALL.md",
-      "docs/specialization.md"
+      "docs/specialization.md",
+      "docs/tutorials/qodo-review.md",
+      "docs/tutorials/qodo-live-review.md",
+      "docs/tutorials/recoverable-install.md",
+      "docs/evidence/install-recovery/README.md"
     ],
     "includes": [
       "Every executable shell fence",
@@ -48,16 +52,8 @@
   },
   "documents": [
     {
-      "path": "CONTRIBUTING.md",
-      "sha256": "20bf4aa5250c08731027496a237de44be9e3a864a8633aa4e588a1e2079f1e18"
-    },
-    {
-      "path": "INSTALL.md",
-      "sha256": "1803f6f40d6539d39dd37f657c67741cf0c137666e31dd446a864f2f0e1f0474"
-    },
-    {
       "path": "README.md",
-      "sha256": "79a35ec41312d557025f11da60fd888feb4dd4fef2be56315eda97634e062020"
+      "sha256": "5b5875bd19cdb2c12194887644897a6cbbf0aefba53eaf00f1183e7122f74406"
     },
     {
       "path": "docs/architecture.md",
@@ -70,10 +66,6 @@
     {
       "path": "docs/contracts.md",
       "sha256": "deabe860ffeb06245f8687e9acf23bb49b8438cd20322735214b83c76f314638"
-    },
-    {
-      "path": "docs/coordination.md",
-      "sha256": "3d703d43df4d82d255c4018624a88b951f8ad38d635c993b1b29f3866603d7e0"
     },
     {
       "path": "docs/evidence/browser/README.md",
@@ -112,20 +104,48 @@
       "sha256": "e86631afc763f9ab96f020c96037102203350e75e3d40ef4956ffb4a666d8578"
     },
     {
+      "path": "docs/troubleshooting.md",
+      "sha256": "bdbdef1d37aa1aa4dfca447c9512afc7cdf29f6a58330892bcb1a81b988fb93a"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "sha256": "20bf4aa5250c08731027496a237de44be9e3a864a8633aa4e588a1e2079f1e18"
+    },
+    {
       "path": "docs/showcase.md",
       "sha256": "09ae8f840ef09ec0a828e82a4b6adadbd1f4e9e6e941eaa36095e0abfe287b8b"
+    },
+    {
+      "path": "docs/coordination.md",
+      "sha256": "3d703d43df4d82d255c4018624a88b951f8ad38d635c993b1b29f3866603d7e0"
+    },
+    {
+      "path": "examples/qaizen-labs/README.md",
+      "sha256": "8c5c5d95df81d3d07413f3e067d400b465921acd166d4519fcb3ab2da3e7ca37"
+    },
+    {
+      "path": "INSTALL.md",
+      "sha256": "91dfcbfbe40e0a1e28d51c48b9d89b6dae080e09f7cbfe0543d89761018c85f8"
     },
     {
       "path": "docs/specialization.md",
       "sha256": "2896ff5b3bec60758bd32e19bdc0a2afe91d07f3a53680984f156882fec83eac"
     },
     {
-      "path": "docs/troubleshooting.md",
-      "sha256": "641cd391f0ca40dedaa80a4a383982e0c72004d6a2886d5019ea94072fb48a2f"
+      "path": "docs/tutorials/qodo-review.md",
+      "sha256": "7e85ad0b6aff4a6cbbc78af02c143a5ca41cb450d701626d9570cee28bc78b65"
     },
     {
-      "path": "examples/qaizen-labs/README.md",
-      "sha256": "8c5c5d95df81d3d07413f3e067d400b465921acd166d4519fcb3ab2da3e7ca37"
+      "path": "docs/tutorials/qodo-live-review.md",
+      "sha256": "1c3c347e281f551080bae5c2b0fb80292b3cf51d776dd632570fb373250c3586"
+    },
+    {
+      "path": "docs/tutorials/recoverable-install.md",
+      "sha256": "18f9139fe3d8d924a21a185ded52754ad882711bcb2e88ad1ae3bbae22c3db06"
+    },
+    {
+      "path": "docs/evidence/install-recovery/README.md",
+      "sha256": "b7802afd3173bf0e5951c30b5cb2383aaf277c6098226e4e55c15f0f04b83e36"
     }
   ],
   "evidence_records": [
@@ -293,6 +313,40 @@
       "path": "docs/evidence/specialization/README.md",
       "sha256": "97cdf16b2a607b711a3cd25f3990dcf5f201260ed2909bae05f6338774cdc7b7",
       "category": "Selected actual campaign, independent qualification and correction evidence; bounded maintainer/agent observations, not external human use"
+    },
+    {
+      "id": "qodo-tutorial-focused-replay",
+      "category": "New focused helper replay using exact public snapshots and labeled fixtures",
+      "status": "EXECUTED",
+      "public_execution_artifact": "docs/evidence/qodo-review/focused-replay.json",
+      "limits": [
+        "No Qodo request, original model-review rerun or full package installation.",
+        "Hash-boundary comparison is narrower than running the builder."
+      ]
+    },
+    {
+      "id": "qodo-tutorial-live-preparation",
+      "category": "New local preparation of the exact complete historical change",
+      "status": "EXECUTED",
+      "public_execution_artifact": "docs/evidence/qodo-review/live-preparation.json",
+      "limits": [
+        "Git history required; no network fetch, authentication, installation or Qodo submission."
+      ]
+    },
+    {
+      "id": "qodo-tutorial-original-review",
+      "category": "Selected historical Qodo issue-review excerpts and independent claim checks",
+      "status": "EXECUTED",
+      "public_execution_artifact": "docs/evidence/qodo-review/README.md",
+      "limits": [
+        "Retrospective, different input scopes; unresolved spec context and incomplete prior inventory remain PARTIAL.",
+        "Current recipe substitutions are templates, not a new executed review."
+      ]
+    },
+    {
+      "id": "recoverable-install-publication",
+      "path": "docs/evidence/install-recovery/publication-checks.json",
+      "scope": "Controlled before/after replay and installer regressions; no external human first-use claim."
     }
   ],
   "entries": [
@@ -2049,6 +2103,319 @@
           "qore003-campaign-20261017"
         ],
         "limit": "Command shown with placeholders; actual eighteen preparation/record checks and summary execution are retained with exact input/candidate identities. Helpers validate entered evidence and do not execute or independently judge a model."
+      }
+    },
+    {
+      "id": "qodo-tutorial-qodo-review-1",
+      "kind": "shell_recipe",
+      "location": {
+        "path": "docs/tutorials/qodo-review.md",
+        "shell_fence": 1
+      },
+      "text": "qodo_replay_root=\"$(mktemp -d \"${TMPDIR:-/tmp}/qore-qodo.XXXXXX\")\"\npython3 -B examples/qodo-review/reproduce.py --output \"$qodo_replay_root/run\"",
+      "text_sha256": "5a9e88b053b1ac1d7ebdd87653b24ecc63fb7bd64056e3d7815da6d1cbcf55ab",
+      "implementation": [
+        {
+          "path": "examples/qodo-review/reproduce.py",
+          "sha256": "72d2dd98aeafcd7229e5b04adfd63a238753b213f822347a7ad1965e08d0eb5d"
+        }
+      ],
+      "supported_host": "Local Python/Node executor; live templates use reviewed Qodo Agentic Toolbox CLI 1.6.0",
+      "working_directory": "Repository root; live submission/collection runs in the prepared target",
+      "prerequisites": [
+        "python3",
+        "Node.js",
+        "Unused output directory"
+      ],
+      "inputs_and_substitutions": {
+        "paths": "Temporary root from the preceding recipe; live templates also need a reviewed CLI path and an actual returned operation ID."
+      },
+      "expected_output": [
+        "Terminal JSON/status or explicit prerequisite refusal; no defect-absence inference"
+      ],
+      "effects": [
+        "New local files only; existing output preserved"
+      ],
+      "execution": {
+        "status": "EXECUTED_RECORDED",
+        "evidence_ids": [
+          "qodo-tutorial-focused-replay"
+        ],
+        "limit": "Executed on the maintainer computer with the named bundled inputs; no external human or general compatibility claim."
+      }
+    },
+    {
+      "id": "qodo-tutorial-qodo-review-2",
+      "kind": "shell_recipe",
+      "location": {
+        "path": "docs/tutorials/qodo-review.md",
+        "shell_fence": 2
+      },
+      "text": "python3 -m json.tool \"$qodo_replay_root/run/observations.json\"",
+      "text_sha256": "4de75d3440f703c4e528d1cc600a397d4cf19a80cb978ed6aa8425dcab776044",
+      "implementation": [],
+      "supported_host": "Local Python/Node executor; live templates use reviewed Qodo Agentic Toolbox CLI 1.6.0",
+      "working_directory": "Repository root; live submission/collection runs in the prepared target",
+      "prerequisites": [
+        "python3",
+        "Node.js",
+        "Unused output directory"
+      ],
+      "inputs_and_substitutions": {
+        "paths": "Temporary root from the preceding recipe; live templates also need a reviewed CLI path and an actual returned operation ID."
+      },
+      "expected_output": [
+        "Terminal JSON/status or explicit prerequisite refusal; no defect-absence inference"
+      ],
+      "effects": [
+        "Reads retained JSON and writes formatted JSON to stdout"
+      ],
+      "execution": {
+        "status": "EXECUTED_RECORDED",
+        "evidence_ids": [
+          "qodo-tutorial-focused-replay"
+        ],
+        "limit": "Executed on the maintainer computer with the named bundled inputs; no external human or general compatibility claim."
+      }
+    },
+    {
+      "id": "qodo-tutorial-qodo-live-review-1",
+      "kind": "shell_recipe",
+      "location": {
+        "path": "docs/tutorials/qodo-live-review.md",
+        "shell_fence": 1
+      },
+      "text": "qodo_live_root=\"$(mktemp -d \"${TMPDIR:-/tmp}/qore-qodo-live.XXXXXX\")\"\npython3 -B examples/qodo-review/prepare_live.py --output \"$qodo_live_root/run\"",
+      "text_sha256": "186000a75320d421591e8bc22f8e3f7397d530c167dd0bd1e3a27a3b846ab580",
+      "implementation": [
+        {
+          "path": "examples/qodo-review/prepare_live.py",
+          "sha256": "6223197ed994224253659e1bf0912d207a6c04c9f8fd48097fed29806e7e6534"
+        }
+      ],
+      "supported_host": "Local Python/Node executor; live templates use reviewed Qodo Agentic Toolbox CLI 1.6.0",
+      "working_directory": "Repository root; live submission/collection runs in the prepared target",
+      "prerequisites": [
+        "python3",
+        "Node.js",
+        "Unused output directory",
+        "Git with the full recorded public history"
+      ],
+      "inputs_and_substitutions": {
+        "paths": "Temporary root from the preceding recipe; live templates also need a reviewed CLI path and an actual returned operation ID."
+      },
+      "expected_output": [
+        "Terminal JSON/status or explicit prerequisite refusal; no defect-absence inference"
+      ],
+      "effects": [
+        "New local files only; existing output preserved"
+      ],
+      "execution": {
+        "status": "EXECUTED_RECORDED",
+        "evidence_ids": [
+          "qodo-tutorial-live-preparation"
+        ],
+        "limit": "Executed on the maintainer computer with the named bundled inputs; no external human or general compatibility claim."
+      }
+    },
+    {
+      "id": "qodo-tutorial-qodo-live-review-2",
+      "kind": "shell_recipe_template",
+      "location": {
+        "path": "docs/tutorials/qodo-live-review.md",
+        "shell_fence": 2
+      },
+      "text": "qodo_cli=/absolute/path/to/your/reviewed/qodo.mjs\ncd \"$qodo_live_root/run/target\"\nnode \"$qodo_cli\" --no-onboarding --json review \\\n  --base a4fef83aadd6610435da5ac0cc7e53b34fe1dd4f \\\n  --context-file ../review-context.json --full --deep --async \\\n  > ../submission.json 2> ../submission.stderr",
+      "text_sha256": "2169856e9ca674588b8246e9f65165845fb9dccbe579bf71cdb819a84d8ceb2e",
+      "implementation": [],
+      "supported_host": "Local Python/Node executor; live templates use reviewed Qodo Agentic Toolbox CLI 1.6.0",
+      "working_directory": "Repository root; live submission/collection runs in the prepared target",
+      "prerequisites": [
+        "python3",
+        "Node.js",
+        "Unused output directory",
+        "Official reviewed CLI",
+        "Authenticated intended workspace",
+        "Authorized public base repository"
+      ],
+      "inputs_and_substitutions": {
+        "paths": "Temporary root from the preceding recipe; live templates also need a reviewed CLI path and an actual returned operation ID."
+      },
+      "expected_output": [
+        "Terminal JSON/status or explicit prerequisite refusal; no defect-absence inference"
+      ],
+      "effects": [
+        "Contacts Qodo; submission sends the prepared public-code diff and context; collection reads its operation"
+      ],
+      "execution": {
+        "status": "REFERENCE_TEMPLATE_NOT_EXECUTED_AS_WRITTEN",
+        "evidence_ids": [
+          "qodo-tutorial-original-review"
+        ],
+        "limit": "User paths and operation IDs require substitution; original review is separately identified."
+      }
+    },
+    {
+      "id": "qodo-tutorial-qodo-live-review-3",
+      "kind": "shell_recipe_template",
+      "location": {
+        "path": "docs/tutorials/qodo-live-review.md",
+        "shell_fence": 3
+      },
+      "text": "node \"$qodo_cli\" --no-onboarding --json review status ACTUAL_OPERATION_ID \\\n  > ../collection-01.json 2> ../collection-01.stderr",
+      "text_sha256": "af592425fe618e22fbf456b18a40056561402bb5284a071707b9fa1b75df8b39",
+      "implementation": [],
+      "supported_host": "Local Python/Node executor; live templates use reviewed Qodo Agentic Toolbox CLI 1.6.0",
+      "working_directory": "Repository root; live submission/collection runs in the prepared target",
+      "prerequisites": [
+        "python3",
+        "Node.js",
+        "Unused output directory",
+        "Official reviewed CLI",
+        "Authenticated intended workspace",
+        "Authorized public base repository"
+      ],
+      "inputs_and_substitutions": {
+        "paths": "Temporary root from the preceding recipe; live templates also need a reviewed CLI path and an actual returned operation ID."
+      },
+      "expected_output": [
+        "Terminal JSON/status or explicit prerequisite refusal; no defect-absence inference"
+      ],
+      "effects": [
+        "Contacts Qodo; submission sends the prepared public-code diff and context; collection reads its operation"
+      ],
+      "execution": {
+        "status": "REFERENCE_TEMPLATE_NOT_EXECUTED_AS_WRITTEN",
+        "evidence_ids": [
+          "qodo-tutorial-original-review"
+        ],
+        "limit": "User paths and operation IDs require substitution; original review is separately identified."
+      }
+    },
+    {
+      "id": "install-recovery-docs-tutorials-recoverable-install.md-1",
+      "kind": "shell_recipe",
+      "location": {
+        "path": "docs/tutorials/recoverable-install.md",
+        "fence": 1
+      },
+      "text": "python3 -B examples/install-recovery/reproduce.py --output /tmp/qore-recovery-new",
+      "text_sha256": "512aa5299d851f937d233c56322b91700c9f2c0be8bc35c231715cc48bb456cc",
+      "implementation": [
+        {
+          "path": "examples/install-recovery/reproduce.py",
+          "sha256": "e44e29704ac0ee8516a2da356d1f29e8c455e9f2fd3d9952ce443482158961d7"
+        },
+        {
+          "path": "tools/qore.py",
+          "sha256": "9098c9d890c915e8e0d07b3d30e9f99aa7f2fa6d5032d9ae2b31259a482ff090"
+        }
+      ],
+      "supported_host": "Local Python 3 interpreter",
+      "working_directory": "Candidate repository root",
+      "prerequisites": [
+        "Current checkout, or the complete pinned replay directory for the offline example",
+        "Unused output path for replay commands"
+      ],
+      "inputs_and_substitutions": {
+        "output": "Choose an unused output directory. Publication verification used a distinct temporary path."
+      },
+      "expected_output": [
+        "Four checked replay cases or passing targeted installation regressions"
+      ],
+      "effects": [
+        "Temporary local skill installations; replay retains only the explicitly chosen result directory. No Qodo or network call."
+      ],
+      "execution": {
+        "status": "EXECUTED_RELATED_HISTORICAL_DESTINATION",
+        "evidence_ids": [
+          "recoverable-install-publication"
+        ],
+        "limit": "The same implementation was executed with a different new output path; the displayed output placeholder itself is not a fixed test fixture."
+      }
+    },
+    {
+      "id": "install-recovery-docs-tutorials-recoverable-install.md-2",
+      "kind": "shell_recipe",
+      "location": {
+        "path": "docs/tutorials/recoverable-install.md",
+        "fence": 2
+      },
+      "text": "python3 -B -m unittest discover -s tests -p test_package.py -k install -v",
+      "text_sha256": "20baca635f62d53e7d032ce89c8ef1d6700ee56948e0de472886883ef880e2ef",
+      "implementation": [
+        {
+          "path": "examples/install-recovery/reproduce.py",
+          "sha256": "e44e29704ac0ee8516a2da356d1f29e8c455e9f2fd3d9952ce443482158961d7"
+        },
+        {
+          "path": "tools/qore.py",
+          "sha256": "9098c9d890c915e8e0d07b3d30e9f99aa7f2fa6d5032d9ae2b31259a482ff090"
+        }
+      ],
+      "supported_host": "Local Python 3 interpreter",
+      "working_directory": "Candidate repository root",
+      "prerequisites": [
+        "Current checkout, or the complete pinned replay directory for the offline example",
+        "Unused output path for replay commands"
+      ],
+      "inputs_and_substitutions": {
+        "output": "Choose an unused output directory. Publication verification used a distinct temporary path."
+      },
+      "expected_output": [
+        "Four checked replay cases or passing targeted installation regressions"
+      ],
+      "effects": [
+        "Temporary local skill installations; replay retains only the explicitly chosen result directory. No Qodo or network call."
+      ],
+      "execution": {
+        "status": "EXECUTED_RELATED_HISTORICAL_DESTINATION",
+        "evidence_ids": [
+          "recoverable-install-publication"
+        ],
+        "limit": "The same implementation was executed with a different new output path; the displayed output placeholder itself is not a fixed test fixture."
+      }
+    },
+    {
+      "id": "install-recovery-docs-evidence-install-recovery-README.md-1",
+      "kind": "shell_recipe",
+      "location": {
+        "path": "docs/evidence/install-recovery/README.md",
+        "fence": 1
+      },
+      "text": "python3 -B docs/evidence/install-recovery/replay/reproduce.py --output /tmp/qore-offline-recovery-new",
+      "text_sha256": "0040bd637e038bb27acefcb129cc9ae0e6728982c579a6004c1cf2adf446d9aa",
+      "implementation": [
+        {
+          "path": "docs/evidence/install-recovery/replay/reproduce.py",
+          "sha256": "4f7a773006200e83db8265b8ab5ae4a75d8f8ed2c92acdc48459c820eac5e66b"
+        },
+        {
+          "path": "docs/evidence/install-recovery/replay/provenance.json",
+          "sha256": "1da5aa8ff875c4ca2f9b2d0261237773f803f139df3dfb4197383897df2e5194"
+        }
+      ],
+      "supported_host": "Local Python 3 interpreter",
+      "working_directory": "Candidate repository root",
+      "prerequisites": [
+        "Current checkout, or the complete pinned replay directory for the offline example",
+        "Unused output path for replay commands"
+      ],
+      "inputs_and_substitutions": {
+        "output": "Choose an unused output directory. Publication verification used a distinct temporary path."
+      },
+      "expected_output": [
+        "Four checked replay cases or passing targeted installation regressions"
+      ],
+      "effects": [
+        "Temporary local skill installations; replay retains only the explicitly chosen result directory. No Qodo or network call."
+      ],
+      "execution": {
+        "status": "EXECUTED_RELATED_HISTORICAL_DESTINATION",
+        "evidence_ids": [
+          "recoverable-install-publication"
+        ],
+        "limit": "The same implementation was executed with a different new output path; the displayed output placeholder itself is not a fixed test fixture."
       }
     }
   ],
