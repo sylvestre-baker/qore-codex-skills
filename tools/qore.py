@@ -7,6 +7,7 @@ import os
 from pathlib import Path
 import re
 import shutil
+import stat
 import sys
 import tempfile
 import zipfile
@@ -250,6 +251,47 @@ def derive(profile_path, project_root, output):
     return {"output": str(output), "profile": profile_info, **verify(output)}
 
 
+class InstallRecoveryError(OSError):
+    """A handled install failure with a separate, conservative recovery result."""
+
+    def __init__(self, error, recovery):
+        super().__init__(str(error))
+        self.recovery = recovery
+
+
+def _install_tree_state(root):
+    """Record identities and bytes without accepting links or special files."""
+    state = {}
+    pending = [root]
+    while pending:
+        path = pending.pop()
+        info = path.lstat()
+        key = path.relative_to(root).as_posix()
+        if stat.S_ISDIR(info.st_mode):
+            state[key] = (info.st_dev, info.st_ino, "directory")
+            pending.extend(path.iterdir())
+        elif stat.S_ISREG(info.st_mode):
+            state[key] = (info.st_dev, info.st_ino, "file", digest(path))
+        else:
+            raise ValueError("Unexpected link or special file during installation: " + str(path))
+    return state
+
+
+def _check_install_bytes(root, expected):
+    actual = {name: row[3] for name, row in _install_tree_state(root).items() if row[2] == "file"}
+    if actual != expected:
+        raise ValueError("Installed or staged files differ from the verified bundle: " + root.name)
+
+
+def _remove_install_tree(path, expected, *, subset=False):
+    if not path.exists() and not path.is_symlink():
+        return
+    actual = _install_tree_state(path)
+    if (not subset and actual != expected) or any(expected.get(key) != row for key, row in actual.items()):
+        raise ValueError("Content or identity changed; preserve this path for manual inspection")
+    shutil.rmtree(path)
+
+
 def install(source, project_root):
     verify(source)
     manifest = read_json(source / "manifest.json")
@@ -274,8 +316,100 @@ def install(source, project_root):
         if ancestor.is_symlink():
             raise ValueError("Installation ancestors must not be symlinks")
     target.mkdir(parents=True, exist_ok=True)
+    prefix = "skills/" if manifest["kind"] == "generic" else ""
+    expected = {}
     for folder in candidates:
-        shutil.copytree(folder, target / folder.name)
+        start = prefix + folder.name + "/"
+        expected[folder.name] = {row["path"][len(start):]: row["sha256"] for row in manifest["resources"] if row["path"].startswith(start)}
+    staging = None
+    staged_state = {}
+    owned = []
+
+    def copy_owned_file(src, dst):
+        destination = Path(dst)
+        # Exclusive creation establishes ownership even when copying fails midway.
+        descriptor = os.open(destination, os.O_WRONLY | os.O_CREAT | os.O_EXCL, 0o600)
+        identity = os.fstat(descriptor)
+        try:
+            with os.fdopen(descriptor, "wb") as output:
+                with open(src, "rb") as input_file:
+                    shutil.copyfileobj(input_file, output)
+            shutil.copystat(src, destination)
+        finally:
+            current = destination.lstat()
+            if (current.st_dev, current.st_ino) == (identity.st_dev, identity.st_ino) and stat.S_ISREG(current.st_mode):
+                staged_state[destination.relative_to(staging).as_posix()] = _install_tree_state(destination)["."]
+        return str(destination)
+
+    def cleanup_staging():
+        if staging is not None:
+            _remove_install_tree(staging, staged_state, subset=True)
+
+    try:
+        # Outside skill discovery, but on the publication filesystem.
+        staging = Path(tempfile.mkdtemp(prefix=".qore-install-", dir=project_root))
+        staged_state["."] = _install_tree_state(staging)["."]
+        if staging.stat().st_dev != target.stat().st_dev:
+            raise ValueError("Staging and skill destinations must share a filesystem")
+        for folder in candidates:
+            staged = staging / folder.name
+            staged.mkdir()
+            staged_state[folder.name] = _install_tree_state(staged)["."]
+            allowed_directories = {"."} | {p.relative_to(folder).as_posix() for p in folder.rglob("*") if p.is_dir()}
+            try:
+                shutil.copytree(folder, staged, copy_function=copy_owned_file, dirs_exist_ok=True)
+            finally:
+                # copytree creates directories; only source-declared directory names
+                # can become cleanup candidates inside our private staging root.
+                for path in [staged, *staged.rglob("*")]:
+                    info = path.lstat()
+                    if stat.S_ISDIR(info.st_mode) and path.relative_to(staged).as_posix() in allowed_directories:
+                        staged_state.setdefault(path.relative_to(staging).as_posix(), (info.st_dev, info.st_ino, "directory"))
+        for folder in candidates:
+            _check_install_bytes(staging / folder.name, expected[folder.name])
+        # Do not rename a tree over an existing empty directory: POSIX allows it.
+        for folder in candidates:
+            for ancestor in (project_root, project_root / ".agents", target):
+                if ancestor.is_symlink():
+                    raise ValueError("Installation ancestors must not be symlinks")
+            destination = target / folder.name
+            destination.mkdir()  # exclusive; never merge or replace an existing root
+            identity = destination.lstat()
+            state = {".": (identity.st_dev, identity.st_ino, "directory")}
+            owned.append((destination, state))
+            for entry in sorted((staging / folder.name).iterdir()):
+                if (destination / entry.name).exists() or (destination / entry.name).is_symlink():
+                    raise ValueError("Publication entry appeared; preserve it: " + entry.name)
+                entry_state = _install_tree_state(entry)
+                entry.rename(destination / entry.name)
+                for relative, row in entry_state.items():
+                    state[entry.name if relative == "." else entry.name + "/" + relative] = row
+            _check_install_bytes(destination, expected[folder.name])
+        for destination, state in owned:
+            if _install_tree_state(destination) != state:
+                raise ValueError("Installed content changed before completion: " + destination.name)
+            _check_install_bytes(destination, expected[destination.name])
+    except (OSError, ValueError) as error:
+        cleanup_errors = []
+        for destination, state in reversed(owned):
+            try:
+                _remove_install_tree(destination, state)
+            except (OSError, ValueError) as cleanup_error:
+                cleanup_errors.append({"path": destination.relative_to(project_root).as_posix(), "error": str(cleanup_error)})
+        try:
+            cleanup_staging()
+        except (OSError, ValueError) as cleanup_error:
+            cleanup_errors.append({"path": staging.relative_to(project_root).as_posix(), "error": str(cleanup_error)})
+        retained = [path.relative_to(project_root).as_posix() for path in [*(target / folder.name for folder in candidates), *([staging] if staging else [])] if path.exists() or path.is_symlink()]
+        safe = not retained and not cleanup_errors
+        recovery = {"safe_to_retry": safe, "retained_paths": retained, "cleanup_errors": cleanup_errors,
+                    "next_action": "Correct the reported cause, then rerun the same install command." if safe else "Inspect the retained paths and preserve any local edits. Compare against the verified source; remove or relocate only confirmed attempt-owned content before retrying."}
+        raise InstallRecoveryError(error, recovery) from error
+    try:
+        cleanup_staging()
+    except (OSError, ValueError) as error:
+        warnings.append({"code": "install-staging-retained", "path": staging.relative_to(project_root).as_posix(),
+                         "message": "All three skills are installed. Inspect retained private staging before manual cleanup: " + str(error)})
     return {"installed": [str(target / p.name) for p in candidates], "replaced": False, "warnings": warnings}
 
 
@@ -350,7 +484,10 @@ def main():
         print(json.dumps(result, indent=2))
         return 0
     except (ValueError, OSError, TypeError, KeyError) as exc:
-        print(json.dumps({"valid": False, "error": str(exc)}), file=sys.stderr)
+        failure = {"valid": False, "error": str(exc)}
+        if isinstance(exc, InstallRecoveryError):
+            failure["recovery"] = exc.recovery
+        print(json.dumps(failure), file=sys.stderr)
         return 1
 
 

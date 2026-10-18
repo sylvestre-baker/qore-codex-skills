@@ -53,7 +53,7 @@
     },
     {
       "path": "INSTALL.md",
-      "sha256": "d8c452c6d2731fedb5acaeede42cfddc42150e2cc64f5f197ba2165bb50530aa",
+      "sha256": "f67a7d603a5ce6f05fe64f80be1da7bdfe4198aaa44758d348da1632c7cbc73b",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
@@ -9885,11 +9885,27 @@
     },
     {
       "path": "docs/troubleshooting.md",
-      "sha256": "641cd391f0ca40dedaa80a4a383982e0c72004d6a2886d5019ea94072fb48a2f",
+      "sha256": "bdbdef1d37aa1aa4dfca447c9512afc7cdf29f6a58330892bcb1a81b988fb93a",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
       "basis": "First-party Qore code, tests, configuration or documentation in the reviewed 0.2.1 correction inventory. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
+    },
+    {
+      "path": "docs/tutorials/recoverable-install.md",
+      "sha256": "420a5b850a6280b275f85bb97324780864a423d06ecdd02eb977bdd985ca7343",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "New first-party recovery tutorial or replay helper authored for the approved Qore correction; no private raw provider traces exported."
+    },
+    {
+      "path": "examples/install-recovery/reproduce.py",
+      "sha256": "e44e29704ac0ee8516a2da356d1f29e8c455e9f2fd3d9952ce443482158961d7",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "New first-party recovery tutorial or replay helper authored for the approved Qore correction; no private raw provider traces exported."
     },
     {
       "path": "examples/qaizen-labs/README.md",
@@ -10421,7 +10437,7 @@
     },
     {
       "path": "tests/test_package.py",
-      "sha256": "3f126f256567cb8fdf2c1c70fbc50b0c8439b9a5fbf9d82402b170ffd54c1ef0",
+      "sha256": "8a4d822774374ecbc0b0bd2a7b5a03105698473e77c0e540ca2036efdc1c43d9",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
@@ -10533,7 +10549,7 @@
     },
     {
       "path": "tools/qore.py",
-      "sha256": "ac501036c702b7ca5eae75d333298b6db22e519e0114a8c05c1f2bded4a9f713",
+      "sha256": "525a06a6376fe739120dfc40a9c6fb6c7b8f56a7908f617b398524a47695e914",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",

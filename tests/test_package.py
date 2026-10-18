@@ -403,6 +403,282 @@ class PackageTests(unittest.TestCase):
         self.assertFalse(result["replaced"])
         self.assertEqual(qore.compare(bundle, self.project)["changes"], [])
 
+    def test_install_recovers_each_staging_copy_and_publication_failure(self):
+        bundle = Path(self.build()["bundle"])
+        real_copytree = qore.shutil.copytree
+        real_rename = Path.rename
+        for phase in ("copy", "publication"):
+            for name in qore.SKILLS:
+                with self.subTest(phase=phase, skill=name):
+                    project = self.base / (phase + name)
+                    project.mkdir()
+                    target = project / ".agents/skills"
+                    other = target / "user-skill/local.md"
+                    other.parent.mkdir(parents=True)
+                    other.write_text("User content.\n")
+
+                    def copy(src, dst, *args, **kwargs):
+                        if phase == "copy" and Path(src).name == name:
+                            raise PermissionError("Controlled copy failure: " + name)
+                        return real_copytree(src, dst, *args, **kwargs)
+
+                    def rename(src, dst):
+                        if phase == "publication" and Path(dst).parent == target / name:
+                            raise PermissionError("Controlled publication failure: " + name)
+                        return real_rename(src, dst)
+
+                    with patch.object(qore.shutil, "copytree", side_effect=copy), patch.object(Path, "rename", rename):
+                        with self.assertRaises(qore.InstallRecoveryError) as caught:
+                            qore.install(bundle, project)
+                    self.assertTrue(caught.exception.recovery["safe_to_retry"])
+                    self.assertEqual(caught.exception.recovery["retained_paths"], [])
+                    self.assertEqual(other.read_text(), "User content.\n")
+                    self.assertEqual(sorted(p.name for p in target.iterdir()), ["user-skill"])
+                    self.assertEqual(list(project.glob(".qore-install-*")), [])
+                    self.assertEqual(len(qore.install(bundle, project)["installed"]), 3)
+                    self.assertEqual(qore.compare(bundle, project)["changes"], [])
+
+    def test_install_cleans_partial_file_copy_and_can_retry(self):
+        bundle = Path(self.build()["bundle"])
+
+        def fail_mid_file(src, dst, *args):
+            dst.write(src.read(7))
+            raise PermissionError("Controlled partial file copy")
+
+        with patch.object(qore.shutil, "copyfileobj", side_effect=fail_mid_file):
+            with self.assertRaises(qore.InstallRecoveryError) as caught:
+                qore.install(bundle, self.project)
+        self.assertIn("Controlled partial file copy", str(caught.exception))
+        self.assertTrue(caught.exception.recovery["safe_to_retry"])
+        self.assertEqual(list((self.project / ".agents/skills").iterdir()), [])
+        self.assertEqual(list(self.project.glob(".qore-install-*")), [])
+        self.assertEqual(len(qore.install(bundle, self.project)["installed"]), 3)
+
+    def test_install_rolls_back_failure_of_final_validation(self):
+        bundle = Path(self.build()["bundle"])
+        target = self.project / ".agents/skills"
+        check = qore._check_install_bytes
+        calls = []
+
+        def fail_final(path, expected):
+            if path.parent == target:
+                calls.append(path)
+                if len(calls) == 4:
+                    raise ValueError("Controlled final validation failure")
+            return check(path, expected)
+
+        with patch.object(qore, "_check_install_bytes", side_effect=fail_final):
+            with self.assertRaises(qore.InstallRecoveryError) as caught:
+                qore.install(bundle, self.project)
+        self.assertTrue(caught.exception.recovery["safe_to_retry"])
+        self.assertEqual(list(target.iterdir()), [])
+        self.assertEqual(len(qore.install(bundle, self.project)["installed"]), 3)
+
+    def test_install_refuses_modified_staging_before_publication(self):
+        bundle = Path(self.build()["bundle"])
+        real_copytree = qore.shutil.copytree
+
+        def tamper(src, dst, *args, **kwargs):
+            result = real_copytree(src, dst, *args, **kwargs)
+            if Path(src).name == "qore-ux-review":
+                (Path(dst).parent / "qore-plan/SKILL.md").write_text("Changed after copy.\n")
+            return result
+
+        with patch.object(qore.shutil, "copytree", side_effect=tamper):
+            with self.assertRaises(qore.InstallRecoveryError) as caught:
+                qore.install(bundle, self.project)
+        self.assertIn("differ from the verified bundle", str(caught.exception))
+        self.assertFalse(caught.exception.recovery["safe_to_retry"])
+        self.assertEqual(list((self.project / ".agents/skills").iterdir()), [])
+        self.assertEqual(len(caught.exception.recovery["retained_paths"]), 1)
+        staging = self.project / caught.exception.recovery["retained_paths"][0]
+        self.assertEqual((staging / "qore-plan/SKILL.md").read_text(), "Changed after copy.\n")
+
+    def test_install_preserves_a_destination_created_before_publication(self):
+        bundle = Path(self.build()["bundle"])
+        target = self.project / ".agents/skills"
+        real_mkdir = Path.mkdir
+        raced = target / "qore-review"
+
+        def mkdir(path, *args, **kwargs):
+            if path == raced and not path.exists():
+                real_mkdir(path)
+                (path / "local.md").write_text("Concurrent user content.\n")
+            return real_mkdir(path, *args, **kwargs)
+
+        with patch.object(Path, "mkdir", mkdir):
+            with self.assertRaises(qore.InstallRecoveryError) as caught:
+                qore.install(bundle, self.project)
+        self.assertFalse(caught.exception.recovery["safe_to_retry"])
+        self.assertEqual((raced / "local.md").read_text(), "Concurrent user content.\n")
+        self.assertEqual(sorted(p.name for p in target.iterdir()), ["qore-review"])
+
+    def test_install_preserves_foreign_content_and_replaced_roots_during_rollback(self):
+        bundle = Path(self.build()["bundle"])
+        real_rename = Path.rename
+        for change in ("extra-file", "edited-file", "replaced-root", "symlink"):
+            with self.subTest(change=change):
+                project = self.base / change
+                project.mkdir()
+                target = project / ".agents/skills"
+                first = target / "qore-plan"
+                external = self.base / (change + "-external")
+                external.mkdir()
+                (external / "local.md").write_text("External content.\n")
+
+                def rename(src, dst):
+                    if Path(dst).parent == target / "qore-review":
+                        if change == "extra-file":
+                            (first / "local.md").write_text("New user content.\n")
+                        elif change == "edited-file":
+                            (first / "SKILL.md").write_text("Edited user content.\n")
+                        else:
+                            real_rename(first, project / "saved-original")
+                            if change == "symlink":
+                                first.symlink_to(external, target_is_directory=True)
+                            else:
+                                first.mkdir()
+                                (first / "local.md").write_text("Replacement content.\n")
+                        raise PermissionError("Controlled publication failure after observed change")
+                    return real_rename(src, dst)
+
+                with patch.object(Path, "rename", rename):
+                    with self.assertRaises(qore.InstallRecoveryError) as caught:
+                        qore.install(bundle, project)
+                self.assertFalse(caught.exception.recovery["safe_to_retry"])
+                self.assertIn(".agents/skills/qore-plan", caught.exception.recovery["retained_paths"])
+                self.assertTrue(first.exists())
+                self.assertEqual((external / "local.md").read_text(), "External content.\n")
+                self.assertTrue(caught.exception.recovery["cleanup_errors"])
+
+    def test_install_preserves_an_empty_destination_created_during_publication(self):
+        bundle = Path(self.build()["bundle"])
+        raced = self.project / ".agents/skills/qore-review"
+        real_mkdir = Path.mkdir
+        identities = []
+
+        def mkdir(path, *args, **kwargs):
+            if path == raced and not path.exists():
+                real_mkdir(path, mode=0o700)
+                identities.append(path.stat().st_ino)
+            return real_mkdir(path, *args, **kwargs)
+
+        with patch.object(Path, "mkdir", mkdir):
+            with self.assertRaises(qore.InstallRecoveryError) as caught:
+                qore.install(bundle, self.project)
+        self.assertFalse(caught.exception.recovery["safe_to_retry"])
+        self.assertEqual(raced.stat().st_ino, identities[0])
+        self.assertEqual(raced.stat().st_mode & 0o777, 0o700)
+        self.assertEqual(list(raced.iterdir()), [])
+
+    def test_install_preserves_a_foreign_entry_inside_a_newly_owned_root(self):
+        bundle = Path(self.build()["bundle"])
+        destination = self.project / ".agents/skills/qore-plan"
+        real_mkdir = Path.mkdir
+
+        def mkdir(path, *args, **kwargs):
+            result = real_mkdir(path, *args, **kwargs)
+            if path == destination:
+                (path / "SKILL.md").write_text("Foreign content appeared.\n")
+            return result
+
+        with patch.object(Path, "mkdir", mkdir):
+            with self.assertRaises(qore.InstallRecoveryError) as caught:
+                qore.install(bundle, self.project)
+        self.assertFalse(caught.exception.recovery["safe_to_retry"])
+        self.assertEqual((destination / "SKILL.md").read_text(), "Foreign content appeared.\n")
+
+    def test_install_reports_cleanup_failure_without_masking_primary_error(self):
+        bundle = Path(self.build()["bundle"])
+        target = self.project / ".agents/skills"
+        real_rename, real_rmtree = Path.rename, qore.shutil.rmtree
+
+        def rename(src, dst):
+            if Path(dst).parent == target / "qore-review":
+                raise PermissionError("Primary publication error")
+            return real_rename(src, dst)
+
+        def rmtree(path, *args, **kwargs):
+            if Path(path) == target / "qore-plan":
+                raise PermissionError("Cleanup access denied")
+            return real_rmtree(path, *args, **kwargs)
+
+        with patch.object(Path, "rename", rename), patch.object(qore.shutil, "rmtree", side_effect=rmtree):
+            with self.assertRaises(qore.InstallRecoveryError) as caught:
+                qore.install(bundle, self.project)
+        self.assertEqual(str(caught.exception), "Primary publication error")
+        recovery = caught.exception.recovery
+        self.assertFalse(recovery["safe_to_retry"])
+        self.assertEqual(recovery["retained_paths"], [".agents/skills/qore-plan"])
+        self.assertIn("Cleanup access denied", recovery["cleanup_errors"][0]["error"])
+        self.assertIn("Inspect", recovery["next_action"])
+
+    def test_install_reports_staging_cleanup_failure_after_complete_install(self):
+        bundle = Path(self.build()["bundle"])
+        real_rmtree = qore.shutil.rmtree
+
+        def rmtree(path, *args, **kwargs):
+            if Path(path).name.startswith(".qore-install-"):
+                raise PermissionError("Private staging cleanup denied")
+            return real_rmtree(path, *args, **kwargs)
+
+        with patch.object(qore.shutil, "rmtree", side_effect=rmtree):
+            result = qore.install(bundle, self.project)
+        self.assertEqual(len(result["installed"]), 3)
+        warning = next(w for w in result["warnings"] if w["code"] == "install-staging-retained")
+        self.assertTrue((self.project / warning["path"]).is_dir())
+        self.assertEqual(qore.compare(bundle, self.project)["changes"], [])
+
+    def test_install_refuses_cross_device_publication_before_skill_creation(self):
+        import os
+        bundle = Path(self.build()["bundle"])
+        target = self.project / ".agents/skills"
+        target.mkdir(parents=True)
+        real_stat = Path.stat
+
+        def different_device(path, *args, **kwargs):
+            result = real_stat(path, *args, **kwargs)
+            if path == target:
+                values = list(result)
+                values[2] += 1
+                return os.stat_result(values)
+            return result
+
+        with patch.object(Path, "stat", different_device):
+            with self.assertRaises(qore.InstallRecoveryError) as caught:
+                qore.install(bundle, self.project)
+        self.assertIn("share a filesystem", str(caught.exception))
+        self.assertTrue(caught.exception.recovery["safe_to_retry"])
+        self.assertEqual(list(target.iterdir()), [])
+
+    def test_install_recovers_derived_skills_and_preserves_cli_failure_contract(self):
+        profile = self.write_profile()
+        derived = self.base / "derived-install"
+        qore.derive(profile, self.project, derived)
+        real_copytree = qore.shutil.copytree
+
+        def fail(src, dst, *args, **kwargs):
+            if Path(src).name.startswith("qore-review-"):
+                raise PermissionError("Derived copy failure")
+            return real_copytree(src, dst, *args, **kwargs)
+
+        with patch.object(qore.shutil, "copytree", side_effect=fail):
+            with self.assertRaises(qore.InstallRecoveryError) as caught:
+                qore.install(derived, self.project)
+        self.assertTrue(caught.exception.recovery["safe_to_retry"])
+        self.assertEqual(len(qore.install(derived, self.project)["installed"]), 3)
+        self.assertEqual(qore.compare(derived, self.project)["changes"], [])
+
+        import io
+        error = qore.InstallRecoveryError(PermissionError("Original failure"), caught.exception.recovery)
+        stream = io.StringIO()
+        with patch.object(sys, "argv", ["qore", "install", "--source", str(derived), "--project-root", str(self.project)]), patch.object(qore, "install", side_effect=error), patch.object(sys, "stderr", stream):
+            self.assertEqual(qore.main(), 1)
+        packet = json.loads(stream.getvalue())
+        self.assertFalse(packet["valid"])
+        self.assertEqual(packet["error"], "Original failure")
+        self.assertTrue(packet["recovery"]["safe_to_retry"])
+
     def test_install_refuses_to_overwrite_a_modified_existing_skill(self):
         bundle = Path(self.build()["bundle"])
         installed = qore.install(bundle, self.project)

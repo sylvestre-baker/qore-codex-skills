@@ -1235,6 +1235,8 @@
   "docs/qualification.md",
   "docs/showcase.md",
   "docs/troubleshooting.md",
+  "docs/tutorials/recoverable-install.md",
+  "examples/install-recovery/reproduce.py",
   "examples/qaizen-labs/README.md",
   "examples/qaizen-labs/browser-actions.json",
   "examples/qaizen-labs/checks/check_contract.py",

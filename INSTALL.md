@@ -17,10 +17,16 @@ Use `$qore-plan`, `$qore-review` or `$qore-ux-review` with a concrete authorized
 
 Installation and a valid inventory do not establish a completed method execution. The [MIT license](LICENSE) covers the selected first-party content.
 
-## Recovery requirement under development
+## Recover from a handled installation error
 
-The installer must recover from a handled copy or publication error without leaving newly installed skill folders that block an immediate retry. Existing skills, unrelated files and local adaptations must remain unchanged. If cleanup cannot be completed safely, the installer must preserve uncertain content and report the retained paths and manual recovery action, rather than claim that retry is safe.
+The installer prepares and checks all three skills in private staging outside `.agents/skills/`, then creates each destination exclusively. A handled copy, publication or final verification error triggers cleanup of unchanged content owned by that attempt. Existing skills, unrelated files and observed local adaptations are preserved.
 
-The regression test `test_install_copy_failure_can_be_retried_without_manual_skill_removal` documents a known gap in the current implementation. It deliberately fails before the correction: a controlled error while copying the second skill leaves the first skill installed, so an unchanged retry is refused. This is an injected failure test, not an observed customer incident. The test and this requirement are being reviewed before production code is changed.
+On failure, the command exits nonzero and writes JSON to stderr. The original failure remains in `error`. When recovery was attempted, `recovery` reports `safe_to_retry`, project-relative `retained_paths`, separate `cleanup_errors`, and `next_action`.
 
-This requirement does not promise an atomic three-folder update, recovery after process termination or power loss, or protection against hostile concurrent filesystem changes.
+If `safe_to_retry` is true, correct the original cause and rerun the same command. If it is false, inspect the retained paths, preserve local edits, and compare against the verified candidate before manually removing or relocating only content confirmed to belong to that attempt. Do not delete all `qore-*` folders or shared parent directories. An existing destination is still refused, even when empty.
+
+Successful output retains `installed`, `replaced: false` and `warnings`. If all three skills are installed but private staging cannot be removed, an `install-staging-retained` warning identifies it for inspection. Empty parent directories may remain after recovery.
+
+These guarantees cover handled errors without hostile concurrent filesystem changes. They do not promise an atomic three-folder update or automatic recovery after process termination or power loss. The installer never silently removes leftovers from an earlier interrupted process.
+
+The full source checkout includes failure-injection regressions for partial copies, each skill's staging/publication, final checks, cleanup failures, conflicting destinations and changed content. This compact archive omits those development tests. Failure-injection evidence is not a customer-incident report.
