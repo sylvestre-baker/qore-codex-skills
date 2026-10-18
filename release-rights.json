@@ -9893,7 +9893,7 @@
     },
     {
       "path": "docs/tutorials/recoverable-install.md",
-      "sha256": "420a5b850a6280b275f85bb97324780864a423d06ecdd02eb977bdd985ca7343",
+      "sha256": "cc98b4f9c14f67e11c313711c950684ec332583a06562b0a592d0ba6658fd960",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
@@ -10437,7 +10437,7 @@
     },
     {
       "path": "tests/test_package.py",
-      "sha256": "3964fb5f43ffda3a5a3dfe1357d4e74e614b81949eb195b8f466aa5a08a41221",
+      "sha256": "8f3e3e49863d4183078a63a7ea142fd393b54ae1afaa9e948a7c31e1f05967ed",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
@@ -10549,7 +10549,7 @@
     },
     {
       "path": "tools/qore.py",
-      "sha256": "bd00ace66b2e903cc1c99e1ce531a176ebd306947abc795f1a774fd3f1dee22c",
+      "sha256": "9098c9d890c915e8e0d07b3d30e9f99aa7f2fa6d5032d9ae2b31259a482ff090",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",

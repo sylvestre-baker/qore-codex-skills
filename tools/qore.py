@@ -399,13 +399,19 @@ def install(source, project_root):
             finally:
                 # copytree creates directories; only source-declared directory names
                 # can become cleanup candidates inside our private staging root.
-                for path in [staged, *staged.rglob("*")]:
-                    info = path.lstat()
-                    if stat.S_ISDIR(info.st_mode) and path.relative_to(staged).as_posix() in allowed_directories:
-                        key = path.relative_to(staging).as_posix()
-                        previous = staged_state.get(key)
-                        if previous is None or previous[:2] == (info.st_dev, info.st_ino):
-                            staged_state[key] = (info.st_dev, info.st_ino, "directory", stat.S_IMODE(info.st_mode))
+                primary_active = sys.exc_info()[0] is not None
+                try:
+                    for path in [staged, *staged.rglob("*")]:
+                        info = path.lstat()
+                        if stat.S_ISDIR(info.st_mode) and path.relative_to(staged).as_posix() in allowed_directories:
+                            key = path.relative_to(staging).as_posix()
+                            previous = staged_state.get(key)
+                            if previous is None or previous[:2] == (info.st_dev, info.st_ino):
+                                staged_state[key] = (info.st_dev, info.st_ino, "directory", stat.S_IMODE(info.st_mode))
+                except (OSError, ValueError) as bookkeeping_error:
+                    bookkeeping_errors.append({"path": recovery_path(staged), "error": str(bookkeeping_error)})
+                    if not primary_active:
+                        raise
         for folder in candidates:
             _check_install_bytes(staging / folder.name, expected[folder.name])
         # Do not rename a tree over an existing empty directory: POSIX allows it.

@@ -20,6 +20,8 @@ A separate fresh Codex verifier reproduced all three diagnoses, with a documenta
 
 The initial provider metadata reports the issue review executed. Compliance, skills, spec, UI, persona and cross-repository reviewers were skipped; spec reported no spec content. Its completed operation does not establish whole-product coverage or the full three-finder Qore method.
 
+The final native issue review examined corrective snapshot `d5a66ce2fbb4328fd279166f3a8f1ab8d636c3f3` and returned three further remarks. Separate verification confirmed a remaining diagnostic defect: an error while scanning staged directories could mask the original copy error. A user-authorized focused follow-up protects that bookkeeping and adds a CLI regression. The staging-location assertions were also strengthened. The exception-wrapper metadata observation remains a nonblocking refinement: the original cause is chained, the supported CLI JSON remains compatible, and this project does not establish a stable Python SDK contract. These distinctions retain the native findings rather than implying a clean provider verdict. The final follow-up receives affected independent checks; no additional Qodo run is claimed for it.
+
 ## Reproduce the controlled observation locally
 
 From a full source checkout of this candidate, with Python 3, choose a new output directory:

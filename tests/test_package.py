@@ -435,6 +435,7 @@ class PackageTests(unittest.TestCase):
                     self.assertEqual(other.read_text(), "User content.\n")
                     self.assertEqual(sorted(p.name for p in target.iterdir()), ["user-skill"])
                     self.assertEqual(list(project.glob(".qore-install-*")), [])
+                    self.assertEqual(list((project / ".agents").glob(".qore-install-*")), [])
                     self.assertEqual(len(qore.install(bundle, project)["installed"]), 3)
                     self.assertEqual(qore.compare(bundle, project)["changes"], [])
 
@@ -452,6 +453,7 @@ class PackageTests(unittest.TestCase):
         self.assertTrue(caught.exception.recovery["safe_to_retry"])
         self.assertEqual(list((self.project / ".agents/skills").iterdir()), [])
         self.assertEqual(list(self.project.glob(".qore-install-*")), [])
+        self.assertEqual(list((self.project / ".agents").glob(".qore-install-*")), [])
         self.assertEqual(len(qore.install(bundle, self.project)["installed"]), 3)
 
     def test_install_rolls_back_failure_of_final_validation(self):
@@ -787,6 +789,25 @@ class PackageTests(unittest.TestCase):
         finally:
             self.project.chmod(0o700)
             target.parent.chmod(0o700)
+
+    def test_install_cli_preserves_copy_error_when_directory_bookkeeping_fails(self):
+        import io
+        bundle = Path(self.build()["bundle"])
+        real_rglob = Path.rglob
+
+        def fail_scan(path, pattern, *args, **kwargs):
+            if path.name == "qore-plan" and path.parent.name.startswith(".qore-install-"):
+                raise PermissionError("Secondary staging scan failure")
+            return real_rglob(path, pattern, *args, **kwargs)
+
+        stream = io.StringIO()
+        with patch.object(sys, "argv", ["qore", "install", "--source", str(bundle), "--project-root", str(self.project)]), patch.object(qore.shutil, "copytree", side_effect=PermissionError("Original installation copy failure")), patch.object(Path, "rglob", fail_scan), patch.object(sys, "stderr", stream):
+            self.assertEqual(qore.main(), 1)
+        packet = json.loads(stream.getvalue())
+        self.assertEqual(packet["error"], "Original installation copy failure")
+        self.assertTrue(any("Secondary staging scan failure" in row["error"] for row in packet["recovery"]["cleanup_errors"]))
+        self.assertEqual(list((self.project / ".agents/skills").iterdir()), [])
+        self.assertEqual(len(qore.install(bundle, self.project)["installed"]), 3)
 
     def test_install_refuses_to_overwrite_a_modified_existing_skill(self):
         bundle = Path(self.build()["bundle"])
