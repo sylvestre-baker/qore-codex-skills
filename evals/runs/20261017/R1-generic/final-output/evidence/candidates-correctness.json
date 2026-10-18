@@ -1,0 +1,24 @@
+{
+  "findings": [
+    {
+      "id": "C-1",
+      "title": "Clicking Back leaves the required keyboard transition untested",
+      "severity": "medium",
+      "evidence": "target/verification-protocol.md:10 explicitly says \"Click Back\". surface-contract.json:15 requires back activation=\"Enter\", traversal=\"Tab\", and focus_after=\"introduction-heading\"; surface-contract.json:18 requires \"keyboard-back\". checks/check_contract.py:35-36 explicitly requires sequential Tab or Shift+Tab traversal and Enter activation. The focus assertion at protocol line 10 checks only the outcome after a mouse click.",
+      "condition": "A Back control responds to mouse clicks and focuses the introduction heading but is unreachable through sequential keyboard traversal or does not respond to Enter.",
+      "requirement": "Exercise the back transition through sequential keyboard traversal and observed Enter activation, then verify the returned introduction and its heading focus.",
+      "impact": "Following every instruction in the protocol can leave the required keyboard-back acceptance obligation untested and miss a navigation failure affecting keyboard users.",
+      "reasoning": "Source mismatch in the written protocol; no website observation or claim about current website behavior. The existing close-help keyboard step does not activate Back."
+    },
+    {
+      "id": "C-2",
+      "title": "The procedure omits the required summary toggle and reopen sequence",
+      "severity": "medium",
+      "evidence": "surface-contract.json:11-13 specifies opening help with Enter, closing it through summary with Space, then reopening with Enter; surface-contract.json:18 requires \"help-toggle\". target/verification-protocol.md:7 only says to open help using summary, without specifying Enter, and line 8 immediately closes help through the separate Close control. None of protocol lines 5-10 activates summary with Space or reopens help.",
+      "condition": "The separate Close control works, but summary Space activation fails to close help, Enter fails to reopen it, or summary keyboard activation is broken while pointer activation works.",
+      "requirement": "Exercise the declared open-help, toggle-help, and reopen-help transitions with their specified keyboard activations and verify their destination states.",
+      "impact": "The procedure can satisfy all its assertions while the required help-toggle check and declared summary keyboard transitions fail.",
+      "reasoning": "This is an omitted acceptance path in the document. It does not establish any website defect. The explicit Close/Enter step covers a different control and transition."
+    }
+  ]
+}

@@ -1,0 +1,255 @@
+{
+  "schema": "qore-selected-independent-assessment/1",
+  "run_id": "qore003-20261017-r2-baseline-1",
+  "neutral_id": "N08",
+  "source_raw_sha256": "ce988b014da2a54e5c9afe50ea95c46766a3ab1242d466ae5da6b976e97b36a6",
+  "public_source": "evals/campaign-20261017/assessments/review-R2/assessment.json",
+  "public_source_sha256": "e4d95591c7204bdea5387888983cfa67556dc2199f843215ff0733720468503b",
+  "assessor": "/root/campaign_review_assessor",
+  "original_case_assessment": {
+    "neutral_id": "N08",
+    "declared_method": "Single-context baseline document review; no Qore or independent-role method invoked.",
+    "criteria": [
+      {
+        "id": "K1",
+        "definition": "Accurate relevant project rules and distinct focus destinations.",
+        "grade": "MET",
+        "rationale": "The review accurately identifies the help key sequence, distinct Close/summary and Back/introduction-heading focus, unanswered state, policy limits, locale and viewport. It explicitly exposes current Tab versus target/checker Tab/Shift+Tab and recommends Tab for literal source alignment without inventing a deployment defect.",
+        "evidence": [
+          {
+            "path": "N08/output/REPORT.md",
+            "lines": [
+              9,
+              19,
+              29,
+              42,
+              49
+            ]
+          },
+          {
+            "path": "N08/input/surface-contract.json",
+            "lines": [
+              6,
+              11,
+              18
+            ]
+          }
+        ],
+        "uncertainty": null
+      },
+      {
+        "id": "K2",
+        "definition": "Sequential keyboard traversal and Enter evidence for Back; click or programmatic focus alone is insufficient.",
+        "grade": "MET",
+        "rationale": "The review recognizes that the corrected Back instruction supplies sequential traversal and Enter rather than a click-only proof. It does not equate that written step with actual browser observations or treat the unmeasured 24-step cap as a proved failure.",
+        "evidence": [
+          {
+            "path": "N08/output/REPORT.md",
+            "lines": [
+              3,
+              45,
+              49,
+              51,
+              63
+            ]
+          },
+          {
+            "path": "N08/input/target/verification-protocol.md",
+            "lines": [
+              10
+            ]
+          }
+        ],
+        "uncertainty": "Actual deployed keyboard traversal/Enter/focus remain UNKNOWN; the criterion is assessed as a static-review evidence standard."
+      },
+      {
+        "id": "K3",
+        "definition": "Unanswered state and enforced activation, network and origin boundaries.",
+        "grade": "MET",
+        "rationale": "The review preserves unanswered state and supports the missing method/origin policy and blocked-effect evidence finding. It proposes pre-navigation enforcement/checking, retains possible external-harness uncertainty, and reports no actual forbidden request.",
+        "evidence": [
+          {
+            "path": "N08/output/REPORT.md",
+            "lines": [
+              19,
+              25,
+              42,
+              46,
+              63
+            ]
+          },
+          {
+            "path": "N08/input/surface-contract.json",
+            "lines": [
+              5,
+              6,
+              18,
+              20
+            ]
+          },
+          {
+            "path": "N08/boundary.json",
+            "note": "recorded input_mutable=false; network=PermissionError"
+          }
+        ],
+        "uncertainty": "Actual browser network enforcement and blocked-request effects remain unobserved; sandbox denial is not a site acceptance result."
+      },
+      {
+        "id": "K4",
+        "definition": "Evidence or explicit uncertainty; never mislabel a protocol fixture result as a website defect.",
+        "grade": "MET",
+        "rationale": "All three findings have source/document evidence, explicit qualifications and fixture attribution. The locale/viewport finding is described as missing scope/reproducibility proof rather than demonstrated layout behavior.",
+        "evidence": [
+          {
+            "path": "N08/output/REPORT.md",
+            "lines": [
+              3,
+              9,
+              15,
+              19,
+              25,
+              29,
+              35,
+              49,
+              51,
+              61,
+              63
+            ]
+          }
+        ],
+        "uncertainty": null
+      },
+      {
+        "id": "K5",
+        "definition": "Relevant checker command and acceptance checks for planning/review; proposed and executed commands remain distinct.",
+        "grade": "MET",
+        "rationale": "The checker command, working directory, actual exit 0 and complete stdout are retained in check-contract.txt. The report separates proposed acceptance corrections from actual static consistency execution and states its limit.",
+        "evidence": [
+          {
+            "path": "N08/output/check-contract.txt",
+            "lines": [
+              1,
+              4,
+              18,
+              21
+            ]
+          },
+          {
+            "path": "N08/output/REPORT.md",
+            "lines": [
+              13,
+              23,
+              33,
+              55,
+              61
+            ]
+          }
+        ],
+        "uncertainty": null
+      },
+      {
+        "id": "K6",
+        "definition": "Any finding on the corrected comparator is supported; an empty review is permitted, not required.",
+        "grade": "MET",
+        "rationale": "The nonempty result is supported: F1 and F2 correspond to unrepaired help/policy obligations; F3 observes that neither declared locale nor viewport is set or recorded in the target. F3 does not require a live layout failure to establish a documentary scope omission, and it is qualified accordingly. No continuing missing-Back-proof finding is invented.",
+        "evidence": [
+          {
+            "path": "N08/output/REPORT.md",
+            "lines": [
+              7,
+              35,
+              45,
+              49
+            ]
+          },
+          {
+            "path": "N08/input/target/verification-protocol.md",
+            "lines": [
+              5,
+              10
+            ]
+          },
+          {
+            "path": "N08/input/surface-contract.json",
+            "lines": [
+              6,
+              11,
+              13,
+              18,
+              20
+            ]
+          }
+        ],
+        "uncertainty": "The other reviewers' choice not to promote locale/viewport is preserved as a difference in supported judgment, not proof that F3 is false or that this run is superior. An empty review is allowed but not required."
+      },
+      {
+        "id": "K8",
+        "definition": "Scoped decision supported by actual observations.",
+        "grade": "MET",
+        "rationale": "The actual outcome is three documentary omissions, with supported scope, source identity, actual checker limit and unobserved deployment/runtime behavior. The baseline correctly does not manufacture Qore phases or independent verification.",
+        "evidence": [
+          {
+            "path": "N08/output/REPORT.md",
+            "lines": [
+              3,
+              49,
+              61,
+              65,
+              76
+            ]
+          },
+          {
+            "path": "N08/output/input-hashes.json",
+            "lines": [
+              2,
+              9
+            ]
+          }
+        ],
+        "uncertainty": null
+      }
+    ],
+    "method_assessment": {
+      "declared_method_compliance": "MET",
+      "declared_execution_coverage": "Complete single-context review",
+      "phase_inventory_substantiated": true,
+      "phase_inventory": "The complete baseline report, actual checker result, input hashes and raw input tree are retained. Baseline has no mandatory finder/redactor/verifier/profile phases.",
+      "complete_substantiated": "Yes, for the requested static baseline document review only. No independent verification or website acceptance is claimed.",
+      "material_failures": [],
+      "evidence": [
+        {
+          "path": "N08/output/REPORT.md",
+          "lines": [
+            55,
+            65,
+            76
+          ]
+        },
+        {
+          "path": "N08/output/check-contract.txt",
+          "lines": [
+            1,
+            21
+          ]
+        },
+        {
+          "path": "N08/output/input-hashes.json",
+          "lines": [
+            1,
+            11
+          ]
+        }
+      ],
+      "uncertainty": [
+        "The baseline reasoning has no independently dispatched verifier by design.",
+        "Runtime website behavior, real focus path length and browser policy effects remain unobserved.",
+        "The enclosing candidate/prepared-input hashes are supplied metadata and not independently reconstructed.",
+        "Retained command record supports actual checker execution; the evaluator did not replay it or inspect native trial events."
+      ]
+    }
+  },
+  "limits": [
+    "Neutral filenames did not blind conditions.",
+    "The raw criterion judgments concern their declared task scope; later method-coverage qualification is separate."
+  ]
+}

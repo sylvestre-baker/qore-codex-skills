@@ -1,0 +1,20 @@
+{
+  "schema": "qore-selected-independent-verification/1",
+  "run_id": "qore003-20261017-p2-generic-1",
+  "neutral_id": "N13",
+  "verifier": "/root/campaign_final_verifier",
+  "verified_at": "2026-10-17T12:22:41.534375Z",
+  "source_verification": "verification-final/REPORT.md",
+  "decision": {
+    "coverage": "COMPLETE",
+    "reason": "Preserve COMPLETE at the frozen planning scope: retained substantive role analyses, required report barrier/cross-examination, adjudication and actual checks substantiate completed required activities. Disclosed continuation/context, timing and source-support limits remain; completion certifies neither every plan claim nor implementation/browser acceptance.",
+    "evidence": [
+      "trials/P2-generic/evaluation.json",
+      "assessments/plan-P2/N13-plan-assessment.json",
+      "assessment-inputs/N13/output/REPORT.md",
+      "trials/P2-generic/final-output/execution.json",
+      "verification-final/read-only-checks.json"
+    ]
+  },
+  "limit": "Independent bounded coverage/claims reconciliation of all original retained cells and saved separate assessments; not an exhaustive code, product or security certification. Phase coverage is distinct from source/claim quality and narrow task passes. No winner, general benefit, efficiency, causal advantage, equal-scope comparability, live-revision identity or deployment/release readiness established. Native lifecycle/deadline/usage telemetry limits remain. Later corrections are separate evidence and do not rewrite original campaign results."
+}

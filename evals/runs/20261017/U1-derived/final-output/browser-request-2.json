@@ -1,0 +1,139 @@
+[
+  {
+    "type": "click",
+    "selector": "a[href$='/labs/readiness-check']"
+  },
+  {
+    "type": "assert-url",
+    "url": "https://qaizen.io/labs/readiness-check"
+  },
+  {
+    "type": "snapshot",
+    "label": "introduction"
+  },
+  {
+    "type": "click",
+    "role": "button",
+    "name": "Start the check"
+  },
+  {
+    "type": "assert-visible",
+    "selector": "main [role=\"radiogroup\"]"
+  },
+  {
+    "type": "assert-none-checked"
+  },
+  {
+    "type": "snapshot",
+    "label": "first-question"
+  },
+  {
+    "type": "traverse-focus",
+    "selector": "main details summary",
+    "max_steps": 24
+  },
+  {
+    "type": "keyboard",
+    "key": "Enter"
+  },
+  {
+    "type": "assert-attribute",
+    "selector": "main details",
+    "attribute": "open",
+    "value": ""
+  },
+  {
+    "type": "snapshot",
+    "label": "help-open-enter"
+  },
+  {
+    "type": "keyboard",
+    "key": "Space"
+  },
+  {
+    "type": "assert-attribute",
+    "selector": "main details",
+    "attribute": "open",
+    "value": null
+  },
+  {
+    "type": "snapshot",
+    "label": "help-closed-space"
+  },
+  {
+    "type": "keyboard",
+    "key": "Enter"
+  },
+  {
+    "type": "assert-attribute",
+    "selector": "main details",
+    "attribute": "open",
+    "value": ""
+  },
+  {
+    "type": "traverse-focus",
+    "role": "button",
+    "name": "Close",
+    "max_steps": 24
+  },
+  {
+    "type": "assert-focused",
+    "role": "button",
+    "name": "Close"
+  },
+  {
+    "type": "keyboard",
+    "key": "Enter"
+  },
+  {
+    "type": "assert-focused",
+    "selector": "main details summary"
+  },
+  {
+    "type": "assert-attribute",
+    "selector": "main details",
+    "attribute": "open",
+    "value": null
+  },
+  {
+    "type": "assert-none-checked"
+  },
+  {
+    "type": "snapshot",
+    "label": "close-summary-focus"
+  },
+  {
+    "type": "traverse-focus",
+    "role": "button",
+    "name": "Back",
+    "max_steps": 24
+  },
+  {
+    "type": "assert-focused",
+    "role": "button",
+    "name": "Back"
+  },
+  {
+    "type": "snapshot",
+    "label": "back-keyboard-focus"
+  },
+  {
+    "type": "keyboard",
+    "key": "Enter"
+  },
+  {
+    "type": "assert-url",
+    "url": "https://qaizen.io/labs/readiness-check"
+  },
+  {
+    "type": "assert-focused",
+    "selector": "h1"
+  },
+  {
+    "type": "assert-none-checked"
+  },
+  {
+    "type": "snapshot",
+    "label": "returned-introduction"
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "exit_code": 0,
+  "outputs": [
+    "PROPOSED-verification-protocol.md",
+    "REPORT.md",
+    "evidence/check-contract-command.json",
+    "evidence/check-contract.stderr.txt",
+    "evidence/check-contract.stdout.json",
+    "evidence/input-preservation.json",
+    "evidence/input-sha256.json",
+    "evidence/proposal-inventory.json",
+    "run-record.json",
+    "write-canary"
+  ],
+  "inputs_unchanged": true,
+  "completed_at": "2026-10-17T11:30:08.252649+00:00",
+  "trial_id": "qore003-20261017-p2-baseline-1"
+}

@@ -1,0 +1,41 @@
+{
+  "findings": [
+    {
+      "id": "UX-1",
+      "severity": "P2 / moderate",
+      "title": "Cookie banner conceals focused Back control in captured keyboard journey",
+      "status": "OPEN",
+      "scope": "Anonymous public visitor; default deployed dark appearance; 1280x800 DPR1; consent banner left undismissed.",
+      "trigger": "Entry card \u2192 Start \u2192 Tab to summary \u2192 Enter to open \u2192 Tab to Close \u2192 Enter \u2192 Tab to Back. Request2 additionally tests Space and reopen.",
+      "evidence": [
+        "evidence/response-2/06-back-keyboard-focus.png",
+        "evidence/response-2/06-back-keyboard-focus.dom.json",
+        "evidence/response-4/03-back-focus-obscuration-challenge.png",
+        "evidence/response-4/03-back-focus-obscuration-challenge.dom.json"
+      ],
+      "observation": "Both actual PNGs show only the upper edge of the gold Back focus ring above the cookie banner; the label and most of the button are concealed. The two PNGs are byte-identical. Active element is Back in both DOM captures.",
+      "impact": "A sighted keyboard user cannot readily identify the currently focused Back control while the banner is present. The application still accepts Enter and restores introduction focus.",
+      "refutations": [
+        "Keyboard unreachability is refuted: one sequential Tab from the restored summary reaches Back.",
+        "Broken Back activation or wrong destination focus is refuted by successful Enter and h1 assertions in two contexts.",
+        "This is not evidence of a trap, blocked transition, total keyboard failure, or a measured accessibility-standard violation."
+      ],
+      "limits": "Only full-page screenshots exposed. Fixed/sticky chrome can appear at the captured scroll location. No viewport-only screenshot, overlap geometry/hit test or dismissed-cookie comparison available; precise runtime dimensions unmeasured.",
+      "proposal": "Reserve space for the consent banner and ensure sequentially focused controls scroll into the unobscured viewport, for example by appropriate bottom scroll padding. Recheck with the banner present. No change applied."
+    }
+  ],
+  "refuted_candidates": [
+    {
+      "claim": "Console error means readiness flow failed.",
+      "refutation": "Every observed console error correlates with a deliberately blocked analytics POST; application Back and Close still succeed; no page exceptions observed."
+    },
+    {
+      "claim": "Question reload should reset to introduction.",
+      "refutation": "Not required by supplied sources. Request5 shows the first question persists, still unanswered; request4 assertion was unsupported."
+    },
+    {
+      "claim": "Uppercase heading assertion timeout proves page failed to render.",
+      "refutation": "Request3 used CSS-transformed uppercase with exact underlying-text matching. Corrected semantic heading assertion passes in request4."
+    }
+  ]
+}

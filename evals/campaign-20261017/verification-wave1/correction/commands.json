@@ -1,0 +1,126 @@
+{
+  "observed_at": "2026-10-17T10:52:12.014687+00:00",
+  "commands": [
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "<public-repository-root>/tools/qore.py",
+        "derive",
+        "--profile",
+        "<public-repository-root>/profiles/qaizen-labs.json",
+        "--project-root",
+        "<public-repository-root>/examples/qaizen-labs",
+        "--output",
+        "/var/folders/4r/1cnctlhj0457b5kgw29hzr4h0000gn/T/qore003-correction-eauy58vp/derived"
+      ],
+      "cwd": "<private-workspace-root>",
+      "started_at": "2026-10-17T10:52:11.085924+00:00",
+      "finished_at": "2026-10-17T10:52:11.216504+00:00",
+      "exit_code": 0,
+      "stdout": "derive.stdout",
+      "stderr": "derive.stderr"
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "/var/folders/4r/1cnctlhj0457b5kgw29hzr4h0000gn/T/qore003-correction-eauy58vp/derived/qore-plan-qaizen-labs/scripts/project-check.py",
+        "/var/folders/4r/1cnctlhj0457b5kgw29hzr4h0000gn/T/qore003-correction-eauy58vp/derived/qore-plan-qaizen-labs/references/project.json",
+        "--root",
+        "<public-repository-root>/examples/qaizen-labs",
+        "--method",
+        "plan"
+      ],
+      "cwd": "<private-workspace-root>",
+      "started_at": "2026-10-17T10:52:11.217428+00:00",
+      "finished_at": "2026-10-17T10:52:11.296280+00:00",
+      "exit_code": 0,
+      "stdout": "preflight-plan.stdout",
+      "stderr": "preflight-plan.stderr"
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "/var/folders/4r/1cnctlhj0457b5kgw29hzr4h0000gn/T/qore003-correction-eauy58vp/derived/qore-review-qaizen-labs/scripts/project-check.py",
+        "/var/folders/4r/1cnctlhj0457b5kgw29hzr4h0000gn/T/qore003-correction-eauy58vp/derived/qore-review-qaizen-labs/references/project.json",
+        "--root",
+        "<public-repository-root>/examples/qaizen-labs",
+        "--method",
+        "review"
+      ],
+      "cwd": "<private-workspace-root>",
+      "started_at": "2026-10-17T10:52:11.296810+00:00",
+      "finished_at": "2026-10-17T10:52:11.359285+00:00",
+      "exit_code": 0,
+      "stdout": "preflight-review.stdout",
+      "stderr": "preflight-review.stderr"
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "/var/folders/4r/1cnctlhj0457b5kgw29hzr4h0000gn/T/qore003-correction-eauy58vp/derived/qore-ux-review-qaizen-labs/scripts/project-check.py",
+        "/var/folders/4r/1cnctlhj0457b5kgw29hzr4h0000gn/T/qore003-correction-eauy58vp/derived/qore-ux-review-qaizen-labs/references/project.json",
+        "--root",
+        "<public-repository-root>/examples/qaizen-labs",
+        "--method",
+        "ux"
+      ],
+      "cwd": "<private-workspace-root>",
+      "started_at": "2026-10-17T10:52:11.360018+00:00",
+      "finished_at": "2026-10-17T10:52:11.416165+00:00",
+      "exit_code": 0,
+      "stdout": "preflight-ux.stdout",
+      "stderr": "preflight-ux.stderr"
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "<public-repository-root>/examples/qaizen-labs/checks/check_contract.py",
+        "<public-repository-root>/examples/qaizen-labs/surface-contract.json"
+      ],
+      "cwd": "<private-workspace-root>",
+      "started_at": "2026-10-17T10:52:11.416831+00:00",
+      "finished_at": "2026-10-17T10:52:11.445534+00:00",
+      "exit_code": 0,
+      "stdout": "contract-check.stdout",
+      "stderr": "contract-check.stderr"
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "<public-repository-root>/tools/qore.py",
+        "derive",
+        "--profile",
+        "<public-repository-root>/profiles/qaizen-labs.json",
+        "--project-root",
+        "<public-repository-root>/examples/qaizen-labs",
+        "--output",
+        "/var/folders/4r/1cnctlhj0457b5kgw29hzr4h0000gn/T/qore003-correction-eauy58vp/derived"
+      ],
+      "cwd": "<private-workspace-root>",
+      "started_at": "2026-10-17T10:52:11.447540+00:00",
+      "finished_at": "2026-10-17T10:52:11.499874+00:00",
+      "exit_code": 1,
+      "stdout": "derive-existing-refusal.stdout",
+      "stderr": "derive-existing-refusal.stderr"
+    },
+    {
+      "argv": [
+        "node",
+        "/var/folders/4r/1cnctlhj0457b5kgw29hzr4h0000gn/T/qore003-correction-eauy58vp/derived/qore-review-qaizen-labs/scripts/redact-for-verifier.mjs",
+        "<private-campaign-root>/verification-wave1/correction/filter-probe-input.json"
+      ],
+      "cwd": "<private-workspace-root>",
+      "started_at": "2026-10-17T10:52:11.502657+00:00",
+      "finished_at": "2026-10-17T10:52:11.530172+00:00",
+      "exit_code": 0,
+      "stdout": "filter-probe.stdout",
+      "stderr": "filter-probe.stderr"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "argv": [
+    "node",
+    "scripts/finding-lint.mjs",
+    "/workspace/output/evidence/verified.json",
+    "--verifier=ran",
+    "--json"
+  ],
+  "cwd": "/workspace/worker/.agents/skills/qore-review-qaizen-labs",
+  "exit_code": 0,
+  "started_at": "2026-10-17T11:17:48.493635+00:00",
+  "finished_at": "2026-10-17T11:17:48.710872+00:00",
+  "stdout_artifact": "finding-lint.json",
+  "stderr": ""
+}

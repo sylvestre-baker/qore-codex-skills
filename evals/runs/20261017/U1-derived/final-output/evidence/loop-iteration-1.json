@@ -1,0 +1,35 @@
+{
+  "in_scope": [
+    "G0",
+    "G1",
+    "G2",
+    "G3",
+    "G4",
+    "G5",
+    "G6"
+  ],
+  "iterations": [
+    {
+      "n": 1,
+      "scores": {
+        "G0": 4,
+        "G2": 4,
+        "G3": 3,
+        "G4": 4,
+        "G5": 3
+      },
+      "measured": [
+        "G0",
+        "G2",
+        "G3",
+        "G4",
+        "G5"
+      ],
+      "skipped": {
+        "G1": "Reload and browser history not yet observed.",
+        "G6": "Fresh focused challenge dispatched as request 3."
+      },
+      "fix_applied": false
+    }
+  ]
+}

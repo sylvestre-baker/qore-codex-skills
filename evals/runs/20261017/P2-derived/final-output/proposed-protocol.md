@@ -1,0 +1,30 @@
+# Journey verification procedure — proposed clarification
+
+This is proposed wording for maintainer review; the supplied target has not been edited. Reconstructed tutorial fixture. Newly authored for QORE-003; not an authentic historical protocol or evidence of a website defect.
+
+## Preconditions and scope
+
+Use `surface-contract.json` and `observation-policy.json` as the current acceptance and observation sources. Use en-US, a 1280×800 viewport, and entry/state depth. Leave the first question unanswered throughout. Do not select answers, generate results, submit forms, or redistribute website source. This narrow procedure does not establish mobile, complete-questionnaire, performance, or accessibility certification. Private source commits do not identify the current deployment.
+
+Before any navigation, establish observation controls that block every request whose method is not GET, HEAD, or OPTIONS, and block main-frame and popup navigation outside `https://qaizen.io`, including outside-origin redirects. The all-request method and main-frame/popup boundary detail follows the current source-bound project profile's `unanswered-scope` invariant; the original contract supplies the allowed methods and both original JSON sources agree on the allowed origin. This is not an additional ban on every cross-origin subresource. If the chosen observer cannot enforce these controls, stop and record verification as blocked. No particular guard implementation is prescribed. Keep these controls active throughout. An analytics POST is expected to be blocked: retain the attempted request and its observed effects; do not relax the policy to obtain a successful recording.
+
+The existing offline preflight is `python3 -B checks/check_contract.py surface-contract.json`. It checks contract consistency only. It does not read this Markdown, compare the separate policy file, enforce browser policy, or prove that any listed journey check was executed. Compare the two original origin declarations during document review. None of these preconditions asserts that a browser run occurred in this planning task.
+
+The counting rule, path-specific evidence labels, outcome categories, pre-entry stopping rule and explicit redirect handling below are proposed operational clarifications. They are not additional observed product facts or source-defined result schemas.
+
+## Ordered journey
+
+1. Open `https://qaizen.io/labs` and click the journey link matching `a[href$='/labs/readiness-check']`. Assert that the introduction is visible. Preserve the entry transition rather than navigating directly to the questionnaire.
+2. Click **Start the check** without selecting an answer. Assert that the first question is visible and unanswered.
+3. With the question's help summary focused (ordinary keyboard navigation is one setup option; no new summary-reachability test is imposed), press **Enter** and assert help is open. With the summary focused, press **Space** and assert help is closed. With the summary focused, press **Enter** and assert help is open again. Record all three actions and immediate states separately; opening alone does not cover the help toggle sequence.
+4. Reach **Close** with **Tab or Shift+Tab**, activate with **Enter**, and assert that help is closed and the question's summary is focused. The canonical contract declares **Tab** for this transition: use and record Tab for its canonical proof. The existing fixture's Shift+Tab alternative remains permitted as separately labeled evidence; a Shift+Tab-only attempt does not establish that the canonical Tab path was observed. Do not change the contract or treat the checker as validating Close traversal alternatives.
+5. Assert that the first question remains unanswered after Close.
+6. Assert again that the question remains unanswered before leaving it. Reach the application's **Back** control with **Tab or Shift+Tab within 24 steps**, then activate it with **Enter**. Count each sequential Tab or Shift+Tab key activation toward one combined 24-step budget starting after the pre-departure unanswered check; direction changes do not reset it. Assert that the introduction is visible, the question and help are absent, and the introduction heading (`h1` in the returned introduction) is focused. Back is the application control, not browser history. The two unanswered checkpoints and the separate Close/Back focus destinations remain required.
+
+## Evidence and interrupted runs
+
+For each declared check—entry, unanswered, help-toggle, close-focus, keyboard-back, introduction-focus, read-only-policy, origin-policy—record its action or guard, expected outcome, actual observation, and result: observed pass, observed unmet assertion, or not observed/blocked. Include actual focused element before/after relevant keyboard actions, ordered traversal keys and the Back count, visible help/question/introduction states, both unanswered checkpoints, navigation destinations and blocked request effects. A screenshot, selector lookup, or visible heading alone does not prove keyboard reachability or actual focus. Never substitute clicking or programmatic focus for the required keyboard proof.
+
+If a control cannot be reached, a state/focus assertion is unmet, a policy prerequisite is unavailable, or blocked analytics interrupts the journey, retain the actual trace and explain which downstream checks were not observed. Do not silently retry, extend the bound, force focus, or relax guards to turn an interrupted attempt into a pass. At 24 steps without Back, record that this bounded procedure was not completed; that alone does not prove universal keyboard inaccessibility or a deployment defect. A separately identified future attempt must preserve the original outcome and changed conditions.
+
+Expected transitions and focus are acceptance obligations, not claims that the current deployment passes. Report only observations actually obtained under the declared conditions. This fixture and a successful static preflight provide no current website pass/fail evidence.

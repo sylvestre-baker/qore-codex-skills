@@ -1,0 +1,4 @@
+Actual initial shell probe, working directory /workspace/worker:
+/workspace/worker
+/bin/sh: rg: not found
+Exit status: 127. Subsequent file discovery used ls/find. No network tool used.

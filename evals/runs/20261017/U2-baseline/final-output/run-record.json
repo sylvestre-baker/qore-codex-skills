@@ -1,0 +1,76 @@
+{
+  "run_id": "qore003-20261017-u2-baseline-1",
+  "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+  "target_snapshot_sha256": "0bb1ff698dd162ed66edca309b29df5b89a7e8a04a39292cbff9ba3f2227d926",
+  "target_digest_scope": "entire frozen prepared-input manifest; supplied enclosing metadata, not independently recomputed",
+  "last_relevant_change": "2026-10-17T09:53:58.953923+00:00",
+  "environment": {
+    "id": "qore-qualification-qore003-20261017-u2-baseline-1",
+    "operator": "agent",
+    "host": "Docker Desktop Linux arm64 / Codex0.162.0"
+  },
+  "profile": null,
+  "method": "baseline task-directed observation",
+  "qore_skill_invoked": false,
+  "primary_actor": "/root",
+  "primary_started_at_utc": "2026-10-17T12:04:14+00:00",
+  "report_saved_at_utc": "2026-10-17T12:07:26.732606+00:00",
+  "requested_child_roster": [],
+  "returned_child_roster": [],
+  "missing_child_roster": [],
+  "child_dispatches": [],
+  "child_usage": null,
+  "aggregate_agent_seconds": null,
+  "usage_unavailable_reason": "No actor-seconds or token usage meter is exposed by available tools; no child agents were dispatched.",
+  "wall_budget_seconds": 900,
+  "aggregate_agent_budget_seconds": 2400,
+  "budget_exhausted": false,
+  "browser_request_limit": 6,
+  "browser_requests_used": 2,
+  "requests": [
+    {
+      "request": 1,
+      "written_at_utc": "2026-10-17T12:04:31.496722+00:00",
+      "operator_started_at_utc": "2026-10-17T12:04:33.305885+00:00",
+      "operator_returned_at_utc": "2026-10-17T12:04:48.433643+00:00",
+      "complete_report_file": "response-1/result.json",
+      "full_receipt": "response-1/relay.json",
+      "events": "response-1/events.json"
+    },
+    {
+      "request": 2,
+      "written_at_utc": "2026-10-17T12:05:12.761629+00:00",
+      "operator_started_at_utc": "2026-10-17T12:05:14.086654+00:00",
+      "operator_returned_at_utc": "2026-10-17T12:06:02.191746+00:00",
+      "complete_report_file": "response-2/result.json",
+      "full_receipt": "response-2/relay.json",
+      "events": "response-2/events.json"
+    }
+  ],
+  "commands": [
+    {
+      "command": "rg --files -g TASK.md -g AGENTS.md -g *SKILL* -g *manifest*",
+      "exit_code": 127,
+      "output": "/bin/sh: rg: not found; used ls, cat and find as fallback"
+    },
+    {
+      "command": "python3 -B checks/check_contract.py surface-contract.json",
+      "exit_code": 0,
+      "complete_output": "contract-check.json"
+    },
+    {
+      "command": "Python stdlib audit of input hashes, relay hashes, action outcomes, origins/methods and focus/activation records",
+      "exit_code": 0,
+      "complete_output": "evidence-audit.json"
+    }
+  ],
+  "complete_primary_report": "REPORT.md",
+  "limitations": [
+    "Single complete keyboard journey",
+    "No independent roles required or run",
+    "No aggregate usage meter",
+    "Trace/video paths named by operator were not delivered in relay file roster; raw trace/video remain operator-held",
+    "Full-page screenshots have a cookie banner overlay",
+    "Structural validator does not prove reasoning or current behavior"
+  ]
+}

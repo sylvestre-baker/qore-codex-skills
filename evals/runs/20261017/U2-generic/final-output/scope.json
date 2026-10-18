@@ -1,0 +1,124 @@
+{
+  "declared_at": "2026-10-17T11:54:00.843351+00:00",
+  "actor": "/root",
+  "entry": "https://qaizen.io/labs",
+  "origins": [
+    "https://qaizen.io"
+  ],
+  "persona": "anonymous public visitor; no login or account writes",
+  "locale": "en-US",
+  "viewport": {
+    "width": 1280,
+    "height": 800
+  },
+  "themes": [
+    "actual public default theme"
+  ],
+  "required_states": [
+    "labs",
+    "introduction",
+    "first-question",
+    "help-open",
+    "help-closed",
+    "returned-introduction"
+  ],
+  "required_transitions": [
+    {
+      "id": "entry",
+      "from": "labs",
+      "to": "introduction",
+      "control": "a[href$='/labs/readiness-check']",
+      "activation": "click"
+    },
+    {
+      "id": "start",
+      "from": "introduction",
+      "to": "first-question",
+      "control": "Start the check",
+      "activation": "click"
+    },
+    {
+      "id": "open-help",
+      "from": "first-question",
+      "to": "help-open",
+      "control": "summary",
+      "activation": "Enter"
+    },
+    {
+      "id": "toggle-help",
+      "from": "help-open",
+      "to": "help-closed",
+      "control": "summary",
+      "activation": "Space"
+    },
+    {
+      "id": "reopen-help",
+      "from": "help-closed",
+      "to": "help-open",
+      "control": "summary",
+      "activation": "Enter"
+    },
+    {
+      "id": "close-help",
+      "from": "help-open",
+      "to": "help-closed",
+      "control": "Close",
+      "activation": "Enter",
+      "traversal": "Tab",
+      "focus_after": "summary"
+    },
+    {
+      "id": "back",
+      "from": "help-closed",
+      "to": "returned-introduction",
+      "control": "Back",
+      "activation": "Enter",
+      "traversal": "Tab",
+      "focus_after": "introduction-heading"
+    }
+  ],
+  "required_gates": [
+    "G0",
+    "G1",
+    "G2",
+    "G3",
+    "G4",
+    "G5",
+    "G6"
+  ],
+  "excluded_gates": {
+    "GP": "Performance is explicitly outside supplied acceptance scope."
+  },
+  "data": "Real public unanswered first question only. No answering, result generation, submission, fixture, seed or shared mutation.",
+  "state_exclusions": "Questionnaire data permutations and result/error branches require prohibited answers/submission and are outside the explicit surface. No mobile or complete accessibility certification.",
+  "required_checks": [
+    "entry",
+    "unanswered",
+    "help-toggle",
+    "close-focus",
+    "keyboard-back",
+    "introduction-focus",
+    "read-only-policy",
+    "origin-policy"
+  ],
+  "budget": {
+    "wall_seconds": 900,
+    "review_work_seconds": 720,
+    "aggregate_agent_seconds": 2400,
+    "max_requests": 6,
+    "max_actions_per_request": 40,
+    "max_iterations": 6,
+    "child_contexts": 0,
+    "role_deadlines": "No independent roles required by UX method. Browser waits bounded to 45 seconds per poll; retain partial evidence if review deadline reached."
+  },
+  "capability_requirements": [
+    "navigation",
+    "screenshots",
+    "DOM/semantics",
+    "keyboard",
+    "console",
+    "network"
+  ],
+  "instrumentation": "Manual scoped keyboard/focus and visual checks required; no instrumented accessibility/performance certification required by contract. Risky contrast pairs require measurements if identified.",
+  "profile": null
+}

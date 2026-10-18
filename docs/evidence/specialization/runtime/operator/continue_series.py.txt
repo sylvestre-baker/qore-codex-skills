@@ -1,0 +1,43 @@
+"""Private ordered operator dispatch; no scorer or repair loop enters trial prompts."""
+from pathlib import Path
+from datetime import datetime,timezone
+import sys,json,time,subprocess,hashlib
+ROOT=Path(__file__).parent
+REPO=ROOT.parents[1]/'qore-skills'
+def now():return datetime.now(timezone.utc).isoformat()
+def save(p,j):p.write_text(json.dumps(j,indent=2)+'\n')
+def refresh():
+ p=ROOT/'series.json';j=json.loads(p.read_text())
+ for c in j['cells']:
+  r=ROOT/'trials'/f"{c['scenario_id']}-{c['condition']}"/'evaluation.json'
+  check=r.parent/'evaluation-check.json'
+  if r.exists() and check.exists() and json.loads(check.read_text()).get('valid'):
+   c['status']=json.loads(r.read_text())['execution']['coverage'];c['records']=[r.relative_to(ROOT).as_posix()];c.pop('reason',None)
+ j['status']='COMPLETE' if all(c['status']=='COMPLETE' for c in j['cells']) else 'PARTIAL'
+ j['limitations']=['Original isolation failure is retained in series-origin.json; scoped runtime recovery was independently qualified before trials.','One observation per condition on six related known tasks; no general superiority or efficiency claim.','Task scoring and material comparative verification are separate from execution coverage.','Live deployment comparability remains unverified unless supported by separate matching observations.']
+ j.pop('limits',None);save(p,j)
+ n=sum(c['status']=='COMPLETE' for c in j['cells'])
+ out=ROOT/('summary-after-'+str(n)+'-'+str(time.time_ns()))
+ r=subprocess.run([sys.executable,'-B',str(REPO/'tools/evaluate.py'),'summarize',str(p),'--output',str(out)],cwd=REPO,capture_output=True,text=True)
+ save(out.with_suffix('.receipt.json'),{'at':now(),'exit_code':r.returncode,'stdout':r.stdout,'stderr':r.stderr})
+ if r.returncode:raise RuntimeError('Series validation failed: '+r.stderr[-2000:])
+ print('SERIES',n,'/18 complete',flush=True)
+refresh()
+# The already-dispatched fifth cell must close before the sixth is started.
+while not (ROOT/'trials/P1-derived/completion.json').exists():time.sleep(2)
+for sid,cond in [('P1','derived'),('P1','baseline'),('U1','derived'),('U1','baseline'),('U1','generic'),('R2','derived'),('R2','generic'),('R2','baseline'),('P2','baseline'),('P2','derived'),('P2','generic'),('U2','generic'),('U2','baseline'),('U2','derived')]:
+ out=ROOT/'trials'/f'{sid}-{cond}'
+ if not out.exists():
+  script='run_ux.py' if sid.startswith('U') else 'run_one.py'
+  with (ROOT/f'dispatch-{sid}-{cond}.log').open('w') as log:
+   r=subprocess.run([sys.executable,'-B',str(ROOT/script),sid,cond],stdout=log,stderr=subprocess.STDOUT)
+  save(ROOT/f'dispatch-{sid}-{cond}.json',{'ended_at':now(),'exit_code':r.returncode,'log':f'dispatch-{sid}-{cond}.log'})
+  print('DISPATCH RETURNED',sid,cond,r.returncode,flush=True)
+ if (out/'completion.json').exists():
+  r=subprocess.run([sys.executable,'-B',str(ROOT/'record_cell.py'),sid,cond],capture_output=True,text=True)
+  save(out/'normalization-receipt.json',{'at':now(),'exit_code':r.returncode,'stdout':r.stdout,'stderr':r.stderr})
+  print('NORMALIZED',sid,cond,r.returncode,flush=True)
+  if r.returncode:print(r.stderr[-1600:],flush=True)
+ else:print('NO COMPLETION RECEIPT; PRESERVE ATTEMPT',sid,cond,flush=True)
+ refresh()
+save(ROOT/'dispatch-complete.json',{'ended_at':now(),'status':'All ordered cells attempted; inspect actual validated coverage, not this dispatch receipt.'})

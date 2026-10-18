@@ -1,0 +1,13 @@
+{
+  "argv": [
+    "bash",
+    "scripts/spec-lint.sh",
+    "/workspace/output/REPORT.md"
+  ],
+  "cwd": "/workspace/worker/.agents/skills/qore-plan-qaizen-labs",
+  "started_at": "2026-10-17T10:50:36.230105+00:00",
+  "returned_at": "2026-10-17T10:50:36.401766+00:00",
+  "exit_code": 0,
+  "stdout": "spec-lint: valid qore-spec/1 (14 scenarios).\n",
+  "stderr": ""
+}

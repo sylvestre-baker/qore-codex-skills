@@ -1,0 +1,22 @@
+{
+  "findings": [
+    {
+      "id": "C-1",
+      "title": "Clicking Back does not exercise the required keyboard transition",
+      "severity": "medium",
+      "evidence": "Target target/verification-protocol.md:10 directs “Click Back” followed by content and heading-focus assertions. Source surface-contract.json:15 requires Back traversal with Tab and activation with Enter; :18 requires keyboard-back. checks/check_contract.py:35-36 explicitly requires sequential keyboard traversal and Enter. Trigger: Back works on click and places focus correctly but cannot be reached with Tab or activated with Enter. The target can pass all its assertions without encountering either keyboard failure, leaving keyboard-back unverified."
+    },
+    {
+      "id": "C-2",
+      "title": "The procedure omits the required help toggle and reopen sequence",
+      "severity": "medium",
+      "evidence": "Target target/verification-protocol.md:7-8 opens help once with summary and immediately closes it through Close. Source surface-contract.json:11-14 separately specifies summary Enter to open, summary Space to toggle closed, summary Enter to reopen, and Close Enter to close; :18 requires help-toggle. No target instruction exercises Space on summary or the help-closed to help-open transition. Trigger: initial opening and Close work but Space toggling or reopening fails. The prescribed run still completes, leaving required help-toggle behavior unverified."
+    },
+    {
+      "id": "C-3",
+      "title": "The browser procedure starts without establishing required request restrictions",
+      "severity": "medium",
+      "evidence": "Target target/verification-protocol.md:5 starts by opening the public page; the entire procedure (:5-10) contains no request interception, method allowlist, origin validation, or blocked-request observation. Source surface-contract.json:6 allows only GET/HEAD/OPTIONS; :18 requires read-only-policy and origin-policy; :20 says an analytics POST is expected to be blocked and its effects retained. observation-policy.json:2-4 allows only https://qaizen.io. checks/check_contract.py:2,42-43 says it never contacts the site and proves only consistency. Trigger: the page emits the anticipated analytics POST in a browser without a preinstalled restriction. The target supplies no step to block it or retain its observed effects, so the run cannot establish required policy compliance."
+    }
+  ]
+}

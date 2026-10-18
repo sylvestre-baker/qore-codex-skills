@@ -1,0 +1,380 @@
+{
+  "input_files_unchanged": true,
+  "responses": [
+    {
+      "request": 1,
+      "submitted_action_count": 5,
+      "within_40_action_limit": true,
+      "request_sha256_matches_receipt": true,
+      "all_receipt_file_hashes_match": true,
+      "fresh_context": true,
+      "input_actions_modified": false,
+      "relay_exit_code": 1,
+      "probe_status": "PARTIAL",
+      "observed_origins": [
+        "https://qaizen.io"
+      ],
+      "only_authorized_origin_observed": true,
+      "network_count": 72,
+      "network_response_methods": [
+        "GET"
+      ],
+      "blocked_mutations": [],
+      "console": [],
+      "page_errors": [],
+      "blocked_activations": [
+        {
+          "at": "2026-10-17T11:03:11.138Z",
+          "source": "preflight",
+          "trigger": "click",
+          "url": "https://qaizen.io/labs/readiness-check",
+          "target": null,
+          "allowed": false,
+          "control": null,
+          "states": [],
+          "reason": "The activation locator did not resolve exactly one visible control."
+        }
+      ],
+      "assertions": [],
+      "keyboard_and_traversal": [
+        {
+          "event_index": 0,
+          "at": "2026-10-17T11:03:07.911Z",
+          "type": "keyboard",
+          "key": "Tab",
+          "active_element": {
+            "tag": "A",
+            "id": "",
+            "text": "Skip to content"
+          },
+          "outcome": "completed"
+        }
+      ],
+      "trace_and_video_availability": "Referenced by result.json but not included in relay files; not available to this actor."
+    },
+    {
+      "request": 2,
+      "submitted_action_count": 34,
+      "within_40_action_limit": true,
+      "request_sha256_matches_receipt": true,
+      "all_receipt_file_hashes_match": true,
+      "fresh_context": true,
+      "input_actions_modified": false,
+      "relay_exit_code": 0,
+      "probe_status": "COMPLETE",
+      "observed_origins": [
+        "https://qaizen.io"
+      ],
+      "only_authorized_origin_observed": true,
+      "network_count": 72,
+      "network_response_methods": [
+        "GET"
+      ],
+      "blocked_mutations": [
+        {
+          "at": "2026-10-17T11:03:41.969Z",
+          "method": "POST",
+          "url": "https://qaizen.io/api/labs/readiness/event",
+          "reason": "Read-only probe policy"
+        }
+      ],
+      "console": [
+        {
+          "at": "2026-10-17T11:03:41.973Z",
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_BLOCKED_BY_CLIENT.Inspector",
+          "location": {
+            "url": "https://qaizen.io/api/labs/readiness/event",
+            "line": 0,
+            "column": 0,
+            "lineNumber": 0,
+            "columnNumber": 0
+          }
+        }
+      ],
+      "page_errors": [],
+      "blocked_activations": [],
+      "assertions": [
+        {
+          "event_index": 2,
+          "at": "2026-10-17T11:03:41.026Z",
+          "type": "assert-url",
+          "url": "https://qaizen.io/labs/readiness-check",
+          "outcome": "completed"
+        },
+        {
+          "event_index": 4,
+          "at": "2026-10-17T11:03:42.882Z",
+          "type": "assert-visible",
+          "selector": "main [role=\"radiogroup\"]",
+          "outcome": "completed",
+          "url": "https://qaizen.io/labs/readiness-check"
+        },
+        {
+          "event_index": 5,
+          "at": "2026-10-17T11:03:43.789Z",
+          "type": "assert-none-checked",
+          "outcome": "completed",
+          "url": "https://qaizen.io/labs/readiness-check"
+        },
+        {
+          "event_index": 10,
+          "at": "2026-10-17T11:03:46.696Z",
+          "type": "assert-focused",
+          "selector": "main details summary",
+          "outcome": "completed",
+          "url": "https://qaizen.io/labs/readiness-check"
+        },
+        {
+          "event_index": 12,
+          "at": "2026-10-17T11:03:48.513Z",
+          "type": "assert-attribute",
+          "selector": "main details",
+          "attribute": "open",
+          "value": "",
+          "outcome": "completed",
+          "url": "https://qaizen.io/labs/readiness-check"
+        },
+        {
+          "event_index": 15,
+          "at": "2026-10-17T11:03:51.428Z",
+          "type": "assert-hidden",
+          "selector": "main details button[type=\"button\"]",
+          "outcome": "completed",
+          "url": "https://qaizen.io/labs/readiness-check"
+        },
+        {
+          "event_index": 18,
+          "at": "2026-10-17T11:03:54.331Z",
+          "type": "assert-visible",
+          "selector": "main details button[type=\"button\"]",
+          "outcome": "completed",
+          "url": "https://qaizen.io/labs/readiness-check"
+        },
+        {
+          "event_index": 22,
+          "at": "2026-10-17T11:03:57.260Z",
+          "type": "assert-focused",
+          "selector": "main details button[type=\"button\"]",
+          "outcome": "completed",
+          "url": "https://qaizen.io/labs/readiness-check"
+        },
+        {
+          "event_index": 25,
+          "at": "2026-10-17T11:04:00.162Z",
+          "type": "assert-hidden",
+          "selector": "main details button[type=\"button\"]",
+          "outcome": "completed",
+          "url": "https://qaizen.io/labs/readiness-check"
+        },
+        {
+          "event_index": 26,
+          "at": "2026-10-17T11:04:01.068Z",
+          "type": "assert-focused",
+          "selector": "main details summary",
+          "outcome": "completed",
+          "url": "https://qaizen.io/labs/readiness-check"
+        },
+        {
+          "event_index": 27,
+          "at": "2026-10-17T11:04:01.975Z",
+          "type": "assert-none-checked",
+          "outcome": "completed",
+          "url": "https://qaizen.io/labs/readiness-check"
+        },
+        {
+          "event_index": 30,
+          "at": "2026-10-17T11:04:03.794Z",
+          "type": "assert-focused",
+          "role": "button",
+          "name": "Back",
+          "exact": true,
+          "outcome": "completed",
+          "url": "https://qaizen.io/labs/readiness-check"
+        },
+        {
+          "event_index": 34,
+          "at": "2026-10-17T11:04:07.760Z",
+          "type": "assert-visible",
+          "selector": "h1",
+          "outcome": "completed",
+          "url": "https://qaizen.io/labs/readiness-check"
+        },
+        {
+          "event_index": 35,
+          "at": "2026-10-17T11:04:08.664Z",
+          "type": "assert-hidden",
+          "selector": "main [role=\"radiogroup\"]",
+          "outcome": "completed",
+          "url": "https://qaizen.io/labs/readiness-check"
+        },
+        {
+          "event_index": 36,
+          "at": "2026-10-17T11:04:09.570Z",
+          "type": "assert-focused",
+          "selector": "h1",
+          "outcome": "completed",
+          "url": "https://qaizen.io/labs/readiness-check"
+        },
+        {
+          "event_index": 37,
+          "at": "2026-10-17T11:04:10.475Z",
+          "type": "assert-none-checked",
+          "outcome": "completed",
+          "url": "https://qaizen.io/labs/readiness-check"
+        },
+        {
+          "event_index": 38,
+          "at": "2026-10-17T11:04:11.380Z",
+          "type": "assert-url",
+          "url": "https://qaizen.io/labs/readiness-check",
+          "outcome": "completed"
+        }
+      ],
+      "keyboard_and_traversal": [
+        {
+          "event_index": 0,
+          "at": "2026-10-17T11:03:40.035Z",
+          "type": "keyboard",
+          "key": "Tab",
+          "active_element": {
+            "tag": "A",
+            "id": "",
+            "text": "Skip to content"
+          },
+          "outcome": "completed"
+        },
+        {
+          "event_index": 7,
+          "at": "2026-10-17T11:03:45.786Z",
+          "type": "focus-step",
+          "key": "Tab",
+          "step": 1,
+          "active_element": {
+            "tag": "BUTTON",
+            "id": "",
+            "text": "Every production source and flow is written down, with a named owner"
+          },
+          "reached": false,
+          "outcome": "observed"
+        },
+        {
+          "event_index": 8,
+          "at": "2026-10-17T11:03:45.793Z",
+          "type": "focus-step",
+          "key": "Tab",
+          "step": 2,
+          "active_element": {
+            "tag": "SUMMARY",
+            "id": "",
+            "text": "What does this mean?"
+          },
+          "reached": true,
+          "outcome": "observed"
+        },
+        {
+          "event_index": 9,
+          "at": "2026-10-17T11:03:45.779Z",
+          "type": "traverse-focus",
+          "selector": "main details summary",
+          "max_steps": 24,
+          "key": "Tab",
+          "outcome": "completed",
+          "url": "https://qaizen.io/labs/readiness-check"
+        },
+        {
+          "event_index": 11,
+          "at": "2026-10-17T11:03:47.603Z",
+          "type": "keyboard",
+          "key": "Enter",
+          "outcome": "completed",
+          "url": "https://qaizen.io/labs/readiness-check"
+        },
+        {
+          "event_index": 14,
+          "at": "2026-10-17T11:03:50.519Z",
+          "type": "keyboard",
+          "key": "Space",
+          "outcome": "completed",
+          "url": "https://qaizen.io/labs/readiness-check"
+        },
+        {
+          "event_index": 17,
+          "at": "2026-10-17T11:03:53.421Z",
+          "type": "keyboard",
+          "key": "Enter",
+          "outcome": "completed",
+          "url": "https://qaizen.io/labs/readiness-check"
+        },
+        {
+          "event_index": 20,
+          "at": "2026-10-17T11:03:56.357Z",
+          "type": "focus-step",
+          "key": "Tab",
+          "step": 1,
+          "active_element": {
+            "tag": "BUTTON",
+            "id": "",
+            "text": "Close"
+          },
+          "reached": true,
+          "outcome": "observed"
+        },
+        {
+          "event_index": 21,
+          "at": "2026-10-17T11:03:56.351Z",
+          "type": "traverse-focus",
+          "selector": "main details button[type=\"button\"]",
+          "max_steps": 24,
+          "key": "Tab",
+          "outcome": "completed",
+          "url": "https://qaizen.io/labs/readiness-check"
+        },
+        {
+          "event_index": 23,
+          "at": "2026-10-17T11:03:58.166Z",
+          "type": "keyboard",
+          "key": "Enter",
+          "outcome": "completed",
+          "url": "https://qaizen.io/labs/readiness-check"
+        },
+        {
+          "event_index": 28,
+          "at": "2026-10-17T11:04:02.890Z",
+          "type": "focus-step",
+          "key": "Tab",
+          "step": 1,
+          "active_element": {
+            "tag": "BUTTON",
+            "id": "",
+            "text": "Back"
+          },
+          "reached": true,
+          "outcome": "observed"
+        },
+        {
+          "event_index": 29,
+          "at": "2026-10-17T11:04:02.881Z",
+          "type": "traverse-focus",
+          "role": "button",
+          "name": "Back",
+          "exact": true,
+          "max_steps": 24,
+          "key": "Tab",
+          "outcome": "completed",
+          "url": "https://qaizen.io/labs/readiness-check"
+        },
+        {
+          "event_index": 32,
+          "at": "2026-10-17T11:04:05.787Z",
+          "type": "keyboard",
+          "key": "Enter",
+          "outcome": "completed",
+          "url": "https://qaizen.io/labs/readiness-check"
+        }
+      ],
+      "trace_and_video_availability": "Referenced by result.json but not included in relay files; not available to this actor."
+    }
+  ],
+  "limit": "Mechanical integrity, event summaries and assertion outcomes only; this check does not establish reasoning correctness or visual quality."
+}

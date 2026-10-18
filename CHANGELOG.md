@@ -1,5 +1,21 @@
 # Changelog
 
+## 0.3.0 - 2026-10-18
+
+- Reconstruct historical evaluation workers with their pinned literal builder version, without executing snapshot code; a later release cannot silently change their manifests.
+
+- Execute and retain the balanced 18-cell diagnostic in a qualified disposable Codex environment, with separate assessments, verification, failed browser requests and partial coverage.
+- Correct the Qaizen Labs profile to preserve its sourced forward-Tab obligation; retain the original frozen profile in all trial evidence.
+- Add restricting independent coverage qualifications, exact historical-report link pins and exported-record closure checks.
+- Fix browser text locators and add viewport/occlusion observations with actual Chromium regressions; strengthen planning context/deadline bookkeeping and qualify mechanical review filtering claims.
+- Record a separately verified local cookie-banner correction without publishing private website code or deploying the change. Provide an independent Claude Code audit prompt.
+
+- Recover safely handled installation failures, preserve uncertain content and primary errors, and retain both Qodo case studies with pinned offline replays.
+- Reject unsafe retry advice before the replay reports success, with an independently reproduced negative regression.
+- Align package metadata, current download instructions and the public showcase for 0.3.0.
+
+The recorded diagnostic retains 14 COMPLETE and 4 PARTIAL original executions. This release does not establish comparative improvement, external human usability, arbitrary-host support or client deployment. Historical artifacts retain their original versions and identities.
+
 ## 0.2.1 - 2026-10-16
 
 - Restore 46 exact historical source artifacts to the export selection and check every execution in CI, retaining an explicit PARTIAL exception for two excluded source caches.

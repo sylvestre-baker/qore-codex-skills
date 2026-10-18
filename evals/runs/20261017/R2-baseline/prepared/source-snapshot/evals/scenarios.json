@@ -1,0 +1,194 @@
+{
+  "schema": "qore-eval-scenarios/1",
+  "version": "0.1.0",
+  "project_root": "examples/qaizen-labs",
+  "profile": "profiles/qaizen-labs.json",
+  "common_sources": [
+    "surface-contract.json",
+    "checks/check_contract.py",
+    "observation-policy.json"
+  ],
+  "conditions": [
+    "baseline",
+    "generic",
+    "derived"
+  ],
+  "budgets": {
+    "wall_seconds": 900,
+    "aggregate_agent_seconds": 2400,
+    "browser_requests": 6,
+    "transient_browser_retries": 1,
+    "evaluator_seconds": 1800,
+    "verifier_seconds": 1800,
+    "maximum_original_cells": 21,
+    "limit": "Provisional operator policy, not measured feasibility or hard timeout enforcement."
+  },
+  "scenarios": [
+    {
+      "id": "P1",
+      "method": "plan",
+      "target": "evals/fixtures/protocol-incomplete.md",
+      "criteria": [
+        "K1",
+        "K2",
+        "K3",
+        "K4",
+        "K5",
+        "K8"
+      ],
+      "prompt": "Plan the changes needed for target/verification-protocol.md to satisfy the supplied project sources. Provide sourced decisions, acceptance criteria, checks and limits."
+    },
+    {
+      "id": "P2",
+      "method": "plan",
+      "target": "evals/fixtures/protocol-corrected.md",
+      "criteria": [
+        "K1",
+        "K3",
+        "K4",
+        "K5",
+        "K7",
+        "K8"
+      ],
+      "prompt": "Plan a documentation-only clarification of target/verification-protocol.md for maintainers. No application behavior change is requested. Preserve valid obligations and justify any proposed change."
+    },
+    {
+      "id": "R1",
+      "method": "review",
+      "target": "evals/fixtures/protocol-incomplete.md",
+      "criteria": [
+        "K1",
+        "K2",
+        "K3",
+        "K4",
+        "K5",
+        "K8"
+      ],
+      "prompt": "Review target/verification-protocol.md against the supplied project sources. Report evidence-backed findings, uncertainty and scope; an empty supported result is acceptable."
+    },
+    {
+      "id": "R2",
+      "method": "review",
+      "target": "evals/fixtures/protocol-corrected.md",
+      "criteria": [
+        "K1",
+        "K2",
+        "K3",
+        "K4",
+        "K5",
+        "K6",
+        "K8"
+      ],
+      "prompt": "Review target/verification-protocol.md against the supplied project sources. Report evidence-backed findings, uncertainty and scope; an empty supported result is acceptable."
+    },
+    {
+      "id": "U1",
+      "method": "ux",
+      "target": null,
+      "criteria": [
+        "K1",
+        "K2",
+        "K3",
+        "K4",
+        "K8"
+      ],
+      "prompt": "Observe the application's Back journey from its public entry. Select your observations from the supplied project sources and return evidence, conclusions and limits."
+    },
+    {
+      "id": "U2",
+      "method": "ux",
+      "target": null,
+      "criteria": [
+        "K1",
+        "K3",
+        "K4",
+        "K8"
+      ],
+      "prompt": "Observe opening and closing application help from its public entry. Select your observations from the supplied project sources and return evidence, conclusions and limits."
+    }
+  ],
+  "criteria": {
+    "K1": "Accurate relevant project rules and distinct focus destinations.",
+    "K2": "Sequential keyboard traversal and Enter evidence for Back; click or programmatic focus alone is insufficient.",
+    "K3": "Unanswered state and enforced activation, network and origin boundaries.",
+    "K4": "Evidence or explicit uncertainty; never mislabel a protocol fixture result as a website defect.",
+    "K5": "Relevant checker command and acceptance checks for planning/review; proposed and executed commands remain distinct.",
+    "K6": "Any finding on the corrected comparator is supported; an empty review is permitted, not required.",
+    "K7": "The documentation-only plan preserves valid obligations and does not invent an application change.",
+    "K8": "Scoped decision supported by actual observations."
+  },
+  "order": [
+    [
+      "R1",
+      "baseline"
+    ],
+    [
+      "R1",
+      "generic"
+    ],
+    [
+      "R1",
+      "derived"
+    ],
+    [
+      "P1",
+      "generic"
+    ],
+    [
+      "P1",
+      "derived"
+    ],
+    [
+      "P1",
+      "baseline"
+    ],
+    [
+      "U1",
+      "derived"
+    ],
+    [
+      "U1",
+      "baseline"
+    ],
+    [
+      "U1",
+      "generic"
+    ],
+    [
+      "R2",
+      "derived"
+    ],
+    [
+      "R2",
+      "generic"
+    ],
+    [
+      "R2",
+      "baseline"
+    ],
+    [
+      "P2",
+      "baseline"
+    ],
+    [
+      "P2",
+      "derived"
+    ],
+    [
+      "P2",
+      "generic"
+    ],
+    [
+      "U2",
+      "generic"
+    ],
+    [
+      "U2",
+      "baseline"
+    ],
+    [
+      "U2",
+      "derived"
+    ]
+  ]
+}

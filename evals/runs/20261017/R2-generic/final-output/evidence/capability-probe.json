@@ -1,0 +1,14 @@
+{
+  "observed_at": "2026-10-17T11:21:17.954311+00:00",
+  "initial_probe": {
+    "argv": [
+      "/bin/sh",
+      "-c",
+      "pwd && rg --files -g 'TASK.md' -g 'AGENTS.md' -g '*SKILL*' -g '*qore*' ."
+    ],
+    "exit_code": null,
+    "stdout": "/workspace/worker\n",
+    "stderr": "/bin/sh: rg: not found\n"
+  },
+  "note": "Initial exec tool output did not print exit code; 127 is conventional shell command-not-found status, not exposed. Exact command exit code unavailable from retained output; do not use this inferred status as measured command record."
+}

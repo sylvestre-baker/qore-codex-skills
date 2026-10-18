@@ -1,0 +1,224 @@
+{
+  "schema": "qore-export-closure-check/1",
+  "verifier": "/root/campaign_final_verifier",
+  "start_utc": "2026-10-17T12:25:52Z",
+  "scope": "Separate export-only companion closure; no broader historical/runtime exemption, no proof of worker consumption, no campaign requalification.",
+  "cells": {
+    "U2-derived": {
+      "resources": [
+        {
+          "path": "final-output/evidence/input/.agents/skills/qore-ux-review-qaizen-labs/agents/openai.yaml",
+          "frozen_source": "prepared/worker/.agents/skills/qore-ux-review-qaizen-labs/agents/openai.yaml",
+          "sha256": "1a9fb2ea5b4842bc00c8c785bd207d2ac89edc149a0d7ea39d52b18ef43e4c79",
+          "matches_private_and_public_prepared_bytes": true,
+          "absent_from_original_output": true,
+          "outer_kind": "presentation"
+        },
+        {
+          "path": "final-output/evidence/input/.agents/skills/qore-ux-review-qaizen-labs/references/evidence.md",
+          "frozen_source": "prepared/worker/.agents/skills/qore-ux-review-qaizen-labs/references/evidence.md",
+          "sha256": "659560f88b965371e2c6e886b5f4c648a4879ebb7c69af4b1d307dfae176c8b3",
+          "matches_private_and_public_prepared_bytes": true,
+          "absent_from_original_output": true,
+          "outer_kind": "presentation"
+        },
+        {
+          "path": "final-output/evidence/input/.agents/skills/qore-ux-review-qaizen-labs/references/gates.md",
+          "frozen_source": "prepared/worker/.agents/skills/qore-ux-review-qaizen-labs/references/gates.md",
+          "sha256": "667063cd64c576a9c5b4ec69f6ddcd677d4e969bae96184b3136ede9fd12fd87",
+          "matches_private_and_public_prepared_bytes": true,
+          "absent_from_original_output": true,
+          "outer_kind": "presentation"
+        },
+        {
+          "path": "final-output/evidence/input/.agents/skills/qore-ux-review-qaizen-labs/references/project-profile.md",
+          "frozen_source": "prepared/worker/.agents/skills/qore-ux-review-qaizen-labs/references/project-profile.md",
+          "sha256": "154ed11dab8e8499e74a5f3a6afb512827d5de5c73408523b845684e38f59dfc",
+          "matches_private_and_public_prepared_bytes": true,
+          "absent_from_original_output": true,
+          "outer_kind": "presentation"
+        },
+        {
+          "path": "final-output/evidence/input/.agents/skills/qore-ux-review-qaizen-labs/references/project.json",
+          "frozen_source": "prepared/worker/.agents/skills/qore-ux-review-qaizen-labs/references/project.json",
+          "sha256": "f76afdd45cb6352e5044a06affc4182ea6cd40aa9c012fb216636a61faa428f0",
+          "matches_private_and_public_prepared_bytes": true,
+          "absent_from_original_output": true,
+          "outer_kind": "presentation"
+        },
+        {
+          "path": "final-output/evidence/input/.agents/skills/qore-ux-review-qaizen-labs/references/protocol.md",
+          "frozen_source": "prepared/worker/.agents/skills/qore-ux-review-qaizen-labs/references/protocol.md",
+          "sha256": "eda7c7c7c9e711e4b9fca59ec6b622d713c3d95b14cd6e3b008a978ebf156004",
+          "matches_private_and_public_prepared_bytes": true,
+          "absent_from_original_output": true,
+          "outer_kind": "presentation"
+        },
+        {
+          "path": "final-output/evidence/input/.agents/skills/qore-ux-review-qaizen-labs/references/release.json",
+          "frozen_source": "prepared/worker/.agents/skills/qore-ux-review-qaizen-labs/references/release.json",
+          "sha256": "26a8aebdfb48c3c011713e02f53ae8f650179f0f24e7d58a9737b4897126602b",
+          "matches_private_and_public_prepared_bytes": true,
+          "absent_from_original_output": true,
+          "outer_kind": "presentation"
+        },
+        {
+          "path": "final-output/evidence/input/.agents/skills/qore-ux-review-qaizen-labs/references/run-evidence.md",
+          "frozen_source": "prepared/worker/.agents/skills/qore-ux-review-qaizen-labs/references/run-evidence.md",
+          "sha256": "2ede0b19d58fd5535c90023068355679ee7bb27d3070967ada38f9ad156a9e69",
+          "matches_private_and_public_prepared_bytes": true,
+          "absent_from_original_output": true,
+          "outer_kind": "presentation"
+        },
+        {
+          "path": "final-output/evidence/input/.agents/skills/qore-ux-review-qaizen-labs/scripts/depth-lint.mjs",
+          "frozen_source": "prepared/worker/.agents/skills/qore-ux-review-qaizen-labs/scripts/depth-lint.mjs",
+          "sha256": "fd7be484c8e4bf3ba376bdddb88663b31ae9da4c2c7678232ea7a6cc7782bd0f",
+          "matches_private_and_public_prepared_bytes": true,
+          "absent_from_original_output": true,
+          "outer_kind": "presentation"
+        },
+        {
+          "path": "final-output/evidence/input/.agents/skills/qore-ux-review-qaizen-labs/scripts/project-check.py",
+          "frozen_source": "prepared/worker/.agents/skills/qore-ux-review-qaizen-labs/scripts/project-check.py",
+          "sha256": "d87afa433fe485bdebca3e281d06e0896e4a8980ea7cf7baee739053614ea0ac",
+          "matches_private_and_public_prepared_bytes": true,
+          "absent_from_original_output": true,
+          "outer_kind": "presentation"
+        },
+        {
+          "path": "final-output/evidence/input/.agents/skills/qore-ux-review-qaizen-labs/scripts/run-check.py",
+          "frozen_source": "prepared/worker/.agents/skills/qore-ux-review-qaizen-labs/scripts/run-check.py",
+          "sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+          "matches_private_and_public_prepared_bytes": true,
+          "absent_from_original_output": true,
+          "outer_kind": "presentation"
+        },
+        {
+          "path": "final-output/evidence/input/.agents/skills/qore-ux-review-qaizen-labs/scripts/stop-rule.mjs",
+          "frozen_source": "prepared/worker/.agents/skills/qore-ux-review-qaizen-labs/scripts/stop-rule.mjs",
+          "sha256": "5c8d898e3accd82ed1932c791ff5ed1285aae659bae6757488158fc7a8120443",
+          "matches_private_and_public_prepared_bytes": true,
+          "absent_from_original_output": true,
+          "outer_kind": "presentation"
+        }
+      ],
+      "companion_count": 12,
+      "original_output_file_count": 111,
+      "public_original_file_mismatches": [],
+      "raw_tar_file_count": 111,
+      "raw_tar_mismatches": [],
+      "native_qore_run_unchanged": true,
+      "native_qore_run_sha256": "8901f963b56b1ec66611fc777014a1ae04fd2040cee0da1c1a18ae212dcacdc1",
+      "outer_check": {
+        "valid": true,
+        "id": "qore003-20261017-u2-derived-1",
+        "scenario_id": "U2",
+        "condition": "derived",
+        "coverage": "PARTIAL",
+        "declared_coverage": "PARTIAL",
+        "qualification_supplied": true,
+        "comparability": "UNVERIFIED",
+        "changed_inputs": [],
+        "limit": "Identity and entered evidence checked; assessor independence, reasoning, isolation and causal benefit are not certified by metadata."
+      },
+      "export_manifest_kind": [
+        "presentation"
+      ],
+      "disclosure": "Export-only closure of partial source copies archived by the original worker. Every added file is byte-identical to that trial prepared input. No original worker file or native qore-run record changed; these additions are not proof the worker read them. Original model output inventory remains authoritative for execution evidence."
+    },
+    "U2-generic": {
+      "resources": [
+        {
+          "path": "final-output/evidence/source/.agents/skills/qore-ux-review/agents/openai.yaml",
+          "frozen_source": "prepared/worker/.agents/skills/qore-ux-review/agents/openai.yaml",
+          "sha256": "2bafca3b7edce2edac4814b4028fdb814f83c1c2efbea4d461b7469fbe1bd7af",
+          "matches_private_and_public_prepared_bytes": true,
+          "absent_from_original_output": true,
+          "outer_kind": "presentation"
+        },
+        {
+          "path": "final-output/evidence/source/.agents/skills/qore-ux-review/references/project-profile.md",
+          "frozen_source": "prepared/worker/.agents/skills/qore-ux-review/references/project-profile.md",
+          "sha256": "154ed11dab8e8499e74a5f3a6afb512827d5de5c73408523b845684e38f59dfc",
+          "matches_private_and_public_prepared_bytes": true,
+          "absent_from_original_output": true,
+          "outer_kind": "presentation"
+        },
+        {
+          "path": "final-output/evidence/source/.agents/skills/qore-ux-review/references/release.json",
+          "frozen_source": "prepared/worker/.agents/skills/qore-ux-review/references/release.json",
+          "sha256": "61a9f43551f486340fbb2807c3b38c82fe6872b67907c0e6a19d4903cc85ea3e",
+          "matches_private_and_public_prepared_bytes": true,
+          "absent_from_original_output": true,
+          "outer_kind": "presentation"
+        },
+        {
+          "path": "final-output/evidence/source/.agents/skills/qore-ux-review/scripts/depth-lint.mjs",
+          "frozen_source": "prepared/worker/.agents/skills/qore-ux-review/scripts/depth-lint.mjs",
+          "sha256": "fd7be484c8e4bf3ba376bdddb88663b31ae9da4c2c7678232ea7a6cc7782bd0f",
+          "matches_private_and_public_prepared_bytes": true,
+          "absent_from_original_output": true,
+          "outer_kind": "presentation"
+        },
+        {
+          "path": "final-output/evidence/source/.agents/skills/qore-ux-review/scripts/project-check.py",
+          "frozen_source": "prepared/worker/.agents/skills/qore-ux-review/scripts/project-check.py",
+          "sha256": "d87afa433fe485bdebca3e281d06e0896e4a8980ea7cf7baee739053614ea0ac",
+          "matches_private_and_public_prepared_bytes": true,
+          "absent_from_original_output": true,
+          "outer_kind": "presentation"
+        },
+        {
+          "path": "final-output/evidence/source/.agents/skills/qore-ux-review/scripts/run-check.py",
+          "frozen_source": "prepared/worker/.agents/skills/qore-ux-review/scripts/run-check.py",
+          "sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+          "matches_private_and_public_prepared_bytes": true,
+          "absent_from_original_output": true,
+          "outer_kind": "presentation"
+        },
+        {
+          "path": "final-output/evidence/source/.agents/skills/qore-ux-review/scripts/stop-rule.mjs",
+          "frozen_source": "prepared/worker/.agents/skills/qore-ux-review/scripts/stop-rule.mjs",
+          "sha256": "5c8d898e3accd82ed1932c791ff5ed1285aae659bae6757488158fc7a8120443",
+          "matches_private_and_public_prepared_bytes": true,
+          "absent_from_original_output": true,
+          "outer_kind": "presentation"
+        }
+      ],
+      "companion_count": 7,
+      "original_output_file_count": 117,
+      "public_original_file_mismatches": [],
+      "raw_tar_file_count": 117,
+      "raw_tar_mismatches": [],
+      "native_qore_run_unchanged": true,
+      "native_qore_run_sha256": "f196c89715135491f2dd6a3769442dfd4084f66f9ad4cd73056dc289fc1c713d",
+      "outer_check": {
+        "valid": true,
+        "id": "qore003-20261017-u2-generic-1",
+        "scenario_id": "U2",
+        "condition": "generic",
+        "coverage": "PARTIAL",
+        "declared_coverage": "COMPLETE",
+        "qualification_supplied": true,
+        "comparability": "UNVERIFIED",
+        "changed_inputs": [],
+        "limit": "Identity and entered evidence checked; assessor independence, reasoning, isolation and causal benefit are not certified by metadata."
+      },
+      "export_manifest_kind": [
+        "presentation"
+      ],
+      "disclosure": "Export-only closure of partial source copies archived by the original worker. Every added file is byte-identical to that trial prepared input. No original worker file or native qore-run record changed; these additions are not proof the worker read them. Original model output inventory remains authoritative for execution evidence."
+    }
+  },
+  "status": "VERIFIED",
+  "end_utc": "2026-10-17T12:26:39.389719+00:00",
+  "active_wall_seconds": 47.39,
+  "intentional_idle_seconds": 0,
+  "cap_seconds": 60,
+  "total_companions": 19,
+  "protected_files_unchanged": {
+    "qualification-decisions.json": true,
+    "verification-final/REPORT.md": true
+  }
+}

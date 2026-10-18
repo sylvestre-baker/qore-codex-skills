@@ -1,0 +1,66 @@
+[
+  {
+    "path": ".agents/skills/qore-review/SKILL.md",
+    "sha256": "ae7a3bc448eda7262fa8163a67b0ce712efc2779eaaf00ce57618dc966dd6367"
+  },
+  {
+    "path": ".agents/skills/qore-review/agents/openai.yaml",
+    "sha256": "6c689fd93445ab3edcb6b88320e7680ee37c746bca5635e8c406304b081250ed"
+  },
+  {
+    "path": ".agents/skills/qore-review/references/findings.md",
+    "sha256": "f9f9035e471c9832c6546e80e4fe857777fefceba781bd5801ee8f97bdeaa409"
+  },
+  {
+    "path": ".agents/skills/qore-review/references/project-profile.md",
+    "sha256": "5d3b69aac18f83a634f4c57c214cc1f53fa186c03c536adcefd4c905a8767c8d"
+  },
+  {
+    "path": ".agents/skills/qore-review/references/protocol.md",
+    "sha256": "e27e0050fdf4d75d2840dd257b9a759f1f48d459ef540990cd3aed5528c5f340"
+  },
+  {
+    "path": ".agents/skills/qore-review/references/release.json",
+    "sha256": "ea208126d9987aa696258167c08654a7abdf2ead6a83718e8e14be210c37af58"
+  },
+  {
+    "path": ".agents/skills/qore-review/references/run-evidence.md",
+    "sha256": "fbdf433ef8b3e972f97bed5fdec4990cf3b49535bf63120c729a7daf4af71746"
+  },
+  {
+    "path": ".agents/skills/qore-review/scripts/finding-lint.mjs",
+    "sha256": "d3d22ae7d0b1b6b53b36006f13a8aaf6e1aa9e89df27b98312e6ac72ea079a26"
+  },
+  {
+    "path": ".agents/skills/qore-review/scripts/project-check.py",
+    "sha256": "d87afa433fe485bdebca3e281d06e0896e4a8980ea7cf7baee739053614ea0ac"
+  },
+  {
+    "path": ".agents/skills/qore-review/scripts/redact-for-verifier.mjs",
+    "sha256": "dc249524c749ad5b511aef0a2cf08b4cfd5c47c1e0de4fd41c5c70746b471083"
+  },
+  {
+    "path": ".agents/skills/qore-review/scripts/run-check.py",
+    "sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa"
+  },
+  {
+    "path": "TASK.md",
+    "sha256": "14529cc0572da58ddcb7f3a8e0e1e83a605496b8ee29a27d2bf6cade91531702"
+  },
+  {
+    "path": "checks/check_contract.py",
+    "sha256": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b"
+  },
+  {
+    "path": "observation-policy.json",
+    "sha256": "15f4e5b4960b5011684be265f027e42b8637a3b8aae96b24bba1ba3a4d0f0202"
+  },
+  {
+    "path": "surface-contract.json",
+    "sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3"
+  },
+  {
+    "path": "target/verification-protocol.md",
+    "sha256": "b8d1f4ad7bd691dbf8f019cd3b87a7644a21899e6317edebac545fd3b245136e"
+  }
+]

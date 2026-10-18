@@ -1,0 +1,618 @@
+{
+  "schema": "qore-run/1",
+  "id": "qore003-20261017-u1-generic-1",
+  "method": "ux",
+  "skill": "qore-ux-review",
+  "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+  "target": {
+    "label": "Entire frozen prepared-input manifest; declared public Back journey https://qaizen.io/labs -> readiness-check",
+    "snapshot_sha256": "ca02b75180a201ba8f9abb4e095a3d72cd0066f939e66c2e34bc7a781ad0c34d"
+  },
+  "last_relevant_change": "2026-10-17T09:53:58.681100+00:00",
+  "environment": {
+    "id": "qore-qualification-qore003-20261017-u1-generic-1",
+    "operator": "agent",
+    "host": "Docker Desktop Linux arm64 / Codex0.162.0"
+  },
+  "profile": null,
+  "scope": {
+    "depth": "entry",
+    "supplemental_depth": "state",
+    "state_transition_applicable": true,
+    "declaration": "scope-plan.json"
+  },
+  "required_phases": [
+    "scope",
+    "browser",
+    "state_transition",
+    "freshness",
+    "verdict"
+  ],
+  "phases": [
+    {
+      "id": "scope",
+      "actor_id": "/root",
+      "status": "PASS",
+      "artifacts": [
+        "scope-phase.json"
+      ]
+    },
+    {
+      "id": "browser",
+      "actor_id": "/root",
+      "status": "PASS",
+      "artifacts": [
+        "browser-phase.json"
+      ]
+    },
+    {
+      "id": "state_transition",
+      "actor_id": "/root",
+      "status": "PASS",
+      "artifacts": [
+        "state_transition-phase.json"
+      ]
+    },
+    {
+      "id": "freshness",
+      "actor_id": "/root",
+      "status": "PASS",
+      "artifacts": [
+        "freshness-phase.json"
+      ]
+    },
+    {
+      "id": "verdict",
+      "actor_id": "/root",
+      "status": "PASS",
+      "artifacts": [
+        "verdict-phase.json"
+      ]
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "REPORT.md",
+      "sha256": "fdafba9796ac7bdf77d1719ab499540298bf758bf58e505f9851afa40969bd2b",
+      "kind": "presentation"
+    },
+    {
+      "path": "browser-phase.json",
+      "sha256": "867af3c45dfd0c0c6e840a95386323f01f75b8c062d9511f74be881707682000",
+      "kind": "execution",
+      "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+      "target_snapshot_sha256": "ca02b75180a201ba8f9abb4e095a3d72cd0066f939e66c2e34bc7a781ad0c34d",
+      "observed_at": "2026-10-17T11:11:48.805252+00:00"
+    },
+    {
+      "path": "browser-request-1.json",
+      "sha256": "d2d45dc81331345404c2ec8f97eb472faa04b099faea723f3159fdb1f64dbd13",
+      "kind": "source"
+    },
+    {
+      "path": "browser-request-2.json",
+      "sha256": "a7452f8aa9c9bbdd8f796f534090aa5c461736e7adef6dfa560ceaaff6b62e36",
+      "kind": "source"
+    },
+    {
+      "path": "browser-request-3.json",
+      "sha256": "468218470e7b9f6562a7cc91a56d8b2e60c97f5589907d1d92c49210a4f8fad7",
+      "kind": "source"
+    },
+    {
+      "path": "budget-record.json",
+      "sha256": "ca5e5e12d5fc73f3adef7fe26a137d22d737f51622d06d1bed12bf3b8e187046",
+      "kind": "source"
+    },
+    {
+      "path": "capability-matrix.json",
+      "sha256": "e8c228eec968826ade25521db5da85c575d1b80e89f7a6c3c4b622c01bffc5f7",
+      "kind": "source"
+    },
+    {
+      "path": "command-records.json",
+      "sha256": "adb6260cc6f6025f3abba42a8d081af5e1bb2d39d2098979f8017202dece5e95",
+      "kind": "source"
+    },
+    {
+      "path": "contract-check.json",
+      "sha256": "69afc941aa72b91d1deabd32cf15a067021645e9657b644fcca40fe270145e3d",
+      "kind": "source"
+    },
+    {
+      "path": "depth-lint.json",
+      "sha256": "27c42e4079a8744d8acc908be09dbd5775dd252d63bb20f24e2ccf299e4cb452",
+      "kind": "source"
+    },
+    {
+      "path": "depth.json",
+      "sha256": "1ffdf6255af1dc5a23b867dc24d4256bf97e12a4e83781273ff37cadcbf64aba",
+      "kind": "source"
+    },
+    {
+      "path": "discovery-failure.json",
+      "sha256": "eac5afaba13b7f60330d60c969eb7c4a6040ad113c1c0b58473e181aef085a65",
+      "kind": "source"
+    },
+    {
+      "path": "finalize.py",
+      "sha256": "5f710f2c14a00c9686fd806c444021ac90ef3f8cb617468f83d0c061e0b8ec61",
+      "kind": "source"
+    },
+    {
+      "path": "freshness-phase.json",
+      "sha256": "19d8a57a0ed37ef80a7b8e3a1d2f83cbb50680e8ea6406edf8688af7e56c965b",
+      "kind": "execution",
+      "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+      "target_snapshot_sha256": "ca02b75180a201ba8f9abb4e095a3d72cd0066f939e66c2e34bc7a781ad0c34d",
+      "observed_at": "2026-10-17T11:11:48.842837+00:00"
+    },
+    {
+      "path": "gate-results.json",
+      "sha256": "0515cefda22422036d57c70823cd8dda66535732ec25ef5707aa21c3d8d6fa94",
+      "kind": "source"
+    },
+    {
+      "path": "immutability-check.json",
+      "sha256": "14d754cc3023774815c097ea70e70b001d7cdd8dad1afb3e24b68f354b4a6e31",
+      "kind": "source"
+    },
+    {
+      "path": "input-manifest.json",
+      "sha256": "90a1077974377c199642143608dcdb6945431b8af4253bc07de9e5a227275732",
+      "kind": "source"
+    },
+    {
+      "path": "inspection-1.json",
+      "sha256": "72a7ae85cf40be578eb4e8db3d7dc2b36bf3e121c4806cea4c5921c495dfb83c",
+      "kind": "source"
+    },
+    {
+      "path": "inspection-2.json",
+      "sha256": "c91d2da2c6de003fa7a9fb57bd2ef1880059a493e3f1fd0bf7ff4c2335322096",
+      "kind": "source"
+    },
+    {
+      "path": "inspection-3.json",
+      "sha256": "54e5a4bf8417c889fb91a6c7a200d15438633d77fbc66315b2e37e7a5ef09ba4",
+      "kind": "source"
+    },
+    {
+      "path": "limitations.json",
+      "sha256": "432eebb82000facc3318435b1544d7899f50b91d71f68570096122cd89863716",
+      "kind": "source"
+    },
+    {
+      "path": "loop.json",
+      "sha256": "d2b84ba7a92cb5f118184bbad0c75fb758e34258210f52e3914b90a1c3729ca6",
+      "kind": "source"
+    },
+    {
+      "path": "policy-evidence.json",
+      "sha256": "8ab8814fa129a9459e097592ef52fb1d7a35da41a3599bda419ba854f54df965",
+      "kind": "source"
+    },
+    {
+      "path": "relay-1/00-entry.dom.json",
+      "sha256": "09a05d31c16faaf8980d863723e3f901798ef49b4cac43ea54aec912de99112d",
+      "kind": "source"
+    },
+    {
+      "path": "relay-1/00-entry.png",
+      "sha256": "095283e6a92818f6baf91a977793ff14591a91a60cef7b82ea9019642c2251e2",
+      "kind": "source"
+    },
+    {
+      "path": "relay-1/01-labs-entry.dom.json",
+      "sha256": "2e72d94aeb80a87a73191e51ac1edd98ea33a03d36fe37719b667b5f754ac9e2",
+      "kind": "source"
+    },
+    {
+      "path": "relay-1/01-labs-entry.png",
+      "sha256": "041319a5d5542b9a5ddae0bd2c782d018a031320b7ef69be076a71a99c470b8a",
+      "kind": "source"
+    },
+    {
+      "path": "relay-1/02-introduction.dom.json",
+      "sha256": "524b0152744d052e6bb253eaeda4ff35b7bc69b132546fc509c7edd1958c13a1",
+      "kind": "source"
+    },
+    {
+      "path": "relay-1/02-introduction.png",
+      "sha256": "8c12568cc767e1d111812033ddd4823fc5ffcaf12d6561cb61b74ffa210a4bc8",
+      "kind": "source"
+    },
+    {
+      "path": "relay-1/03-first-question-unanswered.dom.json",
+      "sha256": "d914c65d93824bf0ad2af509c711239181aeace21ca36164765ced95fe000fba",
+      "kind": "source"
+    },
+    {
+      "path": "relay-1/03-first-question-unanswered.png",
+      "sha256": "6d439ba30a14c5b52a343d6821056842fb2a60b15bcd5d7437b9b4088a685938",
+      "kind": "source"
+    },
+    {
+      "path": "relay-1/04-final.dom.json",
+      "sha256": "d914c65d93824bf0ad2af509c711239181aeace21ca36164765ced95fe000fba",
+      "kind": "source"
+    },
+    {
+      "path": "relay-1/04-final.png",
+      "sha256": "4e9a3b37fca4b08a7cd5123cae0c30d5a65225ec092b00091699bad327691393",
+      "kind": "source"
+    },
+    {
+      "path": "relay-1/events.json",
+      "sha256": "c2dff768ec10804452c3222d25a88057dd3ddd2c9839ad6660994d4095836301",
+      "kind": "source"
+    },
+    {
+      "path": "relay-1/relay.json",
+      "sha256": "7203dad3516dde9b6406449a67ca77ef049479c8f3e392da063e82d3c5a53ba1",
+      "kind": "source"
+    },
+    {
+      "path": "relay-1/result.json",
+      "sha256": "6d1a8ae8164da72963591b3823c04bf33b1f47ee64eb60ed093a51d2d3943961",
+      "kind": "source"
+    },
+    {
+      "path": "relay-2/00-entry.dom.json",
+      "sha256": "09a05d31c16faaf8980d863723e3f901798ef49b4cac43ea54aec912de99112d",
+      "kind": "source"
+    },
+    {
+      "path": "relay-2/00-entry.png",
+      "sha256": "484c55e66c4e31ca320607543e4ad4b28e877409b4f861352c1ef9af0f013137",
+      "kind": "source"
+    },
+    {
+      "path": "relay-2/01-help-summary-focus.dom.json",
+      "sha256": "076f396281cfb2f2e10bd7059a532f1182e9e42966166617cfea9badfd2c439f",
+      "kind": "source"
+    },
+    {
+      "path": "relay-2/01-help-summary-focus.png",
+      "sha256": "154537c2923ff969a06afd9a5d39ba885d067ce6190af63b29e9daef57fc1977",
+      "kind": "source"
+    },
+    {
+      "path": "relay-2/02-help-open-enter.dom.json",
+      "sha256": "4b9b0bf3e78667d19a134f9156a0d80080297bd8ab7a6a122e64eff2c6f4510d",
+      "kind": "source"
+    },
+    {
+      "path": "relay-2/02-help-open-enter.png",
+      "sha256": "3a56491c56bc3abd5103cc8844547c55fdaca4437b08b2924f293e2f4c143242",
+      "kind": "source"
+    },
+    {
+      "path": "relay-2/03-help-closed-space.dom.json",
+      "sha256": "076f396281cfb2f2e10bd7059a532f1182e9e42966166617cfea9badfd2c439f",
+      "kind": "source"
+    },
+    {
+      "path": "relay-2/03-help-closed-space.png",
+      "sha256": "ae1d461d10359d6639b8cea3241d58d08951ea067ae8740e84959862d9a4414e",
+      "kind": "source"
+    },
+    {
+      "path": "relay-2/04-close-focus-before-activation.dom.json",
+      "sha256": "baa708ae3cbe364b3a84d89f0c0106c0336e24d34e5e78bc05815cab695d3ac8",
+      "kind": "source"
+    },
+    {
+      "path": "relay-2/04-close-focus-before-activation.png",
+      "sha256": "19e2db3f2d7813c675b52c8ae0dbc548eb2e0d8e7c2b55e8cb7b2e649bc50ceb",
+      "kind": "source"
+    },
+    {
+      "path": "relay-2/05-after-close-focus-restoration.dom.json",
+      "sha256": "076f396281cfb2f2e10bd7059a532f1182e9e42966166617cfea9badfd2c439f",
+      "kind": "source"
+    },
+    {
+      "path": "relay-2/05-after-close-focus-restoration.png",
+      "sha256": "154537c2923ff969a06afd9a5d39ba885d067ce6190af63b29e9daef57fc1977",
+      "kind": "source"
+    },
+    {
+      "path": "relay-2/06-back-focus-before-activation.dom.json",
+      "sha256": "495b50eac16f5a7872812186e9c3c02cac07f2a883bb9da673b62c4b576e9480",
+      "kind": "source"
+    },
+    {
+      "path": "relay-2/06-back-focus-before-activation.png",
+      "sha256": "57673acee0c4875835c892ce68bfe1efd2182ec2cbb4c6904ecaad0f4004aa31",
+      "kind": "source"
+    },
+    {
+      "path": "relay-2/07-returned-introduction.dom.json",
+      "sha256": "6dd0bd08efd546fdbbcd0dff658a6b903f90f9d8ec7a12c9d8946c956ddeb37b",
+      "kind": "source"
+    },
+    {
+      "path": "relay-2/07-returned-introduction.png",
+      "sha256": "01b5a2bbf6947a76673ac13bacc27f8bf31f8fa4ca2cd30dbe8e62dcd864f822",
+      "kind": "source"
+    },
+    {
+      "path": "relay-2/08-final.dom.json",
+      "sha256": "6dd0bd08efd546fdbbcd0dff658a6b903f90f9d8ec7a12c9d8946c956ddeb37b",
+      "kind": "source"
+    },
+    {
+      "path": "relay-2/08-final.png",
+      "sha256": "87473a933533895cf780dd9d517969cda71d5a8afdb74b99a57e97434cd8a824",
+      "kind": "source"
+    },
+    {
+      "path": "relay-2/events.json",
+      "sha256": "104fa85e8db7a62356ae94b0845502eb3ff54be2c7143b4bb2ff6d5b875f518b",
+      "kind": "source"
+    },
+    {
+      "path": "relay-2/relay.json",
+      "sha256": "830fc70ff4b79b79a3177c2b0e9b9f9d05806f1bf9a48836350cbba2e52f7219",
+      "kind": "source"
+    },
+    {
+      "path": "relay-2/result.json",
+      "sha256": "331615585a8bfeddec9d724c106ae3947c21d9151493a8c0497c50a2051bbba1",
+      "kind": "source"
+    },
+    {
+      "path": "relay-3/00-entry.dom.json",
+      "sha256": "09a05d31c16faaf8980d863723e3f901798ef49b4cac43ea54aec912de99112d",
+      "kind": "source"
+    },
+    {
+      "path": "relay-3/00-entry.png",
+      "sha256": "484c55e66c4e31ca320607543e4ad4b28e877409b4f861352c1ef9af0f013137",
+      "kind": "source"
+    },
+    {
+      "path": "relay-3/01-deep-route-reloaded-introduction.dom.json",
+      "sha256": "524b0152744d052e6bb253eaeda4ff35b7bc69b132546fc509c7edd1958c13a1",
+      "kind": "source"
+    },
+    {
+      "path": "relay-3/01-deep-route-reloaded-introduction.png",
+      "sha256": "8c12568cc767e1d111812033ddd4823fc5ffcaf12d6561cb61b74ffa210a4bc8",
+      "kind": "source"
+    },
+    {
+      "path": "relay-3/02-history-back-labs.dom.json",
+      "sha256": "09a05d31c16faaf8980d863723e3f901798ef49b4cac43ea54aec912de99112d",
+      "kind": "source"
+    },
+    {
+      "path": "relay-3/02-history-back-labs.png",
+      "sha256": "095283e6a92818f6baf91a977793ff14591a91a60cef7b82ea9019642c2251e2",
+      "kind": "source"
+    },
+    {
+      "path": "relay-3/03-history-forward-introduction.dom.json",
+      "sha256": "524b0152744d052e6bb253eaeda4ff35b7bc69b132546fc509c7edd1958c13a1",
+      "kind": "source"
+    },
+    {
+      "path": "relay-3/03-history-forward-introduction.png",
+      "sha256": "70dbd413a19e36568b831e887cdeb70ed1ddebcd60b6ba2466418dec8c82c975",
+      "kind": "source"
+    },
+    {
+      "path": "relay-3/04-back-focus-challenge.dom.json",
+      "sha256": "495b50eac16f5a7872812186e9c3c02cac07f2a883bb9da673b62c4b576e9480",
+      "kind": "source"
+    },
+    {
+      "path": "relay-3/04-back-focus-challenge.png",
+      "sha256": "57673acee0c4875835c892ce68bfe1efd2182ec2cbb4c6904ecaad0f4004aa31",
+      "kind": "source"
+    },
+    {
+      "path": "relay-3/05-summary-reverse-tab.dom.json",
+      "sha256": "076f396281cfb2f2e10bd7059a532f1182e9e42966166617cfea9badfd2c439f",
+      "kind": "source"
+    },
+    {
+      "path": "relay-3/05-summary-reverse-tab.png",
+      "sha256": "90a40fe641a1eff7651756586a3b073b55da7cef825ba998125ef3aea3dfd89e",
+      "kind": "source"
+    },
+    {
+      "path": "relay-3/06-back-focus-repeat-tab.dom.json",
+      "sha256": "495b50eac16f5a7872812186e9c3c02cac07f2a883bb9da673b62c4b576e9480",
+      "kind": "source"
+    },
+    {
+      "path": "relay-3/06-back-focus-repeat-tab.png",
+      "sha256": "57673acee0c4875835c892ce68bfe1efd2182ec2cbb4c6904ecaad0f4004aa31",
+      "kind": "source"
+    },
+    {
+      "path": "relay-3/07-challenge-returned-introduction.dom.json",
+      "sha256": "6dd0bd08efd546fdbbcd0dff658a6b903f90f9d8ec7a12c9d8946c956ddeb37b",
+      "kind": "source"
+    },
+    {
+      "path": "relay-3/07-challenge-returned-introduction.png",
+      "sha256": "4cf01741cddbdd55bd0c9d4c0e4ab0b3ead5be51a227e3c445a836081583e2ba",
+      "kind": "source"
+    },
+    {
+      "path": "relay-3/08-final.dom.json",
+      "sha256": "6dd0bd08efd546fdbbcd0dff658a6b903f90f9d8ec7a12c9d8946c956ddeb37b",
+      "kind": "source"
+    },
+    {
+      "path": "relay-3/08-final.png",
+      "sha256": "87473a933533895cf780dd9d517969cda71d5a8afdb74b99a57e97434cd8a824",
+      "kind": "source"
+    },
+    {
+      "path": "relay-3/events.json",
+      "sha256": "3661c0dfc24f3f1c3a6b9b88de86646feee91e63e9642770359aa39f30cf1eb2",
+      "kind": "source"
+    },
+    {
+      "path": "relay-3/relay.json",
+      "sha256": "c9f0aab065e452ca9621964f003084696ae33dc80c96ac8d35de43fc1bc8e73c",
+      "kind": "source"
+    },
+    {
+      "path": "relay-3/result.json",
+      "sha256": "8e28de5f587cd19eb30f6d6063a27e987684c92e953043d1f5c18597067dfbad",
+      "kind": "source"
+    },
+    {
+      "path": "request-log.json",
+      "sha256": "0717f132601078c1bfdd29781972868a904118da1e0f4ad87fddade0c0aab164",
+      "kind": "source"
+    },
+    {
+      "path": "required-check-results.json",
+      "sha256": "42f7c417d9d2099706d09bf0d681267938a8fc3a42e5d39e9571bac555cc2dc3",
+      "kind": "source"
+    },
+    {
+      "path": "roster.json",
+      "sha256": "3298048c4d3c448603355eb0a282f47a3b05e075adb377c141a7767a07a674e5",
+      "kind": "source"
+    },
+    {
+      "path": "run-check-initial.json",
+      "sha256": "acb80c31917b8e145cd64b65e7012564dd939d0891cae447971dab839450a1ec",
+      "kind": "source"
+    },
+    {
+      "path": "scope-phase.json",
+      "sha256": "05137cbbdbb6919a02ac8764b352efeabde1e2ec406f7640808344ab99c1f996",
+      "kind": "execution",
+      "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+      "target_snapshot_sha256": "ca02b75180a201ba8f9abb4e095a3d72cd0066f939e66c2e34bc7a781ad0c34d",
+      "observed_at": "2026-10-17T11:07:11+00:00"
+    },
+    {
+      "path": "scope-plan.json",
+      "sha256": "6efb4c8870b818ebae5561412c89c4608a8674ae78b8af4baccfe410e3203e42",
+      "kind": "source"
+    },
+    {
+      "path": "state_transition-phase.json",
+      "sha256": "1330c70dfa8a7f544f4f337e2f84f7747b02e51e3253b90e16d9e8210ba7ffcc",
+      "kind": "execution",
+      "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+      "target_snapshot_sha256": "ca02b75180a201ba8f9abb4e095a3d72cd0066f939e66c2e34bc7a781ad0c34d",
+      "observed_at": "2026-10-17T11:11:48.813752+00:00"
+    },
+    {
+      "path": "stop-rule-1.json",
+      "sha256": "450f92e1be8153b91115fc8e649d1008195080eaad1f4be83aef8c913d6df8cb",
+      "kind": "source"
+    },
+    {
+      "path": "stop-rule-2.json",
+      "sha256": "49483771e3277a53498aa15d60341ad65ab101b28cd017ae8156ccbcb3ff4555",
+      "kind": "source"
+    },
+    {
+      "path": "verdict-phase.json",
+      "sha256": "5344e470c6ad8e88c6fd14df02ba4f4ae0fdcc2b4772eaef7cc3194263778427",
+      "kind": "execution",
+      "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+      "target_snapshot_sha256": "ca02b75180a201ba8f9abb4e095a3d72cd0066f939e66c2e34bc7a781ad0c34d",
+      "observed_at": "2026-10-17T11:11:48.842958+00:00"
+    },
+    {
+      "path": "write-canary",
+      "sha256": "2d711642b726b04401627ca9fbac32f5c8530fb1903cc4db02258717921a4881",
+      "kind": "source"
+    }
+  ],
+  "commands": [
+    {
+      "argv": [
+        "sh",
+        "-c",
+        "pwd && rg --files -g 'TASK.md' -g 'AGENTS.md' -g '*SKILL*' -g '*qore*' -g '!node_modules' . /workspace/output"
+      ],
+      "exit_code": 127,
+      "artifact": "discovery-failure.json"
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "/workspace/worker/checks/check_contract.py",
+        "/workspace/worker/surface-contract.json"
+      ],
+      "exit_code": 0,
+      "artifact": "contract-check.json"
+    },
+    {
+      "argv": [
+        "node",
+        "/workspace/worker/.agents/skills/qore-ux-review/scripts/depth-lint.mjs",
+        "/workspace/output/depth.json"
+      ],
+      "exit_code": 0,
+      "artifact": "depth-lint.json"
+    },
+    {
+      "argv": [
+        "node",
+        "/workspace/worker/.agents/skills/qore-ux-review/scripts/stop-rule.mjs",
+        "/workspace/output/loop.json"
+      ],
+      "exit_code": 0,
+      "artifact": "stop-rule-1.json"
+    },
+    {
+      "argv": [
+        "node",
+        "/workspace/worker/.agents/skills/qore-ux-review/scripts/stop-rule.mjs",
+        "/workspace/output/loop.json"
+      ],
+      "exit_code": 0,
+      "artifact": "stop-rule-2.json"
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "/workspace/worker/.agents/skills/qore-ux-review/scripts/run-check.py",
+        "/workspace/output/execution.json",
+        "--evidence-root",
+        "/workspace/output"
+      ],
+      "exit_code": 0,
+      "artifact": "run-check-initial.json"
+    }
+  ],
+  "limitations": [
+    "Only anonymous public en-US desktop default theme at CSS1280x800/DPR1; no mobile, other themes, accounts, full questionnaire, answer selection, results or submission.",
+    "No performance, screen-reader, automated accessibility audit or measured contrast certification. No risky contrast failure established from inspected colors.",
+    "Relay screenshots are full-page captures with fixed/sticky overlays at capture scroll; no separately supplied viewport-only screenshots, geometry evaluation or contrast sampler. Overlap finding is limited to reproducible captured rendering.",
+    "Relay blocks non-GET/HEAD/OPTIONS, service workers and document redirects. Analytics POST expected blocked; behavior with analytics allowed and redirect behavior unqualified.",
+    "No arbitrary navigate action; deep-route server document behavior established by HTTP200 reload after real entry. Invalid URL permutations and arbitrary address-bar entry not separately tested.",
+    "Public deployment observed in UTC windows recorded in relay receipts. Frozen target digest names entire prepared-input manifest, not a deployed source revision; private commits do not establish deployed identity. Enclosing candidate/target digests accepted as supplied; per-file SHA256 retained, enclosing digest serialization not supplied for independent recomputation.",
+    "No application source available for implementation/root-cause inspection; suggested padding/scroll change is a proposal, not an applied or verified fix.",
+    "Trace/video paths are mentioned by driver but files were not returned in relay receipt; available raw DOM/PNG/events/results/receipts retained unmodified.",
+    "Only root actor /root used; UX method requires no independent agents. No independent human first-use or independent verifier claim. Agent-second/token usage telemetry unavailable through supplied tools; elapsed wall time recorded rather than fabricated zero usage.",
+    "Stop-rule suggests CONTINUE because defect remains; review-only protocol explicitly permits stopping with retained finding when fixes unauthorized. No seventh iteration, budget exhaustion, plateau, hidden-rubric comparison or quality retry."
+  ],
+  "coverage": "COMPLETE",
+  "observation_coverage": "COMPLETE",
+  "scoped_verdict": "DO-NOT-SHIP",
+  "roster": "roster.json",
+  "budget": "budget-record.json",
+  "skill_revision": {
+    "version": "0.2.1",
+    "manifest": "input-manifest.json",
+    "source_release": ".agents/skills/qore-ux-review/references/release.json"
+  },
+  "validation_note": "PASS phase denotes completed method work, including establishing defects. Structural validator does not certify factual conclusions."
+}

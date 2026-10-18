@@ -1,0 +1,85 @@
+{
+  "schema": "qore-release/1",
+  "version": "0.2.1",
+  "host": "codex",
+  "profile": {
+    "id": "qaizen-labs",
+    "version": "0.1.0",
+    "sha256": "f76afdd45cb6352e5044a06affc4182ea6cd40aa9c012fb216636a61faa428f0"
+  },
+  "redistribution": "MIT-first-party",
+  "resources": [
+    {
+      "path": "SKILL.md",
+      "sha256": "0a5eba8728408a38b4cf505018a2f55b576194db229b67e3ed5bc974579055b9",
+      "origin": "first-party",
+      "license": "MIT"
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha256": "feeb8fab45b8271d61b60ef6e9534161fe59bdd9b13489eb5ab13ad06dd4c90c",
+      "origin": "first-party",
+      "license": "MIT"
+    },
+    {
+      "path": "references/project-profile.md",
+      "sha256": "16c5ff087c83b7503b23d5d94726834462dd4fd73d78a5380cf85135fa85b0b3",
+      "origin": "first-party",
+      "license": "MIT"
+    },
+    {
+      "path": "references/project.json",
+      "sha256": "f76afdd45cb6352e5044a06affc4182ea6cd40aa9c012fb216636a61faa428f0",
+      "origin": "first-party",
+      "license": "MIT"
+    },
+    {
+      "path": "references/protocol.md",
+      "sha256": "83f92490a5601b83fc6eaa21861344e35cd04a3ac7edb56b98cd2eb0ecfea84b",
+      "origin": "first-party",
+      "license": "MIT"
+    },
+    {
+      "path": "references/roles.md",
+      "sha256": "cc8060c7c852c143b9671af4fc0176b9c5068f338c19b2556b6ff494c0f0d318",
+      "origin": "first-party",
+      "license": "MIT"
+    },
+    {
+      "path": "references/run-evidence.md",
+      "sha256": "35cd6dc6d3e1177bbae96e5b9e829ed1aa55901747c856f4db20e946421f163d",
+      "origin": "first-party",
+      "license": "MIT"
+    },
+    {
+      "path": "references/specification.md",
+      "sha256": "7eb06b91fca66a3ec00bda4b49b035c5e6bfe827c4624768f66a09b6ae7827a1",
+      "origin": "first-party",
+      "license": "MIT"
+    },
+    {
+      "path": "scripts/project-check.py",
+      "sha256": "d87afa433fe485bdebca3e281d06e0896e4a8980ea7cf7baee739053614ea0ac",
+      "origin": "first-party",
+      "license": "MIT"
+    },
+    {
+      "path": "scripts/run-check.py",
+      "sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+      "origin": "first-party",
+      "license": "MIT"
+    },
+    {
+      "path": "scripts/spec-lint.mjs",
+      "sha256": "321ac211bfac936c4da3ffe173cdfc0d92cb695351273d289809c05c8b037ada",
+      "origin": "first-party",
+      "license": "MIT"
+    },
+    {
+      "path": "scripts/spec-lint.sh",
+      "sha256": "ee4b0c491833f8f3960037255f7ea601548a353d18b317aae25d8e5f2cd461b6",
+      "origin": "first-party",
+      "license": "MIT"
+    }
+  ]
+}

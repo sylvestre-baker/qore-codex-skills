@@ -1,0 +1,6 @@
+{
+  "at": "2026-10-17T11:06:30.220177+00:00",
+  "exit_code": 0,
+  "stdout": "{\n  \"valid\": true,\n  \"id\": \"qore003-20261017-u1-baseline-1\",\n  \"scenario_id\": \"U1\",\n  \"condition\": \"baseline\",\n  \"coverage\": \"COMPLETE\",\n  \"comparability\": \"UNVERIFIED\",\n  \"changed_inputs\": [],\n  \"limit\": \"Identity and declared evidence checked; reasoning, isolation and causal benefit are not certified.\"\n}\n",
+  "stderr": ""
+}

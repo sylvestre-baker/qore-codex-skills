@@ -1,0 +1,48 @@
+{
+  "observed_at": "2026-10-17T11:31:34.943261+00:00",
+  "probes": [
+    {
+      "argv": [
+        "python3",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "Python 3.14.8\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "node",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "v22.23.2\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "bash",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "GNU bash, version 5.3.9(1)-release (aarch64-alpine-linux-musl)\nCopyright (C) 2025 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>\n\nThis is free software; you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law.\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "git version 2.54.0\n",
+      "stderr": ""
+    }
+  ],
+  "rg": {
+    "available": false,
+    "actual_exit_code": 127,
+    "output": "/bin/sh: rg: not found\n"
+  },
+  "network": "Forbidden by user; no network tool used",
+  "subagents": "Actual collaboration.spawn_agent supports named independent contexts; maximum three children observed."
+}

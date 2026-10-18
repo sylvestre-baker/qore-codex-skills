@@ -1,0 +1,28 @@
+{
+  "qore_evidence": {
+    "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+    "target_snapshot_sha256": "f1c94eff9d8d9044073bbe14c71e2ef897c187a01238ba9363eedecdcca6d228",
+    "observed_at": "2026-10-17T12:15:43.575253+00:00",
+    "phase_id": "state_transition"
+  },
+  "payload": {
+    "actor_id": "/root",
+    "report": "Real entry plus all seven required contract transitions actually executed in request2. Close and Back keyboard outcomes independently asserted within path. Primary complete path remains valid despite later challenge request failures.",
+    "checks": "evidence/required-check-results.json",
+    "primary_window": [
+      "2026-10-17T12:09:06.105Z",
+      "2026-10-17T12:09:44.658Z"
+    ],
+    "challenge_window": [
+      "2026-10-17T12:12:11.749Z",
+      "2026-10-17T12:12:41.297Z"
+    ],
+    "artifacts": [
+      "evidence/response-2/events.json",
+      "evidence/response-2/result.json",
+      "evidence/response-4/events.json",
+      "evidence/gates.json"
+    ],
+    "limitations": "The final challenge reload did not return a terminal capture; it does not erase prior directly observed application transitions."
+  }
+}

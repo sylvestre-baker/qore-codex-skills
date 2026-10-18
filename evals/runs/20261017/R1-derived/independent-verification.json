@@ -1,0 +1,21 @@
+{
+  "schema": "qore-selected-independent-verification/1",
+  "run_id": "qore003-20261017-r1-derived-1",
+  "neutral_id": "N09",
+  "verifier": "/root/campaign_final_verifier",
+  "verified_at": "2026-10-17T12:22:41.534375Z",
+  "source_verification": "verification-final/REPORT.md",
+  "decision": {
+    "coverage": "COMPLETE",
+    "reason": "Required review/profile activities have retained evidence. Wave1 confirmed the broader traversal recommendation/profile defect and refuted the proposed prohibited packet exposure. Correctness of that recommendation is separate from completed phase coverage; preserve the defect and strict-conformity dissent.",
+    "evidence": [
+      "trials/R1-derived/evaluation.json",
+      "assessments/review-R1/assessment.json",
+      "assessment-inputs/N09/output/REPORT.md",
+      "trials/R1-derived/final-output/evidence/execution.json",
+      "verification-wave1/REPORT.md",
+      "verification-final/read-only-checks.json"
+    ]
+  },
+  "limit": "Independent bounded coverage/claims reconciliation of all original retained cells and saved separate assessments; not an exhaustive code, product or security certification. Phase coverage is distinct from source/claim quality and narrow task passes. No winner, general benefit, efficiency, causal advantage, equal-scope comparability, live-revision identity or deployment/release readiness established. Native lifecycle/deadline/usage telemetry limits remain. Later corrections are separate evidence and do not rewrite original campaign results."
+}

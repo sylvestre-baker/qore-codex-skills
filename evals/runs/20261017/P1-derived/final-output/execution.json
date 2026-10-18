@@ -1,0 +1,562 @@
+{
+  "schema": "qore-run/1",
+  "id": "qore003-20261017-p1-derived-1",
+  "method": "plan",
+  "skill": "qore-plan-qaizen-labs",
+  "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+  "target": {
+    "label": "Frozen prepared-input snapshot; plan changes to target/verification-protocol.md",
+    "snapshot_sha256": "ed6c0fb8d8737cb4b8fc9e6b3485e0e618bf332d15725a557cf30d17b127e394"
+  },
+  "last_relevant_change": "2026-10-17T09:53:58.555717+00:00",
+  "environment": {
+    "id": "qore-qualification-qore003-20261017-p1-derived-1",
+    "operator": "agent",
+    "host": "Docker Desktop Linux arm64 / Codex0.162.0"
+  },
+  "profile": {
+    "id": "qaizen-labs",
+    "version": "0.1.0",
+    "sha256": "f76afdd45cb6352e5044a06affc4182ea6cd40aa9c012fb216636a61faa428f0"
+  },
+  "required_phases": [
+    "profile_preflight",
+    "product",
+    "architecture",
+    "ux",
+    "delivery",
+    "qa",
+    "adjudication",
+    "spec_validation",
+    "claim_verification"
+  ],
+  "phases": [
+    {
+      "id": "profile_preflight",
+      "actor_id": "/root",
+      "status": "PASS",
+      "artifacts": [
+        "evidence/profile_preflight.json",
+        "profile-check.json",
+        "profile-use.json",
+        "input-manifest.json"
+      ]
+    },
+    {
+      "id": "product",
+      "actor_id": "/root/product",
+      "status": "PASS",
+      "artifacts": [
+        "evidence/product.json",
+        "reports/product-analysis.md",
+        "reports/product-cross-examination.md",
+        "roster.json"
+      ]
+    },
+    {
+      "id": "architecture",
+      "actor_id": "/root/architecture",
+      "status": "PASS",
+      "artifacts": [
+        "evidence/architecture.json",
+        "reports/architecture-analysis.md",
+        "reports/architecture-cross-examination.md",
+        "roster.json"
+      ]
+    },
+    {
+      "id": "ux",
+      "actor_id": "/root/ux",
+      "status": "PASS",
+      "artifacts": [
+        "evidence/ux.json",
+        "reports/ux-analysis.md",
+        "reports/ux-cross-examination.md",
+        "roster.json"
+      ]
+    },
+    {
+      "id": "delivery",
+      "actor_id": "/root/delivery",
+      "status": "PASS",
+      "artifacts": [
+        "evidence/delivery.json",
+        "reports/delivery-analysis.md",
+        "reports/delivery-cross-examination.md",
+        "roster.json"
+      ]
+    },
+    {
+      "id": "qa",
+      "actor_id": "/root/qa",
+      "status": "PASS",
+      "artifacts": [
+        "evidence/qa.json",
+        "reports/qa-analysis.md",
+        "reports/qa-cross-examination.md",
+        "roster.json"
+      ]
+    },
+    {
+      "id": "adjudication",
+      "actor_id": "/root",
+      "status": "PASS",
+      "artifacts": [
+        "evidence/adjudication.json",
+        "adjudication.json",
+        "REPORT.md"
+      ]
+    },
+    {
+      "id": "spec_validation",
+      "actor_id": "/root",
+      "status": "PASS",
+      "artifacts": [
+        "evidence/spec_validation.json",
+        "REPORT.md",
+        "evidence/spec-lint-command.json"
+      ]
+    },
+    {
+      "id": "claim_verification",
+      "actor_id": "/root/fresh_verifier",
+      "status": "PASS",
+      "artifacts": [
+        "evidence/claim_verification.json",
+        "reports/fresh-verifier.md",
+        "verifier-results.json",
+        "claims-filtered.json",
+        "filter-claims.py"
+      ]
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "REPORT.md",
+      "sha256": "80e783a6e9170bd5bdefcd47867e307c423b2e444a7ab03c54dd819cf1590a35",
+      "kind": "presentation"
+    },
+    {
+      "path": "adjudication.json",
+      "sha256": "1ad419654c79e40fc561ec2ed8314584b703a0dfdd083063bcf7ef176a833f1c",
+      "kind": "presentation"
+    },
+    {
+      "path": "budget.json",
+      "sha256": "ce746a6bce37f9e15650c690f7fdd34a61890495b6bc8a6e3b9461631a7c572b",
+      "kind": "presentation"
+    },
+    {
+      "path": "build-run.py",
+      "sha256": "e2da5e06ca4ea0b31b11c2c81291ccc6a83cbb56d14f77554c943a273392afa1",
+      "kind": "presentation"
+    },
+    {
+      "path": "claims-filtered.json",
+      "sha256": "09b9a136c87721fe6dafc4cb1ff824f7bbe87da4d8b8660a63568cd2fd42bacc",
+      "kind": "presentation"
+    },
+    {
+      "path": "claims-raw.json",
+      "sha256": "77eb66e22a22883180439b36fa697bf779138f001da4aa57907c11e5b5ca6f03",
+      "kind": "presentation"
+    },
+    {
+      "path": "evidence/adjudication.json",
+      "sha256": "b6734a2bc1f66c19ab9eb2768c70505a36e5fb43a6ce3acb49e2f92ecc1ccb4a",
+      "kind": "execution",
+      "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+      "target_snapshot_sha256": "ed6c0fb8d8737cb4b8fc9e6b3485e0e618bf332d15725a557cf30d17b127e394",
+      "observed_at": "2026-10-17T10:50:36.403163+00:00"
+    },
+    {
+      "path": "evidence/architecture.json",
+      "sha256": "4d127f54f78cd7d18972dd6614654513a74823f1021ccbebb7fe0eb8f7ef4537",
+      "kind": "execution",
+      "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+      "target_snapshot_sha256": "ed6c0fb8d8737cb4b8fc9e6b3485e0e618bf332d15725a557cf30d17b127e394",
+      "observed_at": "2026-10-17T10:50:36.402433+00:00"
+    },
+    {
+      "path": "evidence/capabilities.json",
+      "sha256": "d3abf9965d9260b9f1042d697c8581777289ed7a87c4c7888f6cd94e83eae885",
+      "kind": "presentation"
+    },
+    {
+      "path": "evidence/claim_verification.json",
+      "sha256": "84a3af99a0ccde6cd9b610503fb60eb36a3035a0441e8f3cbebe639dafb27de9",
+      "kind": "execution",
+      "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+      "target_snapshot_sha256": "ed6c0fb8d8737cb4b8fc9e6b3485e0e618bf332d15725a557cf30d17b127e394",
+      "observed_at": "2026-10-17T10:50:36.403523+00:00"
+    },
+    {
+      "path": "evidence/contract-check-command.json",
+      "sha256": "3b89766c1728fda3a715a1a35672cee9aa469dbaa7631a65389344221a154b77",
+      "kind": "presentation"
+    },
+    {
+      "path": "evidence/delivery-probe-command.json",
+      "sha256": "fe06c82e91bd7ca0c52070cd6b7907576b02c32e173306fc202e9d129963d520",
+      "kind": "presentation"
+    },
+    {
+      "path": "evidence/delivery.json",
+      "sha256": "b04e1523e8d5059acb6473c64480f38f981ec38815b82aec977f638a685f2deb",
+      "kind": "execution",
+      "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+      "target_snapshot_sha256": "ed6c0fb8d8737cb4b8fc9e6b3485e0e618bf332d15725a557cf30d17b127e394",
+      "observed_at": "2026-10-17T10:50:36.402837+00:00"
+    },
+    {
+      "path": "evidence/input-immutability.json",
+      "sha256": "401f6d68725cd2a5bf949ac661f28664f5c38c3689613afce127440fb228aeac",
+      "kind": "presentation"
+    },
+    {
+      "path": "evidence/product.json",
+      "sha256": "a86a67eaad792be2e992f72267b00af960a67005af944913e4ebed0cc083b0a1",
+      "kind": "execution",
+      "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+      "target_snapshot_sha256": "ed6c0fb8d8737cb4b8fc9e6b3485e0e618bf332d15725a557cf30d17b127e394",
+      "observed_at": "2026-10-17T10:50:36.402228+00:00"
+    },
+    {
+      "path": "evidence/profile-preflight-command.json",
+      "sha256": "2210bd85310a06d3d347b12b784ac8de82315bb2d3978fd4b99e1713f63f0b91",
+      "kind": "presentation"
+    },
+    {
+      "path": "evidence/profile_preflight.json",
+      "sha256": "14d0583c6912db09760293899cc0a99c5ebcfceb5a7e3f348bec5f35d78e331e",
+      "kind": "execution",
+      "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+      "target_snapshot_sha256": "ed6c0fb8d8737cb4b8fc9e6b3485e0e618bf332d15725a557cf30d17b127e394",
+      "observed_at": "2026-10-17T10:50:36.402008+00:00"
+    },
+    {
+      "path": "evidence/qa.json",
+      "sha256": "b0719659410a09b6e00293cb62edfd21975cc83dd3d465ef082260f0875ed4f7",
+      "kind": "execution",
+      "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+      "target_snapshot_sha256": "ed6c0fb8d8737cb4b8fc9e6b3485e0e618bf332d15725a557cf30d17b127e394",
+      "observed_at": "2026-10-17T10:50:36.403022+00:00"
+    },
+    {
+      "path": "evidence/skill-resource-check.json",
+      "sha256": "59ea1f9563d3cbb070541dd61263a84073029a719f64b85151c79540a06b7c59",
+      "kind": "presentation"
+    },
+    {
+      "path": "evidence/spec-lint-command.json",
+      "sha256": "bc117a3cfa496a58a850beb06f196f7c6a9d6621856d111ae54dcbe23cba23f1",
+      "kind": "presentation"
+    },
+    {
+      "path": "evidence/spec_validation.json",
+      "sha256": "688134917ca6e8523070f09703482c2bb95539a55e9151add6bb3ef4a5ff5886",
+      "kind": "execution",
+      "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+      "target_snapshot_sha256": "ed6c0fb8d8737cb4b8fc9e6b3485e0e618bf332d15725a557cf30d17b127e394",
+      "observed_at": "2026-10-17T10:50:36.403323+00:00"
+    },
+    {
+      "path": "evidence/ux.json",
+      "sha256": "8f871b4c196ac4accae8a6adebfaa60c24ed0c2e8d1db2e0b763453815a8a4d2",
+      "kind": "execution",
+      "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+      "target_snapshot_sha256": "ed6c0fb8d8737cb4b8fc9e6b3485e0e618bf332d15725a557cf30d17b127e394",
+      "observed_at": "2026-10-17T10:50:36.402600+00:00"
+    },
+    {
+      "path": "evidence-tools.py",
+      "sha256": "8a109d771e25b747bbe1c5b42a0adf8c9d1c3d0d0d0413da0aec74d1d0d69815",
+      "kind": "presentation"
+    },
+    {
+      "path": "filter-claims.py",
+      "sha256": "82cb713a0d87b1b7ba4bfca8cfa50aa590a6b4b00565534ceed7ab985315b58e",
+      "kind": "presentation"
+    },
+    {
+      "path": "finalize.py",
+      "sha256": "ed023560d76687d688dffafea7ab764fcade560d1306fed0c674c5584ee28f2f",
+      "kind": "presentation"
+    },
+    {
+      "path": "input-manifest.json",
+      "sha256": "f0d9526b2cc07dd883dbcaf7525cbd26769c63a5ea4fdd620a74f6bd50ff6518",
+      "kind": "source"
+    },
+    {
+      "path": "profile-check.json",
+      "sha256": "7f67a938c63ed8b3cda1433ef4775353384d2a7baa8b86d3c6738c6f8725a726",
+      "kind": "presentation"
+    },
+    {
+      "path": "profile-use.json",
+      "sha256": "b951d788ad138876bde4303b33335706f82b12d65f76ceb638882ccf747af81f",
+      "kind": "presentation"
+    },
+    {
+      "path": "reports/architecture-analysis.md",
+      "sha256": "1bad2a39bcc2cf9870949c2eaabefabcbc4fae918ff3310193fec90a544eb18f",
+      "kind": "presentation"
+    },
+    {
+      "path": "reports/architecture-cross-examination.md",
+      "sha256": "16e20a174a08e080842782bb32c43156492039de621378ed5747496f69f2acfa",
+      "kind": "presentation"
+    },
+    {
+      "path": "reports/delivery-analysis.md",
+      "sha256": "33ca83f4dd5923fb9f2e502cf9a16409ea85e939151f0cd8783ea5b95e3bf5ef",
+      "kind": "presentation"
+    },
+    {
+      "path": "reports/delivery-cross-examination.md",
+      "sha256": "4a663a402d8c70231b277492c16d3a77a95816b14e7801eea5ee2f319671275c",
+      "kind": "presentation"
+    },
+    {
+      "path": "reports/fresh-verifier.md",
+      "sha256": "4583900fb5f5c8bc7f86b89cb6b6606b8d5f6ac1f191dc91602a4f29eb3bbbda",
+      "kind": "presentation"
+    },
+    {
+      "path": "reports/product-analysis.md",
+      "sha256": "6356be021d9e14dc2147fdb2e6723e18c3b62fb03b5c5864e5ffb4cde9643be5",
+      "kind": "presentation"
+    },
+    {
+      "path": "reports/product-cross-examination.md",
+      "sha256": "5a2078d7d8cf54d0bc39c96f9c5a325ba3925b65a0e2bc33fcf5639e04c18315",
+      "kind": "presentation"
+    },
+    {
+      "path": "reports/qa-analysis.md",
+      "sha256": "40feecda31ccefeb2ec29493e8add1ac3177bad407325668b181f61790397183",
+      "kind": "presentation"
+    },
+    {
+      "path": "reports/qa-cross-examination.md",
+      "sha256": "8c378efedf92acb16e7649fa1def6cb79ce5287572ac71c9de2fd9f029e554b6",
+      "kind": "presentation"
+    },
+    {
+      "path": "reports/ux-analysis.md",
+      "sha256": "d373fd33c0a0d92d4dda490967477f421bf2b4ddc3f82de1144bb54fd532b22a",
+      "kind": "presentation"
+    },
+    {
+      "path": "reports/ux-cross-examination.md",
+      "sha256": "52f5695ef576c20c182bc777de67179d0fb728b369b8bd9a7283a55601cde540",
+      "kind": "presentation"
+    },
+    {
+      "path": "roster.json",
+      "sha256": "621bf32158f379e9734796538559c76c6e2a74888ce83273dc1fa316375c9354",
+      "kind": "presentation"
+    },
+    {
+      "path": "run-metadata.json",
+      "sha256": "3949348da9d2b802758c5cac98d2f586c178764019e02c85b0e32bf309347eb8",
+      "kind": "source"
+    },
+    {
+      "path": "source-facts.json",
+      "sha256": "072379f9c0e24c639d3d87f583b12aa3fe612d22676bc8c8bc6f51d9e6f8ef84",
+      "kind": "presentation"
+    },
+    {
+      "path": "sources/.agents/skills/qore-plan-qaizen-labs/SKILL.md",
+      "sha256": "0a5eba8728408a38b4cf505018a2f55b576194db229b67e3ed5bc974579055b9",
+      "kind": "source"
+    },
+    {
+      "path": "sources/.agents/skills/qore-plan-qaizen-labs/agents/openai.yaml",
+      "sha256": "feeb8fab45b8271d61b60ef6e9534161fe59bdd9b13489eb5ab13ad06dd4c90c",
+      "kind": "source"
+    },
+    {
+      "path": "sources/.agents/skills/qore-plan-qaizen-labs/references/project-profile.md",
+      "sha256": "16c5ff087c83b7503b23d5d94726834462dd4fd73d78a5380cf85135fa85b0b3",
+      "kind": "source"
+    },
+    {
+      "path": "sources/.agents/skills/qore-plan-qaizen-labs/references/project.json",
+      "sha256": "f76afdd45cb6352e5044a06affc4182ea6cd40aa9c012fb216636a61faa428f0",
+      "kind": "source"
+    },
+    {
+      "path": "sources/.agents/skills/qore-plan-qaizen-labs/references/protocol.md",
+      "sha256": "83f92490a5601b83fc6eaa21861344e35cd04a3ac7edb56b98cd2eb0ecfea84b",
+      "kind": "source"
+    },
+    {
+      "path": "sources/.agents/skills/qore-plan-qaizen-labs/references/release.json",
+      "sha256": "ec6fc0f8243faa36831ed41702cf14cc45473873e607efc0838d5f5315b4c999",
+      "kind": "source"
+    },
+    {
+      "path": "sources/.agents/skills/qore-plan-qaizen-labs/references/roles.md",
+      "sha256": "cc8060c7c852c143b9671af4fc0176b9c5068f338c19b2556b6ff494c0f0d318",
+      "kind": "source"
+    },
+    {
+      "path": "sources/.agents/skills/qore-plan-qaizen-labs/references/run-evidence.md",
+      "sha256": "35cd6dc6d3e1177bbae96e5b9e829ed1aa55901747c856f4db20e946421f163d",
+      "kind": "source"
+    },
+    {
+      "path": "sources/.agents/skills/qore-plan-qaizen-labs/references/specification.md",
+      "sha256": "7eb06b91fca66a3ec00bda4b49b035c5e6bfe827c4624768f66a09b6ae7827a1",
+      "kind": "source"
+    },
+    {
+      "path": "sources/.agents/skills/qore-plan-qaizen-labs/scripts/project-check.py",
+      "sha256": "d87afa433fe485bdebca3e281d06e0896e4a8980ea7cf7baee739053614ea0ac",
+      "kind": "source"
+    },
+    {
+      "path": "sources/.agents/skills/qore-plan-qaizen-labs/scripts/run-check.py",
+      "sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+      "kind": "source"
+    },
+    {
+      "path": "sources/.agents/skills/qore-plan-qaizen-labs/scripts/spec-lint.mjs",
+      "sha256": "321ac211bfac936c4da3ffe173cdfc0d92cb695351273d289809c05c8b037ada",
+      "kind": "source"
+    },
+    {
+      "path": "sources/.agents/skills/qore-plan-qaizen-labs/scripts/spec-lint.sh",
+      "sha256": "ee4b0c491833f8f3960037255f7ea601548a353d18b317aae25d8e5f2cd461b6",
+      "kind": "source"
+    },
+    {
+      "path": "sources/TASK.md",
+      "sha256": "096d208075bdef7298a3a8a943e85cdbce644a6eca22d6e7b95883ad20f8a363",
+      "kind": "source"
+    },
+    {
+      "path": "sources/checks/check_contract.py",
+      "sha256": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b",
+      "kind": "source"
+    },
+    {
+      "path": "sources/observation-policy.json",
+      "sha256": "15f4e5b4960b5011684be265f027e42b8637a3b8aae96b24bba1ba3a4d0f0202",
+      "kind": "source"
+    },
+    {
+      "path": "sources/surface-contract.json",
+      "sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+      "kind": "source"
+    },
+    {
+      "path": "sources/target/verification-protocol.md",
+      "sha256": "b8d1f4ad7bd691dbf8f019cd3b87a7644a21899e6317edebac545fd3b245136e",
+      "kind": "source"
+    },
+    {
+      "path": "verifier-results.json",
+      "sha256": "2c2c31f56a9950f7ed683c66c90d5094957e997baf26c7f9515ec9a38278c426",
+      "kind": "presentation"
+    },
+    {
+      "path": "write-canary",
+      "sha256": "2d711642b726b04401627ca9fbac32f5c8530fb1903cc4db02258717921a4881",
+      "kind": "presentation"
+    }
+  ],
+  "commands": [
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "scripts/project-check.py",
+        "references/project.json",
+        "--root",
+        "/workspace/worker",
+        "--method",
+        "plan"
+      ],
+      "exit_code": 0,
+      "artifact": "evidence/profile-preflight-command.json"
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "checks/check_contract.py",
+        "surface-contract.json"
+      ],
+      "exit_code": 0,
+      "artifact": "evidence/contract-check-command.json"
+    },
+    {
+      "argv": [
+        "bash",
+        "scripts/spec-lint.sh",
+        "/workspace/output/REPORT.md"
+      ],
+      "exit_code": 0,
+      "artifact": "evidence/spec-lint-command.json"
+    },
+    {
+      "argv": [
+        "rg",
+        "--files",
+        "-g",
+        "TASK.md",
+        "-g",
+        "AGENTS.md",
+        "-g",
+        "*manifest*",
+        "-g",
+        "SKILL.md",
+        "."
+      ],
+      "exit_code": 127,
+      "artifact": "evidence/capabilities.json"
+    },
+    {
+      "argv": [
+        "find",
+        "/workspace/output/reports",
+        "-maxdepth",
+        "1",
+        "-type",
+        "f",
+        "-printf",
+        "%f\\n"
+      ],
+      "exit_code": 1,
+      "artifact": "evidence/capabilities.json"
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "-"
+      ],
+      "exit_code": 0,
+      "artifact": "evidence/delivery-probe-command.json"
+    }
+  ],
+  "limitations": [
+    "Offline planning only; no deployed site, browser, DOM, key/focus, analytics effects, live guard enforcement or deployment identity observed. No network/connector access used.",
+    "Future third-party subresource authorization and host capability remain unresolved. Full questionnaire/mobile/results/submission/performance/accessibility certification and source redistribution excluded.",
+    "Workflow cross-examination role continuity migrated to fresh contexts after actual followup actor-not-found errors. Each replacement read its own complete saved report and all initial peer reports after barrier. This is not uninterrupted same-context continuation.",
+    "Exact internal dispatch/return events and measured aggregate agent-seconds/CPU/token usage are unavailable from the collaboration API; roster retains local UTC observations and child-reported clocks; budget retains wall proxies and allocation bounds, not fabricated zero usage.",
+    "Delivery cross retention/return exceeded nominal worker deadline despite available-results requests. No extra investigation or quality retry dispatched at expiry.",
+    "Operator-supplied candidate and whole-prepared-input target hashes retained. Exact canonical enclosing manifest/digest procedure not supplied; per-file hashes, full original bytes, bundled skill resource comparisons and input immutability independently retained.",
+    "Fresh verifier was shown only 12 mechanically whitelisted claims and original sources, not full role reports or final report. It covered all 12: 11 supported and C12 partly supported as an interpretation. This audit does not prove all omitted claims or entire specification correctness.",
+    "Presentation-level absence is an adopted interpretation; DOM deletion, accessibility-tree behavior and answer persistence after return are not verified facts.",
+    "QA in-memory probe has full role report but lacks a separate raw command transcript. Delivery probe has exact retained command/output with UTC bounds, not exact separately measured command-start instant.",
+    "rg unavailable and BusyBox find lacks -printf; failed probes retained; fallback file reads/Python used.",
+    "Structure validators check declared artifact identity/coverage and document syntax only; they do not prove source reasoning, factual correctness, independent cognition from labels, or permission to implement/deploy.",
+    "Final run-check is executed after this record is frozen. Its exact output/argv/exit are saved as companion run-check-final.json and run-check-final-command.json outside this artifact manifest to avoid a self-referential digest cycle."
+  ],
+  "coverage": "COMPLETE"
+}

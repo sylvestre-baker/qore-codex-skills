@@ -19,7 +19,7 @@ from run_contract import validate_run
 ROOT = Path(__file__).resolve().parent.parent
 SKILLS = ("qore-plan", "qore-review", "qore-ux-review")
 METHODS = dict(zip(SKILLS, ("plan", "review", "ux")))
-VERSION = "0.2.1"
+VERSION = "0.3.0"
 
 
 def write_json(path, value):
@@ -37,7 +37,30 @@ def files_under(root):
     return files
 
 
-def check_references(skill):
+def historical_markdown(root):
+    """Pin original non-runtime reports whose workspace links must be preserved."""
+    policy = root / "docs/evidence/specialization/historical-links.json"
+    if not policy.is_file():
+        return set()
+    packet = read_json(policy)
+    if not isinstance(packet, dict) or packet.get("schema") != "qore-historical-links/1" or not isinstance(packet.get("reports"), list):
+        raise ValueError("Expected explicit historical Markdown report inventory")
+    selected = set()
+    for item in packet["reports"]:
+        if not isinstance(item, dict) or not isinstance(item.get("path"), str):
+            raise ValueError("Historical report entry must name a path")
+        name = item.get("path", "")
+        if not re.fullmatch(r"evals/runs/[0-9]{8}/[PRU][12]-(?:baseline|generic|derived)/final-output/(?:evidence/)?REPORT\.md", name) or name in selected:
+            raise ValueError("Historical link exception must name one original non-runtime trial report")
+        path = contained(root, name)
+        adapter = "/".join(name.split("/")[:4]) + "/REPORT.md"
+        if digest(path) != item.get("sha256") or not item.get("reason") or item.get("adapter") != adapter or not contained(root, adapter).is_file():
+            raise ValueError("Historical report digest or navigable adapter mismatch")
+        selected.add(name)
+    return selected
+
+
+def check_references(skill, *, historical=()):
     for path in files_under(skill):
         if path.suffix not in (".md", ".yaml", ".json", ".py", ".mjs", ".sh"):
             continue
@@ -56,6 +79,10 @@ def check_references(skill):
                 elif "://" in ref:
                     raise ValueError("Undeclared remote runtime resource: " + ref)
         if path.suffix != ".md":
+            continue
+        if path.relative_to(skill).as_posix() in historical:
+            # These exact archived report bytes are evidence, not runtime
+            # dependencies. Their maintained adapters receive normal checks.
             continue
         for ref in re.findall(r"\]\(([^)]+)\)", text):
             if ref.startswith(("https://", "#")):
@@ -120,6 +147,7 @@ def verify(root):
     actual = {str(p.relative_to(root)) for p in files_under(root)}
     if expected != actual:
         raise ValueError("Release inventory differs: " + ", ".join(sorted(expected ^ actual)))
+    historical_markdown(root)
     skill_root = root / "skills" if manifest.get("kind") == "generic" else root
     for folder in skill_root.iterdir():
         if folder.is_dir() and folder.name.startswith("qore-"):
@@ -171,7 +199,7 @@ def build(output, scope="full"):
             target = tree / relative
             target.parent.mkdir(parents=True, exist_ok=True)
             shutil.copyfile(source, target)
-        check_references(tree)
+        check_references(tree, historical=historical_markdown(tree))
         finalize(tree, "generic")
         verify(tree)
         zip_path = temporary / archive.name

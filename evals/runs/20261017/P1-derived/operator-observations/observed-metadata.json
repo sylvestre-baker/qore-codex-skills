@@ -1,0 +1,209 @@
+{
+  "neutral_id": "N17",
+  "scenario_id": "P1",
+  "coverage": "COMPLETE",
+  "resources": {
+    "caps": {
+      "wall_seconds": 900,
+      "aggregate_agent_seconds": 2400,
+      "browser_requests": 6,
+      "transient_browser_retries": 1,
+      "evaluator_seconds": 1800,
+      "verifier_seconds": 1800,
+      "maximum_original_cells": 21,
+      "limit": "Provisional operator policy, not measured feasibility or hard timeout enforcement."
+    },
+    "started_at": "2026-10-17T10:38:43.963638+00:00",
+    "ended_at": "2026-10-17T10:51:30.655609+00:00",
+    "children": [
+      {
+        "actor_id": "/root/architecture",
+        "started_at": "2026-10-17T10:40:00.976445+00:00",
+        "ended_at": "2026-10-17T10:41:38.483864+00:00",
+        "timing_precision": "Observed dispatch bracket through first post-return sample; includes idle gaps between repeated role phases, not model compute time.",
+        "phase_intervals": [
+          {
+            "started_at": "2026-10-17T10:40:00.976445+00:00",
+            "ended_at": "2026-10-17T10:41:38.483864+00:00",
+            "phase": "analysis"
+          }
+        ],
+        "source": "final-output/roster.json"
+      },
+      {
+        "actor_id": "/root/architecture_cross",
+        "started_at": "2026-10-17T10:44:51.912759+00:00",
+        "ended_at": "2026-10-17T10:45:26.716963+00:00",
+        "timing_precision": "Observed dispatch bracket through first post-return sample; includes idle gaps between repeated role phases, not model compute time.",
+        "phase_intervals": [
+          {
+            "started_at": "2026-10-17T10:44:51.912759+00:00",
+            "ended_at": "2026-10-17T10:45:26.716963+00:00",
+            "phase": "cross_examination"
+          }
+        ],
+        "source": "final-output/roster.json"
+      },
+      {
+        "actor_id": "/root/delivery",
+        "started_at": "2026-10-17T10:41:34.938234+00:00",
+        "ended_at": "2026-10-17T10:43:10.584742+00:00",
+        "timing_precision": "Observed dispatch bracket through first post-return sample; includes idle gaps between repeated role phases, not model compute time.",
+        "phase_intervals": [
+          {
+            "started_at": "2026-10-17T10:41:34.938234+00:00",
+            "ended_at": "2026-10-17T10:43:10.584742+00:00",
+            "phase": "analysis"
+          }
+        ],
+        "source": "final-output/roster.json"
+      },
+      {
+        "actor_id": "/root/delivery_cross",
+        "started_at": "2026-10-17T10:45:37.653377+00:00",
+        "ended_at": "2026-10-17T10:47:41.089559+00:00",
+        "timing_precision": "Observed dispatch bracket through first post-return sample; includes idle gaps between repeated role phases, not model compute time.",
+        "phase_intervals": [
+          {
+            "started_at": "2026-10-17T10:45:37.653377+00:00",
+            "ended_at": "2026-10-17T10:47:41.089559+00:00",
+            "phase": "cross_examination"
+          }
+        ],
+        "source": "final-output/roster.json"
+      },
+      {
+        "actor_id": "/root/fresh_verifier",
+        "started_at": "2026-10-17T10:47:41.089559+00:00",
+        "ended_at": "2026-10-17T10:50:36.228525+00:00",
+        "timing_precision": "Observed dispatch bracket through first post-return sample; includes idle gaps between repeated role phases, not model compute time.",
+        "phase_intervals": [
+          {
+            "started_at": "2026-10-17T10:47:41.089559+00:00",
+            "ended_at": "2026-10-17T10:50:36.228525+00:00",
+            "phase": "fresh_verifier"
+          }
+        ],
+        "source": "final-output/roster.json"
+      },
+      {
+        "actor_id": "/root/product",
+        "started_at": "2026-10-17T10:40:00.976445+00:00",
+        "ended_at": "2026-10-17T10:41:23.660796+00:00",
+        "timing_precision": "Observed dispatch bracket through first post-return sample; includes idle gaps between repeated role phases, not model compute time.",
+        "phase_intervals": [
+          {
+            "started_at": "2026-10-17T10:40:00.976445+00:00",
+            "ended_at": "2026-10-17T10:41:23.660796+00:00",
+            "phase": "analysis"
+          }
+        ],
+        "source": "final-output/roster.json"
+      },
+      {
+        "actor_id": "/root/product_cross",
+        "started_at": "2026-10-17T10:44:51.912759+00:00",
+        "ended_at": "2026-10-17T10:45:37.653377+00:00",
+        "timing_precision": "Observed dispatch bracket through first post-return sample; includes idle gaps between repeated role phases, not model compute time.",
+        "phase_intervals": [
+          {
+            "started_at": "2026-10-17T10:44:51.912759+00:00",
+            "ended_at": "2026-10-17T10:45:37.653377+00:00",
+            "phase": "cross_examination"
+          }
+        ],
+        "source": "final-output/roster.json"
+      },
+      {
+        "actor_id": "/root/qa",
+        "started_at": "2026-10-17T10:41:48.986105+00:00",
+        "ended_at": "2026-10-17T10:43:51.194754+00:00",
+        "timing_precision": "Observed dispatch bracket through first post-return sample; includes idle gaps between repeated role phases, not model compute time.",
+        "phase_intervals": [
+          {
+            "started_at": "2026-10-17T10:41:48.986105+00:00",
+            "ended_at": "2026-10-17T10:43:51.194754+00:00",
+            "phase": "analysis"
+          }
+        ],
+        "source": "final-output/roster.json"
+      },
+      {
+        "actor_id": "/root/qa_cross",
+        "started_at": "2026-10-17T10:45:51.415459+00:00",
+        "ended_at": "2026-10-17T10:47:14.801113+00:00",
+        "timing_precision": "Observed dispatch bracket through first post-return sample; includes idle gaps between repeated role phases, not model compute time.",
+        "phase_intervals": [
+          {
+            "started_at": "2026-10-17T10:45:51.415459+00:00",
+            "ended_at": "2026-10-17T10:47:14.801113+00:00",
+            "phase": "cross_examination"
+          }
+        ],
+        "source": "final-output/roster.json"
+      },
+      {
+        "actor_id": "/root/ux",
+        "started_at": "2026-10-17T10:40:00.976445+00:00",
+        "ended_at": "2026-10-17T10:41:48.986105+00:00",
+        "timing_precision": "Observed dispatch bracket through first post-return sample; includes idle gaps between repeated role phases, not model compute time.",
+        "phase_intervals": [
+          {
+            "started_at": "2026-10-17T10:40:00.976445+00:00",
+            "ended_at": "2026-10-17T10:41:48.986105+00:00",
+            "phase": "analysis"
+          }
+        ],
+        "source": "final-output/roster.json"
+      },
+      {
+        "actor_id": "/root/ux_cross",
+        "started_at": "2026-10-17T10:44:51.912759+00:00",
+        "ended_at": "2026-10-17T10:46:26.080161+00:00",
+        "timing_precision": "Observed dispatch bracket through first post-return sample; includes idle gaps between repeated role phases, not model compute time.",
+        "phase_intervals": [
+          {
+            "started_at": "2026-10-17T10:44:51.912759+00:00",
+            "ended_at": "2026-10-17T10:46:26.080161+00:00",
+            "phase": "cross_examination"
+          }
+        ],
+        "source": "final-output/roster.json"
+      }
+    ],
+    "tokens": null,
+    "aggregate_agent_seconds": null,
+    "unavailable": {
+      "tokens": "CLI exposes parent turn usage; complete child-token totals are not exposed. Raw parent usage retained separately.",
+      "aggregate_agent_seconds": "Exact model/child agent-time accounting is not exposed. Parent wall interval and clock-bracketed child intervals are retained as observed bounds, not invented measurements."
+    },
+    "parent_native_usage": {
+      "input_tokens": 3574918,
+      "cached_input_tokens": 3469056,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 27051,
+      "reasoning_output_tokens": 3919
+    },
+    "parent_wall_seconds": 764.388805
+  },
+  "limitations": [
+    "One observation on a related known task, not a general benefit benchmark.",
+    "Criterion assessments remain UNKNOWN until a separate actual evaluator and verifier inspect retained outputs.",
+    "CLI JSONL omits some native child lifecycle events; child identities and history-free dispatches rely on retained role reports/roster plus the qualified inheritance probe.",
+    "All resource timing precision and unavailable measurements remain explicit; no cost or efficiency conclusion.",
+    "Offline planning only; no deployed site, browser, DOM, key/focus, analytics effects, live guard enforcement or deployment identity observed. No network/connector access used.",
+    "Future third-party subresource authorization and host capability remain unresolved. Full questionnaire/mobile/results/submission/performance/accessibility certification and source redistribution excluded.",
+    "Workflow cross-examination role continuity migrated to fresh contexts after actual followup actor-not-found errors. Each replacement read its own complete saved report and all initial peer reports after barrier. This is not uninterrupted same-context continuation.",
+    "Exact internal dispatch/return events and measured aggregate agent-seconds/CPU/token usage are unavailable from the collaboration API; roster retains local UTC observations and child-reported clocks; budget retains wall proxies and allocation bounds, not fabricated zero usage.",
+    "Delivery cross retention/return exceeded nominal worker deadline despite available-results requests. No extra investigation or quality retry dispatched at expiry.",
+    "Operator-supplied candidate and whole-prepared-input target hashes retained. Exact canonical enclosing manifest/digest procedure not supplied; per-file hashes, full original bytes, bundled skill resource comparisons and input immutability independently retained.",
+    "Fresh verifier was shown only 12 mechanically whitelisted claims and original sources, not full role reports or final report. It covered all 12: 11 supported and C12 partly supported as an interpretation. This audit does not prove all omitted claims or entire specification correctness.",
+    "Presentation-level absence is an adopted interpretation; DOM deletion, accessibility-tree behavior and answer persistence after return are not verified facts.",
+    "QA in-memory probe has full role report but lacks a separate raw command transcript. Delivery probe has exact retained command/output with UTC bounds, not exact separately measured command-start instant.",
+    "rg unavailable and BusyBox find lacks -printf; failed probes retained; fallback file reads/Python used.",
+    "Structure validators check declared artifact identity/coverage and document syntax only; they do not prove source reasoning, factual correctness, independent cognition from labels, or permission to implement/deploy.",
+    "Final run-check is executed after this record is frozen. Its exact output/argv/exit are saved as companion run-check-final.json and run-check-final-command.json outside this artifact manifest to avoid a self-referential digest cycle."
+  ],
+  "raw_output_sha256": "80e783a6e9170bd5bdefcd47867e307c423b2e444a7ab03c54dd819cf1590a35",
+  "blinding_limit": "Neutral filenames only; method/profile citations and role rosters can reveal condition. This is not a blinded comparison."
+}

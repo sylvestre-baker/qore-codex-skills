@@ -1,0 +1,521 @@
+{
+  "schema": "qore003-independent-ux-inventory/1",
+  "neutral_id": "N16",
+  "actor_id": "/root/campaign_ux_assessor",
+  "started_at_utc": "2026-10-17T11:14:22+00:00",
+  "recorded_at_utc": "2026-10-17T11:16:57.522492+00:00",
+  "images": [
+    {
+      "path": "observation-1/raw/00-entry.png",
+      "dimensions_px": [
+        1280,
+        1672
+      ],
+      "sha256": "095283e6a92818f6baf91a977793ff14591a91a60cef7b82ea9019642c2251e2",
+      "actually_viewed": false,
+      "tool": null,
+      "view_call_clock_utc": null
+    },
+    {
+      "path": "observation-1/raw/01-labs-entry.png",
+      "dimensions_px": [
+        1280,
+        1672
+      ],
+      "sha256": "041319a5d5542b9a5ddae0bd2c782d018a031320b7ef69be076a71a99c470b8a",
+      "actually_viewed": true,
+      "tool": "functions tools.view_image",
+      "view_call_clock_utc": "2026-10-17T11:14:41Z"
+    },
+    {
+      "path": "observation-1/raw/02-introduction.png",
+      "dimensions_px": [
+        1280,
+        808
+      ],
+      "sha256": "8c12568cc767e1d111812033ddd4823fc5ffcaf12d6561cb61b74ffa210a4bc8",
+      "actually_viewed": true,
+      "tool": "functions tools.view_image",
+      "view_call_clock_utc": "2026-10-17T11:14:41Z"
+    },
+    {
+      "path": "observation-1/raw/03-first-question-unanswered.png",
+      "dimensions_px": [
+        1280,
+        1033
+      ],
+      "sha256": "6d439ba30a14c5b52a343d6821056842fb2a60b15bcd5d7437b9b4088a685938",
+      "actually_viewed": true,
+      "tool": "functions tools.view_image",
+      "view_call_clock_utc": "2026-10-17T11:14:41Z"
+    },
+    {
+      "path": "observation-1/raw/04-final.png",
+      "dimensions_px": [
+        1280,
+        1033
+      ],
+      "sha256": "4e9a3b37fca4b08a7cd5123cae0c30d5a65225ec092b00091699bad327691393",
+      "actually_viewed": false,
+      "tool": null,
+      "view_call_clock_utc": null
+    },
+    {
+      "path": "observation-2/raw/00-entry.png",
+      "dimensions_px": [
+        1280,
+        1672
+      ],
+      "sha256": "484c55e66c4e31ca320607543e4ad4b28e877409b4f861352c1ef9af0f013137",
+      "actually_viewed": false,
+      "tool": null,
+      "view_call_clock_utc": null
+    },
+    {
+      "path": "observation-2/raw/01-help-summary-focus.png",
+      "dimensions_px": [
+        1280,
+        1033
+      ],
+      "sha256": "154537c2923ff969a06afd9a5d39ba885d067ce6190af63b29e9daef57fc1977",
+      "actually_viewed": false,
+      "tool": null,
+      "view_call_clock_utc": null
+    },
+    {
+      "path": "observation-2/raw/02-help-open-enter.png",
+      "dimensions_px": [
+        1280,
+        1667
+      ],
+      "sha256": "3a56491c56bc3abd5103cc8844547c55fdaca4437b08b2924f293e2f4c143242",
+      "actually_viewed": true,
+      "tool": "functions tools.view_image",
+      "view_call_clock_utc": "2026-10-17T11:14:41Z"
+    },
+    {
+      "path": "observation-2/raw/03-help-closed-space.png",
+      "dimensions_px": [
+        1280,
+        1033
+      ],
+      "sha256": "ae1d461d10359d6639b8cea3241d58d08951ea067ae8740e84959862d9a4414e",
+      "actually_viewed": false,
+      "tool": null,
+      "view_call_clock_utc": null
+    },
+    {
+      "path": "observation-2/raw/04-close-focus-before-activation.png",
+      "dimensions_px": [
+        1280,
+        1667
+      ],
+      "sha256": "19e2db3f2d7813c675b52c8ae0dbc548eb2e0d8e7c2b55e8cb7b2e649bc50ceb",
+      "actually_viewed": true,
+      "tool": "functions tools.view_image",
+      "view_call_clock_utc": "2026-10-17T11:14:41Z"
+    },
+    {
+      "path": "observation-2/raw/05-after-close-focus-restoration.png",
+      "dimensions_px": [
+        1280,
+        1033
+      ],
+      "sha256": "154537c2923ff969a06afd9a5d39ba885d067ce6190af63b29e9daef57fc1977",
+      "actually_viewed": true,
+      "tool": "functions tools.view_image",
+      "view_call_clock_utc": "2026-10-17T11:14:41Z"
+    },
+    {
+      "path": "observation-2/raw/06-back-focus-before-activation.png",
+      "dimensions_px": [
+        1280,
+        1033
+      ],
+      "sha256": "57673acee0c4875835c892ce68bfe1efd2182ec2cbb4c6904ecaad0f4004aa31",
+      "actually_viewed": true,
+      "tool": "functions tools.view_image",
+      "view_call_clock_utc": "2026-10-17T11:14:41Z"
+    },
+    {
+      "path": "observation-2/raw/07-returned-introduction.png",
+      "dimensions_px": [
+        1280,
+        808
+      ],
+      "sha256": "01b5a2bbf6947a76673ac13bacc27f8bf31f8fa4ca2cd30dbe8e62dcd864f822",
+      "actually_viewed": true,
+      "tool": "functions tools.view_image",
+      "view_call_clock_utc": "2026-10-17T11:14:41Z"
+    },
+    {
+      "path": "observation-2/raw/08-final.png",
+      "dimensions_px": [
+        1280,
+        808
+      ],
+      "sha256": "87473a933533895cf780dd9d517969cda71d5a8afdb74b99a57e97434cd8a824",
+      "actually_viewed": false,
+      "tool": null,
+      "view_call_clock_utc": null
+    },
+    {
+      "path": "observation-3/raw/00-entry.png",
+      "dimensions_px": [
+        1280,
+        1672
+      ],
+      "sha256": "484c55e66c4e31ca320607543e4ad4b28e877409b4f861352c1ef9af0f013137",
+      "actually_viewed": false,
+      "tool": null,
+      "view_call_clock_utc": null
+    },
+    {
+      "path": "observation-3/raw/01-deep-route-reloaded-introduction.png",
+      "dimensions_px": [
+        1280,
+        808
+      ],
+      "sha256": "8c12568cc767e1d111812033ddd4823fc5ffcaf12d6561cb61b74ffa210a4bc8",
+      "actually_viewed": true,
+      "tool": "functions tools.view_image",
+      "view_call_clock_utc": "2026-10-17T11:14:41Z"
+    },
+    {
+      "path": "observation-3/raw/02-history-back-labs.png",
+      "dimensions_px": [
+        1280,
+        1672
+      ],
+      "sha256": "095283e6a92818f6baf91a977793ff14591a91a60cef7b82ea9019642c2251e2",
+      "actually_viewed": false,
+      "tool": null,
+      "view_call_clock_utc": null
+    },
+    {
+      "path": "observation-3/raw/03-history-forward-introduction.png",
+      "dimensions_px": [
+        1280,
+        808
+      ],
+      "sha256": "70dbd413a19e36568b831e887cdeb70ed1ddebcd60b6ba2466418dec8c82c975",
+      "actually_viewed": false,
+      "tool": null,
+      "view_call_clock_utc": null
+    },
+    {
+      "path": "observation-3/raw/04-back-focus-challenge.png",
+      "dimensions_px": [
+        1280,
+        1033
+      ],
+      "sha256": "57673acee0c4875835c892ce68bfe1efd2182ec2cbb4c6904ecaad0f4004aa31",
+      "actually_viewed": true,
+      "tool": "functions tools.view_image",
+      "view_call_clock_utc": "2026-10-17T11:14:41Z"
+    },
+    {
+      "path": "observation-3/raw/05-summary-reverse-tab.png",
+      "dimensions_px": [
+        1280,
+        1033
+      ],
+      "sha256": "90a40fe641a1eff7651756586a3b073b55da7cef825ba998125ef3aea3dfd89e",
+      "actually_viewed": true,
+      "tool": "functions tools.view_image",
+      "view_call_clock_utc": "2026-10-17T11:14:41Z"
+    },
+    {
+      "path": "observation-3/raw/06-back-focus-repeat-tab.png",
+      "dimensions_px": [
+        1280,
+        1033
+      ],
+      "sha256": "57673acee0c4875835c892ce68bfe1efd2182ec2cbb4c6904ecaad0f4004aa31",
+      "actually_viewed": true,
+      "tool": "functions tools.view_image",
+      "view_call_clock_utc": "2026-10-17T11:14:41Z"
+    },
+    {
+      "path": "observation-3/raw/07-challenge-returned-introduction.png",
+      "dimensions_px": [
+        1280,
+        808
+      ],
+      "sha256": "4cf01741cddbdd55bd0c9d4c0e4ab0b3ead5be51a227e3c445a836081583e2ba",
+      "actually_viewed": false,
+      "tool": null,
+      "view_call_clock_utc": null
+    },
+    {
+      "path": "observation-3/raw/08-final.png",
+      "dimensions_px": [
+        1280,
+        808
+      ],
+      "sha256": "87473a933533895cf780dd9d517969cda71d5a8afdb74b99a57e97434cd8a824",
+      "actually_viewed": false,
+      "tool": null,
+      "view_call_clock_utc": null
+    }
+  ],
+  "source_hash_checks": [
+    {
+      "path": ".agents/skills/qore-ux-review/SKILL.md",
+      "sha256": "33b1367f256f1a6304902d08cdff9b023add92fb750834216268cca8de84b851",
+      "actual_sha256": "33b1367f256f1a6304902d08cdff9b023add92fb750834216268cca8de84b851",
+      "matches": true
+    },
+    {
+      "path": ".agents/skills/qore-ux-review/agents/openai.yaml",
+      "sha256": "2bafca3b7edce2edac4814b4028fdb814f83c1c2efbea4d461b7469fbe1bd7af",
+      "actual_sha256": "2bafca3b7edce2edac4814b4028fdb814f83c1c2efbea4d461b7469fbe1bd7af",
+      "matches": true
+    },
+    {
+      "path": ".agents/skills/qore-ux-review/references/evidence.md",
+      "sha256": "659560f88b965371e2c6e886b5f4c648a4879ebb7c69af4b1d307dfae176c8b3",
+      "actual_sha256": "659560f88b965371e2c6e886b5f4c648a4879ebb7c69af4b1d307dfae176c8b3",
+      "matches": true
+    },
+    {
+      "path": ".agents/skills/qore-ux-review/references/gates.md",
+      "sha256": "667063cd64c576a9c5b4ec69f6ddcd677d4e969bae96184b3136ede9fd12fd87",
+      "actual_sha256": "667063cd64c576a9c5b4ec69f6ddcd677d4e969bae96184b3136ede9fd12fd87",
+      "matches": true
+    },
+    {
+      "path": ".agents/skills/qore-ux-review/references/project-profile.md",
+      "sha256": "154ed11dab8e8499e74a5f3a6afb512827d5de5c73408523b845684e38f59dfc",
+      "actual_sha256": "154ed11dab8e8499e74a5f3a6afb512827d5de5c73408523b845684e38f59dfc",
+      "matches": true
+    },
+    {
+      "path": ".agents/skills/qore-ux-review/references/protocol.md",
+      "sha256": "eda7c7c7c9e711e4b9fca59ec6b622d713c3d95b14cd6e3b008a978ebf156004",
+      "actual_sha256": "eda7c7c7c9e711e4b9fca59ec6b622d713c3d95b14cd6e3b008a978ebf156004",
+      "matches": true
+    },
+    {
+      "path": ".agents/skills/qore-ux-review/references/release.json",
+      "sha256": "61a9f43551f486340fbb2807c3b38c82fe6872b67907c0e6a19d4903cc85ea3e",
+      "actual_sha256": "61a9f43551f486340fbb2807c3b38c82fe6872b67907c0e6a19d4903cc85ea3e",
+      "matches": true
+    },
+    {
+      "path": ".agents/skills/qore-ux-review/references/run-evidence.md",
+      "sha256": "2ede0b19d58fd5535c90023068355679ee7bb27d3070967ada38f9ad156a9e69",
+      "actual_sha256": "2ede0b19d58fd5535c90023068355679ee7bb27d3070967ada38f9ad156a9e69",
+      "matches": true
+    },
+    {
+      "path": ".agents/skills/qore-ux-review/scripts/depth-lint.mjs",
+      "sha256": "fd7be484c8e4bf3ba376bdddb88663b31ae9da4c2c7678232ea7a6cc7782bd0f",
+      "actual_sha256": "fd7be484c8e4bf3ba376bdddb88663b31ae9da4c2c7678232ea7a6cc7782bd0f",
+      "matches": true
+    },
+    {
+      "path": ".agents/skills/qore-ux-review/scripts/project-check.py",
+      "sha256": "d87afa433fe485bdebca3e281d06e0896e4a8980ea7cf7baee739053614ea0ac",
+      "actual_sha256": "d87afa433fe485bdebca3e281d06e0896e4a8980ea7cf7baee739053614ea0ac",
+      "matches": true
+    },
+    {
+      "path": ".agents/skills/qore-ux-review/scripts/run-check.py",
+      "sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+      "actual_sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+      "matches": true
+    },
+    {
+      "path": ".agents/skills/qore-ux-review/scripts/stop-rule.mjs",
+      "sha256": "5c8d898e3accd82ed1932c791ff5ed1285aae659bae6757488158fc7a8120443",
+      "actual_sha256": "5c8d898e3accd82ed1932c791ff5ed1285aae659bae6757488158fc7a8120443",
+      "matches": true
+    },
+    {
+      "path": "TASK.md",
+      "sha256": "3f9d638f2a8b8b9677c313ff3872f6c7afadf89b470fd1cc7e034407543782f3",
+      "actual_sha256": "3f9d638f2a8b8b9677c313ff3872f6c7afadf89b470fd1cc7e034407543782f3",
+      "matches": true
+    },
+    {
+      "path": "checks/check_contract.py",
+      "sha256": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b",
+      "actual_sha256": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b",
+      "matches": true
+    },
+    {
+      "path": "observation-policy.json",
+      "sha256": "15f4e5b4960b5011684be265f027e42b8637a3b8aae96b24bba1ba3a4d0f0202",
+      "actual_sha256": "15f4e5b4960b5011684be265f027e42b8637a3b8aae96b24bba1ba3a4d0f0202",
+      "matches": true
+    },
+    {
+      "path": "surface-contract.json",
+      "sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+      "actual_sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+      "matches": true
+    }
+  ],
+  "receipt_checks": [
+    {
+      "request": 1,
+      "started_at": "2026-10-17T11:07:11.178915+00:00",
+      "ended_at": "2026-10-17T11:07:26.427753+00:00",
+      "fresh_context": true,
+      "input_actions_modified": false,
+      "exit_code": 0,
+      "action_count": 6,
+      "actions_hash_matches": true,
+      "raw_file_count": 12,
+      "raw_hash_mismatches": [],
+      "harness_hash_matches": true,
+      "policy_hash_matches": true,
+      "network_count": 72,
+      "network_methods": [
+        "GET"
+      ],
+      "network_origins": [
+        "https://qaizen.io"
+      ],
+      "blocked_mutations": [
+        {
+          "at": "2026-10-17T11:07:17.273Z",
+          "method": "POST",
+          "url": "https://qaizen.io/api/labs/readiness/event",
+          "reason": "Read-only probe policy"
+        }
+      ],
+      "blocked_navigation": [],
+      "route_errors": [],
+      "page_errors": [],
+      "blocked_activations": [],
+      "console": [
+        {
+          "at": "2026-10-17T11:07:17.277Z",
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_BLOCKED_BY_CLIENT.Inspector",
+          "location": {
+            "url": "https://qaizen.io/api/labs/readiness/event",
+            "line": 0,
+            "column": 0,
+            "lineNumber": 0,
+            "columnNumber": 0
+          }
+        }
+      ]
+    },
+    {
+      "request": 2,
+      "started_at": "2026-10-17T11:07:58.126919+00:00",
+      "ended_at": "2026-10-17T11:08:36.240227+00:00",
+      "fresh_context": true,
+      "input_actions_modified": false,
+      "exit_code": 0,
+      "action_count": 33,
+      "actions_hash_matches": true,
+      "raw_file_count": 20,
+      "raw_hash_mismatches": [],
+      "harness_hash_matches": true,
+      "policy_hash_matches": true,
+      "network_count": 72,
+      "network_methods": [
+        "GET"
+      ],
+      "network_origins": [
+        "https://qaizen.io"
+      ],
+      "blocked_mutations": [
+        {
+          "at": "2026-10-17T11:08:03.969Z",
+          "method": "POST",
+          "url": "https://qaizen.io/api/labs/readiness/event",
+          "reason": "Read-only probe policy"
+        }
+      ],
+      "blocked_navigation": [],
+      "route_errors": [],
+      "page_errors": [],
+      "blocked_activations": [],
+      "console": [
+        {
+          "at": "2026-10-17T11:08:03.973Z",
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_BLOCKED_BY_CLIENT.Inspector",
+          "location": {
+            "url": "https://qaizen.io/api/labs/readiness/event",
+            "line": 0,
+            "column": 0,
+            "lineNumber": 0,
+            "columnNumber": 0
+          }
+        }
+      ]
+    },
+    {
+      "request": 3,
+      "started_at": "2026-10-17T11:09:33.128127+00:00",
+      "ended_at": "2026-10-17T11:10:11.883489+00:00",
+      "fresh_context": true,
+      "input_actions_modified": false,
+      "exit_code": 0,
+      "action_count": 32,
+      "actions_hash_matches": true,
+      "raw_file_count": 20,
+      "raw_hash_mismatches": [],
+      "harness_hash_matches": true,
+      "policy_hash_matches": true,
+      "network_count": 144,
+      "network_methods": [
+        "GET"
+      ],
+      "network_origins": [
+        "https://qaizen.io"
+      ],
+      "blocked_mutations": [
+        {
+          "at": "2026-10-17T11:09:47.192Z",
+          "method": "POST",
+          "url": "https://qaizen.io/api/labs/readiness/event",
+          "reason": "Read-only probe policy"
+        }
+      ],
+      "blocked_navigation": [],
+      "route_errors": [],
+      "page_errors": [],
+      "blocked_activations": [],
+      "console": [
+        {
+          "at": "2026-10-17T11:09:47.195Z",
+          "type": "error",
+          "text": "Failed to load resource: net::ERR_BLOCKED_BY_CLIENT.Inspector",
+          "location": {
+            "url": "https://qaizen.io/api/labs/readiness/event",
+            "line": 0,
+            "column": 0,
+            "lineNumber": 0,
+            "columnNumber": 0
+          }
+        }
+      ]
+    }
+  ],
+  "actual_measurements": [
+    "All16 original supplied files independently matched worker initial manifest hashes.",
+    "All relay-listed raw files, authored actions, exact harness and policy independently hash-matched in all three requests.",
+    "All23 raw PNG dimensions/hashes read from bytes;12 original PNGs actually viewed.",
+    "DOM actual CSS viewport1280x800 DPR1; three Back-focus captures1280x1033 and byte-identical SHA25657673acee0c4875835c892ce68bfe1efd2182ec2cbb4c6904ecaad0f4004aa31.",
+    "Forward/backward keyboard focus and paired SUMMARY/BUTTON Back/H1 active elements checked in raw events/DOM.",
+    "Three blocked analytics POSTs, three corresponding console errors; no page exceptions, route errors, blocked navigation or blocked activation. All recorded response origins qaizen.io and methodsGET.",
+    "Only entry click, reload and history actions occur for deep route; no cold direct deep-navigation action is exposed or executed."
+  ],
+  "unavailable": [
+    "Actual scroll offsets and focused-control/banner rectangles",
+    "Viewport-only screenshots, hit testing and overlap area",
+    "Cold-context deep URL initialization",
+    "Returned trace/video files",
+    "Deployment revision and implementation cause"
+  ],
+  "interpretation_limit": "Repeated full-page pixels establish reproducible capture concealment, not independently measured runtime viewport impact. No generated or edited evidence.",
+  "assessment_finished_at_utc": "2026-10-17T11:17:10.218655+00:00"
+}

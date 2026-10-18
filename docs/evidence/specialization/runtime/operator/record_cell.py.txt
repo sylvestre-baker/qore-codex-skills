@@ -1,0 +1,118 @@
+"""Normalize actual retained cell evidence; never infer criterion success or fabricate phases."""
+from pathlib import Path
+from datetime import datetime,timezone
+import sys,json,shutil,hashlib
+ROOT=Path(__file__).parent
+REPO=ROOT.parents[1]/'qore-skills'
+sys.path.insert(0,str(REPO/'tools'))
+import evaluate
+
+def load(p):return json.loads(Path(p).read_text())
+def save(p,j):Path(p).write_text(json.dumps(j,indent=2)+'\n')
+def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
+def finalize(scenario,condition):
+ cell=ROOT/'trials'/f'{scenario}-{condition}'
+ output=cell/'final-output'
+ end=load(cell/'completion.json')['completed_at']
+ start=load(cell/'container.json')['created_at']
+ launch=load(cell/'turn1-launch.json');exit_=load(cell/'turn1-exit.json')
+ assert exit_['exit_code']==0 and (output/'REPORT.md').is_file()
+ frozen=cell/'prepared'
+ if not frozen.exists():shutil.copytree(ROOT/'prepared'/f'{scenario}-{condition}',frozen)
+ manifest=load(frozen/'input-manifest.json')
+ meta=load(cell/'operation-metadata.json')
+ config,scenarios,_=evaluate.configuration()
+ actor='/root';children=[];qore=None;coverage='COMPLETE'
+ extra_limits=['One observation on a related known task, not a general benefit benchmark.','Criterion assessments remain UNKNOWN until a separate actual evaluator and verifier inspect retained outputs.','CLI JSONL omits some native child lifecycle events; child identities and history-free dispatches rely on retained role reports/roster plus the qualified inheritance probe.','All resource timing precision and unavailable measurements remain explicit; no cost or efficiency conclusion.']
+ normalization=[]
+ if condition!='baseline':
+  q=output/'execution.json'
+  if not q.is_file():raise ValueError('Actual Qore execution record missing')
+  qr=load(q)
+  # The standalone method permits an explicit evidence root. The enclosing
+  # checker resolves relative to the record; relocate exact bytes, never phases.
+  candidate_roots=[q.parent,q.parent/'evidence']
+  chosen=None
+  for root in candidate_roots:
+   if all((root/a['path']).is_file() and sha(root/a['path'])==a['sha256'] for a in qr['artifacts']):chosen=root;break
+  if chosen is None:raise ValueError('Cannot locate actual Qore artifact root')
+  if chosen!=q.parent:
+   relocated=chosen/'execution.json'
+   if relocated.exists():assert relocated.read_bytes()==q.read_bytes()
+   else:relocated.write_bytes(q.read_bytes())
+   normalization.append({'original':str(q.relative_to(cell)),'relocated':str(relocated.relative_to(cell)),'sha256':sha(q),'transformation':'Byte-identical relocation of the standalone record to its explicitly used evidence root for the enclosing checker; no observation or verdict changed.'})
+   q=relocated
+  checked=evaluate.validate_qore_run(qr,q.parent)
+  coverage=checked['coverage']
+  qore={'path':q.relative_to(cell).as_posix(),'sha256':sha(q)}
+  parent_phases={'redaction','findings_validation','adjudication','spec_validation','scope','browser','state_transition','freshness','verdict','profile_preflight'}
+  parent_actors=[p['actor_id'] for p in qr['phases'] if p['id'] in parent_phases]
+  if parent_actors:actor=max(set(parent_actors),key=parent_actors.count)
+  roster_path=output/'roster.json'
+  needed={p['actor_id'] for p in qr['phases'] if p['status']=='PASS' and p['actor_id']!=actor}
+  if needed and not roster_path.exists():raise ValueError('Actual child roster required for method accounting')
+  roster=load(roster_path) if roster_path.exists() else {}
+  rows=roster.get('actors') or roster.get('roles') or roster.get('events') or roster.get('actual_contexts') or []
+  if not isinstance(rows,list):raise ValueError('Inspect actual roster format before normalization')
+  rows=list(rows)
+  for key,value in roster.items():
+   if isinstance(value,dict) and value.get('actor_id') and value.get('dispatch_recorded_utc'):
+    rows.append({**value,'phase':key})
+  # Some actual rosters group analysis/cross-examination under each actor.
+  # Flatten only retained timestamped phase records; never synthesize phase times.
+  flat=[]
+  for row in rows:
+   # Some retained planning rosters encode repeated phases as flat prefixed fields.
+   prefixed=[]
+   for prefix in ('initial','cross'):
+    last=row.get(prefix+'_return_utc')
+    first=(row.get(prefix+'_dispatch_utc_interval') or [row.get(prefix+'_dispatch_utc')])[0]
+    if first and last:prefixed.append({'actor_id':row.get('actor_id'),'started_at':first,'ended_at':last,'phase':prefix})
+   if prefixed:
+    flat.extend(prefixed);continue
+   nested=[(key,value) for key,value in row.items() if isinstance(value,dict) and any(k in value for k in ('dispatch_recorded_utc','dispatch_utc','started_at','dispatched_at'))]
+   if nested:
+    for key,value in nested:flat.append({**value,'actor_id':value.get('actor_id',row.get('actor_id',row.get('context_name'))),'phase':key})
+   else:flat.append(row)
+  grouped={}
+  for row in flat:
+   a=row.get('actor_id',row.get('context_name'))
+   if not a or a==actor:continue
+   bounds=row.get('dispatch_utc_interval') or row.get('dispatch_utc_bounds') or row.get('dispatch_window_utc') or [None]
+   first=bounds[0] or row.get('started_at') or row.get('dispatched_at') or row.get('dispatch_utc') or row.get('dispatch_recorded_utc') or row.get('dispatch_at_utc')
+   last=row.get('return_observed_at') or row.get('returned_utc') or row.get('return_utc') or row.get('ended_at') or row.get('completed_at_utc') or row.get('return_observed_utc') or row.get('return_at_utc')
+   if not first or not last:raise ValueError('Actual child timing bounds missing for '+str(a))
+   grouped.setdefault(a,[]).append((first,last,row.get('phase')))
+  for a,intervals in sorted(grouped.items()):
+   first=min((i[0] for i in intervals),key=evaluate.instant)
+   last=max((i[1] for i in intervals),key=evaluate.instant)
+   children.append({'actor_id':a,'started_at':first,'ended_at':last,'timing_precision':'Observed dispatch bracket through first post-return sample; includes idle gaps between repeated role phases, not model compute time.','phase_intervals':[{'started_at':i[0],'ended_at':i[1],'phase':i[2]} for i in intervals],'source':roster_path.relative_to(cell).as_posix()})
+  if not needed.issubset({c['actor_id'] for c in children}):raise ValueError('Actual roster does not account for all Qore phase actors')
+  extra_limits+=qr.get('limitations',[])
+ # Preserve operator-collected observations with original observation times.
+ def envelope(name,at,payload):
+  value={'schema':'qore-eval-evidence/1','run_id':meta['run_id'],'candidate_sha256':manifest['candidate_sha256'],'input_manifest_sha256':sha(frozen/'input-manifest.json'),'observed_at':at,'payload':payload}
+  path=cell/name;save(path,value)
+  return {'path':name,'sha256':sha(path),'kind':'execution','observed_at':at}
+ boundary=load(cell/'boundary.json')
+ iso=envelope('isolation-evidence.json',boundary['at'],{'actual_per_cell_boundary':boundary,'environment':load(cell/'environment.json'),'inherited_context_probe':'qualification-v5, separately retained full setup probe','setup_limit':'Per-cell command controls observed; child inheritance separately qualified, not independently re-probed in every role.'})
+ events=[json.loads(x) for x in (cell/'turn1-stdout.jsonl').read_text().splitlines() if x.strip()]
+ usage=next((e['usage'] for e in reversed(events) if e.get('type')=='turn.completed'),None)
+ execution=envelope('execution-evidence.json',exit_['ended_at'],{'actual_launch':launch,'actual_exit':exit_,'native_parent_usage':usage,'outputs':[{'path':p.relative_to(cell).as_posix(),'sha256':sha(p)} for p in sorted(output.rglob('*')) if p.is_file()],'post_inputs':load(cell/'post-inputs.json'),'limit':'Retained actual output identities and execution receipts; this wrapper does not grade task correctness.'})
+ resources={'caps':config['budgets'],'started_at':start,'ended_at':end,'children':children,'tokens':None,'aggregate_agent_seconds':None,'unavailable':{'tokens':'CLI exposes parent turn usage; complete child-token totals are not exposed. Raw parent usage retained separately.','aggregate_agent_seconds':'Exact model/child agent-time accounting is not exposed. Parent wall interval and clock-bracketed child intervals are retained as observed bounds, not invented measurements.'},'parent_native_usage':usage,'parent_wall_seconds':(evaluate.instant(exit_['ended_at'])-evaluate.instant(launch['started_at'])).total_seconds()}
+ if not children and usage is not None:
+  resources['tokens']=usage.get('input_tokens',0)+usage.get('output_tokens',0)
+  resources['aggregate_agent_seconds']=resources['parent_wall_seconds']
+  resources['unavailable']={}
+  resources['measurement_basis']='Single context only: CLI turn input+output tokens including cached input, and observed launcher-to-return wall interval including transport/tool waits; not CPU, billing, unique tokens or productivity.'
+ run={'schema':'qore-eval-run/1','id':meta['run_id'],'series_id':'specialization-v1','scenario_id':scenario,'condition':condition,'trial':1,'candidate_sha256':manifest['candidate_sha256'],'input_manifest':'prepared/input-manifest.json','input_manifest_sha256':sha(frozen/'input-manifest.json'),'condition_resources_sha256':manifest['condition_resources_sha256'],'environment':{'operator':meta['environment']['operator'],'host':meta['environment']['host'],'model':'gpt-6.1-sol','actor_id':actor,'tools':{'codex':'0.162.0','image_id':load(cell/'environment.json')['image_id'],'native_tool_catalog':'Twelve observed base helpers, native collaboration; no search/fetch/browser/connector; empty MCP resources/templates in qualified parent and child.'},'settings':{'model_reasoning_effort':'high','service_tier':'default','configs':load(cell/'environment.json')['configs'],'operator_procedure':'operator-freeze.json; same frozen task/common runtime instruction template'},'isolation':{'status':'PASS','evidence':[iso['path']]}},'resources':resources,'artifacts':[iso,execution],'execution':{'coverage':coverage,'evidence':[execution['path']]},'assessment':[{'criterion':k,'status':'UNKNOWN','evidence':[],'reason':'Separate task assessment not yet performed.'} for k in scenarios[scenario]['criteria']],'comparison':{'comparability':'COMPARABLE' if coverage=='COMPLETE' and scenarios[scenario]['method']!='ux' else 'UNVERIFIED','decision':'Unknown','reason':'Task/source/runtime identities checked; no separate comparative conclusion yet. Live-state comparability requires its own observation evidence for UX.','verification':[]},'limitations':extra_limits,'qore_run':qore,'normalization':normalization}
+ if coverage!='COMPLETE':run['execution']['reason']='Actual Qore method record retains incomplete required phases.'
+ path=cell/'evaluation.json'
+ if path.exists():
+  history=cell/'metadata-history';history.mkdir(exist_ok=True)
+  (history/('evaluation-'+sha(path)+'.json')).write_bytes(path.read_bytes())
+ save(path,run)
+ result=evaluate.check_record(path,cell);save(cell/'evaluation-check.json',result)
+ print(json.dumps(result,indent=2))
+ return result
+if __name__=='__main__':finalize(*sys.argv[1:3])

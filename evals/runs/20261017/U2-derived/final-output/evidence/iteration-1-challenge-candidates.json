@@ -1,0 +1,21 @@
+{
+  "at": "2026-10-17T12:10:54.779542+00:00",
+  "provisional_passes": {
+    "entry": "Could entry click reach wrong surface? Introduction title and distinguishing content inspected in request2.",
+    "state": "Could help manipulate answers? Request2 no-selection assertions plus disabled Next; challenge restart.",
+    "focus": "Could DOM focus pass while invisible? request2 Back screenshot suggests banner overlap; replay/re-focus requested.",
+    "render": "Could same URL hide stale state? Challenge history and reload."
+  },
+  "candidate": {
+    "id": "V1",
+    "severity": "medium / secondary visual usability; keyboard action still works",
+    "evidence": "response-2/08-Back-sequential-keyboard-focus.png",
+    "claim": "Cookie banner visually obscures Back at sequential focus",
+    "alternatives": [
+      "Full-page capture/sticky compositing may affect exact placement; no live geometry provided.",
+      "Back is functionally reachable and Enter works, refuting an unreachable-control claim."
+    ],
+    "status": "under challenge"
+  },
+  "no_fixes": "Inputs immutable; review-only scope"
+}

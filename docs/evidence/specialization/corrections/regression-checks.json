@@ -1,0 +1,25 @@
+{
+  "schema": "qore-correction-regressions/1",
+  "observed_at": "2026-10-17T12:22:36.305642+00:00",
+  "automated_suite": {
+    "command": "python3 -B -m unittest discover -s tests -v",
+    "tests": 223,
+    "skipped": 21,
+    "exit_code": 0,
+    "raw_log_sha256": "e166e7dcb37526deaf250421bc9b35abb378f6136f498025c58934c5530c8ca7",
+    "scope": "All current deterministic tests; optional browser integration checks skipped without the declared driver variable."
+  },
+  "browser_suite": {
+    "tests": 22,
+    "skipped": 0,
+    "exit_code": 0,
+    "driver_sha256": "19f980d0ad6d5d48029239c9dcc9ef3dfd7ada6f1d3ad653fdb2aa7c93c16ca7",
+    "test_source_sha256": "eee30ccb00758cf9deda42fcf5216bd2114e9942c160713eee896363c2715a3d",
+    "source_receipt": "browser-regressions.json",
+    "carryover": "These exact future driver/test bytes passed in staged local Chromium qualification before the final original trial ended. Applied byte-identically only after all18 originals closed. This is correction regression evidence, never a nineteenth campaign cell. Browser module overlaps one unit test with the basic suite; counts are not additive unique tests."
+  },
+  "optional_skill_creator_helper": {
+    "status": "UNAVAILABLE_PYYAML",
+    "scope": "The optional system quick_validate.py could not import yaml in existing Python runtimes; nothing installed. Ruby standard-library Psych safe_load parsed all three frontmatters; repository package/runtime reference checks passed. No claim that the official optional validator passed."
+  }
+}

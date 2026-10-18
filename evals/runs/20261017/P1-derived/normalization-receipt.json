@@ -1,0 +1,6 @@
+{
+  "at": "2026-10-17T10:51:32.303891+00:00",
+  "exit_code": 0,
+  "stdout": "{\n  \"valid\": true,\n  \"id\": \"qore003-20261017-p1-derived-1\",\n  \"scenario_id\": \"P1\",\n  \"condition\": \"derived\",\n  \"coverage\": \"COMPLETE\",\n  \"comparability\": \"COMPARABLE\",\n  \"changed_inputs\": [],\n  \"limit\": \"Identity and declared evidence checked; reasoning, isolation and causal benefit are not certified.\"\n}\n",
+  "stderr": ""
+}

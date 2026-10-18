@@ -1,0 +1,81 @@
+{
+  "status": "PASS",
+  "scope": "synthetic documentary-coverage countermodels only",
+  "batch_1": [
+    "S-1",
+    "S-2",
+    "F-203"
+  ],
+  "batch_2": [
+    "C-1",
+    "F-202",
+    "C-2",
+    "F-201"
+  ],
+  "ui_defects_with_protocol_pass_and_contract_failure": [
+    "summary-space-broken",
+    "summary-enter-broken",
+    "back-not-tabbable",
+    "back-enter-broken"
+  ],
+  "healthy_control_contract_failures": [],
+  "synthetic_network_without_policy": [
+    {
+      "method": "GET",
+      "url": "https://qaizen.io/labs",
+      "synthetic_disposition": "delivered-to-in-memory-sink",
+      "blocked_reasons": []
+    },
+    {
+      "method": "POST",
+      "url": "https://qaizen.io/synthetic-analytics",
+      "synthetic_disposition": "delivered-to-in-memory-sink",
+      "blocked_reasons": []
+    },
+    {
+      "method": "GET",
+      "url": "https://outside.invalid/synthetic-asset",
+      "synthetic_disposition": "delivered-to-in-memory-sink",
+      "blocked_reasons": []
+    }
+  ],
+  "synthetic_network_with_policy": [
+    {
+      "method": "GET",
+      "url": "https://qaizen.io/labs",
+      "synthetic_disposition": "delivered-to-in-memory-sink",
+      "blocked_reasons": []
+    },
+    {
+      "method": "POST",
+      "url": "https://qaizen.io/synthetic-analytics",
+      "synthetic_disposition": "blocked",
+      "blocked_reasons": [
+        "method"
+      ]
+    },
+    {
+      "method": "GET",
+      "url": "https://outside.invalid/synthetic-asset",
+      "synthetic_disposition": "blocked",
+      "blocked_reasons": [
+        "origin"
+      ]
+    }
+  ],
+  "validator_output": {
+    "valid": true,
+    "schema": "qaizen-labs-surface/1",
+    "checks": [
+      "entry",
+      "unanswered",
+      "help-toggle",
+      "close-focus",
+      "keyboard-back",
+      "introduction-focus",
+      "read-only-policy",
+      "origin-policy"
+    ],
+    "limit": "Contract consistency only; browser observations establish current behavior."
+  }
+}

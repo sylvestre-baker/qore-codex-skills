@@ -1,0 +1,62 @@
+{
+  "run_id": "qore003-20261017-p1-baseline-1",
+  "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+  "target_snapshot_sha256": "87d7e194904832d17cb2f5c6240a03f89cfe63305d1cadb262d07f723d1eb342",
+  "target_digest_scope": "Entire frozen prepared-input manifest, supplied enclosing metadata; not independently recomputed.",
+  "last_relevant_change": "2026-10-17T09:53:58.576139+00:00",
+  "environment": {
+    "id": "qore-qualification-qore003-20261017-p1-baseline-1",
+    "operator": "agent",
+    "host": "Docker Desktop Linux arm64 / Codex0.162.0"
+  },
+  "profile": null,
+  "output_directory": "/workspace/output",
+  "method": "baseline source-based planning; no Qore skill invoked",
+  "root_actor": {
+    "context_name": "/root",
+    "dispatch_utc": null,
+    "dispatch_timestamp_unavailable_reason": "Root dispatch timestamp is not exposed by the runtime; first measured UTC is supplied separately.",
+    "first_observed_utc": "2026-10-17T10:51:39+00:00",
+    "report_saved_utc": "2026-10-17T10:53:48.950907+00:00",
+    "return_utc": null,
+    "return_timestamp_unavailable_reason": "The final response return occurs after this record is written and is not exposed as an in-turn timestamp.",
+    "full_report_file": "REPORT.md",
+    "proposal_file": "verification-protocol.proposed.md",
+    "smaller_task_deadline_utc": "2026-10-17T11:01:39+00:00",
+    "deadline_status": "completed before self-imposed 600-second deadline; no expiry partial-results request needed"
+  },
+  "roster": {
+    "requested": [],
+    "returned": [],
+    "missing": [],
+    "child_contexts": [],
+    "reason": "TASK.md invokes no independent multi-agent method; no children dispatched."
+  },
+  "budget": {
+    "wall_seconds_limit": 900,
+    "aggregate_agent_seconds_limit": 2400,
+    "maximum_simultaneous_child_contexts": 3,
+    "measured_wall_seconds_since_first_clock_to_record": 129.950907,
+    "aggregate_agent_seconds_used": null,
+    "aggregate_usage_unavailable_reason": "No aggregate agent-seconds or model compute usage meter is exposed. Measured wall elapsed is not asserted to be aggregate compute usage.",
+    "child_usage": null,
+    "child_usage_reason": "No children were requested or run.",
+    "new_dispatches_after_exhaustion": false
+  },
+  "network_access_used": false,
+  "input_mutations": false,
+  "qore_execution_contract_applicable": false,
+  "limitations": [
+    "rg was unavailable; used find and numbered cat-equivalent reads instead.",
+    "No original full-manifest digest verification facility was supplied.",
+    "Exact root dispatch/return and aggregate model usage are unavailable; no zero usage has been invented.",
+    "No browser or live request observations permitted or executed."
+  ],
+  "artifacts": [
+    "REPORT.md",
+    "verification-protocol.proposed.md",
+    "checks.json",
+    "input-integrity.json",
+    "run-record.json"
+  ]
+}

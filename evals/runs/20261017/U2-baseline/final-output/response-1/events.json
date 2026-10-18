@@ -1,0 +1,1090 @@
+{
+  "console": [
+    {
+      "at": "2026-10-17T12:04:42.026Z",
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_BLOCKED_BY_CLIENT.Inspector",
+      "location": {
+        "url": "https://qaizen.io/api/labs/readiness/event",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    }
+  ],
+  "page_errors": [],
+  "network": [
+    {
+      "at": "2026-10-17T12:04:35.999Z",
+      "url": "https://qaizen.io/labs",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "document"
+    },
+    {
+      "at": "2026-10-17T12:04:36.324Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/0ihn5wzkz53n3.css",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "stylesheet"
+    },
+    {
+      "at": "2026-10-17T12:04:36.328Z",
+      "url": "https://qaizen.io/_next/static/immutable/media/f30fd2e485acf1bc-s.p.1z38dhxy5o0rp.woff2",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "font"
+    },
+    {
+      "at": "2026-10-17T12:04:36.328Z",
+      "url": "https://qaizen.io/_next/static/immutable/media/8e451580e5e95631-s.p.0ic9f6t6i9npx.woff2",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "font"
+    },
+    {
+      "at": "2026-10-17T12:04:36.349Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/1vngpkdf822wx.css",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "stylesheet"
+    },
+    {
+      "at": "2026-10-17T12:04:36.350Z",
+      "url": "https://qaizen.io/_next/static/immutable/media/345c85a432359eed-s.p.24jxsbewvqxgy.woff2",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "font"
+    },
+    {
+      "at": "2026-10-17T12:04:36.462Z",
+      "url": "https://qaizen.io/_next/static/immutable/media/e8f2fbee2754df70-s.p.1gavkj72q9u43.woff2",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "font"
+    },
+    {
+      "at": "2026-10-17T12:04:36.486Z",
+      "url": "https://qaizen.io/_next/image?url=%2Fbrand%2Fqaizen-lockup.png&w=256&q=75&dpl=dpl_BazYLQFQxqSkzFsSmb8cKdMQkWm7",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "image"
+    },
+    {
+      "at": "2026-10-17T12:04:36.613Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/38fixmt9m-84r.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-17T12:04:36.613Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/2ol1vi4pk99zo.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-17T12:04:36.613Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/3bbde9q_vd_-r.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-17T12:04:36.613Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/1xobemoqfn78h.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-17T12:04:36.613Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/turbopack-1ea6fe1p3l00-.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-17T12:04:36.613Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/0gm89vcwhj87c.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-17T12:04:36.613Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/0dszv51uy--ty.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-17T12:04:36.613Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/0vp6n1uafu_z7.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-17T12:04:36.613Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/07fzs162tmcdh.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-17T12:04:36.613Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/0bll1gbg9hhty.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-17T12:04:36.613Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/0k6_ix40et15x.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-17T12:04:36.961Z",
+      "url": "https://qaizen.io/_vercel/insights/script.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-17T12:04:36.966Z",
+      "url": "https://qaizen.io/_vercel/speed-insights/script.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-17T12:04:36.982Z",
+      "url": "https://qaizen.io/labs?_rsc=rVBpcoZQhzeotty-",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "fetch"
+    },
+    {
+      "at": "2026-10-17T12:04:36.982Z",
+      "url": "https://qaizen.io/?_rsc=rVBpcoZQhzeotty-",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "fetch"
+    },
+    {
+      "at": "2026-10-17T12:04:36.993Z",
+      "url": "https://qaizen.io/services/readiness-review?_rsc=rVBpcoZQhzeotty-",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "fetch"
+    },
+    {
+      "at": "2026-10-17T12:04:37.000Z",
+      "url": "https://qaizen.io/blog?_rsc=rVBpcoZQhzeotty-",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "fetch"
+    },
+    {
+      "at": "2026-10-17T12:04:37.166Z",
+      "url": "https://qaizen.io/labs/roi-calculator/stalled?_rsc=rVBpcoZQhzeotty-",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "fetch"
+    },
+    {
+      "at": "2026-10-17T12:04:37.166Z",
+      "url": "https://qaizen.io/privacy?_rsc=rVBpcoZQhzeotty-",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "fetch"
+    },
+    {
+      "at": "2026-10-17T12:04:37.166Z",
+      "url": "https://qaizen.io/labs/readiness-check?_rsc=rVBpcoZQhzeotty-",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "fetch"
+    },
+    {
+      "at": "2026-10-17T12:04:37.167Z",
+      "url": "https://qaizen.io/labs/shadow-ai?_rsc=rVBpcoZQhzeotty-",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "fetch"
+    },
+    {
+      "at": "2026-10-17T12:04:37.233Z",
+      "url": "https://qaizen.io/privacy?_rsc=4j50ZkLHEXBLLdop",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "fetch"
+    },
+    {
+      "at": "2026-10-17T12:04:37.238Z",
+      "url": "https://qaizen.io/labs/agent-replay?_rsc=rVBpcoZQhzeotty-",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "fetch"
+    },
+    {
+      "at": "2026-10-17T12:04:37.248Z",
+      "url": "https://qaizen.io/privacy?_rsc=yXYWzvE8FRN41Wzd",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "fetch"
+    },
+    {
+      "at": "2026-10-17T12:04:37.248Z",
+      "url": "https://qaizen.io/?_rsc=JbqVujoDykHUAtAR",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "fetch"
+    },
+    {
+      "at": "2026-10-17T12:04:37.282Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/314j-eefaqinq.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-17T12:04:37.299Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/28zrqzxh1jzrh.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-17T12:04:37.311Z",
+      "url": "https://qaizen.io/services/readiness-review?_rsc=L8JU800eWfqkdGBw",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "fetch"
+    },
+    {
+      "at": "2026-10-17T12:04:37.315Z",
+      "url": "https://qaizen.io/services/readiness-review?_rsc=9S0Z5yD8pd55ECxw",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "fetch"
+    },
+    {
+      "at": "2026-10-17T12:04:37.318Z",
+      "url": "https://qaizen.io/blog?_rsc=rRcTuS6gB0vD-zfY",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "fetch"
+    },
+    {
+      "at": "2026-10-17T12:04:37.328Z",
+      "url": "https://qaizen.io/labs?_rsc=kskTdj7lfVo_68au",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "fetch"
+    },
+    {
+      "at": "2026-10-17T12:04:37.363Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/0i6a3-ntstsyb.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-17T12:04:37.364Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/4067f4x1emmf3.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-17T12:04:37.369Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/3ee8zcrtq5yw0.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-17T12:04:37.377Z",
+      "url": "https://qaizen.io/blog?_rsc=BeGmM8bWlIB8tyoQ",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "fetch"
+    },
+    {
+      "at": "2026-10-17T12:04:37.381Z",
+      "url": "https://qaizen.io/labs/readiness-check?_rsc=wy5KDGVwL-F7iSrH",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "fetch"
+    },
+    {
+      "at": "2026-10-17T12:04:37.388Z",
+      "url": "https://qaizen.io/labs/readiness-check?_rsc=qkx9s4u9WorkgHrU",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "fetch"
+    },
+    {
+      "at": "2026-10-17T12:04:37.400Z",
+      "url": "https://qaizen.io/labs/shadow-ai?_rsc=ChPQrJEkjq_3pGw8",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "fetch"
+    },
+    {
+      "at": "2026-10-17T12:04:37.423Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/3iebxlz1p63mq.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-17T12:04:37.428Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/3putazjk-vrlq.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-17T12:04:37.436Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/3f_ak85hphe5v.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-17T12:04:37.449Z",
+      "url": "https://qaizen.io/labs/shadow-ai?_rsc=PTGeFHNpmoiMvQ5w",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "fetch"
+    },
+    {
+      "at": "2026-10-17T12:04:37.455Z",
+      "url": "https://qaizen.io/labs/roi-calculator/stalled?_rsc=gbuLNDSoRqHoJFER",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "fetch"
+    },
+    {
+      "at": "2026-10-17T12:04:37.458Z",
+      "url": "https://qaizen.io/labs/roi-calculator/stalled?_rsc=2GX-AXP0b8qPrNCA",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "fetch"
+    },
+    {
+      "at": "2026-10-17T12:04:37.472Z",
+      "url": "https://qaizen.io/labs/agent-replay?_rsc=QlcYAeYGVyXetW06",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "fetch"
+    },
+    {
+      "at": "2026-10-17T12:04:37.496Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/1dqfwh9uxoatk.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-17T12:04:37.496Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/111ym_e2ndcdo.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-17T12:04:37.498Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/0pqs7mvm-34vq.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-17T12:04:37.499Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/0o10kze9prt3d.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-17T12:04:37.499Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/3w4tcmg4-ew_k.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-17T12:04:37.499Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/0jcv8qc-rj6dl.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-17T12:04:37.501Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/3qlcd3bkvphfv.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-17T12:04:37.501Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/3b2btjzh_01cm.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-17T12:04:37.507Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/2r_hv1-idqkab.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-17T12:04:37.507Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/1jv8axzc2qe4l.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-17T12:04:37.511Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/2bnhwce2hoyqt.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-17T12:04:37.511Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/2v0mkb9ct140a.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-17T12:04:37.517Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/05xw_-sp6ykks.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-17T12:04:37.533Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/0l29jr4_g948g.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-17T12:04:40.007Z",
+      "url": "https://qaizen.io/labs/roi-calculator?_rsc=Y4WG4hxhTS_QDffi",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "fetch"
+    },
+    {
+      "at": "2026-10-17T12:04:40.093Z",
+      "url": "https://qaizen.io/labs/roi-calculator?_rsc=DeKTMmewbI_9wTB1",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "fetch"
+    },
+    {
+      "at": "2026-10-17T12:04:40.099Z",
+      "url": "https://qaizen.io/labs/roi-calculator?_rsc=TuuLpNkYWkAPPaKQ",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "fetch"
+    },
+    {
+      "at": "2026-10-17T12:04:40.147Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/2ma9h8wfz-_gm.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    },
+    {
+      "at": "2026-10-17T12:04:40.147Z",
+      "url": "https://qaizen.io/_next/static/immutable/chunks/2mzqgpd6k--rq.js",
+      "method": "GET",
+      "status": 200,
+      "resource_type": "script"
+    }
+  ],
+  "requests_failed": [
+    {
+      "at": "2026-10-17T12:04:42.025Z",
+      "url": "https://qaizen.io/api/labs/readiness/event",
+      "method": "POST",
+      "error": "net::ERR_BLOCKED_BY_CLIENT.Inspector"
+    }
+  ],
+  "blocked_mutations": [
+    {
+      "at": "2026-10-17T12:04:42.014Z",
+      "method": "POST",
+      "url": "https://qaizen.io/api/labs/readiness/event",
+      "reason": "Read-only probe policy"
+    }
+  ],
+  "blocked_navigation": [],
+  "route_errors": [],
+  "navigation": [
+    {
+      "at": "2026-10-17T12:04:36.019Z",
+      "url": "https://qaizen.io/labs"
+    },
+    {
+      "at": "2026-10-17T12:04:36.773Z",
+      "url": "https://qaizen.io/labs"
+    },
+    {
+      "at": "2026-10-17T12:04:39.904Z",
+      "url": "https://qaizen.io/labs/readiness-check"
+    }
+  ],
+  "actions": [
+    {
+      "at": "2026-10-17T12:04:38.590Z",
+      "type": "keyboard",
+      "key": "Tab",
+      "active_element": {
+        "tag": "A",
+        "id": "",
+        "text": "Skip to content"
+      },
+      "outcome": "completed"
+    },
+    {
+      "at": "2026-10-17T12:04:38.590Z",
+      "type": "snapshot",
+      "label": "public-entry",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs"
+    },
+    {
+      "at": "2026-10-17T12:04:39.744Z",
+      "type": "click",
+      "selector": "a[href$='/labs/readiness-check']",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-17T12:04:40.853Z",
+      "type": "snapshot",
+      "label": "introduction",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-17T12:04:41.950Z",
+      "type": "click",
+      "role": "button",
+      "name": "Start the check",
+      "exact": true,
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-17T12:04:42.935Z",
+      "type": "assert-none-checked",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    },
+    {
+      "at": "2026-10-17T12:04:43.844Z",
+      "type": "snapshot",
+      "label": "first-question",
+      "outcome": "completed",
+      "url": "https://qaizen.io/labs/readiness-check"
+    }
+  ],
+  "activation_checks": [
+    {
+      "at": "2026-10-17T12:04:39.771Z",
+      "source": "preflight",
+      "trigger": "click",
+      "url": "https://qaizen.io/labs",
+      "target": {
+        "tag": "a",
+        "id": null,
+        "role": "link",
+        "declared_role": null,
+        "name": "START HERE PRODUCTION READINESS CHECK Could your AI pilot go live? Ten questions show which of the five production gates is most likely to block it, and why. About 3 minutes · 10 questions · 5 gates · no e-mail needed START THE CHECK",
+        "text": "START HERE PRODUCTION READINESS CHECK Could your AI pilot go live? Ten questions show which of the five production gates is most likely to block it, and why. About 3 minutes · 10 questions · 5 gates · no e-mail needed START THE CHECK",
+        "type": null,
+        "href": "/labs/readiness-check",
+        "visible": true,
+        "disabled": false
+      },
+      "allowed": true,
+      "control": "entry",
+      "states": [
+        {
+          "control": "entry",
+          "attributes": {},
+          "predicates": [
+            {
+              "selector": "h1",
+              "matches": 1,
+              "expected": {
+                "selector": "h1",
+                "visible": true
+              },
+              "actual": {
+                "visible": true,
+                "attributes": {}
+              },
+              "passed": true
+            }
+          ],
+          "passed": true
+        }
+      ],
+      "reason": "Actual target and declared state match the approved descriptor."
+    },
+    {
+      "at": "2026-10-17T12:04:39.824Z",
+      "source": "event-capture",
+      "trigger": "pointerdown",
+      "url": "https://qaizen.io/labs",
+      "target": {
+        "tag": "a",
+        "id": null,
+        "role": "link",
+        "declared_role": null,
+        "name": "START HERE PRODUCTION READINESS CHECK Could your AI pilot go live? Ten questions show which of the five production gates is most likely to block it, and why. About 3 minutes · 10 questions · 5 gates · no e-mail needed START THE CHECK",
+        "text": "START HERE PRODUCTION READINESS CHECK Could your AI pilot go live? Ten questions show which of the five production gates is most likely to block it, and why. About 3 minutes · 10 questions · 5 gates · no e-mail needed START THE CHECK",
+        "type": null,
+        "href": "/labs/readiness-check",
+        "visible": true,
+        "disabled": false
+      },
+      "allowed": true,
+      "control": "entry",
+      "states": [
+        {
+          "control": "entry",
+          "attributes": {},
+          "predicates": [
+            {
+              "selector": "h1",
+              "matches": 1,
+              "expected": {
+                "selector": "h1",
+                "visible": true
+              },
+              "actual": {
+                "visible": true,
+                "attributes": {}
+              },
+              "passed": true
+            }
+          ],
+          "passed": true
+        }
+      ],
+      "reason": "Actual target and declared state match the approved descriptor."
+    },
+    {
+      "at": "2026-10-17T12:04:39.825Z",
+      "source": "event-capture",
+      "trigger": "mousedown",
+      "url": "https://qaizen.io/labs",
+      "target": {
+        "tag": "a",
+        "id": null,
+        "role": "link",
+        "declared_role": null,
+        "name": "START HERE PRODUCTION READINESS CHECK Could your AI pilot go live? Ten questions show which of the five production gates is most likely to block it, and why. About 3 minutes · 10 questions · 5 gates · no e-mail needed START THE CHECK",
+        "text": "START HERE PRODUCTION READINESS CHECK Could your AI pilot go live? Ten questions show which of the five production gates is most likely to block it, and why. About 3 minutes · 10 questions · 5 gates · no e-mail needed START THE CHECK",
+        "type": null,
+        "href": "/labs/readiness-check",
+        "visible": true,
+        "disabled": false
+      },
+      "allowed": true,
+      "control": "entry",
+      "states": [
+        {
+          "control": "entry",
+          "attributes": {},
+          "predicates": [
+            {
+              "selector": "h1",
+              "matches": 1,
+              "expected": {
+                "selector": "h1",
+                "visible": true
+              },
+              "actual": {
+                "visible": true,
+                "attributes": {}
+              },
+              "passed": true
+            }
+          ],
+          "passed": true
+        }
+      ],
+      "reason": "Actual target and declared state match the approved descriptor."
+    },
+    {
+      "at": "2026-10-17T12:04:39.829Z",
+      "source": "event-capture",
+      "trigger": "click",
+      "url": "https://qaizen.io/labs",
+      "target": {
+        "tag": "a",
+        "id": null,
+        "role": "link",
+        "declared_role": null,
+        "name": "START HERE PRODUCTION READINESS CHECK Could your AI pilot go live? Ten questions show which of the five production gates is most likely to block it, and why. About 3 minutes · 10 questions · 5 gates · no e-mail needed START THE CHECK",
+        "text": "START HERE PRODUCTION READINESS CHECK Could your AI pilot go live? Ten questions show which of the five production gates is most likely to block it, and why. About 3 minutes · 10 questions · 5 gates · no e-mail needed START THE CHECK",
+        "type": null,
+        "href": "/labs/readiness-check",
+        "visible": true,
+        "disabled": false
+      },
+      "allowed": true,
+      "control": "entry",
+      "states": [
+        {
+          "control": "entry",
+          "attributes": {},
+          "predicates": [
+            {
+              "selector": "h1",
+              "matches": 1,
+              "expected": {
+                "selector": "h1",
+                "visible": true
+              },
+              "actual": {
+                "visible": true,
+                "attributes": {}
+              },
+              "passed": true
+            }
+          ],
+          "passed": true
+        }
+      ],
+      "reason": "Actual target and declared state match the approved descriptor."
+    },
+    {
+      "at": "2026-10-17T12:04:41.964Z",
+      "source": "preflight",
+      "trigger": "click",
+      "url": "https://qaizen.io/labs/readiness-check",
+      "target": {
+        "tag": "button",
+        "id": null,
+        "role": "button",
+        "declared_role": null,
+        "name": "START THE CHECK",
+        "text": "START THE CHECK",
+        "type": "button",
+        "href": null,
+        "visible": true,
+        "disabled": false
+      },
+      "allowed": true,
+      "control": "start",
+      "states": [
+        {
+          "control": "start",
+          "attributes": {
+            "type": "button"
+          },
+          "predicates": [
+            {
+              "selector": "h1",
+              "matches": 1,
+              "expected": {
+                "selector": "h1",
+                "visible": true
+              },
+              "actual": {
+                "visible": true,
+                "attributes": {}
+              },
+              "passed": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "control": "back",
+          "attributes": {
+            "type": "button"
+          },
+          "predicates": [
+            {
+              "selector": "main [role=\"radiogroup\"]",
+              "matches": 0,
+              "expected": {
+                "selector": "main [role=\"radiogroup\"]",
+                "visible": true
+              },
+              "actual": null,
+              "passed": false
+            },
+            {
+              "selector": "main details",
+              "matches": 0,
+              "expected": {
+                "selector": "main details",
+                "attributes": {
+                  "open": null
+                }
+              },
+              "actual": null,
+              "passed": false
+            }
+          ],
+          "passed": false
+        }
+      ],
+      "reason": "Actual target and declared state match the approved descriptor."
+    },
+    {
+      "at": "2026-10-17T12:04:41.984Z",
+      "source": "event-capture",
+      "trigger": "pointerdown",
+      "url": "https://qaizen.io/labs/readiness-check",
+      "target": {
+        "tag": "button",
+        "id": null,
+        "role": "button",
+        "declared_role": null,
+        "name": "START THE CHECK",
+        "text": "START THE CHECK",
+        "type": "button",
+        "href": null,
+        "visible": true,
+        "disabled": false
+      },
+      "allowed": true,
+      "control": "start",
+      "states": [
+        {
+          "control": "start",
+          "attributes": {
+            "type": "button"
+          },
+          "predicates": [
+            {
+              "selector": "h1",
+              "matches": 1,
+              "expected": {
+                "selector": "h1",
+                "visible": true
+              },
+              "actual": {
+                "visible": true,
+                "attributes": {}
+              },
+              "passed": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "control": "back",
+          "attributes": {
+            "type": "button"
+          },
+          "predicates": [
+            {
+              "selector": "main [role=\"radiogroup\"]",
+              "matches": 0,
+              "expected": {
+                "selector": "main [role=\"radiogroup\"]",
+                "visible": true
+              },
+              "actual": null,
+              "passed": false
+            },
+            {
+              "selector": "main details",
+              "matches": 0,
+              "expected": {
+                "selector": "main details",
+                "attributes": {
+                  "open": null
+                }
+              },
+              "actual": null,
+              "passed": false
+            }
+          ],
+          "passed": false
+        }
+      ],
+      "reason": "Actual target and declared state match the approved descriptor."
+    },
+    {
+      "at": "2026-10-17T12:04:41.984Z",
+      "source": "event-capture",
+      "trigger": "mousedown",
+      "url": "https://qaizen.io/labs/readiness-check",
+      "target": {
+        "tag": "button",
+        "id": null,
+        "role": "button",
+        "declared_role": null,
+        "name": "START THE CHECK",
+        "text": "START THE CHECK",
+        "type": "button",
+        "href": null,
+        "visible": true,
+        "disabled": false
+      },
+      "allowed": true,
+      "control": "start",
+      "states": [
+        {
+          "control": "start",
+          "attributes": {
+            "type": "button"
+          },
+          "predicates": [
+            {
+              "selector": "h1",
+              "matches": 1,
+              "expected": {
+                "selector": "h1",
+                "visible": true
+              },
+              "actual": {
+                "visible": true,
+                "attributes": {}
+              },
+              "passed": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "control": "back",
+          "attributes": {
+            "type": "button"
+          },
+          "predicates": [
+            {
+              "selector": "main [role=\"radiogroup\"]",
+              "matches": 0,
+              "expected": {
+                "selector": "main [role=\"radiogroup\"]",
+                "visible": true
+              },
+              "actual": null,
+              "passed": false
+            },
+            {
+              "selector": "main details",
+              "matches": 0,
+              "expected": {
+                "selector": "main details",
+                "attributes": {
+                  "open": null
+                }
+              },
+              "actual": null,
+              "passed": false
+            }
+          ],
+          "passed": false
+        }
+      ],
+      "reason": "Actual target and declared state match the approved descriptor."
+    },
+    {
+      "at": "2026-10-17T12:04:41.984Z",
+      "source": "event-capture",
+      "trigger": "click",
+      "url": "https://qaizen.io/labs/readiness-check",
+      "target": {
+        "tag": "button",
+        "id": null,
+        "role": "button",
+        "declared_role": null,
+        "name": "START THE CHECK",
+        "text": "START THE CHECK",
+        "type": "button",
+        "href": null,
+        "visible": true,
+        "disabled": false
+      },
+      "allowed": true,
+      "control": "start",
+      "states": [
+        {
+          "control": "start",
+          "attributes": {
+            "type": "button"
+          },
+          "predicates": [
+            {
+              "selector": "h1",
+              "matches": 1,
+              "expected": {
+                "selector": "h1",
+                "visible": true
+              },
+              "actual": {
+                "visible": true,
+                "attributes": {}
+              },
+              "passed": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "control": "back",
+          "attributes": {
+            "type": "button"
+          },
+          "predicates": [
+            {
+              "selector": "main [role=\"radiogroup\"]",
+              "matches": 0,
+              "expected": {
+                "selector": "main [role=\"radiogroup\"]",
+                "visible": true
+              },
+              "actual": null,
+              "passed": false
+            },
+            {
+              "selector": "main details",
+              "matches": 0,
+              "expected": {
+                "selector": "main details",
+                "attributes": {
+                  "open": null
+                }
+              },
+              "actual": null,
+              "passed": false
+            }
+          ],
+          "passed": false
+        }
+      ],
+      "reason": "Actual target and declared state match the approved descriptor."
+    }
+  ],
+  "blocked_activations": []
+}

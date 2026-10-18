@@ -1,0 +1,17 @@
+{
+  "schema": "qore-eval-qualification/1",
+  "run_id": "qore003-20261017-r2-derived-1",
+  "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+  "input_manifest_sha256": "9689f41f4f94e52c4074c5cd0760e78a4ce34fb03b6d5a3504d16e61735c8c66",
+  "qore_run_sha256": "9cee6afbeb91b691342742e6f4c0a64eb5e6969512db333a81dc2d6b6ea5492a",
+  "declared_coverage": "COMPLETE",
+  "coverage": "COMPLETE",
+  "assessor": "/root/campaign_review_assessor",
+  "verifier": "/root/campaign_final_verifier",
+  "assessed_at": "2026-10-17T12:22:41.534375Z",
+  "reason": "Required review and current-profile preflight activities returned retained evidence. Confirmed broader Tab/Shift+Tab profile guidance is a source-fidelity quality defect, retained separately; qore-run coverage explicitly does not certify source support. Reconcile with R1 by preserving execution COMPLETE, qualifying full-conformity claims and preserving wave4 dissent.",
+  "evidence": [
+    "independent-assessment.json",
+    "independent-verification.json"
+  ]
+}

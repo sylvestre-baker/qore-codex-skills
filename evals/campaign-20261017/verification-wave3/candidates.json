@@ -1,0 +1,10 @@
+{
+  "findings": [
+    {
+      "id": "COV-C01",
+      "title": "The generic U1 record declares COMPLETE while its required cold deep-entry check remains unobserved",
+      "severity": "medium",
+      "evidence": "assessment-inputs/N16/output/REPORT.md; assessment-inputs/N16/output/scope-plan.json or evidence/scope-plan.json; assessment-inputs/N16/input/.agents/skills/qore-ux-review/references/gates.md G1; assessment-inputs/N16/observation-3/actions.json; assessment-inputs/N16/output/execution.json"
+    }
+  ]
+}

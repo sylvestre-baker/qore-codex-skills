@@ -1,0 +1,242 @@
+{
+  "schema": "qore-selected-independent-assessment/1",
+  "run_id": "qore003-20261017-r1-baseline-1",
+  "neutral_id": "N14",
+  "source_raw_sha256": "2de2ee8b2d71992b0d2822185f58db4b60ec307617487c2c7c77568e97955f27",
+  "public_source": "evals/campaign-20261017/assessments/review-R1/assessment.json",
+  "public_source_sha256": "e077197f8abd6a4197d2e5300168003b129e1b47c4958d86384f1e5e8ccb9d8d",
+  "assessor": "/root/campaign_review_assessor",
+  "original_case_assessment": {
+    "neutral_id": "N14",
+    "declared_method": "Single-context baseline source review; no Qore invocation or independent verifier.",
+    "criteria": [
+      {
+        "id": "K1",
+        "definition": "Accurate relevant project rules and distinct focus destinations.",
+        "grade": "MET",
+        "rationale": "The final review accurately separates Close-to-summary focus from Back-to-introduction-heading focus, distinguishes the current contract's forward Tab route from the checker's broader accepted set, and identifies the Enter/Space/Enter help cycle.",
+        "evidence": [
+          {
+            "path": "N14/output/REPORT.md",
+            "lines": [
+              9,
+              19,
+              23,
+              52,
+              54
+            ]
+          },
+          {
+            "path": "N14/output/source-evidence.txt",
+            "lines": [
+              17,
+              18,
+              19,
+              20,
+              21,
+              23,
+              71,
+              72
+            ]
+          }
+        ],
+        "uncertainty": null
+      },
+      {
+        "id": "K2",
+        "definition": "Sequential keyboard traversal and Enter evidence for Back; click or programmatic focus alone is insufficient.",
+        "grade": "MET",
+        "rationale": "For this document-review task, the report correctly diagnoses that a click plus destination focus is insufficient, and requires actual sequential Tab reachability, observed Back focus and Enter activation as the correction. It does not pretend it observed a browser.",
+        "evidence": [
+          {
+            "path": "N14/output/REPORT.md",
+            "lines": [
+              9,
+              11,
+              13,
+              15,
+              60
+            ]
+          },
+          {
+            "path": "N14/output/source-evidence.txt",
+            "lines": [
+              21,
+              71,
+              72,
+              102
+            ]
+          }
+        ],
+        "uncertainty": "Actual deployed Back traversal and Enter behavior remain UNKNOWN; no live evidence was requested or obtained in this offline review."
+      },
+      {
+        "id": "K3",
+        "definition": "Unanswered state and enforced activation, network and origin boundaries.",
+        "grade": "MET",
+        "rationale": "The review preserves unanswered state and identifies the absent enforcement/evidence for origin and allowed-method boundaries, including blocked analytics effects. Its proposed prerequisites precede future navigation. The trial itself had a recorded disabled-network/read-only-input boundary.",
+        "evidence": [
+          {
+            "path": "N14/output/REPORT.md",
+            "lines": [
+              29,
+              31,
+              33,
+              35,
+              44
+            ]
+          },
+          {
+            "path": "N14/boundary.json",
+            "lines": [
+              53,
+              63,
+              65
+            ]
+          },
+          {
+            "path": "N14/output/source-evidence.txt",
+            "lines": [
+              11,
+              12,
+              24,
+              26
+            ]
+          }
+        ],
+        "uncertainty": "A sandbox connection denial does not establish website-side or browser request-guard behavior; actual blocked website requests and external harness configuration remain unobserved."
+      },
+      {
+        "id": "K4",
+        "definition": "Evidence or explicit uncertainty; never mislabel a protocol fixture result as a website defect.",
+        "grade": "MET",
+        "rationale": "Findings cite source lines, retain counterpoints and uncertainty, and explicitly identify the target as a reconstructed fixture rather than a website defect. No browser performance, focus or network success is claimed.",
+        "evidence": [
+          {
+            "path": "N14/output/REPORT.md",
+            "lines": [
+              3,
+              15,
+              25,
+              31,
+              35,
+              52,
+              56,
+              58,
+              60
+            ]
+          },
+          {
+            "path": "N14/output/source-evidence.txt",
+            "lines": [
+              95
+            ]
+          }
+        ],
+        "uncertainty": null
+      },
+      {
+        "id": "K5",
+        "definition": "Relevant checker command and acceptance checks for planning/review; proposed and executed commands remain distinct.",
+        "grade": "MET",
+        "rationale": "The relevant contract checker is actually recorded with command, cwd, exit 0 and complete stdout. Proposed procedure/acceptance corrections remain distinct from that executed consistency check; the report states the checker cannot validate the Markdown or website.",
+        "evidence": [
+          {
+            "path": "N14/output/contract-check.json",
+            "lines": [
+              2,
+              3,
+              4,
+              5,
+              7,
+              11
+            ]
+          },
+          {
+            "path": "N14/output/REPORT.md",
+            "lines": [
+              13,
+              23,
+              33,
+              56
+            ]
+          }
+        ],
+        "uncertainty": null
+      },
+      {
+        "id": "K8",
+        "definition": "Scoped decision supported by actual observations.",
+        "grade": "MET",
+        "rationale": "The decision is limited to three supported procedure-proof gaps plus an explicitly bounded reproducibility observation. No release, deployment or website acceptance decision is inferred.",
+        "evidence": [
+          {
+            "path": "N14/output/REPORT.md",
+            "lines": [
+              37,
+              39,
+              54,
+              58,
+              60
+            ]
+          },
+          {
+            "path": "N14/output/run-record.json",
+            "lines": [
+              91,
+              92,
+              93,
+              94,
+              95
+            ]
+          }
+        ],
+        "uncertainty": null
+      }
+    ],
+    "method_assessment": {
+      "declared_method_compliance": "MET",
+      "phase_inventory": "A single source review, actual checker result, input hashes and full line-numbered source transcript are retained. No Qore phases are required for this baseline.",
+      "complete_substantiated": "YES, for completion of the requested offline source review only. No requirement for independent Qore verification is imposed on baseline.",
+      "evidence": [
+        {
+          "path": "N14/output/REPORT.md",
+          "lines": [
+            56,
+            58,
+            60
+          ]
+        },
+        {
+          "path": "N14/output/run-record.json",
+          "lines": [
+            18,
+            19,
+            20,
+            21,
+            26,
+            40,
+            89
+          ]
+        },
+        {
+          "path": "N14/completion.json",
+          "lines": [
+            1,
+            13
+          ]
+        }
+      ],
+      "limitations": [
+        "No independent verifier was claimed or performed.",
+        "The source-evidence file is a line-numbered text retention, not a separate exact-byte raw source tree; its reported four project-source digests agree with the copied sources in the other authorized runs.",
+        "The enclosing prepared-input/candidate identity was supplied metadata rather than independently reconstructed.",
+        "The evaluator did not have a native full execution transcript; command execution is supported by retained records and output, not independently replayed."
+      ]
+    }
+  },
+  "limits": [
+    "Neutral filenames did not blind conditions.",
+    "The raw criterion judgments concern their declared task scope; later method-coverage qualification is separate."
+  ]
+}

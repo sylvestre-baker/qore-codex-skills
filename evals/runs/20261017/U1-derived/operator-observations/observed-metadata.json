@@ -1,0 +1,50 @@
+{
+  "neutral_id": "N12",
+  "scenario_id": "U1",
+  "coverage": "PARTIAL",
+  "resources": {
+    "caps": {
+      "wall_seconds": 900,
+      "aggregate_agent_seconds": 2400,
+      "browser_requests": 6,
+      "transient_browser_retries": 1,
+      "evaluator_seconds": 1800,
+      "verifier_seconds": 1800,
+      "maximum_original_cells": 21,
+      "limit": "Provisional operator policy, not measured feasibility or hard timeout enforcement."
+    },
+    "started_at": "2026-10-17T10:53:58.618388+00:00",
+    "ended_at": "2026-10-17T11:02:40.151023+00:00",
+    "children": [],
+    "tokens": 2607128,
+    "aggregate_agent_seconds": 519.770065,
+    "unavailable": {},
+    "parent_native_usage": {
+      "input_tokens": 2585563,
+      "cached_input_tokens": 2460672,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 21565,
+      "reasoning_output_tokens": 5108
+    },
+    "parent_wall_seconds": 519.770065,
+    "measurement_basis": "Single context only: CLI turn input+output tokens including cached input, and observed launcher-to-return wall interval including transport/tool waits; not CPU, billing, unique tokens or productivity."
+  },
+  "limitations": [
+    "One observation on a related known task, not a general benefit benchmark.",
+    "Criterion assessments remain UNKNOWN until a separate actual evaluator and verifier inspect retained outputs.",
+    "CLI JSONL omits some native child lifecycle events; child identities and history-free dispatches rely on retained role reports/roster plus the qualified inheritance probe.",
+    "All resource timing precision and unavailable measurements remain explicit; no cost or efficiency conclusion.",
+    "Required G1 cold direct deep-link initialization could not run: relay only starts at /labs and has no navigate action; deep reload/history observations do not replace it.",
+    "Stop-rule STOP_PLATEAU at iteration4; G3/G5 remain below4. No fixes authorized or applied; no further dispatches after stop.",
+    "Only full-page PNGs, limited semantic DOM and guarded actions exposed; no viewport-only screenshot, geometry/hit testing, contrast audit, screen reader or accessibility certification.",
+    "Undismissed-cookie anonymous context only; consent actions are outside activation whitelist. No authenticated persona, mobile, alternate theme, full questionnaire, answers or results.",
+    "Browser network data omits request headers/bodies. Guard enforcement and events are observed, not a security-isolation certification. No off-origin navigation attack attempted.",
+    "Request3 exact-case heading assertion and request4 assumed question-reload reset caused partial requests; both are authored check problems, retained and refuted as product defects.",
+    "Live deployment commit is unknown; enclosing target digest identifies frozen prepared inputs, not deployed assets. Aggregate supplied manifest serialization unavailable for independent reconstruction.",
+    "No child agents required or spawned. Actual context /root performs UX phases. Token and billed aggregate agent-seconds unavailable because runtime provides no usage telemetry.",
+    "Probe references trace.zip/video files that were not exposed in relay feedback; only returned actual DOM/PNG/events/results/receipts retained.",
+    "Initial rg command unavailable; used ls/find and Python local reads instead. No external network/search/fetch/connector tool used."
+  ],
+  "raw_output_sha256": "e1d9e0ff516ca964baf79821bbcedcc843fd4158ff8d1eba6e786c60c6a87dce",
+  "blinding_limit": "Neutral filenames only; method/profile citations and role rosters can reveal condition. This is not a blinded comparison."
+}

@@ -1,0 +1,77 @@
+{
+  "declared_at": "2026-10-17T12:08:23.374113+00:00",
+  "actor_id": "/root",
+  "depth": [
+    "entry",
+    "state"
+  ],
+  "required_gates": [
+    "G0",
+    "G1",
+    "G2",
+    "G3",
+    "G4",
+    "G5",
+    "G6"
+  ],
+  "GP": "NOT_APPLICABLE: no performance acceptance and contract explicitly excludes performance certification",
+  "entry_url": "https://qaizen.io/labs",
+  "origins": [
+    "https://qaizen.io"
+  ],
+  "persona": "anonymous public visitor, no account",
+  "locale": "en-US",
+  "matrix": [
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "theme": "default supplied public rendering",
+      "states": [
+        "labs",
+        "introduction",
+        "first-question",
+        "help-open",
+        "help-closed",
+        "returned-introduction"
+      ]
+    }
+  ],
+  "required_checks": [
+    "entry",
+    "unanswered",
+    "help-toggle",
+    "close-focus",
+    "keyboard-back",
+    "introduction-focus",
+    "read-only-policy",
+    "origin-policy"
+  ],
+  "transitions": [
+    "entry click",
+    "Start click",
+    "summary Enter",
+    "summary Space",
+    "summary Enter",
+    "Tab to Close + Enter -> summary focus",
+    "Tab to Back + Enter -> introduction h1 focus"
+  ],
+  "policy": "GET/HEAD/OPTIONS only; block outside-origin main-frame/popups; no answers, result generation, shared-data writes, or source modification",
+  "budget": {
+    "wall_seconds": 900,
+    "aggregate_agent_seconds": 2400,
+    "browser_requests_max": 6,
+    "iteration_max": 6,
+    "per_request_wait_deadline_seconds": 150,
+    "report_reserve_seconds": 120
+  },
+  "roles": {
+    "method": "UX requires no independent finder/planner/verifier roles",
+    "requested": [
+      "/root"
+    ],
+    "children": []
+  },
+  "G1_scope": "Observe entry route, reload and history outcomes if applicable; direct deep navigation unavailable in listed relay actions must be recorded as a gap if not supplied by driver probe. No invented query/invalid URLs."
+}

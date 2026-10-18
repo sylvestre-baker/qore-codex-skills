@@ -1,0 +1,110 @@
+{
+  "observed_at": "2026-10-17T11:51:31.617668+00:00",
+  "all_unchanged": true,
+  "file_count": 17,
+  "files": [
+    {
+      "path": ".agents/skills/qore-plan/SKILL.md",
+      "before": "6a0b7a03d888595e6b9e76bc16644a313a187df91622fd5245d4b2253bdf83da",
+      "after": "6a0b7a03d888595e6b9e76bc16644a313a187df91622fd5245d4b2253bdf83da",
+      "unchanged": true
+    },
+    {
+      "path": ".agents/skills/qore-plan/agents/openai.yaml",
+      "before": "21ffa75d5bc52d68819ff68d4b8c65dc33584464f755487e6a02302f0924c22b",
+      "after": "21ffa75d5bc52d68819ff68d4b8c65dc33584464f755487e6a02302f0924c22b",
+      "unchanged": true
+    },
+    {
+      "path": ".agents/skills/qore-plan/references/project-profile.md",
+      "before": "16c5ff087c83b7503b23d5d94726834462dd4fd73d78a5380cf85135fa85b0b3",
+      "after": "16c5ff087c83b7503b23d5d94726834462dd4fd73d78a5380cf85135fa85b0b3",
+      "unchanged": true
+    },
+    {
+      "path": ".agents/skills/qore-plan/references/protocol.md",
+      "before": "83f92490a5601b83fc6eaa21861344e35cd04a3ac7edb56b98cd2eb0ecfea84b",
+      "after": "83f92490a5601b83fc6eaa21861344e35cd04a3ac7edb56b98cd2eb0ecfea84b",
+      "unchanged": true
+    },
+    {
+      "path": ".agents/skills/qore-plan/references/release.json",
+      "before": "38514ca5e540a1e5f1ef17859e86fe7202518d8db1aeb5bae9222cfb09e7f28a",
+      "after": "38514ca5e540a1e5f1ef17859e86fe7202518d8db1aeb5bae9222cfb09e7f28a",
+      "unchanged": true
+    },
+    {
+      "path": ".agents/skills/qore-plan/references/roles.md",
+      "before": "cc8060c7c852c143b9671af4fc0176b9c5068f338c19b2556b6ff494c0f0d318",
+      "after": "cc8060c7c852c143b9671af4fc0176b9c5068f338c19b2556b6ff494c0f0d318",
+      "unchanged": true
+    },
+    {
+      "path": ".agents/skills/qore-plan/references/run-evidence.md",
+      "before": "35cd6dc6d3e1177bbae96e5b9e829ed1aa55901747c856f4db20e946421f163d",
+      "after": "35cd6dc6d3e1177bbae96e5b9e829ed1aa55901747c856f4db20e946421f163d",
+      "unchanged": true
+    },
+    {
+      "path": ".agents/skills/qore-plan/references/specification.md",
+      "before": "7eb06b91fca66a3ec00bda4b49b035c5e6bfe827c4624768f66a09b6ae7827a1",
+      "after": "7eb06b91fca66a3ec00bda4b49b035c5e6bfe827c4624768f66a09b6ae7827a1",
+      "unchanged": true
+    },
+    {
+      "path": ".agents/skills/qore-plan/scripts/project-check.py",
+      "before": "d87afa433fe485bdebca3e281d06e0896e4a8980ea7cf7baee739053614ea0ac",
+      "after": "d87afa433fe485bdebca3e281d06e0896e4a8980ea7cf7baee739053614ea0ac",
+      "unchanged": true
+    },
+    {
+      "path": ".agents/skills/qore-plan/scripts/run-check.py",
+      "before": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+      "after": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+      "unchanged": true
+    },
+    {
+      "path": ".agents/skills/qore-plan/scripts/spec-lint.mjs",
+      "before": "321ac211bfac936c4da3ffe173cdfc0d92cb695351273d289809c05c8b037ada",
+      "after": "321ac211bfac936c4da3ffe173cdfc0d92cb695351273d289809c05c8b037ada",
+      "unchanged": true
+    },
+    {
+      "path": ".agents/skills/qore-plan/scripts/spec-lint.sh",
+      "before": "ee4b0c491833f8f3960037255f7ea601548a353d18b317aae25d8e5f2cd461b6",
+      "after": "ee4b0c491833f8f3960037255f7ea601548a353d18b317aae25d8e5f2cd461b6",
+      "unchanged": true
+    },
+    {
+      "path": "TASK.md",
+      "before": "76689d03b48468b5c40941177d49c91c28026c0d845b11bfd7ff94c4d70e10a9",
+      "after": "76689d03b48468b5c40941177d49c91c28026c0d845b11bfd7ff94c4d70e10a9",
+      "unchanged": true
+    },
+    {
+      "path": "checks/check_contract.py",
+      "before": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b",
+      "after": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b",
+      "unchanged": true
+    },
+    {
+      "path": "observation-policy.json",
+      "before": "15f4e5b4960b5011684be265f027e42b8637a3b8aae96b24bba1ba3a4d0f0202",
+      "after": "15f4e5b4960b5011684be265f027e42b8637a3b8aae96b24bba1ba3a4d0f0202",
+      "unchanged": true
+    },
+    {
+      "path": "surface-contract.json",
+      "before": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+      "after": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+      "unchanged": true
+    },
+    {
+      "path": "target/verification-protocol.md",
+      "before": "0a3452f02e358d8800fb26d591083deb972c5531165473990dc27007a9a9e0d4",
+      "after": "0a3452f02e358d8800fb26d591083deb972c5531165473990dc27007a9a9e0d4",
+      "unchanged": true
+    }
+  ],
+  "procedure": "SHA-256 raw bytes before and after task; includes task, all project sources, target and skill resources."
+}

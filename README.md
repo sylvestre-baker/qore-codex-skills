@@ -8,7 +8,9 @@ Created by [Sylvestre Franceschi](https://github.com/sylvestre-baker) at [Qaizen
 
 In one actual self-application, planning exposed a malformed verifier option that produced a structural success token. The selected correction rejects it and keeps the earlier zero-finding review visible. [See the problem, evidence, decision and limits](docs/evidence/validator-case.md).
 
-**Version 0.2.1.** Three methods, a deterministic assembler, sourced profiles and recorded executions are included. The [qualification record](docs/qualification.md) distinguishes original snapshots, corrective checks and coverage limits, including one explicit historical cache exclusion. Historical artifacts retain their original release state and identities.
+**Version 0.3.0.** Three methods, a deterministic assembler, sourced profiles and recorded executions are included. The [qualification record](docs/qualification.md) distinguishes original snapshots, corrective checks and coverage limits, including two excluded historical source caches. Historical artifacts retain their original release state and identities.
+
+Read the [0.3.0 release scope and verification boundaries](docs/releases/0.3.0.md). The frozen 18-cell diagnostic retains 14 COMPLETE and 4 PARTIAL executions; it does not establish a comparative improvement.
 
 ## Choose your task
 
@@ -40,12 +42,12 @@ From the repository directory containing this README, build a new candidate and 
 ```sh
 qore_stage="$(mktemp -d "${TMPDIR:-/tmp}/qore-first.XXXXXX")"
 python3 tools/qore.py build --output "$qore_stage"
-python3 tools/qore.py install --source "$qore_stage/qore-skills-0.2.1" --project-root .
+python3 tools/qore.py install --source "$qore_stage/qore-skills-0.3.0" --project-root .
 ```
 
 The installer prints three paths under `.agents/skills/` and `"replaced": false`. It refuses an existing destination and preserves it. If you already have these local skills, use a fresh checkout or compare a newly staged candidate; see [safe updates](docs/profiles.md#update-without-overwriting).
 
-For installation without the tutorial and evidence archive, the assembler also supports `build --scope skills`; see the [compact archive guide](INSTALL.md). Download the [compact skills ZIP](https://github.com/sylvestre-baker/qore-codex-skills/releases/download/v0.2.1/qore-skills-0.2.1-skills.zip) for installation or the [full ZIP](https://github.com/sylvestre-baker/qore-codex-skills/releases/download/v0.2.1/qore-skills-0.2.1.zip) for the tutorial, sources and evidence. Check their SHA-256 digests against the release assets. The explicit rights inventory covers the selected resource bytes; changed resources require a new review.
+For installation without the tutorial and evidence archive, the assembler also supports `build --scope skills`; see the [compact archive guide](INSTALL.md). Download the [compact skills ZIP](https://github.com/sylvestre-baker/qore-codex-skills/releases/download/v0.3.0/qore-skills-0.3.0-skills.zip) for installation or the [full ZIP](https://github.com/sylvestre-baker/qore-codex-skills/releases/download/v0.3.0/qore-skills-0.3.0.zip) for the tutorial, sources and evidence. Check their SHA-256 digests against the release assets. The explicit rights inventory covers the selected resource bytes; changed resources require a new review.
 
 Open a **new Codex chat in this repository directory**, then use:
 
@@ -84,7 +86,15 @@ The [planning report](docs/evidence/qaizen-labs/plan/REPORT.md), [review and cor
 
 Browser evidence covers one desktop English entry/state flow. It does not establish whole-site readiness, instrumented accessibility conformance, performance or external human usability. One analytics POST was blocked and recorded. Linux source review ran without a browser driver; its skipped browser checks are not passes. The [earlier validator case](docs/evidence/validator-case.md) and [0.1.0 execution record](docs/qualification.md) retain their original identities.
 
-The [recoverable-installation case](docs/evidence/install-recovery/README.md) adds a 3:30 English lesson and an offline replay: a controlled copy failure blocks retry before the correction; safe cleanup permits retry afterward. It distinguishes the known failure, targeted Qodo advice, rejected remedy detail and independent checks. This branch contains the candidate; released v0.2.1 assets are unchanged.
+The [recoverable-installation case](docs/evidence/install-recovery/README.md) adds a 3:30 English lesson and an offline replay: a controlled copy failure blocks retry before the correction; safe cleanup permits retry afterward. It distinguishes the known failure, targeted Qodo advice, rejected remedy detail and independent checks. The lesson retains its original pinned source identities; the current release includes the recovery correction and the later replay assertion check.
+
+## Evaluate a project adaptation
+
+The Labs case shows the three specialized methods using project facts. It does not establish that specialization improves their results. The optional [specialization evaluation](docs/specialization.md) asks a narrower question: **for the tested obligations, should a maintainer retain, simplify or fix an adaptation?**
+
+**All 18 original cells executed, including the retained pilot; 14 COMPLETE and 4 PARTIAL after independent coverage qualification. Comparative benefit remains UNKNOWN.** Six related scenarios compare the same public source material under an agent baseline, generic Qore and derived Qore. Generic versus derived is the primary comparison; the baseline also changes the method and organization of work. Reconstructed tutorial protocols are labelled fixtures, not new website defects. Browser observations used the declared relay; failed requests and missing required checks remain visible. The campaign found a sourced-profile mismatch and a separately reproduced cookie-banner obstruction. Corrections have their own checks and do not replace the original trials.
+
+Read the [protocol and prerequisites](docs/specialization.md), [scenario registry](evals/scenarios.json), [series registry](evals/series.json) and [result inventory](docs/evidence/specialization/README.md). This path is separate from the published review quickstart above. Preparation and structural checks do not count as completed agent trials.
 
 ## Adapt all three methods from one profile
 
@@ -167,6 +177,7 @@ If a role or required browser capability is unavailable, retain its name and evi
 - [Architecture](docs/architecture.md): core, project facts, Codex adaptation, and local trust boundaries.
 - [Contracts and validators](docs/contracts.md): project, release, and execution records; what checks can and cannot establish.
 - [Command and prompt inventory](docs/command-inventory.json): prerequisites, effects, substitutions, and actual execution status for the documentation examples.
+- [Specialization evaluation](docs/specialization.md): bounded scenarios, controlled inputs and evidence required before a comparative conclusion.
 - [Troubleshooting](docs/troubleshooting.md): discovery, stale facts, unavailable tools, and refused updates.
 - Method protocols: [planning](skills/qore-plan/SKILL.md), [review](skills/qore-review/SKILL.md), and [web UX](skills/qore-ux-review/SKILL.md).
 - [Contributing](CONTRIBUTING.md), [provenance](PROVENANCE.md), and [MIT license](LICENSE).

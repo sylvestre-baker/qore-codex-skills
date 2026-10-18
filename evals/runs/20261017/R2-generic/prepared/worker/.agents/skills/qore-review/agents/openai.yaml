@@ -1,0 +1,4 @@
+interface:
+  display_name: "Qore Review"
+  short_description: "Challenge artifacts with independently checked findings"
+  default_prompt: "Use $qore-review to challenge this artifact and verify its findings."

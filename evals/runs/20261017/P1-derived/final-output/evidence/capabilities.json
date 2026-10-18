@@ -1,0 +1,41 @@
+{
+  "observed_at": "2026-10-17T10:39:31.979303+00:00",
+  "subagent_tools": "collaboration.spawn_agent/followup_task available; actual identities recorded in roster",
+  "initial_search_failure": {
+    "argv": [
+      "rg",
+      "--files",
+      "-g",
+      "TASK.md",
+      "-g",
+      "AGENTS.md",
+      "-g",
+      "*manifest*",
+      "-g",
+      "SKILL.md",
+      "."
+    ],
+    "exit_code": 127,
+    "stderr": "/bin/sh: rg: not found",
+    "fallback": "find, Python and cat"
+  },
+  "network": "prohibited, unused",
+  "input_access": "read-only; all writes under /workspace/output",
+  "runtime": "Python3, Node, Bash, Git declared; Python3 and shell used, Node used by later lint",
+  "applicable_instructions": "No AGENTS.md found; TASK.md and bundled SKILL.md revisions in input-manifest.json",
+  "additional_failed_probe": {
+    "argv": [
+      "find",
+      "/workspace/output/reports",
+      "-maxdepth",
+      "1",
+      "-type",
+      "f",
+      "-printf",
+      "%f\\n"
+    ],
+    "exit_code": 1,
+    "stderr": "BusyBox find: unrecognized: -printf",
+    "fallback": "Use Python pathlib or find -print"
+  }
+}

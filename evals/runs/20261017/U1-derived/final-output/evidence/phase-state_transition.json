@@ -1,0 +1,76 @@
+{
+  "qore_evidence": {
+    "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+    "target_snapshot_sha256": "b269181f3e44e5b4d84fe94ae1d683f85d2b8bde69f389d32d030b1e0909ef36",
+    "observed_at": "2026-10-17T11:01:10.933675+00:00",
+    "phase_id": "state_transition"
+  },
+  "payload": {
+    "actor_id": "/root",
+    "observed_at": "2026-10-17T10:59:16.162Z",
+    "checks": [
+      {
+        "id": "entry",
+        "status": "PASS",
+        "evidence": "response-2/events.json",
+        "time_utc": "2026-10-17T10:55:23.879Z",
+        "conclusion": "Real public card click; distinct introduction h1 and Start, then first-question h2 observed."
+      },
+      {
+        "id": "unanswered",
+        "status": "PASS",
+        "evidence": "response-2/events.json",
+        "time_utc": "2026-10-17T10:55:28.688Z",
+        "conclusion": "None-checked assertions before help, after Close and after Back; requests4/5 also pass after restart/reload/history."
+      },
+      {
+        "id": "help-toggle",
+        "status": "PASS",
+        "evidence": "response-2/events.json",
+        "time_utc": "2026-10-17T10:55:31.598Z",
+        "conclusion": "Sequential Tab to summary; Enter opens, Space closes, Enter reopens; open attribute asserted each time."
+      },
+      {
+        "id": "close-focus",
+        "status": "PASS",
+        "evidence": "response-2/events.json",
+        "time_utc": "2026-10-17T10:55:39.255Z",
+        "conclusion": "One Tab reaches Close; Enter closes; summary active/focused. Repeated in request4."
+      },
+      {
+        "id": "keyboard-back",
+        "status": "PASS",
+        "evidence": "response-2/events.json",
+        "time_utc": "2026-10-17T10:55:45.798Z",
+        "conclusion": "One Tab from summary reaches Back, then Enter activates it; no click/programmatic focusing used for Back."
+      },
+      {
+        "id": "introduction-focus",
+        "status": "PASS",
+        "evidence": "response-2/07-returned-introduction.dom.json",
+        "time_utc": "2026-10-17T10:55:53.390Z",
+        "conclusion": "Distinct introduction restored and active element is h1. Separate from Close summary focus."
+      },
+      {
+        "id": "read-only-policy",
+        "status": "PASS",
+        "evidence": "response-2/events.json",
+        "time_utc": "2026-10-17T10:55:26.871Z",
+        "conclusion": "Analytics POST explicitly blocked before completion; rendered journey still completes. Across all observations four blocked POSTs."
+      },
+      {
+        "id": "origin-policy",
+        "status": "PASS",
+        "evidence": "response-2/events.json",
+        "time_utc": "2026-10-17T10:55:57.364Z",
+        "conclusion": "Configured allowed-origin navigation guard retained; all recorded navigations same origin, no blocked navigation or route errors. No deliberate off-origin activation attempted."
+      }
+    ],
+    "challenge": {
+      "request4": "Back and Close focus repeated; fresh screenshot reproduces overlap; Start again has no checked answer and help closed.",
+      "request5": "Question reload and history preserve unanswered question; browser Back goes to labs and Forward returns to question.",
+      "application_back_is_browser_back": false
+    },
+    "state_transition_phase": "PASS: actual authorized transitions observed; a visual defect does not invalidate proof that the transitions ran."
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "procedure": "Read-only independent parsing and exact-byte SHA-256 checks of retained inputs and each execution.json declared artifact. The evidence root is taken from the recorded run-check command: N01/output/evidence and N10/output. No trial checker, redactor, linter, model, browser, or worker was rerun.",
+  "runs": {
+    "N01": {
+      "source_sha256": {
+        "surface-contract.json": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+        "observation-policy.json": "15f4e5b4960b5011684be265f027e42b8637a3b8aae96b24bba1ba3a4d0f0202",
+        "checks/check_contract.py": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b",
+        "target/verification-protocol.md": "0a3452f02e358d8800fb26d591083deb972c5531165473990dc27007a9a9e0d4"
+      },
+      "evidence_root": "N01/output/evidence",
+      "declared_artifacts": 55,
+      "missing": [],
+      "digest_mismatches": []
+    },
+    "N10": {
+      "source_sha256": {
+        "surface-contract.json": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+        "observation-policy.json": "15f4e5b4960b5011684be265f027e42b8637a3b8aae96b24bba1ba3a4d0f0202",
+        "checks/check_contract.py": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b",
+        "target/verification-protocol.md": "0a3452f02e358d8800fb26d591083deb972c5531165473990dc27007a9a9e0d4"
+      },
+      "evidence_root": "N10/output",
+      "declared_artifacts": 61,
+      "missing": [],
+      "digest_mismatches": []
+    },
+    "N08": {
+      "source_sha256": {
+        "surface-contract.json": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+        "observation-policy.json": "15f4e5b4960b5011684be265f027e42b8637a3b8aae96b24bba1ba3a4d0f0202",
+        "checks/check_contract.py": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b",
+        "target/verification-protocol.md": "0a3452f02e358d8800fb26d591083deb972c5531165473990dc27007a9a9e0d4"
+      }
+    }
+  },
+  "evaluator_correction": "An initial exploratory inspection assumed N10 used output/evidence as its artifact root, producing false missing-path results. Reading the recorded --evidence-root /workspace/output corrected that evaluator assumption; the final check below uses output and has no missing artifacts. Those exploratory path misses are not trial defects."
+}

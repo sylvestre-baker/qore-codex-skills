@@ -1,0 +1,21 @@
+{
+  "exit_code": 0,
+  "request_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+  "harness_sha256": "544d47211ac5aefde57072aef4ded1140c21030555b0e45e93f8821794249add",
+  "policy_sha256": "2160973fbe4d0a603d061688d2d4fe9ee633d8b3f018fec773d7b8d7a28c7ff2",
+  "started_at": "2026-10-17T10:54:26.558311+00:00",
+  "ended_at": "2026-10-17T10:54:31.746689+00:00",
+  "fresh_context": true,
+  "input_actions_modified": false,
+  "operator_interpretation": null,
+  "stderr": "",
+  "diagnostic_transformation": "Only private operator evidence prefix replaced in returned stderr; original retained.",
+  "files": {
+    "00-entry.dom.json": "09a05d31c16faaf8980d863723e3f901798ef49b4cac43ea54aec912de99112d",
+    "00-entry.png": "095283e6a92818f6baf91a977793ff14591a91a60cef7b82ea9019642c2251e2",
+    "01-final.dom.json": "2e72d94aeb80a87a73191e51ac1edd98ea33a03d36fe37719b667b5f754ac9e2",
+    "01-final.png": "041319a5d5542b9a5ddae0bd2c782d018a031320b7ef69be076a71a99c470b8a",
+    "events.json": "2cb827eff1e6fa96a3021a5e7cf75e1bf079b1804bd908cdc614da38eb88bd9c",
+    "result.json": "fe80395a1feab70f23f607be898d6512dbb565c15d1760baf1f6c36f47795ed5"
+  }
+}

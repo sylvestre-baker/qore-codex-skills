@@ -1,0 +1,7 @@
+{
+  "observed_at": "2026-10-17T10:33:31.845684+00:00",
+  "procedure": "Compare SHA-256 of each original input against pre-role input-manifest.json; compare path inventory too",
+  "files_checked": 17,
+  "changed": [],
+  "inventory_unchanged": true
+}

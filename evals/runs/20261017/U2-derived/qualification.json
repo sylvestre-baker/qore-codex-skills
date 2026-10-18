@@ -1,0 +1,17 @@
+{
+  "schema": "qore-eval-qualification/1",
+  "run_id": "qore003-20261017-u2-derived-1",
+  "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+  "input_manifest_sha256": "f1c94eff9d8d9044073bbe14c71e2ef897c187a01238ba9363eedecdcca6d228",
+  "qore_run_sha256": "8901f963b56b1ec66611fc777014a1ae04fd2040cee0da1c1a18ae212dcacdc1",
+  "declared_coverage": "PARTIAL",
+  "coverage": "PARTIAL",
+  "assessor": "/root/campaign_ux_last_assessor",
+  "verifier": "/root/campaign_final_verifier",
+  "assessed_at": "2026-10-17T12:22:41.534375Z",
+  "reason": "Preserve original PARTIAL. Initial entry/state scope requires G1 and explicitly says absent direct deep navigation remains a gap. Final post-history reload terminal capture is missing; no successful terminal render or website failure is inferred. Completed help/Close/Back observations and narrower task passes coexist with incomplete required coverage.",
+  "evidence": [
+    "independent-assessment.json",
+    "independent-verification.json"
+  ]
+}

@@ -1,0 +1,41 @@
+[
+  {
+    "type": "click",
+    "selector": "a[href$='/labs/readiness-check']"
+  },
+  {
+    "type": "click",
+    "role": "button",
+    "name": "Start the check"
+  },
+  {
+    "type": "assert-none-checked"
+  },
+  {
+    "type": "reload"
+  },
+  {
+    "type": "snapshot",
+    "label": "unanswered-question-reload-observed"
+  },
+  {
+    "type": "assert-none-checked"
+  },
+  {
+    "type": "history-back"
+  },
+  {
+    "type": "snapshot",
+    "label": "history-back-observed"
+  },
+  {
+    "type": "history-forward"
+  },
+  {
+    "type": "snapshot",
+    "label": "history-forward-observed"
+  },
+  {
+    "type": "assert-none-checked"
+  }
+]

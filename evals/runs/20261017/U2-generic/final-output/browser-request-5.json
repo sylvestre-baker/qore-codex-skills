@@ -1,0 +1,151 @@
+[
+  {
+    "type": "click",
+    "selector": "a[href$='/labs/readiness-check']"
+  },
+  {
+    "type": "reload"
+  },
+  {
+    "type": "assert-url",
+    "url": "https://qaizen.io/labs/readiness-check"
+  },
+  {
+    "type": "assert-visible",
+    "selector": "h1"
+  },
+  {
+    "type": "assert-text",
+    "text": "This check covers go-live controls, not the business case.",
+    "exact": true
+  },
+  {
+    "type": "snapshot",
+    "label": "reloaded-introduction"
+  },
+  {
+    "type": "history-back"
+  },
+  {
+    "type": "assert-url",
+    "url": "https://qaizen.io/labs"
+  },
+  {
+    "type": "assert-visible",
+    "selector": "h1"
+  },
+  {
+    "type": "snapshot",
+    "label": "history-back-labs"
+  },
+  {
+    "type": "history-forward"
+  },
+  {
+    "type": "assert-url",
+    "url": "https://qaizen.io/labs/readiness-check"
+  },
+  {
+    "type": "assert-text",
+    "text": "This check covers go-live controls, not the business case.",
+    "exact": true
+  },
+  {
+    "type": "snapshot",
+    "label": "history-forward-introduction"
+  },
+  {
+    "type": "click",
+    "selector": "main button[type=\"button\"]"
+  },
+  {
+    "type": "assert-none-checked"
+  },
+  {
+    "type": "traverse-focus",
+    "selector": "main details summary",
+    "max_steps": 24
+  },
+  {
+    "type": "keyboard",
+    "key": "Enter"
+  },
+  {
+    "type": "assert-attribute",
+    "selector": "main details",
+    "attribute": "open",
+    "value": ""
+  },
+  {
+    "type": "snapshot",
+    "label": "challenged-help-open"
+  },
+  {
+    "type": "traverse-focus",
+    "selector": "main details button[type=\"button\"]",
+    "max_steps": 24
+  },
+  {
+    "type": "assert-focused",
+    "selector": "main details button[type=\"button\"]"
+  },
+  {
+    "type": "snapshot",
+    "label": "close-focused"
+  },
+  {
+    "type": "keyboard",
+    "key": "Enter"
+  },
+  {
+    "type": "assert-attribute",
+    "selector": "main details",
+    "attribute": "open",
+    "value": null
+  },
+  {
+    "type": "assert-focused",
+    "selector": "main details summary"
+  },
+  {
+    "type": "assert-hidden",
+    "selector": "main details button[type=\"button\"]"
+  },
+  {
+    "type": "snapshot",
+    "label": "challenged-close-restored"
+  },
+  {
+    "type": "traverse-focus",
+    "selector": "main button[type=\"button\"]:not([role]):not([disabled]):not(details button)",
+    "max_steps": 24
+  },
+  {
+    "type": "assert-focused",
+    "selector": "main button[type=\"button\"]:not([role]):not([disabled]):not(details button)"
+  },
+  {
+    "type": "snapshot",
+    "label": "back-focused"
+  },
+  {
+    "type": "assert-none-checked"
+  },
+  {
+    "type": "keyboard",
+    "key": "Enter"
+  },
+  {
+    "type": "assert-focused",
+    "selector": "h1"
+  },
+  {
+    "type": "assert-text",
+    "text": "This check covers go-live controls, not the business case.",
+    "exact": true
+  },
+  {
+    "type": "snapshot",
+    "label": "challenged-returned-introduction"
+  }
+]

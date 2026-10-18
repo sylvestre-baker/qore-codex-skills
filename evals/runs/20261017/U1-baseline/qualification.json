@@ -1,0 +1,17 @@
+{
+  "schema": "qore-eval-qualification/1",
+  "run_id": "qore003-20261017-u1-baseline-1",
+  "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+  "input_manifest_sha256": "ac79f382c3f69aafe033bb3df651d1d2a974f7b5b9bcd94fcef6c0771e8daa02",
+  "qore_run_sha256": null,
+  "declared_coverage": "COMPLETE",
+  "coverage": "COMPLETE",
+  "assessor": "/root/campaign_ux_assessor",
+  "verifier": "/root/campaign_final_verifier",
+  "assessed_at": "2026-10-17T12:22:41.534375Z",
+  "reason": "Preserve COMPLETE at the frozen direct baseline observation scope. The separate evaluator inspected actual entry/help/focus/unanswered and policy evidence. No uninvoked Qore cold-entry gate, loop, profile or role obligation is imposed; live revision and broader product certification remain unknown.",
+  "evidence": [
+    "independent-assessment.json",
+    "independent-verification.json"
+  ]
+}

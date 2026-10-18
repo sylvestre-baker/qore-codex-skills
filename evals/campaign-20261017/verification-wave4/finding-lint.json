@@ -1,0 +1,49 @@
+{
+  "argv": [
+    "node",
+    "<private-campaign-root>/assessment-inputs/N01/input/.agents/skills/qore-review-qaizen-labs/scripts/finding-lint.mjs",
+    "<private-campaign-root>/verification-wave4/verified.json",
+    "--verifier=ran",
+    "--json"
+  ],
+  "cwd": "<private-campaign-root>",
+  "started_at": "2026-10-17T11:45:46.908955+00:00",
+  "finished_at": "2026-10-17T11:45:46.953606+00:00",
+  "exit_code": 0,
+  "stdout": {
+    "valid": true,
+    "coverage": "COMPLETE",
+    "verdict": "SHIP",
+    "verifier": "ran",
+    "total": 2,
+    "counts": {
+      "CONFIRMED": 1,
+      "PLAUSIBLE": 0,
+      "REFUTED": 1
+    },
+    "blocking_findings": [],
+    "unresolved_findings": [],
+    "findings": [
+      {
+        "id": "R2-C01",
+        "title": "R2 filtered verifier packets expose forbidden finder rationale",
+        "severity": "medium",
+        "verdict": "REFUTED",
+        "evidence": "Both pinned SKILL.md:12-13 and protocol.md:31,35 require the actual filtered claims and exclude finder reasoning/full reports. Both redact-for-verifier.mjs:13,17-19,28-34 explicitly allow scalar id/title/severity/evidence/counterexample. N01/output/evidence/claims.json:4-31 and N10/output/claims.json:4-19 retain only id/title/severity/evidence. Independent actual reruns of each supplied redactor reproduce retained outputs byte-for-byte (verification-wave4/read-only-checks.json). N01 original findings finder_report values are report filenames, removed in retained output; N10 separate rationale/uncertainty/proposed_correction fields are removed. Manual comparison against all six complete returned finder reports found contextual claim evidence, conditions and consequences, not a complete report repackaged as evidence or an earlier finder verdict. N01/output/evidence/verifier-report.md:3,17 identifies the exclusive input paths and retained claims hash is recorded in verifier-static-audit.json; N10/output/roles/verifier/report.md:7 and evidence/isolation.json:15-24 identify only the filtered claims plus original criteria. No forbidden separate rationale field, complete finder report or prior verdict exposure is reproduced by the referenced evidence.",
+        "counterexample": "Actual input N10 C-1 contains a separate rationale field plus uncertainty/proposed_correction. Running the existing bundled redactor returns only id/title/severity/evidence, exactly matching retained claims.json; rationale is absent. Actual N01 finder_report filename fields are likewise absent. The retained evidence does state the checkable claim context and its conditional impact, as findings.md:5 requires enough raw target context to reproduce a claim. The allowlist does not promise semantic removal of every explanatory sentence. Original verifier reports explicitly limit their intake to that packet and raw sources. This refutes the proposed packet-exposure failure on the observed record; it does not prove unrecorded context could never have been exposed.",
+        "refuted_because": "The assertion conflates allowed evidence text explaining the candidate with forbidden complete finder reports, separate rationale fields or earlier verdicts. Exact local reruns, actual retained packets, complete returned reports and verifier intake records show the prescribed field wall, with none of the asserted forbidden exposures demonstrated."
+      },
+      {
+        "id": "R2-C02",
+        "title": "R2 derivative consumes a broader traversal profile than its selected source",
+        "severity": "medium",
+        "verdict": "CONFIRMED",
+        "evidence": "N01/input/.agents/skills/qore-review-qaizen-labs/references/project.json:7-9 binds surface-contract.json SHA-256 3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3; independent hashing matches. That exact source at surface-contract.json:15 selects back.traversal=Tab. Profile project.json:45-47 instead states sequential Tab or Shift+Tab, and output/evidence/profile-use.json:25-29 explicitly records consuming that broader fact as a review criterion against the target and direct source. Output/REPORT.md:9 accepts the target Tab/Shift+Tab instruction as present, while :22 reports profile preflight COMPLETE. Project-profile.md:22,24 requires source-supported facts and warns structural consistency cannot prove support; :36 requires exposing contradictions. The inspected checker at checks/check_contract.py:35-36 accepts either value across different contracts. Independent in-memory validation of the selected Tab contract and a different Shift+Tab contract both passes, which establishes the validator domain rather than equivalence of the selected source values (verification-wave4/read-only-checks.json).",
+        "counterexample": "Concrete reproduction uses the retained N01 files: selected source emits the single value Tab for transition back; the source-bound profile emits the allowed alternatives Tab or Shift+Tab; actual profile-use consumes that broader statement. Expected source-fidelity result is to retain the selected Tab obligation or explicitly expose/resolve the contradiction before claiming its review complete. Actual result accepts either traversal and does not report the mismatch. The attempted refutation that checker.validate accepts Shift+Tab fails: the independent check changes only an in-memory copy into a different valid contract, leaving the original selected source Tab. A backward-only trace could therefore satisfy the consumed criterion without proving the selected forward traversal. No actual website traversal failure or browser trace is claimed."
+      }
+    ],
+    "problems": [],
+    "limit": "The verifier flag records an execution declaration; validate actual independent phase evidence separately."
+  },
+  "stderr": ""
+}

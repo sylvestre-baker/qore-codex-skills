@@ -1,0 +1,29 @@
+{
+  "qore_evidence": {
+    "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+    "target_snapshot_sha256": "b269181f3e44e5b4d84fe94ae1d683f85d2b8bde69f389d32d030b1e0909ef36",
+    "observed_at": "2026-10-17T11:01:10.933829+00:00",
+    "phase_id": "verdict"
+  },
+  "payload": {
+    "actor_id": "/root",
+    "observed_at": "2026-10-17T11:01:10.933087+00:00",
+    "verdict": "DO-NOT-SHIP",
+    "coverage": "PARTIAL",
+    "reason": "UX-1 open visual/focus defect, required G1 cold-deep check missing, and method stop-rule plateau. Core source-defined keyboard Back transition passes.",
+    "stop": "STOP_PLATEAU at iteration4; no additional browser requests or quality retry. Five requests total including capability preflight.",
+    "resume": "In a separately identified authorized run, provide cold-deep navigation and viewport/geometry capture; investigate/fix banner avoidance then renew all required gate evidence after the change.",
+    "limitations": [
+      "Required G1 cold direct deep-link initialization could not run: relay only starts at /labs and has no navigate action; deep reload/history observations do not replace it.",
+      "Stop-rule STOP_PLATEAU at iteration4; G3/G5 remain below4. No fixes authorized or applied; no further dispatches after stop.",
+      "Only full-page PNGs, limited semantic DOM and guarded actions exposed; no viewport-only screenshot, geometry/hit testing, contrast audit, screen reader or accessibility certification.",
+      "Undismissed-cookie anonymous context only; consent actions are outside activation whitelist. No authenticated persona, mobile, alternate theme, full questionnaire, answers or results.",
+      "Browser network data omits request headers/bodies. Guard enforcement and events are observed, not a security-isolation certification. No off-origin navigation attack attempted.",
+      "Request3 exact-case heading assertion and request4 assumed question-reload reset caused partial requests; both are authored check problems, retained and refuted as product defects.",
+      "Live deployment commit is unknown; enclosing target digest identifies frozen prepared inputs, not deployed assets. Aggregate supplied manifest serialization unavailable for independent reconstruction.",
+      "No child agents required or spawned. Actual context /root performs UX phases. Token and billed aggregate agent-seconds unavailable because runtime provides no usage telemetry.",
+      "Probe references trace.zip/video files that were not exposed in relay feedback; only returned actual DOM/PNG/events/results/receipts retained.",
+      "Initial rg command unavailable; used ls/find and Python local reads instead. No external network/search/fetch/connector tool used."
+    ]
+  }
+}

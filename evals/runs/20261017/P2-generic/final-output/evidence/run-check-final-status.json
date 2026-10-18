@@ -1,0 +1,21 @@
+{
+  "observed_at": "2026-10-17T11:53:05.489349+00:00",
+  "argv": [
+    "python3",
+    "scripts/run-check.py",
+    "/workspace/output/execution.json",
+    "--evidence-root",
+    "/workspace/output"
+  ],
+  "exit_code": 0,
+  "run_sha256": "8e8405b267698c6aef3a301f4b8d8d36a916bf21255beaf7fa494a7d1814ac50",
+  "result": {
+    "valid": true,
+    "coverage": "COMPLETE",
+    "missing_phases": [],
+    "artifact_count": 53,
+    "note": "Evidence identity and declared phase coverage checked; factual quality is not certified."
+  },
+  "wall_start_utc": "2026-10-17T11:41:44Z",
+  "wall_elapsed_seconds": 681.489349
+}

@@ -1,0 +1,48 @@
+[
+  {
+    "argv": [
+      "sh",
+      "-c",
+      "pwd && rg --files -g 'TASK.md' -g 'AGENTS.md' -g '*SKILL*' -g '*qore*' -g '!node_modules' . /workspace/output"
+    ],
+    "exit_code": 127,
+    "artifact": "discovery-failure.json"
+  },
+  {
+    "argv": [
+      "python3",
+      "-B",
+      "/workspace/worker/checks/check_contract.py",
+      "/workspace/worker/surface-contract.json"
+    ],
+    "exit_code": 0,
+    "artifact": "contract-check.json"
+  },
+  {
+    "argv": [
+      "node",
+      "/workspace/worker/.agents/skills/qore-ux-review/scripts/depth-lint.mjs",
+      "/workspace/output/depth.json"
+    ],
+    "exit_code": 0,
+    "artifact": "depth-lint.json"
+  },
+  {
+    "argv": [
+      "node",
+      "/workspace/worker/.agents/skills/qore-ux-review/scripts/stop-rule.mjs",
+      "/workspace/output/loop.json"
+    ],
+    "exit_code": 0,
+    "artifact": "stop-rule-1.json"
+  },
+  {
+    "argv": [
+      "node",
+      "/workspace/worker/.agents/skills/qore-ux-review/scripts/stop-rule.mjs",
+      "/workspace/output/loop.json"
+    ],
+    "exit_code": 0,
+    "artifact": "stop-rule-2.json"
+  }
+]

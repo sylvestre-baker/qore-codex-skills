@@ -1,0 +1,566 @@
+{
+  "target_sha256": {
+    "target/verification-protocol.md": "b8d1f4ad7bd691dbf8f019cd3b87a7644a21899e6317edebac545fd3b245136e",
+    "surface-contract.json": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+    "checks/check_contract.py": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b",
+    "observation-policy.json": "15f4e5b4960b5011684be265f027e42b8637a3b8aae96b24bba1ba3a4d0f0202"
+  },
+  "written_steps": [
+    "1. Open the public Labs entry and follow its journey link.",
+    "2. Start the check without selecting an answer.",
+    "3. Open help using its summary control.",
+    "4. Reach Close with Tab or Shift+Tab, activate with Enter, and assert that help is closed and the summary is focused.",
+    "5. Assert that the first question remains unanswered.",
+    "6. Click Back, then assert that the introduction is visible, the question and help are absent, and the introduction heading is focused."
+  ],
+  "static_omissions": {
+    "summary_space": true,
+    "summary_reopen": true,
+    "back_requires_click": true,
+    "network_policy_not_named_or_loaded": true
+  },
+  "batch_1_network": {
+    "type": "SYNTHETIC, OFFLINE; no request attempted or sent",
+    "without_extra_policy_setup": [
+      {
+        "method": "GET",
+        "url": "https://qaizen.io/labs",
+        "synthetic_disposition": "delivered-to-in-memory-sink",
+        "blocked_reasons": []
+      },
+      {
+        "method": "POST",
+        "url": "https://qaizen.io/synthetic-analytics",
+        "synthetic_disposition": "delivered-to-in-memory-sink",
+        "blocked_reasons": []
+      },
+      {
+        "method": "GET",
+        "url": "https://outside.invalid/synthetic-asset",
+        "synthetic_disposition": "delivered-to-in-memory-sink",
+        "blocked_reasons": []
+      }
+    ],
+    "with_explicit_contract_policy": [
+      {
+        "method": "GET",
+        "url": "https://qaizen.io/labs",
+        "synthetic_disposition": "delivered-to-in-memory-sink",
+        "blocked_reasons": []
+      },
+      {
+        "method": "POST",
+        "url": "https://qaizen.io/synthetic-analytics",
+        "synthetic_disposition": "blocked",
+        "blocked_reasons": [
+          "method"
+        ]
+      },
+      {
+        "method": "GET",
+        "url": "https://outside.invalid/synthetic-asset",
+        "synthetic_disposition": "blocked",
+        "blocked_reasons": [
+          "origin"
+        ]
+      }
+    ],
+    "ui_assertions_depend_on_network_disposition": false,
+    "contract_validator_output": {
+      "valid": true,
+      "schema": "qaizen-labs-surface/1",
+      "checks": [
+        "entry",
+        "unanswered",
+        "help-toggle",
+        "close-focus",
+        "keyboard-back",
+        "introduction-focus",
+        "read-only-policy",
+        "origin-policy"
+      ],
+      "limit": "Contract consistency only; browser observations establish current behavior."
+    }
+  },
+  "batch_2_ui": {
+    "summary-space-broken": {
+      "type": "SYNTHETIC, OFFLINE; not website evidence",
+      "protocol": {
+        "all_written_assertions_pass": true,
+        "actual_trace": [
+          {
+            "control": "entry",
+            "activation": "click",
+            "traversal": null
+          },
+          {
+            "control": "start",
+            "activation": "click",
+            "traversal": null
+          },
+          {
+            "control": "summary",
+            "activation": "click",
+            "traversal": null
+          },
+          {
+            "control": "Close",
+            "activation": "Enter",
+            "traversal": "Tab"
+          },
+          {
+            "control": "Back",
+            "activation": "click",
+            "traversal": null
+          }
+        ],
+        "final_state": "introduction",
+        "final_focus": "introduction-heading"
+      },
+      "contract": {
+        "failures": [
+          {
+            "control": "summary",
+            "activation": "Space",
+            "actual_help_open": true,
+            "expected_help_open": false
+          },
+          {
+            "control": "summary",
+            "activation": "Enter",
+            "actual_help_open": false,
+            "expected_help_open": true
+          }
+        ],
+        "actual_trace": [
+          {
+            "control": "entry",
+            "activation": "click",
+            "traversal": null
+          },
+          {
+            "control": "start",
+            "activation": "click",
+            "traversal": null
+          },
+          {
+            "control": "summary",
+            "activation": "Enter",
+            "traversal": null
+          },
+          {
+            "control": "summary",
+            "activation": "Space",
+            "traversal": null
+          },
+          {
+            "control": "summary",
+            "activation": "Enter",
+            "traversal": null
+          },
+          {
+            "control": "Close",
+            "activation": "Enter",
+            "traversal": "Tab"
+          },
+          {
+            "control": "Back",
+            "activation": "Enter",
+            "traversal": "Tab"
+          }
+        ]
+      }
+    },
+    "summary-enter-broken": {
+      "type": "SYNTHETIC, OFFLINE; not website evidence",
+      "protocol": {
+        "all_written_assertions_pass": true,
+        "actual_trace": [
+          {
+            "control": "entry",
+            "activation": "click",
+            "traversal": null
+          },
+          {
+            "control": "start",
+            "activation": "click",
+            "traversal": null
+          },
+          {
+            "control": "summary",
+            "activation": "click",
+            "traversal": null
+          },
+          {
+            "control": "Close",
+            "activation": "Enter",
+            "traversal": "Tab"
+          },
+          {
+            "control": "Back",
+            "activation": "click",
+            "traversal": null
+          }
+        ],
+        "final_state": "introduction",
+        "final_focus": "introduction-heading"
+      },
+      "contract": {
+        "failures": [
+          {
+            "control": "summary",
+            "activation": "Enter",
+            "actual_help_open": false,
+            "expected_help_open": true
+          },
+          {
+            "control": "summary",
+            "activation": "Space",
+            "actual_help_open": true,
+            "expected_help_open": false
+          }
+        ],
+        "actual_trace": [
+          {
+            "control": "entry",
+            "activation": "click",
+            "traversal": null
+          },
+          {
+            "control": "start",
+            "activation": "click",
+            "traversal": null
+          },
+          {
+            "control": "summary",
+            "activation": "Enter",
+            "traversal": null
+          },
+          {
+            "control": "summary",
+            "activation": "Space",
+            "traversal": null
+          },
+          {
+            "control": "summary",
+            "activation": "Enter",
+            "traversal": null
+          },
+          {
+            "control": "Close",
+            "activation": "Enter",
+            "traversal": "Tab"
+          },
+          {
+            "control": "Back",
+            "activation": "Enter",
+            "traversal": "Tab"
+          }
+        ]
+      }
+    },
+    "back-not-tabbable": {
+      "type": "SYNTHETIC, OFFLINE; not website evidence",
+      "protocol": {
+        "all_written_assertions_pass": true,
+        "actual_trace": [
+          {
+            "control": "entry",
+            "activation": "click",
+            "traversal": null
+          },
+          {
+            "control": "start",
+            "activation": "click",
+            "traversal": null
+          },
+          {
+            "control": "summary",
+            "activation": "click",
+            "traversal": null
+          },
+          {
+            "control": "Close",
+            "activation": "Enter",
+            "traversal": "Tab"
+          },
+          {
+            "control": "Back",
+            "activation": "click",
+            "traversal": null
+          }
+        ],
+        "final_state": "introduction",
+        "final_focus": "introduction-heading"
+      },
+      "contract": {
+        "failures": [
+          {
+            "control": "Back",
+            "traversal": "Tab",
+            "activation": "Enter",
+            "actual_state": "first-question",
+            "expected_state": "introduction",
+            "defect": "back-not-tabbable"
+          }
+        ],
+        "actual_trace": [
+          {
+            "control": "entry",
+            "activation": "click",
+            "traversal": null
+          },
+          {
+            "control": "start",
+            "activation": "click",
+            "traversal": null
+          },
+          {
+            "control": "summary",
+            "activation": "Enter",
+            "traversal": null
+          },
+          {
+            "control": "summary",
+            "activation": "Space",
+            "traversal": null
+          },
+          {
+            "control": "summary",
+            "activation": "Enter",
+            "traversal": null
+          },
+          {
+            "control": "Close",
+            "activation": "Enter",
+            "traversal": "Tab"
+          },
+          {
+            "control": "Back",
+            "activation": "Enter",
+            "traversal": "Tab"
+          }
+        ]
+      }
+    },
+    "back-enter-broken": {
+      "type": "SYNTHETIC, OFFLINE; not website evidence",
+      "protocol": {
+        "all_written_assertions_pass": true,
+        "actual_trace": [
+          {
+            "control": "entry",
+            "activation": "click",
+            "traversal": null
+          },
+          {
+            "control": "start",
+            "activation": "click",
+            "traversal": null
+          },
+          {
+            "control": "summary",
+            "activation": "click",
+            "traversal": null
+          },
+          {
+            "control": "Close",
+            "activation": "Enter",
+            "traversal": "Tab"
+          },
+          {
+            "control": "Back",
+            "activation": "click",
+            "traversal": null
+          }
+        ],
+        "final_state": "introduction",
+        "final_focus": "introduction-heading"
+      },
+      "contract": {
+        "failures": [
+          {
+            "control": "Back",
+            "traversal": "Tab",
+            "activation": "Enter",
+            "actual_state": "first-question",
+            "expected_state": "introduction",
+            "defect": "back-enter-broken"
+          }
+        ],
+        "actual_trace": [
+          {
+            "control": "entry",
+            "activation": "click",
+            "traversal": null
+          },
+          {
+            "control": "start",
+            "activation": "click",
+            "traversal": null
+          },
+          {
+            "control": "summary",
+            "activation": "Enter",
+            "traversal": null
+          },
+          {
+            "control": "summary",
+            "activation": "Space",
+            "traversal": null
+          },
+          {
+            "control": "summary",
+            "activation": "Enter",
+            "traversal": null
+          },
+          {
+            "control": "Close",
+            "activation": "Enter",
+            "traversal": "Tab"
+          },
+          {
+            "control": "Back",
+            "activation": "Enter",
+            "traversal": "Tab"
+          }
+        ]
+      }
+    }
+  },
+  "refutation_controls": {
+    "healthy_ui": {
+      "protocol": {
+        "all_written_assertions_pass": true,
+        "actual_trace": [
+          {
+            "control": "entry",
+            "activation": "click",
+            "traversal": null
+          },
+          {
+            "control": "start",
+            "activation": "click",
+            "traversal": null
+          },
+          {
+            "control": "summary",
+            "activation": "click",
+            "traversal": null
+          },
+          {
+            "control": "Close",
+            "activation": "Enter",
+            "traversal": "Tab"
+          },
+          {
+            "control": "Back",
+            "activation": "click",
+            "traversal": null
+          }
+        ],
+        "final_state": "introduction",
+        "final_focus": "introduction-heading"
+      },
+      "contract": {
+        "failures": [],
+        "actual_trace": [
+          {
+            "control": "entry",
+            "activation": "click",
+            "traversal": null
+          },
+          {
+            "control": "start",
+            "activation": "click",
+            "traversal": null
+          },
+          {
+            "control": "summary",
+            "activation": "Enter",
+            "traversal": null
+          },
+          {
+            "control": "summary",
+            "activation": "Space",
+            "traversal": null
+          },
+          {
+            "control": "summary",
+            "activation": "Enter",
+            "traversal": null
+          },
+          {
+            "control": "Close",
+            "activation": "Enter",
+            "traversal": "Tab"
+          },
+          {
+            "control": "Back",
+            "activation": "Enter",
+            "traversal": "Tab"
+          }
+        ]
+      }
+    },
+    "externally_applied_policy": [
+      {
+        "method": "GET",
+        "url": "https://qaizen.io/labs",
+        "synthetic_disposition": "delivered-to-in-memory-sink",
+        "blocked_reasons": []
+      },
+      {
+        "method": "POST",
+        "url": "https://qaizen.io/synthetic-analytics",
+        "synthetic_disposition": "blocked",
+        "blocked_reasons": [
+          "method"
+        ]
+      },
+      {
+        "method": "GET",
+        "url": "https://outside.invalid/synthetic-asset",
+        "synthetic_disposition": "blocked",
+        "blocked_reasons": [
+          "origin"
+        ]
+      }
+    ],
+    "scope_limit": "Supplementary harness can enforce the contract, but the six-step target does not request or verify such a harness. Countermodels establish missing documentary coverage only."
+  },
+  "claim_coverage": {
+    "S-1": [
+      "batch_1_network",
+      "refutation_controls.externally_applied_policy"
+    ],
+    "S-2": [
+      "batch_1_network",
+      "refutation_controls.externally_applied_policy"
+    ],
+    "F-203": [
+      "batch_1_network",
+      "refutation_controls.externally_applied_policy"
+    ],
+    "C-1": [
+      "batch_2_ui.back-not-tabbable",
+      "batch_2_ui.back-enter-broken",
+      "refutation_controls.healthy_ui"
+    ],
+    "F-202": [
+      "batch_2_ui.back-not-tabbable",
+      "batch_2_ui.back-enter-broken",
+      "refutation_controls.healthy_ui"
+    ],
+    "C-2": [
+      "batch_2_ui.summary-space-broken",
+      "batch_2_ui.summary-enter-broken",
+      "refutation_controls.healthy_ui"
+    ],
+    "F-201": [
+      "batch_2_ui.summary-space-broken",
+      "batch_2_ui.summary-enter-broken",
+      "refutation_controls.healthy_ui"
+    ]
+  }
+}

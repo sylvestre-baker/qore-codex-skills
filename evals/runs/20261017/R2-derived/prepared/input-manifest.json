@@ -1,0 +1,80 @@
+{
+  "schema": "qore-eval-inputs/1",
+  "scenario_id": "R2",
+  "condition": "derived",
+  "method": "review",
+  "scenarios_sha256": "46534adc957971607cb4af8ae555727b933746b61081822be77acf9d79d2ea49",
+  "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+  "condition_resources_sha256": "2fc4f47f46a72300825705eaaadbf76805d368b74815423d595adf57fbad394e",
+  "resources": [
+    {
+      "path": ".agents/skills/qore-review-qaizen-labs/SKILL.md",
+      "sha256": "eb84df209a56465c7d5aa8caa4ae20d6ad56cbb70121cf474706a587948cd1c3"
+    },
+    {
+      "path": ".agents/skills/qore-review-qaizen-labs/agents/openai.yaml",
+      "sha256": "322a16d228ce0020f05d273ff5b50a85aaa771ba4421d623e655afca0ac31a5c"
+    },
+    {
+      "path": ".agents/skills/qore-review-qaizen-labs/references/findings.md",
+      "sha256": "f9f9035e471c9832c6546e80e4fe857777fefceba781bd5801ee8f97bdeaa409"
+    },
+    {
+      "path": ".agents/skills/qore-review-qaizen-labs/references/project-profile.md",
+      "sha256": "5d3b69aac18f83a634f4c57c214cc1f53fa186c03c536adcefd4c905a8767c8d"
+    },
+    {
+      "path": ".agents/skills/qore-review-qaizen-labs/references/project.json",
+      "sha256": "f76afdd45cb6352e5044a06affc4182ea6cd40aa9c012fb216636a61faa428f0"
+    },
+    {
+      "path": ".agents/skills/qore-review-qaizen-labs/references/protocol.md",
+      "sha256": "e27e0050fdf4d75d2840dd257b9a759f1f48d459ef540990cd3aed5528c5f340"
+    },
+    {
+      "path": ".agents/skills/qore-review-qaizen-labs/references/release.json",
+      "sha256": "5c1a3aa6d7cb18e15adc606625e856b52834b45452cf39b7e1497143d28d7ddf"
+    },
+    {
+      "path": ".agents/skills/qore-review-qaizen-labs/references/run-evidence.md",
+      "sha256": "fbdf433ef8b3e972f97bed5fdec4990cf3b49535bf63120c729a7daf4af71746"
+    },
+    {
+      "path": ".agents/skills/qore-review-qaizen-labs/scripts/finding-lint.mjs",
+      "sha256": "d3d22ae7d0b1b6b53b36006f13a8aaf6e1aa9e89df27b98312e6ac72ea079a26"
+    },
+    {
+      "path": ".agents/skills/qore-review-qaizen-labs/scripts/project-check.py",
+      "sha256": "d87afa433fe485bdebca3e281d06e0896e4a8980ea7cf7baee739053614ea0ac"
+    },
+    {
+      "path": ".agents/skills/qore-review-qaizen-labs/scripts/redact-for-verifier.mjs",
+      "sha256": "dc249524c749ad5b511aef0a2cf08b4cfd5c47c1e0de4fd41c5c70746b471083"
+    },
+    {
+      "path": ".agents/skills/qore-review-qaizen-labs/scripts/run-check.py",
+      "sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa"
+    },
+    {
+      "path": "TASK.md",
+      "sha256": "d3ce29449ae03b8f5705947a577786f7a829c8440733637f4cfb5555cab2fc18"
+    },
+    {
+      "path": "checks/check_contract.py",
+      "sha256": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b"
+    },
+    {
+      "path": "observation-policy.json",
+      "sha256": "15f4e5b4960b5011684be265f027e42b8637a3b8aae96b24bba1ba3a4d0f0202"
+    },
+    {
+      "path": "surface-contract.json",
+      "sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3"
+    },
+    {
+      "path": "target/verification-protocol.md",
+      "sha256": "0a3452f02e358d8800fb26d591083deb972c5531165473990dc27007a9a9e0d4"
+    }
+  ],
+  "limit": "Stage only worker/, not this preparation directory or the author repository."
+}

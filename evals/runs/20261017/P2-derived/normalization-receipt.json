@@ -1,0 +1,6 @@
+{
+  "at": "2026-10-17T11:41:32.103458+00:00",
+  "exit_code": 1,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"<private-campaign-root>/record_cell.py\", line 110, in <module>\n    if __name__=='__main__':finalize(*sys.argv[1:3])\n                            ~~~~~~~~^^^^^^^^^^^^^^^^\n  File \"<private-campaign-root>/record_cell.py\", line 76, in finalize\n    if not first or not last:raise ValueError('Actual child timing bounds missing for '+str(a))\n                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: Actual child timing bounds missing for /root/product\n"
+}

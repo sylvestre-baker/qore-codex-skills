@@ -1,0 +1,61 @@
+{
+  "checks": [
+    {
+      "id": "entry",
+      "status": "PASS",
+      "artifact": "response-2/01-introduction-via-entry.dom.json",
+      "observed_at": "2026-10-17T12:09:14.328Z",
+      "finding": "Clicked declared real entry; introduction heading and ten-question/five-gate content match intended application."
+    },
+    {
+      "id": "unanswered",
+      "status": "PASS",
+      "artifact": "response-2/events.json",
+      "observed_at": "2026-10-17T12:09:35.855Z",
+      "finding": "No-selection assertions before help, after Close and after Back; repeat restart assertion at 12:12:32.519Z; no answer activations."
+    },
+    {
+      "id": "help-toggle",
+      "status": "PASS",
+      "artifact": "response-2/events.json",
+      "observed_at": "2026-10-17T12:09:29.269Z",
+      "finding": "Sequential summary traversal; Enter opens, Space closes, Enter reopens; open state assertions and screenshots retained."
+    },
+    {
+      "id": "close-focus",
+      "status": "PASS",
+      "artifact": "response-2/07-close-restores-summary-focus.dom.json",
+      "observed_at": "2026-10-17T12:09:37.905Z",
+      "finding": "Tab reaches Close in one step, Enter closes; summary focus asserted. Repeated in request4."
+    },
+    {
+      "id": "keyboard-back",
+      "status": "PASS",
+      "artifact": "response-2/08-Back-sequential-keyboard-focus.dom.json",
+      "observed_at": "2026-10-17T12:09:40.862Z",
+      "finding": "Tab reaches Back in one step from restored summary; focused assertion and Enter activation. Functional reachability passes despite visual defect V1."
+    },
+    {
+      "id": "introduction-focus",
+      "status": "PASS",
+      "artifact": "response-2/09-returned-introduction-heading-focus.dom.json",
+      "observed_at": "2026-10-17T12:09:44.658Z",
+      "finding": "After keyboard Back, main h1 is focused and radiogroup hidden. Repeated request4 at 12:12:30.670Z."
+    },
+    {
+      "id": "read-only-policy",
+      "status": "PASS",
+      "artifact": "response-2/events.json",
+      "observed_at": "2026-10-17T12:09:54.421Z",
+      "finding": "Policy allows GET/HEAD/OPTIONS. Analytics POST blocked and corresponding console error retained. Across requests 1-4, three blocked POSTs and no successful non-read response."
+    },
+    {
+      "id": "origin-policy",
+      "status": "PASS",
+      "artifact": "response-4/result.json",
+      "observed_at": "2026-10-17T12:13:06.115Z",
+      "finding": "Only qaizen.io navigation observed, origin guard present, no blocked navigation; prohibited external navigation intentionally not attempted."
+    }
+  ],
+  "note": "These eight contract checks pass. The broader declared G1 terminal-render observation remains incomplete and G3/G5 have V1."
+}

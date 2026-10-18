@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "node",
+    "scripts/depth-lint.mjs",
+    "/workspace/output/depth.json"
+  ],
+  "cwd": "/workspace/worker/.agents/skills/qore-ux-review-qaizen-labs",
+  "exit_code": 0,
+  "stdout": "{\n  \"valid\": true,\n  \"depth\": \"entry\",\n  \"changed_files\": [\n    \"surface-contract.json\",\n    \"checks/check_contract.py\",\n    \"observation-policy.json\"\n  ],\n  \"problems\": [],\n  \"limit\": \"File families are a coarse check. Inspect the actual diff; a Markdown extension does not prove that a change affects text only.\"\n}\n",
+  "stderr": "",
+  "observed_at": "2026-10-17T10:54:25.002688+00:00"
+}

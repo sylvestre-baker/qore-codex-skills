@@ -1,0 +1,20 @@
+Command: python3 -B checks/check_contract.py surface-contract.json
+Exit: 0
+stdout:
+{
+  "valid": true,
+  "schema": "qaizen-labs-surface/1",
+  "checks": [
+    "entry",
+    "unanswered",
+    "help-toggle",
+    "close-focus",
+    "keyboard-back",
+    "introduction-focus",
+    "read-only-policy",
+    "origin-policy"
+  ],
+  "limit": "Contract consistency only; browser observations establish current behavior."
+}
+
+stderr:

@@ -1,0 +1,20 @@
+{
+  "schema": "qore-selected-independent-verification/1",
+  "run_id": "qore003-20261017-u1-derived-1",
+  "neutral_id": "N12",
+  "verifier": "/root/campaign_final_verifier",
+  "verified_at": "2026-10-17T12:22:41.534375Z",
+  "source_verification": "verification-final/REPORT.md",
+  "decision": {
+    "coverage": "PARTIAL",
+    "reason": "Preserve original PARTIAL. Applicable G1 direct deep entry remains unavailable/unobserved; actual functional entry/help/keyboard Back passes and warm reload/history do not fill that distinct required observation. No product finding is regraded here.",
+    "evidence": [
+      "trials/U1-derived/evaluation.json",
+      "assessments/ux-first/N12/assessment.json",
+      "assessment-inputs/N12/output/REPORT.md",
+      "trials/U1-derived/final-output/execution.json",
+      "verification-final/read-only-checks.json"
+    ]
+  },
+  "limit": "Independent bounded coverage/claims reconciliation of all original retained cells and saved separate assessments; not an exhaustive code, product or security certification. Phase coverage is distinct from source/claim quality and narrow task passes. No winner, general benefit, efficiency, causal advantage, equal-scope comparability, live-revision identity or deployment/release readiness established. Native lifecycle/deadline/usage telemetry limits remain. Later corrections are separate evidence and do not rewrite original campaign results."
+}

@@ -1,0 +1,204 @@
+{
+  "schema": "qore-eval-run/1",
+  "id": "qore003-20261017-u1-derived-1",
+  "series_id": "specialization-v1",
+  "scenario_id": "U1",
+  "condition": "derived",
+  "trial": 1,
+  "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+  "input_manifest": "prepared/input-manifest.json",
+  "input_manifest_sha256": "b269181f3e44e5b4d84fe94ae1d683f85d2b8bde69f389d32d030b1e0909ef36",
+  "condition_resources_sha256": "998b62f74b37609662fc956dd296454a1950cd7cea9719b755aba10e84ff5c19",
+  "environment": {
+    "operator": "agent",
+    "host": "Docker Desktop Linux arm64 / Codex0.162.0",
+    "model": "gpt-6.1-sol",
+    "actor_id": "/root",
+    "tools": {
+      "codex": "0.162.0",
+      "image_id": "sha256:09894b981972962ae27f1e8e1726eb49886108a56c80742e70f71b0790c73aba",
+      "native_tool_catalog": "Twelve observed base helpers, native collaboration; no search/fetch/browser/connector; empty MCP resources/templates in qualified parent and child."
+    },
+    "settings": {
+      "model_reasoning_effort": "high",
+      "service_tier": "default",
+      "configs": [
+        "default_permissions=\"qore-trial\"",
+        "permissions.qore-trial.extends=\":workspace\"",
+        "permissions.qore-trial.filesystem={\":root\"=\"deny\",\":minimal\"=\"read\",\":tmpdir\"=\"write\",\":slash_tmp\"=\"write\",\":workspace_roots\"={\".\"=\"read\"},\"/workspace/output\"=\"write\",\"/var/lib/qore-feedback\"=\"read\"}",
+        "permissions.qore-trial.network.enabled=false",
+        "allow_login_shell=false",
+        "web_search=\"disabled\"",
+        "model_reasoning_effort=\"high\"",
+        "service_tier=\"default\"",
+        "features.multi_agent=true",
+        "agents.max_threads=3",
+        "features.apps=false",
+        "features.plugins=false",
+        "features.remote_plugin=false",
+        "features.memories=false",
+        "features.skill_search=false",
+        "features.skill_mcp_dependency_install=false",
+        "features.request_permissions_tool=false",
+        "mcp_servers={}"
+      ],
+      "operator_procedure": "operator-freeze.json; same frozen task/common runtime instruction template"
+    },
+    "isolation": {
+      "status": "PASS",
+      "evidence": [
+        "isolation-evidence.json"
+      ]
+    }
+  },
+  "resources": {
+    "caps": {
+      "wall_seconds": 900,
+      "aggregate_agent_seconds": 2400,
+      "browser_requests": 6,
+      "transient_browser_retries": 1,
+      "evaluator_seconds": 1800,
+      "verifier_seconds": 1800,
+      "maximum_original_cells": 21,
+      "limit": "Provisional operator policy, not measured feasibility or hard timeout enforcement."
+    },
+    "started_at": "2026-10-17T10:53:58.618388+00:00",
+    "ended_at": "2026-10-17T11:02:40.151023+00:00",
+    "children": [],
+    "tokens": 2607128,
+    "aggregate_agent_seconds": 519.770065,
+    "unavailable": {},
+    "parent_native_usage": {
+      "input_tokens": 2585563,
+      "cached_input_tokens": 2460672,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 21565,
+      "reasoning_output_tokens": 5108
+    },
+    "parent_wall_seconds": 519.770065,
+    "measurement_basis": "Single context only: CLI turn input+output tokens including cached input, and observed launcher-to-return wall interval including transport/tool waits; not CPU, billing, unique tokens or productivity."
+  },
+  "artifacts": [
+    {
+      "path": "isolation-evidence.json",
+      "sha256": "09a3987d016607d24b1d1cbd766e21ce5d16cced81009f00f1ed4dcff49853ec",
+      "kind": "execution",
+      "observed_at": "2026-10-17T10:53:59.171917+00:00"
+    },
+    {
+      "path": "execution-evidence.json",
+      "sha256": "a8de919560af5e8e1b806109476dd734da94a5b06c2d7c354a7c664298499c15",
+      "kind": "execution",
+      "observed_at": "2026-10-17T11:02:39.151746+00:00"
+    },
+    {
+      "path": "independent-assessment.json",
+      "sha256": "6f91eb7f349c0b4f47e7b49b822d4fd9419743fe58117620adc97965ee5fabc4",
+      "kind": "presentation"
+    },
+    {
+      "path": "independent-verification.json",
+      "sha256": "a790b3fc49bc0d20d29ffd592e6e6e2d83de453a6ed187875ba0d2640d62abc9",
+      "kind": "presentation"
+    },
+    {
+      "path": "qualification.json",
+      "sha256": "45e6b570af58d41eab1b7fd1987f4be7689414c6b1bde3481062dfe4efe75d8f",
+      "kind": "presentation"
+    }
+  ],
+  "execution": {
+    "coverage": "PARTIAL",
+    "evidence": [
+      "execution-evidence.json"
+    ],
+    "reason": "Actual Qore method record retains incomplete required phases."
+  },
+  "assessment": [
+    {
+      "criterion": "K1",
+      "status": "UNKNOWN",
+      "independent_task_status": "MET",
+      "reason": "The independent evaluator observed MET within narrower task scope, retained verbatim in independent-assessment.json. Required method coverage remains incomplete: Preserve original PARTIAL. Applicable G1 direct deep entry remains unavailable/unobserved; actual functional entry/help/keyboard Back passes and warm reload/history do not fill that distinct required observation. No product finding is regraded here. Original criterion rationale: The worker uses the actual source contract, preserves Close-to-summary separately from Back-to-introduction-h1, and does not label the protocol proof gap as an established website failure.",
+      "evidence": [
+        "independent-assessment.json",
+        "independent-verification.json"
+      ]
+    },
+    {
+      "criterion": "K2",
+      "status": "UNKNOWN",
+      "independent_task_status": "MET",
+      "reason": "The independent evaluator observed MET within narrower task scope, retained verbatim in independent-assessment.json. Required method coverage remains incomplete: Preserve original PARTIAL. Applicable G1 direct deep entry remains unavailable/unobserved; actual functional entry/help/keyboard Back passes and warm reload/history do not fill that distinct required observation. No product finding is regraded here. Original criterion rationale: The retained harness implements traverse-focus by actual keyboard Tab presses, not programmatic focus. Requests2 and4 record one Tab from restored summary to Back, Enter, and successful h1 focus assertions.",
+      "evidence": [
+        "independent-assessment.json",
+        "independent-verification.json"
+      ]
+    },
+    {
+      "criterion": "K3",
+      "status": "UNKNOWN",
+      "independent_task_status": "MET",
+      "reason": "The independent evaluator observed MET within narrower task scope, retained verbatim in independent-assessment.json. Required method coverage remains incomplete: Preserve original PARTIAL. Applicable G1 direct deep entry remains unavailable/unobserved; actual functional entry/help/keyboard Back passes and warm reload/history do not fill that distinct required observation. No product finding is regraded here. Original criterion rationale: Unanswered assertions pass; actual activation guard and request routing are enabled in the hash-matched operator harness/policy. Four expected analytics POSTs were blocked; all recorded response/navigation origins are authorized.",
+      "evidence": [
+        "independent-assessment.json",
+        "independent-verification.json"
+      ]
+    },
+    {
+      "criterion": "K4",
+      "status": "UNKNOWN",
+      "independent_task_status": "MET",
+      "reason": "The independent evaluator observed MET within narrower task scope, retained verbatim in independent-assessment.json. Required method coverage remains incomplete: Preserve original PARTIAL. Applicable G1 direct deep entry remains unavailable/unobserved; actual functional entry/help/keyboard Back passes and warm reload/history do not fill that distinct required observation. No product finding is regraded here. Original criterion rationale: Raw evidence exists and the report explicitly discloses full-page/geometry uncertainty, cold-deep-entry limits, unsupported assertion failures, and that the Back journey passes. No protocol fixture result is recast as a website Back failure.",
+      "evidence": [
+        "independent-assessment.json",
+        "independent-verification.json"
+      ]
+    },
+    {
+      "criterion": "K8",
+      "status": "UNKNOWN",
+      "independent_task_status": "UNKNOWN",
+      "reason": "The scoped functional Back-pass and PARTIAL coverage decisions are supported. The additional P2 product finding and DO-NOT-SHIP rationale depend on interpreting full-page sticky-overlay pixels as an actual viewport usability defect; the retained evidence cannot resolve capture artifact versus runtime overlap.",
+      "evidence": [
+        "independent-assessment.json",
+        "independent-verification.json"
+      ]
+    }
+  ],
+  "comparison": {
+    "comparability": "UNVERIFIED",
+    "decision": "Unknown",
+    "reason": "Separate evaluators and verifier retained task/coverage observations. One observation on related known tasks and visible conditions does not establish a comparative winner; live deployment comparability is unverified for UX.",
+    "verification": [
+      "independent-assessment.json",
+      "independent-verification.json"
+    ]
+  },
+  "limitations": [
+    "One observation on a related known task, not a general benefit benchmark.",
+    "CLI JSONL omits some native child lifecycle events; child identities and history-free dispatches rely on retained role reports/roster plus the qualified inheritance probe.",
+    "All resource timing precision and unavailable measurements remain explicit; no cost or efficiency conclusion.",
+    "Required G1 cold direct deep-link initialization could not run: relay only starts at /labs and has no navigate action; deep reload/history observations do not replace it.",
+    "Stop-rule STOP_PLATEAU at iteration4; G3/G5 remain below4. No fixes authorized or applied; no further dispatches after stop.",
+    "Only full-page PNGs, limited semantic DOM and guarded actions exposed; no viewport-only screenshot, geometry/hit testing, contrast audit, screen reader or accessibility certification.",
+    "Undismissed-cookie anonymous context only; consent actions are outside activation whitelist. No authenticated persona, mobile, alternate theme, full questionnaire, answers or results.",
+    "Browser network data omits request headers/bodies. Guard enforcement and events are observed, not a security-isolation certification. No off-origin navigation attack attempted.",
+    "Request3 exact-case heading assertion and request4 assumed question-reload reset caused partial requests; both are authored check problems, retained and refuted as product defects.",
+    "Live deployment commit is unknown; enclosing target digest identifies frozen prepared inputs, not deployed assets. Aggregate supplied manifest serialization unavailable for independent reconstruction.",
+    "No child agents required or spawned. Actual context /root performs UX phases. Token and billed aggregate agent-seconds unavailable because runtime provides no usage telemetry.",
+    "Probe references trace.zip/video files that were not exposed in relay feedback; only returned actual DOM/PNG/events/results/receipts retained.",
+    "Initial rg command unavailable; used ls/find and Python local reads instead. No external network/search/fetch/connector tool used.",
+    "Independent criteria were applied qualitatively after outputs using predeclared criteria; operational grading interpretation was not a validated standardized scoring rubric.",
+    "Original method coverage and artifacts are unchanged. Later qualification and its identities are separate; entered metadata does not establish its own truth."
+  ],
+  "qore_run": {
+    "path": "final-output/execution.json",
+    "sha256": "3371097831299aedb99f03bace12270070d454997b059a32df69bd1f504ec44d"
+  },
+  "normalization": [],
+  "qualification": {
+    "path": "qualification.json",
+    "sha256": "45e6b570af58d41eab1b7fd1987f4be7689414c6b1bde3481062dfe4efe75d8f"
+  }
+}

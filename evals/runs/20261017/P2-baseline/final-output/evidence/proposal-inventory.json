@@ -1,0 +1,22 @@
+{
+  "kind": "literal coverage inventory; not a structural validator or semantic proof",
+  "transitions": {
+    "entry": true,
+    "start": true,
+    "open-help": true,
+    "toggle-help": true,
+    "reopen-help": true,
+    "close-help": true,
+    "back": true
+  },
+  "required_checks": {
+    "entry": true,
+    "unanswered": true,
+    "help-toggle": true,
+    "close-focus": true,
+    "keyboard-back": true,
+    "introduction-focus": true,
+    "read-only-policy": true,
+    "origin-policy": true
+  }
+}

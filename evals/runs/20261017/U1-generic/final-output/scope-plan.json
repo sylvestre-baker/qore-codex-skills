@@ -1,0 +1,133 @@
+{
+  "declared_at": "2026-10-17T11:07:09.267048+00:00",
+  "depth": "entry",
+  "supplemental_depth": "state",
+  "changed_files": [
+    "surface-contract.json",
+    "checks/check_contract.py",
+    "observation-policy.json"
+  ],
+  "justification": "Explicit public Back-journey review without source diff; these are inspected target artifacts, not changed application files. Entry and all six declared neighboring states require G0-G6.",
+  "target": "https://qaizen.io/labs -> readiness-check",
+  "origins": [
+    "https://qaizen.io"
+  ],
+  "persona": "anonymous public visitor, unanswered",
+  "contexts": [
+    "fresh isolated browser per relay request"
+  ],
+  "viewports": [
+    {
+      "width": 1280,
+      "height": 800
+    }
+  ],
+  "themes": [
+    "entry default observed theme"
+  ],
+  "required_gates": [
+    "G0",
+    "G1",
+    "G2",
+    "G3",
+    "G4",
+    "G5",
+    "G6"
+  ],
+  "required_checks": [
+    "entry",
+    "unanswered",
+    "help-toggle",
+    "close-focus",
+    "keyboard-back",
+    "introduction-focus",
+    "read-only-policy",
+    "origin-policy"
+  ],
+  "required_states": [
+    "labs",
+    "introduction",
+    "first-question",
+    "help-open",
+    "help-closed",
+    "returned-introduction"
+  ],
+  "applicable_transitions": [
+    {
+      "id": "entry",
+      "from": "labs",
+      "to": "introduction",
+      "control": "a[href$='/labs/readiness-check']",
+      "activation": "click"
+    },
+    {
+      "id": "start",
+      "from": "introduction",
+      "to": "first-question",
+      "control": "Start the check",
+      "activation": "click"
+    },
+    {
+      "id": "open-help",
+      "from": "first-question",
+      "to": "help-open",
+      "control": "summary",
+      "activation": "Enter"
+    },
+    {
+      "id": "toggle-help",
+      "from": "help-open",
+      "to": "help-closed",
+      "control": "summary",
+      "activation": "Space"
+    },
+    {
+      "id": "reopen-help",
+      "from": "help-closed",
+      "to": "help-open",
+      "control": "summary",
+      "activation": "Enter"
+    },
+    {
+      "id": "close-help",
+      "from": "help-open",
+      "to": "help-closed",
+      "control": "Close",
+      "activation": "Enter",
+      "traversal": "Tab",
+      "focus_after": "summary"
+    },
+    {
+      "id": "back",
+      "from": "help-closed",
+      "to": "returned-introduction",
+      "control": "Back",
+      "activation": "Enter",
+      "traversal": "Tab",
+      "focus_after": "introduction-heading"
+    }
+  ],
+  "GP": "Excluded: no performance acceptance/change in supplied task",
+  "a11y_scope": "Live semantics, keyboard traversal/activation, visible focus/restoration; assess risky contrast if observed. No accessibility certification or instrumented audit acceptance in supplied scope.",
+  "G1_scope": "Reload and relevant history in observed route; deep navigation action not offered by relay, retain limitation if unproved. Invalid URL permutations outside explicit journey.",
+  "G2_scope": "Unanswered first question and help local state transitions; answered/results/other data states excluded by authorization.",
+  "budget": {
+    "wall_seconds": 900,
+    "aggregate_agent_seconds": 2400,
+    "max_child_contexts": 3,
+    "start_utc": "2026-10-17T11:06:36+00:00",
+    "deadline_utc": "2026-10-17T11:21:36+00:00",
+    "max_iterations": 6,
+    "max_relay_requests": 6,
+    "phase_deadlines_seconds": {
+      "scope": 180,
+      "browser_preflight": 180,
+      "journey": 300,
+      "challenge": 180,
+      "report_validation": 180
+    }
+  },
+  "no_mutations": true,
+  "profile": null,
+  "subagents": "None required by UX method; no child contexts dispatched."
+}

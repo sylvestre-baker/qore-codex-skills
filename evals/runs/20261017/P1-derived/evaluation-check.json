@@ -1,0 +1,12 @@
+{
+  "valid": true,
+  "id": "qore003-20261017-p1-derived-1",
+  "scenario_id": "P1",
+  "condition": "derived",
+  "coverage": "COMPLETE",
+  "declared_coverage": "COMPLETE",
+  "qualification_supplied": true,
+  "comparability": "UNVERIFIED",
+  "changed_inputs": [],
+  "limit": "Identity and entered evidence checked; assessor independence, reasoning, isolation and causal benefit are not certified by metadata."
+}

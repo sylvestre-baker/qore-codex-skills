@@ -1,0 +1,24 @@
+{
+  "method": "review",
+  "skill": "qore-review",
+  "scope": "target/verification-protocol.md against surface-contract.json, checks/check_contract.py, observation-policy.json; no whole-repository, website, implementation, performance or accessibility review.",
+  "authority": "Original project sources; tutorial fixture is target only.",
+  "instructions_revision": "All supplied skill sources copied byte-for-byte under sources/.agents/skills/qore-review, hashes in input-manifest.json.",
+  "phase_barrier": "Three independent history-free finder contexts returned complete reports before merge. Actual bundled redactor exited 0 before fresh history-free verifier dispatch. No finder reasoning or author conclusions supplied to verifier.",
+  "finder_deadline": "2026-10-17T10:13:30Z",
+  "verifier_deadline": "2026-10-17T10:15:25Z",
+  "overall_deadline": "2026-10-17T10:24:12Z",
+  "expiry_policy": "At any role deadline request available partial results; stop new dispatches at budget exhaustion. No role reached expiry yet.",
+  "role_contexts": [
+    "/root/correctness",
+    "/root/security",
+    "/root/feasibility",
+    "/root/verifier"
+  ],
+  "tracing_requirement": "Each finder was instructed to trace actual produced/stored/serialized values into accepted fields and final consumer, or source \u2192 transformation \u2192 claim \u2192 decision; compare adjacent boundaries, search contrary primary evidence locally, and distinguish unsupported claims from demonstrated false statements.",
+  "usage_accounting": "No host usage counters exposed. Scheduling caps bound root to 900 seconds and each of four children to 240 seconds (1860 conservative agent-second ceiling), within 2400 requested limit; not measured usage.",
+  "input_changes": [],
+  "shared_data_mutations": [],
+  "network_access": false,
+  "profile": null
+}

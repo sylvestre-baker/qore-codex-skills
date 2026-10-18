@@ -1,0 +1,10 @@
+{
+  "depth": "entry",
+  "additional_depth": "state",
+  "changed_files": [
+    "surface-contract.json",
+    "checks/check_contract.py",
+    "observation-policy.json"
+  ],
+  "justification": "No deployment diff supplied. Explicit surface review of public Labs entry and unanswered readiness-check help states, including Close focus and keyboard Back. These are inspected target artifacts, not a changed-file claim."
+}

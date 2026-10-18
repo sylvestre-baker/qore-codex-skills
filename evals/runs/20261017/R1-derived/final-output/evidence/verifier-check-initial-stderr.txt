@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/workspace/output/evidence/verifier-check.py", line 46, in <module>
+    assert not policy_lines
+           ^^^^^^^^^^^^^^^^
+AssertionError

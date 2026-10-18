@@ -1,0 +1,69 @@
+{
+  "schema": "qore-release/1",
+  "version": "0.2.1",
+  "host": "codex",
+  "profile": null,
+  "redistribution": "MIT-first-party",
+  "resources": [
+    {
+      "path": "SKILL.md",
+      "sha256": "ae7a3bc448eda7262fa8163a67b0ce712efc2779eaaf00ce57618dc966dd6367",
+      "origin": "first-party",
+      "license": "MIT"
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha256": "6c689fd93445ab3edcb6b88320e7680ee37c746bca5635e8c406304b081250ed",
+      "origin": "first-party",
+      "license": "MIT"
+    },
+    {
+      "path": "references/findings.md",
+      "sha256": "f9f9035e471c9832c6546e80e4fe857777fefceba781bd5801ee8f97bdeaa409",
+      "origin": "first-party",
+      "license": "MIT"
+    },
+    {
+      "path": "references/project-profile.md",
+      "sha256": "5d3b69aac18f83a634f4c57c214cc1f53fa186c03c536adcefd4c905a8767c8d",
+      "origin": "first-party",
+      "license": "MIT"
+    },
+    {
+      "path": "references/protocol.md",
+      "sha256": "e27e0050fdf4d75d2840dd257b9a759f1f48d459ef540990cd3aed5528c5f340",
+      "origin": "first-party",
+      "license": "MIT"
+    },
+    {
+      "path": "references/run-evidence.md",
+      "sha256": "fbdf433ef8b3e972f97bed5fdec4990cf3b49535bf63120c729a7daf4af71746",
+      "origin": "first-party",
+      "license": "MIT"
+    },
+    {
+      "path": "scripts/finding-lint.mjs",
+      "sha256": "d3d22ae7d0b1b6b53b36006f13a8aaf6e1aa9e89df27b98312e6ac72ea079a26",
+      "origin": "first-party",
+      "license": "MIT"
+    },
+    {
+      "path": "scripts/project-check.py",
+      "sha256": "d87afa433fe485bdebca3e281d06e0896e4a8980ea7cf7baee739053614ea0ac",
+      "origin": "first-party",
+      "license": "MIT"
+    },
+    {
+      "path": "scripts/redact-for-verifier.mjs",
+      "sha256": "dc249524c749ad5b511aef0a2cf08b4cfd5c47c1e0de4fd41c5c70746b471083",
+      "origin": "first-party",
+      "license": "MIT"
+    },
+    {
+      "path": "scripts/run-check.py",
+      "sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+      "origin": "first-party",
+      "license": "MIT"
+    }
+  ]
+}

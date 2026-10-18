@@ -1,0 +1,352 @@
+{
+  "qore_evidence": {
+    "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+    "target_snapshot_sha256": "ed6c0fb8d8737cb4b8fc9e6b3485e0e618bf332d15725a557cf30d17b127e394",
+    "observed_at": "2026-10-17T10:50:36.403523+00:00",
+    "phase_id": "claim_verification"
+  },
+  "payload": {
+    "actor_id": "/root/fresh_verifier",
+    "filter_script": "filter-claims.py",
+    "filtered_claims": {
+      "schema": "qore-filtered-claims/1",
+      "filter": "Whitelisted claim fields only; no role identities, full reports, confidence/votes or adjudicator verdict supplied. Source paths resolve in frozen input root.",
+      "claims": [
+        {
+          "id": "C01",
+          "severity": "High",
+          "kind": "source_fact",
+          "statement": "The target prescribes clicking Back; this does not prove the contracted sequential keyboard traversal and Enter activation.",
+          "source_locations": [
+            "target/verification-protocol.md:10",
+            "surface-contract.json#/transitions/6",
+            "checks/check_contract.py:35-36"
+          ]
+        },
+        {
+          "id": "C02",
+          "severity": "Medium",
+          "kind": "source_fact",
+          "statement": "The target omits the summary Space-close and Enter-reopen steps present in the contract.",
+          "source_locations": [
+            "target/verification-protocol.md:7-8",
+            "surface-contract.json#/transitions/3",
+            "surface-contract.json#/transitions/4"
+          ]
+        },
+        {
+          "id": "C03",
+          "severity": "High conditional impact; omission Medium in QA report",
+          "kind": "source_fact",
+          "statement": "The target has no pre-navigation read-only/origin guard or blocked-analytics evidence instructions; no actual policy violation has been observed.",
+          "source_locations": [
+            "target/verification-protocol.md:5-10",
+            "surface-contract.json#/scope",
+            "surface-contract.json#/limits/2",
+            ".agents/skills/qore-plan-qaizen-labs/references/project.json#/invariants/2"
+          ]
+        },
+        {
+          "id": "C04",
+          "severity": "Medium",
+          "kind": "source_fact",
+          "statement": "Close restores summary focus while Back restores introduction-heading focus; these are separate obligations.",
+          "source_locations": [
+            "surface-contract.json#/transitions/5",
+            "surface-contract.json#/transitions/6",
+            "checks/check_contract.py:32-34"
+          ]
+        },
+        {
+          "id": "C05",
+          "severity": "Low source precision",
+          "kind": "sourced_decision",
+          "statement": "Use forward sequential Tab then Enter for canonical Close and Back. Checker tolerance of Shift+Tab for Back does not amend the literal Tab transition or validate Close traversal.",
+          "source_locations": [
+            "surface-contract.json#/transitions/5",
+            "surface-contract.json#/transitions/6",
+            "checks/check_contract.py:32-36"
+          ]
+        },
+        {
+          "id": "C06",
+          "severity": "High if guard weakened; no observed incident",
+          "kind": "source_fact",
+          "statement": "Scope permits only GET, HEAD, OPTIONS and no answers; expected blocked analytics must retain observed effects.",
+          "source_locations": [
+            "surface-contract.json#/scope",
+            "surface-contract.json#/limits"
+          ]
+        },
+        {
+          "id": "C07",
+          "severity": "Medium conditional",
+          "kind": "source_fact",
+          "statement": "Contract and observation policy currently agree on https://qaizen.io as their sole allowed origin.",
+          "source_locations": [
+            "surface-contract.json#/allowed_origins",
+            "observation-policy.json#/allowed_origins"
+          ]
+        },
+        {
+          "id": "C08",
+          "severity": "Medium false-confidence risk",
+          "kind": "source_fact",
+          "statement": "The checker reads contract JSON only, cannot validate Markdown or deployed keyboard behavior, and expressly limits its result to contract consistency.",
+          "source_locations": [
+            "checks/check_contract.py:42-50"
+          ]
+        },
+        {
+          "id": "C09",
+          "severity": "Low in Delivery; Medium in Architecture",
+          "kind": "source_fact",
+          "statement": "The target is a reconstructed fixture; acceptance expectations and historical baseline are not evidence of current website pass or defect, and private commits do not identify deployment.",
+          "source_locations": [
+            "target/verification-protocol.md:3",
+            "surface-contract.json#/provenance",
+            "surface-contract.json#/limits/3"
+          ]
+        },
+        {
+          "id": "C10",
+          "severity": "scope constraint",
+          "kind": "source_fact",
+          "statement": "TASK requests a plan for the target using original project sources, with outputs outside inputs and no supplied input or skill edits.",
+          "source_locations": [
+            "TASK.md"
+          ]
+        },
+        {
+          "id": "C11",
+          "severity": "Medium ambiguity; High potential guard violation",
+          "kind": "open_boundary",
+          "statement": "Current profile requires origin guards for main-frame/popup navigation and method guards for all requests. Original allowlists do not explicitly resolve comprehensive third-party subresource authorization; no permission is inferred.",
+          "source_locations": [
+            "surface-contract.json#/allowed_origins",
+            "surface-contract.json#/scope",
+            "observation-policy.json",
+            ".agents/skills/qore-plan-qaizen-labs/references/project.json#/invariants/2"
+          ]
+        },
+        {
+          "id": "C12",
+          "severity": "Medium interpretation",
+          "kind": "proposal",
+          "statement": "Interpret returned question/help absence at the visible, accessible and interactive presentation boundary, without requiring DOM deletion or questionnaire re-entry. Actual markup remains unknown.",
+          "source_locations": [
+            "target/verification-protocol.md:10",
+            "surface-contract.json#/states",
+            "surface-contract.json#/focus_targets"
+          ]
+        }
+      ]
+    },
+    "result": {
+      "schema": "qore-fresh-verification/1",
+      "context": "Independent offline claim verification; inspected only the mechanically whitelisted claim set and cited original raw sources. No role reports, raw claims, adjudication, lead draft, prior answers, network, browser, or source edits.",
+      "start_utc": "2026-10-17 10:47:39 UTC",
+      "end_utc": "2026-10-17 10:48:31 UTC",
+      "context_start_limit": "Start is the first recorded verifier clock observation; dispatch itself was not separately timestamped.",
+      "enclosing_snapshot_identity": "ed6c0fb8d8737cb4b8fc9e6b3485e0e618bf332d15725a557cf30d17b127e394",
+      "snapshot_identity_status": "Supplied enclosing snapshot identity; not interpreted as a per-file digest and not independently recomputed in this pass.",
+      "claim_input": "/workspace/output/claims-filtered.json",
+      "sources_inspected": [
+        "/workspace/worker/target/verification-protocol.md",
+        "/workspace/worker/surface-contract.json",
+        "/workspace/worker/checks/check_contract.py",
+        "/workspace/worker/observation-policy.json",
+        "/workspace/worker/.agents/skills/qore-plan-qaizen-labs/references/project.json",
+        "/workspace/worker/TASK.md"
+      ],
+      "coverage": {
+        "provided": 12,
+        "verified": 12,
+        "missing_claim_ids": [],
+        "passes": 1,
+        "retries": 0
+      },
+      "severity_policy": "Supplied severity strings retained unchanged; no comparative winner, independent ranking, or hidden rubric.",
+      "refutation_policy": "The filtered input supplied no explicit refutation fields. No refutations were removed; qualifications and source tensions are recorded per claim.",
+      "claims": [
+        {
+          "id": "C01",
+          "severity": "High",
+          "kind": "source_fact",
+          "statement": "The target prescribes clicking Back; this does not prove the contracted sequential keyboard traversal and Enter activation.",
+          "source_locations": [
+            "target/verification-protocol.md:10",
+            "surface-contract.json#/transitions/6",
+            "checks/check_contract.py:35-36"
+          ],
+          "verdict": "supported",
+          "evidence": "Target line 10 says \u201cClick Back\u201d. Contract transitions[6] instead specifies traversal Tab and activation Enter; checker lines 35\u201336 requires sequential keyboard traversal and Enter. The project back-focus invariant expressly says a click or programmatic focus does not prove keyboard reachability.",
+          "limits": "This establishes an instruction/evidence gap in the fixture, not a deployed keyboard defect. The project invariant is corroboration from an inspected original source.",
+          "refutations_supplied": []
+        },
+        {
+          "id": "C02",
+          "severity": "Medium",
+          "kind": "source_fact",
+          "statement": "The target omits the summary Space-close and Enter-reopen steps present in the contract.",
+          "source_locations": [
+            "target/verification-protocol.md:7-8",
+            "surface-contract.json#/transitions/3",
+            "surface-contract.json#/transitions/4"
+          ],
+          "verdict": "supported",
+          "evidence": "Target lines 7\u20138 proceed directly from opening help to reaching Close. Contract transitions[3] and [4] prescribe summary Space to close, then summary Enter to reopen.",
+          "limits": "The target also leaves the initial summary activation unspecified, while contract transitions[2] specifies Enter. This corroborating omission does not change the supplied severity or scope of this claim.",
+          "refutations_supplied": []
+        },
+        {
+          "id": "C03",
+          "severity": "High conditional impact; omission Medium in QA report",
+          "kind": "source_fact",
+          "statement": "The target has no pre-navigation read-only/origin guard or blocked-analytics evidence instructions; no actual policy violation has been observed.",
+          "source_locations": [
+            "target/verification-protocol.md:5-10",
+            "surface-contract.json#/scope",
+            "surface-contract.json#/limits/2",
+            ".agents/skills/qore-plan-qaizen-labs/references/project.json#/invariants/2"
+          ],
+          "verdict": "supported",
+          "evidence": "The complete target lines 5\u201310 contains no request-method guard, navigation-origin guard, or blocked-analytics recording instruction. Contract scope permits GET/HEAD/OPTIONS, limits[2] requires retaining blocked analytics effects, and project invariants[2] explicitly requires blocking other methods and off-origin main-frame/popup navigation.",
+          "limits": "\u201cPre-navigation\u201d is an operational ordering inference needed to protect initial navigation, not a quoted timing requirement. No live observation was performed, so the absence of an observed incident is an evidence limit, not proof that no incident exists.",
+          "refutations_supplied": []
+        },
+        {
+          "id": "C04",
+          "severity": "Medium",
+          "kind": "source_fact",
+          "statement": "Close restores summary focus while Back restores introduction-heading focus; these are separate obligations.",
+          "source_locations": [
+            "surface-contract.json#/transitions/5",
+            "surface-contract.json#/transitions/6",
+            "checks/check_contract.py:32-34"
+          ],
+          "verdict": "supported",
+          "evidence": "Contract transitions[5].focus_after is summary, while transitions[6].focus_after is introduction-heading. Checker lines 32\u201334 enforces these distinct destinations. Project close-focus invariant explicitly requires separate verification.",
+          "limits": "These are acceptance obligations. Neither the contract nor checker establishes current focus behavior in a browser.",
+          "refutations_supplied": []
+        },
+        {
+          "id": "C05",
+          "severity": "Low source precision",
+          "kind": "sourced_decision",
+          "statement": "Use forward sequential Tab then Enter for canonical Close and Back. Checker tolerance of Shift+Tab for Back does not amend the literal Tab transition or validate Close traversal.",
+          "source_locations": [
+            "surface-contract.json#/transitions/5",
+            "surface-contract.json#/transitions/6",
+            "checks/check_contract.py:32-36"
+          ],
+          "verdict": "supported",
+          "evidence": "Both literal contract transitions[5] and [6] use traversal Tab and activation Enter. Checker lines 35\u201336 accepts either Tab or Shift+Tab only for Back; it does not inspect Close traversal or Close activation.",
+          "limits": "Forward Tab as the canonical test is a sourced planning decision matching the literal contract. It is not a claim that Shift+Tab is forbidden: the project Back invariant expressly permits Tab or Shift+Tab. Checker tolerance does not rewrite the JSON transition.",
+          "refutations_supplied": []
+        },
+        {
+          "id": "C06",
+          "severity": "High if guard weakened; no observed incident",
+          "kind": "source_fact",
+          "statement": "Scope permits only GET, HEAD, OPTIONS and no answers; expected blocked analytics must retain observed effects.",
+          "source_locations": [
+            "surface-contract.json#/scope",
+            "surface-contract.json#/limits"
+          ],
+          "verdict": "supported",
+          "evidence": "Contract scope.answer_policy is unanswered and allowed_methods is GET/HEAD/OPTIONS. Limits[0] prohibits answers, results, and submission; limits[2] says \u201cAn analytics POST is expected to be blocked; retain its observed effects.\u201d Project invariants[2] requires blocking all other methods and recording blocked analytics without relaxing policy.",
+          "limits": "Expected analytics is a declared expectation; no request, blocking event, or user-visible effect was observed in this offline pass. \u201cRetain\u201d applies to observed effects, which must not be invented.",
+          "refutations_supplied": []
+        },
+        {
+          "id": "C07",
+          "severity": "Medium conditional",
+          "kind": "source_fact",
+          "statement": "Contract and observation policy currently agree on https://qaizen.io as their sole allowed origin.",
+          "source_locations": [
+            "surface-contract.json#/allowed_origins",
+            "observation-policy.json#/allowed_origins"
+          ],
+          "verdict": "supported",
+          "evidence": "surface-contract.json.allowed_origins and observation-policy.json.allowed_origins each contain exactly one identical value: https://qaizen.io.",
+          "limits": "\u201cCurrently\u201d refers to the supplied snapshot only; no remote policy or deployed origin behavior was checked.",
+          "refutations_supplied": []
+        },
+        {
+          "id": "C08",
+          "severity": "Medium false-confidence risk",
+          "kind": "source_fact",
+          "statement": "The checker reads contract JSON only, cannot validate Markdown or deployed keyboard behavior, and expressly limits its result to contract consistency.",
+          "source_locations": [
+            "checks/check_contract.py:42-50"
+          ],
+          "verdict": "supported",
+          "evidence": "The checker main routine parses json.loads(Path(sys.argv[1]).read_text(...)) and passes that object to validate. Its return explicitly states \u201cContract consistency only; browser observations establish current behavior.\u201d There is no Markdown or browser processing.",
+          "limits": "This conclusion follows from reading the entire checker, not just the cited return/main lines. No checker execution was needed for this source-code claim, and no exit result is asserted.",
+          "refutations_supplied": []
+        },
+        {
+          "id": "C09",
+          "severity": "Low in Delivery; Medium in Architecture",
+          "kind": "source_fact",
+          "statement": "The target is a reconstructed fixture; acceptance expectations and historical baseline are not evidence of current website pass or defect, and private commits do not identify deployment.",
+          "source_locations": [
+            "target/verification-protocol.md:3",
+            "surface-contract.json#/provenance",
+            "surface-contract.json#/limits/3"
+          ],
+          "verdict": "supported",
+          "evidence": "Target line 3 explicitly identifies a newly authored reconstructed tutorial fixture and disclaims website-defect evidence. Contract provenance says expectations are acceptance obligations, not evidence that current deployment passed, and locates the proof gap in the protocol rather than the website. Limits[3] states private commits do not identify deployment.",
+          "limits": "The baseline date is a supplied provenance field, not independently verified historical browser evidence. Nothing here certifies a present website pass or defect.",
+          "refutations_supplied": []
+        },
+        {
+          "id": "C10",
+          "severity": "scope constraint",
+          "kind": "source_fact",
+          "statement": "TASK requests a plan for the target using original project sources, with outputs outside inputs and no supplied input or skill edits.",
+          "source_locations": [
+            "TASK.md"
+          ],
+          "verdict": "supported",
+          "evidence": "TASK.md requests planning changes to target/verification-protocol.md using the three original project sources; calls the tutorial a target rather than authority; requires outputs outside inputs; prohibits editing supplied input or skill resources and using prior reports or network answers.",
+          "limits": "This verifies the supplied task scope. This verifier only wrote the two requested output artifacts and did not execute the broader planning task.",
+          "refutations_supplied": []
+        },
+        {
+          "id": "C11",
+          "severity": "Medium ambiguity; High potential guard violation",
+          "kind": "open_boundary",
+          "statement": "Current profile requires origin guards for main-frame/popup navigation and method guards for all requests. Original allowlists do not explicitly resolve comprehensive third-party subresource authorization; no permission is inferred.",
+          "source_locations": [
+            "surface-contract.json#/allowed_origins",
+            "surface-contract.json#/scope",
+            "observation-policy.json",
+            ".agents/skills/qore-plan-qaizen-labs/references/project.json#/invariants/2"
+          ],
+          "verdict": "supported",
+          "evidence": "Project invariants[2] explicitly covers all non-GET/HEAD/OPTIONS requests and off-origin main-frame/popup navigation. Contract and observation policy provide origin lists but no explicit comprehensive third-party subresource authorization rule.",
+          "limits": "This is an open boundary, not a new permission or a finding that third-party requests are permitted. Method restrictions apply to all requests. The sources do not settle whether additional origin restrictions should cover every subresource.",
+          "refutations_supplied": []
+        },
+        {
+          "id": "C12",
+          "severity": "Medium interpretation",
+          "kind": "proposal",
+          "statement": "Interpret returned question/help absence at the visible, accessible and interactive presentation boundary, without requiring DOM deletion or questionnaire re-entry. Actual markup remains unknown.",
+          "source_locations": [
+            "target/verification-protocol.md:10",
+            "surface-contract.json#/states",
+            "surface-contract.json#/focus_targets"
+          ],
+          "verdict": "partially_supported",
+          "evidence": "Target line 10 requires the introduction visible and question/help absent. Contract names returned-introduction as the destination and maps introduction-heading to h1. Neither source requires DOM deletion or questionnaire re-entry.",
+          "limits": "The proposed visible, accessible, and interactive presentation boundary is an interpretation, not an explicit source requirement. Sources do not define \u201cabsent\u201d or supply markup. Avoid claiming accessibility-tree removal, hidden-control inertness, DOM removal, or re-entry behavior as verified facts. The proposal can be adopted as a planning decision with that qualification.",
+          "refutations_supplied": []
+        }
+      ]
+    },
+    "full_report": "# Independent source verification\n\nStarted: 2026-10-17 10:47:39 UTC. Ended: 2026-10-17 10:48:31 UTC.\n\nIndependent offline claim verification; inspected only the mechanically whitelisted claim set and cited original raw sources. No role reports, raw claims, adjudication, lead draft, prior answers, network, browser, or source edits.\n\nEnclosing snapshot identity: `ed6c0fb8d8737cb4b8fc9e6b3485e0e618bf332d15725a557cf30d17b127e394`. This supplied enclosing identity was not recomputed and is not a per-file hash.\n\nCoverage: all 12 supplied claims, one bounded pass, no retries; missing claim coverage: none. Eleven supported and one partially supported. Verdicts concern source support only; no live website behavior is certified. Supplied severities are retained, not independently re-ranked. No explicit refutation fields were supplied.\n\n## Sources inspected\n\n- /workspace/worker/target/verification-protocol.md\n- /workspace/worker/surface-contract.json\n- /workspace/worker/checks/check_contract.py\n- /workspace/worker/observation-policy.json\n- /workspace/worker/.agents/skills/qore-plan-qaizen-labs/references/project.json\n- /workspace/worker/TASK.md\n\n## C01: supported\n\nSeverity (as supplied): High. Kind: source_fact.\n\nThe target prescribes clicking Back; this does not prove the contracted sequential keyboard traversal and Enter activation.\n\nSource references: target/verification-protocol.md:10; surface-contract.json#/transitions/6; checks/check_contract.py:35-36.\n\nEvidence: Target line 10 says \u201cClick Back\u201d. Contract transitions[6] instead specifies traversal Tab and activation Enter; checker lines 35\u201336 requires sequential keyboard traversal and Enter. The project back-focus invariant expressly says a click or programmatic focus does not prove keyboard reachability.\n\nQualification and limits: This establishes an instruction/evidence gap in the fixture, not a deployed keyboard defect. The project invariant is corroboration from an inspected original source.\n\n## C02: supported\n\nSeverity (as supplied): Medium. Kind: source_fact.\n\nThe target omits the summary Space-close and Enter-reopen steps present in the contract.\n\nSource references: target/verification-protocol.md:7-8; surface-contract.json#/transitions/3; surface-contract.json#/transitions/4.\n\nEvidence: Target lines 7\u20138 proceed directly from opening help to reaching Close. Contract transitions[3] and [4] prescribe summary Space to close, then summary Enter to reopen.\n\nQualification and limits: The target also leaves the initial summary activation unspecified, while contract transitions[2] specifies Enter. This corroborating omission does not change the supplied severity or scope of this claim.\n\n## C03: supported\n\nSeverity (as supplied): High conditional impact; omission Medium in QA report. Kind: source_fact.\n\nThe target has no pre-navigation read-only/origin guard or blocked-analytics evidence instructions; no actual policy violation has been observed.\n\nSource references: target/verification-protocol.md:5-10; surface-contract.json#/scope; surface-contract.json#/limits/2; .agents/skills/qore-plan-qaizen-labs/references/project.json#/invariants/2.\n\nEvidence: The complete target lines 5\u201310 contains no request-method guard, navigation-origin guard, or blocked-analytics recording instruction. Contract scope permits GET/HEAD/OPTIONS, limits[2] requires retaining blocked analytics effects, and project invariants[2] explicitly requires blocking other methods and off-origin main-frame/popup navigation.\n\nQualification and limits: \u201cPre-navigation\u201d is an operational ordering inference needed to protect initial navigation, not a quoted timing requirement. No live observation was performed, so the absence of an observed incident is an evidence limit, not proof that no incident exists.\n\n## C04: supported\n\nSeverity (as supplied): Medium. Kind: source_fact.\n\nClose restores summary focus while Back restores introduction-heading focus; these are separate obligations.\n\nSource references: surface-contract.json#/transitions/5; surface-contract.json#/transitions/6; checks/check_contract.py:32-34.\n\nEvidence: Contract transitions[5].focus_after is summary, while transitions[6].focus_after is introduction-heading. Checker lines 32\u201334 enforces these distinct destinations. Project close-focus invariant explicitly requires separate verification.\n\nQualification and limits: These are acceptance obligations. Neither the contract nor checker establishes current focus behavior in a browser.\n\n## C05: supported\n\nSeverity (as supplied): Low source precision. Kind: sourced_decision.\n\nUse forward sequential Tab then Enter for canonical Close and Back. Checker tolerance of Shift+Tab for Back does not amend the literal Tab transition or validate Close traversal.\n\nSource references: surface-contract.json#/transitions/5; surface-contract.json#/transitions/6; checks/check_contract.py:32-36.\n\nEvidence: Both literal contract transitions[5] and [6] use traversal Tab and activation Enter. Checker lines 35\u201336 accepts either Tab or Shift+Tab only for Back; it does not inspect Close traversal or Close activation.\n\nQualification and limits: Forward Tab as the canonical test is a sourced planning decision matching the literal contract. It is not a claim that Shift+Tab is forbidden: the project Back invariant expressly permits Tab or Shift+Tab. Checker tolerance does not rewrite the JSON transition.\n\n## C06: supported\n\nSeverity (as supplied): High if guard weakened; no observed incident. Kind: source_fact.\n\nScope permits only GET, HEAD, OPTIONS and no answers; expected blocked analytics must retain observed effects.\n\nSource references: surface-contract.json#/scope; surface-contract.json#/limits.\n\nEvidence: Contract scope.answer_policy is unanswered and allowed_methods is GET/HEAD/OPTIONS. Limits[0] prohibits answers, results, and submission; limits[2] says \u201cAn analytics POST is expected to be blocked; retain its observed effects.\u201d Project invariants[2] requires blocking all other methods and recording blocked analytics without relaxing policy.\n\nQualification and limits: Expected analytics is a declared expectation; no request, blocking event, or user-visible effect was observed in this offline pass. \u201cRetain\u201d applies to observed effects, which must not be invented.\n\n## C07: supported\n\nSeverity (as supplied): Medium conditional. Kind: source_fact.\n\nContract and observation policy currently agree on https://qaizen.io as their sole allowed origin.\n\nSource references: surface-contract.json#/allowed_origins; observation-policy.json#/allowed_origins.\n\nEvidence: surface-contract.json.allowed_origins and observation-policy.json.allowed_origins each contain exactly one identical value: https://qaizen.io.\n\nQualification and limits: \u201cCurrently\u201d refers to the supplied snapshot only; no remote policy or deployed origin behavior was checked.\n\n## C08: supported\n\nSeverity (as supplied): Medium false-confidence risk. Kind: source_fact.\n\nThe checker reads contract JSON only, cannot validate Markdown or deployed keyboard behavior, and expressly limits its result to contract consistency.\n\nSource references: checks/check_contract.py:42-50.\n\nEvidence: The checker main routine parses json.loads(Path(sys.argv[1]).read_text(...)) and passes that object to validate. Its return explicitly states \u201cContract consistency only; browser observations establish current behavior.\u201d There is no Markdown or browser processing.\n\nQualification and limits: This conclusion follows from reading the entire checker, not just the cited return/main lines. No checker execution was needed for this source-code claim, and no exit result is asserted.\n\n## C09: supported\n\nSeverity (as supplied): Low in Delivery; Medium in Architecture. Kind: source_fact.\n\nThe target is a reconstructed fixture; acceptance expectations and historical baseline are not evidence of current website pass or defect, and private commits do not identify deployment.\n\nSource references: target/verification-protocol.md:3; surface-contract.json#/provenance; surface-contract.json#/limits/3.\n\nEvidence: Target line 3 explicitly identifies a newly authored reconstructed tutorial fixture and disclaims website-defect evidence. Contract provenance says expectations are acceptance obligations, not evidence that current deployment passed, and locates the proof gap in the protocol rather than the website. Limits[3] states private commits do not identify deployment.\n\nQualification and limits: The baseline date is a supplied provenance field, not independently verified historical browser evidence. Nothing here certifies a present website pass or defect.\n\n## C10: supported\n\nSeverity (as supplied): scope constraint. Kind: source_fact.\n\nTASK requests a plan for the target using original project sources, with outputs outside inputs and no supplied input or skill edits.\n\nSource references: TASK.md.\n\nEvidence: TASK.md requests planning changes to target/verification-protocol.md using the three original project sources; calls the tutorial a target rather than authority; requires outputs outside inputs; prohibits editing supplied input or skill resources and using prior reports or network answers.\n\nQualification and limits: This verifies the supplied task scope. This verifier only wrote the two requested output artifacts and did not execute the broader planning task.\n\n## C11: supported\n\nSeverity (as supplied): Medium ambiguity; High potential guard violation. Kind: open_boundary.\n\nCurrent profile requires origin guards for main-frame/popup navigation and method guards for all requests. Original allowlists do not explicitly resolve comprehensive third-party subresource authorization; no permission is inferred.\n\nSource references: surface-contract.json#/allowed_origins; surface-contract.json#/scope; observation-policy.json; .agents/skills/qore-plan-qaizen-labs/references/project.json#/invariants/2.\n\nEvidence: Project invariants[2] explicitly covers all non-GET/HEAD/OPTIONS requests and off-origin main-frame/popup navigation. Contract and observation policy provide origin lists but no explicit comprehensive third-party subresource authorization rule.\n\nQualification and limits: This is an open boundary, not a new permission or a finding that third-party requests are permitted. Method restrictions apply to all requests. The sources do not settle whether additional origin restrictions should cover every subresource.\n\n## C12: partially supported\n\nSeverity (as supplied): Medium interpretation. Kind: proposal.\n\nInterpret returned question/help absence at the visible, accessible and interactive presentation boundary, without requiring DOM deletion or questionnaire re-entry. Actual markup remains unknown.\n\nSource references: target/verification-protocol.md:10; surface-contract.json#/states; surface-contract.json#/focus_targets.\n\nEvidence: Target line 10 requires the introduction visible and question/help absent. Contract names returned-introduction as the destination and maps introduction-heading to h1. Neither source requires DOM deletion or questionnaire re-entry.\n\nQualification and limits: The proposed visible, accessible, and interactive presentation boundary is an interpretation, not an explicit source requirement. Sources do not define \u201cabsent\u201d or supply markup. Avoid claiming accessibility-tree removal, hidden-control inertness, DOM removal, or re-entry behavior as verified facts. The proposal can be adopted as a planning decision with that qualification.\n\n## Scope and completion\n\nAll supplied claims received an evidence-based verdict. C05 remains a sourced planning decision, C11 remains an open authorization boundary, and C12 remains an interpretive proposal with partial source support. Requirements and declared expectations have not been converted into observations. No comparative assessment or further verification cycle was performed.\n\nThe first recorded clock observation establishes the reported start; the dispatch timestamp was not separately available. The reported end is when the completed verification results were frozen for output.\n"
+  }
+}

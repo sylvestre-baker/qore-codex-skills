@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "python3",
+    "scripts/run-check.py",
+    "/workspace/output/execution.json",
+    "--evidence-root",
+    "/workspace/output"
+  ],
+  "cwd": "/workspace/worker/.agents/skills/qore-plan",
+  "exit_code": 0,
+  "stdout": "{\n  \"valid\": true,\n  \"coverage\": \"COMPLETE\",\n  \"missing_phases\": [],\n  \"artifact_count\": 53,\n  \"note\": \"Evidence identity and declared phase coverage checked; factual quality is not certified.\"\n}\n",
+  "stderr": "",
+  "observed_at": "2026-10-17T10:35:16.315184+00:00",
+  "execution_sha256": "7dfe2e5015626230f900e642d124def9a2052e7a5a12afabafd975f37821e139",
+  "retention_note": "Post-seal validation output is outside execution.json artifact graph to avoid self-reference. It binds the exact final execution bytes."
+}

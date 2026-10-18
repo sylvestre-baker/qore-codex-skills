@@ -1,0 +1,43 @@
+{
+  "observed_at": "2026-10-17T10:18:03.842592+00:00",
+  "requested_finders": [
+    "correctness",
+    "security",
+    "feasibility"
+  ],
+  "returned_finders": [
+    "correctness",
+    "security",
+    "feasibility"
+  ],
+  "missing_finders": [],
+  "all_original_candidates": {
+    "correctness": [
+      "C-1",
+      "C-2",
+      "C-3"
+    ],
+    "security": [
+      "S-1"
+    ],
+    "feasibility": [
+      "F-1",
+      "F-2"
+    ]
+  },
+  "deduplication": {
+    "C-1": [
+      "C-1",
+      "F-1"
+    ],
+    "C-2": [
+      "C-2",
+      "F-2"
+    ],
+    "C-3": [
+      "C-3",
+      "S-1"
+    ]
+  },
+  "procedure": "Preserve correctness IDs/claim text/severity; keep independent duplicate originals in complete finder packets and reports. No change in impact severity. All six original candidates map to three merged claims."
+}

@@ -1,0 +1,484 @@
+{
+  "schema": "qore003-independent-planning-assessment/1",
+  "scenario_id": "P2",
+  "actor_id": "/root/campaign_plan_assessor",
+  "timing": {
+    "started_at_utc": "2026-10-17T11:42:08+00:00",
+    "ended_at_utc": "2026-10-17T11:48:04.851124+00:00",
+    "active_intervals_utc": [
+      [
+        "2026-10-17T11:42:08+00:00",
+        "2026-10-17T11:48:04.851124+00:00"
+      ]
+    ],
+    "idle_intervals_utc": [],
+    "active_seconds_this_wave": 356.851124,
+    "prior_cumulative_active_seconds": 517.58,
+    "cumulative_active_seconds": 874.4311240000001,
+    "active_accounting_note": "Continuous active reading/reasoning/checking/writing window; no idle wait occurred in this wave. The interval between prior completion and this new dispatch is excluded. Shared two-case interval is counted once, not per case; this is evaluator active wall time, not model compute/billing."
+  },
+  "evidence_path_base": "assessment-inputs",
+  "frozen_criteria": [
+    "K1",
+    "K3",
+    "K4",
+    "K5",
+    "K7",
+    "K8"
+  ],
+  "not_applicable": [
+    {
+      "criterion": "K2",
+      "reason": "Not in frozen P2 list. Keyboard obligations are still checked where relevant to K1/K7."
+    },
+    {
+      "criterion": "K6",
+      "reason": "Review-only corrected-comparator criterion, not in frozen P2 list."
+    }
+  ],
+  "blinding": "NOT_BLINDED: neutral filenames only; content reveals baseline or derivative. No method ranking or comparison follows.",
+  "constraints": {
+    "only_criteria_and_N18_N04_inputs_used": true,
+    "N13_read": false,
+    "other_campaign_assessments_used": false,
+    "author_corrections_used": false,
+    "current_repo_sources_used": false,
+    "network_or_live_website": false,
+    "new_agents": false,
+    "outreach": false,
+    "trial_reruns_or_fixes": false
+  },
+  "neutral_id": "N04",
+  "criteria": [
+    {
+      "criterion": "K1",
+      "status": "MET",
+      "scope": "P2 documentation-only planning",
+      "rationale": "The final proposal covers every help transition and preserves corrected Back proof, two unanswered checkpoints, the target-only 24 bound and distinct summary/h1 focus. It distinguishes raw values from current profile detail. Canonical Close Tab is labeled separately from retained reverse evidence; Back either-direction reachability is supported by the target, checker and current profile, while actual directions must be recorded.",
+      "evidence": [
+        {
+          "path": "N04/input/surface-contract.json",
+          "lines": "9-20",
+          "claim": "Original transition/focus/check/provenance values"
+        },
+        {
+          "path": "N04/input/target/verification-protocol.md",
+          "lines": "8-10",
+          "claim": "Corrected existing procedure obligations"
+        },
+        {
+          "path": "N04/output/REPORT.md",
+          "lines": "27-36,40-54",
+          "claim": "Accurate change/preservation/source map"
+        },
+        {
+          "path": "N04/output/proposed-protocol.md",
+          "lines": "17-26",
+          "claim": "Full proposed journey and actual-direction evidence"
+        }
+      ],
+      "missing_proof_or_limit": "A reverse-only future trace cannot prove the literal Back Tab field was observed; exact-path claims must follow the recorded direction. This packet makes no such actual-path claim. Optional clarity suggestion P2-S1 records that distinction."
+    },
+    {
+      "criterion": "K3",
+      "status": "MET",
+      "scope": "P2 documentation-only planning",
+      "rationale": "The plan keeps no-answer/results/submission boundaries, all-request GET/HEAD/OPTIONS filtering and pre-entry exact-origin main-frame/popup navigation protection including redirects. Missing enforcement blocks a future run and analytics remains blocked with effects retained. Navigation granularity is explicitly attributed to the current original profile.",
+      "evidence": [
+        {
+          "path": "N04/output/REPORT.md",
+          "lines": "30-33,112-123,158-163",
+          "claim": "Checkpoints, guard provenance, pre-entry stop and blocked effects"
+        },
+        {
+          "path": "N04/output/proposed-protocol.md",
+          "lines": "7-13,18-28",
+          "claim": "Scope, before-entry controls, continuing enforcement and unanswered evidence"
+        },
+        {
+          "path": "N04/input/.agents/skills/qore-plan-qaizen-labs/references/project.json",
+          "lines": "55-62",
+          "claim": "Actual source-bound invariant defining method and navigation controls"
+        }
+      ],
+      "missing_proof_or_limit": "No runtime enforcement is established. The bare original allowlists do not by themselves specify every subresource mechanism. The plan does not demonstrate permission for an arbitrary third-party request or comprehensive all-resource origin enforcement; later execution requires checking its actual applicable boundary."
+    },
+    {
+      "criterion": "K4",
+      "status": "MET",
+      "scope": "P2 documentation-only planning",
+      "rationale": "Planning/observed results, source/checker limits, target fixture status, unavailable runtime facts and proposed operational conventions remain explicit. Verifier qualifications and the inability to establish Delivery prior execution from its restricted evidence are retained rather than converted into proof.",
+      "evidence": [
+        {
+          "path": "N04/output/REPORT.md",
+          "lines": "4,8-14,194-206",
+          "claim": "Fixture, runtime limits, audit qualifications and bounded completion"
+        },
+        {
+          "path": "N04/output/proposed-protocol.md",
+          "lines": "3,11-13,26-30",
+          "claim": "Proposed conventions and actual-evidence reporting"
+        },
+        {
+          "path": "N04/output/REPORT.md",
+          "lines": "196",
+          "claim": "Restricted auditor evidence cannot establish prior checker execution; root command separately retained"
+        }
+      ],
+      "missing_proof_or_limit": "No website pass/defect, actual DOM behavior, guard capability or measured effort is asserted. Auxiliary role reports are execution evidence of their arguments, not independent site observations."
+    },
+    {
+      "criterion": "K5",
+      "status": "MET",
+      "scope": "P2 documentation-only planning",
+      "rationale": "Actual preflight, relevant checker, final structural lint and record checks are retained with command identity and exit/output. Nine substantive planned Gherkin scenarios cover preservation, help states, guard absence, focus errors and bounded interruption; a manual source/prose map supplements checker limits.",
+      "evidence": [
+        {
+          "path": "N04/output/execution.json",
+          "lines": "commands / contract_check / spec_validation entries",
+          "claim": "Actual retained command vectors and exit statuses"
+        },
+        {
+          "path": "N04/output/evidence/phases/contract_check.json",
+          "lines": "payload.argv, payload.exit_code, payload.stdout",
+          "claim": "Actual python3 -B checks/check_contract.py surface-contract.json and consistency-only result"
+        },
+        {
+          "path": "N04/output/REPORT.md",
+          "lines": "106-175,179-186",
+          "claim": "Meaningful acceptance scenarios, coverage and source-review tasks"
+        },
+        {
+          "path": "N04/output/evidence/phases/spec_validation.json",
+          "lines": "payload",
+          "claim": "Final report hash, actual spec-lint exit 0 and nine scenarios"
+        },
+        {
+          "path": "N04/output/evidence/validation-summary.json",
+          "lines": "3-35",
+          "claim": "Actual sealed-record check commands/statuses and final execution/report hashes"
+        }
+      ],
+      "missing_proof_or_limit": "Neither structural success nor echoed check IDs establish prose correctness or browser execution. Delivery command history is child-reported; the actual root checker has its own captured evidence."
+    },
+    {
+      "criterion": "K7",
+      "status": "MET",
+      "scope": "P2 documentation-only planning",
+      "rationale": "The plan preserves existing valid procedure clauses and proposes only documented clarification. The 24-step bound and both unanswered checkpoints remain, Close and Back focus remain distinct, and no application or new runtime tool change is required.",
+      "evidence": [
+        {
+          "path": "N04/input/TASK.md",
+          "lines": "3-5",
+          "claim": "Documentation-only preserve/justify instruction"
+        },
+        {
+          "path": "N04/output/REPORT.md",
+          "lines": "27-36,40-54",
+          "claim": "Explicit preservation and justification map"
+        },
+        {
+          "path": "N04/output/proposed-protocol.md",
+          "lines": "17-22",
+          "claim": "Corrected existing sequence, alternatives, bound and all postconditions"
+        },
+        {
+          "path": "N04/output/REPORT.md",
+          "lines": "14,177-186",
+          "claim": "No application, guard implementation, data or deployment dependency"
+        }
+      ],
+      "missing_proof_or_limit": "Step counting, result labels and pre-entry stopping are labeled proposed operational conventions. They do not establish new application behavior or a universal 24-step accessibility threshold."
+    },
+    {
+      "criterion": "K8",
+      "status": "MET",
+      "scope": "P2 documentation-only planning",
+      "rationale": "Actual source inspection and offline results support a scoped maintainer documentation proposal. The plan correctly identifies full help-cycle wording as the remaining concrete gap and preserves written Back proof rather than inventing its absence. Adjudication records specific alternatives and source-based consequences.",
+      "evidence": [
+        {
+          "path": "N04/output/REPORT.md",
+          "lines": "4,27-36,190-206",
+          "claim": "Scoped outcome, selected decisions and limitations"
+        },
+        {
+          "path": "N04/output/evidence/adjudication.json",
+          "lines": "6-107",
+          "claim": "Alternatives, source divergence, consequences and dissent"
+        },
+        {
+          "path": "N04/output/proposed-protocol.md",
+          "lines": "3-30",
+          "claim": "Concrete reviewable proposed wording"
+        }
+      ],
+      "missing_proof_or_limit": "Current site behavior and later implementation remain unobserved. Complete declared method coverage is not an overall factual-quality or benefit score."
+    }
+  ],
+  "method_coverage": {
+    "declared_method": "qore-plan-qaizen-labs Workflow with current profile and additional claim audit",
+    "claimed_coverage": "COMPLETE",
+    "assessment": "SUBSTANTIATED_WITH_DISCLOSED_LIMITATIONS",
+    "parts": [
+      {
+        "part": "Current profile preflight and actual fact use",
+        "status": "MET",
+        "evidence": [
+          {
+            "path": "N04/input/.agents/skills/qore-plan-qaizen-labs/SKILL.md",
+            "lines": "10,19-21",
+            "claim": "Derivative preflight obligation"
+          },
+          {
+            "path": "N04/output/evidence/phases/profile_preflight.json",
+            "lines": "qore_evidence.observed_at / payload",
+            "claim": "Actual root/method command, exit 0 and current source comparisons at 11:30:54.605766 UTC"
+          },
+          {
+            "path": "N04/output/evidence/profile-use.json",
+            "lines": "83-110",
+            "claim": "Consumed focus/back/scope/command IDs and concrete effect; no plan web surface"
+          },
+          {
+            "path": "N04/output/REPORT.md",
+            "lines": "12,27-33",
+            "claim": "Consumed facts shape decisions and acceptance"
+          }
+        ],
+        "limit": "Current source support, actual command execution and runtime enforcement remain distinct. Preflight success alone does not validate the profile paraphrase or browser behavior."
+      },
+      {
+        "part": "Five substantive initial perspectives",
+        "status": "MET",
+        "evidence": [
+          {
+            "path": "N04/output/evidence/analysis-brief.md",
+            "lines": "1",
+            "claim": "Same raw source/task brief explicitly excludes peer conclusions"
+          },
+          {
+            "path": "N04/output/roster.json",
+            "lines": "22-94",
+            "claim": "Five distinct initial actor contexts and full returned report paths"
+          },
+          {
+            "path": "N04/output/reports/product-analysis.md",
+            "lines": "22-52,65-77",
+            "claim": "Smallest scope, stories, acceptance and named challenges"
+          },
+          {
+            "path": "N04/output/reports/architecture-analysis.md",
+            "lines": "13-45,60-72",
+            "claim": "Actual source/checker reader-writer sweep, interface flow and peer questions"
+          },
+          {
+            "path": "N04/output/reports/ux-analysis.md",
+            "lines": "13-41,56-68",
+            "claim": "State/actions, actual-focus evidence and recovery requirements"
+          },
+          {
+            "path": "N04/output/reports/delivery-analysis.md",
+            "lines": "13-40,55-75",
+            "claim": "Tasks with basis/dependencies, document adoption/revert and done gates"
+          },
+          {
+            "path": "N04/output/reports/qa-analysis.md",
+            "lines": "11-80,91-100",
+            "claim": "Matrix and real negative Gherkin with named challenges"
+          }
+        ],
+        "limit": "Full report bodies substantiate distinct work. Complete native original dispatch/lifecycle logs are unavailable, so historical private-context separation cannot be reconstructed from names alone."
+      },
+      {
+        "part": "Report barrier and substantive cross-examination",
+        "status": "MET",
+        "evidence": [
+          {
+            "path": "N04/output/roster.json",
+            "lines": "200-217,227-243",
+            "claim": "All five complete reports at analysis barrier, then all five cross reports at cross barrier"
+          },
+          {
+            "path": "N04/output/evidence/cross-brief.md",
+            "lines": "1",
+            "claim": "Required peer links, exact decisions and correction assignment"
+          },
+          {
+            "path": "N04/output/reports/product-cross.md",
+            "lines": "9-49",
+            "claim": "Architecture complexity, Delivery scope/bound and own Close-evidence correction"
+          },
+          {
+            "path": "N04/output/reports/architecture-cross.md",
+            "lines": "9-44",
+            "claim": "Product invariants, UX complexity, QA warnings and source-attribution correction"
+          },
+          {
+            "path": "N04/output/reports/ux-cross.md",
+            "lines": "11-45",
+            "claim": "Architecture prerequisite and QA state/path/focus challenges"
+          },
+          {
+            "path": "N04/output/reports/delivery-cross.md",
+            "lines": "7-37",
+            "claim": "Product scope, Architecture implementability and own outcome/source corrections"
+          },
+          {
+            "path": "N04/output/reports/qa-cross.md",
+            "lines": "9-61",
+            "claim": "All four peers challenged; wrong focus/bound/no observation distinguished"
+          }
+        ],
+        "limit": "Product/UX cross passes are fresh continuations adopting saved reports, explicitly disclosed. Three other roles resume original contexts. No claim of uninterrupted all-role identity is accepted."
+      },
+      {
+        "part": "Adjudication and preserved dissent",
+        "status": "MET",
+        "evidence": [
+          {
+            "path": "N04/output/evidence/adjudication.json",
+            "lines": "6-107",
+            "claim": "Point-of-divergence alternatives, evidence, consequences and dissent"
+          },
+          {
+            "path": "N04/output/REPORT.md",
+            "lines": "188-200",
+            "claim": "Distinct impact judgments and source-based selected changes retained"
+          }
+        ],
+        "limit": "Sourced role disagreement is not averaged into consensus; empirical unknowns are not resolved by votes. This is role-level execution, not certification of every final sentence."
+      },
+      {
+        "part": "Mechanical filtering and additional fresh source audit",
+        "status": "MET",
+        "evidence": [
+          {
+            "path": "N04/output/evidence/filter-claims.py",
+            "lines": "3-14",
+            "claim": "Exact field projection preserves all claim/severity/refutation values"
+          },
+          {
+            "path": "N04/output/evidence/filter-log.json",
+            "lines": "3-49",
+            "claim": "Five input counts/hashes, 35 output claims, excluded wrappers/full reports/draft"
+          },
+          {
+            "path": "N04/output/roster.json",
+            "lines": "118-126",
+            "claim": "Additional fresh verifier actor, restricted inputs, deadline request and return"
+          },
+          {
+            "path": "N04/output/reports/verifier.md",
+            "lines": "3-16,20-512",
+            "claim": "35 individual source-supported/qualified analyses; restricted-evidence limits retained"
+          },
+          {
+            "path": "N04/output/REPORT.md",
+            "lines": "194-196",
+            "claim": "Qualified audit outcome, unresolved history and independent root command distinguished"
+          }
+        ],
+        "limit": "Field projection is not content blinding: role-prefixed IDs and explicit submitted refutations remain by design. The audit does not claim that every interpretation is a raw source fact or establish actual site behavior."
+      },
+      {
+        "part": "Actual checks and evidence identity",
+        "status": "MET",
+        "evidence": [
+          {
+            "path": "N04/output/evidence/phases/contract_check.json",
+            "lines": "payload",
+            "claim": "Captured correct local command/output and exit 0"
+          },
+          {
+            "path": "N04/output/evidence/phases/spec_validation.json",
+            "lines": "payload",
+            "claim": "Final report hash, actual lint and nine scenarios"
+          },
+          {
+            "path": "N04/output/evidence/validation-summary.json",
+            "lines": "3-35",
+            "claim": "Final identity/coverage seal and hashes"
+          }
+        ],
+        "limit": "Assessor checked hashes and source/report content without rerunning trials or validators. Structural validity is insufficient by itself to prove actual role work or factual quality."
+      }
+    ],
+    "actual_contexts": {
+      "initial_perspectives": 5,
+      "fresh_Product_UX_cross_continuations": 2,
+      "additional_verifier": 1,
+      "distinct_child_contexts": 8,
+      "role_analysis_cross_plus_audit_phase_intervals": 11
+    },
+    "context_continuity": "Role-level passes are complete; Product/UX use explicit report-based continuations after host retirement, while three other roles resume. The protocol does not expressly require identical original actors for a cross pass. Native historical context independence is not proved merely by IDs.",
+    "timing_and_usage": "Finite budgets and all contexts/phases are represented. Exact deadline adherence and active aggregate usage remain UNKNOWN where only scheduling-boundary observations exist. Explicit timing-control caveats prevent interpreting longer spans as measured active overruns.",
+    "profile_identity": "f76afdd45cb6352e5044a06affc4182ea6cd40aa9c012fb216636a61faa428f0"
+  },
+  "checks_file": "checks.json",
+  "material_correction_candidates": [],
+  "precision_and_protocol_observations": [
+    {
+      "id": "P2-S1",
+      "classification": "suggestion",
+      "material_defect_established": false,
+      "scope": "Exact-path evidence wording, not generic keyboard Back proof",
+      "observation": "N04 explicitly distinguishes canonical and alternate Close proof but leaves canonical-versus-alternate Back labeling implicit in the actual-key record. The raw Back transition says Tab; checker/profile and corrected target permit either direction.",
+      "evidence": [
+        {
+          "path": "N04/input/surface-contract.json",
+          "lines": "15",
+          "claim": "Literal Back traversal field Tab"
+        },
+        {
+          "path": "N04/input/checks/check_contract.py",
+          "lines": "35-36",
+          "claim": "Generic validator allows Tab or Shift+Tab for Back"
+        },
+        {
+          "path": "N04/output/proposed-protocol.md",
+          "lines": "20-26",
+          "claim": "Explicit Close distinction; Back either direction and actual keys recorded"
+        },
+        {
+          "path": "N04/output/reports/qa-cross.md",
+          "lines": "15,43-44",
+          "claim": "Own QA says path-specific labels also apply to literal Back traversal"
+        }
+      ],
+      "counterexample": "A future trace containing only Shift+Tab can support the generic allowed keyboard Back action and its focus outcome, but cannot be described as an observation of literal forward Tab.",
+      "why_not_a_finding": "This packet is a plan with actual-direction evidence required, and it does not claim any literal Back Tab path was actually observed. Preserving the corrected target alternative is source-supported. No mandatory second run or deleted alternative is justified.",
+      "minimal_remedy": "Optionally repeat the one-sentence path-specific evidence caveat for Back, preserving both target directions and the 24-step bound.",
+      "fresh_verifier_question": "Does any final sentence actually equate reverse-only Back evidence with observed literal Tab, or is this solely a clarity improvement? Reject a defect claim if no such equation exists."
+    },
+    {
+      "id": "P2-S2",
+      "classification": "implementation/protocol issue",
+      "material_defect_established": false,
+      "scope": "Timing observability/control, no established worker deadline violation",
+      "observation": "Some recorded lead-observed cross spans exceed assigned 90 seconds, and no expiry request preceded those completion notifications. The report explicitly disclaims universal deadline compliance. Exact completion instants and actual compute usage are unavailable.",
+      "evidence": [
+        {
+          "path": "N04/output/roster.json",
+          "lines": "46-54,95-126,226,245",
+          "claim": "Dispatch intervals, delayed observed returns, verifier expiry request and caveat"
+        },
+        {
+          "path": "N04/output/REPORT.md",
+          "lines": "202",
+          "claim": "Explicit timing-control limitation and unavailable active usage"
+        },
+        {
+          "path": "N04/output/evidence/method-selection.json",
+          "lines": "13-21",
+          "claim": "Finite role/global budgets and exhaustion policy"
+        }
+      ],
+      "counterexample": "A completed worker may wait in a notification queue past a scheduling boundary; a lead-observed 107-second interval therefore does not prove 107 seconds of worker activity. Conversely, without a timely control event the packet cannot prove an unfinished worker would be stopped at 90 seconds.",
+      "minimal_remedy": "Retain native completion events when available; if strict deadlines are required, implement a bounded expiry/capture step that includes retention and handoff. Preserve unavailable timings and current disclosures.",
+      "fresh_verifier_question": "Can the packet establish actual active work beyond a deadline? If only lead-observation bounds exist, preserve UNKNOWN rather than invent a violation.",
+      "worker_failure_established": false
+    }
+  ],
+  "required_worker_content_corrections": [],
+  "conclusion": "All six frozen P2 criteria MET at documentation-planning scope. Actual substantive roles/challenges/profile/filter/audit/adjudication/checks substantiate qualified role-level COMPLETE. No confirmed material worker defect; two bounded observations are supplied for independent verification without upgrading them to findings."
+}

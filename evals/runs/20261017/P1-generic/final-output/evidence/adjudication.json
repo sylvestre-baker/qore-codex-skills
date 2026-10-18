@@ -1,0 +1,25 @@
+{
+  "qore_evidence": {
+    "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+    "target_snapshot_sha256": "0aa277436d8dcda4d6c2412c6ad4307dd0192b0f6230fa96c8b16d99c8bac194",
+    "observed_at": "2026-10-17T10:35:16.102410+00:00",
+    "phase_id": "adjudication"
+  },
+  "payload": {
+    "actor_id": "/root",
+    "report": "# Lead adjudication record\n\nActor: /root. Actual Workflow adjudication after receipt of all five complete analyses and all five cross reports. Target/candidate identities are bound in adjudication.json. Complete dispositions, source evidence, alternatives, refutations, consequences and severity dissent are in REPORT.md, \u201cAdjudication, refutations and material dissent.\u201d This record is accompanied by the complete unchanged role reports.\n\nSelected D1\u2013D9 in REPORT.md. Key corrections: exact seven transitions; exact Tab for Close and Back despite permissive checker; observed unanswered baseline, not no-click proxy; initial-summary traversal is proposed, not source-required; one compact evidence record and no harness prerequisite; conditional analytics evidence without provocation; optional terminal visibility, no mandatory DOM removal; separate policy prevention, observed acceptance failure and unavailable dependent observations. No vote-based acceptance or claim of website conformance.\n\nRefuted challenges: Architecture does not require new schema/runner; Product and Delivery do not require live-run completion for documentation delivery; QA full matrix already distinguishes help actions and distinct focus checkpoints. Presentation safeguards remain despite these refutations. Corrected UX initial mandatory-sounding absence proposal and Delivery initial inevitable-effects phrasing. Preserve Low versus Medium absence-risk assessments and all High boundary/false-acceptance impacts. Exact runtime selectors, enforcement, answer indicators and website behavior remain unresolved, not adjudicated by agreement.\n\nSource\u2192protocol\u2192observer/guard\u2192ledger\u2192reviewer field/ownership sweep performed and recorded in REPORT.md. No source writer changes, application transaction or runtime implementation introduced. All required role/challenge reports returned; two fresh cross continuations limit original-actor continuity. No new independent or quality round. Stop after one Workflow cross pass and this lead adjudication because source-level conflicts are resolved and remaining questions require prohibited/unavailable runtime evidence.\n",
+    "decisions": [
+      "D1",
+      "D2",
+      "D3",
+      "D4",
+      "D5",
+      "D6",
+      "D7",
+      "D8",
+      "D9"
+    ],
+    "specification": "REPORT.md",
+    "basis": "All five initial and cross reports; source comparisons; exact dispositions and dissent retained in REPORT.md."
+  }
+}

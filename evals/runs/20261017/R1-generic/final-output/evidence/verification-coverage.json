@@ -1,0 +1,83 @@
+{
+  "execution_coverage": "COMPLETE",
+  "phase": "fresh independent verifier only",
+  "input": "/workspace/output/evidence/claims.json",
+  "examined_ids": [
+    "C-1",
+    "C-2",
+    "S-1",
+    "S-2",
+    "F-201",
+    "F-202",
+    "F-203"
+  ],
+  "unexamined_ids": [],
+  "batches": [
+    {
+      "order": 1,
+      "ids": [
+        "S-1",
+        "S-2",
+        "F-203"
+      ],
+      "priority": "authorization boundary consequences first"
+    },
+    {
+      "order": 2,
+      "ids": [
+        "C-1",
+        "F-202",
+        "C-2",
+        "F-201"
+      ],
+      "priority": "keyboard acceptance evidence"
+    }
+  ],
+  "verdicts": {
+    "CONFIRMED": 7,
+    "PLAUSIBLE": 0,
+    "REFUTED": 0
+  },
+  "verified_blocker_ids": [],
+  "duplicates_preserved": [
+    [
+      "C-1",
+      "F-202"
+    ],
+    [
+      "C-2",
+      "F-201"
+    ],
+    [
+      "S-1",
+      "S-2",
+      "F-203"
+    ]
+  ],
+  "checks": [
+    {
+      "command": "python3 -B /workspace/output/evidence/verifier-reproduce.py > /workspace/output/evidence/verifier-reproduce-output.txt",
+      "exit_code": 0,
+      "output_files": [
+        "/workspace/output/evidence/verifier-reproduce-output.txt",
+        "/workspace/output/evidence/verifier-checks.json"
+      ],
+      "description": "Actual validator call, exact-source assertions, four offline defective UI fixtures, healthy UI control, pure in-memory request-policy countermodels and enforcement control."
+    }
+  ],
+  "snapshot_sha256": {
+    "target/verification-protocol.md": "b8d1f4ad7bd691dbf8f019cd3b87a7644a21899e6317edebac545fd3b245136e",
+    "surface-contract.json": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+    "checks/check_contract.py": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b",
+    "observation-policy.json": "15f4e5b4960b5011684be265f027e42b8637a3b8aae96b24bba1ba3a4d0f0202"
+  },
+  "limits": [
+    "Synthetic fixtures demonstrate protocol coverage, not website behavior.",
+    "No network, browser or live-site verification; no website defect asserted.",
+    "No source/input/shared-data mutations; only evidence files written.",
+    "No finder reports or reasoning read; original redacted IDs/severity retained.",
+    "Only verifier roster can be attested here: requested 1, returned 1.",
+    "No release/acceptance decision is authorized or inferred."
+  ],
+  "completed_at_utc": "2026-10-17T10:13:08.686301+00:00"
+}

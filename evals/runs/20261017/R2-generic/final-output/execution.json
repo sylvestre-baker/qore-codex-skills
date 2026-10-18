@@ -1,0 +1,525 @@
+{
+  "schema": "qore-run/1",
+  "id": "qore003-20261017-r2-generic-1",
+  "method": "review",
+  "skill": "qore-review",
+  "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+  "target": {
+    "label": "Frozen prepared-input manifest; review target target/verification-protocol.md against supplied project sources",
+    "snapshot_sha256": "3131271b248dda5824cc374eb7f519d1bc3c16b0da28ee676ec7a00471859f3b"
+  },
+  "last_relevant_change": "2026-10-17T09:53:58.773220+00:00",
+  "environment": {
+    "id": "qore-qualification-qore003-20261017-r2-generic-1",
+    "operator": "agent",
+    "host": "Docker Desktop Linux arm64 / Codex0.162.0"
+  },
+  "profile": null,
+  "required_phases": [
+    "finder.correctness",
+    "finder.security",
+    "finder.feasibility",
+    "redaction",
+    "verifier",
+    "findings_validation"
+  ],
+  "phases": [
+    {
+      "id": "finder.correctness",
+      "actor_id": "/root/correctness",
+      "status": "PASS",
+      "artifacts": [
+        "evidence/phase-finder-correctness.json",
+        "roles/correctness/report.md",
+        "roles/correctness/findings.json"
+      ]
+    },
+    {
+      "id": "finder.security",
+      "actor_id": "/root/security",
+      "status": "PASS",
+      "artifacts": [
+        "evidence/phase-finder-security.json",
+        "roles/security/report.md",
+        "roles/security/findings.json"
+      ]
+    },
+    {
+      "id": "finder.feasibility",
+      "actor_id": "/root/feasibility",
+      "status": "PASS",
+      "artifacts": [
+        "evidence/phase-finder-feasibility.json",
+        "roles/feasibility/report.md",
+        "roles/feasibility/findings.json"
+      ]
+    },
+    {
+      "id": "redaction",
+      "actor_id": "/root",
+      "status": "PASS",
+      "artifacts": [
+        "evidence/phase-redaction.json",
+        "findings.json",
+        "claims.json",
+        "evidence/redactor-command.json"
+      ]
+    },
+    {
+      "id": "verifier",
+      "actor_id": "/root/verifier",
+      "status": "PASS",
+      "artifacts": [
+        "evidence/phase-verifier.json",
+        "roles/verifier/report.md",
+        "roles/verifier/coverage.json",
+        "verified.json",
+        "roles/verifier/static-comparison.json"
+      ]
+    },
+    {
+      "id": "findings_validation",
+      "actor_id": "/root",
+      "status": "PASS",
+      "artifacts": [
+        "evidence/phase-findings_validation.json",
+        "evidence/finding-lint.json"
+      ]
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "REPORT.md",
+      "sha256": "58e3667fbd52b28a45ca20347cdd6518579cd45f7d3371cec7e88337d4ea142a",
+      "kind": "presentation"
+    },
+    {
+      "path": "claims.json",
+      "sha256": "ed860206017c33198c638544776ae437bdd8dec04c78034b2bb94d0771b7d36e",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/candidate-provenance.json",
+      "sha256": "324d2d892d559ad9a8c585e0c7674b364ab06a86b26179b699e859e17e744c6c",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/capability-probe.json",
+      "sha256": "1c4d41afdf17c94eebae5268970b1782e0b4d74e6b6516724cc80927fa40aca1",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/contract-check.json",
+      "sha256": "01e749f1814f8c8721e5df9e66afa0fbf4839df18f808e68248a7ca988b38146",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/finding-lint.json",
+      "sha256": "9c278c31dc3bf23c0806a8112bc9bf342eff208f050a60f9523dcc32afa7fddb",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/immutability-check.json",
+      "sha256": "38d4a5c9fdf280de74f5051756ead520d2bdd0bcf7eca98b3676cbf3146e0a74",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/input-manifest.json",
+      "sha256": "fb46b18337b3fe3fa67420f321262cc70e5f84cdce362d28b37904cc9c073718",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/isolation.json",
+      "sha256": "2c964217ddcb1c609f0beb21ba2ef2092b998555e08ee24ede29c00c24367c32",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/make_phase.py",
+      "sha256": "188c9595dbf05be4910448a234f2612211139d991020e1ce229a9391a17e443e",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/package_run.py",
+      "sha256": "3a7a54afeb169e0c08e3e2a8dfd070bc02e227fe7f2c9d9b0ed9df6bde22c4b8",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/phase-finder-correctness.json",
+      "sha256": "901e6d8361e69f9110bd500a0c961b3b6d87f68a29860901dee53441e80a031a",
+      "kind": "execution",
+      "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+      "target_snapshot_sha256": "3131271b248dda5824cc374eb7f519d1bc3c16b0da28ee676ec7a00471859f3b",
+      "observed_at": "2026-10-17T11:22:28.038906+00:00"
+    },
+    {
+      "path": "evidence/phase-finder-feasibility.json",
+      "sha256": "66cc6d310cd29e3cf039f821151e331679f4188b2ba150f7a289e321ac094518",
+      "kind": "execution",
+      "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+      "target_snapshot_sha256": "3131271b248dda5824cc374eb7f519d1bc3c16b0da28ee676ec7a00471859f3b",
+      "observed_at": "2026-10-17T11:22:28.047325+00:00"
+    },
+    {
+      "path": "evidence/phase-finder-security.json",
+      "sha256": "0ba8e5e31efe6425d2c223c9d1a6ee5a125ac9c416e58db63a019457c6d449d5",
+      "kind": "execution",
+      "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+      "target_snapshot_sha256": "3131271b248dda5824cc374eb7f519d1bc3c16b0da28ee676ec7a00471859f3b",
+      "observed_at": "2026-10-17T11:22:28.046654+00:00"
+    },
+    {
+      "path": "evidence/phase-findings_validation.json",
+      "sha256": "299f4a3657c66c29c3b2cbdbb67bb9d3b64348b00b438fd969348ac714cc33f0",
+      "kind": "execution",
+      "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+      "target_snapshot_sha256": "3131271b248dda5824cc374eb7f519d1bc3c16b0da28ee676ec7a00471859f3b",
+      "observed_at": "2026-10-17T11:25:30.420612+00:00"
+    },
+    {
+      "path": "evidence/phase-redaction.json",
+      "sha256": "dec5d185a4911716e671c846225f6adabdedbf963dc7426dc0472e25671bef83",
+      "kind": "execution",
+      "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+      "target_snapshot_sha256": "3131271b248dda5824cc374eb7f519d1bc3c16b0da28ee676ec7a00471859f3b",
+      "observed_at": "2026-10-17T11:22:29.149534+00:00"
+    },
+    {
+      "path": "evidence/phase-verifier.json",
+      "sha256": "724aa18c0ed28c1112b2175ead6951184915d85bb9b15eb9461ca568d0e5e503",
+      "kind": "execution",
+      "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+      "target_snapshot_sha256": "3131271b248dda5824cc374eb7f519d1bc3c16b0da28ee676ec7a00471859f3b",
+      "observed_at": "2026-10-17T11:24:49.157891+00:00"
+    },
+    {
+      "path": "evidence/preflight.json",
+      "sha256": "5089ca023eab8382bc24ef8f5789cfac7167490b50c33b19457fb1e556c08b7e",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/redactor-command.json",
+      "sha256": "dae76276429fb7a1ce0aee7aa4e6c45498b901438d598b9147022113ea5bfde4",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/run-check.stdout.json",
+      "sha256": "18c26634ecccfad384ae17bcd56b2245d656b66bb3ae6f83163bdc740038b33e",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/run_logged.py",
+      "sha256": "e96aa7238b796996cb454b40edd72ab5c7669de63d6a8f9af733ae8836fb8905",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/supplied/.agents/skills/qore-review/SKILL.md",
+      "sha256": "ae7a3bc448eda7262fa8163a67b0ce712efc2779eaaf00ce57618dc966dd6367",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/supplied/.agents/skills/qore-review/agents/openai.yaml",
+      "sha256": "6c689fd93445ab3edcb6b88320e7680ee37c746bca5635e8c406304b081250ed",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/supplied/.agents/skills/qore-review/references/findings.md",
+      "sha256": "f9f9035e471c9832c6546e80e4fe857777fefceba781bd5801ee8f97bdeaa409",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/supplied/.agents/skills/qore-review/references/project-profile.md",
+      "sha256": "5d3b69aac18f83a634f4c57c214cc1f53fa186c03c536adcefd4c905a8767c8d",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/supplied/.agents/skills/qore-review/references/protocol.md",
+      "sha256": "e27e0050fdf4d75d2840dd257b9a759f1f48d459ef540990cd3aed5528c5f340",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/supplied/.agents/skills/qore-review/references/release.json",
+      "sha256": "ea208126d9987aa696258167c08654a7abdf2ead6a83718e8e14be210c37af58",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/supplied/.agents/skills/qore-review/references/run-evidence.md",
+      "sha256": "fbdf433ef8b3e972f97bed5fdec4990cf3b49535bf63120c729a7daf4af71746",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/supplied/.agents/skills/qore-review/scripts/finding-lint.mjs",
+      "sha256": "d3d22ae7d0b1b6b53b36006f13a8aaf6e1aa9e89df27b98312e6ac72ea079a26",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/supplied/.agents/skills/qore-review/scripts/project-check.py",
+      "sha256": "d87afa433fe485bdebca3e281d06e0896e4a8980ea7cf7baee739053614ea0ac",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/supplied/.agents/skills/qore-review/scripts/redact-for-verifier.mjs",
+      "sha256": "dc249524c749ad5b511aef0a2cf08b4cfd5c47c1e0de4fd41c5c70746b471083",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/supplied/.agents/skills/qore-review/scripts/run-check.py",
+      "sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/supplied/TASK.md",
+      "sha256": "14529cc0572da58ddcb7f3a8e0e1e83a605496b8ee29a27d2bf6cade91531702",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/supplied/checks/check_contract.py",
+      "sha256": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/supplied/observation-policy.json",
+      "sha256": "15f4e5b4960b5011684be265f027e42b8637a3b8aae96b24bba1ba3a4d0f0202",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/supplied/surface-contract.json",
+      "sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+      "kind": "source"
+    },
+    {
+      "path": "evidence/supplied/target/verification-protocol.md",
+      "sha256": "0a3452f02e358d8800fb26d591083deb972c5531165473990dc27007a9a9e0d4",
+      "kind": "source"
+    },
+    {
+      "path": "findings.json",
+      "sha256": "9f2e60d7ab2780ba158d42d542aa53e2fcd4f3f761bf994187e31c210f13c56b",
+      "kind": "source"
+    },
+    {
+      "path": "roles/correctness/contract-check.json",
+      "sha256": "3aec3c77e5794d08dafd96207789da8ae18a9f05a060b739613fe55bbcacccfc",
+      "kind": "source"
+    },
+    {
+      "path": "roles/correctness/findings.json",
+      "sha256": "43ee41bfd7867cd21b71d81486aa5569478049ae73f74b6aa6bc6dcfd4c8d0f4",
+      "kind": "source"
+    },
+    {
+      "path": "roles/correctness/report.md",
+      "sha256": "01ce16cccd2655c093e3fd5d81757af7649e44959c4f5584c4653535989f0ab0",
+      "kind": "presentation"
+    },
+    {
+      "path": "roles/correctness/snapshot.json",
+      "sha256": "de4ba0e16a1cb9d46fe918cb7a42c3eac9edd115bec8e0bf6de47306a04027cd",
+      "kind": "source"
+    },
+    {
+      "path": "roles/correctness/trace.json",
+      "sha256": "5774886d411d23c751905e14e487a0ca2701168cfe3bc6921508418634ca7be2",
+      "kind": "source"
+    },
+    {
+      "path": "roles/feasibility/check-contract.run.json",
+      "sha256": "f97050896299793d6e597c8fc44e4b7b3e9f047f86459b54449bd86726dcb17a",
+      "kind": "source"
+    },
+    {
+      "path": "roles/feasibility/check-contract.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "source"
+    },
+    {
+      "path": "roles/feasibility/check-contract.stdout.json",
+      "sha256": "7f557ba27626c65e7eb10c7b17773f82e9feae273715b633b694723f87b3c1ee",
+      "kind": "source"
+    },
+    {
+      "path": "roles/feasibility/findings.json",
+      "sha256": "8aa973100a15bf817985395637131e838cf84e427be4792583def923f020f5fa",
+      "kind": "source"
+    },
+    {
+      "path": "roles/feasibility/report.md",
+      "sha256": "c4d83b4c8118e646f2cf15d52be485e36e8df8846e1aef06e0d1d828c4ea698b",
+      "kind": "presentation"
+    },
+    {
+      "path": "roles/feasibility/trace.json",
+      "sha256": "78552687af6fa03795b47542badc216e7c33c9a67a4fc7259bc43c92884eab08",
+      "kind": "source"
+    },
+    {
+      "path": "roles/security/contract-check.json",
+      "sha256": "b7df3dc5c9a40c2eed8863d9841119382e11705c91cea4b973f604650b98db73",
+      "kind": "source"
+    },
+    {
+      "path": "roles/security/findings.json",
+      "sha256": "6360337c52c641645784851363b38ef26a84a2da06dd70c2e92a1a331b0ee8d8",
+      "kind": "source"
+    },
+    {
+      "path": "roles/security/report.md",
+      "sha256": "07ff81f03bb049428d17df14c587ba36c728b798c2785be5d83db29f2aad44ec",
+      "kind": "presentation"
+    },
+    {
+      "path": "roles/security/source-snapshot.txt",
+      "sha256": "ffebd959fa5bba4ff1372cbcb40ac6a74a38f6474dd0c74c45000653361fbd64",
+      "kind": "source"
+    },
+    {
+      "path": "roles/security/static-policy-trace.json",
+      "sha256": "4c5d2a619adf4d374d98c8aad26687c3d399838d4329b45c09ad188d2ae324b9",
+      "kind": "source"
+    },
+    {
+      "path": "roles/verifier/contract-check.json",
+      "sha256": "30bbbdd70f854bf1456b0cf1b7eed9884d34f0cde7ce92ba297b6ad00fbb804e",
+      "kind": "source"
+    },
+    {
+      "path": "roles/verifier/coverage.json",
+      "sha256": "7890d2cc3c8c55d2c79777d9c057f3ed7a43e7fa12063bb4dc096c804e49ede6",
+      "kind": "source"
+    },
+    {
+      "path": "roles/verifier/numbered-sources.txt",
+      "sha256": "01072ecbb42fbd71850bd02c10045dfba66f1526b03ef0d0f3d957f50e64e587",
+      "kind": "source"
+    },
+    {
+      "path": "roles/verifier/report.md",
+      "sha256": "011a5c61a52c14bcfd3066e62f20ba878fe888ceba0352977d68489696c539a7",
+      "kind": "presentation"
+    },
+    {
+      "path": "roles/verifier/static-comparison.json",
+      "sha256": "b1fce9de59703b0daef9bd4296d64d2d1cf42fa24d9ddc1016593e4db0ab709a",
+      "kind": "source"
+    },
+    {
+      "path": "roster.json",
+      "sha256": "2995cb5a13578427c3720b72174fbb200b78f1d853849dea2e8adf9f455fa18d",
+      "kind": "source"
+    },
+    {
+      "path": "verified.json",
+      "sha256": "5b015de9a7d94ff6d4ee7d0b4d32f7275e810aa191c088db38c1e8472fe9ca78",
+      "kind": "source"
+    }
+  ],
+  "commands": [
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "checks/check_contract.py",
+        "surface-contract.json"
+      ],
+      "exit_code": 0,
+      "artifact": "evidence/contract-check.json"
+    },
+    {
+      "argv": [
+        "node",
+        "scripts/redact-for-verifier.mjs",
+        "/workspace/output/findings.json"
+      ],
+      "exit_code": 0,
+      "artifact": "evidence/redactor-command.json"
+    },
+    {
+      "argv": [
+        "node",
+        "scripts/finding-lint.mjs",
+        "/workspace/output/verified.json",
+        "--verifier=ran",
+        "--json"
+      ],
+      "exit_code": 0,
+      "artifact": "evidence/finding-lint.json"
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "checks/check_contract.py",
+        "surface-contract.json"
+      ],
+      "exit_code": 0,
+      "artifact": "roles/correctness/contract-check.json"
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "/workspace/worker/checks/check_contract.py",
+        "/workspace/worker/surface-contract.json"
+      ],
+      "exit_code": 0,
+      "artifact": "roles/security/contract-check.json"
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "/workspace/worker/checks/check_contract.py",
+        "/workspace/worker/surface-contract.json"
+      ],
+      "exit_code": 0,
+      "artifact": "roles/verifier/contract-check.json"
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "checks/check_contract.py",
+        "surface-contract.json"
+      ],
+      "exit_code": 0,
+      "artifact": "roles/feasibility/check-contract.run.json"
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "scripts/run-check.py",
+        "/workspace/output/execution.json",
+        "--evidence-root",
+        "/workspace/output"
+      ],
+      "exit_code": 0,
+      "artifact": "evidence/run-check.stdout.json"
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "scripts/run-check.py",
+        "/workspace/output/execution.json",
+        "--evidence-root",
+        "/workspace/output"
+      ],
+      "exit_code": 0,
+      "artifact": "evidence/run-check.stdout.json"
+    }
+  ],
+  "limitations": [
+    "Static supplied-source document review only; no website, browser, traffic, focus-order/path-length, current deployment, external harness, or performance certification evidence.",
+    "No network, search, connector, site interaction, input edits, shared-data writes or publication performed.",
+    "Actual per-context CPU/token/aggregate agent-second telemetry is unavailable; bounded wall allocations and UTC observation intervals are retained instead of zero usage.",
+    "Internal dispatch timestamps are not exposed by host. Initial finder dispatches bracketed 11:20:16Z\u201311:20:51Z; fresh verifier bracketed 11:22:29Z\u201311:22:46.652315Z. Return observations and role first-clock observations retained in roster/reports.",
+    "Operator-supplied enclosing candidate and target manifest hashes retained verbatim; their upstream manifest serialization procedure was not supplied. Complete local source snapshot and per-file SHA-256 manifest retained, unchanged check passed.",
+    "Full finder context reports remain independent; root received all reports, collected candidates and wrote final synthesis. Fresh verifier only received actual mechanically filtered claims and raw criteria.",
+    "C-2 and S-1 are duplicate policy-omission claims, retained as separate IDs; 3 confirmed IDs represent 2 distinct medium issues. Severity unchanged. No unexamined or unresolved IDs; no missing roles.",
+    "An initial rg search failed (rg absent); initial shell exit code was not retained. Its actual command/output and unavailable status are in capability-probe.json. Explicit paths/Python supplied all access. Some inline comparison argv were not retained; complete comparison outputs and role reports were.",
+    "No expiry partial-result requests required: every worker returned within the smaller declared deadline; no additional quality retries or child dispatches.",
+    "No project profile bundled; profile null. Last relevant change supplied by enclosing run; source bytes stayed unchanged.",
+    "Run-check is run twice to retain actual stdout and then validate its final digest binding. Full actual invocation metadata is saved in run-check-invocations.json outside the self-hashed artifact set to avoid a self-reference cycle."
+  ],
+  "coverage": "COMPLETE"
+}

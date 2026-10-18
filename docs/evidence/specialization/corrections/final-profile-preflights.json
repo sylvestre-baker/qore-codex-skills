@@ -1,0 +1,270 @@
+{
+  "schema": "qore-final-profile-preflights/1",
+  "profile": {
+    "id": "qaizen-labs",
+    "version": "0.1.1",
+    "sha256": "26714a43fa60fad7c3251c11a82e88418c237ccd5cc9f04714c6afd1726e44e9"
+  },
+  "derivative_manifest_sha256": "0b8049fd213054ea24d7b9a9006c073d2754459ab9fc2d6501d0bc237d41bc7a",
+  "category": "Generated corrected-candidate preflight consumption; not a replacement model experiment or full behavior rerun",
+  "checks": [
+    {
+      "method": "plan",
+      "started_at": "2026-10-17T12:21:39.864979+00:00",
+      "ended_at": "2026-10-17T12:21:39.931933+00:00",
+      "exit_code": 0,
+      "result": {
+        "schema": "qore-context-check/1",
+        "profile": {
+          "id": "qaizen-labs",
+          "version": "0.1.1",
+          "sha256": "26714a43fa60fad7c3251c11a82e88418c237ccd5cc9f04714c6afd1726e44e9"
+        },
+        "method": "plan",
+        "coverage": "COMPLETE",
+        "sources": [
+          {
+            "id": "surface",
+            "path": "surface-contract.json",
+            "expected_sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+            "actual_sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+            "current": true
+          },
+          {
+            "id": "checker",
+            "path": "checks/check_contract.py",
+            "expected_sha256": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b",
+            "actual_sha256": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b",
+            "current": true
+          }
+        ],
+        "commands": [
+          {
+            "id": "surface-contract",
+            "argv": [
+              "python3",
+              "-B",
+              "checks/check_contract.py",
+              "surface-contract.json"
+            ],
+            "source": "checker",
+            "applies_to": [
+              "plan",
+              "review"
+            ]
+          }
+        ],
+        "invariants": [
+          {
+            "id": "close-focus",
+            "statement": "Closing question help restores focus to its summary; verify this separately from the application Back transition.",
+            "source": "surface",
+            "applies_to": [
+              "plan",
+              "review",
+              "ux"
+            ]
+          },
+          {
+            "id": "back-focus",
+            "statement": "Reach the application Back control using sequential Tab, as selected by the current surface contract; activate with Enter and verify introduction heading focus. A click, programmatic focus or reverse-only traversal does not prove the required forward-Tab reachability.",
+            "source": "surface",
+            "applies_to": [
+              "plan",
+              "review",
+              "ux"
+            ]
+          },
+          {
+            "id": "unanswered-scope",
+            "statement": "Leave the first question unanswered, block all non-GET/HEAD/OPTIONS requests and main-frame/popup navigation outside the allowed origins. Record blocked analytics; do not relax policy for a successful recording.",
+            "source": "surface",
+            "applies_to": [
+              "plan",
+              "review",
+              "ux"
+            ]
+          }
+        ],
+        "surfaces": {},
+        "consumed_source_ids": [
+          "checker",
+          "surface"
+        ],
+        "problems": [],
+        "local_adaptations": []
+      }
+    },
+    {
+      "method": "review",
+      "started_at": "2026-10-17T12:21:39.932021+00:00",
+      "ended_at": "2026-10-17T12:21:39.982227+00:00",
+      "exit_code": 0,
+      "result": {
+        "schema": "qore-context-check/1",
+        "profile": {
+          "id": "qaizen-labs",
+          "version": "0.1.1",
+          "sha256": "26714a43fa60fad7c3251c11a82e88418c237ccd5cc9f04714c6afd1726e44e9"
+        },
+        "method": "review",
+        "coverage": "COMPLETE",
+        "sources": [
+          {
+            "id": "surface",
+            "path": "surface-contract.json",
+            "expected_sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+            "actual_sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+            "current": true
+          },
+          {
+            "id": "checker",
+            "path": "checks/check_contract.py",
+            "expected_sha256": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b",
+            "actual_sha256": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b",
+            "current": true
+          }
+        ],
+        "commands": [
+          {
+            "id": "surface-contract",
+            "argv": [
+              "python3",
+              "-B",
+              "checks/check_contract.py",
+              "surface-contract.json"
+            ],
+            "source": "checker",
+            "applies_to": [
+              "plan",
+              "review"
+            ]
+          }
+        ],
+        "invariants": [
+          {
+            "id": "close-focus",
+            "statement": "Closing question help restores focus to its summary; verify this separately from the application Back transition.",
+            "source": "surface",
+            "applies_to": [
+              "plan",
+              "review",
+              "ux"
+            ]
+          },
+          {
+            "id": "back-focus",
+            "statement": "Reach the application Back control using sequential Tab, as selected by the current surface contract; activate with Enter and verify introduction heading focus. A click, programmatic focus or reverse-only traversal does not prove the required forward-Tab reachability.",
+            "source": "surface",
+            "applies_to": [
+              "plan",
+              "review",
+              "ux"
+            ]
+          },
+          {
+            "id": "unanswered-scope",
+            "statement": "Leave the first question unanswered, block all non-GET/HEAD/OPTIONS requests and main-frame/popup navigation outside the allowed origins. Record blocked analytics; do not relax policy for a successful recording.",
+            "source": "surface",
+            "applies_to": [
+              "plan",
+              "review",
+              "ux"
+            ]
+          }
+        ],
+        "surfaces": {},
+        "consumed_source_ids": [
+          "checker",
+          "surface"
+        ],
+        "problems": [],
+        "local_adaptations": []
+      }
+    },
+    {
+      "method": "ux",
+      "started_at": "2026-10-17T12:21:39.982319+00:00",
+      "ended_at": "2026-10-17T12:21:40.031724+00:00",
+      "exit_code": 0,
+      "result": {
+        "schema": "qore-context-check/1",
+        "profile": {
+          "id": "qaizen-labs",
+          "version": "0.1.1",
+          "sha256": "26714a43fa60fad7c3251c11a82e88418c237ccd5cc9f04714c6afd1726e44e9"
+        },
+        "method": "ux",
+        "coverage": "COMPLETE",
+        "sources": [
+          {
+            "id": "surface",
+            "path": "surface-contract.json",
+            "expected_sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+            "actual_sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+            "current": true
+          },
+          {
+            "id": "checker",
+            "path": "checks/check_contract.py",
+            "expected_sha256": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b",
+            "actual_sha256": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b",
+            "current": true
+          }
+        ],
+        "commands": [],
+        "invariants": [
+          {
+            "id": "close-focus",
+            "statement": "Closing question help restores focus to its summary; verify this separately from the application Back transition.",
+            "source": "surface",
+            "applies_to": [
+              "plan",
+              "review",
+              "ux"
+            ]
+          },
+          {
+            "id": "back-focus",
+            "statement": "Reach the application Back control using sequential Tab, as selected by the current surface contract; activate with Enter and verify introduction heading focus. A click, programmatic focus or reverse-only traversal does not prove the required forward-Tab reachability.",
+            "source": "surface",
+            "applies_to": [
+              "plan",
+              "review",
+              "ux"
+            ]
+          },
+          {
+            "id": "unanswered-scope",
+            "statement": "Leave the first question unanswered, block all non-GET/HEAD/OPTIONS requests and main-frame/popup navigation outside the allowed origins. Record blocked analytics; do not relax policy for a successful recording.",
+            "source": "surface",
+            "applies_to": [
+              "plan",
+              "review",
+              "ux"
+            ]
+          }
+        ],
+        "surfaces": {
+          "web": {
+            "kind": "application",
+            "entry_url": "https://qaizen.io/labs",
+            "allowed_origins": [
+              "https://qaizen.io"
+            ],
+            "required_state": "Question help closes with summary focus; keyboard Back returns to the introduction with heading focus and no selected answers.",
+            "source": "surface",
+            "applies_to": [
+              "ux"
+            ]
+          }
+        },
+        "consumed_source_ids": [
+          "surface"
+        ],
+        "problems": [],
+        "local_adaptations": []
+      }
+    }
+  ]
+}

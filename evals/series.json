@@ -1,0 +1,161 @@
+{
+  "schema": "qore-eval-series/1",
+  "id": "specialization-v1",
+  "scenarios_sha256": "46534adc957971607cb4af8ae555727b933746b61081822be77acf9d79d2ea49",
+  "status": "PARTIAL",
+  "cells": [
+    {
+      "scenario_id": "R1",
+      "condition": "baseline",
+      "status": "COMPLETE",
+      "records": [
+        "runs/20261017/R1-baseline/evaluation.json"
+      ]
+    },
+    {
+      "scenario_id": "R1",
+      "condition": "generic",
+      "status": "COMPLETE",
+      "records": [
+        "runs/20261017/R1-generic/evaluation.json"
+      ]
+    },
+    {
+      "scenario_id": "R1",
+      "condition": "derived",
+      "status": "COMPLETE",
+      "records": [
+        "runs/20261017/R1-derived/evaluation.json"
+      ]
+    },
+    {
+      "scenario_id": "P1",
+      "condition": "generic",
+      "status": "COMPLETE",
+      "records": [
+        "runs/20261017/P1-generic/evaluation.json"
+      ]
+    },
+    {
+      "scenario_id": "P1",
+      "condition": "derived",
+      "status": "COMPLETE",
+      "records": [
+        "runs/20261017/P1-derived/evaluation.json"
+      ]
+    },
+    {
+      "scenario_id": "P1",
+      "condition": "baseline",
+      "status": "COMPLETE",
+      "records": [
+        "runs/20261017/P1-baseline/evaluation.json"
+      ]
+    },
+    {
+      "scenario_id": "U1",
+      "condition": "derived",
+      "status": "PARTIAL",
+      "records": [
+        "runs/20261017/U1-derived/evaluation.json"
+      ]
+    },
+    {
+      "scenario_id": "U1",
+      "condition": "baseline",
+      "status": "COMPLETE",
+      "records": [
+        "runs/20261017/U1-baseline/evaluation.json"
+      ]
+    },
+    {
+      "scenario_id": "U1",
+      "condition": "generic",
+      "status": "PARTIAL",
+      "records": [
+        "runs/20261017/U1-generic/evaluation.json"
+      ]
+    },
+    {
+      "scenario_id": "R2",
+      "condition": "derived",
+      "status": "COMPLETE",
+      "records": [
+        "runs/20261017/R2-derived/evaluation.json"
+      ]
+    },
+    {
+      "scenario_id": "R2",
+      "condition": "generic",
+      "status": "COMPLETE",
+      "records": [
+        "runs/20261017/R2-generic/evaluation.json"
+      ]
+    },
+    {
+      "scenario_id": "R2",
+      "condition": "baseline",
+      "status": "COMPLETE",
+      "records": [
+        "runs/20261017/R2-baseline/evaluation.json"
+      ]
+    },
+    {
+      "scenario_id": "P2",
+      "condition": "baseline",
+      "status": "COMPLETE",
+      "records": [
+        "runs/20261017/P2-baseline/evaluation.json"
+      ]
+    },
+    {
+      "scenario_id": "P2",
+      "condition": "derived",
+      "status": "COMPLETE",
+      "records": [
+        "runs/20261017/P2-derived/evaluation.json"
+      ]
+    },
+    {
+      "scenario_id": "P2",
+      "condition": "generic",
+      "status": "COMPLETE",
+      "records": [
+        "runs/20261017/P2-generic/evaluation.json"
+      ]
+    },
+    {
+      "scenario_id": "U2",
+      "condition": "generic",
+      "status": "PARTIAL",
+      "records": [
+        "runs/20261017/U2-generic/evaluation.json"
+      ]
+    },
+    {
+      "scenario_id": "U2",
+      "condition": "baseline",
+      "status": "COMPLETE",
+      "records": [
+        "runs/20261017/U2-baseline/evaluation.json"
+      ]
+    },
+    {
+      "scenario_id": "U2",
+      "condition": "derived",
+      "status": "PARTIAL",
+      "records": [
+        "runs/20261017/U2-derived/evaluation.json"
+      ]
+    }
+  ],
+  "excluded_pilot": [],
+  "limitations": [
+    "Original isolation failure is retained in series-origin.json; scoped runtime recovery was independently qualified before trials.",
+    "One observation per condition on six related known tasks; no general superiority or efficiency claim.",
+    "Task scoring and material comparative verification are separate from execution coverage.",
+    "Live deployment comparability remains unverified unless supported by separate matching observations.",
+    "All original attempts retained; post-correction checks are separately identified, not replacements.",
+    "Qualification is a later independent entered assessment and does not rewrite the original phase records."
+  ]
+}

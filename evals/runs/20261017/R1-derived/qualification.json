@@ -1,0 +1,17 @@
+{
+  "schema": "qore-eval-qualification/1",
+  "run_id": "qore003-20261017-r1-derived-1",
+  "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+  "input_manifest_sha256": "e5f7338342cd59473e3270db3f6632505b9da5b21c93220ca745734c0edd3f45",
+  "qore_run_sha256": "14285f8968b2dabae2a6b8abcc87258d01690b9f2baf4b9be6edb5c32be21e74",
+  "declared_coverage": "COMPLETE",
+  "coverage": "COMPLETE",
+  "assessor": "/root/campaign_review_assessor",
+  "verifier": "/root/campaign_final_verifier",
+  "assessed_at": "2026-10-17T12:22:41.534375Z",
+  "reason": "Required review/profile activities have retained evidence. Wave1 confirmed the broader traversal recommendation/profile defect and refuted the proposed prohibited packet exposure. Correctness of that recommendation is separate from completed phase coverage; preserve the defect and strict-conformity dissent.",
+  "evidence": [
+    "independent-assessment.json",
+    "independent-verification.json"
+  ]
+}

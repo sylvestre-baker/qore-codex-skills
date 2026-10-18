@@ -1,0 +1,22 @@
+{
+  "findings": [
+    {
+      "id": "F-201",
+      "title": "Help verification omits the required Space toggle and Enter reopen cycle",
+      "severity": "medium",
+      "evidence": "surface-contract.json:11-13 requires summary Enter to open, Space to close, and Enter to reopen; required_checks includes help-toggle at line 18. target/verification-protocol.md:7-8 only opens help with an unspecified activation and immediately reaches Close; all six procedure steps (lines 5-10) contain no Space or reopen action. Trigger: follow the written procedure exactly on a deployment where summary Space or Enter is broken but pointer opening and Close work. Requirement: execute declared help-toggle acceptance transitions. Impact: the procedure can finish without generating evidence for either missing transition, so a help keyboard regression remains undetected."
+    },
+    {
+      "id": "F-202",
+      "title": "Pointer Back cannot supply the required sequential keyboard Back evidence",
+      "severity": "medium",
+      "evidence": "target/verification-protocol.md:10 explicitly says Click Back and only checks destination state and heading focus. surface-contract.json:15 requires Back traversal Tab and activation Enter; line 18 requires keyboard-back. checks/check_contract.py:35-36 explicitly distinguishes sequential keyboard traversal and observed activation. Trigger: Back responds to a pointer click and focuses the heading but is absent from the tab order or fails Enter activation. Requirement: observe keyboard traversal and Enter activation of Back. Impact: the written check can pass while the required keyboard journey is unusable; destination focus alone does not measure how Back was reached or activated."
+    },
+    {
+      "id": "F-203",
+      "title": "Procedure has no operational step to enforce or observe the declared network boundary",
+      "severity": "medium",
+      "evidence": "surface-contract.json:5-6 restricts origins and permits only GET/HEAD/OPTIONS; line 18 requires read-only-policy and origin-policy, and line 20 expects an analytics POST to be blocked and its observed effects retained. observation-policy.json:2-3 supplies the single allowed origin. target/verification-protocol.md:5-10 gives six UI-only steps with no setup/import of either policy, network interception, method/origin verification, or retention of blocked-request effects. checks/check_contract.py:14-18 validates declared data only and its returned limit at lines 42-43 is explicitly contract consistency only. Trigger: a normal browser session follows the procedure and navigation/help actions emit analytics POST or cross-origin subrequests. Requirement: constrain actual observation to the allowed origins/methods and retain blocked effects. Impact: an operator can complete every written assertion without establishing the required read-only/origin checks, and an expected POST has no specified mechanism to be blocked."
+    }
+  ]
+}

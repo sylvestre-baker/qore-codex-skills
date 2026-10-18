@@ -1,0 +1,124 @@
+{
+  "actor_id": "/root/campaign_ux_last_assessor",
+  "neutral_id": "N11",
+  "scenario_id": "U2",
+  "started_at_utc": "2026-10-17T12:19:05Z",
+  "ended_at_utc": "2026-10-17T12:21:49.573106+00:00",
+  "text_inspected": [
+    "assessment-inputs/criteria.json",
+    "assessment-inputs/N11/input/TASK.md",
+    "assessment-inputs/N11/input/surface-contract.json",
+    "assessment-inputs/N11/input/observation-policy.json",
+    "assessment-inputs/N11/input/checks/check_contract.py",
+    "assessment-inputs/N11/input/.agents/skills/qore-ux-review-qaizen-labs/SKILL.md",
+    "assessment-inputs/N11/input/.agents/skills/qore-ux-review-qaizen-labs/references/gates.md",
+    "assessment-inputs/N11/input/.agents/skills/qore-ux-review-qaizen-labs/references/protocol.md",
+    "assessment-inputs/N11/input/.agents/skills/qore-ux-review-qaizen-labs/references/run-evidence.md",
+    "assessment-inputs/N11/input/.agents/skills/qore-ux-review-qaizen-labs/references/project.json",
+    "assessment-inputs/N11/output/REPORT.md",
+    "assessment-inputs/N11/output/evidence/findings.json",
+    "assessment-inputs/N11/output/evidence/gates.json",
+    "assessment-inputs/N11/output/evidence/scope.json",
+    "assessment-inputs/N11/output/evidence/depth.json",
+    "assessment-inputs/N11/output/evidence/loop.json",
+    "assessment-inputs/N11/output/evidence/profile-use.json",
+    "assessment-inputs/N11/output/evidence/profile_preflight.json",
+    "assessment-inputs/N11/output/evidence/profile-check-final.json",
+    "assessment-inputs/N11/output/evidence/required-check-matrix.json",
+    "assessment-inputs/N11/output/evidence/required-check-results.json",
+    "assessment-inputs/N11/output/evidence/state_transition.json",
+    "assessment-inputs/N11/output/evidence/browser.json",
+    "assessment-inputs/N11/output/evidence/verdict.json",
+    "assessment-inputs/N11/output/evidence/freshness.json",
+    "assessment-inputs/N11/output/evidence/stop-rule-1.json",
+    "assessment-inputs/N11/output/evidence/run-check-final.json",
+    "assessment-inputs/N11/output/evidence/visual-inspection.json",
+    "assessment-inputs/N11/output/execution.json (phase/status/limits extracted; artifact list not fully inspected)",
+    "assessment-inputs/N11/output/browser-request-2.json",
+    "assessment-inputs/N11/observed-metadata.json",
+    "assessment-inputs/N11/operator/browser_probe.mjs (relevant guard/capture/assertion/traversal sections)",
+    "assessment-inputs/N11/observation-1/raw/result.json",
+    "assessment-inputs/N11/observation-1/raw/events.json (actions and policy/network/error fields extracted)",
+    "assessment-inputs/N11/observation-1/relay.json (receipt fields inspected)",
+    "assessment-inputs/N11/observation-2/raw/result.json",
+    "assessment-inputs/N11/observation-2/raw/events.json (actions and policy/network/error fields extracted)",
+    "assessment-inputs/N11/observation-2/relay.json (receipt fields inspected)",
+    "assessment-inputs/N11/observation-3/raw/result.json",
+    "assessment-inputs/N11/observation-3/raw/events.json (actions and policy/network/error fields extracted)",
+    "assessment-inputs/N11/observation-3/relay.json (receipt fields inspected)",
+    "assessment-inputs/N11/observation-4/raw/result.json",
+    "assessment-inputs/N11/observation-4/raw/events.json (actions and policy/network/error fields extracted)",
+    "assessment-inputs/N11/observation-4/relay.json (receipt fields inspected)",
+    "assessment-inputs/N11/observation-2/actions.json",
+    "assessment-inputs/N11/observation-4/actions.json"
+  ],
+  "dom_inspected": {
+    "files": [
+      "assessment-inputs/N11/observation-2/raw/00-entry.dom.json",
+      "assessment-inputs/N11/observation-2/raw/01-introduction-via-entry.dom.json",
+      "assessment-inputs/N11/observation-2/raw/02-introduction-after-document-reload.dom.json",
+      "assessment-inputs/N11/observation-2/raw/03-first-question-unanswered.dom.json",
+      "assessment-inputs/N11/observation-2/raw/04-help-open-via-Enter.dom.json",
+      "assessment-inputs/N11/observation-2/raw/05-help-closed-via-Space.dom.json",
+      "assessment-inputs/N11/observation-2/raw/06-close-keyboard-focus.dom.json",
+      "assessment-inputs/N11/observation-2/raw/07-close-restores-summary-focus.dom.json",
+      "assessment-inputs/N11/observation-2/raw/08-Back-sequential-keyboard-focus.dom.json",
+      "assessment-inputs/N11/observation-2/raw/09-returned-introduction-heading-focus.dom.json",
+      "assessment-inputs/N11/observation-2/raw/10-final.dom.json",
+      "assessment-inputs/N11/observation-4/raw/00-entry.dom.json",
+      "assessment-inputs/N11/observation-4/raw/01-challenge-Back-focus-with-cookie-banner.dom.json",
+      "assessment-inputs/N11/observation-4/raw/02-challenge-Back-refocus-with-cookie-banner.dom.json",
+      "assessment-inputs/N11/observation-4/raw/03-restart-still-unanswered-help-closed.dom.json",
+      "assessment-inputs/N11/observation-4/raw/04-browser-history-back-entry.dom.json",
+      "assessment-inputs/N11/observation-4/raw/05-browser-history-forward-check.dom.json"
+    ],
+    "fields": "active element, viewport, headings, Next disabled, visible help-text marker; selected original DOM text in initial output"
+  },
+  "images_actually_viewed": [
+    {
+      "path": "assessment-inputs/N11/observation-2/raw/04-help-open-via-Enter.png",
+      "capture_type": "full-page, viewport 1280x800"
+    },
+    {
+      "path": "assessment-inputs/N11/observation-2/raw/05-help-closed-via-Space.png",
+      "capture_type": "full-page, viewport 1280x800"
+    },
+    {
+      "path": "assessment-inputs/N11/observation-2/raw/06-close-keyboard-focus.png",
+      "capture_type": "full-page, viewport 1280x800"
+    },
+    {
+      "path": "assessment-inputs/N11/observation-2/raw/07-close-restores-summary-focus.png",
+      "capture_type": "full-page, viewport 1280x800"
+    },
+    {
+      "path": "assessment-inputs/N11/observation-2/raw/08-Back-sequential-keyboard-focus.png",
+      "capture_type": "full-page, viewport 1280x800"
+    },
+    {
+      "path": "assessment-inputs/N11/observation-4/raw/01-challenge-Back-focus-with-cookie-banner.png",
+      "capture_type": "full-page, viewport 1280x800"
+    },
+    {
+      "path": "assessment-inputs/N11/observation-4/raw/02-challenge-Back-refocus-with-cookie-banner.png",
+      "capture_type": "full-page, viewport 1280x800"
+    },
+    {
+      "path": "assessment-inputs/N11/observation-2/raw/09-returned-introduction-heading-focus.png",
+      "capture_type": "full-page, viewport 1280x800"
+    }
+  ],
+  "not_inspected": [
+    "Other new cases",
+    "Prior evaluator/verifier verdicts or campaign-author diagnosis",
+    "Private website source",
+    "Videos/traces",
+    "Unlisted PNG files",
+    "Every archived output artifact"
+  ],
+  "notes": [
+    "Initial combined tool output was truncated; meaningful source/rules and core event/DOM/phase fields were subsequently read or extracted separately.",
+    "Subject report/findings were read as the work under assessment; neither was treated as external verification."
+  ],
+  "overrun": false
+}

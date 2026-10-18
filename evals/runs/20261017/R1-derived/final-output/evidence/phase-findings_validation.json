@@ -1,0 +1,58 @@
+{
+  "qore_evidence": {
+    "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+    "target_snapshot_sha256": "e5f7338342cd59473e3270db3f6632505b9da5b21c93220ca745734c0edd3f45",
+    "observed_at": "2026-10-17T10:21:11.497760+00:00",
+    "phase_id": "findings_validation"
+  },
+  "payload": {
+    "actor_id": "/root",
+    "artifact_content": {
+      "finding-lint.json": {
+        "valid": true,
+        "coverage": "COMPLETE",
+        "verdict": "SHIP",
+        "verifier": "ran",
+        "total": 3,
+        "counts": {
+          "CONFIRMED": 3,
+          "PLAUSIBLE": 0,
+          "REFUTED": 0
+        },
+        "blocking_findings": [],
+        "unresolved_findings": [],
+        "findings": [
+          {
+            "id": "C-1",
+            "title": "Clicking Back does not exercise the required keyboard transition",
+            "severity": "medium",
+            "evidence": "target/verification-protocol.md:10 says \"Click Back\"; surface-contract.json:15 requires Back traversal Tab and activation Enter; :18 requires keyboard-back; checks/check_contract.py:35-36 makes the keyboard requirement explicit. Batch 1 extracted the sole Back instruction and compared the actual prescribed action against the accepted transition. Contrary evidence: protocol :8 prescribes keyboard traversal/activation for Close and :10 asserts heading focus, but neither exercises keyboard activation of Back. Independent offline document checks: /workspace/output/evidence/verifier-check.py; complete command/stdout/stderr/exit in /workspace/output/evidence/verifier-check-command.json (exit 0), human-readable stdout /workspace/output/evidence/verifier-check-stdout.txt. No browser or website behavior observed.",
+            "verdict": "CONFIRMED",
+            "counterexample": "Concrete input: unchanged ten-line protocol (sha256 b8d1f4ad7bd691dbf8f019cd3b87a7644a21899e6317edebac545fd3b245136e) evaluated against the supplied back transition. Actual offline result: the sole Back instruction is step 6, \"Click Back, then assert ... the introduction heading is focused\"; the only Tab/Enter instruction applies to Close. Expected: sequential keyboard traversal to Back and Enter activation, followed by the heading-focus assertion. The actual document therefore leaves the required keyboard-back check unexercised. This is a reproduced protocol defect, not a reproduced browser failure."
+          },
+          {
+            "id": "C-2",
+            "title": "The procedure omits the required help toggle and reopen sequence",
+            "severity": "medium",
+            "evidence": "target/verification-protocol.md:7-8 opens help once using summary, then reaches Close with Tab/Shift+Tab and Enter; :9-10 checks unanswered and goes Back. surface-contract.json:11-14 requires summary Enter open, summary Space close, summary Enter reopen, then Close Enter; :18 includes help-toggle. Batch 2 inspected all six ordered instructions, found no Space instruction or reopening instruction, and printed expected versus actual routes. Contrary evidence: initial summary opening and Close closure are present but exercise different transitions. Independent offline document checks: /workspace/output/evidence/verifier-check.py; complete command/stdout/stderr/exit in /workspace/output/evidence/verifier-check-command.json (exit 0), human-readable stdout /workspace/output/evidence/verifier-check-stdout.txt. No browser or website behavior observed.",
+            "verdict": "CONFIRMED",
+            "counterexample": "Concrete input: actual steps 3-6 and contract transitions open-help, toggle-help, reopen-help, close-help. Actual offline result: prescribed help route is initial open -> Close closure -> Back, with zero Space or reopen instructions anywhere in the full target. Expected: open-help -> toggle-help (summary Space) -> reopen-help (summary Enter) -> close-help. The actual protocol omits both required intermediate transitions, so it cannot produce evidence for them. This is a recorded document mismatch; hypothetical deployed Space/reopen failures were not executed."
+          },
+          {
+            "id": "C-3",
+            "title": "The browser procedure starts without establishing required request restrictions",
+            "severity": "medium",
+            "evidence": "target/verification-protocol.md:5 begins with opening the public entry; the complete ten-line target has no method/origin setup or validation, request guard precondition, or blocked-request evidence instructions. surface-contract.json:6 restricts methods to GET/HEAD/OPTIONS, :18 requires read-only-policy and origin-policy, :20 requires retaining effects of the expected blocked analytics POST; observation-policy.json:2-4 permits only https://qaizen.io. Batch 3 inspected the full target, printed zero policy-related lines and the first actual navigation instruction. The supplied checker was actually run (exit 0), but its own :2 and :42-43 limit it to contract consistency. Contrary evidence: restrictions exist in separate JSON declarations and could be enforced by an external runner; no such precondition is established or referenced by this target. Confirmation is confined to the document omission; actual browser enforcement and emitted requests are unobserved. Independent offline document checks: /workspace/output/evidence/verifier-check.py; complete command/stdout/stderr/exit in /workspace/output/evidence/verifier-check-command.json (exit 0), human-readable stdout /workspace/output/evidence/verifier-check-stdout.txt. No browser or website behavior observed.",
+            "verdict": "CONFIRMED",
+            "counterexample": "Concrete input/state: the supplied procedure starts at its first instruction with the separately supplied method/origin restrictions as acceptance criteria. Actual offline result: first prescribed action is \"Open the public Labs entry and follow its journey link\", and no earlier or later instruction establishes/checks the restrictions or records blocked analytics effects. Expected: establish or verify the allowed-method and allowed-origin guard before navigation, then retain blocked-request observations. The actual procedure cannot itself establish the required read-only-policy and origin-policy evidence. No request was sent, and this counterexample does not assert that a deployed browser actually emitted an unblocked POST."
+          }
+        ],
+        "problems": [],
+        "limit": "The verifier flag records an execution declaration; validate actual independent phase evidence separately."
+      }
+    },
+    "actual_role": null,
+    "captured_at": "2026-10-17T10:21:11.497756+00:00",
+    "note": "Wrapper created after actual phase; full raw report/output content retained. This is same-run evidence, not a renewed previous-run proof."
+  }
+}

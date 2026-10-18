@@ -1,0 +1,316 @@
+{
+  "schema": "qore-selected-independent-assessment/1",
+  "run_id": "qore003-20261017-r1-derived-1",
+  "neutral_id": "N09",
+  "source_raw_sha256": "2de2ee8b2d71992b0d2822185f58db4b60ec307617487c2c7c77568e97955f27",
+  "public_source": "evals/campaign-20261017/assessments/review-R1/assessment.json",
+  "public_source_sha256": "e077197f8abd6a4197d2e5300168003b129e1b47c4958d86384f1e5e8ccb9d8d",
+  "assessor": "/root/campaign_review_assessor",
+  "original_case_assessment": {
+    "neutral_id": "N09",
+    "declared_method": "qore-review-qaizen-labs, profile preflight, three finder roles, redaction, fresh verifier and final checks.",
+    "criteria": [
+      {
+        "id": "K1",
+        "definition": "Accurate relevant project rules and distinct focus destinations.",
+        "grade": "NOT_MET",
+        "rationale": "The final correction allows Tab OR Shift+Tab and the consumed back-focus profile says the same, while the authoritative current surface contract prescribes Tab. Distinct Close/summary and Back/introduction-heading destinations are correct. The narrower selected route was broadened without exposing the source/profile contradiction; a passing freshness check only proves matching bytes.",
+        "evidence": [
+          {
+            "path": "N09/output/REPORT.md",
+            "lines": [
+              3,
+              11
+            ]
+          },
+          {
+            "path": "N09/output/evidence/source/.agents/skills/qore-review-qaizen-labs/references/project.json",
+            "lines": [
+              45,
+              46,
+              47
+            ]
+          },
+          {
+            "path": "N09/output/evidence/source/surface-contract.json",
+            "lines": [
+              14,
+              15,
+              17
+            ]
+          },
+          {
+            "path": "N09/output/evidence/source/checks/check_contract.py",
+            "lines": [
+              35,
+              36
+            ]
+          },
+          {
+            "path": "N09/output/evidence/source/.agents/skills/qore-review-qaizen-labs/references/project-profile.md",
+            "lines": [
+              22,
+              24,
+              36
+            ]
+          },
+          {
+            "path": "N09/output/evidence/profile-use.json",
+            "lines": [
+              16,
+              20
+            ]
+          }
+        ],
+        "uncertainty": "The core missing-keyboard finding is supported. This grade concerns unsupported broadening of the correction and profile fact, not absence of useful findings."
+      },
+      {
+        "id": "K2",
+        "definition": "Sequential keyboard traversal and Enter evidence for Back; click or programmatic focus alone is insufficient.",
+        "grade": "MET",
+        "rationale": "The review identifies that the actual sole Back step is a click and contains no Back traversal/Enter instruction; it preserves the correct subsequent heading-focus assertion. The verifier's saved document comparison prints the actual step, the expected Tab/Enter transition, and relevant contrary evidence.",
+        "evidence": [
+          {
+            "path": "N09/output/REPORT.md",
+            "lines": [
+              3,
+              9
+            ]
+          },
+          {
+            "path": "N09/output/evidence/verifier-check-stdout.txt",
+            "lines": [
+              96,
+              99,
+              100,
+              101
+            ]
+          },
+          {
+            "path": "N09/output/evidence/verifier-check.py",
+            "lines": [
+              15,
+              23
+            ]
+          }
+        ],
+        "uncertainty": "No deployed Back keyboard evidence was obtained. MET is for the review's evidence standard and supported fixture finding; current website behavior remains UNKNOWN."
+      },
+      {
+        "id": "K3",
+        "definition": "Unanswered state and enforced activation, network and origin boundaries.",
+        "grade": "MET",
+        "rationale": "The review retains unanswered state, recognizes the absent pre-navigation request-policy prerequisite and origin/method/blocked-analytics observations, and distinguishes possible external enforcement from a proven unblocked request. Actual trial network access was denied by the recorded sandbox probe.",
+        "evidence": [
+          {
+            "path": "N09/output/REPORT.md",
+            "lines": [
+              7,
+              11,
+              26
+            ]
+          },
+          {
+            "path": "N09/output/evidence/verifier-check-stdout.txt",
+            "lines": [
+              112,
+              121
+            ]
+          },
+          {
+            "path": "N09/output/evidence/profile-use.json",
+            "lines": [
+              23,
+              27,
+              38,
+              39
+            ]
+          },
+          {
+            "path": "N09/boundary.json",
+            "lines": [
+              53,
+              63,
+              65
+            ]
+          }
+        ],
+        "uncertainty": "External runner enforcement and actual blocked-request effects remain unobserved. A trial sandbox denial is not a browser journey or site acceptance result."
+      },
+      {
+        "id": "K4",
+        "definition": "Evidence or explicit uncertainty; never mislabel a protocol fixture result as a website defect.",
+        "grade": "MET",
+        "rationale": "The actual documentary omissions and source comparisons support the three target findings. The report repeatedly disclaims website defect/behavior observations, and retains the harness failure and successful correction instead of labeling that failure a target defect.",
+        "evidence": [
+          {
+            "path": "N09/output/REPORT.md",
+            "lines": [
+              1,
+              7,
+              9,
+              26,
+              28,
+              30,
+              32
+            ]
+          },
+          {
+            "path": "N09/output/evidence/verifier.md",
+            "lines": [
+              5,
+              45,
+              47,
+              60,
+              82
+            ]
+          },
+          {
+            "path": "N09/output/evidence/verifier-check-stdout.txt",
+            "lines": [
+              145
+            ]
+          }
+        ],
+        "uncertainty": "The report's stronger method-isolation claim is evaluated separately and not accepted merely because the target findings are supported."
+      },
+      {
+        "id": "K5",
+        "definition": "Relevant checker command and acceptance checks for planning/review; proposed and executed commands remain distinct.",
+        "grade": "MET",
+        "rationale": "The contract checker actually returned valid=true with its consistency-only limit. The verifier command record/output includes exact nested argv and exit 0. Proposed corrections and final finding/structural gates remain distinct from runtime acceptance checks.",
+        "evidence": [
+          {
+            "path": "N09/output/evidence/verifier-check-stdout.txt",
+            "lines": [
+              123,
+              144,
+              145
+            ]
+          },
+          {
+            "path": "N09/output/REPORT.md",
+            "lines": [
+              3,
+              5,
+              7,
+              13
+            ]
+          },
+          {
+            "path": "N09/output/run-check-final-command.json",
+            "lines": [
+              2,
+              10,
+              13,
+              15
+            ]
+          }
+        ],
+        "uncertainty": null
+      },
+      {
+        "id": "K8",
+        "definition": "Scoped decision supported by actual observations.",
+        "grade": "MET",
+        "rationale": "The report's concrete target decision is bounded to three documentary defects with no high/critical confirmed blocker and no release/deployment authorization. It preserves six original candidates through a collection map rather than treating deduplication as disappearance of claims.",
+        "evidence": [
+          {
+            "path": "N09/output/REPORT.md",
+            "lines": [
+              9,
+              13,
+              24,
+              28,
+              32
+            ]
+          },
+          {
+            "path": "N09/output/evidence/verifier-examination.json",
+            "lines": [
+              5,
+              12
+            ]
+          }
+        ],
+        "uncertainty": "The separate claim of complete conformity to the method is not substantiated; this does not invalidate the supported target-scoped documentary disposition."
+      }
+    ],
+    "method_assessment": {
+      "declared_method_compliance": "NOT_MET",
+      "phase_inventory": "The profile preflight and all six review phase rows are retained, with three full finder reports, a complete verifier report, collection map, actual filtered claims, final packet and linter/record-check results. Independent digest inspection found all 63 declared evidence artifacts present and matching. All merged IDs were examined; the final packet preserves original medium severity.",
+      "failed_obligation": "The strict no-finder-reasoning promise is not achieved: actual filtered claims.json:7,13,19 contains finder trigger scenarios and causal conclusions, not solely source excerpts/locations. The redactor retains the entire evidence string. Separately, the derivative consumes and repeats the broader Tab/Shift+Tab profile invariant without exposing its mismatch with the current source's Tab route.",
+      "complete_substantiated": "NO for full method conformity as written; YES for the inventory of completed phase activities. Mechanical phase coverage is real, but semantic verifier separation and source/profile contradiction handling are not established.",
+      "evidence": [
+        {
+          "path": "N09/output/evidence/source/.agents/skills/qore-review-qaizen-labs/SKILL.md",
+          "lines": [
+            12,
+            13,
+            21
+          ]
+        },
+        {
+          "path": "N09/output/evidence/source/.agents/skills/qore-review-qaizen-labs/references/protocol.md",
+          "lines": [
+            31,
+            35
+          ]
+        },
+        {
+          "path": "N09/output/evidence/claims.json",
+          "lines": [
+            7,
+            13,
+            19
+          ]
+        },
+        {
+          "path": "N09/output/REPORT.md",
+          "lines": [
+            15
+          ]
+        },
+        {
+          "path": "N09/output/evidence/source/.agents/skills/qore-review-qaizen-labs/references/project-profile.md",
+          "lines": [
+            24,
+            36
+          ]
+        },
+        {
+          "path": "N09/output/evidence/profile-use.json",
+          "lines": [
+            16,
+            20
+          ]
+        },
+        {
+          "path": "N09/output/evidence/timeline.json",
+          "lines": [
+            5,
+            20
+          ]
+        },
+        {
+          "path": "N09/output/run-check-final.json",
+          "lines": [
+            2,
+            6
+          ]
+        }
+      ],
+      "limitations": [
+        "The named actors, history-free dispatches, timing brackets and restricted input lists are retained declarations corroborated by complete role outputs, not native dispatch events in the permitted tree. Native independence provenance remains UNKNOWN.",
+        "The semantic exposure is observable in the actual verifier packet; it does not demonstrate false findings, fabricated contexts, intentional manipulation or a required number of refutations.",
+        "Wrapper observed_at times identify later same-run preservation; timeline.json explicitly gives earlier redaction completion bounds before verifier dispatch. The later wrapper timestamp alone is not evidence of inverted phase ordering.",
+        "The initial regex matched HEAD inside heading; retained failure, word-boundary correction and successful command show an execution harness error that was recovered in the same verifier phase. It is not an outstanding target or method implementation defect.",
+        "Profile current=true and run-check valid=true establish declared structural/source-byte checks, not semantic support for invariant text."
+      ]
+    }
+  },
+  "limits": [
+    "Neutral filenames did not blind conditions.",
+    "The raw criterion judgments concern their declared task scope; later method-coverage qualification is separate."
+  ]
+}

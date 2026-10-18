@@ -1,0 +1,43 @@
+{
+  "checks": [
+    {
+      "name": "supplied-contract-validator",
+      "command": "python3 -B checks/check_contract.py surface-contract.json",
+      "cwd": "/workspace/worker",
+      "execution_window_utc": [
+        "2026-10-17T10:51:39Z",
+        "2026-10-17T10:51:52Z"
+      ],
+      "exact_start_end_timestamps": null,
+      "timestamp_limitation": "The original tool invocation recorded no per-command UTC timestamps; the stated window is bounded by clock tool readings.",
+      "exit_code": 0,
+      "stdout": "{\n  \"valid\": true,\n  \"schema\": \"qaizen-labs-surface/1\",\n  \"checks\": [\n    \"entry\",\n    \"unanswered\",\n    \"help-toggle\",\n    \"close-focus\",\n    \"keyboard-back\",\n    \"introduction-focus\",\n    \"read-only-policy\",\n    \"origin-policy\"\n  ],\n  \"limit\": \"Contract consistency only; browser observations establish current behavior.\"\n}\n",
+      "stderr": "",
+      "tool_reported_wall_seconds": 2.166e-06,
+      "interpretation": "Contract consistency only; no protocol or browser validation."
+    },
+    {
+      "name": "observation-policy-origin-agreement",
+      "checked_at_utc": "2026-10-17T10:53:48.950907+00:00",
+      "contract_allowed_origins": [
+        "https://qaizen.io"
+      ],
+      "policy_allowed_origins": [
+        "https://qaizen.io"
+      ],
+      "equal": true
+    },
+    {
+      "name": "input-integrity",
+      "checked_at_utc": "2026-10-17T10:53:48.950907+00:00",
+      "unchanged": true,
+      "evidence": "input-integrity.json"
+    }
+  ],
+  "not_run": [
+    "Browser observations",
+    "Runtime request-guard tests",
+    "Current deployment keyboard and focus checks",
+    "Qore structural validators (not applicable to baseline)"
+  ]
+}

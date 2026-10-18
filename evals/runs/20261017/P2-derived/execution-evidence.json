@@ -1,0 +1,451 @@
+{
+  "schema": "qore-eval-evidence/1",
+  "run_id": "qore003-20261017-p2-derived-1",
+  "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+  "input_manifest_sha256": "92981d42bbb636d2809b22af476c7974c1a1f54b539b8e5a7d6c9767b0d53b1d",
+  "observed_at": "2026-10-17T11:41:30.807077+00:00",
+  "payload": {
+    "actual_launch": {
+      "started_at": "2026-10-17T11:30:14.995180+00:00",
+      "argv": [
+        "docker",
+        "exec",
+        "-i",
+        "--workdir",
+        "/workspace/worker",
+        "qore-qualification-qore003-20261017-p2-derived-1",
+        "codex",
+        "--ask-for-approval",
+        "never",
+        "exec",
+        "--ignore-user-config",
+        "--ignore-rules",
+        "--ephemeral",
+        "--json",
+        "--skip-git-repo-check",
+        "--strict-config",
+        "-m",
+        "gpt-6.1-sol",
+        "-c",
+        "default_permissions=\"qore-trial\"",
+        "-c",
+        "permissions.qore-trial.extends=\":workspace\"",
+        "-c",
+        "permissions.qore-trial.filesystem={\":root\"=\"deny\",\":minimal\"=\"read\",\":tmpdir\"=\"write\",\":slash_tmp\"=\"write\",\":workspace_roots\"={\".\"=\"read\"},\"/workspace/output\"=\"write\"}",
+        "-c",
+        "permissions.qore-trial.network.enabled=false",
+        "-c",
+        "allow_login_shell=false",
+        "-c",
+        "web_search=\"disabled\"",
+        "-c",
+        "model_reasoning_effort=\"high\"",
+        "-c",
+        "service_tier=\"default\"",
+        "-c",
+        "features.multi_agent=true",
+        "-c",
+        "agents.max_threads=3",
+        "-c",
+        "features.apps=false",
+        "-c",
+        "features.plugins=false",
+        "-c",
+        "features.remote_plugin=false",
+        "-c",
+        "features.memories=false",
+        "-c",
+        "features.skill_search=false",
+        "-c",
+        "features.skill_mcp_dependency_install=false",
+        "-c",
+        "features.request_permissions_tool=false",
+        "-c",
+        "mcp_servers={}",
+        "-"
+      ],
+      "prompt_sha256": "7815dfbe51bc192eab665488391e7af8cd674775d8e15981696011d11fd26a27"
+    },
+    "actual_exit": {
+      "started_at": "2026-10-17T11:30:14.995180+00:00",
+      "ended_at": "2026-10-17T11:41:30.807077+00:00",
+      "exit_code": 0
+    },
+    "native_parent_usage": {
+      "input_tokens": 3417169,
+      "cached_input_tokens": 3322240,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 27126,
+      "reasoning_output_tokens": 6772
+    },
+    "outputs": [
+      {
+        "path": "final-output/REPORT.md",
+        "sha256": "24138f7ec30da8eb426679d1736e84ab2d2013c7811b851becc7729cb85b35e1"
+      },
+      {
+        "path": "final-output/evidence/adjudication.json",
+        "sha256": "4f88691f3cd0c937b74cbbe18d2728a7f267d9691dc94b7fd4356b251c61d135"
+      },
+      {
+        "path": "final-output/evidence/analysis-barrier.json",
+        "sha256": "34e6351c6e0616179d455487f880f42d7e9070563f77a6dd27fb7424990d7fe2"
+      },
+      {
+        "path": "final-output/evidence/analysis-brief.md",
+        "sha256": "9af27ada6368039b8162ecb99c3614d85938db6f4f39291fd48b5545b3eb5bed"
+      },
+      {
+        "path": "final-output/evidence/build-execution.py",
+        "sha256": "af22cc3bd678e82d4bb6c2fd4728f525a01ac2b4cde4e07a0b377ff069d56af5"
+      },
+      {
+        "path": "final-output/evidence/capabilities.json",
+        "sha256": "62f77b448f53fefa48d2ea7c043e2d17258b29e8c96a226999388757cf48c037"
+      },
+      {
+        "path": "final-output/evidence/contract-check.json",
+        "sha256": "7f557ba27626c65e7eb10c7b17773f82e9feae273715b633b694723f87b3c1ee"
+      },
+      {
+        "path": "final-output/evidence/cross-barrier.json",
+        "sha256": "63837ae758f0b1dee2fd5b2b1db03db0d4d3ff9de41d6506219b1a1e8317f96e"
+      },
+      {
+        "path": "final-output/evidence/cross-brief.md",
+        "sha256": "db61817424f5387017e8f4ccbb946969ecc370f9eff153b889baf7834babb637"
+      },
+      {
+        "path": "final-output/evidence/filter-claims.py",
+        "sha256": "d6bce1d1756fdd1a7ab0efa71b66cd98e31748e8c1d16f5ab4bcbe0ece84525b"
+      },
+      {
+        "path": "final-output/evidence/filter-log.json",
+        "sha256": "d4b29025a6ea4159cfa0dc3788ff2be4ddc6cd00446dedb902cc06ed9a360854"
+      },
+      {
+        "path": "final-output/evidence/filtered-claims.json",
+        "sha256": "e8870951e62d64e9d378a91f674b3d828ea1a43e44a3987e0da8215a93e235ea"
+      },
+      {
+        "path": "final-output/evidence/input-immutability.json",
+        "sha256": "06f94a9e24d5daaf472dd50649568792f0a87c5b833a5cccd2c3451272104d87"
+      },
+      {
+        "path": "final-output/evidence/input-manifest.json",
+        "sha256": "01ddb8127ecd32d97caf522328fcad0143658cadf3bb57e740aac749d6f710c4"
+      },
+      {
+        "path": "final-output/evidence/method-selection.json",
+        "sha256": "f60caa3032a961027531a556641030f0e1625a168c06389f9e176587f8338a99"
+      },
+      {
+        "path": "final-output/evidence/operations.json",
+        "sha256": "111f3e4b438b10ae7a12236b12e2239cd2f175c224343b53dcc96a4478e39e2b"
+      },
+      {
+        "path": "final-output/evidence/phases/adjudication.json",
+        "sha256": "56ce76ada2fa06151c72f220f3a11d144ac5ce7c9cc731f43314e1b97cce5873"
+      },
+      {
+        "path": "final-output/evidence/phases/architecture.json",
+        "sha256": "907d2056f614d91035bcc6e88526e687eddbd7bf83796f33d4430a6a975af08f"
+      },
+      {
+        "path": "final-output/evidence/phases/claim_filter.json",
+        "sha256": "66a291a8e0d9f7aede11faa97aa4153587d60679d8a061275ba95a8c14f3972c"
+      },
+      {
+        "path": "final-output/evidence/phases/contract_check.json",
+        "sha256": "b205b96bad90b31ec1e93f4813a486b67a8dfa26bcc585dbf8ea49f5d5f11512"
+      },
+      {
+        "path": "final-output/evidence/phases/delivery.json",
+        "sha256": "ab60632ec4783c8f6a1dbf1f7f292ac3b9a43590ecb72e4adac994338866b353"
+      },
+      {
+        "path": "final-output/evidence/phases/input_integrity.json",
+        "sha256": "ecfbd2fa4bc58a2cdc247398b9873cf38d9a00b933c28d6752a16a448e1b79d8"
+      },
+      {
+        "path": "final-output/evidence/phases/product.json",
+        "sha256": "03ca22883e9887c98317e67dc2395dc7855d7e25e82a3b53287250fb53385389"
+      },
+      {
+        "path": "final-output/evidence/phases/profile_preflight.json",
+        "sha256": "0e38da6ea6d6a23297803a59e05601c55effec86d463580ca484256ee410ef59"
+      },
+      {
+        "path": "final-output/evidence/phases/qa.json",
+        "sha256": "ca9678787810d8fcc6ee6365c3b64172c4d8acb2e20c1cfbf018bb4d93317f8d"
+      },
+      {
+        "path": "final-output/evidence/phases/spec_validation.json",
+        "sha256": "997ef31df0e6c9709b19447d56206379949e22d145aed03e20749c453e52cc62"
+      },
+      {
+        "path": "final-output/evidence/phases/ux.json",
+        "sha256": "2fd69cfe8dcf631757dbb6ecd99ffb9f28a9105de37714664d6135b9566a4973"
+      },
+      {
+        "path": "final-output/evidence/phases/verifier.json",
+        "sha256": "23ced17f0f477fb66e43279d52c8e5d14224266857bca7f3bac5c7ce788403b9"
+      },
+      {
+        "path": "final-output/evidence/profile-check.json",
+        "sha256": "7f67a938c63ed8b3cda1433ef4775353384d2a7baa8b86d3c6738c6f8725a726"
+      },
+      {
+        "path": "final-output/evidence/profile-use.json",
+        "sha256": "95c822814ca61d7d6a5a9dd15634c3f53b5e4279ffd2ecad4980317d72963d7f"
+      },
+      {
+        "path": "final-output/evidence/run-check-initial.txt",
+        "sha256": "250090dae3459578b6f3a0aad33313fb84ca8dbe7c6782160db14fb8a6540e0a"
+      },
+      {
+        "path": "final-output/evidence/run-check.txt",
+        "sha256": "b407c523c92ed6dfd4c300e0f7a0f11cce33e01486a9f6163eaaac4bf3173151"
+      },
+      {
+        "path": "final-output/evidence/spec-lint.txt",
+        "sha256": "5b1106077b3b2cf239571889195486bdda7af5802a8ecc53d0275b1a35585570"
+      },
+      {
+        "path": "final-output/evidence/validation-summary.json",
+        "sha256": "4bf949b4e0879bd3982286f0ade7b3dc734b54a067c210630219b7e9beea2e41"
+      },
+      {
+        "path": "final-output/execution.json",
+        "sha256": "c3acc0ec968c536fee92257e7b42b3696fee18f733d3a88ac0d1da82fc42eb2b"
+      },
+      {
+        "path": "final-output/proposed-protocol.md",
+        "sha256": "c49bd17441e29f979649901098c56429f66ecd981069e5732b3883e41a86cf79"
+      },
+      {
+        "path": "final-output/reports/architecture-analysis.md",
+        "sha256": "c4b69860947928911ca5e29bf4b6e11338a056bfd6ab6561b7d5178e6c8f9fb1"
+      },
+      {
+        "path": "final-output/reports/architecture-claims.json",
+        "sha256": "71d58f98688a127a6a559c20fdf1f4d32773fdc8cdbda527ce091a33431f32c7"
+      },
+      {
+        "path": "final-output/reports/architecture-cross.md",
+        "sha256": "ba4b0ba3d8036919e98ca3ee264d19aca704540204436d4a957d521d82944a78"
+      },
+      {
+        "path": "final-output/reports/delivery-analysis.md",
+        "sha256": "60932df4d9318778a595b4fba2a3caf5b6726b01f170cad12c24e11b5e829ccd"
+      },
+      {
+        "path": "final-output/reports/delivery-claims.json",
+        "sha256": "a10978484984646c621f59cf8aa8f220e55348e1478317a17c15bf99d4c6ca41"
+      },
+      {
+        "path": "final-output/reports/delivery-cross.md",
+        "sha256": "707aebdcac3f1f0a65d726569f2fb1e8e4f50f6eca9335f657fa71756ae54f2f"
+      },
+      {
+        "path": "final-output/reports/product-analysis.md",
+        "sha256": "ac71282304534ce9d3e0d99394ef0ebb1f90037996aa5750ce8a4d166d4d4c6e"
+      },
+      {
+        "path": "final-output/reports/product-claims.json",
+        "sha256": "1cd90a4d3d7657a13a788b993909ef8b540af1872988d94f79f7a6a85851f7d2"
+      },
+      {
+        "path": "final-output/reports/product-cross.md",
+        "sha256": "68fb2be5e6176acf8a9e300037b5cba9ef28ecb1895d8d1bb71cfcd393bae037"
+      },
+      {
+        "path": "final-output/reports/qa-analysis.md",
+        "sha256": "c819e7f93919ef4aefbc856a909eaa23eff241a741a02c173e26031619e8261a"
+      },
+      {
+        "path": "final-output/reports/qa-claims.json",
+        "sha256": "e2e50cc95c0fb97c5256374f9d09a06d488851f2148f1a687eb5f922c453cf92"
+      },
+      {
+        "path": "final-output/reports/qa-cross.md",
+        "sha256": "c55345b8fb3d32de12890e9cad83ffcefb4df39c580c2919c2a0ee90fabd77e1"
+      },
+      {
+        "path": "final-output/reports/ux-analysis.md",
+        "sha256": "0dce0e7844e641050beccc74184998f13a09fcc242f027150048fe31f8ad9259"
+      },
+      {
+        "path": "final-output/reports/ux-claims.json",
+        "sha256": "bafc006b5b9d63f075aadeb63a1d04c6cec6463cf3be1c0a451f5c051187bd67"
+      },
+      {
+        "path": "final-output/reports/ux-cross.md",
+        "sha256": "3958af50f5c5fb142b39e559ff7283e28709a9c370c7dd937b21a53e157e417e"
+      },
+      {
+        "path": "final-output/reports/verifier-results.json",
+        "sha256": "3938fb3425b5621db26265c82875373849ff0c4814d045ce7b2138e0644102a3"
+      },
+      {
+        "path": "final-output/reports/verifier.md",
+        "sha256": "b20187705320b003538f1c54a5310707104e57482fafbd4bb7c06a396cc2a242"
+      },
+      {
+        "path": "final-output/roster.json",
+        "sha256": "fad664a75b168dfa330cdc24046d6521dc5b0b00715e5174512243e9854825b0"
+      },
+      {
+        "path": "final-output/sources/.agents/skills/qore-plan-qaizen-labs/SKILL.md",
+        "sha256": "0a5eba8728408a38b4cf505018a2f55b576194db229b67e3ed5bc974579055b9"
+      },
+      {
+        "path": "final-output/sources/.agents/skills/qore-plan-qaizen-labs/agents/openai.yaml",
+        "sha256": "feeb8fab45b8271d61b60ef6e9534161fe59bdd9b13489eb5ab13ad06dd4c90c"
+      },
+      {
+        "path": "final-output/sources/.agents/skills/qore-plan-qaizen-labs/references/project-profile.md",
+        "sha256": "16c5ff087c83b7503b23d5d94726834462dd4fd73d78a5380cf85135fa85b0b3"
+      },
+      {
+        "path": "final-output/sources/.agents/skills/qore-plan-qaizen-labs/references/project.json",
+        "sha256": "f76afdd45cb6352e5044a06affc4182ea6cd40aa9c012fb216636a61faa428f0"
+      },
+      {
+        "path": "final-output/sources/.agents/skills/qore-plan-qaizen-labs/references/protocol.md",
+        "sha256": "83f92490a5601b83fc6eaa21861344e35cd04a3ac7edb56b98cd2eb0ecfea84b"
+      },
+      {
+        "path": "final-output/sources/.agents/skills/qore-plan-qaizen-labs/references/release.json",
+        "sha256": "ec6fc0f8243faa36831ed41702cf14cc45473873e607efc0838d5f5315b4c999"
+      },
+      {
+        "path": "final-output/sources/.agents/skills/qore-plan-qaizen-labs/references/roles.md",
+        "sha256": "cc8060c7c852c143b9671af4fc0176b9c5068f338c19b2556b6ff494c0f0d318"
+      },
+      {
+        "path": "final-output/sources/.agents/skills/qore-plan-qaizen-labs/references/run-evidence.md",
+        "sha256": "35cd6dc6d3e1177bbae96e5b9e829ed1aa55901747c856f4db20e946421f163d"
+      },
+      {
+        "path": "final-output/sources/.agents/skills/qore-plan-qaizen-labs/references/specification.md",
+        "sha256": "7eb06b91fca66a3ec00bda4b49b035c5e6bfe827c4624768f66a09b6ae7827a1"
+      },
+      {
+        "path": "final-output/sources/.agents/skills/qore-plan-qaizen-labs/scripts/project-check.py",
+        "sha256": "d87afa433fe485bdebca3e281d06e0896e4a8980ea7cf7baee739053614ea0ac"
+      },
+      {
+        "path": "final-output/sources/.agents/skills/qore-plan-qaizen-labs/scripts/run-check.py",
+        "sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa"
+      },
+      {
+        "path": "final-output/sources/.agents/skills/qore-plan-qaizen-labs/scripts/spec-lint.mjs",
+        "sha256": "321ac211bfac936c4da3ffe173cdfc0d92cb695351273d289809c05c8b037ada"
+      },
+      {
+        "path": "final-output/sources/.agents/skills/qore-plan-qaizen-labs/scripts/spec-lint.sh",
+        "sha256": "ee4b0c491833f8f3960037255f7ea601548a353d18b317aae25d8e5f2cd461b6"
+      },
+      {
+        "path": "final-output/sources/TASK.md",
+        "sha256": "bfd80062305823015212adaefc7bf7a48eb4e1e911649d410505537e9ecfe9ff"
+      },
+      {
+        "path": "final-output/sources/checks/check_contract.py",
+        "sha256": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b"
+      },
+      {
+        "path": "final-output/sources/observation-policy.json",
+        "sha256": "15f4e5b4960b5011684be265f027e42b8637a3b8aae96b24bba1ba3a4d0f0202"
+      },
+      {
+        "path": "final-output/sources/surface-contract.json",
+        "sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3"
+      },
+      {
+        "path": "final-output/sources/target/verification-protocol.md",
+        "sha256": "0a3452f02e358d8800fb26d591083deb972c5531165473990dc27007a9a9e0d4"
+      },
+      {
+        "path": "final-output/write-canary",
+        "sha256": "2d711642b726b04401627ca9fbac32f5c8530fb1903cc4db02258717921a4881"
+      }
+    ],
+    "post_inputs": [
+      {
+        "path": ".agents/skills/qore-plan-qaizen-labs/SKILL.md",
+        "sha256": "0a5eba8728408a38b4cf505018a2f55b576194db229b67e3ed5bc974579055b9"
+      },
+      {
+        "path": ".agents/skills/qore-plan-qaizen-labs/agents/openai.yaml",
+        "sha256": "feeb8fab45b8271d61b60ef6e9534161fe59bdd9b13489eb5ab13ad06dd4c90c"
+      },
+      {
+        "path": ".agents/skills/qore-plan-qaizen-labs/references/project-profile.md",
+        "sha256": "16c5ff087c83b7503b23d5d94726834462dd4fd73d78a5380cf85135fa85b0b3"
+      },
+      {
+        "path": ".agents/skills/qore-plan-qaizen-labs/references/project.json",
+        "sha256": "f76afdd45cb6352e5044a06affc4182ea6cd40aa9c012fb216636a61faa428f0"
+      },
+      {
+        "path": ".agents/skills/qore-plan-qaizen-labs/references/protocol.md",
+        "sha256": "83f92490a5601b83fc6eaa21861344e35cd04a3ac7edb56b98cd2eb0ecfea84b"
+      },
+      {
+        "path": ".agents/skills/qore-plan-qaizen-labs/references/release.json",
+        "sha256": "ec6fc0f8243faa36831ed41702cf14cc45473873e607efc0838d5f5315b4c999"
+      },
+      {
+        "path": ".agents/skills/qore-plan-qaizen-labs/references/roles.md",
+        "sha256": "cc8060c7c852c143b9671af4fc0176b9c5068f338c19b2556b6ff494c0f0d318"
+      },
+      {
+        "path": ".agents/skills/qore-plan-qaizen-labs/references/run-evidence.md",
+        "sha256": "35cd6dc6d3e1177bbae96e5b9e829ed1aa55901747c856f4db20e946421f163d"
+      },
+      {
+        "path": ".agents/skills/qore-plan-qaizen-labs/references/specification.md",
+        "sha256": "7eb06b91fca66a3ec00bda4b49b035c5e6bfe827c4624768f66a09b6ae7827a1"
+      },
+      {
+        "path": ".agents/skills/qore-plan-qaizen-labs/scripts/project-check.py",
+        "sha256": "d87afa433fe485bdebca3e281d06e0896e4a8980ea7cf7baee739053614ea0ac"
+      },
+      {
+        "path": ".agents/skills/qore-plan-qaizen-labs/scripts/run-check.py",
+        "sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa"
+      },
+      {
+        "path": ".agents/skills/qore-plan-qaizen-labs/scripts/spec-lint.mjs",
+        "sha256": "321ac211bfac936c4da3ffe173cdfc0d92cb695351273d289809c05c8b037ada"
+      },
+      {
+        "path": ".agents/skills/qore-plan-qaizen-labs/scripts/spec-lint.sh",
+        "sha256": "ee4b0c491833f8f3960037255f7ea601548a353d18b317aae25d8e5f2cd461b6"
+      },
+      {
+        "path": "TASK.md",
+        "sha256": "bfd80062305823015212adaefc7bf7a48eb4e1e911649d410505537e9ecfe9ff"
+      },
+      {
+        "path": "checks/check_contract.py",
+        "sha256": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b"
+      },
+      {
+        "path": "observation-policy.json",
+        "sha256": "15f4e5b4960b5011684be265f027e42b8637a3b8aae96b24bba1ba3a4d0f0202"
+      },
+      {
+        "path": "surface-contract.json",
+        "sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3"
+      },
+      {
+        "path": "target/verification-protocol.md",
+        "sha256": "0a3452f02e358d8800fb26d591083deb972c5531165473990dc27007a9a9e0d4"
+      }
+    ],
+    "limit": "Retained actual output identities and execution receipts; this wrapper does not grade task correctness."
+  }
+}

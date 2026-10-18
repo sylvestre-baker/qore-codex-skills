@@ -1,0 +1,14 @@
+{
+  "schema": "qore-operator-freeze/1",
+  "files": {
+    "trial_runtime.py": "f07b9732a266280ae195f03faf3a5b4586b43fe94beca2cbd6d344bb9b2310d1",
+    "run_one.py": "7aa1373eb57df826af36706f1dc5565f4a176e2de3a8bbebe4d8ff28de1a1737",
+    "namespace-seccomp-v1.json": "62f9e530c5bb1b2737a40aecbc00cd00c7a310c58bbc72c8636f55224933ad32"
+  },
+  "limits": [
+    "One-cell operator helper only; no agent/model scheduler shipped in the public package.",
+    "Trial prompt excludes rubric, prior outputs and evaluator keys.",
+    "UX cells require a separate neutral browser-relay operational supplement before dispatch.",
+    "No comparative cell started before independent runtime verification."
+  ]
+}

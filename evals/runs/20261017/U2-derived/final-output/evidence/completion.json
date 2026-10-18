@@ -1,0 +1,30 @@
+{
+  "actor_id": "/root",
+  "report_completed_utc": "2026-10-17T12:17:59.424529+00:00",
+  "work_first_recorded_utc": "2026-10-17T12:07:49+00:00",
+  "elapsed_wall_seconds": 610.424529,
+  "wall_budget_seconds": 900,
+  "aggregate_agent_budget_seconds": 2400,
+  "aggregate_usage_seconds": null,
+  "aggregate_usage_unavailable_reason": "No agent CPU/aggregate usage meter exposed; wall time is observed, not substituted for resource usage. No children dispatched.",
+  "requested_contexts": [
+    "/root"
+  ],
+  "returned_contexts": [
+    "/root"
+  ],
+  "missing_contexts": [],
+  "children": [],
+  "dispatch_utc": null,
+  "dispatch_reason": "Root is the active task context, not a dispatched child. Relay dispatch/return timestamps recorded in browser-request-ledger.json.",
+  "full_phase_reports": [
+    "evidence/profile_preflight.json",
+    "evidence/scope.json",
+    "evidence/browser.json",
+    "evidence/state_transition.json",
+    "evidence/freshness.json",
+    "evidence/verdict.json"
+  ],
+  "coverage": "PARTIAL",
+  "verdict": "DO-NOT-SHIP"
+}

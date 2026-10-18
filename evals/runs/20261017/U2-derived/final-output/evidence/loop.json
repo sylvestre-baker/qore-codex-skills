@@ -1,0 +1,37 @@
+{
+  "in_scope": [
+    "G0",
+    "G1",
+    "G2",
+    "G3",
+    "G4",
+    "G5",
+    "G6"
+  ],
+  "iterations": [
+    {
+      "n": 1,
+      "scores": {
+        "G0": 4,
+        "G2": 4,
+        "G3": 3,
+        "G4": 4,
+        "G5": 3,
+        "G6": 4
+      },
+      "measured": [
+        "G0",
+        "G2",
+        "G3",
+        "G4",
+        "G5",
+        "G6"
+      ],
+      "skipped": {
+        "G1": "Terminal post-history reload render not captured; h1 expectation timed out. Initial reload and history observations retained."
+      },
+      "fix_applied": false
+    }
+  ],
+  "stopping_reason": "Review-only: demonstrated V1 retained without code changes. One corrected challenge replay used; final render gap retained, no additional retry. Stop before ceiling and budget, not plateau or exhaustion."
+}

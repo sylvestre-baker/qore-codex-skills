@@ -1,0 +1,136 @@
+[
+  {
+    "type": "click",
+    "selector": "a[href$='/labs/readiness-check']"
+  },
+  {
+    "type": "reload"
+  },
+  {
+    "type": "assert-visible",
+    "selector": "h1"
+  },
+  {
+    "type": "snapshot",
+    "label": "deep-route-reloaded-introduction"
+  },
+  {
+    "type": "history-back"
+  },
+  {
+    "type": "assert-url",
+    "url": "https://qaizen.io/labs"
+  },
+  {
+    "type": "snapshot",
+    "label": "history-back-labs"
+  },
+  {
+    "type": "history-forward"
+  },
+  {
+    "type": "assert-url",
+    "url": "https://qaizen.io/labs/readiness-check"
+  },
+  {
+    "type": "assert-visible",
+    "selector": "h1"
+  },
+  {
+    "type": "snapshot",
+    "label": "history-forward-introduction"
+  },
+  {
+    "type": "click",
+    "role": "button",
+    "name": "Start the check",
+    "exact": true
+  },
+  {
+    "type": "assert-none-checked"
+  },
+  {
+    "type": "traverse-focus",
+    "selector": "main details summary",
+    "max_steps": 16
+  },
+  {
+    "type": "keyboard",
+    "key": "Enter"
+  },
+  {
+    "type": "keyboard",
+    "key": "Space"
+  },
+  {
+    "type": "keyboard",
+    "key": "Enter"
+  },
+  {
+    "type": "traverse-focus",
+    "role": "button",
+    "name": "Close",
+    "exact": true,
+    "max_steps": 16
+  },
+  {
+    "type": "keyboard",
+    "key": "Enter"
+  },
+  {
+    "type": "assert-focused",
+    "selector": "main details summary"
+  },
+  {
+    "type": "traverse-focus",
+    "role": "button",
+    "name": "Back",
+    "exact": true,
+    "max_steps": 16
+  },
+  {
+    "type": "snapshot",
+    "label": "back-focus-challenge"
+  },
+  {
+    "type": "keyboard",
+    "key": "Shift+Tab"
+  },
+  {
+    "type": "assert-focused",
+    "selector": "main details summary"
+  },
+  {
+    "type": "snapshot",
+    "label": "summary-reverse-tab"
+  },
+  {
+    "type": "keyboard",
+    "key": "Tab"
+  },
+  {
+    "type": "assert-focused",
+    "role": "button",
+    "name": "Back",
+    "exact": true
+  },
+  {
+    "type": "snapshot",
+    "label": "back-focus-repeat-tab"
+  },
+  {
+    "type": "assert-none-checked"
+  },
+  {
+    "type": "keyboard",
+    "key": "Enter"
+  },
+  {
+    "type": "snapshot",
+    "label": "challenge-returned-introduction"
+  },
+  {
+    "type": "assert-focused",
+    "selector": "h1"
+  }
+]

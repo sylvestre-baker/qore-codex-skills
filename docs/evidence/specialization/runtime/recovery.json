@@ -1,0 +1,165 @@
+{
+  "schema": "qore-runtime-recovery/1",
+  "observed_at": "2026-10-17T10:43:36.011019+00:00",
+  "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+  "status": "QUALIFIED_FOR_BOUNDED_TRIALS",
+  "environment": "Disposable Linux arm64 containers on Docker Desktop; Codex CLI0.162.0; existing ChatGPT transport",
+  "image_id": "sha256:09894b981972962ae27f1e8e1726eb49886108a56c80742e70f71b0790c73aba",
+  "seccomp": {
+    "baseline_url": "https://raw.githubusercontent.com/moby/profiles/6fe7deb1b9fb7c0397a4593480d7d22b9ee8caef/seccomp/default.json",
+    "baseline_sha256": "6416b47770785a41ac59073cdc77d9fe98517df2799dc83ef207e622de3053f6",
+    "delta": {
+      "names": [
+        "clone",
+        "unshare",
+        "mount",
+        "umount2",
+        "pivot_root"
+      ],
+      "action": "SCMP_ACT_ALLOW",
+      "comment": "Scoped disposable Qore worker: enable unprivileged nested Bubblewrap namespace setup. Retain UID1000, cap-drop ALL, no-new-privileges and no host mounts. No daemon setting changed."
+    },
+    "qualified_profile_sha256": "62f9e530c5bb1b2737a40aecbc00cd00c7a310c58bbc72c8636f55224933ad32",
+    "redistribution": "Upstream profile is not bundled or relicensed as first-party MIT. The pinned upstream file and the exact first-party delta identify the qualified bytes."
+  },
+  "controls": {
+    "container_uid": 1000,
+    "cap_drop": [
+      "ALL"
+    ],
+    "no_new_privileges": true,
+    "host_mounts": [],
+    "privileged": false,
+    "command_network": false,
+    "source_permissions": "read-only",
+    "output_permissions": "Read/write output and documented scratch directories; approved input remains read-only.",
+    "outer_transport": "Bridge network permits model transport; outer positive-control connection succeeded.",
+    "user_config_rules": "Ignored for this bounded runtime; managed root-owned requirements constrain apps/plugins/MCP/browser/login shell.",
+    "browser_relay": "Separate operator executes worker arrays verbatim in fresh browser contexts, returns immutable observed feedback."
+  },
+  "artifacts": [
+    {
+      "path": "environment.json",
+      "sha256": "cf856f47516f6c91e41a69ce86bc5efd2ac91bcc54b34e990d1e178624c4ac7b",
+      "raw_sha256": "cf856f47516f6c91e41a69ce86bc5efd2ac91bcc54b34e990d1e178624c4ac7b",
+      "transformation": "Byte-identical selected first-party evidence; raw traces and credentials excluded."
+    },
+    {
+      "path": "boundary.json",
+      "sha256": "0e128ccdd8bf6b0ef1becaabd6f67383f70b6eebb564faf46fee48c14314df5b",
+      "raw_sha256": "0e128ccdd8bf6b0ef1becaabd6f67383f70b6eebb564faf46fee48c14314df5b",
+      "transformation": "Byte-identical selected first-party evidence; raw traces and credentials excluded."
+    },
+    {
+      "path": "parent-probe.json",
+      "sha256": "b88a0752e0e8214d189c07bfaee4bc98be20d421235d7baea905e12b178aedd4",
+      "raw_sha256": "b88a0752e0e8214d189c07bfaee4bc98be20d421235d7baea905e12b178aedd4",
+      "transformation": "Byte-identical selected first-party evidence; raw traces and credentials excluded."
+    },
+    {
+      "path": "child-probe.json",
+      "sha256": "99802e1f553179b1906cde79ab432bcbba680fe9cf7b794fd9f69a23917722e0",
+      "raw_sha256": "99802e1f553179b1906cde79ab432bcbba680fe9cf7b794fd9f69a23917722e0",
+      "transformation": "Byte-identical selected first-party evidence; raw traces and credentials excluded."
+    },
+    {
+      "path": "launch.json",
+      "sha256": "848fb3f8904cdbf667b09fbbf7d91f130c688b28f6d7d41adb2f746e67275c30",
+      "raw_sha256": "848fb3f8904cdbf667b09fbbf7d91f130c688b28f6d7d41adb2f746e67275c30",
+      "transformation": "Byte-identical selected first-party evidence; raw traces and credentials excluded."
+    },
+    {
+      "path": "exit.json",
+      "sha256": "bf515a6bf47487d87db65eb6573f994b4bff8c54498c4ea95946844f84e43561",
+      "raw_sha256": "bf515a6bf47487d87db65eb6573f994b4bff8c54498c4ea95946844f84e43561",
+      "transformation": "Byte-identical selected first-party evidence; raw traces and credentials excluded."
+    },
+    {
+      "path": "positive-controls.json",
+      "sha256": "bec6cb6a0bde2081038cf06e7b4cdee505608220ef8f29ff0427b5717c35fa5d",
+      "raw_sha256": "6dbe524632c952347f549f96b4e056d5fd75e6177d4c5e25e7351254cc866e3e",
+      "transformation": "Replace only absolute private campaign/repository root prefixes with declared placeholders; no observation or verdict changed."
+    },
+    {
+      "path": "requirements.toml",
+      "sha256": "7abd56ab6404a31e3377b5e9986c7f90f830b68303147d4dad04ad221e89b5e6",
+      "raw_sha256": "7abd56ab6404a31e3377b5e9986c7f90f830b68303147d4dad04ad221e89b5e6",
+      "transformation": "Byte-identical selected first-party evidence; raw traces and credentials excluded."
+    },
+    {
+      "path": "versions.json",
+      "sha256": "eb5eca22906c076c1b4c7c365614e3c77ce3fdf9a39d429f8aa2be58e77bf3f3",
+      "raw_sha256": "eb5eca22906c076c1b4c7c365614e3c77ce3fdf9a39d429f8aa2be58e77bf3f3",
+      "transformation": "Byte-identical selected first-party evidence; raw traces and credentials excluded."
+    },
+    {
+      "path": "browser-policy.json",
+      "sha256": "2160973fbe4d0a603d061688d2d4fe9ee633d8b3f018fec773d7b8d7a28c7ff2",
+      "raw_sha256": "2160973fbe4d0a603d061688d2d4fe9ee633d8b3f018fec773d7b8d7a28c7ff2",
+      "transformation": "Byte-identical selected first-party evidence; raw traces and credentials excluded."
+    },
+    {
+      "path": "seccomp-origin.json",
+      "sha256": "e234fba8552cf59a1eee797af2f7f89009803e2e61d0febdadd173ee739bdeb5",
+      "raw_sha256": "e234fba8552cf59a1eee797af2f7f89009803e2e61d0febdadd173ee739bdeb5",
+      "transformation": "Replace only absolute private campaign/repository root prefixes with declared placeholders; no observation or verdict changed."
+    },
+    {
+      "path": "independent-verification.json",
+      "sha256": "27b707030d9b368871c11415b2a361cd75e162ca0bf2e75253fb00114d2835ae",
+      "raw_sha256": "27b707030d9b368871c11415b2a361cd75e162ca0bf2e75253fb00114d2835ae",
+      "transformation": "Replace only absolute private campaign/repository root prefixes with declared placeholders; no observation or verdict changed."
+    },
+    {
+      "path": "selected-events.json",
+      "sha256": "e0fc792779101fbc84d9b4e9778531042b5a18d10ee548706f65c1b7eda6b0c7",
+      "raw_sha256": "6ed255fed30b1802409abe56ee3f77c5078986a8006f9ffadac26ac40d891c30",
+      "transformation": "Completed parent MCP resource/template listing events only; original event objects preserved. No child lifecycle trace is claimed."
+    },
+    {
+      "path": "operator/trial_runtime.py.txt",
+      "sha256": "ea87c918ce9d6bab83e5d567fefbe0f247219db0bcf20dce08420613d93e8e55",
+      "raw_sha256": "f07b9732a266280ae195f03faf3a5b4586b43fe94beca2cbd6d344bb9b2310d1",
+      "transformation": "Selected historical operator source for inspection only; exact declared private root/auth/dependency paths replaced by placeholders. Not a supported runnable entry point or trial output."
+    },
+    {
+      "path": "operator/run_one.py.txt",
+      "sha256": "7aa1373eb57df826af36706f1dc5565f4a176e2de3a8bbebe4d8ff28de1a1737",
+      "raw_sha256": "7aa1373eb57df826af36706f1dc5565f4a176e2de3a8bbebe4d8ff28de1a1737",
+      "transformation": "Selected historical operator source for inspection only; exact declared private root/auth/dependency paths replaced by placeholders. Not a supported runnable entry point or trial output."
+    },
+    {
+      "path": "operator/run_ux.py.txt",
+      "sha256": "19d29283654aafcefa03cba288980719996fa04336856cad40e4c6bff8abc0f5",
+      "raw_sha256": "be9edddc769d5657c5f5c5bc11811d56105248a88f06f2e3531471ecdcd9c508",
+      "transformation": "Selected historical operator source for inspection only; exact declared private root/auth/dependency paths replaced by placeholders. Not a supported runnable entry point or trial output."
+    },
+    {
+      "path": "operator/continue_series.py.txt",
+      "sha256": "ad22065a8b7aa8347cb7a53a45391d690e735821b95bad8c5c4f356ffbe6b113",
+      "raw_sha256": "ad22065a8b7aa8347cb7a53a45391d690e735821b95bad8c5c4f356ffbe6b113",
+      "transformation": "Selected historical operator source for inspection only; exact declared private root/auth/dependency paths replaced by placeholders. Not a supported runnable entry point or trial output."
+    },
+    {
+      "path": "operator/record_cell.py.txt",
+      "sha256": "3715ef45bd2b80d4bbc36a05c1c2c248e623f62b398eea3d0730da56f541a020",
+      "raw_sha256": "3715ef45bd2b80d4bbc36a05c1c2c248e623f62b398eea3d0730da56f541a020",
+      "transformation": "Final metadata-only normalizer snapshot. Recognizes actual saved roster/layout fields and preserves worker outputs; selected private root prefixes normalized. Original pre-pilot operator-freeze.json is retained separately; this adapter revision is not a replacement task or quality trial."
+    },
+    {
+      "path": "operator/operator-freeze.json",
+      "sha256": "a52f74034fb641e09dbd27fd91350c7721e15a30b1fd2b039536b35820f41f7b",
+      "raw_sha256": "a52f74034fb641e09dbd27fd91350c7721e15a30b1fd2b039536b35820f41f7b",
+      "transformation": "Byte-identical original raw-source freeze; source hashes refer to pre-redaction private originals, not readable .txt derivatives."
+    }
+  ],
+  "limits": [
+    "This scoped seccomp delta permits nested namespaces and is an explicit outer security change; no daemon/sysctl change, host privilege or seccomp-unconfined fallback was used.",
+    "The historical clean_room.sh default environment still fails its nested sandbox; it is not retroactively qualified by this different operator procedure.",
+    "Finite canaries, tool inventory and child reports are scoped observations, not proof against every hidden route or kernel exploit.",
+    "Native child spawn/fork trace is absent from the CLI export; role reports, roster and qualified child report are retained with that provenance limitation.",
+    "Image generation remains visible and unused; no search/fetch/browser/connector tool or MCP resource was observed.",
+    "Setup qualification is separate from task execution, correctness, comparative benefit and external human use.",
+    "Only selected inspected public setup evidence is included; all original attempts and raw receipts remain privately retained by digest."
+  ]
+}

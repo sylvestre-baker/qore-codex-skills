@@ -1,0 +1,80 @@
+[
+  {
+    "id": "entry",
+    "status": "PASS",
+    "evidence": [
+      "relay-1/01-labs-entry.png",
+      "relay-1/02-introduction.dom.json",
+      "relay-1/events.json"
+    ],
+    "reason": "Actual public card click, introduction H1 and distinctive copy."
+  },
+  {
+    "id": "unanswered",
+    "status": "PASS",
+    "evidence": [
+      "relay-1/events.json",
+      "relay-2/events.json",
+      "relay-3/events.json"
+    ],
+    "reason": "assert-none-checked before/after help, no answer activated, Next disabled in question DOM."
+  },
+  {
+    "id": "help-toggle",
+    "status": "PASS",
+    "evidence": [
+      "relay-2/events.json",
+      "relay-2/02-help-open-enter.dom.json",
+      "relay-2/03-help-closed-space.dom.json"
+    ],
+    "reason": "Sequential summary focus, Enter opens, Space closes, Enter reopens; open attribute and Close visibility asserted."
+  },
+  {
+    "id": "close-focus",
+    "status": "PASS",
+    "evidence": [
+      "relay-2/events.json",
+      "relay-2/04-close-focus-before-activation.png",
+      "relay-2/05-after-close-focus-restoration.dom.json"
+    ],
+    "reason": "One Tab to Close, Enter closes and focused summary assertion passes."
+  },
+  {
+    "id": "keyboard-back",
+    "status": "PASS",
+    "evidence": [
+      "relay-2/events.json",
+      "relay-3/events.json"
+    ],
+    "reason": "One Tab from summary to Back, observed focus-step and Enter transition; visibility defect separately retained."
+  },
+  {
+    "id": "introduction-focus",
+    "status": "PASS",
+    "evidence": [
+      "relay-2/07-returned-introduction.dom.json",
+      "relay-3/07-challenge-returned-introduction.dom.json"
+    ],
+    "reason": "Returned H1 active, question group removed. Same route remains expected."
+  },
+  {
+    "id": "read-only-policy",
+    "status": "PASS",
+    "evidence": [
+      "relay-1/events.json",
+      "relay-2/events.json",
+      "relay-3/events.json"
+    ],
+    "reason": "All completed network entries GET; three analytics POST attempts blocked, no answers/submission/results action."
+  },
+  {
+    "id": "origin-policy",
+    "status": "PASS",
+    "evidence": [
+      "relay-1/events.json",
+      "relay-2/events.json",
+      "relay-3/events.json"
+    ],
+    "reason": "All recorded network/navigation origins https://qaizen.io, no blocked navigation."
+  }
+]

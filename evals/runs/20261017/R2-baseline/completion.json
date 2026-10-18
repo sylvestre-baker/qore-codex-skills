@@ -1,0 +1,12 @@
+{
+  "exit_code": 0,
+  "outputs": [
+    "REPORT.md",
+    "check-contract.txt",
+    "input-hashes.json",
+    "write-canary"
+  ],
+  "inputs_unchanged": true,
+  "completed_at": "2026-10-17T11:27:37.891032+00:00",
+  "trial_id": "qore003-20261017-r2-baseline-1"
+}

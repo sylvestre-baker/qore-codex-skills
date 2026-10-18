@@ -1,0 +1,35 @@
+[
+  {
+    "request": 1,
+    "dispatch_utc": "2026-10-17T11:07:09.603835+00:00",
+    "path": "browser-request-1.json",
+    "deadline_seconds": 180,
+    "purpose": "Actual driver preflight and public entry -> introduction -> first question",
+    "return_utc": "2026-10-17T11:07:26.427753+00:00",
+    "consumed_utc": "2026-10-17T11:07:57.253980+00:00",
+    "receipt": "relay-1/relay.json",
+    "digest_verification": "all returned files match receipt"
+  },
+  {
+    "request": 2,
+    "dispatch_utc": "2026-10-17T11:07:57.254096+00:00",
+    "path": "browser-request-2.json",
+    "deadline_seconds": 180,
+    "purpose": "Full keyboard help Enter/Space/Enter, Close via Tab/Enter, Back via Tab/Enter and distinct focus destinations; request1+2 form iteration1",
+    "return_utc": "2026-10-17T11:08:36.240227+00:00",
+    "consumed_utc": "2026-10-17T11:09:31.636542+00:00",
+    "receipt": "relay-2/relay.json",
+    "digest_verification": "all returned files match receipt"
+  },
+  {
+    "request": 3,
+    "dispatch_utc": "2026-10-17T11:09:31.825250+00:00",
+    "path": "browser-request-3.json",
+    "deadline_seconds": 180,
+    "purpose": "Iteration2: valid deep route reload/history, fresh Back-focus overlap challenge with reverse/forward Tab, actual Enter return",
+    "return_utc": "2026-10-17T11:10:11.883489+00:00",
+    "consumed_utc": "2026-10-17T11:11:48.473685+00:00",
+    "receipt": "relay-3/relay.json",
+    "digest_verification": "all returned files match receipt"
+  }
+]

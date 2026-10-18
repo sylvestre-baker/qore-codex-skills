@@ -21,6 +21,7 @@
       "docs/coordination.md",
       "examples/qaizen-labs/README.md",
       "INSTALL.md",
+      "docs/specialization.md",
       "docs/tutorials/qodo-review.md",
       "docs/tutorials/qodo-live-review.md",
       "docs/tutorials/recoverable-install.md",
@@ -52,7 +53,7 @@
   "documents": [
     {
       "path": "README.md",
-      "sha256": "0299aaaf617bfac03d4f0795077c48881e6866ab83a219a346b16e556bcf9582"
+      "sha256": "f69712603bdf47561f149e7da103984492ea6cd418888e3c4b7af4e55a22e447"
     },
     {
       "path": "docs/architecture.md",
@@ -60,11 +61,11 @@
     },
     {
       "path": "docs/clean-environment.md",
-      "sha256": "4133c8a821ce8bf9aa955c4bb714949e5df16c9f0fa692381d1b24dfd1282c04"
+      "sha256": "f7e17a336d14df6cdbdc21b31d955461b7bd3d7bf03e82fbaebb2030b9fe2988"
     },
     {
       "path": "docs/contracts.md",
-      "sha256": "441846fbc4e4d1699df1fc609eca37b529ac56b665a593b6419812d94298639d"
+      "sha256": "deabe860ffeb06245f8687e9acf23bb49b8438cd20322735214b83c76f314638"
     },
     {
       "path": "docs/evidence/browser/README.md",
@@ -125,6 +126,10 @@
     {
       "path": "INSTALL.md",
       "sha256": "91dfcbfbe40e0a1e28d51c48b9d89b6dae080e09f7cbfe0543d89761018c85f8"
+    },
+    {
+      "path": "docs/specialization.md",
+      "sha256": "2896ff5b3bec60758bd32e19bdc0a2afe91d07f3a53680984f156882fec83eac"
     },
     {
       "path": "docs/tutorials/qodo-review.md",
@@ -286,6 +291,30 @@
       ]
     },
     {
+      "id": "qore003-isolation-probe",
+      "category": "agent no-model runtime capability probe",
+      "status": "BLOCKED",
+      "public_execution_artifact": "docs/evidence/specialization/isolation-probe.json",
+      "limits": [
+        "Payload never executed; no model authentication or comparative trial."
+      ]
+    },
+    {
+      "id": "qore003-local-qualification",
+      "category": "agent local CLI and synthetic structural checks",
+      "status": "EXECUTED",
+      "public_execution_artifact": "docs/evidence/specialization/local-qualification.json",
+      "limits": [
+        "No model trial. check used a synthetic unit fixture."
+      ]
+    },
+    {
+      "id": "qore003-campaign-20261017",
+      "path": "docs/evidence/specialization/README.md",
+      "sha256": "97cdf16b2a607b711a3cd25f3990dcf5f201260ed2909bae05f6338774cdc7b7",
+      "category": "Selected actual campaign, independent qualification and correction evidence; bounded maintainer/agent observations, not external human use"
+    },
+    {
       "id": "qodo-tutorial-focused-replay",
       "category": "New focused helper replay using exact public snapshots and labeled fixtures",
       "status": "EXECUTED",
@@ -364,12 +393,12 @@
         "fence": 2,
         "line_at_inventory": 40
       },
-      "text": "qore_stage=\"$(mktemp -d \"${TMPDIR:-/tmp}/qore-first.XXXXXX\")\"\npython3 tools/qore.py build --output \"$qore_stage\"\npython3 tools/qore.py install --source \"$qore_stage/qore-skills-0.2.1\" --project-root .",
-      "text_sha256": "b57d4ef491950de33390f8cb5720aabc62fe2d94becb64a6a5b8268c49ac3788",
+      "text": "qore_stage=\"$(mktemp -d \"${TMPDIR:-/tmp}/qore-first.XXXXXX\")\"\npython3 tools/qore.py build --output \"$qore_stage\"\npython3 tools/qore.py install --source \"$qore_stage/qore-skills-0.3.0\" --project-root .",
+      "text_sha256": "cee2867465b13290455f07ddd270aee0a7653615af88166352ff002af2798964",
       "implementation": [
         {
           "path": "tools/qore.py",
-          "sha256": "ac501036c702b7ca5eae75d333298b6db22e519e0114a8c05c1f2bded4a9f713"
+          "sha256": "245169bd9818c19aacd1c54affc46ef26b93c1861b0450a60bdf653260d8bded"
         }
       ],
       "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
@@ -395,11 +424,11 @@
         "Refuses collisions instead of replacing files"
       ],
       "execution": {
-        "status": "REFERENCE_TEMPLATE_NOT_EXECUTED_AS_WRITTEN",
+        "status": "EXECUTED_RELATED_HISTORICAL_DESTINATION",
         "evidence_ids": [
           "github-first-use-4643"
         ],
-        "limit": "Current 0.2.1 instructions or implementation differ from the referenced historical execution. Historical evidence keeps its original scope; corrective package checks do not establish a fresh complete model invocation or exact execution of every example."
+        "limit": "Fresh 0.3.0 build/install controls use new temporary paths; exact receipts are published with the release assets. Historical model-review phase evidence keeps its original snapshot and does not become a new 0.3.0 invocation."
       }
     },
     {
@@ -415,7 +444,7 @@
       "implementation": [
         {
           "path": "skills/qore-review/SKILL.md",
-          "sha256": "ae7a3bc448eda7262fa8163a67b0ce712efc2779eaaf00ce57618dc966dd6367"
+          "sha256": "18a9df8887c6d37d3b72355da974b42c00032ad2703faf89b2681b0fb8c459f5"
         }
       ],
       "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
@@ -457,7 +486,7 @@
       "implementation": [
         {
           "path": "tools/qore.py",
-          "sha256": "ac501036c702b7ca5eae75d333298b6db22e519e0114a8c05c1f2bded4a9f713"
+          "sha256": "0eb527d8b47eaeb4f380e4ec47ff4e64d0d80fdff3bc342018e54ea5bc161ebc"
         },
         {
           "path": "tools/context.py",
@@ -497,12 +526,12 @@
         "fence": 1,
         "line_at_inventory": 6
       },
-      "text": "bash tools/clean_room.sh prepare qore-qualification-20261015-example /tmp/qore-clean-audit-new\nbash tools/clean_room.sh inspect qore-qualification-20261015-example\nbash tools/clean_room.sh stage qore-qualification-20261015-example /path/to/qore-skills-0.2.0.zip",
-      "text_sha256": "60bbe7aeb5f74006116c3f8771bdf3545671d5be5d30a92bb8762a5ab15e8f21",
+      "text": "bash tools/clean_room.sh prepare qore-qualification-20261015-example /tmp/qore-clean-audit-new\nbash tools/clean_room.sh inspect qore-qualification-20261015-example\nbash tools/clean_room.sh stage qore-qualification-20261015-example /path/to/candidate.zip",
+      "text_sha256": "4e09e0d9f59b9a9de52813bf6f7990bbde7bffa30eba6af94981705e6f874225",
       "implementation": [
         {
           "path": "tools/clean_room.sh",
-          "sha256": "2157838f9f7c7fdd337298f2eee402bfb19665f102f96cf8585c179414f5608e"
+          "sha256": "a22e60630cdf9dc508c57c580ba620c8d1addc6faf0d7b771bae7e6361e4111f"
         }
       ],
       "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
@@ -519,7 +548,8 @@
         "audit_dir": "Choose a new directory",
         "/path/to/qore-skills-0.1.0.zip": "Replace with frozen candidate ZIP",
         "qualification-prompt.txt": "Create/review the actual authorized prompt; file is not bundled",
-        "execution.jsonl": "Local output log; inspect/redact before sharing"
+        "execution.jsonl": "Local output log; inspect/redact before sharing",
+        "/path/to/candidate.zip": "Supply the separately verified frozen candidate ZIP; stage accepts its manifest-derived version."
       },
       "expected_output": [
         "Setup/environment/staging JSON for preparation",
@@ -534,9 +564,9 @@
       "execution": {
         "status": "TEMPLATE_WITH_RELATED_SETUP_EVIDENCE",
         "evidence_ids": [
-          "clean-linux-candidate-d"
+          "qore003-isolation-probe"
         ],
-        "limit": "Implementation or a related historical run does not prove this exact recipe completed on the current candidate. Version paths updated for the unpublished 0.2.0 candidate; original execution identities remain historical. Current shell checks and derived review are separate evidence."
+        "limit": "Current strict sandbox startup is BLOCKED in the observed environment. Prior full-access qualification is historical and is not carried forward to this implementation."
       }
     },
     {
@@ -552,7 +582,7 @@
       "implementation": [
         {
           "path": "tools/clean_room.sh",
-          "sha256": "2157838f9f7c7fdd337298f2eee402bfb19665f102f96cf8585c179414f5608e"
+          "sha256": "a22e60630cdf9dc508c57c580ba620c8d1addc6faf0d7b771bae7e6361e4111f"
         }
       ],
       "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
@@ -569,7 +599,8 @@
         "audit_dir": "Choose a new directory",
         "/path/to/qore-skills-0.1.0.zip": "Replace with frozen candidate ZIP",
         "qualification-prompt.txt": "Create/review the actual authorized prompt; file is not bundled",
-        "execution.jsonl": "Local output log; inspect/redact before sharing"
+        "execution.jsonl": "Local output log; inspect/redact before sharing",
+        "/path/to/candidate.zip": "Supply the separately verified frozen candidate ZIP; stage accepts its manifest-derived version."
       },
       "expected_output": [
         "Setup/environment/staging JSON for preparation",
@@ -581,11 +612,11 @@
         "Writes execution.jsonl; prompt may perform scope-authorized local actions"
       ],
       "execution": {
-        "status": "EXECUTED_RECORDED",
+        "status": "TEMPLATE_WITH_RELATED_SETUP_EVIDENCE",
         "evidence_ids": [
-          "review-exact-flags-e"
+          "qore003-isolation-probe"
         ],
-        "limit": "Actual completed candidate-e review; later stricter helpers have separate correction checks. Not relabelled as final archive."
+        "limit": "Current strict sandbox startup is BLOCKED in the observed environment. Prior full-access qualification is historical and is not carried forward to this implementation."
       }
     },
     {
@@ -601,7 +632,7 @@
       "implementation": [
         {
           "path": "tools/clean_room.sh",
-          "sha256": "2157838f9f7c7fdd337298f2eee402bfb19665f102f96cf8585c179414f5608e"
+          "sha256": "a22e60630cdf9dc508c57c580ba620c8d1addc6faf0d7b771bae7e6361e4111f"
         }
       ],
       "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
@@ -618,7 +649,8 @@
         "audit_dir": "Choose a new directory",
         "/path/to/qore-skills-0.1.0.zip": "Replace with frozen candidate ZIP",
         "qualification-prompt.txt": "Create/review the actual authorized prompt; file is not bundled",
-        "execution.jsonl": "Local output log; inspect/redact before sharing"
+        "execution.jsonl": "Local output log; inspect/redact before sharing",
+        "/path/to/candidate.zip": "Supply the separately verified frozen candidate ZIP; stage accepts its manifest-derived version."
       },
       "expected_output": [
         "Setup/environment/staging JSON for preparation",
@@ -630,9 +662,11 @@
         "Retains its image and does not prune unrelated resources"
       ],
       "execution": {
-        "status": "TEMPLATE_NOT_EXECUTED_AS_WRITTEN",
-        "evidence_ids": [],
-        "limit": "Implementation or a related historical run does not prove this exact recipe completed on the current candidate."
+        "status": "TEMPLATE_WITH_RELATED_SETUP_EVIDENCE",
+        "evidence_ids": [
+          "qore003-isolation-probe"
+        ],
+        "limit": "Current strict sandbox startup is BLOCKED in the observed environment. Prior full-access qualification is historical and is not carried forward to this implementation."
       }
     },
     {
@@ -683,7 +717,7 @@
       "implementation": [
         {
           "path": "tools/browser_probe.mjs",
-          "sha256": "f55111928e7eebdbbffcb8e49d57fa3366e4ddf84ecb175e00fc9191904a7b7f"
+          "sha256": "19f980d0ad6d5d48029239c9dcc9ef3dfd7ada6f1d3ad653fdb2aa7c93c16ca7"
         }
       ],
       "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
@@ -808,7 +842,7 @@
       "implementation": [
         {
           "path": "tools/qore.py",
-          "sha256": "ac501036c702b7ca5eae75d333298b6db22e519e0114a8c05c1f2bded4a9f713"
+          "sha256": "0eb527d8b47eaeb4f380e4ec47ff4e64d0d80fdff3bc342018e54ea5bc161ebc"
         },
         {
           "path": "tools/context.py",
@@ -853,7 +887,7 @@
       "implementation": [
         {
           "path": "tools/qore.py",
-          "sha256": "ac501036c702b7ca5eae75d333298b6db22e519e0114a8c05c1f2bded4a9f713"
+          "sha256": "0eb527d8b47eaeb4f380e4ec47ff4e64d0d80fdff3bc342018e54ea5bc161ebc"
         }
       ],
       "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
@@ -891,11 +925,11 @@
       "implementation": [
         {
           "path": "tests/test_package.py",
-          "sha256": "750e9313080f6764f6fbb6cf6abc60a01c47770b37db36714509e476075ddebc"
+          "sha256": "13532d3b78f76ed9712ce9555dbfa3ef99973792840da4819403639feb73ba2a"
         },
         {
           "path": "tests/test_validators.py",
-          "sha256": "29fe7a6b8b4ce3a5d40ec21ebb3bec4cbd3cc9d02c81d5be5a95f185107294b2"
+          "sha256": "66ac15829daaa8e1ee799914000ac04aad163ac7637e0db40dae5615ad9aea20"
         },
         {
           "path": "tests/test_run_contract.py",
@@ -1011,7 +1045,7 @@
       "implementation": [
         {
           "path": "skills/qore-review/SKILL.md",
-          "sha256": "ae7a3bc448eda7262fa8163a67b0ce712efc2779eaaf00ce57618dc966dd6367"
+          "sha256": "18a9df8887c6d37d3b72355da974b42c00032ad2703faf89b2681b0fb8c459f5"
         }
       ],
       "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
@@ -1087,7 +1121,7 @@
       "implementation": [
         {
           "path": "tools/qore.py",
-          "sha256": "ac501036c702b7ca5eae75d333298b6db22e519e0114a8c05c1f2bded4a9f713"
+          "sha256": "0eb527d8b47eaeb4f380e4ec47ff4e64d0d80fdff3bc342018e54ea5bc161ebc"
         }
       ],
       "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
@@ -1126,7 +1160,7 @@
       "implementation": [
         {
           "path": "tools/qore.py",
-          "sha256": "ac501036c702b7ca5eae75d333298b6db22e519e0114a8c05c1f2bded4a9f713"
+          "sha256": "0eb527d8b47eaeb4f380e4ec47ff4e64d0d80fdff3bc342018e54ea5bc161ebc"
         }
       ],
       "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
@@ -1164,7 +1198,7 @@
       "implementation": [
         {
           "path": "tools/qore.py",
-          "sha256": "ac501036c702b7ca5eae75d333298b6db22e519e0114a8c05c1f2bded4a9f713"
+          "sha256": "0eb527d8b47eaeb4f380e4ec47ff4e64d0d80fdff3bc342018e54ea5bc161ebc"
         }
       ],
       "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
@@ -1203,7 +1237,7 @@
       "implementation": [
         {
           "path": "tools/qore.py",
-          "sha256": "ac501036c702b7ca5eae75d333298b6db22e519e0114a8c05c1f2bded4a9f713"
+          "sha256": "0eb527d8b47eaeb4f380e4ec47ff4e64d0d80fdff3bc342018e54ea5bc161ebc"
         }
       ],
       "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
@@ -1242,7 +1276,7 @@
       "implementation": [
         {
           "path": "tools/qore.py",
-          "sha256": "ac501036c702b7ca5eae75d333298b6db22e519e0114a8c05c1f2bded4a9f713"
+          "sha256": "0eb527d8b47eaeb4f380e4ec47ff4e64d0d80fdff3bc342018e54ea5bc161ebc"
         }
       ],
       "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
@@ -1281,7 +1315,7 @@
       "implementation": [
         {
           "path": "tools/qore.py",
-          "sha256": "ac501036c702b7ca5eae75d333298b6db22e519e0114a8c05c1f2bded4a9f713"
+          "sha256": "0eb527d8b47eaeb4f380e4ec47ff4e64d0d80fdff3bc342018e54ea5bc161ebc"
         }
       ],
       "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
@@ -1319,7 +1353,7 @@
       "implementation": [
         {
           "path": "tools/qore.py",
-          "sha256": "ac501036c702b7ca5eae75d333298b6db22e519e0114a8c05c1f2bded4a9f713"
+          "sha256": "0eb527d8b47eaeb4f380e4ec47ff4e64d0d80fdff3bc342018e54ea5bc161ebc"
         }
       ],
       "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
@@ -1434,7 +1468,7 @@
       "implementation": [
         {
           "path": "skills/qore-review/scripts/redact-for-verifier.mjs",
-          "sha256": "dc249524c749ad5b511aef0a2cf08b4cfd5c47c1e0de4fd41c5c70746b471083"
+          "sha256": "7be2426d315d8c28d19fe0b640f5088d52363aa800fec00c7d013ee83e6fa6e9"
         }
       ],
       "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
@@ -1511,7 +1545,7 @@
       "implementation": [
         {
           "path": "skills/qore-ux-review/scripts/depth-lint.mjs",
-          "sha256": "9b9cdcea3e87f4820944ddfc075ef19e75aad0bb08a7f1fd279ea6590267def7"
+          "sha256": "fd7be484c8e4bf3ba376bdddb88663b31ae9da4c2c7678232ea7a6cc7782bd0f"
         }
       ],
       "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
@@ -1587,7 +1621,7 @@
       "implementation": [
         {
           "path": "tools/build_site.py",
-          "sha256": "35dee480f041feb5f11dd9f640be18f77e7825d64c76fd7ada721a1dd50bf0bf"
+          "sha256": "003c207e198d24b13c1572eda3eb2abb956d69a19cc20bfeb17dc81dc8a696c5"
         },
         {
           "path": "tools/check_site.py",
@@ -1958,7 +1992,7 @@
       "implementation": [
         {
           "path": "tools/qore.py",
-          "sha256": "ac501036c702b7ca5eae75d333298b6db22e519e0114a8c05c1f2bded4a9f713"
+          "sha256": "0eb527d8b47eaeb4f380e4ec47ff4e64d0d80fdff3bc342018e54ea5bc161ebc"
         }
       ],
       "supported_host": "Local Python 3 interpreter",
@@ -1983,6 +2017,92 @@
         "status": "TEMPLATE_NOT_EXECUTED_AS_WRITTEN",
         "evidence_ids": [],
         "limit": "Covered by isolated fixture tests. Actual compact 0.2.1 archive awaits maintainer rights review."
+      }
+    },
+    {
+      "id": "qore003-helper-1",
+      "kind": "shell_recipe",
+      "location": {
+        "path": "docs/specialization.md",
+        "fence": 1
+      },
+      "text": "python3 tools/evaluate.py prepare --scenario R1 --condition generic --output /tmp/qore-eval-r1-generic-new",
+      "text_sha256": "b16c8d86a59e0dfa0ab37cd040bd1e14d293c33a73755973590b69873f4f61d8",
+      "implementation": [
+        {
+          "path": "tools/evaluate.py",
+          "sha256": "775e3b4ec4713ed8e4f97b950cec8b16bb0eca25334f8722330f727b478029e8"
+        }
+      ],
+      "supported_host": "Python3 standard library, matching frozen Qore candidate",
+      "working_directory": "Repository root",
+      "prerequisites": [
+        "Unused output destination for prepare/summarize",
+        "Actual identity-bound record and evidence for check"
+      ],
+      "inputs_and_substitutions": {
+        "RECORD": "An actual evaluation record from evals/runs/20261017/<cell>/evaluation.json; preserve its evidence root",
+        "ROOT": "Evidence root",
+        "SERIES": "evals/series.json, containing all18 original attempts with later independent qualification",
+        "NEW_DIR": "Unused local output directory"
+      },
+      "expected_output": [
+        "PREPARED_NOT_EXECUTED or a structural validation/summary result"
+      ],
+      "effects": [
+        "Creates local staging or summary files; check uses disposable temporary reconstruction",
+        "No model, browser, installation, paid service or deployment"
+      ],
+      "execution": {
+        "status": "REFERENCE_TEMPLATE_NOT_EXECUTED_AS_WRITTEN",
+        "evidence_ids": [
+          "qore003-local-qualification",
+          "qore003-campaign-20261017"
+        ],
+        "limit": "Command shown with placeholders; actual eighteen preparation/record checks and summary execution are retained with exact input/candidate identities. Helpers validate entered evidence and do not execute or independently judge a model."
+      }
+    },
+    {
+      "id": "qore003-helper-2",
+      "kind": "shell_recipe",
+      "location": {
+        "path": "docs/specialization.md",
+        "fence": 2
+      },
+      "text": "python3 tools/evaluate.py check RECORD --evidence-root ROOT\npython3 tools/evaluate.py summarize SERIES --output NEW_DIR",
+      "text_sha256": "96a4bd2bd09a30efb2a4670e77ab5c1ef4b1d26954c42cc5fdda035b92ee445e",
+      "implementation": [
+        {
+          "path": "tools/evaluate.py",
+          "sha256": "775e3b4ec4713ed8e4f97b950cec8b16bb0eca25334f8722330f727b478029e8"
+        }
+      ],
+      "supported_host": "Python3 standard library, matching frozen Qore candidate",
+      "working_directory": "Repository root",
+      "prerequisites": [
+        "Unused output destination for prepare/summarize",
+        "Actual identity-bound record and evidence for check"
+      ],
+      "inputs_and_substitutions": {
+        "RECORD": "An actual evaluation record from evals/runs/20261017/<cell>/evaluation.json; preserve its evidence root",
+        "ROOT": "Evidence root",
+        "SERIES": "evals/series.json, containing all18 original attempts with later independent qualification",
+        "NEW_DIR": "Unused local output directory"
+      },
+      "expected_output": [
+        "PREPARED_NOT_EXECUTED or a structural validation/summary result"
+      ],
+      "effects": [
+        "Creates local staging or summary files; check uses disposable temporary reconstruction",
+        "No model, browser, installation, paid service or deployment"
+      ],
+      "execution": {
+        "status": "REFERENCE_TEMPLATE_NOT_EXECUTED_AS_WRITTEN",
+        "evidence_ids": [
+          "qore003-local-qualification",
+          "qore003-campaign-20261017"
+        ],
+        "limit": "Command shown with placeholders; actual eighteen preparation/record checks and summary execution are retained with exact input/candidate identities. Helpers validate entered evidence and do not execute or independently judge a model."
       }
     },
     {
@@ -2302,6 +2422,7 @@
   "limits": [
     "This inventory is a documentation index, not a qore-run/1 execution record or readiness certificate",
     "Logical private evidence references are audit identities, not required runtime dependencies",
-    "Public summaries retain narrow scope; no benchmark, external human usability, or full-method success is inferred"
+    "Public summaries retain narrow scope; no benchmark, external human usability, or full-method success is inferred",
+    "Implementation digests identify current source, not an automatic requalification of historical command evidence. The18 original trials retain their frozen candidate, distinct from later corrections."
   ]
 }

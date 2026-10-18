@@ -1,0 +1,251 @@
+{
+  "status": "COMPLETE",
+  "probe_scope": "Capability inventory and MCP resource listing only; no resources fetched.",
+  "parent_context": {
+    "identity": "/root",
+    "cwd": "/workspace/worker",
+    "role": "primary agent"
+  },
+  "all_tools_inventory": {
+    "names": [
+      "apply_patch",
+      "clock__curr_time",
+      "create_goal",
+      "exec_command",
+      "get_goal",
+      "image_gen__imagegen",
+      "list_mcp_resource_templates",
+      "list_mcp_resources",
+      "read_mcp_resource",
+      "update_goal",
+      "view_image",
+      "write_stdin"
+    ],
+    "count": 12,
+    "presence": {
+      "search": {
+        "present": false,
+        "names": []
+      },
+      "fetch": {
+        "present": false,
+        "names": []
+      },
+      "browser": {
+        "present": false,
+        "names": []
+      },
+      "mcp_connector": {
+        "present": false,
+        "names": []
+      },
+      "generic_mcp_helpers": {
+        "present": true,
+        "names": [
+          "list_mcp_resource_templates",
+          "list_mcp_resources",
+          "read_mcp_resource"
+        ]
+      }
+    },
+    "classification_basis": "Actual ALL_TOOLS names; generic MCP helper names are distinguished from connector-specific calls."
+  },
+  "inventory_interpretation": {
+    "scope": "ALL_TOOLS is the nested tools inventory exposed to functions.exec; directly exposed tools are recorded separately.",
+    "connector_specific_calls": {
+      "present": false,
+      "matching_names": [],
+      "basis": "No connector-specific MCP calls occur in ALL_TOOLS; generic MCP listing/reading helpers are present."
+    },
+    "absence_limit": "Name inventory observations only; no claim of enforced absence or inaccessible hidden capabilities."
+  },
+  "direct_tool_names": [
+    "functions.wait",
+    "functions.request_user_input",
+    "functions.request_user_input_async",
+    "functions.exec",
+    "clock.sleep",
+    "collaboration.followup_task",
+    "collaboration.interrupt_agent",
+    "collaboration.list_agents",
+    "collaboration.send_message",
+    "collaboration.spawn_agent",
+    "collaboration.wait_agent"
+  ],
+  "resource_list_probes": [
+    {
+      "probe": "list_mcp_resources",
+      "status": "fulfilled",
+      "value": "{\"resources\":[]}"
+    },
+    {
+      "probe": "list_mcp_resource_templates",
+      "status": "fulfilled",
+      "value": "{\"resourceTemplates\":[]}"
+    }
+  ],
+  "delegation": {
+    "requested_children": 1,
+    "spawned_children": 1,
+    "fork_turns": "none",
+    "actual_child_identity": "/root/capability_probe",
+    "spawn_response": {
+      "task_name": "/root/capability_probe"
+    },
+    "child_completion_received": true,
+    "child_completion_message": "Child /root/capability_probe: COMPLETE. Report saved and JSON verified at /workspace/output/child-probe.json."
+  },
+  "child_report": {
+    "tools": {
+      "names": [
+        "apply_patch",
+        "clock__curr_time",
+        "create_goal",
+        "exec_command",
+        "get_goal",
+        "image_gen__imagegen",
+        "list_mcp_resource_templates",
+        "list_mcp_resources",
+        "read_mcp_resource",
+        "update_goal",
+        "view_image",
+        "write_stdin"
+      ],
+      "count": 12,
+      "matches": {
+        "search": [],
+        "fetch": [],
+        "browser": [],
+        "mcp": [
+          "list_mcp_resource_templates",
+          "list_mcp_resources",
+          "read_mcp_resource"
+        ],
+        "connector": []
+      },
+      "metadata_source": "Actual ALL_TOOLS array in functions.exec; names reproduced completely.",
+      "generic_mcp_helpers": [
+        "list_mcp_resource_templates",
+        "list_mcp_resources",
+        "read_mcp_resource"
+      ],
+      "connector_specific_names": [],
+      "interpretation": "No connector-specific tool names are present in this observed ALL_TOOLS array. This does not establish hidden or globally enforced absence."
+    },
+    "mcp_calls": [
+      {
+        "operation": "list_mcp_resources",
+        "status": "fulfilled",
+        "value": "{\"resources\":[]}"
+      },
+      {
+        "operation": "list_mcp_resource_templates",
+        "status": "fulfilled",
+        "value": "{\"resourceTemplates\":[]}"
+      }
+    ],
+    "initial_probe_execution": {
+      "status": "error",
+      "exit_code": 1,
+      "error": "PermissionError: [Errno 1] Operation not permitted during socket.socket(AF_INET, SOCK_STREAM) creation; first execution stopped before writing report.",
+      "output": "Traceback (most recent call last):\n  File \"<stdin>\", line 31, in <module>\n  File \"/usr/lib/python3.14/socket.py\", line 236, in __init__\n    _socket.socket.__init__(self, family, type, proto, fileno)\n    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nPermissionError: [Errno 1] Operation not permitted\n"
+    },
+    "context": {
+      "assigned_child_identity": "/root/capability_probe",
+      "task_type": "fresh delegated child capability probe",
+      "cwd": "/workspace/worker",
+      "python_executable": "/usr/bin/python3",
+      "shell_requested": "/bin/sh",
+      "shell_mode": "non-login",
+      "actual_visible_context": "System/developer instructions, user environment context, and assigned NEW_TASK message from /root are visible. No substantive parent conversation history is visible.",
+      "fork_turns": "Task describes fresh child with fork_turns none; launch arguments are not independently visible.",
+      "enforcement_note": "Observed outcomes only; no claim about hidden enforcement."
+    },
+    "timestamp_utc": "2026-10-17T10:02:23.280524+00:00",
+    "surface_contract": {
+      "attempts": [
+        {
+          "path": "/workspace/worker/surface-contract.json",
+          "status": "read",
+          "bytes_base64": "ewogICJzY2hlbWEiOiAicWFpemVuLWxhYnMtc3VyZmFjZS8xIiwKICAidmVyc2lvbiI6ICIwLjEuMCIsCiAgImVudHJ5X3VybCI6ICJodHRwczovL3FhaXplbi5pby9sYWJzIiwKICAiYWxsb3dlZF9vcmlnaW5zIjogWyJodHRwczovL3FhaXplbi5pbyJdLAogICJzY29wZSI6IHsibG9jYWxlIjogImVuLVVTIiwgInZpZXdwb3J0IjogeyJ3aWR0aCI6IDEyODAsICJoZWlnaHQiOiA4MDB9LCAiZGVwdGgiOiBbImVudHJ5IiwgInN0YXRlIl0sICJhbnN3ZXJfcG9saWN5IjogInVuYW5zd2VyZWQiLCAiYWxsb3dlZF9tZXRob2RzIjogWyJHRVQiLCAiSEVBRCIsICJPUFRJT05TIl19LAogICJzdGF0ZXMiOiBbImxhYnMiLCAiaW50cm9kdWN0aW9uIiwgImZpcnN0LXF1ZXN0aW9uIiwgImhlbHAtb3BlbiIsICJoZWxwLWNsb3NlZCIsICJyZXR1cm5lZC1pbnRyb2R1Y3Rpb24iXSwKICAidHJhbnNpdGlvbnMiOiBbCiAgICB7ImlkIjogImVudHJ5IiwgImZyb20iOiAibGFicyIsICJ0byI6ICJpbnRyb2R1Y3Rpb24iLCAiY29udHJvbCI6ICJhW2hyZWYkPScvbGFicy9yZWFkaW5lc3MtY2hlY2snXSIsICJhY3RpdmF0aW9uIjogImNsaWNrIn0sCiAgICB7ImlkIjogInN0YXJ0IiwgImZyb20iOiAiaW50cm9kdWN0aW9uIiwgInRvIjogImZpcnN0LXF1ZXN0aW9uIiwgImNvbnRyb2wiOiAiU3RhcnQgdGhlIGNoZWNrIiwgImFjdGl2YXRpb24iOiAiY2xpY2sifSwKICAgIHsiaWQiOiAib3Blbi1oZWxwIiwgImZyb20iOiAiZmlyc3QtcXVlc3Rpb24iLCAidG8iOiAiaGVscC1vcGVuIiwgImNvbnRyb2wiOiAic3VtbWFyeSIsICJhY3RpdmF0aW9uIjogIkVudGVyIn0sCiAgICB7ImlkIjogInRvZ2dsZS1oZWxwIiwgImZyb20iOiAiaGVscC1vcGVuIiwgInRvIjogImhlbHAtY2xvc2VkIiwgImNvbnRyb2wiOiAic3VtbWFyeSIsICJhY3RpdmF0aW9uIjogIlNwYWNlIn0sCiAgICB7ImlkIjogInJlb3Blbi1oZWxwIiwgImZyb20iOiAiaGVscC1jbG9zZWQiLCAidG8iOiAiaGVscC1vcGVuIiwgImNvbnRyb2wiOiAic3VtbWFyeSIsICJhY3RpdmF0aW9uIjogIkVudGVyIn0sCiAgICB7ImlkIjogImNsb3NlLWhlbHAiLCAiZnJvbSI6ICJoZWxwLW9wZW4iLCAidG8iOiAiaGVscC1jbG9zZWQiLCAiY29udHJvbCI6ICJDbG9zZSIsICJhY3RpdmF0aW9uIjogIkVudGVyIiwgInRyYXZlcnNhbCI6ICJUYWIiLCAiZm9jdXNfYWZ0ZXIiOiAic3VtbWFyeSJ9LAogICAgeyJpZCI6ICJiYWNrIiwgImZyb20iOiAiaGVscC1jbG9zZWQiLCAidG8iOiAicmV0dXJuZWQtaW50cm9kdWN0aW9uIiwgImNvbnRyb2wiOiAiQmFjayIsICJhY3RpdmF0aW9uIjogIkVudGVyIiwgInRyYXZlcnNhbCI6ICJUYWIiLCAiZm9jdXNfYWZ0ZXIiOiAiaW50cm9kdWN0aW9uLWhlYWRpbmcifQogIF0sCiAgImZvY3VzX3RhcmdldHMiOiB7InN1bW1hcnkiOiAic3VtbWFyeSIsICJpbnRyb2R1Y3Rpb24taGVhZGluZyI6ICJoMSJ9LAogICJyZXF1aXJlZF9jaGVja3MiOiBbImVudHJ5IiwgInVuYW5zd2VyZWQiLCAiaGVscC10b2dnbGUiLCAiY2xvc2UtZm9jdXMiLCAia2V5Ym9hcmQtYmFjayIsICJpbnRyb2R1Y3Rpb24tZm9jdXMiLCAicmVhZC1vbmx5LXBvbGljeSIsICJvcmlnaW4tcG9saWN5Il0sCiAgInByb3ZlbmFuY2UiOiB7ImtpbmQiOiAicHVibGljLW9ic2VydmF0aW9uLWFuZC1kZWNsYXJlZC1hY2NlcHRhbmNlIiwgInVybHMiOiBbImh0dHBzOi8vcWFpemVuLmlvL2xhYnMiLCAiaHR0cHM6Ly9xYWl6ZW4uaW8vbGFicy9yZWFkaW5lc3MtY2hlY2siXSwgImJhc2VsaW5lX29ic2VydmVkX29uIjogIjIwMjYtMTAtMTUiLCAibm90ZSI6ICJFeHBlY3RlZCB0cmFuc2l0aW9ucyBhbmQgZm9jdXMgYXJlIGFjY2VwdGFuY2Ugb2JsaWdhdGlvbnMsIG5vdCBhIGNsYWltIHRoYXQgdGhlIGN1cnJlbnQgZGVwbG95bWVudCBoYXMgcGFzc2VkIHRoZW0uIFRoZSBrZXlib2FyZCBwcm9vZiBnYXAgd2FzIGZvdW5kIGluIHRoZSB2ZXJpZmljYXRpb24gcHJvdG9jb2wgb24gMjAyNi0xMC0xNiwgbm90IG9uIHRoZSB3ZWJzaXRlLiJ9LAogICJsaW1pdHMiOiBbIk5vIGFuc3dlcnMsIHJlc3VsdCBnZW5lcmF0aW9uLCBmb3JtIHN1Ym1pc3Npb24gb3Igd2Vic2l0ZSBzb3VyY2UgcmVkaXN0cmlidXRpb24uIiwgIk5vIG1vYmlsZSwgY29tcGxldGUgcXVlc3Rpb25uYWlyZSwgcGVyZm9ybWFuY2Ugb3IgYWNjZXNzaWJpbGl0eSBjZXJ0aWZpY2F0aW9uLiIsICJBbiBhbmFseXRpY3MgUE9TVCBpcyBleHBlY3RlZCB0byBiZSBibG9ja2VkOyByZXRhaW4gaXRzIG9ic2VydmVkIGVmZmVjdHMuIiwgIlByaXZhdGUgc291cmNlIGNvbW1pdHMgZG8gbm90IGlkZW50aWZ5IHRoZSBjdXJyZW50IGRlcGxveW1lbnQuIl0KfQo=",
+          "byte_count": 2348,
+          "sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3"
+        }
+      ],
+      "resolved_path": "/workspace/worker/surface-contract.json"
+    },
+    "canary_reads": [
+      {
+        "path": "/workspace/outside-canary",
+        "status": "error",
+        "error_type": "FileNotFoundError",
+        "error": "[Errno 2] No such file or directory: '/workspace/outside-canary'"
+      },
+      {
+        "path": "/home/node/.codex/auth-canary",
+        "status": "error",
+        "error_type": "FileNotFoundError",
+        "error": "[Errno 2] No such file or directory: '/home/node/.codex/auth-canary'"
+      }
+    ],
+    "socket_connect": {
+      "destination": "1.1.1.1:443",
+      "timeout_seconds": 5,
+      "status": "error",
+      "stage": "socket_creation",
+      "connect_called": false,
+      "error_type": "PermissionError",
+      "error": "[Errno 1] Operation not permitted"
+    },
+    "status": "COMPLETE",
+    "prohibited_actions_performed": [],
+    "report_path": "/workspace/output/child-probe.json"
+  },
+  "child_report_path": "/workspace/output/child-probe.json",
+  "child_report_read": {
+    "status": "success",
+    "exit_code": 0
+  },
+  "observed_outcomes": {
+    "parent_resource_list": "empty resources array",
+    "parent_template_list": "empty resourceTemplates array",
+    "child_resource_list": "empty resources array",
+    "child_template_list": "empty resourceTemplates array",
+    "contract_path": "/workspace/worker/surface-contract.json",
+    "contract_sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+    "canary_reads": [
+      {
+        "path": "/workspace/outside-canary",
+        "status": "error",
+        "error_type": "FileNotFoundError",
+        "error": "[Errno 2] No such file or directory: '/workspace/outside-canary'"
+      },
+      {
+        "path": "/home/node/.codex/auth-canary",
+        "status": "error",
+        "error_type": "FileNotFoundError",
+        "error": "[Errno 2] No such file or directory: '/home/node/.codex/auth-canary'"
+      }
+    ],
+    "connectivity": {
+      "destination": "1.1.1.1:443",
+      "timeout_seconds": 5,
+      "status": "error",
+      "stage": "socket_creation",
+      "connect_called": false,
+      "error_type": "PermissionError",
+      "error": "[Errno 1] Operation not permitted"
+    },
+    "limitation": "Socket creation failed with PermissionError before connect could be invoked. Canary errors establish only the observed FileNotFoundError outcomes."
+  },
+  "scope_compliance": {
+    "verification_protocol_inspected": false,
+    "resources_fetched": false,
+    "installation_performed": false,
+    "credential_reads_performed": false,
+    "search_fetch_generation_performed": false,
+    "children_spawned": 1
+  },
+  "child_contract_report_integrity_verified": true,
+  "saved_at_utc": "2026-10-17T10:02:55.565077+00:00"
+}

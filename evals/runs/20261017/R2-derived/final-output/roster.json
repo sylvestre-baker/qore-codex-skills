@@ -1,0 +1,109 @@
+{
+  "requested_roles": [
+    "finder.correctness",
+    "finder.security",
+    "finder.feasibility",
+    "verifier"
+  ],
+  "returned_roles": [
+    "finder.correctness",
+    "finder.security",
+    "finder.feasibility",
+    "verifier"
+  ],
+  "missing_roles": [],
+  "roles": [
+    {
+      "role": "finder.correctness",
+      "actor_id": "/root/finder_correctness",
+      "requested": true,
+      "returned": true,
+      "dispatch_at_utc": null,
+      "dispatch_window_utc": [
+        "2026-10-17T11:13:27+00:00",
+        "2026-10-17T11:13:59+00:00"
+      ],
+      "dispatch_timestamp_reason": "No per-call clock sample; actual dispatch lies within this recorded tool-call window. Agent entry timestamp to be retained in full report.",
+      "return_at_utc": "2026-10-17T11:15:06+00:00",
+      "deadline_utc": "2026-10-17T11:18:40+00:00",
+      "report_file": "finder-correctness.md",
+      "candidate_file": "candidates-correctness.json",
+      "usage": {
+        "aggregate_agent_seconds": null,
+        "tokens": null,
+        "reason": "Host collaboration tools expose actor context names and status, not per-agent metered seconds or token usage."
+      },
+      "return_timestamp_kind": "Lead receipt observed by UTC clock sampling immediately after final notification",
+      "agent_report_start_utc": "2026-10-17T11:13:50+00:00"
+    },
+    {
+      "role": "finder.security",
+      "actor_id": "/root/finder_security",
+      "requested": true,
+      "returned": true,
+      "dispatch_at_utc": null,
+      "dispatch_window_utc": [
+        "2026-10-17T11:13:27+00:00",
+        "2026-10-17T11:13:59+00:00"
+      ],
+      "dispatch_timestamp_reason": "No per-call clock sample; actual dispatch lies within this recorded tool-call window. Agent entry timestamp to be retained in full report.",
+      "return_at_utc": "2026-10-17T11:15:04+00:00",
+      "deadline_utc": "2026-10-17T11:18:40+00:00",
+      "report_file": "finder-security.md",
+      "candidate_file": "candidates-security.json",
+      "usage": {
+        "aggregate_agent_seconds": null,
+        "tokens": null,
+        "reason": "Host collaboration tools expose actor context names and status, not per-agent metered seconds or token usage."
+      },
+      "return_timestamp_kind": "Lead receipt observed by UTC clock sampling immediately after final notification",
+      "agent_report_start_utc": "2026-10-17T11:13:55+00:00"
+    },
+    {
+      "role": "finder.feasibility",
+      "actor_id": "/root/finder_feasibility",
+      "requested": true,
+      "returned": true,
+      "dispatch_at_utc": null,
+      "dispatch_window_utc": [
+        "2026-10-17T11:13:27+00:00",
+        "2026-10-17T11:13:59+00:00"
+      ],
+      "dispatch_timestamp_reason": "No per-call clock sample; actual dispatch lies within this recorded tool-call window. Agent entry timestamp to be retained in full report.",
+      "return_at_utc": "2026-10-17T11:15:14+00:00",
+      "deadline_utc": "2026-10-17T11:18:40+00:00",
+      "report_file": "finder-feasibility.md",
+      "candidate_file": "candidates-feasibility.json",
+      "usage": {
+        "aggregate_agent_seconds": null,
+        "tokens": null,
+        "reason": "Host collaboration tools expose actor context names and status, not per-agent metered seconds or token usage."
+      },
+      "return_timestamp_kind": "Lead receipt observed by UTC clock sampling immediately after final notification",
+      "agent_report_start_utc": "2026-10-17T11:14:01+00:00"
+    },
+    {
+      "role": "verifier",
+      "actor_id": "/root/verifier",
+      "requested": true,
+      "returned": true,
+      "dispatch_at_utc": "2026-10-17T11:15:33+00:00",
+      "dispatch_timestamp_kind": "UTC clock sample immediately preceding dispatch; second resolution; tool-call latency unmeasured",
+      "return_at_utc": "2026-10-17T11:17:21+00:00",
+      "deadline_utc": "2026-10-17T11:19:40+00:00",
+      "role_budget_seconds": 240,
+      "report_file": "verifier-report.md",
+      "packet_file": "verified.json",
+      "initial_context": "fork_turns=none; only filtered claims, raw target, criteria and method instructions supplied",
+      "usage": {
+        "aggregate_agent_seconds": null,
+        "tokens": null,
+        "reason": "Host collaboration tools do not expose per-context metered seconds or tokens."
+      },
+      "return_timestamp_kind": "Lead UTC sample immediately after final notification",
+      "agent_report_start_utc": "2026-10-17T11:15:53+00:00",
+      "agent_report_end_utc": "2026-10-17T11:17:13+00:00"
+    }
+  ],
+  "verifier_status": "Returned complete; all five filtered IDs examined."
+}

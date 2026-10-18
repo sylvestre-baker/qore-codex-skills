@@ -1,0 +1,82 @@
+{
+  "author_actor_id": "/root",
+  "requested": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "returned": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "missing": [],
+  "requests": [
+    {
+      "actor_id": "/root",
+      "dispatch_at": "2026-10-17T12:08:23.374487+00:00",
+      "request": "browser-request-1.json",
+      "purpose": "Observed entry/driver capability probe; not transition evidence",
+      "deadline_seconds": 150,
+      "operator_actor_id": "neutral-operator-relay (specific context identity not exposed)",
+      "operator_started_at": "2026-10-17T12:08:24.800734+00:00",
+      "return_utc": "2026-10-17T12:08:29.912878+00:00",
+      "exit_code": 0,
+      "fresh_context": true,
+      "input_actions_modified": false
+    },
+    {
+      "actor_id": "/root",
+      "dispatch_at": "2026-10-17T12:08:59.063870+00:00",
+      "request": "browser-request-2.json",
+      "actions": 36,
+      "deadline_seconds": 150,
+      "purpose": "Full real-entry help/toggle/Close/Back and reload path",
+      "operator_actor_id": "neutral-operator-relay (specific context identity not exposed)",
+      "operator_started_at": "2026-10-17T12:09:00.553346+00:00",
+      "return_utc": "2026-10-17T12:09:54.473941+00:00",
+      "exit_code": 0,
+      "fresh_context": true,
+      "input_actions_modified": false
+    },
+    {
+      "actor_id": "/root",
+      "dispatch_at": "2026-10-17T12:10:54.779460+00:00",
+      "request": "browser-request-3.json",
+      "actions": 36,
+      "deadline_seconds": 150,
+      "purpose": "G6 challenge Back visual focus occlusion, restart no selection/help reset, browser history and document reload",
+      "operator_actor_id": "neutral-operator-relay (specific context identity not exposed)",
+      "operator_started_at": "2026-10-17T12:10:56.484610+00:00",
+      "return_utc": "2026-10-17T12:11:17.796274+00:00",
+      "exit_code": 1,
+      "fresh_context": true,
+      "input_actions_modified": false
+    },
+    {
+      "actor_id": "/root",
+      "dispatch_at": "2026-10-17T12:12:04.793022+00:00",
+      "request": "browser-request-4.json",
+      "actions": 36,
+      "deadline_seconds": 150,
+      "purpose": "One corrected challenge replay; CSS uppercase innerText was not matching locator textContent; inspect heading DOM instead",
+      "retry_of": 3,
+      "operator_actor_id": "neutral-operator-relay (specific context identity not exposed)",
+      "operator_started_at": "2026-10-17T12:12:05.890994+00:00",
+      "return_utc": "2026-10-17T12:13:06.130884+00:00",
+      "exit_code": 1,
+      "fresh_context": true,
+      "input_actions_modified": false
+    }
+  ],
+  "requested_actions": [
+    0,
+    36,
+    36,
+    36
+  ],
+  "no_new_dispatches": true,
+  "reason": "One corrected challenge replay completed useful checks; retain subsequent terminal-render gap without another retry."
+}

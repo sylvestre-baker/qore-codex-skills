@@ -1,0 +1,537 @@
+{
+  "schema": "qore003-independent-ux-inventory/1",
+  "neutral_id": "N12",
+  "actor_id": "/root/campaign_ux_assessor",
+  "started_at_utc": "2026-10-17T11:03:39Z",
+  "recorded_at_utc": "2026-10-17T11:07:16.507668+00:00",
+  "images": [
+    {
+      "path": "observation-1/raw/00-entry.png",
+      "width_px": 1280,
+      "height_px": 1672,
+      "sha256": "095283e6a92818f6baf91a977793ff14591a91a60cef7b82ea9019642c2251e2",
+      "actually_viewed": false,
+      "view_tool": null,
+      "view_time_utc": null
+    },
+    {
+      "path": "observation-1/raw/01-final.png",
+      "width_px": 1280,
+      "height_px": 1672,
+      "sha256": "041319a5d5542b9a5ddae0bd2c782d018a031320b7ef69be076a71a99c470b8a",
+      "actually_viewed": false,
+      "view_tool": null,
+      "view_time_utc": null
+    },
+    {
+      "path": "observation-2/raw/00-entry.png",
+      "width_px": 1280,
+      "height_px": 1672,
+      "sha256": "095283e6a92818f6baf91a977793ff14591a91a60cef7b82ea9019642c2251e2",
+      "actually_viewed": true,
+      "view_tool": "functions tools.view_image",
+      "view_time_utc": {
+        "bounded_window": [
+          "2026-10-17T11:03:39Z",
+          "2026-10-17T11:04:12Z"
+        ]
+      }
+    },
+    {
+      "path": "observation-2/raw/01-introduction.png",
+      "width_px": 1280,
+      "height_px": 808,
+      "sha256": "8c12568cc767e1d111812033ddd4823fc5ffcaf12d6561cb61b74ffa210a4bc8",
+      "actually_viewed": true,
+      "view_tool": "functions tools.view_image",
+      "view_time_utc": {
+        "call_clock": "2026-10-17T11:05:20Z"
+      }
+    },
+    {
+      "path": "observation-2/raw/02-first-question.png",
+      "width_px": 1280,
+      "height_px": 1033,
+      "sha256": "4e9a3b37fca4b08a7cd5123cae0c30d5a65225ec092b00091699bad327691393",
+      "actually_viewed": true,
+      "view_tool": "functions tools.view_image",
+      "view_time_utc": {
+        "call_clock": "2026-10-17T11:05:20Z"
+      }
+    },
+    {
+      "path": "observation-2/raw/03-help-open-enter.png",
+      "width_px": 1280,
+      "height_px": 1667,
+      "sha256": "46f967ac12fcf923160726b0003edafa7b461aa20501c22fa83283f7e8bdde4d",
+      "actually_viewed": true,
+      "view_tool": "functions tools.view_image",
+      "view_time_utc": {
+        "call_clock": "2026-10-17T11:05:20Z"
+      }
+    },
+    {
+      "path": "observation-2/raw/04-help-closed-space.png",
+      "width_px": 1280,
+      "height_px": 1033,
+      "sha256": "154537c2923ff969a06afd9a5d39ba885d067ce6190af63b29e9daef57fc1977",
+      "actually_viewed": false,
+      "view_tool": null,
+      "view_time_utc": null
+    },
+    {
+      "path": "observation-2/raw/05-close-summary-focus.png",
+      "width_px": 1280,
+      "height_px": 1033,
+      "sha256": "154537c2923ff969a06afd9a5d39ba885d067ce6190af63b29e9daef57fc1977",
+      "actually_viewed": true,
+      "view_tool": "functions tools.view_image",
+      "view_time_utc": {
+        "bounded_window": [
+          "2026-10-17T11:03:39Z",
+          "2026-10-17T11:04:12Z"
+        ]
+      }
+    },
+    {
+      "path": "observation-2/raw/06-back-keyboard-focus.png",
+      "width_px": 1280,
+      "height_px": 1033,
+      "sha256": "57673acee0c4875835c892ce68bfe1efd2182ec2cbb4c6904ecaad0f4004aa31",
+      "actually_viewed": true,
+      "view_tool": "functions tools.view_image",
+      "view_time_utc": {
+        "bounded_window": [
+          "2026-10-17T11:03:39Z",
+          "2026-10-17T11:04:12Z"
+        ]
+      }
+    },
+    {
+      "path": "observation-2/raw/07-returned-introduction.png",
+      "width_px": 1280,
+      "height_px": 808,
+      "sha256": "87473a933533895cf780dd9d517969cda71d5a8afdb74b99a57e97434cd8a824",
+      "actually_viewed": true,
+      "view_tool": "functions tools.view_image",
+      "view_time_utc": {
+        "bounded_window": [
+          "2026-10-17T11:03:39Z",
+          "2026-10-17T11:04:12Z"
+        ]
+      }
+    },
+    {
+      "path": "observation-2/raw/08-final.png",
+      "width_px": 1280,
+      "height_px": 808,
+      "sha256": "01b5a2bbf6947a76673ac13bacc27f8bf31f8fa4ca2cd30dbe8e62dcd864f822",
+      "actually_viewed": false,
+      "view_tool": null,
+      "view_time_utc": null
+    },
+    {
+      "path": "observation-3/raw/00-entry.png",
+      "width_px": 1280,
+      "height_px": 1672,
+      "sha256": "095283e6a92818f6baf91a977793ff14591a91a60cef7b82ea9019642c2251e2",
+      "actually_viewed": false,
+      "view_tool": null,
+      "view_time_utc": null
+    },
+    {
+      "path": "observation-4/raw/00-entry.png",
+      "width_px": 1280,
+      "height_px": 1672,
+      "sha256": "484c55e66c4e31ca320607543e4ad4b28e877409b4f861352c1ef9af0f013137",
+      "actually_viewed": false,
+      "view_tool": null,
+      "view_time_utc": null
+    },
+    {
+      "path": "observation-4/raw/01-deep-document-reload.png",
+      "width_px": 1280,
+      "height_px": 808,
+      "sha256": "8c12568cc767e1d111812033ddd4823fc5ffcaf12d6561cb61b74ffa210a4bc8",
+      "actually_viewed": false,
+      "view_tool": null,
+      "view_time_utc": null
+    },
+    {
+      "path": "observation-4/raw/02-close-keyboard-focus-challenge.png",
+      "width_px": 1280,
+      "height_px": 1667,
+      "sha256": "19e2db3f2d7813c675b52c8ae0dbc548eb2e0d8e7c2b55e8cb7b2e649bc50ceb",
+      "actually_viewed": true,
+      "view_tool": "functions tools.view_image",
+      "view_time_utc": {
+        "bounded_window": [
+          "2026-10-17T11:03:39Z",
+          "2026-10-17T11:04:12Z"
+        ]
+      }
+    },
+    {
+      "path": "observation-4/raw/03-back-focus-obscuration-challenge.png",
+      "width_px": 1280,
+      "height_px": 1033,
+      "sha256": "57673acee0c4875835c892ce68bfe1efd2182ec2cbb4c6904ecaad0f4004aa31",
+      "actually_viewed": true,
+      "view_tool": "functions tools.view_image",
+      "view_time_utc": {
+        "bounded_window": [
+          "2026-10-17T11:03:39Z",
+          "2026-10-17T11:04:12Z"
+        ]
+      }
+    },
+    {
+      "path": "observation-4/raw/04-back-result-challenge.png",
+      "width_px": 1280,
+      "height_px": 808,
+      "sha256": "1d46d6f2ce50ecdfc4503d8943677324188dce03f9d48d4fbc1224fa1805c9b4",
+      "actually_viewed": false,
+      "view_tool": null,
+      "view_time_utc": null
+    },
+    {
+      "path": "observation-4/raw/05-restart-unanswered-help-reset.png",
+      "width_px": 1280,
+      "height_px": 1033,
+      "sha256": "6177196c4d7dc3ad62bfe16b8bb2912649bd4d378ded080c9f4ccc0ad9bf6841",
+      "actually_viewed": false,
+      "view_tool": null,
+      "view_time_utc": null
+    },
+    {
+      "path": "observation-5/raw/00-entry.png",
+      "width_px": 1280,
+      "height_px": 1672,
+      "sha256": "484c55e66c4e31ca320607543e4ad4b28e877409b4f861352c1ef9af0f013137",
+      "actually_viewed": false,
+      "view_tool": null,
+      "view_time_utc": null
+    },
+    {
+      "path": "observation-5/raw/01-unanswered-question-reload-observed.png",
+      "width_px": 1280,
+      "height_px": 1033,
+      "sha256": "96a1c004d1a9e10eacffce8041b18e850e3be0c59535043784da52814c8af0c4",
+      "actually_viewed": true,
+      "view_tool": "functions tools.view_image",
+      "view_time_utc": {
+        "call_clock": "2026-10-17T11:05:20Z"
+      }
+    },
+    {
+      "path": "observation-5/raw/02-history-back-observed.png",
+      "width_px": 1280,
+      "height_px": 1672,
+      "sha256": "f9860a65d0aa70adc43fab4133460ede071137ee0870635cc6150bef76f2200b",
+      "actually_viewed": false,
+      "view_tool": null,
+      "view_time_utc": null
+    },
+    {
+      "path": "observation-5/raw/03-history-forward-observed.png",
+      "width_px": 1280,
+      "height_px": 1033,
+      "sha256": "96a1c004d1a9e10eacffce8041b18e850e3be0c59535043784da52814c8af0c4",
+      "actually_viewed": true,
+      "view_tool": "functions tools.view_image",
+      "view_time_utc": {
+        "call_clock": "2026-10-17T11:05:20Z"
+      }
+    },
+    {
+      "path": "observation-5/raw/04-final.png",
+      "width_px": 1280,
+      "height_px": 1033,
+      "sha256": "96a1c004d1a9e10eacffce8041b18e850e3be0c59535043784da52814c8af0c4",
+      "actually_viewed": false,
+      "view_tool": null,
+      "view_time_utc": null
+    }
+  ],
+  "source_hash_checks": [
+    {
+      "path": ".agents/skills/qore-ux-review-qaizen-labs/SKILL.md",
+      "sha256": "f785a696d4bf08aa48b99588fbc236322e5681b5be5d3e85cec7f959a8d65fc1",
+      "actual_sha256": "f785a696d4bf08aa48b99588fbc236322e5681b5be5d3e85cec7f959a8d65fc1",
+      "matches": true
+    },
+    {
+      "path": ".agents/skills/qore-ux-review-qaizen-labs/agents/openai.yaml",
+      "sha256": "1a9fb2ea5b4842bc00c8c785bd207d2ac89edc149a0d7ea39d52b18ef43e4c79",
+      "actual_sha256": "1a9fb2ea5b4842bc00c8c785bd207d2ac89edc149a0d7ea39d52b18ef43e4c79",
+      "matches": true
+    },
+    {
+      "path": ".agents/skills/qore-ux-review-qaizen-labs/references/evidence.md",
+      "sha256": "659560f88b965371e2c6e886b5f4c648a4879ebb7c69af4b1d307dfae176c8b3",
+      "actual_sha256": "659560f88b965371e2c6e886b5f4c648a4879ebb7c69af4b1d307dfae176c8b3",
+      "matches": true
+    },
+    {
+      "path": ".agents/skills/qore-ux-review-qaizen-labs/references/gates.md",
+      "sha256": "667063cd64c576a9c5b4ec69f6ddcd677d4e969bae96184b3136ede9fd12fd87",
+      "actual_sha256": "667063cd64c576a9c5b4ec69f6ddcd677d4e969bae96184b3136ede9fd12fd87",
+      "matches": true
+    },
+    {
+      "path": ".agents/skills/qore-ux-review-qaizen-labs/references/project-profile.md",
+      "sha256": "154ed11dab8e8499e74a5f3a6afb512827d5de5c73408523b845684e38f59dfc",
+      "actual_sha256": "154ed11dab8e8499e74a5f3a6afb512827d5de5c73408523b845684e38f59dfc",
+      "matches": true
+    },
+    {
+      "path": ".agents/skills/qore-ux-review-qaizen-labs/references/project.json",
+      "sha256": "f76afdd45cb6352e5044a06affc4182ea6cd40aa9c012fb216636a61faa428f0",
+      "actual_sha256": "f76afdd45cb6352e5044a06affc4182ea6cd40aa9c012fb216636a61faa428f0",
+      "matches": true
+    },
+    {
+      "path": ".agents/skills/qore-ux-review-qaizen-labs/references/protocol.md",
+      "sha256": "eda7c7c7c9e711e4b9fca59ec6b622d713c3d95b14cd6e3b008a978ebf156004",
+      "actual_sha256": "eda7c7c7c9e711e4b9fca59ec6b622d713c3d95b14cd6e3b008a978ebf156004",
+      "matches": true
+    },
+    {
+      "path": ".agents/skills/qore-ux-review-qaizen-labs/references/release.json",
+      "sha256": "26a8aebdfb48c3c011713e02f53ae8f650179f0f24e7d58a9737b4897126602b",
+      "actual_sha256": "26a8aebdfb48c3c011713e02f53ae8f650179f0f24e7d58a9737b4897126602b",
+      "matches": true
+    },
+    {
+      "path": ".agents/skills/qore-ux-review-qaizen-labs/references/run-evidence.md",
+      "sha256": "2ede0b19d58fd5535c90023068355679ee7bb27d3070967ada38f9ad156a9e69",
+      "actual_sha256": "2ede0b19d58fd5535c90023068355679ee7bb27d3070967ada38f9ad156a9e69",
+      "matches": true
+    },
+    {
+      "path": ".agents/skills/qore-ux-review-qaizen-labs/scripts/depth-lint.mjs",
+      "sha256": "fd7be484c8e4bf3ba376bdddb88663b31ae9da4c2c7678232ea7a6cc7782bd0f",
+      "actual_sha256": "fd7be484c8e4bf3ba376bdddb88663b31ae9da4c2c7678232ea7a6cc7782bd0f",
+      "matches": true
+    },
+    {
+      "path": ".agents/skills/qore-ux-review-qaizen-labs/scripts/project-check.py",
+      "sha256": "d87afa433fe485bdebca3e281d06e0896e4a8980ea7cf7baee739053614ea0ac",
+      "actual_sha256": "d87afa433fe485bdebca3e281d06e0896e4a8980ea7cf7baee739053614ea0ac",
+      "matches": true
+    },
+    {
+      "path": ".agents/skills/qore-ux-review-qaizen-labs/scripts/run-check.py",
+      "sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+      "actual_sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa",
+      "matches": true
+    },
+    {
+      "path": ".agents/skills/qore-ux-review-qaizen-labs/scripts/stop-rule.mjs",
+      "sha256": "5c8d898e3accd82ed1932c791ff5ed1285aae659bae6757488158fc7a8120443",
+      "actual_sha256": "5c8d898e3accd82ed1932c791ff5ed1285aae659bae6757488158fc7a8120443",
+      "matches": true
+    },
+    {
+      "path": "TASK.md",
+      "sha256": "37eade26e4e3b258d3619fece2f8370a41265f4fb19ee71fc359df097e9a7361",
+      "actual_sha256": "37eade26e4e3b258d3619fece2f8370a41265f4fb19ee71fc359df097e9a7361",
+      "matches": true
+    },
+    {
+      "path": "checks/check_contract.py",
+      "sha256": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b",
+      "actual_sha256": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b",
+      "matches": true
+    },
+    {
+      "path": "observation-policy.json",
+      "sha256": "15f4e5b4960b5011684be265f027e42b8637a3b8aae96b24bba1ba3a4d0f0202",
+      "actual_sha256": "15f4e5b4960b5011684be265f027e42b8637a3b8aae96b24bba1ba3a4d0f0202",
+      "matches": true
+    },
+    {
+      "path": "surface-contract.json",
+      "sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+      "actual_sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+      "matches": true
+    }
+  ],
+  "operator_hash_checks": [
+    {
+      "path": "operator/browser_probe.mjs",
+      "expected_sha256": "544d47211ac5aefde57072aef4ded1140c21030555b0e45e93f8821794249add",
+      "actual_sha256": "544d47211ac5aefde57072aef4ded1140c21030555b0e45e93f8821794249add",
+      "matches": true
+    },
+    {
+      "path": "operator/live-policy.json",
+      "expected_sha256": "2160973fbe4d0a603d061688d2d4fe9ee633d8b3f018fec773d7b8d7a28c7ff2",
+      "actual_sha256": "2160973fbe4d0a603d061688d2d4fe9ee633d8b3f018fec773d7b8d7a28c7ff2",
+      "matches": true
+    }
+  ],
+  "receipts": [
+    {
+      "request": 1,
+      "fresh_context": true,
+      "input_actions_modified": false,
+      "started_at": "2026-10-17T10:54:26.558311+00:00",
+      "ended_at": "2026-10-17T10:54:31.746689+00:00",
+      "exit_code": 0,
+      "authored_actions": 0,
+      "raw_file_count": 6,
+      "raw_hash_mismatches": [],
+      "blocked_mutations": [],
+      "network_origins": [
+        "https://qaizen.io"
+      ],
+      "blocked_navigation": [],
+      "route_errors": [],
+      "page_errors": [],
+      "activation_controls": [],
+      "blocked_activations": []
+    },
+    {
+      "request": 2,
+      "fresh_context": true,
+      "input_actions_modified": false,
+      "started_at": "2026-10-17T10:55:19.742301+00:00",
+      "ended_at": "2026-10-17T10:55:57.376638+00:00",
+      "exit_code": 0,
+      "authored_actions": 31,
+      "raw_file_count": 20,
+      "raw_hash_mismatches": [],
+      "blocked_mutations": [
+        {
+          "at": "2026-10-17T10:55:26.871Z",
+          "method": "POST",
+          "url": "https://qaizen.io/api/labs/readiness/event",
+          "reason": "Read-only probe policy"
+        }
+      ],
+      "network_origins": [
+        "https://qaizen.io"
+      ],
+      "blocked_navigation": [],
+      "route_errors": [],
+      "page_errors": [],
+      "activation_controls": [
+        "back",
+        "close",
+        "entry",
+        "help-summary",
+        "start"
+      ],
+      "blocked_activations": []
+    },
+    {
+      "request": 3,
+      "fresh_context": true,
+      "input_actions_modified": false,
+      "started_at": "2026-10-17T10:56:28.783562+00:00",
+      "ended_at": "2026-10-17T10:56:48.578792+00:00",
+      "exit_code": 1,
+      "authored_actions": 38,
+      "raw_file_count": 4,
+      "raw_hash_mismatches": [],
+      "blocked_mutations": [],
+      "network_origins": [
+        "https://qaizen.io"
+      ],
+      "blocked_navigation": [],
+      "route_errors": [],
+      "page_errors": [],
+      "activation_controls": [
+        "entry"
+      ],
+      "blocked_activations": []
+    },
+    {
+      "request": 4,
+      "fresh_context": true,
+      "input_actions_modified": false,
+      "started_at": "2026-10-17T10:57:30.493125+00:00",
+      "ended_at": "2026-10-17T10:58:18.211122+00:00",
+      "exit_code": 1,
+      "authored_actions": 38,
+      "raw_file_count": 14,
+      "raw_hash_mismatches": [],
+      "blocked_mutations": [
+        {
+          "at": "2026-10-17T10:57:39.265Z",
+          "method": "POST",
+          "url": "https://qaizen.io/api/labs/readiness/event",
+          "reason": "Read-only probe policy"
+        },
+        {
+          "at": "2026-10-17T10:57:54.376Z",
+          "method": "POST",
+          "url": "https://qaizen.io/api/labs/readiness/event",
+          "reason": "Read-only probe policy"
+        }
+      ],
+      "network_origins": [
+        "https://qaizen.io"
+      ],
+      "blocked_navigation": [],
+      "route_errors": [],
+      "page_errors": [],
+      "activation_controls": [
+        "back",
+        "close",
+        "entry",
+        "help-summary",
+        "start"
+      ],
+      "blocked_activations": []
+    },
+    {
+      "request": 5,
+      "fresh_context": true,
+      "input_actions_modified": false,
+      "started_at": "2026-10-17T10:59:00.135675+00:00",
+      "ended_at": "2026-10-17T10:59:16.173664+00:00",
+      "exit_code": 0,
+      "authored_actions": 11,
+      "raw_file_count": 12,
+      "raw_hash_mismatches": [],
+      "blocked_mutations": [
+        {
+          "at": "2026-10-17T10:59:04.462Z",
+          "method": "POST",
+          "url": "https://qaizen.io/api/labs/readiness/event",
+          "reason": "Read-only probe policy"
+        }
+      ],
+      "network_origins": [
+        "https://qaizen.io"
+      ],
+      "blocked_navigation": [],
+      "route_errors": [],
+      "page_errors": [],
+      "activation_controls": [
+        "entry",
+        "start"
+      ],
+      "blocked_activations": []
+    }
+  ],
+  "actual_measurements": [
+    "PNG IHDR dimensions and SHA-256 for all 23 retained raw PNGs.",
+    "17 frozen input hashes independently matched to retained worker manifest.",
+    "Every raw file listed in all five operator relays independently matched its SHA-256.",
+    "Exact operator harness and policy hashes matched receipt identities.",
+    "DOM actual CSS viewport 1280x800 DPR1; active elements SUMMARY, BUTTON Back, H1 verified in paired journey states.",
+    "Two Back-focus images are byte-identical, SHA256 57673acee0c4875835c892ce68bfe1efd2182ec2cbb4c6904ecaad0f4004aa31; dimensions1280x1033.",
+    "Authored action arrays: 0,31,38,38,11; actual completed actions separately inspected in events.",
+    "Four blocked POSTs, four correlated console errors, zero page errors, zero navigation/route/activation blocks; all response event origins https://qaizen.io."
+  ],
+  "unavailable_measurements": [
+    "Actual scrollX/scrollY, focused control and banner bounding rectangles, visual viewport geometry, overlap area and hit testing.",
+    "Viewport-only captures or retained accessible video/trace.",
+    "Live deployment revision, other viewports/personas, screen reader and contrast measurements."
+  ],
+  "image_interpretation": "Viewed pixels prove repeated full-page capture concealment; actual runtime overlap and user impact remain unresolved. No image editing or synthesized evidence.",
+  "assessment_finished_at_utc": "2026-10-17T11:07:35.236722+00:00"
+}

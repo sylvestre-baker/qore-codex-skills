@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "python3",
+    "-B",
+    "/workspace/worker/.agents/skills/qore-ux-review/scripts/run-check.py",
+    "/workspace/output/execution.json",
+    "--evidence-root",
+    "/workspace/output"
+  ],
+  "output": "/workspace/output/validation.json",
+  "note": "Final validator output is retained alongside execution.json, outside its hashed artifact list to avoid a self-referential digest."
+}

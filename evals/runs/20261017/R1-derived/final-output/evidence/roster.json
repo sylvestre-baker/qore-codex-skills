@@ -1,0 +1,138 @@
+{
+  "observed_at": "2026-10-17T10:21:35.651765+00:00",
+  "requested_roles": [
+    "finder.correctness",
+    "finder.security",
+    "finder.feasibility",
+    "verifier"
+  ],
+  "roles": [
+    {
+      "role": "finder.correctness",
+      "actor_id": "/root/finder_correctness",
+      "requested": true,
+      "fork_turns": "none",
+      "dispatch_utc": null,
+      "dispatch_utc_bounds": [
+        "2026-10-17T10:16:00+00:00",
+        "2026-10-17T10:16:15+00:00"
+      ],
+      "dispatch_timestamp_limitation": "Clock observations bracket actual spawn calls; spawn API exposes context name but no timestamp. Exact dispatch instant unavailable.",
+      "deadline_utc": "2026-10-17T10:19:01+00:00",
+      "role_budget_seconds": 180,
+      "status": "returned",
+      "returned_utc": "2026-10-17T10:17:50+00:00",
+      "usage": null,
+      "usage_unavailable_reason": "Host exposes no per-agent CPU/token or aggregate usage counters.",
+      "returned_utc_basis": "Parent clock observation after receipt; exact callback instant unavailable.",
+      "report": "evidence/finder-correctness.md",
+      "first_action_observed_utc": "2026-10-17T10:16:15+00:00",
+      "worker_completion_utc": "2026-10-17T10:17:42+00:00"
+    },
+    {
+      "role": "finder.security",
+      "actor_id": "/root/finder_security",
+      "requested": true,
+      "fork_turns": "none",
+      "dispatch_utc": null,
+      "dispatch_utc_bounds": [
+        "2026-10-17T10:16:00+00:00",
+        "2026-10-17T10:16:22+00:00"
+      ],
+      "dispatch_timestamp_limitation": "Clock observations bracket actual spawn calls; spawn API exposes context name but no timestamp. Exact dispatch instant unavailable.",
+      "deadline_utc": "2026-10-17T10:19:02+00:00",
+      "role_budget_seconds": 180,
+      "status": "returned",
+      "returned_utc": "2026-10-17T10:17:50+00:00",
+      "usage": null,
+      "usage_unavailable_reason": "Host exposes no per-agent CPU/token or aggregate usage counters.",
+      "returned_utc_basis": "Parent clock observation after receipt; exact callback instant unavailable.",
+      "report": "evidence/finder-security.md",
+      "first_action_observed_utc": "2026-10-17T10:16:22+00:00",
+      "worker_completion_utc": "2026-10-17T10:17:21+00:00"
+    },
+    {
+      "role": "finder.feasibility",
+      "actor_id": "/root/finder_feasibility",
+      "requested": true,
+      "fork_turns": "none",
+      "dispatch_utc": null,
+      "dispatch_utc_bounds": [
+        "2026-10-17T10:16:00+00:00",
+        "2026-10-17T10:16:30+00:00"
+      ],
+      "dispatch_timestamp_limitation": "Clock observations bracket actual spawn calls; spawn API exposes context name but no timestamp. Exact dispatch instant unavailable.",
+      "deadline_utc": "2026-10-17T10:19:03+00:00",
+      "role_budget_seconds": 180,
+      "status": "returned",
+      "returned_utc": "2026-10-17T10:17:50+00:00",
+      "usage": null,
+      "usage_unavailable_reason": "Host exposes no per-agent CPU/token or aggregate usage counters.",
+      "returned_utc_basis": "Parent clock observation after receipt; exact callback instant unavailable.",
+      "report": "evidence/finder-feasibility.md",
+      "first_action_observed_utc": "2026-10-17T10:16:30+00:00",
+      "worker_completion_utc": "2026-10-17T10:17:21.361575+00:00"
+    },
+    {
+      "role": "verifier",
+      "actor_id": "/root/verifier",
+      "requested": true,
+      "fork_turns": "none",
+      "dispatch_utc": null,
+      "dispatch_utc_bounds": [
+        "2026-10-17T10:18:06+00:00",
+        "2026-10-17T10:18:19+00:00"
+      ],
+      "dispatch_timestamp_limitation": "Clock observations bracket actual spawn call; exact API timestamp unavailable.",
+      "deadline_utc": "2026-10-17T10:22:07+00:00",
+      "role_budget_seconds": 240,
+      "status": "returned",
+      "returned_utc": "2026-10-17T10:20:18+00:00",
+      "allowed_input_files": [
+        "evidence/claims.json",
+        "/workspace/worker/target/verification-protocol.md",
+        "/workspace/worker/surface-contract.json",
+        "/workspace/worker/checks/check_contract.py",
+        "/workspace/worker/observation-policy.json",
+        "/workspace/worker/.agents/skills/qore-review-qaizen-labs/references/findings.md",
+        "/workspace/worker/.agents/skills/qore-review-qaizen-labs/references/protocol.md"
+      ],
+      "prohibited_inputs": "No finder reasoning/reports, collection, parent conclusions, or other output files.",
+      "usage": null,
+      "usage_unavailable_reason": "No host per-agent CPU/token or aggregate usage counter exposed.",
+      "returned_utc_basis": "First parent clock observation after actual return; callback instant not exposed.",
+      "first_action_observed_utc": "2026-10-17T10:18:19+00:00",
+      "worker_completion_utc": "2026-10-17T10:20:09+00:00",
+      "report": "evidence/verifier.md",
+      "examined_ids": [
+        "C-1",
+        "C-2",
+        "C-3"
+      ],
+      "unexamined_ids": []
+    }
+  ],
+  "returned_roles": [
+    "finder.correctness",
+    "finder.security",
+    "finder.feasibility",
+    "verifier"
+  ],
+  "missing_roles": [],
+  "budget": {
+    "overall_wall_seconds": 900,
+    "aggregate_agent_seconds": 2400,
+    "max_simultaneous_child_contexts": 3,
+    "root_first_clock_utc": "2026-10-17T10:15:46+00:00",
+    "root_deadline_utc": "2026-10-17T10:30:46+00:00",
+    "finder_role_seconds": 180,
+    "verifier_role_seconds": 240,
+    "aggregate_upper_bound_seconds": 1680,
+    "upper_bound_explanation": "Root <=900 plus three finders <=180 each plus verifier <=240. Conservative total wall-context bound <=1680, excluding API latency; actual CPU/token usage unavailable. No further quality retries or agents authorized.",
+    "expiry_action": "Request available partial results, preserve unfinished scope; stop new dispatch at exhaustion.",
+    "status": "All children and required phases completed before deadlines; no expiry or extra dispatch. Final record validation remains.",
+    "root_last_observed_utc": "2026-10-17T10:21:35.651765+00:00"
+  },
+  "actual_usage": null,
+  "usage_unavailable_reason": "Host exposes no aggregate CPU/token or exact agent-second counter. Timing observations are retained; no zero usage is inferred."
+}

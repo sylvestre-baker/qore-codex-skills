@@ -1,0 +1,44 @@
+{
+  "document_sequence": [
+    "entry",
+    "start",
+    "open-help (activation unspecified)",
+    "close-help",
+    "back"
+  ],
+  "contract_sequence": [
+    "entry",
+    "start",
+    "open-help",
+    "toggle-help",
+    "reopen-help",
+    "close-help",
+    "back"
+  ],
+  "unexercised_transitions": [
+    "toggle-help",
+    "reopen-help"
+  ],
+  "required_checks": [
+    "entry",
+    "unanswered",
+    "help-toggle",
+    "close-focus",
+    "keyboard-back",
+    "introduction-focus",
+    "read-only-policy",
+    "origin-policy"
+  ],
+  "document_keyboard_back": "line 6: reach Back with Tab or Shift+Tab within 24 steps, activate Enter; assert introduction visible, question/help absent, introduction heading focused",
+  "policy_fields": {
+    "allowed_origins": [
+      "https://qaizen.io"
+    ],
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
+  "document_policy_steps": []
+}

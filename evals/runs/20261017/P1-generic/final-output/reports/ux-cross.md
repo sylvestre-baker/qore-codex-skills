@@ -1,0 +1,63 @@
+# UX — Workflow cross-examination (one pass)
+
+Role: UX. Supplied snapshot: `0aa277436d8dcda4d6c2412c6ad4307dd0192b0f6230fa96c8b16d99c8bac194`. Target: `/workspace/worker/target/verification-protocol.md`. Status: complete assigned single cross-examination pass within the 100-second budget; initial report preserved unchanged. This report revises my proposals where stated, not original sources. No network, browser run, implementation, source edit or subagent.
+
+## Inspected materials and actual checks
+
+Read all five initial reports in `/workspace/output/reports/`: `product-analysis.md:1-86`, `architecture-analysis.md:1-96`, `ux-analysis.md:1-83`, `delivery-analysis.md:1-109`, `qa-analysis.md:1-142`. The first batched numbered read was output-truncated, so Architecture and Delivery were reread individually in full; my own report was also reread individually. Product and QA were fully present in the first read. Revisited `/workspace/worker/surface-contract.json:1-21`, `target/verification-protocol.md:1-10`, `checks/check_contract.py:1-54`, `observation-policy.json:1-5` using numbered reads. Earlier source hierarchy and task constraints remain applicable (`TASK.md:3-5`).
+
+Actual commands in this pass: `nl -ba` for those reports and source files, all exit 0. Outputs were the numbered documents cited here. No validator or browser test was rerun; no new runtime measurement exists. The independent-pass checker result remains valid JSON consistency evidence only, not target coverage or site proof. A Python `Path.write_text` command saved this cross report outside the source root. Coordination messages sent the correction and UX answers to the lead, Architecture and QA.
+
+## C-UX-1 — Correct my own terminal visibility proposal
+
+Exact decision challenged: my initial D-UX-2 Back row (`ux-analysis.md:37`) says preserve question/help absent, and acceptance item 4 (`:54`) says record final absence. Though I distinguished these from contract focus, the wording can still be read as a mandatory final-state gate. Product P4/P7 (`product-analysis.md:35,41`), Architecture A8 (`architecture-analysis.md:41`) and Delivery D6 (`delivery-analysis.md:27`) challenge that elevation.
+
+Counterevidence: the source explicitly defines Back from help-closed to returned-introduction with Tab/Enter and focus_after introduction-heading, targeting h1 (`surface-contract.json:15,17`). It does not say that question/help nodes must be detached, or define absence selectors. The phrase question/help absent comes solely from the tutorial target (`target/verification-protocol.md:10`), which is not authority (`TASK.md:5`). A concrete possible implementation could retain hidden question nodes while correctly returning the visible introduction and focusing its h1. Requiring node removal would reject it without a source basis. This is a counterexample, not a claim about the deployment.
+
+Smallest investigation: compare exactly those source transition/focus fields with the target's wording. Completed by source reads; no browser inquiry required to resolve authority.
+
+Outcome: accept peer correction and revise D-UX-2 Back row and acceptance item 4. Required evidence is returned introduction and actual active introduction h1 after declared Tab/Enter. If retained, add a separately labeled optional supplemental observation: “question and help are not visibly presented after return.” This is observable visibility language, not DOM detachment, removal, accessibility-tree absence or destruction of questionnaire state. Its result does not become a source-backed failure gate. The required help-closed state immediately before Back remains a source obligation; the supplemental terminal observation does not weaken that preceding requirement. No stored answer state may be inferred from an invisible question.
+
+Severity: UX assigns this newly explicit unsupported-DOM-absence risk Low for reader confusion (Product also calls it Low); Architecture and Delivery assess Medium source-expansion impact (`architecture-analysis.md:77`, `delivery-analysis.md:73`). Preserve that difference: impact depends on whether optional wording merely confuses a reader or becomes a blocking acceptance gate. No measured deployment severity exists. Selected correction prevents both outcomes without adding product scope.
+
+## C-UX-2 — Challenge Architecture on observer complexity
+
+Exact decisions challenged: A7's evidence fields (`architecture-analysis.md:39`) and A5's future pre-navigation guard requirement (`:35`). Potential complexity: repeating every contract field in each manually entered row or making unspecified guard tooling a deliverable could make a seven-action documentation change cumbersome.
+
+Concrete failure case: an editor might build a new schema/harness to populate the many A7 fields, or call the source-only document incomplete until a browser guard implementation exists. That would expand the requested one-document plan and conflate operator readiness with document readiness. Sources: `TASK.md:3-5`; source checker only consumes contract JSON (`checks/check_contract.py:46-51`); supplied role guidance limits architecture to actual document/host boundaries.
+
+Smallest investigation: inspect A7's mandatory/proposed wording, reuse sweep and delivery dependency statements. Completed. A7 explicitly labels its record a proposal, not software work; A1 and boundary table restrict the change to the target; A5 calls the tool mechanism a later capability prerequisite; Architecture's question to Delivery expressly separates future runtime guard readiness (`architecture-analysis.md:17-21,27,35,39,88,90`).
+
+Outcome: challenge refuted as a current architectural defect. Architecture's actual proposal avoids the hypothesized expansion. Preserve its requirements but implement the record as one concise table referencing contract expectations rather than repeatedly transcribing them. No new schema, runner, service or forced-focus helper. The guard is necessary to a future authorized execution, not a dependency blocking the present plan or document edit. Actual host capability remains unknown, correctly not invented.
+
+Severity: Medium prospective scope/complexity impact if the counterexample is introduced later; no severity escalation or site finding. My initial request for minimal reuse is answered by Architecture's source-backed boundary sweep.
+
+## C-UX-3 — Challenge QA on intermediate state coverage
+
+Exact decision challenged: QA-2 and grouped help-toggle matrix row (`qa-analysis.md:15,37`), and distinct Close/Back rows (`:38,40-41`). A grouped label alone might hide separate Space-collapse and Enter-reopen behavior.
+
+Concrete failure cases: (a) Enter opens, Space only scrolls, explicit Close still works; (b) Space closes, Enter fails to reopen; (c) Back reaches the visible introduction but focus remains body or a former question control. A coarse “help works” or terminal screenshot could incorrectly pass these cases. Counterevidence/source requirement: three ordered summary transitions plus separate Close and Back focus destinations (`surface-contract.json:11-17`).
+
+Smallest investigation: read QA-2, each acceptance row and the keyboard Gherkin rather than infer coverage from the help-toggle label. Completed. QA-2 specifies all seven transitions and asserts each state; row help-toggle says log each state and explicitly fails Space-scroll/Enter-reopen cases; close-focus requires actual summary; introduction-focus requires actual introduction h1; Gherkin includes the full ordered cycle and a failed-heading-focus case (`qa-analysis.md:15,36-41,57-76`).
+
+Outcome: challenge refuted as an omission. QA has the required observable granularity, even with two summary transitions under one required-check label. Keep separate transition IDs/outcomes in the compact record so one grouped row cannot be marked pass if either action fails or is unobserved. This is a presentation safeguard consistent with QA-2, not a new acceptance obligation. QA's `:41` target-only absence observation must use the C-UX-1 supplemental visibility wording, consistent with its own disclaimer.
+
+Severity: Medium for missing Space/reopen evidence, High for merged focus evidence/false keyboard pass, unchanged from initial UX risk assessment (`ux-analysis.md:62-64`). No observed site failure. Avoid adding a post-Enter or post-Space focus destination acceptance requirement: the contract specifies no focus_after for those three transitions, unlike Close and Back. Record actual focus/deviations and any ordinary navigation needed; do not silently correct focus or infer native browser behavior.
+
+## Answers to incoming UX questions
+
+Product (`product-analysis.md:82`): Yes. Required returned-state evidence is visible returned introduction and actual active introduction h1 after the required Back action. Question/help “not visibly presented” is optional supplemental evidence only, with no DOM removal assumption. Product P7's source/document/browser separation remains essential. I corrected my initial wording above.
+
+Architecture (`architecture-analysis.md:84`): One short sequence is sufficient: click declared entry; click Start; summary Enter → Space → Enter with state observations; Tab to Close, Enter, closed help + summary focus; Tab from that actual restored summary focus to Back, Enter, returned introduction + h1 focus. Use supplied control references only. Establish the summary's initial focus via ordinary sequential navigation as a proposed procedure detail; no exact Tab count or selector uniqueness is known. If a state/control cannot be identified or reached, retain evidence and stop dependent steps as blocked/unobserved. If a declared action visibly fails, report the failure rather than repairing it. An unexpected focus move between disclosure actions is an observation; a fixed post-toggle focus expectation is not sourced.
+
+QA (`qa-analysis.md:129`): Record control actually reached by sequential Tab before Enter separately from actual active element after Close and after Back. Identify the summary as the one associated with the active first-question help and h1 as the returned introduction heading, using observable runtime context. Multiple selector matches alone cannot prove the correct target. If the relevant association cannot be established, record ambiguity and withhold a pass; do not invent unique IDs or force focus to satisfy assertions. A read-only active-element inspection is an observation, not synthetic traversal. No direct focus operation is proposed for Close, Back or resulting targets.
+
+Delivery (`delivery-analysis.md:89`): Yes, Back traversal starts from the actual summary focus produced and observed after Close. A failed Close focus observation cannot be repaired then passed off as one intact successful journey. Separate new runs if retried; do not assume reload clears persisted state. The terminal absence observation is supplemental only under C-UX-1. No added website implementation is needed.
+
+## Consolidated UX decisions, alternatives and unfinished work
+
+Retain all initial UX decisions except the explicitly revised required-versus-supplemental terminal absence wording. Keep exact Tab even though the checker permits Shift+Tab for Back; key/action/observed state and distinct active element evidence remain mandatory in the planned procedure. Locale en-US and 1280×800 are the scope, not broad localization/device coverage. No invented loading/error text, timing service level, stored-state guarantee or accessibility certification.
+
+Selected alternative remains one amended document with source traceability, one exact ordered journey, concise evidence table, future policy preflight and honest status/limits. Reject both a Back-only text patch (misses source obligations) and a new harness/site campaign as prerequisites to the source-only deliverable. Architecture and QA concerns above were investigated and refuted as existing omissions, with small presentation safeguards preserved; the absence proposal was corrected on direct source evidence.
+
+Assigned cross-examination is complete. No new independent analysis round is requested. Lead adjudication and final specification/run evidence are outside this role's delegated work. Current DOM/control uniqueness, actual focus movement, loading/error behavior, questionnaire persistence, host interception capability and analytics-block consequences remain unmeasured and require a later authorized, guarded browser observation. They do not prevent completion of this document-change plan. No assigned source reading or cross-examination item remains unfinished at report return.

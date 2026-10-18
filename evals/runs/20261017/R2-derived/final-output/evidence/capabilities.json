@@ -1,0 +1,21 @@
+{
+  "observed_at": "2026-10-17T11:14:22.483577+00:00",
+  "python": "3.14.8",
+  "tools": {
+    "python3": "/usr/bin/python3",
+    "node": "/usr/local/bin/node",
+    "bash": "/bin/bash",
+    "git": "/usr/bin/git",
+    "rg": "/usr/local/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-arm64/vendor/aarch64-unknown-linux-musl/codex-path/rg"
+  },
+  "subagents": {
+    "tool": "collaboration.spawn_agent",
+    "actual_roles": [
+      "/root/finder_correctness",
+      "/root/finder_security",
+      "/root/finder_feasibility"
+    ],
+    "max_simultaneous_child_contexts": 3
+  },
+  "network": "Prohibited; no network used."
+}

@@ -1,0 +1,36 @@
+{
+  "observed_at": "2026-10-17T11:41:19.923427+00:00",
+  "commands": [
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "scripts/run-check.py",
+        "/workspace/output/execution.json",
+        "--evidence-root",
+        "/workspace/output"
+      ],
+      "cwd": "/workspace/worker/.agents/skills/qore-plan-qaizen-labs",
+      "exit_code": 0,
+      "output": "evidence/run-check-initial.txt",
+      "purpose": "Validate actual record before attaching that checker output."
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "scripts/run-check.py",
+        "/workspace/output/execution.json",
+        "--evidence-root",
+        "/workspace/output"
+      ],
+      "cwd": "/workspace/worker/.agents/skills/qore-plan-qaizen-labs",
+      "exit_code": 0,
+      "output": "evidence/run-check.txt",
+      "purpose": "Validate final record after declaring prior checker output; structural seal, no new quality analysis or retry."
+    }
+  ],
+  "final_execution_sha256": "c3acc0ec968c536fee92257e7b42b3696fee18f733d3a88ac0d1da82fc42eb2b",
+  "report_sha256": "24138f7ec30da8eb426679d1736e84ab2d2013c7811b851becc7729cb85b35e1",
+  "note": "Final checker output and this companion are outside the sealed record artifact list to avoid circular self-hashing. Initial actual checker command/output are declared in the record."
+}

@@ -1,0 +1,76 @@
+{
+  "schema": "qore-eval-inputs/1",
+  "scenario_id": "U1",
+  "condition": "generic",
+  "method": "ux",
+  "scenarios_sha256": "46534adc957971607cb4af8ae555727b933746b61081822be77acf9d79d2ea49",
+  "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+  "condition_resources_sha256": "256007331aa4d23148670f96a08abf472f54496636503f7130296f7fd0d5466d",
+  "resources": [
+    {
+      "path": ".agents/skills/qore-ux-review/SKILL.md",
+      "sha256": "33b1367f256f1a6304902d08cdff9b023add92fb750834216268cca8de84b851"
+    },
+    {
+      "path": ".agents/skills/qore-ux-review/agents/openai.yaml",
+      "sha256": "2bafca3b7edce2edac4814b4028fdb814f83c1c2efbea4d461b7469fbe1bd7af"
+    },
+    {
+      "path": ".agents/skills/qore-ux-review/references/evidence.md",
+      "sha256": "659560f88b965371e2c6e886b5f4c648a4879ebb7c69af4b1d307dfae176c8b3"
+    },
+    {
+      "path": ".agents/skills/qore-ux-review/references/gates.md",
+      "sha256": "667063cd64c576a9c5b4ec69f6ddcd677d4e969bae96184b3136ede9fd12fd87"
+    },
+    {
+      "path": ".agents/skills/qore-ux-review/references/project-profile.md",
+      "sha256": "154ed11dab8e8499e74a5f3a6afb512827d5de5c73408523b845684e38f59dfc"
+    },
+    {
+      "path": ".agents/skills/qore-ux-review/references/protocol.md",
+      "sha256": "eda7c7c7c9e711e4b9fca59ec6b622d713c3d95b14cd6e3b008a978ebf156004"
+    },
+    {
+      "path": ".agents/skills/qore-ux-review/references/release.json",
+      "sha256": "61a9f43551f486340fbb2807c3b38c82fe6872b67907c0e6a19d4903cc85ea3e"
+    },
+    {
+      "path": ".agents/skills/qore-ux-review/references/run-evidence.md",
+      "sha256": "2ede0b19d58fd5535c90023068355679ee7bb27d3070967ada38f9ad156a9e69"
+    },
+    {
+      "path": ".agents/skills/qore-ux-review/scripts/depth-lint.mjs",
+      "sha256": "fd7be484c8e4bf3ba376bdddb88663b31ae9da4c2c7678232ea7a6cc7782bd0f"
+    },
+    {
+      "path": ".agents/skills/qore-ux-review/scripts/project-check.py",
+      "sha256": "d87afa433fe485bdebca3e281d06e0896e4a8980ea7cf7baee739053614ea0ac"
+    },
+    {
+      "path": ".agents/skills/qore-ux-review/scripts/run-check.py",
+      "sha256": "889d73a4e8e7ff2c919248670207e82a03713a2c1ba04249e0569a0369ee4efa"
+    },
+    {
+      "path": ".agents/skills/qore-ux-review/scripts/stop-rule.mjs",
+      "sha256": "5c8d898e3accd82ed1932c791ff5ed1285aae659bae6757488158fc7a8120443"
+    },
+    {
+      "path": "TASK.md",
+      "sha256": "3f9d638f2a8b8b9677c313ff3872f6c7afadf89b470fd1cc7e034407543782f3"
+    },
+    {
+      "path": "checks/check_contract.py",
+      "sha256": "9ef2a0acf51f078ce290ec723ca550b8b73597e68304179fe4d0625c5757963b"
+    },
+    {
+      "path": "observation-policy.json",
+      "sha256": "15f4e5b4960b5011684be265f027e42b8637a3b8aae96b24bba1ba3a4d0f0202"
+    },
+    {
+      "path": "surface-contract.json",
+      "sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3"
+    }
+  ],
+  "limit": "Stage only worker/, not this preparation directory or the author repository."
+}

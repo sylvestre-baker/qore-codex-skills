@@ -1,0 +1,231 @@
+{
+  "schema": "qore003-independent-planning-assessment/1",
+  "scenario_id": "P2",
+  "actor_id": "/root/campaign_plan_assessor",
+  "timing": {
+    "started_at_utc": "2026-10-17T11:42:08+00:00",
+    "ended_at_utc": "2026-10-17T11:48:04.851124+00:00",
+    "active_intervals_utc": [
+      [
+        "2026-10-17T11:42:08+00:00",
+        "2026-10-17T11:48:04.851124+00:00"
+      ]
+    ],
+    "idle_intervals_utc": [],
+    "active_seconds_this_wave": 356.851124,
+    "prior_cumulative_active_seconds": 517.58,
+    "cumulative_active_seconds": 874.4311240000001,
+    "active_accounting_note": "Continuous active reading/reasoning/checking/writing window; no idle wait occurred in this wave. The interval between prior completion and this new dispatch is excluded. Shared two-case interval is counted once, not per case; this is evaluator active wall time, not model compute/billing."
+  },
+  "evidence_path_base": "assessment-inputs",
+  "frozen_criteria": [
+    "K1",
+    "K3",
+    "K4",
+    "K5",
+    "K7",
+    "K8"
+  ],
+  "not_applicable": [
+    {
+      "criterion": "K2",
+      "reason": "Not in frozen P2 list. Keyboard obligations are still checked where relevant to K1/K7."
+    },
+    {
+      "criterion": "K6",
+      "reason": "Review-only corrected-comparator criterion, not in frozen P2 list."
+    }
+  ],
+  "blinding": "NOT_BLINDED: neutral filenames only; content reveals baseline or derivative. No method ranking or comparison follows.",
+  "constraints": {
+    "only_criteria_and_N18_N04_inputs_used": true,
+    "N13_read": false,
+    "other_campaign_assessments_used": false,
+    "author_corrections_used": false,
+    "current_repo_sources_used": false,
+    "network_or_live_website": false,
+    "new_agents": false,
+    "outreach": false,
+    "trial_reruns_or_fixes": false
+  },
+  "neutral_id": "N18",
+  "criteria": [
+    {
+      "criterion": "K1",
+      "status": "MET",
+      "scope": "P2 documentation-only planning",
+      "rationale": "Original rules, seven transitions and distinct Close-summary versus Back-heading focus are accurately represented. The corrected target is recognized as already containing keyboard Back proof. Canonical forward Tab is distinguished from preserved additional Shift+Tab coverage.",
+      "evidence": [
+        {
+          "path": "N18/input/surface-contract.json",
+          "lines": "9-20",
+          "claim": "Actual transition, focus, check and limit obligations"
+        },
+        {
+          "path": "N18/input/target/verification-protocol.md",
+          "lines": "8-10",
+          "claim": "Corrected written Back proof and existing focus/unanswered obligations"
+        },
+        {
+          "path": "N18/output/REPORT.md",
+          "lines": "5,19-31",
+          "claim": "Accurate delta and rejected false missing-Back interpretation"
+        },
+        {
+          "path": "N18/output/PROPOSED-verification-protocol.md",
+          "lines": "17-28",
+          "claim": "Actual proposed keys, states, separate focus and preserved bound"
+        }
+      ],
+      "missing_proof_or_limit": "Runtime focus, target identity and actual keys remain unobserved. This is source/proposal accuracy, not site conformance."
+    },
+    {
+      "criterion": "K3",
+      "status": "MET",
+      "scope": "P2 documentation-only planning",
+      "rationale": "The plan retains unanswered checkpoints and excluded actions; it requires request origin/method restrictions before entry, including redirects and other requests, with blocked analytics evidence and no relaxation.",
+      "evidence": [
+        {
+          "path": "N18/output/REPORT.md",
+          "lines": "20,29,32",
+          "claim": "Policy scope and preserved unanswered proof"
+        },
+        {
+          "path": "N18/output/PROPOSED-verification-protocol.md",
+          "lines": "9-13",
+          "claim": "Environment, pre-entry origin/method restrictions and excluded actions"
+        },
+        {
+          "path": "N18/output/PROPOSED-verification-protocol.md",
+          "lines": "22-28,32-43",
+          "claim": "Unanswered before/after help, before Back and policy evidence"
+        }
+      ],
+      "missing_proof_or_limit": "Actual restriction enforcement, selected-answer state, navigation and analytics effects were not observed. Only planned boundary obligations are assessed."
+    },
+    {
+      "criterion": "K4",
+      "status": "MET",
+      "scope": "P2 documentation-only planning",
+      "rationale": "Fixture provenance, expected versus observed behavior, checker limitation, retained failures and missing coverage are explicit. No website defect or pass is inferred from the corrected fixture or static check.",
+      "evidence": [
+        {
+          "path": "N18/output/REPORT.md",
+          "lines": "15,26-32,45-49",
+          "claim": "Document findings, refutations and explicit runtime limits"
+        },
+        {
+          "path": "N18/output/PROPOSED-verification-protocol.md",
+          "lines": "3-5,13,32,45",
+          "claim": "Fixture, checker and evidence/provenance distinctions"
+        }
+      ],
+      "missing_proof_or_limit": "Browser behavior and deployment identity remain unknown; no unavailable evidence is supplied as an observation."
+    },
+    {
+      "criterion": "K5",
+      "status": "MET",
+      "scope": "P2 documentation-only planning",
+      "rationale": "The relevant existing checker command has actual argv, UTC bounds, exit 0 and full separately retained stdout/stderr. Future acceptance includes exact source-to-step mapping, evidence requirements and incomplete-bound handling. Literal inventory is correctly limited to presence.",
+      "evidence": [
+        {
+          "path": "N18/output/evidence/check-contract-command.json",
+          "lines": "2-11",
+          "claim": "Actual local checker command and exit status"
+        },
+        {
+          "path": "N18/output/evidence/check-contract.stdout.json",
+          "lines": "2-14",
+          "claim": "Valid contract, eight declared checks and explicit consistency-only limit"
+        },
+        {
+          "path": "N18/output/REPORT.md",
+          "lines": "34-49",
+          "claim": "Acceptance/review order and actual checks distinguished from future browser work"
+        },
+        {
+          "path": "N18/output/evidence/proposal-inventory.json",
+          "lines": "2-21",
+          "claim": "Literal coverage is explicitly not semantic proof"
+        }
+      ],
+      "missing_proof_or_limit": "No browser/policy implementation was tested. A Qore linter, role method or Gherkin fence is not required of baseline."
+    },
+    {
+      "criterion": "K7",
+      "status": "MET",
+      "scope": "P2 documentation-only planning",
+      "rationale": "The proposal is confined to documentation, preserves valid keyboard Back/Enter, two distinct focus outcomes, two unanswered checkpoints, question/help absence and the existing 24-step local bound, and justifies additions with supplied sources.",
+      "evidence": [
+        {
+          "path": "N18/input/TASK.md",
+          "lines": "1-3",
+          "claim": "Documentation-only preservation instruction"
+        },
+        {
+          "path": "N18/input/target/verification-protocol.md",
+          "lines": "8-10",
+          "claim": "Existing valid obligations"
+        },
+        {
+          "path": "N18/output/REPORT.md",
+          "lines": "19-22,26-41",
+          "claim": "Change rationale and explicit preservation"
+        },
+        {
+          "path": "N18/output/PROPOSED-verification-protocol.md",
+          "lines": "19-28",
+          "claim": "Retained alternatives, bound, checkpoints and postconditions"
+        }
+      ],
+      "missing_proof_or_limit": "No input or application behavior was changed. Later application remediation is neither proposed nor inferred."
+    },
+    {
+      "criterion": "K8",
+      "status": "MET",
+      "scope": "P2 documentation-only planning",
+      "rationale": "Actual frozen-source reading identifies the remaining help-cycle/documentation gap, while rejecting a missing-Back claim. A concrete proposed replacement and relevant offline check support a bounded documentation decision.",
+      "evidence": [
+        {
+          "path": "N18/output/REPORT.md",
+          "lines": "3-11,19-22,34-49",
+          "claim": "Observed source delta, scoped plan and actual limited outcome"
+        },
+        {
+          "path": "N18/output/PROPOSED-verification-protocol.md",
+          "lines": "21-45",
+          "claim": "Reviewable source-based clarification"
+        },
+        {
+          "path": "N18/output/evidence/input-preservation.json",
+          "lines": "2-5",
+          "claim": "Retained unchanged-input result"
+        }
+      ],
+      "missing_proof_or_limit": "No website observations, measured implementation benefit or comparison result support or are required by this source-based decision."
+    }
+  ],
+  "method_coverage": {
+    "declared_method": "Baseline, single source-based planning context",
+    "assessment": "SUBSTANTIATED_AT_BASELINE_SCOPE",
+    "qore_role_requirement": "NOT_APPLICABLE",
+    "evidence": [
+      {
+        "path": "N18/output/REPORT.md",
+        "lines": "9,45-57",
+        "claim": "Single context, actual checker and explicit no-Qore boundary"
+      },
+      {
+        "path": "N18/output/run-record.json",
+        "lines": "12-30,52-55",
+        "claim": "Null profile, empty child roster and accurate method limits"
+      }
+    ],
+    "actual_children": 0,
+    "basis": "Complete plan plus concrete proposal, correct original-source delta, preserved obligations and relevant actual local check. No Qore phase, profile, structural schema, independent roles or verifier is imposed."
+  },
+  "checks_file": "checks.json",
+  "material_correction_candidates": [],
+  "required_worker_content_corrections": [],
+  "conclusion": "All six frozen P2 criteria MET at documentation-planning scope; baseline method boundary accurate; no application or live behavior result established."
+}

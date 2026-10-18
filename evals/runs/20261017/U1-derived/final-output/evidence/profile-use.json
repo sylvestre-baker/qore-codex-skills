@@ -1,0 +1,32 @@
+{
+  "observed_at": "2026-10-17T10:54:42.984851+00:00",
+  "profile_sha256": "f76afdd45cb6352e5044a06affc4182ea6cd40aa9c012fb216636a61faa428f0",
+  "facts": [
+    {
+      "id": "close-focus",
+      "source_id": "surface",
+      "source_sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+      "effect": "Separate summary restoration from Back heading restoration assertions."
+    },
+    {
+      "id": "back-focus",
+      "source_id": "surface",
+      "source_sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+      "effect": "Use sequential traversal and Enter, never click, for Back proof."
+    },
+    {
+      "id": "unanswered-scope",
+      "source_id": "surface",
+      "source_sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+      "effect": "Assert no checked answers; retain policy and blocked analytics diagnostics."
+    },
+    {
+      "id": "surfaces.web",
+      "source_id": "surface",
+      "source_sha256": "3728739a119a53272541f83d451e40addb6939304f9d9ec060a477a87170a4a3",
+      "effect": "Select public /labs entry, anonymous application, authorized qaizen.io origin and required help/Back states."
+    }
+  ],
+  "selected_commands": [],
+  "additional_source_command": "Contract checker independently selected from TASK.md requirement to read original sources; UX profile returns no applicable command."
+}

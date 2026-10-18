@@ -1,0 +1,19 @@
+{
+  "observed_at": "2026-10-17T12:27:31.905193+00:00",
+  "category": "Maintainer visual inspection of local GFM approximation",
+  "viewed": [
+    "docs-evidence-specialization-README.md-1280.png",
+    "Narrow320 top1800px crop of docs-evidence-specialization-README.md-320.png"
+  ],
+  "observations": [
+    "Main status and six-scenario table readable at1280px.",
+    "At320px prose wraps without document overflow; wide comparison table uses its own horizontal scroll, preserving full text.",
+    "Six document/viewport loads returned200, no observed page errors, no document-width overflow; keyboard Tab focus and image loading retained in result.json.",
+    "Final text revision rerendered after the explicit export-only companion disclosure; no automated overflow or load error."
+  ],
+  "limits": [
+    "Only named images visually inspected. Other rendered captures are retained without a claim of visual certification.",
+    "Custom local GFM approximation; no hosted GitHub render, external human use, 200% zoom rerun or instrumented accessibility certification."
+  ],
+  "source_result_sha256": "ffe97395ba5918ca7c0fe946f81f77f561e2a0112d01e18c3d8678dd2ff0b20c"
+}

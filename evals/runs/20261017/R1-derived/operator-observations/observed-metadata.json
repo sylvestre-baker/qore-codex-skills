@@ -1,0 +1,79 @@
+{
+  "neutral_id": "N09",
+  "scenario_id": "R1",
+  "coverage": "COMPLETE",
+  "resources": {
+    "caps": {
+      "wall_seconds": 900,
+      "aggregate_agent_seconds": 2400,
+      "browser_requests": 6,
+      "transient_browser_retries": 1,
+      "evaluator_seconds": 1800,
+      "verifier_seconds": 1800,
+      "maximum_original_cells": 21,
+      "limit": "Provisional operator policy, not measured feasibility or hard timeout enforcement."
+    },
+    "started_at": "2026-10-17T10:15:39.589673+00:00",
+    "ended_at": "2026-10-17T10:21:47.368047+00:00",
+    "children": [
+      {
+        "actor_id": "/root/finder_correctness",
+        "started_at": "2026-10-17T10:16:00+00:00",
+        "ended_at": "2026-10-17T10:17:50+00:00",
+        "timing_precision": "Observed dispatch clock-bracket start through first post-return clock sample; an upper bound, not exact model compute time.",
+        "source": "final-output/roster.json"
+      },
+      {
+        "actor_id": "/root/finder_security",
+        "started_at": "2026-10-17T10:16:00+00:00",
+        "ended_at": "2026-10-17T10:17:50+00:00",
+        "timing_precision": "Observed dispatch clock-bracket start through first post-return clock sample; an upper bound, not exact model compute time.",
+        "source": "final-output/roster.json"
+      },
+      {
+        "actor_id": "/root/finder_feasibility",
+        "started_at": "2026-10-17T10:16:00+00:00",
+        "ended_at": "2026-10-17T10:17:50+00:00",
+        "timing_precision": "Observed dispatch clock-bracket start through first post-return clock sample; an upper bound, not exact model compute time.",
+        "source": "final-output/roster.json"
+      },
+      {
+        "actor_id": "/root/verifier",
+        "started_at": "2026-10-17T10:18:06+00:00",
+        "ended_at": "2026-10-17T10:20:18+00:00",
+        "timing_precision": "Observed dispatch clock-bracket start through first post-return clock sample; an upper bound, not exact model compute time.",
+        "source": "final-output/roster.json"
+      }
+    ],
+    "tokens": null,
+    "aggregate_agent_seconds": null,
+    "unavailable": {
+      "tokens": "CLI exposes parent turn usage; complete child-token totals are not exposed. Raw parent usage retained separately.",
+      "aggregate_agent_seconds": "Exact model/child agent-time accounting is not exposed. Parent wall interval and clock-bracketed child intervals are retained as observed bounds, not invented measurements."
+    },
+    "parent_native_usage": {
+      "input_tokens": 1430589,
+      "cached_input_tokens": 1321600,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 17507,
+      "reasoning_output_tokens": 4617
+    },
+    "parent_wall_seconds": 366.511204
+  },
+  "limitations": [
+    "One observation on a related known task, not a general benefit benchmark.",
+    "Criterion assessments remain UNKNOWN until a separate actual evaluator and verifier inspect retained outputs.",
+    "CLI JSONL omits some native child lifecycle events; child identities and history-free dispatches rely on retained role reports/roster plus the qualified inheritance probe.",
+    "All resource timing precision and unavailable measurements remain explicit; no cost or efficiency conclusion.",
+    "Scope is the supplied reconstructed procedure, not the deployed website. No network, browser, external advisories, or shared-data changes.",
+    "No missing finder roles or unexamined merged claims; all role reports retained. Duplicate original claims preserved in audit trail.",
+    "Exact API dispatch/return instants not exposed. Roster retains UTC observation bounds, first worker clock observations, completion times, and parent receipt observation times.",
+    "Token, CPU, and exact aggregate agent-second usage unavailable from host; null with reason in roster. Conservative wall-context budget upper bounds retained.",
+    "Enclosing candidate and prepared-input manifest identities are supplied operational metadata. Underlying enclosing manifest serialization is unavailable; per-file exact-byte digest manifest and full source copies retained, without claiming recomputation of enclosing identities.",
+    "rg unavailable; failed probes retained and find/Python fallbacks completed. Correctness finder failed Python wrapper returned 1; exact wrapper argv unavailable to parent, so failure is retained verbatim in finder-correctness-contrary-search.json rather than inventing an argv.",
+    "No fixes applied. Lint SHIP is absence of confirmed high/critical blockers under this findings contract, not publication permission or comprehensive website acceptance.",
+    "Structural validators do not establish factual correctness or prove independence by themselves; actual child context identities and complete reports are retained."
+  ],
+  "raw_output_sha256": "acf6977342ec872df594a901372a5de580312d117fd3ea5bc6ff0ab5781cd812",
+  "blinding_limit": "Neutral filenames only; method/profile citations and role rosters can reveal condition. This is not a blinded comparison."
+}

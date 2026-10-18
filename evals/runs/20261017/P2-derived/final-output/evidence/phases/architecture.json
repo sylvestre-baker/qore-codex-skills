@@ -1,0 +1,187 @@
+{
+  "qore_evidence": {
+    "candidate_sha256": "8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d",
+    "target_snapshot_sha256": "92981d42bbb636d2809b22af476c7974c1a1f54b539b8e5a7d6c9767b0d53b1d",
+    "observed_at": "2026-10-17T11:35:57.701078+00:00",
+    "phase_id": "architecture"
+  },
+  "payload": {
+    "initial_actor": "/root/architecture",
+    "cross_actor": "/root/architecture",
+    "analysis_report": "# Architecture initial analysis\n\nStatus: COMPLETE initial role analysis; cross-examination pending. Role: Architecture. Workflow deciding artifact: the existing applicable `target/verification-protocol.md`. No implementation or input edits performed.\n\n## Snapshot and inspected scope\n\nTask-supplied enclosing snapshot: `92981d42bbb636d2809b22af476c7974c1a1f54b539b8e5a7d6c9767b0d53b1d`; candidate: `8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d`. These are supplied identifiers, not an independently computed deployment identity.\n\nRead `/workspace/worker/TASK.md` lines 1\u20135; `surface-contract.json` lines 1\u201321; `checks/check_contract.py` lines 1\u201354; `observation-policy.json` lines 1\u20135; `target/verification-protocol.md` lines 1\u201310. Read skill `SKILL.md`, `references/roles.md`, `references/protocol.md`, the task brief, and the fresh `/workspace/output/evidence/profile-check.json`. Material project facts below cite originals, not profile summaries.\n\nUninspected: website, private application code, browser automation implementation, other repositories, prior reports, other roles. No network/browser run, deployment inspection, or claim of observed current website behavior. The fixture expressly disclaims historical authenticity and website-defect evidence (target line 3), as does contract provenance (surface line 19).\n\n## Visible reuse and impact sweep\n\nSearch attempted `rg` over the supplied source files; unavailable (`/bin/sh: rg: not found`). Fallback `grep -nE` searched these originals for `verification-protocol`, policy fields, focus fields, `24`, `analytics`, `keyboard-back`, and `help-toggle`. Full reads supplement that bounded search. This is an impact sweep of supplied surfaces, not a claim that no other repository consumers exist.\n\n| Existing surface / owner | Producer \u2192 consumer and shared fields | Proposed disposition and evidence |\n| --- | --- | --- |\n| Declarative public acceptance contract | Maintained JSON \u2192 checker and maintainer procedure: states; transition id/from/to/control/activation/traversal/focus_after; focus_targets; required_checks; provenance; scope | Reuse unchanged. It already defines the entire required journey and restrictions (surface lines 4\u201320). No second schema, API, service, route implementation, or database is needed. |\n| Local consistency checker | JSON file path \u2192 `validate` \u2192 stdout JSON `{valid,schema,checks,limit}` or stderr `{valid:false,error}` plus exit 1 | Reuse unchanged for static preflight. It never contacts the website (checker line 2), and explicitly limits its result to consistency (lines 42\u201343). It does not read the target Markdown or observation-policy file (lines 46\u201351). |\n| Observation policy | Maintained `allowed_origins` \u2192 future observation guard/procedure | Reuse the existing origin value `https://qaizen.io` (policy lines 2\u20133), consistent with surface line 5. No supplied runtime guard reader exists; identify guard installation as a future verification precondition rather than inventing tooling. |\n| Maintainer procedure (only intended changed file) | Contract and policy \u2192 ordered human instructions \u2192 later observation record | Clarify omissions and evidence boundaries; preserve existing Close and Back assertions and fixture notice (target lines 3, 8\u201310). It is not a new source of website truth. |\n| Future observation record | Actual keyboard actions, visible state, focus, request blocks \u2192 maintainer judgment | Describe minimum evidence in prose. No storage schema, event bus, authentication system, or persistent snapshot is supplied or needed. Current planning does not produce this browser evidence. |\n\nNo values are stored by the supplied checker; it derives a consistency result from the input JSON. The output `checks` is a list of declared required checks, not proof those checks were executed. The Markdown currently has no machine reader in the supplied evidence; this bounded no-reader finding does not justify changing automation elsewhere.\n\n## Decision records\n\n**A1 \u2014 Keep the architecture documentation-only.** Clarify the existing procedure; leave JSON contract, policy, checker, application, and skill files unchanged. Source: TASK lines 3\u20135. Alternative: implement a browser runner or expand checker coverage. Rejected for this task because neither is authorized or necessary to clarify maintainer instructions. Consequence: the plan must be explicit that later browser evidence remains outstanding.\n\n**A2 \u2014 Restore the full existing transition sequence explicitly.** After starting unanswered, focus the help summary through ordinary keyboard navigation, activate Enter, assert help open; activate Space on summary, assert closed; activate Enter, assert reopened; then use existing keyboard Close and Back steps. These are already contract obligations (surface lines 11\u201315, `help-toggle` at line 18), while target line 7 merely says open and omits toggle/reopen. Do not infer these checks from the checker pass. Alternative: keep only the existing target journey. Rejected because it omits declared transitions without justification. No hard-coded additional Tab count is necessary for the help summary.\n\n**A3 \u2014 Preserve separate Close and Back invariants.** Close leaves question available/unanswered, closes help, and returns focus to summary; Back independently reaches the application control by sequential keyboard traversal, activates Enter, shows introduction, removes question/help, and focuses its heading. Sources: target lines 8\u201310; surface lines 14\u201318; checker lines 32\u201336. Do not replace actual reachability evidence with click, locator focus, or programmatic focus. Preserve target's 24-step Back bound as an operational stopping condition, not a website accessibility criterion proven by the contract: no such numeric bound appears in the JSON/checker. On exhaustion, retain trace and report inability to complete the bounded verification, without asserting universal inaccessibility. Preserve target's allowed Tab/Shift+Tab wording, but identify that the canonical contract close traversal is Tab (surface line 14); QA should decide whether an alternative Close traversal is supplementary evidence rather than silently rewriting the contract.\n\n**A4 \u2014 Put scope and guards before navigation.** Document locale en-US, viewport 1280\u00d7800, unanswered scope, GET/HEAD/OPTIONS-only request handling, allowed-origin checks, blocked analytics retention, and prohibited answers/results/submissions. Sources: surface lines 4\u20136, 18\u201320; policy lines 2\u20133. Ensure the chosen observer can enforce guards before entry and across new main frames/popups; otherwise stop as unable to verify under policy. Exact interception APIs are outside supplied evidence. Do not claim the tiny observation-policy file by itself configures or enforces method blocking. Alternative: relax blockers to get a clean journey. Rejected: analytics POST is expected to be blocked and its effects retained (surface line 20).\n\n**A5 \u2014 Distinguish static consistency, procedure review, and future observation.** Run the existing local checker as a preflight and review changed prose against every contract transition/restriction. A checker success cannot validate the Markdown or establish current website conformance (checker lines 42\u201343, 46\u201351). A future run records actual outcomes and failed/blocked/unobserved steps without converting acceptance expectations into facts. The proposed clarification should not promise a new evidence storage format or a browser test pass.\n\n## Component flow and future runtime sequence\n\nComponent flow: original contract + original observation policy \u2192 maintainer reads clarified procedure; contract separately \u2192 existing local checker \u2192 consistency-only report; future guarded browser observation + procedure \u2192 state/action/focus/request evidence \u2192 maintainer acceptance judgment. The only planned writer changes a documentation artifact outside input during planning; no application-side writes are part of this change.\n\nFuture runtime sequence (not executed here): (1) validate static contract; (2) establish policy guards and stated environment before public entry; (3) click Labs journey link and Start as allowed by surface lines 9\u201310, leaving unanswered; (4) perform Enter/Space/Enter summary transitions and assert each state; (5) sequentially reach Close, Enter, assert help closure plus summary focus and unanswered state; (6) reassert unanswered immediately before leaving, reach application Back using existing bounded keyboard traversal, Enter, assert introduction visibility, absence of question/help, and heading focus; (7) retain outcomes and blocked-request effects, including failures, and stop. No automatic retries, forced focus, or alternate activation should silently repair a failed proof.\n\nThe observer owns guards, stopping, and evidence capture. The local checker owns only consistency validation. There is no supplied transaction or retry system; do not invent atomicity claims. The observer must not weaken policy because blocked analytics changes behavior. If a future separate run is warranted, its original failure and changed conditions must remain distinguishable rather than overwritten.\n\n## Failure behavior and risks\n\n| Trigger | Impact / severity | Basis and handling |\n| --- | --- | --- |\n| Maintainer treats checker success or its `checks` list as a passed journey | High: unsupported conformance claim and missing keyboard/state evidence | Direct checker lines 42\u201343 and 46\u201351. Label its result consistency-only and require separate future observations. |\n| Summary is opened by an unspecified action; Space/reopen never exercised | Medium: help-toggle coverage absent despite an apparently completed procedure | Direct target line 7 versus surface lines 11\u201313,18. Add explicit transitions and outcomes. |\n| Pointer click or focus assignment used to rescue Back reachability | High: invalid keyboard proof | Surface line 15 and checker lines 35\u201336 require sequential keyboard traversal and Enter; preserve trace on failure. |\n| 24-step guard expires | Medium: bounded procedure incomplete; severity is verification risk, not a measured product defect | Bound exists only target line 10. Retain it and explain result limitation; do not silently extend or declare website inaccessibility. |\n| Disallowed request/navigation is allowed before guards exist, including a popup | High: observation violates declared scope | Request/method boundary directly surface lines 5\u20136,18,20 and policy lines 2\u20133; popup implementation risk is a hypothesis until an observer is selected. Require pre-navigation enforcement, do not prescribe invented APIs. |\n| Expected analytics POST is blocked and affects UI | Medium: current flow may fail under mandatory policy; dropping effects would misrepresent evidence | Surface line 20 expressly anticipates blocking and effect retention. Preserve effects and report observed limits; no speculative website defect assertion. |\n| Focus checks inspect wrong target or conflate Close and Back | High: acceptance false positive | Surface lines 14\u201317; checker lines 32\u201334. Use separate target assertions and retain existing visibility/absence checks. |\n| Contract/policy later diverge, or target rewrites a duplicated constant | Medium: maintenance drift | Current matching origins directly inspected; future drift is hypothesis. Reference authoritative files and compare values during maintainer review rather than introducing another machine-readable policy. |\n\n## Named peer questions and alternatives\n\n**Product:** Are all source-defined transitions, including Space close and Enter reopen, explicit acceptance invariants? Please reject a minimum scope that calls opening and one Close action sufficient for `help-toggle`. Is the 24-step bound an operational guard or a product requirement? Evidence supports preserving the former; product pass/fail wording must not infer a website defect solely from guard exhaustion.\n\n**UX:** Can the clarified sequence explain Enter/Space/Enter and separate Close/Back focus assertions in one ordered journey without introducing an unnecessary reset? Please retain pointer entry/Start (surface lines 9\u201310) and reserve keyboard proof for specified transitions. Do not broaden this into full keyboard-only entry, general accessibility certification, or a new UI/error design.\n\n**QA and security:** Please cover blocked analytics effects, unavailable guard tooling, assertion failure, 24-step exhaustion, and separate focus targets. The checker does not validate Markdown, does not compare the separate origin-policy file, and does not execute declared checks. Decide how to document target's Close Tab/Shift+Tab allowance against the canonical surface Tab transition without quietly weakening a sourced requirement.\n\n**Delivery:** Can definition of done require a prose-to-source coverage review plus the existing local consistency command, while clearly leaving current browser behavior unverified? No code, deployment, migration, or rollback mechanism is necessary for a planned Markdown clarification.\n\n## Unfinished work and resolving evidence\n\nInitial analysis complete within the assigned window. Pending: one cross-examination pass after all role reports return; lead adjudication of Close traversal wording and operational-bound interpretation; final specification and candidate wording owned by lead. Current browser conformance remains unknown and is outside this no-browser task. Future actual observer selection would resolve guard implementation details, but must not block this documentation plan or prompt invented tooling. No peer reports were inspected during this independent pass.\n",
+    "cross_report": "# Architecture cross-examination\n\nStatus: COMPLETE single Workflow cross-examination pass. Initial report remains unchanged; this report records corrections and recommendations for lead adjudication. Snapshot and uninspected runtime scope remain those in `architecture-analysis.md`: enclosing manifest `92981d42bbb636d2809b22af476c7974c1a1f54b539b8e5a7d6c9767b0d53b1d`, candidate `8b26119f383a7d5853c1bd2ab5f678e08966300846c0d6f2784351c1f5a59e8d` (supplied identifiers).\n\n## Reports and sources inspected\n\nRead ALL five full initial reports: `product-analysis.md`, `architecture-analysis.md`, `ux-analysis.md`, `delivery-analysis.md`, `qa-analysis.md`. The first combined tool output was truncated; reread UX, Delivery and QA in separate complete outputs to recover the middle. Read `/workspace/output/evidence/cross-brief.md`. Reread original contract, target, checker, observation policy, and original skill profile `references/project.json`, including numbered profile locations. No network, browser, extra agents, input edits or peer-file edits.\n\n## Mandatory challenge: Product invariants\n\n**P1 and Product acceptance criterion 3: valid keyboard alternatives versus canonical contract evidence.** Product correctly preserves existing Close and Back obligations, the bound and both unanswered checkpoints. Its statement that existing Tab/Shift+Tab alternatives are valid is incomplete if interpreted as proving the exact canonical Close path: surface-contract line 14 names Close traversal Tab; target line 8 permits either; checker lines 35\u201336 expressly allow both only for Back. Concrete counterexample: one run uses only Shift+Tab to Close, activates Enter and observes correct focus, then reports the contract's Tab path observed. That result proves the alternate procedure path and focus outcome, but has no evidence of the named Tab path. Smallest investigation completed: inspect those three original locations; no runtime probe is needed to resolve the documentation distinction.\n\nRecommendation: retain the target alternative rather than delete it, while instructing Tab for canonical Close coverage. Label a Shift+Tab execution as alternative evidence; it cannot by itself be presented as an observation of Tab traversal. An optional alternative run is not a new required task. Back continues to allow Tab/Shift+Tab under the explicit checker rule. Preserve the 24-step bound and two separate unanswered checkpoints; neither is lost by the clarification. This sharpens Product's acceptance wording without changing the contract or inventing a product requirement.\n\n**P4: precisely locate policy enforcement.** Product's navigation-only origin reading is supported by the actual original profile. `references/project.json:55\u201356` explicitly says block all non-GET/HEAD/OPTIONS requests and main-frame/popup navigation outside allowed origins. Raw surface-contract lines 5\u20136 give origin/method values, and observation-policy lines 2\u20133 give only origin values; neither names popup/main-frame behavior. Smallest investigation completed: read the original profile against the fresh preflight, rather than elevate its paraphrase to raw-contract content. Recommendation: apply method restriction to all requests, origin restriction to main-frame/popup navigation (including attempted redirected destinations), and do not add a categorical ban on cross-origin subresources. Profile supplies boundary detail; raw files supply the policy values. No new guard implementation is part of the plan.\n\n**P2 versus P1: invariant completeness confirmed.** Product explicitly preserves Enter/Space/Enter and does not treat Close as equivalent to Space-toggle closure. No contradictory evidence found. The original architectural concern about an underspecified minimum scope is resolved by Product P2 and its help-toggle acceptance criterion.\n\n## Mandatory challenge: UX complexity\n\n**UX decision 5: retain evidence sufficient for proof without making a new logging system a dependency.** UX asks for starting focus, each traversal or equivalent ordered event trace, actual activation and resulting focus/state. This is useful evidence guidance, but no source mandates a structured event store, a particular recording format, or a new harness. Concrete failure of overimplementation: a maintainer cannot complete a documentation change until a logger/schema/browser runner exists. TASK lines 3\u20135 and the supplied checker boundary contradict that widened task. Smallest investigation completed: reread checker lines 46\u201351 and task scope; no Markdown reader or event producer is supplied.\n\nRecommendation: retain a concise, tool-independent trace requirement, accepting ordered notes or existing event evidence. For Back, define a counted step as one Tab or Shift+Tab key traversal and count across both directions. State this is a proposed operational definition for the retained target-only bound, not a newly discovered raw-contract rule. For Close, preserve canonical/alternative labeling above. No extra replay, reset, or mandatory second run is necessary merely to document the alternative. Keep entry and Start click actions unchanged (surface lines 9\u201310). The original architectural suggestion to reach the summary through ordinary keyboard navigation is guidance, not an added mandatory sequential-reachability criterion: surface lines 11\u201313 specify activation keys but not a summary traversal method.\n\n**UX decision 7: separate failure states confirmed and made precise.** When a real focus check is observed and the actual focused element is wrong, record that assertion as unmet. When Back is not reached in 24 steps, record bounded traversal failure and leave its unexecuted transition/focus outcomes unobserved. When guards/tooling or rendering prevent a check from being performed, record unavailable/incomplete evidence. These distinctions avoid both fabricated passes and unsupported website-defect claims. They concern the verification record, not new app recovery UX.\n\n## QA failure-path warning and correction\n\nQA's matrix `close-focus` currently groups Tab/Shift+Tab without separately naming canonical Tab coverage. Recommend the same canonical/alternative distinction as above. Its matrix and Gherkin otherwise distinguish Space closure, Close focus, introduction visibility and heading focus appropriately.\n\nWarning to QA: preserve both unanswered assertions (target lines 9 and 10). A record only immediately before Back would erase a retained earlier obligation after Close. A state cannot be marked passed merely because it was expected or listed in checker output. Wrong observed focus, bound exhaustion and missing observation must remain different record outcomes. Analytics blocking is required, so blocked effects that interrupt later checks must remain in the evidence and the later checks remain unobserved, not failed by assumption or repaired through policy relaxation.\n\nGuard-tool unavailability blocks a future compliant observation; it does not block this offline documentation planning deliverable. No invented interception API, app repair, retry UI, timeout standard or accessibility certification should be added. QA identifies origin-overreach risk as LOW while Architecture assessed unauthorized observation boundary failure as HIGH: these address different triggers. Preserve both ratings with those distinct triggers; do not average them.\n\n## Other peer decisions checked\n\nDelivery D1/D6 and T1\u2013T4 correctly separate reviewable offline planning from future browser observations. Its estimate is explicitly hypothetical; no architecture prerequisite requires a new harness, app build, database, deploy or browser run. Delivery D5's popup/main-frame wording is acceptable when attributed to original profile line 56, not asserted to be raw observation-policy content. Its rollout/revert language is appropriate for a later document change and must not imply this planning task mutates input.\n\n## Explicit revisions to Architecture's initial view\n\n1. Correct the attribution in A4 / claim A5: popup/main-frame semantics come from original profile `references/project.json:55\u201356`; raw contract/policy only give methods/origins and related scope. The original risk table's raw-source attribution was too broad. This is recorded as a partial refutation in the claims artifact, preserving the original claim.\n2. Resolve initial A3 / claim A7's open Close question as a recommendation: canonical Tab coverage, preserved separately labeled Shift+Tab alternative, no optional-run mandate. Peer preference for unannotated preservation remains dissent rather than silently treated as agreement.\n3. Narrow A2's ordinary-keyboard-navigation-to-summary suggestion to optional setup guidance; only the declared Enter/Space/Enter activation sequence is a required help invariant. No additional summary reachability criterion or step budget is justified by supplied sources.\n4. Retain original architecture choices: no new schema/tooling, checker unchanged, guards before future entry, fixture notice preserved, separate state/focus assertions, two unanswered checkpoints and 24-step bound retained. Initial risks remain hypothetical verification risks, not measured website incidents.\n\n## Selected recommendation, dissent and unfinished scope\n\nSelect one short setup paragraph, one expanded help sequence and concise evidence/failure guidance, backed by a preservation map. The lead should clearly cite original-profile policy detail separately from raw-contract values. Keep canonical Close Tab evidence distinct from the target's preserved Shift+Tab alternative. UX preference to retain the alternative without annotation is insufficient if it lets an alternate execution be called canonical coverage; preserve that preference as a rejected alternative and its useful scope-control rationale.\n\nThis pass is complete within the assigned deadline; no further source investigation is necessary for the documentation decision. Lead adjudication, final candidate wording and preservation review remain. Runtime enforcement, deployed focus/tab order, unanswered-state representation and blocked analytics effects remain deliberately unobserved and require a separate authorized observation, not additional planning rounds.\n",
+    "claims": [
+      {
+        "id": "A1",
+        "claim": "The authorized change is documentation-only; contract, policy, checker, application and skill resources remain unchanged.",
+        "source_locations": [
+          "TASK.md:3",
+          "TASK.md:5"
+        ],
+        "proposed_change": "Clarify the existing target Markdown and retain the reconstructed-fixture disclaimer; do not add a runner, schema, service or database.",
+        "severity": "high",
+        "refutation": null
+      },
+      {
+        "id": "A2",
+        "claim": "The target's unspecified help opening omits contract-defined Enter open, Space close, and Enter reopen transitions.",
+        "source_locations": [
+          "target/verification-protocol.md:7",
+          "surface-contract.json:11",
+          "surface-contract.json:12",
+          "surface-contract.json:13",
+          "surface-contract.json:18"
+        ],
+        "proposed_change": "Explicitly sequence Enter, Space, Enter on the summary and assert each corresponding help state before existing Close verification.",
+        "severity": "medium",
+        "refutation": null
+      },
+      {
+        "id": "A3",
+        "claim": "Close and application Back have different focus destinations and require separate evidence; Back requires sequential keyboard reachability and Enter activation.",
+        "source_locations": [
+          "surface-contract.json:14",
+          "surface-contract.json:15",
+          "surface-contract.json:17",
+          "checks/check_contract.py:32",
+          "checks/check_contract.py:35",
+          "target/verification-protocol.md:8",
+          "target/verification-protocol.md:10"
+        ],
+        "proposed_change": "Preserve Close-to-summary and Back-to-introduction-heading assertions, existing visible-state checks, and unanswered checks; prohibit click or programmatic focus from substituting for the required Back keyboard proof.",
+        "severity": "high",
+        "refutation": null
+      },
+      {
+        "id": "A4",
+        "claim": "The 24-step Back bound appears in the target procedure but not the supplied surface contract or checker, so exhaustion establishes an incomplete bounded verification rather than universal website inaccessibility.",
+        "source_locations": [
+          "target/verification-protocol.md:10",
+          "surface-contract.json:15",
+          "checks/check_contract.py:35"
+        ],
+        "proposed_change": "Preserve the existing bound as an operational guard and record exhaustion and the traversal trace without silently extending or rescuing the attempt.",
+        "severity": "medium",
+        "refutation": null
+      },
+      {
+        "id": "A5",
+        "claim": "The source scope requires unanswered operation, allowed methods GET/HEAD/OPTIONS, allowed origin https://qaizen.io and retention of expected blocked analytics POST effects; the target currently omits these operating preconditions.",
+        "source_locations": [
+          "surface-contract.json:4",
+          "surface-contract.json:5",
+          "surface-contract.json:6",
+          "surface-contract.json:18",
+          "surface-contract.json:20",
+          "observation-policy.json:2",
+          "observation-policy.json:3",
+          "target/verification-protocol.md:5"
+        ],
+        "proposed_change": "Place scope and guard requirements before navigation, include declared locale and viewport, and stop verification if the chosen observer cannot enforce policy. Retain blocked-request effects rather than relaxing policy.",
+        "severity": "high",
+        "refutation": "Partial attribution correction after cross-examination: raw contract/policy supply method/origin values, but main-frame/popup boundary semantics in the full initial report are supported by the original current skill profile references/project.json:55-56, not the raw policy file alone. Apply methods to all requests and origin restrictions to main-frame/popup navigations; do not prohibit every cross-origin subresource."
+      },
+      {
+        "id": "A6",
+        "claim": "The existing checker consumes only the supplied JSON path and reports consistency; its output checks list does not prove those checks ran and it does not validate target Markdown or compare observation-policy.json.",
+        "source_locations": [
+          "checks/check_contract.py:9",
+          "checks/check_contract.py:42",
+          "checks/check_contract.py:43",
+          "checks/check_contract.py:46",
+          "checks/check_contract.py:50"
+        ],
+        "proposed_change": "Keep the checker unchanged as static preflight, add a prose-to-contract coverage review, and explicitly separate both from future browser observation evidence.",
+        "severity": "high",
+        "refutation": null
+      },
+      {
+        "id": "A7",
+        "claim": "The target allows Tab or Shift+Tab for Close while the canonical surface Close transition names Tab; the checker explicitly permits both only for Back.",
+        "source_locations": [
+          "target/verification-protocol.md:8",
+          "surface-contract.json:14",
+          "checks/check_contract.py:35"
+        ],
+        "proposed_change": "Use sequential Tab for canonical Close contract coverage; preserve existing Shift+Tab as separately labelled alternative evidence without requiring an optional second run. Shift+Tab-only Close evidence does not establish observation of the named Tab path. Keep Back Tab/Shift+Tab alternatives supported by checker. Do not modify contract or checker.",
+        "severity": "medium",
+        "refutation": "Cross-examination resolves the initially open recommendation; UX preference for retaining the alternative without annotation is rejected when it permits canonical coverage to be claimed from alternate-only evidence. Underlying factual claim is not refuted."
+      },
+      {
+        "id": "A8",
+        "claim": "The fixture and acceptance contract do not constitute evidence of a current website defect or a passed deployment.",
+        "source_locations": [
+          "target/verification-protocol.md:3",
+          "surface-contract.json:19",
+          "surface-contract.json:20"
+        ],
+        "proposed_change": "Retain the fixture notice and distinguish declared expectations, document omissions, future observed outcomes and unresolved browser behavior throughout the clarification.",
+        "severity": "high",
+        "refutation": null
+      },
+      {
+        "id": "A9",
+        "claim": "The original current profile specifies blocking all non-GET/HEAD/OPTIONS requests and main-frame/popup navigation outside allowed origins; it does not specify banning all cross-origin subresources.",
+        "source_locations": [
+          ".agents/skills/qore-plan-qaizen-labs/references/project.json:55",
+          ".agents/skills/qore-plan-qaizen-labs/references/project.json:56",
+          "surface-contract.json:5",
+          "surface-contract.json:6",
+          "observation-policy.json:2",
+          "observation-policy.json:3"
+        ],
+        "proposed_change": "Attribute boundary semantics to the original profile and policy values to raw contract/policy; establish guards before future entry without choosing a new interception implementation.",
+        "severity": "high",
+        "refutation": null
+      },
+      {
+        "id": "A10",
+        "claim": "Observed wrong focus, bounded Back traversal exhaustion, and an observation prevented or unavailable are different outcomes; checker output cannot supply missing runtime evidence.",
+        "source_locations": [
+          "target/verification-protocol.md:8",
+          "target/verification-protocol.md:9",
+          "target/verification-protocol.md:10",
+          "checks/check_contract.py:42",
+          "checks/check_contract.py:43",
+          "surface-contract.json:19"
+        ],
+        "proposed_change": "Record unmet observed focus assertions separately from bounded traversal failure and downstream unobserved checks; retain both unanswered checkpoints, the 24-step bound and trace; use tool-independent notes or existing trace evidence without a new storage schema.",
+        "severity": "high",
+        "refutation": null
+      },
+      {
+        "id": "A11",
+        "claim": "Help transitions specify Enter, Space and Enter activation but do not specify how the summary is reached or a summary traversal budget.",
+        "source_locations": [
+          "surface-contract.json:11",
+          "surface-contract.json:12",
+          "surface-contract.json:13"
+        ],
+        "proposed_change": "Require the activation sequence and observed open/closed/open states; do not impose a new mandatory sequential-reachability criterion or numeric traversal bound for summary setup.",
+        "severity": "medium",
+        "refutation": "Corrects the full initial Architecture A2 suggestion that ordinary keyboard navigation to the summary should be a required addition; it may remain guidance, not a sourced invariant."
+      }
+    ],
+    "analysis_return_observed_utc": "2026-10-17T11:32:49.867945+00:00",
+    "cross_return_observed_utc": "2026-10-17T11:35:57.701078+00:00",
+    "continuity_limitation": null,
+    "barrier": {
+      "observed_at": "2026-10-17T11:33:53.557779+00:00",
+      "requested": [
+        "product",
+        "architecture",
+        "ux",
+        "delivery",
+        "qa"
+      ],
+      "returned_complete": [
+        "product",
+        "architecture",
+        "ux",
+        "delivery",
+        "qa"
+      ],
+      "missing": []
+    }
+  }
+}
