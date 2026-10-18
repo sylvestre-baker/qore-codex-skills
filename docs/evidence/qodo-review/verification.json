@@ -1,0 +1,78 @@
+{
+  "schema": "qore-qodo-claim-verification/1",
+  "category": "agent_verification_on_maintainer_computer",
+  "protocol": "Qodo generated native candidates. A mechanical allowlist preceded a separate fresh Codex verifier for each input scope. This is not the complete generic Qore three-finder protocol.",
+  "classifications": "Qodo action levels retained; no mapping to Qore severity and no refutation quota.",
+  "public_main_checked": "e9d74cfeadd299a52f66919598b8330d6225e947",
+  "findings": [
+    {
+      "id": "9f0d5a97-5e27-428f-983b-d7e96bb7c5a3",
+      "title": "Package builds fail on stale file hashes",
+      "action_level": "action_required",
+      "verdict_on_reviewed_slice": "CONFIRMED",
+      "counterexample": "On the unchanged frozen replay, python3 -B tools/qore.py build --output <fresh temporary directory> exits 1 with stderr {\"valid\": false, \"error\": \"Redistribution review is stale: skills/qore-review/references/findings.md\"}. Both changed allowlisted files have actual hashes differing from retained release-rights records.",
+      "source_locations": [
+        "release-rights.json:9743",
+        "release-rights.json:9775",
+        "release-files.json:1221",
+        "tools/qore.py:144",
+        "tools/qore.py:183",
+        "tools/qore.py:200",
+        ".github/workflows/check.yml:37"
+      ],
+      "complete_fix_verdict": "REFUTED",
+      "current_verdict": "REFUTED",
+      "assessment": "Build failure is real for this synthetic slice. It is not an outstanding defect in the complete published correction or current public main. Native action_required is retained without translating it to Qore severity."
+    },
+    {
+      "id": "2ae99e58-b64b-47e9-be6a-e627d9767dff",
+      "title": "Plain-text summary hides why a review is held",
+      "action_level": "informational",
+      "verdict_on_reviewed_slice": "CONFIRMED",
+      "counterexample": "Input examples/qodo-review/unresolved-finding.json contains a single F1, severity=high, verdict=PLAUSIBLE. With --verifier=ran and no --json, every requested snapshot exits 0 and prints exactly: finding-lint: valid; coverage PARTIAL; verdict PENDING; 0 blocking findings. F1 is absent. The same invocation with --json emits unresolved_findings:[\"F1\"].",
+      "source_locations": [
+        "skills/qore-review/scripts/finding-lint.mjs:45",
+        "skills/qore-review/scripts/finding-lint.mjs:47",
+        "skills/qore-review/scripts/finding-lint.mjs:51",
+        "skills/qore-review/scripts/finding-lint.mjs:54",
+        "skills/qore-review/scripts/finding-lint.mjs:56",
+        "tests/test_validators.py:22",
+        "tests/test_validators.py:26",
+        "skills/qore-review/references/findings.md:11"
+      ],
+      "complete_fix_verdict": "CONFIRMED",
+      "current_verdict": "CONFIRMED",
+      "assessment": "Presentation/diagnostic omission in optional human text output. The verdict remains PENDING and JSON retains F1. Documented command and test consumer use --json; no false SHIP or demonstrated machine consumer data loss. Native informational is retained."
+    },
+    {
+      "id": "777de8a5-6b8e-4ec0-a3a7-3cea3db25788",
+      "title": "Adding a profile to a generic skill now blocks the profile check",
+      "action_level": "remediation_recommended",
+      "verdict_on_complete_historical_fix": "CONFIRMED",
+      "regression_relative_to_base": true,
+      "remains_on_current": false,
+      "already_corrected_by": "908ba019ce43b8566d0f68fda4b2bf237a2b5d66",
+      "counterexample": "Build and install unmodified generic package, add valid synthetic references/project.json with a current policy.txt source. All three bundled checkers and tools/context.py exit 2, empty stdout, stderr BLOCKED with Bundled profile baseline needs exactly one project resource. Identical profiles outside references/project.json exit 0 COMPLETE; base and pinned public main added-profile checks exit 0 COMPLETE.",
+      "source_locations": [
+        "tools/qore.py:69-92",
+        "tools/qore.py:144-175",
+        "tools/qore.py:253-279",
+        "skills/qore-review/scripts/project-check.py:46-134",
+        "skills/qore-review/scripts/project-check.py:137-171",
+        "skills/qore-plan/scripts/project-check.py:137-171",
+        "skills/qore-ux-review/scripts/project-check.py:137-171",
+        "tools/context.py:137-171",
+        "skills/qore-review/references/project-profile.md:3-11",
+        "skills/qore-review/references/project-profile.md:24",
+        "docs/profiles.md:23-43"
+      ],
+      "workflow_interpretation": "Generic invocation without a profile requires no checker. Existing-profile instructions require preflight before consuming facts. Manual copying into a generic installation is not the primary persistent-profile adaptation workflow. The retained historical control demonstrates successful derivation and all three generated derivative preflight checks, separately from successful generic package installations. It does not itself demonstrate installation of the derived candidate. This is an optional-profile preflight regression, not evidence that ordinary generic use or derivation failed.",
+      "assessment": "A valid optional local profile is unusable at the documented preflight location in the historical correction. No independent critical/high mapping, delivery blocker, or broader user-impact frequency inferred."
+    }
+  ],
+  "missing_ids": [],
+  "limits": [
+    "Retrospective known public correction, not blind detection or a quality/cost/speed comparison.",
+    "No external human first-use observation. A self-recorded model-verification result is not a human or provider audit."
+  ]
+}

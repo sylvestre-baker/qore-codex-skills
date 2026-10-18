@@ -72,6 +72,8 @@ Supply the actual target, relevant requirements, and authorized web origin when 
 
 ## See the evidence
 
+The [Qodo review tutorial](docs/tutorials/qodo-review.md) follows a real external review comment through local reproduction, a checked correction and an engineering decision. Replay the focused observations without a Qodo account, then inspect the separate live-review recipe and coverage limits. It distinguishes a historical regression already fixed, an informational diagnostic suggestion and a failure introduced by our own input selection.
+
 The [Qaizen Labs case](docs/evidence/qaizen-labs/README.md) shows all three specialized methods acting on one sourced profile. Planning separated Back keyboard reachability, resolved state and focus. Independent review reproduced four distinct coordination helper defects and retained separate post-fix verification. The actual desktop UX run followed the real entry, operated help and returned to the introduction without answering a question.
 
 [![Qore Labs demonstration: three methods and one sourced project profile](docs/demo/qaizen-labs/poster.jpg)](docs/demo/qaizen-labs/demo.mp4)
