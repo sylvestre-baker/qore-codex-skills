@@ -679,6 +679,115 @@ class PackageTests(unittest.TestCase):
         self.assertEqual(packet["error"], "Original failure")
         self.assertTrue(packet["recovery"]["safe_to_retry"])
 
+    def test_install_relative_project_root_keeps_recovery_and_success_warnings(self):
+        import os
+        bundle = Path(self.build()["bundle"])
+        previous = Path.cwd()
+        real_rmtree = qore.shutil.rmtree
+
+        def deny_staging(path, *args, **kwargs):
+            if Path(path).name.startswith(".qore-install-"):
+                raise PermissionError("Staging cleanup denied")
+            return real_rmtree(path, *args, **kwargs)
+
+        try:
+            os.chdir(self.base)
+            with patch.object(qore.shutil, "rmtree", side_effect=deny_staging):
+                result = qore.install(bundle, Path("project"))
+            warning = next(row for row in result["warnings"] if row["code"] == "install-staging-retained")
+            self.assertFalse(Path(warning["path"]).is_absolute())
+            failed = self.base / "relative-failure"
+            failed.mkdir()
+            with patch.object(qore.shutil, "rmtree", side_effect=deny_staging), patch.object(qore.shutil, "copytree", side_effect=PermissionError("Original copy failure")):
+                with self.assertRaises(qore.InstallRecoveryError) as caught:
+                    qore.install(bundle, Path("relative-failure"))
+            self.assertEqual(str(caught.exception), "Original copy failure")
+            self.assertFalse(caught.exception.recovery["safe_to_retry"])
+            self.assertTrue(all(not Path(p).is_absolute() for p in caught.exception.recovery["retained_paths"]))
+        finally:
+            os.chdir(previous)
+
+    @unittest.skipUnless(sys.platform != "win32" and __import__("os").geteuid() != 0, "Requires POSIX permission enforcement for a non-root operator")
+    def test_install_keeps_primary_copy_error_when_bookkeeping_cannot_read(self):
+        import os
+        bundle = Path(self.build()["bundle"])
+
+        def fail_unreadable(src, dst, *args):
+            dst.write(src.read(4))
+            dst.flush()
+            os.fchmod(dst.fileno(), 0)
+            raise PermissionError("Original partial write failure")
+
+        try:
+            with patch.object(qore.shutil, "copyfileobj", side_effect=fail_unreadable):
+                with self.assertRaises(qore.InstallRecoveryError) as caught:
+                    qore.install(bundle, self.project)
+            self.assertIn("Original partial write failure", str(caught.exception))
+            self.assertFalse(caught.exception.recovery["safe_to_retry"])
+            self.assertTrue(caught.exception.recovery["cleanup_errors"])
+        finally:
+            for path in self.project.rglob("*"):
+                if path.is_file():
+                    path.chmod(0o600)
+
+    @unittest.skipUnless(sys.platform != "win32" and __import__("os").geteuid() != 0, "Requires POSIX permission enforcement for a non-root operator")
+    def test_install_never_reports_safe_retry_when_destination_is_inaccessible(self):
+        bundle = Path(self.build()["bundle"])
+        target = self.project / ".agents/skills"
+        real_rename = Path.rename
+
+        def lose_access(src, dst):
+            if Path(dst).parent == target / "qore-review":
+                target.chmod(0)
+                raise PermissionError("Original publication failure with lost access")
+            return real_rename(src, dst)
+
+        try:
+            with patch.object(Path, "rename", lose_access):
+                with self.assertRaises(qore.InstallRecoveryError) as caught:
+                    qore.install(bundle, self.project)
+            self.assertFalse(caught.exception.recovery["safe_to_retry"])
+            self.assertTrue(caught.exception.recovery["retained_paths"])
+            self.assertIn("Original publication failure", str(caught.exception))
+        finally:
+            target.chmod(0o700)
+        self.assertTrue((target / "qore-plan").is_dir())
+        with self.assertRaises(ValueError):
+            qore.install(bundle, self.project)
+
+    def test_install_preserves_mode_only_local_adaptation_during_recovery(self):
+        bundle = Path(self.build()["bundle"])
+        target = self.project / ".agents/skills"
+        real_rename = Path.rename
+        changed = target / "qore-plan/SKILL.md"
+
+        def adapt_mode(src, dst):
+            if Path(dst).parent == target / "qore-review":
+                changed.chmod(0o444)
+                raise PermissionError("Publication failure after local permission change")
+            return real_rename(src, dst)
+
+        with patch.object(Path, "rename", adapt_mode):
+            with self.assertRaises(qore.InstallRecoveryError) as caught:
+                qore.install(bundle, self.project)
+        self.assertFalse(caught.exception.recovery["safe_to_retry"])
+        self.assertEqual(changed.stat().st_mode & 0o777, 0o444)
+
+    @unittest.skipUnless(sys.platform != "win32" and __import__("os").geteuid() != 0, "Requires POSIX permission enforcement for a non-root operator")
+    def test_install_supports_readonly_parents_with_writable_skills_directory(self):
+        bundle = Path(self.build()["bundle"])
+        target = self.project / ".agents/skills"
+        target.mkdir(parents=True)
+        try:
+            self.project.chmod(0o500)
+            target.parent.chmod(0o500)
+            result = qore.install(bundle, self.project)
+            self.assertEqual(len(result["installed"]), 3)
+            self.assertEqual(qore.compare(bundle, self.project)["changes"], [])
+        finally:
+            self.project.chmod(0o700)
+            target.parent.chmod(0o700)
+
     def test_install_refuses_to_overwrite_a_modified_existing_skill(self):
         bundle = Path(self.build()["bundle"])
         installed = qore.install(bundle, self.project)

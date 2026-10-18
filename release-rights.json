@@ -53,7 +53,7 @@
     },
     {
       "path": "INSTALL.md",
-      "sha256": "f67a7d603a5ce6f05fe64f80be1da7bdfe4198aaa44758d348da1632c7cbc73b",
+      "sha256": "91dfcbfbe40e0a1e28d51c48b9d89b6dae080e09f7cbfe0543d89761018c85f8",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
@@ -10437,7 +10437,7 @@
     },
     {
       "path": "tests/test_package.py",
-      "sha256": "8a4d822774374ecbc0b0bd2a7b5a03105698473e77c0e540ca2036efdc1c43d9",
+      "sha256": "3964fb5f43ffda3a5a3dfe1357d4e74e614b81949eb195b8f466aa5a08a41221",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
@@ -10549,7 +10549,7 @@
     },
     {
       "path": "tools/qore.py",
-      "sha256": "525a06a6376fe739120dfc40a9c6fb6c7b8f56a7908f617b398524a47695e914",
+      "sha256": "bd00ace66b2e903cc1c99e1ce531a176ebd306947abc795f1a774fd3f1dee22c",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",

@@ -23,6 +23,8 @@ The installer prepares and checks all three skills in private staging outside `.
 
 On failure, the command exits nonzero and writes JSON to stderr. The original failure remains in `error`. When recovery was attempted, `recovery` reports `safe_to_retry`, project-relative `retained_paths`, separate `cleanup_errors`, and `next_action`.
 
+Staging prefers `.agents/`, with same-filesystem fallbacks for read-only project parents. A retained fallback outside the project is reported relative to the project, potentially using `..`; inspect the exact reported path. Inaccessible paths are conservatively retained in the report with inspection errors; inability to inspect never establishes safe retry. Observed permission changes also prevent automatic removal of the affected content.
+
 If `safe_to_retry` is true, correct the original cause and rerun the same command. If it is false, inspect the retained paths, preserve local edits, and compare against the verified candidate before manually removing or relocating only content confirmed to belong to that attempt. Do not delete all `qore-*` folders or shared parent directories. An existing destination is still refused, even when empty.
 
 Successful output retains `installed`, `replaced: false` and `warnings`. If all three skills are installed but private staging cannot be removed, an `install-staging-retained` warning identifies it for inspection. Empty parent directories may remain after recovery.
