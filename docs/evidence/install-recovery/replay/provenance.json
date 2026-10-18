@@ -1,0 +1,30 @@
+{
+  "schema": "qore-offline-replay-provenance/1",
+  "source_identities": {
+    "installation_before": "e9d74cfeadd299a52f66919598b8330d6225e947",
+    "diagnostic_before": "d5a66ce2fbb4328fd279166f3a8f1ab8d636c3f3",
+    "candidate": "c3ce75cce730429d21d8b068672beda93c2a4de5"
+  },
+  "runtime_files": [
+    {
+      "path": "qore-source-c3ce75c.zip",
+      "sha256": "6a2eeebe07fd94a9f24681217b69330e826218e9d7b7089fb772e4c7d32ef71c"
+    },
+    {
+      "path": "historical/baseline-qore.py",
+      "sha256": "ac501036c702b7ca5eae75d333298b6db22e519e0114a8c05c1f2bded4a9f713"
+    },
+    {
+      "path": "historical/reviewed-qore.py",
+      "sha256": "bd00ace66b2e903cc1c99e1ce531a176ebd306947abc795f1a774fd3f1dee22c"
+    },
+    {
+      "path": "historical/LICENSE",
+      "sha256": "2869451aacba8375c013dee1749f630a9c0d6bef71b6caeea63e5fa15b8f85a6"
+    }
+  ],
+  "origin": "Minimal replay export selected from approved c3ce75c core sources; historical modules retain exact before-snapshot bytes. Original repository history, historical proof directories and host-session identifiers are excluded.",
+  "redistribution": "Qore MIT code; retained LICENSE. Native Qodo excerpts are separate evidence, not executable dependencies.",
+  "archive_scope": "Minimal core/runtime export, not the full repository or full test corpus. Installer bytes exactly match c3ce75c; packaging inventories are derived for this subset.",
+  "source_export_transformation_sha256": "6bd259b86269625f1d8e93aecb68d2f6f2d2de77202ccc06ebe2f4ce62a4c61c"
+}

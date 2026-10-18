@@ -1,0 +1,79 @@
+{
+  "schema": "qore-recovery-case/1",
+  "recorded_date": "2026-10-18",
+  "source_identities": {
+    "installation_before": "e9d74cfeadd299a52f66919598b8330d6225e947",
+    "diagnostic_before": "d5a66ce2fbb4328fd279166f3a8f1ab8d636c3f3",
+    "candidate": "c3ce75cce730429d21d8b068672beda93c2a4de5"
+  },
+  "test_only_commit": "f92d9c200893b023c523011b00d74cabd4c1170e",
+  "installer_sha256": "9098c9d890c915e8e0d07b3d30e9f99aa7f2fa6d5032d9ae2b31259a482ff090",
+  "video": {
+    "version": 5,
+    "duration_seconds": 210,
+    "url": "https://drive.google.com/file/d/1x-A9-Ga8BOt0LhZ0Mp5t-sAWLDEVybJw/view",
+    "sha256": "a7bed87305c2a06f31883705706d1eda7d6255e9fddec5b12e4d17962d148709",
+    "scope": "Captioned video only is shared by link. It is a presentation of recorded work, not a live Qodo execution."
+  },
+  "copied_artifacts": [
+    {
+      "path": "replay/reproduce.py",
+      "sha256": "8f08d99d712218915a6dcfec520a4dda9e7529c8f1a7277c403de417d903a72d",
+      "transformation": "Byte-for-byte copy from the retained V5 delivery; the replay retains its earlier V3 identity."
+    },
+    {
+      "path": "replay/provenance.json",
+      "sha256": "1da5aa8ff875c4ca2f9b2d0261237773f803f139df3dfb4197383897df2e5194",
+      "transformation": "Byte-for-byte copy from the retained V5 delivery; the replay retains its earlier V3 identity."
+    },
+    {
+      "path": "replay/qore-source-c3ce75c.zip",
+      "sha256": "6a2eeebe07fd94a9f24681217b69330e826218e9d7b7089fb772e4c7d32ef71c",
+      "transformation": "Byte-for-byte copy from the retained V5 delivery; the replay retains its earlier V3 identity."
+    },
+    {
+      "path": "replay/historical/baseline-qore.py",
+      "sha256": "ac501036c702b7ca5eae75d333298b6db22e519e0114a8c05c1f2bded4a9f713",
+      "transformation": "Byte-for-byte copy from the retained V5 delivery; the replay retains its earlier V3 identity."
+    },
+    {
+      "path": "replay/historical/reviewed-qore.py",
+      "sha256": "bd00ace66b2e903cc1c99e1ce531a176ebd306947abc795f1a774fd3f1dee22c",
+      "transformation": "Byte-for-byte copy from the retained V5 delivery; the replay retains its earlier V3 identity."
+    },
+    {
+      "path": "replay/historical/LICENSE",
+      "sha256": "2869451aacba8375c013dee1749f630a9c0d6bef71b6caeea63e5fa15b8f85a6",
+      "transformation": "Byte-for-byte copy from the retained V5 delivery; the replay retains its earlier V3 identity."
+    },
+    {
+      "path": "recorded-replay.json",
+      "sha256": "ca5db8161bd2429a24f7b9750d97cc5786793dcb9ae25d7e8568e70a49d7fa50",
+      "transformation": "Byte-for-byte copy from the retained V5 delivery; the replay retains its earlier V3 identity."
+    },
+    {
+      "path": "replay-export-transform.json",
+      "sha256": "6bd259b86269625f1d8e93aecb68d2f6f2d2de77202ccc06ebe2f4ce62a4c61c",
+      "transformation": "Byte-for-byte copy from the retained V5 delivery; the replay retains its earlier V3 identity."
+    },
+    {
+      "path": "transcript-en.txt",
+      "sha256": "45f94a064163297edaea5805f98d1244a8b9514ef461c755ccdde534d6dda28c",
+      "transformation": "Spoken text retained; non-spoken delivery-file references changed from the local HTML export to this GitHub case README and assessment. Original V5 transcript digest retained as source_sha256.",
+      "source_sha256": "7df4df303e71eb196c8df47f561385df5f1267854db0db1de99a47e44f5d4d78"
+    },
+    {
+      "path": "overview.png",
+      "sha256": "f0dfcfaff5c9edacc02914d089e62ba0e5146b9cfee22745036608321a669dcf",
+      "transformation": "Byte-for-byte copy from the retained V5 delivery; the replay retains its earlier V3 identity."
+    }
+  ],
+  "privacy": "Only the enumerated artifacts and first-party summaries were selected. No client source, account screen, application answers, authentication material or Git history is included.",
+  "limits": [
+    "Controlled injected failures, not a customer incident.",
+    "No measured time or money saving.",
+    "No native Qodo review after c3ce75c.",
+    "No external learner trial or human listening observation.",
+    "Publishing a branch does not merge it or update the v0.2.1 release."
+  ]
+}

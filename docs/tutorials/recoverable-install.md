@@ -2,6 +2,8 @@
 
 Qore provides three independent Codex methods: prepare a sourced plan, challenge a deliverable, and inspect a rendered web interface. A project can derive specialized versions from one sourced profile. Before using those methods, a developer needs all three skill folders installed reliably.
 
+[Watch the 3:30 lesson and run its pinned offline replay](../evidence/install-recovery/README.md). The public case keeps Qodo advice, independent verification and author corrections distinct.
+
 ## The problem and observed outcome
 
 On public main `e9d74cfeadd299a52f66919598b8330d6225e947`, a controlled error before the second skill copy leaves the first skill installed. Repeating the same command is refused because that folder already exists. The ordinary control installs all three skills correctly. This is an injected filesystem failure, not a reported customer incident.

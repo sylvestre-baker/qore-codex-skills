@@ -82,6 +82,8 @@ The [planning report](docs/evidence/qaizen-labs/plan/REPORT.md), [review and cor
 
 Browser evidence covers one desktop English entry/state flow. It does not establish whole-site readiness, instrumented accessibility conformance, performance or external human usability. One analytics POST was blocked and recorded. Linux source review ran without a browser driver; its skipped browser checks are not passes. The [earlier validator case](docs/evidence/validator-case.md) and [0.1.0 execution record](docs/qualification.md) retain their original identities.
 
+The [recoverable-installation case](docs/evidence/install-recovery/README.md) adds a 3:30 English lesson and an offline replay: a controlled copy failure blocks retry before the correction; safe cleanup permits retry afterward. It distinguishes the known failure, targeted Qodo advice, rejected remedy detail and independent checks. This branch contains the candidate; released v0.2.1 assets are unchanged.
+
 ## Adapt all three methods from one profile
 
 The methods stay reusable; a profile supplies the rules for one project. In the Labs example, a keyboard requirement changes the plan's acceptance checks, the review's evidence requirements and the browser actions.
