@@ -13,11 +13,11 @@
     },
     {
       "path": ".github/workflows/check.yml",
-      "sha256": "b6f19cf448a749c0560e6f9e01cbcc61fc359b8c4136af929b93d5e3e4a9291d",
+      "sha256": "54ca3010e4e75e5d03b2db55c54fafb688beec36d0688c452b23496402d18b95",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "Reconciled previously reviewed English first-party Qore documentation and explicit command/evidence inventories from specialization PR #4 and main with merged recovery PR #6 and historical tutorial PR #5. Both cases and their original evidence identities are preserved; no new client content or provider trace is introduced. Exact composed bytes reviewed for this integration."
+      "basis": "Reviewed English first-party 0.3.0 release metadata, sourced profile digest refresh, publication guidance or existing-style showcase links for the user-authorized repository finalization. Historical trial/replay files retain their original bytes. No private website implementation, account trace, credential or new third-party implementation is introduced."
     },
     {
       "path": ".github/workflows/pages.yml",
@@ -37,11 +37,11 @@
     },
     {
       "path": "CHANGELOG.md",
-      "sha256": "b6ab9d5f71de9d9852e3e3637e322ec9db4ca66043fe2a8734235a95b5569ff5",
+      "sha256": "a5ce595e7321423aa06d096a434c24fb220d582e17ac39a4a52384d9d14bd6e0",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "Selected English first-party Qore code/docs, frozen public Qore inputs, generated method outputs, independent assessment or authorized public/own local Qaizen browser observations for the user-approved MIT project. No private client/website source, credentials, full CLI/model trace, browser video/trace, cache or copied upstream Docker profile. Original and transformed identities are retained separately. Branch review does not deploy a site or release an application."
+      "basis": "Reviewed English first-party 0.3.0 release metadata, sourced profile digest refresh, publication guidance or existing-style showcase links for the user-authorized repository finalization. Historical trial/replay files retain their original bytes. No private website implementation, account trace, credential or new third-party implementation is introduced."
     },
     {
       "path": "CONTRIBUTING.md",
@@ -77,11 +77,11 @@
     },
     {
       "path": "README.md",
-      "sha256": "5b5875bd19cdb2c12194887644897a6cbbf0aefba53eaf00f1183e7122f74406",
+      "sha256": "f69712603bdf47561f149e7da103984492ea6cd418888e3c4b7af4e55a22e447",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "Reconciled previously reviewed English first-party Qore documentation and explicit command/evidence inventories from specialization PR #4 and main with merged recovery PR #6 and historical tutorial PR #5. Both cases and their original evidence identities are preserved; no new client content or provider trace is introduced. Exact composed bytes reviewed for this integration."
+      "basis": "Reviewed English first-party 0.3.0 release metadata, sourced profile digest refresh, publication guidance or existing-style showcase links for the user-authorized repository finalization. Historical trial/replay files retain their original bytes. No private website implementation, account trace, credential or new third-party implementation is introduced."
     },
     {
       "path": "docs/acceptance-evidence.md",
@@ -109,11 +109,11 @@
     },
     {
       "path": "docs/command-inventory.json",
-      "sha256": "67f39f5188481a8e55a8a409cb5e70ce9284fd4f2e58167de1236a3772536203",
+      "sha256": "2d11713acab29f8a4d593a6092ddb80280ee566e4178c8b51a1ec6025b195016",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "Reconciled previously reviewed English first-party Qore documentation and explicit command/evidence inventories from specialization PR #4 and main with merged recovery PR #6 and historical tutorial PR #5. Both cases and their original evidence identities are preserved; no new client content or provider trace is introduced. Exact composed bytes reviewed for this integration."
+      "basis": "Reviewed English first-party 0.3.0 release metadata, sourced profile digest refresh, publication guidance or existing-style showcase links for the user-authorized repository finalization. Historical trial/replay files retain their original bytes. No private website implementation, account trace, credential or new third-party implementation is introduced."
     },
     {
       "path": "docs/contracts.md",
@@ -10021,11 +10021,11 @@
     },
     {
       "path": "docs/evidence/specialization/README.md",
-      "sha256": "97cdf16b2a607b711a3cd25f3990dcf5f201260ed2909bae05f6338774cdc7b7",
+      "sha256": "f3f8d366781259555c6add85ea052257059f22aa523f3a7859f2c760fc163ed4",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "Selected English first-party Qore code/docs, frozen public Qore inputs, generated method outputs, independent assessment or authorized public/own local Qaizen browser observations for the user-approved MIT project. No private client/website source, credentials, full CLI/model trace, browser video/trace, cache or copied upstream Docker profile. Original and transformed identities are retained separately. Branch review does not deploy a site or release an application."
+      "basis": "Reviewed English first-party 0.3.0 release metadata, sourced profile digest refresh, publication guidance or existing-style showcase links for the user-authorized repository finalization. Historical trial/replay files retain their original bytes. No private website implementation, account trace, credential or new third-party implementation is introduced."
     },
     {
       "path": "docs/evidence/specialization/browser-guard.json",
@@ -10522,6 +10522,14 @@
       "license": "MIT",
       "status": "approved",
       "basis": "First-party factual distribution documentation within the MIT correction scope confirmed by Sylvestre Franceschi on 16 October 2026. Current changes reviewed for that scope under the subsequent explicit instruction to finalize and publish v0.2.1; no third-party or client content added. Historical execution artifacts and cache exclusions are unchanged."
+    },
+    {
+      "path": "docs/releases/0.3.0.md",
+      "sha256": "731794bda47b6d4d326ffdc3ff8aa0cefc215a5b0d3d7f679e95fa8a512afa20",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Reviewed English first-party 0.3.0 release metadata, sourced profile digest refresh, publication guidance or existing-style showcase links for the user-authorized repository finalization. Historical trial/replay files retain their original bytes. No private website implementation, account trace, credential or new third-party implementation is introduced."
     },
     {
       "path": "docs/review-prompts/claude-specialization-audit.md",
@@ -31941,11 +31949,11 @@
     },
     {
       "path": "plugin.json",
-      "sha256": "8bb5b59f6ff9786ac617d5ffb788475e169a4555f9bd67ba442d83d3fce18df6",
+      "sha256": "9097f1fd1a86f1ea23efa85161178ce3709931e82bfbb5976591a44a8dbd2be2",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "First-party Qore code, tests, configuration or documentation in the reviewed 0.2.1 correction inventory. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
+      "basis": "Reviewed English first-party 0.3.0 release metadata, sourced profile digest refresh, publication guidance or existing-style showcase links for the user-authorized repository finalization. Historical trial/replay files retain their original bytes. No private website implementation, account trace, credential or new third-party implementation is introduced."
     },
     {
       "path": "profiles/contrast.json",
@@ -31965,19 +31973,19 @@
     },
     {
       "path": "profiles/qore.json",
-      "sha256": "b5a46bb2736d0c2e08b5a36a7f0bec1c2073fbe22c03a74d5ff40084e309b133",
+      "sha256": "b198da9624c5e1036cf20e22e64efbc872d43d4eb4baea279d3cc79e02eaf169",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "First-party Qore code, tests, configuration or documentation in the reviewed 0.2.1 correction inventory. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
+      "basis": "Reviewed English first-party 0.3.0 release metadata, sourced profile digest refresh, publication guidance or existing-style showcase links for the user-authorized repository finalization. Historical trial/replay files retain their original bytes. No private website implementation, account trace, credential or new third-party implementation is introduced."
     },
     {
       "path": "qore.json",
-      "sha256": "6bf21ee6846a63f0ef225030097a4b802dcb08cc24197abc4fac6a806c38c620",
+      "sha256": "2ece51a4c0f27f3ac883fdbd9060c17bd3e066be2663c74e1c13c8c77cc1afc8",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "First-party Qore code, tests, configuration or documentation in the reviewed 0.2.1 correction inventory. MIT redistribution explicitly confirmed by Sylvestre Franceschi on 16 October 2026 for these exact resource bytes; historical Python caches remain excluded. This confirmation does not authorize publication."
+      "basis": "Reviewed English first-party 0.3.0 release metadata, sourced profile digest refresh, publication guidance or existing-style showcase links for the user-authorized repository finalization. Historical trial/replay files retain their original bytes. No private website implementation, account trace, credential or new third-party implementation is introduced."
     },
     {
       "path": "schemas/qore-eval-qualification.schema.json",
@@ -32021,11 +32029,11 @@
     },
     {
       "path": "showcase/index.html",
-      "sha256": "dcbf9521bb5ad6aa8b5baead7c51c36b4190128875f5d5207636d954b07b3cfc",
+      "sha256": "ddc321d766caba4852e36ab62484b0f082f8ebb398226e89a65571f84ae6cd76",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "Selected English first-party Qore code/docs, frozen public Qore inputs, generated method outputs, independent assessment or authorized public/own local Qaizen browser observations for the user-approved MIT project. No private client/website source, credentials, full CLI/model trace, browser video/trace, cache or copied upstream Docker profile. Original and transformed identities are retained separately. Branch review does not deploy a site or release an application."
+      "basis": "Reviewed English first-party 0.3.0 release metadata, sourced profile digest refresh, publication guidance or existing-style showcase links for the user-authorized repository finalization. Historical trial/replay files retain their original bytes. No private website implementation, account trace, credential or new third-party implementation is introduced."
     },
     {
       "path": "showcase/styles.css",
@@ -32445,11 +32453,11 @@
     },
     {
       "path": "tests/test_evaluate.py",
-      "sha256": "74b141d582966834de257efe8e23b2241421c6ad037b72eab6cc88485946b41d",
+      "sha256": "8bf47a8441995c05d76ef3f0bfbd2d6a9e4bbd71c00292dc9a1e26cf99398826",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "Selected English first-party Qore code/docs, frozen public Qore inputs, generated method outputs, independent assessment or authorized public/own local Qaizen browser observations for the user-approved MIT project. No private client/website source, credentials, full CLI/model trace, browser video/trace, cache or copied upstream Docker profile. Original and transformed identities are retained separately. Branch review does not deploy a site or release an application."
+      "basis": "Reviewed English first-party 0.3.0 release metadata, sourced profile digest refresh, publication guidance or existing-style showcase links for the user-authorized repository finalization. Historical trial/replay files retain their original bytes. No private website implementation, account trace, credential or new third-party implementation is introduced."
     },
     {
       "path": "tests/test_install_replay.py",
@@ -32589,19 +32597,19 @@
     },
     {
       "path": "tools/evaluate.py",
-      "sha256": "775e3b4ec4713ed8e4f97b950cec8b16bb0eca25334f8722330f727b478029e8",
+      "sha256": "1fad4b055f65b9196daa8c6aed29248e0c0ed1f0ac75d7621a48166add4884aa",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "Selected English first-party Qore code/docs, frozen public Qore inputs, generated method outputs, independent assessment or authorized public/own local Qaizen browser observations for the user-approved MIT project. No private client/website source, credentials, full CLI/model trace, browser video/trace, cache or copied upstream Docker profile. Original and transformed identities are retained separately. Branch review does not deploy a site or release an application."
+      "basis": "Reviewed English first-party 0.3.0 release metadata, sourced profile digest refresh, publication guidance or existing-style showcase links for the user-authorized repository finalization. Historical trial/replay files retain their original bytes. No private website implementation, account trace, credential or new third-party implementation is introduced."
     },
     {
       "path": "tools/qore.py",
-      "sha256": "73eea1d9bc2d174f5d2e3a32dfec42fbe43be08913fc25c175837c9a7d446f1d",
+      "sha256": "245169bd9818c19aacd1c54affc46ef26b93c1861b0450a60bdf653260d8bded",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "Reconciled previously reviewed English first-party Qore documentation and explicit command/evidence inventories from specialization PR #4 and main with merged recovery PR #6 and historical tutorial PR #5. Both cases and their original evidence identities are preserved; no new client content or provider trace is introduced. Exact composed bytes reviewed for this integration."
+      "basis": "Reviewed English first-party 0.3.0 release metadata, sourced profile digest refresh, publication guidance or existing-style showcase links for the user-authorized repository finalization. Historical trial/replay files retain their original bytes. No private website implementation, account trace, credential or new third-party implementation is introduced."
     },
     {
       "path": "tools/refresh_profiles.py",

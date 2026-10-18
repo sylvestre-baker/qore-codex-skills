@@ -41,7 +41,7 @@ Planning results supplied useful source-backed acceptance checks, while relevant
 | Portability | Observed disposable Linux arm64 runtime with the recorded CLI, host relay and tooling; not arbitrary-host certification. |
 | Qodo review | NOT_OBSERVED, optional and separate. |
 | External human first use | NOT_OBSERVED. Agent and maintainer checks are not human usability evidence. |
-| Publication | Prepared on a draft PR; no new release, deployment, client migration, outreach or application submission. |
+| Publication | Included as a bounded diagnostic in the [0.3.0 release scope](../../releases/0.3.0.md). Original trial coverage is unchanged. No client migration, outreach or application submission is implied. |
 
 Only selected public inputs, original outputs, screenshots, operator receipts and independent reports are exported. Full model/CLI traces, credentials, private website source and browser videos/trace archives remain excluded. The provenance records map public selections to original digests and declared transformations. Exact historical worker reports retain original links; a narrowly hash-pinned exception requires a navigable maintained adapter and grants no runtime-path exemption. Two partial archived source copies have explicitly listed, byte-identical frozen input companions added for export closure; these are presentation resources, not evidence of worker consumption.
 

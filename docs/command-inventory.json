@@ -53,7 +53,7 @@
   "documents": [
     {
       "path": "README.md",
-      "sha256": "5b5875bd19cdb2c12194887644897a6cbbf0aefba53eaf00f1183e7122f74406"
+      "sha256": "f69712603bdf47561f149e7da103984492ea6cd418888e3c4b7af4e55a22e447"
     },
     {
       "path": "docs/architecture.md",
@@ -393,12 +393,12 @@
         "fence": 2,
         "line_at_inventory": 40
       },
-      "text": "qore_stage=\"$(mktemp -d \"${TMPDIR:-/tmp}/qore-first.XXXXXX\")\"\npython3 tools/qore.py build --output \"$qore_stage\"\npython3 tools/qore.py install --source \"$qore_stage/qore-skills-0.2.1\" --project-root .",
-      "text_sha256": "b57d4ef491950de33390f8cb5720aabc62fe2d94becb64a6a5b8268c49ac3788",
+      "text": "qore_stage=\"$(mktemp -d \"${TMPDIR:-/tmp}/qore-first.XXXXXX\")\"\npython3 tools/qore.py build --output \"$qore_stage\"\npython3 tools/qore.py install --source \"$qore_stage/qore-skills-0.3.0\" --project-root .",
+      "text_sha256": "cee2867465b13290455f07ddd270aee0a7653615af88166352ff002af2798964",
       "implementation": [
         {
           "path": "tools/qore.py",
-          "sha256": "0eb527d8b47eaeb4f380e4ec47ff4e64d0d80fdff3bc342018e54ea5bc161ebc"
+          "sha256": "245169bd9818c19aacd1c54affc46ef26b93c1861b0450a60bdf653260d8bded"
         }
       ],
       "supported_host": "Codex with local executor for prompts; documented local shell/runtime for commands",
@@ -424,11 +424,11 @@
         "Refuses collisions instead of replacing files"
       ],
       "execution": {
-        "status": "REFERENCE_TEMPLATE_NOT_EXECUTED_AS_WRITTEN",
+        "status": "EXECUTED_RELATED_HISTORICAL_DESTINATION",
         "evidence_ids": [
           "github-first-use-4643"
         ],
-        "limit": "Current 0.2.1 instructions or implementation differ from the referenced historical execution. Historical evidence keeps its original scope; corrective package checks do not establish a fresh complete model invocation or exact execution of every example."
+        "limit": "Fresh 0.3.0 build/install controls use new temporary paths; exact receipts are published with the release assets. Historical model-review phase evidence keeps its original snapshot and does not become a new 0.3.0 invocation."
       }
     },
     {

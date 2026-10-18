@@ -38,14 +38,14 @@ jobs:
               python3 -B tools/check_execution_records.py
               python3 tools/qore.py build --output /tmp/qore-build-a
               python3 tools/qore.py build --output /tmp/qore-build-b
-              cmp /tmp/qore-build-a/qore-skills-0.2.1.zip /tmp/qore-build-b/qore-skills-0.2.1.zip
-              python3 tools/qore.py verify /tmp/qore-build-a/qore-skills-0.2.1
-              python3 tools/qore.py install --source /tmp/qore-build-a/qore-skills-0.2.1 --project-root /tmp/qore-install
-              python3 -B /tmp/qore-build-a/qore-skills-0.2.1/tools/check_execution_records.py
+              cmp /tmp/qore-build-a/qore-skills-0.3.0.zip /tmp/qore-build-b/qore-skills-0.3.0.zip
+              python3 tools/qore.py verify /tmp/qore-build-a/qore-skills-0.3.0
+              python3 tools/qore.py install --source /tmp/qore-build-a/qore-skills-0.3.0 --project-root /tmp/qore-install
+              python3 -B /tmp/qore-build-a/qore-skills-0.3.0/tools/check_execution_records.py
               python3 tools/qore.py build --scope skills --output /tmp/qore-skills-a
               python3 tools/qore.py build --scope skills --output /tmp/qore-skills-b
-              cmp /tmp/qore-skills-a/qore-skills-0.2.1-skills.zip /tmp/qore-skills-b/qore-skills-0.2.1-skills.zip
-              python3 tools/qore.py install --source /tmp/qore-skills-a/qore-skills-0.2.1-skills --project-root /tmp/qore-skills-install
+              cmp /tmp/qore-skills-a/qore-skills-0.3.0-skills.zip /tmp/qore-skills-b/qore-skills-0.3.0-skills.zip
+              python3 tools/qore.py install --source /tmp/qore-skills-a/qore-skills-0.3.0-skills --project-root /tmp/qore-skills-install
               python3 tools/qore.py derive --profile profiles/qore.json --project-root . --output /tmp/qore-derived
               python3 tools/qore.py verify /tmp/qore-derived
               python3 tools/qore.py derive --profile profiles/contrast.json --project-root . --output /tmp/qore-contrast

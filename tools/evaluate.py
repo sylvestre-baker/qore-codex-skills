@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Prepare isolated task inputs and validate recorded observations; never run a model."""
 import argparse
+import ast
+from contextlib import contextmanager
 from datetime import datetime
 import hashlib
 import json
@@ -104,6 +106,25 @@ def configuration(source_root=None):
     return data, by_id, digest(path)
 
 
+@contextmanager
+def source_builder(source_root):
+    """Use a frozen source's literal version without importing its Python code."""
+    tree = ast.parse(contained(source_root, "tools/qore.py").read_text(encoding="utf-8"))
+    versions = [statement.value for statement in tree.body
+                if isinstance(statement, ast.Assign)
+                and any(isinstance(target, ast.Name) and target.id == "VERSION" for target in statement.targets)]
+    if (len(versions) != 1 or not isinstance(versions[0], ast.Constant)
+            or not isinstance(versions[0].value, str)
+            or not re.fullmatch(r"[0-9]+\.[0-9]+\.[0-9]+", versions[0].value)):
+        raise ValueError("Frozen builder requires one literal semantic VERSION")
+    previous_root, previous_version = qore.ROOT, qore.VERSION
+    try:
+        qore.ROOT, qore.VERSION = source_root, versions[0].value
+        yield
+    finally:
+        qore.ROOT, qore.VERSION = previous_root, previous_version
+
+
 def materialize_worker(source_root, config, scenario, condition, worker):
     """Rebuild the entire allowed worker closure without executing snapshot code."""
     project = contained_directory(source_root, config["project_root"])
@@ -122,13 +143,9 @@ def materialize_worker(source_root, config, scenario, condition, worker):
         if condition == "derived":
             with tempfile.TemporaryDirectory(prefix="qore-eval-derive-") as temporary:
                 derived = Path(temporary) / "skills"
-                previous_root = qore.ROOT
-                try:
-                    qore.ROOT = source_root
+                with source_builder(source_root):
                     profile_path = contained(source_root, config["profile"])
                     qore.derive(profile_path, project, derived)
-                finally:
-                    qore.ROOT = previous_root
                 skill_name = base + "-" + read_json(profile_path)["id"]
                 destination = worker / ".agents/skills" / skill_name
                 destination.parent.mkdir(parents=True)
@@ -140,7 +157,8 @@ def materialize_worker(source_root, config, scenario, condition, worker):
             destination = worker / ".agents/skills" / skill_name
             destination.parent.mkdir(parents=True)
             shutil.copytree(source, destination)
-            qore.make_skill_manifest(destination)
+            with source_builder(source_root):
+                qore.make_skill_manifest(destination)
     prompt = ("Use $" + skill_name + ".\n\n" if skill_name else "") + scenario["prompt"]
     prompt += ("\n\nRead the original project sources: surface-contract.json, checks/check_contract.py and observation-policy.json. "
                "The supplied tutorial protocol, if present, is a task target rather than project authority. "

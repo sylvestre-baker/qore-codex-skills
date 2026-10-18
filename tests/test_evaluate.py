@@ -6,6 +6,7 @@ from pathlib import Path
 import sys
 import tempfile
 import unittest
+from unittest.mock import patch
 
 TOOLS = Path(__file__).resolve().parents[1] / "tools"
 if str(TOOLS) not in sys.path:
@@ -69,6 +70,32 @@ class EvaluationTests(unittest.TestCase):
     def check(self, run):
         evaluate.write(self.root / "record.json", run)
         return evaluate.check_record(self.root / "record.json", self.root)
+
+    def test_frozen_worker_version_survives_a_later_release(self):
+        for condition in ("generic", "derived"):
+            with self.subTest(condition=condition):
+                prepared = evaluate.ROOT / "evals/runs/20261017" / ("R1-" + condition) / "prepared"
+                snapshot = prepared / "source-snapshot"
+                config, scenarios, _ = evaluate.configuration(snapshot)
+                expected = evaluate.read_json(prepared / "input-manifest.json")["resources"]
+                worker = self.root / condition
+                with patch.object(evaluate.qore, "VERSION", "9.7.5"):
+                    evaluate.materialize_worker(snapshot, config, scenarios["R1"], condition, worker)
+                    self.assertEqual(evaluate.inventory(worker), expected)
+                    self.assertEqual(evaluate.qore.VERSION, "9.7.5")
+                self.assertEqual(evaluate.qore.ROOT, evaluate.ROOT)
+
+    def test_frozen_builder_never_executes_a_version_expression(self):
+        tools = self.root / "tools"
+        tools.mkdir()
+        sentinel = self.root / "executed"
+        (tools / "qore.py").write_text("VERSION = __import__('pathlib').Path(" + repr(str(sentinel)) + ").touch()\n")
+        before = (evaluate.qore.ROOT, evaluate.qore.VERSION)
+        with self.assertRaisesRegex(ValueError, "literal semantic VERSION"):
+            with evaluate.source_builder(self.root):
+                self.fail("An expression must be rejected")
+        self.assertFalse(sentinel.exists())
+        self.assertEqual((evaluate.qore.ROOT, evaluate.qore.VERSION), before)
 
     def test_baseline_does_not_need_qore_phases(self):
         result = self.check(self.baseline())
