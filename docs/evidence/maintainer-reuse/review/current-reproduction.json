@@ -1,0 +1,131 @@
+{
+  "node": "v22.23.3",
+  "source_records": [
+    {
+      "file": "src/modules/common/utils/response.ts",
+      "lines": [
+        52,
+        58
+      ],
+      "file_sha256": "ecc4ba57cbcf7b3492fb17f280feb8f0d9a8a60773a4519788ea6ae36e399645",
+      "span_sha256": "eb354d2a8ece3942da8a30f9f12cc880c2e1a744e7f66b7687e1680e652f4225"
+    },
+    {
+      "file": "src/modules/interfaces/api/i.model.response.ts",
+      "lines": [
+        1,
+        6
+      ],
+      "file_sha256": "0054263a1d94ef0d9b71ea31a1377a04245a4002df60bc1cef0c5bf18a2e1554",
+      "span_sha256": "0054263a1d94ef0d9b71ea31a1377a04245a4002df60bc1cef0c5bf18a2e1554"
+    },
+    {
+      "file": "src/modules/common/utils/response.ts",
+      "lines": [
+        3,
+        31
+      ],
+      "file_sha256": "ecc4ba57cbcf7b3492fb17f280feb8f0d9a8a60773a4519788ea6ae36e399645",
+      "span_sha256": "409b2bb84fe2a076dde14ac2501760839317d6483da4772228af3b6a6d6730c4"
+    },
+    {
+      "file": "src/modules/database/services/service.mongo.db.client.ts",
+      "lines": [
+        42,
+        46
+      ],
+      "file_sha256": "700fc925abf4b5b59e8dd815c09e8d0fe5f8c74c992f8101cf0b3a5a93cf22f0",
+      "span_sha256": "7b3d6b344c28aa54d41ee65c3b79be4da5c0c18650dd995a0d93366297fd74cd"
+    },
+    {
+      "file": "src/modules/users/services/stores/store.user.ts",
+      "lines": [
+        50,
+        59
+      ],
+      "file_sha256": "f85773b76b346ae632bd3f85267cd5ebc87c5cf907e87af3f4efac79248d3b46",
+      "span_sha256": "ff74c3452ae3ed4a6bc832143726f8b719dd416ec039643153e9d98151586319"
+    },
+    {
+      "file": "src/modules/users/services/service.user.ts",
+      "lines": [
+        81,
+        98
+      ],
+      "file_sha256": "5caf315031c19aa7fbb95e5af9eef839245a9febc93349ecace956da0f88d507",
+      "span_sha256": "afd60aa4acb3bd70d3598a2e2782b03b95884e54c6d1673f414eb246a25ea7da"
+    },
+    {
+      "file": "src/servers/sample.typescrit.swagger.api/controllers/controller.user.ts",
+      "lines": [
+        47,
+        67
+      ],
+      "file_sha256": "0698ebf32b2b20d2e791d3652ec2616fdc18bd535a9de9989caa1f62cd45920e",
+      "span_sha256": "ab17f2c1401c0cac1f2dc1b0f437aeca0514c0df6fedcee623672eb6ed42784f"
+    },
+    {
+      "file": "src/modules/users/models/user.ts",
+      "lines": [
+        27,
+        48
+      ],
+      "file_sha256": "4232d5c32eac1ff8cb2f886b51a9b1ed605afdb85258eca7f9f7bfa35d94d504",
+      "span_sha256": "1cfc32394d6a31c8eb2d79357695c28d3b05bd39d8738268d35a8927ef8d459a"
+    },
+    {
+      "file": "src/servers/sample.typescrit.swagger.api/controllers/controller.user.ts",
+      "lines": [
+        29,
+        46
+      ],
+      "file_sha256": "0698ebf32b2b20d2e791d3652ec2616fdc18bd535a9de9989caa1f62cd45920e",
+      "span_sha256": "8e164c10ab0591ac06d115075cea5e1713f300c04b9386dab47defd3f7833410"
+    }
+  ],
+  "assumptions": [
+    "TypeScript type annotations and declared-only fields are erased; only shown method signatures and type arguments removed.",
+    "Mongo callback failure is injected; real MongoDB behavior was not exercised.",
+    "ObjectID, JWT authorization and telemetry are offline stubs. Authenticated matching-user branch is exercised.",
+    "Response mock captures send argument only. JSON.stringify is a separate experiment, not proof of actual Express bytes.",
+    "No installed Express/Swagger/Joi implementation or generated consumer exists in the supplied target."
+  ],
+  "observations": [
+    {
+      "case": "native_Error",
+      "captured_status": 500,
+      "same_error_identity": true,
+      "captured_fields": [
+        "code",
+        "error",
+        "message"
+      ],
+      "json_experiment": "{\"code\":500,\"error\":\"Internal Server Error\",\"message\":{}}",
+      "json_fields": [
+        "code",
+        "error",
+        "message"
+      ],
+      "message_json_type": "object",
+      "conforms_to_declared_message_string": false
+    },
+    {
+      "case": "string_control",
+      "captured_status": 500,
+      "same_error_identity": true,
+      "captured_fields": [
+        "code",
+        "error",
+        "message"
+      ],
+      "json_experiment": "{\"code\":500,\"error\":\"Internal Server Error\",\"message\":\"public safe message\"}",
+      "json_fields": [
+        "code",
+        "error",
+        "message"
+      ],
+      "message_json_type": "string",
+      "conforms_to_declared_message_string": true
+    }
+  ]
+}

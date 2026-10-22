@@ -91,6 +91,11 @@
       "kind": "source"
     },
     {
+      "path": "review/current-reproduction.json",
+      "sha256": "2582c237480fe702ace4c796b73a595b509638adfdeaf49e6d8eb2f49064d45d",
+      "kind": "source"
+    },
+    {
       "path": "review/finder-correctness.json",
       "sha256": "0b5604b7e0a7416b56e4ed1f1d7c3d4e337884557abc910d6a569f38cfbd3026",
       "kind": "source"
@@ -141,19 +146,19 @@
     },
     {
       "path": "review/phase-findings_validation.json",
-      "sha256": "53ee462704a465be9f1875b6347c16755e4dd0b839449ba91d35d87af3c46f0d",
+      "sha256": "a852070df0fec25e836e39928008b3652b29266ab4b1a8a03b82542744ce02ff",
       "kind": "execution",
       "candidate_sha256": "583f1642270e9c011716f4b4eeff79fe08d1265f9d2338bed407e9fe9ba9c3b3",
       "target_snapshot_sha256": "5153b0d6239b69e22e4ba5efd2f55e973f562cd30de1241409a19cc6f6c6ad7c",
-      "observed_at": "2026-10-22T05:16:12.344303+00:00"
+      "observed_at": "2026-10-22T06:02:21.505687+00:00"
     },
     {
       "path": "review/phase-redaction.json",
-      "sha256": "089103a2f8d1f21ccf29ace4b78506dcbe70610b24b6186a9b439cf2dba5a17a",
+      "sha256": "c1a8916e687956d14475e8d1da868f2c43eb770c6dd3d9710e39d1adbd4e0823",
       "kind": "execution",
       "candidate_sha256": "583f1642270e9c011716f4b4eeff79fe08d1265f9d2338bed407e9fe9ba9c3b3",
       "target_snapshot_sha256": "5153b0d6239b69e22e4ba5efd2f55e973f562cd30de1241409a19cc6f6c6ad7c",
-      "observed_at": "2026-10-22T05:11:58.697286+00:00"
+      "observed_at": "2026-10-22T06:02:21.458991+00:00"
     },
     {
       "path": "review/phase-verifier.json",
@@ -196,33 +201,42 @@
   ],
   "commands": [
     {
+      "cwd": ".",
+      "cwd_basis": "Qore repository root; absolute local checkout path withheld",
       "argv": [
         "node",
         "skills/qore-review/scripts/redact-for-verifier.mjs",
-        "findings.json"
+        "docs/evidence/maintainer-reuse/review/findings.json"
       ],
       "exit_code": 0,
-      "artifact": "review/claims.json"
+      "artifact": "review/claims.json",
+      "observed_at": "2026-10-22T06:02:21.458991+00:00"
     },
     {
+      "cwd": ".",
+      "cwd_basis": "Qore repository root; absolute local checkout path withheld",
       "argv": [
         "node",
         "skills/qore-review/scripts/finding-lint.mjs",
-        "verifier.json",
+        "docs/evidence/maintainer-reuse/review/verifier.json",
         "--verifier=ran",
         "--json"
       ],
       "exit_code": 0,
-      "artifact": "review/findings-lint.json"
+      "artifact": "review/findings-lint.json",
+      "observed_at": "2026-10-22T06:02:21.505687+00:00"
     },
     {
+      "cwd": ".",
+      "cwd_basis": "Qore repository root; absolute local checkout path withheld",
       "argv": [
         "node",
-        "review/verifier-reproduction.mjs",
-        "TARGET_CHECKOUT"
+        "docs/evidence/maintainer-reuse/review/verifier-reproduction.mjs",
+        "/tmp/qore-contract-20261022-vrl2ugsp/target"
       ],
       "exit_code": 0,
-      "artifact": "review/verifier-reproduction.json"
+      "artifact": "review/current-reproduction.json",
+      "observed_at": "2026-10-22T06:02:21.572827+00:00"
     }
   ],
   "limitations": [
@@ -233,5 +247,16 @@
     "C1 is medium and source-level CONFIRMED; actual runtime/client impact remains unobserved. No source correction or deployment was performed.",
     "Public selected first-party phase reports are retained; conversation/tool transcripts are not published. Redaction is field filtering, not semantic blindness."
   ],
-  "coverage": "COMPLETE"
+  "coverage": "COMPLETE",
+  "command_record_correction": {
+    "date": "2026-10-22T06:02:21.573542+00:00",
+    "replaces": "c42a9a62f186ee7bb7003230c256db8cb30d0438 command representations",
+    "reason": "Prior public command strings mixed path bases and replaced the reproduction target with a placeholder. These three actual fresh invocations now resolve from the Qore repository root. Source-verification verdict and original independent phase reports are unchanged.",
+    "external_target": {
+      "path": "/tmp/qore-contract-20261022-vrl2ugsp/target",
+      "repository": "https://github.com/sylvestre-baker/sample.typescript.swagger.api",
+      "commit": "ff2221880142c0b085c0b858b22fe39e45a3be80",
+      "prerequisite": "For a literal replay, create this target checkout at the recorded path. The README shows a portable new-directory variant."
+    }
+  }
 }

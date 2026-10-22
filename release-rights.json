@@ -7341,7 +7341,7 @@
     },
     {
       "path": "docs/evidence/maintainer-reuse/README.md",
-      "sha256": "8300fdfc7f3256506eee056b2a5c4d6dfd6906aee51a802c746cf2361752ad7d",
+      "sha256": "80b85b74167cb84e41d9e96e0b5c7b97d2d2ad60947800ec5965a935572e136b",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
@@ -7349,7 +7349,7 @@
     },
     {
       "path": "docs/evidence/maintainer-reuse/execution.json",
-      "sha256": "871faadde5ed25875288adaf58626e8833a240ab16c92465a1738639c8b0f698",
+      "sha256": "40a3f12605fc3bdc92d8334f03ca6ef217f0761bb04b8c850d3d3ac0919a707f",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
@@ -7370,6 +7370,14 @@
       "license": "MIT",
       "status": "approved",
       "basis": "Reviewed first-party English maintainer onboarding, dated historical context, optional trial form, or selected actual maintainer-operated review evidence for the user-authorized Qore strengthening. No target implementation, credential, private account identifier or conversation/tool transcript is copied. Existing source identities and independent-human adoption limits are retained. Target code remains at pinned external source links; the first-party harness evaluates selected hash-pinned method spans only when explicitly run with a separate target checkout."
+    },
+    {
+      "path": "docs/evidence/maintainer-reuse/review/current-reproduction.json",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Selected first-party offline reproduction output from the user-authorized maintainer-operated case. No copied implementation, credentials or private account data.",
+      "sha256": "2582c237480fe702ace4c796b73a595b509638adfdeaf49e6d8eb2f49064d45d"
     },
     {
       "path": "docs/evidence/maintainer-reuse/review/finder-correctness.json",
@@ -7437,7 +7445,7 @@
     },
     {
       "path": "docs/evidence/maintainer-reuse/review/phase-findings_validation.json",
-      "sha256": "53ee462704a465be9f1875b6347c16755e4dd0b839449ba91d35d87af3c46f0d",
+      "sha256": "a852070df0fec25e836e39928008b3652b29266ab4b1a8a03b82542744ce02ff",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
@@ -7445,7 +7453,7 @@
     },
     {
       "path": "docs/evidence/maintainer-reuse/review/phase-redaction.json",
-      "sha256": "089103a2f8d1f21ccf29ace4b78506dcbe70610b24b6186a9b439cf2dba5a17a",
+      "sha256": "c1a8916e687956d14475e8d1da868f2c43eb770c6dd3d9710e39d1adbd4e0823",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",

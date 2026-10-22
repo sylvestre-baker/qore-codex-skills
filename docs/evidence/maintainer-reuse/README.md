@@ -31,6 +31,8 @@ The string control conformed. The [fresh verifier's report](review/verifier.json
 
 All three requested finders returned; [roster and duplicate mapping](review/roster.json) are retained. Contexts were started without parent conversation history. Filtering removed separate rationale fields; the claim hypothesis remained visible in allowed evidence text. [Execution record](execution.json) and identity-bound phase artifacts record **COMPLETE coverage of these six bounded review phases**. The structural checker verifies declared identities and evidence, not the truth of conclusions or actual independence by actor labels alone.
 
+**Command-record correction:** Qodo's review of PR #7 identified mixed path bases and a target placeholder in the first published command records. Those representations are preserved in commit `c42a9a6`; the current record contains three freshly executed invocations, all relative to Qore's repository root (`cwd: .`), with the actual temporary target checkout path and its prerequisite. [Current reproduction output](review/current-reproduction.json) is separate from the independent verifier's original observation. The target and verified source-level conclusion are unchanged.
+
 ## Reproduce the observation
 
 Requirements: Git, Node.js, and a local checkout of this evidence directory. No dependency installation, Qore account, server, database, token or network request to an application is required. The initial clone fetches public source; use a new temporary directory:
