@@ -1,0 +1,25 @@
+{
+  "requested": [
+    "reuse_correctness",
+    "reuse_security",
+    "reuse_feasibility"
+  ],
+  "returned": [
+    "reuse_correctness",
+    "reuse_security",
+    "reuse_feasibility"
+  ],
+  "deduplication": [
+    {
+      "retained": "C1",
+      "duplicate": "F1",
+      "basis": "Same error-message contract boundary; both full reports retained."
+    }
+  ],
+  "observed_at": "2026-10-22T05:11:58.158113+00:00",
+  "files": {
+    "reuse_correctness": "finder-correctness.json",
+    "reuse_security": "finder-security.json",
+    "reuse_feasibility": "finder-feasibility.json"
+  }
+}

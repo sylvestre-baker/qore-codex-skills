@@ -6,6 +6,14 @@ Qore is for developers and maintainers already using Codex on an existing projec
 
 Created by [Sylvestre Franceschi](https://github.com/sylvestre-baker) at [Qaizen](https://qaizen.io). [View the demonstration and diagrams](https://sylvestre-baker.github.io/qore-codex-skills/).
 
+## For maintainers
+
+Start with one specification, RFC, or authorized web flow and a decision you need to make. Qore records the sources, findings, refutations and checks that remain unfinished so another maintainer can inspect that decision.
+
+For a first review, use the [bundled specification and commands below](#try-one-review). You need Codex with a local executor and independent subagents, Python 3, Node.js and Bash. Review uses **at least four separate agent contexts**: three finders and a fresh verifier. Planning uses five independent perspectives plus adjudication. These runs consume your host's model usage; Qore charges no separate service fee. No fixed token cost or speed advantage has been measured.
+
+Prefer a small artifact you own or have permission to review. [Record a trial](https://github.com/sylvestre-baker/qore-codex-skills/issues/new?template=maintainer-trial.yml), including blockers or a zero-finding result. Sharing is optional; remove secrets and obtain permission before publishing another project's material. No independent human adoption is established by the bundled maintainer-operated cases.
+
 In one actual self-application, planning exposed a malformed verifier option that produced a structural success token. The selected correction rejects it and keeps the earlier zero-finding review visible. [See the problem, evidence, decision and limits](docs/evidence/validator-case.md).
 
 **Version 0.3.0.** Three methods, a deterministic assembler, sourced profiles and recorded executions are included. The [qualification record](docs/qualification.md) distinguishes original snapshots, corrective checks and coverage limits, including two excluded historical source caches. Historical artifacts retain their original release state and identities.
@@ -73,6 +81,8 @@ Install the verified candidate into your project's `.agents/skills/` with the sa
 Supply the actual target, relevant requirements, and authorized web origin when applicable. A method can continue useful work while exposing unavailable sources, tools, data, or roles. It cannot label unobserved checks as passing. Fixes run only within the user's authorized scope; a profile or SHIP result does not grant merge, publication, or deployment permission.
 
 ## See the evidence
+
+The [maintainer-operated API-contract review](docs/evidence/maintainer-reuse/README.md) applies generic Qore review to an existing Swagger specification in a separate, older sample repository under the same owner. Three finders and a fresh verifier ran; one medium source-level mismatch was reproduced offline. Actual HTTP behavior and an external human trial remain unobserved. This is reuse beyond Qore, not independent adoption.
 
 The [Qodo review tutorial](docs/tutorials/qodo-review.md) follows a real external review comment through local reproduction, a checked correction and an engineering decision. Replay the focused observations without a Qodo account, then inspect the separate live-review recipe and coverage limits. It distinguishes a historical regression already fixed, an informational diagnostic suggestion and a failure introduced by our own input selection.
 

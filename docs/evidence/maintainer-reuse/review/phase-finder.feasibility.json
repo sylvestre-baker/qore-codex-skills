@@ -1,0 +1,34 @@
+{
+  "qore_evidence": {
+    "candidate_sha256": "583f1642270e9c011716f4b4eeff79fe08d1265f9d2338bed407e9fe9ba9c3b3",
+    "target_snapshot_sha256": "5153b0d6239b69e22e4ba5efd2f55e973f562cd30de1241409a19cc6f6c6ad7c",
+    "observed_at": "2026-10-22T05:11:27.002816+00:00",
+    "phase_id": "finder.feasibility"
+  },
+  "payload": {
+    "output": "finder-feasibility.json",
+    "output_sha256": "4cf0bb88e34af2210faa32aee8b4dcd1d59eafc9ec879cec114aba8c9582d6eb",
+    "result": {
+      "findings": [
+        {
+          "id": "F1",
+          "title": "Database errors are placed in the string error-message field without conversion",
+          "severity": "medium",
+          "evidence": "target/src/modules/users/services/stores/store.user.ts:50-58 rejects the Promise with the database callback error; target/src/modules/users/services/service.user.ts:95-96 passes that error directly to ResponseFailure(500, error). target/src/modules/common/utils/response.ts:52-57 assigns the supplied value unchanged to response.message. target/src/servers/sample.typescrit.swagger.api/controllers/controller.user.ts:61 sends this response object. The declared receiving contract is UserErrorResponse.message: string in target/src/modules/users/models/user.ts:37-45. A local, dependency-free harness extracted the actual ResponseFailure function, removed only TypeScript annotations/export, supplied an empty runtime IModelResponse class matching target/src/modules/interfaces/api/i.model.response.ts:1-6 and the 500 dictionary entry, then called JSON.stringify(ResponseFailure(500, new Error(\"database callback failed\"))). It emitted {\"code\":500,\"error\":\"Internal Server Error\",\"message\":{}}. No server or database was run. This demonstrates the response object cannot preserve the promised string message under ordinary JSON serialization; an HTTP capture was not made because the pinned Express implementation is absent.",
+          "counterexample": "Condition: MongoDB findOne invokes its callback with an ordinary Error(\"database callback failed\"). StoreUser.get rejects with that Error; ServiceUser.find catches it and returns ResponseFailure(500, error); the controller sends the returned object. Expected by UserErrorResponse: message is an optional string when supplied. Constructed actual response and standard JSON serialization: message is {}, so clients reading or displaying a string lose the error text or fail their response validation.",
+          "rationale": "The endpoint advertises a structured 500 UserErrorResponse. Its database failure branch completes but supplies a value of the wrong type across the response serialization boundary. Converting the Error to its message before constructing the response would preserve the documented type."
+        }
+      ],
+      "scope": {
+        "target": "Existing POST /user/find/userId and UserResponse/UserErrorResponse only; feasibility lens; read-only source inspection plus a dependency-free serializer-value harness.",
+        "trace": "Request producer/consumer: body userId is required string (models/user.ts:133-139), authorized against decoded JWT userId (controller.user.ts:50-56), consumed unchanged by ServiceUser.find (service.user.ts:81-83), then StoreUser.get (store.user.ts:50-58), then ObjectID(userId) in MongoDBClient.findOneById (service.mongo.db.client.ts:42-46). Storage returns one MongoDB document without projection. Service removes emailVerificationId, password, oldPasswords, accessToken (service.user.ts:88-92), then ResponseSuccess emits exactly the assigned top-level fields code,data (response.ts:32-36; IModelResponse has no emitted constructor fields). The controller passes the object to res.status(resp.code).send(resp) (controller.user.ts:61). The ModelUser-declared possible retained fields are _id,uuidMobile,mobileToken,firstname,lastname,email,birthDate,phoneNumber,address,claims,photoUrl,enable,emailVerified,gender,godfatherCode,facebookId,facebookAccessToken,pubToken,push,isAdmin,passwordVerificationId (model.user.ts:35-87); address declares country,state,city,address and push declares userIdOneSignal,pushToken. No allowlist or repository-defined toJSON means other actual database document keys can also survive; the exact dynamic data key list depends on storage. The Swagger UserResponse receiver advertises code,data with ModelUser, including accessToken and emailVerificationId which this service explicitly deletes. Error/missing-record responses emit top-level code,error,message (ResponseFailure:52-57). The advertised UserErrorResponse receives code,error,message; its message expects a string. No downstream application client is included in the scoped artifacts.",
+        "bounds": "findOne by _id bounds result cardinality to one document. No route-specific timeout, database maxTimeMS, projection, socketTimeoutMS or cancellation was found in the scoped call chain. No explicit response-latency/resource requirement or measured load evidence was supplied, so lack of these settings is not promoted into a separate finding."
+      },
+      "unfinished": [
+        "Actual Express 4 serializer implementation and generated Swagger JSON could not be inspected: target/node_modules is absent and require.resolve(\"express\") fails. Wire shape is traced to res.send plus a standard JSON harness, not an HTTP observation.",
+        "Database operational timing, concurrent request resource use and actual downstream client consumption were not exercised; no server, dependency install, network or account access was used."
+      ],
+      "observed_at": "2026-10-22T05:11:27.002816+00:00"
+    }
+  }
+}

@@ -12,12 +12,20 @@
       "basis": "Selected English first-party Qore code/docs, frozen public Qore inputs, generated method outputs, independent assessment or authorized public/own local Qaizen browser observations for the user-approved MIT project. No private client/website source, credentials, full CLI/model trace, browser video/trace, cache or copied upstream Docker profile. Original and transformed identities are retained separately. Branch review does not deploy a site or release an application."
     },
     {
-      "path": ".github/workflows/check.yml",
-      "sha256": "54ca3010e4e75e5d03b2db55c54fafb688beec36d0688c452b23496402d18b95",
+      "path": ".github/ISSUE_TEMPLATE/maintainer-trial.yml",
+      "sha256": "819f6c963eac10afda9135a04849868862631d1e2ca4ca0327608e52e5da1505",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "Reviewed English first-party 0.3.0 release metadata, sourced profile digest refresh, publication guidance or existing-style showcase links for the user-authorized repository finalization. Historical trial/replay files retain their original bytes. No private website implementation, account trace, credential or new third-party implementation is introduced."
+      "basis": "Reviewed first-party English maintainer onboarding, dated historical context, optional trial form, or selected actual maintainer-operated review evidence for the user-authorized Qore strengthening. No target implementation, credential, private account identifier or conversation/tool transcript is copied. Existing source identities and independent-human adoption limits are retained. Target code remains at pinned external source links; the first-party harness evaluates selected hash-pinned method spans only when explicitly run with a separate target checkout."
+    },
+    {
+      "path": ".github/workflows/check.yml",
+      "sha256": "63fb55e76d6c274ecc29a7ec251eb16433ca8a54750c3a75fbaf6c6e81374128",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Reviewed existing first-party CI workflow extended only to execute the new maintainer-reuse findings gate and identity/phase record checker. No new dependency, permission, network access or private input introduced."
     },
     {
       "path": ".github/workflows/pages.yml",
@@ -77,11 +85,11 @@
     },
     {
       "path": "README.md",
-      "sha256": "f69712603bdf47561f149e7da103984492ea6cd418888e3c4b7af4e55a22e447",
+      "sha256": "f563b9791149b2422129643be6f2580a6c12a9e27d8f8789fb40b5b11b21f290",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "Reviewed English first-party 0.3.0 release metadata, sourced profile digest refresh, publication guidance or existing-style showcase links for the user-authorized repository finalization. Historical trial/replay files retain their original bytes. No private website implementation, account trace, credential or new third-party implementation is introduced."
+      "basis": "Reviewed first-party English maintainer onboarding, dated historical context, optional trial form, or selected actual maintainer-operated review evidence for the user-authorized Qore strengthening. No target implementation, credential, private account identifier or conversation/tool transcript is copied. Existing source identities and independent-human adoption limits are retained. Target code remains at pinned external source links; the first-party harness evaluates selected hash-pinned method spans only when explicitly run with a separate target checkout."
     },
     {
       "path": "docs/acceptance-evidence.md",
@@ -7213,11 +7221,11 @@
     },
     {
       "path": "docs/evidence/install-recovery/README.md",
-      "sha256": "b7802afd3173bf0e5951c30b5cb2383aaf277c6098226e4e55c15f0f04b83e36",
+      "sha256": "dbe96eed474eabcd3606bebfd3416da1ce6e36eae4bcdbbac59e1b2027b35c05",
       "origin": "first-party",
       "license": "MIT",
       "status": "approved",
-      "basis": "Scoped English first-party recovery case, Qore MIT source snapshots, maintainer paraphrases of review advice, generated tutorial still/transcript or publication validation. Selected for the user-authorized public correction PR; no client code, private application, account trace or third-party implementation. Historical runtime bytes and source transformation remain explicitly identified."
+      "basis": "Reviewed first-party English maintainer onboarding, dated historical context, optional trial form, or selected actual maintainer-operated review evidence for the user-authorized Qore strengthening. No target implementation, credential, private account identifier or conversation/tool transcript is copied. Existing source identities and independent-human adoption limits are retained. Target code remains at pinned external source links; the first-party harness evaluates selected hash-pinned method spans only when explicitly run with a separate target checkout."
     },
     {
       "path": "docs/evidence/install-recovery/overview.png",
@@ -7330,6 +7338,182 @@
       "license": "MIT",
       "status": "approved",
       "basis": "Scoped English first-party recovery case, Qore MIT source snapshots, maintainer paraphrases of review advice, generated tutorial still/transcript or publication validation. Selected for the user-authorized public correction PR; no client code, private application, account trace or third-party implementation. Historical runtime bytes and source transformation remain explicitly identified."
+    },
+    {
+      "path": "docs/evidence/maintainer-reuse/README.md",
+      "sha256": "80b85b74167cb84e41d9e96e0b5c7b97d2d2ad60947800ec5965a935572e136b",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Reviewed first-party English maintainer onboarding, dated historical context, optional trial form, or selected actual maintainer-operated review evidence for the user-authorized Qore strengthening. No target implementation, credential, private account identifier or conversation/tool transcript is copied. Existing source identities and independent-human adoption limits are retained. Target code remains at pinned external source links; the first-party harness evaluates selected hash-pinned method spans only when explicitly run with a separate target checkout."
+    },
+    {
+      "path": "docs/evidence/maintainer-reuse/execution.json",
+      "sha256": "40a3f12605fc3bdc92d8334f03ca6ef217f0761bb04b8c850d3d3ac0919a707f",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Reviewed first-party English maintainer onboarding, dated historical context, optional trial form, or selected actual maintainer-operated review evidence for the user-authorized Qore strengthening. No target implementation, credential, private account identifier or conversation/tool transcript is copied. Existing source identities and independent-human adoption limits are retained. Target code remains at pinned external source links; the first-party harness evaluates selected hash-pinned method spans only when explicitly run with a separate target checkout."
+    },
+    {
+      "path": "docs/evidence/maintainer-reuse/review/claims.json",
+      "sha256": "9ae012e3b0ca7372cdc9dad6207a492d337c3469bdba51c0a44b0bb03c86cd48",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Reviewed first-party English maintainer onboarding, dated historical context, optional trial form, or selected actual maintainer-operated review evidence for the user-authorized Qore strengthening. No target implementation, credential, private account identifier or conversation/tool transcript is copied. Existing source identities and independent-human adoption limits are retained. Target code remains at pinned external source links; the first-party harness evaluates selected hash-pinned method spans only when explicitly run with a separate target checkout."
+    },
+    {
+      "path": "docs/evidence/maintainer-reuse/review/correctness-reproduction.json",
+      "sha256": "7c352471843473db9be1fbcfbd9fbdede37a8a69eeb30a20d677689d8902e16d",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Reviewed first-party English maintainer onboarding, dated historical context, optional trial form, or selected actual maintainer-operated review evidence for the user-authorized Qore strengthening. No target implementation, credential, private account identifier or conversation/tool transcript is copied. Existing source identities and independent-human adoption limits are retained. Target code remains at pinned external source links; the first-party harness evaluates selected hash-pinned method spans only when explicitly run with a separate target checkout."
+    },
+    {
+      "path": "docs/evidence/maintainer-reuse/review/current-reproduction.json",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Selected first-party offline reproduction output from the user-authorized maintainer-operated case. No copied implementation, credentials or private account data.",
+      "sha256": "2582c237480fe702ace4c796b73a595b509638adfdeaf49e6d8eb2f49064d45d"
+    },
+    {
+      "path": "docs/evidence/maintainer-reuse/review/finder-correctness.json",
+      "sha256": "0b5604b7e0a7416b56e4ed1f1d7c3d4e337884557abc910d6a569f38cfbd3026",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Reviewed first-party English maintainer onboarding, dated historical context, optional trial form, or selected actual maintainer-operated review evidence for the user-authorized Qore strengthening. No target implementation, credential, private account identifier or conversation/tool transcript is copied. Existing source identities and independent-human adoption limits are retained. Target code remains at pinned external source links; the first-party harness evaluates selected hash-pinned method spans only when explicitly run with a separate target checkout."
+    },
+    {
+      "path": "docs/evidence/maintainer-reuse/review/finder-feasibility.json",
+      "sha256": "4cf0bb88e34af2210faa32aee8b4dcd1d59eafc9ec879cec114aba8c9582d6eb",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Reviewed first-party English maintainer onboarding, dated historical context, optional trial form, or selected actual maintainer-operated review evidence for the user-authorized Qore strengthening. No target implementation, credential, private account identifier or conversation/tool transcript is copied. Existing source identities and independent-human adoption limits are retained. Target code remains at pinned external source links; the first-party harness evaluates selected hash-pinned method spans only when explicitly run with a separate target checkout."
+    },
+    {
+      "path": "docs/evidence/maintainer-reuse/review/finder-security.json",
+      "sha256": "748e6a2ee1d187b5a47f7bc2d497cdb0c71e756c98100c4d83e9227c111fcf10",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Reviewed first-party English maintainer onboarding, dated historical context, optional trial form, or selected actual maintainer-operated review evidence for the user-authorized Qore strengthening. No target implementation, credential, private account identifier or conversation/tool transcript is copied. Existing source identities and independent-human adoption limits are retained. Target code remains at pinned external source links; the first-party harness evaluates selected hash-pinned method spans only when explicitly run with a separate target checkout."
+    },
+    {
+      "path": "docs/evidence/maintainer-reuse/review/findings-lint.json",
+      "sha256": "e170d42038a7d4ee9c671320ff8088ca5b7014041ef09554d51b9d0b4dc6c968",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Reviewed first-party English maintainer onboarding, dated historical context, optional trial form, or selected actual maintainer-operated review evidence for the user-authorized Qore strengthening. No target implementation, credential, private account identifier or conversation/tool transcript is copied. Existing source identities and independent-human adoption limits are retained. Target code remains at pinned external source links; the first-party harness evaluates selected hash-pinned method spans only when explicitly run with a separate target checkout."
+    },
+    {
+      "path": "docs/evidence/maintainer-reuse/review/findings.json",
+      "sha256": "c6282c0456079a329837a0aeb49f3454f517926c96fb0f989ddcaadf42c96889",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Reviewed first-party English maintainer onboarding, dated historical context, optional trial form, or selected actual maintainer-operated review evidence for the user-authorized Qore strengthening. No target implementation, credential, private account identifier or conversation/tool transcript is copied. Existing source identities and independent-human adoption limits are retained. Target code remains at pinned external source links; the first-party harness evaluates selected hash-pinned method spans only when explicitly run with a separate target checkout."
+    },
+    {
+      "path": "docs/evidence/maintainer-reuse/review/phase-finder.correctness.json",
+      "sha256": "6d024446acb9306ef0054cf8829b85e1f5ab8f869ce793447fb22316628cea37",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Reviewed first-party English maintainer onboarding, dated historical context, optional trial form, or selected actual maintainer-operated review evidence for the user-authorized Qore strengthening. No target implementation, credential, private account identifier or conversation/tool transcript is copied. Existing source identities and independent-human adoption limits are retained. Target code remains at pinned external source links; the first-party harness evaluates selected hash-pinned method spans only when explicitly run with a separate target checkout."
+    },
+    {
+      "path": "docs/evidence/maintainer-reuse/review/phase-finder.feasibility.json",
+      "sha256": "d3562427dadd91c355dc94607ed9311d1c0ce3088e127c2b0b281a094fd0dda8",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Reviewed first-party English maintainer onboarding, dated historical context, optional trial form, or selected actual maintainer-operated review evidence for the user-authorized Qore strengthening. No target implementation, credential, private account identifier or conversation/tool transcript is copied. Existing source identities and independent-human adoption limits are retained. Target code remains at pinned external source links; the first-party harness evaluates selected hash-pinned method spans only when explicitly run with a separate target checkout."
+    },
+    {
+      "path": "docs/evidence/maintainer-reuse/review/phase-finder.security.json",
+      "sha256": "a0e16b5fe60b4d6705bf702d7472d5339f69ec46f523bd667a4ad1129c1e05c9",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Reviewed first-party English maintainer onboarding, dated historical context, optional trial form, or selected actual maintainer-operated review evidence for the user-authorized Qore strengthening. No target implementation, credential, private account identifier or conversation/tool transcript is copied. Existing source identities and independent-human adoption limits are retained. Target code remains at pinned external source links; the first-party harness evaluates selected hash-pinned method spans only when explicitly run with a separate target checkout."
+    },
+    {
+      "path": "docs/evidence/maintainer-reuse/review/phase-findings_validation.json",
+      "sha256": "a852070df0fec25e836e39928008b3652b29266ab4b1a8a03b82542744ce02ff",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Reviewed first-party English maintainer onboarding, dated historical context, optional trial form, or selected actual maintainer-operated review evidence for the user-authorized Qore strengthening. No target implementation, credential, private account identifier or conversation/tool transcript is copied. Existing source identities and independent-human adoption limits are retained. Target code remains at pinned external source links; the first-party harness evaluates selected hash-pinned method spans only when explicitly run with a separate target checkout."
+    },
+    {
+      "path": "docs/evidence/maintainer-reuse/review/phase-redaction.json",
+      "sha256": "c1a8916e687956d14475e8d1da868f2c43eb770c6dd3d9710e39d1adbd4e0823",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Reviewed first-party English maintainer onboarding, dated historical context, optional trial form, or selected actual maintainer-operated review evidence for the user-authorized Qore strengthening. No target implementation, credential, private account identifier or conversation/tool transcript is copied. Existing source identities and independent-human adoption limits are retained. Target code remains at pinned external source links; the first-party harness evaluates selected hash-pinned method spans only when explicitly run with a separate target checkout."
+    },
+    {
+      "path": "docs/evidence/maintainer-reuse/review/phase-verifier.json",
+      "sha256": "b7fcf9ec6df829aa2a955594f42aa5b7a9ee071fabe801c4097ce08a820ef97e",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Reviewed first-party English maintainer onboarding, dated historical context, optional trial form, or selected actual maintainer-operated review evidence for the user-authorized Qore strengthening. No target implementation, credential, private account identifier or conversation/tool transcript is copied. Existing source identities and independent-human adoption limits are retained. Target code remains at pinned external source links; the first-party harness evaluates selected hash-pinned method spans only when explicitly run with a separate target checkout."
+    },
+    {
+      "path": "docs/evidence/maintainer-reuse/review/redaction.log",
+      "sha256": "63f591fa95cac80e14610b2b576a057c6e3d1bbb94049993ba95734a6f4d1368",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Reviewed first-party English maintainer onboarding, dated historical context, optional trial form, or selected actual maintainer-operated review evidence for the user-authorized Qore strengthening. No target implementation, credential, private account identifier or conversation/tool transcript is copied. Existing source identities and independent-human adoption limits are retained. Target code remains at pinned external source links; the first-party harness evaluates selected hash-pinned method spans only when explicitly run with a separate target checkout."
+    },
+    {
+      "path": "docs/evidence/maintainer-reuse/review/roster.json",
+      "sha256": "fa81c99a69cf95eaf24b7284da50c0348451c9ec699c9330c27166ac9104e167",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Reviewed first-party English maintainer onboarding, dated historical context, optional trial form, or selected actual maintainer-operated review evidence for the user-authorized Qore strengthening. No target implementation, credential, private account identifier or conversation/tool transcript is copied. Existing source identities and independent-human adoption limits are retained. Target code remains at pinned external source links; the first-party harness evaluates selected hash-pinned method spans only when explicitly run with a separate target checkout."
+    },
+    {
+      "path": "docs/evidence/maintainer-reuse/review/snapshot.json",
+      "sha256": "0d202bbc67e3db1ad1323b859a17c4f96fc9004ba97e0269aec6a5ec7700450e",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Reviewed first-party English maintainer onboarding, dated historical context, optional trial form, or selected actual maintainer-operated review evidence for the user-authorized Qore strengthening. No target implementation, credential, private account identifier or conversation/tool transcript is copied. Existing source identities and independent-human adoption limits are retained. Target code remains at pinned external source links; the first-party harness evaluates selected hash-pinned method spans only when explicitly run with a separate target checkout."
+    },
+    {
+      "path": "docs/evidence/maintainer-reuse/review/verifier-reproduction.json",
+      "sha256": "2582c237480fe702ace4c796b73a595b509638adfdeaf49e6d8eb2f49064d45d",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Reviewed first-party English maintainer onboarding, dated historical context, optional trial form, or selected actual maintainer-operated review evidence for the user-authorized Qore strengthening. No target implementation, credential, private account identifier or conversation/tool transcript is copied. Existing source identities and independent-human adoption limits are retained. Target code remains at pinned external source links; the first-party harness evaluates selected hash-pinned method spans only when explicitly run with a separate target checkout."
+    },
+    {
+      "path": "docs/evidence/maintainer-reuse/review/verifier-reproduction.mjs",
+      "sha256": "d553345a485b8e868b51e13902563d596fef1c5212f9b058f04dd96da8f76396",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Reviewed first-party English maintainer onboarding, dated historical context, optional trial form, or selected actual maintainer-operated review evidence for the user-authorized Qore strengthening. No target implementation, credential, private account identifier or conversation/tool transcript is copied. Existing source identities and independent-human adoption limits are retained. Target code remains at pinned external source links; the first-party harness evaluates selected hash-pinned method spans only when explicitly run with a separate target checkout."
+    },
+    {
+      "path": "docs/evidence/maintainer-reuse/review/verifier.json",
+      "sha256": "a3935eaa0026667ae832fa6a5e7c8ed6f0543af02b5b99b2b11ecbc5c747ce0b",
+      "origin": "first-party",
+      "license": "MIT",
+      "status": "approved",
+      "basis": "Reviewed first-party English maintainer onboarding, dated historical context, optional trial form, or selected actual maintainer-operated review evidence for the user-authorized Qore strengthening. No target implementation, credential, private account identifier or conversation/tool transcript is copied. Existing source identities and independent-human adoption limits are retained. Target code remains at pinned external source links; the first-party harness evaluates selected hash-pinned method spans only when explicitly run with a separate target checkout."
     },
     {
       "path": "docs/evidence/publication/first-use.json",

@@ -1,0 +1,45 @@
+name: Maintainer trial
+description: Record a real first use, including blockers or a zero-finding result.
+title: "Trial: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Share only material you own or have permission to publish. Remove credentials, personal data and private traces. A blocked run is useful evidence. Completing this form is optional and does not imply endorsement.
+  - type: input
+    id: target
+    attributes:
+      label: Target and decision
+      description: Public artifact URL and revision, or a nonconfidential description. Which decision did the run support?
+    validations:
+      required: true
+  - type: dropdown
+    id: operator
+    attributes:
+      label: Who operated the run?
+      options:
+        - Independent project maintainer
+        - Qore maintainer on another project
+        - Qore maintainer on Qore
+        - Agent walkthrough
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Setup and revision
+      description: Qore version or commit, host, method, available independent roles, installation steps and any assistance.
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Actual result and missing checks
+      description: What ran, what blocked, findings or zero findings, refutations, elapsed time or usage only if measured. Link selected permitted evidence. Separate execution coverage from whether the target is ready to ship.
+    validations:
+      required: true
+  - type: textarea
+    id: feedback
+    attributes:
+      label: What helped or got in the way?
+      description: Include negative outcomes and whether you could reach a useful result without help.

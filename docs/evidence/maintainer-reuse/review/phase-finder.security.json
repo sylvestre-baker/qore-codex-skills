@@ -1,0 +1,22 @@
+{
+  "qore_evidence": {
+    "candidate_sha256": "583f1642270e9c011716f4b4eeff79fe08d1265f9d2338bed407e9fe9ba9c3b3",
+    "target_snapshot_sha256": "5153b0d6239b69e22e4ba5efd2f55e973f562cd30de1241409a19cc6f6c6ad7c",
+    "observed_at": "2026-10-22T05:11:15.332Z",
+    "phase_id": "finder.security"
+  },
+  "payload": {
+    "output": "finder-security.json",
+    "output_sha256": "748e6a2ee1d187b5a47f7bc2d497cdb0c71e756c98100c4d83e9227c111fcf10",
+    "result": {
+      "findings": [],
+      "scope": "Existing API specification security finder; no diff. Reviewed POST /user/find/userId only, from controller.user.ts:16-67 and models/user.ts:7-48,129-140 through authorize.ts:4-5, auth/strategy.ts:6-25, validation.ts:23-58, service.user.ts:81-98, store.user.ts:50-59, database/services/service.mongo.db.client.ts:42-45, model.user.ts:35-90, response.ts:32-37,52-57, i.model.response.ts:1-6, config/express.ts:13-53. Authorization producer is a signed JWT userId; middleware verifies signature/truthy userId, controller independently verifies token and compares decodedToken.userId against body.userId before store lookup. Request accepts required string userId; Mongo consumer receives new ObjectID(userId), retrieves complete User record without projection. Store returns record unchanged. Service deletes emailVerificationId,password,oldPasswords,accessToken. ResponseSuccess produces exactly top-level code,data; controller res.status(resp.code).send(resp) serializes object as JSON. Official Express 4 documentation (https://expressjs.com/en/4x/api/response/#res.send and #res.json, observed 2026-10-22) documents JSON object serialization/JSON.stringify; no app replacer or model toJSON found. For a record containing every declared ModelUser field, actual emitted data fields are _id,uuidMobile,mobileToken,firstname,lastname,email,birthDate,phoneNumber,address,claims,photoUrl,enable,emailVerified,gender,godfatherCode,facebookId,facebookAccessToken,pubToken,push,isAdmin,passwordVerificationId; address emits country,state,city,address; push emits userIdOneSignal,pushToken. Undefined optional fields are omitted, and arbitrary additional stored enumerable fields are not filtered. Declared ModelUser schema additionally advertises accessToken,emailVerificationId that service never sends on this route; undeclared password/oldPasswords are removed. UserResponse documented decorated fields code,data match success envelope. UserErrorResponse declares code,message,error, while ResponseFailure emits those three fields (data omitted). Body validation failure also emits code,error,message but message is a Joi error object although schema calls it string; 401 is supplied by Passport rather than this declared envelope. No client consumer exists in target, so reads of emitted fields beyond receiving Swagger contract cannot be established. Sensitive facebookAccessToken and passwordVerificationId remain emitted for self only; no unauthorized cross-user exposure demonstrated within supplied route scope, and no security candidate forced.",
+      "unfinished": [
+        "Runtime behavior was not exercised: no server, dependencies, endpoint calls, real tokens or records used. Exact installed Express/Passport/Joi/MongoDB versions unavailable without a lockfile; no dependency vulnerability claim made.",
+        "No downstream application/client was supplied, so final consumer behavior and unused emitted fields could not be verified.",
+        "Deployment-specific JWT expiry/revocation and account-disable policy are unavailable; no authorization finding inferred from those absent requirements."
+      ],
+      "observed_at": "2026-10-22T05:11:15.332Z"
+    }
+  }
+}
