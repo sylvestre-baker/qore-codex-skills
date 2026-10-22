@@ -1,0 +1,237 @@
+{
+  "schema": "qore-run/1",
+  "id": "maintainer-reuse-swagger-20261022",
+  "method": "review",
+  "skill": "qore-review",
+  "candidate_sha256": "583f1642270e9c011716f4b4eeff79fe08d1265f9d2338bed407e9fe9ba9c3b3",
+  "target": {
+    "label": "sample.typescript.swagger.api@ff2221880142c0b085c0b858b22fe39e45a3be80 POST /user/find/userId source specification",
+    "snapshot_sha256": "5153b0d6239b69e22e4ba5efd2f55e973f562cd30de1241409a19cc6f6c6ad7c"
+  },
+  "last_relevant_change": "2026-10-22T05:09:25.528831+00:00",
+  "environment": {
+    "id": "codex-local-20261022",
+    "operator": "maintainer-operated; independent agent contexts, no independent human participant",
+    "host": "Codex local macOS, Node v22.23.3"
+  },
+  "profile": null,
+  "required_phases": [
+    "finder.correctness",
+    "finder.security",
+    "finder.feasibility",
+    "redaction",
+    "verifier",
+    "findings_validation"
+  ],
+  "phases": [
+    {
+      "id": "finder.correctness",
+      "actor_id": "reuse_correctness",
+      "status": "PASS",
+      "artifacts": [
+        "review/phase-finder.correctness.json",
+        "review/finder-correctness.json"
+      ]
+    },
+    {
+      "id": "finder.security",
+      "actor_id": "reuse_security",
+      "status": "PASS",
+      "artifacts": [
+        "review/phase-finder.security.json",
+        "review/finder-security.json"
+      ]
+    },
+    {
+      "id": "finder.feasibility",
+      "actor_id": "reuse_feasibility",
+      "status": "PASS",
+      "artifacts": [
+        "review/phase-finder.feasibility.json",
+        "review/finder-feasibility.json"
+      ]
+    },
+    {
+      "id": "redaction",
+      "actor_id": "root",
+      "status": "PASS",
+      "artifacts": [
+        "review/phase-redaction.json",
+        "review/claims.json"
+      ]
+    },
+    {
+      "id": "verifier",
+      "actor_id": "reuse_verifier",
+      "status": "PASS",
+      "artifacts": [
+        "review/phase-verifier.json",
+        "review/verifier.json"
+      ]
+    },
+    {
+      "id": "findings_validation",
+      "actor_id": "root",
+      "status": "PASS",
+      "artifacts": [
+        "review/phase-findings_validation.json",
+        "review/findings-lint.json"
+      ]
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "review/claims.json",
+      "sha256": "9ae012e3b0ca7372cdc9dad6207a492d337c3469bdba51c0a44b0bb03c86cd48",
+      "kind": "source"
+    },
+    {
+      "path": "review/correctness-reproduction.json",
+      "sha256": "7c352471843473db9be1fbcfbd9fbdede37a8a69eeb30a20d677689d8902e16d",
+      "kind": "source"
+    },
+    {
+      "path": "review/finder-correctness.json",
+      "sha256": "0b5604b7e0a7416b56e4ed1f1d7c3d4e337884557abc910d6a569f38cfbd3026",
+      "kind": "source"
+    },
+    {
+      "path": "review/finder-feasibility.json",
+      "sha256": "4cf0bb88e34af2210faa32aee8b4dcd1d59eafc9ec879cec114aba8c9582d6eb",
+      "kind": "source"
+    },
+    {
+      "path": "review/finder-security.json",
+      "sha256": "748e6a2ee1d187b5a47f7bc2d497cdb0c71e756c98100c4d83e9227c111fcf10",
+      "kind": "source"
+    },
+    {
+      "path": "review/findings-lint.json",
+      "sha256": "e170d42038a7d4ee9c671320ff8088ca5b7014041ef09554d51b9d0b4dc6c968",
+      "kind": "source"
+    },
+    {
+      "path": "review/findings.json",
+      "sha256": "c6282c0456079a329837a0aeb49f3454f517926c96fb0f989ddcaadf42c96889",
+      "kind": "source"
+    },
+    {
+      "path": "review/phase-finder.correctness.json",
+      "sha256": "6d024446acb9306ef0054cf8829b85e1f5ab8f869ce793447fb22316628cea37",
+      "kind": "execution",
+      "candidate_sha256": "583f1642270e9c011716f4b4eeff79fe08d1265f9d2338bed407e9fe9ba9c3b3",
+      "target_snapshot_sha256": "5153b0d6239b69e22e4ba5efd2f55e973f562cd30de1241409a19cc6f6c6ad7c",
+      "observed_at": "2026-10-22T05:11:24.468839+00:00"
+    },
+    {
+      "path": "review/phase-finder.feasibility.json",
+      "sha256": "d3562427dadd91c355dc94607ed9311d1c0ce3088e127c2b0b281a094fd0dda8",
+      "kind": "execution",
+      "candidate_sha256": "583f1642270e9c011716f4b4eeff79fe08d1265f9d2338bed407e9fe9ba9c3b3",
+      "target_snapshot_sha256": "5153b0d6239b69e22e4ba5efd2f55e973f562cd30de1241409a19cc6f6c6ad7c",
+      "observed_at": "2026-10-22T05:11:27.002816+00:00"
+    },
+    {
+      "path": "review/phase-finder.security.json",
+      "sha256": "a0e16b5fe60b4d6705bf702d7472d5339f69ec46f523bd667a4ad1129c1e05c9",
+      "kind": "execution",
+      "candidate_sha256": "583f1642270e9c011716f4b4eeff79fe08d1265f9d2338bed407e9fe9ba9c3b3",
+      "target_snapshot_sha256": "5153b0d6239b69e22e4ba5efd2f55e973f562cd30de1241409a19cc6f6c6ad7c",
+      "observed_at": "2026-10-22T05:11:15.332Z"
+    },
+    {
+      "path": "review/phase-findings_validation.json",
+      "sha256": "53ee462704a465be9f1875b6347c16755e4dd0b839449ba91d35d87af3c46f0d",
+      "kind": "execution",
+      "candidate_sha256": "583f1642270e9c011716f4b4eeff79fe08d1265f9d2338bed407e9fe9ba9c3b3",
+      "target_snapshot_sha256": "5153b0d6239b69e22e4ba5efd2f55e973f562cd30de1241409a19cc6f6c6ad7c",
+      "observed_at": "2026-10-22T05:16:12.344303+00:00"
+    },
+    {
+      "path": "review/phase-redaction.json",
+      "sha256": "089103a2f8d1f21ccf29ace4b78506dcbe70610b24b6186a9b439cf2dba5a17a",
+      "kind": "execution",
+      "candidate_sha256": "583f1642270e9c011716f4b4eeff79fe08d1265f9d2338bed407e9fe9ba9c3b3",
+      "target_snapshot_sha256": "5153b0d6239b69e22e4ba5efd2f55e973f562cd30de1241409a19cc6f6c6ad7c",
+      "observed_at": "2026-10-22T05:11:58.697286+00:00"
+    },
+    {
+      "path": "review/phase-verifier.json",
+      "sha256": "b7fcf9ec6df829aa2a955594f42aa5b7a9ee071fabe801c4097ce08a820ef97e",
+      "kind": "execution",
+      "candidate_sha256": "583f1642270e9c011716f4b4eeff79fe08d1265f9d2338bed407e9fe9ba9c3b3",
+      "target_snapshot_sha256": "5153b0d6239b69e22e4ba5efd2f55e973f562cd30de1241409a19cc6f6c6ad7c",
+      "observed_at": "2026-10-22T05:15:19.559031+00:00"
+    },
+    {
+      "path": "review/redaction.log",
+      "sha256": "63f591fa95cac80e14610b2b576a057c6e3d1bbb94049993ba95734a6f4d1368",
+      "kind": "source"
+    },
+    {
+      "path": "review/roster.json",
+      "sha256": "fa81c99a69cf95eaf24b7284da50c0348451c9ec699c9330c27166ac9104e167",
+      "kind": "source"
+    },
+    {
+      "path": "review/snapshot.json",
+      "sha256": "0d202bbc67e3db1ad1323b859a17c4f96fc9004ba97e0269aec6a5ec7700450e",
+      "kind": "source"
+    },
+    {
+      "path": "review/verifier-reproduction.json",
+      "sha256": "2582c237480fe702ace4c796b73a595b509638adfdeaf49e6d8eb2f49064d45d",
+      "kind": "source"
+    },
+    {
+      "path": "review/verifier-reproduction.mjs",
+      "sha256": "d553345a485b8e868b51e13902563d596fef1c5212f9b058f04dd96da8f76396",
+      "kind": "source"
+    },
+    {
+      "path": "review/verifier.json",
+      "sha256": "a3935eaa0026667ae832fa6a5e7c8ed6f0543af02b5b99b2b11ecbc5c747ce0b",
+      "kind": "source"
+    }
+  ],
+  "commands": [
+    {
+      "argv": [
+        "node",
+        "skills/qore-review/scripts/redact-for-verifier.mjs",
+        "findings.json"
+      ],
+      "exit_code": 0,
+      "artifact": "review/claims.json"
+    },
+    {
+      "argv": [
+        "node",
+        "skills/qore-review/scripts/finding-lint.mjs",
+        "verifier.json",
+        "--verifier=ran",
+        "--json"
+      ],
+      "exit_code": 0,
+      "artifact": "review/findings-lint.json"
+    },
+    {
+      "argv": [
+        "node",
+        "review/verifier-reproduction.mjs",
+        "TARGET_CHECKOUT"
+      ],
+      "exit_code": 0,
+      "artifact": "review/verifier-reproduction.json"
+    }
+  ],
+  "limitations": [
+    "Bounded offline source-specification review; COMPLETE refers only to the six named method phases.",
+    "One old sample repository under the same owner; not an independent maintainer trial, adoption, ecosystem demand or comparative efficacy result.",
+    "No actual Express HTTP bytes, installed dependency versions, generated Swagger schema, deployed database, performance measurement or client consumer verified.",
+    "Error/DB/JWT/response stubs and erased TypeScript annotations are documented; first-party harness checks seven file hashes before evaluating isolated methods.",
+    "C1 is medium and source-level CONFIRMED; actual runtime/client impact remains unobserved. No source correction or deployment was performed.",
+    "Public selected first-party phase reports are retained; conversation/tool transcripts are not published. Redaction is field filtering, not semantic blindness."
+  ],
+  "coverage": "COMPLETE"
+}

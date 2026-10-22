@@ -1,0 +1,23 @@
+{
+  "qore_evidence": {
+    "candidate_sha256": "583f1642270e9c011716f4b4eeff79fe08d1265f9d2338bed407e9fe9ba9c3b3",
+    "target_snapshot_sha256": "5153b0d6239b69e22e4ba5efd2f55e973f562cd30de1241409a19cc6f6c6ad7c",
+    "observed_at": "2026-10-22T05:11:58.697286+00:00",
+    "phase_id": "redaction"
+  },
+  "payload": {
+    "output": "claims.json",
+    "output_sha256": "9ae012e3b0ca7372cdc9dad6207a492d337c3469bdba51c0a44b0bb03c86cd48",
+    "result": {
+      "findings": [
+        {
+          "id": "C1",
+          "title": "UserErrorResponse declares a string message, but the endpoint emits an Error object on failures",
+          "severity": "medium",
+          "evidence": "The POST response annotation selects UserErrorResponse for 500 (target/src/servers/sample.typescrit.swagger.api/controllers/controller.user.ts:41). Its message is decorated and typed string (target/src/modules/users/models/user.ts:37-40). StoreUser.get rejects the database error unchanged (target/src/modules/users/services/stores/store.user.ts:52-56); ServiceUser.find catches that value and passes it directly to ResponseFailure(500, error) (target/src/modules/users/services/service.user.ts:95-96). ResponseFailure assigns message without normalization (target/src/modules/common/utils/response.ts:52-57), and ControllerUser.find sends the resulting object unchanged (target/src/servers/sample.typescrit.swagger.api/controllers/controller.user.ts:61). Its own catch does the same with ex at line 65. For a native Error, JSON serialization emits the exact top-level field list code,error,message with message:{}; it never emits the Error.message text as a string. review/correctness-reproduction.json records an isolated extraction of the actual ResponseFailure function body and JSON.stringify result. The request validator also assigns a Joi error object to message before res.json for a 400 (target/src/modules/common/utils/validation.ts:49-55), providing a second reachable producer of the same schema mismatch. An SDK or schema validator expecting message:string can reject the response rather than handle the documented error.",
+          "counterexample": "Condition: StoreUser.get rejects with new Error(\"DB unavailable\"). The source catch path returns ResponseFailure(500,error), and the isolated extracted response function produces JSON {\"code\":500,\"error\":\"Internal Server Error\",\"message\":{}}. The advertised UserErrorResponse requires any supplied message to be a string. No live server, database or HTTP reproduction was run; Express serialization and Swagger generation remain runtime verification work."
+        }
+      ]
+    }
+  }
+}

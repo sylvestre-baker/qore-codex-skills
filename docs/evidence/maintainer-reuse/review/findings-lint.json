@@ -1,0 +1,26 @@
+{
+  "valid": true,
+  "coverage": "COMPLETE",
+  "verdict": "SHIP",
+  "verifier": "ran",
+  "total": 1,
+  "counts": {
+    "CONFIRMED": 1,
+    "PLAUSIBLE": 0,
+    "REFUTED": 0
+  },
+  "blocking_findings": [],
+  "unresolved_findings": [],
+  "findings": [
+    {
+      "id": "C1",
+      "title": "Failure-path message is an Error object at the controller send boundary despite its string declaration",
+      "severity": "medium",
+      "evidence": "Independent verification against the supplied raw target confirms the source-level send-argument mismatch, with the original medium severity preserved. Ordered trace: MongoDBClient.findOneById forwards the callback's error unchanged (target/src/modules/database/services/service.mongo.db.client.ts:42-46); StoreUser.get rejects it unchanged (target/src/modules/users/services/stores/store.user.ts:50-59); ServiceUser.find catches it and passes it as the second argument of ResponseFailure (target/src/modules/users/services/service.user.ts:81-98); ResponseFailure stores that value directly in response.message alongside code and error (target/src/modules/common/utils/response.ts:52-58); ControllerUser.find reads resp.code for status and sends resp unchanged (target/src/servers/sample.typescrit.swagger.api/controllers/controller.user.ts:47-67). No persistent storage or queue exists on this response path. IModelResponse has only declared fields and no initializer, constructor, getter or toJSON (target/src/modules/interfaces/api/i.model.response.ts:1-6). Extracted execution captures exactly own fields [code,error,message] with message the identical native Error. The far-side source contract selected for 500 is UserErrorResponse (controller.user.ts:29-46): its decorated fields are code:number (required), message:string (optional), error:string (required); data:any is declared but undecorated (target/src/modules/users/models/user.ts:27-48). Optional message does not allow an object when present. The local ECMAScript JSON.stringify experiment emits precisely top-level [code,error,message], nested message fields [], and no data. Error.message is never read/extracted on this path; it is non-enumerable on the injected native Error. The field-name sets otherwise match the decorated source contract; no actual client reader was supplied, so no field written-but-unread or client reads-but-never-sent finding is established. Actual serializer boundary: controller invokes Express send(object); the Express serializer implementation is outside the supplied target, so actual HTTP field enumeration remains unavailable. Swagger UI loads /api-docs/swagger.json (target/swagger/index.html:77-89), but generated Swagger JSON and a consumer are unavailable. Therefore generated-schema validation, HTTP bytes and SDK rejection are not independently confirmed. Refutation attempts: string-control failure traverses the same extracted chain and conforms; thus this is conditional on a non-string error, not every failure. No normalization exists in the traced response path; TypeScript annotations do not coerce values. Exact pinned file hashes, extraction line spans, assumptions and observed output are retained in review/verifier-reproduction.json; executable first-party reproduction is review/verifier-reproduction.mjs. The script checks all seven target file SHA256 pins before evaluating any isolated method; it loads no application constructors or configuration. Safe recommended disposition: map failures to a stable public string (and optionally a deliberately specified public error code), while logging internal diagnostic details privately; never automatically return raw internal exception messages.",
+      "verdict": "CONFIRMED",
+      "counterexample": "Run node review/verifier-reproduction.mjs from the pinned research directory (or pass its absolute target directory). With the Mongo callback injected with new Error('offline database failure'), the actual extracted callback/store/service/response/controller methods call the response mock with status 500 and message identical to that Error, whereas UserErrorResponse.message declares string. Observed separate JSON.stringify output is {\"code\":500,\"error\":\"Internal Server Error\",\"message\":{}}. Control input 'public safe message' emits {\"code\":500,\"error\":\"Internal Server Error\",\"message\":\"public safe message\"} and satisfies the declared message type. Exit status 0 on Node v22.23.3. This confirms only extracted source behavior and local ECMAScript serialization, not actual Express HTTP bytes, generated Swagger behavior, a client failure, or a production exploit."
+    }
+  ],
+  "problems": [],
+  "limit": "The verifier flag records an execution declaration; validate actual independent phase evidence separately."
+}

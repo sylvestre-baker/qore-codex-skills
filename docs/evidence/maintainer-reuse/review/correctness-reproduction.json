@@ -1,0 +1,8 @@
+{
+  "procedure": "isolated ResponseFailure body extracted from source, using native Error; server and dependencies not loaded",
+  "before_serialization_message_type": "object",
+  "own_error_fields": [],
+  "serialized_json": "{\"code\":500,\"error\":\"Internal Server Error\",\"message\":{}}",
+  "declared_message_type": "string",
+  "limitation": "Native JSON serialization surrogate only. No installed Express runtime or generated Swagger inspected."
+}
